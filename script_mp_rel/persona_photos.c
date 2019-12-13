@@ -19,7 +19,7 @@
 void __EntryFunction__()
 {
 	bool bVar0;
-	
+
 	func_1(vScriptParam_0);
 	bVar0 = true;
 	while (bVar0)
@@ -38,7 +38,7 @@ void __EntryFunction__()
 void func_1(vector3 vParam0)
 {
 	int iVar0;
-	
+
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(1);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
@@ -62,7 +62,7 @@ void func_1(vector3 vParam0)
 int func_2(var uParam0)
 {
 	int iVar0;
-	
+
 	if (func_6(0, 0))
 	{
 		return 1;
@@ -79,7 +79,7 @@ int func_3(var uParam0)
 {
 	bool bVar0;
 	int iVar1;
-	
+
 	switch (func_7(uParam0))
 	{
 		case 0:
@@ -95,7 +95,6 @@ int func_3(var uParam0)
 				case 0:
 					bVar0 = true;
 					break;
-				
 				case 1:
 				case 2:
 					iVar1 = 0;
@@ -146,7 +145,7 @@ int func_3(var uParam0)
 void func_4(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 < 32)
@@ -173,7 +172,7 @@ void func_5()
 int func_6(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -204,23 +203,18 @@ int func_6(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -251,14 +245,13 @@ int func_9(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar1 = 0;
 	while (iVar1 < 32)
 	{
 		switch (uParam0->f_2)
 		{
 			case 0:
-			
 			default:
 				return 0;
 				if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_3[iVar1 /*11*/])))
@@ -270,7 +263,6 @@ int func_9(var uParam0)
 					return 0;
 				}
 				iVar0 = PLAYER::PLAYER_PED_ID();
-			
 			case 1:
 			case 2:
 				if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_3[iVar1 /*11*/])))
@@ -312,7 +304,7 @@ int func_10(var uParam0)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = uParam0->f_356;
 	if (!ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_3[iVar0 /*11*/])))
 	{
@@ -347,7 +339,6 @@ int func_10(var uParam0)
 			PED::FORCE_PED_MOTION_STATE(&(uParam0->f_3[iVar0 /*11*/]), 247561816, false, 0, false);
 			func_12(uParam0, 1);
 			break;
-		
 		case 1:
 			PED::FORCE_PED_MOTION_STATE(&(uParam0->f_3[iVar0 /*11*/]), 247561816, false, 0, false);
 			switch (uParam0->f_2)
@@ -355,7 +346,6 @@ int func_10(var uParam0)
 				case 0:
 					bVar2 = NETWORK::_0xB72999D3120599DF(&((uParam0->f_3[iVar0 /*11*/])->f_3), uParam0->f_2, 1);
 					break;
-				
 				case 1:
 				case 2:
 					iVar1 = (uParam0->f_3[iVar0 /*11*/])->f_1;
@@ -368,7 +358,6 @@ int func_10(var uParam0)
 			}
 			func_12(uParam0, 2);
 			break;
-		
 		case 2:
 			PED::FORCE_PED_MOTION_STATE(&(uParam0->f_3[iVar0 /*11*/]), 247561816, false, 0, false);
 			if (NETWORK::_0xA21E3BAD0A42D199())
@@ -382,7 +371,6 @@ int func_10(var uParam0)
 			}
 			func_12(uParam0, 3);
 			break;
-		
 		case 3:
 			return 1;
 	}
@@ -415,7 +403,7 @@ void func_12(var uParam0, int iParam1)
 void func_13(var uParam0)
 {
 	int iVar0;
-	
+
 	uParam0->f_356++;
 	if (uParam0->f_356 >= 32)
 	{
@@ -455,17 +443,15 @@ void func_15(int iParam0)
 struct<8> func_16(int iParam0, bool bParam1)
 {
 	char cVar0[64];
-	
+
 	switch (iParam0)
 	{
 		case 0:
 			StringConCat(&cVar0, "MP_PROFILE_PHOTO", 64);
 			break;
-		
 		case 1:
 			StringConCat(&cVar0, "MP_MISSION_PHOTO", 64);
 			break;
-		
 		case 2:
 			StringConCat(&cVar0, "MINIGAME_PROFILE_PHOTO", 64);
 			break;
@@ -482,7 +468,7 @@ int func_17(int iParam0)
 	vector3 vVar0;
 	vector3 vVar3;
 	int iVar6;
-	
+
 	vVar0 = { Global_1131373->f_5808.f_477, Global_1131373->f_5808.f_478, Global_1131373->f_5808.f_479 };
 	vVar3 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true, false) + vVar0 };
 	iVar6 = PED::CLONE_PED(iParam0, 0f, false, true);
@@ -512,7 +498,7 @@ void func_19(int iParam0, int iParam1)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
 		return;
@@ -527,12 +513,10 @@ void func_19(int iParam0, int iParam1)
 	{
 		case 1:
 		case 2:
-		
 		default:
 			return;
 			func_23(iParam0, iParam1, 0);
 			func_20(iParam0, iParam1, 0);
-		
 		case 3:
 		case 4:
 		case 5:
@@ -549,7 +533,7 @@ void func_19(int iParam0, int iParam1)
 void func_20(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (iParam2 == -1)
 	{
 		return;
@@ -575,11 +559,9 @@ int func_21(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-		
 		default:
 			return 2;
 			return 2;
-		
 		case 2:
 			return 3;
 		}
@@ -592,7 +574,7 @@ void func_22(int iParam0)
 void func_23(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (iParam1 <= -1)
 	{
 		return;
@@ -612,7 +594,7 @@ void func_23(int iParam0, int iParam1, int iParam2)
 int func_24(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam1 <= -1)
 	{
 		return 0;

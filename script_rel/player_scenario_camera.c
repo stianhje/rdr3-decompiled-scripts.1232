@@ -72,7 +72,6 @@ int func_4()
 			Local_0.f_35 = TASK::_0xA92450B5AE687AAF(Local_0.f_32);
 			Local_0 = 1;
 			break;
-		
 		case 1:
 			if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 1) && DATAFILE::_0x603AC35FD4602C76(Local_0.f_34))
 			{
@@ -88,14 +87,12 @@ int func_4()
 				Local_0 = 2;
 			}
 			break;
-		
 		case 2:
 			if (func_8())
 			{
 				Local_0 = 3;
 			}
 			break;
-		
 		case 3:
 			if (Local_0.f_33 != 0)
 			{
@@ -106,12 +103,10 @@ int func_4()
 				Local_0 = 4;
 			}
 			break;
-		
 		case 4:
 			func_3();
 			Local_0 = 5;
 			break;
-		
 		case 5:
 			return 0;
 	}
@@ -131,7 +126,7 @@ int func_6()
 	int iVar5;
 	int iVar6;
 	int iVar7;
-	
+
 	Var0 = Local_0.f_34;
 	Var0.f_2 = -1296226829;
 	iVar5 = DATAFILE::_DATAFILE_GET_NUM_NODES(&Var0);

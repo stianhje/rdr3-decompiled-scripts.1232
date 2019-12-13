@@ -44,21 +44,18 @@ void __EntryFunction__()
 					func_7(&Local_15, 1);
 				}
 				break;
-			
 			case 1:
 				if (func_8(&Local_15))
 				{
 					func_7(&Local_15, 2);
 				}
 				break;
-			
 			case 2:
 				if (func_9(&Local_15))
 				{
 					func_7(&Local_15, 3);
 				}
 				break;
-			
 			case 3:
 				func_1(&Local_15);
 				break;
@@ -74,7 +71,7 @@ void func_1(var uParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	func_10();
 	func_11(uParam0);
 	iVar0 = 0;
@@ -189,7 +186,7 @@ int func_8(var uParam0)
 int func_9(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 1;
 	if (!func_22())
 	{
@@ -205,7 +202,7 @@ int func_9(var uParam0)
 void func_10()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 27)
 	{
@@ -265,7 +262,7 @@ void func_15(int iParam0, int iParam1, bool bParam2, bool bParam3, float fParam4
 	bool bVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	if (!func_12(iParam0))
 	{
 		return;
@@ -439,7 +436,7 @@ int func_21(var uParam0)
 int func_22()
 {
 	int iVar0;
-	
+
 	iVar0 = 1;
 	return iVar0;
 }
@@ -497,7 +494,6 @@ int func_23(var uParam0)
 					iLocal_14++;
 				}
 				break;
-			
 			case 1:
 				if (ANIMSCENE::_0xCBFC7725DE6CE2E0(uParam0->f_2, 0) && ANIMSCENE::_0x8D81E7824B7753F7(uParam0->f_2, "SHOT2", 1))
 				{
@@ -507,7 +503,6 @@ int func_23(var uParam0)
 					iLocal_14++;
 				}
 				break;
-			
 			case 2:
 				if (ANIMSCENE::_0xCBFC7725DE6CE2E0(uParam0->f_2, 0) && ANIMSCENE::_0x8D81E7824B7753F7(uParam0->f_2, "SHOT3", 1))
 				{
@@ -540,7 +535,7 @@ void func_24(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (bParam2)
 	{
 		if (!func_54(iParam0))
@@ -569,7 +564,7 @@ void func_27(bool bParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 27)
 	{
@@ -636,7 +631,7 @@ void func_33(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (bParam2)
 	{
 		if (!func_54(iParam0))
@@ -651,7 +646,7 @@ void func_33(int iParam0, int iParam1, bool bParam2)
 int func_34(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 0)
 	{
 		return 0;
@@ -744,7 +739,7 @@ bool func_36(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (bParam2)
 	{
 		if (!func_54(iParam0))
@@ -760,7 +755,7 @@ void func_37(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (func_12(iParam0))
 	{
 		iVar1 = func_57(iParam0);
@@ -853,7 +848,7 @@ void func_41(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 {
 	var uVar0;
 	int iVar1;
-	
+
 	if (!func_12(iParam0))
 	{
 		return;
@@ -934,7 +929,7 @@ int func_43(int iParam0)
 void func_44(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
 {
 	int iVar0;
-	
+
 	if (!func_54(iParam1))
 	{
 		return;
@@ -996,7 +991,7 @@ float func_47(var uParam0)
 int func_48(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
-	
+
 	if (!func_72(iParam0))
 	{
 		return 1;
@@ -1041,7 +1036,7 @@ int func_49(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 1;
 	iVar1 = 0;
 	while (iVar1 < 27)
@@ -1058,7 +1053,7 @@ int func_49(int iParam0, int iParam1, int iParam2)
 int func_50(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		if (!(iParam0 > 0 && iParam0 < 771))
@@ -1089,7 +1084,7 @@ int func_50(int iParam0)
 int func_51(int iParam0)
 {
 	int iVar0;
-	
+
 	if (&Global_1898329 <= 0)
 	{
 		return -1;
@@ -1125,7 +1120,7 @@ bool func_54(int iParam0)
 int func_55(var uParam0, var uParam1, var uParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = uParam0;
 	*uParam1 = (iVar0 / 31);
 	*uParam2 = (iVar0 % 31);
@@ -1175,7 +1170,7 @@ bool func_60(int iParam0, int iParam1)
 void func_61(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_54(iParam0))
 	{
 		return;
@@ -1221,7 +1216,7 @@ void func_64(int iParam0)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = func_57(iParam0);
 	iVar1 = func_35(iParam0, 0);
 	func_83(iParam0, iVar0);
@@ -1285,7 +1280,7 @@ int func_68(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (!func_54(iParam0))
 	{
 		return 0;
@@ -1374,7 +1369,7 @@ bool func_70(var uParam0)
 float func_71()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -1405,7 +1400,7 @@ int func_74(int iParam0)
 int func_75(int iParam0, bool bParam1, bool bParam2, int iParam3)
 {
 	int iVar0;
-	
+
 	if (!func_90(iParam0))
 	{
 		return 0;
@@ -1502,7 +1497,7 @@ void func_77(int iParam0, int iParam1)
 int func_78(int iParam0, var uParam1, var uParam2, var uParam3)
 {
 	int iVar0;
-	
+
 	if (func_107(iParam0, 1, 0))
 	{
 		if (func_108(iParam0))
@@ -1540,7 +1535,7 @@ int func_78(int iParam0, var uParam1, var uParam2, var uParam3)
 int func_79(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -1567,82 +1562,56 @@ int func_81(int iParam0)
 	{
 		case 1:
 			return -177936449;
-		
 		case 0:
 			return -1758735922;
-		
 		case 6:
 			return -680519380;
-		
 		case 3:
 			return 263744889;
-		
 		case 7:
 			return 351057032;
-		
 		case 4:
 			return 1172283326;
-		
 		case 2:
 			return -1046310682;
-		
 		case 5:
 			return 652984488;
-		
 		case 8:
 			return 1389665576;
-		
 		case 9:
 			return -1066280913;
-		
 		case 13:
 			return 1975793632;
-		
 		case 14:
 			return -1887627202;
-		
 		case 15:
 			return 1851096281;
-		
 		case 16:
 			return 47402526;
-		
 		case 17:
 			return 1762683397;
-		
 		case 18:
 			return -1154551809;
-		
 		case 19:
 			return -333682158;
-		
 		case 20:
 			return 1465089966;
-		
 		case 21:
 			return 511213393;
-		
 		case 22:
 			return -1214580355;
-		
 		case 23:
 			return -1397900723;
-		
 		case 10:
 			return 541398842;
-		
 		case 24:
 			return -1960060437;
-		
 		case 25:
 			return 1634371177;
-		
 		case 26:
 			return -1308114737;
-		
 		case 11:
 			return 683250525;
-		
 		case 12:
 			return -814958461;
 	}
@@ -1700,53 +1669,37 @@ int func_85(int iParam0, bool bParam1)
 	{
 		case 3:
 			return -698095578;
-		
 		case 7:
 			return 230221572;
-		
 		case 0:
 			return 47961446;
-		
 		case 5:
 			return 1268955201;
-		
 		case 2:
 			return 2103924091;
-		
 		case 1:
 			return 1554677062;
-		
 		case 9:
 			return 984702223;
-		
 		case 6:
 			return -1825091419;
-		
 		case 11:
 			return 948152617;
-		
 		case 8:
 			return 795059774;
-		
 		case 23:
 			return -1880884094;
-		
 		case 20:
 			return 849012978;
-		
 		case 4:
 			return 404801781;
-		
 		case 10:
 			return -1094022447;
-		
 		case 26:
 			return -1484815615;
-		
 		case 12:
 		case 14:
 			return 0;
-		
 		default:
 			break;
 	}
@@ -1764,7 +1717,7 @@ void func_86(int iParam0)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	iVar0 = func_43(iParam0);
 	if (!PED::_0xA911EE21EDF69DAF(iVar0))
 	{
@@ -1807,7 +1760,7 @@ int func_87(int iParam0, int iParam1)
 void func_88(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_54(iParam0))
 	{
 		return;
@@ -1848,7 +1801,6 @@ int func_91(int iParam0, bool bParam1)
 	{
 		case 5:
 			return 1;
-		
 		case 6:
 			if (bParam1)
 			{
@@ -1879,7 +1831,6 @@ Vector3 func_94(int iParam0)
 	{
 		case 8:
 			return 880.67f, 1267.78f, 233.66f;
-		
 		default:
 			break;
 	}
@@ -1896,7 +1847,7 @@ int func_95(int iParam0, float fParam1, int iParam2, int iParam3, int iParam4)
 	int iVar5;
 	bool bVar6;
 	char cVar7[16];
-	
+
 	if (func_73(32768))
 	{
 		return 0;
@@ -2091,7 +2042,7 @@ int func_97(int iParam0)
 int func_98(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 {
 	int iVar0;
-	
+
 	if (func_123() != -1)
 	{
 		return 1;
@@ -2134,7 +2085,7 @@ int func_99(bool bParam0)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	iVar3 = 0;
 	while (iVar3 < Global_1879534->f_7300)
 	{
@@ -2192,7 +2143,7 @@ int func_100(int iParam0, int iParam1, int iParam2)
 	var uVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (CAM::IS_SCREEN_FADED_OUT())
 	{
 		return 0;
@@ -2263,7 +2214,7 @@ int func_103(int iParam0)
 	int iVar1;
 	int iVar2;
 	struct<6> Var3;
-	
+
 	if (&Global_1898329 == 15)
 	{
 		return -1;
@@ -2333,7 +2284,7 @@ void func_104(int iParam0)
 	var uVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	uVar0 = func_97(iParam0);
 	iVar1 = 0;
 	while (iVar1 < 27)
@@ -2421,7 +2372,7 @@ int func_108(int iParam0)
 int func_109(int iParam0, float fParam1, float fParam2, float fParam3, float fParam4)
 {
 	float fVar0;
-	
+
 	if (fParam3 > 0f)
 	{
 		fVar0 = fParam3;
@@ -2467,7 +2418,7 @@ int func_109(int iParam0, float fParam1, float fParam2, float fParam3, float fPa
 void func_110(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (_NAMESPACE48::_0xA8120EBEAF290C7A(func_35(iParam0, 0)))
 	{
 		iVar0 = _NAMESPACE48::_0x69786495C92A3044(func_35(iParam0, 0));
@@ -2489,7 +2440,6 @@ int func_111(int iParam0)
 		case -445211559:
 		case 1744281750:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -2501,7 +2451,7 @@ int func_112(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;
@@ -2540,7 +2490,7 @@ void func_114(var uParam0, int iParam1)
 void func_115(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return;
@@ -2569,7 +2519,7 @@ int func_117(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	if (!func_54(iParam0))
 	{
@@ -2609,7 +2559,7 @@ int func_118(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!func_54(iParam0))
 	{
 		return 0;
@@ -2647,7 +2597,7 @@ int func_121(int iParam0, bool bParam1, var uParam2, int iParam3)
 	struct<11> Var0;
 	int iVar17;
 	struct<11> Var18;
-	
+
 	if (iParam0 == PLAYER::PLAYER_ID())
 	{
 		return func_161(bParam1, uParam2, iParam3);
@@ -2726,7 +2676,7 @@ int func_123()
 int func_124(var uParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = (*uParam0 && iParam1);
 	if (!iVar0 == 0)
 	{
@@ -2738,7 +2688,7 @@ int func_124(var uParam0, int iParam1)
 bool func_125()
 {
 	int iVar0;
-	
+
 	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
 	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) == 4);
 }
@@ -2753,7 +2703,6 @@ int func_126(int iParam0)
 	{
 		case 18:
 			return func_91(((*Global_1347702)[21 /*49*/])->f_15, 1);
-		
 		case 44:
 			return func_91(((*Global_1347702)[83 /*49*/])->f_15, 1);
 	}
@@ -2830,7 +2779,6 @@ Vector3 func_131(int iParam0)
 	{
 		case 14:
 			return -240.576f, 769.614f, 117.085f;
-		
 		case 34:
 			return 2544.982f, -1187.344f, 52.3104f;
 	}
@@ -2852,7 +2800,6 @@ Vector3 func_133(int iParam0)
 	{
 		case 14:
 			return 7.5f, 8f, 5f;
-		
 		default:
 			break;
 	}
@@ -2865,7 +2812,6 @@ int func_134(int iParam0)
 	{
 		case 14:
 			return 19;
-		
 		default:
 			break;
 	}
@@ -2878,19 +2824,14 @@ Vector3 func_135(int iParam0)
 	{
 		case 12:
 			return -1541.14f, -305.74f, ((*Global_1835011)[iParam0 /*74*/])->f_18.f_2;
-		
 		case 39:
 			return 4432.49f, -3404.77f, ((*Global_1835011)[iParam0 /*74*/])->f_18.f_2;
-		
 		case 8:
 			return 891.27f, 1279.39f, 234.14f;
-		
 		case 27:
 			return 2604.742f, -1212.295f, 52.3389f;
-		
 		case 29:
 			return 2715.245f, -1356.552f, ((*Global_1835011)[iParam0 /*74*/])->f_18.f_2;
-		
 		case 41:
 			return 1332.632f, -7248.313f, 55.5522f;
 	}
@@ -2903,19 +2844,14 @@ float func_136(int iParam0)
 	{
 		case 12:
 			return 45f;
-		
 		case 8:
 			return 54f;
-		
 		case 27:
 			return 35f;
-		
 		case 41:
 			return 50f;
-		
 		case 54:
 			return 17.5f;
-		
 		default:
 			break;
 	}
@@ -2942,34 +2878,24 @@ int func_139(int iParam0)
 	{
 		case -1:
 			return -1;
-		
 		case 5:
 			return 4;
-		
 		case 6:
 			return 79;
-		
 		case 0:
 			return 43;
-		
 		case 2:
 			return 98;
-		
 		case 4:
 			return 58;
-		
 		case 1:
 			return 71;
-		
 		case 3:
 			return 9;
-		
 		case 7:
 			return 22;
-		
 		case 8:
 			return 37;
-		
 		default:
 			break;
 	}
@@ -3035,7 +2961,7 @@ void func_144(int iParam0, bool bParam1, int iParam2, int iParam3)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (!func_157(iParam0))
 	{
 		return;
@@ -3077,7 +3003,6 @@ void func_144(int iParam0, bool bParam1, int iParam2, int iParam3)
 				((*Global_1835011)[iVar0 /*74*/])->f_28 = iVar2;
 			}
 			break;
-		
 		case 8:
 			iVar1 = func_169(iParam0);
 			if (func_171(iVar1, bParam1, iParam2, iParam3) && Global_1357549->f_1709 > 1)
@@ -3087,19 +3012,15 @@ void func_144(int iParam0, bool bParam1, int iParam2, int iParam3)
 					case -1337945352:
 						iVar2 = 588610391;
 						break;
-					
 					case 2103462781:
 						iVar2 = -1032930804;
 						break;
-					
 					case -1485222547:
 						iVar2 = 13700166;
 						break;
-					
 					case 1673015813:
 						iVar2 = -592708248;
 						break;
-					
 					default:
 						iVar2 = 588610391;
 						break;
@@ -3124,7 +3045,7 @@ bool func_145(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = iParam0;
 	iVar1 = (iVar0 / 31);
 	iVar2 = (iVar0 % 31);
@@ -3139,7 +3060,7 @@ void func_146(int iParam0, var uParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	func_174(iParam0, &iVar0, &iVar1);
 	if (!func_175(iParam0, iVar0, iVar1, bParam2))
 	{
@@ -3169,7 +3090,7 @@ var func_149(char[4] cParam0, int iParam1, int iParam2, int iParam3, int iParam4
 	struct<4> Var0;
 	struct<2> Var13;
 	var uVar15;
-	
+
 	Var0 = -2;
 	Var0 = iParam1;
 	Var0.f_1 = iParam2;
@@ -3183,7 +3104,7 @@ var func_149(char[4] cParam0, int iParam1, int iParam2, int iParam3, int iParam4
 int func_150(int iParam0, bool bParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 != -1)
 	{
 		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
@@ -3244,37 +3165,26 @@ int func_150(int iParam0, bool bParam1, int iParam2)
 	{
 		case 0:
 			return 0;
-		
 		case 1:
 			return iParam0 & 1 == 0;
-		
 		case 4:
 			return iParam0 & 2 == 0;
-		
 		case 6:
 			return iParam0 & 4 == 0;
-		
 		case 2:
 			return iParam0 & 16 == 0;
-		
 		case 5:
 			return iParam0 & 32 == 0;
-		
 		case 9:
 			return iParam0 & 64 == 0;
-		
 		case 8:
 			return iParam0 & 8 == 0;
-		
 		case 10:
 			return iParam0 & 512 == 0;
-		
 		case 3:
 			return iParam0 & 128 == 0;
-		
 		case 11:
 			return iParam0 & 256 == 0;
-		
 		default:
 			break;
 	}
@@ -3284,7 +3194,7 @@ int func_150(int iParam0, bool bParam1, int iParam2)
 int func_151(var uParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 27)
 	{
@@ -3303,7 +3213,7 @@ int func_151(var uParam0, int iParam1)
 bool func_152(int iParam0, var uParam1)
 {
 	var uVar0;
-	
+
 	if (!func_12(iParam0))
 	{
 		return false;
@@ -3327,27 +3237,22 @@ int func_154(int iParam0)
 	{
 		case 14:
 			return 1;
-		
 		case 1:
 		case 5:
 		case 13:
 			return 2;
-		
 		case 2:
 		case 24:
 		case 43:
 		case 55:
 			return 3;
-		
 		case 6:
 			return 4;
-		
 		case 11:
 		case 12:
 		case 21:
 		case 54:
 			return 6;
-		
 		case 0:
 		case 3:
 		case 16:
@@ -3366,31 +3271,24 @@ int func_154(int iParam0)
 		case 57:
 		case 58:
 			return 0;
-		
 		case 22:
 		case 49:
 		case 52:
 		case 75:
 			return 7;
-		
 		case 20:
 			return 8;
-		
 		case 4:
 		case 15:
 		case 18:
 			return 5;
-		
 		case 60:
 		case 77:
 			return 13;
-		
 		case 65:
 			return 14;
-		
 		case 34:
 			return 23;
-		
 		case 19:
 		case 23:
 		case 38:
@@ -3403,10 +3301,8 @@ int func_154(int iParam0)
 		case 67:
 		case 76:
 			return -1;
-		
 		case 10:
 			return 21;
-		
 		case 32:
 		case 44:
 		case 45:
@@ -3414,19 +3310,14 @@ int func_154(int iParam0)
 		case 59:
 		case 69:
 			return 11;
-		
 		case 35:
 			return 19;
-		
 		case 25:
 			return 8;
-		
 		case 70:
 			return 4;
-		
 		case 71:
 			return 13;
-		
 		default:
 			return 1;
 	}
@@ -3548,21 +3439,18 @@ int func_162(var uParam0)
 					return 0;
 				}
 				break;
-			
 			case 2:
 				if (!func_124(&(uParam0->f_29), 8))
 				{
 					return 0;
 				}
 				break;
-			
 			case 4:
 				if (!func_124(&(uParam0->f_29), 16))
 				{
 					return 0;
 				}
 				break;
-			
 			case 8:
 				if (!func_124(&(uParam0->f_29), 32))
 				{
@@ -3674,7 +3562,7 @@ int func_171(int iParam0, bool bParam1, int iParam2, int iParam3)
 int func_172(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = -1337945352;
 	if (!func_179(iParam0))
 	{
@@ -3724,7 +3612,7 @@ void func_173(int iParam0)
 void func_174(var uParam0, var uParam1, var uParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = uParam0;
 	*uParam1 = (iVar0 / 31);
 	*uParam2 = (iVar0 % 31);
@@ -3773,7 +3661,7 @@ bool func_176(int iParam0, int iParam1)
 void func_177(int iParam0, int iParam1)
 {
 	var uVar0;
-	
+
 	uVar0 = Global_1905944[iParam0];
 	MISC::SET_BIT(&uVar0, iParam1);
 	(*Global_1905944)[iParam0] = uVar0;
@@ -3926,7 +3814,7 @@ int func_194(int iParam0)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	iVar1 = NETWORK::GET_CLOUD_TIME_AS_INT();
 	if (!func_176(iParam0, 65536) && !func_176(iParam0, 32768))
 	{
@@ -3988,7 +3876,7 @@ void func_197(int iParam0, int iParam1)
 int func_198(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_112(iParam0);
 	if (iVar0 < 0)
 	{
@@ -4001,7 +3889,7 @@ int func_199(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 >= 32)
 	{
 		return -1;
@@ -4051,7 +3939,7 @@ int func_199(int iParam0, int iParam1)
 void func_200()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < Global_1058888->f_40501)
 	{
@@ -4063,7 +3951,7 @@ int func_201(int iParam0)
 {
 	int iVar0;
 	struct<2> Var1;
-	
+
 	iVar0 = iParam0;
 	while (iVar0 < Global_1058888->f_40501)
 	{
@@ -4090,7 +3978,7 @@ int func_202(int iParam0)
 {
 	int iVar0;
 	struct<2> Var1;
-	
+
 	iVar0 = (Global_1058888->f_40501 - 1);
 	Var1 = -1;
 	while (iVar0 >= iParam0)

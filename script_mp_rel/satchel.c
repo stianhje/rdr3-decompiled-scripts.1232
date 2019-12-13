@@ -27,7 +27,7 @@ void __EntryFunction__()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
@@ -81,7 +81,6 @@ void __EntryFunction__()
 					func_8(1);
 				}
 				break;
-			
 			case 1:
 				if (func_6())
 				{
@@ -99,7 +98,6 @@ void __EntryFunction__()
 				PAD::DISABLE_CONTROL_ACTION(0, -1450761377, false);
 				PAD::DISABLE_CONTROL_ACTION(0, -771458680, false);
 				break;
-			
 			case 2:
 				if (func_6())
 				{
@@ -134,7 +132,7 @@ void func_1()
 var func_2(int iParam0, int iParam1)
 {
 	var uVar0;
-	
+
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &uVar0, true, iParam1, false);
 	return uVar0;
 }
@@ -230,7 +228,7 @@ void func_13(int iParam0)
 int func_14(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -261,23 +259,18 @@ int func_14(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -307,7 +300,7 @@ bool func_16(int iParam0)
 int func_17(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = iParam0;
 	if (iParam1 == 255)
 	{
@@ -332,7 +325,7 @@ bool func_18(var uParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	return MISC::IS_BIT_SET(uParam0[(iParam1 / 31)], (iParam1 % 31));
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);

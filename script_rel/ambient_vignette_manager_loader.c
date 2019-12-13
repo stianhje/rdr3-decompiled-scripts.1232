@@ -16,7 +16,7 @@ void __EntryFunction__()
 	bool bVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 		SCRIPTS::TERMINATE_THIS_THREAD();
@@ -54,7 +54,7 @@ void func_2(int iParam0)
 	vector3 vVar8;
 	vector3 vVar11;
 	var uVar14;
-	
+
 	Var0 = &Global_1415419;
 	Var0.f_1 = (Global_1415419->f_19[iParam0 /*12*/])->f_10;
 	Var0.f_2 = -641542860;
@@ -124,55 +124,38 @@ int func_3(int iParam0)
 	{
 		case 0:
 			return 675537701;
-		
 		case 1:
 			return -1915988145;
-		
 		case 2:
 			return 38535626;
-		
 		case 3:
 			return 1904167574;
-		
 		case 4:
 			return 244711249;
-		
 		case 5:
 			return -1859792564;
-		
 		case 6:
 			return -1808688941;
-		
 		case 7:
 			return -736296038;
-		
 		case 8:
 			return -909439131;
-		
 		case 9:
 			return 1917744724;
-		
 		case 10:
 			return 821748379;
-		
 		case 11:
 			return 196685551;
-		
 		case 12:
 			return 1983548039;
-		
 		case 15:
 			return -1716084250;
-		
 		case 13:
 			return 985737465;
-		
 		case 16:
 			return 869827975;
-		
 		case 14:
 			return -735550853;
-		
 		default:
 			break;
 	}

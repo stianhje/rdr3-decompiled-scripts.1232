@@ -78,7 +78,7 @@ void func_4()
 void func_5()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(2))
 	{
@@ -87,11 +87,9 @@ void func_5()
 			case -45008988:
 				func_9(iVar0);
 				break;
-			
 			case -456923784:
 				func_10(iVar0);
 				break;
-			
 			case -843555838:
 				func_11(iVar0);
 				break;
@@ -120,7 +118,6 @@ void func_6()
 			}
 			iLocal_5 = 1;
 			break;
-		
 		case 1:
 			if (func_15())
 			{
@@ -139,7 +136,6 @@ void func_6()
 				iLocal_5 = 2;
 			}
 			break;
-		
 		case 2:
 			if (func_15())
 			{
@@ -170,7 +166,6 @@ void func_6()
 				return;
 			}
 			break;
-		
 		case 3:
 			if (func_15())
 			{
@@ -187,7 +182,6 @@ void func_6()
 				iLocal_5 = 4;
 			}
 			break;
-		
 		case 4:
 			if (func_23())
 			{
@@ -200,7 +194,6 @@ void func_6()
 				iLocal_5 = 5;
 			}
 			break;
-		
 		case 5:
 			if (!SCRIPTS::IS_THREAD_ACTIVE(((*Global_1425179)[iLocal_10 /*8*/])->f_1, false))
 			{
@@ -208,7 +201,6 @@ void func_6()
 				iLocal_5 = 6;
 			}
 			break;
-		
 		case 6:
 			iLocal_0 = 0;
 			return;
@@ -227,7 +219,7 @@ void func_8()
 void func_9(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -239,7 +231,7 @@ void func_9(int iParam0)
 void func_10(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -251,7 +243,7 @@ void func_10(int iParam0)
 void func_11(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -273,7 +265,7 @@ int func_13()
 int func_14(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 0)
 	{
 		return 0;
@@ -374,23 +366,19 @@ int func_15()
 int func_16(int iParam0)
 {
 	int iVar0;
-	
+
 	switch (iParam0)
 	{
 		case 573563343:
 		case 1340532149:
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(260, 265 + 1);
 			return iVar0;
-		
 		case 2024871051:
 			return 13;
-		
 		case 1015352373:
 			return 12;
-		
 		case 196070706:
 			return 18;
-		
 		case 492051452:
 			return 20;
 	}
@@ -418,7 +406,7 @@ int func_17(int iParam0, int iParam1)
 int func_18()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 2)
 	{
@@ -448,7 +436,7 @@ bool func_20(int iParam0)
 int func_21(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 {
 	int iVar0;
-	
+
 	if (func_31(iParam0))
 	{
 		return -1;
@@ -476,7 +464,7 @@ int func_21(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 int func_22()
 {
 	struct<12> Var0;
-	
+
 	SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(&(Global_1415419->f_19[iLocal_6 /*12*/]));
 	if (SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(&(Global_1415419->f_19[iLocal_6 /*12*/])))
 	{
@@ -597,7 +585,7 @@ bool func_34(var uParam0, int iParam1)
 int func_35(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < Global_1327590->f_19574)
 	{
@@ -618,7 +606,7 @@ int func_36()
 int func_37(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < Global_1327590->f_19547)
 	{
@@ -650,7 +638,7 @@ void func_40(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	int iVar4;
 	int iVar5;
 	int iVar6;
-	
+
 	iVar0 = func_42(*uParam0);
 	iVar1 = func_43(*uParam0);
 	iVar2 = func_44(*uParam0);
@@ -784,13 +772,11 @@ int func_48(int iParam0, int iParam1)
 		case 9:
 		case 11:
 			return 31;
-		
 		case 3:
 		case 5:
 		case 8:
 		case 10:
 			return 30;
-		
 		case 1:
 			if ((iParam1 % 4) == 0)
 			{
@@ -804,7 +790,6 @@ int func_48(int iParam0, int iParam1)
 				}
 			}
 			return 28;
-		
 		default:
 			break;
 	}
@@ -867,7 +852,7 @@ void func_53(var uParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = func_43(*uParam0);
 	iVar1 = func_42(*uParam0);
 	if (iParam1 < 1 || iParam1 > func_48(iVar0, iVar1))

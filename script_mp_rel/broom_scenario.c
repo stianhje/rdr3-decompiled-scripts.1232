@@ -94,7 +94,7 @@ void func_4()
 void func_5()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(2))
 	{
@@ -103,11 +103,9 @@ void func_5()
 			case -45008988:
 				func_9(iVar0);
 				break;
-			
 			case -456923784:
 				func_10(iVar0);
 				break;
-			
 			case -843555838:
 				func_11(iVar0);
 				break;
@@ -120,7 +118,7 @@ void func_6()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	switch (iLocal_18)
 	{
 		case 0:
@@ -153,7 +151,6 @@ void func_6()
 			}
 			iLocal_18 = 1;
 			break;
-		
 		case 1:
 			if (!func_12(Global_35, 0))
 			{
@@ -185,7 +182,6 @@ void func_6()
 				return;
 			}
 			break;
-		
 		case 2:
 			iVar1 = 0;
 			while (iVar1 < 5)
@@ -217,7 +213,6 @@ void func_6()
 			}
 			iLocal_18 = 3;
 			break;
-		
 		case 3:
 			if (func_15())
 			{
@@ -233,7 +228,6 @@ void func_6()
 				iLocal_18 = 4;
 			}
 			break;
-		
 		case 4:
 			if (func_15())
 			{
@@ -258,7 +252,6 @@ void func_6()
 				}
 			}
 			break;
-		
 		case 5:
 			if (func_15())
 			{
@@ -274,7 +267,6 @@ void func_6()
 				iLocal_18 = 6;
 			}
 			break;
-		
 		case 6:
 			if (func_15())
 			{
@@ -299,7 +291,6 @@ void func_6()
 				iLocal_18 = 7;
 			}
 			break;
-		
 		case 7:
 			iLocal_13 = 0;
 			return;
@@ -318,7 +309,7 @@ void func_8()
 void func_9(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_15)
 	{
@@ -330,7 +321,7 @@ void func_9(int iParam0)
 void func_10(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_15)
 	{
@@ -342,7 +333,7 @@ void func_10(int iParam0)
 void func_11(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_15)
 	{
@@ -354,7 +345,7 @@ void func_11(int iParam0)
 int func_12(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 0)
 	{
 		return 0;
@@ -449,7 +440,6 @@ int func_13(int iParam0, int iParam1)
 						func_25(Local_19[2 /*13*/], 1287994422, 5, 10f);
 					}
 					return 1;
-				
 				case 1:
 					fLocal_91 = 10f;
 					if (PED::IS_PED_MALE(iLocal_85))
@@ -465,7 +455,6 @@ int func_13(int iParam0, int iParam1)
 					return 1;
 			}
 			break;
-		
 		case -1101156650:
 			switch (iParam0)
 			{
@@ -476,7 +465,6 @@ int func_13(int iParam0, int iParam1)
 					func_25(Local_19[2 /*13*/], -688785322, 3, 10f);
 					func_25(Local_19[3 /*13*/], -688785322, 3, 10f);
 					return 1;
-				
 				case 1:
 					fLocal_91 = 10f;
 					func_25(Local_19[0 /*13*/], -688785322, 4, 10f);
@@ -660,19 +648,14 @@ char* func_30(int iParam0, int iParam1)
 				{
 					case 0:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@MALE_A@trans@BASE_TRANS_LTURN_90";
-					
 					case 1:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@MALE_A@trans@BASE_TRANS_RTURN_90";
-					
 					case 4:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@MALE_A@trans@BASE_TRANS_RIGHT";
-					
 					case 2:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@MALE_A@trans@BASE_TRANS_BACKRIGHT";
-					
 					case 3:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@MALE_A@trans@BASE_TRANS_FRONTRIGHT";
-					
 					default:
 						break;
 				}
@@ -683,43 +666,32 @@ char* func_30(int iParam0, int iParam1)
 				{
 					case 0:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@female_b@trans@BASE_TRANS_LTURN_90";
-					
 					case 1:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@female_b@trans@BASE_TRANS_RTURN_90";
-					
 					case 5:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@female_b@trans@BASE_TRANS_LEFT";
-					
 					case 6:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@female_b@trans@BASE_TRANS_BACKLEFT";
-					
 					case 7:
 						return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@female_b@trans@BASE_TRANS_FRONTLEFT";
-					
 					default:
 						break;
 				}
 			}
 			break;
-		
 		case -688785322:
 			switch (iParam1)
 			{
 				case 0:
 					return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@male_b@trans@BASE_TRANS_LTURN_90";
-				
 				case 1:
 					return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@male_b@trans@BASE_TRANS_RTURN_90";
-				
 				case 4:
 					return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@male_b@trans@BASE_TRANS_RIGHT";
-				
 				case 2:
 					return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@male_b@trans@BASE_TRANS_BACKRIGHT";
-				
 				case 3:
 					return "AMB_WORK@WORLD_HUMAN_BROOM@WORKING@male_b@trans@BASE_TRANS_FRONTRIGHT";
-				
 				default:
 					break;
 			}
@@ -738,28 +710,20 @@ char* func_31(int iParam0, int iParam1)
 			{
 				case 0:
 					return "BASE_TRANS_LTURN_90";
-				
 				case 1:
 					return "BASE_TRANS_RTURN_90";
-				
 				case 4:
 					return "BASE_TRANS_RIGHT";
-				
 				case 2:
 					return "BASE_TRANS_BACKRIGHT";
-				
 				case 3:
 					return "BASE_TRANS_FRONTRIGHT";
-				
 				case 5:
 					return "BASE_TRANS_LEFT";
-				
 				case 6:
 					return "BASE_TRANS_BACKLEFT";
-				
 				case 7:
 					return "BASE_TRANS_FRONTLEFT";
-				
 				default:
 					break;
 			}
@@ -778,28 +742,20 @@ Vector3 func_32(int iParam0, int iParam1)
 			{
 				case 0:
 					return 0f, 0f, 0f;
-				
 				case 1:
 					return 0f, 0f, 0f;
-				
 				case 4:
 					return 0.53823f, 0f, 0f;
-				
 				case 2:
 					return 0.380574f, -0.380598f, 0f;
-				
 				case 3:
 					return 0.380598f, 0.380574f, 0f;
-				
 				case 5:
 					return -0.53823f, 0f, 0f;
-				
 				case 6:
 					return -0.380574f, -0.380598f, 0f;
-				
 				case 7:
 					return -0.380598f, 0.380574f, 0f;
-				
 				default:
 					break;
 			}
@@ -818,28 +774,20 @@ float func_33(int iParam0, int iParam1)
 			{
 				case 0:
 					return 90f;
-				
 				case 1:
 					return -90f;
-				
 				case 4:
 					return 0f;
-				
 				case 2:
 					return 0f;
-				
 				case 3:
 					return 0f;
-				
 				case 5:
 					return 0f;
-				
 				case 6:
 					return 0f;
-				
 				case 7:
 					return 0f;
-				
 				default:
 					break;
 			}
@@ -864,7 +812,7 @@ bool func_35(var uParam0)
 float func_36()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();

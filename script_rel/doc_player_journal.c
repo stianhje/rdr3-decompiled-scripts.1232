@@ -692,7 +692,7 @@
 void __EntryFunction__()
 {
 	int iVar0;
-	
+
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
@@ -736,7 +736,7 @@ void __EntryFunction__()
 void func_1()
 {
 	int iVar0;
-	
+
 	HUD::_0x8BC7C1F929D07BF3(382897689);
 	Global_1357517 = 0;
 	if (UIAPPS::_IS_APP_RUNNING(-605293197))
@@ -792,7 +792,7 @@ void func_4()
 void func_5(bool bParam0)
 {
 	int iVar0;
-	
+
 	if (func_14(Global_35))
 	{
 		iVar0 = func_15(7);
@@ -814,7 +814,7 @@ int func_6()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = PLAYER::PLAYER_PED_ID();
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -850,7 +850,7 @@ int func_7(var uParam0)
 	struct<2> Var1;
 	var uVar7;
 	int iVar8;
-	
+
 	if (SCRIPTS::_0x9E4EF615E307FBBE())
 	{
 		return 0;
@@ -867,7 +867,6 @@ int func_7(var uParam0)
 		case 15:
 		case 16:
 			break;
-		
 		default:
 			PAD::_0x2804658EB7D8A50B(4, 652262273);
 			if (PAD::_IS_INPUT_DISABLED(0))
@@ -918,7 +917,6 @@ int func_7(var uParam0)
 			func_24();
 			AUDIO::_0x6339C1EA3979B5F7("journal_closeup", "journal_scenes");
 			break;
-		
 		case 1:
 			if (func_25(uParam0))
 			{
@@ -933,7 +931,6 @@ int func_7(var uParam0)
 				}
 			}
 			break;
-		
 		case 2:
 			if (func_28(&(uParam0->f_32.f_25), &(uParam0->f_32.f_86), &(uParam0->f_32.f_92)) && func_29())
 			{
@@ -942,7 +939,6 @@ int func_7(var uParam0)
 				func_20(uParam0, 3);
 			}
 			break;
-		
 		case 3:
 			if (uParam0->f_7 == 1)
 			{
@@ -1094,7 +1090,6 @@ int func_7(var uParam0)
 				func_38(0, uParam0);
 			}
 			break;
-		
 		case 12:
 			iVar8 = TASK::_0x6AA3DCA2C6F5EB6D(Global_35);
 			if (!func_42(&(uParam0->f_8)))
@@ -1120,21 +1115,18 @@ int func_7(var uParam0)
 				}
 			}
 			break;
-		
 		case 13:
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1308691423))
 			{
 				func_20(uParam0, 7);
 			}
 			break;
-		
 		case 14:
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 251766646))
 			{
 				func_20(uParam0, 6);
 			}
 			break;
-		
 		case 4:
 			if (func_28(&(uParam0->f_32.f_25), &(uParam0->f_32.f_86), &(uParam0->f_32.f_92)))
 			{
@@ -1142,7 +1134,6 @@ int func_7(var uParam0)
 				func_20(uParam0, 8);
 			}
 			break;
-		
 		case 5:
 			if (func_28(&(uParam0->f_32.f_25), &(uParam0->f_32.f_86), &(uParam0->f_32.f_92)))
 			{
@@ -1150,7 +1141,6 @@ int func_7(var uParam0)
 				func_20(uParam0, 9);
 			}
 			break;
-		
 		case 6:
 			if (func_28(&(uParam0->f_32.f_25), &(uParam0->f_32.f_86), &(uParam0->f_32.f_92)))
 			{
@@ -1158,7 +1148,6 @@ int func_7(var uParam0)
 				func_20(uParam0, 8);
 			}
 			break;
-		
 		case 7:
 			if (func_28(&(uParam0->f_32.f_25), &(uParam0->f_32.f_86), &(uParam0->f_32.f_92)))
 			{
@@ -1166,7 +1155,6 @@ int func_7(var uParam0)
 				func_20(uParam0, 9);
 			}
 			break;
-		
 		case 8:
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -917343754))
 			{
@@ -1174,7 +1162,6 @@ int func_7(var uParam0)
 				func_20(uParam0, 3);
 			}
 			break;
-		
 		case 9:
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -917343754))
 			{
@@ -1183,7 +1170,6 @@ int func_7(var uParam0)
 				func_20(uParam0, 3);
 			}
 			break;
-		
 		case 10:
 			func_17(uParam0);
 			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-605293197, -1339393873) == 0)
@@ -1192,7 +1178,6 @@ int func_7(var uParam0)
 				func_20(uParam0, 11);
 			}
 			break;
-		
 		case 11:
 			func_17(uParam0);
 			if (!UIAPPS::_IS_APP_RUNNING(-605293197))
@@ -1201,13 +1186,11 @@ int func_7(var uParam0)
 				func_20(uParam0, 3);
 			}
 			break;
-		
 		case 15:
 			if (func_46(Global_35, 0) || !TASK::_0xEC7E480FF8BD0BED(Global_35))
 			{
 				func_20(uParam0, 16);
 			}
-		
 		case 16:
 			return 0;
 	}
@@ -1338,7 +1321,7 @@ int func_22(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 	int iVar20;
 	int iVar21;
 	int iVar22;
-	
+
 	iVar1 = 0;
 	iVar18 = 0;
 	iVar19 = 0;
@@ -1477,7 +1460,7 @@ void func_23(var uParam0, int iParam1, int iParam2)
 	vector3 vVar1;
 	int iVar7;
 	int iVar8;
-	
+
 	iVar0 = HUD::_JOURNAL_GET_ENTRY_AT_INDEX(iParam1);
 	HUD::_JOURNAL_GET_ENTRY_INFO(iVar0, &vVar1);
 	if (func_54(vVar1.z))
@@ -1540,7 +1523,7 @@ void func_24()
 int func_25(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 1;
 	if (!func_65(&(uParam0->f_32)))
 	{
@@ -1562,7 +1545,7 @@ int func_25(var uParam0)
 int func_26(int iParam0, int iParam1, bool bParam2, bool bParam3)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
@@ -1583,7 +1566,7 @@ int func_28(var uParam0, var uParam1, var uParam2)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
@@ -1716,7 +1699,7 @@ int func_29()
 void func_30(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, int iParam5)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	if (&uParam0->f_25[0 /*6*/] == -1)
 	{
@@ -1789,7 +1772,7 @@ void func_34(bool bParam0, var uParam1)
 bool func_35(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam1 && !func_33(iParam0))
 	{
 		return false;
@@ -1860,7 +1843,7 @@ void func_38(bool bParam0, var uParam1)
 void func_39(int iParam0, var uParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 1)
 	{
 		if (uParam1->f_88 == 0)
@@ -1903,7 +1886,7 @@ void func_39(int iParam0, var uParam1)
 void func_40(int iParam0, var uParam1)
 {
 	int iVar0;
-	
+
 	if (func_83(uParam1->f_32.f_86))
 	{
 		if (iParam0 == 1)
@@ -2005,7 +1988,7 @@ int func_47()
 void func_48(var uParam0, int iParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (iParam1 && !func_33(*uParam0))
 	{
 		*uParam0 = 0;
@@ -2078,7 +2061,7 @@ int func_54(int iParam0)
 int func_55(var uParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (uParam0->f_5 == 2)
 	{
 		if (func_57(uParam0->f_2))
@@ -2139,7 +2122,7 @@ int func_55(var uParam0, int iParam1)
 void func_56(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	*iParam0++;
 	*iParam1 = 0;
 	iVar0 = 0;
@@ -2202,7 +2185,7 @@ int func_59(var uParam0, int iParam1)
 	int iVar1;
 	int iVar2;
 	vector3 vVar3;
-	
+
 	iVar1 = -1;
 	iVar0 = 0;
 	while (iVar0 < 4)
@@ -2230,7 +2213,7 @@ int func_59(var uParam0, int iParam1)
 void func_60(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
@@ -2243,7 +2226,7 @@ void func_61(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 17)
 	{
@@ -2303,7 +2286,7 @@ void func_63(var uParam0, int iParam1, int iParam2, var uParam3, int iParam4, va
 	int iVar29;
 	int iVar30;
 	int iVar31;
-	
+
 	iVar2 = 0;
 	iVar25 = 0;
 	iVar26 = 0;
@@ -2455,7 +2438,7 @@ void func_64(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	iVar1 = 0;
 	iVar0 = 0;
@@ -2493,7 +2476,7 @@ void func_67(var uParam0, var uParam1)
 	int iVar2;
 	char cVar3[64];
 	var uVar11;
-	
+
 	uVar0 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1, "RtPagesTop");
 	func_98(uParam0, uVar0);
 	uVar1 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1, "RtPagesBottom");
@@ -2551,7 +2534,7 @@ int func_72(int iParam0, var uParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 7)
 	{
@@ -2636,7 +2619,7 @@ void func_74(var uParam0, var uParam1, int iParam2, var uParam3, var uParam4, va
 	int iVar38;
 	int iVar39;
 	int iVar40;
-	
+
 	iVar25 = 1;
 	iVar36 = -1;
 	iVar37 = 0;
@@ -2829,7 +2812,7 @@ void func_75(var uParam0, float fParam1)
 void func_76(int iParam0, bool bParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (iParam2 && !func_33(iParam0))
 	{
 		return;
@@ -2857,7 +2840,7 @@ int func_78(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, b
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (MISC::IS_STRING_NULL_OR_EMPTY(sParam0))
 	{
 		return 0;
@@ -2906,7 +2889,7 @@ int func_78(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, b
 void func_79(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
-	
+
 	if (iParam3 && !func_33(iParam0))
 	{
 		return;
@@ -2922,7 +2905,7 @@ void func_79(int iParam0, int iParam1, int iParam2, int iParam3)
 void func_80(var uParam0, var uParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
@@ -2936,7 +2919,7 @@ void func_81(var uParam0, var uParam1, int iParam2)
 	var uVar0[4];
 	int iVar5;
 	int iVar6;
-	
+
 	iVar5 = func_59(uParam0, iParam2);
 	func_117(iVar5 + 1, &uVar0, iParam2);
 	iVar6 = 0;
@@ -2951,7 +2934,7 @@ void func_82(var uParam0, var uParam1, var uParam2, int iParam3)
 {
 	var uVar0[4];
 	int iVar5;
-	
+
 	func_118((uParam0[0 /*6*/] - 1), &uVar0, uParam2, iParam3);
 	iVar5 = 0;
 	while (iVar5 < 4)
@@ -2966,7 +2949,7 @@ int func_83(int iParam0)
 	int iVar0;
 	vector3 vVar1;
 	int iVar7;
-	
+
 	iVar7 = HUD::_JOURNAL_GET_ENTRY_COUNT();
 	if (iParam0 < iVar7)
 	{
@@ -2983,7 +2966,7 @@ int func_83(int iParam0)
 void func_84(int iParam0, var uParam1)
 {
 	char* sVar0;
-	
+
 	if (!func_33(uParam1->f_4))
 	{
 		if (iParam0 == 1)
@@ -3021,7 +3004,7 @@ bool func_86(var uParam0)
 float func_87()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -3061,7 +3044,7 @@ bool func_89(var uParam0, var uParam1)
 void func_90(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
@@ -3086,7 +3069,7 @@ void func_92(int iParam0, var uParam1, int iParam2)
 {
 	var uVar0[4];
 	int iVar5;
-	
+
 	func_117(iParam0, &uVar0, iParam2);
 	iVar5 = 0;
 	while (iVar5 < 4)
@@ -3100,7 +3083,7 @@ void func_93(var uParam0)
 {
 	int iVar0;
 	int iVar7;
-	
+
 	iVar7 = 0;
 	while (iVar7 < 17)
 	{
@@ -3150,7 +3133,7 @@ int func_94(int iParam0)
 void func_95(int iParam0, var uParam1, int iParam2, var uParam3)
 {
 	int iVar0;
-	
+
 	iVar0 = func_120(iParam0, iParam2);
 	if (iVar0 != 4)
 	{
@@ -3163,7 +3146,7 @@ void func_95(int iParam0, var uParam1, int iParam2, var uParam3)
 void func_96(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
@@ -3209,7 +3192,7 @@ void func_98(var uParam0, var uParam1)
 	int iVar7;
 	var uVar8;
 	var uVar9;
-	
+
 	iVar6 = 0;
 	while (iVar6 < 20)
 	{
@@ -3329,7 +3312,7 @@ int func_105(int iParam0)
 void func_106(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 5)
 	{
@@ -3571,7 +3554,7 @@ bool func_115(int iParam0, int iParam1)
 void func_116(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5, vector3 vParam6, float fParam9, int iParam10, int iParam11, int iParam12, var uParam13, int iParam14, int iParam15, int iParam16, int iParam17, int iParam18, int iParam19, int iParam20, int iParam21, bool bParam22, int iParam23, int iParam24, bool bParam25)
 {
 	int iVar0;
-	
+
 	((*Global_1945938)[iParam0 /*18*/])->f_4 = iParam1;
 	(*Global_1945938)[iParam0 /*18*/] = iParam4;
 	((*Global_1945938)[iParam0 /*18*/])->f_16 = SCRIPTS::GET_ID_OF_THIS_THREAD();
@@ -3618,19 +3601,15 @@ void func_116(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 		case 0:
 			HUD::_UIPROMPT_SET_STANDARD_MODE(iVar0, 0);
 			break;
-		
 		case 2:
 			HUD::_UIPROMPT_SET_STANDARD_MODE(iVar0, 1);
 			break;
-		
 		case 1:
 			HUD::_UIPROMPT_SET_PRESSED_TIMED_MODE(iVar0, iParam16);
 			break;
-		
 		case 3:
 			HUD::_UIPROMPT_SET_HOLD_INDEFINITELY_MODE(iVar0);
 			break;
-		
 		case 6:
 			HUD::_UIPROMPT_SET_HOLD_AUTO_FILL_MODE(iVar0, iParam16, iParam15);
 			if (bParam25)
@@ -3638,44 +3617,34 @@ void func_116(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 				HUD::_UIPROMPT_SET_ATTRIBUTE(iVar0, 24, 1);
 			}
 			break;
-		
 		case 7:
 			HUD::_UIPROMPT_SET_MASH_MODE(iVar0, iParam17);
 			break;
-		
 		case 8:
 			HUD::_UIPROMPT_SET_MASH_AUTO_FILL_MODE(iVar0, iParam16, iParam17);
 			break;
-		
 		case 13:
 			HUD::_UIPROMPT_SET_MASH_INDEFINITELY_MODE(iVar0);
 			break;
-		
 		case 15:
 			HUD::_UIPROMPT_SET_TARGET_MODE(iVar0, 0.5f, 0.1f, 0);
 			break;
-		
 		case 9:
 			HUD::_UIPROMPT_SET_MASH_WITH_RESISTANCE_MODE(iVar0, iParam17, iParam18, iParam19);
 			break;
-		
 		case 4:
 		case 5:
 			HUD::_UIPROMPT_SET_STANDARDIZED_HOLD_MODE(iVar0, iParam24);
 			break;
-		
 		case 10:
 			HUD::_UIPROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE(iVar0, iParam17, iParam18, iParam19);
 			break;
-		
 		case 11:
 			HUD::_UIPROMPT_SET_MASH_MANUAL_MODE(iVar0, (1f / BUILTIN::TO_FLOAT(iParam17)), iParam18, 0f, iParam19);
 			break;
-		
 		case 12:
 			HUD::_UIPROMPT_SET_MASH_MANUAL_CAN_FAIL_MODE(iVar0, (1f / BUILTIN::TO_FLOAT(iParam17)), iParam18, 0f, iParam19);
 			break;
-		
 		case 14:
 			HUD::_UIPROMPT_SET_ROTATE_MODE(iVar0, iParam20, iParam21);
 			HUD::_UIPROMPT_SET_ATTRIBUTE(iVar0, 10, 1);
@@ -3698,7 +3667,7 @@ void func_117(int iParam0, var uParam1, int iParam2)
 	int iVar14;
 	int iVar15;
 	int iVar16;
-	
+
 	iVar16 = 0;
 	iVar0 = 0;
 	while (iVar0 < 4)
@@ -3759,7 +3728,7 @@ void func_118(int iParam0, var uParam1, var uParam2, int iParam3)
 	int iVar17;
 	int iVar18;
 	int iVar19;
-	
+
 	iVar19 = 0;
 	iVar0 = 0;
 	while (iVar0 < 4)
@@ -3871,7 +3840,7 @@ void func_121(int iParam0, var uParam1, var uParam2)
 	int iVar0;
 	var uVar1;
 	int iVar7;
-	
+
 	iVar0 = func_125(iParam0);
 	iVar7 = HUD::_JOURNAL_GET_GRIME_AT_INDEX(iVar0);
 	HUD::_JOURNAL_GET_ENTRY_INFO(iVar7, &uVar1);
@@ -3897,7 +3866,7 @@ void func_123(var uParam0, var uParam1, int iParam2)
 	int iVar0;
 	vector3 vVar1[24];
 	var uVar4;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 5)
 	{
@@ -4039,7 +4008,7 @@ void func_128(int iParam0, int iParam1, int iParam2, var uParam3, var uParam4)
 {
 	float fVar0;
 	float fVar1;
-	
+
 	while (iParam0 > 27)
 	{
 		iParam0 = (iParam0 - 28);
@@ -4194,7 +4163,7 @@ void func_129(var uParam0, var uParam1, int iParam2, int iParam3)
 	int iVar1;
 	float fVar2;
 	float fVar3;
-	
+
 	*uParam0 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam1, "Visible", 0);
 	uParam0->f_1 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1, "Txd", 0);
 	if (iParam2 == 1)

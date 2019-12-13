@@ -27,7 +27,7 @@ void __EntryFunction__()
 	struct<152> Var0;
 	int iVar152;
 	int iVar153;
-	
+
 	fLocal_12 = 1f;
 	fLocal_13 = 1f;
 	Var0.f_5.f_2 = 12;
@@ -234,7 +234,7 @@ void func_9(var uParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uLocal_15))
 	{
 		DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uLocal_15);
@@ -256,7 +256,6 @@ void func_9(var uParam0)
 					func_12(&(uParam0->f_5), iVar2, 1, 1, 0);
 					iVar2++;
 					break;
-				
 				case -641080715:
 					func_12(&(uParam0->f_5), iVar2, 3, 1, 0);
 					iVar2++;
@@ -276,7 +275,7 @@ bool func_10(int iParam0)
 void func_11(var uParam0)
 {
 	int iVar0;
-	
+
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_5.f_63))
 	{
 		DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uParam0->f_5.f_63);
@@ -305,7 +304,7 @@ void func_11(var uParam0)
 void func_12(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 {
 	vector3 vVar0[24];
-	
+
 	if (iParam1 >= 24)
 	{
 		return;

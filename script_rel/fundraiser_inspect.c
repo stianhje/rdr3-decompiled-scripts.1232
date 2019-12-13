@@ -50,7 +50,6 @@ int func_1(struct<2> Param0, var uParam2)
 				iLocal_10 = 1;
 			}
 			break;
-		
 		case 1:
 			if (!iLocal_2)
 			{
@@ -107,7 +106,7 @@ int func_3(char* sParam0, int iParam1, vector3 vParam2, float fParam5, int iPara
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (MISC::IS_STRING_NULL_OR_EMPTY(sParam0))
 	{
 		return 0;
@@ -152,7 +151,7 @@ int func_3(char* sParam0, int iParam1, vector3 vParam2, float fParam5, int iPara
 bool func_4(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam1 && !func_17(iParam0))
 	{
 		return false;
@@ -168,7 +167,7 @@ bool func_4(int iParam0, int iParam1)
 int func_5(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = func_19(iParam0, iParam1);
 	if (iVar0 != -1)
 	{
@@ -185,7 +184,7 @@ void func_6(var uParam0)
 void func_7(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = func_21(iParam0, iParam1);
 	(Global_17503.f_1003[iVar0 /*6*/])->f_1 = iParam2;
 }
@@ -221,7 +220,7 @@ int func_10(var uParam0, float fParam1)
 var func_11(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
-	
+
 	Var0.f_5 = 1;
 	Var0.f_6 = 1;
 	Var0 = sParam1;
@@ -279,7 +278,7 @@ int func_15(vector3 vParam0, vector3 vParam3, float fParam6, bool bParam7)
 void func_16(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5, vector3 vParam6, float fParam9, int iParam10, int iParam11, int iParam12, var uParam13, int iParam14, int iParam15, int iParam16, int iParam17, int iParam18, int iParam19, int iParam20, int iParam21, bool bParam22, int iParam23, int iParam24, bool bParam25)
 {
 	int iVar0;
-	
+
 	((*Global_1945938)[iParam0 /*18*/])->f_4 = iParam1;
 	(*Global_1945938)[iParam0 /*18*/] = iParam4;
 	((*Global_1945938)[iParam0 /*18*/])->f_16 = SCRIPTS::GET_ID_OF_THIS_THREAD();
@@ -326,19 +325,15 @@ void func_16(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 		case 0:
 			HUD::_UIPROMPT_SET_STANDARD_MODE(iVar0, 0);
 			break;
-		
 		case 2:
 			HUD::_UIPROMPT_SET_STANDARD_MODE(iVar0, 1);
 			break;
-		
 		case 1:
 			HUD::_UIPROMPT_SET_PRESSED_TIMED_MODE(iVar0, iParam16);
 			break;
-		
 		case 3:
 			HUD::_UIPROMPT_SET_HOLD_INDEFINITELY_MODE(iVar0);
 			break;
-		
 		case 6:
 			HUD::_UIPROMPT_SET_HOLD_AUTO_FILL_MODE(iVar0, iParam16, iParam15);
 			if (bParam25)
@@ -346,44 +341,34 @@ void func_16(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 				HUD::_UIPROMPT_SET_ATTRIBUTE(iVar0, 24, 1);
 			}
 			break;
-		
 		case 7:
 			HUD::_UIPROMPT_SET_MASH_MODE(iVar0, iParam17);
 			break;
-		
 		case 8:
 			HUD::_UIPROMPT_SET_MASH_AUTO_FILL_MODE(iVar0, iParam16, iParam17);
 			break;
-		
 		case 13:
 			HUD::_UIPROMPT_SET_MASH_INDEFINITELY_MODE(iVar0);
 			break;
-		
 		case 15:
 			HUD::_UIPROMPT_SET_TARGET_MODE(iVar0, 0.5f, 0.1f, 0);
 			break;
-		
 		case 9:
 			HUD::_UIPROMPT_SET_MASH_WITH_RESISTANCE_MODE(iVar0, iParam17, iParam18, iParam19);
 			break;
-		
 		case 4:
 		case 5:
 			HUD::_UIPROMPT_SET_STANDARDIZED_HOLD_MODE(iVar0, iParam24);
 			break;
-		
 		case 10:
 			HUD::_UIPROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE(iVar0, iParam17, iParam18, iParam19);
 			break;
-		
 		case 11:
 			HUD::_UIPROMPT_SET_MASH_MANUAL_MODE(iVar0, (1f / BUILTIN::TO_FLOAT(iParam17)), iParam18, 0f, iParam19);
 			break;
-		
 		case 12:
 			HUD::_UIPROMPT_SET_MASH_MANUAL_CAN_FAIL_MODE(iVar0, (1f / BUILTIN::TO_FLOAT(iParam17)), iParam18, 0f, iParam19);
 			break;
-		
 		case 14:
 			HUD::_UIPROMPT_SET_ROTATE_MODE(iVar0, iParam20, iParam21);
 			HUD::_UIPROMPT_SET_ATTRIBUTE(iVar0, 10, 1);
@@ -422,7 +407,7 @@ int func_19(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar1 = func_29(iParam0, iParam1);
 	iVar0 = 0;
 	while (iVar0 < Global_17503.f_1003)
@@ -448,7 +433,7 @@ int func_21(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar1 = func_29(iParam0, iParam1);
 	iVar0 = 0;
 	while (iVar0 < Global_17503.f_1003)
@@ -537,7 +522,7 @@ int func_29(int iParam0, int iParam1)
 float func_30()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();

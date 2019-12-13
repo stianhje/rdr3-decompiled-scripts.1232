@@ -17,7 +17,7 @@ void __EntryFunction__()
 	int iVar15;
 	int iVar16;
 	int iVar17;
-	
+
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
 		func_1();
@@ -74,7 +74,7 @@ int func_2()
 int func_3()
 {
 	int iVar0;
-	
+
 	if (iLocal_1)
 	{
 		return 1;
@@ -101,7 +101,7 @@ Vector3 func_4(vector3 vParam0)
 {
 	float fVar0;
 	float fVar1;
-	
+
 	fVar0 = BUILTIN::VMAG(vParam0);
 	if (fVar0 != 0f)
 	{
@@ -148,7 +148,7 @@ float func_8(float fParam0, float fParam1, float fParam2)
 int func_9()
 {
 	int iVar0;
-	
+
 	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 0, false) && iVar0 == 827679807)
 	{
 		return 1;

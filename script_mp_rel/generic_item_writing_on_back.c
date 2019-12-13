@@ -34,7 +34,7 @@ void __EntryFunction__()
 	struct<126> Var0;
 	int iVar126;
 	int iVar127;
-	
+
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
@@ -195,7 +195,7 @@ void func_5(var uParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(iLocal_22))
 	{
 		DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(iLocal_22);
@@ -217,7 +217,6 @@ void func_5(var uParam0)
 					func_11(&(uParam0->f_5), iVar2, 1, 1, 0);
 					iVar2++;
 					break;
-				
 				case -641080715:
 					func_11(&(uParam0->f_5), iVar2, 3, 1, 0);
 					iVar2++;
@@ -254,7 +253,7 @@ int func_7(int iParam0, int iParam1)
 int func_8(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -285,23 +284,18 @@ int func_8(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -326,7 +320,7 @@ bool func_9()
 void func_10(var uParam0)
 {
 	int iVar0;
-	
+
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_5.f_63))
 	{
 		DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uParam0->f_5.f_63);
@@ -355,7 +349,7 @@ void func_10(var uParam0)
 void func_11(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 {
 	char cVar0[16];
-	
+
 	if (iParam1 >= 11)
 	{
 		return;

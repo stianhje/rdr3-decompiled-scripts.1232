@@ -23,7 +23,7 @@ void __EntryFunction__()
 struct<4> func_1()
 {
 	struct<4> Var0;
-	
+
 	return Var0;
 }
 

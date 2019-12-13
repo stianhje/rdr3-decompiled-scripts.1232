@@ -65,7 +65,6 @@ void __EntryFunction__()
 				HUD::SET_FRONTEND_ACTIVE(false);
 			}
 			break;
-		
 		default:
 			break;
 	}
@@ -134,7 +133,7 @@ void func_7()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = Global_1572887->f_387.f_1;
 	iVar1 = 0;
 	iVar1 = 0;

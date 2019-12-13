@@ -140,7 +140,7 @@
 void __EntryFunction__()
 {
 	bool bVar0;
-	
+
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	func_1(-1);
@@ -176,7 +176,7 @@ int func_2()
 int func_3(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_11)
 	{
 		return 0;
@@ -207,23 +207,18 @@ int func_3(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -248,23 +243,18 @@ int func_4(bool bParam0)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -281,18 +271,15 @@ void func_5(int iParam0, var uParam1)
 			((*uParam1)[0 /*12*/])->f_1.f_1 = 1;
 			func_7(iParam0, 1);
 			break;
-		
 		case 1:
 			func_7(iParam0, 2);
 			break;
-		
 		case 2:
 			if (iParam0->f_4)
 			{
 				func_7(iParam0, 3);
 			}
 			break;
-		
 		case 3:
 			break;
 	}

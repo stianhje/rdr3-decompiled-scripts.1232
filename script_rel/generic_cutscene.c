@@ -8,7 +8,7 @@ void __EntryFunction__()
 	bool bVar0;
 	bool bVar1;
 	struct<629> Var2;
-	
+
 	iLocal_0 = 1;
 	bVar0 = false;
 	bVar1 = false;
@@ -66,7 +66,7 @@ void func_1()
 int func_2(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_11)
 	{
 		return 0;
@@ -97,23 +97,18 @@ int func_2(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -203,7 +198,6 @@ int func_6(var uParam0)
 		case 0:
 			func_15(uParam0);
 			break;
-		
 		case 1:
 			if (!func_16(uParam0))
 			{
@@ -217,7 +211,6 @@ int func_6(var uParam0)
 				func_22(uParam0);
 			}
 			break;
-		
 		case 2:
 			if (!func_16(uParam0))
 			{
@@ -231,7 +224,6 @@ int func_6(var uParam0)
 				func_22(uParam0);
 			}
 			break;
-		
 		case 3:
 			if (!func_16(uParam0))
 			{
@@ -245,7 +237,6 @@ int func_6(var uParam0)
 				func_22(uParam0);
 			}
 			break;
-		
 		case 4:
 			if (!func_16(uParam0))
 			{
@@ -259,7 +250,6 @@ int func_6(var uParam0)
 				func_22(uParam0);
 			}
 			break;
-		
 		case 5:
 			return 1;
 	}
@@ -269,7 +259,7 @@ int func_6(var uParam0)
 void func_7(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 < 5)
@@ -309,7 +299,7 @@ void func_7(int iParam0)
 int func_8(int iParam0)
 {
 	int iVar0;
-	
+
 	if (iParam0 <= 0)
 	{
 		return -1;
@@ -351,7 +341,7 @@ void func_9(var uParam0, bool bParam1)
 void func_10(var uParam0)
 {
 	struct<6> Var0;
-	
+
 	*uParam0 = { Var0 };
 }
 
@@ -463,7 +453,7 @@ void func_23(var uParam0)
 void func_24(var uParam0)
 {
 	bool bVar0;
-	
+
 	if (!uParam0->f_602)
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
@@ -534,7 +524,7 @@ void func_24(var uParam0)
 void func_25(var uParam0)
 {
 	int iVar0;
-	
+
 	uParam0->f_267 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, *(uParam0->f_267.f_4[uParam0->f_603 /*26*/]), (uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_3, 51.2f, true, 2);
 	uParam0->f_267.f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, (uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_6, (uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_9, 51.2f, func_37((uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_25, 1), 2);
 	if (PED::IS_PED_ON_MOUNT(Global_1225638->f_8))
@@ -698,7 +688,7 @@ void func_38(int iParam0)
 void func_39(var uParam0)
 {
 	int iVar0;
-	
+
 	uParam0->f_1 = *uParam0;
 	MISC::SET_BIT(&(uParam0->f_3), uParam0->f_1);
 	MISC::CLEAR_BIT(&(uParam0->f_2), uParam0->f_1);
@@ -736,7 +726,7 @@ int func_42(var uParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = func_59();
 	iVar1 = 0;
 	iVar1 = 0;
@@ -795,7 +785,7 @@ int func_44(var uParam0)
 	vector3 vVar3;
 	vector3 vVar6;
 	int iVar9;
-	
+
 	iVar0 = 0;
 	bVar1 = true;
 	bVar2 = true;
@@ -901,7 +891,7 @@ int func_45(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	iVar1 = func_59();
 	iVar0 = 0;
@@ -984,7 +974,7 @@ int func_48(var uParam0)
 	var uVar3[2];
 	int iVar6;
 	int iVar7;
-	
+
 	iVar0 = uParam0->f_603;
 	bVar1 = false;
 	if (iVar0 + 1 == uParam0->f_604)
@@ -1081,7 +1071,7 @@ void func_49(var uParam0)
 {
 	int iVar0;
 	float fVar1;
-	
+
 	if (uParam0->f_614 == 0)
 	{
 		return;
@@ -1122,7 +1112,6 @@ void func_49(var uParam0)
 			TASK::TASK_DISMOUNT_ANIMAL(Global_1225638->f_8, 16, 0, 0, 0, 0);
 			uParam0->f_614 = 2;
 			break;
-		
 		case 2:
 			iVar0 = TASK::GET_SCRIPT_TASK_STATUS(Global_1225638->f_8, 501393341, 0);
 			if (iVar0 == 1)
@@ -1136,7 +1125,6 @@ void func_49(var uParam0)
 			}
 			uParam0->f_614 = 3;
 			break;
-		
 		case 3:
 			if (TASK::_0x9FF5F9B24E870748(uParam0->f_613))
 			{
@@ -1145,7 +1133,6 @@ void func_49(var uParam0)
 			TASK::TASK_GO_STRAIGHT_TO_COORD(uParam0->f_613, uParam0->f_615, 1.5f, 20000, 40000f, 1056964608, 0);
 			uParam0->f_614 = 4;
 			break;
-		
 		case 4:
 			iVar0 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_613, 2106541073, 0);
 			if (iVar0 != 8)
@@ -1154,7 +1141,6 @@ void func_49(var uParam0)
 			}
 			uParam0->f_614 = 5;
 			break;
-		
 		case 5:
 			fVar1 = func_70(uParam0->f_613, uParam0->f_615, 1);
 			if (fVar1 > 1f)
@@ -1171,7 +1157,7 @@ void func_50()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 32)
 	{
@@ -1216,14 +1202,14 @@ bool func_54(int iParam0)
 int func_55(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	var uVar0;
-	
+
 	return func_72(iParam0, &uVar0, iParam1, iParam2, iParam3);
 }
 
 void func_56(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 < 2)
@@ -1246,7 +1232,7 @@ void func_56(var uParam0)
 void func_57(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 < 1)
@@ -1272,7 +1258,7 @@ void func_57(var uParam0)
 void func_58(int iParam0, var uParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 <= 0)
 	{
 		return;
@@ -1302,7 +1288,7 @@ int func_59()
 void func_60(vector3 vParam0, float fParam3, bool bParam4)
 {
 	int iVar0;
-	
+
 	iVar0 = 16384;
 	if (bParam4)
 	{
@@ -1314,7 +1300,7 @@ void func_60(vector3 vParam0, float fParam3, bool bParam4)
 void func_61(int iParam0, bool bParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (iParam2 && !func_74(iParam0))
 	{
 		return;
@@ -1336,7 +1322,7 @@ void func_61(int iParam0, bool bParam1, int iParam2)
 void func_62(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (iParam2 && !func_74(iParam0))
 	{
 		return;
@@ -1350,7 +1336,7 @@ void func_63()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar1 = 1;
 	iVar0 = 0;
 	while (iVar0 < 32)
@@ -1386,35 +1372,25 @@ int func_64(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-		
 		default:
 			return 0;
 			return 1;
-		
 		case 1:
 			return 4;
-		
 		case 2:
 			return 16;
-		
 		case 3:
 			return 64;
-		
 		case 4:
 			return 256;
-		
 		case 5:
 			return 1024;
-		
 		case 6:
 			return 4096;
-		
 		case 7:
 			return 16384;
-		
 		case 8:
 			return 65536;
-		
 		case 9:
 			return 262144;
 		}
@@ -1422,7 +1398,7 @@ int func_64(int iParam0)
 bool func_65(var uParam0, vector3 vParam1, bool bParam4, int iParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!AUDIO::_0xD89504D9D7D5057D(&vParam1))
 	{
 		bVar0 = AUDIO::CREATE_NEW_SCRIPTED_CONVERSATION(&vParam1);
@@ -1453,7 +1429,7 @@ bool func_65(var uParam0, vector3 vParam1, bool bParam4, int iParam5, bool bPara
 int func_66(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_81(iParam0);
 	if (iVar0 < 0)
 	{
@@ -1467,7 +1443,7 @@ var func_67(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int
 	struct<4> Var0;
 	struct<2> Var13;
 	var uVar15;
-	
+
 	Var0 = -2;
 	Var0 = iParam1;
 	Var0.f_1 = iParam2;
@@ -1484,7 +1460,7 @@ int func_68(var uParam0)
 	int iVar1;
 	int iVar2;
 	bool bVar3;
-	
+
 	switch (uParam0->f_546.f_3)
 	{
 		case 0:
@@ -1654,7 +1630,7 @@ float func_70(int iParam0, vector3 vParam1, bool bParam4)
 int func_71(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = iParam0;
 	if (iParam1 == 255)
 	{
@@ -1679,7 +1655,7 @@ int func_72(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4)
 {
 	var uVar0;
 	struct<15> Var1;
-	
+
 	if (iParam0 == 0)
 	{
 		return 0;
@@ -1796,7 +1772,7 @@ void func_79(int iParam0, int iParam1)
 void func_80(var uParam0, var uParam1, var uParam2, var uParam3)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < uParam3->f_97)
 	{
@@ -1833,7 +1809,7 @@ bool func_83(var uParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	return MISC::IS_BIT_SET(uParam0[(iParam1 / 31)], (iParam1 % 31));
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);
@@ -1849,7 +1825,7 @@ void func_85(var uParam0, int iParam1, struct<15> Param2)
 {
 	int iVar0;
 	struct<22> Var1;
-	
+
 	if (!func_87(uParam0))
 	{
 		return;

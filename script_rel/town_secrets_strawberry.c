@@ -58,14 +58,12 @@ void __EntryFunction__()
 			case 0:
 				iLocal_14 = 1;
 				break;
-			
 			case 1:
 				if (func_2())
 				{
 					iLocal_14 = 2;
 				}
 				break;
-			
 			case 2:
 				func_1();
 				break;
@@ -108,21 +106,18 @@ int func_2()
 			(Local_36[0 /*12*/])->f_10 = 0;
 			iLocal_15 = 1;
 			break;
-		
 		case 1:
 			if (STREAMING::HAS_MODEL_LOADED(iLocal_20))
 			{
 				iLocal_15 = 2;
 			}
 			break;
-		
 		case 2:
 			func_8(0f, 0f, 0f, &Local_36, 0, 0, 0, -1, 0);
 			ENTITY::FREEZE_ENTITY_POSITION((Local_36[0 /*12*/])->f_8, true);
 			ENTITY::SET_ENTITY_VISIBLE((Local_36[0 /*12*/])->f_8, false);
 			iLocal_15 = 3;
 			break;
-		
 		case 3:
 			if (CAM::IS_SCREEN_FADED_OUT())
 			{
@@ -134,7 +129,6 @@ int func_2()
 				return 1;
 			}
 			break;
-		
 		case 4:
 			return 1;
 	}
@@ -149,7 +143,7 @@ int func_3()
 int func_4(int iParam0, bool bParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 != -1)
 	{
 		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
@@ -210,37 +204,26 @@ int func_4(int iParam0, bool bParam1, int iParam2)
 	{
 		case 0:
 			return 0;
-		
 		case 1:
 			return iParam0 & 1 == 0;
-		
 		case 4:
 			return iParam0 & 2 == 0;
-		
 		case 6:
 			return iParam0 & 4 == 0;
-		
 		case 2:
 			return iParam0 & 16 == 0;
-		
 		case 5:
 			return iParam0 & 32 == 0;
-		
 		case 9:
 			return iParam0 & 64 == 0;
-		
 		case 8:
 			return iParam0 & 8 == 0;
-		
 		case 10:
 			return iParam0 & 512 == 0;
-		
 		case 3:
 			return iParam0 & 128 == 0;
-		
 		case 11:
 			return iParam0 & 256 == 0;
-		
 		default:
 			break;
 	}
@@ -270,7 +253,7 @@ int func_8(vector3 vParam0, var uParam3, float fParam4, bool bParam5, int iParam
 	vector3 vVar5;
 	int iVar8;
 	vector3 vVar9;
-	
+
 	iVar4 = 1;
 	if (iParam7 < 0 || iParam7 >= *uParam3)
 	{
@@ -384,7 +367,6 @@ int func_9()
 				iLocal_16 = 1;
 			}
 			break;
-		
 		case 1:
 			if ((356.9597f + 25f) > vLocal_32.z)
 			{
@@ -393,7 +375,6 @@ int func_9()
 				iLocal_16 = 2;
 			}
 			break;
-		
 		case 2:
 			if (fLocal_27 > 0.4f)
 			{
@@ -408,7 +389,6 @@ int func_9()
 				iLocal_16 = 3;
 			}
 			break;
-		
 		case 3:
 			func_27();
 			if (fLocal_27 > 0.4f)
@@ -429,7 +409,6 @@ int func_9()
 				}
 			}
 			break;
-		
 		case 4:
 			func_27();
 			if (func_32(&uLocal_17, 12f))
@@ -445,7 +424,6 @@ int func_9()
 				iLocal_16 = 5;
 			}
 			break;
-		
 		case 5:
 			if (fLocal_28 >= 3.333f)
 			{
@@ -457,7 +435,6 @@ int func_9()
 				iLocal_16 = 6;
 			}
 			break;
-		
 		case 6:
 			return 1;
 	}
@@ -534,7 +511,7 @@ bool func_16(var uParam0, int iParam1)
 void func_17(var uParam0, bool bParam1)
 {
 	vector3 vVar0;
-	
+
 	vVar0 = { *uParam0 };
 	vVar0.f_2 = (vVar0.z + 5f);
 	if (bParam1)
@@ -561,7 +538,7 @@ int func_18(vector3 vParam0)
 float func_19(float fParam0)
 {
 	float fVar0;
-	
+
 	fVar0 = fParam0;
 	if (fParam0 < 0f)
 	{
@@ -596,7 +573,7 @@ int func_21()
 	int iVar6;
 	int iVar7;
 	int iVar8;
-	
+
 	iVar0 = Global_40.f_9020.f_7;
 	iVar1 = func_38(iVar0);
 	iVar2 = func_38(func_25());
@@ -611,7 +588,7 @@ int func_21()
 int func_22(int iParam0)
 {
 	int iVar0;
-	
+
 	if (iParam0 == -1)
 	{
 		return 1;
@@ -797,7 +774,7 @@ bool func_28(var uParam0)
 int func_29(int iParam0, var uParam1, var uParam2, var uParam3, float fParam4, float fParam5, float fParam6, bool bParam7, float fParam8, int iParam9)
 {
 	vector3 vVar0;
-	
+
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID()))
 	{
 		return 0;
@@ -890,7 +867,7 @@ int func_37(var uParam0, int iParam1, int iParam2, int iParam3)
 	bool bVar2;
 	bool bVar3;
 	vector3 vVar4;
-	
+
 	if (func_52(*uParam0, 0f, 0f, 0f))
 	{
 		return 1;
@@ -955,7 +932,7 @@ int func_38(int iParam0)
 	int iVar5;
 	int iVar6;
 	int iVar7;
-	
+
 	if (iParam0 == -15 || iParam0 == 0)
 	{
 		return 0;
@@ -966,47 +943,36 @@ int func_38(int iParam0)
 		case 0:
 			iVar1 = 11;
 			break;
-		
 		case 1:
 			iVar1 = 12;
 			break;
-		
 		case 2:
 			iVar1 = 1;
 			break;
-		
 		case 3:
 			iVar1 = 2;
 			break;
-		
 		case 4:
 			iVar1 = 3;
 			break;
-		
 		case 5:
 			iVar1 = 4;
 			break;
-		
 		case 6:
 			iVar1 = 5;
 			break;
-		
 		case 7:
 			iVar1 = 6;
 			break;
-		
 		case 8:
 			iVar1 = 7;
 			break;
-		
 		case 9:
 			iVar1 = 8;
 			break;
-		
 		case 10:
 			iVar1 = 9;
 			break;
-		
 		case 11:
 			iVar1 = 10;
 			break;
@@ -1025,27 +991,21 @@ int func_38(int iParam0)
 		case 0:
 			iVar7 = 0;
 			break;
-		
 		case 1:
 			iVar7 = 1;
 			break;
-		
 		case 2:
 			iVar7 = 2;
 			break;
-		
 		case 3:
 			iVar7 = 3;
 			break;
-		
 		case 4:
 			iVar7 = 4;
 			break;
-		
 		case 5:
 			iVar7 = 5;
 			break;
-		
 		case 6:
 			iVar7 = 6;
 			break;
@@ -1066,7 +1026,7 @@ int func_40(int iParam0)
 	int iVar3;
 	int iVar4;
 	int iVar5;
-	
+
 	if (iParam0 == -15)
 	{
 		return 0;
@@ -1165,7 +1125,7 @@ int func_47(vector3 vParam0, int iParam3, var uParam4, var uParam5, var uParam6,
 	bool bVar0;
 	int iVar1;
 	float fVar2;
-	
+
 	if (ENTITY::DOES_ENTITY_EXIST(iParam3))
 	{
 		if (ENTITY::IS_ENTITY_A_PED(iParam3))
@@ -1303,7 +1263,7 @@ void func_56(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, va
 	int iVar5;
 	int iVar6;
 	int iVar7;
-	
+
 	if (func_69(iParam0, iParam1, 1))
 	{
 		iVar0 = func_54(iParam1);
@@ -1411,13 +1371,11 @@ int func_59(int iParam0, int iParam1)
 		case 9:
 		case 11:
 			return 31;
-		
 		case 3:
 		case 5:
 		case 8:
 		case 10:
 			return 30;
-		
 		case 1:
 			if ((iParam1 % 4) == 0)
 			{
@@ -1431,7 +1389,6 @@ int func_59(int iParam0, int iParam1)
 				}
 			}
 			return 28;
-		
 		default:
 			break;
 	}
@@ -1451,13 +1408,10 @@ float func_61(int iParam0)
 	{
 		case 0:
 			return -1f;
-		
 		case 1:
 			return 30f;
-		
 		case 2:
 			return 80f;
-		
 		default:
 			break;
 	}
@@ -1468,7 +1422,7 @@ int func_62(var uParam0, int iParam1, int iParam2)
 {
 	vector3 vVar0;
 	vector3 vVar3;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam1))
 	{
 		return 0;
@@ -1485,7 +1439,7 @@ int func_62(var uParam0, int iParam1, int iParam2)
 int func_63(var uParam0, int iParam1, vector3 vParam2)
 {
 	vector3 vVar0;
-	
+
 	if (ENTITY::IS_ENTITY_DEAD(iParam1))
 	{
 		return 0;
@@ -1497,7 +1451,7 @@ int func_63(var uParam0, int iParam1, vector3 vParam2)
 float func_64()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -1545,7 +1499,7 @@ bool func_69(int iParam0, int iParam1, bool bParam2)
 float func_70(float fParam0, float fParam1, float fParam2)
 {
 	float fVar0;
-	
+
 	if (fParam1 == fParam2)
 	{
 		return fParam1;
@@ -1566,7 +1520,7 @@ Vector3 func_71(int iParam0)
 	vector3 vVar6;
 	int iVar9;
 	int iVar10;
-	
+
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		if (ENTITY::IS_ENTITY_A_PED(iParam0))
@@ -1597,7 +1551,7 @@ int func_72(var uParam0, vector3 vParam1, vector3 vParam4, int iParam7)
 	var uVar0;
 	var uVar3;
 	var uVar6;
-	
+
 	uParam0->f_4 = 0;
 	switch (*uParam0)
 	{
@@ -1607,7 +1561,6 @@ int func_72(var uParam0, vector3 vParam1, vector3 vParam4, int iParam7)
 			SHAPETEST::_0x04AA59CA40571C2E(uParam0->f_1, 15);
 			*uParam0 = 1;
 			break;
-		
 		case 1:
 			if (SHAPETEST::GET_SHAPE_TEST_RESULT(uParam0->f_1, &(uParam0->f_2), &uVar0, &uVar3, &uVar6) == 2)
 			{
@@ -1628,7 +1581,6 @@ int func_72(var uParam0, vector3 vParam1, vector3 vParam4, int iParam7)
 				*uParam0 = 3;
 			}
 			break;
-		
 		case 3:
 			*uParam0 = 0;
 			break;

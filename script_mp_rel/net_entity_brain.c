@@ -71,7 +71,7 @@ void func_2(var uParam0, var uParam1)
 int func_3(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -102,23 +102,18 @@ int func_3(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -256,7 +251,7 @@ void func_11(var uParam0)
 	int iVar0;
 	struct<4> Var1;
 	struct<4> Var5;
-	
+
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
@@ -276,7 +271,7 @@ void func_11(var uParam0)
 void func_12(var uParam0)
 {
 	int iVar0;
-	
+
 	if (!func_23(&(uParam0->f_8)))
 	{
 		func_24(&(uParam0->f_8));
@@ -339,7 +334,7 @@ void func_16(var uParam0)
 void func_17(var uParam0, int iParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (iParam1 && !func_36(*uParam0))
 	{
 		*uParam0 = 0;
@@ -378,7 +373,7 @@ int func_21(var uParam0, var uParam1)
 void func_22(var uParam0, int iParam1)
 {
 	struct<11> Var0;
-	
+
 	if (SCRIPTS::GET_EVENT_DATA(1, iParam1, &Var0, 12))
 	{
 		if (Var0.f_5 == *uParam0 && Var0.f_6 == uParam0->f_1)
@@ -388,27 +383,21 @@ void func_22(var uParam0, int iParam1)
 				case 0:
 					func_40(uParam0->f_6, Var0.f_9);
 					break;
-				
 				case 1:
 					func_41(uParam0->f_6, Var0.f_9);
 					break;
-				
 				case 2:
 					func_27(uParam0->f_6, Var0.f_10);
 					break;
-				
 				case 3:
 					func_42(uParam0->f_6, Var0.f_10);
 					break;
-				
 				case 4:
 					func_43(uParam0->f_6, Var0.f_8);
 					break;
-				
 				case 5:
 					func_8(uParam0->f_6);
 					break;
-				
 				case 6:
 					func_10(uParam0->f_6);
 					break;
@@ -494,7 +483,7 @@ void func_30(var uParam0)
 void func_31(int iParam0, int iParam1)
 {
 	struct<11> Var0;
-	
+
 	if (!func_27(iParam0, iParam1))
 	{
 		Var0.f_4 = 2;
@@ -508,7 +497,7 @@ void func_31(int iParam0, int iParam1)
 void func_32(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(uParam0->f_6);
 	if (PED::IS_PED_IN_ANY_VEHICLE(Global_35, false))
 	{
@@ -783,7 +772,7 @@ int func_49(struct<2> Param0)
 bool func_50(struct<2> Param0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_78(Param0);
 	return (iVar0 == 1 || iVar0 == 2);
 }
@@ -791,7 +780,7 @@ bool func_50(struct<2> Param0)
 bool func_51(struct<2> Param0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_78(Param0);
 	return (iVar0 == 3 || iVar0 == 4);
 }
@@ -955,7 +944,6 @@ int func_76(int iParam0)
 		case 7:
 		case 8:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -968,25 +956,18 @@ int func_77(int iParam0)
 	{
 		case 2:
 			return Global_1070355->f_634.f_601;
-		
 		case 3:
 			return Global_1070355->f_634.f_2103;
-		
 		case 4:
 			return Global_1070355->f_634.f_12605;
-		
 		case 5:
 			return Global_1070355->f_634.f_12907;
-		
 		case 6:
 			return Global_1070355->f_634.f_15909;
-		
 		case 7:
 			return Global_1070355->f_634.f_15980;
-		
 		case 8:
 			return Global_1070355->f_634.f_17182;
-		
 		default:
 			break;
 	}
@@ -996,7 +977,7 @@ int func_77(int iParam0)
 int func_78(struct<2> Param0)
 {
 	int iVar0;
-	
+
 	if (!func_49(Param0))
 	{
 		return -1;
@@ -1038,7 +1019,7 @@ var func_82(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 	int iVar9;
 	int iVar10;
 	int iVar11;
-	
+
 	SCRIPTS::_0xDE544B7EC0C187CC(&uVar0);
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
@@ -1071,11 +1052,9 @@ var func_82(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 			case 665633627:
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_87());
 				break;
-			
 			case -432403087:
 				iVar8 = VOLUME::_0x10157BC3247FF3BA(vParam0, vParam3, vParam6, func_87());
 				break;
-			
 			case -1612834106:
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_87());
 				break;
@@ -1162,56 +1141,48 @@ var func_82(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 								bVar4 = true;
 							}
 							break;
-						
 						case 0:
 							if (iVar9 & 32 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 1:
 							if (iVar9 & 64 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 2:
 							if (iVar9 & 128 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 3:
 							if (iVar9 & 256 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 4:
 							if (iVar9 & 512 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 5:
 							if (iVar9 & 1024 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 6:
 							if (iVar9 & 2048 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 8:
 							if (iVar9 & 4096 != 0)
 							{
@@ -1287,7 +1258,7 @@ int func_85(struct<2> Param0)
 	int iVar6;
 	int iVar7;
 	int iVar8;
-	
+
 	if (Global_1070355->f_17817 <= 0)
 	{
 		return -1;
@@ -1335,42 +1306,34 @@ char* func_87()
 int func_88(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	switch (iParam0)
 	{
 		case -1:
 			iVar0 = 16;
 			break;
-		
 		case 0:
 			iVar0 = 32;
 			break;
-		
 		case 1:
 			iVar0 = 64;
 			break;
-		
 		case 2:
 			iVar0 = 128;
 			break;
-		
 		case 3:
 			iVar0 = 256;
 			break;
-		
 		case 4:
 			iVar0 = 512;
 			break;
-		
 		case 5:
 			iVar0 = 1024;
 			break;
-		
 		case 6:
 			iVar0 = 2048;
 			break;
-		
 		case 8:
 			iVar0 = 4096;
 			break;
@@ -1434,31 +1397,24 @@ int func_93(struct<2> Param0, var uParam2)
 		case 2:
 			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 3:
 			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 4:
 			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 5:
 			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 6:
 			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 7:
 			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 8:
 			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		default:
 			break;
 	}
@@ -1468,7 +1424,7 @@ int func_93(struct<2> Param0, var uParam2)
 int func_94(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = iParam0;
 	if (iParam1 == 255)
 	{
@@ -1501,7 +1457,7 @@ int func_95(int iParam0)
 void func_96(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_16 != 0 || Global_1572887->f_13 != 0)
 	{
 		return;
@@ -1536,7 +1492,7 @@ bool func_98(var uParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	return MISC::IS_BIT_SET(uParam0[(iParam1 / 31)], (iParam1 % 31));
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);
@@ -1551,7 +1507,7 @@ int func_99()
 void func_100(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_16 != 0 || Global_1572887->f_13 != 0)
 	{
 		return;

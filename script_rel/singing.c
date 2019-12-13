@@ -104,7 +104,7 @@
 void __EntryFunction__()
 {
 	var uVar0;
-	
+
 	iLocal_101 = 1;
 	func_1();
 	func_2();
@@ -154,7 +154,7 @@ int func_4(var uParam0, int iParam1, bool bParam2)
 	int iVar0;
 	int iVar1;
 	var uVar2;
-	
+
 	iVar0 = 1;
 	*uParam0 = 0;
 	*iParam1 = 1;
@@ -297,10 +297,8 @@ char* func_6(int iParam0)
 	{
 		case 0:
 			return "ARTSO_JACKHALL";
-		
 		case 1:
 			return "ARTSO_KEYHOLE";
-		
 		default:
 			break;
 	}
@@ -332,7 +330,7 @@ void func_7(var uParam0, int iParam1, char* sParam2, bool bParam3)
 bool func_8(var uParam0, char[12] cParam1, bool bParam4, int iParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!AUDIO::_0xD89504D9D7D5057D(&cParam1))
 	{
 		bVar0 = AUDIO::CREATE_NEW_SCRIPTED_CONVERSATION(&cParam1);
@@ -401,7 +399,7 @@ bool func_14(var uParam0, int iParam1)
 int func_15(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return 0;
@@ -425,7 +423,7 @@ int func_16(bool bParam0)
 	var uVar2;
 	int iVar3;
 	int iVar4;
-	
+
 	if (bParam0)
 	{
 		return func_30(Global_1359489->f_4);
@@ -454,7 +452,7 @@ int func_17()
 	var uVar1;
 	float fVar2;
 	var uVar3;
-	
+
 	MISC::_GET_WEATHER_TYPE_TRANSITION(&uVar0, &uVar1, &fVar2);
 	if (fVar2 < 0.75f)
 	{
@@ -474,7 +472,6 @@ int func_18(int iParam0)
 		case -173507739:
 		case 1632247697:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -484,7 +481,7 @@ int func_18(int iParam0)
 int func_19(int iParam0)
 {
 	int iVar0;
-	
+
 	if (iParam0 == -1)
 	{
 		return 1;
@@ -621,7 +618,7 @@ int func_20(int iParam0, bool bParam1, int iParam2, int iParam3)
 	struct<11> Var0;
 	int iVar17;
 	struct<11> Var18;
-	
+
 	if (iParam0 == PLAYER::PLAYER_ID())
 	{
 		return func_36(bParam1, iParam2, iParam3);
@@ -704,7 +701,7 @@ bool func_24(var uParam0, int iParam1, char* sParam2)
 {
 	bool bVar0;
 	int iVar1;
-	
+
 	bVar0 = false;
 	iVar1 = 0;
 	while (iVar1 < uParam0->f_97 && !bVar0)
@@ -732,7 +729,7 @@ bool func_24(var uParam0, int iParam1, char* sParam2)
 void func_25(var uParam0, var uParam1, var uParam2, var uParam3)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < uParam3->f_97)
 	{
@@ -766,7 +763,6 @@ int func_27(int iParam0, bool bParam1)
 	{
 		case 5:
 			return 1;
-		
 		case 6:
 			if (bParam1)
 			{
@@ -791,7 +787,7 @@ int func_30(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar1 = uParam0;
 	if (iVar1 < 0)
 	{
@@ -819,7 +815,7 @@ int func_32(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return 0;
@@ -935,7 +931,7 @@ bool func_42(int iParam0)
 int func_43(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -953,7 +949,7 @@ int func_44(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;

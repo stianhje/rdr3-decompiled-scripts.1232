@@ -21,7 +21,7 @@
 void __EntryFunction__()
 {
 	vector3 vVar0;
-	
+
 	Local_13.f_12 = ScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
@@ -80,7 +80,6 @@ void __EntryFunction__()
 					func_3(&Local_13, 5);
 				}
 				break;
-			
 			case 1:
 				if (func_6(&Local_13))
 				{
@@ -91,7 +90,6 @@ void __EntryFunction__()
 					func_3(&Local_13, 2);
 				}
 				break;
-			
 			case 2:
 				if (func_6(&Local_13))
 				{
@@ -105,7 +103,6 @@ void __EntryFunction__()
 					}
 				}
 				break;
-			
 			case 3:
 				if (func_6(&Local_13))
 				{
@@ -118,14 +115,12 @@ void __EntryFunction__()
 					func_3(&Local_13, 4);
 				}
 				break;
-			
 			case 4:
 				if (func_6(&Local_13))
 				{
 					func_8(&Local_13);
 				}
 				break;
-			
 			case 5:
 				func_1(&Local_13);
 				break;
@@ -137,7 +132,7 @@ void __EntryFunction__()
 void func_1(var uParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::_0xE7282390542F570D(uParam0->f_12);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_7)
@@ -199,7 +194,7 @@ void func_8(var uParam0)
 int func_9(vector3 vParam0)
 {
 	int iVar0;
-	
+
 	if (!INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vParam0))
 	{
 		iVar0 = INTERIOR::GET_INTERIOR_FROM_COLLISION(vParam0);
@@ -215,7 +210,7 @@ int func_10(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_3)
 	{
@@ -245,7 +240,7 @@ int func_11(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_3)
 	{
@@ -282,7 +277,7 @@ bool func_12(var uParam0)
 void func_13(var uParam0)
 {
 	vector3 vVar0;
-	
+
 	vVar0 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(uParam0->f_1, 0.074814f, -0.117756f, 0.059386f) };
 	uParam0->f_7[0] = OBJECT::CREATE_OBJECT(&(uParam0->f_3[0]), vVar0, true, true, false, false, true);
 	TASK::_0x8360C47380B6F351(uParam0->f_2, &(uParam0->f_7[0]), "OOXO", 1);

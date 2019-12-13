@@ -60,11 +60,9 @@ void __EntryFunction__()
 				func_4(&uLocal_17);
 				func_5(1);
 				break;
-			
 			case 1:
 				func_5(2);
 				break;
-			
 			case 2:
 				if (func_6())
 				{
@@ -75,14 +73,12 @@ void __EntryFunction__()
 					}
 				}
 				break;
-			
 			case 3:
 				if (func_9())
 				{
 					func_5(4);
 				}
 				break;
-			
 			case 4:
 				func_1();
 				break;
@@ -111,7 +107,7 @@ int func_3(int iParam0, int iParam1, var uParam2, int iParam3)
 	int iVar1;
 	int iVar2;
 	bool bVar3;
-	
+
 	if ((MISC::GET_FRAME_COUNT() % 10) == 0)
 	{
 		if (uParam2->f_1)
@@ -402,7 +398,7 @@ int func_17(int iParam0)
 int func_18(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_36();
 	switch (iParam0)
 	{
@@ -412,12 +408,10 @@ int func_18(int iParam0)
 				case -173507739:
 				case 1632247697:
 					return 1;
-				
 				default:
 					return 0;
 			}
 			break;
-		
 		case 1:
 			switch (iVar0)
 			{
@@ -427,12 +421,10 @@ int func_18(int iParam0)
 				case 821931868:
 				case 1632247697:
 					return 1;
-				
 				default:
 					return 0;
 			}
 			break;
-		
 		case 2:
 			switch (iVar0)
 			{
@@ -447,12 +439,10 @@ int func_18(int iParam0)
 				case 1632247697:
 				case 1679686673:
 					return 1;
-				
 				default:
 					return 0;
 			}
 			break;
-		
 		case 3:
 			switch (iVar0)
 			{
@@ -471,15 +461,12 @@ int func_18(int iParam0)
 				case 1632247697:
 				case 1679686673:
 					return 1;
-				
 				default:
 					return 0;
 			}
 			break;
-		
 		case 4:
 			return 1;
-		
 		case 5:
 			switch (iVar0)
 			{
@@ -496,7 +483,7 @@ int func_19(var uParam0, var uParam1, float fParam2, float fParam3)
 {
 	vector3 vVar0;
 	vector3 vVar3;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(*uParam0))
 	{
 		return 0;
@@ -517,7 +504,7 @@ int func_20(var uParam0, var uParam1, var uParam2, float fParam3, float fParam4,
 	vector3 vVar2;
 	vector3 vVar5;
 	vector3 vVar8;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(*uParam0))
 	{
 		if (VOLUME::_0x92A78D0BEDB332A3(*uParam1))
@@ -658,7 +645,7 @@ void func_33(var uParam0, var uParam1)
 bool func_34(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_47(iParam0);
 	return (iVar0 == 3 || iVar0 == 4);
 }
@@ -666,7 +653,7 @@ bool func_34(int iParam0)
 int func_35(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		if (!(iParam0 > 0 && iParam0 < 771))
@@ -700,7 +687,7 @@ var func_36()
 	var uVar1;
 	float fVar2;
 	var uVar3;
-	
+
 	MISC::_GET_WEATHER_TYPE_TRANSITION(&uVar0, &uVar1, &fVar2);
 	if (fVar2 < 0.75f)
 	{
@@ -733,7 +720,7 @@ int func_38(var uParam0, var uParam1, vector3 vParam2, float fParam5, float fPar
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (!ITEMSET::IS_ITEMSET_VALID(*uParam0))
 	{
 		*uParam0 = ITEMSET::CREATE_ITEMSET(true);
@@ -800,7 +787,7 @@ bool func_41(var uParam0, int iParam1)
 float func_42()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -827,7 +814,7 @@ bool func_45(var uParam0)
 int func_46()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -848,7 +835,7 @@ int func_47(int iParam0)
 int func_48(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -894,7 +881,7 @@ int func_51(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;

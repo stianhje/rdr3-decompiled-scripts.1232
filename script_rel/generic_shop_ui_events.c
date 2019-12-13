@@ -23,7 +23,7 @@ void __EntryFunction__()
 	int iVar2;
 	struct<4> Var3;
 	bool bVar7;
-	
+
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
@@ -48,7 +48,6 @@ void __EntryFunction__()
 						func_3(32);
 						func_3(1024);
 						break;
-					
 					case -1151569080:
 						if (Var3.f_2 == -2105535423)
 						{
@@ -69,7 +68,6 @@ void __EntryFunction__()
 							func_3(1024);
 						}
 						break;
-					
 					case -1740156697:
 						func_7(&(Var3.f_3), 0);
 						func_8(Var3.f_1, 0);
@@ -90,7 +88,6 @@ void __EntryFunction__()
 						}
 						func_3(1024);
 						break;
-					
 					case -1203660660:
 						if (Var3.f_2 != -729996127)
 						{
@@ -115,7 +112,6 @@ void __EntryFunction__()
 						func_3(8);
 						func_3(1024);
 						break;
-					
 					case -2075827635:
 						if (Var3.f_2 == 1130992209)
 						{
@@ -142,7 +138,6 @@ void __EntryFunction__()
 						func_2(16);
 						func_3(1024);
 						break;
-					
 					case 922460030:
 						if (Var3.f_2 != 416030390)
 						{
@@ -164,26 +159,22 @@ void __EntryFunction__()
 							Global_1914319->f_16855.f_3.f_3 = 1;
 						}
 						break;
-					
 					case -114265581:
 						func_17(Var3.f_2);
 						func_3(4096);
 						func_3(1024);
 						break;
-					
 					case -120002582:
 						func_17(Var3.f_2);
 						func_3(4096);
 						func_3(1024);
 						break;
-					
 					case 368072021:
 						func_18(Var3.f_2);
 						func_19(Var3.f_1);
 						func_3(8192);
 						func_3(1024);
 						break;
-					
 					default:
 						break;
 				}
@@ -257,7 +248,7 @@ void func_8(var uParam0, bool bParam1)
 var func_9(bool bParam0)
 {
 	var uVar0;
-	
+
 	uVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(func_23(bParam0), func_24());
 	return uVar0;
 }
@@ -289,7 +280,7 @@ void func_12(var uParam0)
 int func_13()
 {
 	var uVar0;
-	
+
 	uVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(func_25(), func_24());
 	return uVar0;
 }
@@ -317,7 +308,7 @@ void func_17(var uParam0)
 bool func_18(int iParam0)
 {
 	bool bVar0;
-	
+
 	bVar0 = Global_1914319->f_16855.f_3.f_26 != iParam0;
 	Global_1914319->f_16855.f_3.f_26 = iParam0;
 	return bVar0;
@@ -326,7 +317,7 @@ bool func_18(int iParam0)
 bool func_19(int iParam0)
 {
 	bool bVar0;
-	
+
 	bVar0 = Global_1914319->f_16855.f_3.f_25 != iParam0;
 	Global_1914319->f_16855.f_3.f_25 = iParam0;
 	return bVar0;

@@ -72,16 +72,12 @@ int func_2(int iParam0)
 	{
 		case 11:
 			return 0;
-		
 		case 76:
 			return 1;
-		
 		case 15:
 			return 3;
-		
 		case 128:
 			return 2;
-		
 		default:
 			break;
 	}
@@ -131,7 +127,7 @@ void func_7(int iParam0, int iParam1)
 int func_8(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_2(iParam0);
 	if (!func_3(iVar0))
 	{
@@ -189,7 +185,7 @@ int func_13(int iParam0, bool bParam1, bool bParam2, float fParam3, bool bParam4
 	vector3 vVar7;
 	vector3 vVar10;
 	float fVar13;
-	
+
 	if (iParam0 == -1)
 	{
 		return 0;
@@ -269,7 +265,7 @@ Vector3 func_18(vector3 vParam0)
 {
 	float fVar0;
 	float fVar1;
-	
+
 	fVar0 = BUILTIN::VMAG(vParam0);
 	if (fVar0 != 0f)
 	{

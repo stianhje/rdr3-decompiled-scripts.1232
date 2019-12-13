@@ -26,7 +26,7 @@
 void __EntryFunction__()
 {
 	bool bVar0;
-	
+
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
 	func_1();
@@ -95,7 +95,7 @@ int func_3()
 int func_4(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -126,23 +126,18 @@ int func_4(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}

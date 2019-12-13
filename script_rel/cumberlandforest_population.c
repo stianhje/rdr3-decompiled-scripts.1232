@@ -31,7 +31,7 @@ void __EntryFunction__()
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	func_1();
@@ -140,7 +140,7 @@ void func_4()
 void func_5(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = iParam1;
 	*iParam0 = (*iParam0 || BUILTIN::SHIFT_LEFT(1, iVar0));
 }
@@ -260,7 +260,7 @@ void func_16(var uParam0, int iParam1)
 bool func_17(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_20(iParam0);
 	return (iVar0 == 3 || iVar0 == 4);
 }
@@ -441,7 +441,7 @@ bool func_30(int iParam0)
 int func_31(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -487,7 +487,7 @@ int func_36(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;

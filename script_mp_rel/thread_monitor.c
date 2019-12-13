@@ -21,7 +21,7 @@ void __EntryFunction__()
 	bool bVar1;
 	int iVar2;
 	bool bVar3;
-	
+
 	func_1();
 	sVar0 = func_3(func_2());
 	func_4();
@@ -69,7 +69,6 @@ void __EntryFunction__()
 						func_6(1);
 					}
 					break;
-				
 				case 1:
 					if (!func_19())
 					{
@@ -83,7 +82,6 @@ void __EntryFunction__()
 						func_28();
 					}
 					break;
-				
 				case 2:
 					if (func_29())
 					{
@@ -133,7 +131,6 @@ void __EntryFunction__()
 						}
 					}
 					break;
-				
 				case 3:
 					if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
@@ -152,7 +149,6 @@ void __EntryFunction__()
 						func_6(4);
 					}
 					break;
-				
 				case 4:
 					if (SCRIPTS::DOES_SCRIPT_EXIST(sVar0))
 					{
@@ -209,7 +205,6 @@ void __EntryFunction__()
 					NETWORK::_0x7AC752103856FB20(false);
 					func_6(6);
 					break;
-				
 				case 6:
 					if ((MISC::_GET_SYSTEM_TIME() - iVar2) > 1000)
 					{
@@ -220,7 +215,6 @@ void __EntryFunction__()
 						}
 					}
 					break;
-				
 				case 7:
 					if (CAM::IS_SCREEN_FADED_OUT())
 					{
@@ -271,7 +265,6 @@ char* func_3(int iParam0)
 	{
 		case 1:
 			return "net_main_tlg_online";
-		
 		default:
 			break;
 	}
@@ -333,7 +326,7 @@ int func_7()
 int func_8(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -364,23 +357,18 @@ int func_8(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -430,7 +418,7 @@ void func_13()
 	char cVar0[64];
 	int iVar8;
 	int iVar9;
-	
+
 	func_43();
 	if (Global_1051202->f_7 > 0)
 	{
@@ -466,16 +454,12 @@ void func_14()
 			case 2:
 				func_20();
 				break;
-			
 			case 0:
 				break;
-			
 			case 1:
 				break;
-			
 			case 4:
 				break;
-			
 			case 3:
 				break;
 		}
@@ -508,7 +492,7 @@ int func_17(int iParam0)
 int func_18(int iParam0)
 {
 	var uVar0;
-	
+
 	uVar0 = func_44(iParam0);
 	return uVar0;
 }
@@ -517,7 +501,7 @@ int func_19()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar1 = 0;
 	iVar0 = 0;
 	while (iVar0 < 18)
@@ -556,7 +540,7 @@ var func_22()
 	var uVar0;
 	var uVar1;
 	int iVar2;
-	
+
 	if (Global_1051202->f_7 <= 0)
 	{
 		uVar0 = -1;
@@ -603,7 +587,7 @@ void func_28()
 	int iVar0;
 	bool bVar1;
 	bool bVar2;
-	
+
 	bVar1 = false;
 	bVar2 = false;
 	iVar0 = 0;
@@ -713,7 +697,7 @@ void func_33(bool bParam0, bool bParam1)
 void func_34()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 18)
 	{
@@ -752,7 +736,7 @@ void func_38(int iParam0)
 void func_39(var uParam0)
 {
 	struct<182> Var0;
-	
+
 	Var0 = 6;
 	Var0.f_1 = -1;
 	Var0.f_1.f_1 = -1;
@@ -770,38 +754,31 @@ void func_39(var uParam0)
 char* func_40(int iParam0)
 {
 	char* sVar0;
-	
+
 	sVar0 = "invalid";
 	switch (iParam0)
 	{
 		case 0:
 			sVar0 = "MPTM_RUNNING";
 			break;
-		
 		case 1:
 			sVar0 = "MPTM_SHUTDOWN";
 			break;
-		
 		case 2:
 			sVar0 = "MPTM_DEAD";
 			break;
-		
 		case 3:
 			sVar0 = "MPTM_WAIT_TO_REBOOT";
 			break;
-		
 		case 4:
 			sVar0 = "MPTM_REBOOT";
 			break;
-		
 		case 5:
 			sVar0 = "MPTM_MP_BAIL";
 			break;
-		
 		case 6:
 			sVar0 = "MPTM_FADE_OUT";
 			break;
-		
 		case 7:
 			sVar0 = "MPTM_EXIT";
 			break;
@@ -813,7 +790,7 @@ void func_41(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = MISC::_GET_SYSTEM_TIME();
 	iVar1 = MISC::GET_FRAME_COUNT();
 	Global_1572887->f_2 = MISC::GET_FRAME_COUNT();
@@ -833,7 +810,7 @@ void func_43()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
@@ -847,29 +824,22 @@ void func_43()
 					{
 						case 0:
 							break;
-						
 						case 1:
 							break;
-						
 						case 2:
 							break;
-						
 						case 3:
 							Global_1051202->f_42 = 1;
 							break;
-						
 						case 4:
 							break;
-						
 						case 5:
 							break;
-						
 						case 7:
 							break;
 					}
 				}
 				break;
-			
 			case -2119801478:
 				func_60();
 				if (SCRIPTS::GET_EVENT_DATA(1, iVar0, &iVar1, 1))
@@ -878,22 +848,16 @@ void func_43()
 					{
 						case 0:
 							break;
-						
 						case 1:
 							break;
-						
 						case 2:
 							break;
-						
 						case 3:
 							break;
-						
 						case 4:
 							break;
-						
 						case 5:
 							break;
-						
 						case 7:
 							break;
 					}
@@ -907,7 +871,7 @@ void func_43()
 var func_44(int iParam0)
 {
 	var uVar0;
-	
+
 	if (Global_1051202->f_7 <= 0)
 	{
 		uVar0 = -1;
@@ -1018,14 +982,14 @@ void func_53(int iParam0, bool bParam1, int iParam2, int iParam3)
 void func_54(var uParam0)
 {
 	struct<30> Var0;
-	
+
 	*uParam0 = { Var0 };
 }
 
 void func_55(var uParam0)
 {
 	struct<9> Var0;
-	
+
 	*uParam0 = { Var0 };
 }
 
@@ -1035,10 +999,8 @@ void func_56(struct<29> Param0, var uParam29, int iParam30)
 	{
 		case 1:
 			break;
-		
 		case 2:
 			break;
-		
 		case 3:
 			if (ENTITY::DOES_ENTITY_EXIST(Param0.f_4))
 			{
@@ -1059,10 +1021,8 @@ void func_57(struct<6> Param0, var uParam6, var uParam7, var uParam8, int iParam
 	{
 		case 1:
 			break;
-		
 		case 2:
 			break;
-		
 		case 3:
 			break;
 	}
@@ -1116,7 +1076,7 @@ bool func_61(var uParam0, int iParam1, int iParam2)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);
 	bVar2 = MISC::IS_BIT_SET(uParam0[iVar0], iVar1);
@@ -1129,7 +1089,7 @@ bool func_62(var uParam0, int iParam1, int iParam2)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);
 	bVar2 = MISC::IS_BIT_SET(uParam0[iVar0], iVar1);

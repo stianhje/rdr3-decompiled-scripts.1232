@@ -59,7 +59,7 @@ int func_1(var uParam0)
 void func_2(var uParam0)
 {
 	bool bVar0;
-	
+
 	bVar0 = false;
 	while (!bVar0)
 	{
@@ -96,7 +96,7 @@ int func_5(var uParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = 2;
 	iVar2 = 1;
 	while (iVar2 <= (iVar0 - 1))
@@ -123,7 +123,7 @@ int func_6(var uParam0)
 void func_7(var uParam0)
 {
 	var uVar0;
-	
+
 	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(1692899894))
 	{
 		if (!UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(1692899894, &uVar0))
@@ -140,7 +140,7 @@ void func_7(var uParam0)
 void func_8(var uParam0)
 {
 	bool bVar0;
-	
+
 	if (func_14(uParam0, 1))
 	{
 		func_15(uParam0, 1, 0);
@@ -164,7 +164,7 @@ void func_9(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = UIAPPS::_0x96FD694FE5BE55DC(1890312850);
 	iVar1 = func_16(uParam0);
 	if (iVar0 != iVar1)
@@ -184,7 +184,7 @@ int func_10(var uParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = 2;
 	iVar2 = 0;
 	while (iVar2 < iVar0)
@@ -202,10 +202,8 @@ int func_11(int iParam0, int iParam1)
 	{
 		case 0:
 			return 0;
-		
 		case 1:
 			return 1890312850;
-		
 		default:
 			break;
 	}
@@ -390,7 +388,7 @@ int func_30(var uParam0)
 void func_31(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1958299->f_2 == -1)
 	{
 		return;
@@ -486,7 +484,7 @@ void func_39(var uParam0)
 	int iVar17;
 	int iVar18;
 	int iVar19;
-	
+
 	iVar1 = UNK_0x97A3646645727F42(&iVar0);
 	Var2.f_9 = -1591664384;
 	iVar17 = 0;
@@ -556,7 +554,7 @@ int func_41(var uParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam0))
 	{
 		return 0;
@@ -639,7 +637,7 @@ int func_49(var uParam0, var uParam1, int iParam2)
 {
 	struct<10> Var0;
 	var uVar14;
-	
+
 	Var0.f_9 = -1591664384;
 	func_56(*uParam1, &Var0, 1, 0, -1);
 	if (!func_57(Var0.f_4, 0))
@@ -675,7 +673,7 @@ int func_50(var uParam0, int iParam1)
 {
 	struct<34> Var0;
 	struct<2> Var36;
-	
+
 	func_63(&Var0);
 	Var36 = Var0.f_32;
 	Var36.f_1 = Var0.f_33;
@@ -708,7 +706,7 @@ bool func_53(var uParam0)
 int func_54()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -747,7 +745,7 @@ bool func_58(int iParam0)
 int func_59(var uParam0, var uParam1)
 {
 	var uVar0;
-	
+
 	if (!func_70(uParam0, &uVar0))
 	{
 		return 0;
@@ -768,7 +766,7 @@ int func_61(var uParam0, var uParam1)
 {
 	int iVar0;
 	struct<34> Var1;
-	
+
 	if (!func_70(uParam0, &iVar0))
 	{
 		return 0;
@@ -793,7 +791,7 @@ int func_62(var uParam0, var uParam1, int iParam2)
 	char cVar1[64];
 	var uVar9[6];
 	var uVar16;
-	
+
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(&(uParam0->f_3[1])))
 	{
 		return 0;
@@ -841,7 +839,7 @@ int func_64(var uParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam0))
 	{
 		return 0;
@@ -863,7 +861,7 @@ int func_64(var uParam0, int iParam1)
 float func_65()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -902,7 +900,7 @@ int func_68(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
 int func_69(int iParam0)
 {
 	struct<2> Var0;
-	
+
 	if (!func_57(iParam0, 0))
 	{
 		return 0;
@@ -917,7 +915,7 @@ int func_69(int iParam0)
 int func_70(var uParam0, var uParam1)
 {
 	struct<10> Var0;
-	
+
 	*uParam1 = 0;
 	if (!func_47(uParam0))
 	{
@@ -945,7 +943,7 @@ int func_71(var uParam0, var uParam1)
 	var uVar0;
 	struct<733> Var1;
 	int iVar768;
-	
+
 	if (!func_70(uParam0, &uVar0))
 	{
 		return 0;
@@ -1021,7 +1019,7 @@ int func_71(var uParam0, var uParam1)
 int func_72(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_57(iParam0, 0))
 	{
 		return 0;
@@ -1070,7 +1068,7 @@ int func_74(var uParam0, var uParam1, char[4] cParam2, char[4] cParam3, char[4] 
 int func_75(var uParam0, int iParam1, var uParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = DATABINDING::_DATABDING_GET_ARRAY_COUNT(&(uParam0->f_3[1]));
 	if (iParam1 < 0 || iParam1 >= iVar0)
 	{
@@ -1124,7 +1122,7 @@ int func_79(var uParam0, var uParam1, var uParam2, bool bParam3)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (MISC::IS_STRING_NULL_OR_EMPTY(uParam0->f_1))
 	{
 		return 0;
@@ -1166,7 +1164,7 @@ int func_80(var uParam0)
 int func_81(var uParam0)
 {
 	struct<10> Var0;
-	
+
 	if (!func_47(uParam0))
 	{
 		return 0;
@@ -1216,7 +1214,7 @@ int func_83(int iParam0, int iParam1)
 int func_84(int iParam0, int iParam1)
 {
 	struct<6> Var0;
-	
+
 	if (!func_57(iParam0, 0))
 	{
 		return func_92(func_90(iParam0), iParam1);
@@ -1294,7 +1292,7 @@ int func_91(int iParam0, int iParam1)
 int func_92(int iParam0, var uParam1)
 {
 	int iVar0;
-	
+
 	if (!func_95(iParam0, 2))
 	{
 		return 0;
@@ -1315,7 +1313,7 @@ var func_93(var uParam0)
 int func_94()
 {
 	int iVar0;
-	
+
 	if (!NETWORK::NETWORK_DOES_TUNABLE_EXIST(-475019843, 135369362))
 	{
 		return 604800;

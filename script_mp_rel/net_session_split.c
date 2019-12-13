@@ -41,7 +41,7 @@ void func_1()
 int func_2(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -72,23 +72,18 @@ int func_2(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -108,7 +103,7 @@ int func_2(bool bParam0, int iParam1)
 void func_3(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 <= 31)
@@ -139,14 +134,12 @@ void func_3(int iParam0)
 				NETWORK::_0xC505036A35AFD01B(iParam0->f_1.f_3);
 			}
 			break;
-		
 		case 1:
 			if (NETWORK::_0xC223D299C670413D(1, iParam0->f_1.f_4, 0, -1))
 			{
 				func_5(2, iParam0);
 			}
 			break;
-		
 		case 2:
 			if (NETWORK::_0xA021095C983F20D8())
 			{
@@ -156,7 +149,6 @@ void func_3(int iParam0)
 				func_5(3, iParam0);
 			}
 			break;
-		
 		case 3:
 			if (NETWORK::_0x6D87BA8EF15226CD())
 			{
@@ -167,7 +159,6 @@ void func_3(int iParam0)
 				func_5(1, iParam0);
 			}
 			break;
-		
 		case 4:
 			if (NETWORK::_0x277865A734918AE6())
 			{
@@ -185,7 +176,6 @@ void func_3(int iParam0)
 				func_5(1, iParam0);
 			}
 			break;
-		
 		case 5:
 			break;
 	}

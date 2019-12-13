@@ -22,7 +22,7 @@ void __EntryFunction__()
 {
 	struct<10> Var0;
 	struct<16> Var10;
-	
+
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	iLocal_14 = ScriptParam_0;
@@ -79,7 +79,7 @@ var func_3(int iParam0)
 void func_4(struct<16> Param0, int iParam16)
 {
 	int iVar0;
-	
+
 	if (MISC::IS_STRING_NULL_OR_EMPTY(&(Param0.f_10)))
 	{
 		return;
@@ -117,7 +117,7 @@ bool func_5(var uParam0, int iParam1)
 int func_6(char* sParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 < Global_1934603->f_161)

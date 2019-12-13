@@ -30,7 +30,7 @@
 void __EntryFunction__()
 {
 	bool bVar0;
-	
+
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	func_1();
@@ -83,7 +83,7 @@ void func_3(var uParam0, int iParam1)
 void func_4(var uParam0)
 {
 	float fVar0;
-	
+
 	switch (*uParam0)
 	{
 		case 0:
@@ -101,7 +101,6 @@ void func_4(var uParam0)
 				func_11(uParam0, 6);
 			}
 			break;
-		
 		case 1:
 			TASK::SET_SCENARIO_GROUP_ENABLED("Special_Ambient_Horse", true);
 			STREAMING::REQUEST_MODEL(func_12(uParam0->f_1), false);
@@ -109,7 +108,6 @@ void func_4(var uParam0)
 			uParam0->f_9 = 1;
 			func_11(uParam0, 2);
 			break;
-		
 		case 2:
 			if (!STREAMING::HAS_MODEL_LOADED(func_12(uParam0->f_1)))
 			{
@@ -134,7 +132,6 @@ void func_4(var uParam0)
 			ENTITY::SET_ENTITY_VISIBLE(uParam0->f_3, false);
 			func_15(uParam0);
 			func_11(uParam0, 3);
-		
 		case 3:
 			func_16(uParam0->f_3);
 			PED::_0xCC8CA3E88256E58F(uParam0->f_3, 0, 1, 1, 1, 0);
@@ -150,21 +147,18 @@ void func_4(var uParam0)
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(func_12(uParam0->f_1));
 			func_11(uParam0, 4);
 			break;
-		
 		case 4:
 			if (func_17(uParam0))
 			{
 				func_11(uParam0, 5);
 			}
 			break;
-		
 		case 5:
 			func_18(uParam0->f_1);
 			uParam0->f_8 = 1;
 			func_13(uParam0);
 			func_11(uParam0, 6);
 			break;
-		
 		case 6:
 			break;
 	}
@@ -192,7 +186,7 @@ void func_6(int iParam0, bool bParam1)
 int func_7(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 2;
 	switch (iParam0)
 	{
@@ -217,19 +211,14 @@ Vector3 func_8(int iParam0)
 	{
 		case 1:
 			return 2681.173f, 1935.781f, 101.8587f;
-		
 		case 3:
 			return -2828.721f, -422.1472f, 186.4498f;
-		
 		case 4:
 			return 289.5062f, 2288.324f, 313.0248f;
-		
 		case 5:
 			return -1940.045f, 1743.173f, 234.5481f;
-		
 		case 6:
 			return -3916.118f, -3672.374f, 47.1305f;
-		
 		default:
 			break;
 	}
@@ -239,7 +228,7 @@ Vector3 func_8(int iParam0)
 float func_9(int iParam0, vector3 vParam1, bool bParam4)
 {
 	vector3 vVar0;
-	
+
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		vVar0 = { ENTITY::GET_ENTITY_COORDS(iParam0, true, false) };
@@ -259,7 +248,7 @@ int func_10(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (func_21() != -1)
 	{
 		return 0;
@@ -300,25 +289,18 @@ int func_12(int iParam0)
 	{
 		case 0:
 			return 1792770814;
-		
 		case 1:
 			return 705691988;
-		
 		case 2:
 			return 604357666;
-		
 		case 3:
 			return -1523757120;
-		
 		case 4:
 			return 1576849913;
-		
 		case 5:
 			return -925223936;
-		
 		case 6:
 			return 43825738;
-		
 		default:
 			break;
 	}
@@ -356,7 +338,7 @@ void func_13(var uParam0)
 int func_14(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12, bool bParam13, bool bParam14)
 {
 	int iVar0;
-	
+
 	iVar0 = PED::CREATE_PED(iParam0, vParam1, fParam4, bParam5, bParam6, bParam13, bParam14);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -370,7 +352,7 @@ void func_15(var uParam0)
 {
 	var uVar0;
 	vector3 vVar1;
-	
+
 	uVar0 = func_30(uParam0->f_1);
 	vVar1 = { uVar0, uVar0, uVar0 };
 	uParam0->f_4 = VOLUME::_0x10157BC3247FF3BA(uParam0->f_5, func_31(), vVar1, "Special Ambient Horse Unalerted");
@@ -498,25 +480,18 @@ int func_25(int iParam0)
 	{
 		case 0:
 			return 1;
-		
 		case 1:
 			return 2;
-		
 		case 2:
 			return 1;
-		
 		case 3:
 			return 2;
-		
 		case 4:
 			return 2;
-		
 		case 5:
 			return 2;
-		
 		case 6:
 			return 2;
-		
 		default:
 			break;
 	}
@@ -532,7 +507,7 @@ void func_26(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	int iVar4;
 	int iVar5;
 	int iVar6;
-	
+
 	iVar0 = func_34(*uParam0);
 	iVar1 = func_35(*uParam0);
 	iVar2 = func_36(*uParam0);
@@ -620,7 +595,7 @@ int func_28(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = func_12(iParam0);
 	iVar1 = 0;
 	while (iVar1 < 7)
@@ -637,7 +612,7 @@ int func_28(int iParam0)
 void func_29(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) || ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;
@@ -691,7 +666,7 @@ void func_29(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 float func_30(int iParam0)
 {
 	float fVar0;
-	
+
 	fVar0 = 50f;
 	switch (iParam0)
 	{
@@ -720,7 +695,6 @@ int func_33(int iParam0, bool bParam1)
 	{
 		case 5:
 			return 1;
-		
 		case 6:
 			if (bParam1)
 			{
@@ -777,13 +751,11 @@ int func_40(int iParam0, int iParam1)
 		case 9:
 		case 11:
 			return 31;
-		
 		case 3:
 		case 5:
 		case 8:
 		case 10:
 			return 30;
-		
 		case 1:
 			if ((iParam1 % 4) == 0)
 			{
@@ -797,7 +769,6 @@ int func_40(int iParam0, int iParam1)
 				}
 			}
 			return 28;
-		
 		default:
 			break;
 	}
@@ -1031,7 +1002,6 @@ int func_45(int iParam0)
 		case 2115504616:
 		case 2141515026:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -1165,7 +1135,7 @@ void func_54(var uParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = func_35(*uParam0);
 	iVar1 = func_34(*uParam0);
 	if (iParam1 < 1 || iParam1 > func_40(iVar0, iVar1))
@@ -1214,7 +1184,7 @@ int func_58(int iParam0)
 	int iVar3;
 	int iVar4;
 	int iVar5;
-	
+
 	if (iParam0 == -15)
 	{
 		return 0;
@@ -1264,7 +1234,7 @@ int func_59(int iParam0)
 bool func_60(int iParam0, int iParam1)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -1279,7 +1249,7 @@ bool func_60(int iParam0, int iParam1)
 int func_61(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return 0;
@@ -1300,7 +1270,7 @@ bool func_62(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -1340,7 +1310,7 @@ bool func_64(int iParam0)
 int func_65(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -1358,7 +1328,7 @@ int func_66(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;

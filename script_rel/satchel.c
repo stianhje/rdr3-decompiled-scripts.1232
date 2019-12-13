@@ -20,7 +20,7 @@ void __EntryFunction__()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
@@ -87,7 +87,6 @@ void __EntryFunction__()
 					func_8(1);
 				}
 				break;
-			
 			case 1:
 				if (func_6())
 				{
@@ -108,7 +107,6 @@ void __EntryFunction__()
 				PAD::DISABLE_CONTROL_ACTION(0, -1450761377, false);
 				PAD::DISABLE_CONTROL_ACTION(0, -771458680, false);
 				break;
-			
 			case 2:
 				if (func_6())
 				{
@@ -134,7 +132,7 @@ void func_1()
 var func_2(int iParam0, int iParam1)
 {
 	var uVar0;
-	
+
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &uVar0, true, iParam1, false);
 	return uVar0;
 }
@@ -142,7 +140,7 @@ var func_2(int iParam0, int iParam1)
 struct<4> func_3()
 {
 	struct<4> Var0;
-	
+
 	return Var0;
 }
 

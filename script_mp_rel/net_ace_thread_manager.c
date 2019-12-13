@@ -22,7 +22,7 @@ void __EntryFunction__()
 {
 	char* sVar0;
 	var uVar1;
-	
+
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
 	func_1();
@@ -68,7 +68,7 @@ void func_2(var uParam0)
 int func_3(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -99,23 +99,18 @@ int func_3(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -196,7 +191,7 @@ int func_8()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = NETWORK::NETWORK_GET_SCRIPT_STATUS();
 	iVar1 = MISC::GET_GAME_TIMER();
 	iVar2 = NETWORK::NETWORK_GET_TIMEOUT_TIME();
@@ -219,23 +214,18 @@ int func_8()
 			{
 				case 0:
 					break;
-				
 				case 1:
 					func_7();
 					break;
-				
 				case 2:
 					func_7();
 					break;
-				
 				case 4:
 					func_7();
 					break;
-				
 				case 3:
 					func_7();
 					break;
-				
 				default:
 					break;
 			}
@@ -378,7 +368,7 @@ bool func_15()
 int func_16()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -501,7 +491,6 @@ int func_26(int iParam0)
 		case 7:
 		case 8:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -514,25 +503,18 @@ int func_27(int iParam0)
 	{
 		case 2:
 			return Global_1070355->f_634.f_601;
-		
 		case 3:
 			return Global_1070355->f_634.f_2103;
-		
 		case 4:
 			return Global_1070355->f_634.f_12605;
-		
 		case 5:
 			return Global_1070355->f_634.f_12907;
-		
 		case 6:
 			return Global_1070355->f_634.f_15909;
-		
 		case 7:
 			return Global_1070355->f_634.f_15980;
-		
 		case 8:
 			return Global_1070355->f_634.f_17182;
-		
 		default:
 			break;
 	}

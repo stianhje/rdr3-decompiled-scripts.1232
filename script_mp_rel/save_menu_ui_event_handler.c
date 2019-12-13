@@ -5,7 +5,7 @@
 void __EntryFunction__()
 {
 	vector3 vVar0;
-	
+
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	NETWORK::_0x7AC752103856FB20(false);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(4))

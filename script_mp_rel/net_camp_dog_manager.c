@@ -43,7 +43,7 @@ void __EntryFunction__()
 void func_1()
 {
 	int iVar0;
-	
+
 	iVar0 = MISC::GET_GAME_TIMER();
 	func_6(32, -1);
 	func_7();
@@ -60,7 +60,7 @@ void func_1()
 int func_2(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -91,23 +91,18 @@ int func_2(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -160,7 +155,7 @@ int func_7()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = NETWORK::NETWORK_GET_SCRIPT_STATUS();
 	iVar1 = MISC::GET_GAME_TIMER();
 	iVar2 = NETWORK::NETWORK_GET_TIMEOUT_TIME();
@@ -183,23 +178,18 @@ int func_7()
 			{
 				case 0:
 					break;
-				
 				case 1:
 					func_5();
 					break;
-				
 				case 2:
 					func_5();
 					break;
-				
 				case 4:
 					func_5();
 					break;
-				
 				case 3:
 					func_5();
 					break;
-				
 				default:
 					break;
 			}
@@ -266,7 +256,7 @@ void func_10(bool bParam0)
 	int iVar0;
 	struct<8> Var1;
 	int iVar9;
-	
+
 	iVar0 = (MISC::_GET_SYSTEM_TIME() + 180000);
 	iVar9 = 0;
 	Var1 = { Var1 };
@@ -283,23 +273,18 @@ void func_10(bool bParam0)
 			{
 				case 0:
 					break;
-				
 				case 1:
 					func_5();
 					break;
-				
 				case 2:
 					func_5();
 					break;
-				
 				case 4:
 					func_5();
 					break;
-				
 				case 3:
 					func_5();
 					break;
-				
 				default:
 					break;
 			}
@@ -332,21 +317,18 @@ void func_10(bool bParam0)
 void func_11(var uParam0, var uParam1, var uParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = func_22(*uParam0);
 	switch (iVar0)
 	{
 		case 0:
 			func_23(uParam0, 1);
 			break;
-		
 		case 1:
 			break;
-		
 		case 2:
 			func_23(uParam0, 3);
 			break;
-		
 		case 3:
 			break;
 	}
@@ -358,7 +340,7 @@ int func_12(var uParam0, var uParam1, var uParam2, var uParam3)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	iVar0 = PLAYER::PLAYER_ID();
 	iVar1 = iVar0;
 	iVar2 = func_24(*((*uParam1)[iVar1 /*12*/]));
@@ -368,7 +350,6 @@ int func_12(var uParam0, var uParam1, var uParam2, var uParam3)
 			func_25((*uParam1)[iVar1 /*12*/]);
 			func_26((*uParam1)[iVar1 /*12*/]);
 			func_27((*uParam1)[iVar1 /*12*/], 1);
-		
 		case 1:
 			iVar3 = func_28(uParam0, uParam1, uParam2, uParam3);
 			if (iVar3 != iVar2)
@@ -386,7 +367,7 @@ int func_13(var uParam0, var uParam1, var uParam2, var uParam3)
 	int iVar1;
 	bool bVar2;
 	int iVar3;
-	
+
 	iVar0 = 1;
 	iVar1 = func_29(*uParam2);
 	switch (iVar1)
@@ -397,7 +378,6 @@ int func_13(var uParam0, var uParam1, var uParam2, var uParam3)
 				func_31(uParam2, 1);
 			}
 			break;
-		
 		case 1:
 			bVar2 = true;
 			if (bVar2)
@@ -426,28 +406,24 @@ int func_13(var uParam0, var uParam1, var uParam2, var uParam3)
 				func_31(uParam2, 2);
 			}
 			break;
-		
 		case 2:
 			if (func_35(uParam0, uParam1, uParam2))
 			{
 				func_31(uParam2, 3);
 			}
 			break;
-		
 		case 3:
 			if (func_36(uParam0, uParam1, uParam2))
 			{
 				func_31(uParam2, 4);
 			}
 			break;
-		
 		case 4:
 			if (func_37(uParam0, uParam1, uParam2))
 			{
 				func_31(uParam2, 5);
 			}
 			break;
-		
 		case 5:
 			iVar3 = func_38(uParam0, uParam1, uParam2);
 			if (iVar3 == 1)
@@ -459,14 +435,12 @@ int func_13(var uParam0, var uParam1, var uParam2, var uParam3)
 				func_31(uParam2, 6);
 			}
 			break;
-		
 		case 6:
 			if (func_39(uParam0, uParam1, uParam2))
 			{
 				func_31(uParam2, 1);
 			}
 			break;
-		
 		case 7:
 			break;
 	}
@@ -477,7 +451,7 @@ void func_14(var uParam0, var uParam1, var uParam2, var uParam3)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
@@ -516,7 +490,7 @@ int func_18(var uParam0, int iParam1, char* sParam2)
 void func_19(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 32)
 	{
@@ -568,7 +542,7 @@ void func_26(var uParam0)
 	int iVar1;
 	struct<8> Var2;
 	bool bVar10;
-	
+
 	iVar0 = func_41();
 	iVar1 = func_42();
 	func_43(uParam0, iVar0);
@@ -604,7 +578,7 @@ int func_28(var uParam0, var uParam1, var uParam2, var uParam3)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = PLAYER::PLAYER_ID();
 	iVar1 = iVar0;
 	func_50((*uParam1)[iVar1 /*12*/], uParam3);
@@ -638,7 +612,7 @@ int func_33(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	switch (uParam0->f_4)
 	{
@@ -662,7 +636,7 @@ int func_33(var uParam0)
 int func_34(var uParam0, var uParam1, var uParam2)
 {
 	var uVar0;
-	
+
 	if (!func_53(uParam0, uParam1, uParam2, &uVar0))
 	{
 		return 0;
@@ -696,7 +670,7 @@ int func_37(var uParam0, var uParam1, var uParam2)
 	int iVar0;
 	int iVar1;
 	vector3 vVar2;
-	
+
 	iVar0 = uParam2->f_1;
 	iVar1 = iVar0;
 	func_55(&vVar2);
@@ -716,7 +690,7 @@ int func_38(var uParam0, var uParam1, var uParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = PLAYER::PLAYER_ID();
 	iVar1 = NETWORK::GET_UNIQUE_INT_FOR_PLAYER(iVar0);
 	if (!NETWORK::NETWORK_IS_SCRIPT_ACTIVE(func_54(), iVar1, true, 0))
@@ -734,7 +708,7 @@ int func_39(var uParam0, var uParam1, var uParam2)
 void func_40(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4)
 {
 	int iVar0;
-	
+
 	if (!SCRIPTS::GET_EVENT_DATA(1, iParam4, &iVar0, 4))
 	{
 		return;
@@ -751,7 +725,7 @@ var func_41()
 {
 	struct<4> Var0;
 	var uVar4;
-	
+
 	Var0 = { func_58(-1838434463, func_57(0), 1084182731, 1) };
 	uVar4 = func_59(Var0, -1911121386, 0, 1);
 	return uVar4;
@@ -761,7 +735,7 @@ var func_42()
 {
 	struct<4> Var0;
 	var uVar4;
-	
+
 	Var0 = { func_58(-1838434463, func_57(0), 1084182731, 1) };
 	uVar4 = func_60(Var0, -1911121386, 1, -1);
 	return uVar4;
@@ -775,7 +749,7 @@ void func_43(var uParam0, var uParam1)
 int func_44(var uParam0)
 {
 	struct<15> Var0;
-	
+
 	Var0.f_9 = -1591664384;
 	if (!func_61(&Var0))
 	{
@@ -793,7 +767,7 @@ void func_45(var uParam0, struct<8> Param1)
 void func_46(int iParam0, struct<8> Param1)
 {
 	struct<20> Var0;
-	
+
 	Var0.f_4 = 1;
 	Var0.f_8 = { Param1 };
 	Var0.f_7 = iParam0;
@@ -831,7 +805,7 @@ void func_50(var uParam0, var uParam1)
 {
 	int iVar0;
 	bool bVar1;
-	
+
 	iVar0 = func_67(uParam0, 1);
 	bVar1 = func_68(uParam1, 0);
 	if (iVar0 != bVar1)
@@ -863,7 +837,7 @@ void func_52(var uParam0, var uParam1)
 	bool bVar1;
 	bool bVar2;
 	bool bVar3;
-	
+
 	iVar0 = func_71(1884341302, PLAYER::PLAYER_ID(), 0, 1);
 	if (!func_72(iVar0))
 	{
@@ -902,7 +876,7 @@ int func_53(var uParam0, var uParam1, var uParam2, var uParam3)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar2 = 0;
 	while (iVar2 < 32)
 	{
@@ -945,7 +919,7 @@ void func_55(var uParam0)
 void func_56(int iParam0)
 {
 	struct<5> Var0;
-	
+
 	if (!SCRIPTS::GET_EVENT_DATA(1, iParam0, &Var0, 20))
 	{
 		return;
@@ -954,10 +928,8 @@ void func_56(int iParam0)
 	{
 		case 0:
 			break;
-		
 		case 1:
 			break;
-		
 		case 2:
 			break;
 	}
@@ -966,7 +938,7 @@ void func_56(int iParam0)
 struct<4> func_57(bool bParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_13 == 0)
 	{
 		iVar0 = func_77(bParam0);
@@ -993,7 +965,7 @@ struct<4> func_57(bool bParam0)
 struct<4> func_58(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, int iParam5, bool bParam6)
 {
 	struct<4> Var0;
-	
+
 	if (!func_47(iParam0, 0))
 	{
 		return Var0;
@@ -1005,7 +977,7 @@ struct<4> func_58(int iParam0, var uParam1, var uParam2, var uParam3, var uParam
 int func_59(struct<4> Param0, int iParam4, int iParam5, bool bParam6)
 {
 	struct<10> Var0;
-	
+
 	Var0.f_9 = -1591664384;
 	if (func_79(Param0, iParam4, &Var0, iParam5, bParam6))
 	{
@@ -1027,7 +999,7 @@ int func_61(var uParam0)
 	int iVar9;
 	struct<4> Var10;
 	struct<10> Var14;
-	
+
 	iVar0 = func_42();
 	if (!func_47(iVar0, 0))
 	{
@@ -1066,7 +1038,7 @@ var func_62(int iParam0, int iParam1)
 void func_63(vector3 vParam0, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, var uParam19, var uParam20)
 {
 	int iVar0;
-	
+
 	iVar0 = PLAYER::PLAYER_ID();
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam20))
 	{
@@ -1132,7 +1104,7 @@ void func_70(var uParam0, int iParam1)
 int func_71(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
-	
+
 	if (!NETWORK::_0x255A5EF65EDA9167(iParam1))
 	{
 		return -1;
@@ -1181,7 +1153,7 @@ int func_75(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = PLAYER::INT_TO_PARTICIPANTINDEX(iParam0);
 	if (!NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(iVar0))
 	{
@@ -1213,7 +1185,7 @@ int func_76(var uParam0, var uParam1, var uParam2, int iParam3)
 	vector3 vVar11;
 	var uVar14;
 	bool bVar15;
-	
+
 	iVar0 = iParam3;
 	iVar1 = func_84((*uParam1)[iVar0 /*12*/]);
 	if (!func_47(iVar1, 0))
@@ -1288,14 +1260,14 @@ int func_77(bool bParam0)
 struct<4> func_78()
 {
 	struct<4> Var0;
-	
+
 	return Var0;
 }
 
 int func_79(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, var uParam5, int iParam6, bool bParam7)
 {
 	int iVar0;
-	
+
 	iVar0 = func_77(bParam7);
 	if (INVENTORY::_0x033EE4B89F3AC545(iVar0, &uParam0, iParam4) <= iParam6)
 	{
@@ -1311,7 +1283,7 @@ int func_79(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, var
 int func_80(var uParam0, var uParam1, bool bParam2, int iParam3)
 {
 	struct<10> Var0;
-	
+
 	Var0.f_9 = -1591664384;
 	if (func_86(uParam0, uParam1, &Var0, bParam2, iParam3))
 	{
@@ -1334,7 +1306,7 @@ var func_81(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 	int iVar9;
 	int iVar10;
 	int iVar11;
-	
+
 	SCRIPTS::_0xDE544B7EC0C187CC(&uVar0);
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
@@ -1367,11 +1339,9 @@ var func_81(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 			case 665633627:
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_88());
 				break;
-			
 			case -432403087:
 				iVar8 = VOLUME::_0x10157BC3247FF3BA(vParam0, vParam3, vParam6, func_88());
 				break;
-			
 			case -1612834106:
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_88());
 				break;
@@ -1458,56 +1428,48 @@ var func_81(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 								bVar4 = true;
 							}
 							break;
-						
 						case 0:
 							if (iVar9 & 32 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 1:
 							if (iVar9 & 64 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 2:
 							if (iVar9 & 128 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 3:
 							if (iVar9 & 256 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 4:
 							if (iVar9 & 512 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 5:
 							if (iVar9 & 1024 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 6:
 							if (iVar9 & 2048 != 0)
 							{
 								bVar4 = true;
 							}
 							break;
-						
 						case 8:
 							if (iVar9 & 4096 != 0)
 							{
@@ -1580,7 +1542,7 @@ var func_84(var uParam0)
 int func_85(int iParam0, var uParam1, var uParam2, var uParam3)
 {
 	int iVar0;
-	
+
 	if (!func_93(iParam0, &iVar0))
 	{
 		return 0;
@@ -1597,7 +1559,7 @@ int func_85(int iParam0, var uParam1, var uParam2, var uParam3)
 int func_86(var uParam0, var uParam1, var uParam2, bool bParam3, int iParam4)
 {
 	var uVar0;
-	
+
 	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
 	{
 		return 0;
@@ -1630,42 +1592,34 @@ char* func_88()
 int func_89(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	switch (iParam0)
 	{
 		case -1:
 			iVar0 = 16;
 			break;
-		
 		case 0:
 			iVar0 = 32;
 			break;
-		
 		case 1:
 			iVar0 = 64;
 			break;
-		
 		case 2:
 			iVar0 = 128;
 			break;
-		
 		case 3:
 			iVar0 = 256;
 			break;
-		
 		case 4:
 			iVar0 = 512;
 			break;
-		
 		case 5:
 			iVar0 = 1024;
 			break;
-		
 		case 6:
 			iVar0 = 2048;
 			break;
-		
 		case 8:
 			iVar0 = 4096;
 			break;
@@ -1716,7 +1670,7 @@ int func_93(int iParam0, var uParam1)
 {
 	vector3 vVar0;
 	int iVar3;
-	
+
 	if (!NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
 	{
 		return 0;
@@ -1758,7 +1712,7 @@ int func_94(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
 int func_95(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = iParam0;
 	if (iParam1 == 255)
 	{
@@ -1791,7 +1745,7 @@ int func_96(int iParam0)
 void func_97(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_16 != 0 || Global_1572887->f_13 != 0)
 	{
 		return;
@@ -1818,7 +1772,7 @@ void func_97(int iParam0)
 int func_98(int iParam0, var uParam1)
 {
 	int iVar0;
-	
+
 	if (!NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
 	{
 		return 0;
@@ -1841,7 +1795,7 @@ bool func_100(var uParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	return MISC::IS_BIT_SET(uParam0[(iParam1 / 31)], (iParam1 % 31));
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);
@@ -1856,7 +1810,7 @@ int func_101()
 void func_102(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_16 != 0 || Global_1572887->f_13 != 0)
 	{
 		return;

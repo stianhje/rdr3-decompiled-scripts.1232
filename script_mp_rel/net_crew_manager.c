@@ -29,7 +29,7 @@ void __EntryFunction__()
 void func_1()
 {
 	int iVar0;
-	
+
 	iVar0 = MISC::GET_GAME_TIMER();
 	func_6(32, -1);
 	func_7();
@@ -46,7 +46,7 @@ void func_1()
 int func_2(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -77,23 +77,18 @@ int func_2(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -122,7 +117,7 @@ void func_3()
 void func_4()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
@@ -153,7 +148,7 @@ int func_7()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = NETWORK::NETWORK_GET_SCRIPT_STATUS();
 	iVar1 = MISC::GET_GAME_TIMER();
 	iVar2 = NETWORK::NETWORK_GET_TIMEOUT_TIME();
@@ -176,23 +171,18 @@ int func_7()
 			{
 				case 0:
 					break;
-				
 				case 1:
 					func_5();
 					break;
-				
 				case 2:
 					func_5();
 					break;
-				
 				case 4:
 					func_5();
 					break;
-				
 				case 3:
 					func_5();
 					break;
-				
 				default:
 					break;
 			}
@@ -259,7 +249,7 @@ void func_10(bool bParam0)
 	int iVar0;
 	struct<8> Var1;
 	int iVar9;
-	
+
 	iVar0 = (MISC::_GET_SYSTEM_TIME() + 180000);
 	iVar9 = 0;
 	Var1 = { Var1 };
@@ -276,23 +266,18 @@ void func_10(bool bParam0)
 			{
 				case 0:
 					break;
-				
 				case 1:
 					func_5();
 					break;
-				
 				case 2:
 					func_5();
 					break;
-				
 				case 4:
 					func_5();
 					break;
-				
 				case 3:
 					func_5();
 					break;
-				
 				default:
 					break;
 			}
@@ -344,7 +329,6 @@ void func_12()
 			func_23();
 			Global_1182734 = 1;
 			break;
-		
 		case 1:
 			func_24();
 			break;
@@ -364,7 +348,7 @@ bool func_14()
 void func_15(var uParam0)
 {
 	struct<2> Var0;
-	
+
 	*uParam0 = { Var0 };
 }
 
@@ -376,7 +360,7 @@ int func_16(var uParam0, int iParam1, char* sParam2)
 void func_17(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
@@ -393,7 +377,7 @@ int func_18(var uParam0, int iParam1, char* sParam2)
 void func_19(var uParam0)
 {
 	struct<110> Var0;
-	
+
 	Var0.f_1 = 32;
 	*uParam0 = { Var0 };
 }
@@ -401,7 +385,7 @@ void func_19(var uParam0)
 void func_20()
 {
 	int iVar0;
-	
+
 	if (Global_1182734->f_108 == 0)
 	{
 		Global_1182187 = 0;
@@ -434,7 +418,7 @@ void func_22()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = PLAYER::PLAYER_ID();
 	iVar1 = 0;
 	while (iVar1 <= 4)
@@ -450,7 +434,7 @@ void func_22()
 void func_23()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
@@ -477,7 +461,7 @@ void func_24()
 void func_25(var uParam0)
 {
 	struct<17> Var0;
-	
+
 	Var0.f_9 = 5;
 	*uParam0 = { Var0 };
 }
@@ -490,7 +474,7 @@ bool func_26(var uParam0, var uParam1)
 void func_27(int iParam0)
 {
 	int iVar0;
-	
+
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
 		return;
@@ -518,7 +502,7 @@ void func_29()
 {
 	struct<2> Var0;
 	int iVar22;
-	
+
 	if (Global_1181794->f_146 != Global_1182189[PLAYER::PLAYER_ID() /*17*/])
 	{
 		if (Global_1181794->f_146 == 0)
@@ -545,7 +529,7 @@ void func_29()
 void func_30()
 {
 	bool bVar0;
-	
+
 	bVar0 = (NETWORK::NETWORK_IS_PLAYER_ACTIVE(PLAYER::INT_TO_PLAYERINDEX(Global_1182734->f_109)) && Global_1182189[Global_1182734->f_109 /*17*/] != 0);
 	func_33(Global_1182734->f_109, bVar0);
 	func_27(Global_1182734->f_109);
@@ -574,7 +558,7 @@ int func_31()
 void func_32()
 {
 	int iVar0;
-	
+
 	if (Global_1182189[PLAYER::PLAYER_ID() /*17*/] == 0)
 	{
 		((*Global_1182189)[PLAYER::PLAYER_ID() /*17*/])->f_16 = 0;
@@ -618,7 +602,6 @@ void func_33(int iParam0, bool bParam1)
 	{
 		case 0:
 			break;
-		
 		case 1:
 			Global_1182734->f_1[iParam0 /*3*/] = Global_1182189[iParam0 /*17*/];
 			if (CREW::NETWORK_CLAN_REQUEST_EMBLEM(&(Global_1182734->f_1[iParam0 /*3*/])))
@@ -630,14 +613,12 @@ void func_33(int iParam0, bool bParam1)
 				func_34(iParam0, 0);
 			}
 			break;
-		
 		case 2:
 			if (func_35(iParam0))
 			{
 				func_34(iParam0, 0);
 			}
 			break;
-		
 		case 3:
 			CREW::NETWORK_CLAN_RELEASE_EMBLEM(&(Global_1182734->f_1[iParam0 /*3*/]));
 			(Global_1182734->f_1[iParam0 /*3*/])->f_2 = 0;
@@ -656,7 +637,7 @@ int func_35(int iParam0)
 {
 	struct<8> Var0;
 	char* sVar8;
-	
+
 	if (CREW::NETWORK_CLAN_IS_EMBLEM_READY(&(Global_1182734->f_1[iParam0 /*3*/]), &Var0))
 	{
 		sVar8 = func_36(Var0);

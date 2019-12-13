@@ -17,7 +17,7 @@
 void __EntryFunction__()
 {
 	bool bVar0;
-	
+
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	if (NETWORK::NETWORK_IS_IN_SESSION())
 	{
@@ -73,7 +73,7 @@ void func_1(int iParam0)
 	int iVar0;
 	bool bVar1;
 	struct<31> Var2;
-	
+
 	iVar0 = PLAYER::PLAYER_ID();
 	bVar1 = false;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())

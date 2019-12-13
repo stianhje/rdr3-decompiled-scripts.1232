@@ -29,7 +29,7 @@ void __EntryFunction__()
 void func_1()
 {
 	int iVar0;
-	
+
 	iVar0 = MISC::GET_GAME_TIMER();
 	func_6(32, -1);
 	func_7();
@@ -84,7 +84,7 @@ int func_7()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = NETWORK::NETWORK_GET_SCRIPT_STATUS();
 	iVar1 = MISC::GET_GAME_TIMER();
 	iVar2 = NETWORK::NETWORK_GET_TIMEOUT_TIME();
@@ -107,23 +107,18 @@ int func_7()
 			{
 				case 0:
 					break;
-				
 				case 1:
 					func_5();
 					break;
-				
 				case 2:
 					func_5();
 					break;
-				
 				case 4:
 					func_5();
 					break;
-				
 				case 3:
 					func_5();
 					break;
-				
 				default:
 					break;
 			}
@@ -177,7 +172,7 @@ int func_8()
 void func_9()
 {
 	int iVar0;
-	
+
 	func_18();
 	iVar0 = 0;
 	while (iVar0 <= 4)
@@ -193,7 +188,7 @@ void func_10(bool bParam0)
 	int iVar0;
 	struct<8> Var1;
 	int iVar9;
-	
+
 	iVar0 = (MISC::_GET_SYSTEM_TIME() + 180000);
 	iVar9 = 0;
 	Var1 = { Var1 };
@@ -210,23 +205,18 @@ void func_10(bool bParam0)
 			{
 				case 0:
 					break;
-				
 				case 1:
 					func_5();
 					break;
-				
 				case 2:
 					func_5();
 					break;
-				
 				case 4:
 					func_5();
 					break;
-				
 				case 3:
 					func_5();
 					break;
-				
 				default:
 					break;
 			}
@@ -259,7 +249,7 @@ void func_10(bool bParam0)
 int func_11(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -290,23 +280,18 @@ int func_11(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -339,7 +324,7 @@ bool func_12()
 void func_13()
 {
 	int iVar0;
-	
+
 	while (iVar0 < 5)
 	{
 		func_20(Global_1246311->f_146);
@@ -355,7 +340,7 @@ void func_13()
 void func_14()
 {
 	int iVar0;
-	
+
 	while (iVar0 < 3)
 	{
 		func_21(Global_1247291->f_74);
@@ -372,7 +357,7 @@ void func_14()
 void func_15()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 21)
 	{
@@ -433,7 +418,7 @@ void func_20(int iParam0)
 	vector3 vVar0;
 	int iVar3;
 	vector3 vVar4;
-	
+
 	func_25(iParam0);
 	switch (Global_1246311[iParam0 /*29*/])
 	{
@@ -463,7 +448,6 @@ void func_20(int iParam0)
 				}
 			}
 			break;
-		
 		case 1:
 			if (func_34(((*Global_1246311)[iParam0 /*29*/])->f_22, &iVar3))
 			{
@@ -488,7 +472,6 @@ void func_20(int iParam0)
 			}
 			func_33(iParam0, 2);
 			break;
-		
 		case 2:
 			if (func_27(iParam0, 8, func_26(iParam0)))
 			{
@@ -513,7 +496,7 @@ void func_21(int iParam0)
 	int iVar2;
 	float fVar3;
 	float fVar4;
-	
+
 	iVar0 = func_26(iParam0);
 	if (func_40(iParam0, -1) != iVar0)
 	{
@@ -563,7 +546,6 @@ void func_21(int iParam0)
 				}
 			}
 			break;
-		
 		case 2:
 			if (!func_42(iParam0, 8, -1))
 			{
@@ -681,7 +663,7 @@ int func_26(int iParam0)
 int func_27(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
@@ -720,7 +702,7 @@ void func_29(int iParam0, int iParam1)
 int func_30(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
@@ -736,7 +718,7 @@ int func_30(int iParam0, int iParam1, int iParam2)
 Vector3 func_31(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
@@ -783,7 +765,7 @@ int func_34(vector3 vParam0, var uParam3)
 Vector3 func_35(int iParam0)
 {
 	int iVar0;
-	
+
 	switch (iParam0)
 	{
 		case 0:
@@ -792,64 +774,48 @@ Vector3 func_35(int iParam0)
 			{
 				case 0:
 					return 2761.631f, -1374.273f, 46.4021f;
-				
 				case 1:
 					return 2584.707f, -1408.874f, 46.1841f;
-				
 				case 2:
 					return 2657.596f, -1359.973f, 48.7346f;
-				
 				case 3:
 					return 2591.586f, -1439.41f, 46.5108f;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 6:
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 6);
 			switch (iVar0)
 			{
 				case 0:
 					return 692.1992f, -1059.64f, 53.6229f;
-				
 				case 1:
 					return 683.2755f, -1089.386f, 54.6198f;
-				
 				case 2:
 					return 680.8776f, -1030.875f, 47.1735f;
-				
 				case 3:
 					return 665.3676f, -1133.833f, 48.3046f;
-				
 				case 4:
 					return 682.7866f, -1116.154f, 51.5915f;
-				
 				case 5:
 					return 682.3309f, -1059.608f, 53.6422f;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 7:
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
 			switch (iVar0)
 			{
 				case 0:
 					return -3097.274f, -2489.697f, 70.0502f;
-				
 				case 1:
 					return -3124.842f, -2493.998f, 70.9493f;
-				
 				case 2:
 					return -3118.868f, -2500.998f, 70.9476f;
-				
 				case 3:
 					return -3090.036f, -2494.092f, 72.052f;
-				
 				default:
 					break;
 			}
@@ -866,7 +832,7 @@ int func_36(vector3 vParam0, vector3 vParam3)
 	float fVar7;
 	float fVar8;
 	int iVar9;
-	
+
 	if (!func_56(vParam3))
 	{
 		return 0;
@@ -895,7 +861,7 @@ Vector3 func_37(vector3 vParam0)
 {
 	float fVar0;
 	float fVar1;
-	
+
 	fVar0 = BUILTIN::VMAG(vParam0);
 	if (fVar0 != 0f)
 	{
@@ -937,7 +903,7 @@ int func_40(int iParam0, int iParam1)
 void func_41(int iParam0)
 {
 	var uVar0;
-	
+
 	if ((((*Global_1247291)[iParam0 /*10*/])->f_9 != 0 && ((*Global_1247291)[iParam0 /*10*/])->f_9 != -1) && GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1247291)[iParam0 /*10*/])->f_9))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1247291)[iParam0 /*10*/])->f_9);
@@ -967,7 +933,7 @@ int func_43(vector3 vParam0)
 {
 	int iVar0;
 	var uVar1;
-	
+
 	uVar1 = TASK::_0x74F0209674864CBD();
 	if (TASK::_0xFE5D28B9B7837CC1(uVar1, vParam0))
 	{
@@ -988,7 +954,7 @@ void func_44(int iParam0, int iParam1)
 int func_45(vector3 vParam0, var uParam3, var uParam4, int iParam5, bool bParam6, float fParam7, int iParam8, float fParam9, float fParam10, float fParam11)
 {
 	int iVar0;
-	
+
 	switch (*uParam3)
 	{
 		case 0:
@@ -1013,7 +979,6 @@ int func_45(vector3 vParam0, var uParam3, var uParam4, int iParam5, bool bParam6
 			}
 			*uParam3 = 3;
 			break;
-		
 		case 3:
 			if (!TASK::_0x1AC5A8AB50CFAA33(uParam3->f_1))
 			{
@@ -1036,7 +1001,6 @@ int func_45(vector3 vParam0, var uParam3, var uParam4, int iParam5, bool bParam6
 						*uParam4 = 1;
 					}
 					break;
-				
 				case 3:
 					uParam3->f_3 = { TASK::_0x865732725536EE39(&(uParam3->f_1)) };
 					*uParam3 = 4;
@@ -1047,7 +1011,6 @@ int func_45(vector3 vParam0, var uParam3, var uParam4, int iParam5, bool bParam6
 					break;
 			}
 			break;
-		
 		case 4:
 			return 1;
 	}
@@ -1067,7 +1030,7 @@ bool func_47()
 int func_48(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 4)
 	{
@@ -1083,7 +1046,7 @@ int func_48(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 void func_49()
 {
 	vector3 vVar0;
-	
+
 	vVar0 = -1;
 	vVar0.f_1 = -1;
 	vVar0.f_2 = -1;
@@ -1109,7 +1072,7 @@ int func_52(int iParam0)
 void func_53(int iParam0)
 {
 	struct<23> Var0;
-	
+
 	Var0 = -1;
 	Var0.f_1 = -1;
 	Var0.f_1.f_1 = -1;
@@ -1158,7 +1121,7 @@ void func_55(int iParam0)
 int func_56(vector3 vParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 16;
 	while (iVar0 <= 16)
 	{
@@ -1196,7 +1159,7 @@ void func_58(int iParam0, int iParam1)
 int func_59(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 4;
 	if (func_46(iParam0, 1))
 	{
@@ -1227,7 +1190,7 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!func_32(vParam2))
 	{
 		TASK::_0x2064B33F6E6B92D4(*uParam0, vParam2);
@@ -1239,7 +1202,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 			TASK::_0xB8E3486D107F4194(*uParam0, 90f);
 			TASK::_0x827A58CED9D4D5B4(*uParam0, 180f);
 			break;
-		
 		case 36:
 		case 37:
 		case 38:
@@ -1254,15 +1216,12 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 		case 49:
 		case 50:
 			break;
-		
 		case 48:
 			TASK::_0x827A58CED9D4D5B4(*uParam0, fParam6);
 			break;
-		
 		case 42:
 			TASK::_0xB8E3486D107F4194(*uParam0, fParam10);
 			break;
-		
 		default:
 			TASK::_0x827A58CED9D4D5B4(*uParam0, fParam6);
 			if (fParam10 != 0f)
@@ -1348,155 +1307,126 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0x0F4F6C4CE471259D(*uParam0, ((80f - 40f) / 2f));
 				TASK::_0xB79817DB31FF72B9(*uParam0, 0f);
 				break;
-			
 			case 4:
 				TASK::_0x954451EA2D2120FB(*uParam0, 0.5f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 2.5f);
 				break;
-			
 			case 5:
 				TASK::_0x954451EA2D2120FB(*uParam0, 3f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 6f);
 				break;
-			
 			case 6:
 				TASK::_0x954451EA2D2120FB(*uParam0, 5f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 10f);
 				break;
-			
 			case 7:
 				TASK::_0x954451EA2D2120FB(*uParam0, 2f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 10f);
 				break;
-			
 			case 8:
 				TASK::_0x954451EA2D2120FB(*uParam0, 5f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 10f);
 				break;
-			
 			case 9:
 				TASK::_0x954451EA2D2120FB(*uParam0, 12f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 18f);
 				break;
-			
 			case 10:
 				TASK::_0x4A7D73989F52EB37(*uParam0, 1f);
 				TASK::_0xB79817DB31FF72B9(*uParam0, 65f);
 				TASK::_0x954451EA2D2120FB(*uParam0, 0f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 100f);
 				break;
-			
 			case 0:
 				TASK::_0x954451EA2D2120FB(*uParam0, 0f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 55f);
 				break;
-			
 			case 11:
 				TASK::_0x954451EA2D2120FB(*uParam0, 0f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 15f);
 				break;
-			
 			case 15:
 				TASK::_0x954451EA2D2120FB(*uParam0, 0f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 40f);
 				break;
-			
 			case 14:
 				TASK::_0x954451EA2D2120FB(*uParam0, 50f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 80f);
 				break;
-			
 			case 16:
 				TASK::_0x954451EA2D2120FB(*uParam0, 60f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 100f);
 				break;
-			
 			case 30:
 				TASK::_0x954451EA2D2120FB(*uParam0, 0f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 150f);
 				break;
-			
 			case 2:
 				TASK::_0x4A7D73989F52EB37(*uParam0, 1f);
 				TASK::_0xB79817DB31FF72B9(*uParam0, 25f);
 				TASK::_0x954451EA2D2120FB(*uParam0, 0f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 150f);
 				break;
-			
 			case 18:
 				TASK::_0x954451EA2D2120FB(*uParam0, 1f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 20f);
 				break;
-			
 			case 20:
 				TASK::_0x954451EA2D2120FB(*uParam0, 0f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 10f);
 				break;
-			
 			case 21:
 				TASK::_0x954451EA2D2120FB(*uParam0, 80f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 100f);
 				break;
-			
 			case 22:
 				TASK::_0x954451EA2D2120FB(*uParam0, 70f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 100f);
 				break;
-			
 			case 23:
 			case 24:
 			case 25:
 				TASK::_0x954451EA2D2120FB(*uParam0, 2f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 10f);
 				break;
-			
 			case 26:
 				TASK::_0x954451EA2D2120FB(*uParam0, 50f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 80f);
 				break;
-			
 			case 27:
 				TASK::_0x954451EA2D2120FB(*uParam0, 3f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 6f);
 				break;
-			
 			case 28:
 				TASK::_0x954451EA2D2120FB(*uParam0, 40f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 50f);
 				TASK::_0xB79817DB31FF72B9(*uParam0, 45f);
 				break;
-			
 			case 29:
 				TASK::_0x954451EA2D2120FB(*uParam0, 15f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 25f);
 				TASK::_0xB79817DB31FF72B9(*uParam0, 20f);
 				break;
-			
 			case 31:
 				TASK::_0x954451EA2D2120FB(*uParam0, 80f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 140f);
 				break;
-			
 			case 32:
 				TASK::_0x954451EA2D2120FB(*uParam0, 40f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 125f);
 				break;
-			
 			case 33:
 				TASK::_0x954451EA2D2120FB(*uParam0, 0f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 10f);
 				break;
-			
 			case 34:
 				TASK::_0x954451EA2D2120FB(*uParam0, 0f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 10f);
 				break;
-			
 			case 35:
 				TASK::_0x954451EA2D2120FB(*uParam0, 60f);
 				TASK::_0x0F4F6C4CE471259D(*uParam0, 80f);
 				break;
-			
 			case 36:
 				TASK::_0x2EB977293923C723(*uParam0, 10f);
 				TASK::_0x954451EA2D2120FB(*uParam0, func_74(10f, 40f, 5f, iParam1));
@@ -1505,7 +1435,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 10f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 0);
 				break;
-			
 			case 37:
 				TASK::_0x2EB977293923C723(*uParam0, 30f);
 				TASK::_0x954451EA2D2120FB(*uParam0, func_74(40f, 80f, 5f, iParam1));
@@ -1514,7 +1443,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 15f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 1);
 				break;
-			
 			case 38:
 				TASK::_0x2EB977293923C723(*uParam0, 30f);
 				TASK::_0x954451EA2D2120FB(*uParam0, func_74(30f, 60f, 5f, iParam1));
@@ -1523,7 +1451,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 15f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 1);
 				break;
-			
 			case 39:
 				TASK::_0x2EB977293923C723(*uParam0, 10f);
 				TASK::_0x954451EA2D2120FB(*uParam0, func_74(0f, 10f, 1f, iParam1));
@@ -1532,7 +1459,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 3f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 0);
 				break;
-			
 			case 40:
 				TASK::_0x2EB977293923C723(*uParam0, 40f);
 				TASK::_0x954451EA2D2120FB(*uParam0, func_74(60f, 120f, 10f, iParam1));
@@ -1541,7 +1467,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 20f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 1);
 				break;
-			
 			case 41:
 				TASK::_0x2EB977293923C723(*uParam0, 10f);
 				TASK::_0x954451EA2D2120FB(*uParam0, func_74(10f, 35f, 5f, iParam1));
@@ -1550,7 +1475,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 20f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 0);
 				break;
-			
 			case 44:
 			case 45:
 				TASK::_0x2EB977293923C723(*uParam0, 60f);
@@ -1560,7 +1484,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0x450080DDEDB91258(*uParam0, 25f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 0);
 				break;
-			
 			case 50:
 				TASK::_0x2EB977293923C723(*uParam0, 30f);
 				TASK::_0x954451EA2D2120FB(*uParam0, func_74(30f, 70f, 10f, iParam1));
@@ -1569,7 +1492,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0x450080DDEDB91258(*uParam0, 25f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 0);
 				break;
-			
 			case 42:
 				TASK::_0x2EB977293923C723(*uParam0, 50f);
 				TASK::_0x954451EA2D2120FB(*uParam0, func_74(50f, 70f, 10f, iParam1));
@@ -1578,7 +1500,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0x450080DDEDB91258(*uParam0, 25f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 0);
 				break;
-			
 			case 49:
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 10f);
 				TASK::_0x450080DDEDB91258(*uParam0, 25f);
@@ -1587,7 +1508,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0x0F4F6C4CE471259D(*uParam0, func_74(10f, 50f, 10f, iParam1));
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 0);
 				break;
-			
 			case 43:
 				TASK::_0x2EB977293923C723(*uParam0, func_74(95f, 90f, 80f, iParam1));
 				TASK::_0x954451EA2D2120FB(*uParam0, func_74(95f, 90f, 80f, iParam1));
@@ -1596,7 +1516,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 10f);
 				TASK::_0x885D19AC2B6FBFF4(*uParam0, 0);
 				break;
-			
 			case 46:
 				iVar0 = func_75(vParam2, 1);
 				iVar1 = func_76(vParam2);
@@ -1621,7 +1540,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 					TASK::_0x764DB5A48390FBAD(*uParam0, 1);
 				}
 				break;
-			
 			case 47:
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 10f);
 				TASK::_0x450080DDEDB91258(*uParam0, 25f);
@@ -1634,7 +1552,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 					TASK::_0x764DB5A48390FBAD(*uParam0, 1);
 				}
 				break;
-			
 			case 48:
 				TASK::_0xBC3F847AE2C3DC65(*uParam0, 10f);
 				TASK::_0x450080DDEDB91258(*uParam0, 25f);
@@ -1647,7 +1564,6 @@ void func_63(var uParam0, int iParam1, vector3 vParam2, int iParam5, float fPara
 					TASK::_0x764DB5A48390FBAD(*uParam0, 1);
 				}
 				break;
-			
 			default:
 				if (iParam1 == 0)
 				{
@@ -1699,7 +1615,6 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 81, 0);
 			break;
-		
 		case 1:
 		case 19:
 		case 20:
@@ -1708,7 +1623,6 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 1, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 68, 0);
 			break;
-		
 		case 2:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 31, 4, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 4, 0);
@@ -1718,7 +1632,6 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x19BC99C678FBA139(*uParam0, 81, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 54, 1);
 			break;
-		
 		case 3:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 34, 2, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 2, 0);
@@ -1728,7 +1641,6 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x19BC99C678FBA139(*uParam0, 81, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 54, 1);
 			break;
-		
 		case 4:
 		case 5:
 		case 6:
@@ -1737,33 +1649,28 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 17, 1, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 1, 0);
 			break;
-		
 		case 7:
 			TASK::_0x885D19AC2B6FBFF4(*uParam0, 1);
 			TASK::_0x19BC99C678FBA139(*uParam0, 21, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 17, 1, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 1, 0);
 			break;
-		
 		case 8:
 			TASK::_0x19BC99C678FBA139(*uParam0, 21, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 17, 1, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 1, 0);
 			break;
-		
 		case 9:
 			TASK::_0x19BC99C678FBA139(*uParam0, 21, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 17, 1, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 1, 0);
 			break;
-		
 		case 10:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 34, 3, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 3, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 81, 0);
 			break;
-		
 		case 12:
 		case 13:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 23, 4, 0);
@@ -1773,22 +1680,18 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0xBC3F847AE2C3DC65(*uParam0, 25f);
 			TASK::_0x450080DDEDB91258(*uParam0, 25f);
 			break;
-		
 		case 11:
 		case 30:
 			TASK::_0x19BC99C678FBA139(*uParam0, 77, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			break;
-		
 		case 15:
 			TASK::_0x19BC99C678FBA139(*uParam0, 54, 0);
 			break;
-		
 		case 14:
 			TASK::_0x19BC99C678FBA139(*uParam0, 54, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 68, 0);
 			break;
-		
 		case 51:
 			TASK::_0x885D19AC2B6FBFF4(*uParam0, 1);
 			TASK::_0x19BC99C678FBA139(*uParam0, 21, 0);
@@ -1796,7 +1699,6 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 3, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 3, 0);
 			break;
-		
 		case 16:
 			TASK::_0x19BC99C678FBA139(*uParam0, 54, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 4, 0);
@@ -1805,7 +1707,6 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 47, 4, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			break;
-		
 		case 17:
 			TASK::_0x2EB977293923C723(*uParam0, 40f);
 			TASK::_0x764DB5A48390FBAD(*uParam0, 1);
@@ -1813,66 +1714,56 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 47, 2, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 68, 0);
 			break;
-		
 		case 18:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 2, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 81, 0);
 			break;
-		
 		case 21:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 31, 2, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 3, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 68, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 54, 0);
 			break;
-		
 		case 22:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 31, 2, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 3, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 68, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			break;
-		
 		case 23:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 4, 1);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 4, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			break;
-		
 		case 24:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 3, 1);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 3, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			break;
-		
 		case 25:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 2, 1);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 2, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			break;
-		
 		case 26:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 31, 3, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 4, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 81, 0);
 			break;
-		
 		case 27:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 31, 1, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 1, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 68, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 74, 0);
 			break;
-		
 		case 28:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 17, 2, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 2, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 77, 1);
 			TASK::_0x19BC99C678FBA139(*uParam0, 75, 1);
 			break;
-		
 		case 29:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 23, 1, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 2, 1);
@@ -1880,38 +1771,32 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x19BC99C678FBA139(*uParam0, 12, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 68, 0);
 			break;
-		
 		case 31:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 3, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 64, 1, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 47, 3, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 3, 0);
 			break;
-		
 		case 32:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 3, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 23, 3, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 3, 0);
 			break;
-		
 		case 33:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 2, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 17, 3, 0);
 			break;
-		
 		case 34:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 47, 2, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 47, 4, 1);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 1, 0);
 			break;
-		
 		case 35:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 23, 2, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 3, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 68, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 54, 0);
 			break;
-		
 		case 36:
 		case 37:
 		case 38:
@@ -1921,14 +1806,12 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x19BC99C678FBA139(*uParam0, 81, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 23, 1, 0);
 			break;
-		
 		case 41:
 			TASK::_0x19BC99C678FBA139(*uParam0, 80, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 81, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 47, 4, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 17, 1, 0);
 			break;
-		
 		case 42:
 		case 44:
 		case 49:
@@ -1937,14 +1820,12 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 23, 4, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 75, 1);
 			break;
-		
 		case 50:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 44, 2, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 2, 0);
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 23, 3, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 75, 1);
 			break;
-		
 		case 46:
 		case 47:
 		case 48:
@@ -1961,7 +1842,6 @@ void func_64(var uParam0, int iParam1, vector3 vParam2)
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 23, 3, 0);
 			TASK::_0x19BC99C678FBA139(*uParam0, 75, 1);
 			break;
-		
 		case 43:
 			TASK::_0x5D9B0BAAF04CF65B(*uParam0, 50, 2, 1);
 			TASK::_0x19BC99C678FBA139(*uParam0, 5, 0);
@@ -2024,7 +1904,7 @@ void func_71(int iParam0)
 	vector3 vVar6;
 	int iVar9;
 	int iVar10;
-	
+
 	vVar0 = { ((*Global_1246311)[iParam0 /*29*/])->f_12.f_1 };
 	if (func_78(vVar0, &iVar9))
 	{
@@ -2075,7 +1955,7 @@ void func_73(var uParam0, var uParam1)
 float func_74(float fParam0, float fParam1, float fParam2, int iParam3)
 {
 	float fVar0;
-	
+
 	fVar0 = fParam0;
 	fVar0 = (fVar0 + (fParam2 * IntToFloat(iParam3)));
 	if (fVar0 > fParam1)
@@ -2088,7 +1968,7 @@ float func_74(float fParam0, float fParam1, float fParam2, int iParam3)
 int func_75(vector3 vParam0, bool bParam3)
 {
 	int iVar0;
-	
+
 	iVar0 = func_85();
 	if (func_86(iVar0))
 	{
@@ -2127,40 +2007,31 @@ int func_78(vector3 vParam0, var uParam3)
 Vector3 func_79(int iParam0)
 {
 	int iVar0;
-	
+
 	switch (iParam0)
 	{
 		case 8:
 			return -100.8f, 1323.5f, 175.2f;
-		
 		case 9:
 			return 466.8f, 1453.4f, 167.6f;
-		
 		case 10:
 			return -5187.461f, -2234.014f, 4.4936f;
-		
 		case 12:
 			return -6443.831f, -3520.823f, -26.0969f;
-		
 		case 11:
 			return -6340.91f, -3696.913f, -14.1772f;
-		
 		case 14:
 			return -2552.11f, 676.8995f, 139.4233f;
-		
 		case 15:
 			return 431.3042f, 1882.343f, 200.1935f;
-		
 		case 13:
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 			switch (iVar0)
 			{
 				case 0:
 					return -3551.093f, -1892.741f, 6.6481f;
-				
 				case 1:
 					return -3614.111f, -1824.39f, 42.1228f;
-				
 				default:
 					break;
 			}
@@ -2186,7 +2057,7 @@ int func_80(vector3 vParam0, int iParam3)
 Vector3 func_81(int iParam0)
 {
 	int iVar0;
-	
+
 	switch (iParam0)
 	{
 		case 17:
@@ -2195,88 +2066,68 @@ Vector3 func_81(int iParam0)
 			{
 				case 0:
 					return 801.0809f, 1590.761f, 191.8018f;
-				
 				case 1:
 					return 787.089f, 1578.206f, 192.1368f;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 18:
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 			switch (iVar0)
 			{
 				case 0:
 					return 1361.741f, 1834.185f, 191.9639f;
-				
 				case 1:
 					return 1366.334f, 1825.952f, 191.9067f;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 19:
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
 			switch (iVar0)
 			{
 				case 0:
 					return -2133.484f, 21.9821f, 267.3751f;
-				
 				case 1:
 					return -2102.551f, 19.7074f, 271.3395f;
-				
 				case 2:
 					return -2138.653f, -18.8593f, 249.3509f;
-				
 				case 3:
 					return -2151.525f, -30.694f, 243.5381f;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 20:
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
 			switch (iVar0)
 			{
 				case 0:
 					return -2621.178f, 707.432f, 166.5945f;
-				
 				case 1:
 					return -2661.782f, 701.2828f, 182.7456f;
-				
 				case 2:
 					return -2640.054f, 696.5616f, 178.054f;
-				
 				case 3:
 					return -2632.107f, 710.8809f, 170.3972f;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 21:
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
 			switch (iVar0)
 			{
 				case 0:
 					return 2328.97f, 984.2775f, 74.5295f;
-				
 				case 1:
 					return 2379.057f, 986.2366f, 73.9579f;
-				
 				case 2:
 					return 2322.657f, 990.1773f, 76.9349f;
-				
 				case 3:
 					return 2358.901f, 1005.723f, 85.4943f;
-				
 				default:
 					break;
 			}
@@ -2292,7 +2143,7 @@ int func_82(vector3 vParam0)
 	vector3 vVar2;
 	vector3 vVar5;
 	int iVar8;
-	
+
 	fVar0 = 150f;
 	fVar1 = (fVar0 * 1.5f);
 	fVar1 = (fVar1 + 0.1f);
@@ -2316,25 +2167,18 @@ Vector3 func_83(int iParam0)
 	{
 		case 0:
 			return 0f, 250f, 0f;
-		
 		case 1:
 			return (BUILTIN::SIN(45f) * 250f), (BUILTIN::COS(45f) * 250f), 0f;
-		
 		case 2:
 			return 250f, 0f, 0f;
-		
 		case 3:
 			return (BUILTIN::SIN(45f) * 250f), (-1f * (BUILTIN::COS(45f) * 250f)), 0f;
-		
 		case 4:
 			return 0f, (250f * -1f), 0f;
-		
 		case 5:
 			return (-1f * (BUILTIN::SIN(45f) * 250f)), (-1f * (BUILTIN::COS(45f) * 250f)), 0f;
-		
 		case 6:
 			return (250f * -1f), 0f, 0f;
-		
 		case 7:
 			return (-1f * (BUILTIN::SIN(45f) * 250f)), (BUILTIN::COS(45f) * 250f), 0f;
 	}
@@ -2363,7 +2207,7 @@ int func_87(vector3 vParam0, bool bParam3)
 	int iVar2;
 	bool bVar3;
 	int iVar4;
-	
+
 	iVar0 = func_89(vParam0);
 	iVar1 = -1;
 	if (Global_1893558[iVar0] > 0)
@@ -2386,7 +2230,6 @@ int func_87(vector3 vParam0, bool bParam3)
 								bVar3 = true;
 							}
 							break;
-						
 						default:
 							iVar1 = iVar4;
 							bVar3 = true;
@@ -2409,52 +2252,36 @@ int func_88(int iParam0)
 	{
 		case 2025841068:
 			return 0;
-		
 		case 822658194:
 			return 1;
-		
 		case 1308232528:
 			return 2;
-		
 		case 1835499550:
 			return 3;
-		
 		case 476637847:
 			return 4;
-		
 		case -120156735:
 			return 6;
-		
 		case 1645618177:
 			return 7;
-		
 		case -512529193:
 			return 8;
-		
 		case 131399519:
 			return 9;
-		
 		case 178647645:
 			return 10;
-		
 		case -864275692:
 			return 11;
-		
 		case 1684533001:
 			return 12;
-		
 		case -2066240242:
 			return 13;
-		
 		case -2145992129:
 			return 14;
-		
 		case -108848014:
 			return 15;
-		
 		case 892930832:
 			return 16;
-		
 		default:
 			break;
 	}
@@ -2464,7 +2291,7 @@ int func_88(int iParam0)
 int func_89(vector3 vParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_90(vParam0, 0f, 0f, 0, 2);
 	return func_90(vParam0, ((*Global_1892728)[iVar0 /*3*/])->f_1, ((*Global_1892728)[iVar0 /*3*/])->f_2, Global_1892728[iVar0 /*3*/], 4);
 }

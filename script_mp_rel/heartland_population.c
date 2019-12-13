@@ -50,7 +50,7 @@ void __EntryFunction__()
 {
 	int iVar0;
 	bool bVar1;
-	
+
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
 	fLocal_17 = 7f;
@@ -110,7 +110,7 @@ void func_2()
 {
 	vector3 vVar0;
 	vector3 vVar3;
-	
+
 	vVar0 = { fLocal_17, fLocal_18, fLocal_19 };
 	vVar3 = { fLocal_20, fLocal_21, fLocal_22 };
 	FLOCK::_0xF2CCA7B68CFAB2B9(904876610, 725.8305f, -468.8784f, 149f, vVar0, vVar3, 9.5f, 50f, 1f, 6f);
@@ -216,7 +216,7 @@ int func_4()
 int func_5(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -247,23 +247,18 @@ int func_5(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}

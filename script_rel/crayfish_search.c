@@ -28,21 +28,18 @@ void __EntryFunction__()
 					func_4(&Local_0, 1);
 				}
 				break;
-			
 			case 1:
 				if (func_5(&ScriptParam_0, &Local_0))
 				{
 					func_4(&Local_0, 2);
 				}
 				break;
-			
 			case 2:
 				if (func_6(&ScriptParam_0, &Local_0))
 				{
 					func_4(&Local_0, 3);
 				}
 				break;
-			
 			case 3:
 				if (func_7(&ScriptParam_0, &Local_0))
 				{
@@ -58,12 +55,10 @@ void __EntryFunction__()
 					}
 				}
 				break;
-			
 			case 4:
 				func_1(&ScriptParam_0, &Local_0);
 				func_4(&Local_0, 5);
 				break;
-			
 			case 5:
 				break;
 		}
@@ -108,7 +103,7 @@ int func_2(var uParam0, int iParam1)
 int func_3(var uParam0, int iParam1)
 {
 	vector3 vVar0;
-	
+
 	vVar0 = { func_10(uParam0) };
 	if (!TASK::_0x841475AC96E794D1(&(iParam1->f_9[0])))
 	{
@@ -137,7 +132,7 @@ int func_5(var uParam0, int iParam1)
 int func_6(var uParam0, int iParam1)
 {
 	vector3 vVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam1->f_6))
 	{
 		vVar0 = { func_13(uParam0) };
@@ -165,7 +160,7 @@ int func_6(var uParam0, int iParam1)
 int func_7(var uParam0, int iParam1)
 {
 	struct<2> Var0;
-	
+
 	if (ENTITY::IS_ENTITY_DEAD(Global_35))
 	{
 		return 0;
@@ -190,7 +185,7 @@ void func_8(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 <= (1 - 1))
@@ -207,7 +202,7 @@ void func_8(var uParam0)
 int func_9(int iParam0, bool bParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 != -1)
 	{
 		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
@@ -268,37 +263,26 @@ int func_9(int iParam0, bool bParam1, int iParam2)
 	{
 		case 0:
 			return 0;
-		
 		case 1:
 			return iParam0 & 1 == 0;
-		
 		case 4:
 			return iParam0 & 2 == 0;
-		
 		case 6:
 			return iParam0 & 4 == 0;
-		
 		case 2:
 			return iParam0 & 16 == 0;
-		
 		case 5:
 			return iParam0 & 32 == 0;
-		
 		case 9:
 			return iParam0 & 64 == 0;
-		
 		case 8:
 			return iParam0 & 8 == 0;
-		
 		case 10:
 			return iParam0 & 512 == 0;
-		
 		case 3:
 			return iParam0 & 128 == 0;
-		
 		case 11:
 			return iParam0 & 256 == 0;
-		
 		default:
 			break;
 	}
@@ -327,7 +311,7 @@ int func_12(int iParam0)
 	float fVar5;
 	float fVar6;
 	int iVar7;
-	
+
 	if (!TASK::_0x841475AC96E794D1(iParam0))
 	{
 		return -1;
@@ -355,7 +339,7 @@ Vector3 func_13(var uParam0)
 {
 	vector3 vVar0;
 	float fVar3;
-	
+
 	vVar0 = { func_10(uParam0) };
 	fVar3 = 0f;
 	if (MISC::GET_GROUND_Z_FOR_3D_COORD(vVar0, &fVar3, 1))
@@ -396,7 +380,7 @@ int func_16(int iParam0)
 {
 	vector3 vVar0;
 	int iVar10;
-	
+
 	if (TASK::_0xD04241BBF6D03A5E(Global_35) != 0)
 	{
 		iVar10 = 0;
@@ -437,7 +421,7 @@ void func_19(int iParam0, int iParam1, vector3 vParam2, int iParam5, int iParam6
 	var uVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	uVar0 = COMPENDIUM::COMPENDIUM_GET_MAP_DISCOVERABLE_FROM_STAT_ITEM(iParam0, vParam2);
 	iVar1 = uVar0;
 	if (iVar1 != 0 && !MAP::_0x3F81EA4275D39D6F(iVar1))
@@ -479,7 +463,7 @@ void func_19(int iParam0, int iParam1, vector3 vParam2, int iParam5, int iParam6
 struct<2> func_20(int iParam0, int iParam1)
 {
 	struct<2> Var0;
-	
+
 	Var0 = iParam0;
 	Var0.f_1 = iParam1;
 	return Var0;
@@ -544,55 +528,38 @@ Vector3 func_26(int iParam0)
 	{
 		case 0:
 			return 2027.162f, -1722.432f, 40.62656f;
-		
 		case 1:
 			return 2045.327f, -1785.859f, 40.69251f;
-		
 		case 2:
 			return 2021.431f, -1789.314f, 40.40718f;
-		
 		case 3:
 			return 2087.09f, -1859.742f, 40.49999f;
-		
 		case 4:
 			return 2058.266f, -1866.586f, 40.5274f;
-		
 		case 5:
 			return 2042.225f, -1885.971f, 40.49999f;
-		
 		case 6:
 			return 1672.345f, -826.9699f, 39.77722f;
-		
 		case 7:
 			return 1710.503f, -850.5192f, 40.24175f;
-		
 		case 8:
 			return 1693.874f, -942.7992f, 40.27774f;
-		
 		case 9:
 			return 1756.451f, -1017.704f, 40.73364f;
-		
 		case 10:
 			return 2339.37f, -544.2522f, 40.72062f;
-		
 		case 11:
 			return 2301.896f, -515.7421f, 40.62392f;
-		
 		case 12:
 			return 2253.715f, -549.9788f, 40.5689f;
-		
 		case 13:
 			return 2281.221f, -640.3717f, 40.46832f;
-		
 		case 14:
 			return 2215.952f, -679.2456f, 40.62037f;
-		
 		case 15:
 			return 2176.255f, -693.6794f, 40.68019f;
-		
 		case 16:
 			return 2258.821f, -720.3987f, 40.47908f;
-		
 		default:
 			break;
 	}
@@ -605,55 +572,38 @@ int func_27(int iParam0)
 	{
 		case 0:
 			return 1007485139;
-		
 		case 1:
 			return -1588164913;
-		
 		case 2:
 			return -1350423696;
-		
 		case 3:
 			return 1711671480;
-		
 		case 4:
 			return -949094404;
-		
 		case 5:
 			return 32115079;
-		
 		case 6:
 			return -735160262;
-		
 		case 7:
 			return 300773746;
-		
 		case 8:
 			return 93567835;
-		
 		case 9:
 			return 2126789874;
-		
 		case 10:
 			return 1334348844;
-		
 		case 11:
 			return -1301023018;
-		
 		case 12:
 			return 1098115085;
-		
 		case 13:
 			return 143309779;
-		
 		case 14:
 			return 596329535;
-		
 		case 15:
 			return -1265664648;
-		
 		case 16:
 			return -1918684699;
-		
 		default:
 			break;
 	}
@@ -674,7 +624,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1650496317;
 			}
 			break;
-		
 		case 597440621:
 			if (iParam2 == 1)
 			{
@@ -685,7 +634,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1230228733;
 			}
 			break;
-		
 		case 783089120:
 			if (iParam2 == 1)
 			{
@@ -696,7 +644,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 580480085;
 			}
 			break;
-		
 		case -577478188:
 			if (iParam2 == 1)
 			{
@@ -707,7 +654,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -293044453;
 			}
 			break;
-		
 		case 1596431305:
 			if (iParam2 == 1)
 			{
@@ -718,7 +664,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1794983091;
 			}
 			break;
-		
 		case 1781233743:
 			if (iParam2 == 1)
 			{
@@ -729,7 +674,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 693604975;
 			}
 			break;
-		
 		case 1297902195:
 			if (iParam2 == 1)
 			{
@@ -740,7 +684,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 672937471;
 			}
 			break;
-		
 		case 636730081:
 			if (iParam2 == 1)
 			{
@@ -751,7 +694,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 134380709;
 			}
 			break;
-		
 		case 1516275256:
 			if (iParam2 == 1)
 			{
@@ -762,7 +704,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1537431448;
 			}
 			break;
-		
 		case 640966621:
 			if (iParam2 == 1)
 			{
@@ -773,7 +714,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2020447749;
 			}
 			break;
-		
 		case 950257367:
 			if (iParam2 == 1)
 			{
@@ -784,7 +724,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 889056371;
 			}
 			break;
-		
 		case -1055552242:
 			if (iParam2 == 1)
 			{
@@ -795,7 +734,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1668029447;
 			}
 			break;
-		
 		case -1894468643:
 			if (iParam2 == 1)
 			{
@@ -806,7 +744,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1931087823;
 			}
 			break;
-		
 		case 1489890323:
 			if (iParam2 == 1)
 			{
@@ -817,7 +754,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1351907036;
 			}
 			break;
-		
 		case 2111267495:
 			if (iParam2 == 1)
 			{
@@ -828,7 +764,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 610597621;
 			}
 			break;
-		
 		case -1550790546:
 			if (iParam2 == 1)
 			{
@@ -839,7 +774,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 9629595;
 			}
 			break;
-		
 		case 1028084064:
 			if (iParam2 == 1)
 			{
@@ -850,7 +784,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2050618352;
 			}
 			break;
-		
 		case -1327130182:
 			if (iParam2 == 1)
 			{
@@ -861,7 +794,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 9729636;
 			}
 			break;
-		
 		case -375262254:
 			if (iParam2 == 1)
 			{
@@ -872,7 +804,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 143111533;
 			}
 			break;
-		
 		case 1339926283:
 			if (iParam2 == 1)
 			{
@@ -883,7 +814,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1903408805;
 			}
 			break;
-		
 		case -1847199476:
 			if (iParam2 == 1)
 			{
@@ -894,7 +824,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1775711449;
 			}
 			break;
-		
 		case 1075520399:
 			if (iParam2 == 1)
 			{
@@ -905,7 +834,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -131999783;
 			}
 			break;
-		
 		case 285816029:
 			if (iParam2 == 1)
 			{
@@ -916,7 +844,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1130778534;
 			}
 			break;
-		
 		case -1273168083:
 			if (iParam2 == 1)
 			{
@@ -927,7 +854,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -169402166;
 			}
 			break;
-		
 		case 2059272711:
 			if (iParam2 == 1)
 			{
@@ -938,7 +864,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -417846746;
 			}
 			break;
-		
 		case -943371758:
 			if (iParam2 == 1)
 			{
@@ -949,7 +874,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -579171441;
 			}
 			break;
-		
 		case 1190285160:
 			if (iParam2 == 1)
 			{
@@ -960,7 +884,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 5946766;
 			}
 			break;
-		
 		case -674936781:
 			if (iParam2 == 1)
 			{
@@ -971,7 +894,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1029515674;
 			}
 			break;
-		
 		case -2045434273:
 			if (iParam2 == 1)
 			{
@@ -982,7 +904,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1928771048;
 			}
 			break;
-		
 		case 1677450645:
 			if (iParam2 == 1)
 			{
@@ -993,7 +914,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -862429230;
 			}
 			break;
-		
 		case -2069413633:
 			if (iParam2 == 1)
 			{
@@ -1004,7 +924,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 521981365;
 			}
 			break;
-		
 		case -1071812884:
 			if (iParam2 == 1)
 			{
@@ -1015,7 +934,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1226381245;
 			}
 			break;
-		
 		case -973690007:
 			if (iParam2 == 1)
 			{
@@ -1026,7 +944,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -448286600;
 			}
 			break;
-		
 		case -1204752482:
 			if (iParam2 == 1)
 			{
@@ -1037,7 +954,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1554080546;
 			}
 			break;
-		
 		case -564442545:
 			if (iParam2 == 1)
 			{
@@ -1048,7 +964,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 316239633;
 			}
 			break;
-		
 		case 1210759497:
 			if (iParam2 == 1)
 			{
@@ -1059,7 +974,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 375187125;
 			}
 			break;
-		
 		case 1220494366:
 			if (iParam2 == 1)
 			{
@@ -1070,7 +984,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1730432737;
 			}
 			break;
-		
 		case -1923720634:
 			if (iParam2 == 1)
 			{
@@ -1081,7 +994,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1716975259;
 			}
 			break;
-		
 		case -1136838805:
 			if (iParam2 == 1)
 			{
@@ -1092,7 +1004,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 485763523;
 			}
 			break;
-		
 		case 1798104140:
 			if (iParam2 == 1)
 			{
@@ -1103,7 +1014,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1341709095;
 			}
 			break;
-		
 		case 613321581:
 			if (iParam2 == 1)
 			{
@@ -1114,7 +1024,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -155163817;
 			}
 			break;
-		
 		case -510702611:
 			if (iParam2 == 1)
 			{
@@ -1125,7 +1034,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1731672932;
 			}
 			break;
-		
 		case 926603386:
 			if (iParam2 == 1)
 			{
@@ -1136,7 +1044,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 198039826;
 			}
 			break;
-		
 		case -603666995:
 			if (iParam2 == 1)
 			{
@@ -1147,7 +1054,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 656647598;
 			}
 			break;
-		
 		case -1322848328:
 			if (iParam2 == 1)
 			{
@@ -1158,7 +1064,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -480293444;
 			}
 			break;
-		
 		case -1632170653:
 			if (iParam2 == 1)
 			{
@@ -1169,7 +1074,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1556846539;
 			}
 			break;
-		
 		case -1121883739:
 			if (iParam2 == 1)
 			{
@@ -1180,7 +1084,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 295404488;
 			}
 			break;
-		
 		case 1901047439:
 			if (iParam2 == 1)
 			{
@@ -1191,7 +1094,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1142160290;
 			}
 			break;
-		
 		case 268285362:
 			if (iParam2 == 1)
 			{
@@ -1202,7 +1104,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2028019941;
 			}
 			break;
-		
 		case 1742105665:
 			if (iParam2 == 1)
 			{
@@ -1213,7 +1114,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 763061508;
 			}
 			break;
-		
 		case 1938765490:
 			if (iParam2 == 1)
 			{
@@ -1224,7 +1124,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 857577510;
 			}
 			break;
-		
 		case -1986096416:
 			if (iParam2 == 1)
 			{
@@ -1235,7 +1134,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1327208188;
 			}
 			break;
-		
 		case 1509241437:
 			if (iParam2 == 1)
 			{
@@ -1246,7 +1144,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1152146286;
 			}
 			break;
-		
 		case 784496698:
 			if (iParam2 == 1)
 			{
@@ -1257,7 +1154,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1577268469;
 			}
 			break;
-		
 		case 520240957:
 			if (iParam2 == 1)
 			{
@@ -1268,7 +1164,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1134590040;
 			}
 			break;
-		
 		case -1350246467:
 			if (iParam2 == 1)
 			{
@@ -1279,7 +1174,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1088082550;
 			}
 			break;
-		
 		case -2146232868:
 			if (iParam2 == 1)
 			{
@@ -1290,7 +1184,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 288657650;
 			}
 			break;
-		
 		case 2104011353:
 			if (iParam2 == 1)
 			{
@@ -1301,7 +1194,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 224959159;
 			}
 			break;
-		
 		case -1673415831:
 			if (iParam2 == 1)
 			{
@@ -1312,7 +1204,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1620359805;
 			}
 			break;
-		
 		case 1157397403:
 			if (iParam2 == 1)
 			{
@@ -1323,7 +1214,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2106943688;
 			}
 			break;
-		
 		case 1374755253:
 			if (iParam2 == 1)
 			{
@@ -1334,7 +1224,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -756184090;
 			}
 			break;
-		
 		case -1203519405:
 			if (iParam2 == 1)
 			{
@@ -1345,7 +1234,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1952853624;
 			}
 			break;
-		
 		case -74829863:
 			if (iParam2 == 1)
 			{
@@ -1356,7 +1244,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1199311657;
 			}
 			break;
-		
 		case 702805627:
 			if (iParam2 == 1)
 			{
@@ -1367,7 +1254,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1123829079;
 			}
 			break;
-		
 		case 1895708243:
 			if (iParam2 == 1)
 			{
@@ -1378,7 +1264,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1313726941;
 			}
 			break;
-		
 		case -1003674917:
 			if (iParam2 == 1)
 			{
@@ -1389,7 +1274,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -745750690;
 			}
 			break;
-		
 		case -487429551:
 			if (iParam2 == 1)
 			{
@@ -1400,7 +1284,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1614204576;
 			}
 			break;
-		
 		case -853417084:
 			if (iParam2 == 1)
 			{
@@ -1411,7 +1294,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1052853383;
 			}
 			break;
-		
 		case 225698625:
 			if (iParam2 == 1)
 			{
@@ -1422,7 +1304,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -635519364;
 			}
 			break;
-		
 		case -1472826885:
 			if (iParam2 == 1)
 			{
@@ -1433,7 +1314,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1057046493;
 			}
 			break;
-		
 		case 1044478494:
 			if (iParam2 == 1)
 			{
@@ -1444,7 +1324,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1133767006;
 			}
 			break;
-		
 		case 1735171971:
 			if (iParam2 == 1)
 			{
@@ -1455,7 +1334,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -973375568;
 			}
 			break;
-		
 		case 365206122:
 			if (iParam2 == 1)
 			{
@@ -1466,7 +1344,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 594965829;
 			}
 			break;
-		
 		case 731537518:
 			if (iParam2 == 1)
 			{
@@ -1477,7 +1354,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 752876761;
 			}
 			break;
-		
 		case 1859834293:
 			if (iParam2 == 1)
 			{
@@ -1488,7 +1364,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -258263292;
 			}
 			break;
-		
 		case 524696643:
 			if (iParam2 == 1)
 			{
@@ -1499,7 +1374,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2056520757;
 			}
 			break;
-		
 		case 132914876:
 			if (iParam2 == 1)
 			{
@@ -1510,7 +1384,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1695964169;
 			}
 			break;
-		
 		case 768271981:
 			if (iParam2 == 1)
 			{
@@ -1521,7 +1394,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1973755393;
 			}
 			break;
-		
 		case -1245666683:
 			if (iParam2 == 1)
 			{
@@ -1532,7 +1404,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1973755393;
 			}
 			break;
-		
 		case -153407852:
 			if (((iParam1 == -450053710 || iParam1 == 1792770814) || iParam1 == -1679658797) || iParam1 == -1963397600)
 			{
@@ -1744,7 +1615,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				}
 			}
 			break;
-		
 		case 843200239:
 			if (iParam2 == 1)
 			{
@@ -1755,7 +1625,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1387469655;
 			}
 			break;
-		
 		case -557089338:
 			if (iParam2 == 1)
 			{
@@ -1766,7 +1635,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 363304543;
 			}
 			break;
-		
 		case -409730157:
 			if (iParam2 == 1)
 			{
@@ -1777,7 +1645,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 263724736;
 			}
 			break;
-		
 		case -1453172462:
 			if (iParam2 == 1)
 			{
@@ -1788,7 +1655,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 248268932;
 			}
 			break;
-		
 		case 2084223993:
 			if (iParam2 == 1)
 			{
@@ -1799,7 +1665,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1986670648;
 			}
 			break;
-		
 		case 1449149245:
 			if (iParam2 == 1)
 			{
@@ -1810,7 +1675,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 476264216;
 			}
 			break;
-		
 		case 230694645:
 			if (iParam2 == 1)
 			{
@@ -1821,7 +1685,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 161687222;
 			}
 			break;
-		
 		case -1998732171:
 			if (iParam2 == 1)
 			{
@@ -1832,7 +1695,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -439780870;
 			}
 			break;
-		
 		case 732517695:
 			if (iParam2 == 1)
 			{
@@ -1843,7 +1705,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2138925351;
 			}
 			break;
-		
 		case 1053713682:
 			if (iParam2 == 1)
 			{
@@ -1854,7 +1715,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -999327272;
 			}
 			break;
-		
 		case 562612880:
 			if (iParam2 == 1)
 			{
@@ -1865,7 +1725,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1465762044;
 			}
 			break;
-		
 		case 1488906430:
 			if (iParam2 == 1)
 			{
@@ -1876,7 +1735,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 382211197;
 			}
 			break;
-		
 		case -1002311676:
 		case 313926162:
 			if (iParam2 == 1)
@@ -1888,7 +1746,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1669886296;
 			}
 			break;
-		
 		case 1434063188:
 			if (iParam2 == 1)
 			{
@@ -1899,7 +1756,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 443311725;
 			}
 			break;
-		
 		case 1296784312:
 			if (iParam2 == 1)
 			{
@@ -1910,7 +1766,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 391521677;
 			}
 			break;
-		
 		case -1192335484:
 			if (iParam2 == 1)
 			{
@@ -1921,7 +1776,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1585573547;
 			}
 			break;
-		
 		case 184430925:
 			if (iParam2 == 1)
 			{
@@ -1932,7 +1786,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1011875654;
 			}
 			break;
-		
 		case 1631667828:
 			if (iParam2 == 1)
 			{
@@ -1943,7 +1796,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -662462270;
 			}
 			break;
-		
 		case 1623821606:
 			if (iParam2 == 1)
 			{
@@ -1954,7 +1806,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 401969671;
 			}
 			break;
-		
 		case 631108475:
 			if (iParam2 == 1)
 			{
@@ -1965,7 +1816,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1205233107;
 			}
 			break;
-		
 		case -679868805:
 			if (iParam2 == 1)
 			{
@@ -1976,7 +1826,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -570692178;
 			}
 			break;
-		
 		case -454952368:
 			if (iParam2 == 1)
 			{
@@ -1987,7 +1836,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -535907352;
 			}
 			break;
-		
 		case 512575690:
 			if (iParam2 == 1)
 			{
@@ -1998,7 +1846,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1961649296;
 			}
 			break;
-		
 		case -1315516671:
 			if (iParam2 == 1)
 			{
@@ -2009,7 +1856,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1333865097;
 			}
 			break;
-		
 		case -2032722392:
 			if (iParam2 == 1)
 			{
@@ -2020,7 +1866,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1328558441;
 			}
 			break;
-		
 		case 238849077:
 			if (iParam2 == 1)
 			{
@@ -2031,7 +1876,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1369680592;
 			}
 			break;
-		
 		case -812395905:
 			if (iParam2 == 1)
 			{
@@ -2042,7 +1886,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1903848769;
 			}
 			break;
-		
 		case 1252173965:
 			if (iParam2 == 1)
 			{
@@ -2053,7 +1896,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1097366344;
 			}
 			break;
-		
 		case 1948286917:
 			if (iParam2 == 1)
 			{
@@ -2064,7 +1906,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1875235996;
 			}
 			break;
-		
 		case 886717998:
 			if (iParam2 == 1)
 			{
@@ -2075,7 +1916,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -823139835;
 			}
 			break;
-		
 		case -905573570:
 			if (iParam2 == 1)
 			{
@@ -2086,7 +1926,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -138305935;
 			}
 			break;
-		
 		case -10873946:
 			if (iParam2 == 1)
 			{
@@ -2097,7 +1936,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1443679495;
 			}
 			break;
-		
 		case -1850027464:
 			if (iParam2 == 1)
 			{
@@ -2108,7 +1946,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1018532190;
 			}
 			break;
-		
 		case -1559343651:
 			if (iParam2 == 1)
 			{
@@ -2119,7 +1956,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -660080832;
 			}
 			break;
-		
 		case -908129790:
 			if (iParam2 == 1)
 			{
@@ -2130,7 +1966,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1557946994;
 			}
 			break;
-		
 		case -756458312:
 			if (iParam2 == 1)
 			{
@@ -2141,7 +1976,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1977250026;
 			}
 			break;
-		
 		case -1523680261:
 			if (iParam2 == 1)
 			{
@@ -2152,7 +1986,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -966619756;
 			}
 			break;
-		
 		case 915670869:
 			if (iParam2 == 1)
 			{
@@ -2163,7 +1996,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -576645995;
 			}
 			break;
-		
 		case 1241049848:
 			if (iParam2 == 1)
 			{
@@ -2174,7 +2006,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2058983692;
 			}
 			break;
-		
 		case 1642062303:
 			if (iParam2 == 1)
 			{
@@ -2185,7 +2016,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 655563396;
 			}
 			break;
-		
 		case -868889795:
 			if (iParam2 == 1)
 			{
@@ -2196,7 +2026,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1964441958;
 			}
 			break;
-		
 		case -245437166:
 			if (iParam2 == 1)
 			{
@@ -2207,7 +2036,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1238941576;
 			}
 			break;
-		
 		case -587357648:
 			if (iParam2 == 1)
 			{
@@ -2218,7 +2046,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2067439289;
 			}
 			break;
-		
 		case 1161966186:
 			if (iParam2 == 1)
 			{
@@ -2229,7 +2056,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 389722302;
 			}
 			break;
-		
 		case -795241033:
 			if (iParam2 == 1)
 			{
@@ -2240,7 +2066,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1974479168;
 			}
 			break;
-		
 		case -366264193:
 			if (iParam2 == 1)
 			{
@@ -2251,7 +2076,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -355707420;
 			}
 			break;
-		
 		case -705312705:
 			if (iParam2 == 1)
 			{
@@ -2262,7 +2086,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -887338500;
 			}
 			break;
-		
 		case -1592962144:
 			if (iParam2 == 1)
 			{
@@ -2273,7 +2096,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 2126380116;
 			}
 			break;
-		
 		case 886059398:
 			if (iParam2 == 1)
 			{
@@ -2284,7 +2106,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1354818991;
 			}
 			break;
-		
 		case 2018874380:
 			if (iParam2 == 1)
 			{
@@ -2295,7 +2116,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2141961689;
 			}
 			break;
-		
 		case -1467886026:
 		case -262717989:
 		case 1100342668:
@@ -2308,7 +2128,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -338768354;
 			}
 			break;
-		
 		case -1181288733:
 			if (iParam2 == 1)
 			{
@@ -2319,7 +2138,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 922834860;
 			}
 			break;
-		
 		case 1398366530:
 			if (iParam2 == 1)
 			{
@@ -2330,7 +2148,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2053685963;
 			}
 			break;
-		
 		case 1145409805:
 			if (iParam2 == 1)
 			{
@@ -2341,7 +2158,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1570463396;
 			}
 			break;
-		
 		case 733223128:
 			if (iParam2 == 1)
 			{
@@ -2352,7 +2168,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1316963652;
 			}
 			break;
-		
 		case -1427844561:
 			if (iParam2 == 1)
 			{
@@ -2363,7 +2178,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1656161562;
 			}
 			break;
-		
 		case -998653403:
 			if (iParam2 == 1)
 			{
@@ -2374,7 +2188,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1653716830;
 			}
 			break;
-		
 		case -547357240:
 		case 491620790:
 		case 888613388:
@@ -2387,7 +2200,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -2059037310;
 			}
 			break;
-		
 		case -764925634:
 		case -518676029:
 		case -21336386:
@@ -2400,7 +2212,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1256102478;
 			}
 			break;
-		
 		case -946474842:
 			if (iParam2 == 1)
 			{
@@ -2411,7 +2222,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1810346437;
 			}
 			break;
-		
 		case -1363455176:
 			if (iParam2 == 1)
 			{
@@ -2422,7 +2232,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 545602543;
 			}
 			break;
-		
 		case 234935858:
 			if (iParam2 == 1)
 			{
@@ -2433,7 +2242,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1629707044;
 			}
 			break;
-		
 		case 395345271:
 			if (iParam2 == 1)
 			{
@@ -2444,7 +2252,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1295654965;
 			}
 			break;
-		
 		case -1049737813:
 			if (iParam2 == 1)
 			{
@@ -2455,7 +2262,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1069740553;
 			}
 			break;
-		
 		case -143561573:
 			if (iParam2 == 1)
 			{
@@ -2466,7 +2272,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -449932244;
 			}
 			break;
-		
 		case -1099435331:
 			if (iParam2 == 1)
 			{
@@ -2477,7 +2282,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1863951382;
 			}
 			break;
-		
 		case -2058116954:
 			if (iParam2 == 1)
 			{
@@ -2488,7 +2292,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 465359925;
 			}
 			break;
-		
 		case -581264978:
 			if (iParam2 == 1)
 			{
@@ -2499,7 +2302,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 768799230;
 			}
 			break;
-		
 		case -1851619259:
 			if (iParam2 == 1)
 			{
@@ -2510,7 +2312,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -312751742;
 			}
 			break;
-		
 		case -1055590463:
 			if (iParam2 == 1)
 			{
@@ -2521,7 +2322,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 942504103;
 			}
 			break;
-		
 		case 725092441:
 		case 1202456973:
 			if (iParam2 == 1)
@@ -2533,7 +2333,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -334051008;
 			}
 			break;
-		
 		case -2087684184:
 			if (iParam2 == 1)
 			{
@@ -2544,7 +2343,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1360421905;
 			}
 			break;
-		
 		case -1771094723:
 			if (iParam2 == 1)
 			{
@@ -2555,7 +2353,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1603220402;
 			}
 			break;
-		
 		case -117895552:
 			if (iParam2 == 1)
 			{
@@ -2566,7 +2363,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1761303658;
 			}
 			break;
-		
 		case 288450344:
 			if (iParam2 == 1)
 			{
@@ -2577,7 +2373,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1827589699;
 			}
 			break;
-		
 		case -1914955935:
 			if (iParam2 == 1)
 			{
@@ -2588,7 +2383,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1302010630;
 			}
 			break;
-		
 		case 848629876:
 			if (iParam2 == 1)
 			{
@@ -2599,7 +2393,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1310085735;
 			}
 			break;
-		
 		case -439919843:
 			if (iParam2 == 1)
 			{
@@ -2610,7 +2403,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1866392966;
 			}
 			break;
-		
 		case -377162693:
 			if (iParam2 == 1)
 			{
@@ -2621,7 +2413,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 1489728350;
 			}
 			break;
-		
 		case 330512330:
 			if (iParam2 == 1)
 			{
@@ -2632,7 +2423,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return 760166198;
 			}
 			break;
-		
 		case 595771513:
 			if (iParam2 == 1)
 			{
@@ -2643,7 +2433,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -1518144336;
 			}
 			break;
-		
 		case -391309265:
 			if (iParam2 == 1)
 			{
@@ -2654,7 +2443,6 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return -463149499;
 			}
 			break;
-		
 		default:
 			break;
 	}
@@ -2664,7 +2452,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 void func_29(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam1 == 1)
 	{
 		func_32(iParam0, 0);
@@ -2717,7 +2505,7 @@ void func_33(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar1 = 0;
 	if (iParam0 == 0 && Global_43890 == 1)
 	{

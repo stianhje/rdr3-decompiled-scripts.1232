@@ -3,7 +3,7 @@ void __EntryFunction__()
 	var uVar0;
 	int iVar3;
 	var uVar4;
-	
+
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 	}
@@ -51,12 +51,10 @@ int func_1(int iParam0, var uParam1, bool bParam2, var uParam3)
 				func_8(uParam3);
 			}
 			break;
-		
 		case 1:
 			*uParam1 = ANIMSCENE::_CREATE_ANIM_SCENE("script@story@sal1@ig@sal1_ig12_wake_up@sal1_ig12_wake_up", 0, "Herb_PL", false, true);
 			func_7(iParam0, 2);
 			break;
-		
 		case 2:
 			if (ANIMSCENE::_0x25557E324489393C(*uParam1))
 			{
@@ -64,7 +62,6 @@ int func_1(int iParam0, var uParam1, bool bParam2, var uParam3)
 				func_7(iParam0, 3);
 			}
 			break;
-		
 		case 3:
 			if (ANIMSCENE::_0x477122B8D05E7968(*uParam1, 1, 0))
 			{
@@ -73,7 +70,6 @@ int func_1(int iParam0, var uParam1, bool bParam2, var uParam3)
 				func_7(iParam0, 5);
 			}
 			break;
-		
 		case 5:
 			if (!ANIMSCENE::_0xCBFC7725DE6CE2E0(*uParam1, 0))
 			{
@@ -157,7 +153,7 @@ bool func_12(var uParam0)
 float func_13()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();

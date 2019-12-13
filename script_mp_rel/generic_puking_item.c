@@ -19,7 +19,7 @@ void __EntryFunction__()
 	var uVar0;
 	int iVar3;
 	var uVar4;
-	
+
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 	}
@@ -53,12 +53,10 @@ int func_1(int iParam0, var uParam1, bool bParam2, var uParam3)
 				func_6(uParam3);
 			}
 			break;
-		
 		case 1:
 			*uParam1 = ANIMSCENE::_CREATE_ANIM_SCENE("script@MPSTORY@MP_PoisonHerb@IG@IG1_CommonBullrush@IG1_CommonBullrush", 0, "Herb_PL", true, false);
 			func_5(iParam0, 2);
 			break;
-		
 		case 2:
 			if (ANIMSCENE::_0x25557E324489393C(*uParam1))
 			{
@@ -66,7 +64,6 @@ int func_1(int iParam0, var uParam1, bool bParam2, var uParam3)
 				func_5(iParam0, 3);
 			}
 			break;
-		
 		case 3:
 			if (ANIMSCENE::_0x477122B8D05E7968(*uParam1, 1, 0) && ANIMSCENE::_0x95531A4A20CCE7BC(*uParam1, 0))
 			{
@@ -82,7 +79,6 @@ int func_1(int iParam0, var uParam1, bool bParam2, var uParam3)
 				func_5(iParam0, 5);
 			}
 			break;
-		
 		case 5:
 			if ((!ANIMSCENE::_0xCBFC7725DE6CE2E0(*uParam1, 0) || PED::IS_PED_FALLING(Global_35)) || ENTITY::IS_ENTITY_IN_WATER(Global_35))
 			{
@@ -158,7 +154,7 @@ bool func_9(var uParam0)
 float func_10()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();

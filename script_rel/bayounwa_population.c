@@ -37,7 +37,7 @@
 void __EntryFunction__()
 {
 	bool bVar0;
-	
+
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	func_1();
@@ -379,7 +379,7 @@ int func_18()
 bool func_19(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_26(iParam0);
 	return (iVar0 == 3 || iVar0 == 4);
 }
@@ -397,7 +397,7 @@ bool func_21(int iParam0)
 int func_22(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		if (!(iParam0 > 0 && iParam0 < 771))
@@ -431,7 +431,6 @@ int func_23(int iParam0, bool bParam1)
 	{
 		case 5:
 			return 1;
-		
 		case 6:
 			if (bParam1)
 			{
@@ -468,7 +467,7 @@ int func_26(int iParam0)
 int func_27(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -495,7 +494,7 @@ int func_29(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;

@@ -52,7 +52,6 @@ void __EntryFunction__()
 				HUD::SET_FRONTEND_ACTIVE(false);
 			}
 			break;
-		
 		default:
 			break;
 	}
@@ -124,82 +123,64 @@ void func_6(int iParam0)
 char* func_7(int iParam0)
 {
 	char* sVar0;
-	
+
 	sVar0 = "";
 	switch (iParam0)
 	{
 		case 0:
 			sVar0 = "";
 			break;
-		
 		case -88424047:
 			sVar0 = "new_game";
 			break;
-		
 		case 1651967528:
 			sVar0 = "shift_f";
 			break;
-		
 		case -84928653:
 			sVar0 = "demo";
 			break;
-		
 		case 1306134188:
 			sVar0 = "intro_not_done";
 			break;
-		
 		case -1357178860:
 			sVar0 = "private";
 			break;
-		
 		case 133180145:
 			sVar0 = "friendly";
 			break;
-		
 		case 655115506:
 			sVar0 = "hardcore";
 			break;
-		
 		case 1737952409:
 			sVar0 = "near_posse";
 			break;
-		
 		case 2137301164:
 			sVar0 = "random_posse";
 			break;
-		
 		case -110687166:
 			sVar0 = "open_posse";
 			break;
-		
 		case -2030542394:
 			sVar0 = "follow_invite";
 			break;
-		
 		case -11301188:
 			sVar0 = "random_region";
 			break;
-		
 		case -1312679892:
 			sVar0 = "last_region";
 			break;
-		
 		case 1433203589:
 			sVar0 = "spawn_location";
 			break;
-		
 		case -61119924:
 			sVar0 = "last_location";
 			break;
-		
 		case 2134863183:
 			sVar0 = "camp";
 			break;
-		
 		case -159568751:
 			sVar0 = "handheld";
 			break;
-		
 		case joaat("benchmark"):
 			sVar0 = "benchmark";
 			break;
@@ -211,7 +192,7 @@ void func_8(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = Global_1572887->f_282.f_1;
 	iVar1 = 0;
 	iVar1 = 0;

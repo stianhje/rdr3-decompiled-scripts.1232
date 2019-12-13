@@ -46,21 +46,18 @@ void __EntryFunction__()
 					func_7(&Local_18, 1);
 				}
 				break;
-			
 			case 1:
 				if (func_8(&Local_18))
 				{
 					func_7(&Local_18, 2);
 				}
 				break;
-			
 			case 2:
 				if (func_9(&Local_18))
 				{
 					func_7(&Local_18, 3);
 				}
 				break;
-			
 			case 3:
 				func_1(&Local_18);
 				break;
@@ -77,7 +74,7 @@ void func_1(var uParam0)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	func_10();
 	func_11(uParam0);
 	iVar0 = 0;
@@ -173,7 +170,7 @@ int func_5(var uParam0, var uParam1, var uParam2, var uParam3)
 int func_6(var uParam0)
 {
 	bool bVar0;
-	
+
 	bVar0 = true;
 	CAM::_0x05AB44D906738426();
 	switch (iLocal_4)
@@ -233,7 +230,6 @@ int func_6(var uParam0)
 				iLocal_4 = 1;
 			}
 			break;
-		
 		case 1:
 			if (!ENTITY::DOES_ENTITY_EXIST(Global_35))
 			{
@@ -243,7 +239,6 @@ int func_6(var uParam0)
 				iLocal_4 = 2;
 			}
 			break;
-		
 		case 2:
 			ANIMSCENE::SET_ANIM_SCENE_ENTITY(iLocal_8, "arthur", Global_35, 0);
 			if (bVar0)
@@ -251,7 +246,6 @@ int func_6(var uParam0)
 				iLocal_4 = 3;
 			}
 			break;
-		
 		case 3:
 			return 1;
 	}
@@ -276,7 +270,7 @@ int func_9(var uParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 1;
 	iVar1 = 0;
 	while (iVar1 < 2)
@@ -301,7 +295,7 @@ int func_9(var uParam0)
 void func_10()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 27)
 	{
@@ -332,7 +326,7 @@ void func_13(int iParam0, int iParam1, bool bParam2, bool bParam3, float fParam4
 	bool bVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	if (!func_14(iParam0))
 	{
 		return;
@@ -510,7 +504,7 @@ int func_22(int iParam0)
 int func_23()
 {
 	int iVar0;
-	
+
 	iVar0 = 1;
 	return iVar0;
 }
@@ -531,21 +525,18 @@ int func_24(var uParam0)
 				iLocal_3 = 1;
 			}
 			break;
-		
 		case 1:
 			if (func_46())
 			{
 				iLocal_3 = 2;
 			}
 			break;
-		
 		case 2:
 			if (ANIMSCENE::_0xD8254CB2C586412B(iLocal_8, 0))
 			{
 				iLocal_3 = 3;
 			}
 			break;
-		
 		case 3:
 			return 1;
 	}
@@ -556,7 +547,7 @@ void func_25(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (bParam2)
 	{
 		if (!func_47(iParam0))
@@ -627,7 +618,7 @@ void func_32(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (bParam2)
 	{
 		if (!func_47(iParam0))
@@ -642,7 +633,7 @@ void func_32(int iParam0, int iParam1, bool bParam2)
 int func_33(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 0)
 	{
 		return 0;
@@ -735,7 +726,7 @@ bool func_35(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (bParam2)
 	{
 		if (!func_47(iParam0))
@@ -751,7 +742,7 @@ void func_36(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (func_14(iParam0))
 	{
 		iVar1 = func_54(iParam0);
@@ -844,7 +835,7 @@ void func_40(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 {
 	var uVar0;
 	int iVar1;
-	
+
 	if (!func_14(iParam0))
 	{
 		return;
@@ -925,7 +916,7 @@ int func_42(int iParam0)
 void func_43(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
 {
 	int iVar0;
-	
+
 	if (!func_47(iParam1))
 	{
 		return;
@@ -989,7 +980,7 @@ int func_46()
 {
 	int iVar0;
 	float fVar1;
-	
+
 	if (!iLocal_11)
 	{
 		if (func_64(&uLocal_15) > 3000)
@@ -1047,7 +1038,7 @@ bool func_47(int iParam0)
 int func_48(var uParam0, var uParam1, var uParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = uParam0;
 	*uParam1 = (iVar0 / 31);
 	*uParam2 = (iVar0 % 31);
@@ -1084,7 +1075,7 @@ bool func_52(int iParam0, int iParam1)
 void func_53(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_47(iParam0))
 	{
 		return;
@@ -1143,7 +1134,7 @@ void func_57(int iParam0)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = func_54(iParam0);
 	iVar1 = func_34(iParam0, 0);
 	func_71(iParam0, iVar0);
@@ -1207,7 +1198,7 @@ int func_61(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (!func_47(iParam0))
 	{
 		return 0;
@@ -1334,13 +1325,10 @@ char* func_66(int iParam0)
 	{
 		case 0:
 			return "pbl_Cough_A";
-		
 		case 1:
 			return "pbl_Cough_B";
-		
 		case 2:
 			return "pbl_Labored_Breath";
-		
 		case 3:
 			return "pbl_Wipe_Face";
 	}
@@ -1379,82 +1367,56 @@ int func_69(int iParam0)
 	{
 		case 1:
 			return -177936449;
-		
 		case 0:
 			return -1758735922;
-		
 		case 6:
 			return -680519380;
-		
 		case 3:
 			return 263744889;
-		
 		case 7:
 			return 351057032;
-		
 		case 4:
 			return 1172283326;
-		
 		case 2:
 			return -1046310682;
-		
 		case 5:
 			return 652984488;
-		
 		case 8:
 			return 1389665576;
-		
 		case 9:
 			return -1066280913;
-		
 		case 13:
 			return 1975793632;
-		
 		case 14:
 			return -1887627202;
-		
 		case 15:
 			return 1851096281;
-		
 		case 16:
 			return 47402526;
-		
 		case 17:
 			return 1762683397;
-		
 		case 18:
 			return -1154551809;
-		
 		case 19:
 			return -333682158;
-		
 		case 20:
 			return 1465089966;
-		
 		case 21:
 			return 511213393;
-		
 		case 22:
 			return -1214580355;
-		
 		case 23:
 			return -1397900723;
-		
 		case 10:
 			return 541398842;
-		
 		case 24:
 			return -1960060437;
-		
 		case 25:
 			return 1634371177;
-		
 		case 26:
 			return -1308114737;
-		
 		case 11:
 			return 683250525;
-		
 		case 12:
 			return -814958461;
 	}
@@ -1512,53 +1474,37 @@ int func_73(int iParam0, bool bParam1)
 	{
 		case 3:
 			return -698095578;
-		
 		case 7:
 			return 230221572;
-		
 		case 0:
 			return 47961446;
-		
 		case 5:
 			return 1268955201;
-		
 		case 2:
 			return 2103924091;
-		
 		case 1:
 			return 1554677062;
-		
 		case 9:
 			return 984702223;
-		
 		case 6:
 			return -1825091419;
-		
 		case 11:
 			return 948152617;
-		
 		case 8:
 			return 795059774;
-		
 		case 23:
 			return -1880884094;
-		
 		case 20:
 			return 849012978;
-		
 		case 4:
 			return 404801781;
-		
 		case 10:
 			return -1094022447;
-		
 		case 26:
 			return -1484815615;
-		
 		case 12:
 		case 14:
 			return 0;
-		
 		default:
 			break;
 	}
@@ -1576,7 +1522,7 @@ void func_74(int iParam0)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	iVar0 = func_42(iParam0);
 	if (!PED::_0xA911EE21EDF69DAF(iVar0))
 	{
@@ -1619,7 +1565,7 @@ int func_75(int iParam0, int iParam1)
 void func_76(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_47(iParam0))
 	{
 		return;
@@ -1648,7 +1594,7 @@ void func_77(int iParam0, int iParam1)
 float func_78()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -1687,7 +1633,7 @@ bool func_82(var uParam0)
 int func_83()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -1716,7 +1662,7 @@ int func_84()
 void func_85(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return;
@@ -1745,7 +1691,7 @@ int func_87(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	if (!func_47(iParam0))
 	{
@@ -1785,7 +1731,7 @@ int func_88(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!func_47(iParam0))
 	{
 		return 0;

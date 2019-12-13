@@ -17,7 +17,7 @@ void __EntryFunction__()
 	vector3 vVar3;
 	bool bVar6;
 	int iVar7;
-	
+
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 		if (iLocal_13 >= 3)
@@ -38,14 +38,12 @@ void __EntryFunction__()
 				STREAMING::REQUEST_MODEL(func_2(), false);
 				iLocal_13 = 1;
 				break;
-			
 			case 1:
 				if (STREAMING::HAS_MODEL_LOADED(func_2()))
 				{
 					iLocal_13 = 2;
 				}
 				break;
-			
 			case 2:
 				if (PED::_0x5C16855277819BBF() >= 12)
 				{
@@ -55,7 +53,6 @@ void __EntryFunction__()
 					}
 				}
 				break;
-			
 			case 3:
 				if (ENTITY::IS_ENTITY_IN_VOLUME(Global_35, iLocal_14, true, 0) || MISC::IS_BULLET_IN_AREA(618.4946f, 2197.932f, 222.0223f, 13f, true))
 				{
@@ -63,7 +60,6 @@ void __EntryFunction__()
 					iLocal_15 = MISC::GET_GAME_TIMER();
 				}
 				break;
-			
 			case 4:
 				iVar1 = 0;
 				while (iVar1 < 12)
@@ -78,47 +74,36 @@ void __EntryFunction__()
 								case 0:
 									iVar2 = 0;
 									break;
-								
 								case 1:
 									iVar2 = 50;
 									break;
-								
 								case 2:
 									iVar2 = 160;
 									break;
-								
 								case 3:
 									iVar2 = 400;
 									break;
-								
 								case 4:
 									iVar2 = 310;
 									break;
-								
 								case 5:
 									iVar2 = 120;
 									break;
-								
 								case 6:
 									iVar2 = 200;
 									break;
-								
 								case 7:
 									iVar2 = 280;
 									break;
-								
 								case 8:
 									iVar2 = 390;
 									break;
-								
 								case 9:
 									iVar2 = 70;
 									break;
-								
 								case 10:
 									iVar2 = 220;
 									break;
-								
 								case 11:
 									iVar2 = 150;
 									break;
@@ -140,7 +125,6 @@ void __EntryFunction__()
 					}
 				}
 				break;
-			
 			case 5:
 				iVar1 = 0;
 				while (iVar1 < 12)
@@ -249,7 +233,7 @@ int func_3()
 	int iVar0;
 	vector3 vVar1;
 	float fVar4;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -261,57 +245,46 @@ int func_3()
 					vVar1 = { 622.3134f, 2200.764f, 221.5856f };
 					fVar4 = -160f;
 					break;
-				
 				case 1:
 					vVar1 = { 621.2441f, 2199.146f, 221.7287f };
 					fVar4 = -120f;
 					break;
-				
 				case 2:
 					vVar1 = { 619.4209f, 2194.512f, 221.7715f };
 					fVar4 = -99f;
 					break;
-				
 				case 3:
 					vVar1 = { 619.327f, 2192.713f, 221.5658f };
 					fVar4 = -155f;
 					break;
-				
 				case 4:
 					vVar1 = { 623.7524f, 2199.419f, 221.4249f };
 					fVar4 = 142f;
 					break;
-				
 				case 5:
 					vVar1 = { 621.4307f, 2195.696f, 221.644f };
 					fVar4 = -11f;
 					break;
-				
 				case 6:
 					vVar1 = { 623.0302f, 2189.17f, 220.8486f };
 					fVar4 = -33f;
 					break;
-				
 				case 7:
 					vVar1 = { 618.2859f, 2196.883f, 222.0049f };
 					fVar4 = 40f;
 					break;
-				
 				case 8:
 					vVar1 = { 617.9752f, 2193.77f, 221.7816f };
 					fVar4 = -175f;
 					break;
-				
 				case 9:
 					vVar1 = { 620.5045f, 2199.149f, 221.8133f };
 					fVar4 = -42f;
 					break;
-				
 				case 10:
 					vVar1 = { 632.3511f, 2197.817f, 220.63f };
 					fVar4 = 20f;
 					break;
-				
 				case 11:
 					vVar1 = { 626.5476f, 2191.122f, 220.7776f };
 					fVar4 = 68f;
@@ -334,34 +307,24 @@ Vector3 func_4(int iParam0)
 	{
 		case 0:
 			return 637f, 2120f, 236f;
-		
 		case 1:
 			return 673f, 2034f, 245f;
-		
 		case 2:
 			return 666f, 1935f, 241f;
-		
 		case 3:
 			return 750f, 1924f, 260f;
-		
 		case 4:
 			return 830f, 1851f, 270f;
-		
 		case 5:
 			return 920f, 1862f, 298f;
-		
 		case 6:
 			return 1003f, 1870f, 355f;
-		
 		case 7:
 			return 1197f, 1896f, 349f;
-		
 		case 8:
 			return 1358f, 2035f, 326f;
-		
 		case 9:
 			return 1569f, 2129f, 334f;
-		
 		case 10:
 			return 1723.816f, 2167.888f, 349.4869f;
 	}
@@ -374,16 +337,12 @@ Vector3 func_5(int iParam0)
 	{
 		case 0:
 			return 40f, 40f, 40f;
-		
 		case 1:
 			return 45f, 45f, 45f;
-		
 		case 5:
 			return 55f, 55f, 55f;
-		
 		case 6:
 			return 65f, 65f, 65f;
-		
 		case 7:
 			return 55f, 55f, 55f;
 	}
@@ -393,7 +352,7 @@ Vector3 func_5(int iParam0)
 void func_6()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
@@ -442,7 +401,7 @@ var func_10()
 int func_11(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12, bool bParam13, bool bParam14)
 {
 	int iVar0;
-	
+
 	iVar0 = PED::CREATE_PED(iParam0, vParam1, fParam4, bParam5, bParam6, bParam13, bParam14);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -470,7 +429,7 @@ void func_14(var uParam0, var uParam1)
 void func_15(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) || ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;
@@ -707,7 +666,6 @@ int func_16(int iParam0)
 		case 2115504616:
 		case 2141515026:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -789,7 +747,7 @@ void func_20(int iParam0, int iParam1)
 bool func_21(int iParam0, int iParam1)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -804,7 +762,7 @@ bool func_21(int iParam0, int iParam1)
 int func_22(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return 0;
@@ -825,7 +783,7 @@ bool func_23(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;

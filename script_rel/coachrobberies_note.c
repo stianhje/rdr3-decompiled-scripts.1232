@@ -22,7 +22,6 @@ void __EntryFunction__()
 				HUD::_0xF66090013DE648D5(sLocal_4);
 				iLocal_0 = 1;
 				break;
-			
 			case 1:
 				if (HUD::_0xD0976CC34002DB57(sLocal_4))
 				{
@@ -30,7 +29,6 @@ void __EntryFunction__()
 					iLocal_0 = 2;
 				}
 				break;
-			
 			case 2:
 				if (func_3(&uLocal_1) > 15f)
 				{
@@ -77,34 +75,28 @@ void func_4()
 {
 	int iVar0;
 	char* sVar1;
-	
+
 	iVar0 = Global_40.f_9146.f_3;
 	switch (iVar0)
 	{
 		case 4:
 			sVar1 = "CR_RHD_R1";
 			break;
-		
 		case 5:
 			sVar1 = "CR_RHD_R2";
 			break;
-		
 		case 6:
 			sVar1 = "CR_RHD_R3";
 			break;
-		
 		case 13:
 			sVar1 = "CR_RHD_RTL";
 			break;
-		
 		case 0:
 			sVar1 = "CR_STR_R1";
 			break;
-		
 		case 1:
 			sVar1 = "CR_STR_R2";
 			break;
-		
 		case 2:
 			sVar1 = "CR_STR_R3";
 			break;
@@ -138,7 +130,7 @@ bool func_8(var uParam0)
 float func_9()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -172,7 +164,7 @@ var func_14(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4, int
 	struct<4> Var0;
 	struct<2> Var13;
 	var uVar15;
-	
+
 	Var0 = -2;
 	Var0 = iParam1;
 	Var0.f_1 = uParam2;

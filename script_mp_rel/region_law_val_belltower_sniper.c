@@ -103,7 +103,7 @@ int func_3(var uParam0)
 int func_4()
 {
 	float fVar0;
-	
+
 	if (iLocal_45 >= 7)
 	{
 		return 0;
@@ -127,7 +127,6 @@ void func_5()
 		case 1:
 			iLocal_45 = 2;
 			break;
-		
 		case 2:
 			STREAMING::REQUEST_MODEL(iLocal_48, false);
 			if (STREAMING::HAS_MODEL_LOADED(iLocal_48) && PED::_0x5E420FF293EE5472())
@@ -135,13 +134,11 @@ void func_5()
 				iLocal_45 = 4;
 			}
 			break;
-		
 		case 4:
 			func_11();
 			func_12(&uLocal_52);
 			iLocal_45 = 5;
 			break;
-		
 		case 5:
 			func_13(iLocal_46, -416594956);
 			if (!func_6(iLocal_46, 0))
@@ -149,7 +146,6 @@ void func_5()
 				iLocal_45 = 6;
 			}
 			break;
-		
 		case 6:
 			iLocal_45 = 7;
 			break;
@@ -159,7 +155,7 @@ void func_5()
 int func_6(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 0)
 	{
 		return 0;
@@ -260,25 +256,21 @@ void func_7(int* iParam0)
 int func_8(int iParam0)
 {
 	int iVar0;
-	
+
 	switch (iParam0)
 	{
 		case 1:
 			iVar0 = 1;
 			break;
-		
 		case 6:
 			iVar0 = 64;
 			break;
-		
 		case 2:
 			iVar0 = 32;
 			break;
-		
 		case 7:
 			iVar0 = 16;
 			break;
-		
 		case 8:
 			iVar0 = 8;
 			break;
@@ -311,7 +303,7 @@ float func_10(var uParam0)
 void func_11()
 {
 	int iVar0;
-	
+
 	iLocal_46 = func_18(iLocal_48, vLocal_49, 101.6932f, 1, 1, 0, 1, 1, 1, 0, 0);
 	WEAPON::_GIVE_WEAPON_TO_PED_2(iLocal_46, 1402226560, 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 	PED::_0xFC3DB99C8144CD81(iLocal_46, iLocal_47, 0, 0, 0);
@@ -366,7 +358,7 @@ bool func_16(var uParam0)
 float func_17()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -378,7 +370,7 @@ float func_17()
 int func_18(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12)
 {
 	int iVar0;
-	
+
 	iVar0 = PED::CREATE_PED(iParam0, vParam1, fParam4, bParam5, bParam6, false, false);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -417,7 +409,7 @@ bool func_21(var uParam0, int iParam1)
 void func_22(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) || ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;

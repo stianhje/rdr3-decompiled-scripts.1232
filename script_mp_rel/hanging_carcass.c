@@ -19,7 +19,7 @@
 void __EntryFunction__()
 {
 	struct<44> Var0;
-	
+
 	if (!TASK::_0x841475AC96E794D1(ScriptParam_0.f_1) || func_1() != -1)
 	{
 		SCRIPTS::_0xE7282390542F570D(ScriptParam_0);
@@ -119,7 +119,7 @@ int func_4(var uParam0)
 {
 	int iVar0;
 	vector3 vVar1[5];
-	
+
 	*(vVar1[0 /*3*/]) = { -2844.586f, 133.7118f, 183.6223f };
 	*(vVar1[1 /*3*/]) = { -1008.624f, -544.7607f, 98.21857f };
 	*(vVar1[2 /*3*/]) = { 2074.396f, 996.5762f, 111.6177f };
@@ -156,21 +156,18 @@ int func_6(var uParam0)
 				func_11(uParam0, 1);
 			}
 			break;
-		
 		case 1:
 			if (func_12(uParam0))
 			{
 				func_11(uParam0, 2);
 			}
 			break;
-		
 		case 2:
 			if (func_13(uParam0))
 			{
 				func_11(uParam0, 3);
 			}
 			break;
-		
 		case 3:
 			if (func_14(uParam0))
 			{
@@ -184,14 +181,12 @@ int func_6(var uParam0)
 				}
 			}
 			break;
-		
 		case 4:
 			if (func_16(uParam0))
 			{
 				func_11(uParam0, 5);
 			}
 			break;
-		
 		case 5:
 			if (func_17(uParam0))
 			{
@@ -199,14 +194,12 @@ int func_6(var uParam0)
 				func_11(uParam0, 6);
 			}
 			break;
-		
 		case 6:
 			if (func_19(uParam0))
 			{
 				func_11(uParam0, 7);
 			}
 			break;
-		
 		case 7:
 			if (func_20(uParam0))
 			{
@@ -214,7 +207,6 @@ int func_6(var uParam0)
 				func_11(uParam0, 8);
 			}
 			break;
-		
 		case 8:
 			if (func_21(uParam0))
 			{
@@ -222,7 +214,6 @@ int func_6(var uParam0)
 				func_11(uParam0, 9);
 			}
 			break;
-		
 		case 9:
 			break;
 	}
@@ -264,7 +255,7 @@ int func_10(var uParam0)
 	vector3 vVar3;
 	vector3 vVar6;
 	int iVar9;
-	
+
 	vVar0 = { 799.362f, 1512.22f, 203.6078f };
 	vVar3 = { 2558f, 795f, 75f };
 	vVar6 = { -754f, -1284.5f, 42.75f };
@@ -306,7 +297,6 @@ int func_10(var uParam0)
 					uParam0->f_38 = 1110710183;
 					StringCopy(&(uParam0->f_30), "PD_Deer_aged_carcass_Hvy", 64);
 					break;
-				
 				case 1:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@WOLF_MEDIUM@NORMAL@DEAD", 64);
 					uParam0->f_38 = -885451903;
@@ -316,7 +306,6 @@ int func_10(var uParam0)
 			uParam0->f_51 = 33646;
 			uParam0->f_55 = 0;
 			break;
-		
 		case -1545270676:
 		case -146984653:
 			iVar9 = MISC::GET_RANDOM_INT_IN_RANGE(0, 3);
@@ -340,7 +329,6 @@ int func_10(var uParam0)
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 33646;
 					break;
-				
 				case 1:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@RABBIT@NORMAL@DEAD", 64);
 					uParam0->f_38 = -541762431;
@@ -348,7 +336,6 @@ int func_10(var uParam0)
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 33646;
 					break;
-				
 				case 2:
 					StringCopy(&(uParam0->f_14), "CREATURES_BIRD@DUCK@NORMAL@DEAD", 64);
 					uParam0->f_38 = -1003616053;
@@ -357,7 +344,6 @@ int func_10(var uParam0)
 					break;
 			}
 			break;
-		
 		case 635622754:
 			iVar9 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 			switch (iVar9)
@@ -365,14 +351,12 @@ int func_10(var uParam0)
 				case 0:
 					uParam0->f_38 = 490159652;
 					break;
-				
 				case 1:
 					uParam0->f_38 = 41707457;
 					break;
 			}
 			uParam0->f_55 = 3;
 			break;
-		
 		case 1148808695:
 			break;
 	}
@@ -438,7 +422,7 @@ int func_14(var uParam0)
 {
 	float fVar0;
 	vector3 vVar1;
-	
+
 	fVar0 = -90f;
 	vVar1 = { uParam0->f_1 };
 	OBJECT::_0xB6CBD40F8EA69E8A(uParam0->f_43);
@@ -484,16 +468,12 @@ int func_15(int iParam0, var uParam1)
 	{
 		case 0:
 			return uParam1->f_39 == -143853107;
-		
 		case 1:
 			return (uParam1->f_39 == -146984653 || uParam1->f_39 == -1545270676);
-		
 		case 2:
 			return uParam1->f_39 == 1148808695;
-		
 		case 3:
 			return uParam1->f_39 == 635622754;
-		
 		default:
 			break;
 	}
@@ -536,7 +516,6 @@ int func_17(var uParam0)
 				case 0:
 					func_31(uParam0);
 					break;
-				
 				case 1:
 				case 2:
 				case 3:
@@ -567,7 +546,7 @@ void func_18(var uParam0)
 bool func_19(var uParam0)
 {
 	bool bVar0;
-	
+
 	bVar0 = false;
 	if (func_7(uParam0, 64))
 	{
@@ -691,7 +670,7 @@ int func_21(var uParam0)
 	int iVar0;
 	int iVar1;
 	vector3 vVar2;
-	
+
 	if (!func_28(&(uParam0->f_52)))
 	{
 		if (PED::_0x758F081DB204DDDE(Global_35))
@@ -751,13 +730,12 @@ Vector3 func_24(var uParam0)
 {
 	vector3 vVar0;
 	int iVar3;
-	
+
 	switch (uParam0->f_39)
 	{
 		case -143853107:
 			iVar3 = 4;
 			break;
-		
 		case -1545270676:
 		case -146984653:
 		case 635622754:
@@ -771,7 +749,7 @@ Vector3 func_24(var uParam0)
 int func_25(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12)
 {
 	int iVar0;
-	
+
 	iVar0 = PED::CREATE_PED(iParam0, vParam1, fParam4, bParam5, bParam6, false, false);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -840,7 +818,7 @@ void func_31(var uParam0)
 	int iVar3;
 	vector3 vVar4;
 	vector3 vVar7;
-	
+
 	iVar0 = PED::GET_PED_BONE_INDEX(uParam0->f_42, uParam0->f_50);
 	iVar1 = PED::GET_PED_BONE_INDEX(uParam0->f_42, uParam0->f_51);
 	iVar2 = func_41(uParam0->f_39, 0);
@@ -858,7 +836,7 @@ void func_32(var uParam0)
 	vector3 vVar2;
 	vector3 vVar5;
 	vector3 vVar8;
-	
+
 	iVar0 = PED::GET_PED_BONE_INDEX(uParam0->f_42, uParam0->f_50);
 	iVar1 = func_41(uParam0->f_39, 2);
 	vVar2 = { 0f, 0f, 0f };
@@ -870,7 +848,6 @@ void func_32(var uParam0)
 			vVar5 = { -0.0125f, -0.03f, 0.0125f };
 			vVar8 = { 90f, 0f, 90f };
 			break;
-		
 		case -541762431:
 			vVar2 = { -0.0125f, 0f, -0.025f };
 			vVar8 = { 0f, 90f, 0f };
@@ -883,7 +860,7 @@ void func_33(var uParam0)
 {
 	int iVar0;
 	float fVar1;
-	
+
 	if (func_15(3, uParam0))
 	{
 		iVar0 = 8;
@@ -918,7 +895,7 @@ void func_34(var uParam0)
 {
 	int iVar0;
 	vector3 vVar1;
-	
+
 	iVar0 = 0;
 	vVar1 = { 0f, 0f, 0f };
 	switch (uParam0->f_39)
@@ -927,7 +904,6 @@ void func_34(var uParam0)
 			iVar0 = 1669298768;
 			vVar1 = { 0.155f, -0.9f, 0f };
 			break;
-		
 		case -1545270676:
 		case 635622754:
 			iVar0 = -1091256437;
@@ -943,7 +919,7 @@ void func_34(var uParam0)
 void func_35(var uParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1957511->f_31 > 9 || Global_1957511->f_31 < 0)
 	{
 		Global_1957511->f_31 = 0;
@@ -967,52 +943,36 @@ int func_36(int iParam0)
 	{
 		case 2025841068:
 			return 0;
-		
 		case 822658194:
 			return 1;
-		
 		case 1308232528:
 			return 2;
-		
 		case 1835499550:
 			return 3;
-		
 		case 476637847:
 			return 4;
-		
 		case -120156735:
 			return 6;
-		
 		case 1645618177:
 			return 7;
-		
 		case -512529193:
 			return 8;
-		
 		case 131399519:
 			return 9;
-		
 		case 178647645:
 			return 10;
-		
 		case -864275692:
 			return 11;
-		
 		case 1684533001:
 			return 12;
-		
 		case -2066240242:
 			return 13;
-		
 		case -2145992129:
 			return 14;
-		
 		case -108848014:
 			return 15;
-		
 		case 892930832:
 			return 16;
-		
 		default:
 			break;
 	}
@@ -1022,7 +982,7 @@ int func_36(int iParam0)
 void func_37(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) || ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;
@@ -1109,7 +1069,6 @@ int func_41(int iParam0, int iParam1)
 				return 5;
 			}
 			break;
-		
 		case -1545270676:
 		case -146984653:
 		case 635622754:
@@ -1130,7 +1089,6 @@ int func_41(int iParam0, int iParam1)
 				return 6;
 			}
 			break;
-		
 		case 1148808695:
 			if (iParam1 == 2)
 			{
@@ -1193,7 +1151,7 @@ void func_44(int iParam0, int iParam1)
 float func_45()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();

@@ -91,7 +91,7 @@ void func_4()
 void func_5()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(2))
 	{
@@ -100,11 +100,9 @@ void func_5()
 			case -45008988:
 				func_9(iVar0);
 				break;
-			
 			case -456923784:
 				func_10(iVar0);
 				break;
-			
 			case -843555838:
 				func_11(iVar0);
 				break;
@@ -138,7 +136,6 @@ void func_6()
 			func_15(1);
 			func_16(1);
 			break;
-		
 		case 1:
 			if (ENTITY::GET_ENTITY_SPEED(Global_35) > 0f)
 			{
@@ -148,7 +145,6 @@ void func_6()
 			CAM::RENDER_SCRIPT_CAMS(true, true, 4000, true, false, 0);
 			func_16(2);
 			break;
-		
 		case 2:
 			if (CAM::IS_CAM_INTERPOLATING(iLocal_7))
 			{
@@ -159,7 +155,6 @@ void func_6()
 			CAM::DESTROY_CAM(iLocal_7, false);
 			func_16(3);
 			break;
-		
 		case 3:
 			if (CAM::IS_CAM_INTERPOLATING(iLocal_8))
 			{
@@ -167,7 +162,6 @@ void func_6()
 			}
 			func_16(4);
 			break;
-		
 		case 4:
 			if (PED::IS_PED_USING_ANY_SCENARIO(Global_35))
 			{
@@ -181,7 +175,6 @@ void func_6()
 				}
 			}
 			break;
-		
 		case 5:
 			break;
 	}
@@ -201,7 +194,7 @@ void func_8()
 void func_9(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -213,7 +206,7 @@ void func_9(int iParam0)
 void func_10(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -225,7 +218,7 @@ void func_10(int iParam0)
 void func_11(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -297,7 +290,7 @@ void func_17(int iParam0, bool bParam1)
 {
 	float fVar0;
 	vector3 vVar1;
-	
+
 	func_23(uLocal_9[0], uLocal_9[1], uLocal_9[2], uLocal_9[3], 529461124, 1410914475, -1497929239, 665185216, 2);
 	if (iLocal_14 == &uLocal_9[2] && iLocal_15 == &uLocal_9[3])
 	{

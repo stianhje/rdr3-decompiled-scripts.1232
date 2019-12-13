@@ -162,21 +162,18 @@ void __EntryFunction__()
 					func_7(&Local_164, 1);
 				}
 				break;
-			
 			case 1:
 				if (func_8(&Local_164))
 				{
 					func_7(&Local_164, 2);
 				}
 				break;
-			
 			case 2:
 				if (func_9(&Local_164))
 				{
 					func_7(&Local_164, 3);
 				}
 				break;
-			
 			case 3:
 				func_1(&Local_164);
 				break;
@@ -192,7 +189,7 @@ void func_1(var uParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	func_10();
 	func_11(uParam0);
 	iVar0 = 0;
@@ -306,7 +303,7 @@ int func_8(var uParam0)
 int func_9(var uParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 1;
 	if (!func_25())
 	{
@@ -322,7 +319,7 @@ int func_9(var uParam0)
 void func_10()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 27)
 	{
@@ -374,7 +371,7 @@ void func_15(int iParam0, int iParam1, bool bParam2, bool bParam3, float fParam4
 	bool bVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	if (!func_12(iParam0))
 	{
 		return;
@@ -607,7 +604,7 @@ int func_24(var uParam0)
 int func_25()
 {
 	int iVar0;
-	
+
 	iVar0 = 1;
 	return iVar0;
 }
@@ -625,7 +622,7 @@ void func_27(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (bParam2)
 	{
 		if (!func_56(iParam0))
@@ -648,7 +645,7 @@ void func_28(var uParam0, int iParam1)
 void func_29()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 5)
 	{
@@ -730,7 +727,7 @@ void func_37(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (bParam2)
 	{
 		if (!func_56(iParam0))
@@ -745,7 +742,7 @@ void func_37(int iParam0, int iParam1, bool bParam2)
 int func_38(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 0)
 	{
 		return 0;
@@ -838,7 +835,7 @@ bool func_40(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (bParam2)
 	{
 		if (!func_56(iParam0))
@@ -854,7 +851,7 @@ void func_41(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (func_12(iParam0))
 	{
 		iVar1 = func_70(iParam0);
@@ -947,7 +944,7 @@ void func_45(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 {
 	var uVar0;
 	int iVar1;
-	
+
 	if (!func_12(iParam0))
 	{
 		return;
@@ -1028,7 +1025,7 @@ int func_47(int iParam0)
 void func_48(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
 {
 	int iVar0;
-	
+
 	if (!func_56(iParam1))
 	{
 		return;
@@ -1067,7 +1064,7 @@ void func_48(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
 int func_49(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12, bool bParam13, bool bParam14)
 {
 	int iVar0;
-	
+
 	iVar0 = PED::CREATE_PED(iParam0, vParam1, fParam4, bParam5, bParam6, bParam13, bParam14);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -1107,7 +1104,6 @@ void func_51()
 				func_28(&uLocal_127, 0);
 				iLocal_163 = 1;
 				break;
-			
 			case 1:
 				func_81();
 				if ((func_82(&uLocal_127) > 20f || ENTITY::IS_ENTITY_IN_WATER(Global_35)) || !func_83(Global_35, 2140.869f, -649.5916f, 41.34281f, 18f, 1, 0))
@@ -1115,7 +1111,6 @@ void func_51()
 					iLocal_163 = 2;
 				}
 				break;
-			
 			case 2:
 				break;
 		}
@@ -1125,7 +1120,7 @@ void func_51()
 void func_52()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 5)
 	{
@@ -1143,7 +1138,6 @@ void func_52()
 						}
 					}
 					break;
-				
 				case 2:
 					if (!AUDIO::_0x1ECC76792F661CF5((Local_130[iVar0 /*5*/])->f_3))
 					{
@@ -1153,7 +1147,6 @@ void func_52()
 						(Local_130[iVar0 /*5*/])->f_1 = 3;
 					}
 					break;
-				
 				case 3:
 					if ((!func_58(&uLocal_124) && !AUDIO::_0xA2CAC9DEF0195E6F(1)) && func_84(&(Local_130[iVar0 /*5*/]), Global_35, 0.5f) == 0)
 					{
@@ -1164,7 +1157,6 @@ void func_52()
 						}
 					}
 					break;
-				
 				case 4:
 					if (!AUDIO::_0x1ECC76792F661CF5((Local_130[iVar0 /*5*/])->f_4))
 					{
@@ -1203,14 +1195,12 @@ void func_53()
 				iLocal_161 = 1;
 			}
 			break;
-		
 		case 1:
 			if (!func_91(iLocal_21, 1199744105))
 			{
 				func_30();
 			}
 			break;
-		
 		case 2:
 			break;
 	}
@@ -1230,14 +1220,12 @@ void func_54()
 				iLocal_162 = 1;
 			}
 			break;
-		
 		case 1:
 			if (!func_91(iLocal_22, 1199744105))
 			{
 				iLocal_162 = 2;
 			}
 			break;
-		
 		case 2:
 			if (func_88(iLocal_22, iLocal_24, 0))
 			{
@@ -1251,7 +1239,6 @@ void func_54()
 				func_31();
 			}
 			break;
-		
 		case 3:
 			break;
 	}
@@ -1274,7 +1261,7 @@ bool func_56(int iParam0)
 int func_57(var uParam0, var uParam1, var uParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = uParam0;
 	*uParam1 = (iVar0 / 31);
 	*uParam2 = (iVar0 % 31);
@@ -1309,7 +1296,7 @@ void func_62(int iParam0, bool bParam1, int iParam2, bool bParam3, bool bParam4)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!func_60(iParam0))
 	{
 		return;
@@ -1446,7 +1433,7 @@ bool func_68(int iParam0, int iParam1)
 void func_69(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_56(iParam0))
 	{
 		return;
@@ -1505,7 +1492,7 @@ void func_73(int iParam0)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = func_70(iParam0);
 	iVar1 = func_39(iParam0, 0);
 	func_105(iParam0, iVar0);
@@ -1569,7 +1556,7 @@ int func_77(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (!func_56(iParam0))
 	{
 		return 0;
@@ -1648,7 +1635,7 @@ int func_77(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 void func_78(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) || ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;
@@ -1703,7 +1690,7 @@ int func_79(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4, 
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!func_117(iParam0, 1))
 	{
 		return 0;
@@ -1813,7 +1800,7 @@ int func_83(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bPar
 int func_84(int iParam0, int iParam1, float fParam2)
 {
 	vector3 vVar0;
-	
+
 	vVar0 = { ENTITY::GET_ENTITY_COORDS(iParam1, false, false) };
 	return func_124(iParam0, vVar0, fParam2);
 }
@@ -1905,7 +1892,7 @@ void func_90(int iParam0, vector3 vParam1, float fParam4, int iParam5, int iPara
 	bool bVar4;
 	var uVar5;
 	int iVar6;
-	
+
 	if (ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;
@@ -2020,7 +2007,7 @@ void func_90(int iParam0, vector3 vParam1, float fParam4, int iParam5, int iPara
 int func_91(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
@@ -2080,7 +2067,7 @@ void func_96(int iParam0, int iParam1)
 void func_97(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_60(iParam0))
 	{
 		return;
@@ -2160,82 +2147,56 @@ int func_103(int iParam0)
 	{
 		case 1:
 			return -177936449;
-		
 		case 0:
 			return -1758735922;
-		
 		case 6:
 			return -680519380;
-		
 		case 3:
 			return 263744889;
-		
 		case 7:
 			return 351057032;
-		
 		case 4:
 			return 1172283326;
-		
 		case 2:
 			return -1046310682;
-		
 		case 5:
 			return 652984488;
-		
 		case 8:
 			return 1389665576;
-		
 		case 9:
 			return -1066280913;
-		
 		case 13:
 			return 1975793632;
-		
 		case 14:
 			return -1887627202;
-		
 		case 15:
 			return 1851096281;
-		
 		case 16:
 			return 47402526;
-		
 		case 17:
 			return 1762683397;
-		
 		case 18:
 			return -1154551809;
-		
 		case 19:
 			return -333682158;
-		
 		case 20:
 			return 1465089966;
-		
 		case 21:
 			return 511213393;
-		
 		case 22:
 			return -1214580355;
-		
 		case 23:
 			return -1397900723;
-		
 		case 10:
 			return 541398842;
-		
 		case 24:
 			return -1960060437;
-		
 		case 25:
 			return 1634371177;
-		
 		case 26:
 			return -1308114737;
-		
 		case 11:
 			return 683250525;
-		
 		case 12:
 			return -814958461;
 	}
@@ -2293,53 +2254,37 @@ int func_107(int iParam0, bool bParam1)
 	{
 		case 3:
 			return -698095578;
-		
 		case 7:
 			return 230221572;
-		
 		case 0:
 			return 47961446;
-		
 		case 5:
 			return 1268955201;
-		
 		case 2:
 			return 2103924091;
-		
 		case 1:
 			return 1554677062;
-		
 		case 9:
 			return 984702223;
-		
 		case 6:
 			return -1825091419;
-		
 		case 11:
 			return 948152617;
-		
 		case 8:
 			return 795059774;
-		
 		case 23:
 			return -1880884094;
-		
 		case 20:
 			return 849012978;
-		
 		case 4:
 			return 404801781;
-		
 		case 10:
 			return -1094022447;
-		
 		case 26:
 			return -1484815615;
-		
 		case 12:
 		case 14:
 			return 0;
-		
 		default:
 			break;
 	}
@@ -2357,7 +2302,7 @@ void func_108(int iParam0)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	iVar0 = func_47(iParam0);
 	if (!PED::_0xA911EE21EDF69DAF(iVar0))
 	{
@@ -2400,7 +2345,7 @@ int func_109(int iParam0, int iParam1)
 void func_110(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_56(iParam0))
 	{
 		return;
@@ -2612,7 +2557,6 @@ int func_112(int iParam0)
 		case 2115504616:
 		case 2141515026:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -2741,7 +2685,7 @@ bool func_120(var uParam0, int iParam1, char* sParam2)
 {
 	bool bVar0;
 	int iVar1;
-	
+
 	bVar0 = false;
 	iVar1 = 0;
 	while (iVar1 < uParam0->f_97 && !bVar0)
@@ -2774,7 +2718,7 @@ bool func_121(var uParam0)
 float func_122()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -2796,7 +2740,7 @@ int func_124(int iParam0, vector3 vParam1, float fParam4)
 	vector3 vVar3;
 	vector3 vVar6;
 	float fVar9;
-	
+
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0) && !ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		vVar0 = { ENTITY::GET_ENTITY_COORDS(iParam0, false, false) };
@@ -2838,7 +2782,7 @@ int func_126(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 {
 	vector3 vVar0[24];
 	bool bVar3;
-	
+
 	iParam3 = iParam3;
 	iParam4 = iParam4;
 	if (!ENTITY::IS_ENTITY_DEAD(iParam2) && (func_148(iParam2, iParam3, 1, 1) < 70f || iParam5))
@@ -2922,7 +2866,7 @@ int func_129(var uParam0)
 bool func_130(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -2970,7 +2914,7 @@ int func_134()
 int func_135(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_100(iParam0);
 	if (iVar0 == 0)
 	{
@@ -2995,7 +2939,7 @@ void func_136(int iParam0, int iParam1)
 void func_137(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return;
@@ -3017,7 +2961,7 @@ int func_138(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	if (!func_56(iParam0))
 	{
@@ -3057,7 +3001,7 @@ int func_139(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!func_56(iParam0))
 	{
 		return 0;
@@ -3079,7 +3023,7 @@ int func_139(int iParam0)
 bool func_140(int iParam0, int iParam1)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -3094,7 +3038,7 @@ bool func_140(int iParam0, int iParam1)
 int func_141(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return 0;
@@ -3115,7 +3059,7 @@ bool func_142(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -3167,7 +3111,7 @@ bool func_144(int iParam0, int iParam1)
 float func_145(vector3 vParam0, vector3 vParam3)
 {
 	float fVar0;
-	
+
 	vParam0.f_2 = 0f;
 	vParam3.f_2 = 0f;
 	fVar0 = BUILTIN::VMAG(vParam0);
@@ -3195,7 +3139,7 @@ int func_147(vector3 vParam0, float fParam3, float fParam4, float fParam5, float
 	float fVar0;
 	float fVar1;
 	bool bVar2;
-	
+
 	bVar2 = HUD::GET_HUD_SCREEN_POSITION_FROM_WORLD_POSITION(vParam0, &fVar0, &fVar1);
 	if (bVar2 == 0)
 	{
@@ -3233,7 +3177,7 @@ int func_149(char* sParam0)
 bool func_150(var uParam0, char[12] cParam1, bool bParam4, int iParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!AUDIO::_0xD89504D9D7D5057D(&cParam1))
 	{
 		bVar0 = AUDIO::CREATE_NEW_SCRIPTED_CONVERSATION(&cParam1);
@@ -3264,7 +3208,7 @@ bool func_150(var uParam0, char[12] cParam1, bool bParam4, int iParam5, bool bPa
 void func_151(var uParam0, var uParam1, var uParam2, var uParam3)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < uParam3->f_97)
 	{

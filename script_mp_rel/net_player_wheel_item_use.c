@@ -16,7 +16,7 @@ void __EntryFunction__()
 	var uVar3;
 	int iVar4;
 	int iVar5;
-	
+
 	if (ScriptParam_0 != -1)
 	{
 	}
@@ -72,14 +72,12 @@ int func_2(int iParam0, var uParam1, int iParam2, var uParam3, int iParam4, var 
 				*iParam0 = 2;
 			}
 			break;
-		
 		case 1:
 			if (func_5(uParam1, uParam5))
 			{
 				*iParam0 = 2;
 			}
 			break;
-		
 		case 2:
 			func_6(uParam1, uParam5);
 			return 0;
@@ -90,7 +88,7 @@ int func_2(int iParam0, var uParam1, int iParam2, var uParam3, int iParam4, var 
 int func_3(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -121,23 +119,18 @@ int func_3(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -164,7 +157,6 @@ int func_4(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)
 	{
 		case 0:
 			return func_7(uParam1, uParam2, uParam3, uParam4);
-		
 		default:
 			break;
 	}
@@ -177,7 +169,6 @@ int func_5(var uParam0, var uParam1)
 	{
 		case 0:
 			return func_8(uParam1);
-		
 		default:
 			break;
 	}
@@ -190,7 +181,6 @@ int func_6(var uParam0, var uParam1)
 	{
 		case 0:
 			return func_9(uParam1);
-		
 		default:
 			break;
 	}
@@ -212,7 +202,7 @@ int func_7(var uParam0, var uParam1, var uParam2, var uParam3)
 int func_8(var uParam0)
 {
 	int iVar0;
-	
+
 	if (*uParam0)
 	{
 		return 1;
@@ -239,7 +229,7 @@ int func_9(var uParam0)
 void func_10(int iParam0, var uParam1, var uParam2)
 {
 	int iVar0;
-	
+
 	if ((PED::_0x84D0BF2B21862059(Global_1273882->f_8) || PED::IS_PED_SITTING_IN_ANY_VEHICLE(Global_1273882->f_8)) || PED::IS_PED_ON_MOUNT(Global_1273882->f_8))
 	{
 		iVar0 = 0;

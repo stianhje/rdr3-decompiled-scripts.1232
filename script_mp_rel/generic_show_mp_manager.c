@@ -41,7 +41,7 @@ void func_1()
 int func_2(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -72,23 +72,18 @@ int func_2(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -124,7 +119,7 @@ int func_5()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar0 = NETWORK::NETWORK_GET_SCRIPT_STATUS();
 	iVar1 = MISC::GET_GAME_TIMER();
 	iVar2 = NETWORK::NETWORK_GET_TIMEOUT_TIME();
@@ -147,23 +142,18 @@ int func_5()
 			{
 				case 0:
 					break;
-				
 				case 1:
 					func_9();
 					break;
-				
 				case 2:
 					func_9();
 					break;
-				
 				case 4:
 					func_9();
 					break;
-				
 				case 3:
 					func_9();
 					break;
-				
 				default:
 					break;
 			}
@@ -218,7 +208,7 @@ void func_7()
 {
 	struct<36> Var0;
 	var uVar36;
-	
+
 	Var0.f_3 = 4;
 	Var0.f_3.f_1 = -1;
 	Var0.f_3.f_1.f_1 = -1;
@@ -257,7 +247,7 @@ void func_8(bool bParam0)
 	int iVar0;
 	struct<8> Var1;
 	int iVar9;
-	
+
 	iVar0 = (MISC::_GET_SYSTEM_TIME() + 180000);
 	iVar9 = 0;
 	Var1 = { Var1 };
@@ -274,23 +264,18 @@ void func_8(bool bParam0)
 			{
 				case 0:
 					break;
-				
 				case 1:
 					func_9();
 					break;
-				
 				case 2:
 					func_9();
 					break;
-				
 				case 4:
 					func_9();
 					break;
-				
 				case 3:
 					func_9();
 					break;
-				
 				default:
 					break;
 			}

@@ -115,7 +115,7 @@ int func_3(int iParam0)
 int func_4()
 {
 	float fVar0;
-	
+
 	if (iLocal_41 >= 7)
 	{
 		return 0;
@@ -139,7 +139,6 @@ void func_5()
 		case 1:
 			iLocal_41 = 2;
 			break;
-		
 		case 2:
 			STREAMING::REQUEST_MODEL(iLocal_44, false);
 			if (STREAMING::HAS_MODEL_LOADED(iLocal_44) && PED::_0x5E420FF293EE5472())
@@ -147,13 +146,11 @@ void func_5()
 				iLocal_41 = 4;
 			}
 			break;
-		
 		case 4:
 			func_16();
 			func_17(&uLocal_48);
 			iLocal_41 = 5;
 			break;
-		
 		case 5:
 			func_18(iLocal_42, -416594956);
 			if (!func_6(iLocal_42, 0))
@@ -161,7 +158,6 @@ void func_5()
 				iLocal_41 = 6;
 			}
 			break;
-		
 		case 6:
 			iLocal_41 = 7;
 			break;
@@ -171,7 +167,7 @@ void func_5()
 int func_6(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 0)
 	{
 		return 0;
@@ -272,25 +268,21 @@ void func_7(int* iParam0)
 int func_8(int iParam0)
 {
 	int iVar0;
-	
+
 	switch (iParam0)
 	{
 		case 1:
 			iVar0 = 1;
 			break;
-		
 		case 6:
 			iVar0 = 64;
 			break;
-		
 		case 2:
 			iVar0 = 32;
 			break;
-		
 		case 7:
 			iVar0 = 16;
 			break;
-		
 		case 8:
 			iVar0 = 8;
 			break;
@@ -339,7 +331,7 @@ int func_13(int iParam0, bool bParam1, int iParam2, int iParam3)
 	struct<11> Var0;
 	int iVar17;
 	struct<11> Var18;
-	
+
 	if (iParam0 == PLAYER::PLAYER_ID())
 	{
 		return func_21(bParam1, iParam2, iParam3);
@@ -424,7 +416,7 @@ float func_15(var uParam0)
 void func_16()
 {
 	int iVar0;
-	
+
 	iLocal_42 = func_25(iLocal_44, vLocal_45, 101.6932f, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0);
 	WEAPON::_GIVE_WEAPON_TO_PED_2(iLocal_42, 1402226560, 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 	PED::_0xFC3DB99C8144CD81(iLocal_42, iLocal_43, 0, 0, 0);
@@ -514,7 +506,7 @@ bool func_23(var uParam0)
 float func_24()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -526,7 +518,7 @@ float func_24()
 int func_25(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12, bool bParam13, bool bParam14)
 {
 	int iVar0;
-	
+
 	iVar0 = PED::CREATE_PED(iParam0, vParam1, fParam4, bParam5, bParam6, bParam13, bParam14);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -565,7 +557,7 @@ bool func_28(var uParam0, int iParam1)
 void func_29(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) || ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;
@@ -825,7 +817,6 @@ int func_33(int iParam0)
 		case 2115504616:
 		case 2141515026:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -907,7 +898,7 @@ void func_37(int iParam0, int iParam1)
 bool func_38(int iParam0, int iParam1)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -922,7 +913,7 @@ bool func_38(int iParam0, int iParam1)
 int func_39(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return 0;
@@ -943,7 +934,7 @@ bool func_40(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;

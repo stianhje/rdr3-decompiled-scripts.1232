@@ -32,7 +32,7 @@ void __EntryFunction__()
 int func_1()
 {
 	int iVar0;
-	
+
 	func_3(7, 512);
 	if (iLocal_11)
 	{
@@ -52,7 +52,7 @@ int func_2()
 	int iVar0;
 	int iVar1;
 	float fVar2;
-	
+
 	if (iLocal_0 > 0 && iLocal_0 < 6)
 	{
 		if (func_5())
@@ -100,7 +100,6 @@ int func_2()
 			iLocal_1 = 2;
 			iLocal_0 = 1;
 			break;
-		
 		case 1:
 			func_9(iLocal_2, 0, iLocal_12);
 			if (func_10(iLocal_3, Global_35, 1) < 2500f)
@@ -119,7 +118,6 @@ int func_2()
 				iLocal_0 = 2;
 			}
 			break;
-		
 		case 2:
 			func_9(iLocal_2, 0, iLocal_12);
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_4))
@@ -139,7 +137,6 @@ int func_2()
 				iLocal_0 = 3;
 			}
 			break;
-		
 		case 3:
 			fVar2 = func_9(iLocal_2, 1, iLocal_12);
 			if (fVar2 >= 0.999f)
@@ -151,7 +148,6 @@ int func_2()
 				iLocal_0 = 2;
 			}
 			break;
-		
 		case 4:
 			if (func_13(iLocal_3, vLocal_8, 1) < 160000f)
 			{
@@ -159,7 +155,6 @@ int func_2()
 				iLocal_0 = 5;
 			}
 			break;
-		
 		case 5:
 			if (func_13(iLocal_3, vLocal_8, 1) < 1f)
 			{
@@ -167,7 +162,6 @@ int func_2()
 				iLocal_0 = 6;
 			}
 			break;
-		
 		case 6:
 			if (func_5())
 			{
@@ -224,7 +218,7 @@ int func_5()
 int func_6()
 {
 	int iVar0;
-	
+
 	if (func_15(0, 0, 1))
 	{
 		return 0;
@@ -278,7 +272,7 @@ float func_9(int iParam0, bool bParam1, int iParam2)
 {
 	float fVar0;
 	vector3 vVar1;
-	
+
 	fVar0 = ENTITY::_0x627520389E288A73(iParam0, "props_misc@annesburg_coal", "annchute01_full");
 	if (bParam1)
 	{
@@ -344,43 +338,30 @@ float func_11(int iParam0)
 	{
 		case 0:
 			return 11f;
-		
 		case 1:
 			return 11f;
-		
 		case 2:
 			return 11f;
-		
 		case 3:
 			return 11f;
-		
 		case 6:
 			return 0f;
-		
 		case 7:
 			return 0f;
-		
 		case 8:
 			return 3.5f;
-		
 		case 9:
 			return 3.5f;
-		
 		case 10:
 			return 3.5f;
-		
 		case 11:
 			return 3.5f;
-		
 		case 12:
 			return 3.5f;
-		
 		case 5:
 			return 0f;
-		
 		case 4:
 			return 11f;
-		
 		default:
 			break;
 	}
@@ -391,7 +372,7 @@ void func_12()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	iVar1 = -705539859;
 	if (VEHICLE::_0x86AFC343CF7F0B34(iVar1, 2855.288f, -1314.826f, 45.0838f, &iVar0))
@@ -421,7 +402,7 @@ void func_12()
 float func_13(int iParam0, vector3 vParam1, bool bParam4)
 {
 	vector3 vVar0;
-	
+
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		vVar0 = { ENTITY::GET_ENTITY_COORDS(iParam0, true, false) };
@@ -449,7 +430,7 @@ int func_14(int iParam0)
 int func_15(int iParam0, bool bParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 != -1)
 	{
 		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
@@ -510,37 +491,26 @@ int func_15(int iParam0, bool bParam1, int iParam2)
 	{
 		case 0:
 			return 0;
-		
 		case 1:
 			return iParam0 & 1 == 0;
-		
 		case 4:
 			return iParam0 & 2 == 0;
-		
 		case 6:
 			return iParam0 & 4 == 0;
-		
 		case 2:
 			return iParam0 & 16 == 0;
-		
 		case 5:
 			return iParam0 & 32 == 0;
-		
 		case 9:
 			return iParam0 & 64 == 0;
-		
 		case 8:
 			return iParam0 & 8 == 0;
-		
 		case 10:
 			return iParam0 & 512 == 0;
-		
 		case 3:
 			return iParam0 & 128 == 0;
-		
 		case 11:
 			return iParam0 & 256 == 0;
-		
 		default:
 			break;
 	}
@@ -559,7 +529,7 @@ int func_16(int iParam0)
 int func_17(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_32(iParam0))
 	{
 		return 0;
@@ -599,7 +569,7 @@ int func_18(int iParam0)
 int func_19(int iParam0, bool bParam1)
 {
 	int iVar0;
-	
+
 	if (func_34() != -1)
 	{
 		return 0;
@@ -652,7 +622,7 @@ int func_21(int iParam0)
 int func_22(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (!func_36(iParam0))
 	{
 		return 0;
@@ -756,7 +726,7 @@ bool func_30(int iParam0)
 int func_31(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		if (!(iParam0 > 0 && iParam0 < 771))
@@ -792,7 +762,7 @@ bool func_32(int iParam0)
 bool func_33(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_40(iParam0);
 	return (iVar0 == 3 || iVar0 == 4);
 }
@@ -837,7 +807,7 @@ int func_38(int iParam0)
 int func_39(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -864,7 +834,7 @@ int func_41(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;

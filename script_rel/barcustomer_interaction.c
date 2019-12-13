@@ -107,7 +107,7 @@ void func_4()
 void func_5()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(2))
 	{
@@ -116,11 +116,9 @@ void func_5()
 			case -45008988:
 				func_9(iVar0);
 				break;
-			
 			case -456923784:
 				func_10(iVar0);
 				break;
-			
 			case -843555838:
 				func_11(iVar0);
 				break;
@@ -137,7 +135,7 @@ void func_6()
 	int iVar3;
 	int iVar4;
 	float fVar5;
-	
+
 	bVar0 = func_12(iLocal_17, 0);
 	bVar1 = func_13(iLocal_28);
 	bVar2 = ENTITY::DOES_ENTITY_EXIST(iLocal_18);
@@ -246,7 +244,6 @@ void func_6()
 			iLocal_16 = 1;
 			func_25(&uLocal_33, 1);
 			break;
-		
 		case 2:
 			if (((!func_26() && !bVar1) && !Global_1935369->f_51) && bVar0)
 			{
@@ -258,7 +255,6 @@ void func_6()
 				}
 			}
 			break;
-		
 		case 1:
 			if (!STREAMING::HAS_MODEL_LOADED(-615159064))
 			{
@@ -311,19 +307,15 @@ void func_6()
 			iLocal_15 = 0;
 			iLocal_16 = 3;
 			break;
-		
 		case 3:
 			func_27(bVar0, bVar1, bVar2);
 			break;
-		
 		case 4:
 			func_28();
 			break;
-		
 		case 5:
 			func_29(bVar0, bVar1, bVar2);
 			break;
-		
 		case 6:
 			iLocal_0 = 0;
 			break;
@@ -351,7 +343,7 @@ void func_8()
 void func_9(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -363,7 +355,7 @@ void func_9(int iParam0)
 void func_10(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -375,7 +367,7 @@ void func_10(int iParam0)
 void func_11(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -387,7 +379,7 @@ void func_11(int iParam0)
 int func_12(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 0)
 	{
 		return 0;
@@ -475,7 +467,7 @@ float func_14(vector3 vParam0, vector3 vParam3)
 void func_15()
 {
 	int iVar0;
-	
+
 	if (!Global_1935369->f_51)
 	{
 		if (Global_1935369->f_50 == SCRIPTS::GET_ID_OF_THIS_THREAD())
@@ -522,7 +514,7 @@ void func_16()
 void func_17(bool bParam0)
 {
 	int iVar0;
-	
+
 	if (iLocal_24 && PED::_0xC488B8C0E52560D8(iLocal_17))
 	{
 		PED::SET_PED_CAN_PLAY_AMBIENT_ANIMS(iLocal_17, false);
@@ -632,13 +624,11 @@ int func_18()
 				return 1;
 			}
 			break;
-		
 		case 38:
 		case 92:
 		case 115:
 		case 120:
 			return 0;
-		
 		case 5:
 			if (func_37(func_36(2), TASK::_0xA8452DD321607029(iLocal_3, 1)))
 			{
@@ -649,7 +639,6 @@ int func_18()
 				return 1;
 			}
 			break;
-		
 		case 105:
 			return 2;
 	}
@@ -670,79 +659,64 @@ int func_20(int iParam0, int iParam1)
 			{
 				case 2:
 					return 2;
-				
 				case 1:
 					return 1;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 105:
 			switch (iParam1)
 			{
 				case 2:
 					return 3;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 76:
 			switch (iParam1)
 			{
 				case 0:
 					return 5;
-				
 				case 1:
 					return 6;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 92:
 			switch (iParam1)
 			{
 				case 0:
 					return 8;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 120:
 			switch (iParam1)
 			{
 				case 0:
 					return 7;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 115:
 			switch (iParam1)
 			{
 				case 0:
 					return 4;
-				
 				default:
 					break;
 			}
 			break;
-		
 		case 38:
 			switch (iParam1)
 			{
 				case 0:
 					return 0;
-				
 				default:
 					break;
 			}
@@ -762,31 +736,22 @@ int func_22(int iParam0)
 	{
 		case 5:
 			return 1;
-		
 		case 6:
 			return 2;
-		
 		case 3:
 			return 69;
-		
 		case 2:
 			return 137;
-		
 		case 1:
 			return 138;
-		
 		case 8:
 			return 443;
-		
 		case 0:
 			return 508;
-		
 		case 4:
 			return 351;
-		
 		case 7:
 			return 432;
-		
 		default:
 			break;
 	}
@@ -848,7 +813,7 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 	bool bVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	if (Global_1935369->f_51)
 	{
 		return;
@@ -901,7 +866,6 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 				}
 			}
 			break;
-		
 		case 1:
 			bVar2 = PED::_0x9C54041BB66BCF9E(iLocal_18, iLocal_29);
 			if (!bVar2 && !func_46(iLocal_18, -76381094))
@@ -938,7 +902,6 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 				iLocal_15 = 3;
 			}
 			break;
-		
 		case 3:
 			if (func_47())
 			{
@@ -952,7 +915,6 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 				iLocal_15 = 4;
 			}
 			break;
-		
 		case 4:
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_18, 595016159) && !iLocal_26)
 			{
@@ -994,7 +956,6 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 				func_25(&uLocal_36, 1);
 			}
 			break;
-		
 		case 5:
 			if (func_47())
 			{
@@ -1004,7 +965,6 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 				iLocal_15 = 7;
 			}
 			break;
-		
 		case 7:
 			if (func_49())
 			{
@@ -1015,7 +975,6 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 				bLocal_20 = true;
 			}
 			break;
-		
 		case 6:
 			if (func_49())
 			{
@@ -1036,7 +995,7 @@ void func_28()
 void func_29(bool bParam0, bool bParam1, bool bParam2)
 {
 	bool bVar0;
-	
+
 	if (Global_1935369->f_51)
 	{
 		return;
@@ -1091,7 +1050,6 @@ void func_29(bool bParam0, bool bParam1, bool bParam2)
 				}
 			}
 			break;
-		
 		case 1:
 			if ((bParam1 && !func_44(iLocal_28)) || func_26())
 			{
@@ -1115,7 +1073,6 @@ void func_29(bool bParam0, bool bParam1, bool bParam2)
 				iLocal_15 = 2;
 			}
 			break;
-		
 		case 2:
 			if (func_47())
 			{
@@ -1125,7 +1082,6 @@ void func_29(bool bParam0, bool bParam1, bool bParam2)
 				func_25(&uLocal_36, 1);
 			}
 			break;
-		
 		case 3:
 			if (func_47())
 			{
@@ -1135,7 +1091,6 @@ void func_29(bool bParam0, bool bParam1, bool bParam2)
 				func_25(&uLocal_36, 1);
 			}
 			break;
-		
 		case 7:
 			if (func_49())
 			{
@@ -1188,7 +1143,7 @@ int func_35(int iParam0)
 int func_36(int iParam0)
 {
 	int iVar0;
-	
+
 	switch (func_19())
 	{
 		case 76:
@@ -1201,26 +1156,21 @@ int func_36(int iParam0)
 				return VOLUME::_CREATE_VOLUME_BOX(-241.294f, 770f, 118.14f, 0f, 0f, 110.709f, 8.286f, 7.345f, 5f);
 			}
 			break;
-		
 		case 92:
 			iVar0 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volSaloonInterior");
 			VOLUME::_0x39816F6F94F385AD(iVar0, 2946.662f, 523.323f, 46.02f, 0f, 0f, 180f, 9.627f, 13.43f, 3.143f);
 			VOLUME::_0x39816F6F94F385AD(iVar0, 2939.132f, 523.346f, 46.02f, 0f, 0f, 180f, 5.235f, 9.883f, 3.143f);
 			return iVar0;
-		
 		case 120:
 			return VOLUME::_CREATE_VOLUME_BOX(-3701.056f, -2595.456f, -14.37373f, 0f, 0f, 0f, 21.94766f, 22.09092f, 14.36038f);
-		
 		case 115:
 			return VOLUME::_CREATE_VOLUME_BOX(-5514.454f, -2910.941f, 0.196263f, 0f, 0f, 28.00368f, 12.9595f, 18.61485f, 9.427321f);
-		
 		case 38:
 			iVar0 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Blackwater - m_volSaloonInterior");
 			VOLUME::_0x39816F6F94F385AD(iVar0, -818.523f, -1319.681f, 46.59f, 0f, 0f, 90f, 15.6f, 16f, 8f);
 			VOLUME::_0x39816F6F94F385AD(iVar0, -809.672f, -1319.568f, 48.818f, 0f, 0f, 90f, 15.5f, 2f, 4f);
 			VOLUME::_0x39816F6F94F385AD(iVar0, -809.672f, -1324.85f, 44.569f, 0f, 0f, 90f, 5.2f, 2f, 3.8f);
 			return iVar0;
-		
 		case 5:
 			if (iParam0 == 2)
 			{
@@ -1235,7 +1185,6 @@ int func_36(int iParam0)
 				return VOLUME::_CREATE_VOLUME_BOX(2796.705f, -1167.971f, 48.56161f, 0f, 0f, -120.25f, 13.49097f, 10.18626f, 3.324371f);
 			}
 			break;
-		
 		case 105:
 			return VOLUME::_CREATE_VOLUME_BOX(1345.534f, -1375.4f, 81.161f, 0f, 0f, 80.2f, 11.601f, 14.755f, 3.376f);
 	}
@@ -1268,7 +1217,7 @@ bool func_39(int iParam0)
 int func_40(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_35(iParam0);
 	if (iVar0 == 0)
 	{
@@ -1312,7 +1261,7 @@ bool func_44(int iParam0)
 void func_45()
 {
 	int iVar0;
-	
+
 	if (Global_1935369->f_51)
 	{
 		return;
@@ -1427,7 +1376,7 @@ int func_54(var uParam0)
 float func_55()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -1454,7 +1403,7 @@ bool func_58(var uParam0)
 int func_59()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();

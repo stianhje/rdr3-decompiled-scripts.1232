@@ -16,7 +16,7 @@
 void __EntryFunction__()
 {
 	vector3 vVar0;
-	
+
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
 		func_1(&vVar0);
@@ -32,7 +32,6 @@ void __EntryFunction__()
 				}
 				vVar0.x = SCRIPTS::GET_ID_OF_THIS_THREAD();
 				break;
-			
 			case 1:
 				func_4(&vVar0);
 				if (func_6(func_5()))
@@ -44,7 +43,6 @@ void __EntryFunction__()
 					iLocal_6 = 2;
 				}
 				break;
-			
 			case 2:
 				func_1(&vVar0);
 				break;
@@ -112,14 +110,12 @@ void func_4(int iParam0)
 			func_16();
 			func_14(1);
 			break;
-		
 		case 1:
 			if (func_17())
 			{
 				func_14(2);
 			}
 			break;
-		
 		case 2:
 			if (func_18() && func_19())
 			{
@@ -129,7 +125,6 @@ void func_4(int iParam0)
 				}
 			}
 			break;
-		
 		case 3:
 			if (!func_21())
 			{
@@ -142,7 +137,6 @@ void func_4(int iParam0)
 			ENTITY::SET_ENTITY_VISIBLE(Local_0.f_1, true);
 			func_14(4);
 			break;
-		
 		case 4:
 			if (!func_11(1) && func_13(1457.186f, 314.9523f, 92.7676f, 85.4782f, 1065353216))
 			{
@@ -155,14 +149,12 @@ void func_4(int iParam0)
 				func_14(5);
 			}
 			break;
-		
 		case 5:
 			if (func_20(func_12(), 262.3945f, 1, 0))
 			{
 				func_14(6);
 			}
 			break;
-		
 		case 6:
 			if (!func_11(2) && func_25())
 			{
@@ -267,7 +259,7 @@ int func_18()
 	int iVar0;
 	int iVar1;
 	struct<10> Var2;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= (1 - 1))
 	{
@@ -311,7 +303,7 @@ int func_21()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = CLOCK::GET_CLOCK_DAY_OF_WEEK();
 	if ((iVar0 != 0 && iVar0 != 3) && iVar0 != 5)
 	{
@@ -353,7 +345,7 @@ void func_24()
 int func_25()
 {
 	int iVar0;
-	
+
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(func_32());
 	if (ENTITY::DOES_ENTITY_EXIST(Local_0.f_1))
 	{
@@ -389,7 +381,7 @@ bool func_27(var uParam0, var uParam1)
 int func_28(int iParam0, vector3 vParam1, float fParam4, float fParam5, float fParam6, bool bParam7)
 {
 	float fVar0;
-	
+
 	fVar0 = func_38(ENTITY::GET_ENTITY_HEADING(iParam0));
 	fParam4 = func_38(fParam4);
 	if (ENTITY::IS_ENTITY_AT_COORD(iParam0, vParam1, fParam5, fParam5, 2f, false, bParam7, 0) && MISC::ABSF((fVar0 - fParam4)) <= fParam6)
@@ -439,7 +431,7 @@ int func_32()
 struct<11> func_33(int iParam0)
 {
 	struct<11> Var0;
-	
+
 	switch (iParam0)
 	{
 		case 0:
@@ -461,7 +453,7 @@ float func_34()
 int func_35(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bParam6, bool bParam7, int iParam8)
 {
 	int iVar0;
-	
+
 	iVar0 = PED::CREATE_PED(iParam0, vParam1, fParam4, bParam6, bParam7, false, false);
 	if (bParam5)
 	{
@@ -475,7 +467,7 @@ int func_36(int iParam0, int iParam1, int iParam2)
 	bool bVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (iParam1 == 24)
 	{
 		iParam1 = 0;
@@ -528,7 +520,7 @@ bool func_37(int iParam0)
 float func_38(float fParam0)
 {
 	float fVar0;
-	
+
 	fVar0 = fParam0;
 	if (fParam0 < 0f)
 	{

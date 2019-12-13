@@ -115,7 +115,7 @@ void func_4()
 void func_5()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(2))
 	{
@@ -124,11 +124,9 @@ void func_5()
 			case -45008988:
 				func_9(iVar0);
 				break;
-			
 			case -456923784:
 				func_10(iVar0);
 				break;
-			
 			case -843555838:
 				func_11(iVar0);
 				break;
@@ -140,7 +138,7 @@ void func_5()
 void func_6()
 {
 	int iVar0;
-	
+
 	iLocal_0 = 0;
 	return;
 	if (PED::IS_PED_INJURED(Global_35))
@@ -170,7 +168,6 @@ void func_6()
 			iLocal_59 = func_20(iVar0);
 			func_15(1);
 			break;
-		
 		case 1:
 			if (!func_21(&uLocal_7))
 			{
@@ -184,7 +181,6 @@ void func_6()
 				func_15(2);
 			}
 			break;
-		
 		case 2:
 			if (!func_26())
 			{
@@ -198,7 +194,6 @@ void func_6()
 				func_15(3);
 			}
 			break;
-		
 		case 3:
 			break;
 	}
@@ -222,7 +217,7 @@ void func_8()
 void func_9(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -234,7 +229,7 @@ void func_9(int iParam0)
 void func_10(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -246,7 +241,7 @@ void func_10(int iParam0)
 void func_11(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -305,7 +300,7 @@ Vector3 func_19(int iParam0, var uParam1, var uParam2)
 	float fVar4;
 	int iVar5;
 	float fVar6;
-	
+
 	iVar5 = *uParam1;
 	iVar0 = 0;
 	while (iVar0 < iVar5)
@@ -335,13 +330,10 @@ int func_20(int iParam0)
 	{
 		case 0:
 			return 841127028;
-		
 		case 1:
 			return 925575409;
-		
 		case 2:
 			return -855228377;
-		
 		default:
 			break;
 	}
@@ -394,7 +386,7 @@ int func_26()
 	vector3 vVar1;
 	vector3 vVar4;
 	float fVar7;
-	
+
 	if (!func_37(iLocal_59))
 	{
 		return 0;
@@ -415,11 +407,9 @@ int func_26()
 		case 841127028:
 			fVar7 = 115f;
 			break;
-		
 		case 925575409:
 			fVar7 = 10f;
 			break;
-		
 		case -855228377:
 			fVar7 = 100f;
 			break;
@@ -435,7 +425,7 @@ void func_27(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	float fVar0;
 	float fVar1;
 	vector3 vVar2;
-	
+
 	if (!CAM::DOES_CAM_EXIST(*uParam0))
 	{
 		return;
@@ -622,7 +612,7 @@ bool func_37(int iParam0)
 int func_38(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = func_49(iParam0, iParam1);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -721,7 +711,7 @@ bool func_45(var uParam0)
 float func_46()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -743,7 +733,7 @@ void func_48(var uParam0, int iParam1)
 int func_49(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	func_50(iParam0, 0, 0);
 	if (func_51(iParam0))
 	{

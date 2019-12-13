@@ -17,7 +17,7 @@
 void __EntryFunction__()
 {
 	bool bVar0;
-	
+
 	func_1();
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	NETWORK::_0x7AC752103856FB20(true);
@@ -95,7 +95,7 @@ int func_2()
 int func_3(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -126,23 +126,18 @@ int func_3(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -199,7 +194,7 @@ void func_6()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	iVar1 = 0;
 	while (iVar1 < SCRIPTS::GET_NUMBER_OF_EVENTS(4))
 	{
@@ -247,7 +242,7 @@ void func_11(char* sParam0)
 {
 	float fVar0;
 	float fVar1;
-	
+
 	if (!Global_25757.f_193)
 	{
 		return;
@@ -287,7 +282,7 @@ int func_13(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 9;
 	while (iVar0 >= 0)
 	{
@@ -339,22 +334,16 @@ char* func_17(int iParam0)
 	{
 		case -921472336:
 			return "UNKNOWN ERROR";
-		
 		case -992702923:
 			return "ARRAY OVERRUN";
-		
 		case 397004310:
 			return "INSTRUCTION LIMIT";
-		
 		case 2004694700:
 			return "STACK OVERFLOW";
-		
 		case -1009774763:
 			return "GLOBAL BLOCK INACCESSIBLE";
-		
 		case 1028822748:
 			return "GLOBAL BLOCK NOT RESIDENT";
-		
 		default:
 			break;
 	}

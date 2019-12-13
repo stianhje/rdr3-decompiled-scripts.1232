@@ -45,7 +45,7 @@
 void __EntryFunction__()
 {
 	bool bVar0;
-	
+
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	func_1();
@@ -307,7 +307,7 @@ void func_4()
 void func_5(vector3 vParam0, char[4] cParam3, char* sParam4, char* sParam5, int iParam6, var uParam7)
 {
 	int iVar0;
-	
+
 	if (func_22(vParam0))
 	{
 		return;
@@ -440,7 +440,6 @@ int func_15(int iParam0, bool bParam1)
 	{
 		case 5:
 			return 1;
-		
 		case 6:
 			if (bParam1)
 			{
@@ -529,7 +528,7 @@ int func_22(vector3 vParam0)
 int func_23(var uParam0, char* sParam1, char* sParam2, char* sParam3, var uParam4, var uParam5)
 {
 	int iVar0;
-	
+
 	if (Global_1933981->f_10 != Global_1894899->f_2)
 	{
 		func_34();
@@ -603,7 +602,7 @@ int func_27()
 bool func_28(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_25(iParam0);
 	return (iVar0 == 3 || iVar0 == 4);
 }
@@ -621,7 +620,7 @@ bool func_30(int iParam0)
 int func_31(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		if (!(iParam0 > 0 && iParam0 < 771))
@@ -666,7 +665,7 @@ bool func_33(int iParam0, int iParam1)
 void func_34()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < 5)
 	{
@@ -703,7 +702,7 @@ bool func_36(int iParam0)
 int func_37(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -721,7 +720,7 @@ int func_38(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;

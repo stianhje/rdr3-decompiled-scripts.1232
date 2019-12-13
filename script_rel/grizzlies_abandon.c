@@ -64,7 +64,6 @@ void __EntryFunction__()
 				}
 				iLocal_14 = 1;
 				break;
-			
 			case 1:
 				func_6();
 				if (func_7(Global_35, Global_1897952->f_38, 1, 0))
@@ -72,7 +71,6 @@ void __EntryFunction__()
 					iLocal_14 = 2;
 				}
 				break;
-			
 			case 2:
 				if (func_8())
 				{
@@ -156,7 +154,7 @@ void func_6()
 {
 	int iVar0;
 	float fVar1;
-	
+
 	if (CAM::IS_SCREEN_FADED_OUT())
 	{
 		return;
@@ -279,7 +277,7 @@ int func_8()
 int func_9(int iParam0, bool bParam1, int iParam2)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 != -1)
 	{
 		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
@@ -340,37 +338,26 @@ int func_9(int iParam0, bool bParam1, int iParam2)
 	{
 		case 0:
 			return 0;
-		
 		case 1:
 			return iParam0 & 1 == 0;
-		
 		case 4:
 			return iParam0 & 2 == 0;
-		
 		case 6:
 			return iParam0 & 4 == 0;
-		
 		case 2:
 			return iParam0 & 16 == 0;
-		
 		case 5:
 			return iParam0 & 32 == 0;
-		
 		case 9:
 			return iParam0 & 64 == 0;
-		
 		case 8:
 			return iParam0 & 8 == 0;
-		
 		case 10:
 			return iParam0 & 512 == 0;
-		
 		case 3:
 			return iParam0 & 128 == 0;
-		
 		case 11:
 			return iParam0 & 256 == 0;
-		
 		default:
 			break;
 	}
@@ -419,7 +406,7 @@ var func_14(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4, int
 	struct<4> Var0;
 	struct<2> Var13;
 	var uVar15;
-	
+
 	Var0 = -2;
 	Var0 = iParam1;
 	Var0.f_1 = uParam2;
@@ -452,7 +439,7 @@ void func_15(int iParam0, bool bParam1, bool bParam2)
 bool func_16(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 6;
 	if (func_28(iParam0))
 	{
@@ -464,7 +451,7 @@ bool func_16(int iParam0)
 float func_17(vector3 vParam0, vector3 vParam3)
 {
 	vector3 vVar0;
-	
+
 	vVar0 = { vParam3 - vParam0 };
 	if (vVar0.y == 0f)
 	{
@@ -492,7 +479,7 @@ float func_18(bool bParam0, float fParam1, float fParam2)
 int func_19(int iParam0)
 {
 	int iVar0;
-	
+
 	if (iParam0 == 0)
 	{
 		return -1;
@@ -586,7 +573,6 @@ int func_26(int iParam0, bool bParam1)
 	{
 		case 5:
 			return 1;
-		
 		case 6:
 			if (bParam1)
 			{
@@ -641,7 +627,7 @@ int func_31(int iParam0)
 int func_32(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -659,7 +645,7 @@ int func_33(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;

@@ -33,7 +33,6 @@ void __EntryFunction__()
 				func_3();
 				iLocal_324 = 1;
 				break;
-			
 			case 1:
 				func_4();
 				break;
@@ -47,7 +46,7 @@ void __EntryFunction__()
 void func_1()
 {
 	int iVar0;
-	
+
 	func_5();
 	iVar0 = 0;
 	iVar0 = 0;
@@ -112,7 +111,7 @@ int func_2()
 void func_3()
 {
 	int iVar0;
-	
+
 	iLocal_289 = 0;
 	iVar0 = 0;
 	while (iVar0 < 32)
@@ -139,7 +138,7 @@ void func_4()
 	vector3 vVar15;
 	int iVar18;
 	int iVar19;
-	
+
 	if (func_7(16))
 	{
 		func_13(16);
@@ -344,7 +343,7 @@ void func_10()
 int func_11(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -375,23 +374,18 @@ int func_11(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -452,7 +446,7 @@ int func_16(vector3 vParam0)
 void func_17(int iParam0, int iParam1, bool bParam2, int iParam3)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	if (bParam2)
 	{
@@ -501,7 +495,7 @@ void func_19(int iParam0, bool bParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	func_37(iParam0, &iVar0, &iVar1);
 	if (!func_38(iParam0, iVar0, iVar1, bParam1))
 	{
@@ -577,7 +571,7 @@ void func_26(int iParam0, bool bParam1, float fParam2, float fParam3, int iParam
 	float fVar1;
 	int iVar2;
 	bool bVar3;
-	
+
 	iVar0 = BUILTIN::FLOOR(func_41(BUILTIN::TO_FLOAT(3000), BUILTIN::TO_FLOAT(30), fParam3));
 	fVar1 = func_41(1400f, 2000f, fParam3);
 	iVar2 = (iVar0 / 6);
@@ -683,7 +677,7 @@ void func_28(bool bParam0, int iParam1)
 	var uVar1;
 	char* sVar2;
 	int iVar3;
-	
+
 	if (func_18(8, iParam1))
 	{
 		return;
@@ -714,7 +708,7 @@ void func_28(bool bParam0, int iParam1)
 void func_29(int iParam0)
 {
 	int iVar0;
-	
+
 	if (!func_18(8, iParam0))
 	{
 		return;
@@ -730,7 +724,7 @@ void func_29(int iParam0)
 int func_30()
 {
 	int iVar0;
-	
+
 	if (func_7(1))
 	{
 		return 1;
@@ -813,7 +807,7 @@ void func_35(var uParam0, var uParam1)
 Vector3 func_36(int iParam0, int iParam1)
 {
 	vector3 vVar0;
-	
+
 	if (func_56(iParam1))
 	{
 		vVar0 = { 0f, 0f, 0f };
@@ -831,7 +825,7 @@ Vector3 func_36(int iParam0, int iParam1)
 void func_37(var uParam0, var uParam1, var uParam2)
 {
 	int iVar0;
-	
+
 	iVar0 = uParam0;
 	*uParam1 = (iVar0 / 31);
 	*uParam2 = (iVar0 % 31);
@@ -875,7 +869,7 @@ int func_38(int iParam0, int iParam1, int iParam2, bool bParam3)
 void func_39(int iParam0, int iParam1)
 {
 	var uVar0;
-	
+
 	uVar0 = Global_1904612[iParam0];
 	MISC::SET_BIT(&uVar0, iParam1);
 	(*Global_1904612)[iParam0] = uVar0;
@@ -918,7 +912,7 @@ void func_45(bool bParam0, int iParam1)
 {
 	var uVar0;
 	char* sVar1;
-	
+
 	if (func_18(2, iParam1))
 	{
 		return;
@@ -982,7 +976,7 @@ float func_51()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = CLOCK::GET_CLOCK_HOURS();
 	iVar1 = CLOCK::GET_CLOCK_MINUTES();
 	if ((iVar0 == 5 && iVar1 >= 30) || (iVar0 == 6 && iVar1 < 30))
@@ -1011,7 +1005,7 @@ int func_53(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = -1;
 	iVar1 = 0;
 	while (iVar1 < 5)
@@ -1039,7 +1033,7 @@ int func_55(int iParam0, bool bParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = -1;
 	iVar1 = 0;
 	while (iVar1 < 5)
@@ -1083,7 +1077,7 @@ int func_59(int iParam0)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	if ((Global_1904612->f_31[iParam0 /*9*/])->f_2 & 98304 == 0)
 	{
 		return 0;
@@ -1150,7 +1144,7 @@ bool func_64(var uParam0)
 int func_65()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
@@ -1178,7 +1172,7 @@ float func_68(bool bParam0, int iParam1, int iParam2, int iParam3)
 	int iVar1;
 	int iVar2;
 	float fVar3;
-	
+
 	iVar0 = (CLOCK::GET_CLOCK_HOURS() - iParam1);
 	iVar1 = (CLOCK::GET_CLOCK_MINUTES() - iParam2);
 	iVar2 = ((CLOCK::GET_CLOCK_SECONDS() + iVar1 * 60) + iVar0 * 3600);
@@ -1203,7 +1197,7 @@ int func_69()
 float func_70()
 {
 	int iVar0;
-	
+
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
 		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();

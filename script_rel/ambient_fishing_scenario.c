@@ -74,7 +74,7 @@ void func_4()
 void func_5()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(2))
 	{
@@ -83,11 +83,9 @@ void func_5()
 			case -45008988:
 				func_9(iVar0);
 				break;
-			
 			case -456923784:
 				func_10(iVar0);
 				break;
-			
 			case -843555838:
 				func_11(iVar0);
 				break;
@@ -115,7 +113,6 @@ void func_6()
 				}
 			}
 			break;
-		
 		case 1:
 			func_12(iLocal_23, iLocal_24);
 			if (!iLocal_25)
@@ -155,7 +152,7 @@ void func_8()
 void func_9(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -167,7 +164,7 @@ void func_9(int iParam0)
 void func_10(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -179,7 +176,7 @@ void func_10(int iParam0)
 void func_11(int iParam0)
 {
 	int iVar0;
-	
+
 	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
 	if (iVar0 == iLocal_2)
 	{
@@ -198,27 +195,22 @@ void func_12(int iParam0, int iParam1)
 				func_21(1);
 			}
 			break;
-		
 		case 1:
 			break;
-		
 		case 2:
 			if (func_22(iParam0))
 			{
 				func_21(3);
 			}
 			break;
-		
 		case 3:
 			break;
-		
 		case 4:
 			if (func_23())
 			{
 				func_21(1);
 			}
 			break;
-		
 		case 5:
 			func_14();
 			break;
@@ -301,7 +293,7 @@ bool func_20(int iParam0)
 	int iVar0;
 	vector3 vVar1;
 	vector3 vVar4;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -444,7 +436,7 @@ void func_25(int iParam0)
 	float fVar11;
 	vector3 vVar12;
 	vector3 vVar15;
-	
+
 	if ((!ENTITY::DOES_ENTITY_EXIST(iParam0) || !ENTITY::DOES_ENTITY_EXIST(Local_5.f_5)) || !ENTITY::DOES_ENTITY_EXIST(Local_5.f_6))
 	{
 		return;
@@ -470,7 +462,7 @@ Vector3 func_26(vector3 vParam0)
 {
 	float fVar0;
 	float fVar1;
-	
+
 	fVar0 = BUILTIN::VMAG(vParam0);
 	if (fVar0 != 0f)
 	{
@@ -490,7 +482,7 @@ void func_27(float fParam0, float fParam1, float fParam2)
 {
 	float fVar0;
 	float fVar1;
-	
+
 	fVar0 = *fParam0;
 	fVar1 = *fParam1;
 	*fParam0 = ((fVar0 * BUILTIN::COS(fParam2)) - (fVar1 * BUILTIN::SIN(fParam2)));

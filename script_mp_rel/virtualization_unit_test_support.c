@@ -7,7 +7,7 @@ void __EntryFunction__()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iLocal_0 = 674038080;
 	iLocal_1 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST_FROM_PATH("", "VirtualizationUnitTestData");
 	iVar0 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(iLocal_1, "item0");

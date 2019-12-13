@@ -43,7 +43,6 @@ void __EntryFunction__()
 					iLocal_47 = 1;
 				}
 				break;
-			
 			case 1:
 				func_4();
 				break;
@@ -72,7 +71,7 @@ int func_2()
 int func_3(var uParam0)
 {
 	int iVar0;
-	
+
 	if (Local_49 == 0)
 	{
 		iVar0 = TASK::_0xA92450B5AE687AAF(uParam0->f_1);
@@ -90,7 +89,7 @@ void func_4()
 	bool bVar3;
 	int iVar4;
 	int iVar5;
-	
+
 	Local_13.f_32 = NETWORK::GET_CLOUD_TIME_AS_INT();
 	iVar0 = 0;
 	while (iVar0 <= 2)
@@ -137,7 +136,6 @@ void func_4()
 			case 0:
 				func_11(Local_13[iVar0 /*10*/], 1);
 				break;
-			
 			case 1:
 				STREAMING::REQUEST_PTFX_ASSET();
 				if (!STREAMING::HAS_PTFX_ASSET_LOADED())
@@ -146,7 +144,6 @@ void func_4()
 				}
 				func_11(Local_13[iVar0 /*10*/], 2);
 				break;
-			
 			case 2:
 				iVar5 = 0;
 				while (iVar5 <= 5)
@@ -170,7 +167,6 @@ void func_4()
 					func_16(iVar1, &(Local_13[iVar0 /*10*/]));
 				}
 				break;
-			
 			case 3:
 			case 4:
 			case 5:
@@ -181,7 +177,6 @@ void func_4()
 					func_16(iVar1, &(Local_13[iVar0 /*10*/]));
 				}
 				break;
-			
 			case 7:
 				break;
 		}
@@ -193,7 +188,7 @@ void func_5()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 2)
 	{
@@ -214,7 +209,6 @@ int func_6(int iParam0)
 	{
 		case -1605488611:
 			return 1351526287;
-		
 		default:
 			break;
 	}
@@ -227,10 +221,8 @@ int func_7(int iParam0)
 	{
 		case 0:
 			return 1;
-		
 		case 1:
 			return 1;
-		
 		case 2:
 			return 1;
 	}
@@ -273,7 +265,7 @@ int func_11(var uParam0, int iParam1)
 struct<11> func_12(int iParam0, int iParam1)
 {
 	struct<11> Var0;
-	
+
 	switch (iParam0)
 	{
 		case 0:
@@ -286,7 +278,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_KNOCK_BACK";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 1:
 					Var0 = { 224.4328f, 1906.671f, 203.5702f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -294,7 +285,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_KILL_PLAYER";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 2:
 					Var0 = { 224.5328f, 1922.529f, 203.5702f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -302,7 +292,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_LOCATION1";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 3:
 					Var0 = { 251.9829f, 1909.192f, 204.0304f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -310,7 +299,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_SMALL_SPRING";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 4:
 					Var0 = { 234.7751f, 1939.719f, 203.8331f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -318,7 +306,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_LARGE_SPRING";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 5:
 					Var0 = { 197.2354f, 1911.487f, 203.8331f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -328,7 +315,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					break;
 			}
 			break;
-		
 		case 1:
 			switch (iParam1)
 			{
@@ -339,7 +325,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_KNOCK_BACK";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 1:
 					Var0 = { 191.766f, 1831.39f, 198.4614f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -347,7 +332,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_KILL_PLAYER";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 2:
 					Var0 = { 188.2542f, 1819.456f, 198.4614f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -355,7 +339,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_LOCATION2";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 3:
 					Var0 = { 173.5744f, 1836.124f, 200.0205f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -363,7 +346,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_SMALL_SPRING";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 4:
 					Var0 = { 176.4688f, 1813.247f, 200.0197f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -371,7 +353,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_LARGE_SPRING";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 5:
 					Var0 = { 208.2183f, 1821.611f, 200.0197f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -381,7 +362,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					break;
 			}
 			break;
-		
 		case 2:
 			switch (iParam1)
 			{
@@ -392,7 +372,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_KNOCK_BACK";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 1:
 					Var0 = { 129.107f, 1878.372f, 198.1505f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -400,7 +379,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_KILL_PLAYER";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 2:
 					Var0 = { 139.0299f, 1875.571f, 198.1505f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -408,7 +386,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_LOCATION3";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 3:
 					Var0 = { 125.8097f, 1865.035f, 200.3174f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -416,7 +393,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_SMALL_SPRING";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 4:
 					Var0 = { 143.7371f, 1866.656f, 200.2199f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -424,7 +400,6 @@ struct<11> func_12(int iParam0, int iParam1)
 					Var0.f_9 = "DISCO_GEYSER_LARGE_SPRING";
 					Var0.f_10 = 665633627;
 					break;
-				
 				case 5:
 					Var0 = { 136.359f, 1890.56f, 200.2199f };
 					Var0.f_3 = { 0f, 0f, 0f };
@@ -457,10 +432,8 @@ Vector3 func_14(int iParam0)
 	{
 		case 0:
 			return 224.4436f, 1906.525f, 206.0843f;
-		
 		case 1:
 			return 191.666f, 1831.29f, 200.4614f;
-		
 		case 2:
 			return 129.107f, 1878.372f, 200.1505f;
 	}
@@ -505,7 +478,6 @@ void func_16(int iParam0, int iParam1)
 				(Local_13[iParam0 /*10*/])->f_9 = 0;
 			}
 			break;
-		
 		case 4:
 			if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST((Local_13[iParam0 /*10*/])->f_8))
 			{
@@ -519,7 +491,6 @@ void func_16(int iParam0, int iParam1)
 				(Local_13[iParam0 /*10*/])->f_9 = 0;
 			}
 			break;
-		
 		case 5:
 			if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST((Local_13[iParam0 /*10*/])->f_8))
 			{
@@ -537,7 +508,6 @@ void func_16(int iParam0, int iParam1)
 				(Local_13[iParam0 /*10*/])->f_9 = 0;
 			}
 			break;
-		
 		case 6:
 			if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST((Local_13[iParam0 /*10*/])->f_8))
 			{
@@ -563,7 +533,7 @@ void func_17(int iParam0)
 	vector3 vVar0;
 	vector3 vVar3;
 	vector3 vVar6;
-	
+
 	if ((Local_13[iParam0 /*10*/])->f_9)
 	{
 		return;
@@ -597,7 +567,7 @@ void func_18(var uParam0)
 int func_19(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = (Local_13.f_32 % func_24(iParam0));
 	if (iVar0 >= 0 && iVar0 < func_25(iParam0))
 	{
@@ -609,7 +579,7 @@ int func_19(int iParam0)
 int func_20(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = (Local_13.f_32 % func_24(iParam0));
 	if (iVar0 >= func_25(iParam0) && iVar0 < (func_25(iParam0) + func_26(iParam0)))
 	{
@@ -621,7 +591,7 @@ int func_20(int iParam0)
 int func_21(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = (Local_13.f_32 % func_24(iParam0));
 	if (iVar0 >= (func_25(iParam0) + func_26(iParam0)) && iVar0 < ((func_25(iParam0) + func_26(iParam0)) + func_27(iParam0)))
 	{
@@ -633,7 +603,7 @@ int func_21(int iParam0)
 int func_22(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = (Local_13.f_32 % func_24(iParam0));
 	if (iVar0 >= ((func_25(iParam0) + func_26(iParam0)) + func_27(iParam0)) && iVar0 < (((func_25(iParam0) + func_26(iParam0)) + func_27(iParam0)) + func_28(iParam0)))
 	{
@@ -646,7 +616,7 @@ Vector3 func_23(vector3 vParam0)
 {
 	float fVar0;
 	float fVar1;
-	
+
 	fVar0 = BUILTIN::VMAG(vParam0);
 	if (fVar0 != 0f)
 	{
@@ -673,13 +643,10 @@ int func_25(int iParam0)
 	{
 		case 0:
 			return 30;
-		
 		case 1:
 			return 42;
-		
 		case 2:
 			return 57;
-		
 		default:
 			break;
 	}
@@ -692,13 +659,10 @@ int func_26(int iParam0)
 	{
 		case 0:
 			return 15;
-		
 		case 1:
 			return 12;
-		
 		case 2:
 			return 7;
-		
 		default:
 			break;
 	}
@@ -711,13 +675,10 @@ int func_27(int iParam0)
 	{
 		case 0:
 			return 4;
-		
 		case 1:
 			return 3;
-		
 		case 2:
 			return 2;
-		
 		default:
 			break;
 	}
@@ -730,13 +691,10 @@ int func_28(int iParam0)
 	{
 		case 0:
 			return 3;
-		
 		case 1:
 			return 5;
-		
 		case 2:
 			return 7;
-		
 		default:
 			break;
 	}

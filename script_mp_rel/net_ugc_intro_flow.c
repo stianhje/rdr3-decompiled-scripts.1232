@@ -71,7 +71,7 @@
 void __EntryFunction__()
 {
 	char cVar0[32];
-	
+
 	iLocal_42 = -1;
 	iLocal_43 = -1;
 	iLocal_60 = -1;
@@ -306,7 +306,7 @@ void func_12()
 {
 	int iVar0;
 	int iVar1;
-	
+
 	CAM::_0x8910C24B7E0046EC();
 	if (!Global_1939057->f_19)
 	{
@@ -370,7 +370,6 @@ void func_13()
 				func_45(1);
 			}
 			break;
-		
 		case 1:
 			if ((!bLocal_34 && !bLocal_44) && (bLocal_36 || bLocal_35))
 			{
@@ -385,7 +384,6 @@ void func_13()
 				}
 			}
 			break;
-		
 		case 2:
 			if (func_2(256) || func_2(262144))
 			{
@@ -401,7 +399,6 @@ void func_13()
 				func_45(3);
 			}
 			break;
-		
 		case 3:
 			if ((func_2(8) && (ENTITY::IS_ENTITY_VISIBLE(iLocal_33) || iLocal_52)) && &Global_262154 != -1)
 			{
@@ -440,7 +437,6 @@ void func_13()
 				}
 			}
 			break;
-		
 		case 4:
 			if (func_2(16))
 			{
@@ -451,7 +447,6 @@ void func_13()
 				func_50();
 			}
 			break;
-		
 		case 5:
 			func_51(&Local_16);
 			GRAPHICS::TOGGLE_PAUSED_RENDERPHASES(true);
@@ -461,14 +456,12 @@ void func_13()
 			}
 			func_45(6);
 			break;
-		
 		case 6:
 			if (func_2(1024))
 			{
 				func_16();
 			}
 			break;
-		
 		case 7:
 			break;
 	}
@@ -510,7 +503,7 @@ void func_16()
 {
 	int iVar0;
 	char cVar1[32];
-	
+
 	if (func_22() == 7)
 	{
 		return;
@@ -651,7 +644,7 @@ int func_22()
 int func_23(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -682,23 +675,18 @@ int func_23(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -744,31 +732,22 @@ int func_26()
 		{
 			case -915869673:
 				return 1122662550;
-			
 			case -360644098:
 				return 506919947;
-			
 			case -1649482077:
 				return 55577806;
-			
 			case -163684180:
 				return -2093919847;
-			
 			case -777132493:
 				return -1567074128;
-			
 			case -698288936:
 				return -1277009905;
-			
 			case 909765192:
 				return 1730145250;
-			
 			case 534981680:
 				return -773971986;
-			
 			case 1520184724:
 				return 1914027275;
-			
 			default:
 				break;
 		}
@@ -779,30 +758,22 @@ int func_26()
 		{
 			case -533426613:
 				return 1088509777;
-			
 			case -1437925683:
 			case 1272390114:
 				return -1482087471;
-			
 			case -725256130:
 				return 478789200;
-			
 			case -222655798:
 				return -1863716933;
-			
 			case -559809431:
 				return -679566803;
-			
 			case -1918441640:
 			case 1153715636:
 				return 1315254565;
-			
 			case -1581094459:
 				return 1468907451;
-			
 			case -457802746:
 				return -274237802;
-			
 			default:
 				break;
 		}
@@ -814,16 +785,12 @@ int func_26()
 		{
 			case 1579717899:
 				return -938054684;
-			
 			case 218185167:
 				return -1684650239;
-			
 			case -1185533313:
 				return 1744089234;
-			
 			case 1744858848:
 				return 1646695636;
-			
 			default:
 				break;
 		}
@@ -844,31 +811,22 @@ int func_27()
 		{
 			case -915869673:
 				return 347053089;
-			
 			case -360644098:
 				return 267476864;
-			
 			case -1649482077:
 				return 263267728;
-			
 			case -163684180:
 				return 1618086939;
-			
 			case -777132493:
 				return -1263403805;
-			
 			case -698288936:
 				return 1269272475;
-			
 			case 909765192:
 				return 932383945;
-			
 			case 534981680:
 				return -31655829;
-			
 			case 1520184724:
 				return -2122032152;
-			
 			default:
 				break;
 		}
@@ -879,30 +837,22 @@ int func_27()
 		{
 			case -533426613:
 				return 307231279;
-			
 			case -1437925683:
 			case 1272390114:
 				return -53621227;
-			
 			case -725256130:
 				return 1597260708;
-			
 			case -222655798:
 				return 1586694926;
-			
 			case -559809431:
 				return -913897922;
-			
 			case -1918441640:
 			case 1153715636:
 				return -1544168383;
-			
 			case -1581094459:
 				return 1168382952;
-			
 			case -457802746:
 				return -1964987130;
-			
 			default:
 				break;
 		}
@@ -914,16 +864,12 @@ int func_27()
 		{
 			case 1579717899:
 				return -1177563305;
-			
 			case 1744858848:
 				return 868825114;
-			
 			case 218185167:
 				return 419480024;
-			
 			case -1185533313:
 				return 2031571671;
-			
 			default:
 				break;
 		}
@@ -961,7 +907,7 @@ char* func_29()
 char* func_30()
 {
 	int iVar0;
-	
+
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Global_3145858->f_100)))
 	{
 		return func_64(&(Global_3145858->f_100));
@@ -981,7 +927,7 @@ char* func_30()
 char* func_31()
 {
 	struct<16> Var0;
-	
+
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Global_3145858->f_84)))
 	{
 		Var0 = { Global_3145858->f_84 };
@@ -1151,7 +1097,7 @@ void func_46()
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (&Global_1049239 != -1)
 	{
 		iVar1 = (&Global_1049239 / 32);
@@ -1239,7 +1185,7 @@ int func_47()
 	int iVar3;
 	int iVar4;
 	int iVar5;
-	
+
 	if (!func_2(8192))
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(Global_1049161[0]))
@@ -1329,7 +1275,7 @@ void func_48()
 void func_49(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
@@ -1355,7 +1301,7 @@ void func_50()
 	int iVar10;
 	char cVar11[32];
 	bool bVar15;
-	
+
 	func_71();
 	if (iLocal_14 < 6)
 	{
@@ -1385,7 +1331,6 @@ void func_50()
 				func_75(1);
 			}
 			break;
-		
 		case 1:
 			if (func_76())
 			{
@@ -1413,7 +1358,6 @@ void func_50()
 				}
 			}
 			break;
-		
 		case 2:
 			if (func_80())
 			{
@@ -1511,7 +1455,6 @@ void func_50()
 				}
 			}
 			break;
-		
 		case 3:
 			func_24(65536);
 			if ((CAM::DOES_CAM_EXIST(&(iLocal_53[0])) && CAM::IS_CAM_INTERPOLATING(&(iLocal_53[0]))) || (CAM::DOES_CAM_EXIST(&(iLocal_53[1])) && CAM::IS_CAM_INTERPOLATING(&(iLocal_53[1]))))
@@ -1570,11 +1513,9 @@ void func_50()
 				}
 			}
 			break;
-		
 		case 4:
 			func_85();
 			break;
-		
 		case 5:
 			if (func_33(&uLocal_65))
 			{
@@ -1592,7 +1533,6 @@ void func_50()
 				func_35(&uLocal_65, 0, 0);
 			}
 			break;
-		
 		case 6:
 			if (iLocal_82 || func_80())
 			{
@@ -1604,7 +1544,6 @@ void func_50()
 				}
 			}
 			break;
-		
 		case 7:
 			if (!func_2(16))
 			{
@@ -1617,7 +1556,7 @@ void func_50()
 void func_51(int iParam0)
 {
 	var uVar0;
-	
+
 	if (!MISC::IS_BIT_SET(iParam0->f_15, 1))
 	{
 		if (UISTATEMACHINE::_UISTATEMACHINE_EXISTS(*iParam0) && UISTATEMACHINE::_0xF7C180F57F85D0B8(*iParam0))
@@ -1664,7 +1603,7 @@ void func_56()
 void func_57(int iParam0)
 {
 	var uVar0;
-	
+
 	if (UISTATEMACHINE::_UISTATEMACHINE_EXISTS(*iParam0))
 	{
 		uVar0 = *iParam0;
@@ -1703,7 +1642,7 @@ int func_60(int iParam0)
 char* func_61(int iParam0, char* sParam1)
 {
 	char* sVar0;
-	
+
 	sVar0 = "";
 	switch (iParam0)
 	{
@@ -1717,7 +1656,6 @@ char* func_61(int iParam0, char* sParam1)
 				return HUD::_0xD8402B858F4DDD88(sParam1, HUD::GET_LENGTH_OF_LITERAL_STRING(sParam1));
 			}
 			break;
-		
 		default:
 			sVar0 = MISC::_CREATE_VAR_STRING(2, func_89(iParam0));
 			if (MISC::_DOES_STRING_EXIST_IN_STRING(sVar0, "Invalid MISSION_SUB_TYPE"))
@@ -1735,58 +1673,40 @@ char* func_62(int iParam0)
 	{
 		case 1816768801:
 			return "GST_DEATHMATCH";
-		
 		case -533426613:
 			return "GST_DEATHMATCH_TEAM";
-		
 		case -1918441640:
 			return "GST_DEATHMATCH_LTS";
-		
 		case -457802746:
 			return "GST_DEATHMATCH_FTB";
-		
 		case 1788958412:
 			return "GST_DEATHMATCH_PITP";
-		
 		case 1153715636:
 			return "GST_DEATHMATCH_LMS";
-		
 		case 424482930:
 			return "GST_DEATHMATCH_MM";
-		
 		case 1272390114:
 			return "GST_DEATHMATCH_WOC";
-		
 		case -1581094459:
 			return "GST_DEATHMATCH_EXC";
-		
 		case 1842544025:
 			return "GST_DEATHMATCH_TLG";
-		
 		case -632356431:
 			return "GST_DEATHMATCH_TTLG";
-		
 		case -559809431:
 			return "GST_DEATHMATCH_HT";
-		
 		case 1175500245:
 			return "GST_DEATHMATCH_TFTB";
-		
 		case -1437925683:
 			return "GST_DEATHMATCH_TWOC";
-		
 		case -548018579:
 			return "GST_DEATHMATCH_EC";
-		
 		case 10577687:
 			return "GST_DEATHMATCH_MC";
-		
 		case -222655798:
 			return "GST_DEATHMATCH_GR";
-		
 		case -725256130:
 			return "GST_DEATHMATCH_TGR";
-		
 		default:
 			break;
 	}
@@ -1799,37 +1719,26 @@ char* func_63(int iParam0)
 	{
 		case -784189810:
 			return "GST_RACE_STANDA";
-		
 		case 1579717899:
 			return "GST_RACE_COMBAT";
-		
 		case -63669280:
 			return "GST_RACE_DUALCO";
-		
 		case 851921060:
 			return "GST_RACE_ELIM";
-		
 		case 2028478397:
 			return "GST_RACE_SURVIV";
-		
 		case 1457860192:
 			return "GST_RACE_TIMECP";
-		
 		case -79999383:
 			return "GST_RACE_GOLDRU";
-		
 		case -1957416901:
 			return "GST_RACE_RUNAWT";
-		
 		case 218185167:
 			return "GST_RACE_TARRAC";
-		
 		case 1744858848:
 			return "GST_RACE_OPERAC";
-		
 		case -1185533313:
 			return "GST_RACE_OPTARA";
-		
 		default:
 			break;
 	}
@@ -1844,7 +1753,7 @@ var func_64(var uParam0)
 int func_65(vector3 vParam0, bool bParam3)
 {
 	int iVar0;
-	
+
 	iVar0 = func_90();
 	if (func_91(iVar0))
 	{
@@ -1866,358 +1775,240 @@ char* func_66(int iParam0)
 	{
 		case 0:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BAY_CDW");
-		
 		case 1:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_MCE");
-		
 		case 2:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_MKW");
-		
 		case 3:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BAY_LAG");
-		
 		case 4:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BAY_LAK");
-		
 		case 5:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BAY_STD");
-		
 		case 6:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BAY_ORP");
-		
 		case 7:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BAY_SKS");
-		
 		case 8:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BAY_SDP");
-		
 		case 9:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BAY_SDB");
-		
 		case 10:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BAY_SWS");
-		
 		case 11:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_AST");
-		
 		case 12:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_BRD");
-		
 		case 13:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_BBF");
-		
 		case 14:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_DAK");
-		
 		case 15:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_FRT");
-		
 		case 16:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_HND");
-		
 		case 17:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_LMS");
-		
 		case 18:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_MHS");
-		
 		case 19:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_MNR");
-		
 		case 20:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_OWD");
-		
 		case 21:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_PNS");
-		
 		case 22:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_PRN");
-		
 		case 23:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_RIS");
-		
 		case 24:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_SHK");
-		
 		case 25:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_SHR");
-		
 		case 26:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_STB");
-		
 		case 27:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_VV");
-		
 		case 28:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_WS");
-		
 		case 30:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_WSC");
-		
 		case 29:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_BOJ");
-		
 		case 31:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BLU_CBM");
-		
 		case 32:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BLU_CPH");
-		
 		case 33:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BLU_SIS");
-		
 		case 35:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_CML_BHB");
-		
 		case 36:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_CML_DL");
-		
 		case 37:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_CML_OFW");
-		
 		case 38:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_CML_SPC");
-		
 		case 39:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRT_BEC");
-		
 		case 40:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRT_BW");
-		
 		case 41:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRT_QC");
-		
 		case 42:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_ADR");
-		
 		case 43:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_DRS");
-		
 		case 53:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_CMR");
-		
 		case 54:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_CML_CM");
-		
 		case 44:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_CHZ");
-		
 		case 55:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_COH");
-		
 		case 45:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_CLT");
-		
 		case 46:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_FRZ");
-		
 		case 47:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_MSC");
-		
 		case 48:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_MM");
-		
 		case 50:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_SCS");
-		
 		case 51:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_LC");
-		
 		case 58:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_TL");
-		
 		case 59:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_CML_VET");
-		
 		case 60:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_WAP");
-		
 		case 52:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_BGV_WMT");
-		
 		case 62:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GUA_AGU");
-		
 		case 63:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GUA_CMP");
-		
 		case 64:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GUA_CNT");
-		
 		case 65:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GUA_LAC");
-		
 		case 66:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GUA_MAN");
-		
 		case 67:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_ABM");
-		
 		case 69:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_CMD");
-		
 		case 70:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_CKS");
-		
 		case 71:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_CRF");
-		
 		case 72:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_CBF");
-		
 		case 73:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_DNR");
-		
 		case 74:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_EMR");
-		
 		case 75:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_PIG");
-		
 		case 76:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_HSO");
-		
 		case 77:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_LRN");
-		
 		case 78:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GRZ_LC");
-		
 		case 79:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_LCK");
-		
 		case 80:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_SSS");
-		
 		case 81:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_VAL");
-		
 		case 82:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_HRT_APF");
-		
 		case 83:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_ANN");
-		
 		case 84:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_BEV");
-		
 		case 68:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_SBC");
-		
 		case 85:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_BBR");
-		
 		case 86:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_BWD");
-		
 		case 87:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_BTC");
-		
 		case 88:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_CML_DVH");
-		
 		case 89:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_HFS");
-		
 		case 90:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_ISS");
-		
 		case 91:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_MCH");
-		
 		case 92:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_MSF");
-		
 		case 93:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_ROV");
-		
 		case 94:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_CML_RS");
-		
 		case 95:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_TRP");
-		
 		case 97:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_VHM");
-		
 		case 98:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_VHP");
-		
 		case 96:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_ROA_ROJ");
-		
 		case 99:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_BWM");
-		
 		case 100:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_BLG");
-		
 		case 101:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_CGH");
-		
 		case 102:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_CFJ");
-		
 		case 103:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_CMC");
-		
 		case 104:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_CMP");
-		
 		case 105:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_CSS");
-		
 		case 106:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_DRF");
-		
 		case 107:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_INV");
-		
 		case 108:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_LS");
-		
 		case 109:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_LTS");
-		
 		case 110:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_RP");
-		
 		case 111:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_RHO");
-		
 		case 112:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_SCM_SPS");
-		
 		case 113:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_TAL_AUR");
-		
 		case 114:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_CML_DS");
-		
 		case 115:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_TAL_COC");
-		
 		case 116:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_TAL_MAN");
-		
 		case 117:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_TAL_PUR");
-		
 		case 118:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_TAL_TNR");
-		
 		case 119:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_TAL_TRP");
-		
 		case 121:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GAP_TUM");
-		
 		case 120:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GAP_GBR");
-		
 		case 122:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_GAP_RFK");
-		
 		case 34:
 		case 61:
 		case 123:
@@ -2236,7 +2027,6 @@ char* func_66(int iParam0)
 		case 136:
 		case 137:
 			return MISC::_CREATE_VAR_STRING(2, "REG_IF_INV");
-		
 		default:
 			break;
 	}
@@ -2276,7 +2066,7 @@ void func_72()
 	vector3 vVar3;
 	bool bVar6;
 	bool bVar7;
-	
+
 	if (!CAM::DOES_CAM_EXIST(&(iLocal_53[0])))
 	{
 		if (!func_73(Global_3145858->f_108) && func_74(Global_3145858->f_108))
@@ -2316,7 +2106,7 @@ int func_74(vector3 vParam0)
 {
 	vector3 vVar0;
 	float fVar3;
-	
+
 	vVar0 = { func_96(iLocal_32) };
 	fVar3 = BUILTIN::VDIST2(vParam0, vVar0);
 	if (fVar3 <= 10000f)
@@ -2364,7 +2154,7 @@ int func_77()
 int func_78()
 {
 	char cVar0[16];
-	
+
 	if (iLocal_180 < func_99())
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(Global_1049161[iLocal_180]))
@@ -2440,7 +2230,7 @@ int func_79()
 	vector3 vVar19;
 	bool bVar22;
 	bool bVar23;
-	
+
 	if (!func_94())
 	{
 		return 0;
@@ -2511,7 +2301,7 @@ int func_79()
 int func_80()
 {
 	var uVar0;
-	
+
 	if (GRAPHICS::_0x9AB192A9EF980EED(iLocal_37, 2, 0, &uVar0))
 	{
 		func_5(&Local_16, 0);
@@ -2564,7 +2354,7 @@ void func_85()
 	int iVar2;
 	int iVar3;
 	int iVar4;
-	
+
 	switch (iLocal_15)
 	{
 		case 0:
@@ -2594,7 +2384,6 @@ void func_85()
 				func_108(1);
 			}
 			break;
-		
 		case 1:
 			if (!iLocal_183)
 			{
@@ -2651,7 +2440,6 @@ void func_85()
 				func_108(2);
 			}
 			break;
-		
 		case 2:
 			func_24(65536);
 			if (!func_2(16384))
@@ -2733,7 +2521,6 @@ void func_85()
 				func_84();
 			}
 			break;
-		
 		case 3:
 			GRAPHICS::_0xEDA5CBECF56E1386(iLocal_38);
 			if (!CAM::IS_SCREEN_FADED_IN() && !CAM::IS_SCREEN_FADING_IN())
@@ -2750,7 +2537,6 @@ void func_85()
 			}
 			func_108(4);
 			break;
-		
 		case 4:
 			func_75(5);
 			break;
@@ -2790,7 +2576,7 @@ bool func_87(var uParam0, int iParam1, int iParam2)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);
 	bVar2 = MISC::IS_BIT_SET(uParam0[iVar0], iVar1);
@@ -2803,7 +2589,7 @@ bool func_88(var uParam0, int iParam1, int iParam2)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);
 	bVar2 = MISC::IS_BIT_SET(uParam0[iVar0], iVar1);
@@ -2817,49 +2603,34 @@ char* func_89(int iParam0)
 	{
 		case -1759663922:
 			return "UGC_MST_STRY";
-		
 		case -318976023:
 			return "UGC_MST_LGNDB";
-		
 		case 772881414:
 			return "UGC_MST_MNSHN";
-		
 		case 603385332:
 			return "UGC_MST_DEL";
-		
 		case 534981680:
 			return "UGC_MST_ESCF";
-		
 		case -915869673:
 			return "UGC_MST_TTYG";
-		
 		case -360644098:
 			return "UGC_MST_TTYT";
-		
 		case 1520184724:
 			return "UGC_MST_AFGPO";
-		
 		case -777132493:
 			return "UGC_MST_PDR";
-		
 		case -163684180:
 			return "UGC_MST_SOW";
-		
 		case -1649482077:
 			return "UGC_MST_UIS";
-		
 		case -698288936:
 			return "UGC_MST_PROT";
-		
 		case 909765192:
 			return "UGC_MST_PDH";
-		
 		case 1078150940:
 			return "UGC_MST_AWIP";
-		
 		case 482206342:
 			return "UGC_MST_LEG";
-		
 		default:
 			break;
 	}
@@ -2883,7 +2654,7 @@ int func_92(vector3 vParam0, bool bParam3)
 	int iVar2;
 	bool bVar3;
 	int iVar4;
-	
+
 	iVar0 = func_113(vParam0);
 	iVar1 = -1;
 	if (Global_1893558[iVar0] > 0)
@@ -2906,7 +2677,6 @@ int func_92(vector3 vParam0, bool bParam3)
 								bVar3 = true;
 							}
 							break;
-						
 						default:
 							iVar1 = iVar4;
 							bVar3 = true;
@@ -2939,7 +2709,7 @@ int func_94()
 	var uVar11;
 	var uVar14;
 	int iVar15;
-	
+
 	if (!iLocal_58)
 	{
 		if (iLocal_59 == 0)
@@ -2973,7 +2743,7 @@ void func_95(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 {
 	vector3 vVar0;
 	vector3 vVar3;
-	
+
 	vVar0 = { CAM::GET_GAMEPLAY_CAM_COORD() };
 	vVar3 = { CAM::GET_GAMEPLAY_CAM_ROT(2) };
 	iLocal_56[0] = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, vVar0, vVar3, 65f, false, 2);
@@ -3000,7 +2770,7 @@ void func_98()
 {
 	int iVar0;
 	bool bVar1;
-	
+
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
@@ -3046,7 +2816,7 @@ void func_101(int iParam0)
 	int iVar2;
 	int iVar3;
 	bool bVar4;
-	
+
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true, 0, true);
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar1, true, 1, true);
 	bVar4 = (func_115(iVar0) && func_115(iVar1));
@@ -3111,7 +2881,7 @@ void func_102(int iParam0)
 	int iVar3;
 	bool bVar4;
 	int iVar5;
-	
+
 	iVar3 = 0;
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true, 0, true);
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar1, true, 1, true);
@@ -3172,7 +2942,7 @@ void func_103(int iParam0, int iParam1)
 	char cVar3[16];
 	int iVar5;
 	bool bVar6;
-	
+
 	StringCopy(&cVar3, "weapon_Index_", 16);
 	StringIntConCat(&cVar3, iParam1, 16);
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true, 0, true);
@@ -3231,7 +3001,7 @@ void func_104(int iParam0, int iParam1)
 	char cVar3[16];
 	int iVar5;
 	bool bVar6;
-	
+
 	StringCopy(&cVar3, "weapon_Index_", 16);
 	StringIntConCat(&cVar3, iParam1, 16);
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true, 0, true);
@@ -3316,7 +3086,7 @@ int func_109(int iParam0, bool bParam1, int iParam2, int iParam3)
 	int iVar5;
 	int iVar6;
 	int iVar7;
-	
+
 	if (!NETWORK::_0x255A5EF65EDA9167(iParam0))
 	{
 		if (iParam2 == -1)
@@ -3500,7 +3270,7 @@ void func_110(var uParam0, char* sParam1, char* sParam2, char* sParam3, char* sP
 void func_111(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = SCRIPTS::GET_ID_OF_THIS_THREAD();
 	if (SCRIPTS::_DOES_THREAD_EXIST(Global_1939057->f_102.f_1) && Global_1939057->f_102.f_1 != iVar0)
 	{
@@ -3519,7 +3289,7 @@ void func_112()
 int func_113(vector3 vParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_130(vParam0, 0f, 0f, 0, 2);
 	return func_130(vParam0, ((*Global_1892728)[iVar0 /*3*/])->f_1, ((*Global_1892728)[iVar0 /*3*/])->f_2, Global_1892728[iVar0 /*3*/], 4);
 }
@@ -3536,52 +3306,36 @@ Vector3 func_114(int iParam0, int iParam1, bool bParam2)
 				{
 					case 0:
 						return -0.6f, 20.4f, 0f;
-					
 					case 1:
 						return 0.75f, 20.76f, 0f;
-					
 					case 2:
 						return -3f, 20.6f, 0f;
-					
 					case 3:
 						return 4.1f, 21.1f, 0f;
-					
 					case 4:
 						return -6.1f, 21.2f, 0f;
-					
 					case 5:
 						return 5.6f, 20.5f, 0f;
-					
 					case 6:
 						return -7.1f, 21.2f, 0f;
-					
 					case 7:
 						return 7.7f, 20.5f, 0f;
-					
 					case 8:
 						return 0.3f, 23.9f, 0f;
-					
 					case 9:
 						return -0.75f, 23.76f, 0f;
-					
 					case 10:
 						return 3f, 23.2f, 0f;
-					
 					case 11:
 						return -4.1f, 24.1f, 0f;
-					
 					case 12:
 						return 6.1f, 24.25f, 0f;
-					
 					case 13:
 						return -5.6f, 22.75f, 0f;
-					
 					case 14:
 						return 7.1f, 24.1f, 0f;
-					
 					case 15:
 						return -7.7f, 22.85f, 0f;
-					
 					default:
 						break;
 				}
@@ -3592,52 +3346,36 @@ Vector3 func_114(int iParam0, int iParam1, bool bParam2)
 				{
 					case 0:
 						return 0.3f, 17.4f, 0f;
-					
 					case 1:
 						return -0.55f, 17.76f, 0f;
-					
 					case 2:
 						return 1.2f, 17.6f, 0f;
-					
 					case 3:
 						return -1.3f, 18.1f, 0f;
-					
 					case 4:
 						return 1.8f, 17.2f, 0f;
-					
 					case 5:
 						return -1.8f, 17.5f, 0f;
-					
 					case 6:
 						return 2.1f, 17.2f, 0f;
-					
 					case 7:
 						return -2.5f, 17.5f, 0f;
-					
 					case 8:
 						return 0.3f, 19.4f, 0f;
-					
 					case 9:
 						return -0.75f, 19.76f, 0f;
-					
 					case 10:
 						return 1.92f, 19.6f, 0f;
-					
 					case 11:
 						return -1.7f, 20.1f, 0f;
-					
 					case 12:
 						return 2.8f, 20.2f, 0f;
-					
 					case 13:
 						return -2.7f, 19.5f, 0f;
-					
 					case 14:
 						return 3.8f, 20.2f, 0f;
-					
 					case 15:
 						return -3.9f, 19.5f, 0f;
-					
 					default:
 						break;
 				}
@@ -3699,7 +3437,7 @@ struct<2> func_119(int iParam0)
 bool func_120(struct<2> Param0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_131(Param0);
 	return (iVar0 == 3 || iVar0 == 4);
 }
@@ -3715,31 +3453,22 @@ int func_122(int iParam0)
 	{
 		case 0:
 			return -275684858;
-		
 		case 1:
 			return -1561147190;
-		
 		case 2:
 			return -736318691;
-		
 		case 3:
 			return 158864851;
-		
 		case 4:
 			return 923463928;
-		
 		case 5:
 			return -317694716;
-		
 		case 6:
 			return 461388259;
-		
 		case 7:
 			return 1811916478;
-		
 		case 8:
 			return 1713937168;
-		
 		default:
 			break;
 	}
@@ -3761,7 +3490,7 @@ int func_124(int iParam0, bool bParam1)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	iVar0 = BUILTIN::FLOOR(func_133(iParam0, bParam1));
 	if (bParam1)
 	{
@@ -3819,7 +3548,7 @@ int func_125(int iParam0, bool bParam1)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (iParam0 == 255)
 	{
 		return 0;
@@ -3872,7 +3601,7 @@ int func_125(int iParam0, bool bParam1)
 bool func_126(int iParam0, bool bParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = iParam0;
 	if (iParam0 == PLAYER::PLAYER_ID())
 	{
@@ -3907,7 +3636,7 @@ bool func_126(int iParam0, bool bParam1)
 int func_127(int iParam0, bool bParam1)
 {
 	int iVar0;
-	
+
 	if (iParam0 == PLAYER::PLAYER_ID())
 	{
 		return 0;
@@ -3950,7 +3679,7 @@ int func_127(int iParam0, bool bParam1)
 int func_128(struct<2> Param0)
 {
 	vector3 vVar0;
-	
+
 	vVar0.f_1 = -1;
 	vVar0.f_2 = -1;
 	if (func_138(Param0, &vVar0))
@@ -3966,16 +3695,12 @@ int func_129(int iParam0, int iParam1)
 	{
 		case 0:
 			return -504335712;
-		
 		case 1:
 			return 395262693;
-		
 		case 2:
 			return -933924539;
-		
 		case 3:
 			return 371211549;
-		
 		default:
 			break;
 	}
@@ -4012,7 +3737,7 @@ int func_130(struct<2> Param0, var uParam2, float fParam3, float fParam4, int iP
 int func_131(struct<2> Param0)
 {
 	int iVar0;
-	
+
 	if (!func_139(Param0))
 	{
 		return -1;
@@ -4053,7 +3778,7 @@ int func_132()
 float func_133(int iParam0, var uParam1)
 {
 	int iVar0;
-	
+
 	if (!Global_1131373->f_6289)
 	{
 		return 0f;
@@ -4135,31 +3860,24 @@ int func_138(struct<2> Param0, int iParam2)
 		case 2:
 			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 3:
 			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 4:
 			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 5:
 			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 6:
 			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 7:
 			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		case 8:
 			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
 			return 1;
-		
 		default:
 			break;
 	}
@@ -4190,7 +3908,7 @@ int func_140(struct<2> Param0)
 	int iVar6;
 	int iVar7;
 	int iVar8;
-	
+
 	if (Global_1070355->f_17817 <= 0)
 	{
 		return -1;
@@ -4228,7 +3946,7 @@ int func_140(struct<2> Param0)
 void func_141(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_16 != 0 || Global_1572887->f_13 != 0)
 	{
 		return;
@@ -4256,7 +3974,7 @@ void func_142(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	var uVar4;
 	bool bVar5;
 	struct<8> Var6;
-	
+
 	if (Global_1572887->f_16 != 0 || Global_1572887->f_13 != 0)
 	{
 		return;
@@ -4342,7 +4060,6 @@ int func_144(int iParam0)
 		case 7:
 		case 8:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -4355,25 +4072,18 @@ int func_145(int iParam0)
 	{
 		case 2:
 			return Global_1070355->f_634.f_601;
-		
 		case 3:
 			return Global_1070355->f_634.f_2103;
-		
 		case 4:
 			return Global_1070355->f_634.f_12605;
-		
 		case 5:
 			return Global_1070355->f_634.f_12907;
-		
 		case 6:
 			return Global_1070355->f_634.f_15909;
-		
 		case 7:
 			return Global_1070355->f_634.f_15980;
-		
 		case 8:
 			return Global_1070355->f_634.f_17182;
-		
 		default:
 			break;
 	}

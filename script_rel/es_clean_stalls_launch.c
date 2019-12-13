@@ -64,7 +64,7 @@ void func_2(var uParam0, var uParam1)
 int func_3(var uParam0)
 {
 	int iVar0;
-	
+
 	if (func_9(uParam0))
 	{
 		return 1;
@@ -84,7 +84,6 @@ int func_3(var uParam0)
 			}
 			func_8(uParam0, 1);
 			break;
-		
 		case 1:
 			if (func_14(0, 0, 1))
 			{
@@ -93,7 +92,6 @@ int func_3(var uParam0)
 			}
 			func_15(iVar0, Global_1899848->f_15.f_10);
 			break;
-		
 		case 2:
 			if (func_4(uParam0->f_2.f_8))
 			{
@@ -106,7 +104,6 @@ int func_3(var uParam0)
 				func_15(iVar0, Global_1899848->f_15.f_10);
 			}
 			break;
-		
 		case 3:
 			if (!func_4(uParam0->f_2.f_8))
 			{
@@ -120,7 +117,7 @@ int func_3(var uParam0)
 bool func_4(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_16(iParam0);
 	return (iVar0 == 3 || iVar0 == 4);
 }
@@ -128,7 +125,7 @@ bool func_4(int iParam0)
 int func_5()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 < 8)
@@ -190,7 +187,7 @@ void func_8(var uParam0, int iParam1)
 int func_9(var uParam0)
 {
 	float fVar0;
-	
+
 	if (func_23() != -1)
 	{
 		return 1;
@@ -242,7 +239,7 @@ int func_10(int iParam0)
 void func_11(int iParam0)
 {
 	int iVar0;
-	
+
 	if (func_23() != -1)
 	{
 		return;
@@ -358,7 +355,7 @@ void func_12()
 int func_13()
 {
 	int iVar0;
-	
+
 	iVar0 = 1703557170;
 	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iVar0) > 0)
 	{
@@ -379,7 +376,7 @@ int func_14(int iParam0, int iParam1, int iParam2)
 	vector3 vVar0;
 	vector3 vVar3;
 	int iVar6;
-	
+
 	if (&Global_1899848 == 0)
 	{
 		return 0;
@@ -547,7 +544,7 @@ void func_21(int iParam0, int iParam1)
 void func_22()
 {
 	int iVar0;
-	
+
 	Global_1899848->f_10 = 0;
 	Global_1899848->f_11 = 0;
 	iVar0 = 0;
@@ -567,7 +564,7 @@ int func_23()
 int func_24(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < &Global_1898330)
 	{
@@ -583,7 +580,7 @@ int func_24(int iParam0)
 int func_25(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_10(iParam0);
 	if (iVar0 == -1)
 	{
@@ -603,21 +600,18 @@ int func_25(int iParam0)
 					return 0;
 				}
 				break;
-			
 			case 2:
 				if (!func_43(&(((*Global_1392915)[iVar0 /*12*/])->f_3), 8))
 				{
 					return 0;
 				}
 				break;
-			
 			case 4:
 				if (!func_43(&(((*Global_1392915)[iVar0 /*12*/])->f_3), 16))
 				{
 					return 0;
 				}
 				break;
-			
 			case 8:
 				if (!func_43(&(((*Global_1392915)[iVar0 /*12*/])->f_3), 32))
 				{
@@ -644,25 +638,18 @@ float func_27(int iParam0)
 	{
 		case 1:
 			return 70f;
-		
 		case 2:
 			return 45f;
-		
 		case 0:
 			return 40f;
-		
 		case 3:
 			return 90f;
-		
 		case 5:
 			return 90f;
-		
 		case 4:
 			return 50f;
-		
 		case 6:
 			return 90f;
-		
 		default:
 			break;
 	}
@@ -683,7 +670,7 @@ bool func_28(int iParam0, var uParam1)
 void func_29()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 < 8)
@@ -752,7 +739,7 @@ bool func_31(var uParam0, int iParam1, vector3 vParam2, vector3 vParam5, int iPa
 int func_32()
 {
 	int iVar0;
-	
+
 	iVar0 = 0;
 	while (iVar0 < Global_1899848->f_9)
 	{
@@ -825,7 +812,7 @@ bool func_37(int iParam0)
 int func_38(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -879,7 +866,7 @@ int func_42(int iParam0)
 int func_43(var uParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	iVar0 = (*uParam0 && iParam1);
 	if (!iVar0 == 0)
 	{
@@ -910,7 +897,7 @@ int func_46(vector3 vParam0, int iParam3, float fParam4, bool bParam5)
 	int iVar3;
 	int iVar4;
 	int iVar5;
-	
+
 	fVar2 = (fParam4 * 2f);
 	func_53(&iVar0, vParam0, 0f, 0f, 0f, fVar2, fVar2, fVar2);
 	if (!VOLUME::_0x92A78D0BEDB332A3(iVar0))
@@ -949,7 +936,7 @@ int func_46(vector3 vParam0, int iParam3, float fParam4, bool bParam5)
 void func_47(vector3 vParam0, float fParam3, int iParam4)
 {
 	int iVar0;
-	
+
 	iVar0 = 512;
 	if (iParam4 & 1 != 0)
 	{
@@ -1002,7 +989,7 @@ int func_49(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;

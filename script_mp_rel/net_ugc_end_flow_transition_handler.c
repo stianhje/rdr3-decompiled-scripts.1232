@@ -90,14 +90,12 @@ void __EntryFunction__()
 					}
 				}
 				break;
-			
 			case 1:
 				if (func_6())
 				{
 					func_9(2);
 				}
 				break;
-			
 			case 2:
 				if (func_10() && !func_11())
 				{
@@ -123,7 +121,6 @@ void __EntryFunction__()
 					func_9(3);
 				}
 				break;
-			
 			case 3:
 				if (func_15(255) != 1)
 				{
@@ -133,7 +130,6 @@ void __EntryFunction__()
 					func_9(4);
 				}
 				break;
-			
 			case 4:
 				if (!func_7())
 				{
@@ -141,7 +137,6 @@ void __EntryFunction__()
 					func_9(5);
 				}
 				break;
-			
 			case 5:
 				if (func_11() || func_12(Global_3407872->f_2499, 2))
 				{
@@ -157,7 +152,6 @@ void __EntryFunction__()
 					func_9(6);
 				}
 				break;
-			
 			case 6:
 				if (func_20(&uLocal_33, 1, 0) > 1500)
 				{
@@ -165,7 +159,6 @@ void __EntryFunction__()
 					GRAPHICS::_0xC5CB91D65852ED7E("RespawnMissionCheckpoint");
 				}
 				break;
-			
 			case 7:
 				AUDIO::_0x2E399EAFBEEA74D5();
 				if (!func_21())
@@ -191,7 +184,7 @@ void func_1()
 int func_2(bool bParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12)
 	{
 		return 0;
@@ -222,23 +215,18 @@ int func_2(bool bParam0, int iParam1)
 		{
 			case 0:
 				return 1;
-			
 			case 1:
 				return 1;
-			
 			case 2:
 				if (!bParam0)
 				{
 					return 1;
 				}
 				break;
-			
 			case 4:
 				return 1;
-			
 			case 3:
 				return 1;
-			
 			default:
 				return 1;
 		}
@@ -292,7 +280,7 @@ void func_5()
 	int iVar0;
 	var uVar1;
 	int iVar2;
-	
+
 	if (iLocal_35 != 0)
 	{
 		return;
@@ -585,7 +573,7 @@ int func_30()
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(-1486408849))
 	{
 		return 0;
@@ -637,7 +625,7 @@ void func_31(var uParam0, var uParam1)
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	
+
 	iVar1 = -1;
 	iVar0 = 0;
 	while (iVar0 < 32)
@@ -686,7 +674,7 @@ bool func_34(var uParam0, int iParam1, int iParam2)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);
 	bVar2 = MISC::IS_BIT_SET(uParam0[iVar0], iVar1);
@@ -728,14 +716,14 @@ void func_36(int iParam0, bool bParam1, int iParam2, int iParam3)
 void func_37(var uParam0)
 {
 	struct<30> Var0;
-	
+
 	*uParam0 = { Var0 };
 }
 
 void func_38(var uParam0)
 {
 	struct<9> Var0;
-	
+
 	*uParam0 = { Var0 };
 }
 
@@ -745,10 +733,8 @@ void func_39(struct<29> Param0, var uParam29, int iParam30)
 	{
 		case 1:
 			break;
-		
 		case 2:
 			break;
-		
 		case 3:
 			if (ENTITY::DOES_ENTITY_EXIST(Param0.f_4))
 			{
@@ -769,10 +755,8 @@ void func_40(struct<6> Param0, var uParam6, var uParam7, var uParam8, int iParam
 	{
 		case 1:
 			break;
-		
 		case 2:
 			break;
-		
 		case 3:
 			break;
 	}
@@ -810,7 +794,7 @@ void func_43(bool bParam0)
 void func_44()
 {
 	struct<228> Var0;
-	
+
 	Var0 = 32;
 	Var0.f_227 = 1;
 	Var0.f_227.f_1.f_24 = 4;
@@ -1066,7 +1050,7 @@ bool func_45(var uParam0, int iParam1, int iParam2)
 	int iVar0;
 	int iVar1;
 	bool bVar2;
-	
+
 	iVar0 = (iParam1 / 31);
 	iVar1 = (iParam1 % 31);
 	bVar2 = MISC::IS_BIT_SET(uParam0[iVar0], iVar1);

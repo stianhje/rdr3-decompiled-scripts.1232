@@ -16,7 +16,7 @@ void __EntryFunction__()
 {
 	vector3 vVar0;
 	var uVar3;
-	
+
 	vLocal_0 = { 1.47681f, -0.749695f, -0.0486145f };
 	fLocal_3 = 170.7721f;
 	vLocal_4 = { 0.812012f, -0.631683f, -0.0291901f };
@@ -113,7 +113,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 0.29f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 1:
 			uParam1->f_1 = 0;
 			uParam1->f_2 = 105;
@@ -123,7 +122,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 80f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 2:
 			uParam1->f_1 = 0;
 			uParam1->f_2 = 92;
@@ -133,7 +131,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 126.9f;
 			uParam1->f_9 = 2f;
 			return 1;
-		
 		case 3:
 			uParam1->f_1 = 5;
 			uParam1->f_2 = 37;
@@ -158,7 +155,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 0f;
 			uParam1->f_9 = 1f;
 			return 1;
-		
 		case 4:
 			if (iParam2 == 1)
 			{
@@ -172,7 +168,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 5:
 			uParam1->f_1 = 5;
 			uParam1->f_2 = 22;
@@ -182,7 +177,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 0f;
 			uParam1->f_9 = 1f;
 			return 1;
-		
 		case 6:
 			uParam1->f_1 = 1;
 			uParam1->f_2 = 38;
@@ -192,7 +186,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = -174.39f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 7:
 			if (iParam2 == 1)
 			{
@@ -206,7 +199,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 8:
 			if (iParam2 == 1)
 			{
@@ -220,7 +212,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 9:
 			uParam1->f_1 = 1;
 			uParam1->f_2 = 69;
@@ -230,7 +221,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 0f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 10:
 			if (iParam2 == 1)
 			{
@@ -244,7 +234,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 11:
 			uParam1->f_1 = 1;
 			uParam1->f_2 = 5;
@@ -254,7 +243,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = -45f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 12:
 			if (iParam2 == 1)
 			{
@@ -268,7 +256,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 13:
 			uParam1->f_1 = 6;
 			uParam1->f_2 = 22;
@@ -278,7 +265,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 88.6423f;
 			uParam1->f_9 = 2f;
 			return 1;
-		
 		case 14:
 			if (iParam2 == 1)
 			{
@@ -292,7 +278,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 15:
 			if (iParam2 == 1)
 			{
@@ -306,7 +291,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 16:
 			if (iParam2 == 1)
 			{
@@ -320,7 +304,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 17:
 			uParam1->f_1 = 3;
 			uParam1->f_2 = 26;
@@ -330,7 +313,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 157.4f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 18:
 			if (iParam2 == 1)
 			{
@@ -344,7 +326,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 19:
 			uParam1->f_1 = 3;
 			uParam1->f_2 = 76;
@@ -354,7 +335,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = -69.92f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 20:
 			uParam1->f_1 = 3;
 			uParam1->f_2 = 92;
@@ -364,7 +344,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = -84.13f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 21:
 			uParam1->f_1 = 4;
 			uParam1->f_2 = 37;
@@ -374,7 +353,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = -14.4f;
 			uParam1->f_9 = 1.5f;
 			return 1;
-		
 		case 22:
 			uParam1->f_1 = 4;
 			uParam1->f_2 = 22;
@@ -384,7 +362,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 0f;
 			uParam1->f_9 = 1.5f;
 			return 1;
-		
 		case 23:
 			uParam1->f_1 = 2;
 			uParam1->f_2 = 38;
@@ -394,7 +371,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 60f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 24:
 			if (iParam2 == 1)
 			{
@@ -408,10 +384,8 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 25:
 			return 0;
-		
 		case 26:
 			uParam1->f_1 = 2;
 			uParam1->f_2 = 71;
@@ -421,7 +395,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 0f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 27:
 			uParam1->f_1 = 2;
 			uParam1->f_2 = 5;
@@ -431,7 +404,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 0f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 28:
 			if (iParam2 == 1)
 			{
@@ -445,10 +417,8 @@ int func_3(int iParam0, var uParam1, int iParam2)
 				return 1;
 			}
 			return 0;
-		
 		case 29:
 			return 0;
-		
 		case 30:
 			uParam1->f_1 = 2;
 			uParam1->f_2 = 75;
@@ -458,7 +428,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = -63f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 31:
 			uParam1->f_1 = 2;
 			uParam1->f_2 = 115;
@@ -468,7 +437,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 90f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		case 32:
 			uParam1->f_1 = 2;
 			uParam1->f_2 = 76;
@@ -478,7 +446,6 @@ int func_3(int iParam0, var uParam1, int iParam2)
 			uParam1->f_8 = 135f;
 			uParam1->f_9 = 2.5f;
 			return 1;
-		
 		default:
 			break;
 	}
@@ -488,7 +455,7 @@ int func_3(int iParam0, var uParam1, int iParam2)
 void func_4(vector3 vParam0, vector3 vParam3, var uParam6, var uParam7)
 {
 	vector3 vVar0;
-	
+
 	vVar0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vParam0, vParam3.z, vLocal_0) };
 	vVar0 = { vVar0 + Vector(0.01f, 0f, 0f) };
 	MISC::GET_GROUND_Z_FOR_3D_COORD(vVar0, &(vVar0.f_2), 0);
@@ -504,7 +471,7 @@ int func_5(int iParam0, vector3 vParam1)
 	int iVar2;
 	int iVar3;
 	int iVar4;
-	
+
 	func_11(&iVar1, vParam1, 0f, 0f, 0f, 3f, 3f, 3f);
 	iVar0 = ITEMSET::CREATE_ITEMSET(true);
 	if (!ITEMSET::IS_ITEMSET_VALID(iVar0))
@@ -574,7 +541,7 @@ int func_8(int iParam0, bool bParam1)
 	int iVar7;
 	struct<9> Var8;
 	struct<31> Var18;
-	
+
 	Var8 = -1;
 	Var8.f_1 = -1;
 	Var8.f_2 = -1;
@@ -632,7 +599,7 @@ int func_8(int iParam0, bool bParam1)
 int func_9()
 {
 	float fVar0;
-	
+
 	fVar0 = func_18(4);
 	if (func_19(37, 4194304))
 	{
@@ -676,7 +643,7 @@ void func_12(int iParam0)
 int func_13(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, bool bParam11, bool bParam12, bool bParam13, bool bParam14)
 {
 	int iVar0;
-	
+
 	iVar0 = PED::CREATE_PED(iParam0, vParam1, fParam4, bParam5, bParam6, bParam13, bParam14);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -689,7 +656,7 @@ int func_13(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bPar
 Vector3 func_14(vector3 vParam0, vector3 vParam3, bool bParam6)
 {
 	vector3 vVar0;
-	
+
 	if (bParam6)
 	{
 		vVar0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vParam0, vParam3.z, vLocal_17 + Vector(0f, -0.2f, 0f)) };
@@ -706,7 +673,7 @@ Vector3 func_14(vector3 vParam0, vector3 vParam3, bool bParam6)
 int func_15(vector3 vParam0)
 {
 	int iVar0;
-	
+
 	if (func_22(61))
 	{
 		iVar0 = func_23(vParam0, -861474402, 0.2f, 1);
@@ -727,7 +694,7 @@ int func_15(vector3 vParam0)
 Vector3 func_16(vector3 vParam0, vector3 vParam3)
 {
 	vector3 vVar0;
-	
+
 	vVar0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vParam0, vParam3.z, vLocal_14) };
 	vVar0 = { vVar0 + Vector(0.01f, 0f, 0f) };
 	MISC::GET_GROUND_Z_FOR_3D_COORD(vVar0, &(vVar0.f_2), 0);
@@ -737,7 +704,7 @@ Vector3 func_16(vector3 vParam0, vector3 vParam3)
 int func_17(vector3 vParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_23(vParam0, -1937484496, 4f, 1);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
@@ -754,25 +721,18 @@ float func_18(int iParam0)
 	{
 		case 1:
 			return 70f;
-		
 		case 2:
 			return 45f;
-		
 		case 0:
 			return 40f;
-		
 		case 3:
 			return 90f;
-		
 		case 5:
 			return 90f;
-		
 		case 4:
 			return 50f;
-		
 		case 6:
 			return 90f;
-		
 		default:
 			break;
 	}
@@ -796,7 +756,7 @@ char* func_20()
 void func_21(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) || ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;
@@ -864,7 +824,7 @@ int func_23(vector3 vParam0, int iParam3, float fParam4, bool bParam5)
 	int iVar3;
 	int iVar4;
 	int iVar5;
-	
+
 	fVar2 = (fParam4 * 2f);
 	func_30(&iVar0, vParam0, 0f, 0f, 0f, fVar2, fVar2, fVar2);
 	if (!VOLUME::_0x92A78D0BEDB332A3(iVar0))
@@ -1086,7 +1046,6 @@ int func_24(int iParam0)
 		case 2115504616:
 		case 2141515026:
 			return 1;
-		
 		default:
 			break;
 	}
@@ -1168,7 +1127,7 @@ void func_28(int iParam0, int iParam1)
 bool func_29(int iParam0)
 {
 	int iVar0;
-	
+
 	iVar0 = func_35(iParam0);
 	return (iVar0 == 3 || iVar0 == 4);
 }
@@ -1184,7 +1143,7 @@ void func_30(var uParam0, vector3 vParam1, vector3 vParam4, vector3 vParam7)
 bool func_31(int iParam0, int iParam1)
 {
 	bool bVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -1199,7 +1158,7 @@ bool func_31(int iParam0, int iParam1)
 int func_32(int iParam0, int iParam1)
 {
 	int iVar0;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return 0;
@@ -1220,7 +1179,7 @@ bool func_33(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	
+
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return false;
@@ -1269,7 +1228,7 @@ bool func_36(int iParam0)
 int func_37(int iParam0)
 {
 	int iVar0;
-	
+
 	if (Global_1572887->f_12 == -1)
 	{
 		return (Global_12105[iParam0 /*7*/])->f_1;
@@ -1287,7 +1246,7 @@ int func_38(int iParam0)
 	int iVar0;
 	int iVar1;
 	int iVar2;
-	
+
 	if (Global_1058888->f_40501 <= 0)
 	{
 		return -1;
