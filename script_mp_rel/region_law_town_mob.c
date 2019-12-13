@@ -58,7 +58,7 @@
 	vector3 vLocal_67 = { 0f, 0f, 0f };
 	int iLocal_70 = 0;
 	int iLocal_71 = 0;
-	int iScriptParam_0 = 0;
+	var uScriptParam_0 = 0;
 #endregion
 
 void __EntryFunction__()
@@ -66,7 +66,7 @@ void __EntryFunction__()
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
 	iLocal_71 = 1;
-	iLocal_45 = iScriptParam_0;
+	iLocal_45 = uScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
 		func_1();
@@ -163,16 +163,16 @@ void func_4()
 				switch (iLocal_45)
 				{
 					case 81:
-						iLocal_47 = 1671223501;
+						iLocal_47 = joaat("a_m_m_valdeputyresident_01");
 						break;
 					case 26:
-						iLocal_47 = -264790543;
+						iLocal_47 = joaat("a_m_m_strdeputyresident_01");
 						break;
 					case 111:
-						iLocal_47 = 190553496;
+						iLocal_47 = joaat("a_m_m_rhddeputyresident_01");
 						break;
 					default:
-						iLocal_47 = 1671223501;
+						iLocal_47 = joaat("a_m_m_valdeputyresident_01");
 						break;
 				}
 				iLocal_46 = 2;
@@ -477,13 +477,13 @@ void func_13()
 			iLocal_50[iVar0] = func_25(iLocal_47, vVar1, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 180f), 1, 1, 0, 1, 1, 1, 0, 0);
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_50[iVar0]), 1, false);
 			PED::SET_COMBAT_FLOAT(&(iLocal_50[iVar0]), 48, 8f);
-			if (UNLOCK::_UNLOCK_IS_UNLOCKED(1845102363))
+			if (UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("weapon_shotgun_doublebarrel")))
 			{
-				WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), 1845102363, 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+				WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), joaat("weapon_shotgun_doublebarrel"), 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 			}
 			else
 			{
-				WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), -183018591, 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+				WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), joaat("weapon_repeater_carbine"), 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 			}
 		}
 		else
@@ -493,12 +493,12 @@ void func_13()
 			{
 				if ((iVar0 % 4) == 0 && (func_27(func_26()) >= 22 || func_27(func_26()) <= 4))
 				{
-					WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), 379542007, 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
-					WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), 1742487518, 999, true, false, 1, false, 0.5f, 1f, 752097756, false, 0f, false);
+					WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), joaat("weapon_revolver_cattleman"), 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+					WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), joaat("weapon_melee_torch"), 999, true, false, 1, false, 0.5f, 1f, 752097756, false, 0f, false);
 				}
 				else
 				{
-					WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), -183018591, 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+					WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_50[iVar0]), joaat("weapon_repeater_carbine"), 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 				}
 			}
 		}

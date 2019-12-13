@@ -8,7 +8,7 @@
 	vector3 vLocal_8 = { 0f, 0f, 0f };
 	int iLocal_11 = 0;
 	int iLocal_12 = 0;
-	int iScriptParam_0 = 0;
+	var uScriptParam_0 = 0;
 #endregion
 
 void __EntryFunction__()
@@ -16,7 +16,7 @@ void __EntryFunction__()
 	vLocal_5 = { 2941.792f, 1377.969f, 43.1f };
 	vLocal_8 = { 2314.011f, -1512.919f, 44.9053f };
 	iLocal_12 = -1;
-	iLocal_2 = iScriptParam_0;
+	iLocal_2 = uScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 		func_1();

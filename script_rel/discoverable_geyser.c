@@ -13,7 +13,36 @@
 	var uLocal_11 = 0;
 	var uLocal_12 = 0;
 	var uLocal_13 = 0;
-	struct<42> Local_14 = { 3, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
+	struct<13> Local_14 = { 3, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
+	var uLocal_27 = 0;
+	var uLocal_28 = 0;
+	var uLocal_29 = 6;
+	var uLocal_30 = 0;
+	var uLocal_31 = 0;
+	var uLocal_32 = 0;
+	var uLocal_33 = 0;
+	var uLocal_34 = 0;
+	var uLocal_35 = 0;
+	var uLocal_36 = 0;
+	var uLocal_37 = 0;
+	var uLocal_38 = 0;
+	var uLocal_39 = 0;
+	var uLocal_40 = 0;
+	var uLocal_41 = 0;
+	var uLocal_42 = 6;
+	var uLocal_43 = 0;
+	var uLocal_44 = 0;
+	var uLocal_45 = 0;
+	var uLocal_46 = 0;
+	var uLocal_47 = 0;
+	var uLocal_48 = 0;
+	var uLocal_49 = 0;
+	var uLocal_50 = 0;
+	var uLocal_51 = 0;
+	var uLocal_52 = 0;
+	var uLocal_53 = 0;
+	var uLocal_54 = 0;
+	var uLocal_55 = 0;
 	int iLocal_56 = 0;
 	int iLocal_57 = 0;
 	struct<5> Local_58 = { 0, 0, 0, 0, -1 } ;
@@ -4857,9 +4886,9 @@ int func_92()
 	return 0;
 }
 
-int func_93(int iParam0, bool bParam1, int iParam2)
+int func_93(int iParam0, int iParam1, int iParam2)
 {
-	if (bParam1 == 1)
+	if (iParam1 == 1)
 	{
 		switch (iParam0)
 		{
@@ -5262,7 +5291,7 @@ int func_97()
 	{
 		return 0;
 	}
-	iVar0 = -569063887;
+	iVar0 = -569063887; /* GXTEntry: "Journal" */
 	if (INVENTORY::_0x3D10D7179D7034AF(func_134(0), iVar0, 0))
 	{
 		return 0;
@@ -6932,13 +6961,13 @@ int func_124(var uParam0)
 		iVar1 = ENTITY::GET_ENTITY_MODEL(iVar0);
 		switch (iVar1)
 		{
-			case -1613317544:
-			case 1493442814:
+			case joaat("rowboat"):
+			case joaat("handcart"):
 				return 0;
-			case -1988548788:
-			case 518773733:
-			case 742064790:
-			case 749266870:
+			case joaat("breach_cannon"):
+			case joaat("gatling_gun"):
+			case joaat("gatlingmaxim02"):
+			case joaat("hotchkiss_cannon"):
 				return 0;
 		}
 		if ((!func_119(uParam0, 16) && !PED::IS_PED_ON_MOUNT(Global_35)) && VEHICLE::_0x2963B5C1637E8A27(iVar0) == Global_35)
@@ -9361,19 +9390,19 @@ void func_201(int iParam0, var uParam1, var uParam2)
 	{
 		case 1234009870:
 			*uParam1 = 1802325493;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case -1202134084:
 			*uParam1 = -864693164;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case 1297050066:
 			*uParam1 = -603289736;
-			*uParam2 = 1232099469;
+			*uParam2 = 1232099469; /* GXTEntry: "Revolver Cartridges - Express" */
 			break;
 		case -1780177928:
 			*uParam1 = -1803237008;
-			*uParam2 = -2084181920;
+			*uParam2 = -2084181920; /* GXTEntry: "Revolver Cartridges - High Velocity" */
 			break;
 		case -1467836497:
 			*uParam1 = -1175521284;
@@ -9385,11 +9414,11 @@ void func_201(int iParam0, var uParam1, var uParam2)
 			break;
 		case -153287664:
 			*uParam1 = -1650796693;
-			*uParam2 = 836939099;
+			*uParam2 = 836939099; /* GXTEntry: "Pistol Cartridges - Express" */
 			break;
 		case 1845082736:
 			*uParam1 = -1521597660;
-			*uParam2 = -1411815376;
+			*uParam2 = -1411815376; /* GXTEntry: "Pistol Cartridges - High Velocity" */
 			break;
 		case 406755377:
 			*uParam1 = -1288829256;
@@ -9401,27 +9430,27 @@ void func_201(int iParam0, var uParam1, var uParam2)
 			break;
 		case 45760211:
 			*uParam1 = -851229814;
-			*uParam2 = 1654725195;
+			*uParam2 = 1654725195; /* GXTEntry: "Rifle Cartridges - Express" */
 			break;
 		case -276295943:
 			*uParam1 = 914704115;
-			*uParam2 = 1858824185;
+			*uParam2 = 1858824185; /* GXTEntry: "Rifle Cartridges - High Velocity" */
 			break;
 		case -2029793397:
 			*uParam1 = -219896679;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case 2120467495:
 			*uParam1 = 516838334;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case -2075613923:
 			*uParam1 = -385817936;
-			*uParam2 = -578347576;
+			*uParam2 = -578347576; /* GXTEntry: "Repeater Cartridges - Express" */
 			break;
 		case 122656217:
 			*uParam1 = 1192843172;
-			*uParam2 = 231465488;
+			*uParam2 = 231465488; /* GXTEntry: "Repeater Cartridges - High Velocity" */
 			break;
 		case 2107187484:
 			*uParam1 = 954871696;
@@ -9433,7 +9462,7 @@ void func_201(int iParam0, var uParam1, var uParam2)
 			break;
 		case 305770744:
 			*uParam1 = -2087227528;
-			*uParam2 = 314966081;
+			*uParam2 = 314966081; /* GXTEntry: "Shotgun - Slug" */
 			break;
 		case 550900979:
 			*uParam1 = -618066518;

@@ -874,7 +874,7 @@ void func_49(var uParam0)
 	}
 	if (!func_68(uParam0->f_9, 1))
 	{
-		if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, -1415022764, 0, 0))
+		if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, joaat("weapon_fishingrod"), 0, 0))
 		{
 			func_69(&(uParam0->f_9), 1);
 		}
@@ -3138,14 +3138,14 @@ bool func_136(var uParam0)
 	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0);
 }
 
-bool func_137(int iParam0, int iParam1)
+bool func_137(var uParam0, int iParam1)
 {
-	iParam0->f_2 = 1481789088;
-	iParam0->f_3 = iParam1;
-	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0);
+	uParam0->f_2 = 1481789088;
+	uParam0->f_3 = iParam1;
+	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0);
 }
 
-bool func_138(int iParam0, int iParam1)
+bool func_138(var uParam0, int iParam1)
 {
 	uParam0->f_2 = 1574313466;
 	uParam0->f_3 = iParam1;
@@ -3366,7 +3366,7 @@ int func_147(vector3 vParam0)
 	return 0;
 }
 
-bool func_148(int iParam0, var uParam1)
+bool func_148(var uParam0, var uParam1)
 {
 	uParam0->f_2 = -1739269194;
 	uParam0->f_3 = uParam1;
@@ -4123,7 +4123,7 @@ int func_177(int iParam0)
 	return 0;
 }
 
-bool func_178(int iParam0, var uParam1, int iParam2)
+bool func_178(int iParam0, var uParam1, var uParam2)
 {
 	*uParam2 = Global_1131373->f_7;
 	uParam2->f_2 = 1351168281;
@@ -4914,35 +4914,35 @@ int func_207(int iParam0)
 	return -1;
 }
 
-int func_208(struct<2> Param0, int iParam2)
+int func_208(struct<2> Param0, var uParam2)
 {
 	if (!func_122(Param0))
 	{
 		return 0;
 	}
-	func_239(iParam2);
+	func_239(uParam2);
 	switch (Param0)
 	{
 		case 2:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 3:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 4:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 5:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 6:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 7:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 8:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
 			return 1;
 		default:
 			break;
@@ -5807,34 +5807,34 @@ struct<2> func_262(int iParam0)
 
 struct<2> func_263(int iParam0)
 {
-	int iVar0;
+	var uVar0;
 	int iVar5;
 
-	if (!func_282(&iVar0))
+	if (!func_282(&uVar0))
 	{
 		return func_151();
 	}
-	if (!func_283(&iVar0, 13, 0, 0, 1))
+	if (!func_283(&uVar0, 13, 0, 0, 1))
 	{
 		return func_151();
 	}
-	if (!func_283(&iVar0, 17, 0, 0, 1))
+	if (!func_283(&uVar0, 17, 0, 0, 1))
 	{
 		return func_151();
 	}
-	if (!func_283(&iVar0, 19, *iParam0, 0, 1))
+	if (!func_283(&uVar0, 19, *iParam0, 0, 1))
 	{
 		return func_151();
 	}
-	if (!func_283(&iVar0, 20, 0, 0, 1))
+	if (!func_283(&uVar0, 20, 0, 0, 1))
 	{
 		return func_151();
 	}
-	if (!func_283(&iVar0, 23, iParam0->f_1, 0, 1))
+	if (!func_283(&uVar0, 23, iParam0->f_1, 0, 1))
 	{
 		return func_151();
 	}
-	iVar5 = func_287(&iVar0);
+	iVar5 = func_287(&uVar0);
 	return func_266(iVar5);
 }
 
@@ -5971,7 +5971,7 @@ void func_272(var uParam0, int iParam1)
 	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
-bool func_273(int iParam0, var uParam1, int iParam2)
+bool func_273(int iParam0, var uParam1, var uParam2)
 {
 	*uParam2 = Global_1131373->f_7;
 	uParam2->f_2 = -1096981081;
@@ -6005,7 +6005,7 @@ void func_275(var uParam0, int iParam1)
 	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
-bool func_276(int iParam0)
+bool func_276(var uParam0)
 {
 	uParam0->f_2 = 1701407264;
 	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0);
@@ -6241,7 +6241,7 @@ int func_281(int iParam0)
 	return ((*Global_1835011)[iParam0 /*72*/])->f_51;
 }
 
-int func_282(int iParam0)
+int func_282(var uParam0)
 {
 	int iVar0;
 	var uVar1;
@@ -6255,31 +6255,31 @@ int func_282(int iParam0)
 	{
 		return 0;
 	}
-	MISC::_COPY_MEMORY(iParam0, &uVar1, 5);
-	*iParam0 = iVar0;
+	MISC::_COPY_MEMORY(uParam0, &uVar1, 5);
+	*uParam0 = iVar0;
 	return 1;
 }
 
-int func_283(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
+int func_283(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 {
 	var uVar0;
 
-	uVar0 = iParam0->f_1;
-	iParam0->f_2 = iParam1;
-	iParam0->f_3 = iParam2;
-	iParam0->f_4 = iParam3;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uVar0 = uParam0->f_1;
+	uParam0->f_2 = iParam1;
+	uParam0->f_3 = iParam2;
+	uParam0->f_4 = iParam3;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
-		iParam0->f_1 = uVar0;
+		uParam0->f_1 = uVar0;
 		return 0;
 	}
 	return 1;
 }
 
-var func_284(int iParam0, int iParam1)
+var func_284(var uParam0, int iParam1)
 {
-	iParam0->f_2 = iParam1;
-	return DATAFILE::_DATAFILE_GET_NUM_NODES(iParam0);
+	uParam0->f_2 = iParam1;
+	return DATAFILE::_DATAFILE_GET_NUM_NODES(uParam0);
 }
 
 int func_285(int iParam0)
@@ -6297,12 +6297,12 @@ struct<2> func_286(int iParam0)
 	return Var0;
 }
 
-var func_287(int iParam0)
+var func_287(var uParam0)
 {
-	return func_291(iParam0, 59, 1);
+	return func_291(uParam0, 59, 1);
 }
 
-bool func_288(int iParam0, int iParam1, int iParam2, int iParam3)
+bool func_288(var uParam0, int iParam1, int iParam2, int iParam3)
 {
 	*uParam0 = Global_1131373->f_7;
 	uParam0->f_2 = iParam3;

@@ -4702,7 +4702,7 @@ void func_7(var uParam0, var uParam1)
 	}
 }
 
-void func_8(int iParam0)
+void func_8(var uParam0)
 {
 	int iVar0;
 	int iVar1;
@@ -4716,7 +4716,7 @@ void func_8(int iParam0)
 	}
 }
 
-void func_9(int iParam0)
+void func_9(var uParam0)
 {
 	int iVar0;
 	int iVar1;
@@ -4730,7 +4730,7 @@ void func_9(int iParam0)
 	}
 }
 
-void func_10(int iParam0)
+void func_10(var uParam0)
 {
 	int iVar0;
 	int iVar1;
@@ -4749,7 +4749,7 @@ bool func_11(int iParam0)
 	return (iParam0 >= 0 && iParam0 < 35);
 }
 
-void func_12(int iParam0)
+void func_12(var uParam0)
 {
 	int iVar0;
 	int iVar1;
@@ -4920,14 +4920,14 @@ int func_25(struct<2> Param0)
 	return 0;
 }
 
-bool func_26(int iParam0)
+bool func_26(var uParam0)
 {
-	int iVar0;
+	var uVar0;
 
-	func_97(&iVar0);
-	func_98(&iVar0);
-	func_99(&iVar0, 45871012);
-	return func_100(&iVar0, iParam0, 0);
+	func_97(&uVar0);
+	func_98(&uVar0);
+	func_99(&uVar0, 45871012);
+	return func_100(&uVar0, uParam0, 0);
 }
 
 int func_27(struct<2> Param0, int iParam2, int iParam3)
@@ -7570,8 +7570,8 @@ int func_97(var uParam0)
 
 int func_98(int iParam0)
 {
-	iParam0->f_2 = 1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -7580,9 +7580,9 @@ int func_98(int iParam0)
 
 int func_99(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 2;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 2;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -7591,9 +7591,9 @@ int func_99(int iParam0, int iParam1)
 
 int func_100(int iParam0, var uParam1, int iParam2)
 {
-	iParam0->f_2 = 5;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 5;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -8315,7 +8315,7 @@ int func_124(var uParam0, var uParam1)
 	return 1;
 }
 
-void func_125(var uParam0, int iParam1)
+void func_125(var uParam0, var uParam1)
 {
 	vector3 vVar0;
 
@@ -8327,17 +8327,17 @@ void func_126(var uParam0, int iParam1, var uParam2)
 	*uParam0 = iParam1;
 }
 
-void func_127(var uParam0, int iParam1)
+void func_127(var uParam0, var uParam1)
 {
 	uParam0->f_1++;
 }
 
-void func_128(var uParam0, int iParam1)
+void func_128(var uParam0, var uParam1)
 {
 	*uParam0++;
 }
 
-void func_129(var uParam0, int iParam1)
+void func_129(var uParam0, var uParam1)
 {
 	struct<2> Var0;
 
@@ -10661,13 +10661,13 @@ bool func_205(var uParam0, int iParam1, int iParam2)
 
 int func_206(int iParam0, int iParam1, int iParam2)
 {
-	if (!func_471(iParam0, iParam1))
+	if (!func_471(uParam0, iParam1))
 	{
 		return 0;
 	}
-	iParam0->f_2 = 1635370648;
-	iParam0->f_3 = iParam2;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1635370648;
+	uParam0->f_3 = iParam2;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -10743,7 +10743,7 @@ float func_211(int iParam0)
 	return func_352(iParam0);
 }
 
-int func_212(vector3 vParam0, var uParam3, var uParam4, float fParam5, int iParam6)
+int func_212(vector3 vParam0, var uParam3, var uParam4, float fParam5, var uParam6)
 {
 	vParam0.f_2 = 1319079466;
 	if (!DATAFILE::_DATAFILE_GET_FLOAT(fParam5, &vParam0))
@@ -10883,8 +10883,8 @@ int func_213(var uParam0, struct<5> Param1, var uParam6, var uParam7)
 
 int func_214(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -1083767826;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1083767826;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -10938,8 +10938,8 @@ int func_216(vector3 vParam0, var uParam3, var uParam4, var uParam5, int iParam6
 
 int func_217(int iParam0)
 {
-	iParam0->f_2 = 56746299;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 56746299;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -10974,8 +10974,8 @@ int func_218(struct<5> Param0, int iParam5, var uParam6)
 
 int func_219(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 1062084355;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1062084355;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -10983,7 +10983,7 @@ int func_219(int iParam0, int iParam1)
 	return 1;
 }
 
-int func_220(vector3 vParam0, var uParam3, var uParam4, var uParam5, int iParam6, int iParam7)
+int func_220(vector3 vParam0, var uParam3, var uParam4, var uParam5, int iParam6, var uParam7)
 {
 	if (!func_484(&vParam0, iParam6))
 	{
@@ -11012,8 +11012,8 @@ int func_220(vector3 vParam0, var uParam3, var uParam4, var uParam5, int iParam6
 
 int func_221(int iParam0)
 {
-	iParam0->f_2 = 1203863120;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1203863120;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11078,8 +11078,8 @@ int func_222(struct<5> Param0, int iParam5, int* iParam6)
 
 int func_223(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -690423049;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -690423049;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11089,9 +11089,9 @@ int func_223(int iParam0, int iParam1)
 
 int func_224(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 1465961145;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1465961145;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11102,8 +11102,8 @@ int func_224(int iParam0, int iParam1)
 
 int func_225(int iParam0)
 {
-	iParam0->f_2 = 157340468;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 157340468;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11138,8 +11138,8 @@ int func_226(struct<5> Param0, int iParam5, int iParam6, var uParam7)
 
 int func_227(int iParam0)
 {
-	iParam0->f_2 = -1202322374;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1202322374;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11153,8 +11153,8 @@ bool func_228(struct<5> Param0, int iParam5, var uParam6)
 
 int func_229(int iParam0)
 {
-	iParam0->f_2 = -351785645;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -351785645;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11163,9 +11163,9 @@ int func_229(int iParam0)
 
 int func_230(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -816725755;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -816725755;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11250,8 +11250,8 @@ int func_233(vector3 vParam0, var uParam3, var uParam4, var uParam5)
 
 int func_234(int iParam0)
 {
-	iParam0->f_2 = -895584822;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -895584822;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11302,13 +11302,13 @@ int func_235(vector3 vParam0, var uParam3, var uParam4, var uParam5, int iParam6
 
 int func_236(int iParam0, var uParam1, int iParam2)
 {
-	if (!func_492(iParam0, uParam1))
+	if (!func_492(uParam0, uParam1))
 	{
 		return 0;
 	}
-	iParam0->f_2 = -1519814088;
-	iParam0->f_3 = iParam2;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1519814088;
+	uParam0->f_3 = iParam2;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11348,9 +11348,9 @@ var func_239(vector3 vParam0, var uParam3, var uParam4, int iParam5)
 
 int func_240(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 1969053457;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1969053457;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11387,33 +11387,33 @@ int func_242(int iParam0)
 	return -1;
 }
 
-int func_243(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, int iParam5)
+int func_243(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5)
 {
-	if (!func_496(&iParam0))
+	if (!func_496(&uParam0))
 	{
 		return 0;
 	}
-	if (!func_497(&iParam0, iParam5))
+	if (!func_497(&uParam0, uParam5))
 	{
 		return 0;
 	}
 	return 1;
 }
 
-int func_244(struct<5> Param0, var uParam5, int iParam6)
+int func_244(struct<5> Param0, var uParam5, var uParam6)
 {
 	*uParam5 = { func_498(Param0) };
 	uParam5->f_10 = func_499(Param0);
 	uParam5->f_12 = func_500(Param0);
 	uParam5->f_11 = func_501(Param0);
-	func_502(Param0, uParam5, iParam6);
-	func_503(Param0, uParam5, iParam6);
+	func_502(Param0, uParam5, uParam6);
+	func_503(Param0, uParam5, uParam6);
 	func_504(Param0, uParam5);
 	func_505(Param0, uParam5);
 	return 1;
 }
 
-int func_245(struct<5> Param0, var uParam5, int iParam6)
+int func_245(struct<5> Param0, var uParam5, var uParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -11450,7 +11450,7 @@ int func_245(struct<5> Param0, var uParam5, int iParam6)
 		iVar2 = 0;
 		if (func_508(&Param0, -1000179465))
 		{
-			if (!func_509(Param0, -1000179465, &iVar2, iParam6))
+			if (!func_509(Param0, -1000179465, &iVar2, uParam6))
 			{
 				return 0;
 			}
@@ -11469,7 +11469,7 @@ int func_245(struct<5> Param0, var uParam5, int iParam6)
 	return 1;
 }
 
-int func_246(struct<5> Param0, var uParam5, int iParam6, int iParam7)
+int func_246(struct<5> Param0, var uParam5, int iParam6, var uParam7)
 {
 	int iVar0;
 	int iVar1;
@@ -11478,7 +11478,7 @@ int func_246(struct<5> Param0, var uParam5, int iParam6, int iParam7)
 	iVar0 = 0;
 	while (iVar0 <= (iVar1 - 1))
 	{
-		if (!func_515(Param0, uParam5, iParam6, iParam7, iVar0))
+		if (!func_515(Param0, uParam5, iParam6, uParam7, iVar0))
 		{
 		}
 		iVar0++;
@@ -11493,8 +11493,8 @@ void func_247(var uParam0, int iParam1, int iParam2, int iParam3)
 
 int func_248(int iParam0)
 {
-	iParam0->f_2 = 1179867258;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1179867258;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11502,7 +11502,7 @@ int func_248(int iParam0)
 	return 1;
 }
 
-int func_249(struct<5> Param0, var uParam5, int iParam6)
+int func_249(struct<5> Param0, var uParam5, var uParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -11529,7 +11529,7 @@ int func_249(struct<5> Param0, var uParam5, int iParam6)
 	iVar1 = 0;
 	while (iVar1 <= (iVar2 - 1))
 	{
-		if (!func_517(Param0, iVar1, uParam5, iParam6))
+		if (!func_517(Param0, iVar1, uParam5, uParam6))
 		{
 			return 0;
 		}
@@ -11599,8 +11599,8 @@ void func_251(var uParam0, int iParam1, int iParam2)
 
 int func_252(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 1781322358;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1781322358;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -11608,7 +11608,7 @@ int func_252(int iParam0, int iParam1)
 	return 1;
 }
 
-int func_253(var uParam0, struct<5> Param1, int iParam6, int iParam7)
+int func_253(var uParam0, struct<5> Param1, int iParam6, var uParam7)
 {
 	vector3 vVar0;
 	float fVar3;
@@ -11637,11 +11637,11 @@ int func_253(var uParam0, struct<5> Param1, int iParam6, int iParam7)
 	{
 		return 0;
 	}
-	if (!func_521(Param1, iParam6, iParam7, &iVar4))
+	if (!func_521(Param1, iParam6, uParam7, &iVar4))
 	{
 		return 0;
 	}
-	if (!func_522(Param1, iParam6, iParam7, &iVar5))
+	if (!func_522(Param1, iParam6, uParam7, &iVar5))
 	{
 		return 0;
 	}
@@ -12609,7 +12609,7 @@ void func_307(var uParam0, var uParam1, int iParam2, bool bParam3)
 	(uParam0->f_112.f_200[iVar2 /*156*/])->f_152 = Var0.f_1;
 }
 
-int func_308(int iParam0)
+var func_308(int iParam0)
 {
 	return ((*Global_1113330)[iParam0 /*1991*/])->f_22;
 }
@@ -13872,7 +13872,7 @@ void func_365(var uParam0, var uParam1, int iParam2)
 		case 1338314812:
 			switch ((uParam0->f_112.f_200[iParam2 /*156*/])->f_2)
 			{
-				case -1418951751:
+				case joaat("cs_aberdeenpigfarmer"):
 					iVar0 = 0;
 					while (iVar0 <= ((uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56.f_19 - 1))
 					{
@@ -13884,7 +13884,7 @@ void func_365(var uParam0, var uParam1, int iParam2)
 							iVar1 = ENTITY::GET_ENTITY_MODEL(&((uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/]));
 							if (STREAMING::IS_MODEL_VALID(iVar1))
 							{
-								if (iVar1 == 587066646)
+								if (iVar1 == joaat("p_bowl04x_stew"))
 								{
 									ENTITY::_0x669655FFB29EF1A9(&((uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/]), 0, "Stew_Fill", 1f);
 								}
@@ -16415,12 +16415,12 @@ void func_470(var uParam0, int iParam1)
 
 int func_471(int iParam0, int iParam1)
 {
-	if (!func_779(iParam0, iParam1))
+	if (!func_779(uParam0, iParam1))
 	{
 		return 0;
 	}
-	iParam0->f_2 = 466723622;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 466723622;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16430,8 +16430,8 @@ int func_471(int iParam0, int iParam1)
 
 int func_472(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -1442893430;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1442893430;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16441,8 +16441,8 @@ int func_472(int iParam0, int iParam1)
 
 int func_473(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 1034671917;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1034671917;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16452,8 +16452,8 @@ int func_473(int iParam0, int iParam1)
 
 int func_474(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -467924289;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -467924289;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16463,12 +16463,12 @@ int func_474(int iParam0, int iParam1)
 
 int func_475(int iParam0, int iParam1)
 {
-	if (!func_780(iParam0, iParam1))
+	if (!func_780(uParam0, iParam1))
 	{
 		return 0;
 	}
-	iParam0->f_2 = -232245152;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -232245152;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16478,9 +16478,9 @@ int func_475(int iParam0, int iParam1)
 
 int func_476(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -770038426;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -770038426;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16491,8 +16491,8 @@ int func_476(int iParam0, int iParam1)
 
 int func_477(int iParam0)
 {
-	iParam0->f_2 = 1153433438;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1153433438;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16534,9 +16534,9 @@ void func_479(var uParam0, int iParam1, int iParam2, struct<8> Param3, int iPara
 
 int func_480(int iParam0, int iParam1, int iParam2)
 {
-	iParam0->f_2 = -1871400260;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1871400260;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16547,9 +16547,9 @@ int func_480(int iParam0, int iParam1, int iParam2)
 
 int func_481(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 1392091586;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1392091586;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16560,9 +16560,9 @@ int func_481(int iParam0, var uParam1)
 
 int func_482(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 1915534289;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1915534289;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16637,9 +16637,9 @@ int func_483(struct<5> Param0, int iParam5, int iParam6, var uParam7)
 
 int func_484(int iParam0, var uParam1)
 {
-	iParam0->f_2 = -26782235;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -26782235;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16650,9 +16650,9 @@ int func_484(int iParam0, var uParam1)
 
 int func_485(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 592206679;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 592206679;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16691,9 +16691,9 @@ bool func_486(struct<5> Param0, int* iParam5)
 
 int func_487(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 2080739522;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 2080739522;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16813,9 +16813,9 @@ int func_490(vector3 vParam0, var uParam3, var uParam4, var uParam5, var uParam6
 
 int func_491(int iParam0, var uParam1)
 {
-	iParam0->f_2 = -255537257;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -255537257;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16826,12 +16826,12 @@ int func_491(int iParam0, var uParam1)
 
 int func_492(int iParam0, var uParam1)
 {
-	if (!func_799(iParam0, uParam1))
+	if (!func_799(uParam0, uParam1))
 	{
 		return 0;
 	}
-	iParam0->f_2 = -1854922634;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1854922634;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16856,8 +16856,8 @@ var func_495(int iParam0, int iParam1)
 
 int func_496(int iParam0)
 {
-	iParam0->f_2 = 843787590;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 843787590;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -16867,9 +16867,9 @@ int func_496(int iParam0)
 
 int func_497(int iParam0, var uParam1)
 {
-	iParam0->f_2 = -789427168;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -789427168;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -17074,8 +17074,8 @@ void func_505(struct<5> Param0, var uParam5)
 
 int func_506(int iParam0)
 {
-	iParam0->f_2 = 650443163;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 650443163;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -17085,9 +17085,9 @@ int func_506(int iParam0)
 
 int func_507(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -59088530;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -59088530;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -17098,9 +17098,9 @@ int func_507(int iParam0, int iParam1)
 
 int func_508(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -1237276897;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1237276897;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -17284,13 +17284,13 @@ int func_515(struct<5> Param0, var uParam5, var uParam6, var uParam7, int iParam
 
 int func_516(int iParam0, int iParam1, int iParam2)
 {
-	if (!func_837(iParam0, iParam1))
+	if (!func_837(uParam0, iParam1))
 	{
 		return 0;
 	}
-	iParam0->f_2 = 696574474;
-	iParam0->f_3 = iParam2;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 696574474;
+	uParam0->f_3 = iParam2;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -17330,9 +17330,9 @@ int func_517(vector3 vParam0, var uParam3, var uParam4, int iParam5, var uParam6
 
 int func_518(int iParam0, var uParam1)
 {
-	iParam0->f_2 = -328876172;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -328876172;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -17341,7 +17341,7 @@ int func_518(int iParam0, var uParam1)
 	return 1;
 }
 
-int func_519(vector3 vParam0, var uParam3, var uParam4, var uParam5, int iParam6, int iParam7, int iParam8, int iParam9)
+int func_519(vector3 vParam0, var uParam3, var uParam4, var uParam5, int iParam6, int iParam7, var uParam8, int iParam9)
 {
 	int iVar0;
 	int iVar1;
@@ -17400,9 +17400,9 @@ int func_519(vector3 vParam0, var uParam3, var uParam4, var uParam5, int iParam6
 
 int func_520(int iParam0, var uParam1)
 {
-	iParam0->f_2 = -1181812906;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1181812906;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -17910,7 +17910,7 @@ int func_553(int iParam0, var uParam1, var uParam2)
 			}
 		}
 	}
-	if (func_866(iParam0, 0, 1, 0) == -1016714371)
+	if (func_866(iParam0, 0, 1, 0) == joaat("weapon_kit_camera"))
 	{
 		return 1;
 	}
@@ -19245,7 +19245,7 @@ void func_626(var uParam0, char* sParam1)
 	}
 }
 
-void func_627(var uParam0, char* sParam1, var uParam2, int iParam3, int iParam4, int iParam5, bool bParam6)
+void func_627(var uParam0, char* sParam1, var uParam2, var uParam3, int iParam4, int iParam5, bool bParam6)
 {
 	if (!func_910(uParam0))
 	{
@@ -19266,7 +19266,7 @@ void func_627(var uParam0, char* sParam1, var uParam2, int iParam3, int iParam4,
 				CAM::_0xE296208C273BD7F0(2000, 2000, 0, 17, 1, 0);
 			}
 		}
-		func_247(uParam0, 6, iParam3, iParam4);
+		func_247(uParam0, 6, uParam3, iParam4);
 	}
 }
 
@@ -19511,7 +19511,7 @@ void func_629(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 						{
 							switch ((sParam1->f_227[iVar0 /*26*/])->f_1.f_9)
 							{
-								case -446093729:
+								case joaat("cs_joe"):
 								case 960851950:
 									WEAPON::_0x4F806A6CFED89468(&(sParam1->f_227[iVar0 /*26*/]), 0);
 									uParam0->f_2 |= 32;
@@ -19547,7 +19547,7 @@ void func_629(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 							{
 								switch ((sParam1->f_227[iVar0 /*26*/])->f_1.f_9)
 								{
-									case -446093729:
+									case joaat("cs_joe"):
 									case 960851950:
 										if (iParam3 == 0)
 										{
@@ -19587,7 +19587,7 @@ void func_629(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 						{
 							switch ((sParam1->f_227[iVar0 /*26*/])->f_1.f_9)
 							{
-								case -446093729:
+								case joaat("cs_joe"):
 								case 960851950:
 									if (iParam3 == 0)
 									{
@@ -19886,14 +19886,14 @@ void func_632(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4,
 			case 960851950:
 				WEAPON::_0x4F806A6CFED89468(&(uParam0->f_112.f_200[iParam2 /*156*/]), 1);
 				break;
-			case -446093729:
+			case joaat("cs_joe"):
 				WEAPON::_0x4F806A6CFED89468(&(uParam0->f_112.f_200[iParam2 /*156*/]), 1);
 				vVar21 = { 0f, 0f, 0f };
 				vVar24 = { -0.0040397f, -0.00102244f, 0.00599561f };
 				iVar2 = 0;
 				while (iVar2 <= (uParam0->f_948 - 1))
 				{
-					if ((uParam0->f_948.f_1[iVar2 /*21*/])->f_2 == -967333571)
+					if (uParam0->f_948.f_1[iVar2 /*21*/])->f_2 == joaat("p_cigarette_cs01x")
 					{
 						ENTITY::DETACH_ENTITY(&(uParam0->f_948.f_1[iVar2 /*21*/]), false, true);
 						ENTITY::ATTACH_ENTITY_TO_ENTITY(&(uParam0->f_948.f_1[iVar2 /*21*/]), &(uParam0->f_112.f_200[iParam2 /*156*/]), PED::GET_PED_BONE_INDEX(&(uParam0->f_112.f_200[iParam2 /*156*/]), 9650), vVar24, vVar21, 1, 1, 0, 0, 2, 1, 0, 0);
@@ -20006,14 +20006,14 @@ void func_635(var uParam0)
 	uParam0->f_4 = -1;
 }
 
-void func_636(var uParam0, char* sParam1, int iParam2, int iParam3)
+void func_636(var uParam0, char* sParam1, var uParam2, int iParam3)
 {
 	func_940(sParam1);
 	func_941(sParam1);
-	func_247(uParam0, 2, iParam2, iParam3);
+	func_247(uParam0, 2, uParam2, iParam3);
 }
 
-void func_637(var uParam0, char* sParam1, int iParam2, int iParam3)
+void func_637(var uParam0, char* sParam1, var uParam2, int iParam3)
 {
 	if (!func_942(sParam1))
 	{
@@ -20023,10 +20023,10 @@ void func_637(var uParam0, char* sParam1, int iParam2, int iParam3)
 	{
 		return;
 	}
-	func_247(uParam0, 3, iParam2, iParam3);
+	func_247(uParam0, 3, uParam2, iParam3);
 }
 
-void func_638(var uParam0, char* sParam1, int iParam2, int iParam3, vector3 vParam4)
+void func_638(var uParam0, char* sParam1, var uParam2, int iParam3, vector3 vParam4)
 {
 	int iVar0;
 
@@ -20040,7 +20040,7 @@ void func_638(var uParam0, char* sParam1, int iParam2, int iParam3, vector3 vPar
 	{
 		return;
 	}
-	func_247(uParam0, 4, iParam2, iParam3);
+	func_247(uParam0, 4, uParam2, iParam3);
 }
 
 void func_639(var uParam0, var uParam1, int iParam2)
@@ -22802,7 +22802,7 @@ void func_759(int iParam0)
 				switch (func_92(iParam0))
 				{
 					case -743855838:
-						iVar1 = PLAYER::_0x8E84119A23C16623(-1418951751, 0, 0);
+						iVar1 = PLAYER::_0x8E84119A23C16623(joaat("cs_aberdeenpigfarmer"), 0, 0);
 						if (!PLAYER::_0x354F689C4FFAAB37(iVar1))
 						{
 							PLAYER::_0x7C32191D9FB2BDEA(iVar1);
@@ -23092,12 +23092,12 @@ Vector3 func_778(int iParam0, var uParam1, int iParam2, int iParam3, var uParam4
 
 int func_779(int iParam0, int iParam1)
 {
-	if (!func_1048(iParam0, iParam1))
+	if (!func_1048(uParam0, iParam1))
 	{
 		return 0;
 	}
-	iParam0->f_2 = -1782208300;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1782208300;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23261,8 +23261,8 @@ void func_793(var uParam0, var uParam1)
 
 int func_794(int iParam0)
 {
-	iParam0->f_2 = -1266254117;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1266254117;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23298,8 +23298,8 @@ int func_795(vector3 vParam0, var uParam3, var uParam4, int iParam5, int* iParam
 
 int func_796(int iParam0)
 {
-	iParam0->f_2 = 1250184037;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1250184037;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23338,8 +23338,8 @@ int func_797(vector3 vParam0, var uParam3, var uParam4, int iParam5, int iParam6
 
 int func_798(int iParam0)
 {
-	iParam0->f_2 = 1142477451;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1142477451;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23352,10 +23352,10 @@ int func_799(int iParam0, var uParam1)
 {
 	var uVar0;
 
-	iParam0->f_1 = uVar0;
-	*iParam0 = uParam1;
-	iParam0->f_2 = 1372075093;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_1 = uVar0;
+	*uParam0 = uParam1;
+	uParam0->f_2 = 1372075093;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23365,9 +23365,9 @@ int func_799(int iParam0, var uParam1)
 
 int func_800(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -607359033;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -607359033;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23390,8 +23390,8 @@ int func_801(vector3 vParam0, var uParam3, var uParam4)
 
 int func_802(int iParam0)
 {
-	iParam0->f_2 = 1401821022;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1401821022;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23495,8 +23495,8 @@ int func_810(vector3 vParam0, var uParam3, var uParam4)
 
 int func_811(int iParam0)
 {
-	iParam0->f_2 = -1426815576;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1426815576;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23506,8 +23506,8 @@ int func_811(int iParam0)
 
 int func_812(int iParam0)
 {
-	iParam0->f_2 = 899166212;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 899166212;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23517,8 +23517,8 @@ int func_812(int iParam0)
 
 int func_813(int iParam0)
 {
-	iParam0->f_2 = -786270192;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -786270192;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23528,9 +23528,9 @@ int func_813(int iParam0)
 
 int func_814(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 608242665;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 608242665;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23552,8 +23552,8 @@ var func_815(vector3 vParam0, var uParam3, var uParam4)
 
 int func_816(int iParam0)
 {
-	iParam0->f_2 = -666456239;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -666456239;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23596,9 +23596,9 @@ void func_817(struct<5> Param0, var uParam5, int iParam6)
 
 int func_818(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 635413302;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 635413302;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23824,9 +23824,9 @@ struct<4> func_830(char* sParam0)
 
 int func_831(int iParam0, var uParam1)
 {
-	iParam0->f_2 = -245080631;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -245080631;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23977,12 +23977,12 @@ int func_836(struct<5> Param0, var uParam5, var uParam6, var uParam7)
 
 int func_837(int iParam0, int iParam1)
 {
-	if (!func_779(iParam0, iParam1))
+	if (!func_779(uParam0, iParam1))
 	{
 		return 0;
 	}
-	iParam0->f_2 = 1280983896;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1280983896;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -23992,9 +23992,9 @@ int func_837(int iParam0, int iParam1)
 
 int func_838(int iParam0, var uParam1)
 {
-	iParam0->f_2 = -1808878008;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1808878008;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -24005,9 +24005,9 @@ int func_838(int iParam0, var uParam1)
 
 int func_839(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 824485797;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 824485797;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -24018,9 +24018,9 @@ int func_839(int iParam0, var uParam1)
 
 int func_840(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 2016458991;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 2016458991;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -24099,9 +24099,9 @@ int func_842(vector3 vParam0, var uParam3, var uParam4, var uParam5, int iParam6
 
 int func_843(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 787092883;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 787092883;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -24416,12 +24416,12 @@ int func_862(int iParam0)
 	return func_1087(func_863(iParam0, 30, 1));
 }
 
-int func_863(int iParam0, int iParam1, int iParam2)
+int func_863(var uParam0, int iParam1, int iParam2)
 {
 	var uVar0;
 
-	iParam0->f_2 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_HASH(&uVar0, iParam0))
+	uParam0->f_2 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_HASH(&uVar0, uParam0))
 	{
 	}
 	return uVar0;
@@ -24772,7 +24772,7 @@ void func_880(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_6 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_881(56), Param10.f_6);
 	if (Param10.f_7 == 0)
 	{
-		Param10.f_7 = -672301300;
+		Param10.f_7 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_881(58), Param10.f_7);
 	uParam0->f_9 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_881(59), Param10.f_8);
@@ -24782,7 +24782,7 @@ void func_880(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_12 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_881(62), Param10.f_12);
 	if (Param10.f_13 == 0)
 	{
-		Param10.f_13 = -672301300;
+		Param10.f_13 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_881(64), Param10.f_13);
 	uParam0->f_15 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_881(65), Param10.f_14);
@@ -25607,7 +25607,7 @@ int func_908(var uParam0)
 int func_909(vector3 vParam0, float fParam3, int iParam4, bool bParam5, bool bParam6)
 {
 	int iVar0;
-	int iVar1;
+	var uVar1;
 	int iVar2;
 	int iVar3;
 	int iVar4;
@@ -25626,8 +25626,8 @@ int func_909(vector3 vParam0, float fParam3, int iParam4, bool bParam5, bool bPa
 		iVar5 = 0;
 		while (iVar5 <= (iVar6 - 1))
 		{
-			iVar1 = ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(iVar5, iVar0);
-			iVar2 = MISC::_0x18013392501CE5DC(iVar1);
+			uVar1 = ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(iVar5, iVar0);
+			iVar2 = MISC::_0x18013392501CE5DC(uVar1);
 			if (!ENTITY::DOES_ENTITY_EXIST(iVar2))
 			{
 			}
@@ -26194,12 +26194,12 @@ void func_930(var uParam0, var uParam1, var uParam2)
 	{
 		bVar1 = true;
 		bVar1 = (uParam1->f_70[iVar0 /*26*/])->f_1.f_11 & 128 == false;
-		if ((uParam1->f_70[iVar0 /*26*/])->f_1.f_9 == -967333571)
+		if (uParam1->f_70[iVar0 /*26*/])->f_1.f_9 == joaat("p_cigarette_cs01x")
 		{
 			iVar2 = 0;
 			while (iVar2 <= (&uParam1->f_721[3] - 1))
 			{
-				if ((uParam1->f_227[iVar2 /*26*/])->f_1.f_9 == -446093729)
+				if (uParam1->f_227[iVar2 /*26*/])->f_1.f_9 == joaat("cs_joe")
 				{
 					bVar1 = false;
 				}
@@ -26912,7 +26912,7 @@ int func_949(var uParam0, var uParam1, int iParam2)
 
 int func_950(var uParam0, var uParam1, int iParam2)
 {
-	int iVar0;
+	var uVar0;
 	struct<53> Var5;
 	int iVar58;
 	int iVar59;
@@ -26923,7 +26923,7 @@ int func_950(var uParam0, var uParam1, int iParam2)
 	Var5.f_10.f_8 = 3;
 	Var5.f_10.f_12 = 3;
 	Var5.f_10.f_17 = 3;
-	if (!func_1161(&iVar0, uParam1, iParam2))
+	if (!func_1161(&uVar0, uParam1, iParam2))
 	{
 		return 0;
 	}
@@ -28692,9 +28692,9 @@ void func_1060(int iParam0, var uParam1)
 
 int func_1061(int iParam0, var uParam1)
 {
-	iParam0->f_2 = -1614496179;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -1614496179;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -28732,9 +28732,9 @@ int func_1062(int iParam0, int iParam1)
 
 int func_1063(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 155183949;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 155183949;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -28767,9 +28767,9 @@ int func_1064(int iParam0)
 
 int func_1065(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 1591836767;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1591836767;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -28844,9 +28844,9 @@ void func_1069(struct<5> Param0, var uParam5, int iParam6)
 
 int func_1070(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 1758962534;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1758962534;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -28855,7 +28855,7 @@ int func_1070(int iParam0, int iParam1)
 	return 1;
 }
 
-int func_1071(struct<5> Param0, var uParam5, int iParam6)
+int func_1071(struct<5> Param0, var uParam5, var uParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -28881,14 +28881,14 @@ int func_1071(struct<5> Param0, var uParam5, int iParam6)
 		switch (iVar3)
 		{
 			case 961558953:
-				if (!func_509(Param0, iVar3, &iVar2, iParam6))
+				if (!func_509(Param0, iVar3, &iVar2, uParam6))
 				{
 					return 0;
 				}
 				uParam5->f_12 = iVar2;
 				break;
 			case 1588979285:
-				if (!func_509(Param0, iVar3, &iVar2, iParam6))
+				if (!func_509(Param0, iVar3, &iVar2, uParam6))
 				{
 					return 0;
 				}
@@ -28906,7 +28906,7 @@ int func_1071(struct<5> Param0, var uParam5, int iParam6)
 		{
 			return 0;
 		}
-		if (!func_497(&Param0, iParam6))
+		if (!func_497(&Param0, uParam6))
 		{
 			return 0;
 		}
@@ -28931,9 +28931,9 @@ int func_1071(struct<5> Param0, var uParam5, int iParam6)
 
 int func_1072(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 1537295589;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1537295589;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -29002,33 +29002,33 @@ int func_1076(bool bParam0, int iParam1, int iParam2)
 	return iParam2;
 }
 
-int func_1077(int iParam0, var uParam1, var uParam2, int iParam3, var uParam4)
+int func_1077(var uParam0, var uParam1, var uParam2, int iParam3, var uParam4)
 {
 	int iVar0;
 	int iVar1;
 	int iVar2;
 	var uVar3;
 
-	if (!func_236(iParam0, uParam4, uParam1))
+	if (!func_236(uParam0, uParam4, uParam1))
 	{
 		return 0;
 	}
-	iVar1 = func_239(*iParam0, 1333416092);
-	uVar3 = iParam0->f_1;
+	iVar1 = func_239(*uParam0, 1333416092);
+	uVar3 = uParam0->f_1;
 	iVar0 = 0;
 	while (iVar0 <= (iVar1 - 1))
 	{
-		iParam0->f_1 = uVar3;
-		if (!func_240(iParam0, iVar0))
+		uParam0->f_1 = uVar3;
+		if (!func_240(uParam0, iVar0))
 		{
 		}
 		else
 		{
-			iVar2 = func_241(*iParam0);
+			iVar2 = func_241(*uParam0);
 			if (iParam3 != func_242(iVar2))
 			{
 			}
-			else if (func_243(*iParam0, uParam2))
+			else if (func_243(*uParam0, uParam2))
 			{
 			}
 			else
@@ -29043,8 +29043,8 @@ int func_1077(int iParam0, var uParam1, var uParam2, int iParam3, var uParam4)
 
 int func_1078(int iParam0)
 {
-	iParam0->f_2 = -34107655;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -34107655;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -29054,9 +29054,9 @@ int func_1078(int iParam0)
 
 int func_1079(int iParam0, var uParam1, int iParam2)
 {
-	iParam0->f_2 = 1808784790;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1808784790;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -29432,8 +29432,8 @@ struct<8> func_1102(int iParam0, int iParam1, int iParam2)
 {
 	struct<8> Var0;
 
-	iParam0->f_2 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_STRING(&Var0, iParam0))
+	uParam0->f_2 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_STRING(&Var0, uParam0))
 	{
 	}
 	return Var0;
@@ -31083,17 +31083,17 @@ int func_1160(vector3 vParam0, float fParam3, int iParam4, bool bParam5)
 		}
 	}
 
-int func_1161(int iParam0, var uParam1, int iParam2)
+int func_1161(var uParam0, var uParam1, int iParam2)
 {
-	if (!func_206(iParam0, func_179(*uParam1), func_170(*uParam1)))
+	if (!func_206(uParam0, func_179(*uParam1), func_170(*uParam1)))
 	{
 		return 0;
 	}
-	if (!func_472(iParam0, 1))
+	if (!func_472(uParam0, 1))
 	{
 		return 0;
 	}
-	if (!func_476(iParam0, iParam2))
+	if (!func_476(uParam0, iParam2))
 	{
 		return 0;
 	}
@@ -31102,9 +31102,9 @@ int func_1161(int iParam0, var uParam1, int iParam2)
 
 int func_1162(int iParam0, int iParam1)
 {
-	iParam0->f_2 = -835870147;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -835870147;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -31197,7 +31197,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3912;
 			case -2146366325:
 				return 3078;
-			case -2146356753:
+			case joaat("a_c_doghound_01"):
 				return 14262;
 			case -2146265525:
 				return 13181;
@@ -31209,7 +31209,7 @@ int func_1165(int iParam0, int iParam1)
 				return 155;
 			case -2145952209:
 				return 11431;
-			case -2145890973:
+			case joaat("a_c_hawk_01"):
 				return 14306;
 			case -2145710553:
 				return 6368;
@@ -31223,7 +31223,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13525;
 			case -2145170802:
 				return 12290;
-			case -2144902919:
+			case joaat("s_m_y_army_01"):
 				return 15760;
 			case -2143634101:
 				return 12711;
@@ -31251,7 +31251,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13834;
 			case -2139535895:
 				return 3433;
-			case -2139331018:
+			case joaat("p_cs_bookkelonian"):
 				return 12159;
 			case -2139113605:
 				return 3161;
@@ -31283,7 +31283,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13173;
 			case -2134937768:
 				return 6226;
-			case -2133834671:
+			case joaat("u_m_m_asbgunsmith_01"):
 				return 15792;
 			case -2133359054:
 				return 12528;
@@ -31391,7 +31391,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7405;
 			case -2118265633:
 				return 5040;
-			case -2118240499:
+			case joaat("p_cs_fan01x"):
 				return 10140;
 			case -2118163918:
 				return 15617;
@@ -31405,7 +31405,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12516;
 			case -2116754376:
 				return 9627;
-			case -2116748615:
+			case joaat("a_c_fishbluegil_01_sm"):
 				return 14275;
 			case -2115716412:
 				return 1893;
@@ -31423,7 +31423,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11657;
 			case -2111907234:
 				return 1212;
-			case -2111755507:
+			case joaat("u_m_m_story_redharlow_01"):
 				return 15928;
 			case -2111666905:
 				return 15112;
@@ -31455,7 +31455,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11628;
 			case -2109100258:
 				return 8078;
-			case -2109005962:
+			case joaat("p_door63a"):
 				return 2613;
 			case -2108953935:
 				return 13758;
@@ -31489,7 +31489,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9972;
 			case -2105110696:
 				return 15090;
-			case -2104766853:
+			case joaat("p_stool01x"):
 				return 5680;
 			case -2104632348:
 				return 851;
@@ -31509,11 +31509,11 @@ int func_1165(int iParam0, int iParam1)
 				return 16118;
 			case -2102686964:
 				return 10407;
-			case -2102436869:
+			case joaat("a_m_m_lowersdtownfolk_02"):
 				return 14609;
 			case -2102036198:
 				return 7568;
-			case -2102031605:
+			case joaat("p_cs_book03x"):
 				return 12127;
 			case -2102028356:
 				return 8370;
@@ -31535,7 +31535,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13881;
 			case -2100003372:
 				return 12177;
-			case -2099781628:
+			case joaat("u_m_m_story_manzanita_01"):
 				return 15924;
 			case -2099211717:
 				return 845;
@@ -31575,7 +31575,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8643;
 			case -2092427420:
 				return 3243;
-			case -2092036940:
+			case joaat("p_clipboard01x"):
 				return 5243;
 			case -2091234578:
 				return 1173;
@@ -31587,7 +31587,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5780;
 			case -2089773343:
 				return 13421;
-			case -2089061362:
+			case joaat("a_f_o_waptownfolk_01"):
 				return 14553;
 			case -2088939215:
 				return 2684;
@@ -31599,7 +31599,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8072;
 			case -2087760987:
 				return 1527;
-			case -2087759666:
+			case joaat("a_m_m_valtownfolk_01"):
 				return 14665;
 			case -2087546684:
 				return 6276;
@@ -31611,7 +31611,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11842;
 			case -2087217357:
 				return 2691;
-			case -2086875988:
+			case joaat("cs_sistercalderon"):
 				return 14976;
 			case -2086312862:
 				return 12741;
@@ -31635,13 +31635,13 @@ int func_1165(int iParam0, int iParam1)
 				return 13725;
 			case -2082428628:
 				return 1225;
-			case -2081966149:
+			case joaat("cs_strsheriff_01"):
 				return 14983;
 			case -2080972220:
 				return 8505;
 			case -2080876839:
 				return 2920;
-			case -2080420985:
+			case joaat("p_door41x"):
 				return 2597;
 			case -2080389770:
 				return 7390;
@@ -31671,7 +31671,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7516;
 			case -2077978546:
 				return 14046;
-			case -2077833597:
+			case joaat("p_paper01x"):
 				return 5304;
 			case -2077259890:
 				return 2819;
@@ -31685,7 +31685,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11349;
 			case -2075624916:
 				return 168;
-			case -2075588078:
+			case joaat("cs_mud2bigguy"):
 				return 14930;
 			case -2075510463:
 				return 445;
@@ -31693,7 +31693,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7492;
 			case -2075190092:
 				return 5527;
-			case -2075028835:
+			case joaat("cs_chainprisoner_01"):
 				return 14751;
 			case -2074655778:
 				return 3989;
@@ -31703,7 +31703,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11877;
 			case -2073417944:
 				return 15373;
-			case -2073130256:
+			case joaat("a_c_cormorant_01"):
 				return 14246;
 			case -2073026089:
 				return 13895;
@@ -31717,7 +31717,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3701;
 			case -2070991587:
 				return 4097;
-			case -2070665651:
+			case joaat("p_book08x"):
 				return 5227;
 			case -2070609728:
 				return 13096;
@@ -31733,7 +31733,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8754;
 			case -2069977106:
 				return 5542;
-			case -2069407005:
+			case joaat("p_bottlechampagne01x"):
 				return 2924;
 			case -2069080983:
 				return 14039;
@@ -31741,7 +31741,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11765;
 			case -2068542271:
 				return 2604;
-			case -2067867899:
+			case joaat("p_package05x"):
 				return 6212;
 			case -2067863105:
 				return 4462;
@@ -31761,7 +31761,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8487;
 			case -2064472468:
 				return 751;
-			case -2064282163:
+			case joaat("s_m_y_racrailworker_01"):
 				return 15762;
 			case -2064204292:
 				return 6257;
@@ -31771,7 +31771,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10166;
 			case -2063289686:
 				return 14376;
-			case -2063183075:
+			case joaat("a_c_chicken_01"):
 				return 14244;
 			case -2063096992:
 				return 10785;
@@ -31813,7 +31813,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12865;
 			case -2058944417:
 				return 13625;
-			case -2058893965:
+			case joaat("p_cs_bedrollclsd01x"):
 				return 10024;
 			case -2057358632:
 				return 7100;
@@ -31837,7 +31837,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14472;
 			case -2054392813:
 				return 7974;
-			case -2053881888:
+			case joaat("cart02"):
 				return 14126;
 			case -2053831376:
 				return 2955;
@@ -31845,7 +31845,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9423;
 			case -2053586493:
 				return 8889;
-			case -2053326164:
+			case joaat("cs_missmarjorie"):
 				return 14877;
 			case -2053250034:
 				return 13879;
@@ -31865,7 +31865,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13668;
 			case -2051203822:
 				return 12976;
-			case -2051048367:
+			case joaat("p_bottleslim01x"):
 				return 2936;
 			case -2050622463:
 				return 7174;
@@ -31885,7 +31885,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7928;
 			case -2049113323:
 				return 121;
-			case -2049014994:
+			case joaat("p_cs_rope01x"):
 				return 10336;
 			case -2049007258:
 				return 12434;
@@ -31897,7 +31897,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12063;
 			case -2048208508:
 				return 6299;
-			case -2047924463:
+			case joaat("p_whiskeycrate02x"):
 				return 6044;
 			case -2047919468:
 				return 7859;
@@ -31909,7 +31909,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12339;
 			case -2046956705:
 				return 3204;
-			case -2046943672:
+			case joaat("cs_rainsfall"):
 				return 14952;
 			case -2046717337:
 				return 2603;
@@ -31927,13 +31927,13 @@ int func_1165(int iParam0, int iParam1)
 				return 10348;
 			case -2045332310:
 				return 8940;
-			case -2045269112:
+			case joaat("cs_penelopebraithwaite"):
 				return 14945;
 			case -2044900246:
 				return 14110;
 			case -2044894272:
 				return 11882;
-			case -2044758506:
+			case joaat("u_m_m_bht_shackescape"):
 				return 15810;
 			case -2044344457:
 				return 9235;
@@ -31945,7 +31945,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5996;
 			case -2042758269:
 				return 13145;
-			case -2041975017:
+			case joaat("s_m_m_liveryworker_01"):
 				return 15726;
 			case -2041734073:
 				return 9667;
@@ -31971,11 +31971,11 @@ int func_1165(int iParam0, int iParam1)
 				return 2022;
 			case -2038907949:
 				return 2750;
-			case -2038347033:
+			case joaat("p_cigarettebox01x"):
 				return 3051;
 			case -2038176093:
 				return 9524;
-			case -2037578922:
+			case joaat("a_c_crab_01"):
 				return 14250;
 			case -2037206422:
 				return 12617;
@@ -31993,7 +31993,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2507;
 			case -2035029611:
 				return 15048;
-			case -2035015046:
+			case joaat("a_f_o_btchillbilly_01"):
 				return 14548;
 			case -2034775048:
 				return 2606;
@@ -32027,7 +32027,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7586;
 			case -2029403312:
 				return 11496;
-			case -2029345710:
+			case joaat("p_dinnerknife01x"):
 				return 3531;
 			case -2029252334:
 				return 6411;
@@ -32047,7 +32047,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11108;
 			case -2026478636:
 				return 14011;
-			case -2026265047:
+			case joaat("a_c_horse_ardennes_irongreyroan"):
 				return 14334;
 			case -2025736579:
 				return 14096;
@@ -32063,13 +32063,13 @@ int func_1165(int iParam0, int iParam1)
 				return 11268;
 			case -2024019598:
 				return 8886;
-			case -2023427504:
+			case joaat("p_bible01x"):
 				return 3931;
 			case -2023264971:
 				return 12424;
 			case -2023091207:
 				return 2131;
-			case -2022921611:
+			case joaat("a_c_fishchannelcatfish_01_xl"):
 				return 14281;
 			case -2022805833:
 				return 14117;
@@ -32083,15 +32083,15 @@ int func_1165(int iParam0, int iParam1)
 				return 13080;
 			case -2021315548:
 				return 2459;
-			case -2021274799:
+			case joaat("p_barstool01x"):
 				return 5539;
-			case -2021213387:
+			case joaat("p_woodramp02x"):
 				return 4991;
 			case -2021138744:
 				return 3319;
 			case -2021057690:
 				return 12701;
-			case -2021043433:
+			case joaat("a_c_elk_01"):
 				return 14273;
 			case -2020935742:
 				return 7284;
@@ -32105,7 +32105,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12399;
 			case -2020155455:
 				return 1902;
-			case -2019245895:
+			case joaat("cs_swampweirdosonny"):
 				return 14987;
 			case -2019209710:
 				return 257;
@@ -32143,7 +32143,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6055;
 			case -2014630946:
 				return 11982;
-			case -2014377075:
+			case joaat("cs_unidusterjail_01"):
 				return 15005;
 			case -2014081867:
 				return 1296;
@@ -32157,7 +32157,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11462;
 			case -2012913439:
 				return 15563;
-			case -2012656841:
+			case joaat("cs_iangray"):
 				return 14834;
 			case -2012611792:
 				return 13065;
@@ -32165,9 +32165,9 @@ int func_1165(int iParam0, int iParam1)
 				return 9681;
 			case -2012125829:
 				return 7044;
-			case -2011226991:
+			case joaat("a_c_turkeywild_01"):
 				return 14486;
-			case -2010730742:
+			case joaat("p_filletknife01x"):
 				return 4474;
 			case -2010635131:
 				return 11693;
@@ -32185,11 +32185,11 @@ int func_1165(int iParam0, int iParam1)
 				return 4549;
 			case -2007871316:
 				return 13136;
-			case -2007761031:
+			case joaat("cs_tinyhermit"):
 				return 14996;
 			case -2007453069:
 				return 5657;
-			case -2007219554:
+			case joaat("a_m_m_sdroughtravellers_01"):
 				return 14644;
 			case -2007007254:
 				return 363;
@@ -32203,7 +32203,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8843;
 			case -2006457151:
 				return 12801;
-			case -2006398858:
+			case joaat("cs_timothydonahue"):
 				return 14995;
 			case -2006204490:
 				return 6575;
@@ -32227,7 +32227,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12036;
 			case -2003311028:
 				return 11398;
-			case -2002682906:
+			case joaat("cs_escapeartist"):
 				return 14789;
 			case -2002508803:
 				return 15369;
@@ -32237,7 +32237,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11567;
 			case -2001184493:
 				return 10053;
-			case -2001000389:
+			case joaat("a_f_m_lowersdtownfolk_02"):
 				return 14514;
 			case -2000963135:
 				return 9932;
@@ -32257,7 +32257,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13896;
 			case -1999403301:
 				return 11959;
-			case -1999198818:
+			case joaat("a_c_horse_arabian_black"):
 				return 14326;
 			case -1999125532:
 				return 10800;
@@ -32297,7 +32297,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3276;
 			case -1993145727:
 				return 15283;
-			case -1992863256:
+			case joaat("u_m_m_rhdgenstoreowner_02"):
 				return 15895;
 			case -1992397275:
 				return 14893;
@@ -32317,7 +32317,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7775;
 			case -1991169856:
 				return 6128;
-			case -1990962020:
+			case joaat("g_m_m_unicriminals_02"):
 				return 15031;
 			case -1990559777:
 				return 3230;
@@ -32327,11 +32327,11 @@ int func_1165(int iParam0, int iParam1)
 				return 4060;
 			case -1988871699:
 				return 13466;
-			case -1988859073:
+			case joaat("p_studiocamera01x"):
 				return 4372;
 			case -1988670793:
 				return 4192;
-			case -1988548788:
+			case joaat("breach_cannon"):
 				return 14118;
 			case -1988282150:
 				return 11403;
@@ -32347,7 +32347,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12032;
 			case -1986255105:
 				return 8831;
-			case -1986030111:
+			case joaat("p_brokenbeerbottle01x"):
 				return 2946;
 			case -1986012503:
 				return 6190;
@@ -32357,7 +32357,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4748;
 			case -1985144596:
 				return 13733;
-			case -1984279062:
+			case joaat("p_cs_saddle02x"):
 				return 10559;
 			case -1984214316:
 				return 7730;
@@ -32387,7 +32387,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12336;
 			case -1982021427:
 				return 8291;
-			case -1981561472:
+			case joaat("a_c_fishrockbass_01_ms"):
 				return 14294;
 			case -1981432950:
 				return 11685;
@@ -32397,7 +32397,7 @@ int func_1165(int iParam0, int iParam1)
 				return 169;
 			case -1980241753:
 				return 5833;
-			case -1980150291:
+			case joaat("cs_princessisabeau"):
 				return 14950;
 			case -1980004848:
 				return 15664;
@@ -32415,11 +32415,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11990;
 			case -1978562698:
 				return 15309;
-			case -1977628089:
+			case joaat("cs_leviticuscornwall"):
 				return 14860;
 			case -1977089285:
 				return 13828;
-			case -1977027807:
+			case joaat("p_rake03x"):
 				return 6460;
 			case -1976894605:
 				return 11901;
@@ -32453,7 +32453,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7522;
 			case -1971803813:
 				return 11540;
-			case -1971689092:
+			case joaat("p_bottlejd01x"):
 				return 2933;
 			case -1971476518:
 				return 10041;
@@ -32465,7 +32465,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4075;
 			case -1970720864:
 				return 12654;
-			case -1970576549:
+			case joaat("p_dinnerplate01x"):
 				return 3532;
 			case -1970486567:
 				return 11755;
@@ -32483,7 +32483,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10469;
 			case -1968765864:
 				return 5502;
-			case -1968186693:
+			case joaat("p_cs_check01x"):
 				return 10079;
 			case -1968152171:
 				return 2918;
@@ -32503,7 +32503,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4276;
 			case -1966347137:
 				return 10419;
-			case -1966295439:
+			case joaat("cs_didsbury"):
 				return 14773;
 			case -1966008089:
 				return 13778;
@@ -32519,7 +32519,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1743;
 			case -1963971359:
 				return 148;
-			case -1963605336:
+			case joaat("a_c_buck_01"):
 				return 14235;
 			case -1963501782:
 				return 8892;
@@ -32527,7 +32527,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13891;
 			case -1963397600:
 				return 14308;
-			case -1963197288:
+			case joaat("p_clock06x"):
 				return 3947;
 			case -1963137227:
 				return 5270;
@@ -32537,7 +32537,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7698;
 			case -1962974974:
 				return 13469;
-			case -1962927872:
+			case joaat("w_melee_hatchet04"):
 				return 18;
 			case -1962703473:
 				return 5384;
@@ -32589,7 +32589,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6783;
 			case -1957343756:
 				return 68;
-			case -1957055091:
+			case joaat("p_door_val_genstore"):
 				return 2552;
 			case -1956926824:
 				return 5947;
@@ -32597,7 +32597,7 @@ int func_1165(int iParam0, int iParam1)
 				return 629;
 			case -1956658996:
 				return 5614;
-			case -1956230403:
+			case joaat("p_cratetnt02x"):
 				return 899;
 			case -1956219852:
 				return 13130;
@@ -32649,7 +32649,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1088;
 			case -1947819598:
 				return 8503;
-			case -1947027049:
+			case joaat("p_journal_open01x"):
 				return 5284;
 			case -1946673806:
 				return 14898;
@@ -32657,7 +32657,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1482;
 			case -1946346480:
 				return 16019;
-			case -1946016570:
+			case joaat("caboose01x"):
 				return 14122;
 			case -1945741966:
 				return 6768;
@@ -32667,11 +32667,11 @@ int func_1165(int iParam0, int iParam1)
 				return 1354;
 			case -1945282982:
 				return 4618;
-			case -1945229292:
+			case joaat("p_table42_cs"):
 				return 6325;
 			case -1944784826:
 				return 11373;
-			case -1944656721:
+			case joaat("cs_watson_02"):
 				return 15017;
 			case -1944314851:
 				return 4392;
@@ -32685,7 +32685,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8705;
 			case -1943110592:
 				return 5809;
-			case -1943094004:
+			case joaat("w_repeater_carbine01"):
 				return 172;
 			case -1942931892:
 				return 9253;
@@ -32725,7 +32725,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2477;
 			case -1938939795:
 				return 7220;
-			case -1938511850:
+			case joaat("a_m_o_sdupperclass_01"):
 				return 14676;
 			case -1938424671:
 				return 274;
@@ -32745,9 +32745,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11152;
 			case -1937739529:
 				return 5917;
-			case -1937484496:
+			case joaat("p_stool02x"):
 				return 5681;
-			case -1937436820:
+			case joaat("a_m_o_waptownfolk_01"):
 				return 14677;
 			case -1937413405:
 				return 7877;
@@ -32765,7 +32765,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3884;
 			case -1935734563:
 				return 6740;
-			case -1935733155:
+			case joaat("u_m_m_announcer_01"):
 				return 15786;
 			case -1935140274:
 				return 989;
@@ -32817,7 +32817,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11595;
 			case -1926499370:
 				return 8373;
-			case -1925758912:
+			case joaat("cs_featherstonchambers"):
 				return 14801;
 			case -1924582129:
 				return 4955;
@@ -32835,7 +32835,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4939;
 			case -1922957563:
 				return 1446;
-			case -1922688829:
+			case joaat("cs_featsofstrength"):
 				return 14802;
 			case -1922626601:
 				return 11333;
@@ -32847,7 +32847,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3073;
 			case -1921184849:
 				return 10587;
-			case -1920451728:
+			case joaat("cs_fussar"):
 				return 14812;
 			case -1920359424:
 				return 7087;
@@ -32861,13 +32861,13 @@ int func_1165(int iParam0, int iParam1)
 				return 3303;
 			case -1919260312:
 				return 2078;
-			case -1919231504:
+			case joaat("p_bottlemedicine01x"):
 				return 3014;
 			case -1918701339:
 				return 5462;
 			case -1918684699:
 				return 610;
-			case -1918128574:
+			case joaat("a_m_m_gamhighsociety_01"):
 				return 14594;
 			case -1917997120:
 				return 12658;
@@ -32877,9 +32877,9 @@ int func_1165(int iParam0, int iParam1)
 				return 5000;
 			case -1916980755:
 				return 11609;
-			case -1916543705:
+			case joaat("a_f_m_sdobesewomen_01"):
 				return 14533;
-			case -1916489787:
+			case joaat("p_washboard01x"):
 				return 4112;
 			case -1916425679:
 				return 7556;
@@ -32895,7 +32895,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2970;
 			case -1914904675:
 				return 13009;
-			case -1914893189:
+			case joaat("p_camp_cup_01x"):
 				return 1108;
 			case -1914795492:
 				return 11487;
@@ -32923,11 +32923,11 @@ int func_1165(int iParam0, int iParam1)
 				return 8346;
 			case -1911845570:
 				return 12405;
-			case -1910990966:
+			case joaat("u_m_m_bht_skinnersearch"):
 				return 15812;
 			case -1910887462:
 				return 8137;
-			case -1910795227:
+			case joaat("a_c_songbird_01"):
 				return 14480;
 			case -1910716235:
 				return 9446;
@@ -32941,7 +32941,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1436;
 			case -1909760389:
 				return 364;
-			case -1909449322:
+			case joaat("a_f_m_valprostitute_01"):
 				return 14542;
 			case -1909346580:
 				return 12717;
@@ -32957,7 +32957,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13681;
 			case -1907576565:
 				return 12910;
-			case -1907373307:
+			case joaat("u_m_m_armundertaker_01"):
 				return 15790;
 			case -1907186363:
 				return 11366;
@@ -32981,7 +32981,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3031;
 			case -1904849241:
 				return 15889;
-			case -1904821831:
+			case joaat("a_m_y_asbminer_01"):
 				return 14678;
 			case -1904645335:
 				return 6709;
@@ -32989,7 +32989,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7511;
 			case -1904245695:
 				return 2993;
-			case -1904097193:
+			case joaat("u_m_o_blwbartender_01"):
 				return 15977;
 			case -1904032696:
 				return 11342;
@@ -33017,9 +33017,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13081;
 			case -1901995616:
 				return 10970;
-			case -1901975761:
+			case joaat("p_dynamite01x"):
 				return 910;
-			case -1901892087:
+			case joaat("cs_bandpianist"):
 				return 14719;
 			case -1901795201:
 				return 3288;
@@ -33033,9 +33033,9 @@ int func_1165(int iParam0, int iParam1)
 				return 6878;
 			case -1900258608:
 				return 681;
-			case -1899986079:
+			case joaat("p_moneybag04x"):
 				return 6541;
-			case -1899748000:
+			case joaat("p_door45x"):
 				return 2600;
 			case -1899425109:
 				return 12493;
@@ -33057,7 +33057,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14374;
 			case -1896689921:
 				return 9243;
-			case -1896437095:
+			case joaat("p_doorsgl02x"):
 				return 2692;
 			case -1895580159:
 				return 15537;
@@ -33077,7 +33077,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13314;
 			case -1893033836:
 				return 13085;
-			case -1893027926:
+			case joaat("p_wedgestick02x"):
 				return 4966;
 			case -1892957745:
 				return 2154;
@@ -33089,7 +33089,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15244;
 			case -1892294202:
 				return 10842;
-			case -1892280447:
+			case joaat("a_c_alligator_01"):
 				return 14222;
 			case -1892023465:
 				return 264;
@@ -33099,15 +33099,15 @@ int func_1165(int iParam0, int iParam1)
 				return 15092;
 			case -1891354733:
 				return 3374;
-			case -1891315382:
+			case joaat("w_melee_tomahawk02"):
 				return 79;
-			case -1891246613:
+			case joaat("s_m_m_ambientblwpolice_01"):
 				return 15704;
 			case -1891242011:
 				return 9078;
 			case -1890543740:
 				return 5746;
-			case -1890279610:
+			case joaat("u_f_m_valtownfolk_01"):
 				return 15779;
 			case -1890074582:
 				return 6719;
@@ -33123,7 +33123,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1608;
 			case -1889242759:
 				return 13677;
-			case -1889138987:
+			case joaat("u_m_m_islbum_01"):
 				return 15847;
 			case -1889013498:
 				return 9847;
@@ -33173,19 +33173,19 @@ int func_1165(int iParam0, int iParam1)
 				return 1553;
 			case -1884742536:
 				return 12389;
-			case -1884490195:
+			case joaat("a_c_fishsmallmouthbass_01_lg"):
 				return 14299;
 			case -1884421418:
 				return 6650;
 			case -1884417351:
 				return 7867;
-			case -1884146832:
+			case joaat("cs_valsheriff"):
 				return 15011;
-			case -1883578190:
+			case joaat("p_beermugglass01x"):
 				return 2894;
-			case -1883388638:
+			case joaat("u_m_m_nbxgraverobber_03"):
 				return 15869;
-			case -1882720035:
+			case joaat("a_m_m_sdserversformal_01"):
 				return 14645;
 			case -1882084875:
 				return 991;
@@ -33253,11 +33253,11 @@ int func_1165(int iParam0, int iParam1)
 				return 9260;
 			case -1874474629:
 				return 9740;
-			case -1874205952:
+			case joaat("p_knife03x"):
 				return 4496;
 			case -1874105663:
 				return 13248;
-			case -1874017143:
+			case joaat("u_m_o_valbartender_01"):
 				return 15987;
 			case -1874003851:
 				return 5464;
@@ -33311,13 +33311,13 @@ int func_1165(int iParam0, int iParam1)
 				return 15526;
 			case -1866846861:
 				return 15530;
-			case -1866470762:
+			case joaat("p_doorrhosheriff02x"):
 				return 2685;
 			case -1866332367:
 				return 12611;
-			case -1866132622:
+			case joaat("wagon03x"):
 				return 14209;
-			case -1865855539:
+			case joaat("cs_bronte"):
 				return 14734;
 			case -1865144946:
 				return 431;
@@ -33341,7 +33341,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2878;
 			case -1862019237:
 				return 8248;
-			case -1861840953:
+			case joaat("buggy03"):
 				return 14121;
 			case -1861723125:
 				return 12879;
@@ -33351,7 +33351,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5455;
 			case -1861619846:
 				return 7660;
-			case -1861321094:
+			case joaat("p_cs_rufusblanket01x"):
 				return 10349;
 			case -1860936962:
 				return 1352;
@@ -33369,7 +33369,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15154;
 			case -1858597865:
 				return 7329;
-			case -1858112592:
+			case joaat("u_m_m_chelonianjumper_02"):
 				return 15821;
 			case -1858047034:
 				return 2608;
@@ -33377,7 +33377,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9834;
 			case -1857301932:
 				return 9002;
-			case -1857001286:
+			case joaat("p_cs_bandana01x"):
 				return 10016;
 			case -1856735039:
 				return 11617;
@@ -33391,9 +33391,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11275;
 			case -1855476572:
 				return 13925;
-			case -1855407989:
+			case joaat("u_m_m_tumbutcher_01"):
 				return 15940;
-			case -1855018526:
+			case joaat("p_cs_sacklarge02x"):
 				return 10355;
 			case -1854657542:
 				return 10947;
@@ -33401,7 +33401,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6422;
 			case -1854163650:
 				return 6549;
-			case -1854059305:
+			case joaat("a_c_iguana_01"):
 				return 14436;
 			case -1853888886:
 				return 13263;
@@ -33443,13 +33443,13 @@ int func_1165(int iParam0, int iParam1)
 				return 3471;
 			case -1849997017:
 				return 5663;
-			case -1849883922:
+			case joaat("u_m_m_lnsworker_04"):
 				return 15855;
 			case -1849717466:
 				return 12345;
 			case -1849488959:
 				return 12483;
-			case -1849475873:
+			case joaat("p_cs_grapplehook01x"):
 				return 10193;
 			case -1849233733:
 				return 7808;
@@ -33495,9 +33495,9 @@ int func_1165(int iParam0, int iParam1)
 				return 979;
 			case -1843616050:
 				return 11530;
-			case -1843549794:
+			case joaat("a_m_m_rkrfancydrivers_01"):
 				return 14631;
-			case -1842133876:
+			case joaat("a_m_m_jamesonguard_01"):
 				return 14606;
 			case -1842063169:
 				return 4727;
@@ -33543,15 +33543,15 @@ int func_1165(int iParam0, int iParam1)
 				return 4061;
 			case -1836129271:
 				return 6195;
-			case -1835684027:
+			case joaat("s_f_m_bwmworker_01"):
 				return 15701;
 			case -1835394705:
 				return 6789;
-			case -1835251821:
+			case joaat("cs_escapeartistassistant"):
 				return 14790;
 			case -1834995170:
 				return 5128;
-			case -1834967379:
+			case joaat("p_pencil02x"):
 				return 5319;
 			case -1834544684:
 				return 747;
@@ -33573,7 +33573,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8328;
 			case -1832923692:
 				return 3557;
-			case -1832370395:
+			case joaat("p_cart01x"):
 				return 6556;
 			case -1831848901:
 				return 13494;
@@ -33595,7 +33595,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1721;
 			case -1828541993:
 				return 725;
-			case -1828437268:
+			case joaat("northpassenger03x"):
 				return 14164;
 			case -1828355504:
 				return 8965;
@@ -33609,7 +33609,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9802;
 			case -1827263202:
 				return 5869;
-			case -1827121226:
+			case joaat("p_wheelbarrow01x"):
 				return 6503;
 			case -1826684443:
 				return 14883;
@@ -33619,7 +33619,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5794;
 			case -1826340919:
 				return 1558;
-			case -1826304690:
+			case joaat("coach5"):
 				return 14139;
 			case -1825727975:
 				return 14098;
@@ -33661,7 +33661,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7611;
 			case -1820135450:
 				return 8144;
-			case -1820002752:
+			case joaat("a_m_m_bivworker_01"):
 				return 14569;
 			case -1819855449:
 				return 11545;
@@ -33671,13 +33671,13 @@ int func_1165(int iParam0, int iParam1)
 				return 7295;
 			case -1819385527:
 				return 10934;
-			case -1819321039:
+			case joaat("p_door13x"):
 				return 2580;
 			case -1819110721:
 				return 1325;
 			case -1819094497:
 				return 9534;
-			case -1818007055:
+			case joaat("g_m_m_unicornwallgoons_01"):
 				return 15029;
 			case -1817648197:
 				return 1993;
@@ -33689,7 +33689,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10172;
 			case -1817287669:
 				return 471;
-			case -1817144219:
+			case joaat("u_m_m_valsheriff_01"):
 				return 15966;
 			case -1816987565:
 				return 16043;
@@ -33697,9 +33697,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12906;
 			case -1816893176:
 				return 10330;
-			case -1816726898:
+			case joaat("p_phonograph01x"):
 				return 4363;
-			case -1816535547:
+			case joaat("p_crateconf01x"):
 				return 5978;
 			case -1816049069:
 				return 9757;
@@ -33719,7 +33719,7 @@ int func_1165(int iParam0, int iParam1)
 				return 16047;
 			case -1814382904:
 				return 940;
-			case -1814268450:
+			case joaat("p_ndb_hotelplank01x"):
 				return 13417;
 			case -1813965006:
 				return 9340;
@@ -33729,7 +33729,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10637;
 			case -1812204883:
 				return 10123;
-			case -1811911736:
+			case joaat("p_cs_seanhat01x01"):
 				return 10363;
 			case -1811865569:
 				return 1807;
@@ -33743,7 +33743,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3943;
 			case -1809633094:
 				return 1859;
-			case -1809617345:
+			case joaat("p_cs_flourbag01x"):
 				return 10149;
 			case -1809586742:
 				return 6653;
@@ -33835,9 +33835,9 @@ int func_1165(int iParam0, int iParam1)
 				return 3679;
 			case -1797937173:
 				return 13528;
-			case -1797625440:
+			case joaat("a_c_armadillo_01"):
 				return 14225;
-			case -1797450568:
+			case joaat("a_c_parrot_01"):
 				return 14447;
 			case -1797228166:
 				return 9509;
@@ -33847,7 +33847,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8725;
 			case -1796934350:
 				return 136;
-			case -1796561521:
+			case joaat("a_m_m_rhdforeman_01"):
 				return 14625;
 			case -1796254641:
 				return 7940;
@@ -33859,7 +33859,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7926;
 			case -1794382149:
 				return 2732;
-			case -1794350678:
+			case joaat("a_m_m_lowertrainpassengers_01"):
 				return 14610;
 			case -1794184016:
 				return 4118;
@@ -33871,7 +33871,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7835;
 			case -1792446389:
 				return 7873;
-			case -1792436619:
+			case joaat("p_manaquincorset01x"):
 				return 6184;
 			case -1792387463:
 				return 13479;
@@ -33887,17 +33887,17 @@ int func_1165(int iParam0, int iParam1)
 				return 7241;
 			case -1790609479:
 				return 3905;
-			case -1790499186:
+			case joaat("a_c_snakeredboa_01"):
 				return 14475;
-			case -1790475484:
+			case joaat("p_bucket01x"):
 				return 5936;
 			case -1789936993:
 				return 13419;
 			case -1789926758:
 				return 9244;
-			case -1789924154:
+			case joaat("p_cs_pillow01x"):
 				return 10296;
-			case -1789856687:
+			case joaat("a_m_m_valtownfolk_02"):
 				return 14666;
 			case -1789556462:
 				return 2006;
@@ -33923,7 +33923,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13804;
 			case -1787058236:
 				return 3536;
-			case -1786946391:
+			case joaat("p_cs_scroll01x"):
 				return 10362;
 			case -1786834300:
 				return 12710;
@@ -34021,7 +34021,7 @@ int func_1165(int iParam0, int iParam1)
 				return 16092;
 			case -1774943756:
 				return 13088;
-			case -1774921803:
+			case joaat("cs_francis_sinclair"):
 				return 14809;
 			case -1774647181:
 				return 15499;
@@ -34043,7 +34043,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12202;
 			case -1773186742:
 				return 13523;
-			case -1772823089:
+			case joaat("cs_sworddancer"):
 				return 14988;
 			case -1772698459:
 				return 9404;
@@ -34051,7 +34051,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14112;
 			case -1772268301:
 				return 12889;
-			case -1772051411:
+			case joaat("cs_eagleflies"):
 				return 14784;
 			case -1772037579:
 				return 8741;
@@ -34067,13 +34067,13 @@ int func_1165(int iParam0, int iParam1)
 				return 11522;
 			case -1770288110:
 				return 5928;
-			case -1770202646:
+			case joaat("p_bat_lumber04cx"):
 				return 4910;
 			case -1769778731:
 				return 15419;
 			case -1769578769:
 				return 1029;
-			case -1769295812:
+			case joaat("cs_garethbraithwaite"):
 				return 14813;
 			case -1768831124:
 				return 11891;
@@ -34085,7 +34085,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8795;
 			case -1767336308:
 				return 15359;
-			case -1767139687:
+			case joaat("s_m_m_valbankguards_01"):
 				return 15754;
 			case -1767078210:
 				return 12321;
@@ -34093,17 +34093,17 @@ int func_1165(int iParam0, int iParam1)
 				return 12471;
 			case -1766908830:
 				return 3217;
-			case -1766904606:
+			case joaat("p_cs_prostheticleg_01bx"):
 				return 10314;
 			case -1766836717:
 				return 2844;
-			case -1766535683:
+			case joaat("s_m_m_blwdealer_01"):
 				return 15713;
-			case -1766169451:
+			case joaat("p_inventorcage_door01x"):
 				return 2864;
 			case -1765791087:
 				return 4397;
-			case -1765531164:
+			case joaat("cs_creoleguy"):
 				return 14768;
 			case -1765306495:
 				return 10563;
@@ -34133,7 +34133,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8285;
 			case -1763136482:
 				return 3574;
-			case -1763055991:
+			case joaat("a_c_crawfish_01"):
 				return 14252;
 			case -1762663701:
 				return 1262;
@@ -34149,7 +34149,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13043;
 			case -1761024893:
 				return 2431;
-			case -1760684159:
+			case joaat("a_c_horse_gang_bill"):
 				return 14355;
 			case -1760550202:
 				return 7778;
@@ -34163,15 +34163,15 @@ int func_1165(int iParam0, int iParam1)
 				return 14025;
 			case -1759362478:
 				return 589;
-			case -1759038075:
+			case joaat("a_m_m_griroughtravellers_01"):
 				return 14597;
 			case -1758978731:
 				return 86;
-			case -1758388913:
+			case joaat("p_cs_carrotslice01x"):
 				return 10064;
 			case -1758147904:
 				return 6249;
-			case -1758092337:
+			case joaat("wagon05x"):
 				return 14211;
 			case -1757985837:
 				return 10102;
@@ -34205,7 +34205,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9708;
 			case -1753618264:
 				return 13188;
-			case -1753201617:
+			case joaat("supplywagon"):
 				return 14202;
 			case -1753113092:
 				return 5431;
@@ -34215,7 +34215,7 @@ int func_1165(int iParam0, int iParam1)
 				return 880;
 			case -1752382390:
 				return 8514;
-			case -1751819926:
+			case joaat("p_gate_cattle01b"):
 				return 2707;
 			case -1751593807:
 				return 10141;
@@ -34239,7 +34239,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9245;
 			case -1749031923:
 				return 6245;
-			case -1748658353:
+			case joaat("p_glenswhisky01x"):
 				return 2974;
 			case -1748497526:
 				return 9247;
@@ -34267,7 +34267,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5498;
 			case -1745531600:
 				return 6547;
-			case -1745321414:
+			case joaat("cs_leighgray"):
 				return 14854;
 			case -1744986090:
 				return 7803;
@@ -34285,13 +34285,13 @@ int func_1165(int iParam0, int iParam1)
 				return 4076;
 			case -1742102559:
 				return 10998;
-			case -1740828633:
+			case joaat("p_windsorchair01x"):
 				return 5702;
 			case -1740286366:
 				return 4571;
 			case -1739507263:
 				return 13277;
-			case -1739261178:
+			case joaat("a_f_m_armtownfolk_01"):
 				return 14496;
 			case -1739257067:
 				return 12892;
@@ -34315,7 +34315,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1684;
 			case -1736357270:
 				return 4696;
-			case -1736327942:
+			case joaat("a_m_m_nbxlaborers_01"):
 				return 14617;
 			case -1736325116:
 				return 146;
@@ -34339,11 +34339,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11950;
 			case -1734626244:
 				return 9655;
-			case -1734467158:
+			case joaat("p_mannequinhead01x"):
 				return 6185;
-			case -1734239985:
+			case joaat("p_chairvictorian01x"):
 				return 5644;
-			case -1734227960:
+			case joaat("a_f_m_lowersdtownfolk_01"):
 				return 14513;
 			case -1733889275:
 				return 4484;
@@ -34357,7 +34357,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11562;
 			case -1733269147:
 				return 4927;
-			case -1732870246:
+			case joaat("p_barrelhalf05x"):
 				return 6081;
 			case -1732478178:
 				return 12886;
@@ -34411,11 +34411,11 @@ int func_1165(int iParam0, int iParam1)
 				return 1533;
 			case -1724719987:
 				return 9795;
-			case -1724440025:
+			case joaat("u_f_m_rhdnudewoman_01"):
 				return 15773;
 			case -1724261508:
 				return 8011;
-			case -1724049248:
+			case joaat("prop_recycle_light"):
 				return 4831;
 			case -1724023040:
 				return 8897;
@@ -34429,11 +34429,11 @@ int func_1165(int iParam0, int iParam1)
 				return 13734;
 			case -1722641930:
 				return 9617;
-			case -1722482035:
+			case joaat("u_m_m_executioner_01"):
 				return 15835;
-			case -1722133234:
+			case joaat("p_kettle03x_noboil"):
 				return 4492;
-			case -1721993797:
+			case joaat("p_camerabox01x"):
 				return 4337;
 			case -1721681244:
 				return 2438;
@@ -34451,9 +34451,9 @@ int func_1165(int iParam0, int iParam1)
 				return 9889;
 			case -1718655749:
 				return 6386;
-			case -1718451329:
+			case joaat("u_m_y_czphomesteadson_04"):
 				return 15993;
-			case -1718100160:
+			case joaat("a_c_horse_gang_sean"):
 				return 14368;
 			case -1717994763:
 				return 1760;
@@ -34481,7 +34481,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9229;
 			case -1714278590:
 				return 3474;
-			case -1714108174:
+			case joaat("cs_strawberryoutlaw_02"):
 				return 14980;
 			case -1713874730:
 				return 2416;
@@ -34499,7 +34499,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1130;
 			case -1710937075:
 				return 13964;
-			case -1710894930:
+			case joaat("p_cs_catfish_whole01x"):
 				return 10069;
 			case -1710863708:
 				return 9780;
@@ -34507,7 +34507,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7383;
 			case -1710660654:
 				return 2407;
-			case -1710614406:
+			case joaat("northflatcar01x"):
 				return 14162;
 			case -1709854421:
 				return 6436;
@@ -34521,7 +34521,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15085;
 			case -1708329033:
 				return 13741;
-			case -1708097161:
+			case joaat("logwagon"):
 				return 14156;
 			case -1707983834:
 				return 1203;
@@ -34533,7 +34533,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14911;
 			case -1707588882:
 				return 70;
-			case -1707202053:
+			case joaat("cs_karen"):
 				return 14850;
 			case -1706567535:
 				return 7549;
@@ -34575,7 +34575,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3834;
 			case -1700886102:
 				return 4167;
-			case -1700686082:
+			case joaat("p_ladle02x"):
 				return 4502;
 			case -1700626658:
 				return 7574;
@@ -34601,7 +34601,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12598;
 			case -1699135322:
 				return 8326;
-			case -1698780291:
+			case joaat("p_cs_ledger01x"):
 				return 12182;
 			case -1698602905:
 				return 5903;
@@ -34633,11 +34633,11 @@ int func_1165(int iParam0, int iParam1)
 				return 189;
 			case -1694632979:
 				return 6339;
-			case -1694480560:
+			case joaat("u_m_m_htlrancherbounty_01"):
 				return 15846;
 			case -1694446612:
 				return 2062;
-			case -1694359093:
+			case joaat("p_ashtray01x"):
 				return 3927;
 			case -1694325432:
 				return 6269;
@@ -34661,13 +34661,13 @@ int func_1165(int iParam0, int iParam1)
 				return 3380;
 			case -1691025263:
 				return 8238;
-			case -1690877284:
+			case joaat("cs_marybeth"):
 				return 14868;
 			case -1690778521:
 				return 4553;
 			case -1690613758:
 				return 2723;
-			case -1690413797:
+			case joaat("u_m_m_valgenstoreowner_01"):
 				return 15960;
 			case -1689976376:
 				return 3993;
@@ -34683,9 +34683,9 @@ int func_1165(int iParam0, int iParam1)
 				return 4072;
 			case -1689564927:
 				return 12448;
-			case -1688959031:
+			case joaat("cs_gloria"):
 				return 14823;
-			case -1688693650:
+			case joaat("stagecoach004x"):
 				return 14198;
 			case -1688523402:
 				return 1652;
@@ -34707,11 +34707,11 @@ int func_1165(int iParam0, int iParam1)
 				return 619;
 			case -1684433800:
 				return 6875;
-			case -1684354568:
+			case joaat("p_door_val_jail_bent01x"):
 				return 2556;
 			case -1684227788:
 				return 2410;
-			case -1684080969:
+			case joaat("u_m_m_rhdgenstoreowner_01"):
 				return 15894;
 			case -1683823071:
 				return 15276;
@@ -34719,13 +34719,13 @@ int func_1165(int iParam0, int iParam1)
 				return 7322;
 			case -1683446263:
 				return 4883;
-			case -1683311290:
+			case joaat("cs_moira"):
 				return 14879;
 			case -1682627684:
 				return 11434;
 			case -1682522975:
 				return 12854;
-			case -1682372069:
+			case joaat("p_cs_suitcase04x"):
 				return 10401;
 			case -1681427599:
 				return 6960;
@@ -34735,11 +34735,11 @@ int func_1165(int iParam0, int iParam1)
 				return 15282;
 			case -1681089439:
 				return 14052;
-			case -1680931998:
+			case joaat("s_m_m_valdealer_01"):
 				return 15756;
 			case -1680575712:
 				return 4619;
-			case -1679658797:
+			case joaat("a_c_horse_americanpaint_tobiano"):
 				return 14311;
 			case -1679312974:
 				return 3718;
@@ -34751,7 +34751,7 @@ int func_1165(int iParam0, int iParam1)
 				return 393;
 			case -1677978279:
 				return 3306;
-			case -1677663584:
+			case joaat("a_m_m_asbdeputyresident_01"):
 				return 14559;
 			case -1677608920:
 				return 16120;
@@ -34763,11 +34763,11 @@ int func_1165(int iParam0, int iParam1)
 				return 10695;
 			case -1676985516:
 				return 4822;
-			case -1676898583:
+			case joaat("cs_warvet"):
 				return 15015;
 			case -1676771109:
 				return 6153;
-			case -1676410507:
+			case joaat("p_doorstrawberry01x"):
 				return 2847;
 			case -1676180519:
 				return 2338;
@@ -34779,7 +34779,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4100;
 			case -1674737491:
 				return 7097;
-			case -1674507826:
+			case joaat("p_bottle004x"):
 				return 2898;
 			case -1674181645:
 				return 7847;
@@ -34793,7 +34793,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12964;
 			case -1671557283:
 				return 8138;
-			case -1671495534:
+			case joaat("p_cigarette01x"):
 				return 3050;
 			case -1670929793:
 				return 5470;
@@ -34801,7 +34801,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6194;
 			case -1669881355:
 				return 10876;
-			case -1669539097:
+			case joaat("p_door_clemens01"):
 				return 2517;
 			case -1668973361:
 				return 7301;
@@ -34835,7 +34835,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1158;
 			case -1666035165:
 				return 5726;
-			case -1665680273:
+			case joaat("w_melee_hatchet05"):
 				return 20;
 			case -1665668665:
 				return 10791;
@@ -34927,7 +34927,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5231;
 			case -1656875117:
 				return 12742;
-			case -1656764378:
+			case joaat("p_door_nbxbank02x_l"):
 				return 2803;
 			case -1656264029:
 				return 11717;
@@ -34997,19 +34997,19 @@ int func_1165(int iParam0, int iParam1)
 				return 5068;
 			case -1646777083:
 				return 15052;
-			case -1646753329:
+			case joaat("p_apple01x"):
 				return 3405;
 			case -1646591912:
 				return 10554;
 			case -1646403507:
 				return 1824;
-			case -1646366239:
+			case joaat("a_m_m_grisurvivalist_01"):
 				return 14598;
-			case -1646129412:
+			case joaat("p_cs_cratetnt02x"):
 				return 10094;
 			case -1646093491:
 				return 1357;
-			case -1646049752:
+			case joaat("cs_jockgray"):
 				return 14842;
 			case -1645854530:
 				return 7561;
@@ -35031,7 +35031,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15228;
 			case -1643922980:
 				return 9975;
-			case -1643891339:
+			case joaat("p_letterbundle_01x"):
 				return 5290;
 			case -1643859748:
 				return 5093;
@@ -35043,9 +35043,9 @@ int func_1165(int iParam0, int iParam1)
 				return 10192;
 			case -1643205004:
 				return 5217;
-			case -1642485146:
+			case joaat("a_c_horse_gang_john"):
 				return 14361;
-			case -1642483742:
+			case joaat("s_m_m_cghworker_01"):
 				return 15715;
 			case -1642475007:
 				return 1852;
@@ -35069,7 +35069,7 @@ int func_1165(int iParam0, int iParam1)
 				return 981;
 			case -1638927386:
 				return 12524;
-			case -1638806549:
+			case joaat("a_m_m_strlaborer_01"):
 				return 14652;
 			case -1638520782:
 				return 1597;
@@ -35081,11 +35081,11 @@ int func_1165(int iParam0, int iParam1)
 				return 1881;
 			case -1638171330:
 				return 3840;
-			case -1638036806:
+			case joaat("p_plate17x"):
 				return 4529;
 			case -1637444931:
 				return 1286;
-			case -1637302654:
+			case joaat("p_teacup"):
 				return 4574;
 			case -1636636598:
 				return 13472;
@@ -35107,7 +35107,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9675;
 			case -1632741602:
 				return 12815;
-			case -1632694866:
+			case joaat("cs_davidgeddes"):
 				return 14771;
 			case -1632232673:
 				return 7266;
@@ -35131,19 +35131,19 @@ int func_1165(int iParam0, int iParam1)
 				return 7005;
 			case -1629841041:
 				return 5186;
-			case -1629700669:
+			case joaat("p_doornbfrench2rx"):
 				return 2678;
-			case -1629501717:
+			case joaat("cs_guidomartelli"):
 				return 14825;
-			case -1629442620:
+			case joaat("p_cs_flowernecklace"):
 				return 10150;
 			case -1628503605:
 				return 4010;
-			case -1628389425:
+			case joaat("p_cs_horseswitch01x"):
 				return 10210;
 			case -1627986005:
 				return 11620;
-			case -1627910973:
+			case joaat("a_f_m_bivfancytravellers_01"):
 				return 14499;
 			case -1627688652:
 				return 11341;
@@ -35171,7 +35171,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7468;
 			case -1624034481:
 				return 11347;
-			case -1623912517:
+			case joaat("p_crate02x"):
 				return 6093;
 			case -1622887687:
 				return 13967;
@@ -35243,13 +35243,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9702;
 			case -1614880863:
 				return 8301;
-			case -1614719852:
+			case joaat("cs_duncangeddes"):
 				return 14781;
 			case -1614423109:
 				return 7015;
 			case -1613469008:
 				return 2325;
-			case -1613317544:
+			case joaat("rowboat"):
 				return 14187;
 			case -1612530110:
 				return 4398;
@@ -35295,19 +35295,19 @@ int func_1165(int iParam0, int iParam1)
 				return 3558;
 			case -1608977942:
 				return 9282;
-			case -1608851079:
+			case joaat("p_keys01x"):
 				return 6538;
-			case -1608216788:
+			case joaat("p_loghalf02x"):
 				return 4924;
 			case -1608070942:
 				return 4120;
 			case -1607849578:
 				return 1583;
-			case -1607722277:
+			case joaat("cs_dusterinformant_01"):
 				return 14782;
 			case -1607512515:
 				return 5771;
-			case -1607312562:
+			case joaat("u_m_o_bht_docwormwood"):
 				return 15976;
 			case -1607299360:
 				return 7234;
@@ -35335,11 +35335,11 @@ int func_1165(int iParam0, int iParam1)
 				return 6405;
 			case -1605464766:
 				return 7600;
-			case -1604317957:
+			case joaat("a_f_o_guatownfolk_01"):
 				return 14549;
 			case -1604180548:
 				return 14432;
-			case -1603909164:
+			case joaat("cs_pinkertongoon"):
 				return 14946;
 			case -1603376982:
 				return 10829;
@@ -35357,7 +35357,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15467;
 			case -1600351573:
 				return 7279;
-			case -1600328361:
+			case joaat("p_cards02x"):
 				return 12361;
 			case -1599683008:
 				return 14417;
@@ -35367,7 +35367,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11363;
 			case -1599024562:
 				return 12863;
-			case -1598866821:
+			case joaat("a_c_alligator_02"):
 				return 14223;
 			case -1598799228:
 				return 9366;
@@ -35393,15 +35393,15 @@ int func_1165(int iParam0, int iParam1)
 				return 7684;
 			case -1594971537:
 				return 12121;
-			case -1594908333:
+			case joaat("u_m_m_lnsworker_03"):
 				return 15854;
-			case -1594634038:
+			case joaat("p_cs_rag01x"):
 				return 10326;
 			case -1594180188:
 				return 7419;
 			case -1594072227:
 				return 8055;
-			case -1593967299:
+			case joaat("p_cs_stackscarlet01x"):
 				return 10564;
 			case -1593543637:
 				return 11216;
@@ -35453,7 +35453,7 @@ int func_1165(int iParam0, int iParam1)
 				return 595;
 			case -1588092656:
 				return 8972;
-			case -1588007813:
+			case joaat("p_crate14x"):
 				return 5961;
 			case -1587988328:
 				return 12364;
@@ -35483,11 +35483,11 @@ int func_1165(int iParam0, int iParam1)
 				return 14014;
 			case -1585133721:
 				return 13134;
-			case -1584964557:
+			case joaat("a_m_m_sddockworkers_02"):
 				return 14640;
 			case -1584953082:
 				return 11887;
-			case -1584353625:
+			case joaat("p_cs_madscibook01x"):
 				return 12210;
 			case -1584104293:
 				return 5497;
@@ -35501,7 +35501,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6574;
 			case -1582786064:
 				return 15096;
-			case -1582519980:
+			case joaat("p_bombswitchopen01x"):
 				return 886;
 			case -1582293974:
 				return 6500;
@@ -35519,7 +35519,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11025;
 			case -1581621693:
 				return 13150;
-			case -1581225876:
+			case joaat("p_chair19x"):
 				return 5585;
 			case -1580139322:
 				return 10118;
@@ -35531,7 +35531,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11697;
 			case -1579200997:
 				return 12376;
-			case -1579174863:
+			case joaat("cs_mickey"):
 				return 14875;
 			case -1578461511:
 				return 4559;
@@ -35543,7 +35543,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15370;
 			case -1576823040:
 				return 344;
-			case -1576416470:
+			case joaat("u_m_m_rwfrancher_01"):
 				return 15904;
 			case -1575817843:
 				return 859;
@@ -35587,9 +35587,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13483;
 			case -1569133746:
 				return 3911;
-			case -1568967682:
+			case joaat("u_m_m_bwmstablehand_01"):
 				return 15817;
-			case -1568716381:
+			case joaat("a_c_bighornram_01"):
 				return 14231;
 			case -1568243841:
 				return 4603;
@@ -35603,7 +35603,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6065;
 			case -1566874684:
 				return 1572;
-			case -1566727213:
+			case joaat("p_cs_newspaper_01x"):
 				return 12217;
 			case -1566173441:
 				return 9042;
@@ -35613,7 +35613,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7219;
 			case -1565186108:
 				return 11967;
-			case -1564938276:
+			case joaat("u_m_m_bht_odriscollmauled"):
 				return 15805;
 			case -1564816407:
 				return 11923;
@@ -35639,7 +35639,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10611;
 			case -1561241953:
 				return 5324;
-			case -1560668379:
+			case joaat("u_m_m_chelonianjumper_01"):
 				return 15820;
 			case -1560536379:
 				return 2508;
@@ -35689,7 +35689,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8862;
 			case -1555582236:
 				return 4194;
-			case -1555385540:
+			case joaat("p_package01x"):
 				return 6206;
 			case -1555265429:
 				return 1012;
@@ -35707,7 +35707,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6551;
 			case -1554146584:
 				return 12496;
-			case -1553593715:
+			case joaat("a_c_fishmuskie_01_lg"):
 				return 14286;
 			case -1553372114:
 				return 15199;
@@ -35727,13 +35727,13 @@ int func_1165(int iParam0, int iParam1)
 				return 12358;
 			case -1551558665:
 				return 16042;
-			case -1551507001:
+			case joaat("ship_guama02"):
 				return 14190;
 			case -1551149449:
 				return 10977;
-			case -1550844791:
+			case joaat("p_teacream"):
 				return 4573;
-			case -1550768676:
+			case joaat("a_c_chipmunk_01"):
 				return 14245;
 			case -1550570938:
 				return 14055;
@@ -35751,7 +35751,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10565;
 			case -1547523931:
 				return 1404;
-			case -1547438906:
+			case joaat("a_c_horse_ardennes_bayroan"):
 				return 14333;
 			case -1547435488:
 				return 15163;
@@ -35779,7 +35779,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7635;
 			case -1544981815:
 				return 9661;
-			case -1544786211:
+			case joaat("coach6"):
 				return 14140;
 			case -1544539917:
 				return 15362;
@@ -35787,7 +35787,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5876;
 			case -1544036350:
 				return 6053;
-			case -1543503143:
+			case joaat("p_cs_bandana03x"):
 				return 10018;
 			case -1543270099:
 				return 10456;
@@ -35803,7 +35803,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10114;
 			case -1540984027:
 				return 781;
-			case -1540334204:
+			case joaat("p_lockpick01x"):
 				return 6442;
 			case -1540051628:
 				return 10284;
@@ -35823,7 +35823,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15210;
 			case -1538866445:
 				return 7648;
-			case -1537933036:
+			case joaat("p_cs_potatoslice01x"):
 				return 10310;
 			case -1537852142:
 				return 5021;
@@ -35841,7 +35841,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6490;
 			case -1536033271:
 				return 44;
-			case -1536017473:
+			case joaat("p_cs_towel02x"):
 				return 10418;
 			case -1535332955:
 				return 2211;
@@ -35851,7 +35851,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15261;
 			case -1534357861:
 				return 12732;
-			case -1533320518:
+			case joaat("cs_twinbrother_02"):
 				return 15001;
 			case -1533085786:
 				return 640;
@@ -35899,7 +35899,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10596;
 			case -1525440822:
 				return 5686;
-			case -1525270475:
+			case joaat("p_chaireagle01x"):
 				return 5626;
 			case -1525151864:
 				return 6495;
@@ -35929,13 +35929,13 @@ int func_1165(int iParam0, int iParam1)
 				return 3424;
 			case -1521274693:
 				return 1042;
-			case -1520910353:
+			case joaat("u_m_m_rkrdonkeyrider_01"):
 				return 15903;
-			case -1520417507:
+			case joaat("cs_hestonjameson"):
 				return 14831;
 			case -1520034100:
 				return 3124;
-			case -1519760323:
+			case joaat("a_m_m_deliverytravelers_warm_01"):
 				return 14585;
 			case -1519749182:
 				return 5872;
@@ -35979,7 +35979,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9940;
 			case -1516042983:
 				return 3635;
-			case -1515946863:
+			case joaat("p_teapot02"):
 				return 4579;
 			case -1515277338:
 				return 6864;
@@ -36009,7 +36009,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13284;
 			case -1512440333:
 				return 10162;
-			case -1512035821:
+			case joaat("a_m_m_asbtownfolk_01_laborer"):
 				return 14565;
 			case -1511530783:
 				return 12911;
@@ -36017,15 +36017,15 @@ int func_1165(int iParam0, int iParam1)
 				return 10200;
 			case -1511221286:
 				return 1416;
-			case -1510839859:
+			case joaat("p_chair24x"):
 				return 5591;
-			case -1510399680:
+			case joaat("u_m_m_valtownfolk_02"):
 				return 15969;
 			case -1509850735:
 				return 8419;
 			case -1509673351:
 				return 6232;
-			case -1509314938:
+			case joaat("p_cs_shutterrelease"):
 				return 10379;
 			case -1509179542:
 				return 1065;
@@ -36053,7 +36053,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8139;
 			case -1504972544:
 				return 7998;
-			case -1504824283:
+			case joaat("p_pitcher03bx"):
 				return 2995;
 			case -1504550118:
 				return 11603;
@@ -36065,7 +36065,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6793;
 			case -1502884508:
 				return 775;
-			case -1502733730:
+			case joaat("p_stickydymt_single"):
 				return 949;
 			case -1502648784:
 				return 10631;
@@ -36121,7 +36121,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9525;
 			case -1497275628:
 				return 11253;
-			case -1497029950:
+			case joaat("p_door37x"):
 				return 2596;
 			case -1496893079:
 				return 8044;
@@ -36135,7 +36135,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8012;
 			case -1494400830:
 				return 9861;
-			case -1494278633:
+			case joaat("p_cs_bookhardcv01x"):
 				return 12138;
 			case -1494274349:
 				return 454;
@@ -36177,13 +36177,13 @@ int func_1165(int iParam0, int iParam1)
 				return 4185;
 			case -1488568115:
 				return 2328;
-			case -1488452835:
+			case joaat("p_petridish01x"):
 				return 4515;
 			case -1488385182:
 				return 4050;
 			case -1488244257:
 				return 233;
-			case -1488157426:
+			case joaat("w_melee_knife17"):
 				return 60;
 			case -1487857982:
 				return 12591;
@@ -36201,7 +36201,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8250;
 			case -1486704931:
 				return 14362;
-			case -1486681919:
+			case joaat("s_m_m_asbdealer_01"):
 				return 15709;
 			case -1486370183:
 				return 5678;
@@ -36211,13 +36211,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6573;
 			case -1485104323:
 				return 558;
-			case -1484795393:
+			case joaat("w_melee_hatchet02"):
 				return 14;
 			case -1484625631:
 				return 4273;
 			case -1484366741:
 				return 6801;
-			case -1483559144:
+			case joaat("cs_strdeputy_01"):
 				return 14981;
 			case -1483557278:
 				return 13076;
@@ -36231,7 +36231,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2661;
 			case -1480085904:
 				return 9713;
-			case -1480058065:
+			case joaat("p_door_rho_doctor"):
 				return 2529;
 			case -1479991672:
 				return 9755;
@@ -36257,7 +36257,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12724;
 			case -1476732350:
 				return 3393;
-			case -1476680157:
+			case joaat("wagontraveller01x"):
 				return 14218;
 			case -1476237711:
 				return 1618;
@@ -36275,7 +36275,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2007;
 			case -1473829490:
 				return 195;
-			case -1473388640:
+			case joaat("p_pen01x"):
 				return 5317;
 			case -1472975869:
 				return 8928;
@@ -36327,7 +36327,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1792;
 			case -1466467756:
 				return 13091;
-			case -1466017978:
+			case joaat("cs_mrdevon"):
 				return 14919;
 			case -1465548156:
 				return 6112;
@@ -36337,7 +36337,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10948;
 			case -1465099416:
 				return 15450;
-			case -1464743433:
+			case joaat("cs_abe"):
 				return 14695;
 			case -1464680957:
 				return 9165;
@@ -36375,7 +36375,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3896;
 			case -1459900576:
 				return 15493;
-			case -1459771423:
+			case joaat("u_m_m_story_chelonian_01"):
 				return 15919;
 			case -1459762606:
 				return 2800;
@@ -36385,7 +36385,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4073;
 			case -1458841810:
 				return 9156;
-			case -1458432563:
+			case joaat("cs_oddfellowspinhead"):
 				return 14941;
 			case -1458226126:
 				return 10454;
@@ -36393,7 +36393,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8613;
 			case -1457705840:
 				return 10513;
-			case -1457454415:
+			case joaat("p_donationsign01x"):
 				return 5744;
 			case -1457216850:
 				return 2607;
@@ -36409,7 +36409,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10774;
 			case -1456777106:
 				return 5533;
-			case -1456646750:
+			case joaat("p_can10x"):
 				return 3466;
 			case -1456412460:
 				return 11611;
@@ -36445,7 +36445,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4783;
 			case -1451757867:
 				return 12279;
-			case -1451393780:
+			case joaat("a_c_turtlesea_01"):
 				return 14487;
 			case -1451297983:
 				return 11714;
@@ -36453,7 +36453,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8424;
 			case -1450385470:
 				return 1951;
-			case -1450002727:
+			case joaat("p_cs_adlblanket02x"):
 				return 10000;
 			case -1449944654:
 				return 15692;
@@ -36465,15 +36465,15 @@ int func_1165(int iParam0, int iParam1)
 				return 1490;
 			case -1449243937:
 				return 2811;
-			case -1448924971:
+			case joaat("cs_swampfreak"):
 				return 14986;
-			case -1448813815:
+			case joaat("u_m_m_dorhomesteadhusband_01"):
 				return 15832;
 			case -1448469251:
 				return 2611;
 			case -1448454666:
 				return 3142;
-			case -1448273283:
+			case joaat("s_m_m_ambientsdpolice_01"):
 				return 15706;
 			case -1447872425:
 				return 11728;
@@ -36483,19 +36483,19 @@ int func_1165(int iParam0, int iParam1)
 				return 6741;
 			case -1446826991:
 				return 383;
-			case -1446452258:
+			case joaat("p_spoonlg01x"):
 				return 4561;
 			case -1446119767:
 				return 15671;
 			case -1446065143:
 				return 2516;
-			case -1445759307:
+			case joaat("a_m_o_btchillbilly_01"):
 				return 14672;
 			case -1445405456:
 				return 1780;
 			case -1445346669:
 				return 16106;
-			case -1445135526:
+			case joaat("a_m_m_htlroughtravellers_01"):
 				return 14602;
 			case -1444824854:
 				return 13232;
@@ -36507,7 +36507,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8601;
 			case -1444035577:
 				return 4217;
-			case -1443906703:
+			case joaat("p_chair06x"):
 				return 5573;
 			case -1443843072:
 				return 13679;
@@ -36563,7 +36563,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12005;
 			case -1437140365:
 				return 4202;
-			case -1436795223:
+			case joaat("a_m_m_sdslums_02"):
 				return 14646;
 			case -1436694544:
 				return 10351;
@@ -36571,7 +36571,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6806;
 			case -1435270564:
 				return 10077;
-			case -1434709171:
+			case joaat("a_m_m_vhtboatcrew_01"):
 				return 14667;
 			case -1434264647:
 				return 4189;
@@ -36639,7 +36639,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5632;
 			case -1426177691:
 				return 10066;
-			case -1426151250:
+			case joaat("stagecoach006x"):
 				return 14200;
 			case -1426104725:
 				return 13649;
@@ -36655,9 +36655,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11902;
 			case -1424055867:
 				return 6712;
-			case -1423832300:
+			case joaat("p_cs_unclehat01x"):
 				return 10433;
-			case -1423504183:
+			case joaat("cs_mradler"):
 				return 14918;
 			case -1422831764:
 				return 11932;
@@ -36671,7 +36671,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6970;
 			case -1422266834:
 				return 5729;
-			case -1421951598:
+			case joaat("g_m_m_unimountainmen_01"):
 				return 15042;
 			case -1421542903:
 				return 7206;
@@ -36683,9 +36683,9 @@ int func_1165(int iParam0, int iParam1)
 				return 8561;
 			case -1420100070:
 				return 10961;
-			case -1419711042:
+			case joaat("p_woodwhittle01x"):
 				return 4994;
-			case -1418951751:
+			case joaat("cs_aberdeenpigfarmer"):
 				return 14696;
 			case -1418811673:
 				return 13238;
@@ -36717,7 +36717,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7467;
 			case -1415824405:
 				return 13175;
-			case -1414989025:
+			case joaat("a_c_possum_01"):
 				return 14452;
 			case -1414976516:
 				return 15345;
@@ -36731,9 +36731,9 @@ int func_1165(int iParam0, int iParam1)
 				return 7086;
 			case -1413870594:
 				return 1556;
-			case -1413776846:
+			case joaat("p_matches01x"):
 				return 1184;
-			case -1413338433:
+			case joaat("u_m_o_rigtrainstationworker_01"):
 				return 15986;
 			case -1412768919:
 				return 1131;
@@ -36799,15 +36799,15 @@ int func_1165(int iParam0, int iParam1)
 				return 8498;
 			case -1403431642:
 				return 3543;
-			case -1403420972:
+			case joaat("p_val_gate2m02x"):
 				return 3377;
 			case -1403247140:
 				return 5491;
 			case -1403107642:
 				return 13811;
-			case -1402679009:
+			case joaat("p_cs_bookhardcv06x"):
 				return 12147;
-			case -1402507254:
+			case joaat("p_cigarthin01x"):
 				return 3056;
 			case -1402185605:
 				return 6334;
@@ -36823,13 +36823,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6948;
 			case -1400017352:
 				return 9374;
-			case -1399874861:
+			case joaat("p_chair25x"):
 				return 5592;
 			case -1398762336:
 				return 8510;
 			case -1398586445:
 				return 510;
-			case -1398443261:
+			case joaat("a_m_y_nbxstreetkids_slums_01"):
 				return 14683;
 			case -1398080245:
 				return 13938;
@@ -36841,7 +36841,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2393;
 			case -1397252733:
 				return 15237;
-			case -1397059493:
+			case joaat("u_m_m_bht_blackwaterhunt"):
 				return 15798;
 			case -1396384966:
 				return 4812;
@@ -36865,7 +36865,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12042;
 			case -1391540764:
 				return 11319;
-			case -1391147923:
+			case joaat("a_c_horse_gang_dutch"):
 				return 14358;
 			case -1390684521:
 				return 96;
@@ -36899,7 +36899,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15406;
 			case -1386893908:
 				return 4445;
-			case -1386734901:
+			case joaat("a_m_m_rkrroughtravellers_01"):
 				return 14633;
 			case -1386683671:
 				return 522;
@@ -36919,9 +36919,9 @@ int func_1165(int iParam0, int iParam1)
 				return 3029;
 			case -1384872070:
 				return 6264;
-			case -1384669516:
+			case joaat("a_c_doglab_01"):
 				return 14264;
-			case -1384606398:
+			case joaat("a_f_m_strtownfolk_01"):
 				return 14537;
 			case -1384368644:
 				return 13205;
@@ -36949,9 +36949,9 @@ int func_1165(int iParam0, int iParam1)
 				return 7675;
 			case -1381878125:
 				return 8475;
-			case -1381449134:
+			case joaat("a_f_m_rkrfancytravellers_01"):
 				return 14528;
-			case -1381243508:
+			case joaat("a_f_m_nbxslums_01"):
 				return 14521;
 			case -1381166205:
 				return 7879;
@@ -36981,7 +36981,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6584;
 			case -1378218410:
 				return 13046;
-			case -1378192434:
+			case joaat("u_m_m_rhdgunsmith_01"):
 				return 15896;
 			case -1378184406:
 				return 3281;
@@ -36997,9 +36997,9 @@ int func_1165(int iParam0, int iParam1)
 				return 3580;
 			case -1375373580:
 				return 7567;
-			case -1375371513:
+			case joaat("pirogue2"):
 				return 14169;
-			case -1375097747:
+			case joaat("u_m_y_czphomesteadson_03"):
 				return 15992;
 			case -1375092964:
 				return 5712;
@@ -37025,7 +37025,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13611;
 			case -1372224758:
 				return 12097;
-			case -1372052980:
+			case joaat("u_f_o_wtctownfolk_01"):
 				return 15783;
 			case -1371818157:
 				return 5258;
@@ -37037,9 +37037,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11553;
 			case -1369704387:
 				return 12096;
-			case -1368683894:
+			case joaat("p_saucer01x"):
 				return 4550;
-			case -1368644756:
+			case joaat("a_c_dogaustraliansheperd_01"):
 				return 14256;
 			case -1368003099:
 				return 13948;
@@ -37047,7 +37047,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9386;
 			case -1367947144:
 				return 6211;
-			case -1367341904:
+			case joaat("p_fishingpole02x"):
 				return 6645;
 			case -1367220440:
 				return 15170;
@@ -37145,7 +37145,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3166;
 			case -1351736636:
 				return 152;
-			case -1351631545:
+			case joaat("u_f_m_nbxresident_01"):
 				return 15772;
 			case -1351393313:
 				return 13023;
@@ -37173,7 +37173,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4902;
 			case -1347606004:
 				return 6706;
-			case -1347283941:
+			case joaat("cart03"):
 				return 14127;
 			case -1347197368:
 				return 6384;
@@ -37185,9 +37185,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12543;
 			case -1345801615:
 				return 15697;
-			case -1345750404:
+			case joaat("p_cs_playersatchel"):
 				return 10302;
-			case -1345652903:
+			case joaat("a_m_m_rhdupperclass_01"):
 				return 14630;
 			case -1345460669:
 				return 2047;
@@ -37205,7 +37205,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12431;
 			case -1342246546:
 				return 15984;
-			case -1342227326:
+			case joaat("p_cs_kindling01x"):
 				return 10222;
 			case -1342159303:
 				return 14388;
@@ -37269,7 +37269,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4211;
 			case -1335979469:
 				return 2528;
-			case -1335921754:
+			case joaat("a_m_m_htlfancytravellers_01"):
 				return 14601;
 			case -1335913022:
 				return 15137;
@@ -37285,7 +37285,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5019;
 			case -1335226029:
 				return 6301;
-			case -1335015498:
+			case joaat("p_cs_knitting01x"):
 				return 10223;
 			case -1334999629:
 				return 8456;
@@ -37299,7 +37299,7 @@ int func_1165(int iParam0, int iParam1)
 				return 16066;
 			case -1334287827:
 				return 5640;
-			case -1333989503:
+			case joaat("p_doorrhosaloon01_r"):
 				return 2683;
 			case -1333775312:
 				return 12137;
@@ -37319,7 +37319,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4594;
 			case -1332584872:
 				return 272;
-			case -1332334928:
+			case joaat("u_m_m_unibountyhunter_02"):
 				return 15944;
 			case -1331885428:
 				return 588;
@@ -37335,9 +37335,9 @@ int func_1165(int iParam0, int iParam1)
 				return 7385;
 			case -1330552880:
 				return 5852;
-			case -1329546951:
+			case joaat("p_cs_camerabag01x"):
 				return 10056;
-			case -1329383517:
+			case joaat("cs_hobartcrawley"):
 				return 14832;
 			case -1328475408:
 				return 9504;
@@ -37399,9 +37399,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11229;
 			case -1322233041:
 				return 10311;
-			case -1321930559:
+			case joaat("p_stick04x"):
 				return 1192;
-			case -1321878957:
+			case joaat("p_woodenchair01x"):
 				return 5705;
 			case -1321540800:
 				return 13856;
@@ -37415,7 +37415,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8406;
 			case -1320500186:
 				return 5070;
-			case -1320358161:
+			case joaat("a_m_m_moonshiners_01"):
 				return 14615;
 			case -1320353702:
 				return 1513;
@@ -37461,7 +37461,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10110;
 			case -1313830929:
 				return 4391;
-			case -1313455184:
+			case joaat("p_chair12bx"):
 				return 5577;
 			case -1313429698:
 				return 6880;
@@ -37481,7 +37481,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3444;
 			case -1311876587:
 				return 8451;
-			case -1311816336:
+			case joaat("p_cs_lockjail01x"):
 				return 10229;
 			case -1311604576:
 				return 5654;
@@ -37489,9 +37489,9 @@ int func_1165(int iParam0, int iParam1)
 				return 9443;
 			case -1311287025:
 				return 3107;
-			case -1311208351:
+			case joaat("p_cs_envelope01x"):
 				return 12169;
-			case -1310930881:
+			case joaat("u_f_m_fussar1lady_01"):
 				return 15769;
 			case -1310579257:
 				return 11116;
@@ -37503,7 +37503,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13106;
 			case -1308460526:
 				return 13380;
-			case -1308375373:
+			case joaat("policewagon01x"):
 				return 14170;
 			case -1307808880:
 				return 12937;
@@ -37535,7 +37535,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6076;
 			case -1305231588:
 				return 13036;
-			case -1305182512:
+			case joaat("p_cs_bible01x"):
 				return 12115;
 			case -1304847269:
 				return 2326;
@@ -37547,7 +37547,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6308;
 			case -1302990808:
 				return 6461;
-			case -1302821723:
+			case joaat("a_c_oriole_01"):
 				return 14443;
 			case -1302546233:
 				return 739;
@@ -37563,7 +37563,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9960;
 			case -1300550269:
 				return 1314;
-			case -1300496362:
+			case joaat("s_m_m_tumdeputies_01"):
 				return 15750;
 			case -1300337978:
 				return 10480;
@@ -37599,7 +37599,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2645;
 			case -1296005897:
 				return 1210;
-			case -1295720802:
+			case joaat("a_c_alligator_03"):
 				return 14224;
 			case -1295531371:
 				return 1968;
@@ -37621,7 +37621,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11650;
 			case -1293894905:
 				return 7905;
-			case -1293373789:
+			case joaat("p_eme_barn_door3"):
 				return 2704;
 			case -1293288661:
 				return 7546;
@@ -37639,11 +37639,11 @@ int func_1165(int iParam0, int iParam1)
 				return 9349;
 			case -1291682103:
 				return 11137;
-			case -1291535539:
+			case joaat("cs_nial_whelan"):
 				return 14936;
-			case -1291375629:
+			case joaat("p_cs_rope05x_coiled"):
 				return 10342;
-			case -1290910320:
+			case joaat("u_m_m_lnsworker_02"):
 				return 15853;
 			case -1290901613:
 				return 2758;
@@ -37665,7 +37665,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5693;
 			case -1288087643:
 				return 1390;
-			case -1287585527:
+			case joaat("a_m_m_htlsurvivalist_01"):
 				return 14603;
 			case -1287373433:
 				return 10567;
@@ -37729,7 +37729,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9938;
 			case -1282186422:
 				return 10556;
-			case -1281909308:
+			case joaat("p_cs_billstack01x"):
 				return 10032;
 			case -1281474666:
 				return 11702;
@@ -37761,7 +37761,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9931;
 			case -1279438845:
 				return 6865;
-			case -1278978750:
+			case joaat("buggy01"):
 				return 14119;
 			case -1278883956:
 				return 10683;
@@ -37797,7 +37797,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7724;
 			case -1273905068:
 				return 10367;
-			case -1273613561:
+			case joaat("g_m_m_uniduster_03"):
 				return 15034;
 			case -1272864568:
 				return 6363;
@@ -37823,7 +37823,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13168;
 			case -1270572788:
 				return 6565;
-			case -1270572406:
+			case joaat("cs_formyartbigwoman"):
 				return 14808;
 			case -1269166403:
 				return 1220;
@@ -37879,7 +37879,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11415;
 			case -1263151799:
 				return 11989;
-			case -1263119823:
+			case joaat("cs_norrisforsythe"):
 				return 14939;
 			case -1262877910:
 				return 8536;
@@ -37927,7 +37927,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11401;
 			case -1258949556:
 				return 6965;
-			case -1258801034:
+			case joaat("cs_jules"):
 				return 14849;
 			case -1258781899:
 				return 11892;
@@ -37963,7 +37963,7 @@ int func_1165(int iParam0, int iParam1)
 				return 403;
 			case -1253798775:
 				return 8969;
-			case -1253725829:
+			case joaat("a_f_m_tumtownfolk_02"):
 				return 14539;
 			case -1252320156:
 				return 5820;
@@ -37973,7 +37973,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5838;
 			case -1251157922:
 				return 13482;
-			case -1251028949:
+			case joaat("a_m_m_middletrainpassengers_01"):
 				return 14614;
 			case -1250942480:
 				return 11026;
@@ -37981,7 +37981,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6229;
 			case -1250492921:
 				return 10325;
-			case -1250484996:
+			case joaat("a_m_m_armdeputyresident_01"):
 				return 14555;
 			case -1250334314:
 				return 15172;
@@ -38017,13 +38017,13 @@ int func_1165(int iParam0, int iParam1)
 				return 16049;
 			case -1245682563:
 				return 961;
-			case -1245117710:
+			case joaat("p_cs_johnbelt01x"):
 				return 10219;
 			case -1244960124:
 				return 7105;
 			case -1244163101:
 				return 7943;
-			case -1243444973:
+			case joaat("p_chair13x"):
 				return 5579;
 			case -1242609382:
 				return 2628;
@@ -38041,7 +38041,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8910;
 			case -1240534275:
 				return 869;
-			case -1240499429:
+			case joaat("u_m_y_htlworker_01"):
 				return 15997;
 			case -1240282460:
 				return 11908;
@@ -38109,7 +38109,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8192;
 			case -1234279562:
 				return 3322;
-			case -1234234638:
+			case joaat("u_m_m_valhotelowner_01"):
 				return 15962;
 			case -1234232702:
 				return 8632;
@@ -38137,13 +38137,13 @@ int func_1165(int iParam0, int iParam1)
 				return 15236;
 			case -1230790601:
 				return 5197;
-			case -1230516683:
+			case joaat("a_c_horsemule_01"):
 				return 14434;
 			case -1230458423:
 				return 9325;
 			case -1230431605:
 				return 11345;
-			case -1230221375:
+			case joaat("cs_ashton"):
 				return 14715;
 			case -1229960953:
 				return 12445;
@@ -38153,7 +38153,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4188;
 			case -1229305488:
 				return 10841;
-			case -1228868259:
+			case joaat("u_m_m_odriscollbrawler_01"):
 				return 15885;
 			case -1228593949:
 				return 2101;
@@ -38197,9 +38197,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11528;
 			case -1223217513:
 				return 13767;
-			case -1222479678:
+			case joaat("s_m_m_racrailguards_01"):
 				return 15736;
-			case -1222108912:
+			case joaat("u_m_m_bht_lover"):
 				return 15801;
 			case -1221751333:
 				return 10703;
@@ -38207,7 +38207,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10488;
 			case -1221640793:
 				return 11958;
-			case -1221341425:
+			case joaat("u_m_m_valbartender_01"):
 				return 15956;
 			case -1220924877:
 				return 3123;
@@ -38219,7 +38219,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7712;
 			case -1219864172:
 				return 16061;
-			case -1219301969:
+			case joaat("u_m_m_nbxboatticketseller_01"):
 				return 15862;
 			case -1219055838:
 				return 13884;
@@ -38231,9 +38231,9 @@ int func_1165(int iParam0, int iParam1)
 				return 2113;
 			case -1217232104:
 				return 11079;
-			case -1216910965:
+			case joaat("p_caveentryblock01x"):
 				return 11770;
-			case -1216485179:
+			case joaat("p_spittoon01x"):
 				return 4087;
 			case -1215967624:
 				return 4752;
@@ -38251,7 +38251,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11893;
 			case -1214245307:
 				return 10979;
-			case -1213601266:
+			case joaat("a_f_m_vhtprostitute_01"):
 				return 14544;
 			case -1213330222:
 				return 11646;
@@ -38259,7 +38259,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7453;
 			case -1213055802:
 				return 10838;
-			case -1212802028:
+			case joaat("prop_fncwood_15c"):
 				return 3385;
 			case -1212357183:
 				return 9033;
@@ -38271,17 +38271,17 @@ int func_1165(int iParam0, int iParam1)
 				return 7439;
 			case -1211827225:
 				return 2161;
-			case -1211695061:
+			case joaat("p_metalgatestd01x"):
 				return 2866;
 			case -1211592580:
 				return 9442;
-			case -1211566332:
+			case joaat("a_c_skunk_01"):
 				return 14468;
 			case -1211564609:
 				return 3663;
 			case -1211054765:
 				return 9169;
-			case -1210546580:
+			case joaat("a_c_robin_01"):
 				return 14461;
 			case -1210450236:
 				return 987;
@@ -38295,7 +38295,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7949;
 			case -1209035788:
 				return 12907;
-			case -1208814201:
+			case joaat("u_m_m_nbxbrontegoon_01"):
 				return 15864;
 			case -1208500389:
 				return 13857;
@@ -38317,11 +38317,11 @@ int func_1165(int iParam0, int iParam1)
 				return 3440;
 			case -1206520982:
 				return 10814;
-			case -1206299098:
+			case joaat("u_m_m_bivforeman_01"):
 				return 15814;
 			case -1206166879:
 				return 5003;
-			case -1205874435:
+			case joaat("p_cs_stmdnky01x"):
 				return 10390;
 			case -1205788983:
 				return 4890;
@@ -38431,13 +38431,13 @@ int func_1165(int iParam0, int iParam1)
 				return 10531;
 			case -1190893715:
 				return 11723;
-			case -1190396102:
+			case joaat("p_door_combank01x"):
 				return 2519;
 			case -1190110315:
 				return 4558;
 			case -1189971850:
 				return 11276;
-			case -1189470495:
+			case joaat("p_key02x"):
 				return 6536;
 			case -1189094554:
 				return 5268;
@@ -38449,7 +38449,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10763;
 			case -1188802473:
 				return 478;
-			case -1188778670:
+			case joaat("p_cs_satchel01x"):
 				return 10360;
 			case -1188580249:
 				return 271;
@@ -38463,7 +38463,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4517;
 			case -1186962242:
 				return 9168;
-			case -1186302572:
+			case joaat("w_melee_hatchet03"):
 				return 16;
 			case -1186029792:
 				return 12537;
@@ -38485,7 +38485,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12329;
 			case -1183226766:
 				return 10416;
-			case -1182983171:
+			case joaat("a_c_fishchainpickerel_01_ms"):
 				return 14278;
 			case -1182701981:
 				return 10635;
@@ -38505,7 +38505,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12715;
 			case -1181226561:
 				return 8490;
-			case -1181161469:
+			case joaat("a_c_horse_gang_javier"):
 				return 14360;
 			case -1181121603:
 				return 895;
@@ -38553,7 +38553,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7357;
 			case -1177487129:
 				return 7023;
-			case -1176999271:
+			case joaat("p_cs_statue01x"):
 				return 10386;
 			case -1176604732:
 				return 10622;
@@ -38569,7 +38569,7 @@ int func_1165(int iParam0, int iParam1)
 				return 799;
 			case -1174986013:
 				return 1818;
-			case -1174489568:
+			case joaat("p_glasstallbeer01x"):
 				return 2973;
 			case -1173432997:
 				return 1271;
@@ -38581,7 +38581,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3556;
 			case -1170154706:
 				return 1420;
-			case -1170118274:
+			case joaat("a_c_badger_01"):
 				return 14226;
 			case -1170013582:
 				return 639;
@@ -38609,7 +38609,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15669;
 			case -1167667686:
 				return 3478;
-			case -1167561544:
+			case joaat("p_pencil01x"):
 				return 5318;
 			case -1167401893:
 				return 12708;
@@ -38643,7 +38643,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3436;
 			case -1162107730:
 				return 4904;
-			case -1161832176:
+			case joaat("cs_tomdickens"):
 				return 14997;
 			case -1161781409:
 				return 15279;
@@ -38663,7 +38663,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3473;
 			case -1160158290:
 				return 15227;
-			case -1160142962:
+			case joaat("w_revolver_schofield01"):
 				return 350;
 			case -1158685986:
 				return 3999;
@@ -38695,21 +38695,21 @@ int func_1165(int iParam0, int iParam1)
 				return 3193;
 			case -1154531481:
 				return 9321;
-			case -1154406788:
+			case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
 				return 14390;
 			case -1154324353:
 				return 13957;
-			case -1154205140:
+			case joaat("g_m_m_uniafricanamericangang_01"):
 				return 15025;
 			case -1154157049:
 				return 3610;
-			case -1154137714:
+			case joaat("cs_geraldbraithwaite"):
 				return 14817;
 			case -1154136662:
 				return 3103;
 			case -1153999133:
 				return 15574;
-			case -1153565327:
+			case joaat("p_cs_photo_4x6"):
 				return 12229;
 			case -1153461444:
 				return 12003;
@@ -38757,7 +38757,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5030;
 			case -1149728937:
 				return 4607;
-			case -1149199295:
+			case joaat("p_gen_statue03b"):
 				return 6524;
 			case -1148820980:
 				return 16062;
@@ -38765,7 +38765,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3404;
 			case -1148798908:
 				return 4620;
-			case -1148695876:
+			case joaat("p_doornbd6panelfqg01x"):
 				return 2673;
 			case -1148381454:
 				return 5339;
@@ -38785,13 +38785,13 @@ int func_1165(int iParam0, int iParam1)
 				return 12753;
 			case -1145139382:
 				return 4148;
-			case -1145133781:
+			case joaat("p_cs_meathanger01x"):
 				return 10251;
 			case -1144823557:
 				return 4557;
-			case -1144663425:
+			case joaat("u_m_m_valgunsmith_01"):
 				return 15961;
-			case -1143398950:
+			case joaat("a_c_wolf"):
 				return 14490;
 			case -1142196782:
 				return 4880;
@@ -38807,7 +38807,7 @@ int func_1165(int iParam0, int iParam1)
 				return 939;
 			case -1140701917:
 				return 5075;
-			case -1140650619:
+			case joaat("a_c_horse_appaloosa_leopard"):
 				return 14324;
 			case -1140616583:
 				return 9818;
@@ -38839,23 +38839,23 @@ int func_1165(int iParam0, int iParam1)
 				return 1438;
 			case -1136353171:
 				return 1991;
-			case -1135604739:
+			case joaat("p_cs_letter01a_x"):
 				return 12185;
-			case -1135378761:
+			case joaat("cs_paytah"):
 				return 14944;
-			case -1135312041:
+			case joaat("s_m_m_asbcowpoke_01"):
 				return 15708;
 			case -1135283482:
 				return 12425;
 			case -1135056921:
 				return 2835;
-			case -1134756023:
+			case joaat("u_m_y_shackstarvingkid_01"):
 				return 15999;
 			case -1134595798:
 				return 542;
 			case -1134539792:
 				return 13002;
-			case -1134449699:
+			case joaat("a_c_muskrat_01"):
 				return 14442;
 			case -1133944559:
 				return 15232;
@@ -38893,7 +38893,7 @@ int func_1165(int iParam0, int iParam1)
 				return 612;
 			case -1130235754:
 				return 920;
-			case -1130059812:
+			case joaat("a_m_m_sclfancydrivers_01"):
 				return 14635;
 			case -1129951730:
 				return 7593;
@@ -38919,13 +38919,13 @@ int func_1165(int iParam0, int iParam1)
 				return 4183;
 			case -1127742830:
 				return 9935;
-			case -1127689377:
+			case joaat("u_f_y_czphomesteaddaughter_01"):
 				return 15785;
 			case -1127655651:
 				return 12918;
 			case -1127201651:
 				return 9501;
-			case -1127014626:
+			case joaat("p_cs_chainlink01x"):
 				return 10072;
 			case -1126885751:
 				return 1128;
@@ -38945,7 +38945,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3238;
 			case -1124798335:
 				return 914;
-			case -1124266369:
+			case joaat("a_c_bear_01"):
 				return 14228;
 			case -1123746266:
 				return 11006;
@@ -38957,7 +38957,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3726;
 			case -1122490283:
 				return 3086;
-			case -1122164665:
+			case joaat("p_door_dov_lab_r_01x"):
 				return 2782;
 			case -1121997829:
 				return 9283;
@@ -38971,7 +38971,7 @@ int func_1165(int iParam0, int iParam1)
 				return 221;
 			case -1119528049:
 				return 12584;
-			case -1119301676:
+			case joaat("a_m_m_lagtownfolk_01"):
 				return 14607;
 			case -1119043666:
 				return 6580;
@@ -38993,7 +38993,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6150;
 			case -1116266380:
 				return 4936;
-			case -1116138991:
+			case joaat("cs_cancan_03"):
 				return 14743;
 			case -1115821791:
 				return 12720;
@@ -39025,7 +39025,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11436;
 			case -1112289552:
 				return 1135;
-			case -1112260815:
+			case joaat("cs_grizzledjon"):
 				return 14824;
 			case -1112232531:
 				return 6609;
@@ -39065,7 +39065,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12241;
 			case -1106339162:
 				return 9853;
-			case -1106216969:
+			case joaat("w_melee_lasso01"):
 				return 6;
 			case -1105571076:
 				return 8777;
@@ -39099,7 +39099,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12058;
 			case -1101994226:
 				return 508;
-			case -1101883765:
+			case joaat("cs_wrobel"):
 				return 15021;
 			case -1101740114:
 				return 1483;
@@ -39113,7 +39113,7 @@ int func_1165(int iParam0, int iParam1)
 				return 216;
 			case -1100700248:
 				return 4407;
-			case -1100387700:
+			case joaat("buggy02"):
 				return 14120;
 			case -1099835729:
 				return 11870;
@@ -39125,11 +39125,11 @@ int func_1165(int iParam0, int iParam1)
 				return 7000;
 			case -1098537663:
 				return 4039;
-			case -1098441944:
+			case joaat("a_c_moose_01"):
 				return 14441;
-			case -1098117563:
+			case joaat("p_stickydymt_bundle"):
 				return 947;
-			case -1096976415:
+			case joaat("u_m_m_sdphotographer_01"):
 				return 15908;
 			case -1096780064:
 				return 15316;
@@ -39147,13 +39147,13 @@ int func_1165(int iParam0, int iParam1)
 				return 13628;
 			case -1094933931:
 				return 1145;
-			case -1094820156:
+			case joaat("p_dinnerfork01x"):
 				return 3530;
 			case -1093930538:
 				return 13383;
 			case -1093833909:
 				return 12476;
-			case -1093732866:
+			case joaat("p_door_bla_jail_l_01x"):
 				return 2765;
 			case -1093637570:
 				return 8867;
@@ -39179,7 +39179,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8455;
 			case -1090886849:
 				return 7576;
-			case -1090280091:
+			case joaat("g_m_m_uniranchers_01"):
 				return 15043;
 			case -1089964621:
 				return 2810;
@@ -39189,13 +39189,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9016;
 			case -1089076915:
 				return 9365;
-			case -1088485514:
+			case joaat("s_m_m_cornwallguard_01"):
 				return 15718;
 			case -1087487592:
 				return 7496;
 			case -1086499938:
 				return 5933;
-			case -1086255030:
+			case joaat("a_f_m_lowertrainpassengers_01"):
 				return 14516;
 			case -1086206609:
 				return 1912;
@@ -39215,7 +39215,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11507;
 			case -1084705395:
 				return 11831;
-			case -1084397164:
+			case joaat("a_c_horse_gang_sadie"):
 				return 14366;
 			case -1084108374:
 				return 2490;
@@ -39259,7 +39259,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8448;
 			case -1080299709:
 				return 8065;
-			case -1079848222:
+			case joaat("p_cs_suitcase03x"):
 				return 10400;
 			case -1079711034:
 				return 4195;
@@ -39271,7 +39271,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3624;
 			case -1078808012:
 				return 3516;
-			case -1078696833:
+			case joaat("p_camp_plate_02x"):
 				return 1110;
 			case -1077997426:
 				return 12472;
@@ -39283,9 +39283,9 @@ int func_1165(int iParam0, int iParam1)
 				return 3354;
 			case -1076930207:
 				return 1115;
-			case -1076508705:
+			case joaat("a_c_roseatespoonbill_01"):
 				return 14463;
-			case -1076294934:
+			case joaat("cs_laramie"):
 				return 14853;
 			case -1075930333:
 				return 4876;
@@ -39299,7 +39299,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2315;
 			case -1074960068:
 				return 12978;
-			case -1074884633:
+			case joaat("p_cs_rag02x"):
 				return 10327;
 			case -1074866525:
 				return 4745;
@@ -39323,9 +39323,9 @@ int func_1165(int iParam0, int iParam1)
 				return 6008;
 			case -1071561496:
 				return 12278;
-			case -1070733351:
+			case joaat("p_tnt_trainrobbery_01x"):
 				return 953;
-			case -1070459848:
+			case joaat("cs_meredith"):
 				return 14871;
 			case -1070059857:
 				return 11833;
@@ -39349,7 +39349,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9673;
 			case -1067440298:
 				return 3634;
-			case -1067338663:
+			case joaat("cs_creepyoldlady"):
 				return 14765;
 			case -1067099229:
 				return 13215;
@@ -39397,11 +39397,11 @@ int func_1165(int iParam0, int iParam1)
 				return 5925;
 			case -1061888340:
 				return 3617;
-			case -1061494370:
+			case joaat("p_pipe03x"):
 				return 3072;
 			case -1061189081:
 				return 11337;
-			case -1060784210:
+			case joaat("p_cs_treefallen01x"):
 				return 10425;
 			case -1060653527:
 				return 9484;
@@ -39429,9 +39429,9 @@ int func_1165(int iParam0, int iParam1)
 				return 15521;
 			case -1056430086:
 				return 15399;
-			case -1056114408:
+			case joaat("p_cs_baganders01x"):
 				return 10011;
-			case -1055906010:
+			case joaat("p_cs_rabbitmeat01x"):
 				return 10323;
 			case -1055670841:
 				return 10097;
@@ -39447,9 +39447,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13292;
 			case -1054454830:
 				return 138;
-			case -1053639984:
+			case joaat("a_c_horse_gang_lenny"):
 				return 14364;
-			case -1053305039:
+			case joaat("a_m_m_armtownfolk_02"):
 				return 14557;
 			case -1053058774:
 				return 10963;
@@ -39457,11 +39457,11 @@ int func_1165(int iParam0, int iParam1)
 				return 10408;
 			case -1050501139:
 				return 462;
-			case -1049920600:
+			case joaat("a_f_m_uppertrainpassengers_01"):
 				return 14541;
-			case -1049596105:
+			case joaat("p_cs_shoplist01x"):
 				return 10375;
-			case -1049237750:
+			case joaat("cs_nbxreceptionist_01"):
 				return 14935;
 			case -1049220120:
 				return 4317;
@@ -39481,11 +39481,11 @@ int func_1165(int iParam0, int iParam1)
 				return 129;
 			case -1047792830:
 				return 10854;
-			case -1047359107:
+			case joaat("cs_sherifffreeman"):
 				return 14974;
 			case -1047145566:
 				return 5077;
-			case -1047115350:
+			case joaat("cs_nbxpolicechiefformal"):
 				return 14934;
 			case -1046855415:
 				return 9238;
@@ -39517,7 +39517,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14045;
 			case -1043573168:
 				return 2775;
-			case -1043434543:
+			case joaat("p_register03x"):
 				return 6227;
 			case -1042993920:
 				return 8077;
@@ -39535,13 +39535,13 @@ int func_1165(int iParam0, int iParam1)
 				return 928;
 			case -1040506474:
 				return 5282;
-			case -1040355700:
+			case joaat("p_cane01bx"):
 				return 1719;
 			case -1039947691:
 				return 9274;
 			case -1039920027:
 				return 4819;
-			case -1039531072:
+			case joaat("a_f_m_nbxupperclass_01"):
 				return 14522;
 			case -1039358518:
 				return 3141;
@@ -39555,7 +39555,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5973;
 			case -1038436471:
 				return 14393;
-			case -1038420333:
+			case joaat("p_cs_pelt_large"):
 				return 10273;
 			case -1037565097:
 				return 3815;
@@ -39583,7 +39583,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13839;
 			case -1034911247:
 				return 16033;
-			case -1034781092:
+			case joaat("p_teasugar"):
 				return 4581;
 			case -1034739667:
 				return 2216;
@@ -39595,7 +39595,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6434;
 			case -1033948671:
 				return 8558;
-			case -1033903759:
+			case joaat("a_c_dogcatahoulacur_01"):
 				return 14258;
 			case -1033712895:
 				return 6938;
@@ -39607,7 +39607,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6331;
 			case -1031510515:
 				return 10747;
-			case -1031399461:
+			case joaat("p_jug01x"):
 				return 2977;
 			case -1031259823:
 				return 8736;
@@ -39617,7 +39617,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10174;
 			case -1030948675:
 				return 8062;
-			case -1030586136:
+			case joaat("a_f_m_middlesdtownfolk_03"):
 				return 14519;
 			case -1030319558:
 				return 12912;
@@ -39633,9 +39633,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13636;
 			case -1028406256:
 				return 10928;
-			case -1028267229:
+			case joaat("p_cs_newspaper_02x"):
 				return 12218;
-			case -1028170431:
+			case joaat("a_c_sparrow_01"):
 				return 14481;
 			case -1028088218:
 				return 5107;
@@ -39653,13 +39653,13 @@ int func_1165(int iParam0, int iParam1)
 				return 5959;
 			case -1026692522:
 				return 2620;
-			case -1026424578:
+			case joaat("wagoncircus01x"):
 				return 14213;
 			case -1025974149:
 				return 685;
 			case -1025916990:
 				return 8468;
-			case -1025740342:
+			case joaat("p_chair02x"):
 				return 5569;
 			case -1024648911:
 				return 11914;
@@ -39667,7 +39667,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6096;
 			case -1023971841:
 				return 1624;
-			case -1023910641:
+			case joaat("w_shotgun_repeating01"):
 				return 527;
 			case -1023099315:
 				return 4428;
@@ -39687,7 +39687,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3452;
 			case -1021452676:
 				return 12941;
-			case -1021362867:
+			case joaat("u_m_m_cktmanager_01"):
 				return 15825;
 			case -1021255363:
 				return 10758;
@@ -39737,11 +39737,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11285;
 			case -1014073269:
 				return 4998;
-			case -1014005016:
+			case joaat("p_tablecoffee04x"):
 				return 6342;
 			case -1013848025:
 				return 7141;
-			case -1013636887:
+			case joaat("p_door64b"):
 				return 2615;
 			case -1013545238:
 				return 13055;
@@ -39761,7 +39761,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5266;
 			case -1011453599:
 				return 2862;
-			case -1011228908:
+			case joaat("u_m_m_bht_banditoshack"):
 				return 15796;
 			case -1010935397:
 				return 1783;
@@ -39783,11 +39783,11 @@ int func_1165(int iParam0, int iParam1)
 				return 4663;
 			case -1008847849:
 				return 7483;
-			case -1008616424:
+			case joaat("u_m_m_bht_banditomine"):
 				return 15795;
 			case -1008489448:
 				return 12979;
-			case -1008287740:
+			case joaat("oilwagon01x"):
 				return 14166;
 			case -1008088439:
 				return 5109;
@@ -39797,11 +39797,11 @@ int func_1165(int iParam0, int iParam1)
 				return 7248;
 			case -1007822810:
 				return 3228;
-			case -1006516120:
+			case joaat("p_door_nbx_bank03x_l"):
 				return 2792;
 			case -1006406225:
 				return 12878;
-			case -1006095118:
+			case joaat("p_chairfolding02x"):
 				return 5627;
 			case -1005911451:
 				return 14160;
@@ -39811,13 +39811,13 @@ int func_1165(int iParam0, int iParam1)
 				return 8085;
 			case -1005443279:
 				return 5095;
-			case -1005179481:
+			case joaat("u_m_m_orpguard_01"):
 				return 15886;
-			case -1005172683:
+			case joaat("p_door01x"):
 				return 2568;
 			case -1004698616:
 				return 12525;
-			case -1004594895:
+			case joaat("p_doorfrench01r"):
 				return 2652;
 			case -1003902317:
 				return 12320;
@@ -39825,13 +39825,13 @@ int func_1165(int iParam0, int iParam1)
 				return 1633;
 			case -1003692821:
 				return 9170;
-			case -1003616053:
+			case joaat("a_c_duck_01"):
 				return 14270;
 			case -1003254172:
 				return 11934;
 			case -1002681891:
 				return 13132;
-			case -1002525623:
+			case joaat("cs_cornwalltrainconductor"):
 				return 14762;
 			case -1001975495:
 				return 10784;
@@ -39861,11 +39861,11 @@ int func_1165(int iParam0, int iParam1)
 				return 15487;
 			case -1000365413:
 				return 2479;
-			case -1000093363:
+			case joaat("s_f_m_mapworker_01"):
 				return 15703;
 			case -999607173:
 				return 3583;
-			case -999004291:
+			case joaat("stagecoach005x"):
 				return 14199;
 			case -998778990:
 				return 8918;
@@ -39873,7 +39873,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4892;
 			case -997552329:
 				return 9659;
-			case -997503794:
+			case joaat("p_cs_rcridethelightning"):
 				return 12244;
 			case -997451465:
 				return 5253;
@@ -39893,7 +39893,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15565;
 			case -993390366:
 				return 6491;
-			case -993239322:
+			case joaat("u_m_m_valtownfolk_01"):
 				return 15968;
 			case -992835524:
 				return 12697;
@@ -39917,17 +39917,17 @@ int func_1165(int iParam0, int iParam1)
 				return 1143;
 			case -990183135:
 				return 4219;
-			case -989609930:
+			case joaat("p_sharpeningstone01x"):
 				return 4552;
 			case -989272598:
 				return 9466;
 			case -989239528:
 				return 1966;
-			case -989220241:
+			case joaat("a_m_m_blwlaborer_01"):
 				return 14571;
 			case -989189476:
 				return 15186;
-			case -988822064:
+			case joaat("privateboxcar01x"):
 				return 14174;
 			case -988752973:
 				return 11402;
@@ -39947,17 +39947,17 @@ int func_1165(int iParam0, int iParam1)
 				return 13052;
 			case -986185207:
 				return 12027;
-			case -985945029:
+			case joaat("a_f_m_htlfancytravellers_01"):
 				return 14511;
 			case -985924776:
 				return 14007;
-			case -985856147:
+			case joaat("a_f_m_roughtravellers_01"):
 				return 14529;
 			case -985374395:
 				return 13976;
 			case -984934151:
 				return 7843;
-			case -983719561:
+			case joaat("s_m_m_stgsailor_01"):
 				return 15744;
 			case -983269631:
 				return 9856;
@@ -39989,7 +39989,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10529;
 			case -980114607:
 				return 11066;
-			case -978911579:
+			case joaat("p_cs_horseharness01x"):
 				return 10207;
 			case -978651539:
 				return 8441;
@@ -40001,9 +40001,9 @@ int func_1165(int iParam0, int iParam1)
 				return 7094;
 			case -977506060:
 				return 3894;
-			case -977480216:
+			case joaat("u_m_m_bht_odriscolldrunk"):
 				return 15804;
-			case -976891307:
+			case joaat("a_c_doghobo_01"):
 				return 14261;
 			case -975984487:
 				return 965;
@@ -40011,13 +40011,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6862;
 			case -975960950:
 				return 5750;
-			case -975920629:
+			case joaat("p_chair15x"):
 				return 5581;
-			case -975913766:
+			case joaat("p_cs_napkin01x"):
 				return 10263;
 			case -975307408:
 				return 9439;
-			case -975237890:
+			case joaat("u_m_m_armgeneralstoreowner_01"):
 				return 15788;
 			case -974595649:
 				return 2077;
@@ -40029,7 +40029,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11225;
 			case -974205616:
 				return 9791;
-			case -974192123:
+			case joaat("p_stewplate02x"):
 				return 3708;
 			case -973893033:
 				return 11751;
@@ -40043,7 +40043,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5293;
 			case -972759515:
 				return 10767;
-			case -972643259:
+			case joaat("u_m_m_vhtstationclerk_01"):
 				return 15970;
 			case -972590214:
 				return 8898;
@@ -40075,23 +40075,23 @@ int func_1165(int iParam0, int iParam1)
 				return 10902;
 			case -970236810:
 				return 9984;
-			case -969819655:
+			case joaat("g_m_y_uniexconfeds_02"):
 				return 15047;
 			case -969472485:
 				return 3535;
-			case -969464097:
+			case joaat("cs_uncle"):
 				return 15004;
 			case joaat("p_amb_clipboard_01"):
 				return 10858;
-			case -969104898:
+			case joaat("p_sketchbook01x"):
 				return 12271;
 			case -968878239:
 				return 728;
-			case -968420256:
+			case joaat("p_sledgehammer01x"):
 				return 6485;
 			case -968014488:
 				return 13275;
-			case -967333571:
+			case joaat("p_cigarette_cs01x"):
 				return 3047;
 			case -967237010:
 				return 11816;
@@ -40125,7 +40125,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3435;
 			case -964606633:
 				return 5158;
-			case -963953562:
+			case joaat("a_c_lionmangy_01"):
 				return 14439;
 			case -963776274:
 				return 13955;
@@ -40149,7 +40149,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5358;
 			case -961513795:
 				return 13486;
-			case -961319841:
+			case joaat("p_cs_marstonhat01x"):
 				return 10246;
 			case -961315323:
 				return 7902;
@@ -40187,9 +40187,9 @@ int func_1165(int iParam0, int iParam1)
 				return 14192;
 			case -956604949:
 				return 16050;
-			case -956466741:
+			case joaat("w_repeater_winchester01"):
 				return 239;
-			case -956061568:
+			case joaat("a_m_m_vhtthug_01"):
 				return 14668;
 			case -956029335:
 				return 5216;
@@ -40203,7 +40203,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6038;
 			case -954744024:
 				return 9760;
-			case -954469935:
+			case joaat("u_f_m_story_blackbelle_01"):
 				return 15775;
 			case -954203874:
 				return 12176;
@@ -40217,7 +40217,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13990;
 			case -952639287:
 				return 10044;
-			case -951746023:
+			case joaat("a_m_m_cardgameplayers_01"):
 				return 14582;
 			case -951656813:
 				return 3095;
@@ -40233,7 +40233,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7634;
 			case -949833662:
 				return 5642;
-			case -949808044:
+			case joaat("p_viola01x"):
 				return 4382;
 			case -949698496:
 				return 9570;
@@ -40241,7 +40241,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12075;
 			case -949328419:
 				return 2646;
-			case -949242502:
+			case joaat("u_m_m_rhdsheriff_01"):
 				return 15898;
 			case -949094404:
 				return 598;
@@ -40261,7 +40261,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15263;
 			case -946816685:
 				return 8763;
-			case -946807796:
+			case joaat("p_cs_bookevelynmiller"):
 				return 12134;
 			case -946719701:
 				return 2254;
@@ -40283,7 +40283,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8544;
 			case -944201792:
 				return 1306;
-			case -944019243:
+			case joaat("cs_rhodeputy_01"):
 				return 14956;
 			case -943766435:
 				return 3569;
@@ -40295,7 +40295,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3743;
 			case -941738882:
 				return 15208;
-			case -941733863:
+			case joaat("a_c_horse_gang_micah"):
 				return 14365;
 			case -941638026:
 				return 4733;
@@ -40305,7 +40305,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1134;
 			case -941119992:
 				return 1389;
-			case -940999254:
+			case joaat("p_cs_book02x"):
 				return 12126;
 			case -939999880:
 				return 2733;
@@ -40325,13 +40325,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6336;
 			case -937768550:
 				return 3396;
-			case -937140420:
+			case joaat("cs_drmalcolmmacintosh"):
 				return 14780;
 			case -937121598:
 				return 3564;
 			case -937065232:
 				return 5503;
-			case -936934718:
+			case joaat("u_m_m_bht_oldman"):
 				return 15807;
 			case -936743345:
 				return 1754;
@@ -40345,7 +40345,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12204;
 			case -936443237:
 				return 7366;
-			case -936393949:
+			case joaat("w_melee_tomahawk01"):
 				return 77;
 			case -936180890:
 				return 4426;
@@ -40375,15 +40375,15 @@ int func_1165(int iParam0, int iParam1)
 				return 16009;
 			case -933056371:
 				return 6717;
-			case -932831284:
+			case joaat("u_m_y_htlworker_02"):
 				return 15998;
 			case -932001629:
 				return 12197;
 			case -931812628:
 				return 4798;
-			case -930822792:
+			case joaat("a_c_frogbull_01"):
 				return 14302;
-			case -930797268:
+			case joaat("p_lighter01x"):
 				return 6441;
 			case -930624240:
 				return 10543;
@@ -40399,19 +40399,19 @@ int func_1165(int iParam0, int iParam1)
 				return 11355;
 			case -929555663:
 				return 7735;
-			case -928441655:
+			case joaat("p_milkcan01x"):
 				return 2986;
 			case -928429408:
 				return 13953;
 			case -927603876:
 				return 10293;
-			case -926591360:
+			case joaat("s_m_m_sdcowpoke_01"):
 				return 15740;
 			case -926526207:
 				return 3515;
 			case -926311636:
 				return 8712;
-			case -925223936:
+			case joaat("a_c_horse_arabian_white"):
 				return 14332;
 			case -925176940:
 				return 6366;
@@ -40437,7 +40437,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12049;
 			case -921437739:
 				return 529;
-			case -920985758:
+			case joaat("cs_leon"):
 				return 14857;
 			case -920861444:
 				return 10453;
@@ -40517,17 +40517,17 @@ int func_1165(int iParam0, int iParam1)
 				return 878;
 			case -912259617:
 				return 3720;
-			case -911874060:
+			case joaat("p_shotglass01x"):
 				return 3001;
 			case -911869961:
 				return 2213;
-			case -911764409:
+			case joaat("p_cratetools01x"):
 				return 6391;
 			case -910752983:
 				return 5906;
 			case -910513975:
 				return 13850;
-			case -910432524:
+			case joaat("p_crate08b"):
 				return 5958;
 			case -910216949:
 				return 5275;
@@ -40587,11 +40587,11 @@ int func_1165(int iParam0, int iParam1)
 				return 1711;
 			case -902083559:
 				return 6100;
-			case -901833437:
+			case joaat("u_m_m_emrfarmhand_03"):
 				return 15833;
 			case -901751678:
 				return 8692;
-			case -901582202:
+			case joaat("p_copperpan01x"):
 				return 4459;
 			case -901302263:
 				return 7605;
@@ -40601,7 +40601,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15696;
 			case -900295587:
 				return 11573;
-			case -900222268:
+			case joaat("a_m_y_sdstreetkids_slums_02"):
 				return 14684;
 			case -899930164:
 				return 10777;
@@ -40631,15 +40631,15 @@ int func_1165(int iParam0, int iParam1)
 				return 12822;
 			case -897652777:
 				return 12423;
-			case -897477017:
+			case joaat("p_sign_suffragette03x"):
 				return 5857;
 			case -897307800:
 				return 684;
-			case -896926592:
+			case joaat("a_c_doglion_01"):
 				return 14265;
 			case -896294222:
 				return 9052;
-			case -895862876:
+			case joaat("p_chair20x"):
 				return 5586;
 			case -895056991:
 				return 16117;
@@ -40675,17 +40675,17 @@ int func_1165(int iParam0, int iParam1)
 				return 4825;
 			case -891756624:
 				return 3212;
-			case -891510636:
+			case joaat("cs_antonyforemen"):
 				return 14709;
 			case -891111312:
 				return 4611;
-			case -890689546:
+			case joaat("p_rustyspoon01x"):
 				return 4548;
 			case -890158702:
 				return 15557;
-			case -890147146:
+			case joaat("w_pistol_mauser01"):
 				return 107;
-			case -890087611:
+			case joaat("p_bottle03x"):
 				return 2911;
 			case -890081360:
 				return 4987;
@@ -40695,9 +40695,9 @@ int func_1165(int iParam0, int iParam1)
 				return 10762;
 			case -889518341:
 				return 3055;
-			case -889115305:
+			case joaat("p_cs_pamphlet01x"):
 				return 12224;
-			case -889047922:
+			case joaat("p_cs_pot01x"):
 				return 10308;
 			case -888863337:
 				return 10992;
@@ -40725,7 +40725,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2343;
 			case -886127227:
 				return 8385;
-			case -885451903:
+			case joaat("a_c_wolf_medium"):
 				return 14491;
 			case -884856248:
 				return 15476;
@@ -40739,7 +40739,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1850;
 			case -882766674:
 				return 1077;
-			case -882474373:
+			case joaat("p_doorvh_saloon_l"):
 				return 2701;
 			case -881873178:
 				return 9400;
@@ -40747,7 +40747,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4063;
 			case -881328272:
 				return 9293;
-			case -881260464:
+			case joaat("cs_edith_john"):
 				return 14786;
 			case -880793587:
 				return 2512;
@@ -40779,7 +40779,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8046;
 			case -876523269:
 				return 1737;
-			case -876203942:
+			case joaat("p_chair17x"):
 				return 5583;
 			case -876144547:
 				return 10666;
@@ -40795,7 +40795,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8941;
 			case -872386280:
 				return 10224;
-			case -872333558:
+			case joaat("u_m_m_bht_laramiesleeping"):
 				return 15800;
 			case -872299096:
 				return 10536;
@@ -40809,7 +40809,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4949;
 			case -869909360:
 				return 12426;
-			case -869574551:
+			case joaat("s_m_m_cktworker_01"):
 				return 15716;
 			case -869065568:
 				return 5143;
@@ -40821,13 +40821,13 @@ int func_1165(int iParam0, int iParam1)
 				return 12861;
 			case -868351848:
 				return 8452;
-			case -867978076:
+			case joaat("p_cs_cuttingboard01x"):
 				return 10098;
 			case -867921383:
 				return 1230;
 			case -867755920:
 				return 1808;
-			case -867338226:
+			case joaat("u_m_m_lnsworker_01"):
 				return 15852;
 			case -867067621:
 				return 5230;
@@ -40847,11 +40847,11 @@ int func_1165(int iParam0, int iParam1)
 				return 14001;
 			case -863232339:
 				return 7596;
-			case -862949069:
+			case joaat("p_cs_ledgersmall01x"):
 				return 12183;
 			case -862384717:
 				return 235;
-			case -861544272:
+			case joaat("a_c_owl_01"):
 				return 14444;
 			case -861474402:
 				return 10603;
@@ -40861,15 +40861,15 @@ int func_1165(int iParam0, int iParam1)
 				return 7878;
 			case -860349242:
 				return 11472;
-			case -860316745:
+			case joaat("u_m_m_sdstrongwomanassistant_01"):
 				return 15910;
 			case -860055580:
 				return 7851;
 			case -859701570:
 				return 4539;
-			case -859450082:
+			case joaat("p_soupbowl01x"):
 				return 3693;
-			case -859420242:
+			case joaat("wagonprison01x"):
 				return 14217;
 			case -859002201:
 				return 1294;
@@ -40889,7 +40889,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11760;
 			case -856732144:
 				return 7517;
-			case -856676249:
+			case joaat("p_doorrhosaloon01_l"):
 				return 2682;
 			case -856053084:
 				return 6350;
@@ -40905,7 +40905,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3829;
 			case -855298530:
 				return 7335;
-			case -855192748:
+			case joaat("p_broom03x"):
 				return 6380;
 			case -854988474:
 				return 6527;
@@ -40945,7 +40945,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2196;
 			case -849381148:
 				return 1960;
-			case -849359410:
+			case joaat("p_cs_exoticcollectornb"):
 				return 10522;
 			case -848645541:
 				return 6241;
@@ -41055,9 +41055,9 @@ int func_1165(int iParam0, int iParam1)
 				return 15360;
 			case -832258854:
 				return 6108;
-			case -832187622:
+			case joaat("p_door_sha_man01x"):
 				return 2534;
-			case -831368594:
+			case joaat("u_m_o_vhtexoticshopkeeper_01"):
 				return 15988;
 			case -831192212:
 				return 818;
@@ -41067,7 +41067,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7887;
 			case -830607635:
 				return 13489;
-			case -830033320:
+			case joaat("p_wallet01x"):
 				return 10463;
 			case -829606782:
 				return 11938;
@@ -41075,7 +41075,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9160;
 			case -829566757:
 				return 6499;
-			case -829273561:
+			case joaat("a_c_wolf_small"):
 				return 14492;
 			case -828834017:
 				return 1980;
@@ -41083,7 +41083,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8167;
 			case -828188692:
 				return 12086;
-			case -827620392:
+			case joaat("p_cs_holdemhand01x"):
 				return 10203;
 			case -827596041:
 				return 4071;
@@ -41097,7 +41097,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1254;
 			case -824937600:
 				return 4099;
-			case -824257932:
+			case joaat("cart01"):
 				return 14125;
 			case -824246734:
 				return 5847;
@@ -41105,7 +41105,7 @@ int func_1165(int iParam0, int iParam1)
 				return 173;
 			case -823699805:
 				return 10034;
-			case -823649241:
+			case joaat("cs_sheriffowens"):
 				return 14975;
 			case -823202571:
 				return 4107;
@@ -41123,7 +41123,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2048;
 			case -821713083:
 				return 5633;
-			case -821290420:
+			case joaat("p_basin01x"):
 				return 4396;
 			case -821136423:
 				return 8555;
@@ -41131,9 +41131,9 @@ int func_1165(int iParam0, int iParam1)
 				return 9668;
 			case -820990551:
 				return 13989;
-			case -820975767:
+			case joaat("cs_colmodriscoll"):
 				return 14760;
-			case -820854800:
+			case joaat("cs_sddoctor_01"):
 				return 14969;
 			case -820620757:
 				return 13785;
@@ -41193,11 +41193,11 @@ int func_1165(int iParam0, int iParam1)
 				return 9710;
 			case -814374666:
 				return 8668;
-			case -814357706:
+			case joaat("cs_scottgray"):
 				return 14964;
 			case -814356935:
 				return 6181;
-			case -813796418:
+			case joaat("a_m_m_armtownfolk_01"):
 				return 14556;
 			case -813677507:
 				return 12043;
@@ -41211,7 +41211,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11292;
 			case -812001043:
 				return 13428;
-			case -811821899:
+			case joaat("p_pitchfork01x"):
 				return 3157;
 			case -811821736:
 				return 2365;
@@ -41219,7 +41219,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7059;
 			case -811328390:
 				return 13245;
-			case -811023519:
+			case joaat("u_m_m_story_sdstatue_01"):
 				return 15930;
 			case -811010565:
 				return 2344;
@@ -41253,7 +41253,7 @@ int func_1165(int iParam0, int iParam1)
 		{
 			case -809073963:
 				return 5861;
-			case -808559472:
+			case joaat("p_kettle03x"):
 				return 4491;
 			case -808375335:
 				return 6021;
@@ -41261,7 +41261,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11788;
 			case -808006688:
 				return 9032;
-			case -807564273:
+			case joaat("p_door06x"):
 				return 2573;
 			case -807400872:
 				return 9648;
@@ -41297,7 +41297,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11853;
 			case -804165125:
 				return 9829;
-			case -804104884:
+			case joaat("cs_bubba"):
 				return 14738;
 			case -803361065:
 				return 551;
@@ -41309,13 +41309,13 @@ int func_1165(int iParam0, int iParam1)
 				return 12066;
 			case -802659006:
 				return 9717;
-			case -802461952:
+			case joaat("a_m_o_lagtownfolk_01"):
 				return 14674;
 			case -802261619:
 				return 12122;
 			case -802220535:
 				return 13344;
-			case -801514190:
+			case joaat("p_pokerhand02x"):
 				return 12770;
 			case -801078292:
 				return 6483;
@@ -41331,13 +41331,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9610;
 			case -799922861:
 				return 3739;
-			case -799374629:
+			case joaat("p_crate22x_small"):
 				return 6099;
 			case -799017165:
 				return 3918;
 			case -798460850:
 				return 11843;
-			case -798350419:
+			case joaat("p_door_val_jail_cell01x"):
 				return 2557;
 			case -798344147:
 				return 5062;
@@ -41351,21 +41351,21 @@ int func_1165(int iParam0, int iParam1)
 				return 2941;
 			case -797664443:
 				return 5367;
-			case -797523053:
+			case joaat("a_m_m_armcholeracorpse_01"):
 				return 14554;
 			case -797485900:
 				return 11187;
-			case -796992973:
+			case joaat("w_revolver_cattleman01"):
 				return 260;
 			case -796803042:
 				return 15139;
-			case -796023032:
+			case joaat("p_bottlecrate02x"):
 				return 2927;
-			case -795893780:
+			case joaat("u_m_m_emrfather_01"):
 				return 15834;
 			case -794964047:
 				return 9148;
-			case -794619784:
+			case joaat("a_f_o_blwupperclass_01"):
 				return 14547;
 			case -794612233:
 				return 7770;
@@ -41383,7 +41383,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11444;
 			case -792912992:
 				return 2592;
-			case -792643455:
+			case joaat("cs_cancan_01"):
 				return 14741;
 			case -792547951:
 				return 12896;
@@ -41393,13 +41393,13 @@ int func_1165(int iParam0, int iParam1)
 				return 4423;
 			case -791498313:
 				return 9384;
-			case -791405787:
+			case joaat("u_m_m_valtheman_01"):
 				return 15967;
 			case -791100729:
 				return 8240;
 			case -791001722:
 				return 12932;
-			case -790938048:
+			case joaat("p_gate_valbankvlt"):
 				return 2717;
 			case -790460618:
 				return 12869;
@@ -41413,11 +41413,11 @@ int func_1165(int iParam0, int iParam1)
 				return 12081;
 			case -789757560:
 				return 6688;
-			case -789646981:
+			case joaat("a_m_m_sdlaborers_02"):
 				return 14642;
 			case -789613925:
 				return 1869;
-			case -789465252:
+			case joaat("p_magneto01x"):
 				return 13411;
 			case -788866132:
 				return 10723;
@@ -41433,7 +41433,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4728;
 			case -788076476:
 				return 10578;
-			case -787683245:
+			case joaat("a_m_m_blwtownfolk_01"):
 				return 14574;
 			case -787395957:
 				return 9728;
@@ -41449,7 +41449,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7668;
 			case -786304391:
 				return 3567;
-			case -786018483:
+			case joaat("s_m_m_unitrainengineer_01"):
 				return 15752;
 			case -785764663:
 				return 374;
@@ -41479,7 +41479,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2435;
 			case -782036898:
 				return 8127;
-			case -781994133:
+			case joaat("cs_creolecaptain"):
 				return 14766;
 			case -781771732:
 				return 11335;
@@ -41497,7 +41497,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13178;
 			case -779531763:
 				return 5972;
-			case -779472377:
+			case joaat("cs_brontesbutler"):
 				return 14735;
 			case -779334476:
 				return 13715;
@@ -41523,9 +41523,9 @@ int func_1165(int iParam0, int iParam1)
 				return 1702;
 			case -776928002:
 				return 13890;
-			case -776888393:
+			case joaat("p_cs_fusedynamite01x"):
 				return 10181;
-			case -776789570:
+			case joaat("u_m_m_unidusterhenchman_03"):
 				return 15947;
 			case -776749978:
 				return 10095;
@@ -41535,7 +41535,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12570;
 			case -776006436:
 				return 118;
-			case -775610875:
+			case joaat("u_m_m_htlhusband_01"):
 				return 15845;
 			case -775134663:
 				return 256;
@@ -41567,7 +41567,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7721;
 			case -772333162:
 				return 9006;
-			case -772253778:
+			case joaat("p_chaircomfy07x"):
 				return 5606;
 			case -772157398:
 				return 10845;
@@ -41593,7 +41593,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15474;
 			case -768353613:
 				return 9192;
-			case -768117560:
+			case joaat("u_m_y_czphomesteadson_05"):
 				return 15994;
 			case -767633489:
 				return 10175;
@@ -41607,7 +41607,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2796;
 			case -765922136:
 				return 1157;
-			case -765914358:
+			case joaat("p_door_val_bankvault"):
 				return 2544;
 			case -765092724:
 				return 4442;
@@ -41619,7 +41619,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12309;
 			case -764197226:
 				return 7251;
-			case -763072541:
+			case joaat("g_m_m_uniduster_04"):
 				return 15035;
 			case -762709488:
 				return 12934;
@@ -41635,7 +41635,7 @@ int func_1165(int iParam0, int iParam1)
 				return 572;
 			case -761519956:
 				return 12419;
-			case -761325639:
+			case joaat("cs_bathingladies_01"):
 				return 14723;
 			case -760231934:
 				return 15178;
@@ -41651,7 +41651,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11100;
 			case -757492237:
 				return 10697;
-			case -756996682:
+			case joaat("cs_janson"):
 				return 14838;
 			case -756780392:
 				return 8485;
@@ -41659,17 +41659,17 @@ int func_1165(int iParam0, int iParam1)
 				return 7606;
 			case -755945846:
 				return 11336;
-			case -755866836:
+			case joaat("p_spoon01x"):
 				return 4555;
 			case -755831565:
 				return 5983;
-			case -755343600:
+			case joaat("s_m_m_barber_01"):
 				return 15711;
 			case -755209636:
 				return 7495;
 			case -754832582:
 				return 2446;
-			case -754733870:
+			case joaat("cs_cigcardguy"):
 				return 14755;
 			case -754660372:
 				return 15270;
@@ -41677,11 +41677,11 @@ int func_1165(int iParam0, int iParam1)
 				return 8800;
 			case -754174303:
 				return 5945;
-			case -753902995:
+			case joaat("a_c_goat_01"):
 				return 14304;
 			case -753399062:
 				return 9904;
-			case -753196385:
+			case joaat("u_m_m_tumbartender_01"):
 				return 15939;
 			case -752695232:
 				return 7341;
@@ -41701,9 +41701,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13398;
 			case -750202184:
 				return 4065;
-			case -749937394:
+			case joaat("w_melee_knife16"):
 				return 58;
-			case -749888925:
+			case joaat("p_pro_stabledoor02x"):
 				return 2735;
 			case -749258641:
 				return 9031;
@@ -41721,17 +41721,17 @@ int func_1165(int iParam0, int iParam1)
 				return 7432;
 			case -747823095:
 				return 13977;
-			case -747792496:
+			case joaat("cs_forgivenwife_01"):
 				return 14807;
 			case -747603764:
 				return 9413;
-			case -747524508:
+			case joaat("u_m_m_valbarber_01"):
 				return 15955;
 			case -747286969:
 				return 15293;
 			case -747233157:
 				return 8300;
-			case -747134222:
+			case joaat("p_cs_ropelasso01x"):
 				return 10345;
 			case -747052578:
 				return 5415;
@@ -41753,13 +41753,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6416;
 			case -744715350:
 				return 9665;
-			case -744221547:
+			case joaat("u_m_m_blwtrainstationworker_01"):
 				return 15815;
 			case -744027902:
 				return 10754;
 			case -743870406:
 				return 8751;
-			case -743292301:
+			case joaat("p_sidetable07x"):
 				return 3804;
 			case -743143872:
 				return 4232;
@@ -41811,7 +41811,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3074;
 			case -736695055:
 				return 1291;
-			case -736692248:
+			case joaat("p_shoe01x"):
 				return 1763;
 			case -736406927:
 				return 11132;
@@ -41827,7 +41827,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1069;
 			case -734502548:
 				return 13923;
-			case -734336984:
+			case joaat("u_m_m_nbxskiffdriver_01"):
 				return 15883;
 			case -733006244:
 				return 5766;
@@ -41879,9 +41879,9 @@ int func_1165(int iParam0, int iParam1)
 				return 5170;
 			case -726742856:
 				return 15593;
-			case -726434422:
+			case joaat("a_m_m_dominoesplayers_01"):
 				return 14586;
-			case -726426629:
+			case joaat("p_gen_documentfolder01x"):
 				return 5276;
 			case -726391110:
 				return 11305;
@@ -41889,7 +41889,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12761;
 			case -725848147:
 				return 13690;
-			case -725769427:
+			case joaat("p_cs_marstonlocker01x"):
 				return 10247;
 			case -725520485:
 				return 9771;
@@ -41907,7 +41907,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3174;
 			case -721764621:
 				return 6189;
-			case -721735982:
+			case joaat("p_campfirewhitefish03x"):
 				return 1155;
 			case -721735422:
 				return 9896;
@@ -41967,7 +41967,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3504;
 			case -712049303:
 				return 2899;
-			case -711779521:
+			case joaat("a_c_fishlongnosegar_01_lg"):
 				return 14285;
 			case -710651232:
 				return 8404;
@@ -42041,7 +42041,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1343;
 			case -700252904:
 				return 113;
-			case -700109527:
+			case joaat("p_bowlterracotta01x"):
 				return 4440;
 			case -699806412:
 				return 2642;
@@ -42073,23 +42073,23 @@ int func_1165(int iParam0, int iParam1)
 				return 7811;
 			case -695399676:
 				return 3645;
-			case -695175124:
+			case joaat("cs_tigerhandler"):
 				return 14993;
 			case -695053147:
 				return 4292;
-			case -694807137:
+			case joaat("s_interact_torch"):
 				return 11098;
 			case -693782841:
 				return 2823;
 			case -693415400:
 				return 3986;
-			case -693389207:
+			case joaat("p_dynamite02x"):
 				return 911;
 			case -693098707:
 				return 12746;
 			case -693053650:
 				return 11598;
-			case -692960126:
+			case joaat("u_m_m_valpokerplayer_01"):
 				return 15963;
 			case -692786057:
 				return 6972;
@@ -42103,7 +42103,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7463;
 			case -691281238:
 				return 1213;
-			case -691156851:
+			case joaat("u_m_m_story_pigfarm_01"):
 				return 15926;
 			case -691004373:
 				return 4963;
@@ -42121,7 +42121,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9355;
 			case -689419962:
 				return 3648;
-			case -689331657:
+			case joaat("p_rolledoats01x"):
 				return 6233;
 			case -688909268:
 				return 5116;
@@ -42149,7 +42149,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4335;
 			case -685512585:
 				return 9522;
-			case -685398458:
+			case joaat("p_masonjarmoonshine01x"):
 				return 3589;
 			case -685392161:
 				return 12859;
@@ -42181,7 +42181,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14340;
 			case -683555258:
 				return 8652;
-			case -683466700:
+			case joaat("p_cs_shadbmnt_shkl01x"):
 				return 10374;
 			case -681777408:
 				return 12401;
@@ -42261,7 +42261,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8799;
 			case -672774156:
 				return 11067;
-			case -671939939:
+			case joaat("w_shotgun_semiauto01"):
 				return 562;
 			case -671400737:
 				return 5140;
@@ -42269,11 +42269,11 @@ int func_1165(int iParam0, int iParam1)
 				return 10753;
 			case -671145582:
 				return 10588;
-			case -670746618:
+			case joaat("u_m_m_crdwitness_01"):
 				return 15829;
 			case -670576160:
 				return 7318;
-			case -670436990:
+			case joaat("cs_frenchartist"):
 				return 14810;
 			case -670409157:
 				return 4095;
@@ -42285,7 +42285,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2762;
 			case -669613771:
 				return 6419;
-			case -669394275:
+			case joaat("s_m_m_rhddealer_01"):
 				return 15739;
 			case -668675447:
 				return 12317;
@@ -42303,7 +42303,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13517;
 			case -667482166:
 				return 574;
-			case -667091646:
+			case joaat("p_door58x"):
 				return 2610;
 			case -666661475:
 				return 12739;
@@ -42315,7 +42315,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12653;
 			case -666035275:
 				return 11543;
-			case -666024656:
+			case joaat("canoetreetrunk"):
 				return 14124;
 			case -665450029:
 				return 13154;
@@ -42323,7 +42323,7 @@ int func_1165(int iParam0, int iParam1)
 				return 753;
 			case -665267696:
 				return 2189;
-			case -664826378:
+			case joaat("p_cs_admitticket01x"):
 				return 10001;
 			case -664733115:
 				return 10491;
@@ -42351,7 +42351,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12777;
 			case -661352165:
 				return 1073;
-			case -661073964:
+			case joaat("a_m_m_huntertravelers_warm_01"):
 				return 14605;
 			case -660965248:
 				return 9228;
@@ -42379,7 +42379,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3960;
 			case -656643388:
 				return 11280;
-			case -656516359:
+			case joaat("p_package13x"):
 				return 6221;
 			case -656471699:
 				return 11110;
@@ -42415,7 +42415,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12867;
 			case -651992121:
 				return 4565;
-			case -651834676:
+			case joaat("p_doornbfrench2lx"):
 				return 2677;
 			case -651036587:
 				return 7907;
@@ -42425,9 +42425,9 @@ int func_1165(int iParam0, int iParam1)
 				return 8337;
 			case -650518339:
 				return 2204;
-			case -650353329:
+			case joaat("a_m_m_sclroughtravellers_01"):
 				return 14637;
-			case -650182355:
+			case joaat("u_f_m_emrdaughter_01"):
 				return 15768;
 			case -650084981:
 				return 7307;
@@ -42437,7 +42437,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8697;
 			case -649179483:
 				return 10544;
-			case -648879076:
+			case joaat("s_m_m_micguard_01"):
 				return 15731;
 			case -648877314:
 				return 4742;
@@ -42445,7 +42445,7 @@ int func_1165(int iParam0, int iParam1)
 				return 419;
 			case -648352852:
 				return 5965;
-			case -648295555:
+			case joaat("cs_vampire"):
 				return 15012;
 			case -648153684:
 				return 4630;
@@ -42457,7 +42457,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14384;
 			case -646660435:
 				return 2323;
-			case -646460384:
+			case joaat("a_c_horse_gang_hosea"):
 				return 14359;
 			case -646383411:
 				return 12750;
@@ -42505,7 +42505,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15209;
 			case -639070157:
 				return 3160;
-			case -639059862:
+			case joaat("cs_genstorymale"):
 				return 14816;
 			case -638550891:
 				return 11414;
@@ -42523,7 +42523,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5105;
 			case -636276028:
 				return 1848;
-			case -636146522:
+			case joaat("trolley01x"):
 				return 14204;
 			case -636103453:
 				return 13627;
@@ -42561,7 +42561,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11826;
 			case -631874917:
 				return 13105;
-			case -631664452:
+			case joaat("cs_jackmarston_teen"):
 				return 14836;
 			case -631228576:
 				return 5618;
@@ -42573,11 +42573,11 @@ int func_1165(int iParam0, int iParam1)
 				return 4612;
 			case -629189434:
 				return 6716;
-			case -628956517:
+			case joaat("g_m_y_uniexconfeds_01"):
 				return 15046;
-			case -628794682:
+			case joaat("u_m_m_creolecaptain_01"):
 				return 15830;
-			case -628686073:
+			case joaat("p_door_tax_shack01x"):
 				return 2822;
 			case -628673108:
 				return 9844;
@@ -42613,11 +42613,11 @@ int func_1165(int iParam0, int iParam1)
 				return 8912;
 			case -624459085:
 				return 9217;
-			case -624124479:
+			case joaat("p_pan01x"):
 				return 4509;
 			case -623299690:
 				return 5368;
-			case -623113369:
+			case joaat("skiff"):
 				return 14193;
 			case -622263000:
 				return 4512;
@@ -42631,7 +42631,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3201;
 			case -619474087:
 				return 4302;
-			case -619255230:
+			case joaat("p_door11x_beecher"):
 				return 2578;
 			case -619132373:
 				return 14338;
@@ -42641,7 +42641,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7512;
 			case -618847746:
 				return 338;
-			case -618634632:
+			case joaat("p_cs_photo_5x7"):
 				return 12230;
 			case -618091091:
 				return 5119;
@@ -42659,11 +42659,11 @@ int func_1165(int iParam0, int iParam1)
 				return 7370;
 			case -615264098:
 				return 4943;
-			case -615160268:
+			case joaat("p_sandwichboard02x"):
 				return 5814;
-			case -615159064:
+			case joaat("p_coin01x"):
 				return 6511;
-			case -614708638:
+			case joaat("a_m_m_deliverytravelers_cool_01"):
 				return 14584;
 			case -613934142:
 				return 5134;
@@ -42711,11 +42711,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11554;
 			case -607893691:
 				return 1856;
-			case -607723543:
+			case joaat("a_m_m_blwlaborer_02"):
 				return 14572;
 			case joaat("cs_clay"):
 				return 14756;
-			case -607235640:
+			case joaat("p_cs_jug01x"):
 				return 10220;
 			case -607200791:
 				return 6084;
@@ -42747,7 +42747,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5612;
 			case -602401997:
 				return 9881;
-			case -602165537:
+			case joaat("p_pro_stabledoor01x"):
 				return 2734;
 			case -601464432:
 				return 11386;
@@ -42775,7 +42775,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12614;
 			case -597490818:
 				return 11125;
-			case -597362537:
+			case joaat("a_m_m_vallaborer_01"):
 				return 14664;
 			case -597281244:
 				return 9579;
@@ -42801,13 +42801,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6031;
 			case -593884138:
 				return 2491;
-			case -593813585:
+			case joaat("a_f_m_gamhighsociety_01"):
 				return 14508;
 			case -593689333:
 				return 12437;
-			case -593150738:
+			case joaat("a_m_m_smhthug_01"):
 				return 14649;
-			case -593056309:
+			case joaat("a_c_iguanadesert_01"):
 				return 14437;
 			case -592887111:
 				return 15634;
@@ -42833,11 +42833,11 @@ int func_1165(int iParam0, int iParam1)
 				return 2935;
 			case -589512656:
 				return 9378;
-			case -589352772:
+			case joaat("p_cs_supplies02x"):
 				return 10405;
 			case -588735523:
 				return 2057;
-			case -588355879:
+			case joaat("s_f_m_cghworker_01"):
 				return 15702;
 			case -588095308:
 				return 6027;
@@ -42849,7 +42849,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2825;
 			case -587276111:
 				return 4114;
-			case -586898625:
+			case joaat("a_c_horse_belgian_blondchestnut"):
 				return 14336;
 			case -586861135:
 				return 1863;
@@ -42865,7 +42865,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4954;
 			case -585408877:
 				return 3967;
-			case -585363224:
+			case joaat("u_m_o_pshrancher_01"):
 				return 15985;
 			case -585028806:
 				return 8163;
@@ -42877,7 +42877,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11361;
 			case -584148549:
 				return 4712;
-			case -583569159:
+			case joaat("p_cs_arthurhat01x"):
 				return 10009;
 			case -583159382:
 				return 2601;
@@ -42889,15 +42889,15 @@ int func_1165(int iParam0, int iParam1)
 				return 9929;
 			case -581006418:
 				return 1322;
-			case -580975805:
+			case joaat("cs_priest_wedding"):
 				return 14949;
 			case -580917728:
 				return 6120;
 			case -580569765:
 				return 7112;
-			case -580353882:
+			case joaat("p_cs_electrichelmet01x"):
 				return 10135;
-			case -580052172:
+			case joaat("u_m_o_armbartender_01"):
 				return 15974;
 			case -579321021:
 				return 8519;
@@ -42917,7 +42917,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7321;
 			case -578203294:
 				return 15182;
-			case -577761603:
+			case joaat("u_m_m_nbxpriest_01"):
 				return 15875;
 			case -577606686:
 				return 5815;
@@ -42943,7 +42943,7 @@ int func_1165(int iParam0, int iParam1)
 				return 229;
 			case -575490883:
 				return 2766;
-			case -575340245:
+			case joaat("a_c_raven_01"):
 				return 14459;
 			case -574733546:
 				return 1377;
@@ -42965,7 +42965,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6893;
 			case -573272707:
 				return 7215;
-			case -572941403:
+			case joaat("cs_strdeputy_02"):
 				return 14982;
 			case -572292941:
 				return 3695;
@@ -42977,7 +42977,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13445;
 			case -571195421:
 				return 12130;
-			case -570691410:
+			case joaat("cart04"):
 				return 14128;
 			case -570685890:
 				return 11767;
@@ -42995,11 +42995,11 @@ int func_1165(int iParam0, int iParam1)
 				return 9257;
 			case -569477141:
 				return 10116;
-			case -569447711:
+			case joaat("p_cs_bridecatalogue01x"):
 				return 12160;
 			case -569142606:
 				return 10397;
-			case -569131374:
+			case joaat("p_cameraflash01x"):
 				return 4339;
 			case -568744613:
 				return 9343;
@@ -43013,9 +43013,9 @@ int func_1165(int iParam0, int iParam1)
 				return 7627;
 			case -567509315:
 				return 13740;
-			case -566994313:
+			case joaat("p_canempty09x"):
 				return 3475;
-			case -566878875:
+			case joaat("cs_micahbell"):
 				return 14873;
 			case -566521753:
 				return 1615;
@@ -43039,7 +43039,7 @@ int func_1165(int iParam0, int iParam1)
 				return 567;
 			case -564418820:
 				return 12454;
-			case -564099192:
+			case joaat("a_c_cranewhooping_01"):
 				return 14251;
 			case -563128603:
 				return 4147;
@@ -43051,13 +43051,13 @@ int func_1165(int iParam0, int iParam1)
 				return 15385;
 			case -561839536:
 				return 3179;
-			case -561610178:
+			case joaat("u_m_o_mapwiseoldman_01"):
 				return 15983;
 			case -560775579:
 				return 10105;
 			case -560633265:
 				return 5792;
-			case -560342419:
+			case joaat("a_c_boarlegendary_01"):
 				return 14234;
 			case -559281598:
 				return 13174;
@@ -43067,7 +43067,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5732;
 			case -558355838:
 				return 942;
-			case -558131359:
+			case joaat("cs_famousgunslinger_03"):
 				return 14797;
 			case -557820126:
 				return 1823;
@@ -43075,7 +43075,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15175;
 			case -557356178:
 				return 10278;
-			case -556763978:
+			case joaat("p_commode02x"):
 				return 1050;
 			case -556757359:
 				return 16039;
@@ -43093,9 +43093,9 @@ int func_1165(int iParam0, int iParam1)
 				return 7882;
 			case -554089691:
 				return 12853;
-			case -554014433:
+			case joaat("p_can05x"):
 				return 3461;
-			case -553582603:
+			case joaat("s_m_m_nbxriverboatguards_01"):
 				return 15733;
 			case -553285328:
 				return 5090;
@@ -43131,7 +43131,7 @@ int func_1165(int iParam0, int iParam1)
 				return 535;
 			case -550456302:
 				return 761;
-			case -550289621:
+			case joaat("cs_bivcoachdriver"):
 				return 14727;
 			case -550160250:
 				return 12690;
@@ -43147,9 +43147,9 @@ int func_1165(int iParam0, int iParam1)
 				return 5423;
 			case -548778324:
 				return 15058;
-			case -548150401:
+			case joaat("p_cigar02x"):
 				return 3042;
-			case -548014618:
+			case joaat("a_c_horse_gang_charles"):
 				return 14356;
 			case -547982328:
 				return 10481;
@@ -43161,7 +43161,7 @@ int func_1165(int iParam0, int iParam1)
 				return 378;
 			case -546133941:
 				return 15648;
-			case -546124888:
+			case joaat("p_doormansiongate01x"):
 				return 2657;
 			case -545551267:
 				return 6145;
@@ -43171,11 +43171,11 @@ int func_1165(int iParam0, int iParam1)
 				return 9882;
 			case -544901073:
 				return 3422;
-			case -544816550:
+			case joaat("northcoalcar01x"):
 				return 14161;
 			case -544209874:
 				return 13557;
-			case -544190016:
+			case joaat("u_m_m_wtccowboy_04"):
 				return 15973;
 			case -544167392:
 				return 544;
@@ -43191,7 +43191,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12545;
 			case -543027428:
 				return 3449;
-			case -542955242:
+			case joaat("p_door04x"):
 				return 2572;
 			case -542529399:
 				return 15361;
@@ -43203,13 +43203,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6496;
 			case -542120195:
 				return 6969;
-			case -541762431:
+			case joaat("a_c_rabbit_01"):
 				return 14456;
 			case -541479167:
 				return 7667;
 			case -540577738:
 				return 3159;
-			case -540567536:
+			case joaat("p_cs_wanted_bounty01x"):
 				return 12263;
 			case -540451414:
 				return 8530;
@@ -43231,7 +43231,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12501;
 			case -538716758:
 				return 13575;
-			case -538512200:
+			case joaat("cs_braithwaitebutler"):
 				return 14730;
 			case -538306884:
 				return 1971;
@@ -43247,7 +43247,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1794;
 			case -535818257:
 				return 2919;
-			case -535756918:
+			case joaat("p_jewelrybox02bx"):
 				return 4020;
 			case -535753978:
 				return 2059;
@@ -43263,7 +43263,7 @@ int func_1165(int iParam0, int iParam1)
 	{
 		switch (iParam0)
 		{
-			case -535404896:
+			case joaat("g_m_m_uniswamp_01"):
 				return 15044;
 			case -535203454:
 				return 3324;
@@ -43271,7 +43271,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5489;
 			case -534527147:
 				return 2449;
-			case -534058408:
+			case joaat("s_m_m_sdticketseller_01"):
 				return 15742;
 			case -533644236:
 				return 10130;
@@ -43287,7 +43287,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7195;
 			case -532463888:
 				return 13730;
-			case -532378284:
+			case joaat("u_m_m_racforeman_01"):
 				return 15887;
 			case -531591311:
 				return 6725;
@@ -43313,7 +43313,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1913;
 			case -527591399:
 				return 4069;
-			case -526947582:
+			case joaat("p_cs_rope04x"):
 				return 10340;
 			case -526404170:
 				return 1650;
@@ -43331,7 +43331,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7353;
 			case -523396680:
 				return 13116;
-			case -522739022:
+			case joaat("cs_sean"):
 				return 14973;
 			case -522506570:
 				return 2649;
@@ -43339,7 +43339,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9063;
 			case -522328131:
 				return 2690;
-			case -521690062:
+			case joaat("p_doorcircus01x"):
 				return 2840;
 			case -521377860:
 				return 5648;
@@ -43423,7 +43423,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11732;
 			case -508462670:
 				return 12900;
-			case -508339389:
+			case joaat("cs_gilbertknightly"):
 				return 14822;
 			case -508322556:
 				return 12307;
@@ -43433,7 +43433,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7435;
 			case -507660561:
 				return 25;
-			case -507254331:
+			case joaat("p_chinacabinet01x"):
 				return 3750;
 			case -506576686:
 				return 10462;
@@ -43471,11 +43471,11 @@ int func_1165(int iParam0, int iParam1)
 				return 1562;
 			case -503751164:
 				return 8822;
-			case -503626004:
+			case joaat("p_mortarpestle02x"):
 				return 4360;
 			case -503506965:
 				return 902;
-			case -503427116:
+			case joaat("turbineboat"):
 				return 14206;
 			case -503386070:
 				return 12242;
@@ -43483,7 +43483,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14916;
 			case -502870451:
 				return 4758;
-			case -502353725:
+			case joaat("p_pebble01x"):
 				return 5001;
 			case -501960712:
 				return 4582;
@@ -43495,7 +43495,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13363;
 			case -501035397:
 				return 12140;
-			case -499992081:
+			case joaat("a_m_m_btchillbilly_01"):
 				return 14576;
 			case -499985133:
 				return 1936;
@@ -43521,7 +43521,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2983;
 			case -495972108:
 				return 3604;
-			case -495199054:
+			case joaat("p_cask01x"):
 				return 6091;
 			case -495170740:
 				return 5788;
@@ -43529,7 +43529,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12065;
 			case -494859237:
 				return 12020;
-			case -494496318:
+			case joaat("p_cs_book_small01x"):
 				return 12124;
 			case -494460317:
 				return 9377;
@@ -43553,7 +43553,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5342;
 			case -491317460:
 				return 553;
-			case -491019543:
+			case joaat("p_cs_shotglass01x"):
 				return 10376;
 			case -490236877:
 				return 10291;
@@ -43563,7 +43563,7 @@ int func_1165(int iParam0, int iParam1)
 				return 16059;
 			case -489668873:
 				return 7923;
-			case -489515861:
+			case joaat("cs_micahsnemesis"):
 				return 14874;
 			case -489402497:
 				return 10549;
@@ -43581,7 +43581,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1567;
 			case -486577432:
 				return 9738;
-			case -486390692:
+			case joaat("u_m_m_unidusterhenchman_02"):
 				return 15946;
 			case -485962908:
 				return 7031;
@@ -43603,7 +43603,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2625;
 			case -484295669:
 				return 13582;
-			case -483602017:
+			case joaat("p_sledgehammer02x"):
 				return 6486;
 			case -483441123:
 				return 6045;
@@ -43615,7 +43615,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9068;
 			case -482517719:
 				return 11344;
-			case -482258956:
+			case joaat("p_jewelrybox02x"):
 				return 4022;
 			case -481681561:
 				return 9210;
@@ -43661,17 +43661,17 @@ int func_1165(int iParam0, int iParam1)
 				return 15401;
 			case -476292199:
 				return 4660;
-			case -475791515:
+			case joaat("p_cs_flowers01x"):
 				return 10151;
 			case -475278862:
 				return 6160;
 			case -474929359:
 				return 5241;
-			case -474442526:
+			case joaat("p_cs_rt_letterl_dbl"):
 				return 12248;
 			case -474404988:
 				return 7179;
-			case -474340954:
+			case joaat("p_package10"):
 				return 6218;
 			case -474295344:
 				return 2982;
@@ -43693,7 +43693,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5393;
 			case -469509291:
 				return 10212;
-			case -468934984:
+			case joaat("a_m_m_lowersdtownfolk_01"):
 				return 14608;
 			case -468873552:
 				return 9431;
@@ -43713,11 +43713,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11764;
 			case -466769455:
 				return 5267;
-			case -466687768:
+			case joaat("a_c_redfootedbooby_01"):
 				return 14460;
 			case -466677552:
 				return 13221;
-			case -466054788:
+			case joaat("a_c_turkey_01"):
 				return 14484;
 			case -465636116:
 				return 9409;
@@ -43727,7 +43727,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13504;
 			case -464747260:
 				return 12999;
-			case -464684897:
+			case joaat("cs_cleet"):
 				return 14757;
 			case -464583683:
 				return 11282;
@@ -43767,9 +43767,9 @@ int func_1165(int iParam0, int iParam1)
 				return 7800;
 			case -460349319:
 				return 5348;
-			case -459043872:
+			case joaat("p_letterenvelope_cs01x"):
 				return 5291;
-			case -458984299:
+			case joaat("p_knittingsquare01x"):
 				return 4026;
 			case -458806931:
 				return 1570;
@@ -43799,7 +43799,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2463;
 			case -455166063:
 				return 3658;
-			case -454661055:
+			case joaat("cs_sdpriest"):
 				return 14970;
 			case -454179928:
 				return 12745;
@@ -43807,7 +43807,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13646;
 			case -452612240:
 				return 13146;
-			case -452224784:
+			case joaat("a_c_fishperch_01_ms"):
 				return 14288;
 			case -451979629:
 				return 2143;
@@ -43815,17 +43815,17 @@ int func_1165(int iParam0, int iParam1)
 				return 13720;
 			case -451383412:
 				return 2418;
-			case -451122991:
+			case joaat("p_cs_generator01x"):
 				return 10187;
 			case -450823691:
 				return 3120;
-			case -450300420:
+			case joaat("p_cookgrate01x"):
 				return 1164;
-			case -450226655:
+			case joaat("cs_edithdown"):
 				return 14787;
 			case -450213038:
 				return 7840;
-			case -450053710:
+			case joaat("a_c_horse_americanpaint_overo"):
 				return 14309;
 			case -450044044:
 				return 8708;
@@ -43833,7 +43833,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4536;
 			case -449688053:
 				return 11420;
-			case -449588556:
+			case joaat("a_f_m_unicorpse_01"):
 				return 14540;
 			case -449150372:
 				return 9835;
@@ -43849,7 +43849,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12938;
 			case -447251812:
 				return 78;
-			case -447184114:
+			case joaat("p_cigarlit01x"):
 				return 3053;
 			case -447149738:
 				return 5027;
@@ -43859,13 +43859,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9581;
 			case -446524645:
 				return 4787;
-			case -446093729:
+			case joaat("cs_joe"):
 				return 14843;
 			case -445968941:
 				return 4160;
 			case -445472684:
 				return 15129;
-			case -445365508:
+			case joaat("p_crayfish01x"):
 				return 3525;
 			case -445327046:
 				return 2356;
@@ -43913,7 +43913,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8967;
 			case -441593240:
 				return 9236;
-			case -441265845:
+			case joaat("p_loghalf01x"):
 				return 4923;
 			case -441052688:
 				return 8014;
@@ -43929,15 +43929,15 @@ int func_1165(int iParam0, int iParam1)
 				return 13820;
 			case -439942808:
 				return 2842;
-			case -439873673:
+			case joaat("u_m_m_nbxriverboatpitboss_01"):
 				return 15880;
 			case -439711618:
 				return 7259;
-			case -439429058:
+			case joaat("a_m_m_emrfarmhand_01"):
 				return 14587;
 			case -439345079:
 				return 15341;
-			case -438696255:
+			case joaat("u_m_m_hhrrancher_01"):
 				return 15843;
 			case -438618302:
 				return 2461;
@@ -43959,7 +43959,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7631;
 			case -436760395:
 				return 577;
-			case -436606401:
+			case joaat("p_cs_donation01x"):
 				return 10112;
 			case -436277034:
 				return 11427;
@@ -43993,7 +43993,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1739;
 			case -431173091:
 				return 6732;
-			case -430974470:
+			case joaat("p_club02x"):
 				return 9997;
 			case -430860684:
 				return 6705;
@@ -44045,7 +44045,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7060;
 			case -422989395:
 				return 2266;
-			case -422937996:
+			case joaat("a_f_m_bynfancytravellers_01"):
 				return 14505;
 			case -422520518:
 				return 951;
@@ -44053,7 +44053,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11118;
 			case -422239982:
 				return 11061;
-			case -422220273:
+			case joaat("p_axe01x"):
 				return 6374;
 			case -422040390:
 				return 337;
@@ -44063,7 +44063,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6937;
 			case -420599285:
 				return 14389;
-			case -419756450:
+			case joaat("p_potclay01x"):
 				return 5413;
 			case -419213835:
 				return 13279;
@@ -44109,7 +44109,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1773;
 			case -413263691:
 				return 2591;
-			case -413086509:
+			case joaat("p_cs_drumkit01x"):
 				return 10115;
 			case -412742169:
 				return 5990;
@@ -44149,7 +44149,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3248;
 			case -408003354:
 				return 6582;
-			case -407730502:
+			case joaat("a_c_turtlesnapping_01"):
 				return 14488;
 			case -407645735:
 				return 3588;
@@ -44163,7 +44163,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7074;
 			case -405712730:
 				return 557;
-			case -405196566:
+			case joaat("stagecoach003x"):
 				return 14197;
 			case -404960797:
 				return 9390;
@@ -44207,11 +44207,11 @@ int func_1165(int iParam0, int iParam1)
 				return 15335;
 			case -399697037:
 				return 9587;
-			case -399638686:
+			case joaat("p_gate_horse01a"):
 				return 2711;
 			case -399563751:
 				return 459;
-			case -398894636:
+			case joaat("p_doorsaloon02x"):
 				return 2687;
 			case -398686337:
 				return 10014;
@@ -44221,13 +44221,13 @@ int func_1165(int iParam0, int iParam1)
 				return 2998;
 			case -398145468:
 				return 2164;
-			case -398036248:
+			case joaat("p_teatraycombo01x"):
 				return 7557;
 			case -397705913:
 				return 3375;
 			case -397626037:
 				return 16122;
-			case -397513868:
+			case joaat("rowboatswamp"):
 				return 14188;
 			case -397099226:
 				return 8819;
@@ -44277,11 +44277,11 @@ int func_1165(int iParam0, int iParam1)
 				return 4520;
 			case -390599922:
 				return 15155;
-			case -390289284:
+			case joaat("u_m_m_nbxbrontesecform_01"):
 				return 15865;
 			case -390193522:
 				return 5074;
-			case -389790005:
+			case joaat("a_c_dogchesbayretriever_01"):
 				return 14259;
 			case -389642760:
 				return 7316;
@@ -44323,9 +44323,9 @@ int func_1165(int iParam0, int iParam1)
 				return 15160;
 			case -384569888:
 				return 3808;
-			case -384354290:
+			case joaat("s_m_m_fussarhenchman_01"):
 				return 15723;
-			case -384257010:
+			case joaat("p_chair07x"):
 				return 5574;
 			case -384065410:
 				return 9687;
@@ -44349,7 +44349,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7532;
 			case -382289692:
 				return 6024;
-			case -382289306:
+			case joaat("p_campfirerocksml02x"):
 				return 1152;
 			case -382063176:
 				return 11725;
@@ -44371,19 +44371,19 @@ int func_1165(int iParam0, int iParam1)
 				return 13809;
 			case -379287593:
 				return 12046;
-			case -378974401:
+			case joaat("s_m_m_trainstationworker_01"):
 				return 15749;
 			case -378887090:
 				return 7067;
-			case -378814141:
+			case joaat("u_f_m_rkshomesteadtenant_01"):
 				return 15774;
-			case -378732805:
+			case joaat("wagonwork01x"):
 				return 14219;
 			case -377501627:
 				return 6761;
 			case -377223963:
 				return 15384;
-			case -377157708:
+			case joaat("cart08"):
 				return 14132;
 			case -376819271:
 				return 13970;
@@ -44403,7 +44403,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5432;
 			case -374067997:
 				return 13588;
-			case -373817191:
+			case joaat("cs_slavecatcher"):
 				return 14977;
 			case -373053921:
 				return 9868;
@@ -44411,7 +44411,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15108;
 			case -372843935:
 				return 134;
-			case -372794047:
+			case joaat("p_coinstack01"):
 				return 6513;
 			case -372641392:
 				return 10839;
@@ -44433,7 +44433,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1512;
 			case -370948464:
 				return 12367;
-			case -370898707:
+			case joaat("w_melee_knife03"):
 				return 32;
 			case -370715248:
 				return 7751;
@@ -44451,7 +44451,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5022;
 			case -370090887:
 				return 4121;
-			case -369841376:
+			case joaat("s_m_m_dispatchlawrural_01"):
 				return 15719;
 			case -369366882:
 				return 6962;
@@ -44475,9 +44475,9 @@ int func_1165(int iParam0, int iParam1)
 				return 15513;
 			case -364093783:
 				return 5597;
-			case -363718050:
+			case joaat("p_cs_dusterlenny01x"):
 				return 10521;
-			case -363708904:
+			case joaat("p_c_horse_01"):
 				return 15545;
 			case -363611516:
 				return 9962;
@@ -44501,7 +44501,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12629;
 			case -360284465:
 				return 13847;
-			case -359926761:
+			case joaat("p_chair21x"):
 				return 5587;
 			case -359794697:
 				return 5545;
@@ -44537,9 +44537,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13736;
 			case -355413556:
 				return 9825;
-			case -355385988:
+			case joaat("g_m_o_uniexconfeds_01"):
 				return 15045;
-			case -355147137:
+			case joaat("p_buysellbox02x"):
 				return 6146;
 			case -355112508:
 				return 5203;
@@ -44547,7 +44547,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11635;
 			case -354882929:
 				return 3640;
-			case -354592894:
+			case joaat("cs_fire_breather"):
 				return 14804;
 			case -354573716:
 				return 14889;
@@ -44585,9 +44585,9 @@ int func_1165(int iParam0, int iParam1)
 				return 15102;
 			case -350279662:
 				return 7214;
-			case -350261633:
+			case joaat("p_door_sd_conservatory01x"):
 				return 2820;
-			case -350169314:
+			case joaat("cs_braithwaitemaid"):
 				return 14731;
 			case -350098659:
 				return 4837;
@@ -44605,9 +44605,9 @@ int func_1165(int iParam0, int iParam1)
 				return 4587;
 			case -349072009:
 				return 2909;
-			case -348580784:
+			case joaat("p_pokerhand03x"):
 				return 12771;
-			case -348559929:
+			case joaat("p_cs_indianpipebag01x"):
 				return 10214;
 			case -348510197:
 				return 6174;
@@ -44625,9 +44625,9 @@ int func_1165(int iParam0, int iParam1)
 				return 6183;
 			case -346859492:
 				return 5826;
-			case -346700962:
+			case joaat("cs_mollyoshea"):
 				return 14880;
-			case -346465058:
+			case joaat("p_pamphletstack01x"):
 				return 5303;
 			case -346344763:
 				return 5260;
@@ -44649,7 +44649,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15179;
 			case -343238839:
 				return 5619;
-			case -343178443:
+			case joaat("cs_twingroupie_02"):
 				return 15003;
 			case -342842795:
 				return 3603;
@@ -44709,7 +44709,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10550;
 			case -332895663:
 				return 5006;
-			case -332787688:
+			case joaat("supplywagon2"):
 				return 14203;
 			case -331861824:
 				return 8245;
@@ -44719,15 +44719,15 @@ int func_1165(int iParam0, int iParam1)
 				return 12917;
 			case -331256804:
 				return 13137;
-			case -330691926:
+			case joaat("p_cs_gag01x"):
 				return 10185;
 			case -330571735:
 				return 2984;
 			case -330347423:
 				return 2345;
-			case -330298770:
+			case joaat("p_saladfork01x"):
 				return 3670;
-			case -330169050:
+			case joaat("w_melee_brokensword01"):
 				return 7;
 			case -330124917:
 				return 14036;
@@ -44749,7 +44749,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3343;
 			case -325149363:
 				return 9087;
-			case -324807411:
+			case joaat("u_m_o_cmrcivilwarcommando_01"):
 				return 15982;
 			case -324695664:
 				return 12974;
@@ -44767,7 +44767,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2121;
 			case -323442978:
 				return 10837;
-			case -323096446:
+			case joaat("a_m_m_bynfancytravellers_01"):
 				return 14579;
 			case -323026525:
 				return 13712;
@@ -44809,7 +44809,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13843;
 			case -318348926:
 				return 7091;
-			case -318323904:
+			case joaat("w_shotgun_pumpaction01"):
 				return 497;
 			case -318278790:
 				return 14313;
@@ -44847,7 +44847,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10589;
 			case -313102936:
 				return 15156;
-			case -312814636:
+			case joaat("p_door44x"):
 				return 2599;
 			case -311956772:
 				return 8086;
@@ -44859,7 +44859,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1809;
 			case -311392807:
 				return 9769;
-			case -310853585:
+			case joaat("a_m_m_nbxdockworkers_01"):
 				return 14616;
 			case -310160435:
 				return 12874;
@@ -44883,7 +44883,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10086;
 			case -308332370:
 				return 15489;
-			case -308302453:
+			case joaat("p_cs_catalogue01x"):
 				return 12162;
 			case -308276427:
 				return 8525;
@@ -44897,7 +44897,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2712;
 			case -306266574:
 				return 3529;
-			case -306120918:
+			case joaat("u_f_o_hermit_woman_01"):
 				return 15782;
 			case -305837470:
 				return 6228;
@@ -44915,7 +44915,7 @@ int func_1165(int iParam0, int iParam1)
 				return 721;
 			case -304744035:
 				return 10421;
-			case -304376856:
+			case joaat("u_m_m_story_rhodes_01"):
 				return 15929;
 			case -304363879:
 				return 4319;
@@ -44931,7 +44931,7 @@ int func_1165(int iParam0, int iParam1)
 				return 297;
 			case -302968547:
 				return 10937;
-			case -302637951:
+			case joaat("s_m_m_rhdcowpoke_01"):
 				return 15738;
 			case -301746888:
 				return 8492;
@@ -44939,9 +44939,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12368;
 			case -301406110:
 				return 5401;
-			case -300867788:
+			case joaat("a_c_fishlakesturgeon_01_lg"):
 				return 14282;
-			case -300816757:
+			case joaat("p_bell05x"):
 				return 4328;
 			case -300729381:
 				return 7805;
@@ -44971,7 +44971,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1779;
 			case -297038508:
 				return 3019;
-			case -296963090:
+			case joaat("p_broom01x"):
 				return 6378;
 			case -296629200:
 				return 10996;
@@ -44989,7 +44989,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14184;
 			case -295343524:
 				return 9181;
-			case -294963065:
+			case joaat("p_chairwhite01x"):
 				return 5645;
 			case -294955637:
 				return 8787;
@@ -45011,7 +45011,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12268;
 			case -293931520:
 				return 13429;
-			case -293448458:
+			case joaat("wagoncircus02x"):
 				return 14214;
 			case -293386706:
 				return 9345;
@@ -45019,7 +45019,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1310;
 			case -293165916:
 				return 4436;
-			case -292997097:
+			case joaat("a_c_cedarwaxwing_01"):
 				return 14243;
 			case -292796790:
 				return 15695;
@@ -45049,13 +45049,13 @@ int func_1165(int iParam0, int iParam1)
 				return 15161;
 			case -290364907:
 				return 3416;
-			case -290265603:
+			case joaat("cs_sd_streetkid_01"):
 				return 14965;
 			case -290145022:
 				return 6731;
 			case -289696537:
 				return 10969;
-			case -289651159:
+			case joaat("p_chair05x"):
 				return 5571;
 			case -289516678:
 				return 4673;
@@ -45067,7 +45067,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5696;
 			case -288182389:
 				return 8096;
-			case -288068792:
+			case joaat("cs_abigailroberts"):
 				return 14698;
 			case -288040042:
 				return 15311;
@@ -45081,7 +45081,7 @@ int func_1165(int iParam0, int iParam1)
 				return 63;
 			case -287504579:
 				return 13929;
-			case -287202633:
+			case joaat("p_crate03d"):
 				return 5952;
 			case -286514070:
 				return 4906;
@@ -45099,7 +45099,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15645;
 			case -285808301:
 				return 180;
-			case -285798272:
+			case joaat("a_m_m_htlfancydrivers_01"):
 				return 14600;
 			case -285747454:
 				return 6349;
@@ -45121,7 +45121,7 @@ int func_1165(int iParam0, int iParam1)
 				return 464;
 			case -283376558:
 				return 813;
-			case -283162583:
+			case joaat("wagon02x"):
 				return 14208;
 			case -283102943:
 				return 3748;
@@ -45147,7 +45147,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10921;
 			case -279774320:
 				return 2040;
-			case -279708644:
+			case joaat("a_m_m_familytravelers_warm_01"):
 				return 14589;
 			case -279692555:
 				return 652;
@@ -45193,7 +45193,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15388;
 			case -275984769:
 				return 3696;
-			case -275688577:
+			case joaat("keelboat"):
 				return 14155;
 			case -275669664:
 				return 11126;
@@ -45211,7 +45211,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5359;
 			case -274241402:
 				return 9012;
-			case -274058460:
+			case joaat("p_lantern09x"):
 				return 4698;
 			case -273795724:
 				return 14087;
@@ -45221,9 +45221,9 @@ int func_1165(int iParam0, int iParam1)
 				return 1027;
 			case -272936733:
 				return 8858;
-			case -272634447:
+			case joaat("cs_mrlinton"):
 				return 14920;
-			case -272492171:
+			case joaat("cs_mrsgeddes"):
 				return 14926;
 			case -271933046:
 				return 7298;
@@ -45253,7 +45253,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2634;
 			case -269630824:
 				return 2332;
-			case -269536141:
+			case joaat("p_cs_rollupcig01x"):
 				return 10333;
 			case -269373164:
 				return 9727;
@@ -45299,7 +45299,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7355;
 			case -266240698:
 				return 10953;
-			case -265719023:
+			case joaat("cs_samaritan"):
 				return 14963;
 			case -265576506:
 				return 9676;
@@ -45307,7 +45307,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1153;
 			case -265115610:
 				return 15416;
-			case -264790543:
+			case joaat("a_m_m_strdeputyresident_01"):
 				return 14650;
 			case -264437520:
 				return 8202;
@@ -45321,7 +45321,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9255;
 			case -263420923:
 				return 9614;
-			case -263328130:
+			case joaat("cs_meditatingmonk"):
 				return 14870;
 			case -262815733:
 				return 12660;
@@ -45331,7 +45331,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2058;
 			case -262120785:
 				return 13362;
-			case -261930923:
+			case joaat("p_brushhorse02x"):
 				return 3094;
 			case -261346391:
 				return 2845;
@@ -45339,7 +45339,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11380;
 			case -260936393:
 				return 12698;
-			case -260277067:
+			case joaat("p_crutchjoe01x"):
 				return 1724;
 			case -259264232:
 				return 6284;
@@ -45351,9 +45351,9 @@ int func_1165(int iParam0, int iParam1)
 				return 6156;
 			case -259156221:
 				return 7881;
-			case -258964962:
+			case joaat("p_cratebrand01x"):
 				return 5969;
-			case -258491284:
+			case joaat("rowboatswamp02"):
 				return 14189;
 			case -258100591:
 				return 2297;
@@ -45381,7 +45381,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11561;
 			case -255416154:
 				return 12019;
-			case -254879387:
+			case joaat("a_f_m_skpprisononline_01"):
 				return 14536;
 			case -254772575:
 				return 7996;
@@ -45401,7 +45401,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2174;
 			case -253724177:
 				return 12890;
-			case -253049070:
+			case joaat("cs_exconfedinformant"):
 				return 14792;
 			case -253001825:
 				return 11293;
@@ -45419,7 +45419,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10739;
 			case -251500736:
 				return 7278;
-			case -251486557:
+			case joaat("u_m_m_sdexoticsshopkeeper_01"):
 				return 15907;
 			case -250947255:
 				return 11701;
@@ -45459,7 +45459,7 @@ int func_1165(int iParam0, int iParam1)
 				return 16119;
 			case -244533584:
 				return 6420;
-			case -244246985:
+			case joaat("u_f_m_tumgeneralstoreowner_01"):
 				return 15778;
 			case -244117428:
 				return 1421;
@@ -45467,9 +45467,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13234;
 			case -243249647:
 				return 15527;
-			case -243188398:
+			case joaat("a_c_fishredfinpickerel_01_ms"):
 				return 14292;
-			case -243150339:
+			case joaat("p_cs_wagon02x"):
 				return 10441;
 			case -243095072:
 				return 4755;
@@ -45509,11 +45509,11 @@ int func_1165(int iParam0, int iParam1)
 				return 889;
 			case -238622185:
 				return 13883;
-			case -238593141:
+			case joaat("p_cs_nailbarrel01x"):
 				return 10262;
 			case -238585893:
 				return 11446;
-			case -238490359:
+			case joaat("p_cs_wantedalive01x"):
 				return 12265;
 			case -238283475:
 				return 14019;
@@ -45553,11 +45553,11 @@ int func_1165(int iParam0, int iParam1)
 				return 8776;
 			case -235311116:
 				return 6729;
-			case -234987592:
+			case joaat("privateobservationcar"):
 				return 14180;
-			case -234159968:
+			case joaat("p_cigar01x"):
 				return 3041;
-			case -233934854:
+			case joaat("a_m_m_sdfancytravellers_01"):
 				return 14641;
 			case -233767701:
 				return 14032;
@@ -45593,7 +45593,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8255;
 			case -229772602:
 				return 5864;
-			case -229688157:
+			case joaat("a_c_snakewater_01"):
 				return 14478;
 			case -229669107:
 				return 4522;
@@ -45603,7 +45603,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11145;
 			case -229515418:
 				return 13000;
-			case -229065721:
+			case joaat("cs_frenchman_01"):
 				return 14811;
 			case -228520146:
 				return 3486;
@@ -45639,7 +45639,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6083;
 			case -225093240:
 				return 7760;
-			case -223700355:
+			case joaat("w_melee_knife01"):
 				return 26;
 			case -223518686:
 				return 4794;
@@ -45697,11 +45697,11 @@ int func_1165(int iParam0, int iParam1)
 				return 14410;
 			case -216753906:
 				return 15379;
-			case -216561112:
+			case joaat("cs_bandsinger"):
 				return 14720;
 			case -216449106:
 				return 12325;
-			case -216303527:
+			case joaat("a_c_horse_winter02_01"):
 				return 14433;
 			case -215882404:
 				return 2853;
@@ -45723,7 +45723,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7287;
 			case -214061100:
 				return 16124;
-			case -213600750:
+			case joaat("cs_cajun"):
 				return 14740;
 			case -213083770:
 				return 13004;
@@ -45739,7 +45739,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12664;
 			case -211456871:
 				return 9232;
-			case -211291960:
+			case joaat("cs_chainprisoner_02"):
 				return 14752;
 			case -211167353:
 				return 10580;
@@ -45749,7 +45749,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1697;
 			case -208790017:
 				return 12090;
-			case -208228129:
+			case joaat("p_coinstack02"):
 				return 6514;
 			case -208111676:
 				return 12856;
@@ -45775,17 +45775,17 @@ int func_1165(int iParam0, int iParam1)
 				return 8398;
 			case -205722126:
 				return 10630;
-			case -205121720:
+			case joaat("cs_baptiste"):
 				return 14721;
 			case -204942356:
 				return 8745;
 			case -204924193:
 				return 10965;
-			case -204889358:
+			case joaat("p_cs_getrich_book01x"):
 				return 12171;
 			case -204176389:
 				return 9634;
-			case -204111661:
+			case joaat("p_prisoncage02x"):
 				return 1190;
 			case -202956931:
 				return 3526;
@@ -45811,7 +45811,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12549;
 			case -199520448:
 				return 15402;
-			case -199311305:
+			case joaat("p_cs_fishbag01x"):
 				return 10145;
 			case -198765800:
 				return 8786;
@@ -45821,7 +45821,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2569;
 			case -198036836:
 				return 7414;
-			case -197909103:
+			case joaat("p_cs_bucket01x"):
 				return 10047;
 			case -197292260:
 				return 642;
@@ -45835,7 +45835,7 @@ int func_1165(int iParam0, int iParam1)
 				return 16085;
 			case -195637550:
 				return 11895;
-			case -195610177:
+			case joaat("cs_drhiggins"):
 				return 14779;
 			case -195433442:
 				return 13822;
@@ -45865,7 +45865,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3013;
 			case -189617022:
 				return 1761;
-			case -189525382:
+			case joaat("s_m_m_valdeputy_01"):
 				return 15757;
 			case -189418434:
 				return 3561;
@@ -45879,13 +45879,13 @@ int func_1165(int iParam0, int iParam1)
 				return 4017;
 			case -187772068:
 				return 15507;
-			case -187463100:
+			case joaat("a_f_m_grifancytravellers_01"):
 				return 14509;
 			case -186730765:
 				return 11663;
 			case -186208429:
 				return 6756;
-			case -185791065:
+			case joaat("p_cello01x"):
 				return 4341;
 			case -184744444:
 				return 5047;
@@ -45903,7 +45903,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11120;
 			case -182695614:
 				return 325;
-			case -182450036:
+			case joaat("p_crate15x"):
 				return 5962;
 			case -181728161:
 				return 8253;
@@ -45915,11 +45915,11 @@ int func_1165(int iParam0, int iParam1)
 				return 4144;
 			case -180859120:
 				return 3034;
-			case -180755040:
+			case joaat("pirogue"):
 				return 14168;
 			case -180727039:
 				return 7715;
-			case -180468848:
+			case joaat("gatchuck_2"):
 				return 14144;
 			case -180425524:
 				return 1003;
@@ -45989,11 +45989,11 @@ int func_1165(int iParam0, int iParam1)
 				return 494;
 			case -172027858:
 				return 8734;
-			case -171876066:
+			case joaat("mp_male"):
 				return 15271;
 			case -171580782:
 				return 3707;
-			case -170538162:
+			case joaat("p_prybar01x"):
 				return 6457;
 			case -170097074:
 				return 8314;
@@ -46003,7 +46003,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9024;
 			case -169526520:
 				return 3218;
-			case -169316936:
+			case joaat("p_feather01x"):
 				return 4191;
 			case -169088372:
 				return 7644;
@@ -46017,7 +46017,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1080;
 			case -167932088:
 				return 6839;
-			case -167880668:
+			case joaat("cs_angusgeddes"):
 				return 14707;
 			case -167778705:
 				return 2925;
@@ -46037,7 +46037,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5418;
 			case -166134033:
 				return 2821;
-			case -166054593:
+			case joaat("a_c_turkey_02"):
 				return 14485;
 			case -165824674:
 				return 15506;
@@ -46047,7 +46047,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11312;
 			case -165256900:
 				return 13109;
-			case -164963696:
+			case joaat("a_c_seagull_01"):
 				return 14464;
 			case -164659805:
 				return 190;
@@ -46057,7 +46057,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2554;
 			case -164457944:
 				return 1504;
-			case -164452766:
+			case joaat("northsteamer01x"):
 				return 14165;
 			case -164405074:
 				return 6123;
@@ -46073,15 +46073,15 @@ int func_1165(int iParam0, int iParam1)
 				return 13832;
 			case -162280617:
 				return 13382;
-			case -162225711:
+			case joaat("w_melee_knife02"):
 				return 28;
 			case -161663051:
 				return 8591;
-			case -161553439:
+			case joaat("cs_mysteriousstranger"):
 				return 14931;
 			case -161258316:
 				return 12640;
-			case -161027961:
+			case joaat("a_f_m_valtownfolk_01"):
 				return 14543;
 			case -160914303:
 				return 5939;
@@ -46127,7 +46127,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7444;
 			case -156813739:
 				return 4797;
-			case -156777810:
+			case joaat("p_jugglingball01x"):
 				return 4350;
 			case -156439156:
 				return 14408;
@@ -46135,9 +46135,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13210;
 			case -156150626:
 				return 3737;
-			case -156060815:
+			case joaat("p_barrelapples01x"):
 				return 3417;
-			case -155999274:
+			case joaat("p_cratetnt01x"):
 				return 897;
 			case -154796631:
 				return 1051;
@@ -46169,7 +46169,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4891;
 			case -151401560:
 				return 5756;
-			case -150919444:
+			case joaat("prop_fncwood_09d"):
 				return 3383;
 			case -150345701:
 				return 9007;
@@ -46219,7 +46219,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10820;
 			case -144912760:
 				return 5424;
-			case -144401148:
+			case joaat("a_m_m_ranchertravelers_warm_01"):
 				return 14623;
 			case -144169247:
 				return 1586;
@@ -46229,13 +46229,13 @@ int func_1165(int iParam0, int iParam1)
 				return 2392;
 			case -143853107:
 				return 7633;
-			case -143276256:
+			case joaat("coach3_cutscene"):
 				return 14137;
 			case -143127326:
 				return 2354;
 			case -142928476:
 				return 9739;
-			case -142576910:
+			case joaat("p_cs_rabbitheadless"):
 				return 10322;
 			case -142534359:
 				return 13939;
@@ -46257,7 +46257,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4122;
 			case -140928778:
 				return 9573;
-			case -140869950:
+			case joaat("cs_rockyseven_widow"):
 				return 14962;
 			case -140855253:
 				return 7958;
@@ -46299,7 +46299,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4145;
 			case -136856620:
 				return 4809;
-			case -136833353:
+			case joaat("coach3"):
 				return 14136;
 			case -136348953:
 				return 7010;
@@ -46309,11 +46309,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11546;
 			case -136266983:
 				return 696;
-			case -136178851:
+			case joaat("a_f_m_waptownfolk_01"):
 				return 14546;
 			case -135977067:
 				return 418;
-			case -135751027:
+			case joaat("wagondoc01x"):
 				return 14216;
 			case -135500740:
 				return 7080;
@@ -46351,7 +46351,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9798;
 			case -130591341:
 				return 13780;
-			case -130500054:
+			case joaat("p_bw_desk01x"):
 				return 5239;
 			case -129983854:
 				return 7346;
@@ -46395,11 +46395,11 @@ int func_1165(int iParam0, int iParam1)
 				return 12585;
 			case -122987220:
 				return 8045;
-			case -122790003:
+			case joaat("cs_lenny"):
 				return 14856;
 			case -122393602:
 				return 6317;
-			case -121985991:
+			case joaat("cs_archiedown"):
 				return 14712;
 			case -121884986:
 				return 13058;
@@ -46409,7 +46409,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6268;
 			case -120038197:
 				return 11541;
-			case -119752662:
+			case joaat("p_cs_envelope_cls_blank"):
 				return 12167;
 			case -119621220:
 				return 6429;
@@ -46445,7 +46445,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3231;
 			case -115697482:
 				return 4281;
-			case -115660769:
+			case joaat("u_m_m_mfrrancher_01"):
 				return 15857;
 			case -115514877:
 				return 10540;
@@ -46505,7 +46505,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7500;
 			case -109727520:
 				return 3222;
-			case -109693797:
+			case joaat("p_benchpiano02x"):
 				return 5561;
 			case -109686994:
 				return 7047;
@@ -46565,13 +46565,13 @@ int func_1165(int iParam0, int iParam1)
 				return 8627;
 			case -102330818:
 				return 7125;
-			case -102057441:
+			case joaat("a_f_m_sdchinatown_01"):
 				return 14531;
 			case -102027626:
 				return 15562;
 			case -102021718:
 				return 7217;
-			case -101801426:
+			case joaat("u_m_m_lrshomesteadtenant_01"):
 				return 15856;
 			case -101383214:
 				return 2668;
@@ -46579,7 +46579,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10234;
 			case -100702726:
 				return 15558;
-			case -100461901:
+			case joaat("cs_leostrauss"):
 				return 14858;
 			case -100088714:
 				return 2932;
@@ -46595,7 +46595,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2218;
 			case -98562431:
 				return 864;
-			case -98087368:
+			case joaat("cs_famousgunslinger_01"):
 				return 14795;
 			case -97846968:
 				return 2375;
@@ -46623,11 +46623,11 @@ int func_1165(int iParam0, int iParam1)
 				return 12486;
 			case -94011106:
 				return 3209;
-			case -93693274:
+			case joaat("p_diningchairs01x"):
 				return 3764;
 			case -93578268:
 				return 5086;
-			case -92781506:
+			case joaat("p_cs_sink03x"):
 				return 10381;
 			case -92465041:
 				return 8500;
@@ -46647,7 +46647,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4795;
 			case -90084586:
 				return 15544;
-			case -89592526:
+			case joaat("p_glass03x"):
 				return 2966;
 			case -86734559:
 				return 11295;
@@ -46677,13 +46677,13 @@ int func_1165(int iParam0, int iParam1)
 				return 5178;
 			case -83869836:
 				return 9316;
-			case -83201150:
+			case joaat("cs_wapitiboy"):
 				return 15014;
 			case -82618248:
 				return 2357;
 			case -82464701:
 				return 8335;
-			case -82199229:
+			case joaat("p_mugcoffee01x"):
 				return 2992;
 			case -82186616:
 				return 10528;
@@ -46721,7 +46721,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15397;
 			case -77604023:
 				return 4551;
-			case -77509825:
+			case joaat("cs_bartholomewbraithwaite"):
 				return 14722;
 			case -77320889:
 				return 1677;
@@ -46753,7 +46753,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6521;
 			case -73130250:
 				return 1509;
-			case -73075081:
+			case joaat("a_f_m_middletrainpassengers_01"):
 				return 14520;
 			case -73021168:
 				return 9206;
@@ -46763,7 +46763,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11031;
 			case -72392766:
 				return 6519;
-			case -71527226:
+			case joaat("cs_mixedracekid"):
 				return 14878;
 			case -71390396:
 				return 3158;
@@ -46823,25 +46823,25 @@ int func_1165(int iParam0, int iParam1)
 				return 1154;
 			case -63490988:
 				return 4009;
-			case -63142583:
+			case joaat("p_bow01x"):
 				return 4331;
 			case -63138542:
 				return 504;
-			case -63137486:
+			case joaat("a_f_m_lagtownfolk_01"):
 				return 14512;
 			case -63121300:
 				return 3816;
-			case -63103461:
+			case joaat("u_m_m_nbxgraverobber_01"):
 				return 15867;
 			case -62919427:
 				return 12513;
 			case -62879824:
 				return 12927;
-			case -62869733:
+			case joaat("p_moneystack01x"):
 				return 6543;
 			case -62351493:
 				return 2175;
-			case -62209849:
+			case joaat("p_door_dov_lab_l_01x"):
 				return 2781;
 			case -61989950:
 				return 6287;
@@ -46875,7 +46875,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10994;
 			case -56681380:
 				return 533;
-			case -56405365:
+			case joaat("p_cs_contrabass01x"):
 				return 10089;
 			case -56104263:
 				return 6402;
@@ -46883,7 +46883,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4247;
 			case -55967805:
 				return 11750;
-			case -55633154:
+			case joaat("cs_beatenupcaptain"):
 				return 14724;
 			case -55350682:
 				return 1089;
@@ -46897,7 +46897,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9747;
 			case -53434895:
 				return 6400;
-			case -53066424:
+			case joaat("w_melee_fishingpole02"):
 				return 10;
 			case -52890216:
 				return 1541;
@@ -46921,7 +46921,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5668;
 			case -51150307:
 				return 3919;
-			case -51068900:
+			case joaat("s_m_m_strcowpoke_01"):
 				return 15745;
 			case -50867196:
 				return 9714;
@@ -46929,7 +46929,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11348;
 			case joaat("a_c_cow"):
 				return 14248;
-			case -50604564:
+			case joaat("p_cs_map01x"):
 				return 10243;
 			case -50062575:
 				return 11506;
@@ -46959,11 +46959,11 @@ int func_1165(int iParam0, int iParam1)
 				return 5506;
 			case -47192840:
 				return 15765;
-			case -46607261:
+			case joaat("cs_edgarross"):
 				return 14785;
 			case -46393753:
 				return 3865;
-			case -46389610:
+			case joaat("cs_twingroupie_01"):
 				return 15002;
 			case -46244091:
 				return 1151;
@@ -46979,7 +46979,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7697;
 			case -44804390:
 				return 12172;
-			case -44675836:
+			case joaat("p_boat_oar_01_s"):
 				return 12293;
 			case -44647667:
 				return 8839;
@@ -47019,7 +47019,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11300;
 			case -39477228:
 				return 15422;
-			case -38907170:
+			case joaat("p_painting_newgala_lrg01x"):
 				return 5301;
 			case -38603979:
 				return 9486;
@@ -47031,7 +47031,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8813;
 			case -37131555:
 				return 7052;
-			case -37044699:
+			case joaat("w_melee_machete01"):
 				return 73;
 			case -36741141:
 				return 1406;
@@ -47041,13 +47041,13 @@ int func_1165(int iParam0, int iParam1)
 				return 12787;
 			case -36078079:
 				return 10636;
-			case -35832535:
+			case joaat("p_stamp01x"):
 				return 5333;
 			case -35643824:
 				return 3138;
 			case -35626461:
 				return 8699;
-			case -35440630:
+			case joaat("p_bucket02x"):
 				return 5937;
 			case -35354508:
 				return 10597;
@@ -47089,7 +47089,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13311;
 			case -29716156:
 				return 4304;
-			case -29643421:
+			case joaat("p_door11x"):
 				return 2577;
 			case -29454066:
 				return 1802;
@@ -47117,7 +47117,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15682;
 			case -26216976:
 				return 3137;
-			case -26159804:
+			case joaat("a_m_m_uniboatcrew_01"):
 				return 14656;
 			case -25978087:
 				return 1159;
@@ -47129,7 +47129,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6618;
 			case -24072610:
 				return 9060;
-			case -23993255:
+			case joaat("w_pistol_volcanic01"):
 				return 150;
 			case -23174115:
 				return 12071;
@@ -47151,7 +47151,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13991;
 			case -21195597:
 				return 8280;
-			case -21026390:
+			case joaat("prop_fncwood_12a"):
 				return 3384;
 			case -19533252:
 				return 8678;
@@ -47173,7 +47173,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6303;
 			case -17398012:
 				return 8798;
-			case -17071680:
+			case joaat("cs_mrsweathers"):
 				return 14928;
 			case -17069145:
 				return 1373;
@@ -47187,7 +47187,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11176;
 			case -14384249:
 				return 671;
-			case -14079324:
+			case joaat("cs_clive"):
 				return 14758;
 			case -13708041:
 				return 15094;
@@ -47223,7 +47223,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9928;
 			case -9527169:
 				return 9992;
-			case -9387521:
+			case joaat("p_tentarmypup01x"):
 				return 1214;
 			case -9358116:
 				return 15181;
@@ -47247,7 +47247,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7541;
 			case -5062748:
 				return 15670;
-			case -4539399:
+			case joaat("s_m_m_dispatchpolice_01"):
 				return 15722;
 			case -4216550:
 				return 2111;
@@ -47255,7 +47255,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12901;
 			case -2896521:
 				return 561;
-			case -2359651:
+			case joaat("s_interact_jug_pickup"):
 				return 11090;
 			case -2335808:
 				return 15498;
@@ -47283,13 +47283,13 @@ int func_1165(int iParam0, int iParam1)
 		}
 		return -1;
 	}
-	if (iParam0 <= 279593638)
+	if (iParam0 <= joaat("p_crate27x"))
 	{
 		switch (iParam0)
 		{
 			case 1517912:
 				return 10037;
-			case 1520661:
+			case joaat("a_c_fishrockbass_01_sm"):
 				return 14295;
 			case 1577141:
 				return 5496;
@@ -47297,9 +47297,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12607;
 			case 1881267:
 				return 7853;
-			case 1907611:
+			case joaat("p_hammer01x"):
 				return 6413;
-			case 2514129:
+			case joaat("p_binoculars01x"):
 				return 4329;
 			case 2603182:
 				return 11497;
@@ -47307,7 +47307,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11378;
 			case 2630557:
 				return 10941;
-			case 2756433:
+			case joaat("a_m_m_btcobesemen_01"):
 				return 14577;
 			case 3226703:
 				return 5475;
@@ -47319,7 +47319,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3314;
 			case 4075326:
 				return 298;
-			case 4991732:
+			case joaat("cs_jamie"):
 				return 14837;
 			case 5818270:
 				return 7838;
@@ -47345,13 +47345,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9799;
 			case 9264690:
 				return 2912;
-			case 9390805:
+			case joaat("a_f_m_vhttownfolk_01"):
 				return 14545;
 			case 9817350:
 				return 6177;
 			case 10231635:
 				return 5153;
-			case 10447432:
+			case joaat("a_m_m_rhdtownfolk_01_laborer"):
 				return 14628;
 			case 10566785:
 				return 8568;
@@ -47401,7 +47401,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8409;
 			case 16333764:
 				return 13341;
-			case 16796454:
+			case joaat("cs_miltonandrews"):
 				return 14876;
 			case 16910959:
 				return 13650;
@@ -47423,7 +47423,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15250;
 			case 20204872:
 				return 8295;
-			case 20251888:
+			case joaat("cs_karensjohn_01"):
 				return 14851;
 			case 20364017:
 				return 7640;
@@ -47471,7 +47471,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13752;
 			case 26532233:
 				return 12581;
-			case 26913812:
+			case joaat("u_m_m_story_cannibal_01"):
 				return 15918;
 			case 27734749:
 				return 9164;
@@ -47501,7 +47501,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12965;
 			case 29773816:
 				return 3768;
-			case 29998454:
+			case joaat("p_bottle008x"):
 				return 2902;
 			case 30190289:
 				return 5710;
@@ -47547,11 +47547,11 @@ int func_1165(int iParam0, int iParam1)
 				return 13510;
 			case 39313452:
 				return 4776;
-			case 39512092:
+			case joaat("p_cs_dusterarthur01x"):
 				return 10519;
 			case 40172090:
 				return 10448;
-			case 40345436:
+			case joaat("a_c_sheep_01"):
 				return 14467;
 			case 40374497:
 				return 7987;
@@ -47569,7 +47569,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12340;
 			case 41177141:
 				return 16102;
-			case 41707457:
+			case joaat("a_c_fishsalmonsockeye_01_ms"):
 				return 14298;
 			case 41731439:
 				return 1443;
@@ -47603,7 +47603,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13791;
 			case 46527049:
 				return 8142;
-			case 47200842:
+			case joaat("cart07"):
 				return 14131;
 			case 47556134:
 				return 3678;
@@ -47611,9 +47611,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11228;
 			case 47914874:
 				return 12812;
-			case 47939550:
+			case joaat("p_cs_nooseshort01x"):
 				return 10269;
-			case 48786865:
+			case joaat("cs_welshfighter"):
 				return 15019;
 			case 48968044:
 				return 1034;
@@ -47625,19 +47625,19 @@ int func_1165(int iParam0, int iParam1)
 				return 2088;
 			case 49153296:
 				return 13794;
-			case 49263610:
+			case joaat("p_lumber08x"):
 				return 4932;
-			case 49321906:
+			case joaat("p_cigarbox01x"):
 				return 3043;
-			case 49937914:
+			case joaat("p_shovel04x"):
 				return 6480;
 			case 50024051:
 				return 5034;
 			case 50109285:
 				return 13436;
-			case 50305983:
+			case joaat("a_f_m_familytravelers_warm_01"):
 				return 14507;
-			case 50483426:
+			case joaat("g_m_m_uniduster_02"):
 				return 15033;
 			case 50643137:
 				return 1424;
@@ -47651,7 +47651,7 @@ int func_1165(int iParam0, int iParam1)
 				return 737;
 			case 51231304:
 				return 9535;
-			case 51410678:
+			case joaat("cs_nils"):
 				return 14938;
 			case 51521298:
 				return 9385;
@@ -47667,7 +47667,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6616;
 			case 53255388:
 				return 647;
-			case 54030454:
+			case joaat("cs_wintonholmes"):
 				return 15020;
 			case 54466481:
 				return 3406;
@@ -47699,7 +47699,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9207;
 			case 57170117:
 				return 3854;
-			case 57386309:
+			case joaat("p_bamboostick01x"):
 				return 4325;
 			case 57552990:
 				return 16012;
@@ -47719,7 +47719,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10295;
 			case 60109253:
 				return 543;
-			case 60202542:
+			case joaat("u_m_m_valpokerplayer_02"):
 				return 15964;
 			case 60495199:
 				return 6134;
@@ -47729,7 +47729,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9664;
 			case 60813303:
 				return 824;
-			case 61143397:
+			case joaat("p_benchwork01x"):
 				return 6377;
 			case 61408561:
 				return 4974;
@@ -47737,7 +47737,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6914;
 			case 61476009:
 				return 13997;
-			case 61480820:
+			case joaat("p_cs_smallnotecard01x"):
 				return 12259;
 			case 61707409:
 				return 3092;
@@ -47759,7 +47759,7 @@ int func_1165(int iParam0, int iParam1)
 				return 634;
 			case 64894843:
 				return 6388;
-			case 65010948:
+			case joaat("cs_thomasdown"):
 				return 14992;
 			case 65302426:
 				return 583;
@@ -47777,19 +47777,19 @@ int func_1165(int iParam0, int iParam1)
 				return 1172;
 			case 68511322:
 				return 4704;
-			case 68512371:
+			case joaat("cs_obediahhinton"):
 				return 14940;
 			case 68635185:
 				return 269;
 			case 68963282:
 				return 11356;
-			case 69166250:
+			case joaat("p_glass_cs06x"):
 				return 2961;
 			case 69228182:
 				return 9339;
 			case 69374526:
 				return 1353;
-			case 69604629:
+			case joaat("p_cs_bagstrauss01x"):
 				return 10013;
 			case 70383264:
 				return 7771;
@@ -47835,7 +47835,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8884;
 			case 77962428:
 				return 1800;
-			case 78404028:
+			case joaat("p_crate01x"):
 				return 5948;
 			case 78425823:
 				return 635;
@@ -47849,7 +47849,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14915;
 			case 79131989:
 				return 871;
-			case 79156795:
+			case joaat("a_m_m_nbxupperclass_01"):
 				return 14619;
 			case 79354472:
 				return 5884;
@@ -47863,7 +47863,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5058;
 			case 81012522:
 				return 7466;
-			case 81104014:
+			case joaat("p_cs_note01x"):
 				return 12221;
 			case 81276375:
 				return 12786;
@@ -47901,7 +47901,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8222;
 			case 86968515:
 				return 3427;
-			case 87087802:
+			case joaat("u_m_y_czphomesteadson_02"):
 				return 15991;
 			case 87151885:
 				return 2538;
@@ -47909,7 +47909,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7584;
 			case 87538212:
 				return 3977;
-			case 87577242:
+			case joaat("gatchuck"):
 				return 14143;
 			case 88704384:
 				return 1243;
@@ -47921,9 +47921,9 @@ int func_1165(int iParam0, int iParam1)
 				return 3267;
 			case 89834103:
 				return 3991;
-			case 89913743:
+			case joaat("privatesteamer01x"):
 				return 14185;
-			case 90264823:
+			case joaat("a_c_cougar_01"):
 				return 14247;
 			case 91435648:
 				return 322;
@@ -47935,9 +47935,9 @@ int func_1165(int iParam0, int iParam1)
 				return 4131;
 			case 93567835:
 				return 602;
-			case 93760123:
+			case joaat("cs_agnesdowd"):
 				return 14701;
-			case 93893176:
+			case joaat("coach4"):
 				return 14138;
 			case 93949129:
 				return 4404;
@@ -47955,7 +47955,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9158;
 			case 95535737:
 				return 6964;
-			case 95866989:
+			case joaat("cs_johnmarston"):
 				return 14845;
 			case 96224158:
 				return 15334;
@@ -47969,13 +47969,13 @@ int func_1165(int iParam0, int iParam1)
 				return 4332;
 			case 97710627:
 				return 4606;
-			case 98154799:
+			case joaat("p_cards01x"):
 				return 12360;
 			case 98225812:
 				return 12331;
 			case 98506870:
 				return 9898;
-			case 98537260:
+			case joaat("a_c_crow_01"):
 				return 14253;
 			case 99056772:
 				return 3304;
@@ -47999,7 +47999,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3972;
 			case 103683861:
 				return 13737;
-			case 104062879:
+			case joaat("s_m_m_unibutchers_01"):
 				return 15751;
 			case 104587080:
 				return 8997;
@@ -48037,7 +48037,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9277;
 			case 108851449:
 				return 13980;
-			case 108854062:
+			case joaat("p_crd_2_c01x"):
 				return 12417;
 			case 108902130:
 				return 13942;
@@ -48069,7 +48069,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13629;
 			case 111748054:
 				return 12885;
-			case 112254571:
+			case joaat("u_m_m_rhdpreacher_01"):
 				return 15897;
 			case 112298811:
 				return 9208;
@@ -48133,7 +48133,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1915;
 			case 118921798:
 				return 9993;
-			case 118999545:
+			case joaat("u_m_m_apfdeadman_01"):
 				return 15787;
 			case 119259222:
 				return 3882;
@@ -48147,7 +48147,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11189;
 			case 119527720:
 				return 6685;
-			case 120221819:
+			case joaat("p_cs_log01x"):
 				return 10232;
 			case 120316385:
 				return 1062;
@@ -48163,15 +48163,15 @@ int func_1165(int iParam0, int iParam1)
 				return 7661;
 			case 121933405:
 				return 10527;
-			case 122201050:
+			case joaat("cs_doroetheawicklow"):
 				return 14778;
-			case 122377164:
+			case joaat("cs_cavehermit"):
 				return 14750;
-			case 122748261:
+			case joaat("a_c_fishlargemouthbass_01_ms"):
 				return 14284;
 			case 122790927:
 				return 13433;
-			case 122919097:
+			case joaat("u_m_m_valauctionforman_01"):
 				return 15953;
 			case 122930489:
 				return 11029;
@@ -48215,7 +48215,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1375;
 			case 127997529:
 				return 5781;
-			case 128034147:
+			case joaat("g_m_m_unigrays_02"):
 				return 15038;
 			case 128070873:
 				return 12438;
@@ -48247,7 +48247,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2865;
 			case 131817197:
 				return 9043;
-			case 132005948:
+			case joaat("p_door_nbx_doc01x_r"):
 				return 2795;
 			case 132081990:
 				return 1961;
@@ -48267,7 +48267,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1544;
 			case 133882313:
 				return 7216;
-			case 133961016:
+			case joaat("p_toolbox01x"):
 				return 6494;
 			case 134543298:
 				return 528;
@@ -48275,7 +48275,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2884;
 			case 134648546:
 				return 291;
-			case 134747314:
+			case joaat("a_c_fishrainbowtrout_01_lg"):
 				return 14290;
 			case 134813799:
 				return 4713;
@@ -48311,7 +48311,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6502;
 			case 138082636:
 				return 8717;
-			case 138130985:
+			case joaat("s_m_m_unitrainguards_01"):
 				return 15753;
 			case 138162884:
 				return 12107;
@@ -48323,7 +48323,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15661;
 			case 139224300:
 				return 4182;
-			case 139676400:
+			case joaat("u_m_m_skinnyoldguy_01"):
 				return 15916;
 			case 140163364:
 				return 4962;
@@ -48355,7 +48355,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2428;
 			case 147199690:
 				return 11947;
-			case 147427595:
+			case joaat("u_m_m_czphomesteadfather_01"):
 				return 15831;
 			case 148006184:
 				return 5882;
@@ -48381,13 +48381,13 @@ int func_1165(int iParam0, int iParam1)
 				return 13553;
 			case 150288354:
 				return 248;
-			case 150966765:
+			case joaat("wagondairy01x"):
 				return 14215;
 			case 151743412:
 				return 6605;
 			case 151773959:
 				return 16036;
-			case 151959164:
+			case joaat("p_brush01x"):
 				return 6383;
 			case 152414926:
 				return 10678;
@@ -48409,7 +48409,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11523;
 			case 154665410:
 				return 2469;
-			case 155128635:
+			case joaat("p_tray03x"):
 				return 4586;
 			case 155317778:
 				return 10705;
@@ -48455,7 +48455,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5501;
 			case 160554037:
 				return 13243;
-			case 160636303:
+			case joaat("p_door_val_bank00_lx"):
 				return 2540;
 			case 161262996:
 				return 11733;
@@ -48463,7 +48463,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1087;
 			case 161433960:
 				return 7364;
-			case 161697289:
+			case joaat("p_bottle009x"):
 				return 2904;
 			case 161801294:
 				return 11331;
@@ -48479,7 +48479,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9424;
 			case 164065767:
 				return 693;
-			case 164271545:
+			case joaat("p_knittingneedle01x"):
 				return 4025;
 			case 164274619:
 				return 2395;
@@ -48517,9 +48517,9 @@ int func_1165(int iParam0, int iParam1)
 				return 10616;
 			case 169138832:
 				return 8694;
-			case 169503210:
+			case joaat("p_door_val_bank00_rx"):
 				return 2541;
-			case 169973797:
+			case joaat("u_f_m_tljbartender_01"):
 				return 15777;
 			case 170786678:
 				return 11542;
@@ -48535,7 +48535,7 @@ int func_1165(int iParam0, int iParam1)
 				return 16004;
 			case 171964815:
 				return 7129;
-			case 171990277:
+			case joaat("p_starchlaundry01x"):
 				return 6253;
 			case 173098952:
 				return 5956;
@@ -48559,7 +48559,7 @@ int func_1165(int iParam0, int iParam1)
 				return 888;
 			case 177251447:
 				return 2094;
-			case 178323656:
+			case joaat("p_moneybag01x"):
 				return 6539;
 			case 178403676:
 				return 735;
@@ -48583,7 +48583,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1085;
 			case 181651164:
 				return 9503;
-			case 182933302:
+			case joaat("p_basketindian03x"):
 				return 4301;
 			case 182988151:
 				return 8106;
@@ -48591,7 +48591,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5383;
 			case 183650803:
 				return 10871;
-			case 184120185:
+			case joaat("cs_brynntildon"):
 				return 14737;
 			case 184307139:
 				return 415;
@@ -48635,7 +48635,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11004;
 			case 189666621:
 				return 3275;
-			case 190080028:
+			case joaat("a_m_m_asbtownfolk_01"):
 				return 14564;
 			case 190216111:
 				return 7140;
@@ -48647,7 +48647,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1041;
 			case 190456187:
 				return 7823;
-			case 190553496:
+			case joaat("a_m_m_rhddeputyresident_01"):
 				return 14624;
 			case 190954668:
 				return 15394;
@@ -48669,7 +48669,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13499;
 			case 193033892:
 				return 2026;
-			case 193149167:
+			case joaat("p_trunk02x"):
 				return 4895;
 			case 193241785:
 				return 11329;
@@ -48677,7 +48677,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11432;
 			case 193618512:
 				return 13595;
-			case 193808733:
+			case joaat("u_m_m_asbprisoner_01"):
 				return 15793;
 			case 194345381:
 				return 2086;
@@ -48687,13 +48687,13 @@ int func_1165(int iParam0, int iParam1)
 				return 7315;
 			case 195183069:
 				return 8719;
-			case 195700131:
+			case joaat("a_c_bull_01"):
 				return 14238;
 			case 195754040:
 				return 11346;
 			case 196036081:
 				return 11265;
-			case 196631385:
+			case joaat("p_bowl03x"):
 				return 4435;
 			case 197053898:
 				return 8224;
@@ -48719,7 +48719,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2531;
 			case 200607593:
 				return 4979;
-			case 201002005:
+			case joaat("p_cs_electricchair01x"):
 				return 10134;
 			case 201162041:
 				return 1117;
@@ -48731,7 +48731,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10850;
 			case 202013306:
 				return 4838;
-			case 202026123:
+			case joaat("p_door_sha_man02x"):
 				return 2535;
 			case 202254792:
 				return 2581;
@@ -48769,7 +48769,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13331;
 			case 207529372:
 				return 13225;
-			case 207636298:
+			case joaat("cs_herbalist"):
 				return 14829;
 			case 208099752:
 				return 9965;
@@ -48779,7 +48779,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7875;
 			case 208509148:
 				return 12249;
-			case 208558043:
+			case joaat("a_f_m_tumtownfolk_01"):
 				return 14538;
 			case 208829344:
 				return 13984;
@@ -48829,7 +48829,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13083;
 			case 214567283:
 				return 13860;
-			case 215164947:
+			case joaat("u_m_m_fatduster_01"):
 				return 15836;
 			case 215442578:
 				return 2061;
@@ -48845,21 +48845,21 @@ int func_1165(int iParam0, int iParam1)
 				return 9808;
 			case 216882739:
 				return 10052;
-			case 217176582:
+			case joaat("u_m_m_story_spectre_01"):
 				return 15931;
-			case 217912393:
+			case joaat("smuggler02"):
 				return 14194;
 			case 218829559:
 				return 5751;
 			case 219115318:
 				return 4697;
-			case 219205323:
+			case joaat("cart06"):
 				return 14130;
 			case 219297547:
 				return 7945;
-			case 219322615:
+			case joaat("u_m_m_nbxbartender_02"):
 				return 15861;
-			case 220045185:
+			case joaat("p_dov_lab_generator01"):
 				return 13394;
 			case 220424311:
 				return 7066;
@@ -48897,7 +48897,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7880;
 			case 223180727:
 				return 15668;
-			case 223197487:
+			case joaat("a_m_m_guatownfolk_01"):
 				return 14599;
 			case 223431471:
 				return 11179;
@@ -48905,7 +48905,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12017;
 			case 223983939:
 				return 10751;
-			case 224310170:
+			case joaat("cs_germanson"):
 				return 14821;
 			case 224709730:
 				return 3662;
@@ -48927,7 +48927,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11658;
 			case 227187597:
 				return 10926;
-			case 227319051:
+			case joaat("a_m_m_bivfancytravellers_01"):
 				return 14567;
 			case 227844676:
 				return 5784;
@@ -48941,13 +48941,13 @@ int func_1165(int iParam0, int iParam1)
 				return 5123;
 			case 229643685:
 				return 5992;
-			case 230142993:
+			case joaat("a_m_m_foreman"):
 				return 14593;
 			case 230276839:
 				return 11711;
 			case 230492022:
 				return 67;
-			case 230517792:
+			case joaat("cs_brendacrawley"):
 				return 14733;
 			case 231078421:
 				return 1280;
@@ -48961,7 +48961,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12799;
 			case 232852597:
 				return 10581;
-			case 233569385:
+			case joaat("p_door_barn02"):
 				return 2513;
 			case 233635031:
 				return 15611;
@@ -48983,7 +48983,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6606;
 			case 236311125:
 				return 12768;
-			case 236407543:
+			case joaat("cs_colfavours"):
 				return 14759;
 			case 236604114:
 				return 12144;
@@ -49017,7 +49017,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13968;
 			case 240687860:
 				return 11535;
-			case 240900868:
+			case joaat("a_f_m_nbxwhore_01"):
 				return 14523;
 			case 241043473:
 				return 4850;
@@ -49035,7 +49035,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12446;
 			case 243348692:
 				return 9653;
-			case 244009657:
+			case joaat("u_m_m_galastringquartet_01"):
 				return 15838;
 			case 244094557:
 				return 10710;
@@ -49059,7 +49059,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11898;
 			case 247170975:
 				return 9988;
-			case 247176142:
+			case joaat("u_m_m_unidusterhenchman_01"):
 				return 15945;
 			case 247498296:
 				return 826;
@@ -49105,17 +49105,17 @@ int func_1165(int iParam0, int iParam1)
 				return 6665;
 			case 252314576:
 				return 15;
-			case 252669332:
+			case joaat("a_c_fox_01"):
 				return 14301;
 			case 253255433:
 				return 8242;
-			case 253923078:
+			case joaat("privateflatcar01x"):
 				return 14179;
-			case 254009656:
+			case joaat("cs_rhodeskidnapvictim"):
 				return 14959;
 			case 254185161:
 				return 560;
-			case 254234482:
+			case joaat("cs_sdstreetkidthief"):
 				return 14972;
 			case 254287408:
 				return 13082;
@@ -49125,7 +49125,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3810;
 			case 255596169:
 				return 15688;
-			case 255926778:
+			case joaat("w_pistol_semiauto01"):
 				return 130;
 			case 257071489:
 				return 12391;
@@ -49171,19 +49171,19 @@ int func_1165(int iParam0, int iParam1)
 				return 2217;
 			case 263886239:
 				return 3799;
-			case 264156159:
+			case joaat("a_c_fishchainpickerel_01_sm"):
 				return 14279;
 			case 264325500:
 				return 4412;
-			case 264425748:
+			case joaat("p_chair_barrel04b"):
 				return 5565;
-			case 264503396:
+			case joaat("a_m_y_nbxstreetkids_01"):
 				return 14682;
-			case 265500599:
+			case joaat("wintercoalcar"):
 				return 14220;
 			case 265852654:
 				return 2553;
-			case 265884691:
+			case joaat("g_m_m_unimicahgoons_01"):
 				return 15041;
 			case 266032451:
 				return 13259;
@@ -49193,7 +49193,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8547;
 			case 266548251:
 				return 3765;
-			case 266900228:
+			case joaat("p_cs_woodpile01x"):
 				return 10449;
 			case 267029224:
 				return 837;
@@ -49245,7 +49245,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12469;
 			case 273589739:
 				return 11690;
-			case 273671859:
+			case joaat("u_m_m_strgenstoreowner_01"):
 				return 15936;
 			case 273817113:
 				return 5204;
@@ -49285,7 +49285,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12834;
 			case 278936346:
 				return 7272;
-			case 279593638:
+			case joaat("p_crate27x"):
 				return 6103;
 			default:
 				break;
@@ -49311,7 +49311,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2524;
 			case 280235325:
 				return 8042;
-			case 280434337:
+			case joaat("a_f_m_sdslums_02"):
 				return 14535;
 			case 280497806:
 				return 10144;
@@ -49329,11 +49329,11 @@ int func_1165(int iParam0, int iParam1)
 				return 5929;
 			case 282804159:
 				return 1620;
-			case 282918927:
+			case joaat("p_guncabinet02x"):
 				return 3778;
 			case 282973269:
 				return 13372;
-			case 283141989:
+			case joaat("u_m_o_cajhomestead_01"):
 				return 15981;
 			case 283492054:
 				return 13290;
@@ -49357,7 +49357,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13914;
 			case 285618933:
 				return 13492;
-			case 285748512:
+			case joaat("p_brick01x"):
 				return 13373;
 			case 285767308:
 				return 8669;
@@ -49371,9 +49371,9 @@ int func_1165(int iParam0, int iParam1)
 				return 1460;
 			case 286828056:
 				return 9360;
-			case 286877759:
+			case joaat("p_cs_baglevin01x"):
 				return 10012;
-			case 286955722:
+			case joaat("s_m_y_newspaperboy_01"):
 				return 15761;
 			case 287247401:
 				return 6359;
@@ -49403,7 +49403,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8919;
 			case 290929815:
 				return 4872;
-			case 291474213:
+			case joaat("p_moneybag02x"):
 				return 6540;
 			case 291533536:
 				return 6080;
@@ -49425,7 +49425,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11710;
 			case 292790696:
 				return 1806;
-			case 292812873:
+			case joaat("u_m_m_strfreightstationowner_01"):
 				return 15935;
 			case 292952876:
 				return 11940;
@@ -49491,7 +49491,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12606;
 			case 300353951:
 				return 13851;
-			case 300505615:
+			case joaat("cs_exconfedsleader_01"):
 				return 14793;
 			case 300698612:
 				return 7903;
@@ -49525,11 +49525,11 @@ int func_1165(int iParam0, int iParam1)
 				return 2124;
 			case 304712926:
 				return 3763;
-			case 305182125:
+			case joaat("p_boiler01x"):
 				return 4430;
 			case 305312923:
 				return 12354;
-			case 305390929:
+			case joaat("p_cuttingboard01x"):
 				return 4473;
 			case 305582962:
 				return 2223;
@@ -49563,7 +49563,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13068;
 			case 311067123:
 				return 11674;
-			case 311221568:
+			case joaat("u_m_m_sdbankguard_01"):
 				return 15905;
 			case 311419807:
 				return 661;
@@ -49573,7 +49573,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13616;
 			case 312006798:
 				return 13696;
-			case 312012583:
+			case joaat("p_campfire02xb"):
 				return 1123;
 			case 312023054:
 				return 11890;
@@ -49597,11 +49597,11 @@ int func_1165(int iParam0, int iParam1)
 				return 13426;
 			case 314625975:
 				return 4261;
-			case 314775562:
+			case joaat("p_glass06x"):
 				return 2969;
 			case 315191058:
 				return 5072;
-			case 316325071:
+			case joaat("cs_cancan_04"):
 				return 14744;
 			case 316681083:
 				return 4239;
@@ -49629,7 +49629,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12335;
 			case 319230703:
 				return 11320;
-			case 319326044:
+			case joaat("p_lantern05x"):
 				return 4688;
 			case 319399831:
 				return 13558;
@@ -49643,7 +49643,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12488;
 			case 320547197:
 				return 10844;
-			case 320723614:
+			case joaat("p_bigvshk_door"):
 				return 2509;
 			case 321260520:
 				return 5602;
@@ -49663,7 +49663,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8982;
 			case 323018674:
 				return 7615;
-			case 323324563:
+			case joaat("cs_towncrier"):
 				return 14998;
 			case 323402888:
 				return 13121;
@@ -49675,11 +49675,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11629;
 			case 325188454:
 				return 12578;
-			case 325252933:
+			case joaat("p_windsorchair03x"):
 				return 3827;
 			case 325312501:
 				return 12254;
-			case 325782917:
+			case joaat("p_door03x"):
 				return 2571;
 			case 326267528:
 				return 9304;
@@ -49687,7 +49687,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12143;
 			case 326498087:
 				return 9095;
-			case 326498975:
+			case joaat("p_cs_shackleleg05x"):
 				return 10371;
 			case 326624460:
 				return 13846;
@@ -49697,7 +49697,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7577;
 			case 327813277:
 				return 13195;
-			case 328068607:
+			case joaat("p_crd_2_c01x_gk"):
 				return 9552;
 			case 328855486:
 				return 8876;
@@ -49749,7 +49749,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3660;
 			case 334815926:
 				return 12684;
-			case 335081545:
+			case joaat("p_cs_bullwhip01x"):
 				return 10050;
 			case 335118833:
 				return 3807;
@@ -49773,7 +49773,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14342;
 			case 338037349:
 				return 103;
-			case 338263195:
+			case joaat("w_rifle_boltaction01"):
 				return 379;
 			case 338670541:
 				return 9493;
@@ -49797,7 +49797,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8059;
 			case 342280051:
 				return 1092;
-			case 342335375:
+			case joaat("p_woodendeskchair01x"):
 				return 5343;
 			case 342752536:
 				return 1873;
@@ -49807,7 +49807,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4629;
 			case 343197067:
 				return 9748;
-			case 343238651:
+			case joaat("p_cs_holdemhand02x"):
 				return 10204;
 			case 343412282:
 				return 12298;
@@ -49817,7 +49817,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4094;
 			case 344244818:
 				return 7626;
-			case 344576726:
+			case joaat("p_medicine01x"):
 				return 3062;
 			case 344801956:
 				return 5656;
@@ -49845,13 +49845,13 @@ int func_1165(int iParam0, int iParam1)
 				return 3638;
 			case 346878984:
 				return 3489;
-			case 347599949:
+			case joaat("g_m_m_uniduster_01"):
 				return 15032;
 			case 347953943:
 				return 11290;
 			case 349453545:
 				return 13114;
-			case 349691805:
+			case joaat("p_bistrochair01x"):
 				return 5563;
 			case 349804771:
 				return 1447;
@@ -49859,13 +49859,13 @@ int func_1165(int iParam0, int iParam1)
 				return 7442;
 			case 350635759:
 				return 3297;
-			case 351634388:
+			case joaat("cs_famousgunslinger_04"):
 				return 14798;
 			case 351886803:
 				return 8445;
 			case 351891542:
 				return 2364;
-			case 352143044:
+			case joaat("a_m_y_asbminer_03"):
 				return 14680;
 			case 352716655:
 				return 13291;
@@ -49891,7 +49891,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7897;
 			case 355844791:
 				return 9375;
-			case 355963118:
+			case joaat("a_m_o_guatownfolk_01"):
 				return 14673;
 			case 356130777:
 				return 7761;
@@ -49915,13 +49915,13 @@ int func_1165(int iParam0, int iParam1)
 				return 8125;
 			case 358460989:
 				return 1675;
-			case 358502875:
+			case joaat("cs_mrsadler"):
 				return 14924;
 			case 359054075:
 				return 5667;
 			case 359337888:
 				return 3769;
-			case 359344987:
+			case joaat("a_f_m_btchillbilly_01"):
 				return 14503;
 			case 359708257:
 				return 4578;
@@ -49939,15 +49939,15 @@ int func_1165(int iParam0, int iParam1)
 				return 8569;
 			case 362359375:
 				return 12460;
-			case 362406315:
+			case joaat("w_melee_knife18"):
 				return 62;
-			case 362617723:
+			case joaat("p_whistle01x"):
 				return 4383;
 			case 363316579:
 				return 2871;
 			case 363544275:
 				return 5773;
-			case 363815774:
+			case joaat("g_m_m_uniinbred_01"):
 				return 15039;
 			case 363933397:
 				return 10253;
@@ -49967,13 +49967,13 @@ int func_1165(int iParam0, int iParam1)
 				return 1698;
 			case 366343815:
 				return 1672;
-			case 367033685:
+			case joaat("p_doornbd39x"):
 				return 2669;
 			case 367220716:
 				return 4545;
-			case 367637652:
+			case joaat("a_c_buffalo_tatanka_01"):
 				return 14237;
-			case 367739382:
+			case joaat("g_m_m_unigrays_01"):
 				return 15037;
 			case 367947756:
 				return 2238;
@@ -50019,19 +50019,19 @@ int func_1165(int iParam0, int iParam1)
 				return 7004;
 			case 374404806:
 				return 47;
-			case 374792535:
+			case joaat("cart05"):
 				return 14129;
 			case 374970960:
 				return 11047;
-			case 375867283:
+			case joaat("p_chair11x"):
 				return 5576;
-			case 375919668:
+			case joaat("u_m_m_valpoopingman_01"):
 				return 15965;
 			case 376374856:
 				return 6371;
 			case 376387906:
 				return 427;
-			case 376903871:
+			case joaat("p_doorvh_saloon_r"):
 				return 2702;
 			case 376980629:
 				return 3476;
@@ -50047,7 +50047,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10334;
 			case 378589935:
 				return 7443;
-			case 378899325:
+			case joaat("a_m_m_skpprisoner_01"):
 				return 14647;
 			case 378947763:
 				return 7944;
@@ -50063,7 +50063,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13657;
 			case 380788946:
 				return 762;
-			case 380865559:
+			case joaat("u_m_m_nbxriverboattarget_01"):
 				return 15881;
 			case 381084107:
 				return 10168;
@@ -50075,9 +50075,9 @@ int func_1165(int iParam0, int iParam1)
 				return 2827;
 			case 381918768:
 				return 564;
-			case 382040614:
+			case joaat("cs_dalemaroney"):
 				return 14769;
-			case 382293518:
+			case joaat("p_fork01x"):
 				return 4475;
 			case 382296139:
 				return 14054;
@@ -50117,9 +50117,9 @@ int func_1165(int iParam0, int iParam1)
 				return 5459;
 			case 386132391:
 				return 1895;
-			case 386445799:
+			case joaat("p_clipboard03x"):
 				return 5245;
-			case 386506078:
+			case joaat("a_c_loon_01"):
 				return 14440;
 			case 386511914:
 				return 13637;
@@ -50131,7 +50131,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9726;
 			case 387912564:
 				return 4913;
-			case 388126459:
+			case joaat("p_fishingpole01x"):
 				return 6644;
 			case 388602302:
 				return 13702;
@@ -50145,11 +50145,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11408;
 			case 389588751:
 				return 15321;
-			case 389596132:
+			case joaat("p_cs_portfolio01x"):
 				return 10306;
 			case 389641546:
 				return 11034;
-			case 389673974:
+			case joaat("p_knife04x"):
 				return 4497;
 			case 389769403:
 				return 8230;
@@ -50209,7 +50209,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9646;
 			case 398985068:
 				return 3178;
-			case 399052822:
+			case joaat("a_f_o_lagtownfolk_01"):
 				return 14550;
 			case 399227074:
 				return 2056;
@@ -50223,7 +50223,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9075;
 			case 400860407:
 				return 6784;
-			case 401116463:
+			case joaat("p_bottle003x"):
 				return 2897;
 			case 401286159:
 				return 4592;
@@ -50233,7 +50233,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10582;
 			case 401642131:
 				return 5552;
-			case 401817002:
+			case joaat("cs_angryhusband"):
 				return 14706;
 			case 401876763:
 				return 15255;
@@ -50261,7 +50261,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1766;
 			case 405275189:
 				return 8097;
-			case 405368030:
+			case joaat("privateboxcar04x"):
 				return 14176;
 			case 405422316:
 				return 8102;
@@ -50289,7 +50289,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1665;
 			case 409103007:
 				return 8290;
-			case 409236430:
+			case joaat("p_tin_soap01x"):
 				return 6267;
 			case 409313458:
 				return 11653;
@@ -50309,7 +50309,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10553;
 			case 412583060:
 				return 10290;
-			case 412658482:
+			case joaat("p_cs_vegsack_up"):
 				return 10440;
 			case 412744271:
 				return 6912;
@@ -50319,7 +50319,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12667;
 			case 413432126:
 				return 2197;
-			case 413771941:
+			case joaat("s_m_m_strlumberjack_01"):
 				return 15747;
 			case 414037694:
 				return 5499;
@@ -50353,7 +50353,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14061;
 			case 417130503:
 				return 650;
-			case 417416138:
+			case joaat("a_m_m_fivefingerfilletplayers_01"):
 				return 14592;
 			case 417708925:
 				return 12679;
@@ -50363,7 +50363,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13869;
 			case 418966047:
 				return 3149;
-			case 419307190:
+			case joaat("a_f_m_btcobesewomen_01"):
 				return 14504;
 			case 419962661:
 				return 8538;
@@ -50395,7 +50395,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7960;
 			case 423944241:
 				return 866;
-			case 424175505:
+			case joaat("g_m_m_unibanditos_01"):
 				return 15026;
 			case 424205531:
 				return 13806;
@@ -50411,21 +50411,21 @@ int func_1165(int iParam0, int iParam1)
 				return 11519;
 			case 425906023:
 				return 8497;
-			case 426274298:
+			case joaat("cs_lillianpowell"):
 				return 14861;
 			case 426465760:
 				return 15194;
-			case 426596400:
+			case joaat("cs_sunworshipper"):
 				return 14984;
 			case 426634917:
 				return 9242;
-			case 427032133:
+			case joaat("g_m_m_bountyhunters_01"):
 				return 15024;
 			case 427641194:
 				return 3508;
 			case 427790467:
 				return 1024;
-			case 428068258:
+			case joaat("p_val_aucgate1m01x"):
 				return 3357;
 			case 428150654:
 				return 11304;
@@ -50441,7 +50441,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7035;
 			case 429527839:
 				return 13267;
-			case 429612335:
+			case joaat("u_m_m_story_armadillo_01"):
 				return 15917;
 			case 429911572:
 				return 11226;
@@ -50449,9 +50449,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12396;
 			case 430098120:
 				return 3066;
-			case 430302479:
+			case joaat("p_door12x"):
 				return 2579;
-			case 430764551:
+			case joaat("cs_andershelgerson"):
 				return 14704;
 			case 430766991:
 				return 12106;
@@ -50461,7 +50461,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11993;
 			case 431494693:
 				return 4984;
-			case 431926707:
+			case joaat("p_cs_catfish_whole01bx"):
 				return 10068;
 			case 431975188:
 				return 6619;
@@ -50487,9 +50487,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13782;
 			case 434559625:
 				return 6251;
-			case 434585711:
+			case joaat("a_m_m_asbminer_04"):
 				return 14563;
-			case 434730246:
+			case joaat("cs_poorjoe"):
 				return 14948;
 			case 434983057:
 				return 13446;
@@ -50527,7 +50527,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15538;
 			case 438720265:
 				return 12559;
-			case 438989852:
+			case joaat("w_revolver_doubleaction06"):
 				return 309;
 			case 439914621:
 				return 907;
@@ -50537,7 +50537,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6694;
 			case 440831189:
 				return 15631;
-			case 441245663:
+			case joaat("p_mashedpotato02x"):
 				return 3586;
 			case 441381433:
 				return 12429;
@@ -50571,9 +50571,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11426;
 			case 446670976:
 				return 14423;
-			case 446834200:
+			case joaat("cs_blwphotographer"):
 				return 14728;
-			case 447074149:
+			case joaat("p_door34x"):
 				return 2593;
 			case 447454331:
 				return 7525;
@@ -50619,11 +50619,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11687;
 			case 454655011:
 				return 11422;
-			case 454835070:
+			case joaat("p_dov_lab_generator02"):
 				return 13396;
 			case 455554135:
 				return 2889;
-			case 455567824:
+			case joaat("u_m_m_nbxshadydealer_01"):
 				return 15882;
 			case 455684325:
 				return 8403;
@@ -50639,9 +50639,9 @@ int func_1165(int iParam0, int iParam1)
 				return 1388;
 			case 457157391:
 				return 8353;
-			case 457416415:
+			case joaat("a_c_gilamonster_01"):
 				return 14303;
-			case 457591968:
+			case joaat("p_cs_pamphlet02x"):
 				return 12225;
 			case 457816518:
 				return 9469;
@@ -50663,11 +50663,11 @@ int func_1165(int iParam0, int iParam1)
 				return 2035;
 			case 459904422:
 				return 4424;
-			case 460261178:
+			case joaat("u_m_y_czphomesteadson_01"):
 				return 15990;
 			case 460288301:
 				return 2192;
-			case 460337971:
+			case joaat("cs_asbdeputy_01"):
 				return 14714;
 			case 460533344:
 				return 1975;
@@ -50677,17 +50677,17 @@ int func_1165(int iParam0, int iParam1)
 				return 2703;
 			case 461545493:
 				return 9584;
-			case 462409959:
+			case joaat("u_m_y_cajhomestead_01"):
 				return 15989;
 			case 462617185:
 				return 15573;
 			case 462721569:
 				return 6954;
-			case 463271055:
+			case joaat("p_stool03x"):
 				return 5682;
 			case 463398434:
 				return 7457;
-			case 463643368:
+			case joaat("a_c_fishlargemouthbass_01_lg"):
 				return 14283;
 			case 463678502:
 				return 5087;
@@ -50701,7 +50701,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3813;
 			case 465390570:
 				return 6283;
-			case 466209020:
+			case joaat("u_m_m_uniexconfedsbounty_01"):
 				return 15949;
 			case 466306513:
 				return 12102;
@@ -50723,7 +50723,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11828;
 			case 468302367:
 				return 10797;
-			case 469031082:
+			case joaat("p_trunk01x"):
 				return 4894;
 			case 469304374:
 				return 7410;
@@ -50735,7 +50735,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11463;
 			case 470239852:
 				return 13119;
-			case 470418854:
+			case joaat("p_cs_letterrolled01x"):
 				return 12206;
 			case 470485448:
 				return 9496;
@@ -50789,7 +50789,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5675;
 			case 477187487:
 				return 2988;
-			case 477547053:
+			case joaat("cs_braithwaiteservant"):
 				return 14732;
 			case 477560575:
 				return 1817;
@@ -50799,7 +50799,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10794;
 			case 478309937:
 				return 7857;
-			case 478342158:
+			case joaat("p_sawhand01x"):
 				return 6464;
 			case 478409878:
 				return 6891;
@@ -50807,11 +50807,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11644;
 			case 478986344:
 				return 14400;
-			case 479008570:
+			case joaat("privatepassenger01x"):
 				return 14183;
 			case 479390460:
 				return 6920;
-			case 480011144:
+			case joaat("a_m_m_tumtownfolk_01"):
 				return 14654;
 			case 480074467:
 				return 4702;
@@ -50819,7 +50819,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4815;
 			case 480104093:
 				return 4896;
-			case 480688259:
+			case joaat("a_c_coyote_01"):
 				return 14249;
 			case 480772107:
 				return 13283;
@@ -50835,11 +50835,11 @@ int func_1165(int iParam0, int iParam1)
 				return 4918;
 			case 482558380:
 				return 7922;
-			case 482703333:
+			case joaat("cs_brotherdorkins"):
 				return 14736;
 			case 482814102:
 				return 4336;
-			case 482936557:
+			case joaat("a_m_m_unicoachguards_01"):
 				return 14657;
 			case 483018055:
 				return 13606;
@@ -50865,7 +50865,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13601;
 			case 485181727:
 				return 1240;
-			case 485431621:
+			case joaat("u_m_o_asbsheriff_01"):
 				return 15975;
 			case 485561621:
 				return 8973;
@@ -50891,7 +50891,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6758;
 			case 488844989:
 				return 10993;
-			case 488855249:
+			case joaat("p_chair23x"):
 				return 5590;
 			case 489047917:
 				return 1284;
@@ -50899,13 +50899,13 @@ int func_1165(int iParam0, int iParam1)
 				return 10103;
 			case 489310716:
 				return 2019;
-			case 489321407:
+			case joaat("p_lumber02x"):
 				return 4928;
 			case 489431799:
 				return 9297;
 			case 489955612:
 				return 13995;
-			case 490159652:
+			case joaat("a_c_fishrainbowtrout_01_ms"):
 				return 14291;
 			case 490319042:
 				return 12529;
@@ -50917,7 +50917,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3745;
 			case 491294923:
 				return 1885;
-			case 491792494:
+			case joaat("p_cs_purse01x"):
 				return 10316;
 			case 492422271:
 				return 1450;
@@ -50975,7 +50975,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8597;
 			case 500098892:
 				return 3342;
-			case 500100576:
+			case joaat("u_m_m_asbprisoner_02"):
 				return 15794;
 			case 500219971:
 				return 11234;
@@ -50995,7 +50995,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2141;
 			case 501808480:
 				return 1609;
-			case 502238862:
+			case joaat("u_m_m_lnsoutlaw_01"):
 				return 15848;
 			case 502398408:
 				return 9447;
@@ -51031,7 +51031,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8938;
 			case 506077044:
 				return 4312;
-			case 506543199:
+			case joaat("p_whiskeyglass01x"):
 				return 3006;
 			case 506887890:
 				return 14350;
@@ -51045,7 +51045,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5901;
 			case 509428387:
 				return 13087;
-			case 510312109:
+			case joaat("a_c_woodpecker_01"):
 				return 14493;
 			case 510355901:
 				return 1187;
@@ -51053,15 +51053,15 @@ int func_1165(int iParam0, int iParam1)
 				return 12729;
 			case 511930330:
 				return 8596;
-			case 512211978:
+			case joaat("u_m_m_htlforeman_01"):
 				return 15844;
 			case 512587240:
 				return 13547;
 			case 513100234:
 				return 15515;
-			case 513249462:
+			case joaat("a_c_fishredfinpickerel_01_sm"):
 				return 14293;
-			case 513427234:
+			case joaat("cs_albertmason"):
 				return 14703;
 			case 513497830:
 				return 6638;
@@ -51095,11 +51095,11 @@ int func_1165(int iParam0, int iParam1)
 				return 2036;
 			case 518210307:
 				return 563;
-			case 518339740:
+			case joaat("u_m_m_nbxbartender_01"):
 				return 15860;
 			case 518401512:
 				return 1616;
-			case 518773733:
+			case joaat("gatling_gun"):
 				return 14145;
 			case 519003277:
 				return 6452;
@@ -51107,7 +51107,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2846;
 			case 519545360:
 				return 53;
-			case 519549403:
+			case joaat("p_chairdining03x"):
 				return 5623;
 			case 519626865:
 				return 10740;
@@ -51141,7 +51141,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8845;
 			case 525497919:
 				return 8618;
-			case 525529657:
+			case joaat("a_m_m_valfarmer_01"):
 				return 14663;
 			case 525607125:
 				return 2361;
@@ -51175,7 +51175,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13073;
 			case 531331428:
 				return 8482;
-			case 531516298:
+			case joaat("p_foldedbills01x"):
 				return 6515;
 			case 531527393:
 				return 9333;
@@ -51189,7 +51189,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9261;
 			case 532501590:
 				return 8598;
-			case 533337235:
+			case joaat("p_cs_suitcase02x"):
 				return 10399;
 			case 533342531:
 				return 15602;
@@ -51203,7 +51203,7 @@ int func_1165(int iParam0, int iParam1)
 				return 760;
 			case 534804900:
 				return 10515;
-			case 535187220:
+			case joaat("p_chair31x"):
 				return 5596;
 			case 535260431:
 				return 13537;
@@ -51235,9 +51235,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12232;
 			case 539490743:
 				return 3395;
-			case 539576219:
+			case joaat("a_f_m_rhdtownfolk_01"):
 				return 14525;
-			case 539662086:
+			case joaat("p_cleaver01x"):
 				return 4451;
 			case 539955129:
 				return 12205;
@@ -51249,7 +51249,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9677;
 			case 540295279:
 				return 11905;
-			case 540874704:
+			case joaat("p_haybale01x"):
 				return 3121;
 			case 541085567:
 				return 4773;
@@ -51259,7 +51259,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2629;
 			case 541804162:
 				return 6979;
-			case 541872060:
+			case joaat("p_grindingwheel01x"):
 				return 6412;
 			case 542598026:
 				return 13988;
@@ -51267,11 +51267,11 @@ int func_1165(int iParam0, int iParam1)
 				return 7708;
 			case 543124810:
 				return 4014;
-			case 543892122:
+			case joaat("a_c_fishsalmonsockeye_01_lg"):
 				return 14296;
 			case 544760040:
 				return 12385;
-			case 545068538:
+			case joaat("a_c_snake_01"):
 				return 14469;
 			case 545719083:
 				return 2526;
@@ -51311,7 +51311,7 @@ int func_1165(int iParam0, int iParam1)
 	{
 		switch (iParam0)
 		{
-			case 549598920:
+			case joaat("a_m_m_middlesdtownfolk_03"):
 				return 14613;
 			case 549900435:
 				return 14344;
@@ -51333,7 +51333,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1207;
 			case 551859273:
 				return 7529;
-			case 552267143:
+			case joaat("p_screwdriver01x"):
 				return 6475;
 			case 552625653:
 				return 7294;
@@ -51355,9 +51355,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11097;
 			case 555975732:
 				return 8223;
-			case 556178319:
+			case joaat("p_cs_adlblanket01x"):
 				return 9999;
-			case 556355544:
+			case joaat("a_c_ox_01"):
 				return 14445;
 			case 556647215:
 				return 4297;
@@ -51401,7 +51401,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12308;
 			case 559315239:
 				return 492;
-			case 559457635:
+			case joaat("u_m_m_rhdundertaker_01"):
 				return 15900;
 			case 559479694:
 				return 3541;
@@ -51411,7 +51411,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2656;
 			case 559749998:
 				return 7537;
-			case 560218013:
+			case joaat("p_sledgehammer03x"):
 				return 6487;
 			case 560335125:
 				return 827;
@@ -51437,7 +51437,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9056;
 			case 562868438:
 				return 1028;
-			case 563170881:
+			case joaat("cs_taxidermist"):
 				return 14990;
 			case 563484210:
 				return 3171;
@@ -51453,11 +51453,11 @@ int func_1165(int iParam0, int iParam1)
 				return 9154;
 			case 564721996:
 				return 10436;
-			case 564969212:
+			case joaat("p_sign_suffragette02x"):
 				return 5856;
 			case 565338944:
 				return 12622;
-			case 565862874:
+			case joaat("p_gate_wornbarn04x"):
 				return 2721;
 			case 566196562:
 				return 3524;
@@ -51509,7 +51509,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5881;
 			case 570447609:
 				return 1930;
-			case 570671881:
+			case joaat("p_barrel05b"):
 				return 6070;
 			case 570718668:
 				return 795;
@@ -51523,7 +51523,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1009;
 			case 572776836:
 				return 1986;
-			case 572854005:
+			case joaat("privatedining01x"):
 				return 14178;
 			case 572949676:
 				return 8837;
@@ -51533,11 +51533,11 @@ int func_1165(int iParam0, int iParam1)
 				return 7135;
 			case 573799214:
 				return 12825;
-			case 574032994:
+			case joaat("p_sack04x"):
 				return 3664;
 			case 574452290:
 				return 7829;
-			case 574905658:
+			case joaat("p_cs_syringe01x"):
 				return 10409;
 			case 574922700:
 				return 10780;
@@ -51555,7 +51555,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6546;
 			case 576351536:
 				return 941;
-			case 576371070:
+			case joaat("p_glass001x"):
 				return 2962;
 			case 576691066:
 				return 5975;
@@ -51569,7 +51569,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13714;
 			case 578391057:
 				return 13704;
-			case 578898429:
+			case joaat("p_oar03x"):
 				return 6659;
 			case 579273434:
 				return 13940;
@@ -51577,7 +51577,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3075;
 			case 579705889:
 				return 5616;
-			case 580144909:
+			case joaat("u_m_m_bht_nathankirk"):
 				return 15803;
 			case 580478751:
 				return 12491;
@@ -51597,7 +51597,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7154;
 			case 583525084:
 				return 10514;
-			case 583628516:
+			case joaat("armoredcar03x"):
 				return 14115;
 			case 583824996:
 				return 5466;
@@ -51621,7 +51621,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7477;
 			case 586605949:
 				return 10601;
-			case 587066646:
+			case joaat("p_bowl04x_stew"):
 				return 4438;
 			case 587217958:
 				return 11389;
@@ -51637,7 +51637,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15613;
 			case 589894351:
 				return 12772;
-			case 590444944:
+			case joaat("u_m_m_sdtrapper_01"):
 				return 15911;
 			case 591276877:
 				return 3081;
@@ -51655,11 +51655,11 @@ int func_1165(int iParam0, int iParam1)
 				return 7547;
 			case 593605887:
 				return 15157;
-			case 594026681:
+			case joaat("cs_famousgunslinger_05"):
 				return 14799;
-			case 594040097:
+			case joaat("a_c_horsemulepainted_01"):
 				return 14435;
-			case 594254304:
+			case joaat("s_m_m_magiclantern_01"):
 				return 15727;
 			case 594442597:
 				return 2563;
@@ -51701,13 +51701,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6689;
 			case 600891938:
 				return 578;
-			case 601521823:
+			case joaat("u_m_m_rhdbartender_01"):
 				return 15891;
 			case 601820537:
 				return 9324;
 			case 601873519:
 				return 6288;
-			case 601909643:
+			case joaat("u_m_m_valbutcher_01"):
 				return 15958;
 			case 602122057:
 				return 10074;
@@ -51735,7 +51735,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14323;
 			case 604461197:
 				return 12427;
-			case 604616887:
+			case joaat("p_cs_ropelegsplit"):
 				return 10346;
 			case 605050702:
 				return 1307;
@@ -51781,7 +51781,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12237;
 			case 611417531:
 				return 13959;
-			case 611757553:
+			case joaat("p_sidespoon01x"):
 				return 3682;
 			case 611917374:
 				return 9784;
@@ -51831,7 +51831,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2312;
 			case 617285165:
 				return 1611;
-			case 617552302:
+			case joaat("p_matchstick01x"):
 				return 1185;
 			case 617703278:
 				return 9878;
@@ -51867,7 +51867,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8258;
 			case 622277464:
 				return 12295;
-			case 622322952:
+			case joaat("p_cs_rabbitmeat02x"):
 				return 10324;
 			case 622369225:
 				return 13206;
@@ -51881,17 +51881,17 @@ int func_1165(int iParam0, int iParam1)
 				return 3716;
 			case 624051917:
 				return 23;
-			case 624070311:
+			case joaat("p_knife01x"):
 				return 4494;
-			case 624882545:
+			case joaat("cs_balloonoperator"):
 				return 14716;
-			case 625610107:
+			case joaat("a_f_m_sdserversformal_01"):
 				return 14534;
 			case 625728633:
 				return 10907;
 			case 625984167:
 				return 11042;
-			case 626176009:
+			case joaat("a_c_dogbluetickcoonhound_01"):
 				return 14257;
 			case 627095894:
 				return 3302;
@@ -51905,7 +51905,7 @@ int func_1165(int iParam0, int iParam1)
 				return 110;
 			case 628568431:
 				return 821;
-			case 628727561:
+			case joaat("p_cs_cratetnt01x"):
 				return 10093;
 			case 628999829:
 				return 6088;
@@ -51929,7 +51929,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9337;
 			case 633069584:
 				return 45;
-			case 633326690:
+			case joaat("p_cs_dressbox01x"):
 				return 10113;
 			case 633553493:
 				return 2292;
@@ -52007,7 +52007,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3214;
 			case 644407258:
 				return 2495;
-			case 646417756:
+			case joaat("a_m_m_sdchinatown_01"):
 				return 14638;
 			case 646505364:
 				return 646;
@@ -52037,7 +52037,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11395;
 			case 652841906:
 				return 3612;
-			case 653445543:
+			case joaat("a_f_m_middlesdtownfolk_01"):
 				return 14517;
 			case 654026816:
 				return 3026;
@@ -52053,7 +52053,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11433;
 			case 655188622:
 				return 13590;
-			case 655931573:
+			case joaat("p_cs_sackcorn01x"):
 				return 10353;
 			case 656129288:
 				return 4237;
@@ -52061,7 +52061,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5736;
 			case 656139738:
 				return 11406;
-			case 656184996:
+			case joaat("u_m_m_nbxresident_04"):
 				return 15879;
 			case 656581722:
 				return 1892;
@@ -52079,7 +52079,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5248;
 			case 658133283:
 				return 13621;
-			case 658220713:
+			case joaat("p_cigaretteholder01x"):
 				return 3052;
 			case 658891574:
 				return 8207;
@@ -52099,9 +52099,9 @@ int func_1165(int iParam0, int iParam1)
 				return 1484;
 			case 661142572:
 				return 8600;
-			case 661461038:
+			case joaat("p_cs_basfishonthewal01x"):
 				return 10021;
-			case 661519966:
+			case joaat("armysupplywagon"):
 				return 14116;
 			case 662206420:
 				return 9150;
@@ -52123,7 +52123,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5987;
 			case 663524178:
 				return 9859;
-			case 663716280:
+			case joaat("p_broom02x"):
 				return 6379;
 			case 664493942:
 				return 10809;
@@ -52145,11 +52145,11 @@ int func_1165(int iParam0, int iParam1)
 				return 4233;
 			case 666569944:
 				return 13400;
-			case 666597548:
+			case joaat("p_cs_railroadbond01x"):
 				return 10328;
 			case 668030318:
 				return 9515;
-			case 668639892:
+			case joaat("p_cs_pick01x"):
 				return 10292;
 			case 669185471:
 				return 4527;
@@ -52169,7 +52169,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4387;
 			case 672161093:
 				return 5495;
-			case 673153214:
+			case joaat("p_door_nbx_doc01x_l"):
 				return 2794;
 			case 673305066:
 				return 7506;
@@ -52183,7 +52183,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5400;
 			case 673616187:
 				return 8008;
-			case 674267496:
+			case joaat("a_c_bat_01"):
 				return 14227;
 			case 674384398:
 				return 12530;
@@ -52205,7 +52205,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8783;
 			case 676931074:
 				return 9157;
-			case 677043675:
+			case joaat("p_cuptin01x"):
 				return 4470;
 			case 677240371:
 				return 3749;
@@ -52295,7 +52295,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4333;
 			case 685924568:
 				return 11871;
-			case 686051865:
+			case joaat("cs_albertcakeesquire"):
 				return 14702;
 			case 686053343:
 				return 13638;
@@ -52309,7 +52309,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15363;
 			case 687248812:
 				return 15522;
-			case 687302557:
+			case joaat("u_m_m_finale2_aa_upperclass_01"):
 				return 15837;
 			case 687445866:
 				return 14351;
@@ -52377,13 +52377,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6838;
 			case 697062597:
 				return 3600;
-			case 697075200:
+			case joaat("a_c_fishnorthernpike_01_lg"):
 				return 14287;
 			case 697338775:
 				return 15643;
 			case 697634817:
 				return 12714;
-			case 697773749:
+			case joaat("p_cs_bookjaneeyre01x"):
 				return 12158;
 			case 697863232:
 				return 11222;
@@ -52423,7 +52423,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12490;
 			case 702887809:
 				return 8768;
-			case 703203753:
+			case joaat("northpassenger01x"):
 				return 14163;
 			case 703339954:
 				return 7707;
@@ -52431,7 +52431,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12778;
 			case 703694458:
 				return 8957;
-			case 703712157:
+			case joaat("a_c_fishbullheadcat_01_ms"):
 				return 14276;
 			case 703748386:
 				return 670;
@@ -52453,7 +52453,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4898;
 			case 704817881:
 				return 11801;
-			case 704872865:
+			case joaat("p_smokebomb01x"):
 				return 10458;
 			case 704981833:
 				return 8331;
@@ -52469,9 +52469,9 @@ int func_1165(int iParam0, int iParam1)
 				return 14318;
 			case 706115302:
 				return 4636;
-			case 706334491:
+			case joaat("a_m_m_strfancytourist_01"):
 				return 14651;
-			case 706485280:
+			case joaat("a_c_fishperch_01_sm"):
 				return 14289;
 			case 706800092:
 				return 13724;
@@ -52481,13 +52481,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9526;
 			case 707485192:
 				return 12678;
-			case 707548864:
+			case joaat("p_cs_dusterbill01x"):
 				return 10520;
 			case 707745297:
 				return 9688;
 			case 707950099:
 				return 6669;
-			case 708284478:
+			case joaat("u_m_m_rhddoctor_01"):
 				return 15892;
 			case 708571560:
 				return 4596;
@@ -52515,7 +52515,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4255;
 			case 710863980:
 				return 11965;
-			case 711387733:
+			case joaat("u_m_m_nbxgunsmith_01"):
 				return 15872;
 			case 711504798:
 				return 7267;
@@ -52545,13 +52545,13 @@ int func_1165(int iParam0, int iParam1)
 				return 8276;
 			case 716515216:
 				return 8850;
-			case 716675958:
+			case joaat("cs_mrsfellows"):
 				return 14925;
-			case 716704079:
+			case joaat("u_m_m_armtrainstationworker_01"):
 				return 15789;
 			case 717447832:
 				return 8018;
-			case 717679744:
+			case joaat("u_m_m_bht_saintdenissaloon"):
 				return 15809;
 			case 717863599:
 				return 15653;
@@ -52567,7 +52567,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1061;
 			case 719648503:
 				return 15482;
-			case 719681311:
+			case joaat("s_m_m_tailor_01"):
 				return 15748;
 			case 720076071:
 				return 13684;
@@ -52587,17 +52587,17 @@ int func_1165(int iParam0, int iParam1)
 				return 6994;
 			case 722032562:
 				return 5300;
-			case 722156226:
+			case joaat("u_m_m_bht_benedictallbright"):
 				return 15797;
-			case 722236839:
+			case joaat("s_m_m_army_01"):
 				return 15707;
-			case 722421619:
+			case joaat("p_hat02x"):
 				return 1735;
 			case 722922942:
 				return 12676;
 			case 723155563:
 				return 11357;
-			case 723190474:
+			case joaat("a_c_goosecanada_01"):
 				return 14305;
 			case 723574243:
 				return 13453;
@@ -52609,7 +52609,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12670;
 			case 724309542:
 				return 11264;
-			case 724635024:
+			case joaat("p_doorsglw01x"):
 				return 2693;
 			case 724814820:
 				return 3300;
@@ -52629,7 +52629,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6726;
 			case 729144843:
 				return 5168;
-			case 729192041:
+			case joaat("cs_valprostitute_02"):
 				return 15010;
 			case 729271841:
 				return 7422;
@@ -52651,7 +52651,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12408;
 			case 730068799:
 				return 382;
-			case 730092646:
+			case joaat("a_c_bearblack_01"):
 				return 14229;
 			case 730181461:
 				return 8577;
@@ -52659,7 +52659,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5835;
 			case 730579614:
 				return 4105;
-			case 731029607:
+			case joaat("g_m_m_unibraithwaites_01"):
 				return 15027;
 			case 731127280:
 				return 2118;
@@ -52693,7 +52693,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6627;
 			case 736108108:
 				return 10923;
-			case 736176753:
+			case joaat("u_m_m_lnsoutlaw_02"):
 				return 15849;
 			case 736464247:
 				return 5941;
@@ -52703,11 +52703,11 @@ int func_1165(int iParam0, int iParam1)
 				return 13222;
 			case 737551253:
 				return 9803;
-			case 737690157:
+			case joaat("p_bedrollopen03x"):
 				return 1106;
 			case 737763969:
 				return 43;
-			case 737910671:
+			case joaat("s_m_m_pinlaw_01"):
 				return 15735;
 			case 738020132:
 				return 2298;
@@ -52741,7 +52741,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11131;
 			case 741925082:
 				return 13855;
-			case 742064790:
+			case joaat("gatlingmaxim02"):
 				return 14146;
 			case 742479254:
 				return 1917;
@@ -52749,7 +52749,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2445;
 			case 742993848:
 				return 3490;
-			case 743219360:
+			case joaat("cs_evelynmiller"):
 				return 14791;
 			case 743343178:
 				return 5964;
@@ -52771,7 +52771,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2099;
 			case 745643447:
 				return 12665;
-			case 745931045:
+			case joaat("p_cs_hectornecktie"):
 				return 10534;
 			case 746047447:
 				return 9171;
@@ -52791,7 +52791,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10891;
 			case 747217778:
 				return 13766;
-			case 747462423:
+			case joaat("s_m_m_hofguard_01"):
 				return 15725;
 			case 747693043:
 				return 11954;
@@ -52799,13 +52799,13 @@ int func_1165(int iParam0, int iParam1)
 				return 2034;
 			case 748274267:
 				return 10266;
-			case 748448194:
+			case joaat("a_m_m_ranchertravelers_cool_01"):
 				return 14622;
 			case 749241731:
 				return 12568;
-			case 749266870:
+			case joaat("hotchkiss_cannon"):
 				return 14154;
-			case 749327242:
+			case joaat("p_painting_newgala_sml01x"):
 				return 5302;
 			case 749478396:
 				return 659;
@@ -52855,7 +52855,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4258;
 			case 755732447:
 				return 5332;
-			case 755774783:
+			case joaat("cs_cancanman_01"):
 				return 14745;
 			case 758048120:
 				return 10657;
@@ -52863,11 +52863,11 @@ int func_1165(int iParam0, int iParam1)
 				return 15657;
 			case 759714179:
 				return 10042;
-			case 759906147:
+			case joaat("a_c_beaver_01"):
 				return 14230;
 			case 760174278:
 				return 11698;
-			case 760370349:
+			case joaat("p_door_val_bank01"):
 				return 2542;
 			case 760481963:
 				return 9620;
@@ -52963,7 +52963,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6015;
 			case 774018820:
 				return 12484;
-			case 774211111:
+			case joaat("cs_poisonwellshaman"):
 				return 14947;
 			case 774944456:
 				return 15620;
@@ -52975,7 +52975,7 @@ int func_1165(int iParam0, int iParam1)
 				return 414;
 			case 775317822:
 				return 2638;
-			case 775492026:
+			case joaat("u_m_m_nbxbankerbounty_01"):
 				return 15859;
 			case 775660940:
 				return 2169;
@@ -52989,13 +52989,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9601;
 			case 777917061:
 				return 7531;
-			case 778449680:
+			case joaat("u_m_m_story_copperhead_01"):
 				return 15920;
 			case 778670526:
 				return 4015;
-			case 778775984:
+			case joaat("u_m_m_bht_odriscollsleeping"):
 				return 15806;
-			case 778800947:
+			case joaat("cs_cassidy"):
 				return 14747;
 			case 779860444:
 				return 13946;
@@ -53027,13 +53027,13 @@ int func_1165(int iParam0, int iParam1)
 				return 11593;
 			case 783773905:
 				return 2947;
-			case 784094203:
+			case joaat("p_door_bla_jail_r_01x"):
 				return 2767;
 			case 784215241:
 				return 1903;
 			case 784659507:
 				return 3802;
-			case 785262586:
+			case joaat("a_f_m_armtownfolk_02"):
 				return 14497;
 			case 785969518:
 				return 3283;
@@ -53045,7 +53045,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8309;
 			case 786789292:
 				return 13573;
-			case 787211696:
+			case joaat("p_woodbowl01x"):
 				return 4588;
 			case 787743430:
 				return 13078;
@@ -53053,7 +53053,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10771;
 			case 788230283:
 				return 13366;
-			case 788367781:
+			case joaat("p_copperpot02bx"):
 				return 4465;
 			case 788805344:
 				return 13410;
@@ -53067,7 +53067,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9591;
 			case 790806971:
 				return 7872;
-			case 791619716:
+			case joaat("p_fence_plank_post01"):
 				return 3249;
 			case 791890618:
 				return 12092;
@@ -53083,7 +53083,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9533;
 			case 794358523:
 				return 7275;
-			case 794654164:
+			case joaat("cs_cancan_02"):
 				return 14742;
 			case 794771241:
 				return 6332;
@@ -53111,7 +53111,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14104;
 			case 798138932:
 				return 5839;
-			case 798234609:
+			case joaat("a_m_m_farmtravelers_warm_01"):
 				return 14591;
 			case 798236226:
 				return 1083;
@@ -53121,7 +53121,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1865;
 			case 799045138:
 				return 13815;
-			case 799179000:
+			case joaat("p_axe02x"):
 				return 6375;
 			case 799253244:
 				return 7936;
@@ -53131,7 +53131,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2021;
 			case 799725536:
 				return 2658;
-			case 799791017:
+			case joaat("a_m_m_rkrsurvivalist_01"):
 				return 14634;
 			case 800098637:
 				return 8861;
@@ -53161,7 +53161,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2816;
 			case 802585746:
 				return 6925;
-			case 802784330:
+			case joaat("a_c_horse_shire_ravenblack"):
 				return 14415;
 			case 802945550:
 				return 11030;
@@ -53177,7 +53177,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11830;
 			case 805042852:
 				return 8535;
-			case 805252409:
+			case joaat("p_cs_canteen_hercule"):
 				return 10512;
 			case 805425957:
 				return 5630;
@@ -53217,7 +53217,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4931;
 			case 808443551:
 				return 3642;
-			case 808601893:
+			case joaat("cs_henrilemiux"):
 				return 14828;
 			case 808655744:
 				return 14396;
@@ -53229,7 +53229,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12998;
 			case 809476504:
 				return 4323;
-			case 809532746:
+			case joaat("a_m_y_asbminer_04"):
 				return 14681;
 			case 809618066:
 				return 8653;
@@ -53257,7 +53257,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15597;
 			case 812489544:
 				return 8905;
-			case 812805259:
+			case joaat("p_trap05x"):
 				return 4274;
 			case 813051418:
 				return 13587;
@@ -53293,7 +53293,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2619;
 			case 819421824:
 				return 12267;
-			case 819493639:
+			case joaat("p_inkwell01x"):
 				return 5280;
 			case 819995935:
 				return 803;
@@ -53307,7 +53307,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8576;
 			case 821230530:
 				return 15189;
-			case 822759307:
+			case joaat("utilliwag"):
 				return 14207;
 			case 822883054:
 				return 7153;
@@ -53323,7 +53323,7 @@ int func_1165(int iParam0, int iParam1)
 	{
 		switch (iParam0)
 		{
-			case 822933632:
+			case joaat("p_strongbox01x"):
 				return 4885;
 			case 822986674:
 				return 7745;
@@ -53331,7 +53331,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5554;
 			case 823289406:
 				return 10836;
-			case 823321772:
+			case joaat("cs_meredithsmother"):
 				return 14872;
 			case 823352510:
 				return 14080;
@@ -53343,11 +53343,11 @@ int func_1165(int iParam0, int iParam1)
 				return 3777;
 			case 824829704:
 				return 11515;
-			case 824878343:
+			case joaat("p_crategatling01x"):
 				return 5988;
 			case 825011097:
 				return 8380;
-			case 825038950:
+			case joaat("p_propemfence02x"):
 				return 3346;
 			case 825496160:
 				return 9749;
@@ -53355,13 +53355,13 @@ int func_1165(int iParam0, int iParam1)
 				return 2753;
 			case 826039942:
 				return 11579;
-			case 826216492:
+			case joaat("u_m_m_galastringquartet_03"):
 				return 15840;
 			case 826229249:
 				return 4922;
-			case 826385717:
+			case joaat("s_m_m_marshallsrural_01"):
 				return 15730;
-			case 826392697:
+			case joaat("p_wrappedmeat01x"):
 				return 3732;
 			case 826921696:
 				return 10437;
@@ -53397,7 +53397,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11962;
 			case 830704921:
 				return 14033;
-			case 830712509:
+			case joaat("a_m_m_wapwarriors_01"):
 				return 14670;
 			case 830904844:
 				return 6313;
@@ -53411,13 +53411,13 @@ int func_1165(int iParam0, int iParam1)
 				return 11017;
 			case 831729096:
 				return 12877;
-			case 831859211:
+			case joaat("a_c_egret_01"):
 				return 14272;
 			case 833078310:
 				return 4037;
 			case 833639467:
 				return 3332;
-			case 833698475:
+			case joaat("p_tree_branchswamp_01"):
 				return 10885;
 			case 833914902:
 				return 4524;
@@ -53435,11 +53435,11 @@ int func_1165(int iParam0, int iParam1)
 				return 12026;
 			case 835864269:
 				return 13156;
-			case 836126162:
+			case joaat("p_servicebell01x"):
 				return 6237;
 			case 836257295:
 				return 3412;
-			case 836525272:
+			case joaat("cs_angel"):
 				return 14705;
 			case 837023579:
 				return 5313;
@@ -53471,7 +53471,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8105;
 			case 841372803:
 				return 1318;
-			case 841716415:
+			case joaat("a_f_o_sdchinatown_01"):
 				return 14551;
 			case 841730705:
 				return 15212;
@@ -53491,7 +53491,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7113;
 			case 843867833:
 				return 4854;
-			case 844370484:
+			case joaat("cs_sd_streetkid_01b"):
 				return 14967;
 			case 844632215:
 				return 4291;
@@ -53513,7 +53513,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5029;
 			case 846372629:
 				return 6259;
-			case 846659001:
+			case joaat("a_c_snakeblacktailrattle_01"):
 				return 14471;
 			case 846659622:
 				return 6408;
@@ -53521,11 +53521,11 @@ int func_1165(int iParam0, int iParam1)
 				return 447;
 			case 847387086:
 				return 5890;
-			case 847448713:
+			case joaat("u_m_m_crdhomesteadtenant_01"):
 				return 15827;
 			case 847831326:
 				return 3519;
-			case 848012614:
+			case joaat("cs_archerfordham"):
 				return 14710;
 			case 848182071:
 				return 9188;
@@ -53555,11 +53555,11 @@ int func_1165(int iParam0, int iParam1)
 				return 3875;
 			case 851226997:
 				return 9001;
-			case 851401507:
+			case joaat("p_nutbowl01x"):
 				return 3598;
 			case 851655662:
 				return 4807;
-			case 852072701:
+			case joaat("cs_disguisedduster_01"):
 				return 14775;
 			case 852389070:
 				return 11065;
@@ -53597,7 +53597,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13391;
 			case 855591916:
 				return 7014;
-			case 855765086:
+			case joaat("p_oar02x"):
 				return 6658;
 			case 856294396:
 				return 11071;
@@ -53613,7 +53613,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8593;
 			case 858198745:
 				return 6750;
-			case 858540986:
+			case joaat("p_brushhorse01x"):
 				return 3093;
 			case 858610727:
 				return 8426;
@@ -53649,7 +53649,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10570;
 			case 861776066:
 				return 9540;
-			case 861896523:
+			case joaat("g_f_m_uniduster_01"):
 				return 15023;
 			case 863346285:
 				return 13397;
@@ -53679,7 +53679,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11916;
 			case 866723984:
 				return 9958;
-			case 867074004:
+			case joaat("p_cs_letter03x"):
 				return 12193;
 			case 867377210:
 				return 3307;
@@ -53705,7 +53705,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7333;
 			case 871233640:
 				return 8672;
-			case 871271813:
+			case joaat("u_m_m_nbxgraverobber_05"):
 				return 15871;
 			case 871395476:
 				return 8711;
@@ -53735,7 +53735,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15393;
 			case 875542741:
 				return 10999;
-			case 876316748:
+			case joaat("p_cs_lootsack01x"):
 				return 10235;
 			case 876571109:
 				return 2253;
@@ -53799,7 +53799,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4085;
 			case 882909226:
 				return 8636;
-			case 883569961:
+			case joaat("p_sawbucktable01x"):
 				return 6302;
 			case 883641025:
 				return 5846;
@@ -53817,7 +53817,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7211;
 			case 885213159:
 				return 8756;
-			case 886037240:
+			case joaat("w_rifle_carcano01"):
 				return 399;
 			case 886415666:
 				return 8264;
@@ -53835,7 +53835,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6957;
 			case 888041459:
 				return 13635;
-			case 888054433:
+			case joaat("a_m_o_sdchinatown_01"):
 				return 14675;
 			case 888152471:
 				return 15286;
@@ -53843,11 +53843,11 @@ int func_1165(int iParam0, int iParam1)
 				return 9793;
 			case 888485596:
 				return 11003;
-			case 888504590:
+			case joaat("p_boiler02x"):
 				return 4431;
 			case 888600723:
 				return 10956;
-			case 888681950:
+			case joaat("cs_chelonianmaster"):
 				return 14754;
 			case 888737253:
 				return 8150;
@@ -53871,7 +53871,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11612;
 			case 891692655:
 				return 13223;
-			case 891739652:
+			case joaat("s_interact_lantern03x_pickup"):
 				return 11096;
 			case 891955946:
 				return 2091;
@@ -53927,7 +53927,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8123;
 			case 899509143:
 				return 8176;
-			case 899708667:
+			case joaat("p_oar01x"):
 				return 6657;
 			case 899736801:
 				return 11247;
@@ -53983,7 +53983,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1661;
 			case 906930757:
 				return 1525;
-			case 907019741:
+			case joaat("cs_twinbrother_01"):
 				return 15000;
 			case 907062362:
 				return 998;
@@ -54003,7 +54003,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15318;
 			case 908527399:
 				return 4208;
-			case 909383546:
+			case joaat("p_centerpiece02x"):
 				return 3944;
 			case 909409297:
 				return 1683;
@@ -54031,7 +54031,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7888;
 			case 912417220:
 				return 10818;
-			case 913112519:
+			case joaat("p_doorfrench01l"):
 				return 2651;
 			case 913114332:
 				return 9476;
@@ -54049,7 +54049,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11191;
 			case 913807789:
 				return 1911;
-			case 913841068:
+			case joaat("cs_vht_bathgirl"):
 				return 15013;
 			case 914263404:
 				return 15588;
@@ -54093,7 +54093,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11531;
 			case 918898309:
 				return 15576;
-			case 918972034:
+			case joaat("a_m_m_vhttownfolk_01"):
 				return 14669;
 			case 919202307:
 				return 6450;
@@ -54117,7 +54117,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8071;
 			case 920663016:
 				return 3780;
-			case 920851291:
+			case joaat("a_m_m_sdobesemen_01"):
 				return 14643;
 			case 921431287:
 				return 2852;
@@ -54181,13 +54181,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9106;
 			case 927915134:
 				return 4186;
-			case 927991752:
+			case joaat("p_cigarette_cs02x"):
 				return 3048;
 			case 928043429:
 				return 6159;
 			case 928049129:
 				return 1256;
-			case 928344684:
+			case joaat("a_f_m_middlesdtownfolk_02"):
 				return 14518;
 			case 928897915:
 				return 6896;
@@ -54235,7 +54235,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13318;
 			case 934656298:
 				return 2085;
-			case 934706428:
+			case joaat("p_bottlecrate01x"):
 				return 2926;
 			case 935087212:
 				return 16086;
@@ -54255,17 +54255,17 @@ int func_1165(int iParam0, int iParam1)
 				return 6470;
 			case 937024151:
 				return 12954;
-			case 937077130:
+			case joaat("a_m_m_asbboatcrew_01"):
 				return 14558;
 			case 937173376:
 				return 15391;
-			case 937246805:
+			case joaat("a_c_horse_belgian_mealychestnut"):
 				return 14337;
 			case 937367983:
 				return 15081;
 			case 937440785:
 				return 6648;
-			case 937508733:
+			case joaat("p_journal01x"):
 				return 5285;
 			case 937811036:
 				return 9058;
@@ -54289,7 +54289,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12001;
 			case 941637321:
 				return 3224;
-			case 942176598:
+			case joaat("p_woodboard01x"):
 				return 4967;
 			case 942705605:
 				return 11215;
@@ -54303,9 +54303,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11790;
 			case 944234058:
 				return 2575;
-			case 944531097:
+			case joaat("p_pickaxe01x"):
 				return 6455;
-			case 944661538:
+			case joaat("privatearmoured"):
 				return 14172;
 			case 944709406:
 				return 5329;
@@ -54325,7 +54325,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15628;
 			case 947786394:
 				return 15633;
-			case 948028330:
+			case joaat("u_m_m_lnsoutlaw_04"):
 				return 15851;
 			case 948933843:
 				return 9545;
@@ -54389,7 +54389,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6271;
 			case 955802159:
 				return 12332;
-			case 955954142:
+			case joaat("p_cs_lootsack03x"):
 				return 10237;
 			case 956247264:
 				return 6899;
@@ -54427,9 +54427,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13402;
 			case 959905628:
 				return 13449;
-			case 960478986:
+			case joaat("p_crate06x"):
 				return 5957;
-			case 960530301:
+			case joaat("cs_marshall_thurwell"):
 				return 14867;
 			case 960599934:
 				return 3312;
@@ -54439,7 +54439,7 @@ int func_1165(int iParam0, int iParam1)
 				return 749;
 			case 961876323:
 				return 12642;
-			case 962088794:
+			case joaat("midlandboxcar05x"):
 				return 14158;
 			case 962251301:
 				return 9801;
@@ -54459,7 +54459,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8657;
 			case 964732302:
 				return 9836;
-			case 964905443:
+			case joaat("s_m_m_vhtdealer_01"):
 				return 15758;
 			case 964931263:
 				return 5557;
@@ -54469,7 +54469,7 @@ int func_1165(int iParam0, int iParam1)
 				return 158;
 			case 965390753:
 				return 9977;
-			case 965516916:
+			case joaat("p_cs_flyinggoggle01x"):
 				return 10153;
 			case 965720124:
 				return 7866;
@@ -54479,7 +54479,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3973;
 			case 966898662:
 				return 4170;
-			case 966958492:
+			case joaat("a_m_m_tumtownfolk_02"):
 				return 14655;
 			case 967301211:
 				return 13546;
@@ -54493,7 +54493,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11798;
 			case 968018790:
 				return 8852;
-			case 968145844:
+			case joaat("p_cs_suitcase05x"):
 				return 10402;
 			case 968234071:
 				return 3113;
@@ -54525,7 +54525,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1723;
 			case 972123551:
 				return 8820;
-			case 972135864:
+			case joaat("a_m_m_unigunslinger_01"):
 				return 14659;
 			case 972482031:
 				return 13688;
@@ -54537,7 +54537,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2425;
 			case 972872886:
 				return 4538;
-			case 972892334:
+			case joaat("cs_germandaughter"):
 				return 14818;
 			case 973016635:
 				return 10859;
@@ -54573,7 +54573,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2347;
 			case 977804853:
 				return 368;
-			case 977834008:
+			case joaat("a_m_m_rhdtownfolk_01"):
 				return 14627;
 			case 977957621:
 				return 5016;
@@ -54583,11 +54583,11 @@ int func_1165(int iParam0, int iParam1)
 				return 3496;
 			case 979030280:
 				return 14030;
-			case 979093383:
+			case joaat("a_c_horse_gang_trelawney"):
 				return 14369;
 			case 979353188:
 				return 11662;
-			case 979645508:
+			case joaat("cs_valprostitute_01"):
 				return 15009;
 			case 980307335:
 				return 2560;
@@ -54609,7 +54609,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13623;
 			case 983116154:
 				return 15449;
-			case 983550520:
+			case joaat("u_m_m_rhdfiddleplayer_01"):
 				return 15893;
 			case 983726710:
 				return 12849;
@@ -54619,13 +54619,13 @@ int func_1165(int iParam0, int iParam1)
 				return 13287;
 			case 984047829:
 				return 7139;
-			case 984264800:
+			case joaat("cs_mrpearson"):
 				return 14921;
 			case 984271877:
 				return 651;
 			case 984853511:
 				return 4814;
-			case 985010876:
+			case joaat("p_bottletequila01x"):
 				return 2937;
 			case joaat("prop_binoc_01"):
 				return 13451;
@@ -54637,7 +54637,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15430;
 			case 986262974:
 				return 10973;
-			case 986312695:
+			case joaat("p_glass01x"):
 				return 2964;
 			case 986744376:
 				return 1303;
@@ -54645,21 +54645,21 @@ int func_1165(int iParam0, int iParam1)
 				return 4190;
 			case 987299190:
 				return 13179;
-			case 987342453:
+			case joaat("p_cs_wagon02xbroken"):
 				return 10442;
 			case 987924370:
 				return 5655;
 			case 988393750:
 				return 7090;
-			case 988489345:
+			case joaat("p_wheelbarrow02x"):
 				return 6504;
 			case 988533890:
 				return 1146;
 			case 988637426:
 				return 8728;
-			case 988668512:
+			case joaat("cs_lemiuxassistant"):
 				return 14855;
-			case 989172200:
+			case joaat("cs_treasurehunter"):
 				return 14999;
 			case 989339567:
 				return 8358;
@@ -54669,7 +54669,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8827;
 			case 989533385:
 				return 6583;
-			case 989669666:
+			case joaat("a_c_rat_01"):
 				return 14458;
 			case 989821877:
 				return 9312;
@@ -54677,7 +54677,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9948;
 			case 990159072:
 				return 8772;
-			case 990179346:
+			case joaat("p_door_val_bank02"):
 				return 2543;
 			case 990323913:
 				return 9761;
@@ -54697,9 +54697,9 @@ int func_1165(int iParam0, int iParam1)
 				return 6240;
 			case 992776141:
 				return 7566;
-			case 993083342:
+			case joaat("a_c_dogstreet_01"):
 				return 14268;
-			case 993577366:
+			case joaat("cs_creoledoctor"):
 				return 14767;
 			case 994069177:
 				return 13183;
@@ -54721,7 +54721,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6564;
 			case 997172685:
 				return 4530;
-			case 997685952:
+			case joaat("a_m_m_bynsurvivalist_01"):
 				return 14581;
 			case 997760878:
 				return 2585;
@@ -54731,9 +54731,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12688;
 			case 998556117:
 				return 13519;
-			case 998604860:
+			case joaat("u_m_m_rkfrancher_01"):
 				return 15902;
-			case 998759471:
+			case joaat("p_chair04x"):
 				return 5570;
 			case 998798224:
 				return 5375;
@@ -54741,7 +54741,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1784;
 			case 999602922:
 				return 7935;
-			case 999891838:
+			case joaat("u_m_o_blwphotographer_01"):
 				return 15979;
 			case 1000244951:
 				return 10663;
@@ -54775,11 +54775,11 @@ int func_1165(int iParam0, int iParam1)
 				return 4218;
 			case 1005816319:
 				return 1663;
-			case 1006076574:
+			case joaat("cs_crackpotrobot"):
 				return 14764;
 			case 1006277677:
 				return 10537;
-			case 1006468445:
+			case joaat("cs_josiahtrelawny"):
 				return 14848;
 			case 1006871725:
 				return 10945;
@@ -54789,7 +54789,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2195;
 			case 1007362981:
 				return 5156;
-			case 1007418994:
+			case joaat("a_c_pig_01"):
 				return 14450;
 			case 1007485139:
 				return 594;
@@ -54799,7 +54799,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5628;
 			case 1008295415:
 				return 3533;
-			case 1008528096:
+			case joaat("u_f_m_story_nightfolk_01"):
 				return 15776;
 			case 1008962624:
 				return 1265;
@@ -54809,9 +54809,9 @@ int func_1165(int iParam0, int iParam1)
 				return 3945;
 			case 1010038654:
 				return 2414;
-			case 1010320580:
+			case joaat("cs_bandbassist"):
 				return 14717;
-			case 1010765128:
+			case joaat("p_cs_rabbitgut"):
 				return 10320;
 			case 1011008084:
 				return 6158;
@@ -54831,7 +54831,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6641;
 			case 1011834235:
 				return 11722;
-			case 1012299202:
+			case joaat("p_barrel02x"):
 				return 6063;
 			case 1012735231:
 				return 5930;
@@ -54845,7 +54845,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3240;
 			case 1014636801:
 				return 7441;
-			case 1014887214:
+			case joaat("p_cs_letter03x_color"):
 				return 12194;
 			case 1014988944:
 				return 11864;
@@ -54855,11 +54855,11 @@ int func_1165(int iParam0, int iParam1)
 				return 8219;
 			case 1016284169:
 				return 7104;
-			case 1016623270:
+			case joaat("wagon06x"):
 				return 14212;
 			case 1016785096:
 				return 841;
-			case 1017000466:
+			case joaat("u_m_m_unidusterleader_01"):
 				return 15948;
 			case 1017014513:
 				return 457;
@@ -54883,7 +54883,7 @@ int func_1165(int iParam0, int iParam1)
 				return 410;
 			case 1019886952:
 				return 13430;
-			case 1020041649:
+			case joaat("cs_genstoryfemale"):
 				return 14815;
 			case 1020274882:
 				return 8357;
@@ -54903,9 +54903,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12567;
 			case 1022043853:
 				return 13893;
-			case 1022056778:
+			case joaat("p_pitcher02x"):
 				return 2994;
-			case 1022365451:
+			case joaat("a_m_m_blwupperclass_01"):
 				return 14575;
 			case 1022372438:
 				return 6060;
@@ -54977,7 +54977,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11825;
 			case 1032755567:
 				return 12352;
-			case 1032949268:
+			case joaat("w_repeater_pumpaction01"):
 				return 215;
 			case 1033137726:
 				return 4764;
@@ -55007,7 +55007,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7737;
 			case 1035495500:
 				return 6815;
-			case 1035510041:
+			case joaat("u_m_m_nbxgraverobber_04"):
 				return 15870;
 			case 1035740979:
 				return 8605;
@@ -55017,7 +55017,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8413;
 			case 1037834545:
 				return 6225;
-			case 1038525765:
+			case joaat("cs_tilly"):
 				return 14994;
 			case 1039119061:
 				return 6270;
@@ -55057,7 +55057,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7169;
 			case 1043230583:
 				return 1896;
-			case 1043305935:
+			case joaat("p_cs_cratetntcover01x"):
 				return 11776;
 			case 1043358469:
 				return 1054;
@@ -55065,17 +55065,17 @@ int func_1165(int iParam0, int iParam1)
 				return 9251;
 			case 1044606377:
 				return 12541;
-			case 1044845632:
+			case joaat("u_f_m_vhtbartender_01"):
 				return 15781;
-			case 1045059103:
+			case joaat("p_door_val_jail02x"):
 				return 2561;
 			case 1045261891:
 				return 290;
 			case 1045370044:
 				return 7198;
-			case 1045394246:
+			case joaat("p_bottle010x"):
 				return 2905;
-			case 1045432644:
+			case joaat("a_m_m_asbminer_02"):
 				return 14561;
 			case 1046022891:
 				return 4254;
@@ -55109,7 +55109,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2860;
 			case 1051032345:
 				return 13753;
-			case 1051047356:
+			case joaat("cs_marylinton"):
 				return 14869;
 			case 1051290148:
 				return 9569;
@@ -55125,7 +55125,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7065;
 			case 1052976054:
 				return 6451;
-			case 1053179219:
+			case joaat("w_revolver_doubleaction04"):
 				return 305;
 			case 1053410492:
 				return 15656;
@@ -55137,7 +55137,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2073;
 			case 1054196995:
 				return 6465;
-			case 1054704925:
+			case joaat("p_cs_whiskeygls01x"):
 				return 10446;
 			case 1054824898:
 				return 1522;
@@ -55163,15 +55163,15 @@ int func_1165(int iParam0, int iParam1)
 				return 6625;
 			case 1057523711:
 				return 11525;
-			case 1057555344:
+			case joaat("p_benchch01x"):
 				return 5560;
-			case 1057570823:
+			case joaat("g_m_m_unicriminals_01"):
 				return 15030;
 			case 1057855405:
 				return 1333;
-			case 1057932105:
+			case joaat("u_m_m_rhdtrainstationworker_01"):
 				return 15899;
-			case 1058703817:
+			case joaat("p_hammer03x"):
 				return 6415;
 			case 1058740811:
 				return 10572;
@@ -55215,7 +55215,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1491;
 			case 1064565260:
 				return 4443;
-			case 1064769829:
+			case joaat("p_doorbrait01bx"):
 				return 2633;
 			case 1065191791:
 				return 11171;
@@ -55249,15 +55249,15 @@ int func_1165(int iParam0, int iParam1)
 				return 13051;
 			case 1068528425:
 				return 536;
-			case 1069203632:
+			case joaat("p_tiny_sandwiches_01x"):
 				return 3714;
 			case 1069538232:
 				return 12379;
-			case 1070917324:
+			case joaat("p_cs_mtsaloontable"):
 				return 10261;
 			case 1071161229:
 				return 11539;
-			case 1071795929:
+			case joaat("p_detonator01x"):
 				return 908;
 			case 1071912493:
 				return 7464;
@@ -55271,7 +55271,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13973;
 			case 1072523559:
 				return 5004;
-			case 1072575506:
+			case joaat("u_m_m_sdwealthytraveller_01"):
 				return 15912;
 			case 1072718785:
 				return 9114;
@@ -55297,7 +55297,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14419;
 			case 1074558046:
 				return 1412;
-			case 1074672809:
+			case joaat("u_m_m_sdcustomvendor_01"):
 				return 15906;
 			case 1074915171:
 				return 4671;
@@ -55357,7 +55357,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5918;
 			case 1079409498:
 				return 1799;
-			case 1079491822:
+			case joaat("a_f_o_sdupperclass_01"):
 				return 14552;
 			case 1079665333:
 				return 6014;
@@ -55367,13 +55367,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9151;
 			case 1080531306:
 				return 10715;
-			case 1080895636:
+			case joaat("p_tin_pomade01x"):
 				return 6263;
 			case 1081139471:
 				return 11379;
 			case 1081228448:
 				return 8322;
-			case 1081626861:
+			case joaat("p_door_wglass01x"):
 				return 2565;
 			case 1081693486:
 				return 12054;
@@ -55393,7 +55393,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13975;
 			case 1085378666:
 				return 1120;
-			case 1085457901:
+			case joaat("p_rag02x"):
 				return 1759;
 			case 1085521038:
 				return 6766;
@@ -55409,17 +55409,17 @@ int func_1165(int iParam0, int iParam1)
 				return 1738;
 			case 1086354818:
 				return 15304;
-			case 1086659483:
+			case joaat("s_m_m_bankclerk_01"):
 				return 15710;
-			case 1087029479:
+			case joaat("a_c_dogpoodle_01"):
 				return 14266;
-			case 1087552700:
+			case joaat("a_c_dogcollie_01"):
 				return 14260;
 			case 1088223893:
 				return 5035;
-			case 1088428104:
+			case joaat("a_c_dogamericanfoxhound_01"):
 				return 14255;
-			case 1088762151:
+			case joaat("p_can03x"):
 				return 3459;
 			case 1088783667:
 				return 15087;
@@ -55457,31 +55457,31 @@ int func_1165(int iParam0, int iParam1)
 				return 2018;
 			case 1092698497:
 				return 8963;
-			case 1092725297:
+			case joaat("p_book_w13_9_h18_4_bible"):
 				return 12109;
 			case 1092771681:
 				return 8551;
 			case 1092835907:
 				return 15435;
-			case 1092921608:
+			case joaat("cs_valprayingman"):
 				return 15008;
 			case 1093139643:
 				return 1821;
-			case 1093170527:
+			case joaat("u_m_m_strwelcomecenter_01"):
 				return 15938;
 			case 1093246325:
 				return 5671;
-			case 1093739537:
+			case joaat("p_sign_suffragette01x"):
 				return 5855;
 			case 1094554391:
 				return 8244;
 			case 1094799016:
 				return 6907;
-			case 1095117488:
+			case joaat("a_c_heron_01"):
 				return 14307;
 			case 1095457520:
 				return 10478;
-			case 1095937531:
+			case joaat("u_m_y_duellistbounty_01"):
 				return 15995;
 			case 1096190075:
 				return 3389;
@@ -55521,7 +55521,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3903;
 			case 1099906030:
 				return 12011;
-			case 1099986227:
+			case joaat("a_m_m_blwobesemen_01"):
 				return 14573;
 			case 1100484303:
 				return 3619;
@@ -55529,7 +55529,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8041;
 			case 1100593741:
 				return 8686;
-			case 1101050871:
+			case joaat("cs_mrwayne"):
 				return 14929;
 			case 1101400672:
 				return 9873;
@@ -55537,7 +55537,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9072;
 			case 1101420858:
 				return 9104;
-			case 1101842364:
+			case joaat("u_f_m_lagmother_01"):
 				return 15771;
 			case 1101939240:
 				return 4624;
@@ -55551,7 +55551,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2063;
 			case 1104481730:
 				return 4864;
-			case 1104697660:
+			case joaat("a_c_vulture_01"):
 				return 14489;
 			case 1104754493:
 				return 4016;
@@ -55567,7 +55567,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10748;
 			case 1106423653:
 				return 2948;
-			case 1107088736:
+			case joaat("a_f_m_familytravelers_cool_01"):
 				return 14506;
 			case 1109522757:
 				return 10756;
@@ -55577,7 +55577,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3410;
 			case 1110293922:
 				return 5414;
-			case 1110710183:
+			case joaat("a_c_deer_01"):
 				return 14254;
 			case 1110781448:
 				return 15884;
@@ -55595,7 +55595,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11430;
 			case 1112538153:
 				return 10202;
-			case 1112571710:
+			case joaat("u_m_m_nbxbronteasc_01"):
 				return 15863;
 			case 1113649970:
 				return 5011;
@@ -55619,7 +55619,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13079;
 			case 1115288449:
 				return 5354;
-			case 1115303244:
+			case joaat("ship_nbdguama"):
 				return 14191;
 			case 1115683292:
 				return 3609;
@@ -55633,7 +55633,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10525;
 			case 1117738317:
 				return 11520;
-			case 1117917059:
+			case joaat("prop_flag_us"):
 				return 5520;
 			case 1118659955:
 				return 9838;
@@ -55659,7 +55659,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12634;
 			case 1121623686:
 				return 7003;
-			case 1121798079:
+			case joaat("u_m_m_walgeneralstoreowner_01"):
 				return 15971;
 			case 1122074220:
 				return 9428;
@@ -55669,7 +55669,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10545;
 			case 1123281134:
 				return 12404;
-			case 1123298495:
+			case joaat("u_m_m_story_princess_01"):
 				return 15927;
 			case 1123894704:
 				return 16095;
@@ -55677,7 +55677,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7861;
 			case 1123978395:
 				return 2304;
-			case 1124384604:
+			case joaat("s_m_m_valcowpoke_01"):
 				return 15755;
 			case 1124557452:
 				return 2896;
@@ -55697,7 +55697,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10274;
 			case 1127543921:
 				return 13541;
-			case 1127589605:
+			case joaat("a_m_m_strtownfolk_01"):
 				return 14653;
 			case 1127818789:
 				return 11785;
@@ -55725,7 +55725,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12466;
 			case 1131524209:
 				return 7043;
-			case 1131532296:
+			case joaat("p_champagnebucket01x"):
 				return 2950;
 			case 1131695399:
 				return 4385;
@@ -55733,7 +55733,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8817;
 			case 1132161511:
 				return 8873;
-			case 1132486830:
+			case joaat("p_cs_coachroutes01x"):
 				return 10084;
 			case 1133155075:
 				return 6649;
@@ -55795,23 +55795,23 @@ int func_1165(int iParam0, int iParam1)
 				return 2378;
 			case 1141233817:
 				return 10026;
-			case 1141518777:
+			case joaat("w_revolver_schofield03"):
 				return 370;
 			case 1141626180:
 				return 15642;
 			case 1141637634:
 				return 10831;
-			case 1142470111:
+			case joaat("u_m_m_galastringquartet_02"):
 				return 15839;
 			case 1143047250:
 				return 14034;
 			case 1143187053:
 				return 9686;
-			case 1143979484:
+			case joaat("cs_johnthebaptisingmadman"):
 				return 14846;
 			case 1144150556:
 				return 11973;
-			case 1144273089:
+			case joaat("p_broom04x"):
 				return 6381;
 			case 1144770056:
 				return 13468;
@@ -55847,7 +55847,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10393;
 			case 1149115298:
 				return 6003;
-			case 1149349599:
+			case joaat("cs_mrs_calhoun"):
 				return 14922;
 			case 1149395132:
 				return 3501;
@@ -55875,7 +55875,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2005;
 			case 1152389454:
 				return 7223;
-			case 1153217480:
+			case joaat("a_m_m_sddockforeman_01"):
 				return 14639;
 			case 1153467394:
 				return 21;
@@ -55893,7 +55893,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13852;
 			case 1156540976:
 				return 8567;
-			case 1156568686:
+			case joaat("cs_watson_03"):
 				return 15018;
 			case 1157289175:
 				return 7089;
@@ -55921,7 +55921,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10673;
 			case 1160269589:
 				return 580;
-			case 1160964739:
+			case joaat("p_cs_seanmask01x"):
 				return 10364;
 			case 1161515178:
 				return 4059;
@@ -55957,7 +55957,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5801;
 			case 1165718913:
 				return 6323;
-			case 1165934108:
+			case joaat("p_peanutsingle01x"):
 				return 3614;
 			case 1166050429:
 				return 1079;
@@ -55969,7 +55969,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1477;
 			case 1167448161:
 				return 13213;
-			case 1167462574:
+			case joaat("s_m_m_skpguard_01"):
 				return 15743;
 			case 1167761205:
 				return 3290;
@@ -55979,21 +55979,21 @@ int func_1165(int iParam0, int iParam1)
 				return 950;
 			case 1169072980:
 				return 2747;
-			case 1169277545:
+			case joaat("s_m_m_blwcowpoke_01"):
 				return 15712;
 			case 1169502595:
 				return 812;
 			case 1169513037:
 				return 7072;
-			case 1169778176:
+			case joaat("a_m_m_sclfancytravellers_01"):
 				return 14636;
 			case 1170043675:
 				return 13687;
 			case 1170207075:
 				return 9963;
-			case 1170245472:
+			case joaat("p_cs_fusespool01x"):
 				return 10182;
-			case 1170674247:
+			case joaat("p_shovel01x"):
 				return 6477;
 			case 1170760461:
 				return 2632;
@@ -56025,7 +56025,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8907;
 			case 1174196510:
 				return 11672;
-			case 1174781578:
+			case joaat("p_carrot02x"):
 				return 3484;
 			case 1175210230:
 				return 7884;
@@ -56069,9 +56069,9 @@ int func_1165(int iParam0, int iParam1)
 				return 823;
 			case 1180245127:
 				return 12871;
-			case 1180302106:
+			case joaat("p_cratemaxim02x"):
 				return 11775;
-			case 1180790789:
+			case joaat("p_cs_camptent01x"):
 				return 10511;
 			case 1181203503:
 				return 688;
@@ -56115,7 +56115,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6834;
 			case 1185000530:
 				return 4655;
-			case 1185443229:
+			case joaat("p_woodplank03x"):
 				return 4986;
 			case 1185581978:
 				return 7836;
@@ -56131,7 +56131,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1414;
 			case 1186813856:
 				return 13317;
-			case 1186910594:
+			case joaat("p_stoolwinter01x"):
 				return 5698;
 			case 1187237405:
 				return 2093;
@@ -56181,13 +56181,13 @@ int func_1165(int iParam0, int iParam1)
 				return 12620;
 			case 1192705421:
 				return 11083;
-			case 1192745176:
+			case joaat("privatecoalcar01x"):
 				return 14177;
 			case 1192783856:
 				return 7172;
 			case 1192806219:
 				return 12695;
-			case 1195409633:
+			case joaat("u_m_m_story_murfee_01"):
 				return 15925;
 			case 1195604412:
 				return 11405;
@@ -56219,7 +56219,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13487;
 			case 1199636936:
 				return 840;
-			case 1199682287:
+			case joaat("p_cs_prostheticleg_01x"):
 				return 10315;
 			case 1199739891:
 				return 3390;
@@ -56275,7 +56275,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2417;
 			case 1205695274:
 				return 7002;
-			case 1205982615:
+			case joaat("a_c_californiacondor_01"):
 				return 14239;
 			case 1206116866:
 				return 3130;
@@ -56289,7 +56289,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6187;
 			case 1206719712:
 				return 7749;
-			case 1207272102:
+			case joaat("p_traveltrunk02x"):
 				return 3818;
 			case 1207750643:
 				return 12994;
@@ -56299,21 +56299,21 @@ int func_1165(int iParam0, int iParam1)
 				return 1426;
 			case 1208421205:
 				return 7706;
-			case 1209122190:
+			case joaat("p_inv_treasuregoldbar01x"):
 				return 6532;
 			case 1209303509:
 				return 292;
 			case 1209328010:
 				return 5038;
-			case 1209410543:
+			case joaat("p_door_emeraldranchbarn01"):
 				return 2784;
 			case 1209424348:
 				return 11479;
 			case 1210046102:
 				return 2358;
-			case 1210527888:
+			case joaat("p_cs_fishingpolebag01x"):
 				return 10147;
-			case 1210783447:
+			case joaat("p_cs_book04x"):
 				return 12128;
 			case 1210798841:
 				return 7961;
@@ -56321,11 +56321,11 @@ int func_1165(int iParam0, int iParam1)
 				return 15300;
 			case 1211125858:
 				return 13061;
-			case 1211177099:
+			case joaat("p_wateringcansm01x"):
 				return 3181;
 			case 1211422371:
 				return 511;
-			case 1211525499:
+			case joaat("p_pipe01x"):
 				return 3070;
 			case 1211777952:
 				return 7518;
@@ -56335,7 +56335,7 @@ int func_1165(int iParam0, int iParam1)
 				return 787;
 			case 1212819215:
 				return 4083;
-			case 1212974634:
+			case joaat("w_shotgun_sawed01"):
 				return 547;
 			case 1213395665:
 				return 15307;
@@ -56419,7 +56419,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6598;
 			case 1225001016:
 				return 6199;
-			case 1225208808:
+			case joaat("cs_hoseamatthews"):
 				return 14833;
 			case 1225288801:
 				return 1457;
@@ -56459,15 +56459,15 @@ int func_1165(int iParam0, int iParam1)
 				return 15567;
 			case 1230359523:
 				return 14392;
-			case 1230587433:
+			case joaat("p_electricfielddetector01x"):
 				return 11796;
 			case 1230674153:
 				return 5500;
-			case 1230724566:
+			case joaat("p_chair_crate02x"):
 				return 5566;
 			case 1230911989:
 				return 926;
-			case 1231309423:
+			case joaat("cs_theodorelevin"):
 				return 14991;
 			case 1231660345:
 				return 13598;
@@ -56487,7 +56487,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8923;
 			case 1234523120:
 				return 12737;
-			case 1234550949:
+			case joaat("cs_nicholastimmins"):
 				return 14937;
 			case 1234625698:
 				return 4468;
@@ -56539,7 +56539,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5372;
 			case 1243461373:
 				return 1601;
-			case 1244359045:
+			case joaat("p_hotairballoon01x"):
 				return 6576;
 			case 1244705032:
 				return 10728;
@@ -56549,7 +56549,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9621;
 			case 1245359261:
 				return 276;
-			case 1245530084:
+			case joaat("cs_disguisedduster_03"):
 				return 14777;
 			case 1245539170:
 				return 3246;
@@ -56565,7 +56565,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7508;
 			case 1246765953:
 				return 5666;
-			case 1246822101:
+			case joaat("p_cs_blanket01x"):
 				return 10036;
 			case 1247157825:
 				return 2806;
@@ -56581,7 +56581,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6423;
 			case 1248468042:
 				return 13633;
-			case 1248528309:
+			case joaat("s_m_m_mapworker_01"):
 				return 15728;
 			case 1249051525:
 				return 7227;
@@ -56617,7 +56617,7 @@ int func_1165(int iParam0, int iParam1)
 				return 488;
 			case 1252941730:
 				return 15571;
-			case 1253299569:
+			case joaat("cs_dinoboneslady"):
 				return 14774;
 			case 1253404419:
 				return 3429;
@@ -56633,7 +56633,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3837;
 			case 1255274752:
 				return 10002;
-			case 1255849914:
+			case joaat("a_m_m_bivroughtravellers_01"):
 				return 14568;
 			case 1256688103:
 				return 12173;
@@ -56689,13 +56689,13 @@ int func_1165(int iParam0, int iParam1)
 				return 1830;
 			case 1265175662:
 				return 4253;
-			case 1265552111:
+			case joaat("cs_mamawatson"):
 				return 14866;
 			case 1265955300:
 				return 2160;
-			case 1265966684:
+			case joaat("a_c_pelican_01"):
 				return 14448;
-			case 1266159496:
+			case joaat("cs_beaugray"):
 				return 14725;
 			case 1266200177:
 				return 7474;
@@ -56703,13 +56703,13 @@ int func_1165(int iParam0, int iParam1)
 				return 7334;
 			case 1266419285:
 				return 13819;
-			case 1266592839:
+			case joaat("cs_strawberryoutlaw_01"):
 				return 14979;
 			case 1266602343:
 				return 11267;
 			case 1267641193:
 				return 10960;
-			case 1267814678:
+			case joaat("p_cs_journal01x"):
 				return 12181;
 			case 1268263061:
 				return 11634;
@@ -56723,11 +56723,11 @@ int func_1165(int iParam0, int iParam1)
 				return 13713;
 			case 1270344049:
 				return 10100;
-			case 1270374363:
+			case joaat("u_m_m_nbxresident_02"):
 				return 15877;
-			case 1270841555:
+			case joaat("cs_crackpotinventor"):
 				return 14763;
-			case 1271647689:
+			case joaat("p_bench_log07x"):
 				return 5546;
 			case 1271837421:
 				return 7339;
@@ -56767,7 +56767,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10752;
 			case 1276183097:
 				return 3851;
-			case 1276534479:
+			case joaat("cs_hercule"):
 				return 14830;
 			case 1276753332:
 				return 1458;
@@ -56811,7 +56811,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8842;
 			case 1281084193:
 				return 12116;
-			case 1281122482:
+			case joaat("cs_gavin"):
 				return 14814;
 			case 1281451937:
 				return 8430;
@@ -56821,7 +56821,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13917;
 			case 1281919024:
 				return 2487;
-			case 1282171014:
+			case joaat("a_m_m_unicorpse_01"):
 				return 14658;
 			case 1282479644:
 				return 10810;
@@ -56853,9 +56853,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11670;
 			case 1286850878:
 				return 15365;
-			case 1286871718:
+			case joaat("u_m_m_cornwalldriver_01"):
 				return 15826;
-			case 1286899977:
+			case joaat("p_nailsingle01x"):
 				return 6453;
 			case 1287088534:
 				return 7424;
@@ -56867,7 +56867,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7941;
 			case 1287551665:
 				return 9137;
-			case 1287780262:
+			case joaat("p_table41x"):
 				return 6324;
 			case 1287892740:
 				return 5247;
@@ -56919,7 +56919,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3782;
 			case 1294193701:
 				return 5238;
-			case 1294255258:
+			case joaat("cs_levisimon"):
 				return 14859;
 			case 1294500079:
 				return 7408;
@@ -56933,7 +56933,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10054;
 			case 1295583220:
 				return 4572;
-			case 1295740658:
+			case joaat("cs_blwwitness"):
 				return 14729;
 			case 1295833736:
 				return 5145;
@@ -56951,7 +56951,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1642;
 			case 1297601427:
 				return 4132;
-			case 1297830025:
+			case joaat("privateboxcar02x"):
 				return 14175;
 			case 1298185394:
 				return 10983;
@@ -56987,7 +56987,7 @@ int func_1165(int iParam0, int iParam1)
 				return 550;
 			case 1302560136:
 				return 3602;
-			case 1302582395:
+			case joaat("w_revolver_cattleman02"):
 				return 277;
 			case 1302874895:
 				return 6466;
@@ -57007,7 +57007,7 @@ int func_1165(int iParam0, int iParam1)
 				return 361;
 			case 1304237076:
 				return 13818;
-			case 1304311224:
+			case joaat("cs_londonderryson"):
 				return 14863;
 			case 1304478439:
 				return 7732;
@@ -57021,7 +57021,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3361;
 			case 1307259779:
 				return 1419;
-			case 1307267863:
+			case joaat("p_cs_duckmeat01x"):
 				return 10121;
 			case 1307304177:
 				return 3771;
@@ -57047,7 +57047,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2212;
 			case 1310315873:
 				return 11879;
-			case 1310465416:
+			case joaat("p_cs_slavebook01x"):
 				return 12257;
 			case 1311043242:
 				return 14038;
@@ -57075,7 +57075,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1687;
 			case 1314752500:
 				return 2316;
-			case 1315412017:
+			case joaat("w_rifle_rollingblock01"):
 				return 420;
 			case 1316034839:
 				return 15053;
@@ -57109,7 +57109,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9820;
 			case 1320410478:
 				return 5031;
-			case 1320786287:
+			case joaat("cs_captainmonroe"):
 				return 14746;
 			case 1321069455:
 				return 7099;
@@ -57133,7 +57133,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5600;
 			case 1322886795:
 				return 2020;
-			case 1322985415:
+			case joaat("u_m_m_valauctionforman_02"):
 				return 15954;
 			case 1323168280:
 				return 3654;
@@ -57185,7 +57185,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12051;
 			case 1328901957:
 				return 15115;
-			case 1328906077:
+			case joaat("p_windsorchair02x"):
 				return 5703;
 			case 1328974214:
 				return 1923;
@@ -57229,7 +57229,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10650;
 			case 1334963409:
 				return 5914;
-			case 1335097022:
+			case joaat("u_m_m_armytrn4_01"):
 				return 15791;
 			case 1335099064:
 				return 1279;
@@ -57243,7 +57243,7 @@ int func_1165(int iParam0, int iParam1)
 				return 828;
 			case 1336058330:
 				return 1478;
-			case 1336128411:
+			case joaat("p_beechers_ladder01x"):
 				return 10861;
 			case 1336214488:
 				return 1604;
@@ -57251,7 +57251,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9703;
 			case 1336264458:
 				return 8035;
-			case 1336863290:
+			case joaat("g_m_m_uniduster_05"):
 				return 15036;
 			case 1337060188:
 				return 4092;
@@ -57285,7 +57285,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2385;
 			case 1341868544:
 				return 7239;
-			case 1341900636:
+			case joaat("u_m_m_story_creeper_01"):
 				return 15921;
 			case 1342112940:
 				return 15262;
@@ -57293,7 +57293,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8635;
 			case 1343105706:
 				return 2135;
-			case 1343564320:
+			case joaat("s_m_o_cktworker_01"):
 				return 15759;
 			case 1343686692:
 				return 11753;
@@ -57309,17 +57309,17 @@ int func_1165(int iParam0, int iParam1)
 				return 719;
 			case 1346417102:
 				return 7491;
-			case 1346436956:
+			case joaat("s_m_m_dispatchleaderrural_01"):
 				return 15721;
 			case 1346668147:
 				return 6884;
-			case 1346688635:
+			case joaat("p_dooraberdeen01x"):
 				return 2617;
 			case 1346748833:
 				return 13876;
 			case 1346847691:
 				return 10081;
-			case 1347320453:
+			case joaat("cs_famousgunslinger_02"):
 				return 14796;
 			case 1348462481:
 				return 10727;
@@ -57343,7 +57343,7 @@ int func_1165(int iParam0, int iParam1)
 		}
 		return -1;
 	}
-	if (iParam0 <= 1599685341)
+	if (iParam0 <= joaat("cs_magnifico"))
 	{
 		switch (iParam0)
 		{
@@ -57373,9 +57373,9 @@ int func_1165(int iParam0, int iParam1)
 				return 4351;
 			case 1353013773:
 				return 13324;
-			case 1353154903:
+			case joaat("p_drumstick01x"):
 				return 10452;
-			case 1353428475:
+			case joaat("a_m_m_asbminer_03"):
 				return 14562;
 			case 1353765918:
 				return 8908;
@@ -57431,7 +57431,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9125;
 			case 1360797073:
 				return 5662;
-			case 1361127922:
+			case joaat("u_f_m_bht_wife"):
 				return 15766;
 			case 1362003490:
 				return 3806;
@@ -57471,7 +57471,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6904;
 			case 1366135664:
 				return 6620;
-			case 1366354941:
+			case joaat("p_sack05x"):
 				return 3665;
 			case 1366492044:
 				return 1345;
@@ -57481,11 +57481,11 @@ int func_1165(int iParam0, int iParam1)
 				return 2700;
 			case 1367784190:
 				return 319;
-			case 1367851675:
+			case joaat("cs_mrslondonderry"):
 				return 14927;
 			case 1367907571:
 				return 11878;
-			case 1368237872:
+			case joaat("p_dynamitecrate02x"):
 				return 915;
 			case 1368644889:
 				return 4560;
@@ -57499,7 +57499,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11027;
 			case 1369445260:
 				return 5305;
-			case 1369514652:
+			case joaat("p_woodpile01x"):
 				return 4976;
 			case 1369762184:
 				return 4386;
@@ -57513,13 +57513,13 @@ int func_1165(int iParam0, int iParam1)
 				return 9544;
 			case 1370943473:
 				return 4686;
-			case 1370968326:
+			case joaat("u_m_m_gamdoorman_01"):
 				return 15842;
 			case 1371874613:
 				return 12300;
 			case 1371947023:
 				return 6555;
-			case 1372065533:
+			case joaat("cs_soothsayer"):
 				return 14978;
 			case 1372376306:
 				return 9567;
@@ -57545,11 +57545,11 @@ int func_1165(int iParam0, int iParam1)
 				return 3045;
 			case 1375846388:
 				return 7964;
-			case 1376100934:
+			case joaat("cs_germanfather"):
 				return 14819;
 			case 1376182129:
 				return 2756;
-			case 1376394832:
+			case joaat("p_cs_supplies03x"):
 				return 10406;
 			case 1377011530:
 				return 9098;
@@ -57591,7 +57591,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10356;
 			case 1380910900:
 				return 9871;
-			case 1382164045:
+			case joaat("cs_catherinebraithwaite"):
 				return 14748;
 			case 1382365335:
 				return 9787;
@@ -57601,7 +57601,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11524;
 			case 1382944808:
 				return 1963;
-			case 1383143069:
+			case joaat("p_servingcart01x"):
 				return 3798;
 			case 1383645598:
 				return 15554;
@@ -57633,7 +57633,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10546;
 			case 1386659846:
 				return 13027;
-			case 1386797442:
+			case joaat("p_cs_armyid01x"):
 				return 12916;
 			case 1386926456:
 				return 4877;
@@ -57655,7 +57655,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8687;
 			case 1391743178:
 				return 516;
-			case 1391768720:
+			case joaat("p_debrisboard10x"):
 				return 2433;
 			case 1391892452:
 				return 3125;
@@ -57687,17 +57687,17 @@ int func_1165(int iParam0, int iParam1)
 				return 11584;
 			case 1395558391:
 				return 3941;
-			case 1395690358:
+			case joaat("cs_fightref"):
 				return 14803;
-			case 1395690429:
+			case joaat("p_bottlewine01x"):
 				return 2942;
-			case 1395712114:
+			case joaat("p_saladplate01x"):
 				return 3671;
 			case 1395746053:
 				return 5025;
-			case 1396079242:
+			case joaat("a_f_m_armcholeracorpse_01"):
 				return 14495;
-			case 1396302955:
+			case joaat("s_m_m_marketvendor_01"):
 				return 15729;
 			case 1396547442:
 				return 5471;
@@ -57769,13 +57769,13 @@ int func_1165(int iParam0, int iParam1)
 				return 2713;
 			case 1406158792:
 				return 10676;
-			case 1406468904:
+			case joaat("w_revolver_lemat01"):
 				return 313;
 			case 1406531794:
 				return 6927;
 			case 1406849102:
 				return 1748;
-			case 1407031519:
+			case joaat("cs_charlessmith"):
 				return 14753;
 			case 1407233505:
 				return 4161;
@@ -57783,13 +57783,13 @@ int func_1165(int iParam0, int iParam1)
 				return 11078;
 			case 1407427711:
 				return 8826;
-			case 1407600554:
+			case joaat("p_chair22x"):
 				return 5589;
 			case 1407608723:
 				return 303;
 			case 1407686074:
 				return 9241;
-			case 1407740785:
+			case joaat("cs_tavishgray"):
 				return 14989;
 			case 1407988298:
 				return 3326;
@@ -57817,9 +57817,9 @@ int func_1165(int iParam0, int iParam1)
 				return 4653;
 			case 1410342413:
 				return 4251;
-			case 1410422943:
+			case joaat("cs_cabaretmc"):
 				return 14739;
-			case 1410479894:
+			case joaat("u_m_m_nbxgeneralstoreowner_01"):
 				return 15866;
 			case 1410687796:
 				return 9252;
@@ -57839,7 +57839,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12540;
 			case 1411849781:
 				return 2861;
-			case 1412039516:
+			case joaat("a_m_m_grifancydrivers_01"):
 				return 14595;
 			case 1412163991:
 				return 7602;
@@ -57867,7 +57867,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15190;
 			case 1416044641:
 				return 5922;
-			case 1416324601:
+			case joaat("a_c_pheasant_01"):
 				return 14449;
 			case 1416618882:
 				return 3162;
@@ -57883,7 +57883,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4058;
 			case 1418975844:
 				return 8740;
-			case 1419055257:
+			case joaat("cs_joebutler"):
 				return 14844;
 			case 1419460564:
 				return 10776;
@@ -57891,7 +57891,7 @@ int func_1165(int iParam0, int iParam1)
 				return 708;
 			case 1419669648:
 				return 8466;
-			case 1419909267:
+			case joaat("u_m_m_story_treasure_01"):
 				return 15932;
 			case 1420224035:
 				return 6438;
@@ -57903,11 +57903,11 @@ int func_1165(int iParam0, int iParam1)
 				return 14042;
 			case 1420937330:
 				return 15458;
-			case 1421787485:
+			case joaat("p_billyclub01x"):
 				return 884;
 			case 1423321126:
 				return 4977;
-			case 1423490702:
+			case joaat("a_m_m_rancher_01"):
 				return 14621;
 			case 1423955666:
 				return 9132;
@@ -57943,7 +57943,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1148;
 			case 1430455000:
 				return 3857;
-			case 1430843881:
+			case joaat("cs_jeb"):
 				return 14840;
 			case 1431131773:
 				return 10357;
@@ -57961,7 +57961,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8648;
 			case 1433155231:
 				return 13872;
-			case 1433165496:
+			case joaat("p_door60"):
 				return 2831;
 			case 1433326914:
 				return 10104;
@@ -57997,13 +57997,13 @@ int func_1165(int iParam0, int iParam1)
 				return 2158;
 			case 1435939598:
 				return 6727;
-			case 1436275127:
+			case joaat("u_m_y_emrson_01"):
 				return 15996;
 			case 1436374985:
 				return 10365;
-			case 1436424114:
+			case joaat("cs_banddrummer"):
 				return 14718;
-			case 1436489621:
+			case joaat("a_f_m_blwupperclass_01"):
 				return 14502;
 			case 1436730632:
 				return 12811;
@@ -58021,7 +58021,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9425;
 			case 1438934506:
 				return 8767;
-			case 1439158431:
+			case joaat("cs_lillymillet"):
 				return 14862;
 			case 1439396149:
 				return 6876;
@@ -58047,7 +58047,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3423;
 			case 1442243552:
 				return 11858;
-			case 1442933459:
+			case joaat("s_m_m_genconductor_01"):
 				return 15724;
 			case 1443174594:
 				return 13458;
@@ -58083,7 +58083,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11660;
 			case 1446931767:
 				return 9128;
-			case 1446935015:
+			case joaat("cs_ansel_atherton"):
 				return 14708;
 			case 1447684065:
 				return 16024;
@@ -58091,7 +58091,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11741;
 			case 1448220754:
 				return 11991;
-			case 1448353204:
+			case joaat("p_cs_arrow01x"):
 				return 10004;
 			case 1448387392:
 				return 6903;
@@ -58099,7 +58099,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12625;
 			case 1449089093:
 				return 13189;
-			case 1449129819:
+			case joaat("u_m_m_story_valentine_01"):
 				return 15934;
 			case 1449632600:
 				return 8723;
@@ -58121,9 +58121,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12632;
 			case 1453408880:
 				return 5310;
-			case 1453686794:
+			case joaat("a_m_m_nbxslums_01"):
 				return 14618;
-			case 1454298882:
+			case joaat("w_revolver_schofield04"):
 				return 372;
 			case 1454808611:
 				return 10584;
@@ -58131,7 +58131,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13217;
 			case 1455229060:
 				return 6445;
-			case 1455710720:
+			case joaat("p_cs_letter02x"):
 				return 12190;
 			case 1455761437:
 				return 6998;
@@ -58159,7 +58159,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10120;
 			case 1458454369:
 				return 13444;
-			case 1458540991:
+			case joaat("a_c_raccoon_01"):
 				return 14457;
 			case 1458554789:
 				return 3358;
@@ -58169,13 +58169,13 @@ int func_1165(int iParam0, int iParam1)
 				return 4777;
 			case 1459449272:
 				return 8590;
-			case 1459778951:
+			case joaat("a_c_eagle_01"):
 				return 14271;
 			case 1459912053:
 				return 6006;
 			case 1459971099:
 				return 7171;
-			case 1460377943:
+			case joaat("a_m_m_familytravelers_cool_01"):
 				return 14588;
 			case 1460441229:
 				return 3959;
@@ -58189,13 +58189,13 @@ int func_1165(int iParam0, int iParam1)
 				return 13258;
 			case 1462227666:
 				return 196;
-			case 1462365219:
+			case joaat("a_m_m_huntertravelers_cool_01"):
 				return 14604;
 			case 1462638198:
 				return 6230;
 			case 1462825054:
 				return 15294;
-			case 1462895032:
+			case joaat("a_c_cat_01"):
 				return 14242;
 			case 1462970112:
 				return 14035;
@@ -58207,7 +58207,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4750;
 			case 1463940690:
 				return 8557;
-			case 1464167925:
+			case joaat("a_c_snakeferdelance_01"):
 				return 14473;
 			case 1464903594:
 				return 566;
@@ -58215,7 +58215,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9869;
 			case 1465261845:
 				return 3216;
-			case 1465438313:
+			case joaat("a_c_squirrel_01"):
 				return 14482;
 			case 1465650316:
 				return 8823;
@@ -58237,7 +58237,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6506;
 			case 1467625148:
 				return 4388;
-			case 1467658477:
+			case joaat("p_spoonmid01x"):
 				return 4562;
 			case 1467675406:
 				return 1216;
@@ -58249,7 +58249,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10178;
 			case 1468736715:
 				return 2122;
-			case 1468884243:
+			case joaat("canoe"):
 				return 14123;
 			case 1468941490:
 				return 13726;
@@ -58261,7 +58261,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13945;
 			case 1470596150:
 				return 7041;
-			case 1471623370:
+			case joaat("a_m_o_blwupperclass_01"):
 				return 14671;
 			case 1471971529:
 				return 5279;
@@ -58269,7 +58269,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11883;
 			case 1472088673:
 				return 226;
-			case 1472170582:
+			case joaat("p_skiff02x"):
 				return 6679;
 			case 1472487138:
 				return 4938;
@@ -58279,7 +58279,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4930;
 			case 1473145910:
 				return 2769;
-			case 1475285783:
+			case joaat("p_knifesharpener01x"):
 				return 4500;
 			case 1475292376:
 				return 6399;
@@ -58307,15 +58307,15 @@ int func_1165(int iParam0, int iParam1)
 				return 1526;
 			case 1478582936:
 				return 7126;
-			case 1478983280:
+			case joaat("g_m_m_unibrontegoons_01"):
 				return 15028;
-			case 1479103690:
+			case joaat("cs_acrobat"):
 				return 14699;
 			case 1479495141:
 				return 2369;
 			case 1479763227:
 				return 15466;
-			case 1479772615:
+			case joaat("cs_rhodeputy_02"):
 				return 14957;
 			case 1479839343:
 				return 13892;
@@ -58327,7 +58327,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6004;
 			case 1480690756:
 				return 1346;
-			case 1480992494:
+			case joaat("a_m_m_farmtravelers_cool_01"):
 				return 14590;
 			case 1481263968:
 				return 11836;
@@ -58341,7 +58341,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15073;
 			case 1482749908:
 				return 7839;
-			case 1483156731:
+			case joaat("cs_edmundlowry"):
 				return 14788;
 			case 1483695877:
 				return 10806;
@@ -58367,7 +58367,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8706;
 			case 1485175531:
 				return 4779;
-			case 1485366395:
+			case joaat("cs_disguisedduster_02"):
 				return 14776;
 			case 1485669203:
 				return 7488;
@@ -58395,7 +58395,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6921;
 			case 1487888533:
 				return 15608;
-			case 1488014892:
+			case joaat("p_drawertrolley01x"):
 				return 3766;
 			case 1488031426:
 				return 9774;
@@ -58411,9 +58411,9 @@ int func_1165(int iParam0, int iParam1)
 				return 11784;
 			case 1488879461:
 				return 2874;
-			case 1488891285:
+			case joaat("p_moonshinebtl01x"):
 				return 2989;
-			case 1489783104:
+			case joaat("p_chair18x"):
 				return 5584;
 			case 1490197581:
 				return 5659;
@@ -58449,11 +58449,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11689;
 			case 1493211884:
 				return 3573;
-			case 1493442814:
+			case joaat("handcart"):
 				return 14151;
 			case 1493499283:
 				return 1293;
-			case 1493541632:
+			case joaat("a_c_fishbullheadcat_01_sm"):
 				return 14277;
 			case 1493861005:
 				return 8461;
@@ -58477,7 +58477,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9942;
 			case 1496217220:
 				return 7604;
-			case 1496261474:
+			case joaat("p_bedrollclosed01x"):
 				return 1103;
 			case 1496522977:
 				return 4567;
@@ -58493,7 +58493,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3327;
 			case 1497398383:
 				return 7159;
-			case 1497470487:
+			case joaat("p_clocktable02x"):
 				return 3956;
 			case 1497555235:
 				return 3951;
@@ -58521,7 +58521,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7260;
 			case 1501334946:
 				return 9549;
-			case 1501428582:
+			case joaat("u_m_m_nbxresident_03"):
 				return 15878;
 			case 1501652577:
 				return 16006;
@@ -58531,7 +58531,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4657;
 			case 1502001602:
 				return 860;
-			case 1502581273:
+			case joaat("a_c_toad_01"):
 				return 14483;
 			case 1502986112:
 				return 12703;
@@ -58549,7 +58549,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13620;
 			case 1504518225:
 				return 11819;
-			case 1504738597:
+			case joaat("p_chair_crate15x"):
 				return 5567;
 			case 1504759430:
 				return 7786;
@@ -58577,7 +58577,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11744;
 			case 1506216641:
 				return 3421;
-			case 1507038616:
+			case joaat("cs_exoticcollector"):
 				return 14794;
 			case 1507246991:
 				return 1121;
@@ -58613,7 +58613,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13387;
 			case 1510410963:
 				return 894;
-			case 1510720917:
+			case joaat("p_fiddle01x"):
 				return 4344;
 			case 1511337995:
 				return 2976;
@@ -58627,9 +58627,9 @@ int func_1165(int iParam0, int iParam1)
 				return 16044;
 			case 1513761627:
 				return 13276;
-			case 1513798350:
+			case joaat("a_m_m_chelonian_01"):
 				return 14583;
-			case 1514128030:
+			case joaat("cs_fishcollector"):
 				return 14805;
 			case 1514152959:
 				return 13671;
@@ -58695,7 +58695,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6307;
 			case 1521356977:
 				return 6119;
-			case 1521462563:
+			case joaat("p_cs_supplies01x"):
 				return 10404;
 			case 1521765117:
 				return 10197;
@@ -58725,13 +58725,13 @@ int func_1165(int iParam0, int iParam1)
 				return 5465;
 			case 1526586256:
 				return 8076;
-			case 1526765868:
+			case joaat("cs_operasinger"):
 				return 14943;
 			case 1526827629:
 				return 13044;
 			case 1526932186:
 				return 5517;
-			case 1527379014:
+			case joaat("p_bottle02x"):
 				return 2910;
 			case 1527459906:
 				return 438;
@@ -58763,13 +58763,13 @@ int func_1165(int iParam0, int iParam1)
 				return 5669;
 			case 1530253202:
 				return 16027;
-			case 1530318155:
+			case joaat("p_bag01x"):
 				return 5932;
 			case 1530883392:
 				return 6968;
 			case 1531106323:
 				return 5753;
-			case 1531244376:
+			case joaat("g_m_m_unilangstonboys_01"):
 				return 15040;
 			case 1531262410:
 				return 1099;
@@ -58801,7 +58801,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1276;
 			case 1536154403:
 				return 8527;
-			case 1536283262:
+			case joaat("a_m_m_blwforeman_01"):
 				return 14570;
 			case 1536339853:
 				return 4356;
@@ -58821,7 +58821,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9185;
 			case 1538108662:
 				return 782;
-			case 1538187374:
+			case joaat("a_c_fishchannelcatfish_01_lg"):
 				return 14280;
 			case 1538429635:
 				return 12219;
@@ -58831,7 +58831,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12875;
 			case 1538812825:
 				return 108;
-			case 1539235365:
+			case joaat("p_lumber09_piece01x"):
 				return 4935;
 			case 1539361574:
 				return 6586;
@@ -58851,7 +58851,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4157;
 			case 1540265396:
 				return 2510;
-			case 1540392720:
+			case joaat("p_treestump02x"):
 				return 5701;
 			case 1540803895:
 				return 11138;
@@ -58879,7 +58879,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5844;
 			case 1543453034:
 				return 1078;
-			case 1543787725:
+			case joaat("a_m_y_asbminer_02"):
 				return 14679;
 			case 1543921530:
 				return 6522;
@@ -58921,7 +58921,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13551;
 			case 1547563147:
 				return 8479;
-			case 1547859810:
+			case joaat("p_knife02x"):
 				return 4495;
 			case 1549014409:
 				return 12064;
@@ -58947,7 +58947,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11181;
 			case 1552947627:
 				return 1669;
-			case 1553588674:
+			case joaat("u_m_m_sdpolicechief_01"):
 				return 15909;
 			case 1553745766:
 				return 9050;
@@ -58971,7 +58971,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12492;
 			case 1556220127:
 				return 14029;
-			case 1556473961:
+			case joaat("a_c_buffalo_01"):
 				return 14236;
 			case 1557189747:
 				return 11942;
@@ -59001,7 +59001,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8351;
 			case 1560579938:
 				return 13875;
-			case 1561132816:
+			case joaat("p_crate03x"):
 				return 5953;
 			case 1561437835:
 				return 5130;
@@ -59029,13 +59029,13 @@ int func_1165(int iParam0, int iParam1)
 				return 7588;
 			case 1563840704:
 				return 15625;
-			case 1563965261:
+			case joaat("p_hatbox04x"):
 				return 6171;
 			case 1564062740:
 				return 6629;
 			case 1564134754:
 				return 11868;
-			case 1564811379:
+			case joaat("p_map03x"):
 				return 1183;
 			case 1564978368:
 				return 11857;
@@ -59049,7 +59049,7 @@ int func_1165(int iParam0, int iParam1)
 				return 388;
 			case 1566690690:
 				return 4699;
-			case 1566847401:
+			case joaat("s_m_m_nbxriverboatdealers_01"):
 				return 15732;
 			case 1567074926:
 				return 3197;
@@ -59061,7 +59061,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11686;
 			case 1567644447:
 				return 9348;
-			case 1567772502:
+			case joaat("p_cs_mattress01x"):
 				return 10248;
 			case 1568801463:
 				return 4514;
@@ -59071,7 +59071,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2797;
 			case 1569170020:
 				return 8548;
-			case 1569274182:
+			case joaat("p_brickplug01x"):
 				return 10866;
 			case 1569319598:
 				return 4289;
@@ -59083,7 +59083,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10847;
 			case 1569520330:
 				return 4635;
-			case 1569680480:
+			case joaat("p_ammobox01x"):
 				return 875;
 			case 1569902667:
 				return 8883;
@@ -59135,11 +59135,11 @@ int func_1165(int iParam0, int iParam1)
 				return 6913;
 			case 1576233991:
 				return 6304;
-			case 1576376248:
+			case joaat("p_flask01x"):
 				return 2958;
 			case 1576402699:
 				return 5165;
-			case 1576627533:
+			case joaat("p_chairdesk02x"):
 				return 5620;
 			case 1576721684:
 				return 766;
@@ -59155,11 +59155,11 @@ int func_1165(int iParam0, int iParam1)
 				return 1713;
 			case 1577952271:
 				return 1055;
-			case 1578191039:
+			case joaat("u_m_m_unipeepingtom_01"):
 				return 15952;
 			case 1578397320:
 				return 16080;
-			case 1578995053:
+			case joaat("u_m_m_chelonianjumper_04"):
 				return 15823;
 			case 1579064826:
 				return 6734;
@@ -59167,7 +59167,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7312;
 			case 1579566148:
 				return 3438;
-			case 1579747695:
+			case joaat("p_cs_ropehandssplit_sml"):
 				return 10344;
 			case 1579750595:
 				return 12238;
@@ -59193,9 +59193,9 @@ int func_1165(int iParam0, int iParam1)
 				return 15292;
 			case 1582699527:
 				return 1138;
-			case 1582724764:
+			case joaat("rcboat"):
 				return 14186;
-			case 1582986780:
+			case joaat("a_c_bluejay_01"):
 				return 14232;
 			case 1583018006:
 				return 1039;
@@ -59233,9 +59233,9 @@ int func_1165(int iParam0, int iParam1)
 				return 2978;
 			case 1588362795:
 				return 11093;
-			case 1588546775:
+			case joaat("a_f_m_blwtownfolk_02"):
 				return 14501;
-			case 1588640480:
+			case joaat("hotairballoon01"):
 				return 14153;
 			case 1588662080:
 				return 7212;
@@ -59247,7 +59247,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10954;
 			case 1588855670:
 				return 2429;
-			case 1588871209:
+			case joaat("w_melee_hatchet06"):
 				return 22;
 			case 1589265290:
 				return 13639;
@@ -59271,19 +59271,19 @@ int func_1165(int iParam0, int iParam1)
 				return 12403;
 			case 1590727812:
 				return 3245;
-			case 1590781012:
+			case joaat("p_cs_rope03x"):
 				return 10339;
 			case 1590957814:
 				return 3479;
 			case 1591200624:
 				return 2637;
-			case 1591511410:
+			case joaat("u_m_m_wapofficial_01"):
 				return 15972;
-			case 1591685812:
+			case joaat("a_c_dogrufus_01"):
 				return 14267;
 			case 1592177015:
 				return 3820;
-			case 1592327736:
+			case joaat("p_door_nbx_bank03x_r"):
 				return 2793;
 			case 1592683955:
 				return 15366;
@@ -59317,13 +59317,13 @@ int func_1165(int iParam0, int iParam1)
 				return 11230;
 			case 1595479939:
 				return 1999;
-			case 1595593062:
+			case joaat("cs_cattlerustler"):
 				return 14749;
 			case 1596233655:
 				return 3935;
-			case 1596452133:
+			case joaat("chuckwagon000x"):
 				return 14133;
-			case 1597043588:
+			case joaat("w_melee_knife05"):
 				return 36;
 			case 1597100620:
 				return 1580;
@@ -59331,21 +59331,21 @@ int func_1165(int iParam0, int iParam1)
 				return 7782;
 			case 1597689607:
 				return 7201;
-			case 1597746576:
+			case joaat("p_walkingstick01x"):
 				return 1774;
-			case 1597957331:
+			case joaat("u_f_m_circuswagon_01"):
 				return 15767;
 			case 1598317486:
 				return 3225;
 			case 1598471465:
 				return 12351;
-			case 1599216723:
+			case joaat("p_vialmedicine01x"):
 				return 3084;
 			case 1599482111:
 				return 11057;
 			case 1599594166:
 				return 10099;
-			case 1599685341:
+			case joaat("cs_magnifico"):
 				return 14865;
 			default:
 				break;
@@ -59363,11 +59363,11 @@ int func_1165(int iParam0, int iParam1)
 				return 3855;
 			case 1599966702:
 				return 6710;
-			case 1600083684:
+			case joaat("p_stoolfolding01x"):
 				return 5697;
 			case 1600565301:
 				return 13554;
-			case 1600799010:
+			case joaat("p_sign_suffragette04x"):
 				return 5858;
 			case 1600848907:
 				return 12236;
@@ -59391,7 +59391,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13218;
 			case 1604362462:
 				return 5899;
-			case 1604947233:
+			case joaat("cs_artappraiser"):
 				return 14713;
 			case 1605073778:
 				return 12803;
@@ -59401,7 +59401,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7429;
 			case 1605691207:
 				return 8630;
-			case 1605749521:
+			case joaat("p_cs_rt_envelope01x"):
 				return 12247;
 			case 1605934529:
 				return 14000;
@@ -59409,7 +59409,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12588;
 			case 1606857604:
 				return 13172;
-			case 1606988569:
+			case joaat("u_m_m_unionleader_01"):
 				return 15950;
 			case 1607420196:
 				return 11092;
@@ -59429,7 +59429,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3049;
 			case 1609689955:
 				return 4543;
-			case 1610236838:
+			case joaat("p_cs_sacklarge01x"):
 				return 10354;
 			case 1610251973:
 				return 7710;
@@ -59459,7 +59459,7 @@ int func_1165(int iParam0, int iParam1)
 				return 767;
 			case 1613272131:
 				return 8701;
-			case 1613337522:
+			case joaat("a_m_m_rhdobesemen_01"):
 				return 14626;
 			case 1613516415:
 				return 12470;
@@ -59481,7 +59481,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11423;
 			case 1615987195:
 				return 321;
-			case 1618031732:
+			case joaat("cs_revswanson"):
 				return 14955;
 			case 1618234469:
 				return 6776;
@@ -59499,7 +59499,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13470;
 			case 1620870943:
 				return 13298;
-			case 1621373394:
+			case joaat("w_repeater_henry01"):
 				return 198;
 			case 1621392955:
 				return 4196;
@@ -59525,9 +59525,9 @@ int func_1165(int iParam0, int iParam1)
 				return 163;
 			case 1623629575:
 				return 15486;
-			case 1623781586:
+			case joaat("p_pocketmirror01x"):
 				return 10457;
-			case 1624257462:
+			case joaat("u_m_m_bht_mineforeman"):
 				return 15802;
 			case 1624475269:
 				return 5950;
@@ -59591,7 +59591,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1464;
 			case 1630624517:
 				return 1595;
-			case 1631210382:
+			case joaat("a_m_m_bivfancydrivers_01"):
 				return 14566;
 			case 1632072781:
 				return 8278;
@@ -59607,7 +59607,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12000;
 			case 1634703855:
 				return 8454;
-			case 1634909334:
+			case joaat("p_medbed01x"):
 				return 5297;
 			case 1634930268:
 				return 4209;
@@ -59663,11 +59663,11 @@ int func_1165(int iParam0, int iParam1)
 				return 5214;
 			case 1642214365:
 				return 2764;
-			case 1642867136:
+			case joaat("coal_wagon"):
 				return 14141;
 			case 1643288797:
 				return 1890;
-			case 1643370744:
+			case joaat("cs_forgivenhusband_01"):
 				return 14806;
 			case 1643396759:
 				return 214;
@@ -59705,7 +59705,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5295;
 			case 1648943847:
 				return 8714;
-			case 1649972612:
+			case joaat("cs_odprostitute"):
 				return 14942;
 			case 1649973660:
 				return 2876;
@@ -59717,17 +59717,17 @@ int func_1165(int iParam0, int iParam1)
 				return 12586;
 			case 1650374176:
 				return 12061;
-			case 1650458665:
+			case joaat("u_m_m_bht_outlawmauled"):
 				return 15808;
 			case 1650659131:
 				return 13670;
 			case 1650730557:
 				return 5477;
-			case 1650744725:
+			case joaat("p_door33x"):
 				return 2584;
 			case 1650772945:
 				return 11383;
-			case 1651707011:
+			case joaat("p_cs_noose01x"):
 				return 10267;
 			case 1651853397:
 				return 4508;
@@ -59749,7 +59749,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9172;
 			case 1653377291:
 				return 8109;
-			case 1653521800:
+			case joaat("u_m_m_story_tumbleweed_01"):
 				return 15933;
 			case 1653835961:
 				return 5052;
@@ -59759,7 +59759,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10602;
 			case 1654391586:
 				return 55;
-			case 1654513481:
+			case joaat("a_c_panther_01"):
 				return 14446;
 			case 1654592375:
 				return 15590;
@@ -59773,7 +59773,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11037;
 			case 1655073154:
 				return 11358;
-			case 1655532652:
+			case joaat("u_m_m_shackserialkiller_01"):
 				return 15913;
 			case 1655669974:
 				return 10692;
@@ -59781,7 +59781,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1686;
 			case 1656132281:
 				return 2191;
-			case 1656830110:
+			case joaat("cs_mrs_sinclair"):
 				return 14923;
 			case 1657003541:
 				return 9356;
@@ -59815,7 +59815,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10675;
 			case 1659976911:
 				return 2892;
-			case 1660404147:
+			case joaat("a_c_doghusky_01"):
 				return 14263;
 			case 1660451579:
 				return 3554;
@@ -59829,7 +59829,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1070;
 			case 1661612816:
 				return 4563;
-			case 1661843942:
+			case joaat("p_cs_camera"):
 				return 10055;
 			case 1662152198:
 				return 3900;
@@ -59837,9 +59837,9 @@ int func_1165(int iParam0, int iParam1)
 				return 6908;
 			case 1662419184:
 				return 872;
-			case 1663031428:
+			case joaat("p_wrench02x"):
 				return 6509;
-			case 1663122464:
+			case joaat("p_crucifix02x"):
 				return 5436;
 			case 1663408179:
 				return 8094;
@@ -59849,7 +59849,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13216;
 			case 1663560957:
 				return 4532;
-			case 1663631237:
+			case joaat("w_revolver_cattleman03"):
 				return 279;
 			case 1663958773:
 				return 4601;
@@ -59899,7 +59899,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6406;
 			case 1668648025:
 				return 13772;
-			case 1668739822:
+			case joaat("u_m_m_riodonkeyrider_01"):
 				return 15901;
 			case 1669067884:
 				return 10825;
@@ -59913,9 +59913,9 @@ int func_1165(int iParam0, int iParam1)
 				return 7124;
 			case 1670517140:
 				return 2243;
-			case 1670664759:
+			case joaat("p_melee_knife09_cs"):
 				return 10593;
-			case 1671223501:
+			case joaat("a_m_m_valdeputyresident_01"):
 				return 14662;
 			case 1671302422:
 				return 13748;
@@ -59979,7 +59979,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7865;
 			case 1679976349:
 				return 14113;
-			case 1680028106:
+			case joaat("p_ladle03x"):
 				return 4503;
 			case 1680251292:
 				return 5187;
@@ -60065,9 +60065,9 @@ int func_1165(int iParam0, int iParam1)
 				return 3534;
 			case 1694680956:
 				return 8286;
-			case 1695129705:
+			case joaat("cs_susangrimshaw"):
 				return 14985;
-			case 1695133799:
+			case joaat("p_cribbage01x"):
 				return 12547;
 			case 1695303225:
 				return 11020;
@@ -60087,13 +60087,13 @@ int func_1165(int iParam0, int iParam1)
 				return 5762;
 			case 1697319004:
 				return 5870;
-			case 1697515844:
+			case joaat("u_m_m_bht_exconfedcampreturn"):
 				return 15799;
 			case 1697644449:
 				return 6919;
 			case 1697647555:
 				return 4198;
-			case 1698150819:
+			case joaat("p_lamp18x"):
 				return 4651;
 			case 1698339888:
 				return 7407;
@@ -60113,15 +60113,15 @@ int func_1165(int iParam0, int iParam1)
 				return 8517;
 			case 1700336191:
 				return 11849;
-			case 1701730764:
+			case joaat("cs_reverendfortheringham"):
 				return 14954;
 			case 1701919527:
 				return 2276;
-			case 1702024301:
+			case joaat("a_c_horse_turkoman_gold"):
 				return 14431;
 			case 1702038709:
 				return 1273;
-			case 1702636991:
+			case joaat("a_c_fishsalmonsockeye_01_ml"):
 				return 14297;
 			case 1702913431:
 				return 6794;
@@ -60129,7 +60129,7 @@ int func_1165(int iParam0, int iParam1)
 				return 709;
 			case 1703181487:
 				return 9971;
-			case 1703447255:
+			case joaat("w_revolver_doubleaction02"):
 				return 300;
 			case 1703522619:
 				return 7728;
@@ -60147,13 +60147,13 @@ int func_1165(int iParam0, int iParam1)
 				return 6394;
 			case 1705182311:
 				return 14373;
-			case 1705504999:
+			case joaat("cs_daveycallender"):
 				return 14770;
 			case 1705612849:
 				return 8293;
 			case 1705635183:
 				return 3575;
-			case 1706246174:
+			case joaat("u_m_m_story_hunter_01"):
 				return 15923;
 			case 1706278597:
 				return 6488;
@@ -60161,7 +60161,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9692;
 			case 1706418035:
 				return 11177;
-			case 1706969650:
+			case joaat("p_sign_suffragette05x"):
 				return 5859;
 			case 1707254880:
 				return 3700;
@@ -60179,7 +60179,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8089;
 			case 1708527016:
 				return 15295;
-			case 1709294431:
+			case joaat("s_m_m_strdealer_01"):
 				return 15746;
 			case 1709893538:
 				return 2032;
@@ -60193,13 +60193,13 @@ int func_1165(int iParam0, int iParam1)
 				return 597;
 			case 1711885266:
 				return 10497;
-			case 1711925122:
+			case joaat("p_cs_billsingle01x"):
 				return 10031;
 			case 1711991314:
 				return 13586;
 			case 1713013549:
 				return 2501;
-			case 1713200946:
+			case joaat("p_cigarbox02x"):
 				return 3044;
 			case 1713603249:
 				return 50;
@@ -60215,7 +60215,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6826;
 			case 1714267922:
 				return 11910;
-			case 1714292965:
+			case joaat("p_flamboyanthat_01x"):
 				return 10577;
 			case 1714298902:
 				return 11437;
@@ -60259,7 +60259,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8121;
 			case 1720074531:
 				return 8446;
-			case 1720092134:
+			case joaat("u_m_m_nbxmusician_01"):
 				return 15874;
 			case 1720780099:
 				return 411;
@@ -60309,9 +60309,9 @@ int func_1165(int iParam0, int iParam1)
 				return 4111;
 			case 1726242611:
 				return 9939;
-			case 1726560673:
+			case joaat("cs_desmond"):
 				return 14772;
-			case 1726657594:
+			case joaat("u_m_m_bht_strawberryduel"):
 				return 15813;
 			case 1726931358:
 				return 8302;
@@ -60329,7 +60329,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11256;
 			case 1728928570:
 				return 1435;
-			case 1729294941:
+			case joaat("u_m_m_tumtrainstationworker_01"):
 				return 15942;
 			case 1729739154:
 				return 31;
@@ -60369,13 +60369,13 @@ int func_1165(int iParam0, int iParam1)
 				return 3759;
 			case 1733888286:
 				return 8906;
-			case 1734038839:
+			case joaat("u_m_m_cajhomestead_01"):
 				return 15819;
 			case 1734226170:
 				return 442;
-			case 1734226761:
+			case joaat("p_cs_hoseahat"):
 				return 10211;
-			case 1734364448:
+			case joaat("u_m_m_circuswagon_01"):
 				return 15824;
 			case 1734488411:
 				return 11581;
@@ -60389,7 +60389,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6272;
 			case 1736140574:
 				return 6831;
-			case 1736277160:
+			case joaat("u_m_m_galastringquartet_04"):
 				return 15841;
 			case 1736289117:
 				return 6348;
@@ -60401,7 +60401,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11308;
 			case 1737211379:
 				return 789;
-			case 1737391264:
+			case joaat("cs_sd_streetkid_01a"):
 				return 14966;
 			case 1737457161:
 				return 7101;
@@ -60447,7 +60447,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8945;
 			case 1743932579:
 				return 5356;
-			case 1744529953:
+			case joaat("u_m_o_blwpolicechief_01"):
 				return 15980;
 			case 1744578543:
 				return 5915;
@@ -60455,11 +60455,11 @@ int func_1165(int iParam0, int iParam1)
 				return 13838;
 			case 1745015043:
 				return 2024;
-			case 1745694728:
+			case joaat("stagecoach002x"):
 				return 14196;
 			case 1745806983:
 				return 8486;
-			case 1746830155:
+			case joaat("a_c_carolinaparakeet_01"):
 				return 14241;
 			case 1746852083:
 				return 11010;
@@ -60473,7 +60473,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10132;
 			case 1747480194:
 				return 7332;
-			case 1748233198:
+			case joaat("a_m_m_rhdtownfolk_02"):
 				return 14629;
 			case 1748238954:
 				return 8262;
@@ -60489,7 +60489,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1626;
 			case 1751195064:
 				return 9110;
-			case 1751700893:
+			case joaat("a_c_javelina_01"):
 				return 14438;
 			case 1751872362:
 				return 10863;
@@ -60525,13 +60525,13 @@ int func_1165(int iParam0, int iParam1)
 				return 2705;
 			case 1755411777:
 				return 7562;
-			case 1755438567:
+			case joaat("a_m_m_asbminer_01"):
 				return 14560;
-			case 1755643085:
+			case joaat("a_c_pronghorn_01"):
 				return 14454;
 			case 1755858173:
 				return 8589;
-			case 1755911592:
+			case joaat("p_bucket03x"):
 				return 5938;
 			case 1756054008:
 				return 759;
@@ -60557,7 +60557,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7621;
 			case 1758941560:
 				return 7509;
-			case 1759076651:
+			case joaat("a_f_m_blwtownfolk_01"):
 				return 14500;
 			case 1759853316:
 				return 14068;
@@ -60571,7 +60571,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2741;
 			case 1760781613:
 				return 11002;
-			case 1760797833:
+			case joaat("u_m_m_lnsoutlaw_03"):
 				return 15850;
 			case 1760832889:
 				return 10770;
@@ -60581,7 +60581,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14370;
 			case 1760942309:
 				return 5641;
-			case 1761016051:
+			case joaat("coach2"):
 				return 14135;
 			case 1761045818:
 				return 8116;
@@ -60593,13 +60593,13 @@ int func_1165(int iParam0, int iParam1)
 				return 1847;
 			case 1761637924:
 				return 3235;
-			case 1761712744:
+			case joaat("u_m_m_valbeartrap_01"):
 				return 15957;
 			case 1762198080:
 				return 6632;
 			case 1762295872:
 				return 6362;
-			case 1762425266:
+			case joaat("p_cs_rope02x"):
 				return 10337;
 			case 1762521590:
 				return 12626;
@@ -60625,13 +60625,13 @@ int func_1165(int iParam0, int iParam1)
 				return 10997;
 			case 1764901839:
 				return 2415;
-			case 1765047802:
+			case joaat("p_cs_cameratripod"):
 				return 10058;
 			case 1765100586:
 				return 3509;
-			case 1765636093:
+			case joaat("u_m_m_crdhomesteadtenant_02"):
 				return 15828;
-			case 1766039305:
+			case joaat("cs_watson_01"):
 				return 15016;
 			case 1766621235:
 				return 9571;
@@ -60639,11 +60639,11 @@ int func_1165(int iParam0, int iParam1)
 				return 11466;
 			case 1767017695:
 				return 6810;
-			case 1767344357:
+			case joaat("p_winebox01x"):
 				return 6292;
 			case 1767416324:
 				return 9372;
-			case 1767420034:
+			case joaat("u_m_o_blwgeneralstoreowner_01"):
 				return 15978;
 			case 1767466098:
 				return 7526;
@@ -60661,7 +60661,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15673;
 			case 1769225724:
 				return 8220;
-			case 1769794038:
+			case joaat("a_f_m_sclfancytravellers_01"):
 				return 14530;
 			case 1770025672:
 				return 4900;
@@ -60671,11 +60671,11 @@ int func_1165(int iParam0, int iParam1)
 				return 14006;
 			case 1770264717:
 				return 12728;
-			case 1770617692:
+			case joaat("chuckwagon002x"):
 				return 14134;
 			case 1770668598:
 				return 13113;
-			case 1770671818:
+			case joaat("p_cs_pokerhand02x"):
 				return 10304;
 			case 1770815753:
 				return 1861;
@@ -60691,7 +60691,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8676;
 			case 1772028516:
 				return 1455;
-			case 1772321403:
+			case joaat("a_c_donkey_01"):
 				return 14269;
 			case 1772798632:
 				return 13162;
@@ -60747,7 +60747,7 @@ int func_1165(int iParam0, int iParam1)
 				return 224;
 			case 1777994588:
 				return 6310;
-			case 1778509231:
+			case joaat("a_f_m_asbtownfolk_01"):
 				return 14498;
 			case 1778702804:
 				return 4309;
@@ -60795,7 +60795,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15555;
 			case 1782695179:
 				return 12179;
-			case 1783515503:
+			case joaat("s_m_m_orpguard_01"):
 				return 15734;
 			case 1783677040:
 				return 4564;
@@ -60803,9 +60803,9 @@ int func_1165(int iParam0, int iParam1)
 				return 10277;
 			case 1783721639:
 				return 1301;
-			case 1783784250:
+			case joaat("p_cigarettecardsmcase01x"):
 				return 11771;
-			case 1783964157:
+			case joaat("p_sadiehat01x"):
 				return 1762;
 			case 1784348138:
 				return 925;
@@ -60815,7 +60815,7 @@ int func_1165(int iParam0, int iParam1)
 				return 552;
 			case 1784914994:
 				return 11183;
-			case 1784941179:
+			case joaat("a_c_cardinal_01"):
 				return 14240;
 			case 1785015655:
 				return 6418;
@@ -60825,13 +60825,13 @@ int func_1165(int iParam0, int iParam1)
 				return 13231;
 			case 1785420353:
 				return 5097;
-			case 1785480577:
+			case joaat("p_stick02x"):
 				return 1191;
 			case 1785746647:
 				return 10264;
-			case 1785923813:
+			case joaat("cs_adamgray"):
 				return 14700;
-			case 1786194379:
+			case joaat("p_haybale03x"):
 				return 3122;
 			case 1786355476:
 				return 13327;
@@ -60839,11 +60839,11 @@ int func_1165(int iParam0, int iParam1)
 				return 1081;
 			case 1786663937:
 				return 6071;
-			case 1786667532:
+			case joaat("p_mortarpestle01x"):
 				return 4358;
 			case 1786680299:
 				return 12603;
-			case 1786827347:
+			case joaat("privatebaggage01x"):
 				return 14173;
 			case 1786837602:
 				return 5797;
@@ -60867,7 +60867,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3711;
 			case 1789021399:
 				return 5921;
-			case 1789147356:
+			case joaat("p_cs_sock01x"):
 				return 10384;
 			case 1789481889:
 				return 12390;
@@ -60913,7 +60913,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13505;
 			case 1796923947:
 				return 10615;
-			case 1797158961:
+			case joaat("p_cs_trainplans01x"):
 				return 10423;
 			case 1797169809:
 				return 7308;
@@ -60997,13 +60997,13 @@ int func_1165(int iParam0, int iParam1)
 				return 11495;
 			case 1809387629:
 				return 6133;
-			case 1809883183:
+			case joaat("u_m_m_nbxresident_01"):
 				return 15876;
 			case 1810068482:
 				return 9074;
 			case 1810246039:
 				return 1919;
-			case 1810315535:
+			case joaat("p_stickfirepoker01x"):
 				return 1193;
 			case 1810473385:
 				return 13094;
@@ -61023,7 +61023,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8362;
 			case 1812196435:
 				return 10964;
-			case 1812458547:
+			case joaat("cs_valdeputy_01"):
 				return 15007;
 			case 1813236058:
 				return 8367;
@@ -61043,7 +61043,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11640;
 			case 1814756438:
 				return 2916;
-			case 1815090590:
+			case joaat("cs_jimcalloway"):
 				return 14841;
 			case 1815096273:
 				return 9519;
@@ -61079,7 +61079,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14105;
 			case 1818203080:
 				return 6628;
-			case 1818250007:
+			case joaat("s_m_m_sddealer_01"):
 				return 15741;
 			case 1818292446:
 				return 808;
@@ -61105,7 +61105,7 @@ int func_1165(int iParam0, int iParam1)
 				return 16045;
 			case 1820292864:
 				return 11956;
-			case 1820607364:
+			case joaat("a_f_m_sdfancywhore_01"):
 				return 14532;
 			case 1820639804:
 				return 748;
@@ -61145,7 +61145,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1965;
 			case 1824959605:
 				return 9225;
-			case 1825169840:
+			case joaat("s_m_m_racrailworker_01"):
 				return 15737;
 			case 1825358734:
 				return 14347;
@@ -61155,17 +61155,17 @@ int func_1165(int iParam0, int iParam1)
 				return 4999;
 			case 1825729822:
 				return 4811;
-			case 1825744405:
+			case joaat("p_package08x"):
 				return 6216;
-			case 1825745663:
+			case joaat("u_m_m_mud3pimp_01"):
 				return 15858;
-			case 1826097446:
+			case joaat("p_magneto02x"):
 				return 13412;
 			case 1826284694:
 				return 7538;
 			case 1826438693:
 				return 11943;
-			case 1827661866:
+			case joaat("p_syrup01x"):
 				return 6256;
 			case 1827869498:
 				return 3694;
@@ -61173,9 +61173,9 @@ int func_1165(int iParam0, int iParam1)
 				return 5817;
 			case 1828520725:
 				return 3233;
-			case 1828879031:
+			case joaat("a_m_m_nearoughtravellers_01"):
 				return 14620;
-			case 1829259280:
+			case joaat("cs_hamish"):
 				return 14826;
 			case 1829676913:
 				return 16003;
@@ -61187,9 +61187,9 @@ int func_1165(int iParam0, int iParam1)
 				return 13954;
 			case 1830519854:
 				return 4031;
-			case 1830538687:
+			case joaat("u_m_m_unionleader_02"):
 				return 15951;
-			case 1830978939:
+			case joaat("s_m_m_ambientlawrural_01"):
 				return 15705;
 			case 1831358646:
 				return 559;
@@ -61213,7 +61213,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12148;
 			case 1834633735:
 				return 135;
-			case 1834866537:
+			case joaat("p_cs_pokerhand01x"):
 				return 10303;
 			case 1834923532:
 				return 9974;
@@ -61231,7 +61231,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3856;
 			case 1835980941:
 				return 13037;
-			case 1836621877:
+			case joaat("a_m_m_skpprisonline_01"):
 				return 14648;
 			case 1836928001:
 				return 6235;
@@ -61243,7 +61243,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12139;
 			case 1837410391:
 				return 9086;
-			case 1837845433:
+			case joaat("cs_hectorfellowes"):
 				return 14827;
 			case 1837849458:
 				return 2817;
@@ -61269,7 +61269,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2715;
 			case 1840332196:
 				return 6887;
-			case 1840336152:
+			case joaat("p_doorriverboat01x"):
 				return 2686;
 			case 1840440012:
 				return 14065;
@@ -61285,7 +61285,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1685;
 			case 1841276834:
 				return 5966;
-			case 1841492722:
+			case joaat("cs_sdsaloondrunk_01"):
 				return 14971;
 			case 1841703198:
 				return 3254;
@@ -61297,13 +61297,13 @@ int func_1165(int iParam0, int iParam1)
 				return 3397;
 			case 1843090366:
 				return 2548;
-			case 1843407141:
+			case joaat("p_bottlebeer01x"):
 				return 2917;
 			case 1843597306:
 				return 8581;
-			case 1843625996:
+			case joaat("cs_javierescuella"):
 				return 14839;
-			case 1843899663:
+			case joaat("u_m_m_racquartermaster_01"):
 				return 15888;
 			case 1844286328:
 				return 270;
@@ -61395,7 +61395,7 @@ int func_1165(int iParam0, int iParam1)
 				return 16013;
 			case 1854804386:
 				return 444;
-			case 1854820959:
+			case joaat("a_m_m_middlesdtownfolk_02"):
 				return 14612;
 			case 1855114836:
 				return 8395;
@@ -61437,7 +61437,7 @@ int func_1165(int iParam0, int iParam1)
 				return 323;
 			case 1860395013:
 				return 10472;
-			case 1860580756:
+			case joaat("a_c_fishsmallmouthbass_01_ms"):
 				return 14300;
 			case 1860679874:
 				return 8168;
@@ -61445,13 +61445,13 @@ int func_1165(int iParam0, int iParam1)
 				return 4953;
 			case 1861027507:
 				return 5163;
-			case 1861665605:
+			case joaat("a_c_horse_thoroughbred_dapplegrey"):
 				return 14428;
 			case 1861683856:
 				return 9470;
 			case 1861686856:
 				return 4743;
-			case 1861707396:
+			case joaat("cs_sd_streetkid_02"):
 				return 14968;
 			case 1861746382:
 				return 10045;
@@ -61473,13 +61473,13 @@ int func_1165(int iParam0, int iParam1)
 				return 4315;
 			case 1864725787:
 				return 12502;
-			case 1864950433:
+			case joaat("w_shotgun_doublebarrel01"):
 				return 461;
 			case 1865012426:
 				return 5199;
 			case 1865380977:
 				return 1422;
-			case 1865414369:
+			case joaat("p_bowlna01x"):
 				return 6136;
 			case 1865479666:
 				return 9986;
@@ -61493,7 +61493,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3359;
 			case 1867102405:
 				return 11375;
-			case 1867262572:
+			case joaat("a_c_fishbluegil_01_ms"):
 				return 14274;
 			case 1867329253:
 				return 4808;
@@ -61519,7 +61519,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9589;
 			case 1871475215:
 				return 12353;
-			case 1871675108:
+			case joaat("wintersteamer"):
 				return 14221;
 			case 1872027280:
 				return 9529;
@@ -61531,7 +61531,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1657;
 			case 1872547845:
 				return 7521;
-			case 1872659725:
+			case joaat("p_bedrollopen01x"):
 				return 1105;
 			case 1872879394:
 				return 13112;
@@ -61551,7 +61551,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1171;
 			case 1874590475:
 				return 8083;
-			case 1874711736:
+			case joaat("wagon04x"):
 				return 14210;
 			case 1875554494:
 				return 7276;
@@ -61589,7 +61589,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11394;
 			case 1880389101:
 				return 12544;
-			case 1880831500:
+			case joaat("p_cs_suitcase01x"):
 				return 10398;
 			case 1881338917:
 				return 7167;
@@ -61609,7 +61609,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14314;
 			case 1883225747:
 				return 15584;
-			case 1883254377:
+			case joaat("p_conductrodtele01x"):
 				return 11772;
 			case 1883339950:
 				return 4098;
@@ -61617,7 +61617,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5050;
 			case 1883682934:
 				return 5257;
-			case 1883927432:
+			case joaat("p_door_clemens02x"):
 				return 2518;
 			case 1883964712:
 				return 1826;
@@ -61665,13 +61665,13 @@ int func_1165(int iParam0, int iParam1)
 				return 7503;
 			case 1890600044:
 				return 2779;
-			case 1890949089:
+			case joaat("w_melee_knife14"):
 				return 54;
-			case 1891051735:
+			case joaat("a_m_m_bynfancydrivers_01"):
 				return 14578;
 			case 1891167692:
 				return 2159;
-			case 1891548111:
+			case joaat("cs_valauctionboss_01"):
 				return 15006;
 			case 1891583922:
 				return 8269;
@@ -61709,7 +61709,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13924;
 			case 1896032674:
 				return 8874;
-			case 1896409433:
+			case joaat("a_f_m_rhdtownfolk_02"):
 				return 14526;
 			case 1896451512:
 				return 8024;
@@ -61729,7 +61729,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15249;
 			case 1897956323:
 				return 2170;
-			case 1898243338:
+			case joaat("w_melee_hatchet07"):
 				return 24;
 			case 1898291831:
 				return 11270;
@@ -61741,7 +61741,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8914;
 			case 1900633114:
 				return 10431;
-			case 1901354405:
+			case joaat("u_m_m_valdoctor_01"):
 				return 15959;
 			case 1901688734:
 				return 13367;
@@ -61803,7 +61803,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11087;
 			case 1908127071:
 				return 8093;
-			case 1908665291:
+			case joaat("p_tray02x"):
 				return 4584;
 			case 1908995894:
 				return 6585;
@@ -61811,7 +61811,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7581;
 			case 1909758928:
 				return 9550;
-			case 1910137764:
+			case joaat("p_cs_egretplumes01x"):
 				return 10133;
 			case 1910591186:
 				return 4851;
@@ -61821,11 +61821,11 @@ int func_1165(int iParam0, int iParam1)
 				return 7664;
 			case 1911959833:
 				return 15168;
-			case 1912073755:
+			case joaat("cs_jackmarston"):
 				return 14835;
 			case 1912432642:
 				return 11441;
-			case 1912971419:
+			case joaat("p_barrel02_opencs01x"):
 				return 6062;
 			case 1913040302:
 				return 9903;
@@ -61853,7 +61853,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11013;
 			case 1915747315:
 				return 12673;
-			case 1915805608:
+			case joaat("p_candlestand"):
 				return 4622;
 			case 1916797906:
 				return 2654;
@@ -61889,7 +61889,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5976;
 			case 1921848184:
 				return 9596;
-			case 1921874948:
+			case joaat("u_m_m_bht_skinnerbrother"):
 				return 15811;
 			case 1921904715:
 				return 2283;
@@ -61897,7 +61897,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12316;
 			case 1922118105:
 				return 6105;
-			case 1923327795:
+			case joaat("cs_cooper"):
 				return 14761;
 			case 1923752057:
 				return 5226;
@@ -61913,7 +61913,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8038;
 			case 1925219308:
 				return 870;
-			case 1926014920:
+			case joaat("p_cs_bookhardcv10x"):
 				return 12155;
 			case 1926990511:
 				return 7990;
@@ -61927,7 +61927,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4286;
 			case 1928097086:
 				return 9357;
-			case 1928126871:
+			case joaat("p_woodpiece02x"):
 				return 4973;
 			case 1928221977:
 				return 7290;
@@ -61951,7 +61951,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11021;
 			case 1931140462:
 				return 1350;
-			case 1932781590:
+			case joaat("p_chair_cs05x"):
 				return 5568;
 			case 1933014599:
 				return 12532;
@@ -61999,7 +61999,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9062;
 			case 1938982642:
 				return 10434;
-			case 1939579094:
+			case joaat("cs_kieran"):
 				return 14852;
 			case 1939998736:
 				return 9083;
@@ -62009,7 +62009,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1949;
 			case 1941234074:
 				return 9725;
-			case 1941284735:
+			case joaat("p_pokerhand01x"):
 				return 12769;
 			case 1941338030:
 				return 9502;
@@ -62033,7 +62033,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13619;
 			case 1943827990:
 				return 6714;
-			case 1944593012:
+			case joaat("cs_dutch"):
 				return 14783;
 			case 1944814865:
 				return 8232;
@@ -62049,7 +62049,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3285;
 			case 1945924434:
 				return 11185;
-			case 1946434792:
+			case joaat("p_campfire03x"):
 				return 1124;
 			case 1946920872:
 				return 2605;
@@ -62117,7 +62117,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9248;
 			case 1954420185:
 				return 5209;
-			case 1954479996:
+			case joaat("p_cs_barrag01x"):
 				return 10019;
 			case 1954507542:
 				return 1973;
@@ -62129,7 +62129,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7418;
 			case 1955825532:
 				return 8715;
-			case 1955831280:
+			case joaat("p_cs_giftbox01x"):
 				return 10188;
 			case 1956103166:
 				return 1523;
@@ -62171,7 +62171,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3613;
 			case 1960700341:
 				return 12076;
-			case 1960786232:
+			case joaat("u_f_y_braithwaitessecret_01"):
 				return 15784;
 			case 1960797525:
 				return 11631;
@@ -62215,11 +62215,11 @@ int func_1165(int iParam0, int iParam1)
 				return 6188;
 			case 1965740601:
 				return 7900;
-			case 1965744005:
+			case joaat("a_m_m_uppertrainpassengers_01"):
 				return 14660;
 			case 1966163681:
 				return 9089;
-			case 1966444740:
+			case joaat("cs_nbxdrunk"):
 				return 14932;
 			case 1966713656:
 				return 12735;
@@ -62239,13 +62239,13 @@ int func_1165(int iParam0, int iParam1)
 				return 2043;
 			case 1969096843:
 				return 6300;
-			case 1969230861:
+			case joaat("p_cabinetchina01x"):
 				return 3742;
 			case 1969468529:
 				return 13395;
 			case 1969572205:
 				return 4546;
-			case 1969938774:
+			case joaat("p_bottle008x_big"):
 				return 2903;
 			case 1970348364:
 				return 48;
@@ -62253,7 +62253,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12280;
 			case 1970794906:
 				return 8658;
-			case 1971611315:
+			case joaat("p_sit_chairwicker01b"):
 				return 5677;
 			case 1971631392:
 				return 9885;
@@ -62287,13 +62287,13 @@ int func_1165(int iParam0, int iParam1)
 				return 16079;
 			case 1975308476:
 				return 12067;
-			case 1975376854:
+			case joaat("horseboat"):
 				return 14152;
 			case 1975664459:
 				return 7909;
 			case 1975996572:
 				return 7127;
-			case 1976314726:
+			case joaat("a_m_y_unicorpse_01"):
 				return 14685;
 			case 1976404081:
 				return 3937;
@@ -62333,7 +62333,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15410;
 			case 1981559154:
 				return 6409;
-			case 1981624734:
+			case joaat("a_m_m_grifancytravellers_01"):
 				return 14596;
 			case 1982131376:
 				return 592;
@@ -62343,7 +62343,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5893;
 			case 1983298115:
 				return 12141;
-			case 1983379698:
+			case joaat("p_cs_bottleslim01x"):
 				return 10043;
 			case 1983776555:
 				return 4672;
@@ -62387,7 +62387,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2279;
 			case 1988714577:
 				return 3572;
-			case 1988888198:
+			case joaat("a_f_m_rhdprostitute_01"):
 				return 14524;
 			case 1989080748:
 				return 11783;
@@ -62419,9 +62419,9 @@ int func_1165(int iParam0, int iParam1)
 				return 1298;
 			case 1992149733:
 				return 15494;
-			case 1992580848:
+			case joaat("u_f_m_htlwife_01"):
 				return 15770;
-			case 1992820222:
+			case joaat("a_m_m_rkrfancytravellers_01"):
 				return 14632;
 			case 1992906732:
 				return 15699;
@@ -62429,13 +62429,13 @@ int func_1165(int iParam0, int iParam1)
 				return 11257;
 			case 1993223884:
 				return 1475;
-			case 1993356636:
+			case joaat("w_repeater_evans01"):
 				return 193;
 			case 1993693649:
 				return 9426;
 			case 1993728738:
 				return 10724;
-			case 1993810557:
+			case joaat("p_scythe01x"):
 				return 3169;
 			case 1993946605:
 				return 13845;
@@ -62457,19 +62457,19 @@ int func_1165(int iParam0, int iParam1)
 				return 12657;
 			case 1995888005:
 				return 4533;
-			case 1995969965:
+			case joaat("s_m_m_coachtaxidriver_01"):
 				return 15717;
 			case 1996488549:
 				return 7416;
 			case 1996764457:
 				return 10790;
-			case 1996775400:
+			case joaat("p_cs_detonator01x"):
 				return 10109;
 			case 1997624177:
 				return 1982;
 			case 1998298093:
 				return 5940;
-			case 1998496121:
+			case joaat("cs_germanmother"):
 				return 14820;
 			case 1998577135:
 				return 11766;
@@ -62479,21 +62479,21 @@ int func_1165(int iParam0, int iParam1)
 				return 14149;
 			case 1999055955:
 				return 5593;
-			case 1999074085:
+			case joaat("p_sawhorse03x"):
 				return 6468;
-			case 1999476738:
+			case joaat("cs_ringmaster"):
 				return 14961;
 			case 1999938956:
 				return 8361;
 			case 2000672140:
 				return 8418;
-			case 2000903921:
+			case joaat("cs_lucanapoli"):
 				return 14864;
 			case 2000969534:
 				return 10586;
 			case 2001014822:
 				return 8531;
-			case 2001384088:
+			case joaat("cs_rhodesassistant"):
 				return 14958;
 			case 2001901343:
 				return 1555;
@@ -62515,11 +62515,11 @@ int func_1165(int iParam0, int iParam1)
 				return 9741;
 			case 2003217523:
 				return 9551;
-			case 2003418568:
+			case joaat("p_plate01x"):
 				return 4518;
 			case 2003441048:
 				return 15509;
-			case 2004420023:
+			case joaat("a_f_m_lowersdtownfolk_03"):
 				return 14515;
 			case 2004521396:
 				return 12554;
@@ -62529,7 +62529,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12694;
 			case 2005507128:
 				return 6753;
-			case 2006849227:
+			case joaat("p_cratebrand03x"):
 				return 6104;
 			case 2007139086:
 				return 10485;
@@ -62563,7 +62563,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4223;
 			case 2011185988:
 				return 2885;
-			case 2011215931:
+			case joaat("p_bottlenavyrum01x"):
 				return 6135;
 			case 2011276918:
 				return 13535;
@@ -62579,7 +62579,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10670;
 			case 2011905652:
 				return 2421;
-			case 2012148102:
+			case joaat("u_m_m_strsherriff_01"):
 				return 15937;
 			case 2012382124:
 				return 8830;
@@ -62617,7 +62617,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10959;
 			case 2016654727:
 				return 8990;
-			case 2016655359:
+			case joaat("p_stool08x"):
 				return 5687;
 			case 2017166080:
 				return 12716;
@@ -62633,7 +62633,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3902;
 			case 2018767170:
 				return 5323;
-			case 2019524202:
+			case joaat("p_door_nbxbank02x_r"):
 				return 2804;
 			case 2019953765:
 				return 2244;
@@ -62653,13 +62653,13 @@ int func_1165(int iParam0, int iParam1)
 				return 15684;
 			case 2022712677:
 				return 6655;
-			case 2022748391:
+			case joaat("w_revolver_doubleaction01"):
 				return 283;
 			case 2022939245:
 				return 8386;
 			case 2023179642:
 				return 7268;
-			case 2023522846:
+			case joaat("a_c_rooster_01"):
 				return 14462;
 			case 2024181879:
 				return 8107;
@@ -62681,7 +62681,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4486;
 			case 2026756934:
 				return 548;
-			case 2027444944:
+			case joaat("p_chair21x_fussar"):
 				return 5588;
 			case 2027493111:
 				return 12616;
@@ -62699,7 +62699,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8215;
 			case 2028443027:
 				return 3194;
-			case 2028722809:
+			case joaat("a_c_boar_01"):
 				return 14233;
 			case 2028936785:
 				return 106;
@@ -62707,7 +62707,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6520;
 			case 2029549890:
 				return 2180;
-			case 2029634351:
+			case joaat("cs_aberdeensister"):
 				return 14697;
 			case 2030467036:
 				return 11445;
@@ -62729,7 +62729,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5672;
 			case 2031850575:
 				return 13560;
-			case 2032156749:
+			case joaat("cs_archibaldjameson"):
 				return 14711;
 			case 2032816496:
 				return 5927;
@@ -62769,7 +62769,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9211;
 			case 2038152081:
 				return 4402;
-			case 2038507899:
+			case joaat("p_cs_ropehandssplit"):
 				return 10343;
 			case 2038540870:
 				return 11082;
@@ -62777,7 +62777,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3518;
 			case 2039293632:
 				return 712;
-			case 2039554428:
+			case joaat("a_f_m_guatownfolk_01"):
 				return 14510;
 			case 2039633777:
 				return 13032;
@@ -62793,17 +62793,17 @@ int func_1165(int iParam0, int iParam1)
 				return 3730;
 			case 2040984769:
 				return 5834;
-			case 2041057705:
+			case joaat("p_needle02x"):
 				return 6454;
 			case 2041143870:
 				return 15560;
 			case 2041325498:
 				return 15595;
-			case 2041494024:
+			case joaat("cs_nbxexecuted"):
 				return 14933;
 			case 2041689626:
 				return 5289;
-			case 2041771180:
+			case joaat("p_mallet01x"):
 				return 6446;
 			case 2041937922:
 				return 13256;
@@ -62813,7 +62813,7 @@ int func_1165(int iParam0, int iParam1)
 				return 199;
 			case 2042052135:
 				return 8457;
-			case 2042088799:
+			case joaat("cs_famousgunslinger_06"):
 				return 14800;
 			case 2042091047:
 				return 10708;
@@ -62829,7 +62829,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8188;
 			case 2043783591:
 				return 1282;
-			case 2044048760:
+			case joaat("p_cs_charlesbelt01x"):
 				return 10075;
 			case 2044137725:
 				return 2708;
@@ -62843,7 +62843,7 @@ int func_1165(int iParam0, int iParam1)
 				return 170;
 			case 2044343233:
 				return 1955;
-			case 2044431266:
+			case joaat("p_cs_letterfolded01x"):
 				return 12203;
 			case 2044508665:
 				return 8991;
@@ -62861,9 +62861,9 @@ int func_1165(int iParam0, int iParam1)
 				return 2432;
 			case 2046291777:
 				return 6684;
-			case 2046357820:
+			case joaat("p_cs_newsclip01x"):
 				return 12214;
-			case 2046492700:
+			case joaat("u_m_m_tumgunsmith_01"):
 				return 15941;
 			case 2046842708:
 				return 8414;
@@ -62877,7 +62877,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6056;
 			case 2049868364:
 				return 9362;
-			case 2049924852:
+			case joaat("u_m_m_shacktwin_02"):
 				return 15915;
 			case 2050411263:
 				return 9401;
@@ -62885,13 +62885,13 @@ int func_1165(int iParam0, int iParam1)
 				return 13776;
 			case 2051370965:
 				return 12894;
-			case 2051399415:
+			case joaat("p_cs_hookpulley01x"):
 				return 10205;
 			case 2051640907:
 				return 12073;
 			case 2052139802:
 				return 6924;
-			case 2052319075:
+			case joaat("u_m_m_nbxliveryworker_01"):
 				return 15873;
 			case 2052426476:
 				return 242;
@@ -62899,7 +62899,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2532;
 			case 2052689139:
 				return 806;
-			case 2052768310:
+			case joaat("u_m_m_unibountyhunter_01"):
 				return 15943;
 			case 2052927694:
 				return 1470;
@@ -62919,7 +62919,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6785;
 			case 2055515007:
 				return 52;
-			case 2055623882:
+			case joaat("p_cs_rabbitfeetless"):
 				return 10319;
 			case 2055697445:
 				return 11091;
@@ -62983,7 +62983,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13827;
 			case 2064107900:
 				return 3560;
-			case 2064348393:
+			case joaat("p_cs_bookhardcv08x"):
 				return 12151;
 			case 2064435483:
 				return 4446;
@@ -62991,13 +62991,13 @@ int func_1165(int iParam0, int iParam1)
 				return 2163;
 			case 2064768035:
 				return 5132;
-			case 2065139134:
+			case joaat("p_hoe01x"):
 				return 6426;
 			case 2065193213:
 				return 8617;
 			case 2065202528:
 				return 1285;
-			case 2065693047:
+			case joaat("p_dynamite03x"):
 				return 912;
 			case 2066975776:
 				return 2742;
@@ -63033,7 +63033,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5984;
 			case 2070264339:
 				return 13244;
-			case 2070393450:
+			case joaat("cs_billwilliamson"):
 				return 14726;
 			case 2070898543:
 				return 5739;
@@ -63093,7 +63093,7 @@ int func_1165(int iParam0, int iParam1)
 				return 664;
 			case 2079614130:
 				return 406;
-			case 2079703102:
+			case joaat("a_c_prairiechicken_01"):
 				return 14453;
 			case 2079707761:
 				return 6330;
@@ -63115,9 +63115,9 @@ int func_1165(int iParam0, int iParam1)
 				return 6020;
 			case 2081240429:
 				return 8832;
-			case 2081550909:
+			case joaat("w_rifle_springfield01"):
 				return 446;
-			case 2081678501:
+			case joaat("p_doornbd26x"):
 				return 2659;
 			case 2082207938:
 				return 724;
@@ -63149,7 +63149,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4860;
 			case 2086238525:
 				return 3644;
-			case 2086412644:
+			case joaat("p_can01x"):
 				return 3457;
 			case 2086491611:
 				return 1344;
@@ -63171,7 +63171,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1832;
 			case 2088227231:
 				return 15192;
-			case 2088541856:
+			case joaat("u_m_m_nbxgraverobber_02"):
 				return 15868;
 			case 2088954883:
 				return 1988;
@@ -63191,9 +63191,9 @@ int func_1165(int iParam0, int iParam1)
 				return 7719;
 			case 2093010936:
 				return 6959;
-			case 2093036107:
+			case joaat("p_book01x"):
 				return 5220;
-			case 2093152803:
+			case joaat("u_f_m_valtownfolk_02"):
 				return 15780;
 			case 2093244671:
 				return 3009;
@@ -63209,7 +63209,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13548;
 			case 2094131816:
 				return 8588;
-			case 2094346626:
+			case joaat("p_crate012x"):
 				return 5946;
 			case 2094577440:
 				return 12357;
@@ -63219,7 +63219,7 @@ int func_1165(int iParam0, int iParam1)
 				return 145;
 			case 2095274066:
 				return 7969;
-			case 2095602337:
+			case joaat("p_cs_newspaper_03x"):
 				return 12220;
 			case 2095650282:
 				return 5327;
@@ -63235,7 +63235,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10978;
 			case 2096698905:
 				return 5580;
-			case 2096716952:
+			case joaat("cs_ramon_cortez"):
 				return 14953;
 			case 2097007859:
 				return 6819;
@@ -63265,9 +63265,9 @@ int func_1165(int iParam0, int iParam1)
 				return 12422;
 			case 2100430950:
 				return 13240;
-			case 2100640403:
+			case joaat("p_stoolcomfy01x"):
 				return 5694;
-			case 2100656433:
+			case joaat("cs_johnweathers"):
 				return 14847;
 			case 2100887122:
 				return 9070;
@@ -63287,9 +63287,9 @@ int func_1165(int iParam0, int iParam1)
 				return 1501;
 			case 2103639439:
 				return 6370;
-			case 2103826247:
+			case joaat("a_m_m_bynroughtravellers_01"):
 				return 14580;
-			case 2103904177:
+			case joaat("p_cs_moonshinerag01x"):
 				return 10259;
 			case 2103947699:
 				return 12604;
@@ -63303,11 +63303,11 @@ int func_1165(int iParam0, int iParam1)
 				return 7616;
 			case 2104716151:
 				return 11461;
-			case 2105107848:
+			case joaat("u_m_m_shacktwin_01"):
 				return 15914;
 			case 2105130268:
 				return 7497;
-			case 2105463796:
+			case joaat("a_c_quail_01"):
 				return 14455;
 			case 2105603090:
 				return 12759;
@@ -63333,7 +63333,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9147;
 			case 2109460065:
 				return 6326;
-			case 2109471093:
+			case joaat("stagecoach001x"):
 				return 14195;
 			case 2110206159:
 				return 13399;
@@ -63347,7 +63347,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7485;
 			case 2111469927:
 				return 12153;
-			case 2111694366:
+			case joaat("p_floursack04x"):
 				return 3545;
 			case 2112225481:
 				return 8359;
@@ -63363,7 +63363,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10835;
 			case 2113891076:
 				return 2872;
-			case 2114379160:
+			case joaat("p_teacup01x"):
 				return 3003;
 			case 2114964712:
 				return 7152;
@@ -63387,9 +63387,9 @@ int func_1165(int iParam0, int iParam1)
 				return 4153;
 			case 2115385619:
 				return 7224;
-			case 2115431565:
+			case joaat("s_m_m_dispatchleaderpolice_01"):
 				return 15720;
-			case 2115504616:
+			case joaat("cs_professorbell"):
 				return 14951;
 			case 2116224758:
 				return 2719;
@@ -63415,7 +63415,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13513;
 			case 2118901904:
 				return 3812;
-			case 2119038574:
+			case joaat("a_c_horse_mustang_wildbay"):
 				return 14403;
 			case 2119097180:
 				return 7412;
@@ -63425,7 +63425,7 @@ int func_1165(int iParam0, int iParam1)
 				return 230;
 			case 2119406365:
 				return 11604;
-			case 2119789466:
+			case joaat("p_package03x"):
 				return 6208;
 			case 2119820107:
 				return 4869;
@@ -63453,7 +63453,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6813;
 			case 2121900980:
 				return 1514;
-			case 2122367085:
+			case joaat("u_m_m_story_emeraldranch_01"):
 				return 15922;
 			case 2122454549:
 				return 10653;
@@ -63485,7 +63485,7 @@ int func_1165(int iParam0, int iParam1)
 				return 531;
 			case 2126789874:
 				return 603;
-			case 2127070944:
+			case joaat("a_f_m_rhdupperclass_01"):
 				return 14527;
 			case 2127158367:
 				return 13676;
@@ -63519,7 +63519,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6929;
 			case 2129980470:
 				return 11103;
-			case 2130094044:
+			case joaat("a_c_horse_appaloosa_blanket"):
 				return 14321;
 			case 2130876759:
 				return 381;
@@ -63535,7 +63535,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5059;
 			case 2131860597:
 				return 182;
-			case 2132088322:
+			case joaat("p_cs_meatstew01x"):
 				return 10252;
 			case 2132464141:
 				return 10607;
@@ -63543,13 +63543,13 @@ int func_1165(int iParam0, int iParam1)
 				return 8088;
 			case 2133364569:
 				return 4875;
-			case 2133848994:
+			case joaat("a_m_m_middlesdtownfolk_01"):
 				return 14611;
 			case 2134211689:
 				return 11251;
 			case 2134399321:
 				return 2306;
-			case 2135054537:
+			case joaat("privateopensleeper02x"):
 				return 14182;
 			case 2135056429:
 				return 12048;
@@ -63595,9 +63595,9 @@ int func_1165(int iParam0, int iParam1)
 				return 10438;
 			case 2141227316:
 				return 425;
-			case 2141515026:
+			case joaat("cs_rhodessaloonbouncer"):
 				return 14960;
-			case 2141696151:
+			case joaat("s_m_m_bwmworker_01"):
 				return 15714;
 			case 2142200106:
 				return 4682;
@@ -63619,9 +63619,9 @@ int func_1165(int iParam0, int iParam1)
 				return 8891;
 			case 2144571237:
 				return 1858;
-			case 2145308911:
+			case joaat("u_m_m_chelonianjumper_03"):
 				return 15822;
-			case 2145697477:
+			case joaat("a_c_horse_nokota_blueroan"):
 				return 14404;
 			case 2145954873:
 				return 4568;
@@ -63633,7 +63633,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7848;
 			case 2146699097:
 				return 2115;
-			case 2146878165:
+			case joaat("p_goldnugget01x"):
 				return 6525;
 			case 2147082926:
 				return 14349;
@@ -64210,17 +64210,17 @@ void func_1194(var uParam0)
 	Global_1103536->f_255.f_5299 = (Global_1103536->f_255.f_5299 || uParam0);
 }
 
-int func_1195(int iParam0, var uParam1, var uParam2)
+int func_1195(var uParam0, var uParam1, var uParam2)
 {
-	if (!func_206(iParam0, func_179(*uParam1), func_170(*uParam1)))
+	if (!func_206(uParam0, func_179(*uParam1), func_170(*uParam1)))
 	{
 		return 0;
 	}
-	if (!func_473(iParam0, 1))
+	if (!func_473(uParam0, 1))
 	{
 		return 0;
 	}
-	if (!func_485(iParam0, uParam2))
+	if (!func_485(uParam0, uParam2))
 	{
 		return 0;
 	}
@@ -66656,9 +66656,9 @@ int func_1220(struct<5> Param0, var uParam5, var uParam6)
 
 int func_1221(int iParam0, var uParam1)
 {
-	iParam0->f_2 = -606642812;
-	iParam0->f_3 = uParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -606642812;
+	uParam0->f_3 = uParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -66715,8 +66715,8 @@ int func_1225(vector3 vParam0, var uParam3, var uParam4)
 
 int func_1226(int iParam0)
 {
-	iParam0->f_2 = -22626725;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -22626725;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -66726,8 +66726,8 @@ int func_1226(int iParam0)
 
 int func_1227(int iParam0)
 {
-	iParam0->f_2 = 1676892178;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1676892178;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -66737,8 +66737,8 @@ int func_1227(int iParam0)
 
 int func_1228(int iParam0)
 {
-	iParam0->f_2 = -804733785;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = -804733785;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -67282,7 +67282,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 		WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 9, false);
 		if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
 		{
-			if (((WEAPON::_0xDDB2578E95EF7138(iVar0) || WEAPON::_0x0A82317B7EBFC420(iVar0)) || WEAPON::_0x6AD66548840472E5(iVar0)) || (WEAPON::_0xC75386174ECE95D5(iVar0) && iVar0 != 392538360))
+			if (((WEAPON::_0xDDB2578E95EF7138(iVar0) || WEAPON::_0x0A82317B7EBFC420(iVar0)) || WEAPON::_0x6AD66548840472E5(iVar0)) || (WEAPON::_0xC75386174ECE95D5(iVar0) && iVar0 != joaat("weapon_shotgun_sawedoff")))
 			{
 				WEAPON::_GIVE_WEAPON_TO_PED_2(((*uParam0)[iParam1 /*3*/])->f_1, iVar0, 0, false, true, 9, false, 0.5f, 1f, 752097756, false, 0f, false);
 				bVar4 = true;
@@ -67306,7 +67306,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 		WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 10, false);
 		if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
 		{
-			if (((WEAPON::_0xDDB2578E95EF7138(iVar0) || WEAPON::_0x0A82317B7EBFC420(iVar0)) || WEAPON::_0x6AD66548840472E5(iVar0)) || (WEAPON::_0xC75386174ECE95D5(iVar0) && iVar0 != 392538360))
+			if (((WEAPON::_0xDDB2578E95EF7138(iVar0) || WEAPON::_0x0A82317B7EBFC420(iVar0)) || WEAPON::_0x6AD66548840472E5(iVar0)) || (WEAPON::_0xC75386174ECE95D5(iVar0) && iVar0 != joaat("weapon_shotgun_sawedoff")))
 			{
 				WEAPON::_GIVE_WEAPON_TO_PED_2(((*uParam0)[iParam1 /*3*/])->f_1, iVar0, 0, false, true, 10, false, 0.5f, 1f, 752097756, false, 0f, false);
 				bVar5 = true;
@@ -67320,7 +67320,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 			WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 3, false);
 			if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
 			{
-				if ((WEAPON::_0xDDC64F5E31EEDAB6(iVar0) || WEAPON::_0xC212F1D05A8232BB(iVar0)) || iVar0 == 392538360)
+				if ((WEAPON::_0xDDC64F5E31EEDAB6(iVar0) || WEAPON::_0xC212F1D05A8232BB(iVar0)) || iVar0 == joaat("weapon_shotgun_sawedoff"))
 				{
 					WEAPON::_GIVE_WEAPON_TO_PED_2(((*uParam0)[iParam1 /*3*/])->f_1, iVar0, 0, false, true, 3, false, 0.5f, 1f, 752097756, false, 0f, false);
 					bVar3 = true;
@@ -67333,7 +67333,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 		WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 2, false);
 		if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
 		{
-			if ((WEAPON::_0xDDC64F5E31EEDAB6(iVar0) || WEAPON::_0xC212F1D05A8232BB(iVar0)) || iVar0 == 392538360)
+			if ((WEAPON::_0xDDC64F5E31EEDAB6(iVar0) || WEAPON::_0xC212F1D05A8232BB(iVar0)) || iVar0 == joaat("weapon_shotgun_sawedoff"))
 			{
 				WEAPON::_GIVE_WEAPON_TO_PED_2(((*uParam0)[iParam1 /*3*/])->f_1, iVar0, 0, false, true, 2, false, 0.5f, 1f, 752097756, false, 0f, false);
 				bVar2 = true;
@@ -67770,9 +67770,9 @@ void func_1282(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4
 
 int func_1283(int iParam0, int iParam1)
 {
-	iParam0->f_2 = 1915528396;
-	iParam0->f_3 = iParam1;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0))
+	uParam0->f_2 = 1915528396;
+	uParam0->f_3 = iParam1;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
 		return 0;
 	}
@@ -85453,13 +85453,13 @@ void func_1314(var uParam0, int iParam1)
 	*uParam0 = (*uParam0 || BUILTIN::SHIFT_LEFT(iParam1, 0));
 }
 
-int func_1315(int iParam0, int iParam1, int iParam2, int iParam3)
+int func_1315(var uParam0, int iParam1, int iParam2, int iParam3)
 {
-	if (!func_475(iParam0, iParam1))
+	if (!func_475(uParam0, iParam1))
 	{
 		return 0;
 	}
-	if (!func_480(iParam0, iParam2, iParam3))
+	if (!func_480(uParam0, iParam2, iParam3))
 	{
 		return 0;
 	}
@@ -85765,21 +85765,21 @@ Vector3 func_1329(int iParam0, var uParam1)
 	return vVar0;
 }
 
-int func_1330(int iParam0, int iParam1, var uParam2)
+int func_1330(int iParam0, var uParam1, var uParam2)
 {
 	int iVar0;
 	int iVar1;
 	struct<5> Var2;
 
-	if (!func_1386(iParam0, iParam1))
+	if (!func_1386(iParam0, uParam1))
 	{
 		return 0;
 	}
-	iVar0 = DATAFILE::_DATAFILE_GET_NUM_CHILDREN(*iParam1, iParam1->f_1);
+	iVar0 = DATAFILE::_DATAFILE_GET_NUM_CHILDREN(*uParam1, uParam1->f_1);
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
-		Var2 = { *iParam1 };
+		Var2 = { *uParam1 };
 		Var2.f_2 = 1089670230;
 		Var2.f_3 = iVar1;
 		if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(Var2.f_1), &Var2))
@@ -85794,7 +85794,7 @@ int func_1330(int iParam0, int iParam1, var uParam2)
 			}
 			else
 			{
-				*iParam1 = { Var2 };
+				*uParam1 = { Var2 };
 				return 1;
 			}
 		}
@@ -86837,11 +86837,11 @@ int func_1382(int iParam0)
 
 bool func_1383(int iParam0, var uParam1, int iParam2)
 {
-	*iParam2 = Global_1131373->f_7;
-	iParam2->f_2 = 1351168281;
-	iParam2->f_3 = func_1423(iParam0);
-	iParam2->f_4 = uParam1;
-	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam2->f_1), iParam2);
+	*uParam2 = Global_1131373->f_7;
+	uParam2->f_2 = 1351168281;
+	uParam2->f_3 = func_1423(iParam0);
+	uParam2->f_4 = uParam1;
+	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam2->f_1), uParam2);
 }
 
 int func_1384(int iParam0)
@@ -86897,9 +86897,9 @@ int func_1386(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	*iParam1 = iVar0;
-	iParam1->f_2 = -678729477;
-	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam1->f_1), iParam1))
+	*uParam1 = iVar0;
+	uParam1->f_2 = -678729477;
+	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam1->f_1), uParam1))
 	{
 		return 0;
 	}
@@ -86908,10 +86908,10 @@ int func_1386(int iParam0, int iParam1)
 
 bool func_1387(int iParam0, var uParam1)
 {
-	*iParam0 = Global_1232796->f_8113;
-	iParam0->f_2 = 423895568;
-	iParam0->f_3 = uParam1;
-	return (DATAFILE::_0x603AC35FD4602C76(*iParam0) && DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0));
+	*uParam0 = Global_1232796->f_8113;
+	uParam0->f_2 = 423895568;
+	uParam0->f_3 = uParam1;
+	return (DATAFILE::_0x603AC35FD4602C76(*uParam0) && DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0));
 }
 
 int func_1388()
@@ -86931,9 +86931,9 @@ int func_1388()
 
 bool func_1389(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 775488648;
-	iParam0->f_3 = uParam1;
-	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0);
+	uParam0->f_2 = 775488648;
+	uParam0->f_3 = uParam1;
+	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0);
 }
 
 int func_1390(var uParam0)
@@ -87061,9 +87061,9 @@ int func_1397(vector3 vParam0, var uParam3, var uParam4, int iParam5, var uParam
 
 bool func_1398(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 333456427;
-	iParam0->f_3 = uParam1;
-	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0);
+	uParam0->f_2 = 333456427;
+	uParam0->f_3 = uParam1;
+	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0);
 }
 
 int func_1399(vector3 vParam0, var uParam3, var uParam4, int iParam5, int iParam6, bool bParam7)
@@ -87723,9 +87723,9 @@ var func_1439(int iParam0)
 
 bool func_1440(int iParam0, var uParam1)
 {
-	iParam0->f_2 = 1700129460;
-	iParam0->f_3 = uParam1;
-	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0);
+	uParam0->f_2 = 1700129460;
+	uParam0->f_3 = uParam1;
+	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0);
 }
 
 bool func_1441(struct<2> Param0)

@@ -226,7 +226,7 @@ int func_3()
 	return 1;
 }
 
-void func_4(int iParam0, int iParam1)
+void func_4(int iParam0, var uParam1)
 {
 	if (!func_36(16))
 	{
@@ -245,71 +245,71 @@ void func_4(int iParam0, int iParam1)
 	}
 	if (func_44(8))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_45(8);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(2))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_45(2);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(16))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_45(16);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(4))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 6;
+			*uParam1 = 6;
 			return;
 		}
-		else if (*iParam1 != 6)
+		else if (*uParam1 != 6)
 		{
 			func_45(4);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(1))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 2;
+			*uParam1 = 2;
 			return;
 		}
-		else if (*iParam1 != 2)
+		else if (*uParam1 != 2)
 		{
 			func_45(1);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
@@ -500,7 +500,7 @@ int func_11()
 {
 	iLocal_14 = VOLUME::_CREATE_VOLUME_CYLINDER(1324.004f, -2287.084f, 50.711f, 0f, 0f, 0f, 57f, 50f, 20f);
 	iLocal_15 = VOLUME::_0xB3FB80A32BAE3065(1322.59f, -2285.19f, 51.316f, 0f, 0f, 0f, 0.25f, 0.25f, 0.25f);
-	PED::_0x4C39C95AE5DB1329(iLocal_15, false, 16);
+	PED::_0x4C39C95AE5DB1329(iLocal_15, 0, 16);
 	return 1;
 }
 
@@ -1297,7 +1297,7 @@ void func_64()
 	}
 	if ((!func_59(-2019549022, 1, 0) && (!func_132() || (!func_103(2, 16) && !func_104(2)))) && !func_103(2, 2))
 	{
-		iLocal_16 = TASK::CREATE_SCENARIO_POINT(-1206647372, 1320.37f, -2274.06f, 49.53f, 7.859f, 0f, 0, 0);
+		iLocal_16 = TASK::CREATE_SCENARIO_POINT(-1206647372, 1320.37f, -2274.06f, 49.53f, 7.859f, 0f, 0f, 0);
 	}
 	else
 	{
@@ -5141,19 +5141,19 @@ void func_231(int iParam0, var uParam1, var uParam2)
 	{
 		case 1234009870:
 			*uParam1 = 1802325493;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case -1202134084:
 			*uParam1 = -864693164;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case 1297050066:
 			*uParam1 = -603289736;
-			*uParam2 = 1232099469;
+			*uParam2 = 1232099469; /* GXTEntry: "Revolver Cartridges - Express" */
 			break;
 		case -1780177928:
 			*uParam1 = -1803237008;
-			*uParam2 = -2084181920;
+			*uParam2 = -2084181920; /* GXTEntry: "Revolver Cartridges - High Velocity" */
 			break;
 		case -1467836497:
 			*uParam1 = -1175521284;
@@ -5165,11 +5165,11 @@ void func_231(int iParam0, var uParam1, var uParam2)
 			break;
 		case -153287664:
 			*uParam1 = -1650796693;
-			*uParam2 = 836939099;
+			*uParam2 = 836939099; /* GXTEntry: "Pistol Cartridges - Express" */
 			break;
 		case 1845082736:
 			*uParam1 = -1521597660;
-			*uParam2 = -1411815376;
+			*uParam2 = -1411815376; /* GXTEntry: "Pistol Cartridges - High Velocity" */
 			break;
 		case 406755377:
 			*uParam1 = -1288829256;
@@ -5181,27 +5181,27 @@ void func_231(int iParam0, var uParam1, var uParam2)
 			break;
 		case 45760211:
 			*uParam1 = -851229814;
-			*uParam2 = 1654725195;
+			*uParam2 = 1654725195; /* GXTEntry: "Rifle Cartridges - Express" */
 			break;
 		case -276295943:
 			*uParam1 = 914704115;
-			*uParam2 = 1858824185;
+			*uParam2 = 1858824185; /* GXTEntry: "Rifle Cartridges - High Velocity" */
 			break;
 		case -2029793397:
 			*uParam1 = -219896679;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case 2120467495:
 			*uParam1 = 516838334;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case -2075613923:
 			*uParam1 = -385817936;
-			*uParam2 = -578347576;
+			*uParam2 = -578347576; /* GXTEntry: "Repeater Cartridges - Express" */
 			break;
 		case 122656217:
 			*uParam1 = 1192843172;
-			*uParam2 = 231465488;
+			*uParam2 = 231465488; /* GXTEntry: "Repeater Cartridges - High Velocity" */
 			break;
 		case 2107187484:
 			*uParam1 = 954871696;
@@ -5213,7 +5213,7 @@ void func_231(int iParam0, var uParam1, var uParam2)
 			break;
 		case 305770744:
 			*uParam1 = -2087227528;
-			*uParam2 = 314966081;
+			*uParam2 = 314966081; /* GXTEntry: "Shotgun - Slug" */
 			break;
 		case 550900979:
 			*uParam1 = -618066518;

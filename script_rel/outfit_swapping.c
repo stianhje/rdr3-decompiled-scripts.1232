@@ -903,7 +903,7 @@ int func_32(int iParam0)
 	return 0;
 }
 
-void func_33(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5)
+void func_33(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4, bool bParam5)
 {
 	bool bVar0;
 	int iVar1;

@@ -288,7 +288,7 @@ int func_4()
 	return 1;
 }
 
-void func_5(int iParam0, int iParam1)
+void func_5(int iParam0, var uParam1)
 {
 	if (!func_38(16))
 	{
@@ -307,71 +307,71 @@ void func_5(int iParam0, int iParam1)
 	}
 	if (func_51(8))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_52(8);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(2))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 4;
+			*uParam1 = 4;
 			return;
 		}
-		else if (*iParam1 != 4)
+		else if (*uParam1 != 4)
 		{
 			func_52(2);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(16))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 9;
+			*uParam1 = 9;
 			return;
 		}
-		else if (*iParam1 != 9)
+		else if (*uParam1 != 9)
 		{
 			func_52(16);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(4))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_52(4);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(1))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_52(1);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
@@ -3543,20 +3543,20 @@ void func_113(var uParam0, var uParam1, int iParam2)
 	STATS::_0x6A0184E904CDF25E(&uParam0, iParam2);
 }
 
-void func_114(int iParam0, bool bParam1)
+void func_114(var uParam0, var uParam1)
 {
-	if (VOLUME::_0x666C2F53ABEFC952(iParam0) != 623901053)
+	if (VOLUME::_0x666C2F53ABEFC952(uParam0) != 623901053)
 	{
-		VOLUME::_0xFD010A2154B40676(iParam0, 623901053);
+		VOLUME::_0xFD010A2154B40676(uParam0, 623901053);
 	}
-	if (bParam1->f_4)
+	if (uParam1->f_4)
 	{
 		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 7, 0, 0);
 		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 20, 0, 0);
 		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 19, 0, 0);
 		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 10, 0, 0);
 		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 4, 0, 0);
-		bParam1->f_4 = 0;
+		uParam1->f_4 = 0;
 	}
 }
 

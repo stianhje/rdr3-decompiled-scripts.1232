@@ -272,7 +272,7 @@ int func_4()
 	return 1;
 }
 
-void func_5(int iParam0, int iParam1)
+void func_5(int iParam0, var uParam1)
 {
 	if (!func_38(16))
 	{
@@ -291,71 +291,71 @@ void func_5(int iParam0, int iParam1)
 	}
 	if (func_51(8))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_52(8);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(2))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 4;
+			*uParam1 = 4;
 			return;
 		}
-		else if (*iParam1 != 4)
+		else if (*uParam1 != 4)
 		{
 			func_52(2);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(16))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 9;
+			*uParam1 = 9;
 			return;
 		}
-		else if (*iParam1 != 9)
+		else if (*uParam1 != 9)
 		{
 			func_52(16);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(4))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_52(4);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(1))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_52(1);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
@@ -363,7 +363,7 @@ void func_5(int iParam0, int iParam1)
 
 void func_6(int iParam0)
 {
-	STREAMING::REQUEST_MODEL(1282171014, false);
+	STREAMING::REQUEST_MODEL(joaat("a_m_m_unicorpse_01"), false);
 	PED::_0xED9582B3DA8F02B4(6);
 	iLocal_20 = ANIMSCENE::_CREATE_ANIM_SCENE(func_53(), 8, func_54(), false, true);
 	ANIMSCENE::LOAD_ANIM_SCENE(iLocal_20);
@@ -731,7 +731,7 @@ int func_40(int iParam0)
 	switch (iLocal_21)
 	{
 		case 0:
-			if ((((STREAMING::HAS_MODEL_LOADED(1282171014) && PED::_0x5E420FF293EE5472()) && ANIMSCENE::_0x25557E324489393C(iLocal_20)) && ANIMSCENE::_0x477122B8D05E7968(iLocal_20, 1, 0)) && !func_62())
+			if ((((STREAMING::HAS_MODEL_LOADED(joaat("a_m_m_unicorpse_01")) && PED::_0x5E420FF293EE5472()) && ANIMSCENE::_0x25557E324489393C(iLocal_20)) && ANIMSCENE::_0x477122B8D05E7968(iLocal_20, 1, 0)) && !func_62())
 			{
 				iLocal_21 = 1;
 			}
@@ -1161,7 +1161,7 @@ int func_63()
 {
 	var uVar0;
 
-	if (((((func_102(uLocal_13[0], 1282171014, &uVar0, func_100(0), func_101(0)) && func_102(uLocal_13[1], 1282171014, &uVar0, func_100(1), func_101(1))) && func_102(uLocal_13[2], 1282171014, &uVar0, func_100(2), func_101(2))) && func_102(uLocal_13[3], 1282171014, &uVar0, func_100(3), func_101(3))) && func_102(uLocal_13[4], 1282171014, &uVar0, func_100(4), func_101(4))) && func_102(uLocal_13[5], 1282171014, &uVar0, func_100(5), func_101(5)))
+	if (((((func_102(uLocal_13[0], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(0), func_101(0)) && func_102(uLocal_13[1], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(1), func_101(1))) && func_102(uLocal_13[2], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(2), func_101(2))) && func_102(uLocal_13[3], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(3), func_101(3))) && func_102(uLocal_13[4], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(4), func_101(4))) && func_102(uLocal_13[5], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(5), func_101(5)))
 	{
 		return 1;
 	}
@@ -2051,7 +2051,7 @@ void func_87(int iParam0)
 	PED::DELETE_PED(uLocal_13[3]);
 	PED::DELETE_PED(uLocal_13[4]);
 	PED::DELETE_PED(uLocal_13[5]);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(1282171014);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("a_m_m_unicorpse_01"));
 	PED::_0x7D4E70A67A651C71(6);
 	ANIMSCENE::_DELETE_ANIM_SCENE(iLocal_20);
 }

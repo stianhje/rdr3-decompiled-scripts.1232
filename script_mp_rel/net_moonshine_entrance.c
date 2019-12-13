@@ -3366,7 +3366,7 @@ void func_121(int iParam0)
 	if (func_193(-92416669))
 	{
 	}
-	if (iParam0 && Global_1939168->f_38 == -1016714371)
+	if (iParam0 && Global_1939168->f_38 == joaat("weapon_kit_camera"))
 	{
 		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
 		Global_1939168->f_38 = joaat("weapon_unarmed");

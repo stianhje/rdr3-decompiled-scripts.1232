@@ -372,7 +372,7 @@ int func_4()
 	return 1;
 }
 
-void func_5(int iParam0, int iParam1)
+void func_5(int iParam0, var uParam1)
 {
 	if (!func_38(16))
 	{
@@ -391,71 +391,71 @@ void func_5(int iParam0, int iParam1)
 	}
 	if (func_51(8))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_52(8);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(2))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 4;
+			*uParam1 = 4;
 			return;
 		}
-		else if (*iParam1 != 4)
+		else if (*uParam1 != 4)
 		{
 			func_52(2);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(16))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 9;
+			*uParam1 = 9;
 			return;
 		}
-		else if (*iParam1 != 9)
+		else if (*uParam1 != 9)
 		{
 			func_52(16);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(4))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_52(4);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(1))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_52(1);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
@@ -2792,19 +2792,19 @@ void func_90()
 	func_190(&uLocal_160, &uLocal_162, &uLocal_161, 2753.91f, -1396.01f, 45.21f, 1788943942, 715447956, -523602066);
 }
 
-int func_91(bool bParam0)
+int func_91(var uParam0)
 {
 	if (func_191())
 	{
-		if (!*bParam0)
+		if (!*uParam0)
 		{
-			*bParam0 = 1;
+			*uParam0 = 1;
 			return 1;
 		}
 	}
-	else if (*bParam0)
+	else if (*uParam0)
 	{
-		*bParam0 = 0;
+		*uParam0 = 0;
 		return 1;
 	}
 	return 0;
@@ -5580,9 +5580,9 @@ int func_154()
 	return Global_1893575->f_2;
 }
 
-int func_155(int iParam0, int iParam1, float fParam2, var uParam3)
+int func_155(int iParam0, var uParam1, float fParam2, var uParam3)
 {
-	return func_130(iParam0, "sClosedHash", iParam1, "fClosedHeading", fParam2, "vClosedPos", uParam3);
+	return func_130(iParam0, "sClosedHash", uParam1, "fClosedHeading", fParam2, "vClosedPos", uParam3);
 }
 
 void func_156(int iParam0, int iParam1, vector3 vParam2, float fParam5, bool bParam6)

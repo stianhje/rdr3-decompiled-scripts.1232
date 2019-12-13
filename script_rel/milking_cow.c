@@ -924,7 +924,7 @@ void func_42(var uParam0)
 	Local_20.f_41 = "script_mar5_milkcow_bucket";
 	Local_20.f_42 = "MGMLK";
 	Local_20.f_135 = "MAR5_Sounds";
-	STREAMING::REQUEST_MODEL(-1937484496, false);
+	STREAMING::REQUEST_MODEL(joaat("p_stool02x"), false);
 	STREAMING::REQUEST_MODEL(-861474402, false);
 	STREAMING::_0x2B6529C54D29037A(Local_20.f_39);
 	STREAMING::_0x2B6529C54D29037A(Local_20.f_40);
@@ -988,7 +988,7 @@ int func_43(var uParam0)
 
 int func_44(var uParam0)
 {
-	if (!STREAMING::HAS_MODEL_LOADED(-1937484496))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_stool02x")))
 	{
 		return 0;
 	}
@@ -1319,9 +1319,9 @@ int func_66(int iParam0)
 	return &(Global_1058888->f_498[iParam0 /*2*/]);
 }
 
-int func_67(int iParam0)
+int func_67(var uParam0)
 {
-	return iParam0 & 31;
+	return uParam0 & 31;
 }
 
 int func_68(int iParam0)
@@ -2022,10 +2022,10 @@ int func_112(vector3 vParam0)
 {
 	int iVar0;
 
-	iVar0 = func_168(vParam0, -1937484496, 4f, 1);
+	iVar0 = func_168(vParam0, joaat("p_stool02x"), 4f, 1);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
-		iVar0 = OBJECT::CREATE_OBJECT(-1937484496, vParam0, true, true, false, false, false);
+		iVar0 = OBJECT::CREATE_OBJECT(joaat("p_stool02x"), vParam0, true, true, false, false, false);
 	}
 	ENTITY::SET_ENTITY_COORDS(iVar0, vParam0, true, false, true, true);
 	ENTITY::FREEZE_ENTITY_POSITION(iVar0, true);
@@ -2144,10 +2144,10 @@ void func_118(var uParam0)
 		func_171(-859971527, Global_35, 0, 1);
 	}
 	uParam0->f_43.f_30 = "Milking";
-	uParam0->f_43.f_1 = -455129387;
+	uParam0->f_43.f_1 = -455129387; /* GXTEntry: "_" */
 	uParam0->f_43 = 325037696;
 	uParam0->f_77.f_30 = "Wobble";
-	uParam0->f_77.f_1 = -455129387;
+	uParam0->f_77.f_1 = -455129387; /* GXTEntry: "_" */
 	PED::SET_PED_CAN_LEG_IK(Global_35, false);
 	PED::SET_PED_LEG_IK_MODE(Global_35, 0);
 	PED::SET_PED_CAN_LEG_IK(uParam0->f_5, false);

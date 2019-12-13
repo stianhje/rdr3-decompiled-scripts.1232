@@ -196,7 +196,7 @@ void func_6()
 							(Local_6[iVar1 /*13*/])->f_7 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_0xA8452DD321607029(iLocal_3, 1), TASK::_0xB93EA7184BAA85C3(iLocal_3, 1), (Local_6[iVar1 /*13*/])->f_4) };
 							(Local_6[iVar1 /*13*/])->f_11 = (TASK::_0xB93EA7184BAA85C3(iLocal_3, 1) + (Local_6[iVar1 /*13*/])->f_10);
 						}
-						Local_6[iVar1 /*13*/] = TASK::CREATE_SCENARIO_POINT((Local_6[iVar1 /*13*/])->f_1, (Local_6[iVar1 /*13*/])->f_7, (Local_6[iVar1 /*13*/])->f_11, 0f, 0, 0);
+						Local_6[iVar1 /*13*/] = TASK::CREATE_SCENARIO_POINT((Local_6[iVar1 /*13*/])->f_1, (Local_6[iVar1 /*13*/])->f_7, (Local_6[iVar1 /*13*/])->f_11, 0f, 0f, 0);
 						TASK::_0xE69FDA40AAC3EFC0(&(Local_6[iVar1 /*13*/]), 0);
 						TASK::_0xA7479FB665361EDB(&(Local_6[iVar1 /*13*/]), 0);
 					}

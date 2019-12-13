@@ -2905,14 +2905,14 @@ int func_21(var uParam0)
 		uParam0->f_24 = 5;
 		uParam0->f_23 = 3;
 		uParam0->f_2 = 0;
-		uParam0->f_1401[0] = -2002682906;
-		uParam0->f_1401[1] = -1835251821;
+		uParam0->f_1401[0] = joaat("cs_escapeartist");
+		uParam0->f_1401[1] = joaat("cs_escapeartistassistant");
 		uParam0->f_1401[2] = 339709868;
-		uParam0->f_1385[0] = 1755911592;
-		uParam0->f_1385[1] = -2021274799;
-		uParam0->f_1385[2] = 1843407141;
-		uParam0->f_1415[0] = 379542007;
-		uParam0->f_1415[1] = 379542007;
+		uParam0->f_1385[0] = joaat("p_bucket03x");
+		uParam0->f_1385[1] = joaat("p_barstool01x");
+		uParam0->f_1385[2] = joaat("p_bottlebeer01x");
+		uParam0->f_1415[0] = joaat("weapon_revolver_cattleman");
+		uParam0->f_1415[1] = joaat("weapon_revolver_cattleman");
 		uParam0->f_1436 = "SHSDAUD";
 		func_18(&(uParam0->f_1358), 131072);
 		uParam0->f_1377 = { 2546.453f, -1303.998f, 46.793f };
@@ -4014,7 +4014,7 @@ char* func_82()
 	return "script@shows@curtains@curtains";
 }
 
-void func_83(int iParam0, char* sParam1, char[4] cParam2)
+void func_83(int iParam0, char* sParam1, var uParam2)
 {
 	if (!ANIMSCENE::_0x25557E324489393C(iParam0))
 	{
@@ -4023,7 +4023,7 @@ void func_83(int iParam0, char* sParam1, char[4] cParam2)
 	ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(iParam0, sParam1, true);
 }
 
-void func_84(int iParam0, char* sParam1, char[4] cParam2)
+void func_84(int iParam0, char* sParam1, var uParam2)
 {
 	if (ANIMSCENE::_0x23E33CB9F4A3F547(iParam0, sParam1))
 	{
@@ -4331,7 +4331,7 @@ void func_103(var uParam0, int iParam1)
 
 int func_104()
 {
-	return -2002682906;
+	return joaat("cs_escapeartist");
 }
 
 int func_105(int iParam0)

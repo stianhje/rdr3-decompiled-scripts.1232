@@ -39,7 +39,7 @@ void __EntryFunction__()
 	Var0.f_1.f_11.f_1 = 20;
 	Var0.f_1.f_33 = 20;
 	Var0.f_180 = 2;
-	Var0.f_1 = -1199896558;
+	Var0.f_1 = -1199896558; /* GXTEntry: "Coffee" */
 	Var0.f_1.f_2 = 4f;
 	Var0.f_179 = ScriptParam_0.f_1;
 	if (!ScriptParam_0.f_3)
@@ -1955,7 +1955,7 @@ bool func_91(int iParam0)
 	return fVar0 <= 1f;
 }
 
-void func_92(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
+void func_92(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -1966,12 +1966,12 @@ void func_92(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	int iVar6;
 	int iVar7;
 
-	iVar0 = func_103(*iParam0);
-	iVar1 = func_104(*iParam0);
-	iVar2 = func_105(*iParam0);
-	iVar3 = func_106(*iParam0);
-	iVar4 = func_107(*iParam0);
-	iVar5 = func_108(*iParam0);
+	iVar0 = func_103(*uParam0);
+	iVar1 = func_104(*uParam0);
+	iVar2 = func_105(*uParam0);
+	iVar3 = func_106(*uParam0);
+	iVar4 = func_107(*uParam0);
+	iVar5 = func_108(*uParam0);
 	if (((((iParam6 == 0 && iParam5 == 0) && iParam4 == 0) && iParam3 == 0) && iParam2 == 0) && iParam1 == 0)
 	{
 		return;
@@ -2038,7 +2038,7 @@ void func_92(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 		iVar1 += 12;
 	}
 	iVar0 = (iVar0 - iParam6);
-	func_110(iParam0, iVar5, iVar4, iVar3, iVar2, iVar1, iVar0);
+	func_110(uParam0, iVar5, iVar4, iVar3, iVar2, iVar1, iVar0);
 }
 
 int func_93(int iParam0, int iParam1)
@@ -2108,7 +2108,7 @@ void func_96(int iParam0, int iParam1, int iParam2)
 	}
 }
 
-void func_97(int iParam0, int iParam1, int iParam2)
+void func_97(int iParam0, var uParam1, int iParam2)
 {
 	if (iParam2 == 2)
 	{
@@ -2117,10 +2117,10 @@ void func_97(int iParam0, int iParam1, int iParam2)
 	switch (iParam2)
 	{
 		case 0:
-			(Global_1954462->f_1331.f_6[iParam0 /*3*/])->f_1 = iParam1;
+			(Global_1954462->f_1331.f_6[iParam0 /*3*/])->f_1 = uParam1;
 			break;
 		case 1:
-			(Global_1954462->f_1465.f_2.f_6[iParam0 /*3*/])->f_1 = iParam1;
+			(Global_1954462->f_1465.f_2.f_6[iParam0 /*3*/])->f_1 = uParam1;
 			break;
 		default:
 			break;

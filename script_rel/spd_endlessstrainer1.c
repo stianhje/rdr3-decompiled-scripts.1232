@@ -652,7 +652,7 @@ int func_12(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -993239322;
+			iVar0 = joaat("u_m_m_valtownfolk_01");
 			break;
 	}
 	return iVar0;
@@ -2864,9 +2864,9 @@ char* func_118(int iParam0)
 	return sVar0;
 }
 
-char* func_119(char* sParam0)
+var func_119(var uParam0)
 {
-	return sParam0;
+	return uParam0;
 }
 
 int func_120(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, bool bParam7)
@@ -3374,7 +3374,7 @@ void func_128(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 						func_231(829545206);
 						func_230(891318243, 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_231(891318243);
-						func_230(-1016714371, 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
+						func_230(joaat("weapon_kit_camera"), 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_230(-1838434463, 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_230(-1448210800, 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_230(-248960099, 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
@@ -3441,7 +3441,7 @@ void func_128(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 						func_241(Global_35, 176992230, 0, -358215195, 1, 1);
 						if (func_242())
 						{
-							func_243(1905553950);
+							func_243(joaat("weapon_repeater_evans"));
 						}
 						break;
 					case 19:
@@ -3459,13 +3459,13 @@ void func_128(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 						PLAYER::_0x946D46CD6DFB9742(PLAYER::GET_PLAYER_INDEX(), 0, MISC::GET_HASH_KEY("DISCOVERABLE_NAME_EVELYN_MILLER"));
 						if (func_242())
 						{
-							func_243(1529685685);
+							func_243(joaat("weapon_revolver_lemat"));
 						}
 						break;
 					case 34:
 						if (func_242())
 						{
-							func_243(-2082646505);
+							func_243(joaat("weapon_revolver_doubleaction_gambler"));
 						}
 						break;
 					case 28:
@@ -3718,7 +3718,7 @@ void func_128(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 						}
 						if (func_242())
 						{
-							func_243(1534638301);
+							func_243(joaat("weapon_pistol_m1899"));
 						}
 						break;
 					case 68:
@@ -4402,7 +4402,7 @@ void func_147(var uParam0, bool bParam1, int iParam2)
 			{
 				if (!*uParam0 & 33554432 != 0)
 				{
-					if (uParam0->f_13 == -1504859554)
+					if (uParam0->f_13 == joaat("weapon_thrown_dynamite"))
 					{
 						if (PED::IS_PED_PLANTING_BOMB(Global_35))
 						{
@@ -4868,7 +4868,7 @@ int func_157(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_22))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_26, &vVar4, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_26, &vVar4, 0, 0);
 					if (func_316(iParam1, vVar0, vVar4))
 					{
 						func_305(uParam2, 1);
@@ -4892,7 +4892,7 @@ int func_157(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_22))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_26, &vVar7, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_26, &vVar7, 0, 0);
 					if (func_316(iParam1, vVar0, vVar7))
 					{
 						func_305(uParam2, 1);
@@ -5871,13 +5871,13 @@ int func_206(int iParam0)
 	return func_347(func_97(iParam0));
 }
 
-void func_207(int iParam0, int iParam1)
+void func_207(int iParam0, var uParam1)
 {
 	if (Global_1572887->f_12 != -1)
 	{
 		return;
 	}
-	(Global_12105[iParam0 /*7*/])->f_6 = iParam1;
+	(Global_12105[iParam0 /*7*/])->f_6 = uParam1;
 }
 
 int func_208(bool bParam0, int iParam1)
@@ -6312,7 +6312,7 @@ int func_215()
 	return 0;
 }
 
-void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
+void func_216(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	switch (iParam0)
 	{
@@ -6343,7 +6343,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_354(-1534761730, iParam1);
 			break;
 		case 26:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-1934184559, iParam1);
 				func_354(1281755988, iParam1);
@@ -6355,7 +6355,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 29:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-1641504538, iParam1);
 				func_354(-988014485, iParam1);
@@ -6371,7 +6371,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 32:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				if (&Global_1357515 == -1)
 				{
@@ -6428,7 +6428,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 35:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-754570528, iParam1);
 			}
@@ -6438,7 +6438,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 36:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-2072125821, iParam1);
 			}
@@ -6451,7 +6451,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_354(-870030001, iParam1);
 			break;
 		case 53:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-505314737, iParam1);
 				func_354(-1853052860, iParam1);
@@ -6463,7 +6463,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 54:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1690231002, iParam1);
 			}
@@ -6473,7 +6473,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 55:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1225386280, iParam1);
 			}
@@ -6487,7 +6487,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 38:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1355398007, iParam1);
 			}
@@ -6497,7 +6497,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 39:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(574636806, iParam1);
 			}
@@ -6507,7 +6507,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 40:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(821118338, iParam1);
 			}
@@ -6521,7 +6521,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 43:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				if (func_104(((*Global_1835011)[33 /*74*/])->f_1) == 1)
 				{
@@ -6538,7 +6538,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 45:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(352134789, iParam1);
 			}
@@ -6552,7 +6552,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 41:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-457958799, iParam1);
 			}
@@ -6572,7 +6572,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 49:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1297261593, iParam1);
 			}
@@ -6582,7 +6582,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 50:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(2068484886, iParam1);
 			}
@@ -6659,7 +6659,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_354(1349250531, iParam1);
 			break;
 		case 77:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1414263863, iParam1);
 			}
@@ -6669,7 +6669,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 79:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1835465936, iParam1);
 				func_354(523715611, iParam1);
@@ -6684,7 +6684,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 80:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(10180941, iParam1);
 			}
@@ -6698,7 +6698,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 85:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-383601523, iParam1);
 			}
@@ -6708,7 +6708,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 86:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1606472408, iParam1);
 			}
@@ -6718,7 +6718,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 87:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-203571927, iParam1);
 			}
@@ -6728,7 +6728,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 88:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(729886222, iParam1);
 			}
@@ -6738,7 +6738,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 89:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-714816362, iParam1);
 			}
@@ -6748,7 +6748,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 92:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-932932179, iParam1);
 				func_354(-1458537240, iParam1);
@@ -6760,7 +6760,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 93:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1741466706, iParam1);
 			}
@@ -6785,7 +6785,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_354(800644248, iParam1);
 			break;
 		case 101:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1502176860, iParam1);
 				if (&Global_1357515 == -1)
@@ -6807,7 +6807,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 102:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-369525697, iParam1);
 			}
@@ -6824,7 +6824,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_354(1422724221, iParam1);
 			break;
 		case 104:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(793460477, iParam1);
 				func_354(-1610242176, iParam1);
@@ -6839,7 +6839,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 105:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1528309077, iParam1);
 			}
@@ -6856,7 +6856,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_354(1175579551, iParam1);
 			break;
 		case 109:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-1123227713, iParam1);
 				func_354(-889574341, iParam1);
@@ -6868,7 +6868,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 110:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-887421691, iParam1);
 			}
@@ -6882,7 +6882,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 111:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				if (&Global_1357515 == 0)
 				{
@@ -6920,7 +6920,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_354(-2040171028, iParam1);
 			break;
 		case 143:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1182403394, iParam1);
 			}
@@ -6930,7 +6930,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 144:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(924445424, iParam1);
 			}
@@ -6940,7 +6940,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 117:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(430755273, iParam1);
 				func_354(-1473879802, iParam1);
@@ -6951,7 +6951,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 118:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(73885747, iParam1);
 			}
@@ -6965,7 +6965,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 119:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-2103887972, iParam1);
 			}
@@ -6979,7 +6979,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 121:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(2054486196, iParam1);
 			}
@@ -6989,7 +6989,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 122:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-570086056, iParam1);
 			}
@@ -7003,7 +7003,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 124:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(813493663, iParam1);
 			}
@@ -7017,7 +7017,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 125:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-66240572, iParam1);
 				func_354(1563075046, iParam1);
@@ -7044,7 +7044,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_354(-718846442, iParam1);
 			break;
 		case 135:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				if (&Global_1357515 == -1)
 				{
@@ -7076,7 +7076,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 136:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1717582460, iParam1);
 			}
@@ -7086,7 +7086,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 137:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1568112362, iParam1);
 				func_354(1388317526, iParam1);
@@ -7114,7 +7114,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 146:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				if (&Global_1357515 == 1)
 				{
@@ -7135,7 +7135,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 147:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(-66616327, iParam1);
 			}
@@ -7145,7 +7145,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 148:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1862916706, iParam1);
 			}
@@ -7159,7 +7159,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 149:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(174409701, iParam1);
 			}
@@ -7173,7 +7173,7 @@ void func_216(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 150:
-			if (bParam3 == 1)
+			if (iParam3 == 1)
 			{
 				func_354(1295237052, iParam1);
 			}
@@ -8427,25 +8427,25 @@ int func_230(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4,
 			switch (iParam0)
 			{
 				case -593948563:
-					iVar8 = -1281487556;
+					iVar8 = -1281487556; /* GXTEntry: "Legend of the East Satchel" */
 					break;
 				case -1421669656:
-					iVar8 = -59585102;
+					iVar8 = -59585102; /* GXTEntry: "Tonics Satchel" */
 					break;
 				case -830181022:
-					iVar8 = 1018123892;
+					iVar8 = 1018123892; /* GXTEntry: "Ingredients Satchel" */
 					break;
 				case 917695895:
-					iVar8 = -1455768246;
+					iVar8 = -1455768246; /* GXTEntry: "Kit Satchel" */
 					break;
 				case -1580595448:
-					iVar8 = -921879912;
+					iVar8 = -921879912; /* GXTEntry: "Provisions Satchel" */
 					break;
 				case 1309992709:
-					iVar8 = 982182330;
+					iVar8 = 982182330; /* GXTEntry: "Materials Satchel" */
 					break;
 				case 1541618973:
-					iVar8 = -1406390556;
+					iVar8 = -1406390556; /* GXTEntry: "Valuables Satchel" */
 					break;
 			}
 			if (iVar8 != 0)
@@ -8552,7 +8552,7 @@ int func_230(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4,
 					func_425(PLAYER::PLAYER_PED_ID(), 1171350303, 0, 673166414, 1, 1, 1, 0, 1, 0);
 				}
 				break;
-			case -160924582:
+			case joaat("weapon_kit_binoculars"):
 				break;
 			case 2131771850:
 				func_237(415, 0);
@@ -8772,7 +8772,7 @@ int func_230(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4,
 			case -2035110427:
 				if (func_94() == -1)
 				{
-					iParam0 = -1448210800;
+					iParam0 = -1448210800; /* GXTEntry: "Crafting Tools" */
 				}
 				break;
 			case 1510719693:
@@ -10135,9 +10135,9 @@ int func_278(int iParam0)
 	return -1;
 }
 
-int func_279(int iParam0)
+int func_279(var uParam0)
 {
-	return iParam0 & 31;
+	return uParam0 & 31;
 }
 
 int func_280()
@@ -10762,7 +10762,7 @@ void func_296(int iParam0)
 			Global_1935630->f_30 = PLAYER::_0x72AD59F7B7FB6E24(PLAYER::PLAYER_ID(), 4000);
 			if (!Global_1935630->f_30)
 			{
-				if (Global_1935630->f_44 == 2055893578)
+				if (Global_1935630->f_44 == joaat("weapon_lasso"))
 				{
 					Global_1935630->f_30 = PED::_0xB65A4DAB460A19BD(Global_35) != 0;
 				}
@@ -10771,7 +10771,7 @@ void func_296(int iParam0)
 		case 2:
 			switch (Global_1935630->f_46)
 			{
-				case 2055893578:
+				case joaat("weapon_lasso"):
 					Global_1935630->f_25 = 0;
 					break;
 				default:
@@ -10999,7 +10999,7 @@ int func_307(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	{
 		return 0;
 	}
-	if (Global_1935630->f_44 == 2055893578 && Global_1935630->f_27)
+	if (Global_1935630->f_44 == joaat("weapon_lasso") && Global_1935630->f_27)
 	{
 	}
 	else if (PLAYER::_0x3EE1F7A8C32F24E1(PLAYER::PLAYER_ID(), &iVar2, 0, 0))
@@ -11412,7 +11412,7 @@ int func_323(int iParam0, int iParam1)
 	{
 		return 1;
 	}
-	if (func_537(iParam0, 1, 0, 0) != 2055893578)
+	if (func_537(iParam0, 1, 0, 0) != joaat("weapon_lasso"))
 	{
 		return 0;
 	}
@@ -11831,187 +11831,187 @@ int func_341(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -2086875988:
-		case -2081966149:
-		case -2075588078:
-		case -2046943672:
-		case -2045269112:
-		case -2019245895:
-		case -2014377075:
-		case -2012656841:
-		case -2007761031:
-		case -2006398858:
-		case -1980150291:
-		case -1977628089:
-		case -1966295439:
-		case -1925758912:
-		case -1922688829:
-		case -1901892087:
-		case -1835251821:
-		case -1769295812:
-		case -1765531164:
-		case -1745321414:
-		case -1714108174:
-		case -1688959031:
-		case -1676898583:
-		case -1646049752:
-		case -1632694866:
-		case -1629501717:
-		case -1614719852:
-		case -1607722277:
-		case -1603909164:
-		case -1579174863:
-		case -1533320518:
-		case -1520417507:
-		case -1483559144:
-		case -1464743433:
-		case -1458432563:
-		case -1448924971:
-		case -1423504183:
-		case -1418951751:
-		case -1329383517:
-		case -1270572406:
-		case -1263119823:
-		case -1258801034:
-		case -1161832176:
-		case -1154137714:
-		case -1135378761:
-		case -1116138991:
-		case -1112260815:
-		case -1101883765:
-		case -1070459848:
-		case -1067338663:
-		case -1049237750:
-		case -1047115350:
-		case -1002525623:
-		case -944019243:
-		case -937140420:
-		case -920985758:
-		case -823649241:
-		case -820854800:
-		case -814357706:
-		case -792643455:
-		case -781994133:
-		case -779472377:
-		case -756996682:
-		case -747792496:
-		case -695175124:
-		case -670436990:
-		case -639059862:
+		case joaat("cs_sistercalderon"):
+		case joaat("cs_strsheriff_01"):
+		case joaat("cs_mud2bigguy"):
+		case joaat("cs_rainsfall"):
+		case joaat("cs_penelopebraithwaite"):
+		case joaat("cs_swampweirdosonny"):
+		case joaat("cs_unidusterjail_01"):
+		case joaat("cs_iangray"):
+		case joaat("cs_tinyhermit"):
+		case joaat("cs_timothydonahue"):
+		case joaat("cs_princessisabeau"):
+		case joaat("cs_leviticuscornwall"):
+		case joaat("cs_didsbury"):
+		case joaat("cs_featherstonchambers"):
+		case joaat("cs_featsofstrength"):
+		case joaat("cs_bandpianist"):
+		case joaat("cs_escapeartistassistant"):
+		case joaat("cs_garethbraithwaite"):
+		case joaat("cs_creoleguy"):
+		case joaat("cs_leighgray"):
+		case joaat("cs_strawberryoutlaw_02"):
+		case joaat("cs_gloria"):
+		case joaat("cs_warvet"):
+		case joaat("cs_jockgray"):
+		case joaat("cs_davidgeddes"):
+		case joaat("cs_guidomartelli"):
+		case joaat("cs_duncangeddes"):
+		case joaat("cs_dusterinformant_01"):
+		case joaat("cs_pinkertongoon"):
+		case joaat("cs_mickey"):
+		case joaat("cs_twinbrother_02"):
+		case joaat("cs_hestonjameson"):
+		case joaat("cs_strdeputy_01"):
+		case joaat("cs_abe"):
+		case joaat("cs_oddfellowspinhead"):
+		case joaat("cs_swampfreak"):
+		case joaat("cs_mradler"):
+		case joaat("cs_aberdeenpigfarmer"):
+		case joaat("cs_hobartcrawley"):
+		case joaat("cs_formyartbigwoman"):
+		case joaat("cs_norrisforsythe"):
+		case joaat("cs_jules"):
+		case joaat("cs_tomdickens"):
+		case joaat("cs_geraldbraithwaite"):
+		case joaat("cs_paytah"):
+		case joaat("cs_cancan_03"):
+		case joaat("cs_grizzledjon"):
+		case joaat("cs_wrobel"):
+		case joaat("cs_meredith"):
+		case joaat("cs_creepyoldlady"):
+		case joaat("cs_nbxreceptionist_01"):
+		case joaat("cs_nbxpolicechiefformal"):
+		case joaat("cs_cornwalltrainconductor"):
+		case joaat("cs_rhodeputy_01"):
+		case joaat("cs_drmalcolmmacintosh"):
+		case joaat("cs_leon"):
+		case joaat("cs_sheriffowens"):
+		case joaat("cs_sddoctor_01"):
+		case joaat("cs_scottgray"):
+		case joaat("cs_cancan_01"):
+		case joaat("cs_creolecaptain"):
+		case joaat("cs_brontesbutler"):
+		case joaat("cs_janson"):
+		case joaat("cs_forgivenwife_01"):
+		case joaat("cs_tigerhandler"):
+		case joaat("cs_frenchartist"):
+		case joaat("cs_genstorymale"):
 		case joaat("cs_clay"):
-		case -572941403:
-		case -558131359:
-		case -550289621:
-		case -538512200:
-		case -464684897:
-		case -446093729:
-		case -373817191:
-		case -350169314:
-		case -343178443:
-		case -272492171:
-		case -265719023:
-		case -253049070:
-		case -229065721:
-		case -216561112:
-		case -205121720:
-		case -167880668:
-		case -161553439:
-		case -98087368:
-		case -77509825:
-		case -71527226:
-		case -55633154:
-		case -46607261:
-		case -46389610:
-		case -17071680:
-		case 4991732:
-		case 20251888:
-		case 65010948:
-		case 68512371:
-		case 93760123:
-		case 122377164:
-		case 184120185:
-		case 224310170:
-		case 230517792:
-		case 236407543:
-		case 254009656:
-		case 300505615:
-		case 316325071:
-		case 323324563:
-		case 351634388:
-		case 382040614:
-		case 401817002:
-		case 426274298:
-		case 430764551:
-		case 434730246:
-		case 477547053:
-		case 482703333:
-		case 513427234:
-		case 594026681:
-		case 624882545:
-		case 686051865:
-		case 716675958:
-		case 755774783:
-		case 774211111:
-		case 794654164:
-		case 823321772:
-		case 836525272:
-		case 848012614:
-		case 852072701:
-		case 888681950:
-		case 907019741:
-		case 972892334:
-		case 988668512:
-		case 993577366:
-		case 1006076574:
-		case 1010320580:
-		case 1020041649:
-		case 1051047356:
-		case 1092921608:
-		case 1143979484:
-		case 1149349599:
-		case 1231309423:
-		case 1234550949:
-		case 1245530084:
-		case 1253299569:
-		case 1266159496:
-		case 1266592839:
-		case 1270841555:
-		case 1276534479:
-		case 1281122482:
-		case 1294255258:
-		case 1304311224:
-		case 1320786287:
-		case 1347320453:
-		case 1367851675:
-		case 1372065533:
-		case 1407740785:
-		case 1419055257:
-		case 1436424114:
-		case 1439158431:
-		case 1446935015:
-		case 1479772615:
-		case 1483156731:
-		case 1485366395:
-		case 1599685341:
-		case 1604947233:
-		case 1643370744:
-		case 1701730764:
-		case 1705504999:
-		case 1726560673:
-		case 1785923813:
-		case 1815090590:
-		case 1841492722:
-		case 1966444740:
-		case 1998496121:
-		case 1999476738:
-		case 2000903921:
-		case 2001384088:
-		case 2029634351:
-		case 2041494024:
-		case 2042088799:
-		case 2100656433:
-		case 2115504616:
-		case 2141515026:
+		case joaat("cs_strdeputy_02"):
+		case joaat("cs_famousgunslinger_03"):
+		case joaat("cs_bivcoachdriver"):
+		case joaat("cs_braithwaitebutler"):
+		case joaat("cs_cleet"):
+		case joaat("cs_joe"):
+		case joaat("cs_slavecatcher"):
+		case joaat("cs_braithwaitemaid"):
+		case joaat("cs_twingroupie_02"):
+		case joaat("cs_mrsgeddes"):
+		case joaat("cs_samaritan"):
+		case joaat("cs_exconfedinformant"):
+		case joaat("cs_frenchman_01"):
+		case joaat("cs_bandsinger"):
+		case joaat("cs_baptiste"):
+		case joaat("cs_angusgeddes"):
+		case joaat("cs_mysteriousstranger"):
+		case joaat("cs_famousgunslinger_01"):
+		case joaat("cs_bartholomewbraithwaite"):
+		case joaat("cs_mixedracekid"):
+		case joaat("cs_beatenupcaptain"):
+		case joaat("cs_edgarross"):
+		case joaat("cs_twingroupie_01"):
+		case joaat("cs_mrsweathers"):
+		case joaat("cs_jamie"):
+		case joaat("cs_karensjohn_01"):
+		case joaat("cs_thomasdown"):
+		case joaat("cs_obediahhinton"):
+		case joaat("cs_agnesdowd"):
+		case joaat("cs_cavehermit"):
+		case joaat("cs_brynntildon"):
+		case joaat("cs_germanson"):
+		case joaat("cs_brendacrawley"):
+		case joaat("cs_colfavours"):
+		case joaat("cs_rhodeskidnapvictim"):
+		case joaat("cs_exconfedsleader_01"):
+		case joaat("cs_cancan_04"):
+		case joaat("cs_towncrier"):
+		case joaat("cs_famousgunslinger_04"):
+		case joaat("cs_dalemaroney"):
+		case joaat("cs_angryhusband"):
+		case joaat("cs_lillianpowell"):
+		case joaat("cs_andershelgerson"):
+		case joaat("cs_poorjoe"):
+		case joaat("cs_braithwaiteservant"):
+		case joaat("cs_brotherdorkins"):
+		case joaat("cs_albertmason"):
+		case joaat("cs_famousgunslinger_05"):
+		case joaat("cs_balloonoperator"):
+		case joaat("cs_albertcakeesquire"):
+		case joaat("cs_mrsfellows"):
+		case joaat("cs_cancanman_01"):
+		case joaat("cs_poisonwellshaman"):
+		case joaat("cs_cancan_02"):
+		case joaat("cs_meredithsmother"):
+		case joaat("cs_angel"):
+		case joaat("cs_archerfordham"):
+		case joaat("cs_disguisedduster_01"):
+		case joaat("cs_chelonianmaster"):
+		case joaat("cs_twinbrother_01"):
+		case joaat("cs_germandaughter"):
+		case joaat("cs_lemiuxassistant"):
+		case joaat("cs_creoledoctor"):
+		case joaat("cs_crackpotrobot"):
+		case joaat("cs_bandbassist"):
+		case joaat("cs_genstoryfemale"):
+		case joaat("cs_marylinton"):
+		case joaat("cs_valprayingman"):
+		case joaat("cs_johnthebaptisingmadman"):
+		case joaat("cs_mrs_calhoun"):
+		case joaat("cs_theodorelevin"):
+		case joaat("cs_nicholastimmins"):
+		case joaat("cs_disguisedduster_03"):
+		case joaat("cs_dinoboneslady"):
+		case joaat("cs_beaugray"):
+		case joaat("cs_strawberryoutlaw_01"):
+		case joaat("cs_crackpotinventor"):
+		case joaat("cs_hercule"):
+		case joaat("cs_gavin"):
+		case joaat("cs_levisimon"):
+		case joaat("cs_londonderryson"):
+		case joaat("cs_captainmonroe"):
+		case joaat("cs_famousgunslinger_02"):
+		case joaat("cs_mrslondonderry"):
+		case joaat("cs_soothsayer"):
+		case joaat("cs_tavishgray"):
+		case joaat("cs_joebutler"):
+		case joaat("cs_banddrummer"):
+		case joaat("cs_lillymillet"):
+		case joaat("cs_ansel_atherton"):
+		case joaat("cs_rhodeputy_02"):
+		case joaat("cs_edmundlowry"):
+		case joaat("cs_disguisedduster_02"):
+		case joaat("cs_magnifico"):
+		case joaat("cs_artappraiser"):
+		case joaat("cs_forgivenhusband_01"):
+		case joaat("cs_reverendfortheringham"):
+		case joaat("cs_daveycallender"):
+		case joaat("cs_desmond"):
+		case joaat("cs_adamgray"):
+		case joaat("cs_jimcalloway"):
+		case joaat("cs_sdsaloondrunk_01"):
+		case joaat("cs_nbxdrunk"):
+		case joaat("cs_germanmother"):
+		case joaat("cs_ringmaster"):
+		case joaat("cs_lucanapoli"):
+		case joaat("cs_rhodesassistant"):
+		case joaat("cs_aberdeensister"):
+		case joaat("cs_nbxexecuted"):
+		case joaat("cs_famousgunslinger_06"):
+		case joaat("cs_johnweathers"):
+		case joaat("cs_professorbell"):
+		case joaat("cs_rhodessaloonbouncer"):
 			return 1;
 		default:
 			break;
@@ -12988,14 +12988,14 @@ void func_389(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 				sVar3 = "RCM_BRIEF_DESC_CIG_CARDS_02";
 				sVar5 = "COL_CC_INTRO";
 				iVar11 = MISC::GET_HASH_KEY("BLIP_RC_PHINEAS");
-				iVar13 = 38816757;
+				iVar13 = 38816757; /* GXTEntry: "Smoking and Other Hobbies" */
 			}
 			else
 			{
 				sVar3 = "RCM_BRIEF_DESC_CIG_CARDS_01";
 				sVar5 = "COL_CC_INTRO_PRE";
 				iVar11 = MISC::GET_HASH_KEY("BLIP_RC_COLLECTABLE_CIGCARD");
-				iVar13 = 578982838;
+				iVar13 = 578982838; /* GXTEntry: "A New Hobby" */
 			}
 			sVar4 = "COL_CC_TITLE";
 			vVar6 = { -1678.832f, -335.5439f, 172.9001f };
@@ -13009,8 +13009,8 @@ void func_389(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 				sVar3 = "RCM_BRIEF_DESC_DINO_BONES_02";
 				sVar5 = "COL_DB_INTRO";
 				iVar9 = 3;
-				iVar11 = 1162303770;
-				iVar13 = -1223580455;
+				iVar11 = 1162303770; /* GXTEntry: "Deborah MacGuiness" */
+				iVar13 = -1223580455; /* GXTEntry: "A Test of Faith" */
 			}
 			else
 			{
@@ -13019,7 +13019,7 @@ void func_389(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 				sVar5 = "COL_DB_INTRO_PRE";
 				iVar9 = 1;
 				iVar11 = MISC::GET_HASH_KEY("BLIP_RC_COLLECTABLE_DINOBONES");
-				iVar13 = 349797279;
+				iVar13 = 349797279; /* GXTEntry: "Digging up the Past" */
 			}
 			sVar1 = "SP_MISSIONS_14";
 			sVar4 = "COL_DB_TITLE";
@@ -13065,7 +13065,7 @@ void func_389(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 			iVar9 = func_578(iParam3, 19);
 			iVar14 = -1531394072;
 			iVar11 = MISC::GET_HASH_KEY("BLIP_RC_COLLECTABLE_EXOTICS");
-			iVar13 = 911890963;
+			iVar13 = 911890963; /* GXTEntry: "Duchesses and Other Animals" */
 			break;
 		case 41:
 			if (func_277() && (func_387(41) || func_383(41)))
@@ -13083,8 +13083,8 @@ void func_389(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 			vVar6 = { 337.3075f, -684.5404f, 41.8362f };
 			iVar9 = 13;
 			iVar14 = 1995362678;
-			iVar11 = -273196610;
-			iVar13 = -1666208710;
+			iVar11 = -273196610; /* GXTEntry: "Jeremy Gill" */
+			iVar13 = -1666208710; /* GXTEntry: "A Fisher of Fish" */
 			break;
 		case 49:
 			if (func_277() && (func_387(49) || func_383(49)))
@@ -13093,8 +13093,8 @@ void func_389(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 				sVar3 = "RCM_BRIEF_DESC_ROCK_CARVINGS_02";
 				sVar5 = "COL_RC_INTRO";
 				iVar9 = 3;
-				iVar11 = -781551276;
-				iVar13 = -170865073;
+				iVar11 = -781551276; /* GXTEntry: "Francis Sinclair" */
+				iVar13 = -170865073; /* GXTEntry: "Geology for Beginners" */
 			}
 			else
 			{
@@ -13103,7 +13103,7 @@ void func_389(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 				sVar5 = "COL_RC_INTRO_PRE";
 				iVar9 = 1;
 				iVar11 = MISC::GET_HASH_KEY("BLIP_RC_COLLECTABLE_ROCKFACES");
-				iVar13 = 1974744712;
+				iVar13 = 1974744712; /* GXTEntry: "Rock Carvings" */
 			}
 			sVar1 = "SP_MISSIONS_14";
 			sVar4 = "COL_RC_TITLE";
@@ -13120,8 +13120,8 @@ void func_389(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 			vVar6 = { -1678.832f, -335.5439f, 172.9001f };
 			iVar9 = func_578(iParam3, 20);
 			iVar14 = 678508515;
-			iVar11 = 1986498931;
-			iVar13 = -1424865411;
+			iVar11 = 1986498931; /* GXTEntry: "Ms. L Hobbs" */
+			iVar13 = -1424865411; /* GXTEntry: "A Better World, A New Friend" */
 			break;
 	}
 	sVar2 = func_579(iParam0, iVar14, iParam6, sVar2, sParam4, iVar10, iParam3);
@@ -13186,7 +13186,7 @@ void func_391(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 				sVar1 = "COL_CC_INTRO_PRE";
 				iVar4 = MISC::GET_HASH_KEY("BLIP_RC_COLLECTABLE_CIGCARD");
 			}
-			iVar6 = 38816757;
+			iVar6 = 38816757; /* GXTEntry: "Smoking and Other Hobbies" */
 			break;
 		case 39:
 			sVar0 = "COL_DB_TITLE";
@@ -13195,14 +13195,14 @@ void func_391(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 			if (func_277() && (func_387(39) || func_383(39)))
 			{
 				sVar1 = "COL_DB_INTRO";
-				iVar4 = 1162303770;
+				iVar4 = 1162303770; /* GXTEntry: "Deborah MacGuiness" */
 			}
 			else
 			{
 				sVar1 = "COL_DB_INTRO_PRE";
 				iVar4 = MISC::GET_HASH_KEY("BLIP_RC_COLLECTABLE_DINOBONES");
 			}
-			iVar6 = -1223580455;
+			iVar6 = -1223580455; /* GXTEntry: "A Test of Faith" */
 			break;
 		case 43:
 		case 44:
@@ -13214,15 +13214,15 @@ void func_391(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 			sVar1 = "COL_EX_INTRO";
 			iVar7 = -1531394072;
 			iVar4 = MISC::GET_HASH_KEY("BLIP_RC_COLLECTABLE_EXOTICS");
-			iVar6 = 911890963;
+			iVar6 = 911890963; /* GXTEntry: "Duchesses and Other Animals" */
 			break;
 		case 41:
 			sVar0 = "COL_LF_TITLE";
 			sVar3 = "COL_LF_CAUGHT";
 			sVar1 = "COL_LF_INTRO";
 			iVar7 = 1995362678;
-			iVar4 = -273196610;
-			iVar6 = -1666208710;
+			iVar4 = -273196610; /* GXTEntry: "Jeremy Gill" */
+			iVar6 = -1666208710; /* GXTEntry: "A Fisher of Fish" */
 			break;
 		case 49:
 			sVar0 = "COL_RC_TITLE";
@@ -13231,22 +13231,22 @@ void func_391(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 			if (func_277() && (func_387(49) || func_383(49)))
 			{
 				sVar1 = "COL_RC_INTRO";
-				iVar4 = -781551276;
+				iVar4 = -781551276; /* GXTEntry: "Francis Sinclair" */
 			}
 			else
 			{
 				sVar1 = "COL_RC_INTRO_PRE";
 				iVar4 = MISC::GET_HASH_KEY("BLIP_RC_COLLECTABLE_ROCKFACES");
 			}
-			iVar6 = -170865073;
+			iVar6 = -170865073; /* GXTEntry: "Geology for Beginners" */
 			break;
 		case 51:
 			sVar0 = "COL_TX_TITLE";
 			sVar3 = "COL_TX_CARCASS_COLLECTED";
 			sVar1 = "COL_TX_INTRO";
 			iVar7 = 678508515;
-			iVar4 = 1986498931;
-			iVar6 = -1424865411;
+			iVar4 = 1986498931; /* GXTEntry: "Ms. L Hobbs" */
+			iVar6 = -1424865411; /* GXTEntry: "A Better World, A New Friend" */
 			break;
 	}
 	if (iParam5 == 2)
@@ -13265,11 +13265,11 @@ void func_391(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	{
 		if (func_277() && (func_387(38) || func_383(38)))
 		{
-			iVar6 = 38816757;
+			iVar6 = 38816757; /* GXTEntry: "Smoking and Other Hobbies" */
 		}
 		else
 		{
-			iVar6 = 578982838;
+			iVar6 = 578982838; /* GXTEntry: "A New Hobby" */
 		}
 		UILOG::_UILOG_SET_PENDING_DETAILS_ID(1, iVar6);
 		if (iParam5 == 0)
@@ -13304,11 +13304,11 @@ void func_391(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	{
 		if (func_277() && (func_387(39) || func_383(39)))
 		{
-			iVar6 = -1223580455;
+			iVar6 = -1223580455; /* GXTEntry: "A Test of Faith" */
 		}
 		else
 		{
-			iVar6 = 349797279;
+			iVar6 = 349797279; /* GXTEntry: "Digging up the Past" */
 		}
 		UILOG::_UILOG_SET_PENDING_DETAILS_ID(1, iVar6);
 		if (iParam5 == 1)
@@ -13324,11 +13324,11 @@ void func_391(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	{
 		if (func_277() && (func_387(49) || func_383(49)))
 		{
-			iVar6 = -170865073;
+			iVar6 = -170865073; /* GXTEntry: "Geology for Beginners" */
 		}
 		else
 		{
-			iVar6 = 1974744712;
+			iVar6 = 1974744712; /* GXTEntry: "Rock Carvings" */
 		}
 		UILOG::_UILOG_SET_PENDING_DETAILS_ID(1, iVar6);
 		if (iParam5 == 1)
@@ -13436,64 +13436,64 @@ int func_398(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case -1639263599:
-			iVar0 = -764310200;
+			iVar0 = joaat("weapon_thrown_throwing_knives");
 			break;
 		case 1222378998:
-			iVar0 = -764310200;
+			iVar0 = joaat("weapon_thrown_throwing_knives");
 			break;
 		case 2074469742:
-			iVar0 = -764310200;
+			iVar0 = joaat("weapon_thrown_throwing_knives");
 			break;
 		case 480079517:
-			iVar0 = -1504859554;
+			iVar0 = joaat("weapon_thrown_dynamite");
 			break;
 		case 840671577:
-			iVar0 = -1504859554;
+			iVar0 = joaat("weapon_thrown_dynamite");
 			break;
 		case joaat("ammo_molotov"):
-			iVar0 = 1885857703;
+			iVar0 = joaat("weapon_thrown_molotov");
 			break;
 		case -2006166057:
-			iVar0 = 1885857703;
+			iVar0 = joaat("weapon_thrown_molotov");
 			break;
 		case 1235846615:
-			iVar0 = -1511427369;
+			iVar0 = joaat("weapon_thrown_tomahawk");
 			break;
 		case -228768324:
-			iVar0 = 2133046983;
+			iVar0 = joaat("weapon_thrown_tomahawk_ancient");
 			break;
 		case -1411922943:
-			iVar0 = -1511427369;
+			iVar0 = joaat("weapon_thrown_tomahawk");
 			break;
 		case -834103244:
-			iVar0 = -1511427369;
+			iVar0 = joaat("weapon_thrown_tomahawk");
 			break;
 		case 424030678:
-			iVar0 = 165751297;
+			iVar0 = joaat("weapon_melee_hatchet");
 			break;
 		case 446901936:
-			iVar0 = 710736342;
+			iVar0 = joaat("weapon_melee_hatchet_hunter");
 			break;
 		case -1092841802:
-			iVar0 = -462374995;
+			iVar0 = joaat("weapon_melee_hatchet_hunter_rusted");
 			break;
 		case -1452241321:
-			iVar0 = 567069252;
+			iVar0 = joaat("weapon_melee_ancient_hatchet");
 			break;
 		case -1188697038:
-			iVar0 = -281894307;
+			iVar0 = joaat("weapon_melee_cleaver");
 			break;
 		case 1671758975:
-			iVar0 = -1127860381;
+			iVar0 = joaat("weapon_melee_hatchet_double_bit");
 			break;
 		case -893514737:
-			iVar0 = -1894785522;
+			iVar0 = joaat("weapon_melee_hatchet_double_bit_rusted");
 			break;
 		case -2063089161:
-			iVar0 = 469927692;
+			iVar0 = joaat("weapon_melee_hatchet_hewing");
 			break;
 		case -452897925:
-			iVar0 = 1960591597;
+			iVar0 = joaat("weapon_melee_hatchet_viking");
 			break;
 		default:
 			break;
@@ -13579,7 +13579,7 @@ int func_402(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 	if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, 0))
 	{
 		Var0 = { func_484(iParam0, 0, 1) };
-		iVar5 = 1728382685;
+		iVar5 = 1728382685; /* GXTEntry: "Right" */
 		Var6.f_9 = -1591664384;
 		iVar28 = 0;
 		while (iVar28 < 4)
@@ -13664,17 +13664,17 @@ int func_404(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 			{
 				func_402(iVar0, iVar6, bParam3, bParam4, 0, 0, iParam1, 0);
 			}
-			else if (iVar0 == -1415022764 || iVar0 == -160924582)
+			else if (iVar0 == joaat("weapon_fishingrod") || iVar0 == joaat("weapon_kit_binoculars"))
 			{
 				func_402(iVar0, 0, bParam3, bParam4, 0, 0, iParam1, 0);
 			}
-			else if (iVar0 == 2055893578)
+			else if (iVar0 == joaat("weapon_lasso"))
 			{
 				func_402(iVar0, 1, bParam3, bParam4, 0, 0, iParam1, 0);
 			}
 			else if (WEAPON::_0x959383DCD42040DA(iVar0))
 			{
-				if (iVar0 == 494733111 && !func_15())
+				if (iVar0 == joaat("weapon_melee_knife_john") && !func_15())
 				{
 					return 0;
 				}
@@ -13752,7 +13752,7 @@ int func_406(int iParam0, int iParam1, int iParam2)
 		WEAPON::GET_MAX_AMMO(Global_35, &iVar2, iVar4);
 	}
 	iVar5 = (iVar2 - iVar3);
-	if (iVar4 == -2002235300)
+	if (iVar4 == joaat("weapon_bow"))
 	{
 		iVar1 = 5;
 	}
@@ -14736,34 +14736,34 @@ void func_432(int iParam0, int iParam1, bool bParam2)
 			sVar1 = "COL_TH_OBJ";
 			sVar3 = "COL_TH_SUB_JACK_HALL";
 			vVar4 = { -1678.832f, -335.5439f, 172.9001f };
-			iVar0 = -293111728;
+			iVar0 = -293111728; /* GXTEntry: "Jack Hall Gang Treasure" */
 			break;
 		case 666607663:
 			sVar1 = "COL_TH_OBJ";
 			sVar3 = "COL_TH_SUB_HIGH_STAKES";
 			vVar4 = { -1678.832f, -335.5439f, 172.9001f };
-			iVar0 = 1406403390;
+			iVar0 = 1406403390; /* GXTEntry: "High Stakes Treasure" */
 			break;
 		case -220219788:
 			sVar1 = "COL_TH_OBJ";
 			sVar3 = "COL_TH_SUB_POISONOUS_TRAIL";
 			vVar4 = { -1678.832f, -335.5439f, 172.9001f };
-			iVar0 = 917780075;
+			iVar0 = 917780075; /* GXTEntry: "The Poisonous Trail Treasure" */
 			break;
 		case 218622660:
 			sVar3 = "COL_TH_SUB_TRESOR_DES_MORTS";
 			vVar4 = { -1678.832f, -335.5439f, 172.9001f };
-			iVar0 = -857004026;
+			iVar0 = -857004026; /* GXTEntry: "Le Tresor des Morts Treasure" */
 			break;
 		case 390004462:
 			sVar3 = "COL_TH_SUB_ELEMENTAL_TRAIL";
 			vVar4 = { -1678.832f, -335.5439f, 172.9001f };
-			iVar0 = -1108821735;
+			iVar0 = -1108821735; /* GXTEntry: "The Elemental Trail Treasure" */
 			break;
 		case 6410548:
 			sVar3 = "COL_TH_SUB_LANDMARKS_OF_RICHES";
 			vVar4 = { -1678.832f, -335.5439f, 172.9001f };
-			iVar0 = -208135085;
+			iVar0 = -208135085; /* GXTEntry: "Landmarks Of Riches Treasure" */
 			break;
 	}
 	switch (iParam1)
@@ -14907,32 +14907,32 @@ void func_433(int iParam0, bool bParam1)
 		case 499813453:
 			sVar1 = "COL_TH_TITLE";
 			sVar2 = "COL_TH_SUB_JACK_HALL";
-			iVar0 = -293111728;
+			iVar0 = -293111728; /* GXTEntry: "Jack Hall Gang Treasure" */
 			break;
 		case 666607663:
 			sVar1 = "COL_TH_TITLE";
 			sVar2 = "COL_TH_SUB_HIGH_STAKES";
-			iVar0 = 1406403390;
+			iVar0 = 1406403390; /* GXTEntry: "High Stakes Treasure" */
 			break;
 		case -220219788:
 			sVar1 = "COL_TH_TITLE";
 			sVar2 = "COL_TH_SUB_POISONOUS_TRAIL";
-			iVar0 = 917780075;
+			iVar0 = 917780075; /* GXTEntry: "The Poisonous Trail Treasure" */
 			break;
 		case 218622660:
 			sVar1 = "COL_TH_TITLE";
 			sVar2 = "COL_TH_SUB_TRESOR_DES_MORTS";
-			iVar0 = -857004026;
+			iVar0 = -857004026; /* GXTEntry: "Le Tresor des Morts Treasure" */
 			break;
 		case 390004462:
 			sVar1 = "COL_TH_TITLE";
 			sVar2 = "COL_TH_SUB_ELEMENTAL_TRAIL";
-			iVar0 = -1108821735;
+			iVar0 = -1108821735; /* GXTEntry: "The Elemental Trail Treasure" */
 			break;
 		case 6410548:
 			sVar1 = "COL_TH_TITLE";
 			sVar2 = "COL_TH_SUB_LANDMARKS_OF_RICHES";
-			iVar0 = -208135085;
+			iVar0 = -208135085; /* GXTEntry: "Landmarks Of Riches Treasure" */
 			break;
 	}
 	sVar3 = "COL_CTX_PLAYER_LOG";
@@ -15074,16 +15074,16 @@ void func_445(int iParam0)
 	switch (*iParam0)
 	{
 		case -1424823393:
-			*iParam0 = -885810591;
+			*iParam0 = -885810591; /* GXTEntry: "Premium Cigarettes" */
 			break;
 		case 998010398:
-			*iParam0 = -324053813;
+			*iParam0 = -324053813; /* GXTEntry: "Chewing Tobacco" */
 			break;
 		case 1358243310:
-			*iParam0 = 1463786584;
+			*iParam0 = 1463786584; /* GXTEntry: "Cigarettes" */
 			break;
 		case -541584777:
-			*iParam0 = 206762213;
+			*iParam0 = 206762213; /* GXTEntry: "Cocaine Gum" */
 			break;
 	}
 }
@@ -15898,8 +15898,8 @@ void func_466()
 	Var1 = { func_683() };
 	if (!INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_400(127400949);
-		if (func_402(127400949, 0, 0, 0, 0, 0, 752097756, 0))
+		func_400(joaat("weapon_revolver_doubleaction"));
+		if (func_402(joaat("weapon_revolver_doubleaction"), 0, 0, 0, 0, 0, 752097756, 0))
 		{
 			Var1 = { func_683() };
 		}
@@ -15926,7 +15926,7 @@ void func_466()
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar16, false, 0, false);
 			if (func_487(iVar16))
 			{
-				if (iVar16 != 127400949)
+				if (iVar16 != joaat("weapon_revolver_doubleaction"))
 				{
 					if (WEAPON::_0xD955FEE4B87AFA07(iVar16))
 					{
@@ -15934,29 +15934,29 @@ void func_466()
 						{
 							WEAPON::SET_CURRENT_PED_WEAPON(Global_35, iVar16, true, 3, false, false);
 						}
-						WEAPON::SET_CURRENT_PED_WEAPON(Global_35, 127400949, true, 0, false, false);
+						WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_revolver_doubleaction"), true, 0, false, false);
 					}
 					else if (WEAPON::_0x0556E9D2ECF39D01(iVar16))
 					{
-						if ((func_395(24) && func_487(iVar15)) && iVar15 != 127400949)
+						if ((func_395(24) && func_487(iVar15)) && iVar15 != joaat("weapon_revolver_doubleaction"))
 						{
 							WEAPON::SET_CURRENT_PED_WEAPON(Global_35, iVar15, true, 3, false, false);
 						}
-						WEAPON::SET_CURRENT_PED_WEAPON(Global_35, 127400949, true, 2, false, false);
+						WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_revolver_doubleaction"), true, 2, false, false);
 					}
 				}
 			}
 			else if (!func_487(iVar15))
 			{
-				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, 127400949, true, 2, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_revolver_doubleaction"), true, 2, false, false);
 			}
-			else if (iVar15 != 127400949)
+			else if (iVar15 != joaat("weapon_revolver_doubleaction"))
 			{
 				if (func_395(24))
 				{
 					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, iVar15, true, 3, false, false);
 				}
-				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, 127400949, true, 2, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_revolver_doubleaction"), true, 2, false, false);
 			}
 		}
 		UNLOCK::_UNLOCK_SET_UNLOCKED(-236259196, true);
@@ -16476,24 +16476,24 @@ struct<5> func_484(int iParam0, bool bParam1, int iParam2)
 				Var5.f_9 = -1591664384;
 				if (!func_595(iParam0, &Var0, 1728382685, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_595(iParam0, &Var0, -649335959, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_596(iParam0, &Var5, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case -1784221369:
@@ -18243,7 +18243,7 @@ int func_526()
 	}
 	if (Global_1572887->f_12 == -1)
 	{
-		if (Global_1935630->f_44 == 2055893578)
+		if (Global_1935630->f_44 == joaat("weapon_lasso"))
 		{
 			return PAD::IS_CONTROL_PRESSED(0, 130948705);
 		}
@@ -18466,7 +18466,7 @@ int func_535(int iParam0, int iParam1, bool bParam2, int iParam3)
 		{
 			if (WEAPON::IS_WEAPON_VALID(Global_1935630->f_44))
 			{
-				if (WEAPON::_0x959383DCD42040DA(Global_1935630->f_44) || Global_1935630->f_44 == -618550132)
+				if (WEAPON::_0x959383DCD42040DA(Global_1935630->f_44) || Global_1935630->f_44 == joaat("weapon_melee_knife"))
 				{
 					if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, Global_1935630->f_44, iParam1))
 					{
@@ -20216,11 +20216,11 @@ void func_591(int iParam0)
 				{
 					if (func_15())
 					{
-						iVar0 = -1515874150;
+						iVar0 = -1515874150; /* GXTEntry: "John\'s Off-Hand Holster" */
 					}
 					else
 					{
-						iVar0 = 899611344;
+						iVar0 = 899611344; /* GXTEntry: "Off-Hand Holster" */
 					}
 					if (!func_258(iVar0, 1, 0))
 					{
@@ -21773,7 +21773,7 @@ int func_605(int iParam0, int iParam1, var uParam2)
 		iVar5 = func_472(iVar4, 1);
 		if (func_790(&(Global_1946804->f_1497)) >= 2 && &Global_1946804->f_1497.f_1[iVar5 /*3*/] != iVar8)
 		{
-			*uParam2 = -265166256;
+			*uParam2 = -265166256; /* GXTEntry: "You are wearing too many of this item. Remove some before equipping more." */
 			return 0;
 		}
 		bVar7 = true;
@@ -21783,14 +21783,14 @@ int func_605(int iParam0, int iParam1, var uParam2)
 		case 1742327865:
 			if (PED::_0x5FF9A878C3D115B8(iVar8, iVar2, bVar1) == 2056714954 && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
 			{
-				*uParam2 = 111371848;
+				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
 			}
 			iVar5 = 10;
 			iVar3 = func_397(&(Global_1946804->f_1497.f_1[iVar5 /*3*/]));
 			if (bVar7 && iVar3 == -525676072)
 			{
-				*uParam2 = -1938792745;
+				*uParam2 = -1938792745; /* GXTEntry: "Your neckwear does not allow for changing your collar." */
 				return 0;
 			}
 			break;
@@ -21798,7 +21798,7 @@ int func_605(int iParam0, int iParam1, var uParam2)
 			iVar5 = 35;
 			if (&Global_1946804->f_1497.f_1[iVar5 /*3*/] != &Global_1946804->f_57[iVar5 /*11*/] && func_393(iParam1, -1638171711))
 			{
-				*uParam2 = 187275271;
+				*uParam2 = 187275271; /* GXTEntry: "Your chaps do not support this." */
 				return 0;
 			}
 			break;
@@ -21811,14 +21811,14 @@ int func_605(int iParam0, int iParam1, var uParam2)
 			}
 			if (PED::_0xFB4891BD7578CDC1(iParam0, -1968556728))
 			{
-				*uParam2 = -849690042;
+				*uParam2 = -849690042; /* GXTEntry: "Your boots do not support having spurs." */
 				return 0;
 			}
 			break;
 		case -1505978566:
 			if (func_791(1868067663, &uVar0))
 			{
-				*uParam2 = 939463734;
+				*uParam2 = 939463734; /* GXTEntry: "Item cannot be worn with coats." */
 				return 0;
 			}
 		case -1130865351:
@@ -21834,7 +21834,8 @@ int func_605(int iParam0, int iParam1, var uParam2)
 				iVar9 = func_792(&(Global_1946804->f_1497.f_1[iVar5 /*3*/]), iVar4, iVar2, bVar1);
 				if (((iVar11 + iVar10) - iVar9) > 31)
 				{
-					*uParam2 = -1608241763;
+					*uParam2 = -1608241763; /* GXTEntry: "You are wearing too many items. Something must be removed to preview other items." +
+    "" */
 					return 0;
 				}
 				Jump @726; //curOff = 583
@@ -21843,7 +21844,7 @@ int func_605(int iParam0, int iParam1, var uParam2)
 				iVar6 = 35;
 				if (iParam1 != &Global_1946804->f_57[iVar6 /*11*/] && func_393(&(Global_1946804->f_1497.f_1[iVar5 /*3*/]), -1638171711))
 				{
-					*uParam2 = -357399012;
+					*uParam2 = -357399012; /* GXTEntry: "Your boots do not support this." */
 					return 0;
 				}
 				if (iVar3 == 1769055947 || iVar3 == 1545016984)
@@ -21933,69 +21934,69 @@ int func_610(int iParam0, int iParam1)
 		case -62615415:
 			if (iParam1 == 425319238)
 			{
-				iVar0 = 363594903;
-				iVar1 = -1217729597;
+				iVar0 = 363594903; /* GXTEntry: "Vintage Civil War Handcuffs" */
+				iVar1 = -1217729597; /* GXTEntry: "Gold Jointed Bracelet" */
 			}
 			else if (iParam1 == 363594903)
 			{
-				iVar0 = 425319238;
-				iVar1 = -1217729597;
+				iVar0 = 425319238; /* GXTEntry: "Legendary Alligator Tooth" */
+				iVar1 = -1217729597; /* GXTEntry: "Gold Jointed Bracelet" */
 			}
 			else
 			{
-				iVar0 = 425319238;
-				iVar1 = 363594903;
+				iVar0 = 425319238; /* GXTEntry: "Legendary Alligator Tooth" */
+				iVar1 = 363594903; /* GXTEntry: "Vintage Civil War Handcuffs" */
 			}
 			break;
 		case -832719552:
 			if (iParam1 == -1540119664)
 			{
-				iVar0 = 2100194981;
-				iVar1 = 446659922;
+				iVar0 = 2100194981; /* GXTEntry: "Quartz Chunk" */
+				iVar1 = 446659922; /* GXTEntry: "Silver Chain Bracelet" */
 			}
 			else if (iParam1 == 2100194981)
 			{
-				iVar0 = -1540119664;
-				iVar1 = 446659922;
+				iVar0 = -1540119664; /* GXTEntry: "Legendary Bear Claw" */
+				iVar1 = 446659922; /* GXTEntry: "Silver Chain Bracelet" */
 			}
 			else
 			{
-				iVar0 = -1540119664;
-				iVar1 = 2100194981;
+				iVar0 = -1540119664; /* GXTEntry: "Legendary Bear Claw" */
+				iVar1 = 2100194981; /* GXTEntry: "Quartz Chunk" */
 			}
 			break;
 		case -184823984:
 			if (iParam1 == -390982951)
 			{
-				iVar0 = -1018798851;
-				iVar1 = -757567246;
+				iVar0 = -1018798851; /* GXTEntry: "Cobalt Petrified Wood" */
+				iVar1 = -757567246; /* GXTEntry: "Gold Earring" */
 			}
 			else if (iParam1 == -1018798851)
 			{
-				iVar0 = -390982951;
-				iVar1 = -757567246;
+				iVar0 = -390982951; /* GXTEntry: "Legendary Boar Tusk" */
+				iVar1 = -757567246; /* GXTEntry: "Gold Earring" */
 			}
 			else
 			{
-				iVar0 = -390982951;
-				iVar1 = -1018798851;
+				iVar0 = -390982951; /* GXTEntry: "Legendary Boar Tusk" */
+				iVar1 = -1018798851; /* GXTEntry: "Cobalt Petrified Wood" */
 			}
 			break;
 		case -1941112926:
 			if (iParam1 == -2054602073)
 			{
-				iVar0 = -378441099;
-				iVar1 = -585121677;
+				iVar0 = -378441099; /* GXTEntry: "Abalone Shell Fragment" */
+				iVar1 = -585121677; /* GXTEntry: "Silver Earring" */
 			}
 			else if (iParam1 == -378441099)
 			{
-				iVar0 = -2054602073;
-				iVar1 = -585121677;
+				iVar0 = -2054602073; /* GXTEntry: "Legendary Bison Horn" */
+				iVar1 = -585121677; /* GXTEntry: "Silver Earring" */
 			}
 			else
 			{
-				iVar0 = -2054602073;
-				iVar1 = -378441099;
+				iVar0 = -2054602073; /* GXTEntry: "Legendary Bison Horn" */
+				iVar1 = -378441099; /* GXTEntry: "Abalone Shell Fragment" */
 			}
 			break;
 	}
@@ -22148,33 +22149,33 @@ int func_619(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			iVar9 = 281887510;
-			iVar10 = -164081697;
-			iVar11 = -1161319399;
-			iVar12 = 728781265;
+			iVar9 = 281887510; /* GXTEntry: "Little Egret Plume" */
+			iVar10 = -164081697; /* GXTEntry: "Reddish Egret Plume" */
+			iVar11 = -1161319399; /* GXTEntry: "Snowy Egret Plume" */
+			iVar12 = 728781265; /* GXTEntry: "Lady of the Night Orchid" */
 			break;
 		case 2:
-			iVar9 = -222563712;
-			iVar10 = 1794857344;
-			iVar11 = 1952409553;
+			iVar9 = -222563712; /* GXTEntry: "Heron Plume" */
+			iVar10 = 1794857344; /* GXTEntry: "Lady Slipper Orchid" */
+			iVar11 = 1952409553; /* GXTEntry: "Moccasin Flower Orchid" */
 			break;
 		case 4:
 			iVar9 = 2116770557;
-			iVar10 = -651064726;
-			iVar11 = -404270094;
-			iVar12 = 2093126853;
+			iVar10 = -651064726; /* GXTEntry: "Acuna\'s Star Orchid" */
+			iVar11 = -404270094; /* GXTEntry: "Cigar Orchid" */
+			iVar12 = 2093126853; /* GXTEntry: "Ghost Orchid" */
 			break;
 		case 8:
-			iVar9 = 2085530337;
-			iVar10 = -150591160;
-			iVar11 = -323969289;
-			iVar12 = 1504361882;
+			iVar9 = 2085530337; /* GXTEntry: "Spoonbill Plume" */
+			iVar10 = -150591160; /* GXTEntry: "Night Scented Orchid" */
+			iVar11 = -323969289; /* GXTEntry: "Rat Tail Orchid" */
+			iVar12 = 1504361882; /* GXTEntry: "Spider Orchid" */
 			break;
 		case 16:
-			iVar9 = -1521783510;
-			iVar10 = 1714875242;
-			iVar11 = 1019229063;
-			iVar12 = 927763737;
+			iVar9 = -1521783510; /* GXTEntry: "Clamshell Orchid" */
+			iVar10 = 1714875242; /* GXTEntry: "Dragon\'s Mouth Orchid" */
+			iVar11 = 1019229063; /* GXTEntry: "Queen\'s Orchid" */
+			iVar12 = 927763737; /* GXTEntry: "Sparrow\'s Egg Orchid" */
 			break;
 	}
 	iVar1 = func_628(iVar9);
@@ -22266,128 +22267,128 @@ int func_623(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4, b
 		case -949689219:
 			if (iParam1 == -1866642239)
 			{
-				iVar0 = 444160793;
+				iVar0 = 444160793; /* GXTEntry: "Perfect Squirrel Carcass" */
 			}
 			else if (iParam1 == 444160793)
 			{
-				iVar0 = -1866642239;
+				iVar0 = -1866642239; /* GXTEntry: "Perfect Rabbit Carcass" */
 			}
 			break;
 		case -1248968496:
 			if (iParam1 == -1969404854)
 			{
-				iVar0 = 1761263432;
-				iVar1 = -843795569;
+				iVar0 = 1761263432; /* GXTEntry: "Perfect Rat Carcass" */
+				iVar1 = -843795569; /* GXTEntry: "Perfect Woodpecker Carcass" */
 			}
 			else if (iParam1 == 1761263432)
 			{
-				iVar0 = -1969404854;
-				iVar1 = -843795569;
+				iVar0 = -1969404854; /* GXTEntry: "Perfect Cardinal Carcass" */
+				iVar1 = -843795569; /* GXTEntry: "Perfect Woodpecker Carcass" */
 			}
 			else if (iParam1 == -843795569)
 			{
-				iVar0 = -1969404854;
-				iVar1 = 1761263432;
+				iVar0 = -1969404854; /* GXTEntry: "Perfect Cardinal Carcass" */
+				iVar1 = 1761263432; /* GXTEntry: "Perfect Rat Carcass" */
 			}
 			break;
 		case 1706369307:
 			if (iParam1 == -832850511)
 			{
-				iVar0 = -935543049;
-				iVar1 = -1464585113;
-				iVar2 = -1290897778;
+				iVar0 = -935543049; /* GXTEntry: "Perfect Opossum Carcass" */
+				iVar1 = -1464585113; /* GXTEntry: "Perfect Oriole Carcass" */
+				iVar2 = -1290897778; /* GXTEntry: "Perfect Robin Carcass" */
 			}
 			else if (iParam1 == -935543049)
 			{
-				iVar0 = -832850511;
-				iVar1 = -1464585113;
-				iVar2 = -1290897778;
+				iVar0 = -832850511; /* GXTEntry: "Perfect Chipmunk Carcass" */
+				iVar1 = -1464585113; /* GXTEntry: "Perfect Oriole Carcass" */
+				iVar2 = -1290897778; /* GXTEntry: "Perfect Robin Carcass" */
 			}
 			else if (iParam1 == -1464585113)
 			{
-				iVar0 = -832850511;
-				iVar1 = -935543049;
-				iVar2 = -1290897778;
+				iVar0 = -832850511; /* GXTEntry: "Perfect Chipmunk Carcass" */
+				iVar1 = -935543049; /* GXTEntry: "Perfect Opossum Carcass" */
+				iVar2 = -1290897778; /* GXTEntry: "Perfect Robin Carcass" */
 			}
 			else if (iParam1 == -1290897778)
 			{
-				iVar0 = -832850511;
-				iVar1 = -935543049;
-				iVar2 = -1464585113;
+				iVar0 = -832850511; /* GXTEntry: "Perfect Chipmunk Carcass" */
+				iVar1 = -935543049; /* GXTEntry: "Perfect Opossum Carcass" */
+				iVar2 = -1464585113; /* GXTEntry: "Perfect Oriole Carcass" */
 			}
 			break;
 		case 1520110311:
 			if (iParam1 == -100913452)
 			{
-				iVar0 = 313332607;
-				iVar1 = -124539232;
-				iVar2 = 102446365;
-				iVar3 = -1882344824;
+				iVar0 = 313332607; /* GXTEntry: "Perfect Sparrow Carcass" */
+				iVar1 = -124539232; /* GXTEntry: "Perfect Toad Carcass" */
+				iVar2 = 102446365; /* GXTEntry: "Perfect Skunk Carcass" */
+				iVar3 = -1882344824; /* GXTEntry: "Perfect Bullfrog Carcass" */
 			}
 			else if (iParam1 == 313332607)
 			{
-				iVar0 = -100913452;
-				iVar1 = -124539232;
-				iVar2 = 102446365;
-				iVar3 = -1882344824;
+				iVar0 = -100913452; /* GXTEntry: "Perfect Songbird Carcass" */
+				iVar1 = -124539232; /* GXTEntry: "Perfect Toad Carcass" */
+				iVar2 = 102446365; /* GXTEntry: "Perfect Skunk Carcass" */
+				iVar3 = -1882344824; /* GXTEntry: "Perfect Bullfrog Carcass" */
 			}
 			else if (iParam1 == -124539232)
 			{
-				iVar0 = -100913452;
-				iVar1 = 313332607;
-				iVar2 = 102446365;
-				iVar3 = -1882344824;
+				iVar0 = -100913452; /* GXTEntry: "Perfect Songbird Carcass" */
+				iVar1 = 313332607; /* GXTEntry: "Perfect Sparrow Carcass" */
+				iVar2 = 102446365; /* GXTEntry: "Perfect Skunk Carcass" */
+				iVar3 = -1882344824; /* GXTEntry: "Perfect Bullfrog Carcass" */
 			}
 			else if (iParam1 == 102446365)
 			{
-				iVar0 = -100913452;
-				iVar1 = 313332607;
-				iVar2 = -124539232;
-				iVar3 = -1882344824;
+				iVar0 = -100913452; /* GXTEntry: "Perfect Songbird Carcass" */
+				iVar1 = 313332607; /* GXTEntry: "Perfect Sparrow Carcass" */
+				iVar2 = -124539232; /* GXTEntry: "Perfect Toad Carcass" */
+				iVar3 = -1882344824; /* GXTEntry: "Perfect Bullfrog Carcass" */
 			}
 			else if (iParam1 == -1882344824)
 			{
-				iVar0 = -100913452;
-				iVar1 = 313332607;
-				iVar2 = -124539232;
-				iVar3 = 102446365;
+				iVar0 = -100913452; /* GXTEntry: "Perfect Songbird Carcass" */
+				iVar1 = 313332607; /* GXTEntry: "Perfect Sparrow Carcass" */
+				iVar2 = -124539232; /* GXTEntry: "Perfect Toad Carcass" */
+				iVar3 = 102446365; /* GXTEntry: "Perfect Skunk Carcass" */
 			}
 			break;
 		case -1992824800:
 			if (iParam1 == 905173572)
 			{
-				iVar0 = 1432949803;
-				iVar1 = -983831788;
-				iVar2 = 59384454;
-				iVar3 = 924882045;
+				iVar0 = 1432949803; /* GXTEntry: "Perfect Bat Carcass" */
+				iVar1 = -983831788; /* GXTEntry: "Perfect Blue Jay Carcass" */
+				iVar2 = 59384454; /* GXTEntry: "Perfect Crow Carcass" */
+				iVar3 = 924882045; /* GXTEntry: "Perfect Beaver Carcass" */
 			}
 			else if (iParam1 == 1432949803)
 			{
-				iVar0 = 905173572;
-				iVar1 = -983831788;
-				iVar2 = 59384454;
-				iVar3 = 924882045;
+				iVar0 = 905173572; /* GXTEntry: "Perfect Cedar Waxwing Carcass" */
+				iVar1 = -983831788; /* GXTEntry: "Perfect Blue Jay Carcass" */
+				iVar2 = 59384454; /* GXTEntry: "Perfect Crow Carcass" */
+				iVar3 = 924882045; /* GXTEntry: "Perfect Beaver Carcass" */
 			}
 			else if (iParam1 == -983831788)
 			{
-				iVar0 = 905173572;
-				iVar1 = 1432949803;
-				iVar2 = 59384454;
-				iVar3 = 924882045;
+				iVar0 = 905173572; /* GXTEntry: "Perfect Cedar Waxwing Carcass" */
+				iVar1 = 1432949803; /* GXTEntry: "Perfect Bat Carcass" */
+				iVar2 = 59384454; /* GXTEntry: "Perfect Crow Carcass" */
+				iVar3 = 924882045; /* GXTEntry: "Perfect Beaver Carcass" */
 			}
 			else if (iParam1 == 59384454)
 			{
-				iVar0 = 905173572;
-				iVar1 = 1432949803;
-				iVar2 = -983831788;
-				iVar3 = 924882045;
+				iVar0 = 905173572; /* GXTEntry: "Perfect Cedar Waxwing Carcass" */
+				iVar1 = 1432949803; /* GXTEntry: "Perfect Bat Carcass" */
+				iVar2 = -983831788; /* GXTEntry: "Perfect Blue Jay Carcass" */
+				iVar3 = 924882045; /* GXTEntry: "Perfect Beaver Carcass" */
 			}
 			else if (iParam1 == 924882045)
 			{
-				iVar0 = 905173572;
-				iVar1 = 1432949803;
-				iVar2 = -983831788;
-				iVar3 = 59384454;
+				iVar0 = 905173572; /* GXTEntry: "Perfect Cedar Waxwing Carcass" */
+				iVar1 = 1432949803; /* GXTEntry: "Perfect Bat Carcass" */
+				iVar2 = -983831788; /* GXTEntry: "Perfect Blue Jay Carcass" */
+				iVar3 = 59384454; /* GXTEntry: "Perfect Crow Carcass" */
 			}
 			break;
 	}
@@ -22999,33 +23000,33 @@ int func_627(int iParam0, int iParam1, int iParam2)
 	switch (iParam2)
 	{
 		case 1:
-			iVar9 = 281887510;
-			iVar10 = -164081697;
-			iVar11 = -1161319399;
-			iVar12 = 728781265;
+			iVar9 = 281887510; /* GXTEntry: "Little Egret Plume" */
+			iVar10 = -164081697; /* GXTEntry: "Reddish Egret Plume" */
+			iVar11 = -1161319399; /* GXTEntry: "Snowy Egret Plume" */
+			iVar12 = 728781265; /* GXTEntry: "Lady of the Night Orchid" */
 			break;
 		case 2:
-			iVar9 = -222563712;
-			iVar10 = 1794857344;
-			iVar11 = 1952409553;
+			iVar9 = -222563712; /* GXTEntry: "Heron Plume" */
+			iVar10 = 1794857344; /* GXTEntry: "Lady Slipper Orchid" */
+			iVar11 = 1952409553; /* GXTEntry: "Moccasin Flower Orchid" */
 			break;
 		case 4:
 			iVar9 = 2116770557;
-			iVar10 = -651064726;
-			iVar11 = -404270094;
-			iVar12 = 2093126853;
+			iVar10 = -651064726; /* GXTEntry: "Acuna\'s Star Orchid" */
+			iVar11 = -404270094; /* GXTEntry: "Cigar Orchid" */
+			iVar12 = 2093126853; /* GXTEntry: "Ghost Orchid" */
 			break;
 		case 8:
-			iVar9 = 2085530337;
-			iVar10 = -150591160;
-			iVar11 = -323969289;
-			iVar12 = 1504361882;
+			iVar9 = 2085530337; /* GXTEntry: "Spoonbill Plume" */
+			iVar10 = -150591160; /* GXTEntry: "Night Scented Orchid" */
+			iVar11 = -323969289; /* GXTEntry: "Rat Tail Orchid" */
+			iVar12 = 1504361882; /* GXTEntry: "Spider Orchid" */
 			break;
 		case 16:
-			iVar9 = -1521783510;
-			iVar10 = 1714875242;
-			iVar11 = 1019229063;
-			iVar12 = 927763737;
+			iVar9 = -1521783510; /* GXTEntry: "Clamshell Orchid" */
+			iVar10 = 1714875242; /* GXTEntry: "Dragon\'s Mouth Orchid" */
+			iVar11 = 1019229063; /* GXTEntry: "Queen\'s Orchid" */
+			iVar12 = 927763737; /* GXTEntry: "Sparrow\'s Egg Orchid" */
 			break;
 	}
 	iVar1 = func_628(iVar9);
@@ -23276,19 +23277,19 @@ void func_639(int iParam0, var uParam1, var uParam2)
 	{
 		case 1234009870:
 			*uParam1 = 1802325493;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case -1202134084:
 			*uParam1 = -864693164;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case 1297050066:
 			*uParam1 = -603289736;
-			*uParam2 = 1232099469;
+			*uParam2 = 1232099469; /* GXTEntry: "Revolver Cartridges - Express" */
 			break;
 		case -1780177928:
 			*uParam1 = -1803237008;
-			*uParam2 = -2084181920;
+			*uParam2 = -2084181920; /* GXTEntry: "Revolver Cartridges - High Velocity" */
 			break;
 		case -1467836497:
 			*uParam1 = -1175521284;
@@ -23300,11 +23301,11 @@ void func_639(int iParam0, var uParam1, var uParam2)
 			break;
 		case -153287664:
 			*uParam1 = -1650796693;
-			*uParam2 = 836939099;
+			*uParam2 = 836939099; /* GXTEntry: "Pistol Cartridges - Express" */
 			break;
 		case 1845082736:
 			*uParam1 = -1521597660;
-			*uParam2 = -1411815376;
+			*uParam2 = -1411815376; /* GXTEntry: "Pistol Cartridges - High Velocity" */
 			break;
 		case 406755377:
 			*uParam1 = -1288829256;
@@ -23316,27 +23317,27 @@ void func_639(int iParam0, var uParam1, var uParam2)
 			break;
 		case 45760211:
 			*uParam1 = -851229814;
-			*uParam2 = 1654725195;
+			*uParam2 = 1654725195; /* GXTEntry: "Rifle Cartridges - Express" */
 			break;
 		case -276295943:
 			*uParam1 = 914704115;
-			*uParam2 = 1858824185;
+			*uParam2 = 1858824185; /* GXTEntry: "Rifle Cartridges - High Velocity" */
 			break;
 		case -2029793397:
 			*uParam1 = -219896679;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case 2120467495:
 			*uParam1 = 516838334;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case -2075613923:
 			*uParam1 = -385817936;
-			*uParam2 = -578347576;
+			*uParam2 = -578347576; /* GXTEntry: "Repeater Cartridges - Express" */
 			break;
 		case 122656217:
 			*uParam1 = 1192843172;
-			*uParam2 = 231465488;
+			*uParam2 = 231465488; /* GXTEntry: "Repeater Cartridges - High Velocity" */
 			break;
 		case 2107187484:
 			*uParam1 = 954871696;
@@ -23348,7 +23349,7 @@ void func_639(int iParam0, var uParam1, var uParam2)
 			break;
 		case 305770744:
 			*uParam1 = -2087227528;
-			*uParam2 = 314966081;
+			*uParam2 = 314966081; /* GXTEntry: "Shotgun - Slug" */
 			break;
 		case 550900979:
 			*uParam1 = -618066518;
@@ -24324,7 +24325,7 @@ void func_676(bool bParam0)
 			func_850(&Var0);
 			func_851(Var0);
 		}
-		iVar7 = -868094182;
+		iVar7 = -868094182; /* GXTEntry: "Tennessee Walker - Chestnut Coat" */
 		iVar8 = 1074477367;
 		iVar9 = 1;
 		func_852(&iVar7, &iVar8, &iVar9);
@@ -24368,9 +24369,9 @@ int func_677()
 
 void func_678()
 {
-	func_243(34411519);
-	func_243(834124286);
-	func_243(-570967010);
+	func_243(joaat("weapon_pistol_volcanic"));
+	func_243(joaat("weapon_shotgun_pump"));
+	func_243(joaat("weapon_rifle_varmint"));
 }
 
 void func_679(bool bParam0)
@@ -24417,7 +24418,7 @@ void func_679(bool bParam0)
 		func_468(-1795542128, 3, 1, -142743235, 1);
 		func_468(-1757588258, 3, 1, -142743235, 1);
 		func_468(-1921080134, 10, 1, -142743235, 1);
-		iVar1 = -868094182;
+		iVar1 = -868094182; /* GXTEntry: "Tennessee Walker - Chestnut Coat" */
 		iVar2 = 1074477367;
 		iVar3 = 1;
 		func_852(&iVar1, &iVar2, &iVar3);
@@ -24483,7 +24484,7 @@ struct<14> func_683()
 			{
 				Jump @136; //curOff = 80
 			}
-			else if (Var3.f_4 != 127400949)
+			else if (Var3.f_4 != joaat("weapon_revolver_doubleaction"))
 			{
 			}
 			else if (func_596(Var3.f_4, &Var17, Var3.f_9))
@@ -25841,10 +25842,10 @@ int func_734()
 {
 	switch (Global_1935630->f_44)
 	{
-		case -164645981:
-		case -160924582:
-		case 827679807:
-		case 1247405313:
+		case joaat("weapon_melee_lantern"):
+		case joaat("weapon_kit_binoculars"):
+		case joaat("weapon_melee_lantern_electric"):
+		case joaat("weapon_melee_davy_lantern"):
 			return 1;
 		default:
 			break;
@@ -27073,19 +27074,19 @@ int func_745(var uParam0)
 	switch (*uParam0)
 	{
 		case -1073808995:
-			*uParam0 = -1753819339;
+			*uParam0 = -1753819339; /* GXTEntry: "Cricket Bait" */
 			return 1;
 		case 1903483453:
-			*uParam0 = -1527293029;
+			*uParam0 = -1527293029; /* GXTEntry: "Worm Bait" */
 			return 1;
 		case -541584777:
-			*uParam0 = 206762213;
+			*uParam0 = 206762213; /* GXTEntry: "Cocaine Gum" */
 			return 1;
 		case 998010398:
-			*uParam0 = -324053813;
+			*uParam0 = -324053813; /* GXTEntry: "Chewing Tobacco" */
 			return 1;
 		case -1424823393:
-			*uParam0 = -885810591;
+			*uParam0 = -885810591; /* GXTEntry: "Premium Cigarettes" */
 			return 1;
 		default:
 			break;
@@ -27106,7 +27107,7 @@ int func_746(int iParam0, var uParam1, int iParam2)
 		return 0;
 	}
 	Var0 = { func_484(iParam0, 0, 1) };
-	iVar5 = 1728382685;
+	iVar5 = 1728382685; /* GXTEntry: "Right" */
 	Var6.f_9 = -1591664384;
 	bVar28 = false;
 	iVar29 = 0;
@@ -27910,12 +27911,12 @@ void func_785()
 	{
 		func_900();
 		UNLOCK::_UNLOCK_SET_UNLOCKED(-1526891582, true);
-		func_400(-916314281);
-		func_446(-916314281, 1, 752097756);
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, -916314281, true, 2, false, false);
-		func_400(494733111);
-		func_446(494733111, 1, 752097756);
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, 494733111, true, 4, false, false);
+		func_400(joaat("weapon_revolver_cattleman_john"));
+		func_446(joaat("weapon_revolver_cattleman_john"), 1, 752097756);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_revolver_cattleman_john"), true, 2, false, false);
+		func_400(joaat("weapon_melee_knife_john"));
+		func_446(joaat("weapon_melee_knife_john"), 1, 752097756);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_melee_knife_john"), true, 4, false, false);
 	}
 }
 
@@ -29410,7 +29411,7 @@ void func_845(int iParam0)
 				if (bVar17)
 				{
 					func_475(&(Global_1946804->f_1616), 1661121390, &uVar39, 0, 1, 0, -2125499975);
-					Global_1946804->f_1616 = 166243423;
+					Global_1946804->f_1616 = 166243423; /* GXTEntry: "Custom Outfit" */
 					func_933(&(Global_1946804->f_1616), 0);
 					if (Global_40.f_7729 == 0)
 					{
@@ -29427,7 +29428,7 @@ void func_845(int iParam0)
 				if (bVar17)
 				{
 					func_475(&(Global_1946804->f_1616), -361635024, &uVar39, 0, 1, 0, 1160113249);
-					Global_1946804->f_1616 = 166243423;
+					Global_1946804->f_1616 = 166243423; /* GXTEntry: "Custom Outfit" */
 					func_933(&(Global_1946804->f_1616), 0);
 					if (Global_40.f_7729 == 0)
 					{
@@ -29797,9 +29798,9 @@ int func_860(int iParam0)
 	}
 	switch (iParam0)
 	{
-		case -450053710:
+		case joaat("a_c_horse_americanpaint_overo"):
 			return 1538827865;
-		case -1679658797:
+		case joaat("a_c_horse_americanpaint_tobiano"):
 			return -1792561227;
 		case 1792770814:
 			return 1033678910;
@@ -29819,7 +29820,7 @@ int func_860(int iParam0)
 			return 1762474047;
 		case 705691988:
 			return -828859553;
-		case 2130094044:
+		case joaat("a_c_horse_appaloosa_blanket"):
 			return 1410237043;
 		case -1554827654:
 			return -2026073756;
@@ -29827,9 +29828,9 @@ int func_860(int iParam0)
 			return 729407854;
 		case -1029277326:
 			return 2002245664;
-		case -1140650619:
+		case joaat("a_c_horse_appaloosa_leopard"):
 			return -1120227140;
-		case -1999198818:
+		case joaat("a_c_horse_arabian_black"):
 			return 1142681594;
 		case 1496579364:
 			return 1214981718;
@@ -29839,17 +29840,17 @@ int func_860(int iParam0)
 			return -864588185;
 		case 1576849913:
 			return 1482814085;
-		case -925223936:
+		case joaat("a_c_horse_arabian_white"):
 			return -1040918754;
-		case -1547438906:
+		case joaat("a_c_horse_ardennes_bayroan"):
 			return 535545841;
 		case -635239558:
 			return 1686036388;
-		case -2026265047:
+		case joaat("a_c_horse_ardennes_irongreyroan"):
 			return -621245377;
-		case -586898625:
+		case joaat("a_c_horse_belgian_blondchestnut"):
 			return 2125477381;
-		case 937246805:
+		case joaat("a_c_horse_belgian_mealychestnut"):
 			return 1808724704;
 		case 1593035738:
 			return -1745871311;
@@ -29875,7 +29876,7 @@ int func_860(int iParam0)
 			return 2100045093;
 		case -1342159303:
 			return 1097965086;
-		case -1154406788:
+		case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
 			return -2136667309;
 		case 2030804811:
 			return -376463594;
@@ -29889,11 +29890,11 @@ int func_860(int iParam0)
 			return 1714576673;
 		case -1180427609:
 			return 210760725;
-		case 2119038574:
+		case joaat("a_c_horse_mustang_wildbay"):
 			return 2051021144;
 		case 43825738:
 			return 1924406350;
-		case 2145697477:
+		case joaat("a_c_horse_nokota_blueroan"):
 			return -1990143531;
 		case -1261814606:
 			return 1741899492;
@@ -29921,7 +29922,7 @@ int func_860(int iParam0)
 			return 1917500091;
 		case -1924405794:
 			return -1043453945;
-		case 1861665605:
+		case joaat("a_c_horse_thoroughbred_dapplegrey"):
 			return 1723487083;
 		case -526169133:
 			return 2044230644;
@@ -29929,11 +29930,11 @@ int func_860(int iParam0)
 			return 1680713143;
 		case 1133837220:
 			return 344528703;
-		case 1702024301:
+		case joaat("a_c_horse_turkoman_gold"):
 			return -1674873797;
 		case -1604180548:
 			return 281852151;
-		case 1772321403:
+		case joaat("a_c_donkey_01"):
 			return -285185056;
 		case -1028075925:
 			return -1692268955;
@@ -29947,7 +29948,7 @@ int func_860(int iParam0)
 			return -1390353518;
 		case 446670976:
 			return 330935532;
-		case 802784330:
+		case joaat("a_c_horse_shire_ravenblack"):
 			return -935042458;
 		case 549900435:
 			return -41062704;
@@ -32023,33 +32024,33 @@ int func_972(int iParam0, int iParam1, int iParam2)
 	switch (iParam2)
 	{
 		case 1:
-			iVar9 = 281887510;
-			iVar10 = -164081697;
-			iVar11 = -1161319399;
-			iVar12 = 728781265;
+			iVar9 = 281887510; /* GXTEntry: "Little Egret Plume" */
+			iVar10 = -164081697; /* GXTEntry: "Reddish Egret Plume" */
+			iVar11 = -1161319399; /* GXTEntry: "Snowy Egret Plume" */
+			iVar12 = 728781265; /* GXTEntry: "Lady of the Night Orchid" */
 			break;
 		case 2:
-			iVar9 = -222563712;
-			iVar10 = 1794857344;
-			iVar11 = 1952409553;
+			iVar9 = -222563712; /* GXTEntry: "Heron Plume" */
+			iVar10 = 1794857344; /* GXTEntry: "Lady Slipper Orchid" */
+			iVar11 = 1952409553; /* GXTEntry: "Moccasin Flower Orchid" */
 			break;
 		case 4:
 			iVar9 = 2116770557;
-			iVar10 = -651064726;
-			iVar11 = -404270094;
-			iVar12 = 2093126853;
+			iVar10 = -651064726; /* GXTEntry: "Acuna\'s Star Orchid" */
+			iVar11 = -404270094; /* GXTEntry: "Cigar Orchid" */
+			iVar12 = 2093126853; /* GXTEntry: "Ghost Orchid" */
 			break;
 		case 8:
-			iVar9 = 2085530337;
-			iVar10 = -150591160;
-			iVar11 = -323969289;
-			iVar12 = 1504361882;
+			iVar9 = 2085530337; /* GXTEntry: "Spoonbill Plume" */
+			iVar10 = -150591160; /* GXTEntry: "Night Scented Orchid" */
+			iVar11 = -323969289; /* GXTEntry: "Rat Tail Orchid" */
+			iVar12 = 1504361882; /* GXTEntry: "Spider Orchid" */
 			break;
 		case 16:
-			iVar9 = -1521783510;
-			iVar10 = 1714875242;
-			iVar11 = 1019229063;
-			iVar12 = 927763737;
+			iVar9 = -1521783510; /* GXTEntry: "Clamshell Orchid" */
+			iVar10 = 1714875242; /* GXTEntry: "Dragon\'s Mouth Orchid" */
+			iVar11 = 1019229063; /* GXTEntry: "Queen\'s Orchid" */
+			iVar12 = 927763737; /* GXTEntry: "Sparrow\'s Egg Orchid" */
 			break;
 	}
 	iVar1 = func_628(iVar9);
@@ -32842,7 +32843,7 @@ int func_1013(int iParam0)
 	return 0;
 }
 
-void func_1014(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5)
+void func_1014(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4, bool bParam5)
 {
 	bool bVar0;
 	int iVar1;

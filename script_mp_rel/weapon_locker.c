@@ -221,9 +221,9 @@ void func_5(int* iParam0)
 	}
 }
 
-void func_6(int* iParam0, int iParam1)
+void func_6(var uParam0, int iParam1)
 {
-	iParam0->f_1 = iParam1;
+	uParam0->f_1 = iParam1;
 }
 
 int func_7(var uParam0)
@@ -504,22 +504,22 @@ int func_25(int* iParam0)
 	return iParam0->f_1;
 }
 
-void func_26(int* iParam0, int iParam1)
+void func_26(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
 		case -488492526:
-			func_39(iParam0);
+			func_39(uParam0);
 			break;
 	}
 }
 
-void func_27(int* iParam0, int iParam1)
+void func_27(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
 		case -488492526:
-			func_40(&(iParam0->f_2.f_13));
+			func_40(&(uParam0->f_2.f_13));
 			break;
 	}
 }
@@ -2137,19 +2137,19 @@ int func_111(int iParam0, var uParam1)
 	switch (iParam0)
 	{
 		case 4:
-			*uParam1 = 825261881;
+			*uParam1 = 825261881; /* GXTEntry: "Melee" */
 			return 1;
 		case 3:
-			*uParam1 = -2078679563;
+			*uParam1 = -2078679563; /* GXTEntry: "Off-Hand Sidearm" */
 			return 1;
 		case 2:
-			*uParam1 = 258571561;
+			*uParam1 = 258571561; /* GXTEntry: "Sidearm" */
 			return 1;
 		case 9:
-			*uParam1 = 1282885388;
+			*uParam1 = 1282885388; /* GXTEntry: "Back" */
 			return 1;
 		case 10:
-			*uParam1 = -1522249011;
+			*uParam1 = -1522249011; /* GXTEntry: "Shoulder" */
 			return 1;
 		default:
 			break;
@@ -2402,11 +2402,11 @@ int func_116(int iParam0, int iParam1, var uParam2)
 	}
 	uParam2->f_44 = 1;
 	uParam2->f_43 = func_133(&Var0) == 0;
-	uParam2->f_45 = 1039601264;
+	uParam2->f_45 = 1039601264; /* GXTEntry: "Store in Locker" */
 	uParam2->f_46 = -1073027202;
 	uParam2->f_48 = 1;
 	uParam2->f_47 = func_134(&Var0) == 0;
-	uParam2->f_49 = 1901059961;
+	uParam2->f_49 = 1901059961; /* GXTEntry: "Stow on your horse" */
 	uParam2->f_50 = -1103499950;
 	return 1;
 }
@@ -2745,24 +2745,24 @@ struct<5> func_125(int iParam0, bool bParam1, int iParam2)
 				Var6.f_9 = -1591664384;
 				if (!func_141(iParam0, &Var0, 1728382685, 0, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_141(iParam0, &Var0, -649335959, 0, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_142(iParam0, &Var6, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case joaat("coach"):
@@ -2967,21 +2967,21 @@ int func_131(int iParam0, var uParam1)
 	switch (iParam0)
 	{
 		case 4:
-			*uParam1 = 1000849983;
+			*uParam1 = 1000849983; /* GXTEntry: "Equip to Melee" */
 			return 1;
 		case 3:
-			*uParam1 = -327947319;
+			*uParam1 = -327947319; /* GXTEntry: "Equip Off-Hand Sidearm" */
 			return 1;
 		case 2:
-			*uParam1 = 1588146127;
+			*uParam1 = 1588146127; /* GXTEntry: "Equip Sidearm" */
 			return 1;
 		case 7:
 		case 9:
-			*uParam1 = 297513196;
+			*uParam1 = 297513196; /* GXTEntry: "Equip to Back" */
 			return 1;
 		case 8:
 		case 10:
-			*uParam1 = 108789798;
+			*uParam1 = 108789798; /* GXTEntry: "Equip to Shoulder" */
 			return 1;
 		default:
 			break;
@@ -3345,7 +3345,7 @@ void func_151(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_6 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_118(56), Param10.f_6);
 	if (Param10.f_7 == 0)
 	{
-		Param10.f_7 = -672301300;
+		Param10.f_7 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_118(58), Param10.f_7);
 	uParam0->f_9 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_118(59), Param10.f_8);
@@ -3355,7 +3355,7 @@ void func_151(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_12 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_118(62), Param10.f_12);
 	if (Param10.f_13 == 0)
 	{
-		Param10.f_13 = -672301300;
+		Param10.f_13 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_118(64), Param10.f_13);
 	uParam0->f_15 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_118(65), Param10.f_14);

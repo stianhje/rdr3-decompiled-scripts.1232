@@ -392,8 +392,8 @@ void func_16()
 		StringCopy(&(Local_13.f_37.f_1), "FME_ALERT_TITLE", 16);
 		StringCopy(&(Local_13.f_37.f_3), "FME_ALERT_J", 16);
 		Local_13.f_37.f_43 = 2;
-		Local_13.f_37.f_44[0] = -767935747;
-		Local_13.f_37.f_44[1] = 359624985;
+		Local_13.f_37.f_44[0] = -767935747; /* GXTEntry: "OK" */
+		Local_13.f_37.f_44[1] = 359624985; /* GXTEntry: "Cancel" */
 		func_39(&(Local_13.f_37), 0);
 		func_38(4);
 	}
@@ -405,8 +405,8 @@ void func_16()
 		StringCopy(&(Local_13.f_37.f_1), "FME_ALERT_TITLE", 16);
 		StringCopy(&(Local_13.f_37.f_3), "FME_ALERT_J_PL", 16);
 		Local_13.f_37.f_43 = 2;
-		Local_13.f_37.f_44[0] = -767935747;
-		Local_13.f_37.f_44[1] = 359624985;
+		Local_13.f_37.f_44[0] = -767935747; /* GXTEntry: "OK" */
+		Local_13.f_37.f_44[1] = 359624985; /* GXTEntry: "Cancel" */
 		func_39(&(Local_13.f_37), 0);
 		func_38(4);
 	}
@@ -418,7 +418,7 @@ void func_16()
 		StringCopy(&(Local_13.f_37.f_1), "FME_ALERT_TITLE", 16);
 		StringCopy(&(Local_13.f_37.f_3), "FME_ALERT_J_NM", 16);
 		Local_13.f_37.f_43 = 1;
-		Local_13.f_37.f_44[0] = -767935747;
+		Local_13.f_37.f_44[0] = -767935747; /* GXTEntry: "OK" */
 		func_39(&(Local_13.f_37), 0);
 		func_38(4);
 	}
@@ -715,7 +715,7 @@ bool func_30(var uParam0)
 int func_31(vector3 vParam0, var uParam3, var uParam4, int iParam5, char[4] cParam6, bool bParam7)
 {
 	vParam0.f_2 = iParam5;
-	if (DATAFILE::_DATAFILE_GET_STRING(uParam6, &vParam0))
+	if (DATAFILE::_DATAFILE_GET_STRING(cParam6, &vParam0))
 	{
 		return 1;
 	}
@@ -1117,7 +1117,7 @@ void func_44()
 	}
 }
 
-int func_45(int iParam0)
+int func_45(var uParam0)
 {
 	return 1;
 }
@@ -6584,7 +6584,7 @@ void func_258(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_6 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_201(56), Param10.f_6);
 	if (Param10.f_7 == 0)
 	{
-		Param10.f_7 = -672301300;
+		Param10.f_7 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_201(58), Param10.f_7);
 	uParam0->f_9 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_201(59), Param10.f_8);
@@ -6594,7 +6594,7 @@ void func_258(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_12 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_201(62), Param10.f_12);
 	if (Param10.f_13 == 0)
 	{
-		Param10.f_13 = -672301300;
+		Param10.f_13 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_201(64), Param10.f_13);
 	uParam0->f_15 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_201(65), Param10.f_14);
@@ -7103,24 +7103,24 @@ struct<5> func_276(int iParam0, bool bParam1, int iParam2)
 				Var6.f_9 = -1591664384;
 				if (!func_305(iParam0, &Var0, 1728382685, 0, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_305(iParam0, &Var0, -649335959, 0, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_306(iParam0, &Var6, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case joaat("coach"):

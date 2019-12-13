@@ -1,5 +1,5 @@
 #region Local Var
-	int iLocal_0 = 0;
+	bool bLocal_0 = false;
 #endregion
 
 void __EntryFunction__()
@@ -9,7 +9,7 @@ void __EntryFunction__()
 		func_1();
 	}
 	func_2();
-	while (!iLocal_0)
+	while (!bLocal_0)
 	{
 		func_3();
 		BUILTIN::WAIT(0);
@@ -19,7 +19,7 @@ void __EntryFunction__()
 
 void func_1()
 {
-	iLocal_0 = 0;
+	bLocal_0 = false;
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 

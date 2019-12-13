@@ -149,13 +149,13 @@ void func_6()
 				switch (iVar0)
 				{
 					case -764811328:
-						Local_5.f_15.f_2 = 2019023183;
+						Local_5.f_15.f_2 = 2019023183; /* GXTEntry: "Killer Clue 1 Piece" */
 						break;
 					case -1177733273:
-						Local_5.f_15.f_2 = -1043796944;
+						Local_5.f_15.f_2 = -1043796944; /* GXTEntry: "Killer Clue 2 Piece" */
 						break;
 					case 17186352:
-						Local_5.f_15.f_2 = 1272643670;
+						Local_5.f_15.f_2 = 1272643670; /* GXTEntry: "Killer Clue 3 Piece" */
 						break;
 					default:
 						break;

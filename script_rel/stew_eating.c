@@ -29,7 +29,7 @@ void __EntryFunction__()
 	iVar180 = ScriptParam_0.f_2;
 	if (!func_2(iVar180, 0))
 	{
-		iVar180 = 599184882;
+		iVar180 = 599184882; /* GXTEntry: "Beef Stew" */
 	}
 	if (func_3())
 	{
@@ -45,11 +45,11 @@ void __EntryFunction__()
 			{
 				if (Global_40.f_4283.f_313 > 1)
 				{
-					Global_1357549->f_1492 = 1762298001;
+					Global_1357549->f_1492 = 1762298001; /* GXTEntry: "Beef and Eggs Stew" */
 				}
 				else
 				{
-					Global_1357549->f_1492 = 878851736;
+					Global_1357549->f_1492 = 878851736; /* GXTEntry: "Beef Stew" */
 				}
 				iVar180 = Global_1357549->f_1492;
 			}
@@ -189,7 +189,7 @@ void __EntryFunction__()
 	}
 	else
 	{
-		Global_1357549->f_1492 = 878851736;
+		Global_1357549->f_1492 = 878851736; /* GXTEntry: "Beef Stew" */
 	}
 }
 

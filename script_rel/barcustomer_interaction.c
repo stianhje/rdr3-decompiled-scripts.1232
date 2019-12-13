@@ -18,14 +18,14 @@
 	int iLocal_16 = 0;
 	int iLocal_17 = 0;
 	int iLocal_18 = 0;
-	bool bLocal_19 = false;
+	int iLocal_19 = 0;
 	bool bLocal_20 = false;
 	int iLocal_21 = 0;
 	int iLocal_22 = 0;
 	int iLocal_23 = 0;
 	int iLocal_24 = 0;
 	int iLocal_25 = 0;
-	int iLocal_26 = 0;
+	bool bLocal_26 = false;
 	int iLocal_27 = 0;
 	int iLocal_28 = 0;
 	int iLocal_29 = 0;
@@ -196,14 +196,14 @@ void func_6()
 			{
 				return;
 			}
-			bLocal_19 = false;
-			iLocal_26 = 0;
-			STREAMING::REQUEST_MODEL(-615159064, false);
+			iLocal_19 = 0;
+			bLocal_26 = false;
+			STREAMING::REQUEST_MODEL(joaat("p_coin01x"), false);
 			iLocal_25 = 0;
 			iLocal_14 = 0;
 			if (iLocal_4 == 817658057)
 			{
-				STREAMING::REQUEST_MODEL(1843407141, false);
+				STREAMING::REQUEST_MODEL(joaat("p_bottlebeer01x"), false);
 				iVar4 = -758981113;
 				iLocal_5 = 130648332;
 				iLocal_6 = -1003673600;
@@ -227,11 +227,11 @@ void func_6()
 				iLocal_12 = 1054334670;
 				iLocal_13 = 1885925117;
 				STREAMING::_0x19A6BE7D9C6884D3(-1208105393, 262144, 0, 0);
-				STREAMING::REQUEST_MODEL(-911874060, false);
-				STREAMING::REQUEST_MODEL(-1971689092, false);
+				STREAMING::REQUEST_MODEL(joaat("p_shotglass01x"), false);
+				STREAMING::REQUEST_MODEL(joaat("p_bottlejd01x"), false);
 			}
 			fVar5 = TASK::_0xB93EA7184BAA85C3(iLocal_3, 1);
-			iLocal_29 = TASK::CREATE_SCENARIO_POINT(iVar4, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_0xA8452DD321607029(iLocal_3, 1), fVar5, func_21()), (fVar5 - 180f), 0f, 0, 0);
+			iLocal_29 = TASK::CREATE_SCENARIO_POINT(iVar4, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_0xA8452DD321607029(iLocal_3, 1), fVar5, func_21()), (fVar5 - 180f), 0f, 0f, 0);
 			TASK::_0xD3A0DA8F91612C6E(iLocal_29, (fVar5 - 180f), 1);
 			TASK::_0xA7479FB665361EDB(iLocal_29, 0);
 			TASK::_0xE69FDA40AAC3EFC0(iLocal_29, 0);
@@ -256,13 +256,13 @@ void func_6()
 			}
 			break;
 		case 1:
-			if (!STREAMING::HAS_MODEL_LOADED(-615159064))
+			if (!STREAMING::HAS_MODEL_LOADED(joaat("p_coin01x")))
 			{
 				return;
 			}
 			if (iLocal_4 == 817658057)
 			{
-				if (!STREAMING::HAS_MODEL_LOADED(1843407141))
+				if (!STREAMING::HAS_MODEL_LOADED(joaat("p_bottlebeer01x")))
 				{
 					return;
 				}
@@ -273,11 +273,11 @@ void func_6()
 			}
 			else
 			{
-				if (!STREAMING::HAS_MODEL_LOADED(-911874060))
+				if (!STREAMING::HAS_MODEL_LOADED(joaat("p_shotglass01x")))
 				{
 					return;
 				}
-				if (!STREAMING::HAS_MODEL_LOADED(-1971689092))
+				if (!STREAMING::HAS_MODEL_LOADED(joaat("p_bottlejd01x")))
 				{
 					return;
 				}
@@ -521,17 +521,17 @@ void func_17(bool bParam0)
 		PED::SET_PED_CAN_PLAY_AMBIENT_BASE_ANIMS(iLocal_17, false);
 		PED::SET_PED_CAN_PLAY_GESTURE_ANIMS(iLocal_17, 0, 1);
 	}
-	if ((!bLocal_19 && iLocal_25) && ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_17, 864365833))
+	if ((!iLocal_19 && iLocal_25) && ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_17, 864365833))
 	{
 		if (iLocal_4 == 817658057)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_40))
 			{
-				iLocal_40 = OBJECT::CREATE_OBJECT(-911874060, TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_40 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_17, iLocal_40, "p_bottleBeer01x_PH_R_HAND", "WORLD_HUMAN_BARCUSTOMER_BEER", "WORLD_HUMAN_BARCUSTOMER_HAS_BEER_MALE_A", 1))
 			{
-				bLocal_19 = true;
+				iLocal_19 = 1;
 				iLocal_25 = 0;
 				bLocal_20 = true;
 				iLocal_24 = 0;
@@ -541,11 +541,11 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_41))
 			{
-				iLocal_41 = OBJECT::CREATE_OBJECT(-911874060, TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_41 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_17, iLocal_41, "p_shotGlass01x_PH_L_Hand", "WORLD_HUMAN_BARCUSTOMER_WHISKEY", "WORLD_HUMAN_BARCUSTOMER_HAS_WHISKEY_GLASS_MALE_A", 1))
 			{
-				bLocal_19 = true;
+				iLocal_19 = 1;
 				iLocal_25 = 0;
 				bLocal_20 = true;
 				iLocal_24 = 0;
@@ -561,17 +561,17 @@ void func_17(bool bParam0)
 	{
 		iVar0 = PED::_0x569F1E1237508DEB(iLocal_17);
 	}
-	if (((iLocal_27 && !bLocal_19) && !bLocal_20) && (iVar0 == -446196418 || iVar0 == 266410079))
+	if (((iLocal_27 && !iLocal_19) && !bLocal_20) && (iVar0 == -446196418 || iVar0 == 266410079))
 	{
 		if (iLocal_4 == 817658057)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_40))
 			{
-				iLocal_40 = OBJECT::CREATE_OBJECT(-911874060, TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_40 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_17, iLocal_40, "p_bottleBeer01x_PH_R_HAND", "WORLD_HUMAN_BARCUSTOMER_BEER", "WORLD_HUMAN_BARCUSTOMER_HAS_BEER_MALE_A", 1))
 			{
-				bLocal_19 = true;
+				iLocal_19 = 1;
 				iLocal_25 = 0;
 				bLocal_20 = true;
 				iLocal_27 = 0;
@@ -582,11 +582,11 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_41))
 			{
-				iLocal_41 = OBJECT::CREATE_OBJECT(-911874060, TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_41 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_17, iLocal_41, "p_shotGlass01x_PH_L_Hand", "WORLD_HUMAN_BARCUSTOMER_WHISKEY", "WORLD_HUMAN_BARCUSTOMER_HAS_WHISKEY_GLASS_MALE_A", 1))
 			{
-				bLocal_19 = true;
+				iLocal_19 = 1;
 				iLocal_25 = 0;
 				bLocal_20 = true;
 				iLocal_27 = 0;
@@ -594,7 +594,7 @@ void func_17(bool bParam0)
 			}
 		}
 	}
-	if (((iLocal_27 && !bLocal_19) && !PED::_0x68821369A2CEADD5(iLocal_17, iLocal_5)) && !PED::_0x68821369A2CEADD5(iLocal_17, iLocal_6))
+	if (((iLocal_27 && !iLocal_19) && !PED::_0x68821369A2CEADD5(iLocal_17, iLocal_5)) && !PED::_0x68821369A2CEADD5(iLocal_17, iLocal_6))
 	{
 		PED::_0x6D07B371E9439019(iLocal_17);
 		if (iVar0 == -1265212358)
@@ -916,13 +916,13 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 			}
 			break;
 		case 4:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_18, 595016159) && !iLocal_26)
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_18, 595016159) && !bLocal_26)
 			{
 				func_48();
 			}
 			if (func_47())
 			{
-				if (!iLocal_26)
+				if (!bLocal_26)
 				{
 					func_48();
 				}
@@ -1304,24 +1304,24 @@ int func_47()
 
 void func_48()
 {
-	if (!iLocal_26)
+	if (!bLocal_26)
 	{
 		if (iLocal_4 == 817658057)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_40))
 			{
-				iLocal_40 = OBJECT::CREATE_OBJECT(1843407141, TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_40 = OBJECT::CREATE_OBJECT(joaat("p_bottlebeer01x"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
 				PED::_0x3BBDD6143FF16F98(iLocal_18, iLocal_40, "p_bottleBeer01x_PH_R_HAND", "WORLD_HUMAN_BARTENDER_BEER", "WORLD_HUMAN_BARTENDER_BARFRONT_MALE_A", 1);
-				iLocal_26 = 1;
+				bLocal_26 = true;
 			}
 		}
 		else if (!ENTITY::DOES_ENTITY_EXIST(iLocal_40) && !ENTITY::DOES_ENTITY_EXIST(iLocal_41))
 		{
-			iLocal_40 = OBJECT::CREATE_OBJECT(-1971689092, TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
-			iLocal_41 = OBJECT::CREATE_OBJECT(-911874060, TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+			iLocal_40 = OBJECT::CREATE_OBJECT(joaat("p_bottlejd01x"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+			iLocal_41 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
 			PED::_0x3BBDD6143FF16F98(iLocal_18, iLocal_40, "p_bottleJD01x_ph_r_hand", "WORLD_HUMAN_BARTENDER_WHISKEY", "WORLD_HUMAN_BARTENDER_BARFRONT_MALE_A", 1);
 			PED::_0x3BBDD6143FF16F98(iLocal_18, iLocal_41, "p_shotGlass01x_PH_L_HAND", "WORLD_HUMAN_BARTENDER_WHISKEY", "WORLD_HUMAN_BARTENDER_BARFRONT_MALE_A", 1);
-			iLocal_26 = 1;
+			bLocal_26 = true;
 		}
 	}
 }

@@ -4936,7 +4936,7 @@ int func_215(int iParam0)
 						case 0:
 							return -1499182641;
 						case 1:
-							return 319326044;
+							return joaat("p_lantern05x");
 						case 2:
 							return -347276241;
 						case 3:
@@ -4957,7 +4957,7 @@ int func_215(int iParam0)
 						case 0:
 							return -1499182641;
 						case 1:
-							return 319326044;
+							return joaat("p_lantern05x");
 						case 2:
 							return -51847185;
 						case 3:
@@ -4978,7 +4978,7 @@ int func_215(int iParam0)
 						case 0:
 							return -1499182641;
 						case 1:
-							return 319326044;
+							return joaat("p_lantern05x");
 						case 2:
 							return -51847185;
 						case 3:
@@ -4999,7 +4999,7 @@ int func_215(int iParam0)
 						case 0:
 							return -1499182641;
 						case 1:
-							return 319326044;
+							return joaat("p_lantern05x");
 						case 2:
 							return 284056517;
 						case 3:
@@ -5020,7 +5020,7 @@ int func_215(int iParam0)
 						case 0:
 							return -1499182641;
 						case 1:
-							return 319326044;
+							return joaat("p_lantern05x");
 						case 2:
 							return 284056517;
 						case 3:
@@ -5041,7 +5041,7 @@ int func_215(int iParam0)
 						case 0:
 							return -1499182641;
 						case 1:
-							return 319326044;
+							return joaat("p_lantern05x");
 						case 2:
 							return -347276241;
 						case 3:
@@ -5062,7 +5062,7 @@ int func_215(int iParam0)
 						case 0:
 							return -1499182641;
 						case 1:
-							return 319326044;
+							return joaat("p_lantern05x");
 						case 2:
 							return 2020860041;
 						case 3:
@@ -5091,7 +5091,7 @@ int func_215(int iParam0)
 						case 0:
 							return -1499182641;
 						case 1:
-							return 319326044;
+							return joaat("p_lantern05x");
 						case 2:
 							return -72392766;
 						case 3:
@@ -9845,7 +9845,7 @@ void func_456(var uParam0, bool bParam1, int iParam2)
 			{
 				if (!*uParam0 & 33554432 != 0)
 				{
-					if (uParam0->f_13 == -1504859554)
+					if (uParam0->f_13 == joaat("weapon_thrown_dynamite"))
 					{
 						if (PED::IS_PED_PLANTING_BOMB(Global_35))
 						{
@@ -10311,7 +10311,7 @@ int func_466(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar4, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar4, 0, 0);
 					if (func_570(iParam1, vVar0, vVar4))
 					{
 						func_559(uParam2, 1);
@@ -10335,7 +10335,7 @@ int func_466(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar7, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar7, 0, 0);
 					if (func_570(iParam1, vVar0, vVar7))
 					{
 						func_559(uParam2, 1);
@@ -14185,7 +14185,7 @@ int func_619()
 	}
 	if (Global_1572887->f_13 == -1)
 	{
-		if (Global_1939168->f_38 == 2055893578)
+		if (Global_1939168->f_38 == joaat("weapon_lasso"))
 		{
 			return PAD::IS_CONTROL_PRESSED(0, 130948705);
 		}
@@ -14408,7 +14408,7 @@ int func_628(int iParam0, int iParam1, bool bParam2, int iParam3)
 		{
 			if (WEAPON::IS_WEAPON_VALID(Global_1939168->f_38))
 			{
-				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == -618550132)
+				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == joaat("weapon_melee_knife"))
 				{
 					if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, Global_1939168->f_38, iParam1))
 					{
@@ -14806,10 +14806,10 @@ int func_644()
 {
 	switch (Global_1939168->f_38)
 	{
-		case -164645981:
-		case -160924582:
-		case 827679807:
-		case 1247405313:
+		case joaat("weapon_melee_lantern"):
+		case joaat("weapon_kit_binoculars"):
+		case joaat("weapon_melee_lantern_electric"):
+		case joaat("weapon_melee_davy_lantern"):
 		case 1652431022:
 			return 1;
 		default:

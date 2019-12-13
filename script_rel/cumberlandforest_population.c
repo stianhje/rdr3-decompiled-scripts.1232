@@ -467,9 +467,9 @@ int func_32(int iParam0)
 	return &(Global_1058888->f_498[iParam0 /*2*/]);
 }
 
-int func_33(int iParam0)
+int func_33(var uParam0)
 {
-	return iParam0 & 31;
+	return uParam0 & 31;
 }
 
 int func_34(int iParam0)

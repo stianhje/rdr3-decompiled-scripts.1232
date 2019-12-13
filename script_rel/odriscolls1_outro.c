@@ -3764,9 +3764,9 @@ int func_188(int iParam0)
 	return BUILTIN::SHIFT_RIGHT(iParam0, 12) & 31;
 }
 
-int func_189(int iParam0)
+int func_189(var uParam0)
 {
-	return iParam0 & 31;
+	return uParam0 & 31;
 }
 
 int func_190(int iParam0)

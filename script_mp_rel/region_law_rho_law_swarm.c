@@ -61,7 +61,7 @@ void __EntryFunction__()
 {
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	iLocal_49 = 1830978939;
+	iLocal_49 = joaat("s_m_m_ambientlawrural_01");
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
 		func_1();

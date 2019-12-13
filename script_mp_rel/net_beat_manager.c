@@ -2640,9 +2640,9 @@ int func_73(int iParam0)
 	return 0;
 }
 
-void func_74(var uParam0, int iParam1)
+void func_74(var uParam0, var uParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
+	*uParam0 = (*uParam0 - (*uParam0 && uParam1));
 }
 
 bool func_75(var uParam0, int iParam1)

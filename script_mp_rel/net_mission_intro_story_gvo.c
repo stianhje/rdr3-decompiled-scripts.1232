@@ -1039,12 +1039,12 @@ bool func_49(int iParam0)
 	return (iParam0 > -1 && iParam0 <= 80);
 }
 
-void func_50(int iParam0)
+void func_50(var uParam0)
 {
-	iParam0->f_182.f_9 = 0;
-	iParam0->f_182.f_8 = 0;
-	StringCopy(&(iParam0->f_182), "", 32);
-	StringCopy(&(iParam0->f_182.f_4), "", 32);
+	uParam0->f_182.f_9 = 0;
+	uParam0->f_182.f_8 = 0;
+	StringCopy(&(uParam0->f_182), "", 32);
+	StringCopy(&(uParam0->f_182.f_4), "", 32);
 }
 
 void func_51(int iParam0, int iParam1)
@@ -1056,9 +1056,9 @@ void func_51(int iParam0, int iParam1)
 	iParam0->f_68 = iParam1;
 }
 
-void func_52(int iParam0, int iParam1)
+void func_52(var uParam0, int iParam1)
 {
-	iParam0->f_65 = iParam1;
+	uParam0->f_65 = iParam1;
 }
 
 void func_53(int iParam0, int iParam1)
@@ -1114,14 +1114,14 @@ char* func_54(int iParam0)
 	return "";
 }
 
-void func_55(int iParam0, char* sParam1)
+void func_55(var uParam0, char* sParam1)
 {
 	if (MISC::IS_STRING_NULL_OR_EMPTY(sParam1))
 	{
 		return;
 	}
-	iParam0->f_170.f_2 = sParam1;
-	func_133(iParam0, 4, 1);
+	uParam0->f_170.f_2 = sParam1;
+	func_133(uParam0, 4, 1);
 }
 
 bool func_56(int iParam0)
@@ -2445,7 +2445,7 @@ void func_107(int iParam0, var uParam1)
 					{
 						sVar20 = "MP_COOP_GIVER_ALERT_SUB_POSSE_SIZE_SMALL";
 						Var0.f_3.f_3 = 1;
-						Var0.f_3 = 1976695487;
+						Var0.f_3 = 1976695487; /* GXTEntry: "Proceed" */
 					}
 					else if (func_167(uParam1) > iParam0->f_1.f_33)
 					{
@@ -2486,7 +2486,7 @@ void func_107(int iParam0, var uParam1)
 			}
 			sVar19 = "GLOBAL_ALERT_ALT";
 			Var0.f_7.f_3 = 1;
-			Var0.f_7 = -2122634935;
+			Var0.f_7 = -2122634935; /* GXTEntry: "Exit" */
 			Var0.f_2 = 0;
 			func_84(uParam1, 1);
 			func_216(uParam1, Var0, sVar19, sVar20);
@@ -3663,7 +3663,7 @@ void func_176(int iParam0)
 	if (func_281(-92416669))
 	{
 	}
-	if (iParam0 && Global_1939168->f_38 == -1016714371)
+	if (iParam0 && Global_1939168->f_38 == joaat("weapon_kit_camera"))
 	{
 		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
 		Global_1939168->f_38 = joaat("weapon_unarmed");
@@ -7294,24 +7294,24 @@ struct<5> func_350(int iParam0, bool bParam1, int iParam2)
 				Var6.f_9 = -1591664384;
 				if (!func_450(iParam0, &Var0, 1728382685, 0, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_450(iParam0, &Var0, -649335959, 0, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_451(iParam0, &Var6, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case joaat("coach"):
@@ -9298,7 +9298,7 @@ int func_458(int iParam0, var uParam1)
 	return 1;
 }
 
-int func_459(bool bParam0, int iParam1, var* uParam2)
+int func_459(bool bParam0, int iParam1, var uParam2)
 {
 	if (bParam0)
 	{

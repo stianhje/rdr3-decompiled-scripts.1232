@@ -335,7 +335,7 @@ int func_3()
 	return 1;
 }
 
-void func_4(int iParam0, int iParam1)
+void func_4(int iParam0, var uParam1)
 {
 	if (!func_36(16))
 	{
@@ -354,71 +354,71 @@ void func_4(int iParam0, int iParam1)
 	}
 	if (func_44(8))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_45(8);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(2))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_45(2);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(16))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_45(16);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(4))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 6;
+			*uParam1 = 6;
 			return;
 		}
-		else if (*iParam1 != 6)
+		else if (*uParam1 != 6)
 		{
 			func_45(4);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(1))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 2;
+			*uParam1 = 2;
 			return;
 		}
-		else if (*iParam1 != 2)
+		else if (*uParam1 != 2)
 		{
 			func_45(1);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
@@ -5077,39 +5077,39 @@ int func_152(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -2053881888:
-		case -1866132622:
-		case -1861840953:
-		case -1826304690:
-		case -1758092337:
-		case -1753201617:
-		case -1708097161:
-		case -1544786211:
-		case -1426151250:
-		case -1347283941:
-		case -1278978750:
-		case -1100387700:
-		case -1008287740:
-		case -999004291:
-		case -824257932:
-		case -570691410:
-		case -405196566:
-		case -377157708:
-		case -283162583:
-		case -136833353:
-		case 47200842:
-		case 93893176:
-		case 150966765:
-		case 219205323:
-		case 374792535:
-		case 822759307:
-		case 1016623270:
-		case 1596452133:
-		case 1745694728:
-		case 1761016051:
-		case 1770617692:
-		case 1874711736:
-		case 2109471093:
+		case joaat("cart02"):
+		case joaat("wagon03x"):
+		case joaat("buggy03"):
+		case joaat("coach5"):
+		case joaat("wagon05x"):
+		case joaat("supplywagon"):
+		case joaat("logwagon"):
+		case joaat("coach6"):
+		case joaat("stagecoach006x"):
+		case joaat("cart03"):
+		case joaat("buggy01"):
+		case joaat("buggy02"):
+		case joaat("oilwagon01x"):
+		case joaat("stagecoach005x"):
+		case joaat("cart01"):
+		case joaat("cart04"):
+		case joaat("stagecoach003x"):
+		case joaat("cart08"):
+		case joaat("wagon02x"):
+		case joaat("coach3"):
+		case joaat("cart07"):
+		case joaat("coach4"):
+		case joaat("wagondairy01x"):
+		case joaat("cart06"):
+		case joaat("cart05"):
+		case joaat("utilliwag"):
+		case joaat("wagon06x"):
+		case joaat("chuckwagon000x"):
+		case joaat("stagecoach002x"):
+		case joaat("coach2"):
+		case joaat("chuckwagon002x"):
+		case joaat("wagon04x"):
+		case joaat("stagecoach001x"):
 			return 1;
 		default:
 			break;

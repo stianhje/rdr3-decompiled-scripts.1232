@@ -2119,7 +2119,7 @@ int func_55(var uParam0, int iParam1)
 	return 4;
 }
 
-void func_56(int iParam0, int iParam1, int iParam2)
+void func_56(int iParam0, int iParam1, var uParam2)
 {
 	int iVar0;
 
@@ -2128,7 +2128,7 @@ void func_56(int iParam0, int iParam1, int iParam2)
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		(*iParam2)[iVar0] = 0;
+		(*uParam2)[iVar0] = 0;
 		iVar0++;
 	}
 }

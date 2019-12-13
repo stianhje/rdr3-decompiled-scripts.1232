@@ -76,7 +76,7 @@
 	vector3 vLocal_101 = { 0f, 0f, 0f };
 	bool bLocal_104 = false;
 	int iLocal_105[4] = { 0, 0, 0, 0 };
-	bool bLocal_110 = false;
+	int iLocal_110 = 0;
 	int iLocal_111 = 0;
 	int iLocal_112 = 0;
 	int iLocal_113 = 0;
@@ -327,7 +327,7 @@ int func_4()
 	return 1;
 }
 
-void func_5(int iParam0, int iParam1)
+void func_5(int iParam0, var uParam1)
 {
 	if (!func_38(16))
 	{
@@ -346,71 +346,71 @@ void func_5(int iParam0, int iParam1)
 	}
 	if (func_51(8))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_52(8);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(2))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 4;
+			*uParam1 = 4;
 			return;
 		}
-		else if (*iParam1 != 4)
+		else if (*uParam1 != 4)
 		{
 			func_52(2);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(16))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 9;
+			*uParam1 = 9;
 			return;
 		}
-		else if (*iParam1 != 9)
+		else if (*uParam1 != 9)
 		{
 			func_52(16);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(4))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_52(4);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(1))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_52(1);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
@@ -1230,7 +1230,7 @@ void func_53()
 	iLocal_105[0] = ENTITY::_0x6F3068258A499E52(1542239325, -868.0292f, -1273.759f, 44.72966f, 11);
 	iLocal_105[1] = ENTITY::_0x6F3068258A499E52(1542239325, -867.504f, -1279.306f, 44.69716f, 11);
 	iLocal_105[2] = ENTITY::_0x6F3068258A499E52(1542239325, -874.4065f, -1278.266f, 44.10369f, 11);
-	iLocal_105[3] = ENTITY::_0x6F3068258A499E52(1504738597, -870.3456f, -1276.597f, 42.2979f, 11);
+	iLocal_105[3] = ENTITY::_0x6F3068258A499E52(joaat("p_chair_crate15x"), -870.3456f, -1276.597f, 42.2979f, 11);
 }
 
 int func_54(int iParam0, int iParam1)
@@ -2389,7 +2389,7 @@ void func_84()
 			ENTITY::FREEZE_ENTITY_POSITION(ENTITY::_0x4735E2A4BB83D9DA(&(iLocal_105[iVar0])), true);
 			iVar0++;
 		}
-		bLocal_110 = true;
+		iLocal_110 = 1;
 	}
 }
 
@@ -2553,19 +2553,19 @@ void func_88(int iParam0)
 	}
 }
 
-int func_89(bool bParam0)
+int func_89(var uParam0)
 {
 	if (func_186())
 	{
-		if (!*bParam0)
+		if (!*uParam0)
 		{
-			*bParam0 = 1;
+			*uParam0 = 1;
 			return 1;
 		}
 	}
-	else if (*bParam0)
+	else if (*uParam0)
 	{
-		*bParam0 = 0;
+		*uParam0 = 0;
 		return 1;
 	}
 	return 0;
@@ -5313,9 +5313,9 @@ bool func_151(int iParam0, int iParam1, float fParam2, var uParam3)
 	return func_254(iParam0, "sHash", iParam1, "fHeading", fParam2, "vPos", uParam3);
 }
 
-int func_152(int iParam0, int iParam1, float fParam2, var uParam3)
+int func_152(int iParam0, var uParam1, var uParam2, var uParam3)
 {
-	return func_254(iParam0, "sClosedHash", iParam1, "fClosedHeading", fParam2, "vClosedPos", uParam3);
+	return func_254(iParam0, "sClosedHash", uParam1, "fClosedHeading", uParam2, "vClosedPos", uParam3);
 }
 
 void func_153(int iParam0, int iParam1, vector3 vParam2, float fParam5, bool bParam6)
@@ -5690,7 +5690,7 @@ int func_182()
 {
 	int iVar0;
 
-	if (bLocal_110)
+	if (iLocal_110)
 	{
 		return 0;
 	}

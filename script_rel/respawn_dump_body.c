@@ -40,9 +40,9 @@
 	int iLocal_145 = 0;
 	int iLocal_146 = 0;
 	bool bLocal_147 = false;
-	bool bLocal_148 = false;
+	int iLocal_148 = 0;
 	int iLocal_149 = 0;
-	int iLocal_150 = 0;
+	bool bLocal_150 = false;
 	bool bLocal_151 = false;
 	int iLocal_152 = 0;
 	int iLocal_153 = 0;
@@ -235,7 +235,7 @@ void __EntryFunction__()
 				POPULATION::_0xB56D41A694E42E86(iLocal_141, 8192, 0, 0, -1, -1, 0);
 				POPULATION::_0x18262CAFEBB5FBE1(iLocal_141, 8192, 0, 0, -1, -1, 0);
 				iLocal_142 = VOLUME::_CREATE_VOLUME_CYLINDER(Local_32.f_30, 0f, 0f, 0f, 1f, 1f, 20f);
-				iLocal_143 = PED::_0x4C39C95AE5DB1329(iLocal_142, false, 7);
+				iLocal_143 = PED::_0x4C39C95AE5DB1329(iLocal_142, 0, 7);
 				Local_32.f_93 = MISC::GET_GAME_TIMER();
 				iLocal_29 = 1;
 				break;
@@ -284,7 +284,7 @@ void __EntryFunction__()
 						if (!func_20(&Global_1935630, 131072))
 						{
 							AUDIO::TRIGGER_MUSIC_EVENT("RESPAWN_CLOUDS_START");
-							bLocal_148 = true;
+							iLocal_148 = 1;
 						}
 					}
 					GRAPHICS::_0x9D1B0B5066205692();
@@ -451,10 +451,10 @@ void __EntryFunction__()
 					ENTITY::SET_ENTITY_VISIBLE(Global_35, true);
 					LAW::_0xE9AC8466ABE484BB(0, 0);
 				}
-				if (bLocal_148)
+				if (iLocal_148)
 				{
 					AUDIO::TRIGGER_MUSIC_EVENT("RESPAWN_CLOUDS_STOP");
-					bLocal_148 = false;
+					iLocal_148 = 0;
 				}
 				func_53(1);
 				AUDIO::PLAY_SOUND_FRONTEND("EXIT", "DEATH_FAIL_RESPAWN_SOUNDS", true, 0);
@@ -689,7 +689,7 @@ void __EntryFunction__()
 				}
 				else if (bVar9 || !bVar6)
 				{
-					if (iLocal_150)
+					if (bLocal_150)
 					{
 						TASK::TASK_DISMOUNT_ANIMAL(Global_35, 0, 0, 0, 0, 0);
 					}
@@ -743,7 +743,7 @@ void func_1(int iParam0)
 	{
 		STREAMING::_0x5A8B01199C3E79C3();
 	}
-	if (bLocal_148)
+	if (iLocal_148)
 	{
 		AUDIO::TRIGGER_MUSIC_EVENT("RESPAWN_CLOUDS_STOP");
 	}
@@ -777,7 +777,7 @@ void func_1(int iParam0)
 		{
 			OBJECT::DELETE_OBJECT(Local_32.f_64[iVar0]);
 		}
-		if (&Local_32.f_61[iVar0] == 927991752)
+		if (&Local_32.f_61[iVar0] == joaat("p_cigarette_cs02x"))
 		{
 			func_77(-885810591, 1);
 		}
@@ -1050,7 +1050,7 @@ int func_9(float fParam0, float fParam1)
 	}
 	if (Local_32.f_59 && PAD::IS_CONTROL_JUST_PRESSED(0, -874806616))
 	{
-		iLocal_150 = 1;
+		bLocal_150 = true;
 		return 1;
 	}
 	if (!PED::IS_PED_INJURED(Local_32.f_98))
@@ -1994,7 +1994,7 @@ void func_49(var uParam0, bool bParam1)
 		sVar0 = "";
 		if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_64[iVar1])))
 		{
-			if ((&uParam0->f_61[iVar1] == 937508733 || &uParam0->f_61[iVar1] == 1375255536) || &uParam0->f_61[iVar1] == -1451757867)
+			if ((&uParam0->f_61[iVar1] == joaat("p_journal01x") || &uParam0->f_61[iVar1] == 1375255536) || &uParam0->f_61[iVar1] == -1451757867)
 			{
 				if (bParam1)
 				{
@@ -2348,10 +2348,10 @@ void func_71(int iParam0, int iParam1, bool bParam2)
 
 void func_72(var uParam0, int iParam1)
 {
-	int iVar0;
+	var uVar0;
 
-	iVar0 = func_169(iParam1);
-	PED::_0xB285AD0EC870B2DF(uParam0, iVar0);
+	uVar0 = func_169(iParam1);
+	PED::_0xB285AD0EC870B2DF(uParam0, uVar0);
 	func_170();
 }
 
@@ -3909,7 +3909,7 @@ int func_124()
 	return Global_40.f_1;
 }
 
-int func_125(int iParam0, int iParam1)
+int func_125(int iParam0, var uParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -3924,11 +3924,11 @@ int func_125(int iParam0, int iParam1)
 		iVar0 = &Global_1946804->f_1497.f_1[iVar1 /*3*/];
 		if (func_243(iVar0) == iParam0)
 		{
-			*iParam1 = iVar0;
+			*uParam1 = iVar0;
 			return 1;
 		}
 	}
-	*iParam1 = 0;
+	*uParam1 = 0;
 	return 0;
 }
 
@@ -7726,7 +7726,7 @@ int func_299(int iParam0)
 
 bool func_300()
 {
-	return Global_1935630->f_44 == -1415022764;
+	return Global_1935630->f_44 == joaat("weapon_fishingrod");
 }
 
 int func_301()
@@ -10554,11 +10554,11 @@ int func_409()
 		{
 			return 3;
 		}
-		else if (iVar0 == -160924582)
+		else if (iVar0 == joaat("weapon_kit_binoculars"))
 		{
 			return 1;
 		}
-		else if ((WEAPON::IS_WEAPON_VALID(iVar0) && func_276(iVar0)) || iVar0 == 2055893578)
+		else if ((WEAPON::IS_WEAPON_VALID(iVar0) && func_276(iVar0)) || iVar0 == joaat("weapon_lasso"))
 		{
 			return 1;
 		}
@@ -12944,8 +12944,8 @@ void func_490(int iParam0)
 
 void func_491(var uParam0)
 {
-	*uParam0 = -377364164;
-	uParam0->f_1 = 357708345;
+	*uParam0 = -377364164; /* GXTEntry: "Natural" */
+	uParam0->f_1 = 357708345; /* GXTEntry: "Natural" */
 }
 
 void func_492(int iParam0, struct<2> Param1)
@@ -13322,7 +13322,7 @@ void func_511(int iParam0, var uParam1)
 	(Global_40.f_1095.f_1[iParam0 /*436*/])->f_8 = uParam1;
 }
 
-void func_512(int iParam0, int iParam1)
+void func_512(int iParam0, var uParam1)
 {
 	iParam0 = func_117(iParam0);
 	if (iParam0 == -1)
@@ -13333,7 +13333,7 @@ void func_512(int iParam0, int iParam1)
 	{
 		return;
 	}
-	(Global_40.f_1095.f_1[iParam0 /*436*/])->f_9 = iParam1;
+	(Global_40.f_1095.f_1[iParam0 /*436*/])->f_9 = uParam1;
 }
 
 void func_513(int iParam0, var uParam1)
@@ -15051,19 +15051,19 @@ void func_594(int iParam0, var uParam1, var uParam2)
 	{
 		case 1234009870:
 			*uParam1 = 1802325493;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case -1202134084:
 			*uParam1 = -864693164;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case 1297050066:
 			*uParam1 = -603289736;
-			*uParam2 = 1232099469;
+			*uParam2 = 1232099469; /* GXTEntry: "Revolver Cartridges - Express" */
 			break;
 		case -1780177928:
 			*uParam1 = -1803237008;
-			*uParam2 = -2084181920;
+			*uParam2 = -2084181920; /* GXTEntry: "Revolver Cartridges - High Velocity" */
 			break;
 		case -1467836497:
 			*uParam1 = -1175521284;
@@ -15075,11 +15075,11 @@ void func_594(int iParam0, var uParam1, var uParam2)
 			break;
 		case -153287664:
 			*uParam1 = -1650796693;
-			*uParam2 = 836939099;
+			*uParam2 = 836939099; /* GXTEntry: "Pistol Cartridges - Express" */
 			break;
 		case 1845082736:
 			*uParam1 = -1521597660;
-			*uParam2 = -1411815376;
+			*uParam2 = -1411815376; /* GXTEntry: "Pistol Cartridges - High Velocity" */
 			break;
 		case 406755377:
 			*uParam1 = -1288829256;
@@ -15091,27 +15091,27 @@ void func_594(int iParam0, var uParam1, var uParam2)
 			break;
 		case 45760211:
 			*uParam1 = -851229814;
-			*uParam2 = 1654725195;
+			*uParam2 = 1654725195; /* GXTEntry: "Rifle Cartridges - Express" */
 			break;
 		case -276295943:
 			*uParam1 = 914704115;
-			*uParam2 = 1858824185;
+			*uParam2 = 1858824185; /* GXTEntry: "Rifle Cartridges - High Velocity" */
 			break;
 		case -2029793397:
 			*uParam1 = -219896679;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case 2120467495:
 			*uParam1 = 516838334;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case -2075613923:
 			*uParam1 = -385817936;
-			*uParam2 = -578347576;
+			*uParam2 = -578347576; /* GXTEntry: "Repeater Cartridges - Express" */
 			break;
 		case 122656217:
 			*uParam1 = 1192843172;
-			*uParam2 = 231465488;
+			*uParam2 = 231465488; /* GXTEntry: "Repeater Cartridges - High Velocity" */
 			break;
 		case 2107187484:
 			*uParam1 = 954871696;
@@ -15123,7 +15123,7 @@ void func_594(int iParam0, var uParam1, var uParam2)
 			break;
 		case 305770744:
 			*uParam1 = -2087227528;
-			*uParam2 = 314966081;
+			*uParam2 = 314966081; /* GXTEntry: "Shotgun - Slug" */
 			break;
 		case 550900979:
 			*uParam1 = -618066518;
@@ -16125,21 +16125,21 @@ int func_621(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1760684159:
-		case -1718100160:
-		case -1642485146:
+		case joaat("a_c_horse_gang_bill"):
+		case joaat("a_c_horse_gang_sean"):
+		case joaat("a_c_horse_gang_john"):
 		case -1486704931:
-		case -1391147923:
+		case joaat("a_c_horse_gang_dutch"):
 		case -1356425746:
-		case -1181161469:
-		case -1084397164:
-		case -1053639984:
-		case -941733863:
-		case -646460384:
+		case joaat("a_c_horse_gang_javier"):
+		case joaat("a_c_horse_gang_sadie"):
+		case joaat("a_c_horse_gang_lenny"):
+		case joaat("a_c_horse_gang_micah"):
+		case joaat("a_c_horse_gang_hosea"):
 		case -575759638:
-		case -548014618:
+		case joaat("a_c_horse_gang_charles"):
 		case 291878635:
-		case 979093383:
+		case joaat("a_c_horse_gang_trelawney"):
 		case 1139858530:
 		case 1760888205:
 		case 1800725969:

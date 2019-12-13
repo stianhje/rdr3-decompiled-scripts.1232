@@ -331,14 +331,14 @@ void __EntryFunction__()
 	int iVar0;
 
 	iLocal_246 = 1367437629;
-	iLocal_247 = 1301263553;
+	iLocal_247 = 1301263553; /* GXTEntry: "Move left/right" */
 	iLocal_248 = 2139949496;
-	iLocal_249 = -128997553;
-	iLocal_250 = -822242784;
-	iLocal_251 = -640622144;
-	iLocal_252 = -485697785;
+	iLocal_249 = -128997553; /* GXTEntry: "Aim weapon" */
+	iLocal_250 = -822242784; /* GXTEntry: "Enter vehicle" */
+	iLocal_251 = -640622144; /* GXTEntry: "Jump" */
+	iLocal_252 = -485697785; /* GXTEntry: "Reload" */
 	iLocal_353 = 673107768;
-	iLocal_359 = 1830978939;
+	iLocal_359 = joaat("s_m_m_ambientlawrural_01");
 	iLocal_360 = -770982987;
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
@@ -2063,7 +2063,7 @@ float func_70(float fParam0, float fParam1, float fParam2)
 	return fParam0;
 }
 
-int func_71(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
+var func_71(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;

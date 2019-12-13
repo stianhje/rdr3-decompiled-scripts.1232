@@ -2907,8 +2907,8 @@ int func_21(var uParam0)
 		uParam0->f_24 = 4;
 		uParam0->f_23 = 2;
 		uParam0->f_2 = 0;
-		uParam0->f_1401[0] = -2002682906;
-		uParam0->f_1401[1] = -1835251821;
+		uParam0->f_1401[0] = joaat("cs_escapeartist");
+		uParam0->f_1401[1] = joaat("cs_escapeartistassistant");
 		uParam0->f_1385[0] = 1888857534;
 		uParam0->f_1385[1] = 1779000184;
 		uParam0->f_1385[2] = -1156210051;
@@ -4014,7 +4014,7 @@ char* func_82()
 	return "script@shows@curtains@curtains";
 }
 
-void func_83(int iParam0, char* sParam1, char[4] cParam2)
+void func_83(int iParam0, char* sParam1, var uParam2)
 {
 	if (!ANIMSCENE::_0x25557E324489393C(iParam0))
 	{
@@ -4023,7 +4023,7 @@ void func_83(int iParam0, char* sParam1, char[4] cParam2)
 	ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(iParam0, sParam1, true);
 }
 
-void func_84(int iParam0, char* sParam1, char[4] cParam2)
+void func_84(int iParam0, char* sParam1, var uParam2)
 {
 	if (ANIMSCENE::_0x23E33CB9F4A3F547(iParam0, sParam1))
 	{
@@ -4264,7 +4264,7 @@ int func_96(var uParam0)
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_17))
 	{
-		if (func_154(&iLocal_17, -911874060, 2546.771f, -1310.344f, 50.83665f))
+		if (func_154(&iLocal_17, joaat("p_shotglass01x"), 2546.771f, -1310.344f, 50.83665f))
 		{
 			iLocal_16 = PHYSICS::_0xE9C59F6809373A99(2546.724f, -1309.638f, 50.76665f, 0f, 0f, 0f, 0.3f, 1, 0, -1, -1082130432);
 			PHYSICS::_0x462FF2A432733A44(iLocal_16, iLocal_17, &(uParam0->f_1393[3]), 0f, 0f, 0f, 0f, 0f, 0f, 0, 0);
@@ -4341,7 +4341,7 @@ void func_103(var uParam0, int iParam1)
 
 int func_104()
 {
-	return -2002682906;
+	return joaat("cs_escapeartist");
 }
 
 int func_105(int iParam0)

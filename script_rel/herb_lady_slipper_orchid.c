@@ -750,7 +750,7 @@ Vector3 func_23(int iParam0)
 	return ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(iParam0), false, false);
 }
 
-int func_24(int iParam0, vector3 vParam1, int iParam4, int iParam5, int iParam6)
+int func_24(int iParam0, vector3 vParam1, int iParam4, var uParam5, int iParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -803,7 +803,7 @@ int func_24(int iParam0, vector3 vParam1, int iParam4, int iParam5, int iParam6)
 	}
 	if (func_48(vParam1, vVar11) < 25f)
 	{
-		*iParam5 = iVar4;
+		*uParam5 = iVar4;
 		return 1;
 	}
 	return 0;

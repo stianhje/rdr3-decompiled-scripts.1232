@@ -1583,7 +1583,9 @@ int func_43(var uParam0)
 	}
 	if (!TXD::_0xBA0163B277C2D2D0(uParam0->f_26))
 	{
-		uParam0->f_26 = 1078908615;
+		uParam0->f_26 = 1078908615; /* GXTEntry: "A daily meal of soup is prepared in the camp made with the best parts of the late" +
+    "st hunted game. The soups help to revitalize the gang members and can provide a " +
+    "variety of health benefits." */
 	}
 	if (TXD::_0xBA0163B277C2D2D0(uParam0->f_26))
 	{
@@ -1861,10 +1863,10 @@ void func_54(var uParam0, var uParam1)
 								switch (func_106(iVar4, iVar6))
 								{
 									case 1830115867:
-										iVar3 = -648664377;
+										iVar3 = -648664377; /* GXTEntry: "A stranger has some business for you." */
 										break;
 									case 472588819:
-										iVar3 = 1463582430;
+										iVar3 = 1463582430; /* GXTEntry: "A stranger has some business for you." */
 										break;
 									default:
 										break;

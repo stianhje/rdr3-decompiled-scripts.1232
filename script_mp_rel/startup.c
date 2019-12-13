@@ -353,9 +353,9 @@ void func_7()
 	func_49();
 }
 
-int func_8(int iParam0)
+int func_8(var uParam0)
 {
-	return iParam0->f_76;
+	return uParam0->f_76;
 }
 
 void func_9()
@@ -10526,7 +10526,7 @@ char* func_190(var uParam0, int iParam1)
 {
 	struct<16> Var0;
 	struct<7> Var16;
-	int iVar23;
+	var uVar23;
 	char* sVar24;
 
 	sVar24 = "";
@@ -10557,8 +10557,8 @@ char* func_190(var uParam0, int iParam1)
 			}
 			break;
 		case 1:
-			iVar23 = NETWORK::_0x27B1AE4D8C652F08(uParam0->f_11);
-			NETWORK::_0x16EFB123C4451032(iVar23, &Var16);
+			uVar23 = NETWORK::_0x27B1AE4D8C652F08(uParam0->f_11);
+			NETWORK::_0x16EFB123C4451032(uVar23, &Var16);
 			if (!func_355(Var16))
 			{
 				return sVar24;
@@ -13106,7 +13106,7 @@ char* func_265(char* sParam0, int iParam1)
 	return func_405(MISC::_CREATE_VAR_STRING(10, "PLAYER_STRING", sParam0), iParam1);
 }
 
-var func_266(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10)
+var func_266(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10)
 {
 	struct<4> Var0;
 	struct<8> Var13;
@@ -13119,7 +13119,7 @@ var func_266(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam8;
 	Var13.f_7 = 1;
 	Var13 = iParam7;
-	Var13.f_1 = sParam0;
+	Var13.f_1 = uParam0;
 	Var13.f_2 = sParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = iParam2;
@@ -13442,7 +13442,7 @@ void func_290(int iParam0)
 	if (func_423(-92416669))
 	{
 	}
-	if (iParam0 && Global_1939168->f_38 == -1016714371)
+	if (iParam0 && Global_1939168->f_38 == joaat("weapon_kit_camera"))
 	{
 		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
 		Global_1939168->f_38 = joaat("weapon_unarmed");
@@ -14289,7 +14289,7 @@ void func_345()
 	int iVar1;
 	var uVar2;
 	struct<39> Var9;
-	int iVar48;
+	var uVar48;
 
 	iVar0 = 0;
 	while (iVar0 <= 29)
@@ -14301,8 +14301,8 @@ void func_345()
 		}
 		else
 		{
-			iVar48 = NETWORK::_0x27B1AE4D8C652F08(DATABINDING::_DATABINDING_READ_DATA_INT(Var9.f_27));
-			if (!NETWORK::_0x16EFB123C4451032(iVar48, &uVar2))
+			uVar48 = NETWORK::_0x27B1AE4D8C652F08(DATABINDING::_DATABINDING_READ_DATA_INT(Var9.f_27));
+			if (!NETWORK::_0x16EFB123C4451032(uVar48, &uVar2))
 			{
 			}
 			else if (NETWORK::NETWORK_IS_GAMER_IN_MY_SESSION(&uVar2))
@@ -16961,9 +16961,9 @@ bool func_469(var uParam0, int iParam1)
 	return (uParam0 && iParam1) != 0;
 }
 
-void func_470(var uParam0, int iParam1)
+void func_470(var uParam0, var uParam1)
 {
-	func_557(uParam0, iParam1);
+	func_557(uParam0, uParam1);
 }
 
 int func_471(vector3 vParam0)
@@ -17747,9 +17747,9 @@ void func_513(var uParam0)
 {
 }
 
-void func_514(var uParam0, int iParam1)
+void func_514(var uParam0, var uParam1)
 {
-	func_583(uParam0, iParam1);
+	func_583(uParam0, uParam1);
 }
 
 bool func_515()
@@ -18671,7 +18671,7 @@ void func_574(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_6 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_359(56), Param10.f_6);
 	if (Param10.f_7 == 0)
 	{
-		Param10.f_7 = -672301300;
+		Param10.f_7 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_359(58), Param10.f_7);
 	uParam0->f_9 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_359(59), Param10.f_8);
@@ -18681,14 +18681,14 @@ void func_574(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_12 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_359(62), Param10.f_12);
 	if (Param10.f_13 == 0)
 	{
-		Param10.f_13 = -672301300;
+		Param10.f_13 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_359(64), Param10.f_13);
 	uParam0->f_15 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_359(65), Param10.f_14);
 	uParam0->f_16 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_359(66), Param10.f_15);
 }
 
-var func_575(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, int iParam12, int iParam13, int iParam14, var uParam15, var uParam16)
+var func_575(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, int iParam12, int iParam13, int iParam14, var uParam15, var uParam16)
 {
 	struct<10> Var0;
 	struct<8> Var13;
@@ -18706,8 +18706,8 @@ var func_575(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var0.f_4.f_2 = uParam15;
 	Var13.f_7 = 1;
 	Var13 = uParam11;
-	Var13.f_1 = sParam0;
-	Var13.f_2 = sParam1;
+	Var13.f_1 = uParam0;
+	Var13.f_2 = uParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
@@ -18716,7 +18716,7 @@ var func_575(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	return uVar21;
 }
 
-var func_576(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, int iParam15, int iParam16, int iParam17, var uParam18, var uParam19)
+var func_576(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, int iParam15, int iParam16, int iParam17, var uParam18, var uParam19)
 {
 	struct<10> Var0;
 	struct<10> Var13;
@@ -18734,8 +18734,8 @@ var func_576(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var0.f_4.f_2 = uParam18;
 	Var13.f_9 = 1;
 	Var13 = uParam14;
-	Var13.f_1 = sParam0;
-	Var13.f_2 = sParam1;
+	Var13.f_1 = uParam0;
+	Var13.f_2 = uParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
@@ -18747,7 +18747,7 @@ var func_576(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	return uVar23;
 }
 
-var func_577(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, int iParam11, int iParam12, int iParam13)
+var func_577(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, int iParam11, int iParam12, int iParam13)
 {
 	struct<5> Var0;
 	struct<8> Var13;
@@ -18763,8 +18763,8 @@ var func_577(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var0.f_4.f_2 = uParam5;
 	Var13.f_7 = 1;
 	Var13 = uParam10;
-	Var13.f_1 = sParam0;
-	Var13.f_2 = sParam1;
+	Var13.f_1 = uParam0;
+	Var13.f_2 = uParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
@@ -18773,7 +18773,7 @@ var func_577(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	return uVar21;
 }
 
-var func_578(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, int iParam14, int iParam15, int iParam16)
+var func_578(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, int iParam14, int iParam15, int iParam16)
 {
 	struct<5> Var0;
 	struct<10> Var13;
@@ -18789,8 +18789,8 @@ var func_578(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var0.f_4.f_2 = uParam8;
 	Var13.f_9 = 1;
 	Var13 = uParam13;
-	Var13.f_1 = sParam0;
-	Var13.f_2 = sParam1;
+	Var13.f_1 = uParam0;
+	Var13.f_2 = uParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
@@ -18802,7 +18802,7 @@ var func_578(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	return uVar23;
 }
 
-var func_579(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, int iParam12, int iParam13, int iParam14)
+var func_579(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, int iParam12, int iParam13, int iParam14)
 {
 	struct<5> Var0;
 	struct<8> Var13;
@@ -18818,8 +18818,8 @@ var func_579(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var0.f_4.f_2 = uParam6;
 	Var13.f_7 = 1;
 	Var13 = uParam11;
-	Var13.f_1 = sParam0;
-	Var13.f_2 = sParam1;
+	Var13.f_1 = uParam0;
+	Var13.f_2 = uParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
@@ -18829,7 +18829,7 @@ var func_579(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	return uVar21;
 }
 
-var func_580(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, int iParam12, int iParam13, int iParam14)
+var func_580(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, int iParam12, int iParam13, int iParam14)
 {
 	struct<5> Var0;
 	struct<8> Var13;
@@ -18845,8 +18845,8 @@ var func_580(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var0.f_4.f_2 = uParam6;
 	Var13.f_7 = 1;
 	Var13 = uParam11;
-	Var13.f_1 = sParam0;
-	Var13.f_2 = sParam1;
+	Var13.f_1 = uParam0;
+	Var13.f_2 = uParam1;
 	Var13.f_3 = uParam2;
 	Var13.f_4 = uParam3;
 	Var13.f_5 = uParam4;
@@ -19764,24 +19764,24 @@ struct<5> func_632(int iParam0, bool bParam1, int iParam2)
 				Var6.f_9 = -1591664384;
 				if (!func_664(iParam0, &Var0, 1728382685, 0, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_664(iParam0, &Var0, -649335959, 0, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_665(iParam0, &Var6, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case joaat("coach"):

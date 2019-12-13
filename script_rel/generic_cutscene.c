@@ -852,7 +852,7 @@ int func_44(var uParam0)
 				vVar3 = { 15f, 15f, 15f };
 				vVar6 = { 0f, 0f, 0f };
 				iVar9 = VOLUME::_0x10157BC3247FF3BA((uParam0->f_532[iVar0 /*12*/])->f_1, vVar6, vVar3, &(uParam0->f_618));
-				(uParam0->f_532[iVar0 /*12*/])->f_10 = PED::_0x4C39C95AE5DB1329(iVar9, false, 7);
+				(uParam0->f_532[iVar0 /*12*/])->f_10 = PED::_0x4C39C95AE5DB1329(iVar9, 0, 7);
 				if (PED::_0x91A5F9CBEBB9D936((uParam0->f_532[iVar0 /*12*/])->f_10))
 				{
 				}
@@ -1531,7 +1531,7 @@ int func_68(var uParam0)
 					}
 				}
 				Jump @759; //curOff = 371
-				ENTITY::_0x203BEFFDBE12E96A(Global_1225638->f_8, *(uParam0->f_546.f_4[uParam0->f_546 /*7*/]), (uParam0->f_546.f_4[uParam0->f_546 /*7*/])->f_3.f_2, 1, false, 1);
+				ENTITY::_0x203BEFFDBE12E96A(Global_1225638->f_8, *(uParam0->f_546.f_4[uParam0->f_546 /*7*/]), (uParam0->f_546.f_4[uParam0->f_546 /*7*/])->f_3.f_2, 1, 0, 1);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f, 1065353216);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 				uParam0->f_546.f_2 = NETWORK::GET_CLOUD_TIME_AS_INT();

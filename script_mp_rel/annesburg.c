@@ -319,7 +319,7 @@ int func_4()
 	return 1;
 }
 
-void func_5(int iParam0, int iParam1)
+void func_5(int iParam0, var uParam1)
 {
 	if (!func_38(16))
 	{
@@ -338,71 +338,71 @@ void func_5(int iParam0, int iParam1)
 	}
 	if (func_51(8))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_52(8);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(2))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 4;
+			*uParam1 = 4;
 			return;
 		}
-		else if (*iParam1 != 4)
+		else if (*uParam1 != 4)
 		{
 			func_52(2);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(16))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 9;
+			*uParam1 = 9;
 			return;
 		}
-		else if (*iParam1 != 9)
+		else if (*uParam1 != 9)
 		{
 			func_52(16);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(4))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_52(4);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(1))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_52(1);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
@@ -1685,19 +1685,19 @@ void func_74()
 	}
 }
 
-int func_75(bool bParam0)
+int func_75(var uParam0)
 {
 	if (func_135())
 	{
-		if (!*bParam0)
+		if (!*uParam0)
 		{
-			*bParam0 = 1;
+			*uParam0 = 1;
 			return 1;
 		}
 	}
-	else if (*bParam0)
+	else if (*uParam0)
 	{
-		*bParam0 = 0;
+		*uParam0 = 0;
 		return 1;
 	}
 	return 0;
@@ -2581,7 +2581,7 @@ void func_96(int iParam0)
 	func_166(iLocal_51);
 	func_166(iLocal_52);
 	func_166(iLocal_53);
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_54))
+	if (VOLUME::_0x92A78D0BEDB332A3(uLocal_54))
 	{
 		VOLUME::_0x43F867EF5C463A53(iLocal_54);
 	}
@@ -5284,7 +5284,7 @@ void func_165()
 
 void func_166(int iParam0)
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (VOLUME::_0x92A78D0BEDB332A3(uParam0))
 	{
 		VOLUME::_0x43F867EF5C463A53(iParam0);
 	}

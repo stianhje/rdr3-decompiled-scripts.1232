@@ -4024,15 +4024,15 @@ int func_176(struct<2> Param0, int iParam2)
 
 int func_177(int iParam0, int iParam1, var uParam2)
 {
-	int iVar0;
+	var uVar0;
 
 	if (!func_269(iParam0))
 	{
 		return 0;
 	}
-	if (func_270(iParam0, iParam1, &iVar0))
+	if (func_270(iParam0, iParam1, &uVar0))
 	{
-		func_271(iParam0, &iVar0, uParam2);
+		func_271(iParam0, &uVar0, uParam2);
 	}
 	else
 	{
@@ -5688,103 +5688,103 @@ int func_269(int iParam0)
 	return 0;
 }
 
-bool func_270(int iParam0, var uParam1, int iParam2)
+bool func_270(int iParam0, var uParam1, var uParam2)
 {
-	*iParam2 = Global_1131373->f_7;
-	iParam2->f_2 = 1351168281;
-	iParam2->f_3 = func_327(iParam0);
-	iParam2->f_4 = uParam1;
-	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam2->f_1), iParam2);
+	*uParam2 = Global_1131373->f_7;
+	uParam2->f_2 = 1351168281;
+	uParam2->f_3 = func_327(iParam0);
+	uParam2->f_4 = uParam1;
+	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam2->f_1), uParam2);
 }
 
-void func_271(int iParam0, int iParam1, var uParam2)
+void func_271(int iParam0, var uParam1, var uParam2)
 {
 	int iVar0;
 
 	*uParam2 = iParam0;
-	iParam1->f_2 = -611386243;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_1), iParam1);
+	uParam1->f_2 = -611386243;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_1), uParam1);
 	uParam2->f_3 = func_328(iParam0, uParam2->f_1);
-	iParam1->f_2 = -2140901307;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = -2140901307;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_2 = iVar0;
-	iParam1->f_2 = -2140901307;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_9), iParam1);
-	iParam1->f_2 = 1292053410;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_17), iParam1);
+	uParam1->f_2 = -2140901307;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_9), uParam1);
+	uParam1->f_2 = 1292053410;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_17), uParam1);
 	if (*uParam2 == 3)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = func_329(iVar0);
 		}
 	}
 	else if (*uParam2 == 4)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = iVar0;
 		}
 	}
 	else if (*uParam2 == 5)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = func_330(iVar0);
 		}
 	}
 	else if (*uParam2 == 6)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = func_331(iVar0);
 		}
-		iParam1->f_2 = 162343104;
-		DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_6), iParam1);
+		uParam1->f_2 = 162343104;
+		DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_6), uParam1);
 	}
 	else if (*uParam2 == 7)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = func_332(iVar0);
 		}
 	}
 	else
 	{
-		iParam1->f_2 = 1636457257;
-		DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_5), iParam1);
+		uParam1->f_2 = 1636457257;
+		DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_5), uParam1);
 	}
-	iParam1->f_2 = 2012757065;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = 2012757065;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_7 = func_333(iVar0);
-	iParam1->f_2 = 1060782978;
-	DATAFILE::_DATAFILE_GET_HASH(&(uParam2->f_8), iParam1);
-	iParam1->f_2 = 162343104;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_6), iParam1);
-	iParam1->f_2 = -733480474;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_25), iParam1);
-	iParam1->f_2 = 492825771;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_26), iParam1);
-	iParam1->f_2 = -839279581;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_27), iParam1);
-	iParam1->f_2 = -640941103;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_28), iParam1);
+	uParam1->f_2 = 1060782978;
+	DATAFILE::_DATAFILE_GET_HASH(&(uParam2->f_8), uParam1);
+	uParam1->f_2 = 162343104;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_6), uParam1);
+	uParam1->f_2 = -733480474;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_25), uParam1);
+	uParam1->f_2 = 492825771;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_26), uParam1);
+	uParam1->f_2 = -839279581;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_27), uParam1);
+	uParam1->f_2 = -640941103;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_28), uParam1);
 	iVar0 = 0;
-	iParam1->f_2 = -2025968302;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = -2025968302;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_29 = iVar0;
 	iVar0 = 0;
-	iParam1->f_2 = -1829781569;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = -1829781569;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_30 = iVar0;
 	iVar0 = 0;
-	iParam1->f_2 = -1999176766;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = -1999176766;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_31 = iVar0;
 }
 
@@ -9057,12 +9057,12 @@ void func_358(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	}
 }
 
-bool func_359(int iParam0, var uParam1)
+bool func_359(var uParam0, var uParam1)
 {
-	*iParam0 = Global_1232796->f_8113;
-	iParam0->f_2 = 423895568;
-	iParam0->f_3 = uParam1;
-	return (DATAFILE::_0x603AC35FD4602C76(*iParam0) && DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0));
+	*uParam0 = Global_1232796->f_8113;
+	uParam0->f_2 = 423895568;
+	uParam0->f_3 = uParam1;
+	return (DATAFILE::_0x603AC35FD4602C76(*uParam0) && DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0));
 }
 
 int func_360()
@@ -9233,11 +9233,11 @@ void func_370()
 
 int func_371(int iParam0, var uParam1, var uParam2)
 {
-	int iVar0;
+	var uVar0;
 
-	if (func_401(iParam0, uParam1, &iVar0))
+	if (func_401(iParam0, uParam1, &uVar0))
 	{
-		func_402(&iVar0, iParam0, uParam2);
+		func_402(&uVar0, iParam0, uParam2);
 	}
 	else
 	{
@@ -10151,33 +10151,33 @@ int func_400(int iParam0)
 	return -1;
 }
 
-bool func_401(int iParam0, var uParam1, int iParam2)
+bool func_401(int iParam0, var uParam1, var uParam2)
 {
-	*iParam2 = Global_1131373->f_7;
-	iParam2->f_2 = -1096981081;
-	iParam2->f_3 = func_327(iParam0);
-	iParam2->f_4 = uParam1;
-	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam2->f_1), iParam2);
+	*uParam2 = Global_1131373->f_7;
+	uParam2->f_2 = -1096981081;
+	uParam2->f_3 = func_327(iParam0);
+	uParam2->f_4 = uParam1;
+	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam2->f_1), uParam2);
 }
 
-void func_402(int iParam0, int iParam1, var uParam2)
+void func_402(var uParam0, int iParam1, var uParam2)
 {
 	var uVar0;
 
 	*uParam2 = iParam1;
-	iParam0->f_2 = -611386243;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_1), iParam0);
-	iParam0->f_2 = -2140901307;
-	if (DATAFILE::_DATAFILE_GET_HASH(&uVar0, iParam0))
+	uParam0->f_2 = -611386243;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_1), uParam0);
+	uParam0->f_2 = -2140901307;
+	if (DATAFILE::_DATAFILE_GET_HASH(&uVar0, uParam0))
 	{
 		uParam2->f_2 = uVar0;
 	}
-	iParam0->f_2 = -2140901307;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_11), iParam0);
-	iParam0->f_2 = 1292053410;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_19), iParam0);
-	iParam0->f_2 = 1234058424;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_3), iParam0);
+	uParam0->f_2 = -2140901307;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_11), uParam0);
+	uParam0->f_2 = 1292053410;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_19), uParam0);
+	uParam0->f_2 = 1234058424;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_3), uParam0);
 }
 
 void func_403(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)

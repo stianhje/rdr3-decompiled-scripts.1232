@@ -173,7 +173,7 @@ int func_6(var uParam0)
 		{
 			return 0;
 		}
-		if (!STREAMING::HAS_MODEL_LOADED(655931573))
+		if (!STREAMING::HAS_MODEL_LOADED(joaat("p_cs_sackcorn01x")))
 		{
 			return 0;
 		}
@@ -466,7 +466,7 @@ void func_19(var uParam0)
 	}
 	if (func_22(5))
 	{
-		STREAMING::REQUEST_MODEL(655931573, false);
+		STREAMING::REQUEST_MODEL(joaat("p_cs_sackcorn01x"), false);
 	}
 }
 
@@ -536,7 +536,7 @@ int func_24(var uParam0)
 	func_54(Global_35);
 	if (func_22(5))
 	{
-		ENTITY::_0x203BEFFDBE12E96A(Global_35, -2515.059f, 424.7469f, 146.8438f, 90f, 0, false, 1);
+		ENTITY::_0x203BEFFDBE12E96A(Global_35, -2515.059f, 424.7469f, 146.8438f, 90f, 0, 0, 1);
 		STREAMING::_0x513F8AA5BF2F17CF(-2515.059f, 424.7469f, 146.8438f, 20f, 0);
 	}
 	else
@@ -560,7 +560,7 @@ int func_24(var uParam0)
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(iLocal_17))
 		{
-			iLocal_17 = OBJECT::CREATE_OBJECT(655931573, -2517.9f, 424.8f, 147.9f, true, true, false, false, true);
+			iLocal_17 = OBJECT::CREATE_OBJECT(joaat("p_cs_sackcorn01x"), -2517.9f, 424.8f, 147.9f, true, true, false, false, true);
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_17))
 			{
 				ENTITY::SET_ENTITY_COORDS(iLocal_17, -2517.9f, 424.8f, 147.9f, true, false, true, true);
@@ -7247,9 +7247,9 @@ bool func_327(int iParam0)
 	return (Global_40.f_7748.f_4 && iParam0) != 0;
 }
 
-int func_328(int iParam0)
+int func_328(var uParam0)
 {
-	return iParam0 & 31;
+	return uParam0 & 31;
 }
 
 int func_329(int iParam0)

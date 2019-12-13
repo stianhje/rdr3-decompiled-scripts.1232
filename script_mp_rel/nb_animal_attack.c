@@ -3201,23 +3201,23 @@ void func_98()
 	switch (func_194())
 	{
 		case 0:
-			func_195(2, 7, -885451903);
+			func_195(2, 7, joaat("a_c_wolf_medium"));
 			func_196(7);
 			func_196(6);
 			func_196(5);
 			break;
 		case 1:
-			func_195(2, 5, 90264823);
+			func_195(2, 5, joaat("a_c_cougar_01"));
 			func_196(5);
 			func_196(4);
 			break;
 		case 2:
-			func_195(2, 4, -1124266369);
+			func_195(2, 4, joaat("a_c_bear_01"));
 			func_196(4);
 			func_196(3);
 			break;
 		case 3:
-			func_195(2, 7, 480688259);
+			func_195(2, 7, joaat("a_c_coyote_01"));
 			func_196(7);
 			func_196(6);
 			func_196(5);
@@ -3328,35 +3328,35 @@ void func_99()
 		case 1:
 			break;
 		case 2:
-			func_199(0, 319326044);
+			func_199(0, joaat("p_lantern05x"));
 			func_200(0, -2.79f, -2.23f, 0.53f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
 			break;
 		case 3:
-			func_199(0, 319326044);
+			func_199(0, joaat("p_lantern05x"));
 			func_200(0, 1.25f, 1.2f, 0.53f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
 			break;
 		case 4:
-			func_199(0, 319326044);
+			func_199(0, joaat("p_lantern05x"));
 			func_200(0, -2.79f, -2.23f, 0.53f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
 			break;
 		case 5:
-			func_199(0, 319326044);
+			func_199(0, joaat("p_lantern05x"));
 			func_200(0, 1.16f, 0.69f, 3.01f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
 			break;
 		case 6:
-			func_199(0, 319326044);
+			func_199(0, joaat("p_lantern05x"));
 			func_200(0, 1.25f, 1.2f, 0.53f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
 			break;
 		case 7:
-			func_199(0, 319326044);
+			func_199(0, joaat("p_lantern05x"));
 			func_200(0, 1.25f, 1.2f, 0.53f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
 			break;
 		case 8:
-			func_199(0, 319326044);
+			func_199(0, joaat("p_lantern05x"));
 			func_200(0, -2.79f, -2.23f, 0.53f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
 			break;
 		case 9:
-			func_199(0, 319326044);
+			func_199(0, joaat("p_lantern05x"));
 			func_200(0, -2.79f, -2.23f, 0.53f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
 			break;
 	}
@@ -3937,15 +3937,15 @@ void func_140()
 			{
 				if (func_217() == 1)
 				{
-					WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, -183018591, 0, true, false, 0, false, 0.5f, 1f, 752097756, true, 0f, false);
-					WEAPON::SET_CURRENT_PED_WEAPON(iVar0, -183018591, false, 0, false, false);
+					WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, joaat("weapon_repeater_carbine"), 0, true, false, 0, false, 0.5f, 1f, 752097756, true, 0f, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(iVar0, joaat("weapon_repeater_carbine"), false, 0, false, false);
 					TASK::TASK_SWAP_WEAPON(iVar0, 1, 1, 0, 0);
 				}
 			}
 			else
 			{
-				WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, 1742487518, 1, true, false, 1, false, 0.5f, 1f, 752097756, true, 0f, false);
-				WEAPON::SET_CURRENT_PED_WEAPON(iVar0, 1742487518, false, 1, true, false);
+				WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, joaat("weapon_melee_torch"), 1, true, false, 1, false, 0.5f, 1f, 752097756, true, 0f, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(iVar0, joaat("weapon_melee_torch"), false, 1, true, false);
 			}
 			PED::SET_PED_CAN_BE_TARGETTED(iVar0, false);
 			PED::SET_PED_CONFIG_FLAG(iVar0, 336, true);
@@ -12821,7 +12821,7 @@ void func_528(var uParam0, bool bParam1, int iParam2)
 			{
 				if (!*uParam0 & 33554432 != 0)
 				{
-					if (uParam0->f_13 == -1504859554)
+					if (uParam0->f_13 == joaat("weapon_thrown_dynamite"))
 					{
 						if (PED::IS_PED_PLANTING_BOMB(Global_35))
 						{
@@ -13287,7 +13287,7 @@ int func_538(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar4, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar4, 0, 0);
 					if (func_644(iParam1, vVar0, vVar4))
 					{
 						func_633(uParam2, 1);
@@ -13311,7 +13311,7 @@ int func_538(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar7, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar7, 0, 0);
 					if (func_644(iParam1, vVar0, vVar7))
 					{
 						func_633(uParam2, 1);
@@ -16872,7 +16872,7 @@ int func_685()
 	}
 	if (Global_1572887->f_13 == -1)
 	{
-		if (Global_1939168->f_38 == 2055893578)
+		if (Global_1939168->f_38 == joaat("weapon_lasso"))
 		{
 			return PAD::IS_CONTROL_PRESSED(0, 130948705);
 		}
@@ -17095,7 +17095,7 @@ int func_694(int iParam0, int iParam1, bool bParam2, int iParam3)
 		{
 			if (WEAPON::IS_WEAPON_VALID(Global_1939168->f_38))
 			{
-				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == -618550132)
+				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == joaat("weapon_melee_knife"))
 				{
 					if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, Global_1939168->f_38, iParam1))
 					{
@@ -17508,7 +17508,7 @@ char* func_714(int iParam0, char* sParam1, char* sParam2, char* sParam3, char* s
 	return sParam1;
 }
 
-var func_715(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, int iParam7)
+var func_715(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -17521,7 +17521,7 @@ var func_715(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var0.f_4 = uParam3;
 	Var0.f_5 = uParam4;
 	Var0.f_6 = iParam7;
-	return func_733(iParam0, &Var0);
+	return func_733(uParam0, &Var0);
 }
 
 char* func_716(bool bParam0, char* sParam1, char* sParam2)
@@ -17558,10 +17558,10 @@ int func_718()
 {
 	switch (Global_1939168->f_38)
 	{
-		case -164645981:
-		case -160924582:
-		case 827679807:
-		case 1247405313:
+		case joaat("weapon_melee_lantern"):
+		case joaat("weapon_kit_binoculars"):
+		case joaat("weapon_melee_lantern_electric"):
+		case joaat("weapon_melee_davy_lantern"):
 		case 1652431022:
 			return 1;
 		default:

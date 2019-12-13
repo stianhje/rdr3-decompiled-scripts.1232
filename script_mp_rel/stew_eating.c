@@ -30,7 +30,7 @@ void __EntryFunction__()
 	Var0.f_1.f_2 = 1086324736;
 	Var0.f_1.f_11.f_1 = 20;
 	Var0.f_1.f_33 = 20;
-	Var0.f_182 = 587066646;
+	Var0.f_182 = joaat("p_bowl04x_stew");
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(Var0.f_179))
@@ -46,7 +46,7 @@ void __EntryFunction__()
 	iVar183 = ScriptParam_0.f_2;
 	if (!func_2(iVar183, 0))
 	{
-		iVar183 = 599184882;
+		iVar183 = 599184882; /* GXTEntry: "Beef Stew" */
 	}
 	STREAMING::_0xAC37644A538F7524(-703333072);
 	STREAMING::REQUEST_MODEL(-1737141731, false);
@@ -217,8 +217,8 @@ void func_4(var uParam0)
 	{
 		ENTITY::SET_ENTITY_VISIBLE(uParam0->f_179, false);
 	}
-	func_11(uParam0->f_1, &(uParam0->f_180), 770279563, uParam0->f_182, 1);
-	func_11(uParam0->f_1, &(uParam0->f_181), 1714586516, -755866836, 0);
+	func_11(uParam0->f_1, &(uParam0->f_180), joaat("p_bowl04x_stew_ph_l_hand"), uParam0->f_182, 1);
+	func_11(uParam0->f_1, &(uParam0->f_181), joaat("p_spoon01x_ph_r_hand"), joaat("p_spoon01x"), 0);
 }
 
 bool func_5(var uParam0)
@@ -1850,7 +1850,7 @@ bool func_73(int iParam0)
 	return fVar0 <= 1f;
 }
 
-void func_74(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
+void func_74(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -1861,12 +1861,12 @@ void func_74(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	int iVar6;
 	int iVar7;
 
-	iVar0 = func_85(*iParam0);
-	iVar1 = func_86(*iParam0);
-	iVar2 = func_87(*iParam0);
-	iVar3 = func_88(*iParam0);
-	iVar4 = func_89(*iParam0);
-	iVar5 = func_90(*iParam0);
+	iVar0 = func_85(*uParam0);
+	iVar1 = func_86(*uParam0);
+	iVar2 = func_87(*uParam0);
+	iVar3 = func_88(*uParam0);
+	iVar4 = func_89(*uParam0);
+	iVar5 = func_90(*uParam0);
 	if (((((iParam6 == 0 && iParam5 == 0) && iParam4 == 0) && iParam3 == 0) && iParam2 == 0) && iParam1 == 0)
 	{
 		return;
@@ -1933,7 +1933,7 @@ void func_74(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 		iVar1 += 12;
 	}
 	iVar0 = (iVar0 - iParam6);
-	func_92(iParam0, iVar5, iVar4, iVar3, iVar2, iVar1, iVar0);
+	func_92(uParam0, iVar5, iVar4, iVar3, iVar2, iVar1, iVar0);
 }
 
 int func_75(int iParam0, int iParam1)
@@ -2003,7 +2003,7 @@ void func_78(int iParam0, int iParam1, int iParam2)
 	}
 }
 
-void func_79(int iParam0, int iParam1, int iParam2)
+void func_79(int iParam0, var uParam1, int iParam2)
 {
 	if (iParam2 == 2)
 	{
@@ -2012,10 +2012,10 @@ void func_79(int iParam0, int iParam1, int iParam2)
 	switch (iParam2)
 	{
 		case 0:
-			(Global_1954462->f_1331.f_6[iParam0 /*3*/])->f_1 = iParam1;
+			(Global_1954462->f_1331.f_6[iParam0 /*3*/])->f_1 = uParam1;
 			break;
 		case 1:
-			(Global_1954462->f_1465.f_2.f_6[iParam0 /*3*/])->f_1 = iParam1;
+			(Global_1954462->f_1465.f_2.f_6[iParam0 /*3*/])->f_1 = uParam1;
 			break;
 		default:
 			break;

@@ -306,22 +306,22 @@ void func_9()
 			switch (iVar0)
 			{
 				case 0:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 				case 1:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 				case 2:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 				case 3:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 				case 5:
-					iLocal_32 = -384354290;
+					iLocal_32 = joaat("s_m_m_fussarhenchman_01");
 					break;
 				default:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 			}
 			iLocal_33 = -1038436471;
@@ -756,7 +756,7 @@ void func_26()
 					Var3.f_3 = { PED::GET_PED_BONE_COORDS(Global_35, 21030, 0f, 0f, 0f) };
 					Var3.f_7 = 1000f;
 					Var3.f_12 = 1;
-					Var3.f_6 = 1402226560;
+					Var3.f_6 = joaat("weapon_sniperrifle_carcano");
 					MISC::_FIRE_SINGLE_BULLET_IGNORE_ENTITY_NEW(&Var3);
 				}
 			}

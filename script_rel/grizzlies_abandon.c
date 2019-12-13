@@ -24,7 +24,7 @@
 	vector3 vLocal_22 = { 0f, 0f, 0f };
 	float fLocal_25 = 0f;
 	float fLocal_26 = 0f;
-	int iScriptParam_0 = 0;
+	var uScriptParam_0 = 0;
 	var uScriptParam_1 = 0;
 	var uScriptParam_2 = 0;
 	var uScriptParam_3 = 0;
@@ -43,7 +43,7 @@ void __EntryFunction__()
 	iLocal_19 = -1;
 	vLocal_22 = { -1338.12f, 2434.522f, 307.2562f };
 	func_1();
-	iLocal_15 = iScriptParam_0;
+	iLocal_15 = uScriptParam_0;
 	while (true)
 	{
 		if (func_2())

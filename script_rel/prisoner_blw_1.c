@@ -3367,7 +3367,7 @@ void func_89(var uParam0, bool bParam1, int iParam2)
 			{
 				if (!*uParam0 & 33554432 != 0)
 				{
-					if (uParam0->f_13 == -1504859554)
+					if (uParam0->f_13 == joaat("weapon_thrown_dynamite"))
 					{
 						if (PED::IS_PED_PLANTING_BOMB(Global_35))
 						{
@@ -3833,7 +3833,7 @@ int func_99(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_22))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_26, &vVar4, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_26, &vVar4, 0, 0);
 					if (func_173(iParam1, vVar0, vVar4))
 					{
 						func_162(uParam2, 1);
@@ -3857,7 +3857,7 @@ int func_99(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_22))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_26, &vVar7, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_26, &vVar7, 0, 0);
 					if (func_173(iParam1, vVar0, vVar7))
 					{
 						func_162(uParam2, 1);
@@ -4457,33 +4457,33 @@ int func_119(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 722156226:
+		case joaat("u_m_m_bht_benedictallbright"):
 			return 2;
-		case 1361127922:
+		case joaat("u_f_m_bht_wife"):
 			return 3;
-		case 1726657594:
+		case joaat("u_m_m_bht_strawberryduel"):
 			return 4;
-		case -1694480560:
+		case joaat("u_m_m_htlrancherbounty_01"):
 			return 6;
-		case -2044758506:
+		case joaat("u_m_m_bht_shackescape"):
 			return 8;
-		case 466209020:
+		case joaat("u_m_m_uniexconfedsbounty_01"):
 			return 9;
-		case -891510636:
+		case joaat("cs_antonyforemen"):
 			return 10;
-		case -1910990966:
+		case joaat("u_m_m_bht_skinnersearch"):
 			return 11;
-		case 1921874948:
+		case joaat("u_m_m_bht_skinnerbrother"):
 			return 12;
-		case -1011228908:
+		case joaat("u_m_m_bht_banditoshack"):
 			return 14;
-		case -1008616424:
+		case joaat("u_m_m_bht_banditomine"):
 			return 15;
-		case -872333558:
+		case joaat("u_m_m_bht_laramiesleeping"):
 			return 5;
-		case 1697515844:
+		case joaat("u_m_m_bht_exconfedcampreturn"):
 			return 7;
-		case -1397059493:
+		case joaat("u_m_m_bht_blackwaterhunt"):
 			return 13;
 		default:
 			break;
@@ -4843,7 +4843,7 @@ bool func_134(int* iParam0, int iParam1)
 	return MISC::IS_BIT_SET(*iParam0, iParam1);
 }
 
-int func_135(var uParam0, int iParam1, int iParam2, bool bParam3)
+int func_135(var uParam0, var uParam1, int iParam2, bool bParam3)
 {
 	bool bVar0;
 	bool bVar1;
@@ -4851,9 +4851,9 @@ int func_135(var uParam0, int iParam1, int iParam2, bool bParam3)
 	bool bVar3;
 
 	bVar0 = (!VOLUME::_0x92A78D0BEDB332A3(iParam2) || ENTITY::IS_ENTITY_IN_VOLUME(Global_35, iParam2, true, 0));
-	bVar1 = iParam1 & 32 != false;
-	bVar2 = iParam1 & 65792 != false;
-	bVar3 = iParam1 & 1179648 != false;
+	bVar1 = uParam1 & 32 != false;
+	bVar2 = uParam1 & 65792 != false;
+	bVar3 = uParam1 & 1179648 != false;
 	if (bVar0)
 	{
 		if (bVar1)
@@ -4868,7 +4868,7 @@ int func_135(var uParam0, int iParam1, int iParam2, bool bParam3)
 	return 0;
 }
 
-void func_136(var uParam0, bool bParam1, int* iParam2, float fParam3, var uParam4, bool bParam5, float fParam6, int iParam7, int iParam8, char* sParam9, int iParam10, int iParam11, int iParam12, int iParam13, bool bParam14)
+void func_136(var uParam0, bool bParam1, int* iParam2, float fParam3, var uParam4, bool bParam5, float fParam6, int iParam7, int iParam8, char* sParam9, var uParam10, int iParam11, int iParam12, int iParam13, bool bParam14)
 {
 	int iVar0;
 
@@ -4885,7 +4885,7 @@ void func_136(var uParam0, bool bParam1, int* iParam2, float fParam3, var uParam
 					iVar0++;
 				}
 			}
-			func_209(*uParam0, uParam4, fParam3, iParam7, iParam8, iParam12, func_35(iParam10, 32), 1, 0);
+			func_209(*uParam0, uParam4, fParam3, iParam7, iParam8, iParam12, func_35(uParam10, 32), 1, 0);
 			MISC::SET_BIT(iParam2, 1);
 		}
 	}
@@ -4895,9 +4895,9 @@ void func_136(var uParam0, bool bParam1, int* iParam2, float fParam3, var uParam
 	}
 }
 
-void func_137(int iParam0)
+void func_137(var uParam0)
 {
-	if (func_35(iParam0, 4))
+	if (func_35(uParam0, 4))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0, -128997553, true);
 		PAD::DISABLE_CONTROL_ACTION(0, 130948705, true);
@@ -4909,18 +4909,18 @@ void func_137(int iParam0)
 		PAD::DISABLE_CONTROL_ACTION(0, -197984200, true);
 		PAD::DISABLE_CONTROL_ACTION(0, -238861894, true);
 	}
-	if (func_35(iParam0, 16384))
+	if (func_35(uParam0, 16384))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0, -485697785, false);
 	}
-	if (func_35(iParam0, 8))
+	if (func_35(uParam0, 8))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0, -1292666904, false);
 		PAD::DISABLE_CONTROL_ACTION(0, 578288361, false);
 	}
 }
 
-bool func_138(var uParam0, int* iParam1, float fParam2, float fParam3, var uParam4, bool bParam5, float fParam6, int iParam7, int iParam8, char* sParam9, int iParam10, int iParam11, int iParam12, int iParam13, bool bParam14, bool bParam15, bool bParam16, bool bParam17, bool bParam18)
+bool func_138(var uParam0, int* iParam1, float fParam2, float fParam3, var uParam4, bool bParam5, float fParam6, int iParam7, int iParam8, char* sParam9, var uParam10, int iParam11, int iParam12, int iParam13, bool bParam14, bool bParam15, bool bParam16, bool bParam17, bool bParam18)
 {
 	int iVar0;
 	int iVar1;
@@ -4941,9 +4941,9 @@ bool func_138(var uParam0, int* iParam1, float fParam2, float fParam3, var uPara
 	bVar3 = false;
 	bVar4 = false;
 	bVar5 = false;
-	bVar6 = iParam10 & 128 != false;
-	bVar7 = iParam10 & 64 != false;
-	bVar8 = iParam10 & 512 != false;
+	bVar6 = uParam10 & 128 != false;
+	bVar7 = uParam10 & 64 != false;
+	bVar8 = uParam10 & 512 != false;
 	bVar9 = PED::IS_PED_ON_FOOT(Global_35);
 	bVar10 = PED::IS_PED_INJURED(*uParam0);
 	bVar11 = (((PED::_0xA911EE21EDF69DAF(Global_35) || func_211(Global_35)) || func_212(Global_35)) || func_213(Global_35));
@@ -5296,7 +5296,7 @@ void func_153(int iParam0)
 			Global_1935630->f_30 = PLAYER::_0x72AD59F7B7FB6E24(PLAYER::PLAYER_ID(), 4000);
 			if (!Global_1935630->f_30)
 			{
-				if (Global_1935630->f_44 == 2055893578)
+				if (Global_1935630->f_44 == joaat("weapon_lasso"))
 				{
 					Global_1935630->f_30 = PED::_0xB65A4DAB460A19BD(Global_35) != 0;
 				}
@@ -5305,7 +5305,7 @@ void func_153(int iParam0)
 		case 2:
 			switch (Global_1935630->f_46)
 			{
-				case 2055893578:
+				case joaat("weapon_lasso"):
 					Global_1935630->f_25 = 0;
 					break;
 				default:
@@ -5533,7 +5533,7 @@ int func_164(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	{
 		return 0;
 	}
-	if (Global_1935630->f_44 == 2055893578 && Global_1935630->f_27)
+	if (Global_1935630->f_44 == joaat("weapon_lasso") && Global_1935630->f_27)
 	{
 	}
 	else if (PLAYER::_0x3EE1F7A8C32F24E1(PLAYER::PLAYER_ID(), &iVar2, 0, 0))
@@ -5946,7 +5946,7 @@ int func_180(int iParam0, int iParam1)
 	{
 		return 1;
 	}
-	if (func_237(iParam0, 1, 0, 0) != 2055893578)
+	if (func_237(iParam0, 1, 0, 0) != joaat("weapon_lasso"))
 	{
 		return 0;
 	}
@@ -6380,13 +6380,13 @@ void func_203(int* iParam0, var uParam1, bool bParam2)
 	}
 }
 
-int func_204(int iParam0, int* iParam1, var uParam2, float fParam3, bool bParam4)
+int func_204(int iParam0, var uParam1, var uParam2, float fParam3, bool bParam4)
 {
 	int iVar0;
 
-	if (iParam1->f_3 > -1 && iParam1->f_3 < *uParam2)
+	if (uParam1->f_3 > -1 && uParam1->f_3 < *uParam2)
 	{
-		iVar0 = iParam1->f_3;
+		iVar0 = uParam1->f_3;
 		((*uParam2)[iVar0 /*17*/])->f_8 = 6;
 		func_244(iParam0, (*uParam2)[iVar0 /*17*/], fParam3, 3, 0, 6, bParam4, 0);
 		if (func_124(((*uParam2)[iVar0 /*17*/])->f_6))
@@ -6408,22 +6408,22 @@ int func_205(var uParam0)
 	switch (iVar0)
 	{
 		case 2:
-			iVar1 = 295425337;
+			iVar1 = 295425337; /* GXTEntry: "Lemoyne Raider" */
 			break;
 		case 1:
-			iVar1 = 768137552;
+			iVar1 = 768137552; /* GXTEntry: "Murfree Brood" */
 			break;
 		case 0:
-			iVar1 = 1415388528;
+			iVar1 = 1415388528; /* GXTEntry: "O\'Driscoll Boy" */
 			break;
 		case 4:
-			iVar1 = 1449436544;
+			iVar1 = 1449436544; /* GXTEntry: "Laramie" */
 			break;
 		case 3:
-			iVar1 = -1807204482;
+			iVar1 = -1807204482; /* GXTEntry: "Skinner Brother" */
 			break;
 		case 5:
-			iVar1 = -1096701282;
+			iVar1 = -1096701282; /* GXTEntry: "Del Lobo" */
 			break;
 	}
 	return iVar1;
@@ -6724,7 +6724,7 @@ int func_226()
 	}
 	if (Global_1572887->f_12 == -1)
 	{
-		if (Global_1935630->f_44 == 2055893578)
+		if (Global_1935630->f_44 == joaat("weapon_lasso"))
 		{
 			return PAD::IS_CONTROL_PRESSED(0, 130948705);
 		}
@@ -6947,7 +6947,7 @@ int func_235(int iParam0, int iParam1, bool bParam2, int iParam3)
 		{
 			if (WEAPON::IS_WEAPON_VALID(Global_1935630->f_44))
 			{
-				if (WEAPON::_0x959383DCD42040DA(Global_1935630->f_44) || Global_1935630->f_44 == -618550132)
+				if (WEAPON::_0x959383DCD42040DA(Global_1935630->f_44) || Global_1935630->f_44 == joaat("weapon_melee_knife"))
 				{
 					if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, Global_1935630->f_44, iParam1))
 					{
@@ -7380,10 +7380,10 @@ int func_258()
 {
 	switch (Global_1935630->f_44)
 	{
-		case -164645981:
-		case -160924582:
-		case 827679807:
-		case 1247405313:
+		case joaat("weapon_melee_lantern"):
+		case joaat("weapon_kit_binoculars"):
+		case joaat("weapon_melee_lantern_electric"):
+		case joaat("weapon_melee_davy_lantern"):
 			return 1;
 		default:
 			break;

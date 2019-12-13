@@ -1374,9 +1374,9 @@ int func_65(int iParam0)
 	return &(Global_1058888->f_498[iParam0 /*2*/]);
 }
 
-int func_66(int iParam0)
+int func_66(var uParam0)
 {
-	return iParam0 & 31;
+	return uParam0 & 31;
 }
 
 int func_67(int iParam0)
@@ -2235,7 +2235,7 @@ int func_108(int iParam0)
 		case 5:
 			return 1860932290;
 		case 0:
-			return 560218013;
+			return joaat("p_sledgehammer03x");
 		default:
 			break;
 	}
@@ -2280,8 +2280,8 @@ int func_111(var uParam0, vector3 vParam1, vector3 vParam4, bool bParam7, vector
 		ENTITY::SET_ENTITY_COORDS(uParam0->f_13, vParam1 + Vector(0.67f, 0f, 0f), true, false, true, true);
 		ENTITY::SET_ENTITY_ROTATION(uParam0->f_13, vParam4, 2, true);
 	}
-	uParam0->f_50.f_1 = -455129387;
-	uParam0->f_84.f_1 = -455129387;
+	uParam0->f_50.f_1 = -455129387; /* GXTEntry: "_" */
+	uParam0->f_84.f_1 = -455129387; /* GXTEntry: "_" */
 	uParam0->f_50 = -70942493;
 	uParam0->f_84 = -969734833;
 	uParam0->f_50.f_30 = "Intro";

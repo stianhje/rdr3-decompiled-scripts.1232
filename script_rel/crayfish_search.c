@@ -83,7 +83,7 @@ void func_1(var uParam0, int iParam1)
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-int func_2(var uParam0, int iParam1)
+int func_2(var uParam0, var uParam1)
 {
 	if (SCRIPTS::_0x9E4EF615E307FBBE())
 	{
@@ -107,7 +107,7 @@ int func_3(var uParam0, int iParam1)
 	vVar0 = { func_10(uParam0) };
 	if (!TASK::_0x841475AC96E794D1(&(iParam1->f_9[0])))
 	{
-		iParam1->f_9[0] = TASK::CREATE_SCENARIO_POINT(-1843735114, vVar0 - Vector(0f, 0.3f, 0f), 0f, 0f, 0, 0);
+		iParam1->f_9[0] = TASK::CREATE_SCENARIO_POINT(-1843735114, vVar0 - Vector(0f, 0.3f, 0f), 0f, 0f, 0f, 0);
 	}
 	STREAMING::REQUEST_MODEL(func_11(), false);
 	iParam1->f_4 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
@@ -173,7 +173,7 @@ int func_7(var uParam0, int iParam1)
 	if (iParam1->f_5 && func_17())
 	{
 		iParam1->f_5 = 0;
-		func_19(1798104140, -1763055991, func_18(PLAYER::PLAYER_ID()), 1, 1);
+		func_19(1798104140, joaat("a_c_crawfish_01"), func_18(PLAYER::PLAYER_ID()), 1, 1);
 		Var0 = { func_20(-717883113, 1798104140) };
 		STATS::_0x6A0184E904CDF25E(&Var0, 1);
 		return 1;
@@ -300,7 +300,7 @@ Vector3 func_10(var uParam0)
 
 int func_11()
 {
-	return -445365508;
+	return joaat("p_crayfish01x");
 }
 
 int func_12(int iParam0)
@@ -1405,7 +1405,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 			}
 			break;
 		case -153407852:
-			if (((iParam1 == -450053710 || iParam1 == 1792770814) || iParam1 == -1679658797) || iParam1 == -1963397600)
+			if (((iParam1 == joaat("a_c_horse_americanpaint_overo") || iParam1 == 1792770814) || iParam1 == joaat("a_c_horse_americanpaint_tobiano")) || iParam1 == -1963397600)
 			{
 				if (iParam2 == 1)
 				{
@@ -1438,7 +1438,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return 1875597076;
 				}
 			}
-			else if ((((iParam1 == 2130094044 || iParam1 == -1140650619) || iParam1 == -1554827654) || iParam1 == -1029277326) || iParam1 == 604357666)
+			else if ((((iParam1 == joaat("a_c_horse_appaloosa_blanket") || iParam1 == joaat("a_c_horse_appaloosa_leopard")) || iParam1 == -1554827654) || iParam1 == -1029277326) || iParam1 == 604357666)
 			{
 				if (iParam2 == 1)
 				{
@@ -1449,7 +1449,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return 1323745903;
 				}
 			}
-			else if ((((iParam1 == -1999198818 || iParam1 == 1496579364) || iParam1 == -403470324) || iParam1 == 1576849913) || iParam1 == -925223936)
+			else if ((((iParam1 == joaat("a_c_horse_arabian_black") || iParam1 == 1496579364) || iParam1 == -403470324) || iParam1 == 1576849913) || iParam1 == joaat("a_c_horse_arabian_white"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1460,7 +1460,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return -1712290350;
 				}
 			}
-			else if ((iParam1 == -1547438906 || iParam1 == -2026265047) || iParam1 == -635239558)
+			else if ((iParam1 == joaat("a_c_horse_ardennes_bayroan") || iParam1 == joaat("a_c_horse_ardennes_irongreyroan")) || iParam1 == -635239558)
 			{
 				if (iParam2 == 1)
 				{
@@ -1471,7 +1471,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return 224251658;
 				}
 			}
-			else if (iParam1 == -586898625 || iParam1 == 937246805)
+			else if (iParam1 == joaat("a_c_horse_belgian_blondchestnut") || iParam1 == joaat("a_c_horse_belgian_mealychestnut"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1515,7 +1515,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return 1726324950;
 				}
 			}
-			else if (iParam1 == -1342159303 || iParam1 == -1154406788)
+			else if (iParam1 == -1342159303 || iParam1 == joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1537,7 +1537,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return -830234017;
 				}
 			}
-			else if ((iParam1 == -1180427609 || iParam1 == 43825738) || iParam1 == 2119038574)
+			else if ((iParam1 == -1180427609 || iParam1 == 43825738) || iParam1 == joaat("a_c_horse_mustang_wildbay"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1548,7 +1548,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return 629235125;
 				}
 			}
-			else if ((iParam1 == 2145697477 || iParam1 == 107013696) || iParam1 == -1261814606)
+			else if ((iParam1 == joaat("a_c_horse_nokota_blueroan") || iParam1 == 107013696) || iParam1 == -1261814606)
 			{
 				if (iParam2 == 1)
 				{
@@ -1559,7 +1559,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return -1148415148;
 				}
 			}
-			else if ((iParam1 == 1066034872 || iParam1 == 36009259) || iParam1 == 802784330)
+			else if ((iParam1 == 1066034872 || iParam1 == 36009259) || iParam1 == joaat("a_c_horse_shire_ravenblack"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1592,7 +1592,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return 1080521142;
 				}
 			}
-			else if ((((iParam1 == 2120708491 || iParam1 == -1924405794) || iParam1 == -526169133) || iParam1 == 1861665605) || iParam1 == 900144280)
+			else if ((((iParam1 == 2120708491 || iParam1 == -1924405794) || iParam1 == -526169133) || iParam1 == joaat("a_c_horse_thoroughbred_dapplegrey")) || iParam1 == 900144280)
 			{
 				if (iParam2 == 1)
 				{
@@ -1603,7 +1603,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return -47591742;
 				}
 			}
-			else if ((iParam1 == 1133837220 || iParam1 == 1702024301) || iParam1 == -1604180548)
+			else if ((iParam1 == 1133837220 || iParam1 == joaat("a_c_horse_turkoman_gold")) || iParam1 == -1604180548)
 			{
 				if (iParam2 == 1)
 				{

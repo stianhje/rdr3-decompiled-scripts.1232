@@ -2750,33 +2750,33 @@ int func_76(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 722156226:
+		case joaat("u_m_m_bht_benedictallbright"):
 			return 2;
-		case 1361127922:
+		case joaat("u_f_m_bht_wife"):
 			return 3;
-		case 1726657594:
+		case joaat("u_m_m_bht_strawberryduel"):
 			return 4;
-		case -1694480560:
+		case joaat("u_m_m_htlrancherbounty_01"):
 			return 6;
-		case -2044758506:
+		case joaat("u_m_m_bht_shackescape"):
 			return 8;
-		case 466209020:
+		case joaat("u_m_m_uniexconfedsbounty_01"):
 			return 9;
-		case -891510636:
+		case joaat("cs_antonyforemen"):
 			return 10;
-		case -1910990966:
+		case joaat("u_m_m_bht_skinnersearch"):
 			return 11;
-		case 1921874948:
+		case joaat("u_m_m_bht_skinnerbrother"):
 			return 12;
-		case -1011228908:
+		case joaat("u_m_m_bht_banditoshack"):
 			return 14;
-		case -1008616424:
+		case joaat("u_m_m_bht_banditomine"):
 			return 15;
-		case -872333558:
+		case joaat("u_m_m_bht_laramiesleeping"):
 			return 5;
-		case 1697515844:
+		case joaat("u_m_m_bht_exconfedcampreturn"):
 			return 7;
-		case -1397059493:
+		case joaat("u_m_m_bht_blackwaterhunt"):
 			return 13;
 		default:
 			break;
@@ -3136,7 +3136,7 @@ bool func_91(int* iParam0, int iParam1)
 	return MISC::IS_BIT_SET(*iParam0, iParam1);
 }
 
-int func_92(var uParam0, int iParam1, int iParam2, bool bParam3)
+int func_92(var uParam0, var uParam1, int iParam2, bool bParam3)
 {
 	bool bVar0;
 	bool bVar1;
@@ -3144,9 +3144,9 @@ int func_92(var uParam0, int iParam1, int iParam2, bool bParam3)
 	bool bVar3;
 
 	bVar0 = (!VOLUME::_0x92A78D0BEDB332A3(iParam2) || ENTITY::IS_ENTITY_IN_VOLUME(Global_35, iParam2, true, 0));
-	bVar1 = iParam1 & 32 != false;
-	bVar2 = iParam1 & 65792 != false;
-	bVar3 = iParam1 & 1179648 != false;
+	bVar1 = uParam1 & 32 != false;
+	bVar2 = uParam1 & 65792 != false;
+	bVar3 = uParam1 & 1179648 != false;
 	if (bVar0)
 	{
 		if (bVar1)
@@ -3161,7 +3161,7 @@ int func_92(var uParam0, int iParam1, int iParam2, bool bParam3)
 	return 0;
 }
 
-void func_93(var uParam0, bool bParam1, int* iParam2, float fParam3, var uParam4, bool bParam5, float fParam6, int iParam7, int iParam8, char* sParam9, int iParam10, int iParam11, int iParam12, int iParam13, bool bParam14)
+void func_93(var uParam0, bool bParam1, int* iParam2, float fParam3, var uParam4, bool bParam5, float fParam6, int iParam7, int iParam8, char* sParam9, var uParam10, int iParam11, int iParam12, int iParam13, bool bParam14)
 {
 	int iVar0;
 
@@ -3178,7 +3178,7 @@ void func_93(var uParam0, bool bParam1, int* iParam2, float fParam3, var uParam4
 					iVar0++;
 				}
 			}
-			func_125(*uParam0, uParam4, fParam3, iParam7, iParam8, iParam12, func_35(iParam10, 32), 1, 0);
+			func_125(*uParam0, uParam4, fParam3, iParam7, iParam8, iParam12, func_35(uParam10, 32), 1, 0);
 			MISC::SET_BIT(iParam2, 1);
 		}
 	}
@@ -3188,9 +3188,9 @@ void func_93(var uParam0, bool bParam1, int* iParam2, float fParam3, var uParam4
 	}
 }
 
-void func_94(int iParam0)
+void func_94(var uParam0)
 {
-	if (func_35(iParam0, 4))
+	if (func_35(uParam0, 4))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0, -128997553, true);
 		PAD::DISABLE_CONTROL_ACTION(0, 130948705, true);
@@ -3202,18 +3202,18 @@ void func_94(int iParam0)
 		PAD::DISABLE_CONTROL_ACTION(0, -197984200, true);
 		PAD::DISABLE_CONTROL_ACTION(0, -238861894, true);
 	}
-	if (func_35(iParam0, 16384))
+	if (func_35(uParam0, 16384))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0, -485697785, false);
 	}
-	if (func_35(iParam0, 8))
+	if (func_35(uParam0, 8))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0, -1292666904, false);
 		PAD::DISABLE_CONTROL_ACTION(0, 578288361, false);
 	}
 }
 
-bool func_95(var uParam0, int* iParam1, float fParam2, float fParam3, var uParam4, bool bParam5, float fParam6, int iParam7, int iParam8, char* sParam9, int iParam10, int iParam11, int iParam12, int iParam13, bool bParam14, bool bParam15, bool bParam16, bool bParam17, bool bParam18)
+bool func_95(var uParam0, int* iParam1, float fParam2, float fParam3, var uParam4, bool bParam5, float fParam6, int iParam7, int iParam8, char* sParam9, var uParam10, int iParam11, int iParam12, int iParam13, bool bParam14, bool bParam15, bool bParam16, bool bParam17, bool bParam18)
 {
 	int iVar0;
 	int iVar1;
@@ -3234,9 +3234,9 @@ bool func_95(var uParam0, int* iParam1, float fParam2, float fParam3, var uParam
 	bVar3 = false;
 	bVar4 = false;
 	bVar5 = false;
-	bVar6 = iParam10 & 128 != false;
-	bVar7 = iParam10 & 64 != false;
-	bVar8 = iParam10 & 512 != false;
+	bVar6 = uParam10 & 128 != false;
+	bVar7 = uParam10 & 64 != false;
+	bVar8 = uParam10 & 512 != false;
 	bVar9 = PED::IS_PED_ON_FOOT(Global_35);
 	bVar10 = PED::IS_PED_INJURED(*uParam0);
 	bVar11 = (((PED::_0xA911EE21EDF69DAF(Global_35) || func_127(Global_35)) || func_128(Global_35)) || func_129(Global_35));
@@ -3663,13 +3663,13 @@ void func_119(int* iParam0, var uParam1, bool bParam2)
 	}
 }
 
-int func_120(int iParam0, int* iParam1, var uParam2, float fParam3, bool bParam4)
+int func_120(int iParam0, var uParam1, var uParam2, float fParam3, bool bParam4)
 {
 	int iVar0;
 
-	if (iParam1->f_3 > -1 && iParam1->f_3 < *uParam2)
+	if (uParam1->f_3 > -1 && uParam1->f_3 < *uParam2)
 	{
-		iVar0 = iParam1->f_3;
+		iVar0 = uParam1->f_3;
 		((*uParam2)[iVar0 /*17*/])->f_8 = 6;
 		func_147(iParam0, (*uParam2)[iVar0 /*17*/], fParam3, 3, 0, 6, bParam4, 0);
 		if (func_81(((*uParam2)[iVar0 /*17*/])->f_6))
@@ -3691,22 +3691,22 @@ int func_121(var uParam0)
 	switch (iVar0)
 	{
 		case 2:
-			iVar1 = 295425337;
+			iVar1 = 295425337; /* GXTEntry: "Lemoyne Raider" */
 			break;
 		case 1:
-			iVar1 = 768137552;
+			iVar1 = 768137552; /* GXTEntry: "Murfree Brood" */
 			break;
 		case 0:
-			iVar1 = 1415388528;
+			iVar1 = 1415388528; /* GXTEntry: "O\'Driscoll Boy" */
 			break;
 		case 4:
-			iVar1 = 1449436544;
+			iVar1 = 1449436544; /* GXTEntry: "Laramie" */
 			break;
 		case 3:
-			iVar1 = -1807204482;
+			iVar1 = -1807204482; /* GXTEntry: "Skinner Brother" */
 			break;
 		case 5:
-			iVar1 = -1096701282;
+			iVar1 = -1096701282; /* GXTEntry: "Del Lobo" */
 			break;
 	}
 	return iVar1;

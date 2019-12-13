@@ -59,7 +59,7 @@ void __EntryFunction__()
 {
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	iLocal_48 = 1830978939;
+	iLocal_48 = joaat("s_m_m_ambientlawrural_01");
 	vLocal_49 = { -230.9494f, 797.3469f, 134.418f };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
@@ -305,7 +305,7 @@ void func_11()
 	int iVar0;
 
 	iLocal_46 = func_18(iLocal_48, vLocal_49, 101.6932f, 1, 1, 0, 1, 1, 1, 0, 0);
-	WEAPON::_GIVE_WEAPON_TO_PED_2(iLocal_46, 1402226560, 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+	WEAPON::_GIVE_WEAPON_TO_PED_2(iLocal_46, joaat("weapon_sniperrifle_carcano"), 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 	PED::_0xFC3DB99C8144CD81(iLocal_46, iLocal_47, 0, 0, 0);
 	PED::SET_PED_CONFIG_FLAG(iLocal_46, 263, true);
 	PED::SET_PED_CAN_RAGDOLL(iLocal_46, false);

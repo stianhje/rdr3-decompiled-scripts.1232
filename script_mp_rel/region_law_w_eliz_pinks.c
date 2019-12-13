@@ -50,7 +50,7 @@ void __EntryFunction__()
 	fLocal_16 = 1f;
 	iLocal_18 = 1;
 	iLocal_35 = 10;
-	iLocal_38 = 737910671;
+	iLocal_38 = joaat("s_m_m_pinlaw_01");
 	uScriptParam_0 = uScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{

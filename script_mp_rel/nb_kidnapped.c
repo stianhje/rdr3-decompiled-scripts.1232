@@ -8073,7 +8073,7 @@ void func_307()
 		else
 		{
 			WEAPON::REMOVE_ALL_PED_WEAPONS(iVar0, true, true);
-			WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, 1701864918, -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+			WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, joaat("weapon_pistol_semiauto"), -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 			func_315(NETWORK::PARTICIPANT_ID_TO_INT(), 1, 1);
 		}
 	}
@@ -8206,7 +8206,7 @@ void func_309()
 							PED::_SET_PED_ON_MOUNT(iVar1, iVar5, -1, true);
 							Jump @293; //curOff = 236
 							WEAPON::REMOVE_ALL_PED_WEAPONS(iVar1, true, true);
-							WEAPON::_GIVE_WEAPON_TO_PED_2(iVar1, -183018591, -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+							WEAPON::_GIVE_WEAPON_TO_PED_2(iVar1, joaat("weapon_repeater_carbine"), -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 							func_315(NETWORK::PARTICIPANT_ID_TO_INT(), iVar0, 1);
 						}
 						iVar0++;
@@ -8255,8 +8255,8 @@ void func_310()
 						{
 							vVar4 = { ENTITY::GET_ENTITY_COORDS(iVar3, true, false) };
 							TASK::_TASK_MOVE_IN_TRAFFIC_2(iVar2, vVar4, 2f, 2f, 0, 0);
-							WEAPON::_GIVE_WEAPON_TO_PED_2(iVar2, -183018591, -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
-							WEAPON::_GIVE_WEAPON_TO_PED_2(iVar2, 1701864918, -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+							WEAPON::_GIVE_WEAPON_TO_PED_2(iVar2, joaat("weapon_repeater_carbine"), -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+							WEAPON::_GIVE_WEAPON_TO_PED_2(iVar2, joaat("weapon_pistol_semiauto"), -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 							func_315(NETWORK::PARTICIPANT_ID_TO_INT(), iVar1, 2);
 						}
 					}
@@ -8270,7 +8270,7 @@ void func_310()
 						{
 							TASK::TASK_FOLLOW_TO_OFFSET_OF_ENTITY(func_190(iVar1), func_190(1), -2f, -2f, 0f, 2f, -1, 1036831949, 1, 1, 0, 0, 1);
 						}
-						WEAPON::_GIVE_WEAPON_TO_PED_2(iVar2, 1701864918, -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+						WEAPON::_GIVE_WEAPON_TO_PED_2(iVar2, joaat("weapon_pistol_semiauto"), -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 						func_315(NETWORK::PARTICIPANT_ID_TO_INT(), iVar1, 2);
 					}
 					Jump @451; //curOff = 368
@@ -9465,7 +9465,7 @@ void func_353(var uParam0, bool bParam1, int iParam2)
 			{
 				if (!*uParam0 & 33554432 != 0)
 				{
-					if (uParam0->f_13 == -1504859554)
+					if (uParam0->f_13 == joaat("weapon_thrown_dynamite"))
 					{
 						if (PED::IS_PED_PLANTING_BOMB(Global_35))
 						{
@@ -9931,7 +9931,7 @@ int func_363(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar4, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar4, 0, 0);
 					if (func_457(iParam1, vVar0, vVar4))
 					{
 						func_445(uParam2, 1);
@@ -9955,7 +9955,7 @@ int func_363(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar7, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar7, 0, 0);
 					if (func_457(iParam1, vVar0, vVar7))
 					{
 						func_445(uParam2, 1);
@@ -14290,7 +14290,7 @@ int func_505()
 	}
 	if (Global_1572887->f_13 == -1)
 	{
-		if (Global_1939168->f_38 == 2055893578)
+		if (Global_1939168->f_38 == joaat("weapon_lasso"))
 		{
 			return PAD::IS_CONTROL_PRESSED(0, 130948705);
 		}
@@ -14513,7 +14513,7 @@ int func_514(int iParam0, int iParam1, bool bParam2, int iParam3)
 		{
 			if (WEAPON::IS_WEAPON_VALID(Global_1939168->f_38))
 			{
-				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == -618550132)
+				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == joaat("weapon_melee_knife"))
 				{
 					if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, Global_1939168->f_38, iParam1))
 					{
@@ -15605,10 +15605,10 @@ int func_542()
 {
 	switch (Global_1939168->f_38)
 	{
-		case -164645981:
-		case -160924582:
-		case 827679807:
-		case 1247405313:
+		case joaat("weapon_melee_lantern"):
+		case joaat("weapon_kit_binoculars"):
+		case joaat("weapon_melee_lantern_electric"):
+		case joaat("weapon_melee_davy_lantern"):
 		case 1652431022:
 			return 1;
 		default:

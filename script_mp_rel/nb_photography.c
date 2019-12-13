@@ -3216,7 +3216,7 @@ void func_99()
 				func_198(0, 1708527016);
 				func_199(0, -1128853525, 1691628739);
 			}
-			func_198(1, 1772321403);
+			func_198(1, joaat("a_c_donkey_01"));
 			break;
 		case 3:
 			if (func_201() == 2)
@@ -3230,7 +3230,7 @@ void func_99()
 				func_199(0, -668350768, -1989345804);
 			}
 			func_198(1, func_200(997958153, 1));
-			func_198(2, -1124266369);
+			func_198(2, joaat("a_c_bear_01"));
 			func_103(4194304);
 			break;
 		case 4:
@@ -3245,7 +3245,7 @@ void func_99()
 				func_199(0, -668350768, -1989345804);
 			}
 			func_198(1, func_200(997958153, 1));
-			func_198(2, -1963605336);
+			func_198(2, joaat("a_c_buck_01"));
 			func_103(8388608);
 			break;
 		case 5:
@@ -3260,7 +3260,7 @@ void func_99()
 				func_199(0, -668350768, -1989345804);
 			}
 			func_198(1, func_200(997958153, 1));
-			func_198(2, 90264823);
+			func_198(2, joaat("a_c_cougar_01"));
 			func_103(16777216);
 			break;
 		case 6:
@@ -3275,7 +3275,7 @@ void func_99()
 				func_199(0, -668350768, -1989345804);
 			}
 			func_198(1, func_200(997958153, 1));
-			func_198(2, 480688259);
+			func_198(2, joaat("a_c_coyote_01"));
 			func_103(33554432);
 			break;
 		case 7:
@@ -3290,14 +3290,14 @@ void func_99()
 				func_199(0, -668350768, -1989345804);
 			}
 			func_198(1, func_200(997958153, 1));
-			func_198(2, -1143398950);
+			func_198(2, joaat("a_c_wolf"));
 			func_103(67108864);
 			break;
 		case 8:
 			func_198(0, 1708527016);
 			func_199(0, -1128853525, 1691628739);
 			func_198(1, func_200(997958153, 1));
-			func_198(2, 122748261);
+			func_198(2, joaat("a_c_fishlargemouthbass_01_ms"));
 			break;
 		case 9:
 		case 10:
@@ -3466,9 +3466,9 @@ void func_100()
 	switch (func_197())
 	{
 		case 8:
-			func_204(0, -53066424);
+			func_204(0, joaat("w_melee_fishingpole02"));
 			func_205(0, 0f, 0f, 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
-			func_204(2, -1594634038);
+			func_204(2, joaat("p_cs_rag01x"));
 			func_205(2, 1f, 0f, 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 1);
 			func_204(1, 514240557);
 			switch (func_202())
@@ -4285,12 +4285,12 @@ void func_141()
 				if (func_201() == 2)
 				{
 					func_324(&(Local_1067.f_18.f_52), iVar1, "RE005_FEMALE2", 0);
-					WEAPON::_GIVE_WEAPON_TO_PED_2(iVar1, 379542007, 100, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+					WEAPON::_GIVE_WEAPON_TO_PED_2(iVar1, joaat("weapon_revolver_cattleman"), 100, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 				}
 				else
 				{
 					func_324(&(Local_1067.f_18.f_52), iVar1, "RE005_FEMALE3", 0);
-					WEAPON::_GIVE_WEAPON_TO_PED_2(iVar1, 379542007, 100, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+					WEAPON::_GIVE_WEAPON_TO_PED_2(iVar1, joaat("weapon_revolver_cattleman"), 100, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 				}
 				break;
 			case 1:
@@ -5889,7 +5889,7 @@ void func_221()
 				iVar4 = joaat("weapon_unarmed");
 				if (WEAPON::GET_CURRENT_PED_WEAPON(iVar2, &iVar4, false, 0, false))
 				{
-					if (iVar4 == -1016714371)
+					if (iVar4 == joaat("weapon_kit_camera"))
 					{
 						func_504(16);
 						return;
@@ -5912,7 +5912,7 @@ void func_221()
 				iVar4 = joaat("weapon_unarmed");
 				if (WEAPON::GET_CURRENT_PED_WEAPON(iVar2, &iVar4, false, 0, false))
 				{
-					if (iVar4 == -1016714371)
+					if (iVar4 == joaat("weapon_kit_camera"))
 					{
 						iVar5 = func_101(0);
 						fVar6 = BUILTIN::VDIST(ENTITY::GET_ENTITY_COORDS(iVar5, true, false), ENTITY::GET_ENTITY_COORDS(iVar2, true, false));
@@ -16026,7 +16026,7 @@ int func_590(int iParam0, int iParam1, int iParam2)
 								case 8:
 									if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, false, 0, false))
 									{
-										if ((iVar0 == 2055893578 || iVar0 == -680302000) || iVar0 == 1151374672)
+										if ((iVar0 == joaat("weapon_lasso") || iVar0 == -680302000) || iVar0 == 1151374672)
 										{
 											return 0;
 										}
@@ -20052,7 +20052,7 @@ void func_762(int iParam0)
 		{
 			if (WEAPON::GET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), &iVar0, false, 0, false))
 			{
-				if (iVar0 == 2055893578 || iVar0 == -680302000)
+				if (iVar0 == joaat("weapon_lasso") || iVar0 == -680302000)
 				{
 					func_882(iParam0);
 					func_883(iParam0);
@@ -20117,7 +20117,7 @@ void func_764(var uParam0, bool bParam1, int iParam2)
 			{
 				if (!*uParam0 & 33554432 != 0)
 				{
-					if (uParam0->f_13 == -1504859554)
+					if (uParam0->f_13 == joaat("weapon_thrown_dynamite"))
 					{
 						if (PED::IS_PED_PLANTING_BOMB(Global_35))
 						{
@@ -20583,7 +20583,7 @@ int func_774(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar4, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar4, 0, 0);
 					if (func_903(iParam1, vVar0, vVar4))
 					{
 						func_892(uParam2, 1);
@@ -20607,7 +20607,7 @@ int func_774(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar7, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar7, 0, 0);
 					if (func_903(iParam1, vVar0, vVar7))
 					{
 						func_892(uParam2, 1);
@@ -24268,7 +24268,7 @@ int func_947()
 	}
 	if (Global_1572887->f_13 == -1)
 	{
-		if (Global_1939168->f_38 == 2055893578)
+		if (Global_1939168->f_38 == joaat("weapon_lasso"))
 		{
 			return PAD::IS_CONTROL_PRESSED(0, 130948705);
 		}
@@ -24464,7 +24464,7 @@ int func_954(int iParam0, int iParam1, bool bParam2, int iParam3)
 		{
 			if (WEAPON::IS_WEAPON_VALID(Global_1939168->f_38))
 			{
-				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == -618550132)
+				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == joaat("weapon_melee_knife"))
 				{
 					if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, Global_1939168->f_38, iParam1))
 					{
@@ -24849,10 +24849,10 @@ int func_971()
 {
 	switch (Global_1939168->f_38)
 	{
-		case -164645981:
-		case -160924582:
-		case 827679807:
-		case 1247405313:
+		case joaat("weapon_melee_lantern"):
+		case joaat("weapon_kit_binoculars"):
+		case joaat("weapon_melee_lantern_electric"):
+		case joaat("weapon_melee_davy_lantern"):
 		case 1652431022:
 			return 1;
 		default:

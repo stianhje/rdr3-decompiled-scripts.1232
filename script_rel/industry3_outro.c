@@ -1387,9 +1387,9 @@ void func_61(var uParam0, int iParam1, char* sParam2, bool bParam3)
 	}
 }
 
-int func_62(int iParam0, vector3 vParam1, float fParam4, float fParam5, int iParam6, int iParam7)
+int func_62(int iParam0, vector3 vParam1, float fParam4, float fParam5, float fParam6, int iParam7)
 {
-	return TASK::CREATE_SCENARIO_POINT(iParam0, vParam1, fParam4, fParam5, iParam6, iParam7);
+	return TASK::CREATE_SCENARIO_POINT(iParam0, vParam1, fParam4, fParam5, fParam6, iParam7);
 }
 
 void func_63(int iParam0, int iParam1)

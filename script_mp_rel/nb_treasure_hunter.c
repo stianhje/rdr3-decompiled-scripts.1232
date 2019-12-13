@@ -3150,7 +3150,7 @@ void func_96()
 void func_97()
 {
 	func_192(0, -894964583);
-	func_192(1, 2514129);
+	func_192(1, joaat("p_binoculars01x"));
 }
 
 int func_98(int iParam0)
@@ -3751,7 +3751,7 @@ void func_139()
 				if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iVar0))
 				{
 					PED::_0x5C3C55EAAD19915F(iVar0, "DEFAULT_SHOCKED");
-					WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, 379542007, -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+					WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, joaat("weapon_revolver_cattleman"), -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 				}
 			}
 			iVar0 = func_210(0);
@@ -3763,7 +3763,7 @@ void func_139()
 			break;
 		case 2:
 		case 3:
-			WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, 379542007, -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+			WEAPON::_GIVE_WEAPON_TO_PED_2(iVar0, joaat("weapon_revolver_cattleman"), -1, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 			func_255(0);
 			func_252(&(Local_937.f_18.f_45), func_163(), "EXCHANGE_BASE_HUNTER", 4f, -4f, 0);
 			break;
@@ -6883,7 +6883,7 @@ void func_282()
 					TASK::TASK_PLAY_ANIM(0, func_162(), sVar3, 2f, -2f, -1, 0, 0, 0, 0, 0, 0, 0);
 					if (func_209() == 1)
 					{
-						WEAPON::SET_CURRENT_PED_WEAPON(iVar0, 379542007, false, 0, false, false);
+						WEAPON::SET_CURRENT_PED_WEAPON(iVar0, joaat("weapon_revolver_cattleman"), false, 0, false, false);
 						TASK::TASK_SWAP_WEAPON(0, 0, 0, 0, 0);
 						TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(0, 30f, 0, 0);
 						TASK::_TASK_SMART_FLEE_STYLE_COORD(0, Local_937.f_15, 4, 12288, 5000f, -1, func_210(1));
@@ -7167,7 +7167,7 @@ void func_287()
 				bVar22 = func_502(0);
 				if (!bVar22 && func_281(-2147483648))
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(iVar1, 379542007, false, 0, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(iVar1, joaat("weapon_revolver_cattleman"), false, 0, false, false);
 					TASK::TASK_SWAP_WEAPON(0, 0, 0, 0, 0);
 					TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(0, 30f, 0, 0);
 					TASK::_TASK_SMART_FLEE_STYLE_COORD(0, Local_937.f_15, iVar21, 12288, 5000f, -1, func_210(1));
@@ -13075,7 +13075,7 @@ void func_591(var uParam0, bool bParam1, int iParam2)
 			{
 				if (!*uParam0 & 33554432 != 0)
 				{
-					if (uParam0->f_13 == -1504859554)
+					if (uParam0->f_13 == joaat("weapon_thrown_dynamite"))
 					{
 						if (PED::IS_PED_PLANTING_BOMB(Global_35))
 						{
@@ -13541,7 +13541,7 @@ int func_601(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar4, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar4, 0, 0);
 					if (func_709(iParam1, vVar0, vVar4))
 					{
 						func_698(uParam2, 1);
@@ -13565,7 +13565,7 @@ int func_601(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, -1504859554, uParam2->f_28, &vVar7, 0, 0);
+					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar7, 0, 0);
 					if (func_709(iParam1, vVar0, vVar7))
 					{
 						func_698(uParam2, 1);
@@ -17237,7 +17237,7 @@ int func_755()
 	}
 	if (Global_1572887->f_13 == -1)
 	{
-		if (Global_1939168->f_38 == 2055893578)
+		if (Global_1939168->f_38 == joaat("weapon_lasso"))
 		{
 			return PAD::IS_CONTROL_PRESSED(0, 130948705);
 		}
@@ -17460,7 +17460,7 @@ int func_764(int iParam0, int iParam1, bool bParam2, int iParam3)
 		{
 			if (WEAPON::IS_WEAPON_VALID(Global_1939168->f_38))
 			{
-				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == -618550132)
+				if (WEAPON::_0x959383DCD42040DA(Global_1939168->f_38) || Global_1939168->f_38 == joaat("weapon_melee_knife"))
 				{
 					if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, Global_1939168->f_38, iParam1))
 					{
@@ -17903,24 +17903,24 @@ struct<5> func_782(int iParam0, bool bParam1, int iParam2)
 				Var6.f_9 = -1591664384;
 				if (!func_810(iParam0, &Var0, 1728382685, 0, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_810(iParam0, &Var0, -649335959, 0, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_811(iParam0, &Var6, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case joaat("coach"):
@@ -18181,10 +18181,10 @@ int func_794()
 {
 	switch (Global_1939168->f_38)
 	{
-		case -164645981:
-		case -160924582:
-		case 827679807:
-		case 1247405313:
+		case joaat("weapon_melee_lantern"):
+		case joaat("weapon_kit_binoculars"):
+		case joaat("weapon_melee_lantern_electric"):
+		case joaat("weapon_melee_davy_lantern"):
 		case 1652431022:
 			return 1;
 		default:
@@ -18612,7 +18612,7 @@ int func_818(int iParam0, var uParam1)
 	return 1;
 }
 
-int func_819(bool bParam0, int iParam1, var* uParam2)
+int func_819(bool bParam0, int iParam1, var uParam2)
 {
 	if (bParam0)
 	{

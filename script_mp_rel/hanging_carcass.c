@@ -294,12 +294,12 @@ int func_10(var uParam0)
 			{
 				case 0:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@DEER@NORMAL@DEAD", 64);
-					uParam0->f_38 = 1110710183;
+					uParam0->f_38 = joaat("a_c_deer_01");
 					StringCopy(&(uParam0->f_30), "PD_Deer_aged_carcass_Hvy", 64);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@WOLF_MEDIUM@NORMAL@DEAD", 64);
-					uParam0->f_38 = -885451903;
+					uParam0->f_38 = joaat("a_c_wolf_medium");
 					break;
 			}
 			uParam0->f_50 = 45454;
@@ -324,21 +324,21 @@ int func_10(var uParam0)
 			{
 				case 0:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@FOX@NORMAL@DEAD", 64);
-					uParam0->f_38 = 252669332;
+					uParam0->f_38 = joaat("a_c_fox_01");
 					StringCopy(&(uParam0->f_30), "PD_Small_aged_carcass_Hvy", 64);
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 33646;
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@RABBIT@NORMAL@DEAD", 64);
-					uParam0->f_38 = -541762431;
+					uParam0->f_38 = joaat("a_c_rabbit_01");
 					StringCopy(&(uParam0->f_30), "PD_Ex_Small_aged_carcass_Hvy", 64);
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 33646;
 					break;
 				case 2:
 					StringCopy(&(uParam0->f_14), "CREATURES_BIRD@DUCK@NORMAL@DEAD", 64);
-					uParam0->f_38 = -1003616053;
+					uParam0->f_38 = joaat("a_c_duck_01");
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 14285;
 					break;
@@ -349,10 +349,10 @@ int func_10(var uParam0)
 			switch (iVar9)
 			{
 				case 0:
-					uParam0->f_38 = 490159652;
+					uParam0->f_38 = joaat("a_c_fishrainbowtrout_01_ms");
 					break;
 				case 1:
-					uParam0->f_38 = 41707457;
+					uParam0->f_38 = joaat("a_c_fishsalmonsockeye_01_ms");
 					break;
 			}
 			uParam0->f_55 = 3;
@@ -844,11 +844,11 @@ void func_32(var uParam0)
 	vVar8 = { 0f, 90f, 0f };
 	switch (uParam0->f_38)
 	{
-		case 252669332:
+		case joaat("a_c_fox_01"):
 			vVar5 = { -0.0125f, -0.03f, 0.0125f };
 			vVar8 = { 90f, 0f, 90f };
 			break;
-		case -541762431:
+		case joaat("a_c_rabbit_01"):
 			vVar2 = { -0.0125f, 0f, -0.025f };
 			vVar8 = { 0f, 90f, 0f };
 			break;

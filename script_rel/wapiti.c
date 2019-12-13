@@ -24,7 +24,7 @@
 	int iLocal_22 = 0;
 	struct<16> Local_23 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
 	var uLocal_39 = 0;
-	bool bLocal_40 = false;
+	int iLocal_40 = 0;
 	bool bLocal_41 = false;
 	int iLocal_42 = 0;
 	var uLocal_43 = 0;
@@ -306,7 +306,7 @@ int func_3()
 	return 1;
 }
 
-void func_4(int iParam0, int iParam1)
+void func_4(int iParam0, var uParam1)
 {
 	if (!func_36(16))
 	{
@@ -325,71 +325,71 @@ void func_4(int iParam0, int iParam1)
 	}
 	if (func_44(8))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_45(8);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(2))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_45(2);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(16))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_45(16);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(4))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 6;
+			*uParam1 = 6;
 			return;
 		}
-		else if (*iParam1 != 6)
+		else if (*uParam1 != 6)
 		{
 			func_45(4);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
 	if (func_44(1))
 	{
-		if (*iParam1 == 11)
+		if (*uParam1 == 11)
 		{
-			*iParam1 = 2;
+			*uParam1 = 2;
 			return;
 		}
-		else if (*iParam1 != 2)
+		else if (*uParam1 != 2)
 		{
 			func_45(1);
-			*iParam1 = 11;
+			*uParam1 = 11;
 			return;
 		}
 	}
@@ -883,9 +883,9 @@ int func_38(int iParam0)
 					MISC::_0xFDF38E2B711BF78E(&Local_23, 17);
 					iLocal_19 = 1;
 				}
-				if ((iLocal_19 && !bLocal_40) && func_68(func_67()) > iLocal_21 + 10)
+				if ((iLocal_19 && !iLocal_40) && func_68(func_67()) > iLocal_21 + 10)
 				{
-					bLocal_40 = true;
+					iLocal_40 = 1;
 				}
 				if (func_68(func_67()) > iLocal_22 && !iLocal_20)
 				{
@@ -1462,7 +1462,7 @@ void func_62(int iParam0, int iParam1, var uParam2)
 		{
 			HUD::_0xC9CAEAEEC1256E54(1833957607);
 			func_121();
-			if (Global_1935630->f_44 != -160924582)
+			if (Global_1935630->f_44 != joaat("weapon_kit_binoculars"))
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, -1304887797, false);
 				PAD::DISABLE_CONTROL_ACTION(0, -128997553, false);
@@ -2307,7 +2307,7 @@ void func_86()
 void func_87(int iParam0)
 {
 	func_55(0.775f, 0.2f, 0.025f, 0f);
-	if (bLocal_40)
+	if (iLocal_40)
 	{
 		Local_23.f_12 = 46;
 		Local_23.f_13 = 14;
@@ -3324,19 +3324,19 @@ int func_116(int iParam0, int iParam1, int iParam2)
 		switch (Global_1935630->f_44)
 		{
 			case joaat("weapon_unarmed"):
-			case -1016714371:
+			case joaat("weapon_kit_camera"):
 			case 191707516:
 				if (VOLUME::_0x666C2F53ABEFC952(iParam0) != 1030835986)
 				{
 					VOLUME::_0xFD010A2154B40676(iParam0, 1030835986);
 				}
 				break;
-			case -1415022764:
-			case -164645981:
-			case -160924582:
-			case 827679807:
+			case joaat("weapon_fishingrod"):
+			case joaat("weapon_melee_lantern"):
+			case joaat("weapon_kit_binoculars"):
+			case joaat("weapon_melee_lantern_electric"):
 			case 1030402560:
-			case 1247405313:
+			case joaat("weapon_melee_davy_lantern"):
 			case 1549070292:
 				if (VOLUME::_0x666C2F53ABEFC952(iParam0) == 1030835986)
 				{
@@ -3437,14 +3437,14 @@ void func_121()
 	switch (Global_1935630->f_44)
 	{
 		case joaat("weapon_unarmed"):
-		case -1415022764:
-		case -1016714371:
-		case -164645981:
-		case -160924582:
+		case joaat("weapon_fishingrod"):
+		case joaat("weapon_kit_camera"):
+		case joaat("weapon_melee_lantern"):
+		case joaat("weapon_kit_binoculars"):
 		case 191707516:
-		case 827679807:
+		case joaat("weapon_melee_lantern_electric"):
 		case 1030402560:
-		case 1247405313:
+		case joaat("weapon_melee_davy_lantern"):
 		case 1549070292:
 			break;
 		default:

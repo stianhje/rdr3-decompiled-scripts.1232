@@ -891,22 +891,22 @@ void func_26(var uParam0, var uParam1, int iParam2, var uParam3, char* sParam4, 
 			}
 		}
 
-void func_27(int iParam0, var uParam1, var uParam2, vector3 vParam3, vector3 vParam6)
+void func_27(var uParam0, var uParam1, var uParam2, vector3 vParam3, vector3 vParam6)
 {
 	int iVar0;
 	int iVar1;
 
-	switch (*iParam0)
+	switch (*uParam0)
 	{
 		case 0:
 			if (*uParam1 != 0)
 			{
 				STREAMING::REQUEST_MODEL(*uParam1, false);
-				*iParam0 = 1;
+				*uParam0 = 1;
 			}
 			else
 			{
-				*iParam0 = 4;
+				*uParam0 = 4;
 			}
 			break;
 		case 1:
@@ -926,7 +926,7 @@ void func_27(int iParam0, var uParam1, var uParam2, vector3 vParam3, vector3 vPa
 				{
 					ENTITY::_0x0918E3565C20F03C(iVar0, vParam3, vParam6.z, false, 1);
 				}
-				*iParam0 = 4;
+				*uParam0 = 4;
 			}
 			break;
 		case 4:

@@ -118,19 +118,19 @@ void func_6()
 				{
 					StringCopy(&(Local_5.f_1), "WANTED_BOUNTY_POSTER_CHAIN_GANG", 32);
 					StringCopy(&(Local_5.f_18), "doc_bounty_poster_chain_gang", 32);
-					Local_5.f_8.f_2 = -1710279686;
+					Local_5.f_8.f_2 = -1710279686; /* GXTEntry: "Bounty Poster - Mr Black & Mr White" */
 				}
 				else if (Local_5.f_7 == -1325774943)
 				{
 					StringCopy(&(Local_5.f_1), "WANTED_BOUNTY_POSTER", 32);
 					StringCopy(&(Local_5.f_18), "doc_bounty_poster_player", 32);
-					Local_5.f_8.f_2 = -1664948962;
+					Local_5.f_8.f_2 = -1664948962; /* GXTEntry: "Bounty Hunter\'s Letter" */
 				}
 				else
 				{
 					StringCopy(&(Local_5.f_1), "WANTED_BOUNTY_POSTER", 32);
 					StringCopy(&(Local_5.f_18), "doc_bounty_poster", 32);
-					Local_5.f_8.f_2 = -77412868;
+					Local_5.f_8.f_2 = -77412868; /* GXTEntry: "Bounty Poster" */
 				}
 				Local_5.f_6 = TASK::_0xDF7993356F52359A(Local_5, 0);
 				Local_5.f_5 = TASK::_0x295514F198EFD0CA(Local_5.f_6, &(Local_5.f_1));

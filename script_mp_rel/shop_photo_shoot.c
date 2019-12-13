@@ -660,7 +660,7 @@ void func_18()
 	{
 		ENTITY::REMOVE_MODEL_HIDE(-814.042f, -1374.27f, 44.941f, 2f, -899803912, 0);
 		ENTITY::REMOVE_MODEL_HIDE(-814.042f, -1374.27f, 44.941f, 2f, 1866258194, 0);
-		ENTITY::REMOVE_MODEL_HIDE(-814.042f, -1374.27f, 44.941f, 2f, -1313455184, 0);
+		ENTITY::REMOVE_MODEL_HIDE(-814.042f, -1374.27f, 44.941f, 2f, joaat("p_chair12bx"), 0);
 	}
 	else if ((Global_1051387->f_69[18 /*76*/])->f_18 == 60)
 	{
@@ -2561,7 +2561,7 @@ void func_49()
 	{
 		ENTITY::CREATE_MODEL_HIDE(-814.042f, -1374.27f, 44.941f, 2f, -899803912, false);
 		ENTITY::CREATE_MODEL_HIDE(-814.042f, -1374.27f, 44.941f, 2f, 1866258194, false);
-		ENTITY::CREATE_MODEL_HIDE(-814.042f, -1374.27f, 44.941f, 2f, -1313455184, false);
+		ENTITY::CREATE_MODEL_HIDE(-814.042f, -1374.27f, 44.941f, 2f, joaat("p_chair12bx"), false);
 	}
 	else if ((Global_1051387->f_69[18 /*76*/])->f_18 == 60)
 	{
@@ -2742,11 +2742,11 @@ void func_60()
 				{
 					if (bVar1)
 					{
-						Local_59.f_59 = -763919645;
+						Local_59.f_59 = -763919645; /* GXTEntry: "Move down" */
 					}
 					else
 					{
-						Local_59.f_59 = -39308912;
+						Local_59.f_59 = -39308912; /* GXTEntry: "Move up/down" */
 					}
 					iVar2 = iVar3;
 				}
@@ -2766,7 +2766,7 @@ void func_60()
 				}
 				else
 				{
-					Local_59.f_59 = -1882188328;
+					Local_59.f_59 = -1882188328; /* GXTEntry: "Move up" */
 				}
 			}
 			Local_59.f_33 = func_121("PHOTO_STUDIO_CHANGE_BACKGROUND", Local_59.f_59, 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, 1704213876, 0);
@@ -4996,7 +4996,7 @@ int func_137()
 						if (Local_59.f_59 != -39308912)
 						{
 							func_116(&(Local_59.f_33), 1, 1);
-							Local_59.f_59 = -39308912;
+							Local_59.f_59 = -39308912; /* GXTEntry: "Move up/down" */
 							Local_59.f_33 = func_121("PHOTO_STUDIO_CHANGE_BACKGROUND", Local_59.f_59, 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, 1704213876, 0);
 							func_119(Local_59.f_33, 4, 1, 0);
 						}
@@ -5014,14 +5014,14 @@ int func_137()
 			if (bVar1)
 			{
 				func_116(&(Local_59.f_33), 1, 1);
-				Local_59.f_59 = -1882188328;
+				Local_59.f_59 = -1882188328; /* GXTEntry: "Move up" */
 				Local_59.f_33 = func_121("PHOTO_STUDIO_CHANGE_BACKGROUND", Local_59.f_59, 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, 1704213876, 0);
 				func_119(Local_59.f_33, 4, 1, 0);
 			}
 			else
 			{
 				func_116(&(Local_59.f_33), 1, 1);
-				Local_59.f_59 = -763919645;
+				Local_59.f_59 = -763919645; /* GXTEntry: "Move down" */
 				Local_59.f_33 = func_121("PHOTO_STUDIO_CHANGE_BACKGROUND", Local_59.f_59, 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, 1704213876, 0);
 				func_119(Local_59.f_33, 4, 1, 0);
 			}
@@ -5136,7 +5136,7 @@ int func_139()
 					if (bVar3)
 					{
 						func_116(&(Local_59.f_33), 1, 1);
-						Local_59.f_59 = -763919645;
+						Local_59.f_59 = -763919645; /* GXTEntry: "Move down" */
 						Local_59.f_33 = func_121("PHOTO_STUDIO_CHANGE_BACKGROUND", Local_59.f_59, 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, 1704213876, 0);
 						func_119(Local_59.f_33, 4, 1, 0);
 						func_120(Local_59.f_33, Local_59.f_60, 1, 1);
@@ -6688,24 +6688,24 @@ struct<5> func_200(int iParam0, bool bParam1, int iParam2)
 				Var6.f_9 = -1591664384;
 				if (!func_218(iParam0, &Var0, 1728382685, 0, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_218(iParam0, &Var0, -649335959, 0, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_219(iParam0, &Var6, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case joaat("coach"):
@@ -7032,19 +7032,19 @@ void func_210(int iParam0, var uParam1, var uParam2)
 	{
 		case 1234009870:
 			*uParam1 = 1802325493;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case -1202134084:
 			*uParam1 = -864693164;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case 1297050066:
 			*uParam1 = -603289736;
-			*uParam2 = 1232099469;
+			*uParam2 = 1232099469; /* GXTEntry: "Revolver Cartridges - Express" */
 			break;
 		case -1780177928:
 			*uParam1 = -1803237008;
-			*uParam2 = -2084181920;
+			*uParam2 = -2084181920; /* GXTEntry: "Revolver Cartridges - High Velocity" */
 			break;
 		case -1467836497:
 			*uParam1 = -1175521284;
@@ -7056,11 +7056,11 @@ void func_210(int iParam0, var uParam1, var uParam2)
 			break;
 		case -153287664:
 			*uParam1 = -1650796693;
-			*uParam2 = 836939099;
+			*uParam2 = 836939099; /* GXTEntry: "Pistol Cartridges - Express" */
 			break;
 		case 1845082736:
 			*uParam1 = -1521597660;
-			*uParam2 = -1411815376;
+			*uParam2 = -1411815376; /* GXTEntry: "Pistol Cartridges - High Velocity" */
 			break;
 		case 406755377:
 			*uParam1 = -1288829256;
@@ -7072,27 +7072,27 @@ void func_210(int iParam0, var uParam1, var uParam2)
 			break;
 		case 45760211:
 			*uParam1 = -851229814;
-			*uParam2 = 1654725195;
+			*uParam2 = 1654725195; /* GXTEntry: "Rifle Cartridges - Express" */
 			break;
 		case -276295943:
 			*uParam1 = 914704115;
-			*uParam2 = 1858824185;
+			*uParam2 = 1858824185; /* GXTEntry: "Rifle Cartridges - High Velocity" */
 			break;
 		case -2029793397:
 			*uParam1 = -219896679;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case 2120467495:
 			*uParam1 = 516838334;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case -2075613923:
 			*uParam1 = -385817936;
-			*uParam2 = -578347576;
+			*uParam2 = -578347576; /* GXTEntry: "Repeater Cartridges - Express" */
 			break;
 		case 122656217:
 			*uParam1 = 1192843172;
-			*uParam2 = 231465488;
+			*uParam2 = 231465488; /* GXTEntry: "Repeater Cartridges - High Velocity" */
 			break;
 		case 2107187484:
 			*uParam1 = 954871696;
@@ -7104,7 +7104,7 @@ void func_210(int iParam0, var uParam1, var uParam2)
 			break;
 		case 305770744:
 			*uParam1 = -2087227528;
-			*uParam2 = 314966081;
+			*uParam2 = 314966081; /* GXTEntry: "Shotgun - Slug" */
 			break;
 		case 550900979:
 			*uParam1 = -618066518;

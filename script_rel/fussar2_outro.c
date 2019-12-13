@@ -3780,9 +3780,9 @@ void func_185(int iParam0, var uParam1, var uParam2, var uParam3)
 	*uParam2 = func_193(iParam0);
 }
 
-int func_186(int iParam0)
+int func_186(var uParam0)
 {
-	return iParam0 & 31;
+	return uParam0 & 31;
 }
 
 int func_187(int iParam0)

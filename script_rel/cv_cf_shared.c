@@ -38,7 +38,7 @@
 	int iLocal_36 = 0;
 	int iLocal_37 = 0;
 	int iLocal_38 = 0;
-	int iLocal_39 = 0;
+	var uLocal_39 = 0;
 	int iLocal_40 = 0;
 	int iLocal_41 = 0;
 	int iLocal_42 = 0;
@@ -3142,10 +3142,10 @@ int func_73(var uParam0)
 		default:
 			return 0;
 	}
-	iLocal_24 = func_151(uParam0, -1006095118, 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
-	iLocal_27 = func_151(uParam0, 1271647689, -1.372f, 1.604f, -0.0733f, 0, 1, 0, 1);
+	iLocal_24 = func_151(uParam0, joaat("p_chairfolding02x"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
+	iLocal_27 = func_151(uParam0, joaat("p_bench_log07x"), -1.372f, 1.604f, -0.0733f, 0, 1, 0, 1);
 	iLocal_25 = func_151(uParam0, -1618805595, -1.167f, -1.167f, -0.023f, 0, 1, 0, 1);
-	iLocal_26 = func_151(uParam0, 1230724566, -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
+	iLocal_26 = func_151(uParam0, joaat("p_chair_crate02x"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
 	func_152(uParam0, 0f, 0f, 0f, 0f, 3f, 3f, 3f, 665633627, -1, 1, 1, 0);
 	iVar0 = func_20(uParam0);
 	if (iVar0 >= 343 && iVar0 <= 384)
@@ -3187,8 +3187,8 @@ int func_73(var uParam0)
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 					iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				}
-				iLocal_28 = func_151(uParam0, 1843407141, 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
-				func_151(uParam0, 927991752, 0f, 0f, 0f, "CIG", 0, 1, 1);
+				iLocal_28 = func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+				func_151(uParam0, joaat("p_cigarette_cs02x"), 0f, 0f, 0f, "CIG", 0, 1, 1);
 				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@abigail_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@abigail_2@action", 0, 0, 1, 0);
@@ -3225,7 +3225,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				func_151(uParam0, 1843407141, 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
+				func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
 				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_152(uParam0, 1.19761f, -1.86883f, -0.0285263f, -145.236f, 1f, 1f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_1@base", 1, 1, 0, 0);
@@ -3251,7 +3251,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				iLocal_31 = func_151(uParam0, 1810315535, 0f, 0f, 0f, "STICK", 0, 0, 1);
+				iLocal_31 = func_151(uParam0, joaat("p_stickfirepoker01x"), 0f, 0f, 0f, "STICK", 0, 0, 1);
 				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@bill_2@action", 0, 0, 1, 0);
@@ -3287,14 +3287,14 @@ int func_73(var uParam0)
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
 				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_3@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@bill_3@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@bill_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFBW3AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 2, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 701595666, -1691043483);
-				func_166(uParam0, iLocal_39, -1, 0.93f);
+				func_166(uParam0, uLocal_39, -1, 0.93f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
 				func_159(uParam0, iLocal_17, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_159(uParam0, iLocal_18, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_A", iLocal_26, 0, -1073741824, 1065353216, 1);
@@ -3401,10 +3401,10 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				iLocal_34 = func_151(uParam0, 1843407141, 0f, 0f, 0f, "BILL_BOTTLE", 0, 0, 1);
-				iLocal_35 = func_151(uParam0, -1971689092, 0f, 0f, 0f, "KEY_BOTTLE_A", 0, 0, 1);
-				iLocal_36 = func_151(uParam0, 1843407141, 0f, 0f, 0f, "KEY_BOTTLE_B", 0, 0, 1);
-				iLocal_37 = func_151(uParam0, -1971689092, 0f, 0f, 0f, "GEN_BOTTLE_A", 0, 0, 1);
+				iLocal_34 = func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BILL_BOTTLE", 0, 0, 1);
+				iLocal_35 = func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "KEY_BOTTLE_A", 0, 0, 1);
+				iLocal_36 = func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "KEY_BOTTLE_B", 0, 0, 1);
+				iLocal_37 = func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "GEN_BOTTLE_A", 0, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_6@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@bill_6@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFBW6AU");
@@ -3471,14 +3471,14 @@ int func_73(var uParam0)
 				}
 				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@charles_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@charles_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@charles_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFCH1AU");
 				func_158(uParam0, iLocal_14, 3, -830507952, 0, -1, 1);
 				func_159(uParam0, iLocal_14, 2, -2138878033, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_B", -1, 1, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 8, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 1413432677, 1926190038);
-				func_166(uParam0, iLocal_39, -1, 0.95f);
+				func_166(uParam0, uLocal_39, -1, 0.95f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_158(uParam0, iLocal_18, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
@@ -3577,13 +3577,13 @@ int func_73(var uParam0)
 				{
 					func_155(uParam0, "script@vignette@camp_fire@dutch_2@base", 1, 1, 0, 0);
 				}
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@dutch_2@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@dutch_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFDV2AU");
 				func_158(uParam0, iLocal_14, 3, -830507952, 0, -1, 1);
 				func_157(uParam0, iLocal_14, 2, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -1972242884, -2146208398);
-				func_166(uParam0, iLocal_39, -1, 0.89f);
+				func_166(uParam0, uLocal_39, -1, 0.89f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_159(uParam0, iLocal_18, 2, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_D", iLocal_27, 0, -1073741824, 1065353216, 1);
@@ -3649,7 +3649,7 @@ int func_73(var uParam0)
 					iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				}
-				iLocal_28 = func_151(uParam0, 1843407141, 0f, 0f, 0f, "p_bottlebeer01x", 0, 0, 1);
+				iLocal_28 = func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "p_bottlebeer01x", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_and_dutch_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@bill_and_dutch_1@action", 0, 0, 1, 0);
@@ -3679,7 +3679,7 @@ int func_73(var uParam0)
 				iLocal_16 = func_153(uParam0, 1, 0);
 				iLocal_17 = func_153(uParam0, 14, 0);
 				iLocal_18 = func_153(uParam0, 13, 0);
-				func_151(uParam0, 1810315535, 0f, 0f, 0f, "STICK", 0, 0, 1);
+				func_151(uParam0, joaat("p_stickfirepoker01x"), 0f, 0f, 0f, "STICK", 0, 0, 1);
 				func_152(uParam0, -1.44671f, 1.70399f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@cfdtcjmbll_1@main_base", 65, 0, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@cfdtcjmbll_1@main_action", 64, 0, 0, 0);
@@ -3702,14 +3702,14 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "FHM1AUD");
 				func_159(uParam0, iLocal_14, 2, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_I", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 4, 0, 0, 0);
 				func_160(uParam0, iLocal_14, "START_SEATED_MALE_I_TO_SEAT_BENCH_MALE_B");
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -2035347767, 1953877712);
-				func_166(uParam0, iLocal_39, -1, 0.84f);
+				func_166(uParam0, uLocal_39, -1, 0.84f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_17, 1, 1, 0, 0, 0);
@@ -3739,7 +3739,7 @@ int func_73(var uParam0)
 				}
 				func_155(uParam0, "script@vignette@camp_fire@hosea_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "FHM2AUD");
-				func_151(uParam0, -441265845, 0f, 0f, 0f, "p_logHalf01x", 0, 0, 1);
+				func_151(uParam0, joaat("p_loghalf01x"), 0f, 0f, 0f, "p_logHalf01x", 0, 0, 1);
 				if (!func_161(14))
 				{
 					func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_D", iLocal_24, 0);
@@ -3787,7 +3787,7 @@ int func_73(var uParam0)
 				}
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_3@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_3@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_3@action", 0, 0, 1, 0);
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_HUMAN_CAMP_FIRE_SEAT_BOX_MALE_C", iLocal_26, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_HUMAN_CAMP_FIRE_SEAT_BOX_MALE_C", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 4, 0, 0, 0);
@@ -3813,17 +3813,17 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_151(uParam0, -1971689092, 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+				func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_4@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_4@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_4@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFHM4AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 939028829, 641086034);
-				func_166(uParam0, iLocal_39, -1, 0.89f);
+				func_166(uParam0, uLocal_39, -1, 0.89f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
 				func_159(uParam0, iLocal_17, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_17, 1, 1, 0, 0, 0);
@@ -3839,7 +3839,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				iLocal_31 = func_151(uParam0, 1810315535, 0f, 0f, 0f, "STICK", 0, 0, 1);
+				iLocal_31 = func_151(uParam0, joaat("p_stickfirepoker01x"), 0f, 0f, 0f, "STICK", 0, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_5@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_5@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFHM5AU");
@@ -3875,11 +3875,11 @@ int func_73(var uParam0)
 				}
 				if (func_161(4))
 				{
-					iLocal_28 = func_151(uParam0, -1971689092, 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
+					iLocal_28 = func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
 				}
 				else
 				{
-					iLocal_28 = func_151(uParam0, -1971689092, 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+					iLocal_28 = func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 				}
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				if (!func_161(4))
@@ -3960,7 +3960,7 @@ int func_73(var uParam0)
 				}
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_8@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_8@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_8@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFHM8AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_K", iLocal_26, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_K", iLocal_26, 0, -1073741824, 1065353216, 1);
@@ -3968,7 +3968,7 @@ int func_73(var uParam0)
 				func_157(uParam0, iLocal_14, 1, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -488847577, 1278148167);
-				func_166(uParam0, iLocal_39, -1, 0.87f);
+				func_166(uParam0, uLocal_39, -1, 0.87f);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_D", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_17, "START_SEATED_MALE_D_TO_SEAT_BENCH_MALE_B");
 				func_157(uParam0, iLocal_17, 1, 1, 0, 0, 0);
@@ -4105,7 +4105,7 @@ int func_73(var uParam0)
 				func_155(uParam0, "script@vignette@camp_fire@hosea_and_Uncle_3@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_and_Uncle_3@action", 0, 0, 1, 0);
 				iLocal_38 = func_155(uParam0, "script@vignette@camp_fire@hosea_and_Uncle_3@player_action", 0, 0, 0, 0);
-				iLocal_31 = func_151(uParam0, 1810315535, 0f, 0f, 0f, "STICK", 0, 0, 1);
+				iLocal_31 = func_151(uParam0, joaat("p_stickfirepoker01x"), 0f, 0f, 0f, "STICK", 0, 0, 1);
 				func_156(uParam0, "CFHU3AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0, -1073741824, 1065353216, 1);
@@ -4131,14 +4131,14 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@javier_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJE1AUD");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
 				func_159(uParam0, iLocal_14, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 8, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 1993833288, -1414418530);
-				func_166(uParam0, iLocal_39, -1, 0.88f);
+				func_166(uParam0, uLocal_39, -1, 0.88f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_17, 1, 1, 0, 0, 0);
@@ -4156,14 +4156,14 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@javier_2@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_2@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJE2AUD");
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_D", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_14, "START_SEATED_MALE_D_TO_SEAT_BENCH_MALE_B");
 				func_157(uParam0, iLocal_14, 1, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 1167694029, -1124085190);
-				func_166(uParam0, iLocal_39, -1, 0.85f);
+				func_166(uParam0, uLocal_39, -1, 0.85f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
 				func_159(uParam0, iLocal_17, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_17, 1, 1, 0, 0, 0);
@@ -4179,17 +4179,17 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				iLocal_28 = func_151(uParam0, -1971689092, 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+				iLocal_28 = func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@javier_3@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_3@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJE3AUD");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_26, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 1383248511, -789186010);
-				func_166(uParam0, iLocal_39, -1, 0.84f);
+				func_166(uParam0, uLocal_39, -1, 0.84f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_A", iLocal_27, 0);
 				func_159(uParam0, iLocal_17, 2, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_C", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_17, "START_SEATED_MALE_C_TO_SEAT_BOX_MALE_C");
@@ -4211,8 +4211,8 @@ int func_73(var uParam0)
 				vVar1 = { func_179(uParam0, 0.9875f, -0.525f, 0.8875f) };
 				iLocal_41 = VOLUME::_CREATE_VOLUME_CYLINDER(vVar1, uParam0->f_26 + Vector(0f, 0f, 0f), 3f, 3f, 3f);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
-				iLocal_28 = func_151(uParam0, 1843407141, 0f, 0f, 0f, "BEER", 0, 0, 1);
-				iLocal_30 = func_151(uParam0, -967333571, 0f, 0f, 0f, "p_cigarette_cs01x", 0, 1, 1);
+				iLocal_28 = func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BEER", 0, 0, 1);
+				iLocal_30 = func_151(uParam0, joaat("p_cigarette_cs01x"), 0f, 0f, 0f, "p_cigarette_cs01x", 0, 1, 1);
 				func_155(uParam0, "script@vignette@camp_fire@javier_4@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@javier_4@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJE4AUD");
@@ -4243,13 +4243,13 @@ int func_73(var uParam0)
 					iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 					iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				}
-				iLocal_31 = func_151(uParam0, 1810315535, 0f, 0f, 0f, "p_stickFirePoker01x", 0, 0, 1);
+				iLocal_31 = func_151(uParam0, joaat("p_stickfirepoker01x"), 0f, 0f, 0f, "p_stickFirePoker01x", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				if (!func_161(4))
 				{
 					func_155(uParam0, "script@vignette@camp_fire@javier_5@base", 1, 1, 0, 0);
 				}
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_5@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_5@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJE5AUD");
 				if (!func_161(4))
 				{
@@ -4260,7 +4260,7 @@ int func_73(var uParam0)
 				func_157(uParam0, iLocal_14, 1, 8, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 771746198, 1926905328);
-				func_166(uParam0, iLocal_39, -1, 0.88f);
+				func_166(uParam0, uLocal_39, -1, 0.88f);
 				if (!func_161(4))
 				{
 					func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
@@ -4324,8 +4324,8 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				iLocal_28 = func_151(uParam0, 1843407141, 0f, 0f, 0f, "KEY_BOTTLE", 0, 0, 1);
-				iLocal_31 = func_151(uParam0, 1810315535, 0f, 0f, 0f, "KEY_STICK", 0, 0, 1);
+				iLocal_28 = func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "KEY_BOTTLE", 0, 0, 1);
+				iLocal_31 = func_151(uParam0, joaat("p_stickfirepoker01x"), 0f, 0f, 0f, "KEY_STICK", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@john_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@john_2@action", 0, 0, 1, 0);
@@ -4380,8 +4380,8 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "GEN_MALE_B");
 				iLocal_19 = func_154(uParam0, 0, "GEN_MALE_C");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
-				func_151(uParam0, 1843407141, 0f, 0f, 0f, "KEY_BOTTLE", 0, 1, 1);
-				func_151(uParam0, 1843407141, 0f, 0f, 0f, "GEN_BOTTLE", 0, 1, 1);
+				func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "KEY_BOTTLE", 0, 1, 1);
+				func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "GEN_BOTTLE", 0, 1, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@john_4@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@john_4@action", 0, 0, 1, 0);
@@ -4416,13 +4416,13 @@ int func_73(var uParam0)
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_156(uParam0, "FJM5AUD");
 				func_155(uParam0, "script@vignette@camp_fire@john_5@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@john_5@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@john_5@action", 0, 0, 1, 0);
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_A", iLocal_26, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_A", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -226939644, -331733655);
-				func_166(uParam0, iLocal_39, -1, 0.95f);
+				func_166(uParam0, uLocal_39, -1, 0.95f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_C", iLocal_27, 0);
 				func_159(uParam0, iLocal_17, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_17, "START_SEATED_MALE_J_TO_SEAT_BENCH_MALE_B");
@@ -4475,13 +4475,13 @@ int func_73(var uParam0)
 				iLocal_14 = func_153(uParam0, 8, 0);
 				iLocal_15 = func_153(uParam0, 10, 0);
 				func_155(uParam0, "script@vignette@camp_fire@kiesen_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@kiesen_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@kiesen_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFKS1AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_C", iLocal_26, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_C", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -1925246872, 1793916220);
-				func_166(uParam0, iLocal_39, -1, 0.93f);
+				func_166(uParam0, uLocal_39, -1, 0.93f);
 				func_159(uParam0, iLocal_15, 2, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_J", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_15, "START_SEATED_MALE_J_TO_SEAT_BENCH_MALE_B");
 				func_157(uParam0, iLocal_15, 1, 1, 0, 0, 0);
@@ -4489,7 +4489,7 @@ int func_73(var uParam0)
 			case 383:
 				iLocal_14 = func_153(uParam0, 8, 0);
 				iLocal_15 = func_153(uParam0, 10, 0);
-				func_151(uParam0, -502353725, 0f, 0f, 0f, "pebble", 0, 1, 1);
+				func_151(uParam0, joaat("p_pebble01x"), 0f, 0f, 0f, "pebble", 0, 1, 1);
 				func_155(uParam0, "script@vignette@camp_fire@kiesen_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@kiesen_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFKS2AU");
@@ -4567,14 +4567,14 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				func_152(uParam0, 1.19761f, -1.86883f, -0.0285263f, -145.236f, 1f, 1f, 3f, -1612834106, 1632043240, 1, 1, 1);
 				func_155(uParam0, "script@vignette@camp_fire@micah_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@micah_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@micah_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFMB1AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0);
 				func_159(uParam0, iLocal_14, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 2, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -1445046211, -1291750701);
-				func_166(uParam0, iLocal_39, -1, 0.93f);
+				func_166(uParam0, uLocal_39, -1, 0.93f);
 				func_159(uParam0, iLocal_17, 2, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_A", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_17, "START_SEATED_MALE_A_TO_SEAT_BENCH_MALE_B");
 				func_158(uParam0, iLocal_18, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
@@ -4610,12 +4610,12 @@ int func_73(var uParam0)
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_156(uParam0, "CFMB3AU");
 				func_155(uParam0, "script@vignette@camp_fire@micah_3@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@micah_3@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@micah_3@action", 0, 0, 1, 0);
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
 				func_159(uParam0, iLocal_14, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -785766668, 1582582138);
-				func_166(uParam0, iLocal_39, -1, 0.92f);
+				func_166(uParam0, uLocal_39, -1, 0.92f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_K", iLocal_26, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_K", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_17, "START_SEATED_MALE_K_TO_SEAT_BENCH_MALE_A");
@@ -4637,7 +4637,7 @@ int func_73(var uParam0)
 					iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 					iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-					func_151(uParam0, 1843407141, 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
+					func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
 				}
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_156(uParam0, "CFMB4AU");
@@ -4681,7 +4681,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_19 = func_154(uParam0, 0, "KEY_MALE_C");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_151(uParam0, -1671495534, 0f, 0f, 0f, "CIGARETTE", 0, 0, 1);
+				func_151(uParam0, joaat("p_cigarette01x"), 0f, 0f, 0f, "CIGARETTE", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@micah_5@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@micah_5@action", 0, 0, 1, 0);
@@ -4703,17 +4703,17 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				func_151(uParam0, -1671495534, 0f, 0f, 0f, "CIGARETTE", 0, 1, 1);
+				func_151(uParam0, joaat("p_cigarette01x"), 0f, 0f, 0f, "CIGARETTE", 0, 1, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@micah_6@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@micah_6@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@micah_6@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFMB6AU");
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_A", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_14, "START_SEATED_MALE_A_TO_SEAT_BENCH_MALE_B");
 				func_157(uParam0, iLocal_14, 2, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -1094024651, -1494099184);
-				func_166(uParam0, iLocal_39, -1, 0.93f);
+				func_166(uParam0, uLocal_39, -1, 0.93f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
 				func_159(uParam0, iLocal_17, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_17, 2, 1, 0, 0, 0);
@@ -4739,21 +4739,21 @@ int func_73(var uParam0)
 					iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 					iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-					func_151(uParam0, 1843407141, 0f, 0f, 0f, "BOTTLE 1", 0, 1, 1);
+					func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE 1", 0, 1, 1);
 				}
-				func_151(uParam0, 1843407141, 0f, 0f, 0f, "BOTTLE 2", 0, 1, 1);
+				func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE 2", 0, 1, 1);
 				func_156(uParam0, "CFMP1AU");
 				if (!func_161(14))
 				{
 					func_155(uParam0, "script@vignette@camp_fire@pearson_1@base_intro", 1, 1, 0, 0);
 				}
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@pearson_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@pearson_1@action", 0, 0, 1, 0);
 				func_158(uParam0, iLocal_14, 3, -22664287, "WORLD_HUMAN_SMOKE_MALE_D", -1, 1);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_A", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_14, "START_SEATED_MALE_A_TO_SEAT_BENCH_MALE_B");
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -1349371032, -435896558);
-				func_166(uParam0, iLocal_39, -1, 0.91f);
+				func_166(uParam0, uLocal_39, -1, 0.91f);
 				func_159(uParam0, iLocal_18, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0, -1073741824, 1065353216, 1);
 				if (!func_161(14))
 				{
@@ -4782,7 +4782,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_151(uParam0, 1843407141, 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+				func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@pearson_2@base_intro", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@pearson_2@action", 0, 0, 1, 0);
@@ -4822,15 +4822,15 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				iLocal_29 = func_151(uParam0, 1843407141, 0f, 0f, 0f, "BOTTLE_A", 0, 1, 1);
-				iLocal_28 = func_151(uParam0, 1843407141, 0f, 0f, 0f, "BOTTLE_B", 0, 0, 1);
+				iLocal_29 = func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE_A", 0, 1, 1);
+				iLocal_28 = func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE_B", 0, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@swanson_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@swanson_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@swanson_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFRS1AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_Q", iLocal_24, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -583543047, -63583611);
-				func_166(uParam0, iLocal_39, -1, 0.88f);
+				func_166(uParam0, uLocal_39, -1, 0.88f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_HUMAN_CAMP_FIRE_SEAT_BOX_MALE_C", iLocal_26, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_HUMAN_CAMP_FIRE_SEAT_BOX_MALE_C", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_158(uParam0, iLocal_18, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
@@ -4851,10 +4851,10 @@ int func_73(var uParam0)
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
-				iLocal_31 = func_151(uParam0, 1810315535, 0f, 0f, 0f, "FIREPOKER", 0, 0, 1);
+				iLocal_31 = func_151(uParam0, joaat("p_stickfirepoker01x"), 0f, 0f, 0f, "FIREPOKER", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@swanson_2@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@swanson_2@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@swanson_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFRS2AU");
 				func_158(uParam0, iLocal_14, 3, -2050416193, "WORLD_CAMP_FIRE_STANDING_MALE_C", -1, 1);
 				func_159(uParam0, iLocal_14, 2, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_D", iLocal_27, 0, -1073741824, 1065353216, 1);
@@ -4862,7 +4862,7 @@ int func_73(var uParam0)
 				func_160(uParam0, iLocal_14, "START_SEATED_MALE_D_TO_SEAT_BENCH_MALE_B");
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 184070778, 190867674);
-				func_166(uParam0, iLocal_39, -1, 0.86f);
+				func_166(uParam0, uLocal_39, -1, 0.86f);
 				func_158(uParam0, iLocal_17, 3, -2138878033, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_E", -1, 1);
 				func_159(uParam0, iLocal_17, 2, -2138878033, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_E", -1, 1, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_17, 1, 1, 0, 0, 0);
@@ -4919,7 +4919,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				func_155(uParam0, "script@vignette@camp_fire@swanson_4@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@swanson_4@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@swanson_4@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFRS4AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_H", iLocal_24, 0, -1073741824, 1065353216, 1);
@@ -4927,7 +4927,7 @@ int func_73(var uParam0)
 				func_157(uParam0, iLocal_14, 1, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 793541409, 1963277350);
-				func_166(uParam0, iLocal_39, -1, 0.89f);
+				func_166(uParam0, uLocal_39, -1, 0.89f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_26, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_17, 1, 1, 0, 0, 0);
@@ -4957,7 +4957,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_19 = func_154(uParam0, 0, "KEY_MALE_C");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_151(uParam0, -1402507254, 0f, 0f, 0f, "CIGAR", 0, 1, 1);
+				func_151(uParam0, joaat("p_cigarthin01x"), 0f, 0f, 0f, "CIGAR", 0, 1, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@susan_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@susan_1@action", 0, 0, 1, 0);
@@ -4982,7 +4982,7 @@ int func_73(var uParam0)
 				func_152(uParam0, -1.44671f, 1.70399f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@susan_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@susan_2@action", 0, 0, 1, 0);
-				iLocal_28 = func_151(uParam0, -1971689092, 0f, 0f, 0f, "p_bottleJD01x", 0, 0, 1);
+				iLocal_28 = func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "p_bottleJD01x", 0, 0, 1);
 				func_156(uParam0, "CFSG2AU");
 				func_157(uParam0, iLocal_14, 2, 2, 0, 0, 0);
 				func_158(uParam0, iLocal_17, 3, 1051693614, "PROP_CAMP_FIRE_SEATED_DRINKING_WHISKEY_MALE_C", iLocal_24, 0);
@@ -5004,14 +5004,14 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@sean_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@sean_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@sean_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFSN1AU");
 				func_158(uParam0, iLocal_14, 3, -830507952, 0, -1, 1);
 				func_159(uParam0, iLocal_14, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 8, 0, 0, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 2057328198, -1791463543);
-				func_166(uParam0, iLocal_39, -1, 0.96f);
+				func_166(uParam0, uLocal_39, -1, 0.96f);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_G", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_17, "START_SEATED_MALE_G_TO_SEAT_BENCH_MALE_B");
 				func_157(uParam0, iLocal_17, 1, 1, 0, 0, 0);
@@ -5026,7 +5026,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				iLocal_31 = func_151(uParam0, 1810315535, 0f, 0f, 0f, "STICK", 0, 0, 1);
+				iLocal_31 = func_151(uParam0, joaat("p_stickfirepoker01x"), 0f, 0f, 0f, "STICK", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@sean_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@sean_2@action", 0, 0, 1, 0);
@@ -5075,7 +5075,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				iLocal_30 = func_151(uParam0, -967333571, 0f, 0f, 0f, "CIGARETTE", 0, 1, 1);
+				iLocal_30 = func_151(uParam0, joaat("p_cigarette_cs01x"), 0f, 0f, 0f, "CIGARETTE", 0, 1, 1);
 				func_151(uParam0, 430766991, 0f, 0f, 0f, "STONE", 0, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@sean_and_lenny_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@sean_and_lenny_1@action", 0, 0, 1, 0);
@@ -5103,13 +5103,13 @@ int func_73(var uParam0)
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
 				func_155(uParam0, "script@vignette@camp_fire@bill_and_susan_1@base", 65, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@bill_and_susan_1@action", 64, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@bill_and_susan_1@action", 64, 0, 1, 0);
 				func_156(uParam0, "CFSB1AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
 				func_159(uParam0, iLocal_14, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_164(uParam0, iLocal_15, 1, -1);
 				func_165(uParam0, -2045061955, 574759558);
-				func_166(uParam0, iLocal_39, -1, 0.92f);
+				func_166(uParam0, uLocal_39, -1, 0.92f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_158(uParam0, iLocal_20, 3, -2138878033, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_B", -1, 1);
@@ -5147,10 +5147,10 @@ int func_73(var uParam0)
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				func_156(uParam0, "CFTL1AU");
 				func_155(uParam0, "script@vignette@camp_fire@tilly_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@tilly_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@tilly_1@action", 0, 0, 1, 0);
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 1115046687, -237104753);
-				func_166(uParam0, iLocal_39, -1, 0.85f);
+				func_166(uParam0, uLocal_39, -1, 0.85f);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_I", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_17, "START_SEATED_MALE_I_TO_SEAT_BENCH_MALE_B");
 				func_158(uParam0, iLocal_18, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_C", iLocal_24, 0);
@@ -5183,11 +5183,11 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				func_155(uParam0, "script@vignette@camp_fire@tilly_3@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@tilly_3@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@tilly_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFTL3AU");
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -1257920452, -842577566);
-				func_166(uParam0, iLocal_39, -1, 0.91f);
+				func_166(uParam0, uLocal_39, -1, 0.91f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_C", iLocal_24, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_C", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_158(uParam0, iLocal_18, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
@@ -5233,15 +5233,15 @@ int func_73(var uParam0)
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_18 = func_154(uParam0, 0, "GEN_MALE_B");
-				iLocal_28 = func_151(uParam0, 1843407141, 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+				iLocal_28 = func_151(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 				func_156(uParam0, "FUN2AUD");
 				func_155(uParam0, "script@vignette@camp_fire@uncle_2@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_2@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_2@action", 0, 0, 1, 0);
 				func_159(uParam0, iLocal_14, 2, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_A", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_14, "START_SEATED_MALE_A_TO_SEAT_BENCH_MALE_B");
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 1324627038, -697976697);
-				func_166(uParam0, iLocal_39, -1, 0.94f);
+				func_166(uParam0, uLocal_39, -1, 0.94f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_24, 0);
 				func_159(uParam0, iLocal_17, 3, 1051693614, "PROP_CAMP_FIRE_SEATED_DRINKING_BEER_MALE_B", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_17, "START_SEATED_DRINKING_BEER_MALE_B_TO_SEAT_BENCH_MALE_A");
@@ -5254,15 +5254,15 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				iLocal_31 = func_151(uParam0, 1810315535, 0f, 0f, 0f, "STICK", 0, 0, 1);
+				iLocal_31 = func_151(uParam0, joaat("p_stickfirepoker01x"), 0f, 0f, 0f, "STICK", 0, 0, 1);
 				func_156(uParam0, "FUN3AUD");
 				func_155(uParam0, "script@vignette@camp_fire@uncle_3@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_3@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_3@action", 0, 0, 1, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_A", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_14, "START_SEATED_MALE_A_TO_SEAT_BENCH_MALE_B");
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, -179175137, -933815190);
-				func_166(uParam0, iLocal_39, -1, 0.81f);
+				func_166(uParam0, uLocal_39, -1, 0.81f);
 				func_158(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_B", iLocal_24, 0);
 				func_159(uParam0, iLocal_17, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_B", iLocal_24, 0, -1073741824, 1065353216, 1);
 				func_162(uParam0, iLocal_17, iLocal_31, "p_stickFirePoker01x_PH_R_HAND", 0, 0);
@@ -5384,7 +5384,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALEA");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALEB");
-				iLocal_28 = func_151(uParam0, -1971689092, 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+				iLocal_28 = func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_156(uParam0, "CFUB1AU");
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_bill_1@base", 1, 1, 0, 0);
@@ -5427,7 +5427,7 @@ int func_73(var uParam0)
 				iLocal_14 = func_153(uParam0, 4, 0);
 				iLocal_15 = func_153(uParam0, 3, 0);
 				iLocal_17 = func_154(uParam0, 0, "KeyMale");
-				func_151(uParam0, -1971689092, 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+				func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_bill_3@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_bill_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFUB3AU");
@@ -5440,18 +5440,18 @@ int func_73(var uParam0)
 				Jump @38714; //curOff = 36298
 				iLocal_14 = func_153(uParam0, 4, 0);
 				iLocal_15 = func_153(uParam0, 7, 0);
-				iLocal_32 = func_151(uParam0, -422220273, 0f, 0f, 0f, "AXE", 0, 1, 1);
-				iLocal_33 = func_151(uParam0, -989609930, 0f, 0f, 0f, "SHARPENINGSTONE", 0, 1, 1);
+				iLocal_32 = func_151(uParam0, joaat("p_axe01x"), 0f, 0f, 0f, "AXE", 0, 1, 1);
+				iLocal_33 = func_151(uParam0, joaat("p_sharpeningstone01x"), 0f, 0f, 0f, "SHARPENINGSTONE", 0, 1, 1);
 				func_152(uParam0, -1.91761f, 1.18077f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_charles_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_and_charles_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_and_charles_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFCNUAU");
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_A", iLocal_26, 0, -1073741824, 1065353216, 1);
 				func_157(uParam0, iLocal_14, 1, 4, 0, 0, 0);
 				func_160(uParam0, iLocal_14, "START_SEATED_MALE_A_TO_SEAT_BENCH_MALE_B");
 				func_164(uParam0, iLocal_14, 1, -1);
 				func_165(uParam0, 1048591605, -1339494227);
-				func_166(uParam0, iLocal_39, -1, 0.95f);
+				func_166(uParam0, uLocal_39, -1, 0.95f);
 				func_158(uParam0, iLocal_15, 3, 2012005894, "PROP_HUMAN_SEAT_CHAIR_SHARPEN_AXE_MALE_A", iLocal_27, 0);
 				func_159(uParam0, iLocal_15, 3, 2012005894, "PROP_HUMAN_SEAT_CHAIR_SHARPEN_AXE_MALE_A", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_162(uParam0, iLocal_15, iLocal_32, "p_axe01x_PH_R_HAND", 0, 0);
@@ -5484,11 +5484,11 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				func_151(uParam0, -1971689092, 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
+				func_151(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
 				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
 				func_156(uParam0, "CFUNMAU");
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_micah_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_and_micah_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_and_micah_1@action", 0, 0, 1, 0);
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_D", iLocal_26, 0);
 				func_174(uParam0, iLocal_14, 3, 0);
 				func_159(uParam0, iLocal_14, 3, -719188272, "WORLD_HUMAN_LEAN_WALL_LEFT_DRINKING_MALE_A", -1, 0, -1073741824, 1065353216, 1);
@@ -5499,7 +5499,7 @@ int func_73(var uParam0)
 				func_157(uParam0, iLocal_15, 2, 4, 0, 0, 0);
 				func_164(uParam0, iLocal_15, 1, -1);
 				func_165(uParam0, 1941650965, -172711805);
-				func_166(uParam0, iLocal_39, -1, 0.96f);
+				func_166(uParam0, uLocal_39, -1, 0.96f);
 				func_159(uParam0, iLocal_17, 2, -38747227, "PROP_CAMP_FIRE_SEATED_MALE_I", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_160(uParam0, iLocal_17, "START_SEATED_MALE_I_TO_SEAT_BENCH_MALE_B");
 				func_157(uParam0, iLocal_17, 2, 1, 0, 0, 0);
@@ -5519,7 +5519,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
-				func_151(uParam0, -1671495534, 0f, 0f, 0f, "p_cigarette01x", 0, 0, 1);
+				func_151(uParam0, joaat("p_cigarette01x"), 0f, 0f, 0f, "p_cigarette01x", 0, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_micah_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_micah_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFNM2AU");
@@ -5539,7 +5539,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_pearson_1@base", 1, 1, 0, 0);
-				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_and_pearson_1@action", 0, 0, 1, 0);
+				uLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_and_pearson_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CUPR1AU");
 				func_158(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0);
 				func_159(uParam0, iLocal_14, 3, -38747227, "PROP_CAMP_FIRE_SEAT_CHAIR_MALE_A", iLocal_24, 0, -1073741824, 1065353216, 1);
@@ -5547,7 +5547,7 @@ int func_73(var uParam0)
 				func_160(uParam0, iLocal_15, "START_SEATED_MALE_A_TO_SEAT_BENCH_MALE_B");
 				func_164(uParam0, iLocal_15, 1, -1);
 				func_165(uParam0, 1080922275, -925126324);
-				func_166(uParam0, iLocal_39, -1, 0.87f);
+				func_166(uParam0, uLocal_39, -1, 0.87f);
 				func_158(uParam0, iLocal_20, 3, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
 				func_159(uParam0, iLocal_20, 2, -38747227, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824, 1065353216, 1);
 				func_158(uParam0, iLocal_21, 3, -2138878033, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_B", -1, 1);
@@ -6257,14 +6257,14 @@ int func_100(int iParam0)
 	return 8;
 }
 
-void func_101(int iParam0, int iParam1)
+void func_101(int iParam0, var uParam1)
 {
 	if (!func_51(iParam0))
 	{
 		return;
 	}
-	((*Global_1360165)[iParam0 /*1157*/])->f_140 = (((*Global_1360165)[iParam0 /*1157*/])->f_140 - (((*Global_1360165)[iParam0 /*1157*/])->f_140 && iParam1));
-	((*Global_1360165)[iParam0 /*1157*/])->f_141 = (((*Global_1360165)[iParam0 /*1157*/])->f_141 - (((*Global_1360165)[iParam0 /*1157*/])->f_141 && iParam1));
+	((*Global_1360165)[iParam0 /*1157*/])->f_140 = (((*Global_1360165)[iParam0 /*1157*/])->f_140 - (((*Global_1360165)[iParam0 /*1157*/])->f_140 && uParam1));
+	((*Global_1360165)[iParam0 /*1157*/])->f_141 = (((*Global_1360165)[iParam0 /*1157*/])->f_141 - (((*Global_1360165)[iParam0 /*1157*/])->f_141 && uParam1));
 }
 
 void func_102(int iParam0, bool bParam1, bool bParam2, bool bParam3)
@@ -7527,7 +7527,7 @@ void func_165(var uParam0, int iParam1, int iParam2)
 	uParam0->f_1691 = iParam2;
 }
 
-void func_166(var uParam0, int iParam1, int iParam2, float fParam3)
+void func_166(var uParam0, var uParam1, int iParam2, float fParam3)
 {
 	if (iParam2 == -1)
 	{
@@ -7536,14 +7536,14 @@ void func_166(var uParam0, int iParam1, int iParam2, float fParam3)
 		while (iParam2 < uParam0->f_106)
 		{
 			(uParam0->f_107[iParam2 /*113*/])->f_32.f_60 = fParam3;
-			(uParam0->f_107[iParam2 /*113*/])->f_32.f_61 = iParam1;
+			(uParam0->f_107[iParam2 /*113*/])->f_32.f_61 = uParam1;
 			iParam2++;
 		}
 	}
 	else
 	{
 		(uParam0->f_107[iParam2 /*113*/])->f_32.f_60 = fParam3;
-		(uParam0->f_107[iParam2 /*113*/])->f_32.f_61 = iParam1;
+		(uParam0->f_107[iParam2 /*113*/])->f_32.f_61 = uParam1;
 	}
 }
 
@@ -8058,7 +8058,7 @@ int func_194(var uParam0)
 			{
 				if (iVar1 < 0)
 				{
-					(uParam0->f_107[iVar0 /*113*/])->f_8.f_23 = TASK::CREATE_SCENARIO_POINT((uParam0->f_107[iVar0 /*113*/])->f_8.f_1, vVar2, fVar5, 0f, 0, 0);
+					(uParam0->f_107[iVar0 /*113*/])->f_8.f_23 = TASK::CREATE_SCENARIO_POINT((uParam0->f_107[iVar0 /*113*/])->f_8.f_1, vVar2, fVar5, 0f, 0f, 0);
 					func_306(&((uParam0->f_107[iVar0 /*113*/])->f_8.f_23), 1, 0);
 				}
 				else
@@ -8507,7 +8507,7 @@ void func_207(var uParam0)
 		{
 			if ((uParam0->f_36[iVar0 /*5*/])->f_3)
 			{
-				(uParam0->f_36[iVar0 /*5*/])->f_4 = PED::_0x4C39C95AE5DB1329(&(uParam0->f_36[iVar0 /*5*/]), false, 2);
+				(uParam0->f_36[iVar0 /*5*/])->f_4 = PED::_0x4C39C95AE5DB1329(&(uParam0->f_36[iVar0 /*5*/]), 0, 2);
 			}
 			iVar0++;
 		}
@@ -13226,7 +13226,7 @@ void func_342(var uParam0, int iParam1)
 	switch (iParam1)
 	{
 		case 1:
-			uParam0->f_1 = 1613651027;
+			uParam0->f_1 = 1613651027; /* GXTEntry: "Hair Pomade" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 3;
 			uParam0->f_4 = 0;
@@ -13237,7 +13237,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = -1574283183;
 			break;
 		case 3:
-			uParam0->f_1 = 299161628;
+			uParam0->f_1 = 299161628; /* GXTEntry: "Moonshine" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 7;
 			uParam0->f_4 = 0;
@@ -13248,7 +13248,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = -1460756997;
 			break;
 		case 2:
-			uParam0->f_1 = -2048623764;
+			uParam0->f_1 = -2048623764; /* GXTEntry: "Eagle Feather" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 7;
 			uParam0->f_4 = 0;
@@ -13257,7 +13257,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_22 = func_396(1627068364);
 			break;
 		case 4:
-			uParam0->f_1 = -2051332199;
+			uParam0->f_1 = -2051332199; /* GXTEntry: "Oleander Sage" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 7;
 			uParam0->f_4 = 0;
@@ -13267,7 +13267,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = -2002658258;
 			break;
 		case 5:
-			uParam0->f_1 = -497602986;
+			uParam0->f_1 = -497602986; /* GXTEntry: "Pipe" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 0;
 			uParam0->f_4 = 0;
@@ -13276,7 +13276,7 @@ void func_342(var uParam0, int iParam1)
 			StringCopy(&(uParam0->f_12), "", 64);
 			break;
 		case 6:
-			uParam0->f_1 = -793862732;
+			uParam0->f_1 = -793862732; /* GXTEntry: "The Case of the Shrew in the Fog" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 5;
 			uParam0->f_4 = 0;
@@ -13287,7 +13287,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = -1482853672;
 			break;
 		case 7:
-			uParam0->f_1 = 1433048902;
+			uParam0->f_1 = 1433048902; /* GXTEntry: "Ginseng" */
 			uParam0->f_2 = 2;
 			uParam0->f_3 = 5;
 			uParam0->f_4 = 0;
@@ -13298,7 +13298,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = -535255159;
 			break;
 		case 8:
-			uParam0->f_1 = -1487662509;
+			uParam0->f_1 = -1487662509; /* GXTEntry: "Otis Miller and The Black-Hearted Lady" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 14;
 			uParam0->f_4 = 0;
@@ -13308,7 +13308,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = -1674175748;
 			break;
 		case 9:
-			uParam0->f_1 = 1427759409;
+			uParam0->f_1 = 1427759409; /* GXTEntry: "Thimble" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 14;
 			uParam0->f_4 = 0;
@@ -13316,7 +13316,7 @@ void func_342(var uParam0, int iParam1)
 			StringCopy(&(uParam0->f_6), "CPGEN_ITMJCKA1", 24);
 			break;
 		case 10:
-			uParam0->f_1 = -2051332199;
+			uParam0->f_1 = -2051332199; /* GXTEntry: "Oleander Sage" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 2;
 			uParam0->f_4 = 0;
@@ -13327,7 +13327,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = 2001398556;
 			break;
 		case 11:
-			uParam0->f_1 = -398744080;
+			uParam0->f_1 = -398744080; /* GXTEntry: "Burdock Root" */
 			uParam0->f_2 = 2;
 			uParam0->f_3 = 10;
 			uParam0->f_4 = 0;
@@ -13338,7 +13338,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = 1519213086;
 			break;
 		case 12:
-			uParam0->f_1 = -963759116;
+			uParam0->f_1 = -963759116; /* GXTEntry: "Silver Pocket Watch" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 9;
 			uParam0->f_4 = 0;
@@ -13348,7 +13348,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_22 = 2007368749;
 			break;
 		case 13:
-			uParam0->f_1 = 353848785;
+			uParam0->f_1 = 353848785; /* GXTEntry: "Fountain Pen" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 15;
 			uParam0->f_4 = 0;
@@ -13357,7 +13357,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_22 = func_396(1478239863);
 			break;
 		case 14:
-			uParam0->f_1 = -574122036;
+			uParam0->f_1 = -574122036; /* GXTEntry: "Pocket Mirror" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 16;
 			uParam0->f_4 = 0;
@@ -13376,7 +13376,7 @@ void func_342(var uParam0, int iParam1)
 			StringCopy(&(uParam0->f_12), "", 64);
 			break;
 		case 16:
-			uParam0->f_1 = -735913145;
+			uParam0->f_1 = -735913145; /* GXTEntry: "Naval Compass" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 17;
 			uParam0->f_4 = 0;
@@ -13386,7 +13386,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = 671600831;
 			break;
 		case 17:
-			uParam0->f_1 = 660636780;
+			uParam0->f_1 = 660636780; /* GXTEntry: "Harmonica" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 11;
 			uParam0->f_4 = 0;
@@ -13397,7 +13397,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = 309887362;
 			break;
 		case 18:
-			uParam0->f_1 = 688258043;
+			uParam0->f_1 = 688258043; /* GXTEntry: "Kentucky Bourbon" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 8;
 			uParam0->f_4 = 0;
@@ -13407,7 +13407,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = 1023107731;
 			break;
 		case 19:
-			uParam0->f_1 = 546981776;
+			uParam0->f_1 = 546981776; /* GXTEntry: "Oregano" */
 			uParam0->f_2 = 2;
 			uParam0->f_3 = 19;
 			uParam0->f_4 = 0;
@@ -13418,7 +13418,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = -1467557935;
 			break;
 		case 20:
-			uParam0->f_1 = 844655121;
+			uParam0->f_1 = 844655121; /* GXTEntry: "Silver Locket Necklace" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 22;
 			uParam0->f_4 = 0;
@@ -13428,7 +13428,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = -234712774;
 			break;
 		case 21:
-			uParam0->f_1 = 128702355;
+			uParam0->f_1 = 128702355; /* GXTEntry: "Milkweed" */
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 4;
 			uParam0->f_4 = 0;
@@ -14615,7 +14615,7 @@ int func_393(var uParam0, int iParam1)
 		{
 			MISC::GET_GROUND_Z_FOR_3D_COORD(Var1.f_5, &(Var1.f_5.f_2), 0);
 		}
-		(uParam0->f_107[iParam1 /*113*/])->f_32.f_21 = TASK::CREATE_SCENARIO_POINT(Var1.f_2, Var1.f_5, Var1.f_8, 0f, 0, 0);
+		(uParam0->f_107[iParam1 /*113*/])->f_32.f_21 = TASK::CREATE_SCENARIO_POINT(Var1.f_2, Var1.f_5, Var1.f_8, 0f, 0f, 0);
 	}
 	if (TASK::_0x841475AC96E794D1((uParam0->f_107[iParam1 /*113*/])->f_32.f_21))
 	{
@@ -14736,7 +14736,7 @@ void func_399(int iParam0, float fParam1)
 
 	MISC::_0x94FCADCF9F0C368E(iParam0);
 	Var0.f_3 = 4;
-	Var0 = 1427759409;
+	Var0 = 1427759409; /* GXTEntry: "Thimble" */
 	Var0.f_1 = fParam1;
 	Var0.f_5 = 1;
 	Var0.f_4 = 0;
@@ -15833,187 +15833,187 @@ int func_437(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -2086875988:
-		case -2081966149:
-		case -2075588078:
-		case -2046943672:
-		case -2045269112:
-		case -2019245895:
-		case -2014377075:
-		case -2012656841:
-		case -2007761031:
-		case -2006398858:
-		case -1980150291:
-		case -1977628089:
-		case -1966295439:
-		case -1925758912:
-		case -1922688829:
-		case -1901892087:
-		case -1835251821:
-		case -1769295812:
-		case -1765531164:
-		case -1745321414:
-		case -1714108174:
-		case -1688959031:
-		case -1676898583:
-		case -1646049752:
-		case -1632694866:
-		case -1629501717:
-		case -1614719852:
-		case -1607722277:
-		case -1603909164:
-		case -1579174863:
-		case -1533320518:
-		case -1520417507:
-		case -1483559144:
-		case -1464743433:
-		case -1458432563:
-		case -1448924971:
-		case -1423504183:
-		case -1418951751:
-		case -1329383517:
-		case -1270572406:
-		case -1263119823:
-		case -1258801034:
-		case -1161832176:
-		case -1154137714:
-		case -1135378761:
-		case -1116138991:
-		case -1112260815:
-		case -1101883765:
-		case -1070459848:
-		case -1067338663:
-		case -1049237750:
-		case -1047115350:
-		case -1002525623:
-		case -944019243:
-		case -937140420:
-		case -920985758:
-		case -823649241:
-		case -820854800:
-		case -814357706:
-		case -792643455:
-		case -781994133:
-		case -779472377:
-		case -756996682:
-		case -747792496:
-		case -695175124:
-		case -670436990:
-		case -639059862:
+		case joaat("cs_sistercalderon"):
+		case joaat("cs_strsheriff_01"):
+		case joaat("cs_mud2bigguy"):
+		case joaat("cs_rainsfall"):
+		case joaat("cs_penelopebraithwaite"):
+		case joaat("cs_swampweirdosonny"):
+		case joaat("cs_unidusterjail_01"):
+		case joaat("cs_iangray"):
+		case joaat("cs_tinyhermit"):
+		case joaat("cs_timothydonahue"):
+		case joaat("cs_princessisabeau"):
+		case joaat("cs_leviticuscornwall"):
+		case joaat("cs_didsbury"):
+		case joaat("cs_featherstonchambers"):
+		case joaat("cs_featsofstrength"):
+		case joaat("cs_bandpianist"):
+		case joaat("cs_escapeartistassistant"):
+		case joaat("cs_garethbraithwaite"):
+		case joaat("cs_creoleguy"):
+		case joaat("cs_leighgray"):
+		case joaat("cs_strawberryoutlaw_02"):
+		case joaat("cs_gloria"):
+		case joaat("cs_warvet"):
+		case joaat("cs_jockgray"):
+		case joaat("cs_davidgeddes"):
+		case joaat("cs_guidomartelli"):
+		case joaat("cs_duncangeddes"):
+		case joaat("cs_dusterinformant_01"):
+		case joaat("cs_pinkertongoon"):
+		case joaat("cs_mickey"):
+		case joaat("cs_twinbrother_02"):
+		case joaat("cs_hestonjameson"):
+		case joaat("cs_strdeputy_01"):
+		case joaat("cs_abe"):
+		case joaat("cs_oddfellowspinhead"):
+		case joaat("cs_swampfreak"):
+		case joaat("cs_mradler"):
+		case joaat("cs_aberdeenpigfarmer"):
+		case joaat("cs_hobartcrawley"):
+		case joaat("cs_formyartbigwoman"):
+		case joaat("cs_norrisforsythe"):
+		case joaat("cs_jules"):
+		case joaat("cs_tomdickens"):
+		case joaat("cs_geraldbraithwaite"):
+		case joaat("cs_paytah"):
+		case joaat("cs_cancan_03"):
+		case joaat("cs_grizzledjon"):
+		case joaat("cs_wrobel"):
+		case joaat("cs_meredith"):
+		case joaat("cs_creepyoldlady"):
+		case joaat("cs_nbxreceptionist_01"):
+		case joaat("cs_nbxpolicechiefformal"):
+		case joaat("cs_cornwalltrainconductor"):
+		case joaat("cs_rhodeputy_01"):
+		case joaat("cs_drmalcolmmacintosh"):
+		case joaat("cs_leon"):
+		case joaat("cs_sheriffowens"):
+		case joaat("cs_sddoctor_01"):
+		case joaat("cs_scottgray"):
+		case joaat("cs_cancan_01"):
+		case joaat("cs_creolecaptain"):
+		case joaat("cs_brontesbutler"):
+		case joaat("cs_janson"):
+		case joaat("cs_forgivenwife_01"):
+		case joaat("cs_tigerhandler"):
+		case joaat("cs_frenchartist"):
+		case joaat("cs_genstorymale"):
 		case joaat("cs_clay"):
-		case -572941403:
-		case -558131359:
-		case -550289621:
-		case -538512200:
-		case -464684897:
-		case -446093729:
-		case -373817191:
-		case -350169314:
-		case -343178443:
-		case -272492171:
-		case -265719023:
-		case -253049070:
-		case -229065721:
-		case -216561112:
-		case -205121720:
-		case -167880668:
-		case -161553439:
-		case -98087368:
-		case -77509825:
-		case -71527226:
-		case -55633154:
-		case -46607261:
-		case -46389610:
-		case -17071680:
-		case 4991732:
-		case 20251888:
-		case 65010948:
-		case 68512371:
-		case 93760123:
-		case 122377164:
-		case 184120185:
-		case 224310170:
-		case 230517792:
-		case 236407543:
-		case 254009656:
-		case 300505615:
-		case 316325071:
-		case 323324563:
-		case 351634388:
-		case 382040614:
-		case 401817002:
-		case 426274298:
-		case 430764551:
-		case 434730246:
-		case 477547053:
-		case 482703333:
-		case 513427234:
-		case 594026681:
-		case 624882545:
-		case 686051865:
-		case 716675958:
-		case 755774783:
-		case 774211111:
-		case 794654164:
-		case 823321772:
-		case 836525272:
-		case 848012614:
-		case 852072701:
-		case 888681950:
-		case 907019741:
-		case 972892334:
-		case 988668512:
-		case 993577366:
-		case 1006076574:
-		case 1010320580:
-		case 1020041649:
-		case 1051047356:
-		case 1092921608:
-		case 1143979484:
-		case 1149349599:
-		case 1231309423:
-		case 1234550949:
-		case 1245530084:
-		case 1253299569:
-		case 1266159496:
-		case 1266592839:
-		case 1270841555:
-		case 1276534479:
-		case 1281122482:
-		case 1294255258:
-		case 1304311224:
-		case 1320786287:
-		case 1347320453:
-		case 1367851675:
-		case 1372065533:
-		case 1407740785:
-		case 1419055257:
-		case 1436424114:
-		case 1439158431:
-		case 1446935015:
-		case 1479772615:
-		case 1483156731:
-		case 1485366395:
-		case 1599685341:
-		case 1604947233:
-		case 1643370744:
-		case 1701730764:
-		case 1705504999:
-		case 1726560673:
-		case 1785923813:
-		case 1815090590:
-		case 1841492722:
-		case 1966444740:
-		case 1998496121:
-		case 1999476738:
-		case 2000903921:
-		case 2001384088:
-		case 2029634351:
-		case 2041494024:
-		case 2042088799:
-		case 2100656433:
-		case 2115504616:
-		case 2141515026:
+		case joaat("cs_strdeputy_02"):
+		case joaat("cs_famousgunslinger_03"):
+		case joaat("cs_bivcoachdriver"):
+		case joaat("cs_braithwaitebutler"):
+		case joaat("cs_cleet"):
+		case joaat("cs_joe"):
+		case joaat("cs_slavecatcher"):
+		case joaat("cs_braithwaitemaid"):
+		case joaat("cs_twingroupie_02"):
+		case joaat("cs_mrsgeddes"):
+		case joaat("cs_samaritan"):
+		case joaat("cs_exconfedinformant"):
+		case joaat("cs_frenchman_01"):
+		case joaat("cs_bandsinger"):
+		case joaat("cs_baptiste"):
+		case joaat("cs_angusgeddes"):
+		case joaat("cs_mysteriousstranger"):
+		case joaat("cs_famousgunslinger_01"):
+		case joaat("cs_bartholomewbraithwaite"):
+		case joaat("cs_mixedracekid"):
+		case joaat("cs_beatenupcaptain"):
+		case joaat("cs_edgarross"):
+		case joaat("cs_twingroupie_01"):
+		case joaat("cs_mrsweathers"):
+		case joaat("cs_jamie"):
+		case joaat("cs_karensjohn_01"):
+		case joaat("cs_thomasdown"):
+		case joaat("cs_obediahhinton"):
+		case joaat("cs_agnesdowd"):
+		case joaat("cs_cavehermit"):
+		case joaat("cs_brynntildon"):
+		case joaat("cs_germanson"):
+		case joaat("cs_brendacrawley"):
+		case joaat("cs_colfavours"):
+		case joaat("cs_rhodeskidnapvictim"):
+		case joaat("cs_exconfedsleader_01"):
+		case joaat("cs_cancan_04"):
+		case joaat("cs_towncrier"):
+		case joaat("cs_famousgunslinger_04"):
+		case joaat("cs_dalemaroney"):
+		case joaat("cs_angryhusband"):
+		case joaat("cs_lillianpowell"):
+		case joaat("cs_andershelgerson"):
+		case joaat("cs_poorjoe"):
+		case joaat("cs_braithwaiteservant"):
+		case joaat("cs_brotherdorkins"):
+		case joaat("cs_albertmason"):
+		case joaat("cs_famousgunslinger_05"):
+		case joaat("cs_balloonoperator"):
+		case joaat("cs_albertcakeesquire"):
+		case joaat("cs_mrsfellows"):
+		case joaat("cs_cancanman_01"):
+		case joaat("cs_poisonwellshaman"):
+		case joaat("cs_cancan_02"):
+		case joaat("cs_meredithsmother"):
+		case joaat("cs_angel"):
+		case joaat("cs_archerfordham"):
+		case joaat("cs_disguisedduster_01"):
+		case joaat("cs_chelonianmaster"):
+		case joaat("cs_twinbrother_01"):
+		case joaat("cs_germandaughter"):
+		case joaat("cs_lemiuxassistant"):
+		case joaat("cs_creoledoctor"):
+		case joaat("cs_crackpotrobot"):
+		case joaat("cs_bandbassist"):
+		case joaat("cs_genstoryfemale"):
+		case joaat("cs_marylinton"):
+		case joaat("cs_valprayingman"):
+		case joaat("cs_johnthebaptisingmadman"):
+		case joaat("cs_mrs_calhoun"):
+		case joaat("cs_theodorelevin"):
+		case joaat("cs_nicholastimmins"):
+		case joaat("cs_disguisedduster_03"):
+		case joaat("cs_dinoboneslady"):
+		case joaat("cs_beaugray"):
+		case joaat("cs_strawberryoutlaw_01"):
+		case joaat("cs_crackpotinventor"):
+		case joaat("cs_hercule"):
+		case joaat("cs_gavin"):
+		case joaat("cs_levisimon"):
+		case joaat("cs_londonderryson"):
+		case joaat("cs_captainmonroe"):
+		case joaat("cs_famousgunslinger_02"):
+		case joaat("cs_mrslondonderry"):
+		case joaat("cs_soothsayer"):
+		case joaat("cs_tavishgray"):
+		case joaat("cs_joebutler"):
+		case joaat("cs_banddrummer"):
+		case joaat("cs_lillymillet"):
+		case joaat("cs_ansel_atherton"):
+		case joaat("cs_rhodeputy_02"):
+		case joaat("cs_edmundlowry"):
+		case joaat("cs_disguisedduster_02"):
+		case joaat("cs_magnifico"):
+		case joaat("cs_artappraiser"):
+		case joaat("cs_forgivenhusband_01"):
+		case joaat("cs_reverendfortheringham"):
+		case joaat("cs_daveycallender"):
+		case joaat("cs_desmond"):
+		case joaat("cs_adamgray"):
+		case joaat("cs_jimcalloway"):
+		case joaat("cs_sdsaloondrunk_01"):
+		case joaat("cs_nbxdrunk"):
+		case joaat("cs_germanmother"):
+		case joaat("cs_ringmaster"):
+		case joaat("cs_lucanapoli"):
+		case joaat("cs_rhodesassistant"):
+		case joaat("cs_aberdeensister"):
+		case joaat("cs_nbxexecuted"):
+		case joaat("cs_famousgunslinger_06"):
+		case joaat("cs_johnweathers"):
+		case joaat("cs_professorbell"):
+		case joaat("cs_rhodessaloonbouncer"):
 			return 1;
 		default:
 			break;
@@ -17121,8 +17121,8 @@ void func_481(int iParam0, int iParam1)
 		case 11:
 			if ((Global_40.f_4942[iParam0 /*60*/])->f_3 == -1341683964)
 			{
-				func_528(iParam1, 1240907314, 0, 0, 2, 1, 0, 1056964608, 1065353216, -1, 0, 0, 0, 0);
-				func_528(iParam1, -2088446466, 0, 0, 3, 1, 1, 1056964608, 1065353216, -1, 0, 1, 0, 0);
+				func_528(iParam1, joaat("weapon_revolver_cattleman_sadie"), 0, 0, 2, 1, 0, 1056964608, 1065353216, -1, 0, 0, 0, 0);
+				func_528(iParam1, joaat("weapon_revolver_cattleman_sadie_dualwield"), 0, 0, 3, 1, 1, 1056964608, 1065353216, -1, 0, 1, 0, 0);
 			}
 			break;
 	}
@@ -17266,19 +17266,19 @@ void func_490(int iParam0, var uParam1, var uParam2)
 	{
 		case 1234009870:
 			*uParam1 = 1802325493;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case -1202134084:
 			*uParam1 = -864693164;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case 1297050066:
 			*uParam1 = -603289736;
-			*uParam2 = 1232099469;
+			*uParam2 = 1232099469; /* GXTEntry: "Revolver Cartridges - Express" */
 			break;
 		case -1780177928:
 			*uParam1 = -1803237008;
-			*uParam2 = -2084181920;
+			*uParam2 = -2084181920; /* GXTEntry: "Revolver Cartridges - High Velocity" */
 			break;
 		case -1467836497:
 			*uParam1 = -1175521284;
@@ -17290,11 +17290,11 @@ void func_490(int iParam0, var uParam1, var uParam2)
 			break;
 		case -153287664:
 			*uParam1 = -1650796693;
-			*uParam2 = 836939099;
+			*uParam2 = 836939099; /* GXTEntry: "Pistol Cartridges - Express" */
 			break;
 		case 1845082736:
 			*uParam1 = -1521597660;
-			*uParam2 = -1411815376;
+			*uParam2 = -1411815376; /* GXTEntry: "Pistol Cartridges - High Velocity" */
 			break;
 		case 406755377:
 			*uParam1 = -1288829256;
@@ -17306,27 +17306,27 @@ void func_490(int iParam0, var uParam1, var uParam2)
 			break;
 		case 45760211:
 			*uParam1 = -851229814;
-			*uParam2 = 1654725195;
+			*uParam2 = 1654725195; /* GXTEntry: "Rifle Cartridges - Express" */
 			break;
 		case -276295943:
 			*uParam1 = 914704115;
-			*uParam2 = 1858824185;
+			*uParam2 = 1858824185; /* GXTEntry: "Rifle Cartridges - High Velocity" */
 			break;
 		case -2029793397:
 			*uParam1 = -219896679;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case 2120467495:
 			*uParam1 = 516838334;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case -2075613923:
 			*uParam1 = -385817936;
-			*uParam2 = -578347576;
+			*uParam2 = -578347576; /* GXTEntry: "Repeater Cartridges - Express" */
 			break;
 		case 122656217:
 			*uParam1 = 1192843172;
-			*uParam2 = 231465488;
+			*uParam2 = 231465488; /* GXTEntry: "Repeater Cartridges - High Velocity" */
 			break;
 		case 2107187484:
 			*uParam1 = 954871696;
@@ -17338,7 +17338,7 @@ void func_490(int iParam0, var uParam1, var uParam2)
 			break;
 		case 305770744:
 			*uParam1 = -2087227528;
-			*uParam2 = 314966081;
+			*uParam2 = 314966081; /* GXTEntry: "Shotgun - Slug" */
 			break;
 		case 550900979:
 			*uParam1 = -618066518;
@@ -20295,29 +20295,29 @@ bool func_528(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4,
 		{
 			case -1101297303:
 			case 416676503:
-				bVar0 = 379542007;
+				bVar0 = joaat("weapon_revolver_cattleman");
 				break;
 			case -1212426201:
 			case -594562071:
 			case 860033945:
 			case 970310034:
-				if (func_547(-183018591))
+				if (func_547(joaat("weapon_repeater_carbine")))
 				{
-					bVar0 = -183018591;
+					bVar0 = joaat("weapon_repeater_carbine");
 				}
 				else
 				{
-					bVar0 = 379542007;
+					bVar0 = joaat("weapon_revolver_cattleman");
 				}
 				break;
 			default:
-				bVar0 = 379542007;
+				bVar0 = joaat("weapon_revolver_cattleman");
 				break;
 		}
 	}
-	else if (bVar0 == -164645981 && iParam0 == Global_35)
+	else if (bVar0 == joaat("weapon_melee_lantern") && iParam0 == Global_35)
 	{
-		bVar0 = 1247405313;
+		bVar0 = joaat("weapon_melee_davy_lantern");
 	}
 	if (iParam9 < 0)
 	{
@@ -20737,7 +20737,7 @@ int func_548(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 	if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, 0))
 	{
 		Var0 = { func_556(iParam0, 0, 1) };
-		iVar5 = 1728382685;
+		iVar5 = 1728382685; /* GXTEntry: "Right" */
 		Var6.f_9 = -1591664384;
 		iVar28 = 0;
 		while (iVar28 < 4)
@@ -20785,57 +20785,57 @@ void func_549(int iParam0, int iParam1, float fParam2)
 
 	bVar0 = true;
 	iVar1 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	if (((((((*iParam1 == 383145463 || *iParam1 == -169598849) || *iParam1 == 600245965) || *iParam1 == 38266755) || *iParam1 == -510274983) || *iParam1 == 1252941818) || *iParam1 == 575725904) || *iParam1 == 1311933014)
+	if (((((((*iParam1 == joaat("weapon_revolver_cattleman_mexican") || *iParam1 == joaat("weapon_revolver_cattleman_pig")) || *iParam1 == joaat("weapon_revolver_doubleaction_exotic")) || *iParam1 == joaat("weapon_revolver_schofield_calloway")) || *iParam1 == joaat("weapon_revolver_schofield_golden")) || *iParam1 == joaat("weapon_pistol_mauser_drunk")) || *iParam1 == joaat("weapon_shotgun_doublebarrel_exotic")) || *iParam1 == joaat("weapon_sniperrifle_rollingblock_exotic"))
 	{
 		*fParam2 = 0f;
 		return;
 	}
 	switch (iVar1)
 	{
-		case -1273613561:
-		case -776789570:
-		case -763072541:
-		case -486390692:
-		case 50483426:
-		case 215164947:
-		case 247176142:
-		case 347599949:
-		case 852072701:
-		case 861896523:
-		case 1017000466:
-		case 1245530084:
-		case 1336863290:
-		case 1485366395:
+		case joaat("g_m_m_uniduster_03"):
+		case joaat("u_m_m_unidusterhenchman_03"):
+		case joaat("g_m_m_uniduster_04"):
+		case joaat("u_m_m_unidusterhenchman_02"):
+		case joaat("g_m_m_uniduster_02"):
+		case joaat("u_m_m_fatduster_01"):
+		case joaat("u_m_m_unidusterhenchman_01"):
+		case joaat("g_m_m_uniduster_01"):
+		case joaat("cs_disguisedduster_01"):
+		case joaat("g_f_m_uniduster_01"):
+		case joaat("u_m_m_unidusterleader_01"):
+		case joaat("cs_disguisedduster_03"):
+		case joaat("g_m_m_uniduster_05"):
+		case joaat("cs_disguisedduster_02"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
 			break;
-		case -969819655:
-		case -628956517:
-		case -355385988:
-		case 300505615:
-		case 466209020:
+		case joaat("g_m_y_uniexconfeds_02"):
+		case joaat("g_m_y_uniexconfeds_01"):
+		case joaat("g_m_o_uniexconfeds_01"):
+		case joaat("cs_exconfedsleader_01"):
+		case joaat("u_m_m_uniexconfedsbounty_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.375f);
 			break;
-		case 363815774:
+		case joaat("g_m_m_uniinbred_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.7f, 0.875f);
 			break;
-		case -1910990966:
-		case -1421951598:
-		case 1921874948:
+		case joaat("u_m_m_bht_skinnersearch"):
+		case joaat("g_m_m_unimountainmen_01"):
+		case joaat("u_m_m_bht_skinnerbrother"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.4f, 0.6f);
 			break;
-		case -1090280091:
-		case -1076294934:
+		case joaat("g_m_m_uniranchers_01"):
+		case joaat("cs_laramie"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.25f);
 			break;
-		case -1011228908:
-		case -1008616424:
-		case 424175505:
+		case joaat("u_m_m_bht_banditoshack"):
+		case joaat("u_m_m_bht_banditomine"):
+		case joaat("g_m_m_unibanditos_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
 			break;
-		case -1208814201:
-		case -390289284:
-		case 1112571710:
-		case 1478983280:
+		case joaat("u_m_m_nbxbrontegoon_01"):
+		case joaat("u_m_m_nbxbrontesecform_01"):
+		case joaat("u_m_m_nbxbronteasc_01"):
+		case joaat("g_m_m_unibrontegoons_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.125f);
 			break;
 		default:
@@ -21127,24 +21127,24 @@ struct<5> func_556(int iParam0, bool bParam1, int iParam2)
 				Var5.f_9 = -1591664384;
 				if (!func_558(iParam0, &Var0, 1728382685, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_558(iParam0, &Var0, -649335959, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_559(iParam0, &Var5, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case -1784221369:

@@ -58,7 +58,7 @@ void __EntryFunction__()
 	fLocal_16 = 1f;
 	iLocal_18 = 1;
 	iLocal_28 = 1455795772;
-	iLocal_33 = -1308375373;
+	iLocal_33 = joaat("policewagon01x");
 	iLocal_34 = 227187597;
 	uScriptParam_0 = uScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
@@ -268,22 +268,22 @@ void func_6()
 			switch (iVar0)
 			{
 				case 0:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 				case 1:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 				case 2:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 				case 3:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 				case 5:
-					iLocal_32 = -384354290;
+					iLocal_32 = joaat("s_m_m_fussarhenchman_01");
 					break;
 				default:
-					iLocal_32 = 1830978939;
+					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
 					break;
 			}
 			iLocal_18 = 2;

@@ -747,22 +747,22 @@ void func_23(var uParam0, var uParam1, var uParam2, var uParam3, char* sParam4, 
 			}
 		}
 
-void func_24(int iParam0, var uParam1, var uParam2, vector3 vParam3, vector3 vParam6)
+void func_24(var uParam0, var uParam1, var uParam2, vector3 vParam3, vector3 vParam6)
 {
 	int iVar0;
 	int iVar1;
 
-	switch (*iParam0)
+	switch (*uParam0)
 	{
 		case 0:
 			if (*uParam1 != 0)
 			{
 				STREAMING::REQUEST_MODEL(*uParam1, false);
-				*iParam0 = 1;
+				*uParam0 = 1;
 			}
 			else
 			{
-				*iParam0 = 4;
+				*uParam0 = 4;
 			}
 			break;
 		case 1:
@@ -782,7 +782,7 @@ void func_24(int iParam0, var uParam1, var uParam2, vector3 vParam3, vector3 vPa
 				{
 					ENTITY::_0x0918E3565C20F03C(iVar0, vParam3, vParam6.z, 0, 1);
 				}
-				*iParam0 = 4;
+				*uParam0 = 4;
 			}
 			break;
 		case 4:
@@ -2046,19 +2046,19 @@ int func_78(float fParam0)
 	fVar1 = (fVar1 + fParam0);
 	if (fVar1 > 0.75f)
 	{
-		iVar0 = -2001202686;
+		iVar0 = -2001202686; /* GXTEntry: "Bill Stack" */
 	}
 	else if (fVar1 > 0.5f)
 	{
-		iVar0 = -343824903;
+		iVar0 = -343824903; /* GXTEntry: "Money Clip" */
 	}
 	else if (fVar1 > 0.25f)
 	{
-		iVar0 = 1576210101;
+		iVar0 = 1576210101; /* GXTEntry: "Coin Purse" */
 	}
 	else
 	{
-		iVar0 = 1111063991;
+		iVar0 = 1111063991; /* GXTEntry: "Coin" */
 	}
 	return iVar0;
 }

@@ -2417,7 +2417,7 @@ void func_143(var uParam0, int iParam1)
 		*uParam0 = 1;
 		uParam0->f_7 = iParam1;
 		CAM::_0x6A4D224FC7643941("table_games_cam");
-		STREAMING::REQUEST_MODEL(-615159064, false);
+		STREAMING::REQUEST_MODEL(joaat("p_coin01x"), false);
 	}
 }
 
@@ -2446,13 +2446,13 @@ int func_145(int iParam0, int iParam1, int iParam2, bool bParam3)
 	iVar5 = 0;
 	if (iParam0 == 3)
 	{
-		return 417416138;
+		return joaat("a_m_m_fivefingerfilletplayers_01");
 	}
 	else if (iParam0 == 2 || iParam0 == 0)
 	{
 		if (!bParam3)
 		{
-			return -951746023;
+			return joaat("a_m_m_cardgameplayers_01");
 		}
 		else
 		{
@@ -2461,76 +2461,76 @@ int func_145(int iParam0, int iParam1, int iParam2, bool bParam3)
 	}
 	else if (iParam0 == 1)
 	{
-		return -726434422;
+		return joaat("a_m_m_dominoesplayers_01");
 	}
 	switch (iParam1)
 	{
 		case 81:
-			iVar0[0] = -2087759666;
-			iVar0[1] = -1789856687;
+			iVar0[0] = joaat("a_m_m_valtownfolk_01");
+			iVar0[1] = joaat("a_m_m_valtownfolk_02");
 			iVar5 = 2;
 			break;
 		case 111:
-			iVar0[0] = -1345652903;
+			iVar0[0] = joaat("a_m_m_rhdupperclass_01");
 			iVar5 = 1;
 			break;
 		case 40:
 			if (iParam0 == 1)
 			{
-				iVar0[0] = -989220241;
-				iVar0[1] = -607723543;
+				iVar0[0] = joaat("a_m_m_blwlaborer_01");
+				iVar0[1] = joaat("a_m_m_blwlaborer_02");
 				iVar5 = 2;
 			}
 			else
 			{
-				iVar0[0] = 1022365451;
+				iVar0[0] = joaat("a_m_m_blwupperclass_01");
 				iVar5 = 1;
 			}
 			break;
 		case 121:
-			iVar0[0] = 480011144;
-			iVar0[1] = 966958492;
+			iVar0[0] = joaat("a_m_m_tumtownfolk_01");
+			iVar0[1] = joaat("a_m_m_tumtownfolk_02");
 			iVar5 = 2;
 			break;
 		case 26:
-			iVar0[0] = 413771941;
+			iVar0[0] = joaat("s_m_m_strlumberjack_01");
 			iVar5 = 1;
 			break;
 		case 5:
 			if (iParam0 == 1)
 			{
-				iVar0[0] = 2133848994;
-				iVar0[1] = 1854820959;
-				iVar0[2] = 549598920;
+				iVar0[0] = joaat("a_m_m_middlesdtownfolk_01");
+				iVar0[1] = joaat("a_m_m_middlesdtownfolk_02");
+				iVar0[2] = joaat("a_m_m_middlesdtownfolk_03");
 				iVar5 = 3;
 			}
 			else
 			{
-				iVar0[0] = -1938511850;
-				iVar0[1] = -1938511850;
+				iVar0[0] = joaat("a_m_o_sdupperclass_01");
+				iVar0[1] = joaat("a_m_o_sdupperclass_01");
 				iVar5 = 2;
 			}
 			break;
 		case 98:
-			iVar0[0] = 918972034;
+			iVar0[0] = joaat("a_m_m_vhttownfolk_01");
 			iVar5 = 1;
 			break;
 		case 74:
 			if (iParam0 == 1)
 			{
-				iVar0[0] = -439429058;
+				iVar0[0] = joaat("a_m_m_emrfarmhand_01");
 				iVar5 = 1;
 			}
 			else
 			{
-				iVar0[0] = -439429058;
+				iVar0[0] = joaat("a_m_m_emrfarmhand_01");
 				iVar5 = 1;
 			}
 			break;
 		case 80:
-			iVar0[0] = -2087759666;
-			iVar0[1] = -1789856687;
-			iVar0[2] = 1124384604;
+			iVar0[0] = joaat("a_m_m_valtownfolk_01");
+			iVar0[1] = joaat("a_m_m_valtownfolk_02");
+			iVar0[2] = joaat("s_m_m_valcowpoke_01");
 			iVar5 = 3;
 			break;
 	}
@@ -2645,7 +2645,7 @@ int func_147(var uParam0)
 	if (!*uParam0)
 	{
 	}
-	else if (!CAM::_0xDD0B7C5AE58F721D("table_games_cam") || !STREAMING::HAS_MODEL_LOADED(-615159064))
+	else if (!CAM::_0xDD0B7C5AE58F721D("table_games_cam") || !STREAMING::HAS_MODEL_LOADED(joaat("p_coin01x")))
 	{
 		return 0;
 	}
@@ -4021,12 +4021,12 @@ void func_196(var uParam0, var uParam1, bool bParam2)
 	else if (!CAM::_0xDD0B7C5AE58F721D("table_games_cam"))
 	{
 	}
-	else if (!STREAMING::HAS_MODEL_LOADED(-615159064))
+	else if (!STREAMING::HAS_MODEL_LOADED(joaat("p_coin01x")))
 	{
 	}
 	else
 	{
-		uParam0->f_9.f_17 = OBJECT::CREATE_OBJECT(-615159064, *uParam1 + Vector(0.825f, 0f, 0f), false, true, false, false, true);
+		uParam0->f_9.f_17 = OBJECT::CREATE_OBJECT(joaat("p_coin01x"), *uParam1 + Vector(0.825f, 0f, 0f), false, true, false, false, true);
 		if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_9.f_17))
 		{
 			return;
@@ -5522,9 +5522,9 @@ bool func_267(int iParam0, int iParam1)
 	return (iParam0 && iParam1) != 0;
 }
 
-void func_268(var uParam0, int iParam1)
+void func_268(var uParam0, var uParam1)
 {
-	func_522(uParam0, iParam1);
+	func_522(uParam0, uParam1);
 }
 
 void func_269(var uParam0)
@@ -5549,9 +5549,9 @@ void func_269(var uParam0)
 	}
 }
 
-void func_270(var uParam0, int iParam1)
+void func_270(var uParam0, var uParam1)
 {
-	func_523(uParam0, iParam1);
+	func_523(uParam0, uParam1);
 }
 
 void func_271(var uParam0)
@@ -11025,7 +11025,7 @@ int func_328(var uParam0, struct<2> Param1, int iParam3, bool bParam4)
 					switch (Param1)
 					{
 						case 2:
-							*uParam0 = 328068607;
+							*uParam0 = joaat("p_crd_2_c01x_gk");
 							return 1;
 						case 3:
 							*uParam0 = -1306858058;
@@ -12950,7 +12950,7 @@ int func_360(var uParam0, int iParam1)
 	return (uParam0->f_71[iParam1 /*28*/])->f_18;
 }
 
-void func_361(var uParam0, int iParam1, int iParam2)
+void func_361(var uParam0, int iParam1, var uParam2)
 {
 	int iVar0;
 	struct<4> Var1;
@@ -12976,16 +12976,16 @@ void func_361(var uParam0, int iParam1, int iParam2)
 	{
 		if (MISC::IS_BIT_SET(iParam1, iVar0))
 		{
-			if (iParam2[iVar0] == 255 || !NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam2[iVar0]))
+			if (uParam2[iVar0] == 255 || !NETWORK::NETWORK_IS_PLAYER_ACTIVE(uParam2[iVar0]))
 			{
 				func_939(uParam0, iVar0, 4);
 			}
 			else
 			{
 				func_939(uParam0, iVar0, 1);
-				uParam0->f_180[iVar0] = iParam2[iVar0];
+				uParam0->f_180[iVar0] = uParam2[iVar0];
 				uParam0->f_187[iVar0] = MISC::GET_GAME_TIMER() + 17500;
-				SCRIPTS::_0x31010318BA9897AC(&(Var1.f_2), iParam2[iVar0]);
+				SCRIPTS::_0x31010318BA9897AC(&(Var1.f_2), uParam2[iVar0]);
 			}
 		}
 		iVar0++;
@@ -14482,7 +14482,7 @@ void func_422(var uParam0)
 	{
 		*uParam0 = 0;
 		CAM::_0x798BE43C9393632B("table_games_cam");
-		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(-615159064);
+		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("p_coin01x"));
 	}
 }
 
@@ -15708,7 +15708,7 @@ void func_465(var uParam0, int iParam1, char* sParam2, float fParam3)
 	Var2.f_6 = -1082130432;
 	Var2.f_9 = -1082130432;
 	Var2 = &uParam0->f_1323[iVar0];
-	Var2.f_1 = -455129387;
+	Var2.f_1 = -455129387; /* GXTEntry: "_" */
 	Var2.f_29 = sParam2;
 	Var2.f_33 = "CurrentPhase";
 	Var2.f_32 = "CurrentClip";
@@ -43050,32 +43050,32 @@ int func_1535(int iParam0, int iParam1)
 		case 0:
 			switch (iParam1)
 			{
-				case 325252933:
+				case joaat("p_windsorchair03x"):
 					return 1;
-				case -1740828633:
+				case joaat("p_windsorchair01x"):
 				case 1609095284:
 					return 1;
-				case -1510839859:
-				case 1407600554:
+				case joaat("p_chair24x"):
+				case joaat("p_chair22x"):
 					return 1;
 				default:
 					break;
 			}
 			break;
 		case 2:
-			if (iParam1 == -1243444973)
+			if (iParam1 == joaat("p_chair13x"))
 			{
 				return 1;
 			}
-			if (iParam1 == -289651159)
+			if (iParam1 == joaat("p_chair05x"))
 			{
 				return 1;
 			}
-			if (iParam1 == -1443906703)
+			if (iParam1 == joaat("p_chair06x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 325252933)
+			if (iParam1 == joaat("p_windsorchair03x"))
 			{
 				return 1;
 			}
@@ -43087,7 +43087,7 @@ int func_1535(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == 375867283)
+			if (iParam1 == joaat("p_chair11x"))
 			{
 				return 1;
 			}
@@ -43097,37 +43097,37 @@ int func_1535(int iParam0, int iParam1)
 			}
 			break;
 		case 1:
-			if (iParam1 == -1025740342)
+			if (iParam1 == joaat("p_chair02x"))
 			{
 				return 1;
 			}
-			if (iParam1 == -1937484496)
+			if (iParam1 == joaat("p_stool02x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 463271055)
+			if (iParam1 == joaat("p_stool03x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 1186910594)
+			if (iParam1 == joaat("p_stoolwinter01x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 1600083684)
+			if (iParam1 == joaat("p_stoolfolding01x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 264425748)
+			if (iParam1 == joaat("p_chair_barrel04b"))
 			{
 				return 1;
 			}
-			if (iParam1 == -1006095118)
+			if (iParam1 == joaat("p_chairfolding02x"))
 			{
 				return 1;
 			}
 			break;
 		case 3:
-			if (iParam1 == -1443906703)
+			if (iParam1 == joaat("p_chair06x"))
 			{
 				return 1;
 			}
@@ -43135,15 +43135,15 @@ int func_1535(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == 1230724566)
+			if (iParam1 == joaat("p_chair_crate02x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 1600083684)
+			if (iParam1 == joaat("p_stoolfolding01x"))
 			{
 				return 1;
 			}
-			if (iParam1 == -1006095118)
+			if (iParam1 == joaat("p_chairfolding02x"))
 			{
 				return 1;
 			}

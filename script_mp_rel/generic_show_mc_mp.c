@@ -3758,7 +3758,7 @@ int func_95(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1410422943;
+			return joaat("cs_cabaretmc");
 		case 1:
 			return -262339715;
 		default:

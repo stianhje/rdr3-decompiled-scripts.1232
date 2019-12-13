@@ -340,17 +340,17 @@ void func_5(struct<8> Param0, var uParam8, var uParam9)
 	LAW::_0x009CF9A29972C298(582557506);
 }
 
-void func_6(int iParam0)
+void func_6(var uParam0)
 {
 	int iVar0;
 
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		func_28(iParam0->f_1110[iVar0 /*9*/]);
+		func_28(uParam0->f_1110[iVar0 /*9*/]);
 		iVar0++;
 	}
-	func_29(iParam0);
+	func_29(uParam0);
 }
 
 int func_7(int iParam0, var uParam1, var uParam2)
@@ -5322,7 +5322,7 @@ var func_208(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	return uVar21;
 }
 
-void func_209(var uParam0, var uParam1, int iParam2)
+void func_209(var uParam0, var uParam1, var uParam2)
 {
 	int iVar0;
 	int iVar1;
@@ -5334,7 +5334,7 @@ void func_209(var uParam0, var uParam1, int iParam2)
 
 	if (uParam0->f_24)
 	{
-		func_318(uParam1, iParam2);
+		func_318(uParam1, uParam2);
 		return;
 	}
 	iVar0 = 0;
@@ -5399,13 +5399,13 @@ void func_209(var uParam0, var uParam1, int iParam2)
 					if (!func_266(iVar3, 0))
 					{
 						func_319(iVar3);
-						SCRIPTS::_0x31010318BA9897AC(&(iParam2->f_1074), iVar3);
+						SCRIPTS::_0x31010318BA9897AC(&(uParam2->f_1074), iVar3);
 					}
 				}
 				else if (func_266(iVar3, 0))
 				{
 					func_157(iVar3);
-					SCRIPTS::_0xD426E2E3288469D6(&(iParam2->f_1074), iVar3);
+					SCRIPTS::_0xD426E2E3288469D6(&(uParam2->f_1074), iVar3);
 				}
 			}
 		}
@@ -7628,17 +7628,17 @@ int func_308(int iParam0)
 
 bool func_309(int iParam0, var uParam1)
 {
-	*iParam0 = uParam1->f_1041;
-	iParam0->f_2 = -1624776506;
-	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0);
+	*uParam0 = uParam1->f_1041;
+	uParam0->f_2 = -1624776506;
+	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0);
 }
 
 bool func_310(int iParam0, var uParam1)
 {
-	*iParam0 = uParam1->f_1041;
-	iParam0->f_2 = -1910604690;
-	iParam0->f_3 = uParam1->f_1046;
-	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(iParam0->f_1), iParam0);
+	*uParam0 = uParam1->f_1041;
+	uParam0->f_2 = -1910604690;
+	uParam0->f_3 = uParam1->f_1046;
+	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0);
 }
 
 int func_311(vector3 vParam0, var uParam3, var uParam4, int iParam5, int iParam6, bool bParam7)

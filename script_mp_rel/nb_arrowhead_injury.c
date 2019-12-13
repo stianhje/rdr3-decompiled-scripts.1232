@@ -3983,11 +3983,11 @@ int func_183(int iParam0)
 			switch (func_227())
 			{
 				case 0:
-					return 1110710183;
+					return joaat("a_c_deer_01");
 				case 1:
-					return 480688259;
+					return joaat("a_c_coyote_01");
 				case 2:
-					return -885451903;
+					return joaat("a_c_wolf_medium");
 				default:
 					break;
 			}
@@ -4398,7 +4398,7 @@ void func_202()
 				if (!func_221(8))
 				{
 					PED::_0x735662994E60A710((Local_110.f_18.f_4[0 /*2*/])->f_1, 0);
-					TASK::_0x30A768C30D385EC5((Local_110.f_18.f_4[0 /*2*/])->f_1, 0, 1, -2002235300, 0, 0);
+					TASK::_0x30A768C30D385EC5((Local_110.f_18.f_4[0 /*2*/])->f_1, 0, 1, joaat("weapon_bow"), 0, 0);
 					func_240(8);
 				}
 				PED::SET_PED_MAX_MOVE_BLEND_RATIO((Local_110.f_18.f_4[0 /*2*/])->f_1, func_253());

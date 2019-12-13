@@ -57,7 +57,7 @@ void __EntryFunction__()
 
 	fLocal_16 = 1f;
 	fLocal_17 = 1f;
-	iLocal_29 = 1071795929;
+	iLocal_29 = joaat("p_detonator01x");
 	iLocal_30 = -227367034;
 	iLocal_107 = 20000;
 	iLocal_110 = vScriptParam_0.x;
@@ -292,7 +292,7 @@ int func_4()
 	return 1;
 }
 
-void func_5(int iParam0, int iParam1)
+void func_5(int iParam0, var uParam1)
 {
 	if (!func_38(16))
 	{
@@ -311,71 +311,71 @@ void func_5(int iParam0, int iParam1)
 	}
 	if (func_51(8))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_52(8);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(2))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 4;
+			*uParam1 = 4;
 			return;
 		}
-		else if (*iParam1 != 4)
+		else if (*uParam1 != 4)
 		{
 			func_52(2);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(16))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 9;
+			*uParam1 = 9;
 			return;
 		}
-		else if (*iParam1 != 9)
+		else if (*uParam1 != 9)
 		{
 			func_52(16);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(4))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_52(4);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(1))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_52(1);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
@@ -1095,11 +1095,11 @@ void func_54()
 	fLocal_99[2] = 0.4f;
 	fLocal_99[3] = 0.6f;
 	fLocal_99[4] = 0.8f;
-	iLocal_55[0] = -541762431;
-	iLocal_55[1] = 480688259;
-	iLocal_55[2] = 480688259;
-	iLocal_55[3] = -541762431;
-	iLocal_55[4] = -541762431;
+	iLocal_55[0] = joaat("a_c_rabbit_01");
+	iLocal_55[1] = joaat("a_c_coyote_01");
+	iLocal_55[2] = joaat("a_c_coyote_01");
+	iLocal_55[3] = joaat("a_c_rabbit_01");
+	iLocal_55[4] = joaat("a_c_rabbit_01");
 	sLocal_61[0] = "PD_Ex_Small_aged_carcass_Hvy";
 	sLocal_61[1] = "PD_Small_aged_carcass_Hvy";
 	sLocal_61[2] = "PD_Small_aged_carcass_Hvy";
@@ -1434,19 +1434,19 @@ void func_66()
 	}
 }
 
-int func_67(bool bParam0)
+int func_67(var uParam0)
 {
 	if (func_107())
 	{
-		if (!*bParam0)
+		if (!*uParam0)
 		{
-			*bParam0 = 1;
+			*uParam0 = 1;
 			return 1;
 		}
 	}
-	else if (*bParam0)
+	else if (*uParam0)
 	{
-		*bParam0 = 0;
+		*uParam0 = 0;
 		return 1;
 	}
 	return 0;
@@ -2440,11 +2440,11 @@ int func_93(int iParam0)
 			iVar9 = 33646;
 			switch (&iLocal_55[iParam0])
 			{
-				case 480688259:
+				case joaat("a_c_coyote_01"):
 					vVar6 = { 0f, -0.005f, -0.025f };
 					vVar0 = { 0f, 90f, 0f };
 					break;
-				case -541762431:
+				case joaat("a_c_rabbit_01"):
 					vVar6 = { -0.0125f, 0f, -0.025f };
 					vVar0 = { 0f, 90f, 0f };
 					break;

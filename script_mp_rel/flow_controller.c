@@ -1144,7 +1144,7 @@ int func_38(int iParam0)
 	return (Global_1197832->f_1[iParam0 /*3*/])->f_2;
 }
 
-int func_39(var* uParam0, int iParam1)
+int func_39(var uParam0, int iParam1)
 {
 	var uVar0;
 
@@ -12579,7 +12579,7 @@ void func_470(int iParam0)
 	{
 		return;
 	}
-	iVar0 = uParam0;
+	iVar0 = iParam0;
 	if (iVar0 < 0 || iVar0 >= 32)
 	{
 		return;
@@ -12589,7 +12589,7 @@ void func_470(int iParam0)
 		return;
 	}
 	func_471(iVar0);
-	NETWORK::_0x51951DE06C0D1C40(uParam0, 0);
+	NETWORK::_0x51951DE06C0D1C40(iParam0, 0);
 	Global_1070355->f_19683.f_1[iVar0 /*8*/] = 0;
 }
 

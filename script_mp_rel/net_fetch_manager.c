@@ -6477,7 +6477,7 @@ int func_285(int iParam0)
 	return ((*Global_1232796)[iParam0 /*5*/])->f_2;
 }
 
-int func_286(int iParam0)
+int func_286(var uParam0)
 {
 	return 0;
 }
@@ -8211,7 +8211,7 @@ void func_330(int iParam0)
 	}
 }
 
-bool func_331(int iParam0, var uParam1)
+bool func_331(var uParam0, var uParam1)
 {
 	*uParam0 = Global_1232796->f_8113;
 	uParam0->f_2 = 423895568;
@@ -8219,7 +8219,7 @@ bool func_331(int iParam0, var uParam1)
 	return (DATAFILE::_0x603AC35FD4602C76(*uParam0) && DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0));
 }
 
-bool func_332(int iParam0, var uParam1)
+bool func_332(var uParam0, var uParam1)
 {
 	uParam0->f_2 = 775488648;
 	uParam0->f_3 = uParam1;
@@ -8654,7 +8654,7 @@ void func_355(struct<19> Param0, var uParam19, bool bParam20, bool bParam21)
 	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, &Param0, 19, 10, &uParam19);
 }
 
-bool func_356(int iParam0, var uParam1)
+bool func_356(var uParam0, var uParam1)
 {
 	uParam0->f_2 = 333456427;
 	uParam0->f_3 = uParam1;
@@ -10335,7 +10335,7 @@ int func_413(int iParam0, var uParam1)
 	return 1;
 }
 
-int func_414(int iParam0)
+int func_414(var uParam0)
 {
 	return 2;
 }
@@ -12109,7 +12109,7 @@ int func_492(int iParam0, int iParam1)
 	return (((*Global_1232796)[iParam0 /*5*/])->f_4 + iParam1);
 }
 
-bool func_493(int iParam0, var uParam1)
+bool func_493(var uParam0, var uParam1)
 {
 	uParam0->f_2 = 1168896522;
 	uParam0->f_3 = uParam1;
@@ -12204,7 +12204,7 @@ int func_494(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	return 1;
 }
 
-bool func_495(int iParam0, var uParam1)
+bool func_495(var uParam0, var uParam1)
 {
 	uParam0->f_2 = 1700129460;
 	uParam0->f_3 = uParam1;
@@ -13363,7 +13363,7 @@ void func_553(int iParam0)
 	func_716(Global_1131373->f_4641.f_2[func_391(iParam0, 1) /*4*/]);
 }
 
-int func_554(struct<2> Param0, int iParam2)
+int func_554(struct<2> Param0, var uParam2)
 {
 	if (!func_36(Param0))
 	{
@@ -13376,22 +13376,22 @@ int func_554(struct<2> Param0, int iParam2)
 			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 3:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 4:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 5:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 6:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 7:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 8:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
 			return 1;
 		default:
 			break;
@@ -13412,13 +13412,13 @@ int func_555(struct<2> Param0)
 	return -1;
 }
 
-int func_556(int iParam0)
+int func_556(var uParam0)
 {
 	int iVar0;
 	struct<2> Var1;
 
 	iVar0 = -1;
-	if (func_331(&Var1, iParam0))
+	if (func_331(&Var1, uParam0))
 	{
 		iVar0 = ((func_718() - DATAFILE::_0xE13634BB6BAF0734(Var1, Var1.f_1)) - 1);
 	}
@@ -16319,7 +16319,7 @@ int func_647(int iParam0)
 	return 1;
 }
 
-int func_648(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
+int func_648(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 {
 	var uVar0;
 
@@ -16329,7 +16329,7 @@ int func_648(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	uVar0 = uParam0->f_1;
 	if (!DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0))
 	{
-		iParam0->f_1 = uVar0;
+		uParam0->f_1 = uVar0;
 		return 0;
 	}
 	return 1;
@@ -16390,7 +16390,7 @@ int func_652(var uParam0)
 	return func_773(uParam0, 27, 1);
 }
 
-var func_653(int iParam0, int iParam1)
+var func_653(var uParam0, int iParam1)
 {
 	var uVar0;
 
@@ -17057,7 +17057,7 @@ void func_697(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_6 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_524(56), Param10.f_6);
 	if (Param10.f_7 == 0)
 	{
-		Param10.f_7 = -672301300;
+		Param10.f_7 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_524(58), Param10.f_7);
 	uParam0->f_9 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_524(59), Param10.f_8);
@@ -17067,7 +17067,7 @@ void func_697(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_12 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_524(62), Param10.f_12);
 	if (Param10.f_13 == 0)
 	{
-		Param10.f_13 = -672301300;
+		Param10.f_13 = -672301300; /* GXTEntry: "Select" */
 	}
 	uParam0->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_524(64), Param10.f_13);
 	uParam0->f_15 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_524(65), Param10.f_14);
@@ -19752,7 +19752,7 @@ int func_772(var uParam0)
 	return func_834(func_773(uParam0, 30, 1));
 }
 
-int func_773(int iParam0, int iParam1, int iParam2)
+int func_773(var uParam0, int iParam1, int iParam2)
 {
 	var uVar0;
 
@@ -20498,163 +20498,163 @@ int func_810(int iParam0, var uParam1)
 	return 1;
 }
 
-void func_811(int iParam0, int iParam1)
+void func_811(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
 		case 0:
-			func_857(iParam0);
+			func_857(uParam0);
 			break;
 		case 1:
-			func_857(iParam0);
+			func_857(uParam0);
 			break;
 		case 2:
-			func_857(iParam0);
+			func_857(uParam0);
 			break;
 		case 3:
-			func_858(iParam0);
+			func_858(uParam0);
 			break;
 		case 4:
-			func_857(iParam0);
+			func_857(uParam0);
 			break;
 		case 5:
-			func_857(iParam0);
+			func_857(uParam0);
 			break;
 		case 6:
-			func_858(iParam0);
+			func_858(uParam0);
 			break;
 		case 7:
-			func_858(iParam0);
+			func_858(uParam0);
 			break;
 		case 8:
-			func_858(iParam0);
+			func_858(uParam0);
 			break;
 		case 9:
-			func_857(iParam0);
+			func_857(uParam0);
 			break;
 		default:
-			func_813(iParam0);
-			func_812(iParam0);
+			func_813(uParam0);
+			func_812(uParam0);
 			break;
 	}
 }
 
-void func_812(int iParam0)
+void func_812(var uParam0)
 {
 	int iVar0;
 
 	iVar0 = 0;
-	while (iVar0 <= (iParam0->f_2 - 1))
+	while (iVar0 <= (uParam0->f_2 - 1))
 	{
-		func_815(iParam0, iVar0);
+		func_815(uParam0, iVar0);
 		iVar0++;
 	}
 }
 
-void func_813(int iParam0)
+void func_813(var uParam0)
 {
 	int iVar0;
 
 	iVar0 = 0;
-	while (iVar0 <= (iParam0->f_1 - 1))
+	while (iVar0 <= (uParam0->f_1 - 1))
 	{
-		func_814(iParam0, iVar0);
+		func_814(uParam0, iVar0);
 		iVar0++;
 	}
 }
 
-void func_814(int iParam0, int iParam1)
+void func_814(var uParam0, int iParam1)
 {
-	MISC::SET_BIT(&(iParam0->f_3), iParam1);
+	MISC::SET_BIT(&(uParam0->f_3), iParam1);
 }
 
-void func_815(int iParam0, int iParam1)
+void func_815(var uParam0, int iParam1)
 {
-	MISC::SET_BIT(&(iParam0->f_4), iParam1);
+	MISC::SET_BIT(&(uParam0->f_4), iParam1);
 }
 
-void func_816(int iParam0, int iParam1)
+void func_816(var uParam0, int iParam1)
 {
-	func_515(&(iParam0->f_16), iParam1);
+	func_515(&(uParam0->f_16), iParam1);
 }
 
-void func_817(int iParam0, int iParam1)
+void func_817(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
 		case 0:
-			func_815(iParam0, 0);
+			func_815(uParam0, 0);
 			break;
 		case 1:
 		case 2:
-			func_815(iParam0, 1);
-			func_815(iParam0, 2);
+			func_815(uParam0, 1);
+			func_815(uParam0, 2);
 			break;
 		case 3:
 		case 4:
 		case 5:
 		case 6:
 		case 7:
-			func_815(iParam0, 0);
-			func_815(iParam0, 2);
+			func_815(uParam0, 0);
+			func_815(uParam0, 2);
 			break;
 		case 8:
-			func_815(iParam0, 1);
+			func_815(uParam0, 1);
 			break;
 		case 9:
 		case 10:
 		case 11:
-			func_815(iParam0, 1);
+			func_815(uParam0, 1);
 			break;
 		default:
-			func_812(iParam0);
+			func_812(uParam0);
 			break;
 	}
 }
 
-void func_818(int iParam0, int iParam1)
+void func_818(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
 		case 0:
-			func_859(iParam0);
+			func_859(uParam0);
 			break;
 		case 1:
-			func_860(iParam0);
+			func_860(uParam0);
 			break;
 		case 2:
-			func_861(iParam0);
+			func_861(uParam0);
 			break;
 		case 3:
-			func_862(iParam0);
+			func_862(uParam0);
 			break;
 		default:
-			func_813(iParam0);
-			func_812(iParam0);
+			func_813(uParam0);
+			func_812(uParam0);
 			break;
 	}
 }
 
-void func_819(int iParam0, int iParam1)
+void func_819(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
 		case 0:
-			func_863(iParam0);
+			func_863(uParam0);
 			break;
 		case 1:
 		case 2:
-			func_864(iParam0);
+			func_864(uParam0);
 			break;
 		case 3:
 		case 4:
-			func_865(iParam0);
+			func_865(uParam0);
 			break;
 		default:
-			func_812(iParam0);
+			func_812(uParam0);
 			break;
 	}
-	func_813(iParam0);
+	func_813(uParam0);
 }
 
 var func_820(int iParam0)
@@ -20776,7 +20776,7 @@ int func_828(int iParam0)
 	return 0;
 }
 
-bool func_829(int iParam0, var uParam1, int iParam2)
+bool func_829(int iParam0, var uParam1, var uParam2)
 {
 	*uParam2 = Global_1131373->f_7;
 	uParam2->f_2 = 1351168281;
@@ -20785,7 +20785,7 @@ bool func_829(int iParam0, var uParam1, int iParam2)
 	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam2->f_1), uParam2);
 }
 
-void func_830(int iParam0, int iParam1, var uParam2)
+void func_830(int iParam0, var uParam1, var uParam2)
 {
 	int iVar0;
 
@@ -20793,86 +20793,86 @@ void func_830(int iParam0, int iParam1, var uParam2)
 	uParam1->f_2 = -611386243;
 	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_1), uParam1);
 	uParam2->f_3 = func_867(iParam0, uParam2->f_1);
-	iParam1->f_2 = -2140901307;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = -2140901307;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_2 = iVar0;
-	iParam1->f_2 = -2140901307;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_9), iParam1);
-	iParam1->f_2 = 1292053410;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_17), iParam1);
+	uParam1->f_2 = -2140901307;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_9), uParam1);
+	uParam1->f_2 = 1292053410;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_17), uParam1);
 	if (*uParam2 == 3)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = func_868(iVar0);
 		}
 	}
 	else if (*uParam2 == 4)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = iVar0;
 		}
 	}
 	else if (*uParam2 == 5)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = func_869(iVar0);
 		}
 	}
 	else if (*uParam2 == 6)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = func_870(iVar0);
 		}
-		iParam1->f_2 = 162343104;
-		DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_6), iParam1);
+		uParam1->f_2 = 162343104;
+		DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_6), uParam1);
 	}
 	else if (*uParam2 == 7)
 	{
-		iParam1->f_2 = 1636457257;
-		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1))
+		uParam1->f_2 = 1636457257;
+		if (DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1))
 		{
 			uParam2->f_5 = func_871(iVar0);
 		}
 	}
 	else
 	{
-		iParam1->f_2 = 1636457257;
-		DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_5), iParam1);
+		uParam1->f_2 = 1636457257;
+		DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_5), uParam1);
 	}
-	iParam1->f_2 = 2012757065;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = 2012757065;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_7 = func_872(iVar0);
-	iParam1->f_2 = 1060782978;
-	DATAFILE::_DATAFILE_GET_HASH(&(uParam2->f_8), iParam1);
-	iParam1->f_2 = 162343104;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_6), iParam1);
-	iParam1->f_2 = -733480474;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_25), iParam1);
-	iParam1->f_2 = 492825771;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_26), iParam1);
-	iParam1->f_2 = -839279581;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_27), iParam1);
-	iParam1->f_2 = -640941103;
-	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_28), iParam1);
+	uParam1->f_2 = 1060782978;
+	DATAFILE::_DATAFILE_GET_HASH(&(uParam2->f_8), uParam1);
+	uParam1->f_2 = 162343104;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_6), uParam1);
+	uParam1->f_2 = -733480474;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_25), uParam1);
+	uParam1->f_2 = 492825771;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_26), uParam1);
+	uParam1->f_2 = -839279581;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_27), uParam1);
+	uParam1->f_2 = -640941103;
+	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_28), uParam1);
 	iVar0 = 0;
-	iParam1->f_2 = -2025968302;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = -2025968302;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_29 = iVar0;
 	iVar0 = 0;
-	iParam1->f_2 = -1829781569;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = -1829781569;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_30 = iVar0;
 	iVar0 = 0;
-	iParam1->f_2 = -1999176766;
-	DATAFILE::_DATAFILE_GET_HASH(&iVar0, iParam1);
+	uParam1->f_2 = -1999176766;
+	DATAFILE::_DATAFILE_GET_HASH(&iVar0, uParam1);
 	uParam2->f_31 = iVar0;
 }
 
@@ -21109,19 +21109,19 @@ void func_850(int iParam0, var uParam1, var uParam2)
 	{
 		case 1234009870:
 			*uParam1 = 1802325493;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case -1202134084:
 			*uParam1 = -864693164;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case 1297050066:
 			*uParam1 = -603289736;
-			*uParam2 = 1232099469;
+			*uParam2 = 1232099469; /* GXTEntry: "Revolver Cartridges - Express" */
 			break;
 		case -1780177928:
 			*uParam1 = -1803237008;
-			*uParam2 = -2084181920;
+			*uParam2 = -2084181920; /* GXTEntry: "Revolver Cartridges - High Velocity" */
 			break;
 		case -1467836497:
 			*uParam1 = -1175521284;
@@ -21133,11 +21133,11 @@ void func_850(int iParam0, var uParam1, var uParam2)
 			break;
 		case -153287664:
 			*uParam1 = -1650796693;
-			*uParam2 = 836939099;
+			*uParam2 = 836939099; /* GXTEntry: "Pistol Cartridges - Express" */
 			break;
 		case 1845082736:
 			*uParam1 = -1521597660;
-			*uParam2 = -1411815376;
+			*uParam2 = -1411815376; /* GXTEntry: "Pistol Cartridges - High Velocity" */
 			break;
 		case 406755377:
 			*uParam1 = -1288829256;
@@ -21149,27 +21149,27 @@ void func_850(int iParam0, var uParam1, var uParam2)
 			break;
 		case 45760211:
 			*uParam1 = -851229814;
-			*uParam2 = 1654725195;
+			*uParam2 = 1654725195; /* GXTEntry: "Rifle Cartridges - Express" */
 			break;
 		case -276295943:
 			*uParam1 = 914704115;
-			*uParam2 = 1858824185;
+			*uParam2 = 1858824185; /* GXTEntry: "Rifle Cartridges - High Velocity" */
 			break;
 		case -2029793397:
 			*uParam1 = -219896679;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case 2120467495:
 			*uParam1 = 516838334;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case -2075613923:
 			*uParam1 = -385817936;
-			*uParam2 = -578347576;
+			*uParam2 = -578347576; /* GXTEntry: "Repeater Cartridges - Express" */
 			break;
 		case 122656217:
 			*uParam1 = 1192843172;
-			*uParam2 = 231465488;
+			*uParam2 = 231465488; /* GXTEntry: "Repeater Cartridges - High Velocity" */
 			break;
 		case 2107187484:
 			*uParam1 = 954871696;
@@ -21181,7 +21181,7 @@ void func_850(int iParam0, var uParam1, var uParam2)
 			break;
 		case 305770744:
 			*uParam1 = -2087227528;
-			*uParam2 = 314966081;
+			*uParam2 = 314966081; /* GXTEntry: "Shotgun - Slug" */
 			break;
 		case 550900979:
 			*uParam1 = -618066518;
@@ -21300,24 +21300,24 @@ struct<5> func_855(int iParam0, bool bParam1, int iParam2)
 				Var6.f_9 = -1591664384;
 				if (!func_881(iParam0, &Var0, 1728382685, 0, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_881(iParam0, &Var0, -649335959, 0, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_882(iParam0, &Var6, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case joaat("coach"):
@@ -22037,7 +22037,7 @@ bool func_885(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, b
 	return func_894(&uParam0, uParam4, bParam5, bParam6, iParam7);
 }
 
-void func_886(int iParam0, int iParam1, int iParam2)
+void func_886(var uParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 
@@ -22047,12 +22047,12 @@ void func_886(int iParam0, int iParam1, int iParam2)
 	}
 	if (iParam2 < iParam1)
 	{
-		iParam2 = (iParam0->f_2 - 1);
+		iParam2 = (uParam0->f_2 - 1);
 	}
 	iVar0 = iParam1;
 	while (iVar0 <= iParam2)
 	{
-		func_815(iParam0, iVar0);
+		func_815(uParam0, iVar0);
 		iVar0++;
 	}
 }
@@ -22168,7 +22168,7 @@ int func_894(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
 	return 1;
 }
 
-bool func_895(int iParam0, var uParam1, int iParam2)
+bool func_895(int iParam0, var uParam1, var uParam2)
 {
 	*uParam2 = Global_1131373->f_7;
 	uParam2->f_2 = -1096981081;
@@ -22177,24 +22177,24 @@ bool func_895(int iParam0, var uParam1, int iParam2)
 	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam2->f_1), uParam2);
 }
 
-void func_896(int iParam0, int iParam1, var uParam2)
+void func_896(var uParam0, int iParam1, var uParam2)
 {
 	var uVar0;
 
 	*uParam2 = iParam1;
 	uParam0->f_2 = -611386243;
 	DATAFILE::_DATAFILE_GET_INT(&(uParam2->f_1), uParam0);
-	iParam0->f_2 = -2140901307;
-	if (DATAFILE::_DATAFILE_GET_HASH(&uVar0, iParam0))
+	uParam0->f_2 = -2140901307;
+	if (DATAFILE::_DATAFILE_GET_HASH(&uVar0, uParam0))
 	{
 		uParam2->f_2 = uVar0;
 	}
-	iParam0->f_2 = -2140901307;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_11), iParam0);
-	iParam0->f_2 = 1292053410;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_19), iParam0);
-	iParam0->f_2 = 1234058424;
-	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_3), iParam0);
+	uParam0->f_2 = -2140901307;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_11), uParam0);
+	uParam0->f_2 = 1292053410;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_19), uParam0);
+	uParam0->f_2 = 1234058424;
+	DATAFILE::_DATAFILE_GET_STRING(&(uParam2->f_3), uParam0);
 }
 
 void func_897(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7)

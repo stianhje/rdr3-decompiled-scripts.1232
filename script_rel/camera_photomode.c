@@ -10,8 +10,8 @@
 	float fLocal_8 = 0f;
 	float fLocal_9 = 0f;
 	float fLocal_10 = 0f;
-	bool bLocal_11 = false;
-	int iLocal_12 = 0;
+	int iLocal_11 = 0;
+	bool bLocal_12 = false;
 	float fLocal_13 = 0f;
 	float fLocal_14 = 0f;
 	float fLocal_15 = 0f;
@@ -349,7 +349,7 @@ void __EntryFunction__()
 						}
 					}
 				}
-				else if (func_27(iLocal_30, iLocal_21) && func_33(Global_35, 1, 0, 0) == -1016714371)
+				else if (func_27(iLocal_30, iLocal_21) && func_33(Global_35, 1, 0, 0) == joaat("weapon_kit_camera"))
 				{
 					func_17(&Local_102, 3);
 				}
@@ -604,7 +604,7 @@ void __EntryFunction__()
 						{
 							TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID(), 0, 1);
 						}
-						WEAPON::SET_CURRENT_PED_WEAPON(Global_35, -1016714371, true, 0, false, false);
+						WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_kit_camera"), true, 0, false, false);
 						WEAPON::SET_PED_CURRENT_WEAPON_VISIBLE(Global_35, true, true, true, false);
 						ENTITY::SET_ENTITY_HEADING(Global_35, fLocal_394);
 						CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f, 1065353216);
@@ -633,7 +633,7 @@ void __EntryFunction__()
 					if (!func_26())
 					{
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID(), 0, 1);
-						ENTITY::_0x203BEFFDBE12E96A(Global_35, vLocal_219, fLocal_230, 1, false, 1);
+						ENTITY::_0x203BEFFDBE12E96A(Global_35, vLocal_219, fLocal_230, 1, 0, 1);
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID(), 0, 1);
 					}
 					func_47();
@@ -1226,7 +1226,7 @@ int func_9(var uParam0)
 	}
 	if (!func_26())
 	{
-		if (!func_87(-1016714371, 1, 0))
+		if (!func_87(joaat("weapon_kit_camera"), 1, 0))
 		{
 			WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
 			return 0;
@@ -1236,7 +1236,7 @@ int func_9(var uParam0)
 		}
 		if ((func_14(uParam0) != 8 && func_14(uParam0) != 9) && func_14(uParam0) != 10)
 		{
-			if (func_33(Global_35, 1, 0, 1) != -1016714371)
+			if (func_33(Global_35, 1, 0, 1) != joaat("weapon_kit_camera"))
 			{
 				if (func_88(uParam0) == 0)
 				{
@@ -2149,7 +2149,7 @@ void func_38(int iParam0)
 			func_115(23, 1);
 			func_115(24, 0);
 			func_115(25, 0);
-			if (bLocal_11)
+			if (iLocal_11)
 			{
 				func_115(26, 1);
 				func_7(&(Local_102.f_1[26]), 0, 1);
@@ -2711,7 +2711,7 @@ void func_58(var uParam0)
 	vLocal_222 = { ENTITY::GET_ENTITY_COORDS(Global_35, true, false) };
 	if (MISC::GET_DISTANCE_BETWEEN_COORDS(vLocal_222, vLocal_219, true) > 3f)
 	{
-		ENTITY::_0x203BEFFDBE12E96A(Global_35, vLocal_219, fLocal_230, 1, false, 1);
+		ENTITY::_0x203BEFFDBE12E96A(Global_35, vLocal_219, fLocal_230, 1, 0, 1);
 		ENTITY::_SET_ENTITY_HEALTH(PLAYER::PLAYER_PED_ID(), 0, 0);
 	}
 }
@@ -3240,7 +3240,7 @@ void func_70()
 	GRAPHICS::_0xF5793BB386E1FF9C(1);
 	if (func_67(&(Local_102.f_1[26]), 0, 1))
 	{
-		if (!iLocal_12)
+		if (!bLocal_12)
 		{
 			GRAPHICS::_0xC8D0611D9A0CF5D3(0.1f);
 			fLocal_10 = GRAPHICS::_0x06C0D8BB6B04A709();
@@ -3263,9 +3263,9 @@ void func_70()
 	}
 	if (func_40(&(Local_102.f_1[27]), 1))
 	{
-		if (bLocal_11)
+		if (iLocal_11)
 		{
-			bLocal_11 = false;
+			iLocal_11 = 0;
 			if (AUDIO::_0xD9130842D7226045("Photo_Mode_Sounds", 0))
 			{
 				AUDIO::PLAY_SOUND_FRONTEND(sLocal_45, "Photo_Mode_Sounds", false, 2);
@@ -3273,7 +3273,7 @@ void func_70()
 		}
 		else
 		{
-			bLocal_11 = true;
+			iLocal_11 = 1;
 			if (AUDIO::_0xD9130842D7226045("Photo_Mode_Sounds", 0))
 			{
 				AUDIO::PLAY_SOUND_FRONTEND(sLocal_46, "Photo_Mode_Sounds", false, 2);
@@ -4045,17 +4045,17 @@ void func_112()
 	if (iLocal_27 > 160 || iLocal_27 == 160)
 	{
 		iLocal_27 = 160;
-		iLocal_12 = 1;
+		bLocal_12 = true;
 	}
 	else
 	{
-		iLocal_12 = 0;
+		bLocal_12 = false;
 	}
 	MISC::_INT_TO_STRING(iLocal_27, "%i", &cLocal_84);
 	StringConCat(&cLocal_76, &cLocal_84, 64);
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(uLocal_59, &cLocal_76);
 	StringCopy(&cLocal_76, "", 64);
-	if (bLocal_11)
+	if (iLocal_11)
 	{
 		StringConCat(&cLocal_76, HUD::_GET_LABEL_TEXT_2("CAM_PM_HUD_EXLOCKON"), 64);
 	}
@@ -5596,7 +5596,7 @@ void func_164(int iParam0)
 
 void func_165(int iParam0, int iParam1)
 {
-	iLocal_396 = TASK::CREATE_SCENARIO_POINT(iParam0, vLocal_219, fLocal_394, 0f, 0, 1);
+	iLocal_396 = TASK::CREATE_SCENARIO_POINT(iParam0, vLocal_219, fLocal_394, 0f, 0f, 1);
 	TASK::_0x5AF19B6CC2115D34(iLocal_396, 25, 1);
 	TASK::_0x5AF19B6CC2115D34(iLocal_396, 23, 1);
 	TASK::_TASK_USE_SCENARIO_POINT(Global_35, iLocal_396, iParam1, -1, 0, 1, 0, 0, 0f, 0);
@@ -5856,19 +5856,19 @@ void func_185(int iParam0, var uParam1, var uParam2)
 	{
 		case 1234009870:
 			*uParam1 = 1802325493;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case -1202134084:
 			*uParam1 = -864693164;
-			*uParam2 = 1681219929;
+			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
 			break;
 		case 1297050066:
 			*uParam1 = -603289736;
-			*uParam2 = 1232099469;
+			*uParam2 = 1232099469; /* GXTEntry: "Revolver Cartridges - Express" */
 			break;
 		case -1780177928:
 			*uParam1 = -1803237008;
-			*uParam2 = -2084181920;
+			*uParam2 = -2084181920; /* GXTEntry: "Revolver Cartridges - High Velocity" */
 			break;
 		case -1467836497:
 			*uParam1 = -1175521284;
@@ -5880,11 +5880,11 @@ void func_185(int iParam0, var uParam1, var uParam2)
 			break;
 		case -153287664:
 			*uParam1 = -1650796693;
-			*uParam2 = 836939099;
+			*uParam2 = 836939099; /* GXTEntry: "Pistol Cartridges - Express" */
 			break;
 		case 1845082736:
 			*uParam1 = -1521597660;
-			*uParam2 = -1411815376;
+			*uParam2 = -1411815376; /* GXTEntry: "Pistol Cartridges - High Velocity" */
 			break;
 		case 406755377:
 			*uParam1 = -1288829256;
@@ -5896,27 +5896,27 @@ void func_185(int iParam0, var uParam1, var uParam2)
 			break;
 		case 45760211:
 			*uParam1 = -851229814;
-			*uParam2 = 1654725195;
+			*uParam2 = 1654725195; /* GXTEntry: "Rifle Cartridges - Express" */
 			break;
 		case -276295943:
 			*uParam1 = 914704115;
-			*uParam2 = 1858824185;
+			*uParam2 = 1858824185; /* GXTEntry: "Rifle Cartridges - High Velocity" */
 			break;
 		case -2029793397:
 			*uParam1 = -219896679;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case 2120467495:
 			*uParam1 = 516838334;
-			*uParam2 = -1330115686;
+			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
 			break;
 		case -2075613923:
 			*uParam1 = -385817936;
-			*uParam2 = -578347576;
+			*uParam2 = -578347576; /* GXTEntry: "Repeater Cartridges - Express" */
 			break;
 		case 122656217:
 			*uParam1 = 1192843172;
-			*uParam2 = 231465488;
+			*uParam2 = 231465488; /* GXTEntry: "Repeater Cartridges - High Velocity" */
 			break;
 		case 2107187484:
 			*uParam1 = 954871696;
@@ -5928,7 +5928,7 @@ void func_185(int iParam0, var uParam1, var uParam2)
 			break;
 		case 305770744:
 			*uParam1 = -2087227528;
-			*uParam2 = 314966081;
+			*uParam2 = 314966081; /* GXTEntry: "Shotgun - Slug" */
 			break;
 		case 550900979:
 			*uParam1 = -618066518;

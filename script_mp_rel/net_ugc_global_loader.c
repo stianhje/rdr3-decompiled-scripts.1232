@@ -6527,7 +6527,7 @@ int func_299(int iParam0)
 	return ((*Global_262996)[iParam0 /*70*/])->f_67;
 }
 
-void func_300(var uParam0, int iParam1, int iParam2)
+void func_300(var uParam0, int iParam1, var uParam2)
 {
 	int iVar0;
 
@@ -6536,7 +6536,7 @@ void func_300(var uParam0, int iParam1, int iParam2)
 	{
 		return;
 	}
-	(uParam0->f_20[iVar0 /*8*/])->f_3 = iParam2;
+	(uParam0->f_20[iVar0 /*8*/])->f_3 = uParam2;
 }
 
 int func_301(var uParam0, int iParam1)
@@ -9999,13 +9999,13 @@ void func_439(int iParam0)
 	Global_1270479->f_438.f_1549 = iParam0;
 }
 
-int func_440(int iParam0)
+int func_440(var uParam0)
 {
 	int iVar0;
 	struct<2> Var1;
 
 	iVar0 = -1;
-	if (func_505(&Var1, iParam0))
+	if (func_505(&Var1, uParam0))
 	{
 		iVar0 = ((func_506() - DATAFILE::_0xE13634BB6BAF0734(Var1, Var1.f_1)) - 1);
 	}
@@ -14599,7 +14599,7 @@ void func_544(var uParam0, var uParam1)
 	uParam0->f_17++;
 }
 
-void func_545(var uParam0, int iParam1)
+void func_545(var uParam0, var uParam1)
 {
 	char[] cVar0[8];
 	var* uVar1;
@@ -14635,10 +14635,10 @@ void func_545(var uParam0, int iParam1)
 	}
 	iVar2 = DATAFILE::_ARRAY_VALUE_GET_SIZE(uVar1);
 	StringCopy(Global_265331->f_117321.f_129[uParam0->f_17 /*3*/], NETWORK::_0x566CEB0542EF5ECF(uParam0->f_2, uParam1), 24);
-	StringCopy(Global_265331->f_117321[uParam0->f_17 /*4*/], NETWORK::_0xCAF50048C8D0FBA0(uParam0->f_2, iParam1), 32);
+	StringCopy(Global_265331->f_117321[uParam0->f_17 /*4*/], NETWORK::_0xCAF50048C8D0FBA0(uParam0->f_2, uParam1), 32);
 	Global_265331->f_117321.f_6791[uParam0->f_17] = iVar2;
-	Global_265331->f_117321.f_6923[uParam0->f_17] = NETWORK::_0x104080CA9E519B00(uParam0->f_2, iParam1);
-	Global_265331->f_117321.f_6956[uParam0->f_17] = NETWORK::_0x21A99A72B00D8002(uParam0->f_2, iParam1);
+	Global_265331->f_117321.f_6923[uParam0->f_17] = NETWORK::_0x104080CA9E519B00(uParam0->f_2, uParam1);
+	Global_265331->f_117321.f_6956[uParam0->f_17] = NETWORK::_0x21A99A72B00D8002(uParam0->f_2, uParam1);
 	Global_265331->f_117321.f_6725[uParam0->f_17] = MISC::GET_HASH_KEY(Global_265331->f_117321[uParam0->f_17 /*4*/]);
 	Global_265331->f_117321.f_6758[uParam0->f_17] = MISC::GET_HASH_KEY(Global_265331->f_117321.f_129[uParam0->f_17 /*3*/]);
 	Global_265331->f_117321.f_6692[uParam0->f_17] = func_683(cVar0);
@@ -14812,7 +14812,7 @@ void func_547(var uParam0, int iParam1)
 	uVar1 = DATAFILE::_OBJECT_VALUE_GET_ARRAY(cVar0, "list");
 	iVar2 = DATAFILE::_ARRAY_VALUE_GET_SIZE(uVar1);
 	StringCopy(Global_265331->f_110493.f_129[uParam0->f_17 /*3*/], NETWORK::_0x566CEB0542EF5ECF(uParam0->f_2, uParam1), 24);
-	StringCopy(Global_265331->f_110493[uParam0->f_17 /*4*/], NETWORK::_0xCAF50048C8D0FBA0(uParam0->f_2, iParam1), 32);
+	StringCopy(Global_265331->f_110493[uParam0->f_17 /*4*/], NETWORK::_0xCAF50048C8D0FBA0(uParam0->f_2, uParam1), 32);
 	Global_265331->f_110493.f_6692[uParam0->f_17] = func_683(cVar0);
 	iVar7 = 0;
 	while (iVar7 < iVar2)
@@ -18075,7 +18075,7 @@ void func_648(char* sParam0)
 		sParam0->f_90[iVar0] = -1;
 		iVar0++;
 	}
-	sParam0->f_95 = -694807137;
+	sParam0->f_95 = joaat("s_interact_torch");
 	sParam0->f_96 = 0;
 	sParam0->f_97 = 0;
 	sParam0->f_98 = 148;
@@ -27920,7 +27920,7 @@ void func_881(var uParam0)
 			(Global_3145858->f_39311[iVar2 /*115*/])->f_90[iVar3] = func_1000(&(uVar424[iVar3]), iVar2, -1, &(iVar429[iVar3]));
 			iVar3++;
 		}
-		(Global_3145858->f_39311[iVar2 /*115*/])->f_95 = func_1009(uVar434, iVar2, -694807137, bVar435);
+		(Global_3145858->f_39311[iVar2 /*115*/])->f_95 = func_1009(uVar434, iVar2, joaat("s_interact_torch"), bVar435);
 		(Global_3145858->f_39311[iVar2 /*115*/])->f_96 = func_1009(uVar436, iVar2, 0, bVar437);
 		(Global_3145858->f_39311[iVar2 /*115*/])->f_97 = func_1009(uVar438, iVar2, 0, bVar439);
 		(Global_3145858->f_39311[iVar2 /*115*/])->f_98 = func_1009(uVar440, iVar2, 148, bVar441);
@@ -66105,7 +66105,7 @@ struct<8> func_1001(char[4] cParam0, char* sParam1, char* sParam2)
 	return cVar0;
 }
 
-struct<8> func_1002(int iParam0, int iParam1, char* sParam2, bool bParam3)
+struct<8> func_1002(var* uParam0, int iParam1, char* sParam2, bool bParam3)
 {
 	char cVar0[64];
 
@@ -66153,7 +66153,7 @@ float func_1005(char[4] cParam0, char* sParam1, float fParam2)
 	return fParam2;
 }
 
-struct<2> func_1006(int iParam0, int iParam1, char* sParam2, bool bParam3)
+struct<2> func_1006(var* uParam0, int iParam1, char* sParam2, bool bParam3)
 {
 	char cVar0[16];
 
@@ -66177,7 +66177,7 @@ float func_1007(int iParam0, int iParam1, float fParam2, bool bParam3)
 	return fParam2;
 }
 
-Vector3 func_1008(int iParam0, int iParam1, vector3 vParam2, bool bParam5)
+Vector3 func_1008(var* uParam0, int iParam1, vector3 vParam2, bool bParam5)
 {
 	if (bParam5 && iParam1 < DATAFILE::_ARRAY_VALUE_GET_SIZE(uParam0))
 	{
@@ -66195,7 +66195,7 @@ int func_1009(int iParam0, int iParam1, int iParam2, bool bParam3)
 	return iParam2;
 }
 
-Vector3 func_1010(int iParam0, int iParam1, char* sParam2, bool bParam3)
+Vector3 func_1010(var* uParam0, int iParam1, char* sParam2, bool bParam3)
 {
 	vector3 vVar0[24];
 
@@ -66210,7 +66210,7 @@ Vector3 func_1010(int iParam0, int iParam1, char* sParam2, bool bParam3)
 	return cVar0;
 }
 
-struct<4> func_1011(int iParam0, int iParam1, char* sParam2, bool bParam3)
+struct<4> func_1011(var* uParam0, int iParam1, char* sParam2, bool bParam3)
 {
 	char cVar0[32];
 
@@ -66240,7 +66240,7 @@ struct<4> func_1012(char[4] cParam0, char* sParam1, char* sParam2)
 	return cVar0;
 }
 
-struct<16> func_1013(int iParam0, int iParam1, char* sParam2, bool bParam3)
+struct<16> func_1013(var* uParam0, int iParam1, char* sParam2, bool bParam3)
 {
 	char cVar0[128];
 
@@ -67114,7 +67114,7 @@ void func_1037()
 	iVar0 = 0;
 	while (iVar0 <= (Global_3145858->f_13343 - 1))
 	{
-		if ((Global_3145858->f_13344[iVar0 /*263*/])->f_66 == -1758092337)
+		if (Global_3145858->f_13344[iVar0 /*263*/])->f_66 == joaat("wagon05x")
 		{
 			if (!MISC::IS_BIT_SET((Global_3145858->f_13344[iVar0 /*263*/])->f_10, 23))
 			{
@@ -73481,7 +73481,7 @@ void func_1145()
 	Global_2359296->f_15322 = iVar1 + 1;
 }
 
-var func_1146(int iParam0, int iParam1, char* sParam2, var uParam3)
+var func_1146(var* uParam0, int iParam1, char* sParam2, var uParam3)
 {
 	char[] cVar0[8];
 
@@ -74017,11 +74017,11 @@ void func_1169()
 	{
 		if ((Global_3145858->f_18606[iVar0 /*93*/])->f_8 == 1895040107)
 		{
-			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = 1496261474;
+			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = joaat("p_bedrollclosed01x");
 		}
 		if ((Global_3145858->f_18606[iVar0 /*93*/])->f_8 == -240399263)
 		{
-			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = 737690157;
+			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = joaat("p_bedrollopen03x");
 		}
 		if ((Global_3145858->f_18606[iVar0 /*93*/])->f_8 == -807575040)
 		{
@@ -74037,11 +74037,11 @@ void func_1169()
 		}
 		if ((Global_3145858->f_18606[iVar0 /*93*/])->f_8 == 1404532559)
 		{
-			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = 1564811379;
+			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = joaat("p_map03x");
 		}
 		if ((Global_3145858->f_18606[iVar0 /*93*/])->f_8 == 120285123)
 		{
-			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = -9387521;
+			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = joaat("p_tentarmypup01x");
 		}
 		if ((((Global_3145858->f_18606[iVar0 /*93*/])->f_8 == 219709193 || (Global_3145858->f_18606[iVar0 /*93*/])->f_8 == 1519337528) || (Global_3145858->f_18606[iVar0 /*93*/])->f_8 == -1200731851) || (Global_3145858->f_18606[iVar0 /*93*/])->f_8 == -600804825)
 		{
@@ -76091,7 +76091,7 @@ struct<8> func_1231(var uParam0, char* sParam1, int iParam2, int iParam3, int iP
 			switch (DATAFILE::_ARRAY_VALUE_GET_TYPE(uVar8, &(uParam0->f_2[0])))
 			{
 				case 2:
-					Var0.f_1 = DATAFILE::_ARRAY_VALUE_GET_INTEGER(iVar8, &(uParam0->f_2[0]));
+					Var0.f_1 = DATAFILE::_ARRAY_VALUE_GET_INTEGER(uVar8, &(uParam0->f_2[0]));
 					break;
 				case 3:
 					Var0.f_2 = DATAFILE::_ARRAY_VALUE_GET_FLOAT(iVar8, &(uParam0->f_2[0]));
@@ -88503,9 +88503,9 @@ int func_1389(var uParam0, var uParam1)
 	return 1;
 }
 
-int func_1390(int iParam0)
+int func_1390(var uParam0)
 {
-	if (!MISC::_0x80E9C316EF84DD81(iParam0))
+	if (!MISC::_0x80E9C316EF84DD81(uParam0))
 	{
 		return 0;
 	}
@@ -88994,7 +88994,7 @@ void func_1400(var uParam0)
 	}
 }
 
-int func_1401(int iParam0)
+int func_1401(var uParam0)
 {
 	int iVar0;
 	int iVar1;
@@ -89002,7 +89002,7 @@ int func_1401(int iParam0)
 	iVar0 = 0;
 	while (iVar0 <= 2)
 	{
-		iVar1 = (iVar1 + func_1458(iParam0[iVar0]));
+		iVar1 = (iVar1 + func_1458(uParam0[iVar0]));
 		iVar0++;
 	}
 	return iVar1;

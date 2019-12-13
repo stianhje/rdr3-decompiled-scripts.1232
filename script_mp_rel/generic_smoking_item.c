@@ -1449,7 +1449,7 @@ bool func_55(int iParam0)
 	return fVar0 <= 1f;
 }
 
-void func_56(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
+void func_56(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -1460,12 +1460,12 @@ void func_56(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	int iVar6;
 	int iVar7;
 
-	iVar0 = func_67(*iParam0);
-	iVar1 = func_68(*iParam0);
-	iVar2 = func_69(*iParam0);
-	iVar3 = func_70(*iParam0);
-	iVar4 = func_71(*iParam0);
-	iVar5 = func_72(*iParam0);
+	iVar0 = func_67(*uParam0);
+	iVar1 = func_68(*uParam0);
+	iVar2 = func_69(*uParam0);
+	iVar3 = func_70(*uParam0);
+	iVar4 = func_71(*uParam0);
+	iVar5 = func_72(*uParam0);
 	if (((((iParam6 == 0 && iParam5 == 0) && iParam4 == 0) && iParam3 == 0) && iParam2 == 0) && iParam1 == 0)
 	{
 		return;
@@ -1532,7 +1532,7 @@ void func_56(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 		iVar1 += 12;
 	}
 	iVar0 = (iVar0 - iParam6);
-	func_74(iParam0, iVar5, iVar4, iVar3, iVar2, iVar1, iVar0);
+	func_74(uParam0, iVar5, iVar4, iVar3, iVar2, iVar1, iVar0);
 }
 
 int func_57(int iParam0, int iParam1)
@@ -1602,7 +1602,7 @@ void func_60(int iParam0, int iParam1, int iParam2)
 	}
 }
 
-void func_61(int iParam0, int iParam1, int iParam2)
+void func_61(int iParam0, var uParam1, int iParam2)
 {
 	if (iParam2 == 2)
 	{
@@ -1611,10 +1611,10 @@ void func_61(int iParam0, int iParam1, int iParam2)
 	switch (iParam2)
 	{
 		case 0:
-			(Global_1954462->f_1331.f_6[iParam0 /*3*/])->f_1 = iParam1;
+			(Global_1954462->f_1331.f_6[iParam0 /*3*/])->f_1 = uParam1;
 			break;
 		case 1:
-			(Global_1954462->f_1465.f_2.f_6[iParam0 /*3*/])->f_1 = iParam1;
+			(Global_1954462->f_1465.f_2.f_6[iParam0 /*3*/])->f_1 = uParam1;
 			break;
 		default:
 			break;

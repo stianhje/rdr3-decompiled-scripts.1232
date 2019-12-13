@@ -12,7 +12,7 @@
 	var uLocal_10 = 0;
 	var uLocal_11 = 0;
 	var uLocal_12 = 0;
-	bool bLocal_13 = false;
+	var uLocal_13 = 0;
 	int iLocal_14 = 0;
 	int iLocal_15 = 0;
 	int iLocal_16 = 0;
@@ -186,7 +186,7 @@ void func_1(int iParam0)
 
 void func_2()
 {
-	bLocal_13 = func_14();
+	uLocal_13 = func_14();
 	func_15(64);
 	func_15(2048);
 	func_15(4096);
@@ -599,21 +599,21 @@ void func_17(int iParam0)
 	Global_265331->f_124445.f_134 = (Global_265331->f_124445.f_134 || iParam0);
 }
 
-void func_18(int iParam0, bool bParam1, bool bParam2)
+void func_18(var uParam0, bool bParam1, bool bParam2)
 {
 	if (bParam1)
 	{
-		*iParam0 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(-434015292);
+		*uParam0 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(-434015292);
 	}
 	else if (bParam2)
 	{
-		*iParam0 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(1781462046);
+		*uParam0 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(1781462046);
 	}
 	else
 	{
-		*iParam0 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(-242590942);
+		*uParam0 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(-242590942);
 	}
-	iParam0->f_3 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "transitionData");
+	uParam0->f_3 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "transitionData");
 }
 
 void func_19(int iParam0, bool bParam1)
@@ -1603,7 +1603,7 @@ void func_58()
 	else if (func_23(64) || func_21(32))
 	{
 		MISC::SET_BIT(&iLocal_396, 1);
-		while (!func_154(&bLocal_13) && !func_22(1, 1))
+		while (!func_154(&uLocal_13) && !func_22(1, 1))
 		{
 			NETWORK::_0x236905C700FDB54D();
 			BUILTIN::WAIT(0);
@@ -2526,11 +2526,11 @@ int func_80()
 		STREAMING::REQUEST_MODEL(iLocal_265, false);
 	}
 	STREAMING::REQUEST_MODEL(-1528680970, false);
-	STREAMING::REQUEST_MODEL(78404028, false);
+	STREAMING::REQUEST_MODEL(joaat("p_crate01x"), false);
 	STREAMING::REQUEST_MODEL(-728725588, false);
-	STREAMING::REQUEST_MODEL(-1623912517, false);
+	STREAMING::REQUEST_MODEL(joaat("p_crate02x"), false);
 	STREAMING::REQUEST_MODEL(1749359648, false);
-	if (((((!STREAMING::HAS_MODEL_LOADED(iLocal_264) && !STREAMING::HAS_MODEL_LOADED(-1528680970)) && !STREAMING::HAS_MODEL_LOADED(78404028)) && !STREAMING::HAS_MODEL_LOADED(-728725588)) && !STREAMING::HAS_MODEL_LOADED(-1623912517)) && !STREAMING::HAS_MODEL_LOADED(1749359648))
+	if (((((!STREAMING::HAS_MODEL_LOADED(iLocal_264) && !STREAMING::HAS_MODEL_LOADED(-1528680970)) && !STREAMING::HAS_MODEL_LOADED(joaat("p_crate01x"))) && !STREAMING::HAS_MODEL_LOADED(-728725588)) && !STREAMING::HAS_MODEL_LOADED(joaat("p_crate02x"))) && !STREAMING::HAS_MODEL_LOADED(1749359648))
 	{
 		return 0;
 	}
@@ -2549,16 +2549,16 @@ int func_81()
 	return 1;
 }
 
-int func_82(int iParam0)
+int func_82(var uParam0)
 {
-	if (!UISTATEMACHINE::_UIFLOWBLOCK_IS_LOADED(*iParam0))
+	if (!UISTATEMACHINE::_UIFLOWBLOCK_IS_LOADED(*uParam0))
 	{
 		return 0;
 	}
-	UISTATEMACHINE::_UIFLOWBLOCK_ENTER(*iParam0, iParam0->f_1);
-	if (!UISTATEMACHINE::_UISTATEMACHINE_EXISTS(*iParam0))
+	UISTATEMACHINE::_UIFLOWBLOCK_ENTER(*uParam0, uParam0->f_1);
+	if (!UISTATEMACHINE::_UISTATEMACHINE_EXISTS(*uParam0))
 	{
-		UISTATEMACHINE::_UISTATEMACHINE_CREATE(*iParam0, *iParam0);
+		UISTATEMACHINE::_UISTATEMACHINE_CREATE(*uParam0, *uParam0);
 	}
 	return 1;
 }
@@ -3037,14 +3037,14 @@ void func_109()
 	{
 		if (MISC::IS_BIT_SET(iLocal_398, 9))
 		{
-			STREAMING::REQUEST_MODEL(219205323, false);
-			if (STREAMING::HAS_MODEL_LOADED(219205323))
+			STREAMING::REQUEST_MODEL(joaat("cart06"), false);
+			if (STREAMING::HAS_MODEL_LOADED(joaat("cart06")))
 			{
-				iLocal_546 = VEHICLE::CREATE_VEHICLE(219205323, vLocal_237, 0f, false, true, false, false);
+				iLocal_546 = VEHICLE::CREATE_VEHICLE(joaat("cart06"), vLocal_237, 0f, false, true, false, false);
 				ENTITY::SET_ENTITY_COLLISION(iLocal_546, false, false);
 				ENTITY::FREEZE_ENTITY_POSITION(iLocal_546, true);
 				ANIMSCENE::SET_ANIM_SCENE_ENTITY(iLocal_232, "cart06", iLocal_546, 0);
-				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(219205323);
+				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("cart06"));
 				MISC::SET_BIT(&iLocal_399, 5);
 			}
 			return;
@@ -3123,7 +3123,7 @@ void func_109()
 			{
 				if (!ENTITY::DOES_ENTITY_EXIST(&(uLocal_488[iVar0])) && MISC::IS_BIT_SET(iLocal_392, iVar0))
 				{
-					uLocal_488[iVar0] = WEAPON::_0x9888652B8BA77F73(-183018591, 1, vLocal_237, 1, 1065353216);
+					uLocal_488[iVar0] = WEAPON::_0x9888652B8BA77F73(joaat("weapon_repeater_carbine"), 1, vLocal_237, 1, 1065353216);
 					StringCopy(&cVar1, "RIFLE_", 16);
 					if (iVar0 < 10)
 					{
@@ -3143,9 +3143,9 @@ void func_109()
 		if (MISC::IS_BIT_SET(iLocal_398, 6))
 		{
 			STREAMING::REQUEST_MODEL(-728725588, false);
-			STREAMING::REQUEST_MODEL(-1623912517, false);
+			STREAMING::REQUEST_MODEL(joaat("p_crate02x"), false);
 			STREAMING::REQUEST_MODEL(1749359648, false);
-			if ((STREAMING::HAS_MODEL_LOADED(-728725588) && STREAMING::HAS_MODEL_LOADED(-1623912517)) && STREAMING::HAS_MODEL_LOADED(1749359648))
+			if ((STREAMING::HAS_MODEL_LOADED(-728725588) && STREAMING::HAS_MODEL_LOADED(joaat("p_crate02x"))) && STREAMING::HAS_MODEL_LOADED(1749359648))
 			{
 				if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_540[0])))
 				{
@@ -3155,7 +3155,7 @@ void func_109()
 				}
 				if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_540[1])))
 				{
-					iLocal_540[1] = OBJECT::CREATE_OBJECT(-1623912517, vLocal_237, false, true, false, false, true);
+					iLocal_540[1] = OBJECT::CREATE_OBJECT(joaat("p_crate02x"), vLocal_237, false, true, false, false, true);
 					StringCopy(&cVar1, "CRATE_02", 16);
 					func_199(iLocal_540[1], cVar1);
 				}
@@ -3166,7 +3166,7 @@ void func_109()
 					func_199(iLocal_540[2], cVar1);
 				}
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(-728725588);
-				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(-1623912517);
+				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("p_crate02x"));
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(1749359648);
 				MISC::SET_BIT(&iLocal_399, 3);
 				return;
@@ -3223,8 +3223,8 @@ void func_109()
 	}
 	if (!MISC::IS_BIT_SET(iLocal_399, 6))
 	{
-		STREAMING::REQUEST_MODEL(-1971689092, false);
-		if (STREAMING::HAS_MODEL_LOADED(-1971689092))
+		STREAMING::REQUEST_MODEL(joaat("p_bottlejd01x"), false);
+		if (STREAMING::HAS_MODEL_LOADED(joaat("p_bottlejd01x")))
 		{
 			iVar0 = 0;
 			while (iVar0 <= 7)
@@ -3233,7 +3233,7 @@ void func_109()
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_505[iVar0])) && MISC::IS_BIT_SET(iLocal_393, iVar0))
 					{
-						iLocal_505[iVar0] = OBJECT::CREATE_OBJECT(-1971689092, vLocal_237, false, true, false, false, true);
+						iLocal_505[iVar0] = OBJECT::CREATE_OBJECT(joaat("p_bottlejd01x"), vLocal_237, false, true, false, false, true);
 						StringCopy(&cVar1, "JD_BOTTLE_0", 16);
 						StringIntConCat(&cVar1, iVar0 + 1, 16);
 						func_199(iLocal_505[iVar0], cVar1);
@@ -4236,7 +4236,7 @@ int func_153()
 	return 0;
 }
 
-int func_154(bool bParam0)
+int func_154(var uParam0)
 {
 	if (SCRIPTS::_DOES_THREAD_EXIST(&Global_1051088))
 	{
@@ -4247,7 +4247,7 @@ int func_154(bool bParam0)
 	if (SCRIPTS::HAS_SCRIPT_LOADED("net_ugc_end_flow_transition_handler"))
 	{
 		Global_1051087 = 0;
-		Global_1051088 = BUILTIN::START_NEW_SCRIPT_WITH_ARGS("net_ugc_end_flow_transition_handler", bParam0, 1, 5506);
+		Global_1051088 = BUILTIN::START_NEW_SCRIPT_WITH_ARGS("net_ugc_end_flow_transition_handler", uParam0, 1, 5506);
 		SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED("net_ugc_end_flow_transition_handler");
 		return 1;
 	}
@@ -5108,15 +5108,15 @@ int func_211(int iParam0)
 	return -1;
 }
 
-void func_212(var uParam0, int iParam1, int iParam2)
+void func_212(var uParam0, var uParam1, int iParam2)
 {
 	DATABINDING::_DATABINDING_ADD_DATA_STRING(*uParam0, "gameStartTimerLabel", HUD::_GET_LABEL_TEXT("GAME_START_TIMER"));
-	*iParam1 = DATABINDING::_DATABINDING_ADD_DATA_STRING(*uParam0, "gameStartTimer", func_267(iParam2));
+	*uParam1 = DATABINDING::_DATABINDING_ADD_DATA_STRING(*uParam0, "gameStartTimer", func_267(iParam2));
 }
 
-void func_213(int iParam0, int iParam1)
+void func_213(var uParam0, int iParam1)
 {
-	DATABINDING::_DATABINDING_WRITE_DATA_STRING(*iParam0, func_267(iParam1));
+	DATABINDING::_DATABINDING_WRITE_DATA_STRING(*uParam0, func_267(iParam1));
 }
 
 int func_214(var uParam0)

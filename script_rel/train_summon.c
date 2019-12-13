@@ -95,7 +95,7 @@ int func_2()
 			}
 			if (!TASK::_0x841475AC96E794D1(iLocal_19))
 			{
-				iLocal_19 = TASK::CREATE_SCENARIO_POINT(iLocal_2, vLocal_11, fLocal_17, 0f, 0, 0);
+				iLocal_19 = TASK::CREATE_SCENARIO_POINT(iLocal_2, vLocal_11, fLocal_17, 0f, 0f, 0);
 				TASK::_0x5AF19B6CC2115D34(iLocal_19, 23, 1);
 				TASK::_0x5AF19B6CC2115D34(iLocal_19, 25, 1);
 				return 0;
@@ -221,7 +221,7 @@ void func_6(int iParam0)
 	iLocal_0 = iParam0;
 }
 
-int func_7()
+var func_7()
 {
 	return Global_1894899->f_2;
 }
@@ -293,65 +293,65 @@ void func_11(int iParam0, int iParam1)
 	Global_40.f_11029[iParam0 /*5*/] = (Global_40.f_11029[iParam0 /*5*/] || iParam1);
 }
 
-int func_12(int iParam0, int iParam1, char* sParam2, var uParam3, float fParam4, int iParam5)
+int func_12(int iParam0, var uParam1, char* sParam2, var uParam3, var uParam4, var uParam5)
 {
 	switch (iParam0)
 	{
 		case 5:
-			*iParam1 = -229964281;
+			*uParam1 = -229964281;
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { 2682.599f, -1458.432f, 45.757f };
-			*fParam4 = -155f;
-			*iParam5 = 20;
+			*uParam4 = -155f;
+			*uParam5 = 20;
 			return 1;
 		case 23:
-			*iParam1 = -781832595;
+			*uParam1 = -781832595;
 			StringCopy(sParam2, "WORLD_HUMAN_LEAN_RAILING_MALE_C", 64);
 			*uParam3 = { -1099.38f, -578.48f, 81.4f };
-			*fParam4 = 138.954f;
-			*iParam5 = 11;
+			*uParam4 = 138.954f;
+			*uParam5 = 11;
 			return 1;
 		case 28:
-			*iParam1 = -229964281;
+			*uParam1 = -229964281;
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { -1304.61f, 402.07f, 94.88f };
-			*fParam4 = -155f;
-			*iParam5 = 16;
+			*uParam4 = -155f;
+			*uParam5 = 16;
 			return 1;
 		case 69:
-			*iParam1 = -229964281;
+			*uParam1 = -229964281;
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { 1520.34f, 437.09f, 90.18f };
-			*fParam4 = -90f;
-			*iParam5 = 8;
+			*uParam4 = -90f;
+			*uParam5 = 8;
 			return 1;
 		case 75:
-			*iParam1 = -229964281;
+			*uParam1 = -229964281;
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { -346.205f, -368.456f, 87.519f };
-			*fParam4 = -65.272f;
-			*iParam5 = 22;
+			*uParam4 = -65.272f;
+			*uParam5 = 22;
 			return 1;
 		case 76:
-			*iParam1 = 421625586;
+			*uParam1 = 421625586;
 			StringCopy(sParam2, "WORLD_HUMAN_LEAN_BACK_WALL_MALE_D", 64);
 			*uParam3 = { -167.44f, 638.81f, 113.03f };
-			*fParam4 = -126.192f;
-			*iParam5 = 6;
+			*uParam4 = -126.192f;
+			*uParam5 = 6;
 			return 1;
 		case 78:
-			*iParam1 = 421625586;
+			*uParam1 = 421625586;
 			StringCopy(sParam2, "WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_MALE_D", 64);
 			*uParam3 = { 2941.49f, 1274.77f, 43.64f };
-			*fParam4 = 156.696f;
-			*iParam5 = 14;
+			*uParam4 = 156.696f;
+			*uParam5 = 14;
 			return 1;
 		case 105:
-			*iParam1 = -229964281;
+			*uParam1 = -229964281;
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { 1214.081f, -1293.024f, 76.372f };
-			*fParam4 = 90.766f;
-			*iParam5 = 2;
+			*uParam4 = 90.766f;
+			*uParam5 = 2;
 			return 1;
 		default:
 			break;
@@ -638,24 +638,24 @@ struct<5> func_25(int iParam0, bool bParam1, int iParam2)
 				Var5.f_9 = -1591664384;
 				if (!func_38(iParam0, &Var0, 1728382685, 0))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else if (!func_38(iParam0, &Var0, -649335959, 0))
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 				else if (func_39(iParam0, &Var5, 1728382685))
 				{
-					Var0.f_4 = 1728382685;
+					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
 				else
 				{
-					Var0.f_4 = -649335959;
+					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
 			}
 			else
 			{
-				Var0.f_4 = 1728382685;
+				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
 		case -1784221369:

@@ -1326,7 +1326,7 @@ int func_36(var uParam0, struct<2> Param1, int iParam3, bool bParam4)
 					switch (Param1)
 					{
 						case 2:
-							*uParam0 = 328068607;
+							*uParam0 = joaat("p_crd_2_c01x_gk");
 							return 1;
 						case 3:
 							*uParam0 = -1306858058;
@@ -4564,32 +4564,32 @@ int func_115(int iParam0, int iParam1)
 		case 0:
 			switch (iParam1)
 			{
-				case 325252933:
+				case joaat("p_windsorchair03x"):
 					return 1;
-				case -1740828633:
+				case joaat("p_windsorchair01x"):
 				case 1609095284:
 					return 1;
-				case -1510839859:
-				case 1407600554:
+				case joaat("p_chair24x"):
+				case joaat("p_chair22x"):
 					return 1;
 				default:
 					break;
 			}
 			break;
 		case 2:
-			if (iParam1 == -1243444973)
+			if (iParam1 == joaat("p_chair13x"))
 			{
 				return 1;
 			}
-			if (iParam1 == -289651159)
+			if (iParam1 == joaat("p_chair05x"))
 			{
 				return 1;
 			}
-			if (iParam1 == -1443906703)
+			if (iParam1 == joaat("p_chair06x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 325252933)
+			if (iParam1 == joaat("p_windsorchair03x"))
 			{
 				return 1;
 			}
@@ -4601,7 +4601,7 @@ int func_115(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == 375867283)
+			if (iParam1 == joaat("p_chair11x"))
 			{
 				return 1;
 			}
@@ -4611,37 +4611,37 @@ int func_115(int iParam0, int iParam1)
 			}
 			break;
 		case 1:
-			if (iParam1 == -1025740342)
+			if (iParam1 == joaat("p_chair02x"))
 			{
 				return 1;
 			}
-			if (iParam1 == -1937484496)
+			if (iParam1 == joaat("p_stool02x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 463271055)
+			if (iParam1 == joaat("p_stool03x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 1186910594)
+			if (iParam1 == joaat("p_stoolwinter01x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 1600083684)
+			if (iParam1 == joaat("p_stoolfolding01x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 264425748)
+			if (iParam1 == joaat("p_chair_barrel04b"))
 			{
 				return 1;
 			}
-			if (iParam1 == -1006095118)
+			if (iParam1 == joaat("p_chairfolding02x"))
 			{
 				return 1;
 			}
 			break;
 		case 3:
-			if (iParam1 == -1443906703)
+			if (iParam1 == joaat("p_chair06x"))
 			{
 				return 1;
 			}
@@ -4649,15 +4649,15 @@ int func_115(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == 1230724566)
+			if (iParam1 == joaat("p_chair_crate02x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 1600083684)
+			if (iParam1 == joaat("p_stoolfolding01x"))
 			{
 				return 1;
 			}
-			if (iParam1 == -1006095118)
+			if (iParam1 == joaat("p_chairfolding02x"))
 			{
 				return 1;
 			}
@@ -5636,7 +5636,7 @@ char* func_134(int iParam0)
 
 int func_135(var uParam0, var uParam1, var uParam2)
 {
-	return -951746023;
+	return joaat("a_m_m_cardgameplayers_01");
 }
 
 int func_136(var uParam0, int iParam1, vector3 vParam2, float fParam5, bool bParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10)
@@ -5690,13 +5690,13 @@ int func_137(int iParam0)
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
 	switch (iVar0)
 	{
-		case -1766535683:
-		case -1680931998:
-		case -1486681919:
-		case -669394275:
-		case 964905443:
-		case 1709294431:
-		case 1818250007:
+		case joaat("s_m_m_blwdealer_01"):
+		case joaat("s_m_m_valdealer_01"):
+		case joaat("s_m_m_asbdealer_01"):
+		case joaat("s_m_m_rhddealer_01"):
+		case joaat("s_m_m_vhtdealer_01"):
+		case joaat("s_m_m_strdealer_01"):
+		case joaat("s_m_m_sddealer_01"):
 			return 1;
 		default:
 			break;

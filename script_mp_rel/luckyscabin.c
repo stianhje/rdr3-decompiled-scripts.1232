@@ -44,7 +44,7 @@ void __EntryFunction__()
 
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	iLocal_19 = 822933632;
+	iLocal_19 = joaat("p_strongbox01x");
 	vLocal_21 = { -613.3514f, 529.5198f, 94.413f };
 	vLocal_24 = { 0f, 0f, -50f };
 	iLocal_33 = 20000;
@@ -280,7 +280,7 @@ int func_4()
 	return 1;
 }
 
-void func_5(int iParam0, int iParam1)
+void func_5(int iParam0, var uParam1)
 {
 	if (!func_38(16))
 	{
@@ -299,71 +299,71 @@ void func_5(int iParam0, int iParam1)
 	}
 	if (func_51(8))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 8;
+			*uParam1 = 8;
 			return;
 		}
-		else if (*iParam1 != 8)
+		else if (*uParam1 != 8)
 		{
 			func_52(8);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(2))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 4;
+			*uParam1 = 4;
 			return;
 		}
-		else if (*iParam1 != 4)
+		else if (*uParam1 != 4)
 		{
 			func_52(2);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(16))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 9;
+			*uParam1 = 9;
 			return;
 		}
-		else if (*iParam1 != 9)
+		else if (*uParam1 != 9)
 		{
 			func_52(16);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(4))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 7;
+			*uParam1 = 7;
 			return;
 		}
-		else if (*iParam1 != 7)
+		else if (*uParam1 != 7)
 		{
 			func_52(4);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
 	if (func_51(1))
 	{
-		if (*iParam1 == 12)
+		if (*uParam1 == 12)
 		{
-			*iParam1 = 3;
+			*uParam1 = 3;
 			return;
 		}
-		else if (*iParam1 != 3)
+		else if (*uParam1 != 3)
 		{
 			func_52(1);
-			*iParam1 = 12;
+			*uParam1 = 12;
 			return;
 		}
 	}
@@ -1109,15 +1109,15 @@ void func_60()
 				func_91();
 				if (NETWORK::_0xFBE782B3165AC8EC(-448258490))
 				{
-					iLocal_20 = OBJECT::CREATE_OBJECT(822933632, vLocal_21, false, false, false, true, true);
+					iLocal_20 = OBJECT::CREATE_OBJECT(joaat("p_strongbox01x"), vLocal_21, false, false, false, true, true);
 				}
 				else if (!UNLOCK::_UNLOCK_IS_UNLOCKED(-1513415814))
 				{
-					iLocal_20 = OBJECT::CREATE_OBJECT(822933632, vLocal_21, false, false, false, true, true);
+					iLocal_20 = OBJECT::CREATE_OBJECT(joaat("p_strongbox01x"), vLocal_21, false, false, false, true, true);
 				}
 				else
 				{
-					iLocal_20 = OBJECT::CREATE_OBJECT(822933632, vLocal_21, false, false, false, false, true);
+					iLocal_20 = OBJECT::CREATE_OBJECT(joaat("p_strongbox01x"), vLocal_21, false, false, false, false, true);
 				}
 				DECORATOR::DECOR_SET_BOOL(iLocal_20, "chest_local_only", true);
 				ENTITY::SET_ENTITY_ROTATION(iLocal_20, vLocal_24, 2, true);

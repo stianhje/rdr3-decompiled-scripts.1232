@@ -57,15 +57,15 @@
 	var uLocal_88 = 0;
 	vector3 vLocal_89 = { 0f, 0f, 0f };
 	vector3 vLocal_92 = { 0f, 0f, 0f };
-	int iScriptParam_0 = 0;
+	var uScriptParam_0 = 0;
 #endregion
 
 void __EntryFunction__()
 {
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	iLocal_78 = -2146356753;
-	iLocal_76 = iScriptParam_0;
+	iLocal_78 = joaat("a_c_doghound_01");
+	iLocal_76 = uScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
 		func_1(9);
@@ -131,7 +131,7 @@ void func_4()
 			iLocal_79 = func_9(2, 2, -156825994, 1, 0, 0f, 0f, 0f);
 			if (!STREAMING::IS_MODEL_VALID(iLocal_79))
 			{
-				iLocal_79 = 1830978939;
+				iLocal_79 = joaat("s_m_m_ambientlawrural_01");
 			}
 			iLocal_77 = 2;
 			break;

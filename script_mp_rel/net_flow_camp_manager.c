@@ -1572,7 +1572,7 @@ void func_63(int iParam0)
 	}
 }
 
-int func_64(struct<2> Param0, int iParam2)
+int func_64(struct<2> Param0, var uParam2)
 {
 	if (!func_12(Param0))
 	{
@@ -1585,22 +1585,22 @@ int func_64(struct<2> Param0, int iParam2)
 			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 3:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 4:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 5:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 6:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 7:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 8:
-			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
 			return 1;
 		default:
 			break;
@@ -1869,7 +1869,7 @@ int func_82(var uParam0, vector3 vParam1)
 				case 9:
 				default:
 					return 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = -14079324;
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_clive");
 					(uParam0->f_127[0 /*33*/])->f_9 = { 1135.67f, -1386.39f, 63.68f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
@@ -1879,7 +1879,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = -586898625;
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_belgian_blondchestnut");
 					(uParam0->f_127[2 /*33*/])->f_9 = { 1133.67f, -1384.39f, 63.68f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
@@ -1890,12 +1890,12 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[0 /*12*/])->f_1 = 1969096843;
 					(uParam0->f_6[0 /*12*/])->f_2 = { 1136.753f, -1385.331f, 63.332f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 6.73f, -1.948f, -49.086f };
-					(uParam0->f_6[1 /*12*/])->f_1 = -1937484496;
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_stool02x");
 					(uParam0->f_6[1 /*12*/])->f_2 = { 1137.671f, -1384.275f, 63.535f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 5.521f, -6.622f, 0.32f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "STOOL0", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = -1937484496;
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stool02x");
 					(uParam0->f_6[2 /*12*/])->f_2 = { 1135.873f, -1386.258f, 63.206f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0.889f, -7.076f, 0.375f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "STOOL1", 24);
@@ -1915,7 +1915,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[5 /*12*/])->f_5 = { 6.73f, -1.948f, -49.086f };
 					StringCopy(&((uParam0->f_6[5 /*12*/])->f_8.f_1), "CARDS", 24);
 					(uParam0->f_6[5 /*12*/])->f_8 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = -1758092337;
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("wagon05x");
 					(uParam0->f_326[0 /*8*/])->f_2 = { 1135.12f, -1383.86f, 63.259f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -44.4f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpclay2@int_loops@action", 64);
@@ -1929,7 +1929,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_409[0 /*10*/])->f_5 = 1f;
 					(uParam0->f_310[0 /*15*/])->f_14 = 1;
 				case 10:
-					(uParam0->f_127[0 /*33*/])->f_1 = -14079324;
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_clive");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -444.3115f, 506.6391f, 97.084f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
@@ -1939,7 +1939,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = -586898625;
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_belgian_blondchestnut");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -443.3115f, 505.6391f, 97.084f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
@@ -1947,7 +1947,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[3 /*33*/])->f_9 = { -442.3115f, 504.6391f, 97.084f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_6[0 /*12*/])->f_1 = -1937484496;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_stool02x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -446.9913f, 505.8683f, 97.093f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 3.557f, -1.415f, 84.858f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "STOOL0", 24);
@@ -1955,7 +1955,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[1 /*12*/])->f_1 = 1969096843;
 					(uParam0->f_6[1 /*12*/])->f_2 = { -446.3115f, 506.6391f, 97.084f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 2.59f, -42.6f };
-					(uParam0->f_6[2 /*12*/])->f_1 = -1937484496;
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stool02x");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -445.709f, 507.4592f, 97.086f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 3.2f, -7.305f, 85.035f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "STOOL1", 24);
@@ -1975,7 +1975,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[5 /*12*/])->f_5 = { 0f, 2.59f, -42.6f };
 					StringCopy(&((uParam0->f_6[5 /*12*/])->f_8.f_1), "CARDS", 24);
 					(uParam0->f_6[5 /*12*/])->f_8 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = -1758092337;
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("wagon05x");
 					(uParam0->f_326[0 /*8*/])->f_2 = { -448.13f, 507.72f, 97.239f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -34.4f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpclay2@int_loops@action", 64);
@@ -1990,7 +1990,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_14 = 1;
 					break;
 				case 11:
-					(uParam0->f_127[0 /*33*/])->f_1 = -14079324;
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_clive");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -1991.63f, -1366.66f, 116.45f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
@@ -2000,7 +2000,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = -586898625;
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_belgian_blondchestnut");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -1989.63f, -1364.66f, 116.45f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
@@ -2011,12 +2011,12 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[0 /*12*/])->f_1 = 1969096843;
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1990.325f, -1367.081f, 115.897f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { -3.038f, -6.286f, -108.907f };
-					(uParam0->f_6[1 /*12*/])->f_1 = -1937484496;
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_stool02x");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1991.502f, -1366.705f, 115.984f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 4.168f, -5.602f, -171.135f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "STOOL0", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = -1937484496;
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stool02x");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -1989.128f, -1367.312f, 115.83f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 4.187f, -5.588f, -171.33f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "STOOL1", 24);
@@ -2036,7 +2036,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[5 /*12*/])->f_5 = { -3.038f, -6.286f, -108.907f };
 					StringCopy(&((uParam0->f_6[5 /*12*/])->f_8.f_1), "CARDS", 24);
 					(uParam0->f_6[5 /*12*/])->f_8 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = -1758092337;
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("wagon05x");
 					(uParam0->f_326[0 /*8*/])->f_2 = { -1989.874f, -1364.961f, 115.751f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -106.002f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpclay2@int_loops@action", 64);
@@ -2051,7 +2051,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_14 = 1;
 					break;
 				case 12:
-					(uParam0->f_127[0 /*33*/])->f_1 = -14079324;
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_clive");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -5564.081f, -2576.2f, -9.8824f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
@@ -2061,7 +2061,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = -586898625;
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_belgian_blondchestnut");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -5562.081f, -2575.2f, -9.8824f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
@@ -2069,7 +2069,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[3 /*33*/])->f_9 = { -5561.081f, -2574.2f, -9.8824f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_6[0 /*12*/])->f_1 = -1937484496;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_stool02x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -5569.834f, -2576.894f, -9.8723f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 2.29f, 1.715f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "STOOL0", 24);
@@ -2077,7 +2077,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[1 /*12*/])->f_1 = 1969096843;
 					(uParam0->f_6[1 /*12*/])->f_2 = { -5569.081f, -2576.2f, -9.8824f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { -0.87f, 2.785f, -56.82f };
-					(uParam0->f_6[2 /*12*/])->f_1 = -1937484496;
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stool02x");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -5568.231f, -2575.562f, -9.8988f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 2.235f, 1.065f, 0f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "STOOL1", 24);
@@ -2097,7 +2097,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[5 /*12*/])->f_5 = { 3.27f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[5 /*12*/])->f_8.f_1), "CARDS", 24);
 					(uParam0->f_6[5 /*12*/])->f_8 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = -1758092337;
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("wagon05x");
 					(uParam0->f_326[0 /*8*/])->f_2 = { -5570.55f, -2574.661f, -9.772f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -49.601f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpclay2@int_loops@action", 64);
@@ -2133,34 +2133,34 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
 					(uParam0->f_127[0 /*33*/])->f_4[0] = 7;
 					(uParam0->f_127[0 /*33*/])->f_8 = -1539374245;
-					(uParam0->f_127[1 /*33*/])->f_1 = -1884146832;
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("cs_valsheriff");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -613.06f, -27.86f, 84.97f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 33f };
 					(uParam0->f_127[1 /*33*/])->f_8 = -1032721003;
 					(uParam0->f_127[1 /*33*/])->f_3 = 1;
 					(uParam0->f_127[1 /*33*/])->f_4[0] = 0;
-					(uParam0->f_6[0 /*12*/])->f_1 = 2094346626;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_crate012x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1389.002f, 385.6888f, 102.5657f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, -82.4f };
-					(uParam0->f_6[1 /*12*/])->f_1 = 2094346626;
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_crate012x");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1382.063f, 384.5938f, 102.4458f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, -164.8f };
-					(uParam0->f_6[2 /*12*/])->f_1 = 2094346626;
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_crate012x");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -1382.63f, 386.7712f, 102.3897f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { -1.7546f, 4.6972f, 6.072f };
-					(uParam0->f_6[3 /*12*/])->f_1 = 2094346626;
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("p_crate012x");
 					(uParam0->f_6[3 /*12*/])->f_2 = { -1381.796f, 382.9696f, 102.4978f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { 4.8315f, 2.3736f, 106.6999f };
-					(uParam0->f_6[4 /*12*/])->f_1 = 2094346626;
+					(uParam0->f_6[4 /*12*/])->f_1 = joaat("p_crate012x");
 					(uParam0->f_6[4 /*12*/])->f_2 = { -1382.817f, 376.3205f, 102.9958f };
 					(uParam0->f_6[4 /*12*/])->f_5 = { 0f, 0f, -169.6f };
 					(uParam0->f_6[5 /*12*/])->f_1 = -1179266405;
 					(uParam0->f_6[5 /*12*/])->f_2 = { -1384.642f, 381.7076f, 102.6675f };
 					(uParam0->f_6[5 /*12*/])->f_5 = { 0f, 0f, -125.2f };
-					(uParam0->f_6[6 /*12*/])->f_1 = -9387521;
+					(uParam0->f_6[6 /*12*/])->f_1 = joaat("p_tentarmypup01x");
 					(uParam0->f_6[6 /*12*/])->f_2 = { -1380f, 379.7227f, 102.7455f };
 					(uParam0->f_6[6 /*12*/])->f_5 = { -2.2298f, -8.5421f, -97.7666f };
-					(uParam0->f_6[7 /*12*/])->f_1 = -9387521;
+					(uParam0->f_6[7 /*12*/])->f_1 = joaat("p_tentarmypup01x");
 					(uParam0->f_6[7 /*12*/])->f_2 = { -1384.472f, 389.1875f, 102.5022f };
 					(uParam0->f_6[7 /*12*/])->f_5 = { 0f, 0f, -26.4001f };
 					(uParam0->f_6[8 /*12*/])->f_1 = 1229219138;
@@ -2176,17 +2176,17 @@ int func_82(var uParam0, vector3 vParam1)
 					break;
 				case 15:
 					MISC::SET_BIT(&(uParam0->f_1), 2);
-					(uParam0->f_6[0 /*12*/])->f_1 = -755866836;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_spoon01x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -2692.991f, -2180.69f, 80.0547f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_spoon01x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = -1914893189;
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_camp_cup_01x");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -2693.17f, -2180.609f, 80.0526f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "p_camp_cup_01x", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = 1810315535;
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stickfirepoker01x");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -2691.177f, -2181.325f, 80.2533f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "p_stickFirePoker01x", 24);
@@ -2212,24 +2212,24 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[2 /*33*/])->f_9 = { -2698f, -2178f, 80.2f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 316f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[2 /*33*/])->f_23 = 1351319737;
-					(uParam0->f_127[2 /*33*/])->f_23.f_1 = 2082043658;
-					(uParam0->f_127[2 /*33*/])->f_23.f_2 = -960265739;
-					(uParam0->f_127[2 /*33*/])->f_23.f_3 = 1484641439;
-					(uParam0->f_127[2 /*33*/])->f_23.f_5 = 1383590330;
-					(uParam0->f_127[2 /*33*/])->f_31 = 319697946;
-					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614;
+					(uParam0->f_127[2 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[2 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
+					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					(uParam0->f_127[3 /*33*/])->f_1 = -403470324;
 					(uParam0->f_127[3 /*33*/])->f_9 = { -2698.7f, -2176.1f, 80.1f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 272f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_127[3 /*33*/])->f_23 = 1351319737;
-					(uParam0->f_127[3 /*33*/])->f_23.f_1 = 2082043658;
-					(uParam0->f_127[3 /*33*/])->f_23.f_2 = -960265739;
-					(uParam0->f_127[3 /*33*/])->f_23.f_3 = 1484641439;
-					(uParam0->f_127[3 /*33*/])->f_23.f_5 = 1383590330;
-					(uParam0->f_127[3 /*33*/])->f_31 = 319697946;
-					(uParam0->f_127[3 /*33*/])->f_31.f_1 = -838912614;
+					(uParam0->f_127[3 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
+					(uParam0->f_127[3 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
+					(uParam0->f_127[3 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
+					(uParam0->f_127[3 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
+					(uParam0->f_127[3 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[3 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
+					(uParam0->f_127[3 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpgvo3@int_loops@int_loops", 64);
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_11), "pl_idle", 24);
 					(uParam0->f_388[0 /*20*/])->f_2 = 257;
@@ -2242,12 +2242,12 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 13f, 13f, 13f };
 					break;
 				case 16:
-					(uParam0->f_6[0 /*12*/])->f_1 = -1671495534;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_cigarette01x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { 1172.35f, -184.19f, 100.34f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_cigarette01x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = -1671495534;
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_cigarette01x");
 					(uParam0->f_6[1 /*12*/])->f_2 = { 1171.35f, -185.19f, 100.34f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "p_cigarette01x^1", 24);
@@ -2270,24 +2270,24 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[2 /*33*/])->f_9 = { 1176.979f, -180.266f, 100.157f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 103f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[2 /*33*/])->f_23 = -639533637;
-					(uParam0->f_127[2 /*33*/])->f_23.f_1 = 255924452;
-					(uParam0->f_127[2 /*33*/])->f_23.f_2 = -505661354;
-					(uParam0->f_127[2 /*33*/])->f_23.f_3 = 1964477906;
-					(uParam0->f_127[2 /*33*/])->f_23.f_5 = 1383590330;
-					(uParam0->f_127[2 /*33*/])->f_31 = 319697946;
-					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614;
+					(uParam0->f_127[2 /*33*/])->f_23 = -639533637; /* GXTEntry: "Color Combination Three" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_1 = 255924452; /* GXTEntry: "Natural & Charcoal" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_2 = -505661354; /* GXTEntry: "Steel \'Dally\' Horn" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_3 = 1964477906; /* GXTEntry: "Slim-line Stirrup" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[2 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
+					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					(uParam0->f_127[3 /*33*/])->f_1 = 1883159941;
 					(uParam0->f_127[3 /*33*/])->f_9 = { 1179.021f, -188.304f, 99.837f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 100f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_127[3 /*33*/])->f_23 = -639533637;
-					(uParam0->f_127[3 /*33*/])->f_23.f_1 = 255924452;
-					(uParam0->f_127[3 /*33*/])->f_23.f_2 = -505661354;
-					(uParam0->f_127[3 /*33*/])->f_23.f_3 = 1964477906;
-					(uParam0->f_127[3 /*33*/])->f_23.f_5 = 1383590330;
-					(uParam0->f_127[3 /*33*/])->f_31 = 319697946;
-					(uParam0->f_127[3 /*33*/])->f_31.f_1 = -838912614;
+					(uParam0->f_127[3 /*33*/])->f_23 = -639533637; /* GXTEntry: "Color Combination Three" */
+					(uParam0->f_127[3 /*33*/])->f_23.f_1 = 255924452; /* GXTEntry: "Natural & Charcoal" */
+					(uParam0->f_127[3 /*33*/])->f_23.f_2 = -505661354; /* GXTEntry: "Steel \'Dally\' Horn" */
+					(uParam0->f_127[3 /*33*/])->f_23.f_3 = 1964477906; /* GXTEntry: "Slim-line Stirrup" */
+					(uParam0->f_127[3 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[3 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
+					(uParam0->f_127[3 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpout1@int@int_loops", 64);
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_11), "", 24);
 					(uParam0->f_388[0 /*20*/])->f_2 = 257;
@@ -2323,12 +2323,12 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_12 = 1;
 					break;
 				case 18:
-					(uParam0->f_6[0 /*12*/])->f_1 = 1600083684;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_stoolfolding01x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1934.802f, -1416.514f, 107.501f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 314.67f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "STOOL", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = -82199229;
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_mugcoffee01x");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1934.802f, -1416.514f, 107.501f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 314.67f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "MUG", 24);
@@ -2344,13 +2344,13 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_9 = { -1923.228f, -1401.2f, 106.146f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 1066.013f };
 					(uParam0->f_127[1 /*33*/])->f_18 = 1;
-					(uParam0->f_127[1 /*33*/])->f_23 = -639533637;
-					(uParam0->f_127[1 /*33*/])->f_23.f_1 = 255924452;
-					(uParam0->f_127[1 /*33*/])->f_23.f_2 = -505661354;
-					(uParam0->f_127[1 /*33*/])->f_23.f_3 = 1964477906;
-					(uParam0->f_127[1 /*33*/])->f_23.f_5 = 1383590330;
-					(uParam0->f_127[1 /*33*/])->f_31 = 319697946;
-					(uParam0->f_127[1 /*33*/])->f_31.f_1 = -838912614;
+					(uParam0->f_127[1 /*33*/])->f_23 = -639533637; /* GXTEntry: "Color Combination Three" */
+					(uParam0->f_127[1 /*33*/])->f_23.f_1 = 255924452; /* GXTEntry: "Natural & Charcoal" */
+					(uParam0->f_127[1 /*33*/])->f_23.f_2 = -505661354; /* GXTEntry: "Steel \'Dally\' Horn" */
+					(uParam0->f_127[1 /*33*/])->f_23.f_3 = 1964477906; /* GXTEntry: "Slim-line Stirrup" */
+					(uParam0->f_127[1 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[1 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
+					(uParam0->f_127[1 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					uParam0->f_386[0] = -2090647942;
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpgun1@int_loops@int_loops", 64);
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_11), "PL_LOOP", 24);
@@ -2364,17 +2364,17 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 23f, 23f, 23f };
 					break;
 				case 19:
-					(uParam0->f_6[0 /*12*/])->f_1 = -1025740342;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_chair02x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { 2941.635f, 776.584f, 51.144f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 118.8f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_chair02x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = -234159968;
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_cigar01x");
 					(uParam0->f_6[1 /*12*/])->f_2 = { 2941.635f, 776.584f, 51.144f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 118.8f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "p_cigar01x", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = 617552302;
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_matchstick01x");
 					(uParam0->f_6[2 /*12*/])->f_2 = { 2941.635f, 776.584f, 51.144f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0f, 90f, 118.8f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "p_matchstick01x", 24);
@@ -2410,14 +2410,14 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_4[1] = 2;
 					(uParam0->f_127[1 /*33*/])->f_4[2] = 3;
 					(uParam0->f_127[1 /*33*/])->f_18 = 1;
-					(uParam0->f_127[1 /*33*/])->f_23 = 1351319737;
-					(uParam0->f_127[1 /*33*/])->f_23.f_1 = 2082043658;
-					(uParam0->f_127[1 /*33*/])->f_23.f_2 = -960265739;
-					(uParam0->f_127[1 /*33*/])->f_23.f_3 = 1484641439;
-					(uParam0->f_127[1 /*33*/])->f_23.f_5 = 1383590330;
-					(uParam0->f_127[1 /*33*/])->f_31 = 319697946;
-					(uParam0->f_127[1 /*33*/])->f_31.f_1 = -838912614;
-					(uParam0->f_127[2 /*33*/])->f_1 = 1861665605;
+					(uParam0->f_127[1 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
+					(uParam0->f_127[1 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
+					(uParam0->f_127[1 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
+					(uParam0->f_127[1 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
+					(uParam0->f_127[1 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[1 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
+					(uParam0->f_127[1 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_thoroughbred_dapplegrey");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -3840.626f, -3023.605f, -7.148f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, -137.86f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
@@ -2434,22 +2434,22 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 12.99734f, 9.82149f, 20f };
 					break;
 				case 21:
-					(uParam0->f_6[0 /*12*/])->f_1 = -1025740342;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_chair02x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1505.81f, -792.59f, 103.42f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 56.07f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "chair02x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = -1025740342;
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_chair02x");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1505.21f, -792.2f, 103.41f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 26.03f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "chair02x_1", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = -1671495534;
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_cigarette01x");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -1505.21f, -792.2f, 103.41f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0f, 0f, 26.03f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "cigarette01x", 24);
 					(uParam0->f_6[2 /*12*/])->f_8 = 0;
-					(uParam0->f_6[3 /*12*/])->f_1 = -1671495534;
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("p_cigarette01x");
 					(uParam0->f_6[3 /*12*/])->f_2 = { -1505.21f, -792.2f, 103.41f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { 0f, 0f, 26.03f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "cigarette01x_1", 24);
@@ -2476,13 +2476,13 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[2 /*33*/])->f_4[1] = 2;
 					(uParam0->f_127[2 /*33*/])->f_4[2] = 3;
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[2 /*33*/])->f_23 = 1351319737;
-					(uParam0->f_127[2 /*33*/])->f_23.f_1 = 2082043658;
-					(uParam0->f_127[2 /*33*/])->f_23.f_2 = -960265739;
-					(uParam0->f_127[2 /*33*/])->f_23.f_3 = 1484641439;
-					(uParam0->f_127[2 /*33*/])->f_23.f_5 = 1383590330;
-					(uParam0->f_127[2 /*33*/])->f_31 = 319697946;
-					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614;
+					(uParam0->f_127[2 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
+					(uParam0->f_127[2 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[2 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
+					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mppout3@int@int_loops", 64);
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_11), "pl_idle_big", 24);
 					(uParam0->f_388[0 /*20*/])->f_2 = 257;
@@ -2542,13 +2542,13 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_9 = { -4796.42f, -2729.059f, -14.245f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, -71.37f };
 					(uParam0->f_127[0 /*33*/])->f_18 = 1;
-					(uParam0->f_127[0 /*33*/])->f_23 = 1351319737;
-					(uParam0->f_127[0 /*33*/])->f_23.f_1 = 2082043658;
-					(uParam0->f_127[0 /*33*/])->f_23.f_2 = -960265739;
-					(uParam0->f_127[0 /*33*/])->f_23.f_3 = 1484641439;
-					(uParam0->f_127[0 /*33*/])->f_23.f_5 = 1383590330;
-					(uParam0->f_127[0 /*33*/])->f_31 = 319697946;
-					(uParam0->f_127[0 /*33*/])->f_31.f_1 = -838912614;
+					(uParam0->f_127[0 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
+					(uParam0->f_127[0 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
+					(uParam0->f_127[0 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
+					(uParam0->f_127[0 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
+					(uParam0->f_127[0 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[0 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
+					(uParam0->f_127[0 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					(uParam0->f_310[0 /*15*/])->f_3 = { -4793.704f, -2728.311f, -17.105f };
 					(uParam0->f_310[0 /*15*/])->f_9 = { 0f, 0f, 0f };
 					(uParam0->f_310[0 /*15*/])->f_6 = { 10f, 10f, 10f };
@@ -2558,7 +2558,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[0 /*12*/])->f_1 = 401642131;
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1205.565f, -1955.854f, 42.6f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 62.132f };
-					(uParam0->f_6[1 /*12*/])->f_1 = -494496318;
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_cs_book_small01x");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1205.565f, -1955.854f, 42.6f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 62.132f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "Jessica_Book", 24);
@@ -2586,7 +2586,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_2 = -1254178458;
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "JESSICA", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = -1544786211;
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("coach6");
 					(uParam0->f_326[0 /*8*/])->f_2 = { -1210.336f, -1938.885f, 42.65f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -12.8f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mprev2@int_leadin@loops", 64);
@@ -2608,7 +2608,7 @@ int func_82(var uParam0, vector3 vParam1)
 				case 1:
 				default:
 					return 0;
-					(uParam0->f_6[0 /*12*/])->f_1 = 1210783447;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_cs_book04x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -870.1846f, -1276.62f, 42.2367f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_cs_book04x", 24);
@@ -2632,7 +2632,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 16.51891f, 17.09237f, 5.384514f };
 					(uParam0->f_310[0 /*15*/])->f_12 = 1;
 				case 2:
-					(uParam0->f_6[0 /*12*/])->f_1 = 1210783447;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_cs_book04x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -870.1846f, -1276.62f, 42.2367f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_cs_book04x", 24);
@@ -4270,7 +4270,7 @@ int func_130(var uParam0, int iParam1)
 			switch (iParam1)
 			{
 				case -413671895:
-					return 379542007;
+					return joaat("weapon_revolver_cattleman");
 				default:
 					break;
 			}
@@ -4636,7 +4636,7 @@ int func_142(int iParam0, var uParam1)
 			return 1;
 		case 5:
 			*uParam1 = { 0f, 0f, 0f };
-			uParam1->f_3 = -1546805641;
+			uParam1->f_3 = -1546805641; /* GXTEntry: "Madam Nazar" */
 			StringCopy(&(uParam1->f_4), "FM_FLOW_ROLE_C_INTRO_BLIP_0", 32);
 			uParam1->f_8 = 100;
 			MISC::SET_BIT(&(uParam1->f_9), 9);

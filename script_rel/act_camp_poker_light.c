@@ -126,7 +126,7 @@ int func_2()
 			{
 				return 1;
 			}
-			if (((((iVar0 && !PED::_0xA911EE21EDF69DAF(Global_35)) && func_12(0)) && !Global_1327590->f_19745) && !TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 1)) && !(WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar2, true, 0, true) && (iVar2 == -1016714371 || iVar2 == -160924582)))
+			if (((((iVar0 && !PED::_0xA911EE21EDF69DAF(Global_35)) && func_12(0)) && !Global_1327590->f_19745) && !TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 1)) && !(WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar2, true, 0, true) && (iVar2 == joaat("weapon_kit_camera") || iVar2 == joaat("weapon_kit_binoculars"))))
 			{
 				if (!MAP::DOES_BLIP_EXIST(iLocal_31))
 				{
@@ -184,7 +184,7 @@ int func_2()
 				if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_32))
 				{
 					iLocal_32 = VOLUME::_0xB3FB80A32BAE3065(vLocal_23, 0f, 0f, 0f, 4f, 4f, 4f);
-					uLocal_33 = PED::_0x4C39C95AE5DB1329(iLocal_32, false, 15);
+					uLocal_33 = PED::_0x4C39C95AE5DB1329(iLocal_32, 0, 15);
 				}
 				if (MAP::DOES_BLIP_EXIST(iLocal_31))
 				{
@@ -228,7 +228,7 @@ int func_2()
 						{
 							OBJECT::DELETE_OBJECT(&iVar7);
 						}
-						iVar7 = func_32(vLocal_23, 587066646, 4f, 1);
+						iVar7 = func_32(vLocal_23, joaat("p_bowl04x_stew"), 4f, 1);
 						if (ENTITY::DOES_ENTITY_EXIST(iVar7))
 						{
 							OBJECT::DELETE_OBJECT(&iVar7);
@@ -1677,14 +1677,14 @@ int func_69(vector3 vParam0, vector3 vParam3, float fParam6, bool bParam7)
 	return 0;
 }
 
-void func_70(int iParam0, int iParam1, char* sParam2, int iParam3, var uParam4, int iParam5, vector3 vParam6, float fParam9, int iParam10, int iParam11, int iParam12, var uParam13, int iParam14, var uParam15, var uParam16, int iParam17, var uParam18, var uParam19, int iParam20, int iParam21, bool bParam22, int iParam23, int iParam24, bool bParam25)
+void func_70(int iParam0, int iParam1, char* sParam2, int iParam3, var uParam4, var uParam5, vector3 vParam6, float fParam9, int iParam10, int iParam11, int iParam12, var uParam13, int iParam14, var uParam15, var uParam16, int iParam17, var uParam18, var uParam19, int iParam20, int iParam21, bool bParam22, int iParam23, int iParam24, bool bParam25)
 {
 	int iVar0;
 
 	((*Global_1945938)[iParam0 /*18*/])->f_4 = iParam1;
 	(*Global_1945938)[iParam0 /*18*/] = uParam4;
 	((*Global_1945938)[iParam0 /*18*/])->f_16 = SCRIPTS::GET_ID_OF_THIS_THREAD();
-	((*Global_1945938)[iParam0 /*18*/])->f_2 = iParam5;
+	((*Global_1945938)[iParam0 /*18*/])->f_2 = uParam5;
 	((*Global_1945938)[iParam0 /*18*/])->f_6 = { vParam6 };
 	((*Global_1945938)[iParam0 /*18*/])->f_9 = fParam9;
 	((*Global_1945938)[iParam0 /*18*/])->f_10 = iParam10;
@@ -1716,7 +1716,7 @@ void func_70(int iParam0, int iParam1, char* sParam2, int iParam3, var uParam4, 
 		HUD::_UIPROMPT_CONTEXT_SET_SIZE(iVar0, fParam9);
 	}
 	HUD::_UIPROMPT_SET_PRIORITY(iVar0, uParam4);
-	HUD::_UIPROMPT_SET_TRANSPORT_MODE(iVar0, iParam5);
+	HUD::_UIPROMPT_SET_TRANSPORT_MODE(iVar0, uParam5);
 	HUD::_UIPROMPT_SET_ATTRIBUTE(iVar0, 18, 1);
 	if (bParam22)
 	{
@@ -2673,7 +2673,7 @@ void func_101(int iParam0, int iParam1)
 	}
 }
 
-int func_102(int iParam0, var uParam1, var uParam2, int iParam3, int iParam4)
+int func_102(int iParam0, var* uParam1, var uParam2, int iParam3, int iParam4)
 {
 	int iVar0;
 	int iVar1;
@@ -3015,7 +3015,7 @@ bool func_122(int iParam0)
 
 bool func_123()
 {
-	return WEAPON::HAS_PED_GOT_WEAPON(Global_35, -1415022764, 0, 0);
+	return WEAPON::HAS_PED_GOT_WEAPON(Global_35, joaat("weapon_fishingrod"), 0, 0);
 }
 
 int func_124(int iParam0)
@@ -5443,7 +5443,7 @@ int func_235(int iParam0)
 	return 1;
 }
 
-void func_236(int iParam0, int iParam1, int iParam2)
+void func_236(var uParam0, int iParam1, int iParam2)
 {
 	vector3 vVar0;
 
@@ -5454,7 +5454,7 @@ void func_236(int iParam0, int iParam1, int iParam2)
 	{
 		vVar0.x = Global_265238->f_79565.f_208.f_17;
 	}
-	STATS::_0xD5910ECF81A2278C(iParam0, iParam1, iParam2, &vVar0);
+	STATS::_0xD5910ECF81A2278C(uParam0, iParam1, iParam2, &vVar0);
 }
 
 bool func_237(var uParam0, int iParam1)
@@ -6729,9 +6729,9 @@ void func_256(var uParam0, int iParam1)
 	*uParam0 = (*uParam0 || BUILTIN::SHIFT_LEFT(iParam1, 0));
 }
 
-int func_257(int iParam0)
+int func_257(var uParam0)
 {
-	return iParam0 & 31;
+	return uParam0 & 31;
 }
 
 int func_258(int iParam0)
@@ -7504,16 +7504,16 @@ void func_289(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	int iVar2;
+	var uVar2;
 
-	iVar2 = func_313(0);
+	uVar2 = func_313(0);
 	iVar0 = 0;
 	while (iVar0 < Global_1946804->f_2657.f_19)
 	{
 		iVar1 = &Global_1946804->f_2657[iVar0];
 		if (func_314(iVar1) == iParam0)
 		{
-			INVENTORY::_0x6A564540FAC12211(iVar2, iVar1);
+			INVENTORY::_0x6A564540FAC12211(uVar2, iVar1);
 		}
 		iVar0++;
 	}
@@ -7524,16 +7524,16 @@ void func_290(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	int iVar2;
+	var uVar2;
 
-	iVar2 = func_313(0);
+	uVar2 = func_313(0);
 	iVar0 = 0;
 	while (iVar0 < Global_1946804->f_2657.f_19)
 	{
 		iVar1 = &Global_1946804->f_2657[iVar0];
 		if (func_314(iVar1) == iParam0)
 		{
-			INVENTORY::_0x766315A564594401(iVar2, iVar1, 0);
+			INVENTORY::_0x766315A564594401(uVar2, iVar1, 0);
 		}
 		iVar0++;
 	}

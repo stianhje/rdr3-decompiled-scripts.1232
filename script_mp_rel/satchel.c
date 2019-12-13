@@ -38,7 +38,7 @@ void __EntryFunction__()
 	if (!ENTITY::IS_ENTITY_DEAD(Global_35))
 	{
 		iVar0 = func_2(Global_35, 0);
-		if ((iVar0 != joaat("weapon_unarmed") && iVar0 != 1742487518) && iVar0 != -1415022764)
+		if ((iVar0 != joaat("weapon_unarmed") && iVar0 != joaat("weapon_melee_torch")) && iVar0 != joaat("weapon_fishingrod"))
 		{
 			if (Global_17141 == 0)
 			{

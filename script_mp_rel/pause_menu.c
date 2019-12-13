@@ -188,7 +188,7 @@ void func_6()
 	bool bVar14;
 	bool bVar15;
 	char* sVar16;
-	int iVar17;
+	char* sVar17;
 	char* sVar18;
 	int iVar19;
 	float fVar20;
@@ -243,9 +243,9 @@ void func_6()
 	sVar13 = func_29(Global_1137800[&Global_1273882 /*34*/]);
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_68[2]), sVar13);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(&((Global_1954462->f_5.f_14[0 /*82*/])->f_75[2]), true);
-	iVar17 = NETWORK::_0xDB438CC9BC6F4022();
+	sVar17 = NETWORK::_0xDB438CC9BC6F4022();
 	sVar18 = func_30(Global_1137800[&Global_1273882 /*34*/] + 1);
-	sVar13 = MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", iVar17, sVar18);
+	sVar13 = MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", sVar17, sVar18);
 	func_24(0, 3, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_RANK_XP"), sVar13, 0, "", "", 0, 1105014447);
 	sVar16 = func_32(func_31(255));
 	func_24(0, 4, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HONOR"), "", 0, sVar16, "pausemenu_player", 1, 1105014447);
@@ -2132,7 +2132,7 @@ void func_91(int* iParam0, int iParam1)
 
 void func_92(int iParam0)
 {
-	int iVar0;
+	char* sVar0;
 	char* sVar1;
 
 	func_148(0);
@@ -2159,9 +2159,9 @@ void func_92(int iParam0)
 			func_155(func_154(0));
 			func_156("PMPLAYER_RANK");
 			func_98(0, 1);
-			iVar0 = NETWORK::_0xDB438CC9BC6F4022();
+			sVar0 = NETWORK::_0xDB438CC9BC6F4022();
 			sVar1 = func_30(Global_1137800[&Global_1273882 /*34*/] + 1);
-			func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_PROGRESSION_STAT_NEXT"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", iVar0, sVar1), 0, 0, 0, 0, 0, 0, 0, 0);
+			func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_PROGRESSION_STAT_NEXT"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", sVar0, sVar1), 0, 0, 0, 0, 0, 0, 0, 0);
 			func_106("PMPLAYER_RANK_TOOLTIP");
 			break;
 		case 3:
@@ -4309,9 +4309,9 @@ int func_170(int iParam0)
 	switch (iParam0)
 	{
 		case -974145463:
-			return -450053710;
+			return joaat("a_c_horse_americanpaint_overo");
 		case 1432602132:
-			return -1679658797;
+			return joaat("a_c_horse_americanpaint_tobiano");
 		case 92296905:
 			return 1792770814;
 		case -842044823:
@@ -4331,29 +4331,29 @@ int func_170(int iParam0)
 		case 1100711204:
 			return 705691988;
 		case -1782334639:
-			return 2130094044;
+			return joaat("a_c_horse_appaloosa_blanket");
 		case -1181052732:
 			return -1554827654;
 		case -179102320:
 			return -1029277326;
 		case -1266863668:
-			return -1140650619;
+			return joaat("a_c_horse_appaloosa_leopard");
 		case -2078767648:
-			return -1999198818;
+			return joaat("a_c_horse_arabian_black");
 		case -852553462:
 			return -403470324;
 		case -80004868:
-			return -925223936;
+			return joaat("a_c_horse_arabian_white");
 		case 1813208211:
-			return -1547438906;
+			return joaat("a_c_horse_ardennes_bayroan");
 		case 836323303:
 			return -635239558;
 		case 153881023:
-			return -2026265047;
+			return joaat("a_c_horse_ardennes_irongreyroan");
 		case -1256798240:
-			return -586898625;
+			return joaat("a_c_horse_belgian_blondchestnut");
 		case 2118089359:
-			return 937246805;
+			return joaat("a_c_horse_belgian_mealychestnut");
 		case -1537586382:
 			return 1593035738;
 		case 1440692746:
@@ -4377,7 +4377,7 @@ int func_170(int iParam0)
 		case 1275638003:
 			return -1342159303;
 		case 2083573823:
-			return -1154406788;
+			return joaat("a_c_horse_missourifoxtrotter_silverdapplepinto");
 		case 1235275977:
 			return 2030804811;
 		case 892601357:
@@ -4389,11 +4389,11 @@ int func_170(int iParam0)
 		case -1597490733:
 			return -1180427609;
 		case 2000205872:
-			return 2119038574;
+			return joaat("a_c_horse_mustang_wildbay");
 		case -1428527735:
 			return 43825738;
 		case 170010697:
-			return 2145697477;
+			return joaat("a_c_horse_nokota_blueroan");
 		case -742726637:
 			return -1261814606;
 		case -1714171692:
@@ -4419,7 +4419,7 @@ int func_170(int iParam0)
 		case -813071670:
 			return -1924405794;
 		case -1900569233:
-			return 1861665605;
+			return joaat("a_c_horse_thoroughbred_dapplegrey");
 		case 1688250187:
 			return -526169133;
 		case -1262715164:
@@ -4429,7 +4429,7 @@ int func_170(int iParam0)
 		case -136225010:
 			return 1133837220;
 		case -225011104:
-			return 1702024301;
+			return joaat("a_c_horse_turkoman_gold");
 		case -1882436593:
 			return -1604180548;
 		case -757978903:
@@ -4481,11 +4481,11 @@ int func_170(int iParam0)
 		case 1589592948:
 			return 1344011125;
 		case -1331210307:
-			return 1772321403;
+			return joaat("a_c_donkey_01");
 		case 122449722:
-			return -1230516683;
+			return joaat("a_c_horsemule_01");
 		case -1784502482:
-			return 594040097;
+			return joaat("a_c_horsemulepainted_01");
 		case -1943445834:
 			return 1883159941;
 		case -635244104:
@@ -4503,7 +4503,7 @@ int func_170(int iParam0)
 		case 1342496140:
 			return 446670976;
 		case -126555855:
-			return 802784330;
+			return joaat("a_c_horse_shire_ravenblack");
 		case 294243421:
 			return 549900435;
 		case -997197050:
@@ -4515,7 +4515,7 @@ int func_170(int iParam0)
 		case -977833913:
 			return -598917269;
 		case 1589164943:
-			return -216303527;
+			return joaat("a_c_horse_winter02_01");
 		case -364764277:
 			return 808655744;
 		default:
@@ -4764,9 +4764,9 @@ int func_185(int iParam0)
 	}
 	switch (iParam0)
 	{
-		case -450053710:
+		case joaat("a_c_horse_americanpaint_overo"):
 			return -311956671;
-		case -1679658797:
+		case joaat("a_c_horse_americanpaint_tobiano"):
 			return -311956671;
 		case 1792770814:
 			return -311956671;
@@ -4786,29 +4786,29 @@ int func_185(int iParam0)
 			return -1771663379;
 		case 705691988:
 			return -1771663379;
-		case 2130094044:
+		case joaat("a_c_horse_appaloosa_blanket"):
 			return -311956671;
 		case -1554827654:
 			return -311956671;
 		case -1029277326:
 			return -311956671;
-		case -1140650619:
+		case joaat("a_c_horse_appaloosa_leopard"):
 			return -311956671;
-		case -1999198818:
+		case joaat("a_c_horse_arabian_black"):
 			return -2030355032;
 		case -403470324:
 			return -2030355032;
-		case -925223936:
+		case joaat("a_c_horse_arabian_white"):
 			return -2030355032;
-		case -1547438906:
+		case joaat("a_c_horse_ardennes_bayroan"):
 			return -1771663379;
 		case -635239558:
 			return -1771663379;
-		case -2026265047:
+		case joaat("a_c_horse_ardennes_irongreyroan"):
 			return -1771663379;
-		case -586898625:
+		case joaat("a_c_horse_belgian_blondchestnut"):
 			return 918497150;
-		case 937246805:
+		case joaat("a_c_horse_belgian_mealychestnut"):
 			return 918497150;
 		case 1593035738:
 			return -311956671;
@@ -4832,7 +4832,7 @@ int func_185(int iParam0)
 			return 997958153;
 		case -1342159303:
 			return -1651618152;
-		case -1154406788:
+		case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
 			return -1651618152;
 		case 2030804811:
 			return 997958153;
@@ -4844,11 +4844,11 @@ int func_185(int iParam0)
 			return 997958153;
 		case -1180427609:
 			return -1651618152;
-		case 2119038574:
+		case joaat("a_c_horse_mustang_wildbay"):
 			return -1651618152;
 		case 43825738:
 			return -1651618152;
-		case 2145697477:
+		case joaat("a_c_horse_nokota_blueroan"):
 			return 356361174;
 		case -1261814606:
 			return 356361174;
@@ -4874,7 +4874,7 @@ int func_185(int iParam0)
 			return 997958153;
 		case -1924405794:
 			return 356361174;
-		case 1861665605:
+		case joaat("a_c_horse_thoroughbred_dapplegrey"):
 			return 356361174;
 		case -526169133:
 			return 356361174;
@@ -4884,7 +4884,7 @@ int func_185(int iParam0)
 			return 356361174;
 		case 1133837220:
 			return -1651618152;
-		case 1702024301:
+		case joaat("a_c_horse_turkoman_gold"):
 			return -1651618152;
 		case -1604180548:
 			return -1651618152;
@@ -4936,11 +4936,11 @@ int func_185(int iParam0)
 			return -1651618152;
 		case 1344011125:
 			return -1651618152;
-		case 1772321403:
+		case joaat("a_c_donkey_01"):
 			return 1090011026;
-		case -1230516683:
+		case joaat("a_c_horsemule_01"):
 			return 1090011026;
-		case 594040097:
+		case joaat("a_c_horsemulepainted_01"):
 			return 1090011026;
 		case 1883159941:
 			return 356361174;
@@ -4958,7 +4958,7 @@ int func_185(int iParam0)
 			return -1651618152;
 		case 446670976:
 			return 997958153;
-		case 802784330:
+		case joaat("a_c_horse_shire_ravenblack"):
 			return 918497150;
 		case 549900435:
 			return -311956671;
@@ -4970,7 +4970,7 @@ int func_185(int iParam0)
 			return 356361174;
 		case -598917269:
 			return -311956671;
-		case -216303527:
+		case joaat("a_c_horse_winter02_01"):
 			return 356361174;
 		default:
 			break;
@@ -5654,11 +5654,11 @@ struct<4> func_202()
 	return func_242(856287005, Var0, -218846335, 0);
 }
 
-bool func_203(int iParam0, int iParam1)
+int func_203(int iParam0, int iParam1)
 {
 	if (iParam0 == 0)
 	{
-		return false;
+		return 0;
 	}
 	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
 }
@@ -6858,9 +6858,9 @@ int func_278(int iParam0)
 	}
 	switch (iParam0)
 	{
-		case -450053710:
+		case joaat("a_c_horse_americanpaint_overo"):
 			return -974145463;
-		case -1679658797:
+		case joaat("a_c_horse_americanpaint_tobiano"):
 			return 1432602132;
 		case 1792770814:
 			return 92296905;
@@ -6880,29 +6880,29 @@ int func_278(int iParam0)
 			return 728055838;
 		case 705691988:
 			return 1100711204;
-		case 2130094044:
+		case joaat("a_c_horse_appaloosa_blanket"):
 			return -1782334639;
 		case -1554827654:
 			return -1181052732;
 		case -1029277326:
 			return -179102320;
-		case -1140650619:
+		case joaat("a_c_horse_appaloosa_leopard"):
 			return -1266863668;
-		case -1999198818:
+		case joaat("a_c_horse_arabian_black"):
 			return -2078767648;
 		case -403470324:
 			return -852553462;
-		case -925223936:
+		case joaat("a_c_horse_arabian_white"):
 			return -80004868;
-		case -1547438906:
+		case joaat("a_c_horse_ardennes_bayroan"):
 			return 1813208211;
 		case -635239558:
 			return 836323303;
-		case -2026265047:
+		case joaat("a_c_horse_ardennes_irongreyroan"):
 			return 153881023;
-		case -586898625:
+		case joaat("a_c_horse_belgian_blondchestnut"):
 			return -1256798240;
-		case 937246805:
+		case joaat("a_c_horse_belgian_mealychestnut"):
 			return 2118089359;
 		case 1593035738:
 			return -1537586382;
@@ -6926,7 +6926,7 @@ int func_278(int iParam0)
 			return 545109431;
 		case -1342159303:
 			return 1275638003;
-		case -1154406788:
+		case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
 			return 2083573823;
 		case 2030804811:
 			return 1235275977;
@@ -6938,11 +6938,11 @@ int func_278(int iParam0)
 			return 648301150;
 		case -1180427609:
 			return -1597490733;
-		case 2119038574:
+		case joaat("a_c_horse_mustang_wildbay"):
 			return 2000205872;
 		case 43825738:
 			return -1428527735;
-		case 2145697477:
+		case joaat("a_c_horse_nokota_blueroan"):
 			return 170010697;
 		case -1261814606:
 			return -742726637;
@@ -6968,7 +6968,7 @@ int func_278(int iParam0)
 			return 1756765331;
 		case -1924405794:
 			return -813071670;
-		case 1861665605:
+		case joaat("a_c_horse_thoroughbred_dapplegrey"):
 			return -1900569233;
 		case -526169133:
 			return 1688250187;
@@ -6978,7 +6978,7 @@ int func_278(int iParam0)
 			return 2010625508;
 		case 1133837220:
 			return -136225010;
-		case 1702024301:
+		case joaat("a_c_horse_turkoman_gold"):
 			return -225011104;
 		case -1604180548:
 			return -1882436593;
@@ -7030,11 +7030,11 @@ int func_278(int iParam0)
 			return -1824684932;
 		case 1344011125:
 			return 1589592948;
-		case 1772321403:
+		case joaat("a_c_donkey_01"):
 			return -1331210307;
-		case -1230516683:
+		case joaat("a_c_horsemule_01"):
 			return 122449722;
-		case 594040097:
+		case joaat("a_c_horsemulepainted_01"):
 			return -1784502482;
 		case 1883159941:
 			return -1943445834;
@@ -7052,7 +7052,7 @@ int func_278(int iParam0)
 			return 805526368;
 		case 446670976:
 			return 1342496140;
-		case 802784330:
+		case joaat("a_c_horse_shire_ravenblack"):
 			return -126555855;
 		case 549900435:
 			return 294243421;
@@ -7064,7 +7064,7 @@ int func_278(int iParam0)
 			return -1678164;
 		case -598917269:
 			return -977833913;
-		case -216303527:
+		case joaat("a_c_horse_winter02_01"):
 			return 1589164943;
 		default:
 			break;

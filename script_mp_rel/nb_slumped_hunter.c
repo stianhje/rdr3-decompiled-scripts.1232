@@ -4479,7 +4479,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1223834952;
 						case 1:
-							return -1124266369;
+							return joaat("a_c_bear_01");
 						default:
 							break;
 					}
@@ -4490,7 +4490,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1211068025;
 						case 1:
-							return 90264823;
+							return joaat("a_c_cougar_01");
 						default:
 							break;
 					}
@@ -4501,7 +4501,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1223834952;
 						case 1:
-							return 90264823;
+							return joaat("a_c_cougar_01");
 						default:
 							break;
 					}
@@ -4512,7 +4512,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1223834952;
 						case 1:
-							return 90264823;
+							return joaat("a_c_cougar_01");
 						default:
 							break;
 					}
@@ -4523,7 +4523,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1211068025;
 						case 1:
-							return -1124266369;
+							return joaat("a_c_bear_01");
 						default:
 							break;
 					}
@@ -4534,7 +4534,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1223834952;
 						case 1:
-							return -1124266369;
+							return joaat("a_c_bear_01");
 						default:
 							break;
 					}
@@ -4545,7 +4545,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1223834952;
 						case 1:
-							return 90264823;
+							return joaat("a_c_cougar_01");
 						default:
 							break;
 					}
@@ -4556,7 +4556,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1223834952;
 						case 1:
-							return 90264823;
+							return joaat("a_c_cougar_01");
 						default:
 							break;
 					}
@@ -4567,7 +4567,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1211068025;
 						case 1:
-							return -1124266369;
+							return joaat("a_c_bear_01");
 						default:
 							break;
 					}
@@ -4578,7 +4578,7 @@ int func_197(int iParam0)
 						case 0:
 							return 1211068025;
 						case 1:
-							return 90264823;
+							return joaat("a_c_cougar_01");
 						default:
 							break;
 					}
