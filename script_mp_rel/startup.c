@@ -9009,7 +9009,7 @@ int func_148(int iParam0, int iParam1)
 			case 2753:
 				return -1208336782;
 			case 2754:
-				return 1415119588;
+				return joaat("prop_tree_02");
 			case 2755:
 				return joaat("prop_tree_log_01");
 			case 2756:

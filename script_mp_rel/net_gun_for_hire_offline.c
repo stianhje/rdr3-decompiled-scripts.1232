@@ -47609,7 +47609,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3678;
 			case 47660611:
 				return 11228;
-			case 47914874:
+			case joaat("cs4_13_props_veg24_107_lod"):
 				return 12812;
 			case joaat("p_cs_nooseshort01x"):
 				return 10269;
