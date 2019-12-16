@@ -21,7 +21,7 @@
 	var uLocal_19 = 0;
 	float fLocal_20 = 0f;
 	float fLocal_21 = 0f;
-	int iLocal_22 = 0;
+	bool bLocal_22 = false;
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
@@ -116,13 +116,13 @@ void func_6()
 		iLocal_13 = 0;
 		return;
 	}
-	if (!iLocal_22 && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 442509369))
+	if (!bLocal_22 && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 442509369))
 	{
 		PED::_0xEB8886E1065654CD(Global_35, 4, "ALL", 0.5f);
 		PED::_0xEB8886E1065654CD(Global_35, 6, "ALL", 0.5f);
 		PED::_0xEB8886E1065654CD(Global_35, 1, "ALL", 0.5f);
 		PED::_0xA7A806677F8DE138(Global_35);
-		iLocal_22 = 1;
+		bLocal_22 = true;
 		iLocal_13 = 0;
 		if (func_13(1))
 		{

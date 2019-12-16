@@ -57,7 +57,7 @@ void func_1()
 	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(1);
 }
 
-int func_2(bool bParam0, int iParam1)
+int func_2(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -67,13 +67,13 @@ int func_2(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -538,23 +538,23 @@ void func_25(var uParam0)
 
 void func_26(var uParam0)
 {
-	int iVar0;
+	bool bVar0;
 	int iVar1;
 	struct<8> Var2;
 	bool bVar10;
 
-	iVar0 = func_41();
+	bVar0 = func_41();
 	iVar1 = func_42();
-	func_43(uParam0, iVar0);
+	func_43(uParam0, bVar0);
 	if (func_44(&Var2))
 	{
 		func_45(uParam0, Var2);
 		func_46(PLAYER::PLAYER_ID(), Var2);
 	}
 	bVar10 = false;
-	if (func_47(iVar0, 0))
+	if (func_47(bVar0, 0))
 	{
-		if (iVar0 == iVar1)
+		if (bVar0 == iVar1)
 		{
 			bVar10 = true;
 		}
@@ -681,7 +681,7 @@ int func_37(var uParam0, var uParam1, var uParam2)
 	{
 		return 0;
 	}
-	Global_1129901->f_2 = BUILTIN::START_NEW_SCRIPT_WITH_ARGS(func_54(), &vVar2, 3, 600);
+	Global_1129901->f_2 = SCRIPTS::START_NEW_SCRIPT_WITH_ARGS(func_54(), &vVar2, 3, 600);
 	SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(func_54());
 	return 1;
 }
@@ -726,7 +726,7 @@ var func_41()
 	struct<4> Var0;
 	var uVar4;
 
-	Var0 = { func_58(-1838434463, func_57(0), 1084182731, 1) };
+	Var0 = { func_58(-1838434463 /* GXTEntry: "Camp" */, func_57(0), 1084182731, 1) };
 	uVar4 = func_59(Var0, -1911121386, 0, 1);
 	return uVar4;
 }
@@ -736,7 +736,7 @@ var func_42()
 	struct<4> Var0;
 	var uVar4;
 
-	Var0 = { func_58(-1838434463, func_57(0), 1084182731, 1) };
+	Var0 = { func_58(-1838434463 /* GXTEntry: "Camp" */, func_57(0), 1084182731, 1) };
 	uVar4 = func_60(Var0, -1911121386, 1, -1);
 	return uVar4;
 }
@@ -774,13 +774,13 @@ void func_46(int iParam0, struct<8> Param1)
 	func_63(Var0, func_62(0, 8));
 }
 
-int func_47(int iParam0, int iParam1)
+int func_47(bool bParam0, int iParam1)
 {
-	if (iParam0 == 0)
+	if (bParam0 == 0)
 	{
 		return 0;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
 }
 
 void func_48(var uParam0, int iParam1)
@@ -946,7 +946,7 @@ struct<4> func_57(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1270479))
 			{
-				*Global_1270479 = { func_58(1328661203, func_78(), -1591664384, bParam0) };
+				*Global_1270479 = { func_58(joaat("CHARACTER"), func_78(), -1591664384, bParam0) };
 			}
 			return *Global_1270479;
 		}
@@ -954,23 +954,23 @@ struct<4> func_57(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_12)))
 			{
-				Global_1270479->f_12 = { func_58(1328661203, func_78(), -1591664384, 0) };
+				Global_1270479->f_12 = { func_58(joaat("CHARACTER"), func_78(), -1591664384, 0) };
 			}
 			return Global_1270479->f_12;
 		}
 	}
-	return func_58(1328661203, func_78(), -1591664384, bParam0);
+	return func_58(joaat("CHARACTER"), func_78(), -1591664384, bParam0);
 }
 
-struct<4> func_58(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, int iParam5, bool bParam6)
+struct<4> func_58(bool bParam0, var uParam1, int iParam2, bool bParam3, var uParam4, bool bParam5, bool bParam6)
 {
 	struct<4> Var0;
 
-	if (!func_47(iParam0, 0))
+	if (!func_47(bParam0, 0))
 	{
 		return Var0;
 	}
-	INVENTORY::_0x886DFD3E185C8A89(func_77(bParam6), &uParam1, iParam0, iParam5, &Var0);
+	INVENTORY::_0x886DFD3E185C8A89(func_77(bParam6), &uParam1, bParam0, bParam5, &Var0);
 	return Var0;
 }
 
@@ -986,22 +986,22 @@ int func_59(struct<4> Param0, int iParam4, int iParam5, bool bParam6)
 	return 0;
 }
 
-int func_60(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, bool bParam5, int iParam6)
+int func_60(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, bool bParam5, int iParam6)
 {
-	return func_80(&uParam0, iParam4, bParam5, iParam6);
+	return func_80(&uParam0, bParam4, bParam5, iParam6);
 }
 
-int func_61(var uParam0)
+int func_61(int iParam0)
 {
-	int iVar0;
+	bool bVar0;
 	struct<4> Var1;
 	struct<4> Var5;
 	int iVar9;
 	struct<4> Var10;
 	struct<10> Var14;
 
-	iVar0 = func_42();
-	if (!func_47(iVar0, 0))
+	bVar0 = func_42();
+	if (!func_47(bVar0, 0))
 	{
 		return 0;
 	}
@@ -1010,13 +1010,13 @@ int func_61(var uParam0)
 	{
 		return 0;
 	}
-	Var5 = { func_58(-1838434463, Var1, 1084182731, 1) };
+	Var5 = { func_58(-1838434463 /* GXTEntry: "Camp" */, Var1, 1084182731, 1) };
 	if (!INVENTORY::_0xB881CA836CC4B6D4(&Var5))
 	{
 		return 0;
 	}
 	iVar9 = func_77(1);
-	Var10 = { func_58(iVar0, Var5, -1911121386, 1) };
+	Var10 = { func_58(bVar0, Var5, -1911121386, 1) };
 	if (!INVENTORY::_0xB881CA836CC4B6D4(&Var5))
 	{
 		return 0;
@@ -1026,7 +1026,7 @@ int func_61(var uParam0)
 	{
 		return 0;
 	}
-	MISC::_COPY_MEMORY(uParam0, &Var14, 22);
+	MISC::_COPY_MEMORY(iParam0, &Var14, 22);
 	return 1;
 }
 
@@ -1101,7 +1101,7 @@ void func_70(var uParam0, int iParam1)
 	func_66(&(uParam0->f_3), iParam1);
 }
 
-int func_71(int iParam0, int iParam1, int iParam2, int iParam3)
+int func_71(int iParam0, int iParam1, bool bParam2, bool bParam3)
 {
 	int iVar0;
 
@@ -1115,10 +1115,10 @@ int func_71(int iParam0, int iParam1, int iParam2, int iParam3)
 		if (((*Global_1223462)[iVar0 /*686*/])->f_565 != iParam0)
 		{
 		}
-		else if (iParam2 && !func_74(iVar0, 32, iParam1))
+		else if (bParam2 && !func_74(iVar0, 32, iParam1))
 		{
 		}
-		else if (iParam3 && ((*Global_1212887)[iVar0 /*27*/])->f_15 != iParam1)
+		else if (bParam3 && ((*Global_1212887)[iVar0 /*27*/])->f_15 != iParam1)
 		{
 		}
 		else
@@ -1149,7 +1149,7 @@ bool func_74(int iParam0, int iParam1, int iParam2)
 	return (func_82(iParam0) && func_83(((*(*Global_1213462)[iParam2 /*303*/])[iParam0 /*23*/])->f_19, iParam1));
 }
 
-int func_75(int iParam0, int iParam1, int iParam2)
+int func_75(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
@@ -1160,11 +1160,11 @@ int func_75(int iParam0, int iParam1, int iParam2)
 		return 0;
 	}
 	iVar1 = NETWORK::NETWORK_GET_PLAYER_INDEX(iVar0);
-	if (iParam2 && !NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar1))
+	if (bParam2 && !NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar1))
 	{
 		return 0;
 	}
-	if (iParam1 && PLAYER::IS_PLAYER_DEAD(iVar1))
+	if (bParam1 && PLAYER::IS_PLAYER_DEAD(iVar1))
 	{
 		return 0;
 	}
@@ -1174,7 +1174,7 @@ int func_75(int iParam0, int iParam1, int iParam2)
 int func_76(var uParam0, var uParam1, var uParam2, int iParam3)
 {
 	int iVar0;
-	int iVar1;
+	bool bVar1;
 	int iVar2;
 	int iVar3;
 	int iVar4;
@@ -1187,8 +1187,8 @@ int func_76(var uParam0, var uParam1, var uParam2, int iParam3)
 	bool bVar15;
 
 	iVar0 = iParam3;
-	iVar1 = func_84((*uParam1)[iVar0 /*12*/]);
-	if (!func_47(iVar1, 0))
+	bVar1 = func_84((*uParam1)[iVar0 /*12*/]);
+	if (!func_47(bVar1, 0))
 	{
 		return 0;
 	}
@@ -1264,35 +1264,35 @@ struct<4> func_78()
 	return Var0;
 }
 
-int func_79(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, var uParam5, int iParam6, bool bParam7)
+int func_79(var uParam0, int iParam1, var uParam2, int iParam3, bool bParam4, var uParam5, int iParam6, bool bParam7)
 {
 	int iVar0;
 
 	iVar0 = func_77(bParam7);
-	if (INVENTORY::_0x033EE4B89F3AC545(iVar0, &uParam0, iParam4) <= iParam6)
+	if (INVENTORY::_0x033EE4B89F3AC545(iVar0, &uParam0, bParam4) <= iParam6)
 	{
 		return 0;
 	}
-	if (!INVENTORY::_0xBE012571B25F5ACA(iVar0, &uParam0, iParam4, iParam6, uParam5))
+	if (!INVENTORY::_0xBE012571B25F5ACA(iVar0, &uParam0, bParam4, iParam6, uParam5))
 	{
 		return 0;
 	}
 	return 1;
 }
 
-int func_80(var uParam0, var uParam1, bool bParam2, int iParam3)
+int func_80(var uParam0, bool bParam1, bool bParam2, int iParam3)
 {
 	struct<10> Var0;
 
 	Var0.f_9 = -1591664384;
-	if (func_86(uParam0, uParam1, &Var0, bParam2, iParam3))
+	if (func_86(uParam0, bParam1, &Var0, bParam2, iParam3))
 	{
 		return Var0.f_4;
 	}
 	return 0;
 }
 
-var func_81(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var uParam10, var uParam11)
+var func_81(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int iParam10, int iParam11)
 {
 	var uVar0;
 	int iVar1;
@@ -1327,7 +1327,7 @@ var func_81(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 	iVar5 = Global_1273882->f_10;
 	iVar6 = Global_1273882->f_15;
 	bVar7 = true;
-	iVar9 = uParam10;
+	iVar9 = iParam10;
 	if (BUILTIN::VMAG2(vParam6) < 1f)
 	{
 		bVar7 = false;
@@ -1529,12 +1529,12 @@ bool func_82(int iParam0)
 	return (iParam0 >= 0 && iParam0 <= 12);
 }
 
-bool func_83(var uParam0, var uParam1)
+bool func_83(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 
-var func_84(var uParam0)
+bool func_84(var uParam0)
 {
 	return uParam0->f_1;
 }
@@ -1556,7 +1556,7 @@ int func_85(int iParam0, var uParam1, var uParam2, var uParam3)
 	return 1;
 }
 
-int func_86(var uParam0, var uParam1, var uParam2, bool bParam3, int iParam4)
+int func_86(var uParam0, bool bParam1, int iParam2, bool bParam3, int iParam4)
 {
 	var uVar0;
 
@@ -1568,11 +1568,11 @@ int func_86(var uParam0, var uParam1, var uParam2, bool bParam3, int iParam4)
 	{
 		iParam4 = func_77(bParam3);
 	}
-	if (!INVENTORY::_0x22E590F108289A9D(iParam4, uParam0, uParam1, &uVar0))
+	if (!INVENTORY::_0x22E590F108289A9D(iParam4, uParam0, bParam1, &uVar0))
 	{
 		return 0;
 	}
-	if (!func_94(&uVar0, uParam2, bParam3, 0, iParam4))
+	if (!func_94(&uVar0, iParam2, bParam3, 0, iParam4))
 	{
 		return 0;
 	}
@@ -1692,7 +1692,7 @@ int func_93(int iParam0, var uParam1)
 	return 0;
 }
 
-int func_94(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
+int func_94(var uParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 {
 	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
 	{
@@ -1702,7 +1702,7 @@ int func_94(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
 	{
 		iParam4 = func_77(bParam2);
 	}
-	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, uParam0, uParam1, !bParam3))
+	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, uParam0, iParam1, !bParam3))
 	{
 		return 0;
 	}

@@ -17,17 +17,17 @@
 
 void __EntryFunction__()
 {
-	int iVar0;
+	bool bVar0;
 	bool bVar1;
 	bool bVar2;
 	struct<2> Var3;
 	int iVar5;
 	bool bVar6;
 
-	iVar0 = ScriptParam_0.f_1;
+	bVar0 = ScriptParam_0.f_1;
 	bVar1 = ScriptParam_0.f_3;
 	bVar2 = ScriptParam_0.f_4;
-	iVar5 = func_1(iVar0);
+	iVar5 = func_1(bVar0);
 	bVar6 = false;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
@@ -60,7 +60,7 @@ void __EntryFunction__()
 				break;
 			case 1:
 				func_5(iVar5);
-				func_6(iVar0);
+				func_6(bVar0);
 				Var3.f_1 = MISC::GET_GAME_TIMER();
 				func_7(iVar5, 1);
 				func_2(&Var3, 2);
@@ -96,79 +96,79 @@ void __EntryFunction__()
 	}
 }
 
-int func_1(int iParam0)
+int func_1(bool bParam0)
 {
-	switch (iParam0)
+	switch (bParam0)
 	{
-		case 1433048902:
+		case 1433048902: /* GXTEntry: "Ginseng" */
 			return 2;
-		case -1602657245:
+		case -1602657245: /* GXTEntry: "Bay Bolete" */
 			return 4;
-		case -1991037110:
+		case -1991037110: /* GXTEntry: "Blackberry" */
 			return 5;
-		case 1047281747:
+		case 1047281747: /* GXTEntry: "Currant" */
 			return 6;
-		case -398744080:
+		case -398744080: /* GXTEntry: "Burdock Root" */
 			return 7;
-		case -1066874997:
+		case -1066874997: /* GXTEntry: "Chanterelle" */
 			return 8;
-		case -2085219828:
+		case -2085219828: /* GXTEntry: "Common Bulrush" */
 			return 11;
-		case 2064962445:
+		case 2064962445: /* GXTEntry: "Creeping Thyme" */
 			return 12;
-		case -1620920647:
+		case -1620920647: /* GXTEntry: "English Mace" */
 			return 15;
-		case -1664530975:
+		case -1664530975: /* GXTEntry: "Evergreen Huckleberry" */
 			return 16;
-		case -597058368:
+		case -597058368: /* GXTEntry: "Indian Tobacco" */
 			return 20;
-		case 128702355:
+		case 128702355: /* GXTEntry: "Milkweed" */
 			return 23;
-		case -2051332199:
+		case -2051332199: /* GXTEntry: "Oleander Sage" */
 			return 26;
-		case 546981776:
+		case 546981776: /* GXTEntry: "Oregano" */
 			return 27;
-		case -2013384490:
+		case -2013384490: /* GXTEntry: "Parasol Mushroom" */
 			return 28;
-		case 228922461:
+		case 228922461: /* GXTEntry: "Prairie Poppy" */
 			return 29;
-		case -746674788:
+		case -746674788: /* GXTEntry: "Ram\'s Head" */
 			return 31;
-		case 599861917:
+		case 599861917: /* GXTEntry: "Raspberry" */
 			return 33;
-		case -1781387050:
+		case -1781387050: /* GXTEntry: "Sage" */
 			return 34;
-		case 2006811763:
+		case 2006811763: /* GXTEntry: "Vanilla Flower" */
 			return 37;
-		case -90546043:
+		case -90546043: /* GXTEntry: "Violet Snowdrop" */
 			return 38;
-		case 1216456215:
+		case 1216456215: /* GXTEntry: "Wild Carrot" */
 			return 48;
-		case 746300881:
+		case 746300881: /* GXTEntry: "Wild Feverfew" */
 			return 49;
-		case -435006002:
+		case -435006002: /* GXTEntry: "Wild Mint" */
 			return 50;
-		case -624139784:
+		case -624139784: /* GXTEntry: "Wintergreen Berry" */
 			return 51;
-		case -529638012:
+		case -529638012: /* GXTEntry: "Yarrow" */
 			return 52;
-		case 1338475089:
+		case 1338475089: /* GXTEntry: "Agarita" */
 			return 39;
-		case 2605459:
+		case 2605459: /* GXTEntry: "Texas Bluebonnet" */
 			return 40;
-		case 1071702353:
+		case 1071702353: /* GXTEntry: "Bitterweed" */
 			return 41;
-		case -1183422860:
+		case -1183422860: /* GXTEntry: "Blood Flower" */
 			return 42;
-		case -1957546791:
+		case -1957546791: /* GXTEntry: "Cardinal Flower" */
 			return 43;
-		case -589542533:
+		case -589542533: /* GXTEntry: "Chocolate Daisy" */
 			return 44;
-		case -1776738559:
+		case -1776738559: /* GXTEntry: "Creek Plum" */
 			return 45;
-		case 1602215994:
+		case 1602215994: /* GXTEntry: "Wild Rhubarb" */
 			return 46;
-		case -396757268:
+		case -396757268: /* GXTEntry: "Wisteria" */
 			return 47;
 	}
 	return 0;
@@ -196,13 +196,13 @@ void func_5(int iParam0)
 {
 	var uVar0;
 
-	uVar0 = func_16(MISC::_CREATE_VAR_STRING(10, "ITEM_TASTED_PUMP_MULT", MISC::_CREATE_VAR_STRING(0, func_15(func_14(iParam0))), 1), "", 0, 0, 109029619, "Transaction_Feed_Sounds", "Transaction_Positive", 0, 1);
+	uVar0 = func_16(MISC::_CREATE_VAR_STRING(10, "ITEM_TASTED_PUMP_MULT", MISC::_CREATE_VAR_STRING(0, func_15(func_14(iParam0))), 1), "", 0, 0, joaat("COLOR_PURE_WHITE"), "Transaction_Feed_Sounds", "Transaction_Positive", 0, 1);
 	(*Global_1914742)[iParam0 /*4*/] = uVar0;
 }
 
-void func_6(int iParam0)
+void func_6(bool bParam0)
 {
-	if (!func_17(iParam0, 0))
+	if (!func_17(bParam0, 0))
 	{
 	}
 }
@@ -222,7 +222,7 @@ int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8,
 	bool bVar1;
 	bool bVar2;
 	int iVar3;
-	int iVar4;
+	bool bVar4;
 
 	iVar0 = Param0.f_1;
 	bVar1 = Param0.f_3;
@@ -232,8 +232,8 @@ int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8,
 	{
 		return 0;
 	}
-	iVar4 = func_22(iVar3);
-	if ((!bVar1 || !func_17(iVar4, 0)) || func_23(iVar4))
+	bVar4 = func_22(iVar3);
+	if ((!bVar1 || !func_17(bVar4, 0)) || func_23(bVar4))
 	{
 		return 0;
 	}
@@ -242,11 +242,11 @@ int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8,
 
 void func_9(int iParam0, bool bParam1, bool bParam2)
 {
-	int iVar0;
+	bool bVar0;
 	int iVar1;
 
-	iVar0 = func_14(iParam0);
-	iVar1 = func_1(iVar0);
+	bVar0 = func_14(iParam0);
+	iVar1 = func_1(bVar0);
 	if (iVar1 != iParam0)
 	{
 		func_24(iVar1, 4);
@@ -288,91 +288,91 @@ int func_11(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return -932875117;
+			return -932875117 /* GXTEntry: "Alaskan Ginseng" */;
 		case 3:
-			return 1660962977;
+			return 1660962977 /* GXTEntry: "American Ginseng" */;
 		case 4:
-			return -131409450;
+			return -131409450 /* GXTEntry: "Bay Bolete" */;
 		case 5:
-			return -1487527516;
+			return -1487527516 /* GXTEntry: "Blackberry" */;
 		case 6:
-			return 561629573;
+			return 561629573 /* GXTEntry: "Blackcurrant" */;
 		case 7:
-			return 1829679323;
+			return 1829679323 /* GXTEntry: "Burdock Root" */;
 		case 8:
-			return -618617794;
+			return -618617794 /* GXTEntry: "Chanterelles" */;
 		case 11:
-			return 653458791;
+			return 653458791 /* GXTEntry: "Common Bulrush" */;
 		case 12:
-			return 437319607;
+			return 437319607 /* GXTEntry: "Creeping Thyme" */;
 		case 13:
-			return -1519488075;
+			return -1519488075 /* GXTEntry: "Desert Sage" */;
 		case 15:
-			return 1014445254;
+			return 1014445254 /* GXTEntry: "English Mace" */;
 		case 16:
-			return 224814421;
+			return 224814421 /* GXTEntry: "Evergreen Huckleberry" */;
 		case 18:
-			return 1012187868;
+			return 1012187868 /* GXTEntry: "Golden Currant" */;
 		case 19:
-			return -1040706491;
+			return -1040706491 /* GXTEntry: "Hummingbird Sage" */;
 		case 20:
-			return -1910627346;
+			return -1910627346 /* GXTEntry: "Indian Tobacco" */;
 		case 23:
-			return -1812487593;
+			return -1812487593 /* GXTEntry: "Milkweed" */;
 		case 26:
-			return 1983971282;
+			return 1983971282 /* GXTEntry: "Oleander Sage" */;
 		case 27:
-			return 1561519041;
+			return 1561519041 /* GXTEntry: "Oregano" */;
 		case 28:
-			return -980496853;
+			return -980496853 /* GXTEntry: "Parasol Mushroom" */;
 		case 29:
-			return -1738887126;
+			return -1738887126 /* GXTEntry: "Prairie Poppy" */;
 		case 31:
-			return 424771379;
+			return 424771379 /* GXTEntry: "Ram\'s Head" */;
 		case 33:
-			return 787316814;
+			return 787316814 /* GXTEntry: "Red Raspberry" */;
 		case 34:
-			return 984616481;
+			return 984616481 /* GXTEntry: "Red Sage" */;
 		case 37:
-			return 1078285403;
+			return 1078285403 /* GXTEntry: "Vanilla Flower" */;
 		case 38:
-			return -262897007;
+			return -262897007 /* GXTEntry: "Violet Snowdrop" */;
 		case 48:
-			return -1727702531;
+			return -1727702531 /* GXTEntry: "Wild Carrot" */;
 		case 49:
-			return 1783324404;
+			return 1783324404 /* GXTEntry: "Wild Feverfew" */;
 		case 50:
-			return 1288848815;
+			return 1288848815 /* GXTEntry: "Wild Mint" */;
 		case 51:
-			return 918090738;
+			return 918090738 /* GXTEntry: "Wintergreen Berry" */;
 		case 52:
-			return 170272501;
+			return 170272501 /* GXTEntry: "Yarrow" */;
 		case 1:
-			return 2056650000;
+			return 2056650000 /* GXTEntry: "Acuna\'s Star Orchid" */;
 		case 9:
-			return -1195354638;
+			return -1195354638 /* GXTEntry: "Cigar Orchid" */;
 		case 10:
-			return 1077596967;
+			return 1077596967 /* GXTEntry: "Clamshell Orchid" */;
 		case 14:
-			return -2145199848;
+			return -2145199848 /* GXTEntry: "Dragon\'s Mouth Orchid" */;
 		case 17:
-			return 752824478;
+			return 752824478 /* GXTEntry: "Ghost Orchid" */;
 		case 21:
-			return -819513569;
+			return -819513569 /* GXTEntry: "Lady of the Night Orchid" */;
 		case 22:
-			return 1906968775;
+			return 1906968775 /* GXTEntry: "Lady Slipper Orchid" */;
 		case 24:
-			return -135434663;
+			return -135434663 /* GXTEntry: "Moccasin Flower Orchid" */;
 		case 25:
-			return 920123680;
+			return 920123680 /* GXTEntry: "Night Scented Orchid" */;
 		case 30:
-			return 150470908;
+			return 150470908 /* GXTEntry: "Queen\'s Orchid" */;
 		case 32:
-			return -1665125257;
+			return -1665125257 /* GXTEntry: "Rat Tail Orchid" */;
 		case 35:
-			return 1587928307;
+			return 1587928307 /* GXTEntry: "Sparrow\'s Egg Orchid" */;
 		case 36:
-			return -1738925422;
+			return -1738925422 /* GXTEntry: "Spider Orchid" */;
 		case 39:
 			return 656594395;
 		case 41:
@@ -424,103 +424,103 @@ int func_14(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return 1433048902;
+			return 1433048902 /* GXTEntry: "Ginseng" */;
 		case 3:
-			return 1433048902;
+			return 1433048902 /* GXTEntry: "Ginseng" */;
 		case 4:
-			return -1602657245;
+			return -1602657245 /* GXTEntry: "Bay Bolete" */;
 		case 5:
-			return -1991037110;
+			return -1991037110 /* GXTEntry: "Blackberry" */;
 		case 6:
-			return 1047281747;
+			return 1047281747 /* GXTEntry: "Currant" */;
 		case 7:
-			return -398744080;
+			return -398744080 /* GXTEntry: "Burdock Root" */;
 		case 8:
-			return -1066874997;
+			return -1066874997 /* GXTEntry: "Chanterelle" */;
 		case 11:
-			return -2085219828;
+			return -2085219828 /* GXTEntry: "Common Bulrush" */;
 		case 12:
-			return 2064962445;
+			return 2064962445 /* GXTEntry: "Creeping Thyme" */;
 		case 13:
-			return -1781387050;
+			return -1781387050 /* GXTEntry: "Sage" */;
 		case 15:
-			return -1620920647;
+			return -1620920647 /* GXTEntry: "English Mace" */;
 		case 16:
-			return -1664530975;
+			return -1664530975 /* GXTEntry: "Evergreen Huckleberry" */;
 		case 18:
-			return 1047281747;
+			return 1047281747 /* GXTEntry: "Currant" */;
 		case 19:
-			return -1781387050;
+			return -1781387050 /* GXTEntry: "Sage" */;
 		case 20:
-			return -597058368;
+			return -597058368 /* GXTEntry: "Indian Tobacco" */;
 		case 23:
-			return 128702355;
+			return 128702355 /* GXTEntry: "Milkweed" */;
 		case 26:
-			return -2051332199;
+			return -2051332199 /* GXTEntry: "Oleander Sage" */;
 		case 27:
-			return 546981776;
+			return 546981776 /* GXTEntry: "Oregano" */;
 		case 28:
-			return -2013384490;
+			return -2013384490 /* GXTEntry: "Parasol Mushroom" */;
 		case 29:
-			return 228922461;
+			return 228922461 /* GXTEntry: "Prairie Poppy" */;
 		case 31:
-			return -746674788;
+			return -746674788 /* GXTEntry: "Ram\'s Head" */;
 		case 33:
-			return 599861917;
+			return 599861917 /* GXTEntry: "Raspberry" */;
 		case 34:
-			return -1781387050;
+			return -1781387050 /* GXTEntry: "Sage" */;
 		case 37:
-			return 2006811763;
+			return 2006811763 /* GXTEntry: "Vanilla Flower" */;
 		case 38:
-			return -90546043;
+			return -90546043 /* GXTEntry: "Violet Snowdrop" */;
 		case 48:
-			return 1216456215;
+			return 1216456215 /* GXTEntry: "Wild Carrot" */;
 		case 49:
-			return 746300881;
+			return 746300881 /* GXTEntry: "Wild Feverfew" */;
 		case 50:
-			return -435006002;
+			return -435006002 /* GXTEntry: "Wild Mint" */;
 		case 51:
-			return -624139784;
+			return -624139784 /* GXTEntry: "Wintergreen Berry" */;
 		case 52:
-			return -529638012;
+			return -529638012 /* GXTEntry: "Yarrow" */;
 		case 39:
-			return 1338475089;
+			return 1338475089 /* GXTEntry: "Agarita" */;
 		case 40:
-			return 2605459;
+			return 2605459 /* GXTEntry: "Texas Bluebonnet" */;
 		case 41:
-			return 1071702353;
+			return 1071702353 /* GXTEntry: "Bitterweed" */;
 		case 42:
-			return -1183422860;
+			return -1183422860 /* GXTEntry: "Blood Flower" */;
 		case 43:
-			return -1957546791;
+			return -1957546791 /* GXTEntry: "Cardinal Flower" */;
 		case 44:
-			return -589542533;
+			return -589542533 /* GXTEntry: "Chocolate Daisy" */;
 		case 45:
-			return -1776738559;
+			return -1776738559 /* GXTEntry: "Creek Plum" */;
 		case 46:
-			return 1602215994;
+			return 1602215994 /* GXTEntry: "Wild Rhubarb" */;
 		case 47:
-			return -396757268;
+			return -396757268 /* GXTEntry: "Wisteria" */;
 		default:
 			break;
 	}
 	return 0;
 }
 
-int func_15(int iParam0)
+bool func_15(bool bParam0)
 {
 	int iVar0;
 
-	if (!func_17(iParam0, 0))
+	if (!func_17(bParam0, 0))
 	{
-		return 0;
+		return false;
 	}
-	iVar0 = func_36(iParam0);
+	iVar0 = func_36(bParam0);
 	if (iVar0 != 0)
 	{
 		return iVar0;
 	}
-	return iParam0;
+	return bParam0;
 }
 
 var func_16(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4, char* sParam5, char* sParam6, int iParam7, int iParam8)
@@ -545,13 +545,13 @@ var func_16(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 	return uVar20;
 }
 
-int func_17(int iParam0, int iParam1)
+int func_17(bool bParam0, int iParam1)
 {
-	if (iParam0 == 0)
+	if (bParam0 == 0)
 	{
 		return 0;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
 }
 
 struct<2> func_18(int iParam0, var uParam1)
@@ -571,7 +571,7 @@ struct<2> func_19(int iParam0)
 	return Var0;
 }
 
-void func_20(var uParam0, var uParam1, int iParam2)
+void func_20(var uParam0, int iParam1, int iParam2)
 {
 	if (!STATS::_STAT_ID_IS_VALID(&uParam0))
 	{
@@ -598,56 +598,56 @@ int func_22(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return -1080874779;
+			return -1080874779 /* GXTEntry: "Special Health Cure" */;
 		case 3:
-			return -755485480;
+			return -755485480 /* GXTEntry: "Potent Health Cure" */;
 		case 6:
-			return 747460826;
+			return 747460826 /* GXTEntry: "Special Horse Stimulant" */;
 		case 7:
-			return 1627068364;
+			return 1627068364 /* GXTEntry: "Horse Reviver" */;
 		case 13:
-			return -1067476102;
+			return -1067476102 /* GXTEntry: "Potent Bitters" */;
 		case 15:
-			return -1080874779;
+			return -1080874779 /* GXTEntry: "Special Health Cure" */;
 		case 18:
-			return -801397594;
+			return -801397594 /* GXTEntry: "Potent Horse Stimulant" */;
 		case 19:
-			return 730856618;
+			return 730856618 /* GXTEntry: "Potent Miracle Tonic" */;
 		case 20:
-			return -486559882;
+			return -486559882 /* GXTEntry: "Potent Snake Oil" */;
 		case 23:
-			return -1976480343;
+			return -1976480343 /* GXTEntry: "Special Miracle Tonic" */;
 		case 26:
-			return 2036955137;
+			return 2036955137 /* GXTEntry: "Potent Herbivore Bait" */;
 		case 29:
-			return -1067476102;
+			return -1067476102 /* GXTEntry: "Potent Bitters" */;
 		case 34:
-			return 1566032147;
+			return 1566032147 /* GXTEntry: "Special Bitters" */;
 		case 38:
-			return 2036955137;
+			return 2036955137 /* GXTEntry: "Potent Herbivore Bait" */;
 		case 49:
-			return 1566032147;
+			return 1566032147 /* GXTEntry: "Special Bitters" */;
 		case 52:
-			return -755485480;
+			return -755485480 /* GXTEntry: "Potent Health Cure" */;
 	}
 	return 0;
 }
 
-int func_23(int iParam0)
+int func_23(bool bParam0)
 {
 	int iVar0;
 	struct<37> Var1;
 	int iVar48;
 
-	iVar0 = ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COSTS_COUNT(iParam0);
+	iVar0 = ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COSTS_COUNT(bParam0);
 	Var1.f_4 = 15;
 	Var1.f_36 = 10;
 	iVar48 = 0;
 	while (iVar48 < iVar0)
 	{
-		if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(iParam0, iVar48, &Var1))
+		if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(bParam0, iVar48, &Var1))
 		{
-			if (Var1.f_2 == 1644203656 && !func_39(iParam0, Var1, 1))
+			if (Var1.f_2 == 1644203656 && !func_39(bParam0, Var1, 1))
 			{
 				return 1;
 			}
@@ -741,15 +741,15 @@ void func_28(int iParam0, bool bParam1, bool bParam2)
 	}
 }
 
-int func_29(int iParam0, bool bParam1, int iParam2)
+int func_29(int iParam0, bool bParam1, bool bParam2)
 {
 	if (Global_1572887->f_13 != -1)
 	{
-		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 0)
 		{
 			return Global_1900718->f_67;
 		}
-		if ((iParam2 && iParam0 == 0) && bParam1 == 1)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 1)
 		{
 			return Global_1900718->f_68;
 		}
@@ -765,7 +765,7 @@ int func_29(int iParam0, bool bParam1, int iParam2)
 			}
 		}
 	}
-	else if (iParam2 && iParam0 == 0)
+	else if (bParam2 && iParam0 == 0)
 	{
 		if (!bParam1)
 		{
@@ -829,35 +829,35 @@ void func_30(bool bParam0, int iParam1)
 	func_49(&Global_0, 1);
 }
 
-int func_31(int iParam0, int iParam1, bool bParam2, bool bParam3, var uParam4)
+int func_31(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 {
 	bool bVar0;
 	int iVar1;
 	struct<37> Var2;
 	int iVar49;
 
-	if (!func_17(iParam0, 0))
+	if (!func_17(bParam0, 0))
 	{
 		return 0;
 	}
-	if (iParam1 != 0 && !func_39(iParam0, iParam1, 1))
+	if (iParam1 != 0 && !func_39(bParam0, iParam1, 1))
 	{
 		return 0;
 	}
 	bVar0 = false;
 	if (iParam1 == 0)
 	{
-		iVar1 = ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COSTS_COUNT(iParam0);
+		iVar1 = ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COSTS_COUNT(bParam0);
 		Var2.f_4 = 15;
 		Var2.f_36 = 10;
 		iVar49 = 0;
 		while (iVar49 < iVar1)
 		{
-			if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(iParam0, iVar49, &Var2))
+			if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(bParam0, iVar49, &Var2))
 			{
-				if (Var2.f_2 == 1644203656 && func_39(iParam0, Var2, 1))
+				if (Var2.f_2 == 1644203656 && func_39(bParam0, Var2, 1))
 				{
-					if (func_51(iParam0, Var2))
+					if (func_51(bParam0, Var2))
 					{
 						bVar0 = true;
 					}
@@ -866,7 +866,7 @@ int func_31(int iParam0, int iParam1, bool bParam2, bool bParam3, var uParam4)
 			iVar49++;
 		}
 	}
-	else if (func_51(iParam0, iParam1))
+	else if (func_51(bParam0, iParam1))
 	{
 		bVar0 = true;
 	}
@@ -898,13 +898,13 @@ int func_31(int iParam0, int iParam1, bool bParam2, bool bParam3, var uParam4)
 	return 0;
 }
 
-void func_32(var uParam0, var uParam1, var uParam2)
+void func_32(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 
-	iVar0 = uParam0;
-	*uParam1 = (iVar0 / 31);
-	*uParam2 = (iVar0 % 31);
+	iVar0 = iParam0;
+	*iParam1 = (iVar0 / 31);
+	*iParam2 = (iVar0 % 31);
 }
 
 int func_33(int iParam0, int iParam1, int iParam2, bool bParam3)
@@ -956,21 +956,21 @@ void func_35(int iParam0, int iParam1)
 	(*Global_1904612)[iParam0] = uVar0;
 }
 
-int func_36(int iParam0)
+int func_36(bool bParam0)
 {
-	switch (iParam0)
+	switch (bParam0)
 	{
-		case -59585102:
+		case -59585102: /* GXTEntry: "Tonics Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_REMEDIES_MP");
-		case 1018123892:
+		case 1018123892: /* GXTEntry: "Ingredients Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_INGREDIENTS_MP");
-		case 982182330:
+		case 982182330: /* GXTEntry: "Materials Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_MATERIALS_MP");
-		case -1406390556:
+		case -1406390556: /* GXTEntry: "Valuables Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_VALUABLES_MP");
-		case -1455768246:
+		case -1455768246: /* GXTEntry: "Kit Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_KIT_MP");
-		case -921879912:
+		case -921879912: /* GXTEntry: "Provisions Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_PROVISIONS_MP");
 	}
 	return 0;
@@ -999,26 +999,26 @@ bool func_38(int iParam0, int iParam1, bool bParam2)
 	return (Global_40.f_4458[iParam0] && iParam1) != 0;
 }
 
-int func_39(int iParam0, int iParam1, int iParam2)
+int func_39(bool bParam0, int iParam1, bool bParam2)
 {
 	var uVar0[10];
 	int iVar11;
 	int iVar12;
 	int iVar13;
 
-	if (!func_17(iParam0, 0))
+	if (!func_17(bParam0, 0))
 	{
-		return func_59(func_58(iParam0), iParam1, iParam2);
+		return func_59(func_58(bParam0), iParam1, bParam2);
 	}
-	if (func_60(iParam0))
+	if (func_60(bParam0))
 	{
-		return func_62(func_61(iParam0, 1), iParam1);
+		return func_62(func_61(bParam0, 1), iParam1);
 	}
-	if ((iParam2 && func_40() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(iParam0))
+	if ((bParam2 && func_40() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(bParam0))
 	{
 		return 1;
 	}
-	if (!func_63(iParam0, iParam1, &uVar0, &iVar11) || iVar11 < 1)
+	if (!func_63(bParam0, iParam1, &uVar0, &iVar11) || iVar11 < 1)
 	{
 		return 0;
 	}
@@ -1266,7 +1266,7 @@ int func_50()
 	return Global_40.f_1;
 }
 
-bool func_51(int iParam0, int iParam1)
+bool func_51(bool bParam0, int iParam1)
 {
 	bool bVar0;
 	int iVar1;
@@ -1278,7 +1278,7 @@ bool func_51(int iParam0, int iParam1)
 	{
 		return false;
 	}
-	if (func_63(iParam0, iParam1, &uVar2, &iVar1))
+	if (func_63(bParam0, iParam1, &uVar2, &iVar1))
 	{
 		iVar14 = 0;
 		while (iVar14 < iVar1)
@@ -1386,12 +1386,12 @@ int func_57()
 	return Global_1904612->f_8187;
 }
 
-int func_58(int iParam0)
+bool func_58(bool bParam0)
 {
-	return iParam0;
+	return bParam0;
 }
 
-int func_59(int iParam0, int iParam1, var uParam2)
+int func_59(int iParam0, int iParam1, bool bParam2)
 {
 	var uVar0[10];
 	int iVar11;
@@ -1402,7 +1402,7 @@ int func_59(int iParam0, int iParam1, var uParam2)
 	{
 		return 0;
 	}
-	if ((uParam2 && func_40() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(iParam0))
+	if ((bParam2 && func_40() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(iParam0))
 	{
 		return 1;
 	}
@@ -1426,28 +1426,28 @@ int func_59(int iParam0, int iParam1, var uParam2)
 	return 0;
 }
 
-int func_60(int iParam0)
+int func_60(bool bParam0)
 {
-	if (func_70(iParam0, 75135761))
+	if (func_70(bParam0, 75135761))
 	{
 		return 1;
 	}
 	return 0;
 }
 
-int func_61(int iParam0, int iParam1)
+int func_61(bool bParam0, bool bParam1)
 {
 	struct<6> Var0;
 
-	if (!func_17(iParam0, 0))
+	if (!func_17(bParam0, 0))
 	{
-		return func_71(func_58(iParam0), iParam1);
+		return func_71(func_58(bParam0), bParam1);
 	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(iParam0, &Var0) || Var0.f_5 == 0)
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &Var0) || Var0.f_5 == 0)
 	{
 		return 0;
 	}
-	if (iParam1 && NETWORK::_0xFBE782B3165AC8EC(Var0.f_5))
+	if (bParam1 && NETWORK::_0xFBE782B3165AC8EC(Var0.f_5))
 	{
 		return 0;
 	}
@@ -1514,23 +1514,23 @@ int func_62(int iParam0, int iParam1)
 	return 0;
 }
 
-int func_63(int iParam0, int iParam1, var uParam2, var uParam3)
+int func_63(bool bParam0, int iParam1, var uParam2, int iParam3)
 {
 	struct<37> Var0;
 	int iVar47;
 
-	*uParam3 = 0;
+	*iParam3 = 0;
 	if (*uParam2 < 10)
 	{
 		return 0;
 	}
-	if (!func_17(iParam0, 0))
+	if (!func_17(bParam0, 0))
 	{
 		return 0;
 	}
 	Var0.f_4 = 15;
 	Var0.f_36 = 10;
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ACQUIRE_COST(iParam0, iParam1, &Var0))
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ACQUIRE_COST(bParam0, iParam1, &Var0))
 	{
 		return 0;
 	}
@@ -1538,7 +1538,7 @@ int func_63(int iParam0, int iParam1, var uParam2, var uParam3)
 	{
 		Var0.f_35 = 10;
 	}
-	*uParam3 = Var0.f_35;
+	*iParam3 = Var0.f_35;
 	iVar47 = 0;
 	while (iVar47 < Var0.f_35)
 	{
@@ -1613,12 +1613,12 @@ int func_68(int iParam0, int iParam1)
 	return ITEMDATABASE::_0x4308812A6E9CA62E(iParam0, iParam1);
 }
 
-int func_69(int iParam0, int iParam1, var uParam2, var uParam3)
+int func_69(int iParam0, int iParam1, var uParam2, int iParam3)
 {
 	struct<37> Var0;
 	int iVar47;
 
-	*uParam3 = 0;
+	*iParam3 = 0;
 	if (*uParam2 < 10)
 	{
 		return 0;
@@ -1637,7 +1637,7 @@ int func_69(int iParam0, int iParam1, var uParam2, var uParam3)
 	{
 		Var0.f_35 = 10;
 	}
-	*uParam3 = Var0.f_35;
+	*iParam3 = Var0.f_35;
 	iVar47 = 0;
 	while (iVar47 < Var0.f_35)
 	{
@@ -1647,24 +1647,24 @@ int func_69(int iParam0, int iParam1, var uParam2, var uParam3)
 	return 1;
 }
 
-int func_70(int iParam0, int iParam1)
+int func_70(bool bParam0, int iParam1)
 {
-	if (!func_17(iParam0, 0))
+	if (!func_17(bParam0, 0))
 	{
-		return func_73(func_58(iParam0), iParam1);
+		return func_73(func_58(bParam0), iParam1);
 	}
 	if (iParam1 == 0)
 	{
 		return 0;
 	}
-	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(iParam0, iParam1, 1120943070))
+	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(bParam0, iParam1, 1120943070))
 	{
 		return 1;
 	}
 	return 0;
 }
 
-int func_71(int iParam0, var uParam1)
+int func_71(int iParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -1673,7 +1673,7 @@ int func_71(int iParam0, var uParam1)
 		return 0;
 	}
 	iVar0 = 0;
-	if ((iVar0 != 0 && uParam1) && NETWORK::_0xFBE782B3165AC8EC(iVar0))
+	if ((iVar0 != 0 && bParam1) && NETWORK::_0xFBE782B3165AC8EC(iVar0))
 	{
 		return 0;
 	}

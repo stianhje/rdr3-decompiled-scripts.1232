@@ -97,7 +97,7 @@ void __EntryFunction__()
 				{
 					PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", 1, -1);
 				}
-				if (PAD::IS_CONTROL_JUST_RELEASED(0, -473983589))
+				if (PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 				{
 					if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-605293197, -1769873703) != 0)
 					{
@@ -139,26 +139,26 @@ void func_1()
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-int func_2(int iParam0, int iParam1)
+int func_2(bool bParam0, int iParam1)
 {
-	if (iParam0 == 0)
+	if (bParam0 == 0)
 	{
 		return 0;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
 }
 
-int func_3(int iParam0, int iParam1)
+int func_3(bool bParam0, int iParam1)
 {
-	if (!func_2(iParam0, 0))
+	if (!func_2(bParam0, 0))
 	{
-		return func_7(func_6(iParam0), iParam1);
+		return func_7(func_6(bParam0), iParam1);
 	}
 	if (iParam1 == 0)
 	{
 		return 0;
 	}
-	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(iParam0, iParam1, 1120943070))
+	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(bParam0, iParam1, 1120943070))
 	{
 		return 1;
 	}
@@ -228,9 +228,9 @@ void func_5(var uParam0)
 	}
 }
 
-int func_6(int iParam0)
+bool func_6(bool bParam0)
 {
-	return iParam0;
+	return bParam0;
 }
 
 int func_7(int iParam0, int iParam1)
@@ -250,7 +250,7 @@ int func_7(int iParam0, int iParam1)
 	return 0;
 }
 
-int func_8(bool bParam0, int iParam1)
+int func_8(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -260,13 +260,13 @@ int func_8(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -346,7 +346,7 @@ void func_10(var uParam0)
 	}
 }
 
-void func_11(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
+void func_11(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 {
 	char cVar0[16];
 
@@ -366,7 +366,7 @@ void func_11(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 	StringCopy(&cVar0, "divider", 16);
 	StringIntConCat(&cVar0, iParam1, 16);
 	uParam0->f_76[iParam1] = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam0->f_63, &cVar0);
-	DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(uParam0->f_76[iParam1]), "isVisible", iParam3);
+	DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(uParam0->f_76[iParam1]), "isVisible", bParam3);
 }
 
 int func_12(int iParam0, int iParam1)
@@ -383,13 +383,13 @@ bool func_13(int iParam0)
 	return func_14(iParam0);
 }
 
-bool func_14(var uParam0)
+bool func_14(int iParam0)
 {
-	return func_15(Global_1939057->f_38, uParam0);
+	return func_15(Global_1939057->f_38, iParam0);
 }
 
-bool func_15(var uParam0, var uParam1)
+bool func_15(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 

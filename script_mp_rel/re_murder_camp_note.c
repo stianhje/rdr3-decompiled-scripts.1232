@@ -195,7 +195,7 @@ void func_6()
 			}
 			if ((SCRIPTS::HAS_SCRIPT_LOADED(&(Local_18.f_25)) && TASK::IS_PED_ACTIVE_IN_SCENARIO(Local_18, 0)) && func_19())
 			{
-				Local_18.f_31 = BUILTIN::START_NEW_SCRIPT_WITH_ARGS(&(Local_18.f_25), &(Local_18.f_15), 10, Local_18.f_29);
+				Local_18.f_31 = SCRIPTS::START_NEW_SCRIPT_WITH_ARGS(&(Local_18.f_25), &(Local_18.f_15), 10, Local_18.f_29);
 				SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(&(Local_18.f_25));
 				func_17(3);
 				fVar1 = 0f;
@@ -241,12 +241,12 @@ void func_6()
 			if (!PED::_0x4912DFE492DB98CD(Global_35, "inInspectionMode"))
 			{
 				PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
-				PAD::ENABLE_CONTROL_ACTION(1, -1450761377, true);
-				PAD::ENABLE_CONTROL_ACTION(1, -771458680, true);
-				PAD::ENABLE_CONTROL_ACTION(1, -1067115200, true);
-				PAD::ENABLE_CONTROL_ACTION(1, -1898369514, true);
-				PAD::ENABLE_CONTROL_ACTION(1, 150518893, true);
-				PAD::ENABLE_CONTROL_ACTION(1, -1578429613, true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_LR"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_UD"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_UP_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_DOWN_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_LEFT_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_RIGHT_ONLY"), true);
 				if (ENTITY::DOES_ENTITY_EXIST(iLocal_78))
 				{
 					vVar2 = { ENTITY::GET_ENTITY_COORDS(iLocal_78, true, false) };

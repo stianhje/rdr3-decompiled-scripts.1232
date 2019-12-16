@@ -25,8 +25,8 @@
 
 void __EntryFunction__()
 {
-	var uVar0;
-	var uVar1;
+	int iVar0;
+	int iVar1;
 	int iVar2;
 	struct<4> Var3;
 	bool bVar7;
@@ -84,15 +84,15 @@ void __EntryFunction__()
 						iVar2 = func_11();
 						if ((iVar2 == -627085098 || iVar2 == 1751567119) || iVar2 == -841939068)
 						{
-							uVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, func_12());
-							uVar1 = uVar0;
-							func_13(uVar1);
+							iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, func_12());
+							iVar1 = iVar0;
+							func_13(iVar1);
 						}
 						else if (iVar2 != 336033112 || iVar2 != 0)
 						{
-							uVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, func_14());
-							uVar1 = uVar0;
-							func_13(uVar1);
+							iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, func_14());
+							iVar1 = iVar0;
+							func_13(iVar1);
 						}
 						if (Var3.f_2 == -401761271)
 						{
@@ -110,9 +110,9 @@ void __EntryFunction__()
 						iVar2 = func_17();
 						if (iVar2 != 336033112 || iVar2 != 0)
 						{
-							uVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, func_14());
-							uVar1 = uVar0;
-							func_18(uVar1);
+							iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, func_14());
+							iVar1 = iVar0;
+							func_18(iVar1);
 						}
 						func_5(32768);
 						func_5(1024);
@@ -128,9 +128,9 @@ void __EntryFunction__()
 							func_21(&(Var3.f_3));
 							if (iVar2 != 336033112 || iVar2 != 0)
 							{
-								uVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, func_14());
-								uVar1 = uVar0;
-								func_22(uVar1);
+								iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, func_14());
+								iVar1 = iVar0;
+								func_22(iVar1);
 							}
 						}
 						func_23(Var3.f_2);
@@ -229,7 +229,7 @@ int func_2()
 	return Global_1572887->f_13;
 }
 
-int func_3(bool bParam0, int iParam1)
+int func_3(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -239,13 +239,13 @@ int func_3(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -326,12 +326,12 @@ void func_10(var uParam0)
 	Global_1915170->f_19742.f_3.f_11 = uParam0;
 }
 
-var func_11()
+int func_11()
 {
-	var uVar0;
+	int iVar0;
 
-	uVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(func_30(), func_31());
-	return uVar0;
+	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(func_30(), func_31());
+	return iVar0;
 }
 
 char* func_12()
@@ -339,9 +339,9 @@ char* func_12()
 	return "uiItemID";
 }
 
-void func_13(var uParam0)
+void func_13(int iParam0)
 {
-	Global_1915170->f_19742.f_3.f_12 = uParam0;
+	Global_1915170->f_19742.f_3.f_12 = iParam0;
 }
 
 char* func_14()
@@ -361,15 +361,15 @@ void func_16(var uParam0)
 
 int func_17()
 {
-	var uVar0;
+	int iVar0;
 
-	uVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(func_32(), func_31());
-	return uVar0;
+	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(func_32(), func_31());
+	return iVar0;
 }
 
-void func_18(var uParam0)
+void func_18(int iParam0)
 {
-	Global_1915170->f_19742.f_3.f_15 = uParam0;
+	Global_1915170->f_19742.f_3.f_15 = iParam0;
 }
 
 void func_19(var uParam0)
@@ -379,10 +379,10 @@ void func_19(var uParam0)
 
 int func_20()
 {
-	var uVar0;
+	int iVar0;
 
-	uVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(func_33(), func_31());
-	return uVar0;
+	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(func_33(), func_31());
+	return iVar0;
 }
 
 void func_21(var uParam0)
@@ -390,9 +390,9 @@ void func_21(var uParam0)
 	Global_1915170->f_19742.f_3.f_10 = *uParam0;
 }
 
-void func_22(var uParam0)
+void func_22(int iParam0)
 {
-	Global_1915170->f_19742.f_3.f_9 = uParam0;
+	Global_1915170->f_19742.f_3.f_9 = iParam0;
 }
 
 void func_23(var uParam0)
@@ -428,14 +428,14 @@ void func_27()
 	Global_1915170->f_19742.f_3 = 0;
 }
 
-bool func_28(var uParam0, var uParam1)
+bool func_28(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 
-void func_29(var uParam0, var uParam1)
+void func_29(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
 var func_30()

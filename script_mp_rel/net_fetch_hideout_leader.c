@@ -273,15 +273,15 @@ void func_11(int iParam0)
 	}
 }
 
-void func_12(var uParam0, int iParam1)
+void func_12(var uParam0, bool bParam1)
 {
-	if (iParam1 || !func_19(uParam0))
+	if (bParam1 || !func_19(uParam0))
 	{
 		func_20(uParam0);
 	}
 }
 
-int func_13(bool bParam0, int iParam1)
+int func_13(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -291,13 +291,13 @@ int func_13(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -586,12 +586,12 @@ void func_27()
 {
 	if ((!func_33(uLocal_14, 1) && func_34(&(Local_0.f_5), 6000)) && func_35())
 	{
-		func_36(Local_0.f_13, "HIDEOUT_LEADER_FLEE", 1017772929, 0, 1, 0, 0, 1);
+		func_36(Local_0.f_13, "HIDEOUT_LEADER_FLEE", joaat("speech_params_standard"), 0, 1, 0, 0, 1);
 		func_37(&uLocal_14, 1);
 	}
 	if ((!func_33(uLocal_14, 2) && func_34(&(Local_0.f_8), 1000)) && PED::_0x5203038FF8BAE577(Local_0.f_13, 26, 750))
 	{
-		func_36(Local_0.f_13, "HIDEOUT_LEADER_TURN", 1017772929, 0, 1, 0, 0, 1);
+		func_36(Local_0.f_13, "HIDEOUT_LEADER_TURN", joaat("speech_params_standard"), 0, 1, 0, 0, 1);
 		func_37(&uLocal_14, 2);
 	}
 }
@@ -757,7 +757,7 @@ int func_35()
 	return 0;
 }
 
-var func_36(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+var func_36(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -770,7 +770,7 @@ var func_36(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, i
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_44(uParam0, &Var0);
+	return func_44(iParam0, &Var0);
 }
 
 void func_37(var uParam0, int iParam1)
@@ -1053,14 +1053,14 @@ int func_43(var uParam0)
 	return func_47(uParam0->f_1);
 }
 
-var func_44(var uParam0, var uParam1)
+var func_44(int iParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(uParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
 
-void func_45(var uParam0, var uParam1)
+void func_45(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
 bool func_46(var uParam0)

@@ -292,7 +292,7 @@ void func_13(bool bParam0)
 	}
 }
 
-int func_14(bool bParam0, int iParam1)
+int func_14(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -302,13 +302,13 @@ int func_14(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -591,9 +591,9 @@ void func_37()
 	Global_1130823->f_126[1] = &Global_1130823->f_126[1] + 1;
 }
 
-void func_38(var uParam0, var uParam1)
+void func_38(var uParam0, int iParam1)
 {
-	func_53(uParam0, uParam1);
+	func_53(uParam0, iParam1);
 }
 
 int func_39()
@@ -742,12 +742,12 @@ void func_52(int iParam0)
 	}
 }
 
-void func_53(var uParam0, var uParam1)
+void func_53(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
-var func_54(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var uParam10, var uParam11)
+var func_54(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int iParam10, int iParam11)
 {
 	var uVar0;
 	int iVar1;
@@ -782,7 +782,7 @@ var func_54(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 	iVar5 = Global_1273882->f_10;
 	iVar6 = Global_1273882->f_15;
 	bVar7 = true;
-	iVar9 = uParam10;
+	iVar9 = iParam10;
 	if (BUILTIN::VMAG2(vParam6) < 1f)
 	{
 		bVar7 = false;
@@ -1052,9 +1052,9 @@ void func_58(int iParam0)
 	}
 }
 
-bool func_59(var uParam0, var uParam1)
+bool func_59(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 
 int func_60(int iParam0, int iParam1)
@@ -1127,9 +1127,9 @@ bool func_61(var uParam0, int iParam1)
 	return (uParam0 && iParam1) != 0;
 }
 
-void func_62(var uParam0, var uParam1)
+void func_62(var uParam0, int iParam1)
 {
-	func_84(uParam0, uParam1);
+	func_84(uParam0, iParam1);
 }
 
 void func_63(int iParam0)
@@ -1223,7 +1223,7 @@ void func_66(int iParam0)
 		}
 		Var0 = iParam0;
 		Var0.f_1 = (Global_1130300->f_2[iParam0 /*17*/])->f_1;
-		(Global_1130823->f_2[iParam0 /*41*/])->f_1 = BUILTIN::START_NEW_SCRIPT_WITH_ARGS("net_train", &Var0, 2, 1024);
+		(Global_1130823->f_2[iParam0 /*41*/])->f_1 = SCRIPTS::START_NEW_SCRIPT_WITH_ARGS("net_train", &Var0, 2, 1024);
 		SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED("net_train");
 		func_89(iParam0, 2);
 	}
@@ -1506,9 +1506,9 @@ int func_83(var uParam0)
 	return func_106(uParam0->f_1);
 }
 
-void func_84(var uParam0, var uParam1)
+void func_84(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && uParam1));
+	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
 float func_85(int iParam0)

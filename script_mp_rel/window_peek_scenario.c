@@ -133,7 +133,7 @@ void func_6()
 	}
 	if (func_12(1))
 	{
-		if (PAD::IS_CONTROL_PRESSED(2, -416594956) || PAD::IS_DISABLED_CONTROL_PRESSED(2, -416594956))
+		if (PAD::IS_CONTROL_PRESSED(2, joaat("INPUT_FOCUS_CAM")) || PAD::IS_DISABLED_CONTROL_PRESSED(2, joaat("INPUT_FOCUS_CAM")))
 		{
 			if (!func_12(2))
 			{
@@ -304,7 +304,7 @@ void func_17(int iParam0, bool bParam1)
 	float fVar0;
 	vector3 vVar1;
 
-	func_23(uLocal_22[0], uLocal_22[1], uLocal_22[2], uLocal_22[3], 529461124, 1410914475, -1497929239, 665185216, 2);
+	func_23(uLocal_22[0], uLocal_22[1], uLocal_22[2], uLocal_22[3], joaat("INPUT_SCRIPT_LEFT_AXIS_X"), joaat("INPUT_SCRIPT_LEFT_AXIS_Y"), joaat("INPUT_SCRIPT_RIGHT_AXIS_X"), joaat("INPUT_SCRIPT_RIGHT_AXIS_Y"), 2);
 	if (iLocal_27 == &uLocal_22[2] && iLocal_28 == &uLocal_22[3])
 	{
 		if (iLocal_38 < MISC::GET_GAME_TIMER())
@@ -366,8 +366,8 @@ void func_20(int iParam0)
 
 void func_21()
 {
-	PAD::DISABLE_CONTROL_ACTION(1, -1450761377, false);
-	PAD::DISABLE_CONTROL_ACTION(1, -771458680, false);
+	PAD::DISABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_LR"), false);
+	PAD::DISABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_UD"), false);
 }
 
 void func_22(float fParam0, float fParam1)

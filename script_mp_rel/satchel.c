@@ -25,7 +25,7 @@
 void __EntryFunction__()
 {
 	int iVar0;
-	int iVar1;
+	bool bVar1;
 	int iVar2;
 
 	fLocal_15 = 1f;
@@ -45,8 +45,8 @@ void __EntryFunction__()
 				WEAPON::_0x6929E22158E52265(Global_35, 0, &Global_17142);
 			}
 		}
-		iVar1 = func_2(Global_35, 1);
-		if (WEAPON::_0xC212F1D05A8232BB(iVar1) || WEAPON::_0xDDC64F5E31EEDAB6(iVar1))
+		bVar1 = func_2(Global_35, 1);
+		if (WEAPON::_0xC212F1D05A8232BB(bVar1) || WEAPON::_0xDDC64F5E31EEDAB6(bVar1))
 		{
 			if (Global_17141 == 0)
 			{
@@ -61,7 +61,7 @@ void __EntryFunction__()
 	iVar2 = -1723036365;
 	if (func_3(0))
 	{
-		iVar2 = -605765767;
+		iVar2 = joaat("SHOP");
 	}
 	while (!func_4())
 	{
@@ -94,9 +94,9 @@ void __EntryFunction__()
 				{
 					func_11();
 				}
-				PAD::DISABLE_CONTROL_ACTION(0, -1304887797, false);
-				PAD::DISABLE_CONTROL_ACTION(0, -1450761377, false);
-				PAD::DISABLE_CONTROL_ACTION(0, -771458680, false);
+				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_TOGGLE_HOLSTER"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_LR"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_UD"), false);
 				break;
 			case 2:
 				if (func_6())
@@ -129,7 +129,7 @@ void func_1()
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-var func_2(int iParam0, int iParam1)
+int func_2(int iParam0, int iParam1)
 {
 	var uVar0;
 
@@ -195,17 +195,17 @@ bool func_10(int iParam0)
 
 void func_11()
 {
-	PAD::DISABLE_CONTROL_ACTION(0, 2139949496, false);
-	PAD::DISABLE_CONTROL_ACTION(0, 1520437207, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -640622144, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -1879280170, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -822242784, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -1292666904, false);
-	PAD::DISABLE_CONTROL_ACTION(0, 1291350480, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -417363528, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -1814662593, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -562475458, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -1404316431, false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_NEXT_CAMERA"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_SPRINT"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_JUMP"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SPRINT"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ENTER"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_MELEE_ATTACK"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_PHONE"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_RADIAL_MENU_SLOT_NAV_NEXT"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_RADIAL_MENU_SLOT_NAV_PREV"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_COVER"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_WHEEL_MENU"), false);
 }
 
 void func_12(bool bParam0)
@@ -225,7 +225,7 @@ void func_13(int iParam0)
 	Global_1939221->f_10451 = (Global_1939221->f_10451 - (Global_1939221->f_10451 && iParam0));
 }
 
-int func_14(bool bParam0, int iParam1)
+int func_14(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -235,13 +235,13 @@ int func_14(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else

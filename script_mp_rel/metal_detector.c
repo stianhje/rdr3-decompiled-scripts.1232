@@ -340,7 +340,7 @@ void func_10()
 	}
 }
 
-int func_11(bool bParam0, int iParam1)
+int func_11(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -350,13 +350,13 @@ int func_11(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -701,7 +701,7 @@ void func_28(bool bParam0, int iParam1)
 	{
 		iVar3 = &iLocal_0[iParam1];
 	}
-	AUDIO::_0xF1C5310FEAA36B48(iVar0, sVar2, iVar3, uVar1, 0, 0);
+	AUDIO::_0xF1C5310FEAA36B48(iVar0, sVar2, iVar3, uVar1, false, 0);
 	func_12(8, iParam1);
 }
 
@@ -789,19 +789,19 @@ int func_32()
 	return 0;
 }
 
-bool func_33(var uParam0, var uParam1)
+bool func_33(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 
-void func_34(var uParam0, var uParam1)
+void func_34(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
-void func_35(var uParam0, var uParam1)
+void func_35(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && uParam1));
+	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
 Vector3 func_36(int iParam0, int iParam1)
@@ -928,7 +928,7 @@ void func_45(bool bParam0, int iParam1)
 	sVar1 = func_67();
 	if (bParam0)
 	{
-		AUDIO::_0xF1C5310FEAA36B48(&(iLocal_275[iLocal_281]), sVar1, Global_35, uVar0, 0, 0);
+		AUDIO::_0xF1C5310FEAA36B48(&(iLocal_275[iLocal_281]), sVar1, Global_35, uVar0, false, 0);
 		iLocal_281++;
 		if (iLocal_281 >= 5)
 		{
@@ -937,7 +937,7 @@ void func_45(bool bParam0, int iParam1)
 	}
 	else
 	{
-		AUDIO::_0xF1C5310FEAA36B48(&(iLocal_282[iLocal_288]), sVar1, &(iLocal_0[iParam1]), uVar0, 0, 0);
+		AUDIO::_0xF1C5310FEAA36B48(&(iLocal_282[iLocal_288]), sVar1, &(iLocal_0[iParam1]), uVar0, false, 0);
 		iLocal_288++;
 		if (iLocal_288 >= 5)
 		{

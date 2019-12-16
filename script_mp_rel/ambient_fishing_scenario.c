@@ -20,7 +20,7 @@
 	struct<18> Local_18 = { 0, -1474589744, 391506844, -294392875, 0, 0, 0, 0, 0, 0, 1050253722, 1036831949, 1090519040, 1092616192, 1065353216, 1065353216, 1073741824, 0 } ;
 	int iLocal_36 = 0;
 	int iLocal_37 = 0;
-	int iLocal_38 = 0;
+	bool bLocal_38 = false;
 	int iLocal_39 = 0;
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
@@ -128,19 +128,19 @@ void func_6()
 			break;
 		case 1:
 			func_12(iLocal_36, iLocal_37);
-			if (!iLocal_38)
+			if (!bLocal_38)
 			{
 				if (Local_18 == 1)
 				{
 					if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_36, 1205242210))
 					{
 						func_13();
-						iLocal_38 = 1;
+						bLocal_38 = true;
 					}
 					else if (TASK::_0x02EBBB3989B7E695(iLocal_36))
 					{
 						func_13();
-						iLocal_38 = 1;
+						bLocal_38 = true;
 					}
 				}
 			}

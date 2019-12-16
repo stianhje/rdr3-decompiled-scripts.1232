@@ -74,7 +74,7 @@ void __EntryFunction__()
 							}
 							Var4.f_37 = 1;
 							break;
-						case 651783971:
+						case 651783971: /* GXTEntry: "Blip" */
 							Var4 = { Var0 };
 							switch (Var0)
 							{
@@ -138,7 +138,7 @@ void func_3(var uParam0)
 	uParam0->f_20 = -1;
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST_FROM_PATH("", "MapFocus");
 	uParam0->f_10 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_8, "Region", "");
-	uParam0->f_11 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_8, "ItemHovered", 0);
+	uParam0->f_11 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_8, "ItemHovered", false);
 	uParam0->f_12 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_8, "HoveredName", "");
 	HUD::_0xF66090013DE648D5("FMMC");
 	if (TXD::_0xBA0163B277C2D2D0(-1859668514))
@@ -161,42 +161,42 @@ void func_4(var uParam0)
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-void func_5(var uParam0, var uParam1)
+void func_5(int iParam0, var uParam1)
 {
-	switch (uParam0->f_2)
+	switch (iParam0->f_2)
 	{
 		case -590699808:
-			switch (*uParam0)
+			switch (*iParam0)
 			{
 				case -1740156697:
-					uParam1->f_33 = func_19(func_18(uParam0));
+					uParam1->f_33 = func_19(func_18(iParam0));
 					uParam1->f_37 = 1;
 					break;
 			}
 			break;
 		case -2006263512:
-			switch (*uParam0)
+			switch (*iParam0)
 			{
 				case -1740156697:
-					uParam1->f_35 = func_18(uParam0);
+					uParam1->f_35 = func_18(iParam0);
 					uParam1->f_37 = 1;
 					break;
 			}
 			break;
 		case -1666016325:
-			switch (*uParam0)
+			switch (*iParam0)
 			{
 				case -1740156697:
-					uParam1->f_36 = func_18(uParam0);
+					uParam1->f_36 = func_18(iParam0);
 					uParam1->f_37 = 1;
 					break;
 			}
 			break;
 		case 1138540229:
-			switch (*uParam0)
+			switch (*iParam0)
 			{
 				case -1740156697:
-					uParam1->f_34 = func_20(func_18(uParam0));
+					uParam1->f_34 = func_20(func_18(iParam0));
 					uParam1->f_37 = 1;
 					break;
 			}
@@ -356,7 +356,7 @@ void func_12(var uParam0)
 	}
 }
 
-int func_13(bool bParam0, int iParam1)
+int func_13(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -366,13 +366,13 @@ int func_13(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -442,7 +442,7 @@ void func_14(int iParam0, var uParam1)
 							break;
 					}
 					break;
-				case 651783971:
+				case 651783971: /* GXTEntry: "Blip" */
 					*uParam1 = { Var0 };
 					switch (Var0)
 					{
@@ -459,7 +459,7 @@ void func_14(int iParam0, var uParam1)
 							break;
 					}
 					break;
-				case -1287330983:
+				case -1287330983: /* GXTEntry: "Card" */
 					if (Var0 == -1203660660)
 					{
 						if (func_46(uParam1))
@@ -518,11 +518,11 @@ void func_17(var uParam0)
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uParam0->f_8);
 }
 
-int func_18(var uParam0)
+int func_18(int iParam0)
 {
-	if (uParam0->f_1 != 0)
+	if (iParam0->f_1 != 0)
 	{
-		return uParam0->f_1;
+		return iParam0->f_1;
 	}
 	return -1;
 }
@@ -575,7 +575,7 @@ int func_20(int iParam0)
 	{
 		case 7359335:
 			return 83;
-		case -744494798:
+		case joaat("ARMADILLO"):
 			return 127;
 		case -1708386982:
 			return 39;
@@ -609,7 +609,7 @@ int func_20(int iParam0)
 			return 81;
 		case 2126321341:
 			return 98;
-		case -872622034:
+		case joaat("wallace"):
 			return 37;
 		case 1663398575:
 			return 60;
@@ -651,9 +651,9 @@ int func_22(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -221059932:
+		case -221059932: /* GXTEntry: "Ambarino" */
 			return -594748684;
-		case 10837344:
+		case 10837344: /* GXTEntry: "Lemoyne" */
 			return 1072597802;
 		case 2045157995:
 			return 1259085938;
@@ -665,7 +665,7 @@ int func_22(int iParam0)
 			return -960313506;
 		case -1247148211:
 			return -1581676015;
-		case 1935063277:
+		case 1935063277: /* GXTEntry: "Guarma" */
 			return -1431514117;
 		default:
 			break;
@@ -958,7 +958,7 @@ int func_23(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return 1757124778;
+		return 1757124778 /* GXTEntry: "Wilderness" */;
 	}
 	return 0;
 }
@@ -1064,7 +1064,7 @@ bool func_26(int iParam0, var uParam1)
 	var uVar1;
 	var uVar2;
 
-	uVar2 = MAP::SET_BLIP_FLASHES(uParam0, &uVar0, &uVar1);
+	uVar2 = MAP::SET_BLIP_FLASHES(iParam0, &uVar0, &uVar1);
 	*uParam1 = uVar0;
 	uParam1->f_1 = uVar1;
 	return uVar2;
@@ -1115,7 +1115,7 @@ int func_28(int iParam0)
 			return -1965958161;
 		case 2046780049:
 			return -1059106609;
-		case -744494798:
+		case joaat("ARMADILLO"):
 			return -1119990720;
 		case -1524959147:
 			return 539298361;
@@ -1355,7 +1355,7 @@ int func_34(var uParam0)
 void func_35(int iParam0, var uParam1)
 {
 	char cVar0[16];
-	int iVar2;
+	bool bVar2;
 
 	if (!func_69(uParam1->f_29))
 	{
@@ -1373,11 +1373,11 @@ void func_35(int iParam0, var uParam1)
 	{
 		StringCopy(&cVar0, "", 16);
 	}
-	iVar2 = MISC::GET_HASH_KEY(&(((*Global_1835011)[uParam1->f_29 /*72*/])->f_9));
+	bVar2 = MISC::GET_HASH_KEY(&(((*Global_1835011)[uParam1->f_29 /*72*/])->f_9));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", MISC::GET_HASH_KEY(&cVar0));
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", iVar2);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", MISSIONDATA::_0x57E798B57C45EE16(iVar2));
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTX", MISSIONDATA::_0x57E798B56C45EE15(iVar2));
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", bVar2);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", MISSIONDATA::_0x57E798B57C45EE16(bVar2));
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTX", MISSIONDATA::_0x57E798B56C45EE15(bVar2));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", 1544592360);
 	DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "hint_value", "$0.00");
 	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam1->f_8, -1, "map_card_mission", uParam1->f_9);
@@ -1387,7 +1387,7 @@ void func_36(int iParam0, var uParam1)
 {
 	int iVar0;
 	int iVar1;
-	int iVar2;
+	bool bVar2;
 
 	func_31(uParam1);
 	uParam1->f_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1->f_8, "Zone");
@@ -1409,11 +1409,11 @@ void func_36(int iParam0, var uParam1)
 	iVar1 = func_61(iVar0);
 	if (func_65(iVar1))
 	{
-		iVar2 = func_66(iVar1);
-		if (iVar2 > 0)
+		bVar2 = func_66(iVar1);
+		if (bVar2 > 0)
 		{
 			DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "hint_name", "LAW_UI_BOUNTY");
-			DATABINDING::_DATABINDING_ADD_DATA_INT(uParam1->f_9, "hint_value", iVar2);
+			DATABINDING::_DATABINDING_ADD_DATA_INT(uParam1->f_9, "hint_value", bVar2);
 		}
 		else
 		{
@@ -1423,7 +1423,7 @@ void func_36(int iParam0, var uParam1)
 	}
 	else
 	{
-		DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", 0);
+		DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", false);
 		DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "hint_value", "");
 	}
 	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam1->f_8, -1, "map_card_town", uParam1->f_9);
@@ -1439,9 +1439,9 @@ void func_37(int iParam0, var uParam1)
 	uParam1->f_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1->f_8, "BLIP");
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "name", MISC::GET_HASH_KEY(func_82(iVar1)));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", -436556357);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", 0);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", false);
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", func_30(uParam1->f_23, uParam1->f_25));
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", 0);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", false);
 	DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "hint_value", "");
 	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam1->f_8, -1, "map_card_mission", uParam1->f_9);
 }
@@ -1456,9 +1456,9 @@ void func_38(int iParam0, var uParam1)
 	uParam1->f_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1->f_8, "BLIP");
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "name", &(Global_1070355->f_22101.f_366[iVar1 /*272*/]));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", -436556357);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", 0);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", false);
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", func_30(uParam1->f_23, uParam1->f_25));
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", 0);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", false);
 	DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "hint_value", "");
 	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam1->f_8, -1, "map_card_mission", uParam1->f_9);
 }
@@ -1473,9 +1473,9 @@ void func_39(int iParam0, var uParam1)
 	uParam1->f_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1->f_8, "BLIP");
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "name", func_83(iVar1));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", -436556357);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", 0);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", false);
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", func_30(uParam1->f_23, uParam1->f_25));
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", 0);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", false);
 	DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "hint_value", "");
 	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam1->f_8, -1, "map_card_mission", uParam1->f_9);
 }
@@ -1515,17 +1515,17 @@ void func_40(int iParam0, var uParam1)
 			Var1 = { func_87(iVar0) };
 			DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "name", &cVar17);
 			DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", MISC::GET_HASH_KEY(&Var1));
-			DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", 0);
+			DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", false);
 			break;
 		default:
 			DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "name", &cVar17);
 			DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", MISC::GET_HASH_KEY(&Var1));
-			DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", 0);
+			DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", false);
 			break;
 	}
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", func_30(iParam0, uParam1->f_25));
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", 0);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_value", 0);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", false);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_value", false);
 	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam1->f_8, -1, "map_card_mission", uParam1->f_9);
 }
 
@@ -1645,7 +1645,7 @@ int func_48(int iParam0)
 	{
 		case 249251635:
 			return uVar1;
-		case -1258576797:
+		case -1258576797: /* GXTEntry: "Town" */
 			return uVar1;
 		case 1528833484:
 			return uVar1;
@@ -1723,17 +1723,17 @@ void func_50(int iParam0, var uParam1)
 	var uVar0;
 	int iVar1;
 	struct<7> Var2;
-	char* sVar9;
+	var uVar9;
 
 	MAP::SET_BLIP_FLASHES(iParam0, &uVar0, &iVar1);
 	func_31(uParam1);
 	uParam1->f_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1->f_8, "BLIP");
 	Var2 = { func_94(PLAYER::INT_TO_PLAYERINDEX(iVar1)) };
-	uParam1->f_15 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "name", func_95(PLAYER::GET_PLAYER_NAME(PLAYER::INT_TO_PLAYERINDEX(iVar1)), 109029619));
+	uParam1->f_15 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "name", func_95(PLAYER::GET_PLAYER_NAME(PLAYER::INT_TO_PLAYERINDEX(iVar1)), joaat("COLOR_PURE_WHITE")));
 	uParam1->f_13 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", -436556357);
-	uParam1->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", 0);
-	func_96(&sVar9, Var2, 0);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", MISC::GET_HASH_KEY(&sVar9));
+	uParam1->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", false);
+	func_96(&uVar9, Var2, 0);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", MISC::GET_HASH_KEY(&uVar9));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", -486609646);
 	DATABINDING::_DATABINDING_ADD_DATA_INT(uParam1->f_9, "hint_value", func_97(iVar1));
 	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam1->f_8, -1, "map_card_player", uParam1->f_9);
@@ -1787,10 +1787,10 @@ void func_53(var uParam0, var uParam1)
 
 void func_54(var uParam0, var uParam1)
 {
-	int iVar0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	bool bVar0;
+	bool bVar1;
+	bool bVar2;
+	bool bVar3;
 	int iVar4;
 	int iVar5;
 	int iVar6;
@@ -1828,28 +1828,28 @@ void func_54(var uParam0, var uParam1)
 						}
 						else
 						{
-							iVar0 = PLAYER::_0xDA9D7BE231FE865F(func_105(iVar4, iVar6), 0, 0);
+							bVar0 = PLAYER::_0xDA9D7BE231FE865F(func_105(iVar4, iVar6), 0, 0);
 							if (PLAYER::_0x354F689C4FFAAB37(iVar5))
 							{
 								switch (iVar6)
 								{
 									case 303108068:
-										iVar3 = uParam1->f_8;
-										iVar1 = uParam1->f_12;
-										iVar2 = uParam1->f_13;
+										bVar3 = uParam1->f_8;
+										bVar1 = uParam1->f_12;
+										bVar2 = uParam1->f_13;
 										break;
 									case -910931556:
 										if (func_103(iVar4) == -1211851008)
 										{
-											iVar3 = uParam1->f_8;
-											iVar1 = uParam1->f_12;
-											iVar2 = uParam1->f_13;
+											bVar3 = uParam1->f_8;
+											bVar1 = uParam1->f_12;
+											bVar2 = uParam1->f_13;
 										}
 										else
 										{
-											iVar3 = uParam1->f_9;
-											iVar1 = uParam1->f_14;
-											iVar2 = uParam1->f_15;
+											bVar3 = uParam1->f_9;
+											bVar1 = uParam1->f_14;
+											bVar2 = uParam1->f_15;
 											uParam1->f_12 = uParam1->f_14;
 											uParam1->f_13 = uParam1->f_15;
 										}
@@ -1863,33 +1863,33 @@ void func_54(var uParam0, var uParam1)
 								switch (func_106(iVar4, iVar6))
 								{
 									case 1830115867:
-										iVar3 = -648664377; /* GXTEntry: "A stranger has some business for you." */
+										bVar3 = -648664377; /* GXTEntry: "A stranger has some business for you." */
 										break;
 									case 472588819:
-										iVar3 = 1463582430; /* GXTEntry: "A stranger has some business for you." */
+										bVar3 = 1463582430; /* GXTEntry: "A stranger has some business for you." */
 										break;
 									default:
 										break;
 								}
-								iVar1 = -1859668514;
-								iVar2 = -712210889;
+								bVar1 = -1859668514;
+								bVar2 = -712210889;
 							}
 							Jump @401; //curOff = 367
-							iVar0 = func_107(iVar4, -1100859510);
-							iVar3 = uParam1->f_8;
-							iVar1 = uParam1->f_12;
-							iVar2 = uParam1->f_13;
+							bVar0 = func_107(iVar4, -1100859510);
+							bVar3 = uParam1->f_8;
+							bVar1 = uParam1->f_12;
+							bVar2 = uParam1->f_13;
 							Jump @431; //curOff = 401
-							iVar0 = uParam1->f_4;
-							iVar1 = uParam1->f_12;
-							iVar2 = uParam1->f_13;
-							iVar3 = uParam1->f_8;
+							bVar0 = uParam1->f_4;
+							bVar1 = uParam1->f_12;
+							bVar2 = uParam1->f_13;
+							bVar3 = uParam1->f_8;
 						}
-						uParam0->f_15 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "name", iVar0);
-						uParam0->f_13 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "description", iVar3);
+						uParam0->f_15 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "name", bVar0);
+						uParam0->f_13 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "description", bVar3);
 						uParam0->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "description_title", uParam1->f_7);
-						DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "imageTXD", iVar1);
-						DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "imageTX", iVar2);
+						DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "imageTXD", bVar1);
+						DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "imageTX", bVar2);
 						DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "hint_name", uParam1->f_16);
 						DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_9, "hint_value", &(uParam1->f_17));
 						if (uParam0->f_23 == 91)
@@ -1897,7 +1897,7 @@ void func_54(var uParam0, var uParam1)
 							iVar7 = func_91(uParam1->f_1);
 							func_108(iVar7);
 							uParam0->f_18 = 0;
-							uParam0->f_16 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_9, "startable", 1);
+							uParam0->f_16 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_9, "startable", true);
 							uParam0->f_17 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "startPrompt", -578259052);
 							func_55(uParam0);
 						}
@@ -2480,12 +2480,12 @@ char* func_74(int iParam0)
 	return "";
 }
 
-char* func_75(int iParam0, var uParam1)
+char* func_75(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
 
-	iVar0 = uParam1;
+	iVar0 = iParam1;
 	if (iParam0 != -1)
 	{
 		iVar1 = func_127(iParam0);
@@ -3021,7 +3021,7 @@ int func_85(int iParam0)
 	return 0;
 }
 
-int func_86(vector3 vParam0, bool bParam3)
+int func_86(vector3 vParam0, int iParam3)
 {
 	int iVar0;
 
@@ -3033,7 +3033,7 @@ int func_86(vector3 vParam0, bool bParam3)
 			return iVar0;
 		}
 	}
-	return func_132(vParam0, bParam3);
+	return func_132(vParam0, iParam3);
 }
 
 struct<16> func_87(int iParam0)
@@ -3232,7 +3232,7 @@ int func_93(int iParam0)
 	switch (iParam0)
 	{
 		case 90:
-			return -523921054;
+			return -523921054 /* GXTEntry: "Player" */;
 		case 91:
 			return 2133809007;
 		case 92:
@@ -3246,7 +3246,7 @@ int func_93(int iParam0)
 		case 96:
 			return 1355002354;
 		case 69:
-			return -1258576797;
+			return -1258576797 /* GXTEntry: "Town" */;
 		case 70:
 			return 249251635;
 		case 71:
@@ -3319,14 +3319,14 @@ struct<7> func_94(int iParam0)
 char* func_95(char* sParam0, int iParam1)
 {
 	sParam0 = PLAYER::_0x5B6193813E03E4E9(sParam0);
-	if (iParam1 == 109029619)
+	if (iParam1 == joaat("COLOR_PURE_WHITE"))
 	{
 		return MISC::_CREATE_VAR_STRING(10, "PLAYER_STRING", sParam0);
 	}
 	return func_144(MISC::_CREATE_VAR_STRING(10, "PLAYER_STRING", sParam0), iParam1);
 }
 
-int func_96(char* sParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, int iParam8)
+int func_96(char* sParam0, var uParam1, int iParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, int iParam8)
 {
 	if (!NETWORK::NETWORK_IS_HANDLE_VALID(&uParam1))
 	{
@@ -3775,35 +3775,35 @@ int func_121(int iParam0)
 	return -1;
 }
 
-int func_122(struct<2> Param0, var uParam2)
+int func_122(struct<2> Param0, int iParam2)
 {
 	if (!func_67(Param0))
 	{
 		return 0;
 	}
-	func_157(uParam2);
+	func_157(iParam2);
 	switch (Param0)
 	{
 		case 2:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 3:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 4:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 5:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 6:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 7:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 8:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
 			return 1;
 		default:
 			break;
@@ -4319,7 +4319,7 @@ char* func_129(int iParam0)
 			return "NBX";
 		case 459833523:
 			return "VAL";
-		case -744494798:
+		case joaat("ARMADILLO"):
 			return "AMD";
 		case -1524959147:
 			return "TBL";
@@ -4350,7 +4350,7 @@ int func_130(int iParam0, int iParam1)
 	return -1;
 }
 
-var func_131()
+int func_131()
 {
 	return Global_1893575->f_2;
 }
@@ -4733,7 +4733,7 @@ int func_143(int iParam0, int iParam1, int iParam2, int iParam3, struct<2> Param
 			Var65.f_53.f_1 = -1;
 			Var65.f_55.f_3 = -1;
 			func_184(&Var65, iParam3, -1, -1, 3);
-			StringCopy(&cVar57, func_185(&(Var65.f_37), 109029619), 64);
+			StringCopy(&cVar57, func_185(&(Var65.f_37), joaat("COLOR_PURE_WHITE")), 64);
 		}
 		else if (iParam2 == 1)
 		{
@@ -4917,7 +4917,7 @@ int func_148(int iParam0)
 			return -750821175;
 		case -8716208:
 			return 863859481;
-		case 130824026:
+		case joaat("joe"):
 			return -1564456688;
 		case -705903163:
 			return -43444905;
@@ -4943,7 +4943,7 @@ int func_148(int iParam0)
 			return 1231714993;
 		case -1601260627:
 			return -197170169;
-		case -1239926065:
+		case joaat("alden"):
 			return -1157925372;
 		case -604384854:
 			return -853455962;
@@ -5093,11 +5093,11 @@ bool func_156(int iParam0)
 	return MISC::IS_BIT_SET(&(Global_40.f_3434[iVar1]), iVar2);
 }
 
-void func_157(var uParam0)
+void func_157(int iParam0)
 {
-	*uParam0 = 0;
-	uParam0->f_1 = -1;
-	uParam0->f_2 = -1;
+	*iParam0 = 0;
+	iParam0->f_1 = -1;
+	iParam0->f_2 = -1;
 }
 
 bool func_158(vector3 vParam0, vector3 vParam3)
@@ -5387,11 +5387,11 @@ void func_172(int iParam0)
 	MISC::_COPY_MEMORY(&(Global_1572887->f_106.f_17), iParam0, 57);
 }
 
-void func_173(int iParam0, int iParam1, var uParam2, bool bParam3)
+void func_173(int iParam0, int iParam1, int iParam2, bool bParam3)
 {
 	Global_1572887->f_106 = iParam0;
 	Global_1572887->f_106.f_9 = iParam1;
-	Global_1572887->f_106.f_10 = uParam2;
+	Global_1572887->f_106.f_10 = iParam2;
 	if (bParam3)
 	{
 		func_200();
@@ -5407,19 +5407,19 @@ void func_174(struct<2> Param0, bool bParam2)
 	}
 }
 
-void func_175(var uParam0)
+void func_175(int iParam0)
 {
-	Global_1572887->f_106.f_15 = uParam0;
+	Global_1572887->f_106.f_15 = iParam0;
 }
 
-void func_176(var uParam0)
+void func_176(int iParam0)
 {
-	Global_1572887->f_106.f_13 = uParam0;
+	Global_1572887->f_106.f_13 = iParam0;
 }
 
-void func_177(var uParam0, bool bParam1)
+void func_177(int iParam0, bool bParam1)
 {
-	Global_1572887->f_106.f_74 = uParam0;
+	Global_1572887->f_106.f_74 = iParam0;
 	if (bParam1)
 	{
 		func_200();
@@ -5588,7 +5588,7 @@ int func_184(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 
 char* func_185(char* sParam0, int iParam1)
 {
-	if (iParam1 == 109029619)
+	if (iParam1 == joaat("COLOR_PURE_WHITE"))
 	{
 		return MISC::_CREATE_VAR_STRING(10, "LITERAL_STRING", sParam0);
 	}
@@ -5909,7 +5909,7 @@ int func_198(int iParam0)
 	return 0;
 }
 
-int func_199(struct<2> Param0, var uParam2, float fParam3, float fParam4, int iParam5, int iParam6)
+int func_199(struct<2> Param0, float fParam2, float fParam3, float fParam4, int iParam5, int iParam6)
 {
 	if (Param0 < fParam3)
 	{
@@ -5984,7 +5984,7 @@ int func_202(struct<2> Param0)
 	return -1;
 }
 
-var func_203(int iParam0)
+int func_203(int iParam0)
 {
 	return (Global_1183537->f_66[iParam0 /*20*/])->f_3;
 }
@@ -6027,9 +6027,9 @@ int func_207(bool bParam0, bool bParam1, bool bParam2)
 	return 1;
 }
 
-void func_208(var uParam0)
+void func_208(int iParam0)
 {
-	Global_1896726->f_390 = uParam0;
+	Global_1896726->f_390 = iParam0;
 }
 
 void func_209(var uParam0, int iParam1)
@@ -6232,11 +6232,11 @@ int func_220(int iParam0)
 	switch (iParam0)
 	{
 		case -504335712:
-			return 1005649839;
+			return 1005649839 /* GXTEntry: "VS Mission" */;
 		case 395262693:
-			return -47596571;
+			return -47596571 /* GXTEntry: "Deathmatch" */;
 		case -933924539:
-			return 921725912;
+			return 921725912 /* GXTEntry: "Race" */;
 		default:
 			break;
 	}
@@ -6313,7 +6313,7 @@ int func_224()
 	return Global_1099293->f_339;
 }
 
-var func_225(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
+var func_225(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -6325,7 +6325,7 @@ var func_225(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_0xB2920B9760F0F36B(&Var0, &Var13, iParam5);
+	uVar17 = _NAMESPACE71::_0xB2920B9760F0F36B(&Var0, &Var13, bParam5);
 	return uVar17;
 }
 
@@ -6404,7 +6404,7 @@ bool func_234(var uParam0)
 	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam0->f_1), uParam0);
 }
 
-int func_235(vector3 vParam0, var uParam3, var uParam4, int iParam5, char[4] cParam6, bool bParam7)
+int func_235(vector3 vParam0, int iParam3, var uParam4, int iParam5, char[4] cParam6, bool bParam7)
 {
 	vParam0.f_2 = iParam5;
 	if (DATAFILE::_DATAFILE_GET_STRING(cParam6, &vParam0))
@@ -6422,7 +6422,7 @@ bool func_236()
 	return Global_1915170->f_20141;
 }
 
-int func_237(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4, bool bParam5, int iParam6, bool bParam7, bool bParam8)
+int func_237(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7, bool bParam8)
 {
 	int iVar0;
 	int iVar1;
@@ -6458,9 +6458,9 @@ int func_237(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				return 0;
 			}
 		}
-		if (uParam0 && !PLAYER::IS_PLAYER_CONTROL_ON(iVar0))
+		if (bParam0 && !PLAYER::IS_PLAYER_CONTROL_ON(iVar0))
 		{
-			if (iParam6 && Global_1099293->f_3 & 32 != 0)
+			if (bParam6 && Global_1099293->f_3 & 32 != 0)
 			{
 			}
 			else if (DECORATOR::DECOR_EXIST_ON(iVar1, "iMinigameSeat"))
@@ -6647,7 +6647,7 @@ int func_240(int iParam0)
 	return ((*Global_1835011)[iParam0 /*72*/])->f_51;
 }
 
-int func_241(var uParam0)
+int func_241(int iParam0)
 {
 	int iVar0;
 	var uVar1;
@@ -6661,8 +6661,8 @@ int func_241(var uParam0)
 	{
 		return 0;
 	}
-	MISC::_COPY_MEMORY(uParam0, &uVar1, 5);
-	*uParam0 = iVar0;
+	MISC::_COPY_MEMORY(iParam0, &uVar1, 5);
+	*iParam0 = iVar0;
 	return 1;
 }
 
@@ -6682,7 +6682,7 @@ int func_242(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	return 1;
 }
 
-var func_243(var uParam0, int iParam1)
+int func_243(var uParam0, int iParam1)
 {
 	uParam0->f_2 = iParam1;
 	return DATAFILE::_DATAFILE_GET_NUM_NODES(uParam0);
@@ -6703,7 +6703,7 @@ struct<2> func_245(int iParam0)
 	return Var0;
 }
 
-var func_246(var uParam0)
+int func_246(var uParam0)
 {
 	return func_253(uParam0, 59, 1);
 }
@@ -6896,7 +6896,7 @@ int func_250(int iParam0)
 			iVar0 = 1923799069;
 			break;
 		case 12:
-			iVar0 = -605765767;
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -7162,7 +7162,7 @@ int func_259(int iParam0)
 	{
 		case 987444055:
 			return -1;
-		case 1330140418:
+		case joaat("NORMAL"):
 			return 0;
 		case -640677282:
 			return 1;
@@ -7176,7 +7176,7 @@ int func_259(int iParam0)
 			return 5;
 		case 1004744465:
 			return 6;
-		case 672178273:
+		case joaat("bountyhunter"):
 			return 7;
 		case 1777227915:
 			return 8;

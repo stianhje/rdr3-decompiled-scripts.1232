@@ -1,6 +1,6 @@
 #region Local Var
 	int iLocal_0 = 0;
-	int iLocal_1 = 0;
+	bool bLocal_1 = false;
 #endregion
 
 void __EntryFunction__()
@@ -60,7 +60,7 @@ int func_2()
 	{
 		return 1;
 	}
-	if (iLocal_1 && !ENTITY::DOES_ENTITY_EXIST(iLocal_0))
+	if (bLocal_1 && !ENTITY::DOES_ENTITY_EXIST(iLocal_0))
 	{
 		return 1;
 	}
@@ -75,7 +75,7 @@ int func_3()
 {
 	int iVar0;
 
-	if (iLocal_1)
+	if (bLocal_1)
 	{
 		return 1;
 	}
@@ -91,7 +91,7 @@ int func_3()
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_0))
 	{
-		iLocal_1 = 1;
+		bLocal_1 = true;
 		return 1;
 	}
 	return 0;

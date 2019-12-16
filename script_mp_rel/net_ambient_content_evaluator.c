@@ -82,7 +82,7 @@ void func_1()
 	MISC::_0xB711EB4BC8D06013();
 }
 
-int func_2(bool bParam0, int iParam1)
+int func_2(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -92,13 +92,13 @@ int func_2(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -1660,7 +1660,7 @@ void func_67(int iParam0, int iParam1)
 	MISC::SET_BIT((*(*Global_1194410)[iVar0 /*72*/])[iParam0], iParam1);
 }
 
-void func_68(struct<2> Param0, bool bParam2, int iParam3, var uParam4)
+void func_68(struct<2> Param0, bool bParam2, int iParam3, int iParam4)
 {
 	int iVar0;
 
@@ -1696,11 +1696,11 @@ void func_68(struct<2> Param0, bool bParam2, int iParam3, var uParam4)
 	{
 		if (iParam3 != -1)
 		{
-			func_129(Param0, iParam3, uParam4);
+			func_129(Param0, iParam3, iParam4);
 		}
 		else
 		{
-			func_129(Param0, 2, uParam4);
+			func_129(Param0, 2, iParam4);
 		}
 	}
 	func_130(Param0, 0);
@@ -1961,7 +1961,7 @@ int func_80(int iParam0, int iParam1)
 void func_81(int iParam0, bool bParam1, int iParam2)
 {
 	struct<2> Var0;
-	int iVar2;
+	bool bVar2;
 
 	Var0 = { func_63(iParam0) };
 	if (!func_38(Var0))
@@ -1982,13 +1982,13 @@ void func_81(int iParam0, bool bParam1, int iParam2)
 	}
 	if (bParam1)
 	{
-		iVar2 = 4;
+		bVar2 = 4;
 	}
 	else
 	{
-		iVar2 = 0;
+		bVar2 = false;
 	}
-	func_68(Var0, 0, iVar2, iParam2);
+	func_68(Var0, 0, bVar2, iParam2);
 	func_67(iParam0, 4);
 }
 
@@ -2789,9 +2789,9 @@ var func_108(int iParam0, int iParam1)
 	return ((Global_1184672->f_231.f_1066[iParam0 /*17*/])->f_8[iParam1 /*4*/])->f_1;
 }
 
-void func_109(var uParam0, int iParam1)
+void func_109(var uParam0, bool bParam1)
 {
-	if (iParam1 || !func_49(uParam0))
+	if (bParam1 || !func_49(uParam0))
 	{
 		func_175(uParam0);
 	}
@@ -2980,7 +2980,7 @@ int func_117(var uParam0)
 	return *uParam0;
 }
 
-struct<40> func_118(var uParam0, var uParam1, int iParam2)
+struct<40> func_118(var uParam0, int iParam1, int iParam2)
 {
 	struct<40> Var0;
 
@@ -3007,7 +3007,7 @@ struct<40> func_118(var uParam0, var uParam1, int iParam2)
 	Var0.f_23.f_8 = 1;
 	Var0.f_23.f_8.f_1.f_1 = 2147483647;
 	Var0.f_23.f_13 = -1;
-	switch (*uParam1)
+	switch (*iParam1)
 	{
 		case 0:
 			return func_182(&(Global_1100949->f_33.f_513));
@@ -3353,7 +3353,7 @@ int func_128(bool bParam0, int iParam1)
 	return 1;
 }
 
-void func_129(struct<2> Param0, int iParam2, var uParam3)
+void func_129(struct<2> Param0, int iParam2, int iParam3)
 {
 	var uVar0;
 	int iVar1;
@@ -3361,7 +3361,7 @@ void func_129(struct<2> Param0, int iParam2, var uParam3)
 
 	uVar0 = func_199(func_137(Param0));
 	iVar1 = func_127(Param0);
-	vVar2.f_1 = uParam3;
+	vVar2.f_1 = iParam3;
 	vVar2.x = 0;
 	vVar2.f_2 = 0;
 	if (func_29() == 0)
@@ -3672,7 +3672,7 @@ int func_148(int iParam0, int iParam1)
 			Var3.f_1 = { func_171(iParam0, iParam1) };
 			Var3.f_5 = iParam0;
 			Var3.f_7 = { func_63(iParam0) };
-			iVar2 = BUILTIN::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(iVar1, &Var3, 10, func_224(iParam0));
+			iVar2 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(iVar1, &Var3, 10, func_224(iParam0));
 		}
 		else if (func_43(iParam0, 128))
 		{
@@ -3681,11 +3681,11 @@ int func_148(int iParam0, int iParam1)
 			Var13.f_2 = (Global_1184672->f_231.f_1066[iParam0 /*17*/])->f_14;
 			Var13.f_3 = (Global_1184672->f_231.f_1066[iParam0 /*17*/])->f_15;
 			Var13.f_4 = (Global_1184672->f_231.f_1066[iParam0 /*17*/])->f_16;
-			iVar2 = BUILTIN::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(iVar1, &Var13, 5, func_224(iParam0));
+			iVar2 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(iVar1, &Var13, 5, func_224(iParam0));
 		}
 		else
 		{
-			iVar2 = BUILTIN::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(iVar1, &uVar18, 1, func_224(iParam0));
+			iVar2 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(iVar1, &uVar18, 1, func_224(iParam0));
 		}
 		func_149(iParam0, iParam1, iVar2);
 		SCRIPTS::SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED(iVar1);
@@ -4927,121 +4927,121 @@ int func_206(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return 1746095559;
+			return 1746095559 /* GXTEntry: "Arson" */;
 		case 1:
-			return 195938434;
+			return 195938434 /* GXTEntry: "Assault" */;
 		case 2:
-			return 416962030;
+			return 416962030 /* GXTEntry: "Animal Cruelty" */;
 		case 3:
-			return 1314857970;
+			return 1314857970 /* GXTEntry: "Disturbing the Peace" */;
 		case 4:
-			return -999071359;
+			return -999071359 /* GXTEntry: "Animal Cruelty" */;
 		case 5:
-			return -683250308;
+			return -683250308 /* GXTEntry: "Assault" */;
 		case 6:
-			return -857617219;
+			return -857617219 /* GXTEntry: "Animal Cruelty" */;
 		case 7:
-			return 1780145725;
+			return 1780145725 /* GXTEntry: "Bank Robbery" */;
 		case 8:
-			return -1521715232;
+			return -1521715232 /* GXTEntry: "Trespassing" */;
 		case 9:
-			return -1560342203;
+			return -1560342203 /* GXTEntry: "Cheating" */;
 		case 10:
-			return 1343354387;
+			return 1343354387 /* GXTEntry: "Disturbing the Peace" */;
 		case 11:
-			return 1052408375;
+			return 1052408375 /* GXTEntry: "Disturbing the Peace" */;
 		case 12:
-			return -1759599185;
+			return -1759599185 /* GXTEntry: "Grave Robbery" */;
 		case 13:
-			return 1481148278;
+			return joaat("crime_hassle");
 		case 14:
-			return -16106300;
+			return -16106300 /* GXTEntry: "Unarmed Assault" */;
 		case 15:
-			return 105387183;
+			return 105387183 /* GXTEntry: "Unarmed Assault" */;
 		case 16:
-			return -2095449173;
+			return -2095449173 /* GXTEntry: "Intimidation" */;
 		case 17:
-			return -2097683294;
+			return -2097683294 /* GXTEntry: "Horse Theft" */;
 		case 18:
-			return 1805131596;
+			return 1805131596 /* GXTEntry: "Vehicle Theft" */;
 		case 19:
-			return 314693001;
+			return 314693001 /* GXTEntry: "Jail Break" */;
 		case 20:
-			return -1728509733;
+			return -1728509733 /* GXTEntry: "Kidnapping" */;
 		case 21:
-			return -42817558;
+			return -42817558 /* GXTEntry: "Kidnapping" */;
 		case 22:
-			return 1458462042;
+			return 1458462042 /* GXTEntry: "Assault" */;
 		case 23:
-			return 481893872;
+			return 481893872 /* GXTEntry: "Disturbing the Peace" */;
 		case 24:
-			return 1714017012;
+			return 1714017012 /* GXTEntry: "Disturbing the Peace" */;
 		case 25:
-			return 1437412331;
+			return 1437412331 /* GXTEntry: "Looting" */;
 		case 26:
-			return -493957506;
+			return -493957506 /* GXTEntry: "Murder" */;
 		case 27:
-			return 1224055398;
+			return 1224055398 /* GXTEntry: "Animal Cruelty" */;
 		case 28:
-			return -953803399;
+			return -953803399 /* GXTEntry: "Animal Cruelty" */;
 		case 29:
-			return 2006449383;
+			return 2006449383 /* GXTEntry: "Murder" */;
 		case 30:
-			return -1788230330;
+			return -1788230330 /* GXTEntry: "Animal Cruelty" */;
 		case 31:
-			return 1396375613;
+			return 1396375613 /* GXTEntry: "Vandalism" */;
 		case 32:
-			return -547914843;
+			return joaat("crime_resist_arrest");
 		case 33:
-			return -1547772340;
+			return -1547772340 /* GXTEntry: "Robbery" */;
 		case 34:
-			return -59535775;
+			return -59535775 /* GXTEntry: "Robbery" */;
 		case 35:
-			return -1701536647;
+			return -1701536647 /* GXTEntry: "Theft" */;
 		case 36:
-			return 1923998736;
+			return 1923998736 /* GXTEntry: "Theft" */;
 		case 37:
-			return -1103472584;
+			return -1103472584 /* GXTEntry: "Horse Theft" */;
 		case 38:
-			return -2051405571;
+			return -2051405571 /* GXTEntry: "Rustling" */;
 		case 39:
-			return 1135209633;
+			return 1135209633 /* GXTEntry: "Vehicle Theft" */;
 		case 40:
-			return -1810065318;
+			return -1810065318 /* GXTEntry: "Disturbing the Peace" */;
 		case 41:
 			return 2140177766;
 		case 42:
-			return 1685924442;
+			return 1685924442 /* GXTEntry: "Train Robbery" */;
 		case 43:
-			return 1171995096;
+			return 1171995096 /* GXTEntry: "Murder" */;
 		case 44:
-			return -267442581;
+			return -267442581 /* GXTEntry: "Murder" */;
 		case 45:
-			return -1361146315;
+			return -1361146315 /* GXTEntry: "Trespassing" */;
 		case 46:
-			return 1352191066;
+			return 1352191066 /* GXTEntry: "Unarmed Assault" */;
 		case 47:
-			return -2130852007;
+			return -2130852007 /* GXTEntry: "Vandalism" */;
 		case 48:
-			return -102241052;
+			return -102241052 /* GXTEntry: "Vandalism" */;
 		case 49:
-			return 1420320220;
+			return 1420320220 /* GXTEntry: "Vandalism" */;
 		case 50:
-			return -1715130379;
+			return -1715130379 /* GXTEntry: "Felony" */;
 		case 51:
-			return -661550833;
+			return -661550833 /* GXTEntry: "Misdemeanor" */;
 		case 52:
-			return -1358475411;
+			return -1358475411 /* GXTEntry: "Accomplice" */;
 		case 53:
 			return -1848598303;
 		case 54:
-			return -173287735;
+			return -173287735 /* GXTEntry: "Murder" */;
 		case 55:
-			return -715363719;
+			return -715363719 /* GXTEntry: "Animal Cruelty" */;
 		case 56:
-			return -1117123933;
+			return -1117123933 /* GXTEntry: "Disturbing the Peace" */;
 		case 57:
-			return 1972833301;
+			return 1972833301 /* GXTEntry: "Murder" */;
 		case 58:
 			return 0;
 		default:
@@ -5130,35 +5130,35 @@ int func_211(int iParam0)
 	return 1;
 }
 
-int func_212(struct<2> Param0, var uParam2)
+int func_212(struct<2> Param0, int iParam2)
 {
 	if (!func_38(Param0))
 	{
 		return 0;
 	}
-	func_259(uParam2);
+	func_259(iParam2);
 	switch (Param0)
 	{
 		case 2:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 3:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 4:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 5:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 6:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 7:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 8:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
 			return 1;
 		default:
 			break;
@@ -5265,7 +5265,7 @@ bool func_218(int iParam0)
 	return (Global_1572864->f_3 && iParam0) != 0;
 }
 
-int func_219(struct<2> Param0, bool bParam2)
+int func_219(struct<2> Param0, int iParam2)
 {
 	int iVar0;
 
@@ -5278,7 +5278,7 @@ int func_219(struct<2> Param0, bool bParam2)
 	{
 		return 0;
 	}
-	if (!func_262(Param0, func_131(0), bParam2))
+	if (!func_262(Param0, func_131(0), iParam2))
 	{
 		func_130(func_131(0), 3);
 		func_130(func_131(iVar0), 4);
@@ -6758,11 +6758,11 @@ void func_258(int iParam0, int iParam1)
 	}
 }
 
-void func_259(var uParam0)
+void func_259(int iParam0)
 {
-	*uParam0 = 0;
-	uParam0->f_1 = -1;
-	uParam0->f_2 = -1;
+	*iParam0 = 0;
+	iParam0->f_1 = -1;
+	iParam0->f_2 = -1;
 }
 
 void func_260(struct<2> Param0)
@@ -7291,7 +7291,7 @@ int func_285(int iParam0)
 			iVar0 = 1923799069;
 			break;
 		case 12:
-			iVar0 = -605765767;
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -7499,7 +7499,7 @@ int func_291(int iParam0)
 	{
 		case 987444055:
 			return -1;
-		case 1330140418:
+		case joaat("NORMAL"):
 			return 0;
 		case -640677282:
 			return 1;
@@ -7513,7 +7513,7 @@ int func_291(int iParam0)
 			return 5;
 		case 1004744465:
 			return 6;
-		case 672178273:
+		case joaat("bountyhunter"):
 			return 7;
 		case 1777227915:
 			return 8;

@@ -611,18 +611,18 @@ int func_22(int iParam0)
 	return 0;
 }
 
-int func_23(var uParam0)
+int func_23(int iParam0)
 {
 	if (-1829635046 == func_40(81053684))
 	{
-		if (func_22(uParam0))
+		if (func_22(iParam0))
 		{
 			return 1;
 		}
 	}
-	else if (func_33(-525676072, uParam0))
+	else if (func_33(-525676072, iParam0))
 	{
-		if (func_22(uParam0))
+		if (func_22(iParam0))
 		{
 			return 1;
 		}
@@ -974,8 +974,8 @@ struct<5> func_41(int iParam0, bool bParam1, int iParam2)
 	iVar5 = func_58(iParam0);
 	switch (iVar5)
 	{
-		case -1037537535:
-			Var0 = { func_59(889965687, Var0, 1034665895, bParam1) };
+		case joaat("clothing"):
+			Var0 = { func_59(889965687 /* GXTEntry: "Wardrobe" */, Var0, 1034665895, bParam1) };
 			Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, 889965687);
 			break;
 		case -427144552:
@@ -983,15 +983,15 @@ struct<5> func_41(int iParam0, bool bParam1, int iParam2)
 			if (iParam2 && func_61(iParam0, 1))
 			{
 				Var6.f_9 = -1591664384;
-				if (!func_62(iParam0, &Var0, 1728382685, 0, 0))
+				if (!func_62(iParam0, &Var0, 1728382685 /* GXTEntry: "Right" */, 0, 0))
 				{
 					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
-				else if (!func_62(iParam0, &Var0, -649335959, 0, 0))
+				else if (!func_62(iParam0, &Var0, -649335959 /* GXTEntry: "Left" */, 0, 0))
 				{
 					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
-				else if (func_63(iParam0, &Var6, 1728382685))
+				else if (func_63(iParam0, &Var6, 1728382685 /* GXTEntry: "Right" */))
 				{
 					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
@@ -1029,20 +1029,20 @@ struct<5> func_41(int iParam0, bool bParam1, int iParam2)
 			}
 			break;
 		case -2130996531:
-		case -1962314949:
+		case joaat("DOG"):
 			if (func_65(iParam0, -1823706425))
 			{
-				Var0 = { func_59(-1838434463, Var0, 1084182731, bParam1) };
+				Var0 = { func_59(-1838434463 /* GXTEntry: "Camp" */, Var0, 1084182731, bParam1) };
 				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, -1838434463);
 			}
 			else if (func_65(iParam0, -1483207246))
 			{
-				Var0 = { func_59(889965687, Var0, 1034665895, bParam1) };
+				Var0 = { func_59(889965687 /* GXTEntry: "Wardrobe" */, Var0, 1034665895, bParam1) };
 				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, 889965687);
 			}
 			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, -1911121386))
 			{
-				Var0 = { func_59(-1838434463, Var0, 1084182731, bParam1) };
+				Var0 = { func_59(-1838434463 /* GXTEntry: "Camp" */, Var0, 1084182731, bParam1) };
 				Var0.f_4 = -1911121386;
 			}
 			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, -1311702610))
@@ -1088,7 +1088,7 @@ struct<5> func_41(int iParam0, bool bParam1, int iParam2)
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, 1328661203);
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("CHARACTER"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -1114,9 +1114,9 @@ int func_42(int iParam0)
 	return -358215195;
 }
 
-void func_43(var uParam0, var uParam1)
+void func_43(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && uParam1));
+	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
 int func_44(int iParam0, int iParam1)
@@ -1566,7 +1566,7 @@ struct<4> func_57(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1270479))
 			{
-				*Global_1270479 = { func_59(1328661203, func_73(), -1591664384, bParam0) };
+				*Global_1270479 = { func_59(joaat("CHARACTER"), func_73(), -1591664384, bParam0) };
 			}
 			return *Global_1270479;
 		}
@@ -1574,12 +1574,12 @@ struct<4> func_57(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_12)))
 			{
-				Global_1270479->f_12 = { func_59(1328661203, func_73(), -1591664384, 0) };
+				Global_1270479->f_12 = { func_59(joaat("CHARACTER"), func_73(), -1591664384, 0) };
 			}
 			return Global_1270479->f_12;
 		}
 	}
-	return func_59(1328661203, func_73(), -1591664384, bParam0);
+	return func_59(joaat("CHARACTER"), func_73(), -1591664384, bParam0);
 }
 
 int func_58(int iParam0)
@@ -1597,7 +1597,7 @@ int func_58(int iParam0)
 	return vVar0.z;
 }
 
-struct<4> func_59(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, int iParam5, bool bParam6)
+struct<4> func_59(int iParam0, var uParam1, int iParam2, bool bParam3, var uParam4, int iParam5, bool bParam6)
 {
 	struct<4> Var0;
 
@@ -1653,9 +1653,9 @@ int func_61(int iParam0, bool bParam1)
 	return 0;
 }
 
-bool func_62(int iParam0, var uParam1, int iParam2, bool bParam3, int iParam4)
+bool func_62(int iParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 {
-	return func_75(iParam0, *uParam1, iParam2, bParam3, 1, iParam4) > 0;
+	return func_75(iParam0, *uParam1, iParam2, iParam3, 1, iParam4) > 0;
 }
 
 int func_63(int iParam0, var uParam1, int iParam2)
@@ -1713,9 +1713,9 @@ int func_65(int iParam0, int iParam1)
 	return 0;
 }
 
-bool func_66(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, bool bParam5, bool bParam6, int iParam7)
+bool func_66(var uParam0, var uParam1, bool bParam2, int iParam3, int iParam4, bool bParam5, bool bParam6, int iParam7)
 {
-	return func_78(&uParam0, uParam4, bParam5, bParam6, iParam7);
+	return func_78(&uParam0, iParam4, bParam5, bParam6, iParam7);
 }
 
 int func_67(int iParam0, var uParam1)
@@ -1779,10 +1779,10 @@ struct<4> func_73()
 
 bool func_74()
 {
-	return (func_80(-1185145312, 0, 0, 0) > 0 && func_81(func_59(889965687, func_57(1), 1034665895, 1), -234132662, 1, -1) != 0);
+	return (func_80(-1185145312 /* GXTEntry: "Upgraded Off-Hand Holster" */, 0, 0, 0) > 0 && func_81(func_59(889965687 /* GXTEntry: "Wardrobe" */, func_57(1), 1034665895, 1), -234132662, 1, -1) != 0);
 }
 
-int func_75(int iParam0, struct<4> Param1, int iParam5, bool bParam6, bool bParam7, var uParam8)
+int func_75(int iParam0, struct<4> Param1, int iParam5, bool bParam6, bool bParam7, int iParam8)
 {
 	int iVar0;
 	struct<4> Var1;
@@ -1791,7 +1791,7 @@ int func_75(int iParam0, struct<4> Param1, int iParam5, bool bParam6, bool bPara
 	{
 		return 0;
 	}
-	if (!bParam7 && func_82(iParam0, -455129387) == 0)
+	if (!bParam7 && func_82(iParam0, joaat("DEFAULT")) == 0)
 	{
 		bParam7 = true;
 	}
@@ -1803,11 +1803,11 @@ int func_75(int iParam0, struct<4> Param1, int iParam5, bool bParam6, bool bPara
 		{
 			return 0;
 		}
-		iVar0 = INVENTORY::_0xC97E0D2302382211(func_72(bParam6), &Var1, uParam8);
+		iVar0 = INVENTORY::_0xC97E0D2302382211(func_72(bParam6), &Var1, iParam8);
 	}
 	else
 	{
-		iVar0 = INVENTORY::_0xE787F05DFC977BDE(func_72(bParam6), iParam0, uParam8);
+		iVar0 = INVENTORY::_0xE787F05DFC977BDE(func_72(bParam6), iParam0, iParam8);
 	}
 	return iVar0;
 }
@@ -1833,7 +1833,7 @@ int func_77(int iParam0, int iParam1, int iParam2)
 {
 	if (iParam2 == 487172188)
 	{
-		if (UNK_0xAA29A5F13B2C20B2(iParam1, -455129387) == -1925887917)
+		if (ITEMDATABASE::_0xAA29A5F13B2C20B2(iParam1, joaat("DEFAULT")) == -1925887917)
 		{
 			return 0;
 		}
@@ -1841,7 +1841,7 @@ int func_77(int iParam0, int iParam1, int iParam2)
 	return ITEMDATABASE::_ITEM_DATABASE_CAN_EQUIP_ITEM_ON_CATEGORY(iParam0, iParam1, iParam2);
 }
 
-int func_78(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
+int func_78(var uParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 {
 	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
 	{
@@ -1851,7 +1851,7 @@ int func_78(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
 	{
 		iParam4 = func_72(bParam2);
 	}
-	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, uParam0, uParam1, !bParam3))
+	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, uParam0, iParam1, !bParam3))
 	{
 		return 0;
 	}
@@ -1872,7 +1872,7 @@ int func_80(int iParam0, bool bParam1, bool bParam2, int iParam3)
 	return INVENTORY::_0xE787F05DFC977BDE(func_72(bParam1), iParam0, iParam3);
 }
 
-int func_81(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, bool bParam5, int iParam6)
+int func_81(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5, int iParam6)
 {
 	return func_84(&uParam0, iParam4, bParam5, iParam6);
 }
@@ -1886,24 +1886,24 @@ int func_82(int iParam0, int iParam1)
 	return ITEMDATABASE::_0xF4452CE83118C738(iParam0, iParam1);
 }
 
-var func_83(var uParam0)
+bool func_83(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(uParam0);
+	return WEAPON::_0x1F7977C9101F807F(iParam0);
 }
 
-int func_84(var uParam0, var uParam1, bool bParam2, int iParam3)
+int func_84(var uParam0, int iParam1, bool bParam2, int iParam3)
 {
 	struct<10> Var0;
 
 	Var0.f_9 = -1591664384;
-	if (func_85(uParam0, uParam1, &Var0, bParam2, iParam3))
+	if (func_85(uParam0, iParam1, &Var0, bParam2, iParam3))
 	{
 		return Var0.f_4;
 	}
 	return 0;
 }
 
-int func_85(var uParam0, var uParam1, var uParam2, bool bParam3, int iParam4)
+int func_85(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4)
 {
 	var uVar0;
 
@@ -1915,11 +1915,11 @@ int func_85(var uParam0, var uParam1, var uParam2, bool bParam3, int iParam4)
 	{
 		iParam4 = func_72(bParam3);
 	}
-	if (!INVENTORY::_0x22E590F108289A9D(iParam4, uParam0, uParam1, &uVar0))
+	if (!INVENTORY::_0x22E590F108289A9D(iParam4, uParam0, iParam1, &uVar0))
 	{
 		return 0;
 	}
-	if (!func_78(&uVar0, uParam2, bParam3, 0, iParam4))
+	if (!func_78(&uVar0, iParam2, bParam3, 0, iParam4))
 	{
 		return 0;
 	}

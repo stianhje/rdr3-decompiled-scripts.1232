@@ -85,7 +85,7 @@ int func_2(int iParam0, var uParam1, int iParam2, var uParam3, int iParam4, var 
 	return 1;
 }
 
-int func_3(bool bParam0, int iParam1)
+int func_3(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -95,13 +95,13 @@ int func_3(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -147,7 +147,7 @@ int func_3(bool bParam0, int iParam1)
 	return 0;
 }
 
-int func_4(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)
+int func_4(var uParam0, int iParam1, var uParam2, int iParam3, var uParam4)
 {
 	if (ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID()))
 	{
@@ -156,7 +156,7 @@ int func_4(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)
 	switch (*uParam0)
 	{
 		case 0:
-			return func_7(uParam1, uParam2, uParam3, uParam4);
+			return func_7(iParam1, uParam2, iParam3, uParam4);
 		default:
 			break;
 	}
@@ -187,14 +187,14 @@ int func_6(var uParam0, var uParam1)
 	return 1;
 }
 
-int func_7(var uParam0, var uParam1, var uParam2, var uParam3)
+int func_7(int iParam0, var uParam1, int iParam2, var uParam3)
 {
 	if (*uParam3)
 	{
 	}
 	else
 	{
-		func_10(*uParam0, uParam1, uParam2);
+		func_10(*iParam0, uParam1, iParam2);
 	}
 	return 1;
 }
@@ -226,7 +226,7 @@ int func_9(var uParam0)
 	return 1;
 }
 
-void func_10(int iParam0, var uParam1, var uParam2)
+void func_10(int iParam0, var uParam1, int iParam2)
 {
 	int iVar0;
 
@@ -234,9 +234,9 @@ void func_10(int iParam0, var uParam1, var uParam2)
 	{
 		iVar0 = 0;
 	}
-	else if (*uParam2 != -1)
+	else if (*iParam2 != -1)
 	{
-		iVar0 = *uParam2;
+		iVar0 = *iParam2;
 	}
 	else
 	{

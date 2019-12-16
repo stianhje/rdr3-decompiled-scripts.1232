@@ -131,7 +131,7 @@ void func_4()
 	}
 }
 
-int func_5(bool bParam0, int iParam1)
+int func_5(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -141,13 +141,13 @@ int func_5(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -280,9 +280,9 @@ void func_12(int iParam0)
 	Global_1938569 = 0;
 }
 
-void func_13(var uParam0, int iParam1)
+void func_13(int iParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
+	*iParam0 = (*iParam0 - (*iParam0 && iParam1));
 }
 
 int func_14(int iParam0, int iParam1)

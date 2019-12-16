@@ -138,7 +138,7 @@ void func_5(var uParam0)
 	func_13(PLAYER::PLAYER_PED_ID(), joaat("weapon_drowning"), 0, 0);
 }
 
-int func_6(bool bParam0, int iParam1)
+int func_6(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -148,13 +148,13 @@ int func_6(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -272,7 +272,7 @@ void func_12(int iParam0, int iParam1, bool bParam2)
 	POPULATION::_0x2161278C6322F740(iParam1 | 4096 | 64 | 128 | 2 | 4 | 1, 16384, 0, -1, -1, iParam0);
 }
 
-void func_13(int iParam0, int iParam1, bool bParam2, bool bParam3)
+void func_13(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 {
 	struct<13> Var0;
 
@@ -294,10 +294,10 @@ void func_13(int iParam0, int iParam1, bool bParam2, bool bParam3)
 		Var0.f_1 = iParam0;
 		Var0.f_2 = BUILTIN::TO_FLOAT(ENTITY::GET_ENTITY_HEALTH(PLAYER::PLAYER_PED_ID()));
 		Var0.f_3 = 1;
-		Var0.f_5 = iParam1;
-		Var0.f_12 = (iParam1 != 0 && WEAPON::_0x959383DCD42040DA(iParam1));
+		Var0.f_5 = bParam1;
+		Var0.f_12 = (bParam1 != 0 && WEAPON::_0x959383DCD42040DA(bParam1));
 		func_16(&Var0, &(Global_1099293->f_267));
-		PED::_0x1CE875505D45338A(PLAYER::PLAYER_PED_ID(), iParam0, iParam1);
+		PED::_0x1CE875505D45338A(PLAYER::PLAYER_PED_ID(), iParam0, bParam1);
 	}
 }
 
@@ -309,9 +309,9 @@ void func_14()
 	}
 }
 
-void func_15(var uParam0, int iParam1)
+void func_15(int iParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
+	*iParam0 = (*iParam0 - (*iParam0 && iParam1));
 }
 
 void func_16(var uParam0, var uParam1)

@@ -65,7 +65,7 @@ void func_2(var uParam0)
 	func_10(uParam0, 0);
 }
 
-int func_3(bool bParam0, int iParam1)
+int func_3(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -75,13 +75,13 @@ int func_3(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -149,7 +149,7 @@ void func_5(var uParam0, char* sParam1)
 	SCRIPTS::REQUEST_SCRIPT(sParam1);
 	if (SCRIPTS::HAS_SCRIPT_LOADED(sParam1))
 	{
-		*uParam0 = BUILTIN::START_NEW_SCRIPT(sParam1, 1024);
+		*uParam0 = SCRIPTS::START_NEW_SCRIPT(sParam1, 1024);
 		SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(sParam1);
 		return;
 	}
@@ -526,9 +526,9 @@ bool func_28(var uParam0, int iParam1)
 	return (uParam0 && iParam1) != 0;
 }
 
-void func_29(var uParam0, int iParam1)
+void func_29(var uParam0, bool bParam1)
 {
-	if (iParam1 || !func_24(uParam0))
+	if (bParam1 || !func_24(uParam0))
 	{
 		func_2(uParam0);
 	}

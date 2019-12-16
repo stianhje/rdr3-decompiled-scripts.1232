@@ -112,7 +112,7 @@ void func_1()
 	BRAIN::_0xA6AC35DB4A7957A8(99999);
 }
 
-int func_2(bool bParam0, int iParam1)
+int func_2(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -122,13 +122,13 @@ int func_2(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -247,8 +247,8 @@ void func_5(var uParam0, int iParam1)
 	int iVar1;
 	bool bVar2;
 	bool bVar3;
-	int iVar4;
-	int iVar5;
+	bool bVar4;
+	bool bVar5;
 	int iVar6;
 	int iVar7;
 	int iVar8;
@@ -310,20 +310,20 @@ void func_5(var uParam0, int iParam1)
 		}
 		if (PED::GET_MOUNT(iVar1) == uParam0->f_18)
 		{
-			iVar4 = 0;
-			iVar5 = 0;
+			bVar4 = false;
+			bVar5 = false;
 			if (!PLAYER::IS_PLAYER_DEAD(iVar0))
 			{
 				if (PLAYER::IS_PLAYER_FREE_AIMING(iVar0))
 				{
-					iVar4 = 1;
+					bVar4 = true;
 				}
 				if (PED::GET_PED_RESET_FLAG(iVar1, 311))
 				{
-					iVar5 = 1;
+					bVar5 = true;
 				}
 			}
-			if (((func_6(uParam0, 11) || func_6(uParam0, 17)) || iVar4) || iVar5)
+			if (((func_6(uParam0, 11) || func_6(uParam0, 17)) || bVar4) || bVar5)
 			{
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(iVar1, 0, 1);
 				PED::_REMOVE_PED_FROM_MOUNT(iVar1, true, false);
@@ -482,7 +482,7 @@ void func_5(var uParam0, int iParam1)
 			PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 561, false);
 		}
 		func_22(uParam0, func_6(uParam0, 11));
-		ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, 1);
+		ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, true);
 		if (func_6(uParam0, 11) || func_6(uParam0, 17))
 		{
 			iVar14 = AITRANSPORT::_0xFFEC4B0A1A3ED515(uParam0->f_18, 0);
@@ -913,7 +913,7 @@ void func_10(var uParam0, int* iParam1)
 			func_39(uParam0, 8);
 		}
 		((*Global_1268274)[iVar1 /*20*/])->f_2 |= 1;
-		if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_20) && VEHICLE::_0xEA44E97849E9F3DD(uParam0->f_20))
+		if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_20) && VEHICLE::_IS_DRAFT_VEHICLE(uParam0->f_20))
 		{
 			VEHICLE::_0x226C6A4E3346D288(uParam0->f_20, &(Global_1903928->f_485[97]));
 			VEHICLE::_0x6090A031C69F384E(uParam0->f_20, &(Global_1903928->f_485[97]));
@@ -1180,7 +1180,7 @@ void func_15()
 	Global_1268935->f_1371.f_4 = 1;
 }
 
-void func_16(int iParam0, var uParam1)
+void func_16(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -1212,18 +1212,18 @@ void func_16(int iParam0, var uParam1)
 		return;
 	}
 	func_80(iParam0, 0, 0);
-	if (!func_37(uParam1, 0, 0, 0))
+	if (!func_37(iParam1, 0, 0, 0))
 	{
 		return;
 	}
 	func_81(Global_1903928, 0, 1);
 	func_82();
-	iVar1 = func_83(uParam1, -1585141069, 0);
+	iVar1 = func_83(iParam1, -1585141069, 0);
 	bVar2 = iVar1 > 0;
 	if (bVar2)
 	{
 		func_84(18, 0);
-		func_85(*uParam1, 0, 0);
+		func_85(*iParam1, 0, 0);
 	}
 	else
 	{
@@ -1395,170 +1395,170 @@ int func_28(int iParam0)
 {
 	if (iParam0 == 808655744)
 	{
-		return -364764277;
+		return -364764277 /* GXTEntry: "Scrawny Nag" */;
 	}
 	switch (iParam0)
 	{
 		case joaat("a_c_horse_americanpaint_overo"):
-			return -974145463;
+			return -974145463 /* GXTEntry: "American Paint - Overo Coat" */;
 		case joaat("a_c_horse_americanpaint_tobiano"):
-			return 1432602132;
+			return 1432602132 /* GXTEntry: "American Paint - Tobiano Coat" */;
 		case 1792770814:
-			return 92296905;
+			return 92296905 /* GXTEntry: "American Paint - Splashed White Coat" */;
 		case -1963397600:
-			return -842044823;
+			return -842044823 /* GXTEntry: "American Paint - Grey Overo Coat" */;
 		case -1250098797:
-			return 1371398552;
+			return 1371398552 /* GXTEntry: "American Standardbred - Black Coat" */;
 		case -318278790:
-			return -745453539;
+			return -745453539 /* GXTEntry: "American Standardbred - Buckskin Coat" */;
 		case 55096099:
-			return 1583029039;
+			return 1583029039 /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */;
 		case -458397856:
-			return -783061276;
+			return -783061276 /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */;
 		case -444610976:
-			return -1322521536;
+			return -1322521536 /* GXTEntry: "Andalusian - Dark Bay Coat" */;
 		case 746627200:
-			return 728055838;
+			return 728055838 /* GXTEntry: "Andalusian - Rose Grey Coat" */;
 		case 705691988:
-			return 1100711204;
+			return 1100711204 /* GXTEntry: "Andalusian - Perlino Coat" */;
 		case joaat("a_c_horse_appaloosa_blanket"):
-			return -1782334639;
+			return -1782334639 /* GXTEntry: "Appaloosa - Blanket Coat" */;
 		case -1554827654:
-			return -1181052732;
+			return -1181052732 /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */;
 		case -1029277326:
-			return -179102320;
+			return -179102320 /* GXTEntry: "Appaloosa - Brown Leopard Coat" */;
 		case joaat("a_c_horse_appaloosa_leopard"):
-			return -1266863668;
+			return -1266863668 /* GXTEntry: "Appaloosa - Leopard Coat" */;
 		case joaat("a_c_horse_arabian_black"):
-			return -2078767648;
+			return -2078767648 /* GXTEntry: "Arabian - Black Coat" */;
 		case -403470324:
-			return -852553462;
+			return -852553462 /* GXTEntry: "Arabian - Rose Grey Bay Coat" */;
 		case joaat("a_c_horse_arabian_white"):
-			return -80004868;
+			return -80004868 /* GXTEntry: "Arabian - White Coat" */;
 		case joaat("a_c_horse_ardennes_bayroan"):
-			return 1813208211;
+			return 1813208211 /* GXTEntry: "Ardennes - Bay Roan Coat" */;
 		case -635239558:
-			return 836323303;
+			return 836323303 /* GXTEntry: "Ardennes - Strawberry Roan Coat" */;
 		case joaat("a_c_horse_ardennes_irongreyroan"):
-			return 153881023;
+			return 153881023 /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */;
 		case joaat("a_c_horse_belgian_blondchestnut"):
-			return -1256798240;
+			return -1256798240 /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */;
 		case joaat("a_c_horse_belgian_mealychestnut"):
 			return 2118089359;
 		case 1593035738:
-			return -1537586382;
+			return -1537586382 /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */;
 		case 861505058:
-			return 1440692746;
+			return 1440692746 /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */;
 		case 687445866:
-			return 697143532;
+			return 697143532 /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */;
 		case 1705182311:
-			return 281128160;
+			return 281128160 /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */;
 		case -78273782:
-			return 1854519167;
+			return 1854519167 /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */;
 		case -819697512:
-			return -1376299681;
+			return -1376299681 /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */;
 		case -247265944:
 			return -1955947684;
 		case -1265030920:
-			return 1361788230;
+			return 1361788230 /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */;
 		case 2024948086:
-			return 1974379573;
+			return 1974379573 /* GXTEntry: "Kentucky Saddler - Grey Coat" */;
 		case 1696286663:
-			return 545109431;
+			return 545109431 /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */;
 		case -1342159303:
-			return 1275638003;
+			return 1275638003 /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */;
 		case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
-			return 2083573823;
+			return 2083573823 /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */;
 		case 2030804811:
-			return 1235275977;
+			return 1235275977 /* GXTEntry: "Morgan - Bay Coat" */;
 		case 1230359523:
-			return 892601357;
+			return 892601357 /* GXTEntry: "Morgan - Bay Roan Coat" */;
 		case -1038436471:
-			return 1224695367;
+			return 1224695367 /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */;
 		case 96930969:
-			return 648301150;
+			return 648301150 /* GXTEntry: "Morgan - Palomino Coat" */;
 		case -1180427609:
-			return -1597490733;
+			return -1597490733 /* GXTEntry: "Mustang - Grullo Dun Coat" */;
 		case joaat("a_c_horse_mustang_wildbay"):
-			return 2000205872;
+			return 2000205872 /* GXTEntry: "Mustang - Wild Bay Coat" */;
 		case 43825738:
-			return -1428527735;
+			return -1428527735 /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */;
 		case joaat("a_c_horse_nokota_blueroan"):
-			return 170010697;
+			return 170010697 /* GXTEntry: "Nokota - Blue Roan Coat" */;
 		case -1261814606:
-			return -742726637;
+			return -742726637 /* GXTEntry: "Nokota - White Roan Coat" */;
 		case 107013696:
-			return -1714171692;
+			return -1714171692 /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */;
 		case 1066034872:
-			return -103101636;
+			return -103101636 /* GXTEntry: "Shire - Dark Bay Coat" */;
 		case 36009259:
-			return -1999094324;
+			return -1999094324 /* GXTEntry: "Shire - Light Grey Coat" */;
 		case -1599683008:
-			return 1724200240;
+			return 1724200240 /* GXTEntry: "Suffolk Punch - Sorrel Coat" */;
 		case -1693870200:
-			return 237935328;
+			return 237935328 /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */;
 		case 1072019803:
-			return 120848852;
+			return 120848852 /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */;
 		case 1074477367:
-			return -868094182;
+			return -868094182 /* GXTEntry: "Tennessee Walker - Chestnut Coat" */;
 		case -85890205:
-			return -887362763;
+			return -887362763 /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */;
 		case -727455979:
-			return -847714194;
+			return -847714194 /* GXTEntry: "Tennessee Walker - Red Roan Coat" */;
 		case -1667789645:
-			return 1756765331;
+			return 1756765331 /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */;
 		case -1924405794:
-			return -813071670;
+			return -813071670 /* GXTEntry: "Thoroughbred - Blood Bay Coat" */;
 		case joaat("a_c_horse_thoroughbred_dapplegrey"):
-			return -1900569233;
+			return -1900569233 /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */;
 		case -526169133:
-			return 1688250187;
+			return 1688250187 /* GXTEntry: "Thoroughbred - Brindle Coat" */;
 		case 2120708491:
-			return -1262715164;
+			return -1262715164 /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */;
 		case 900144280:
-			return 2010625508;
+			return 2010625508 /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */;
 		case 1133837220:
-			return -136225010;
+			return -136225010 /* GXTEntry: "Turkoman - Dark Bay Coat" */;
 		case joaat("a_c_horse_turkoman_gold"):
-			return -225011104;
+			return -225011104 /* GXTEntry: "Turkoman - Gold Coat" */;
 		case -1604180548:
-			return -1882436593;
+			return -1882436593 /* GXTEntry: "Turkoman - Silver Coat" */;
 		case -683592019:
-			return -757978903;
+			return -757978903 /* GXTEntry: "Breton - Red Roan Coat" */;
 		case 337109765:
-			return 1909854428;
+			return 1909854428 /* GXTEntry: "Breton - Sorrel Coat" */;
 		case -619132373:
-			return 1592694494;
+			return 1592694494 /* GXTEntry: "Breton - Grullo Dun Coat" */;
 		case 1544366970:
-			return 981469777;
+			return 981469777 /* GXTEntry: "Breton - Seal Brown Coat" */;
 		case -1441144351:
-			return 1064693514;
+			return 1064693514 /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */;
 		case -1717674545:
-			return -1365665739;
+			return -1365665739 /* GXTEntry: "Breton - Steel Grey Coat" */;
 		case 1825358734:
-			return 1577022605;
+			return 1577022605 /* GXTEntry: "Criollo - Blue Roan Overo Coat" */;
 		case 1138427579:
-			return 381495209;
+			return 381495209 /* GXTEntry: "Criollo - Dun Coat" */;
 		case -1720251851:
-			return 3032834;
+			return 3032834 /* GXTEntry: "Criollo - Bay Brindle Coat" */;
 		case 506887890:
-			return -1722101672;
+			return -1722101672 /* GXTEntry: "Criollo - Sorrel Overo Coat" */;
 		case 766293155:
-			return -189605757;
+			return -189605757 /* GXTEntry: "Criollo - Bay Frame Overo Coat" */;
 		case 2147082926:
-			return 863391233;
+			return 863391233 /* GXTEntry: "Criollo - Marble Sabino Coat" */;
 		case -1616287563:
-			return 885568364;
+			return 885568364 /* GXTEntry: "Kladruber - Black Coat" */;
 		case -127412252:
-			return -1540355548;
+			return -1540355548 /* GXTEntry: "Kladruber - White Coat" */;
 		case -1881155818:
-			return -601560591;
+			return -601560591 /* GXTEntry: "Kladruber - Cremello Coat" */;
 		case -955237712:
-			return -370362766;
+			return -370362766 /* GXTEntry: "Kladruber - Grey Coat" */;
 		case -647020346:
-			return -1698261864;
+			return -1698261864 /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */;
 		case -1846319726:
-			return -670301166;
+			return -670301166 /* GXTEntry: "Kladruber - Silver Coat" */;
 		case 1007570567:
 			return -302057902;
 		case 1029339151:
@@ -1572,41 +1572,41 @@ int func_28(int iParam0)
 		case 1344011125:
 			return 1589592948;
 		case joaat("a_c_donkey_01"):
-			return -1331210307;
+			return -1331210307 /* GXTEntry: "Donkey" */;
 		case joaat("a_c_horsemule_01"):
-			return 122449722;
+			return 122449722 /* GXTEntry: "Mule" */;
 		case joaat("a_c_horsemulepainted_01"):
-			return -1784502482;
+			return -1784502482 /* GXTEntry: "Mule - Painted" */;
 		case 1883159941:
 			return -1943445834;
 		case -1028075925:
-			return -635244104;
+			return -635244104 /* GXTEntry: "Appaloosa - Black Snowflake" */;
 		case 84224102:
-			return -1427377767;
+			return -1427377767 /* GXTEntry: "Arabian - Grey Coat" */;
 		case 1496579364:
-			return -2055655009;
+			return -2055655009 /* GXTEntry: "Arabian - Red Chestnut Coat" */;
 		case -1896838685:
-			return -1293672675;
+			return -1293672675 /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */;
 		case -420599285:
-			return -1179079660;
+			return -1179079660 /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */;
 		case 478986344:
-			return 805526368;
+			return 805526368 /* GXTEntry: "Mustang - Golden Dun Coat" */;
 		case 446670976:
-			return 1342496140;
+			return 1342496140 /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */;
 		case joaat("a_c_horse_shire_ravenblack"):
-			return -126555855;
+			return -126555855 /* GXTEntry: "Shire - Raven Black Coat" */;
 		case 549900435:
-			return 294243421;
+			return 294243421 /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */;
 		case -2063289686:
-			return -997197050;
+			return -997197050 /* GXTEntry: "Thoroughbred - Seal Brown Coat" */;
 		case 917402668:
-			return -235714362;
+			return -235714362 /* GXTEntry: "Appaloosa - Blanket Coat" */;
 		case -914712122:
-			return -1678164;
+			return -1678164 /* GXTEntry: "Nokota - Blue Roan Coat" */;
 		case -598917269:
-			return -977833913;
+			return -977833913 /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */;
 		case joaat("a_c_horse_winter02_01"):
-			return 1589164943;
+			return 1589164943 /* GXTEntry: "Thoroughbred - Silver Bay Coat" */;
 		default:
 			break;
 	}
@@ -1617,116 +1617,116 @@ char* func_29(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -974145463:
-		case -842044823:
-		case 92296905:
-		case 1432602132:
+		case -974145463: /* GXTEntry: "American Paint - Overo Coat" */
+		case -842044823: /* GXTEntry: "American Paint - Grey Overo Coat" */
+		case 92296905: /* GXTEntry: "American Paint - Splashed White Coat" */
+		case 1432602132: /* GXTEntry: "American Paint - Tobiano Coat" */
 			return "BREED_AMERICANPAINT";
 		case -1943445834:
-		case -783061276:
-		case -745453539:
-		case 1371398552:
-		case 1583029039:
+		case -783061276: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
+		case -745453539: /* GXTEntry: "American Standardbred - Buckskin Coat" */
+		case 1371398552: /* GXTEntry: "American Standardbred - Black Coat" */
+		case 1583029039: /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */
 			return "BREED_AMERICANSTANDARDBRED";
-		case -1322521536:
-		case 728055838:
-		case 1100711204:
+		case -1322521536: /* GXTEntry: "Andalusian - Dark Bay Coat" */
+		case 728055838: /* GXTEntry: "Andalusian - Rose Grey Coat" */
+		case 1100711204: /* GXTEntry: "Andalusian - Perlino Coat" */
 			return "BREED_ANDALUSIAN";
-		case -1782334639:
-		case -1266863668:
-		case -1181052732:
-		case -635244104:
-		case -179102320:
+		case -1782334639: /* GXTEntry: "Appaloosa - Blanket Coat" */
+		case -1266863668: /* GXTEntry: "Appaloosa - Leopard Coat" */
+		case -1181052732: /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */
+		case -635244104: /* GXTEntry: "Appaloosa - Black Snowflake" */
+		case -179102320: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
 			return "BREED_APPALOOSA";
-		case -2078767648:
-		case -2055655009:
-		case -1427377767:
-		case -852553462:
-		case -80004868:
+		case -2078767648: /* GXTEntry: "Arabian - Black Coat" */
+		case -2055655009: /* GXTEntry: "Arabian - Red Chestnut Coat" */
+		case -1427377767: /* GXTEntry: "Arabian - Grey Coat" */
+		case -852553462: /* GXTEntry: "Arabian - Rose Grey Bay Coat" */
+		case -80004868: /* GXTEntry: "Arabian - White Coat" */
 			return "BREED_ARABIAN";
-		case 153881023:
-		case 836323303:
-		case 1813208211:
+		case 153881023: /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */
+		case 836323303: /* GXTEntry: "Ardennes - Strawberry Roan Coat" */
+		case 1813208211: /* GXTEntry: "Ardennes - Bay Roan Coat" */
 			return "BREED_ARDENNES";
-		case -1256798240:
+		case -1256798240: /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */
 		case 2118089359:
 			return "BREED_BELGIAN";
-		case -1537586382:
-		case 697143532:
-		case 1440692746:
+		case -1537586382: /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */
+		case 697143532: /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */
+		case 1440692746: /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */
 			return "BREED_DUTCHWARMBLOOD";
-		case -1376299681:
-		case -1293672675:
-		case 281128160:
-		case 1854519167:
+		case -1376299681: /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */
+		case -1293672675: /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */
+		case 281128160: /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */
+		case 1854519167: /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */
 			return "BREED_HUNGARIANHALFBRED";
 		case -1955947684:
-		case 545109431:
-		case 1361788230:
-		case 1974379573:
+		case 545109431: /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */
+		case 1361788230: /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */
+		case 1974379573: /* GXTEntry: "Kentucky Saddler - Grey Coat" */
 			return "BREED_KENTUCKYSADDLE";
-		case -1179079660:
-		case 1275638003:
-		case 2083573823:
+		case -1179079660: /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */
+		case 1275638003: /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */
+		case 2083573823: /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */
 			return "BREED_MISSOURIFOXTROTTER";
-		case 648301150:
-		case 892601357:
-		case 1224695367:
-		case 1235275977:
+		case 648301150: /* GXTEntry: "Morgan - Palomino Coat" */
+		case 892601357: /* GXTEntry: "Morgan - Bay Roan Coat" */
+		case 1224695367: /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */
+		case 1235275977: /* GXTEntry: "Morgan - Bay Coat" */
 			return "BREED_MORGAN";
-		case -1597490733:
-		case -1428527735:
-		case 805526368:
-		case 2000205872:
+		case -1597490733: /* GXTEntry: "Mustang - Grullo Dun Coat" */
+		case -1428527735: /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */
+		case 805526368: /* GXTEntry: "Mustang - Golden Dun Coat" */
+		case 2000205872: /* GXTEntry: "Mustang - Wild Bay Coat" */
 			return "BREED_MUSTANG";
-		case -1714171692:
-		case -742726637:
-		case 170010697:
+		case -1714171692: /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */
+		case -742726637: /* GXTEntry: "Nokota - White Roan Coat" */
+		case 170010697: /* GXTEntry: "Nokota - Blue Roan Coat" */
 			return "BREED_NOKOTA";
-		case -1999094324:
-		case -126555855:
-		case -103101636:
+		case -1999094324: /* GXTEntry: "Shire - Light Grey Coat" */
+		case -126555855: /* GXTEntry: "Shire - Raven Black Coat" */
+		case -103101636: /* GXTEntry: "Shire - Dark Bay Coat" */
 			return "BREED_SHIRE";
-		case 237935328:
-		case 1724200240:
+		case 237935328: /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */
+		case 1724200240: /* GXTEntry: "Suffolk Punch - Sorrel Coat" */
 			return "BREED_SUFFOLKPUNCH";
-		case -887362763:
-		case -868094182:
-		case -847714194:
-		case 120848852:
-		case 1342496140:
-		case 1756765331:
+		case -887362763: /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */
+		case -868094182: /* GXTEntry: "Tennessee Walker - Chestnut Coat" */
+		case -847714194: /* GXTEntry: "Tennessee Walker - Red Roan Coat" */
+		case 120848852: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
+		case 1342496140: /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */
+		case 1756765331: /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */
 			return "BREED_TENNESSEEWALKER";
-		case -1900569233:
-		case -1262715164:
-		case -813071670:
-		case 1688250187:
-		case 2010625508:
+		case -1900569233: /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */
+		case -1262715164: /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */
+		case -813071670: /* GXTEntry: "Thoroughbred - Blood Bay Coat" */
+		case 1688250187: /* GXTEntry: "Thoroughbred - Brindle Coat" */
+		case 2010625508: /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */
 			return "BREED_THOROUGHBRED";
-		case -1882436593:
-		case -225011104:
-		case -136225010:
+		case -1882436593: /* GXTEntry: "Turkoman - Silver Coat" */
+		case -225011104: /* GXTEntry: "Turkoman - Gold Coat" */
+		case -136225010: /* GXTEntry: "Turkoman - Dark Bay Coat" */
 			return "BREED_TURKOMAN";
-		case -1365665739:
-		case -757978903:
-		case 981469777:
-		case 1064693514:
-		case 1592694494:
-		case 1909854428:
+		case -1365665739: /* GXTEntry: "Breton - Steel Grey Coat" */
+		case -757978903: /* GXTEntry: "Breton - Red Roan Coat" */
+		case 981469777: /* GXTEntry: "Breton - Seal Brown Coat" */
+		case 1064693514: /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */
+		case 1592694494: /* GXTEntry: "Breton - Grullo Dun Coat" */
+		case 1909854428: /* GXTEntry: "Breton - Sorrel Coat" */
 			return "BREED_BRETON";
-		case -1722101672:
-		case -189605757:
-		case 3032834:
-		case 381495209:
-		case 863391233:
-		case 1577022605:
+		case -1722101672: /* GXTEntry: "Criollo - Sorrel Overo Coat" */
+		case -189605757: /* GXTEntry: "Criollo - Bay Frame Overo Coat" */
+		case 3032834: /* GXTEntry: "Criollo - Bay Brindle Coat" */
+		case 381495209: /* GXTEntry: "Criollo - Dun Coat" */
+		case 863391233: /* GXTEntry: "Criollo - Marble Sabino Coat" */
+		case 1577022605: /* GXTEntry: "Criollo - Blue Roan Overo Coat" */
 			return "BREED_CRIOLLO";
-		case -1698261864:
-		case -1540355548:
-		case -670301166:
-		case -601560591:
-		case -370362766:
-		case 885568364:
+		case -1698261864: /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */
+		case -1540355548: /* GXTEntry: "Kladruber - White Coat" */
+		case -670301166: /* GXTEntry: "Kladruber - Silver Coat" */
+		case -601560591: /* GXTEntry: "Kladruber - Cremello Coat" */
+		case -370362766: /* GXTEntry: "Kladruber - Grey Coat" */
+		case 885568364: /* GXTEntry: "Kladruber - Black Coat" */
 			return "BREED_KLADRUBER";
 		case -1824684932:
 		case -769035812:
@@ -1735,60 +1735,60 @@ char* func_29(int iParam0)
 		case 1257620801:
 		case 1589592948:
 			return "BREED_NORFOLKROADSTER";
-		case -1331210307:
+		case -1331210307: /* GXTEntry: "Donkey" */
 			return "BREED_DONKEY";
-		case -1784502482:
-		case 122449722:
+		case -1784502482: /* GXTEntry: "Mule - Painted" */
+		case 122449722: /* GXTEntry: "Mule" */
 			return "BREED_MULE";
-		case 294243421:
+		case 294243421: /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */
 			return "BREED_DUTCHWARMBLOOD";
-		case -997197050:
+		case -997197050: /* GXTEntry: "Thoroughbred - Seal Brown Coat" */
 			return "BREED_THOROUGHBRED";
-		case -235714362:
+		case -235714362: /* GXTEntry: "Appaloosa - Blanket Coat" */
 			return "BREED_TENNESSEEWALKER";
-		case -1678164:
+		case -1678164: /* GXTEntry: "Nokota - Blue Roan Coat" */
 			return "BREED_NOKOTA";
-		case -977833913:
+		case -977833913: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
 			return "BREED_APPALOOSA";
-		case 1589164943:
+		case 1589164943: /* GXTEntry: "Thoroughbred - Silver Bay Coat" */
 			return "BREED_THOROUGHBRED";
-		case -1087523615:
+		case -1087523615: /* GXTEntry: "American Paint - Splashed White Coat" */
 			return "BREED_AMERICANPAINT";
-		case -496814209:
+		case -496814209: /* GXTEntry: "Ardennes - Chestnut Coat" */
 			return "BREED_ARDENNES";
-		case 2109055751:
+		case 2109055751: /* GXTEntry: "Appaloosa - Grey Snowcap Spotted Coat" */
 			return "BREED_APPALOOSA";
-		case -776673611:
+		case -776673611: /* GXTEntry: "Nokota - Grey Roan Sabino Coat" */
 			return "BREED_NOKOTA";
-		case 1764402253:
+		case 1764402253: /* GXTEntry: "Arabian - White Albino Coat" */
 			return "BREED_ARABIAN";
-		case -1417310078:
+		case -1417310078: /* GXTEntry: "Turkoman - Silver Coat" */
 			return "BREED_TURKOMAN";
-		case 1096273915:
+		case 1096273915: /* GXTEntry: "American Paint - Grey Overo Coat" */
 			return "BREED_AMERICANPAINT";
-		case 772751081:
+		case 772751081: /* GXTEntry: "Hungarian Halfbred - Silver Dark Bay Coat" */
 			return "BREED_HUNGARIANHALFBRED";
-		case -1140435723:
+		case -1140435723: /* GXTEntry: "Nokota - Smoky Black Coat" */
 			return "BREED_NOKOTA";
-		case 2002524329:
+		case 2002524329: /* GXTEntry: "Tennessee Walker - Flaxen Roan" */
 			return "BREED_TENNESSEEWALKER";
-		case 1151530184:
+		case 1151530184: /* GXTEntry: "Mustang - Light Palomino Coat" */
 			return "BREED_MUSTANG";
-		case -1266525037:
+		case -1266525037: /* GXTEntry: "Missouri Fox Trotter - Black Coat" */
 			return "BREED_MISSOURIFOXTROTTER";
-		case -2018137175:
+		case -2018137175: /* GXTEntry: "Turkoman - Gold Dapple Coat" */
 			return "BREED_TURKOMAN";
-		case -574151692:
+		case -574151692: /* GXTEntry: "Mustang - Dark Bay Roan Coat" */
 			return "BREED_MUSTANG";
-		case 649786380:
+		case 649786380: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
 			return "BREED_AMERICANSTANDARDBRED";
-		case -1921328920:
+		case -1921328920: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
 			return "BREED_APPALOOSA";
-		case -837607790:
+		case -837607790: /* GXTEntry: "Kentucky Saddler - Sabino Coat" */
 			return "BREED_KENTUCKYSADDLE";
-		case 370424594:
+		case 370424594: /* GXTEntry: "Appaloosa - Few Spot Buckskin Coat" */
 			return "BREED_APPALOOSA";
-		case -364764277:
+		case -364764277: /* GXTEntry: "Scrawny Nag" */
 			return "BREED_MANGY_BACKUP";
 		default:
 			break;
@@ -1803,7 +1803,7 @@ int func_30()
 
 int func_31()
 {
-	return -364764277;
+	return -364764277 /* GXTEntry: "Scrawny Nag" */;
 }
 
 void func_32(var uParam0, int iParam1, int iParam2)
@@ -1832,7 +1832,7 @@ void func_32(var uParam0, int iParam1, int iParam2)
 		return;
 	}
 	uParam0->f_20 = ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(uParam0->f_3);
-	if (!VEHICLE::_0xEA44E97849E9F3DD(uParam0->f_20))
+	if (!VEHICLE::_IS_DRAFT_VEHICLE(uParam0->f_20))
 	{
 		uParam0->f_31++;
 		return;
@@ -1855,7 +1855,7 @@ void func_32(var uParam0, int iParam1, int iParam2)
 		iVar1 = 0;
 		while (iVar1 < iVar3)
 		{
-			iVar5 = VEHICLE::_0xA8BA0BAE0173457B(uParam0->f_20, iVar1);
+			iVar5 = VEHICLE::_GET_PED_IN_DRAFT_SEAT(uParam0->f_20, iVar1);
 			if (!ENTITY::DOES_ENTITY_EXIST(iVar5))
 			{
 			}
@@ -1898,9 +1898,9 @@ void func_33(var uParam0, int iParam1)
 	*uParam0 = iParam1;
 }
 
-int func_34(var uParam0, var uParam1)
+int func_34(int iParam0, var uParam1)
 {
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return 0;
 	}
@@ -1908,7 +1908,7 @@ int func_34(var uParam0, var uParam1)
 	*uParam1 = 0;
 	while (*uParam1 < 10)
 	{
-		if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_17173.f_54.f_61.f_41[*uParam1 /*54*/], uParam0))
+		if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_17173.f_54.f_61.f_41[*uParam1 /*54*/], iParam0))
 		{
 		}
 		else
@@ -1920,7 +1920,7 @@ int func_34(var uParam0, var uParam1)
 	return 0;
 }
 
-int func_35(var uParam0)
+int func_35(int iParam0)
 {
 	struct<4> Var0;
 	struct<10> Var4;
@@ -1928,7 +1928,7 @@ int func_35(var uParam0)
 	int iVar19;
 
 	Var0 = { func_94() };
-	if (INVENTORY::_0x4C543D5DFCD2DAFD(uParam0, &Var0))
+	if (INVENTORY::_0x4C543D5DFCD2DAFD(iParam0, &Var0))
 	{
 		return 0;
 	}
@@ -1936,14 +1936,14 @@ int func_35(var uParam0)
 	iVar19 = 0;
 	while (iVar19 < 10)
 	{
-		if (INVENTORY::_0x4C543D5DFCD2DAFD(Global_17173.f_54.f_61.f_41[iVar19 /*54*/], uParam0))
+		if (INVENTORY::_0x4C543D5DFCD2DAFD(Global_17173.f_54.f_61.f_41[iVar19 /*54*/], iParam0))
 		{
 			bVar18 = true;
 		}
 		else if (INVENTORY::_0x4C543D5DFCD2DAFD(Global_17173.f_54.f_61.f_41[iVar19 /*54*/], &Var0))
 		{
 			func_95(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]);
-			*(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]) = { *uParam0 };
+			*(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]) = { *iParam0 };
 			bVar18 = true;
 		}
 		else
@@ -1954,7 +1954,7 @@ int func_35(var uParam0)
 			else
 			{
 				func_95(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]);
-				*(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]) = { *uParam0 };
+				*(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]) = { *iParam0 };
 				bVar18 = true;
 			}
 			else
@@ -1988,7 +1988,7 @@ void func_36(bool bParam0, bool bParam1)
 	}
 }
 
-int func_37(var uParam0, int iParam1, bool bParam2, bool bParam3)
+int func_37(int iParam0, int iParam1, bool bParam2, bool bParam3)
 {
 	if (iParam1 == -1)
 	{
@@ -1999,13 +1999,13 @@ int func_37(var uParam0, int iParam1, bool bParam2, bool bParam3)
 	{
 		case 0:
 		case 1:
-			if (!func_100(uParam0, Global_1903928, &(Global_1903928->f_71), bParam3))
+			if (!func_100(iParam0, Global_1903928, &(Global_1903928->f_71), bParam3))
 			{
 				return 0;
 			}
 			break;
 		case 2:
-			if (!func_101(uParam0, Global_1903928, &(Global_1903928->f_100), bParam3))
+			if (!func_101(iParam0, Global_1903928, &(Global_1903928->f_100), bParam3))
 			{
 				return 0;
 			}
@@ -2018,42 +2018,42 @@ int func_37(var uParam0, int iParam1, bool bParam2, bool bParam3)
 	return 1;
 }
 
-struct<8> func_38(var uParam0, bool bParam1)
+struct<8> func_38(int iParam0, bool bParam1)
 {
 	struct<8> Var0;
 	struct<8> Var8;
 	int iVar16;
 	char* sVar17;
 
-	Var0 = { uParam0->f_12 };
+	Var0 = { iParam0->f_12 };
 	if (bParam1)
 	{
-		if (func_103(uParam0, &Var8))
+		if (func_103(iParam0, &Var8))
 		{
 			Var0 = { Var8 };
 		}
 	}
 	if (MISC::COMPARE_STRINGS(&Var0, func_27(), false, -1) == 0)
 	{
-		StringCopy(&Var0, MISC::_CREATE_VAR_STRING(2, func_29(uParam0->f_22)), 64);
+		StringCopy(&Var0, MISC::_CREATE_VAR_STRING(2, func_29(iParam0->f_22)), 64);
 	}
 	if (HUD::GET_LENGTH_OF_LITERAL_STRING(&Var0) == 0)
 	{
-		if (uParam0->f_22 != 0)
+		if (iParam0->f_22 != 0)
 		{
-			StringCopy(&Var0, MISC::_CREATE_VAR_STRING(2, func_104(uParam0->f_22)), 64);
+			StringCopy(&Var0, MISC::_CREATE_VAR_STRING(2, func_104(iParam0->f_22)), 64);
 		}
 		else
 		{
 			StringCopy(&Var0, "", 64);
 		}
 	}
-	if (func_105(uParam0->f_4, 0))
+	if (func_105(iParam0->f_4, 0))
 	{
-		iVar16 = func_106(uParam0->f_4);
+		iVar16 = func_106(iParam0->f_4);
 		if (STREAMING::IS_MODEL_VALID(iVar16) && STREAMING::IS_MODEL_A_VEHICLE(iVar16))
 		{
-			sVar17 = MISC::_CREATE_VAR_STRING(0, func_107(uParam0->f_4));
+			sVar17 = MISC::_CREATE_VAR_STRING(0, func_107(iParam0->f_4));
 			Var0 = { func_108(sVar17) };
 		}
 	}
@@ -2116,9 +2116,9 @@ int func_42(int iParam0)
 	return iVar0;
 }
 
-void func_43(int iParam0, int iParam1)
+void func_43(int iParam0, bool bParam1)
 {
-	func_109(iParam0, iParam1);
+	func_109(iParam0, bParam1);
 }
 
 int func_44(var uParam0, var uParam1)
@@ -2455,13 +2455,13 @@ void func_57(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 void func_58(var uParam0, int* iParam1)
 {
 	bool bVar0;
-	var uVar1;
+	bool bVar1;
 
 	bVar0 = PLAYER::IS_PLAYER_DEAD(uParam0->f_19);
-	uVar1 = func_121(NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(iParam1), 1, 0);
+	bVar1 = func_121(NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(iParam1), 1, 0);
 	if (func_6(uParam0, 2))
 	{
-		if (uVar1 || bVar0)
+		if (bVar1 || bVar0)
 		{
 			if (!func_24(&(Global_1268935->f_11.f_498)))
 			{
@@ -2491,20 +2491,20 @@ void func_58(var uParam0, int* iParam1)
 			}
 			if (ENTITY::_0x808077647856DE62(uParam0->f_18, 33))
 			{
-				ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, 0);
+				ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, false);
 			}
 		}
 	}
-	else if (uVar1 || bVar0)
+	else if (bVar1 || bVar0)
 	{
 		if (!ENTITY::_0x808077647856DE62(uParam0->f_18, 33))
 		{
-			ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, 1);
+			ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, true);
 		}
 	}
 	else if (ENTITY::_0x808077647856DE62(uParam0->f_18, 33))
 	{
-		ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, 0);
+		ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, false);
 	}
 }
 
@@ -2657,7 +2657,7 @@ void func_61(var uParam0)
 	}
 	if (MAP::DOES_BLIP_EXIST(uParam0->f_16))
 	{
-		if (PAD::IS_CONTROL_PRESSED(0, 613911080))
+		if (PAD::IS_CONTROL_PRESSED(0, joaat("INPUT_WHISTLE")))
 		{
 			uParam0->f_13 = Global_1273882->f_21 + 15;
 			MAP::_0xB059D7BD3D78C16F(uParam0->f_16, -272772079);
@@ -2922,47 +2922,47 @@ void func_64(var uParam0, int iParam1)
 	{
 		if (!PLAYER::_0xEA8F168A76A0B9BC(iVar0, uParam0->f_18, 33, 1))
 		{
-			PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 33, 1, 1);
+			PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 33, 1, true);
 			PED::SET_PED_CONFIG_FLAG(uParam0->f_18, 26, true);
 		}
 	}
 	else if (PLAYER::_0xEA8F168A76A0B9BC(iVar0, uParam0->f_18, 33, 1))
 	{
-		PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 33, 1, 0);
+		PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 33, 1, false);
 		PED::SET_PED_CONFIG_FLAG(uParam0->f_18, 26, false);
 	}
 	if (&Global_1903928->f_485[61])
 	{
 		if (!PLAYER::_0xEA8F168A76A0B9BC(iVar0, uParam0->f_18, 45, 1))
 		{
-			PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 45, 1, 1);
+			PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 45, 1, true);
 		}
 	}
 	else if (PLAYER::_0xEA8F168A76A0B9BC(iVar0, uParam0->f_18, 45, 1))
 	{
-		PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 45, 1, 0);
+		PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 45, 1, false);
 	}
 	if (&Global_1903928->f_485[62])
 	{
 		if (!PLAYER::_0xEA8F168A76A0B9BC(iVar0, uParam0->f_18, 46, 1))
 		{
-			PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 46, 1, 1);
+			PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 46, 1, true);
 		}
 	}
 	else if (PLAYER::_0xEA8F168A76A0B9BC(iVar0, uParam0->f_18, 46, 1))
 	{
-		PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 46, 1, 0);
+		PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 46, 1, false);
 	}
 	if (&Global_1903928->f_485[63])
 	{
 		if (!PLAYER::_0xEA8F168A76A0B9BC(iVar0, uParam0->f_18, 28, 1))
 		{
-			PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 28, 1, 1);
+			PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 28, 1, true);
 		}
 	}
 	else if (PLAYER::_0xEA8F168A76A0B9BC(iVar0, uParam0->f_18, 28, 1))
 	{
-		PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 28, 1, 0);
+		PLAYER::_0xA3DB37EDF9A74635(iVar0, uParam0->f_18, 28, 1, false);
 	}
 }
 
@@ -2971,7 +2971,7 @@ void func_65(var uParam0, int* iParam1, int iParam2)
 	bool bVar0;
 	int iVar1;
 	int iVar2;
-	var uVar3;
+	int iVar3;
 	int iVar4;
 
 	if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_3))
@@ -3002,16 +3002,16 @@ void func_65(var uParam0, int* iParam1, int iParam2)
 	}
 	AITRANSPORT::_0xBA8818212633500A(uParam0->f_3, 0, iVar2);
 	iVar4 = 0;
-	AITRANSPORT::_0xE195C5A82156321D(uParam0->f_3, &uVar3);
+	AITRANSPORT::_0xE195C5A82156321D(uParam0->f_3, &iVar3);
 	if (Global_1268274[iParam2 /*20*/] & 1 != 0)
 	{
-		if (!func_133(uVar3, 1))
+		if (!func_133(iVar3, 1))
 		{
 			iVar4 = 1;
 		}
 		if (Global_1268274[iParam2 /*20*/] & 32 != 0)
 		{
-			if (!func_133(uVar3, 32))
+			if (!func_133(iVar3, 32))
 			{
 				iVar4 |= 32;
 			}
@@ -3021,63 +3021,63 @@ void func_65(var uParam0, int* iParam1, int iParam2)
 	{
 		if (Global_1268274[iParam2 /*20*/] & 2 != 0)
 		{
-			if (!func_133(uVar3, 2))
+			if (!func_133(iVar3, 2))
 			{
 				iVar4 |= 2;
 			}
 		}
 		if (Global_1268274[iParam2 /*20*/] & 4 != 0)
 		{
-			if (!func_133(uVar3, 4))
+			if (!func_133(iVar3, 4))
 			{
 				iVar4 |= 4;
 			}
 		}
 		if (Global_1268274[iParam2 /*20*/] & 8 != 0)
 		{
-			if (!func_133(uVar3, 8))
+			if (!func_133(iVar3, 8))
 			{
 				iVar4 |= 8;
 			}
 		}
 		if (Global_1268274[iParam2 /*20*/] & 64 != 0)
 		{
-			if (!func_133(uVar3, 64))
+			if (!func_133(iVar3, 64))
 			{
 				iVar4 |= 64;
 			}
 		}
 		if (Global_1268274[iParam2 /*20*/] & 128 != 0)
 		{
-			if (!func_133(uVar3, 128))
+			if (!func_133(iVar3, 128))
 			{
 				iVar4 |= 128;
 			}
 		}
 		if (Global_1268274[iParam2 /*20*/] & 256 != 0)
 		{
-			if (!func_133(uVar3, 256))
+			if (!func_133(iVar3, 256))
 			{
 				iVar4 |= 256;
 			}
 		}
 		if (Global_1268274[iParam2 /*20*/] & 16 != 0)
 		{
-			if (!func_133(uVar3, 16))
+			if (!func_133(iVar3, 16))
 			{
 				iVar4 = 16;
 			}
 		}
 		if (Global_1268274[iParam2 /*20*/] & 512 != 0)
 		{
-			if (!func_133(uVar3, 512))
+			if (!func_133(iVar3, 512))
 			{
 				iVar4 |= 512;
 			}
 		}
-		if (func_133(uVar3, 1024))
+		if (func_133(iVar3, 1024))
 		{
-			if (!func_133(uVar3, 1024))
+			if (!func_133(iVar3, 1024))
 			{
 				iVar4 |= 1024;
 			}
@@ -3152,7 +3152,7 @@ void func_66(var uParam0, int* iParam1, int iParam2)
 void func_67(var uParam0, int iParam1)
 {
 	int iVar0;
-	int iVar1;
+	bool bVar1;
 	int iVar2;
 
 	if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_3))
@@ -3178,21 +3178,21 @@ void func_67(var uParam0, int iParam1)
 	iVar0 = 0;
 	while (iVar0 < 3)
 	{
-		iVar1 = PED::_0x0CEEB6F4780B1F2F(uParam0->f_18, iVar0);
+		bVar1 = PED::_0x0CEEB6F4780B1F2F(uParam0->f_18, iVar0);
 		if (iParam1 == PLAYER::PLAYER_ID())
 		{
-			if (&((*Global_1268274)[iParam1 /*20*/])->f_16[iVar0] != iVar1)
+			if (&((*Global_1268274)[iParam1 /*20*/])->f_16[iVar0] != bVar1)
 			{
-				((*Global_1268274)[iParam1 /*20*/])->f_16[iVar0] = iVar1;
+				((*Global_1268274)[iParam1 /*20*/])->f_16[iVar0] = bVar1;
 			}
 		}
-		else if (&((*Global_1268274)[iParam1 /*20*/])->f_16[iVar0] != iVar1)
+		else if (&((*Global_1268274)[iParam1 /*20*/])->f_16[iVar0] != bVar1)
 		{
 			if (&((*Global_1268274)[iParam1 /*20*/])->f_16[iVar0] == 0)
 			{
-				PED::_0x627F7F3A0C4C51FF(uParam0->f_18, iVar1);
+				PED::_0x627F7F3A0C4C51FF(uParam0->f_18, bVar1);
 			}
-			else if (iVar1 == 0)
+			else if (bVar1 == 0)
 			{
 				PED::_0xA73F50E8796150D5(uParam0->f_18, &(((*Global_1268274)[iParam1 /*20*/])->f_16[iVar0]));
 			}
@@ -3519,7 +3519,7 @@ float func_75(var uParam0)
 	return (func_143() - uParam0->f_1);
 }
 
-void func_76(var uParam0, var uParam1, int iParam2)
+void func_76(var uParam0, int* iParam1, int iParam2)
 {
 	struct<6> Var0;
 
@@ -3533,7 +3533,7 @@ void func_76(var uParam0, var uParam1, int iParam2)
 	{
 		return;
 	}
-	if (!func_144(uParam0, uParam1, Var0.f_4, Var0.f_5))
+	if (!func_144(uParam0, iParam1, Var0.f_4, Var0.f_5))
 	{
 		return;
 	}
@@ -3745,14 +3745,14 @@ void func_80(int iParam0, bool bParam1, bool bParam2)
 	}
 }
 
-int func_81(var uParam0, int iParam1, bool bParam2)
+int func_81(int iParam0, int iParam1, bool bParam2)
 {
-	func_155(uParam0, 2, bParam2);
-	if (!func_156(uParam0))
+	func_155(iParam0, 2, bParam2);
+	if (!func_156(iParam0))
 	{
 		return 0;
 	}
-	func_157(uParam0, iParam1, bParam2);
+	func_157(iParam0, iParam1, bParam2);
 	return 1;
 }
 
@@ -3773,9 +3773,9 @@ void func_82()
 	}
 }
 
-int func_83(var uParam0, int iParam1, bool bParam2)
+int func_83(int iParam0, bool bParam1, bool bParam2)
 {
-	return INVENTORY::_0x033EE4B89F3AC545(func_158(bParam2), uParam0, iParam1);
+	return INVENTORY::_0x033EE4B89F3AC545(func_158(bParam2), iParam0, bParam1);
 }
 
 void func_84(int iParam0, bool bParam1)
@@ -3836,10 +3836,10 @@ int func_87(int iParam0)
 		{
 			return 1;
 		}
-		iVar0 = UNK_0x9A87FF82FD35822F(iParam0);
+		iVar0 = ENTITY::_0x9A87FF82FD35822F(iParam0);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
-			if (UNK_0x37056BA2A3FEFB31(iVar0, iParam0))
+			if (PED::_0x37056BA2A3FEFB31(iVar0, iParam0))
 			{
 				return 1;
 			}
@@ -3889,8 +3889,8 @@ void func_89(int iParam0, int iParam1, bool bParam2)
 	}
 	if (!bVar0)
 	{
-		ENTITY::_0x18FF3110CF47115D(iParam0, 2, 0);
-		ENTITY::_0x18FF3110CF47115D(iParam0, 27, 1);
+		ENTITY::_0x18FF3110CF47115D(iParam0, 2, false);
+		ENTITY::_0x18FF3110CF47115D(iParam0, 27, true);
 	}
 	if (!NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iParam0))
 	{
@@ -4008,9 +4008,9 @@ void func_95(var uParam0)
 	uParam0->f_51 = { 0f, 0f, 0f };
 }
 
-bool func_96(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, bool bParam5, bool bParam6, int iParam7)
+bool func_96(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, bool bParam5, bool bParam6, int iParam7)
 {
-	return func_161(&uParam0, uParam4, bParam5, bParam6, iParam7);
+	return func_161(&uParam0, iParam4, bParam5, bParam6, iParam7);
 }
 
 void func_97()
@@ -4052,45 +4052,45 @@ void func_99(var uParam0)
 	}
 }
 
-int func_100(var uParam0, var uParam1, var uParam2, bool bParam3)
+int func_100(int iParam0, var uParam1, int iParam2, bool bParam3)
 {
-	if (!func_163(uParam0, uParam2, bParam3))
+	if (!func_163(iParam0, iParam2, bParam3))
 	{
 		return 0;
 	}
-	if (!func_164(uParam1, uParam2))
+	if (!func_164(uParam1, iParam2))
 	{
 		return 0;
 	}
 	return 1;
 }
 
-int func_101(var uParam0, var uParam1, var uParam2, bool bParam3)
+int func_101(int iParam0, var uParam1, int iParam2, bool bParam3)
 {
-	if (!func_165(uParam0, uParam2, bParam3))
+	if (!func_165(iParam0, iParam2, bParam3))
 	{
 		return 0;
 	}
-	if (!func_166(uParam1, uParam2))
+	if (!func_166(uParam1, iParam2))
 	{
 		return 0;
 	}
 	return 1;
 }
 
-void func_102(var uParam0)
+void func_102(int iParam0)
 {
 	int iVar0;
 	var uVar1;
 	var uVar2;
 	int iVar3;
 
-	if (!func_167(uParam0->f_10))
+	if (!func_167(iParam0->f_10))
 	{
 		return;
 	}
-	func_168(uParam0, 8);
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	func_168(iParam0, 8);
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return;
 	}
@@ -4099,29 +4099,29 @@ void func_102(var uParam0)
 	while (iVar3 < 13)
 	{
 		uVar1 = func_169(iVar3, 1);
-		if (!INVENTORY::_0x6862E4D93F64CF01(iVar0, uParam0, uVar1, &uVar2))
+		if (!INVENTORY::_0x6862E4D93F64CF01(iVar0, iParam0, uVar1, &uVar2))
 		{
 		}
 		else
 		{
-			uParam0->f_28[iVar3] = uVar2;
+			iParam0->f_28[iVar3] = uVar2;
 		}
 		iVar3++;
 	}
 }
 
-int func_103(var uParam0, var uParam1)
+int func_103(int iParam0, var uParam1)
 {
 	int iVar0;
 
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return 0;
 	}
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906[iVar0 /*24*/], uParam0))
+		if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906[iVar0 /*24*/], iParam0))
 		{
 		}
 		else
@@ -4148,40 +4148,40 @@ var func_104(int iParam0)
 	return func_171(&cVar0);
 }
 
-int func_105(int iParam0, int iParam1)
+bool func_105(bool bParam0, int iParam1)
 {
-	if (iParam0 == 0)
+	if (bParam0 == 0)
 	{
-		return 0;
+		return false;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
 }
 
-int func_106(int iParam0)
+int func_106(bool bParam0)
 {
 	struct<5> Var0;
 
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(iParam0, &Var0))
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &Var0))
 	{
 		return 0;
 	}
 	return Var0.f_4;
 }
 
-int func_107(int iParam0)
+bool func_107(bool bParam0)
 {
 	int iVar0;
 
-	if (!func_105(iParam0, 0))
+	if (!func_105(bParam0, 0))
 	{
-		return 0;
+		return false;
 	}
-	iVar0 = func_172(iParam0);
+	iVar0 = func_172(bParam0);
 	if (iVar0 != 0)
 	{
 		return iVar0;
 	}
-	return iParam0;
+	return bParam0;
 }
 
 struct<8> func_108(char* sParam0)
@@ -4192,7 +4192,7 @@ struct<8> func_108(char* sParam0)
 	return cVar0;
 }
 
-void func_109(int iParam0, int iParam1)
+void func_109(int iParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -4205,13 +4205,13 @@ void func_109(int iParam0, int iParam1)
 		return;
 	}
 	iVar0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam0);
-	PED::_0x6569F31A01B4C097(iVar0, 0, iParam1);
-	PED::_0x6569F31A01B4C097(iVar0, 1, iParam1);
+	PED::_0x6569F31A01B4C097(iVar0, 0, bParam1);
+	PED::_0x6569F31A01B4C097(iVar0, 1, bParam1);
 }
 
-bool func_110(var uParam0, int iParam1)
+bool func_110(int iParam0, int iParam1)
 {
-	return func_173(&(uParam0->f_20), iParam1);
+	return func_173(&(iParam0->f_20), iParam1);
 }
 
 void func_111()
@@ -4242,7 +4242,7 @@ void func_112(int iParam0, var uParam1, int iParam2)
 	int iVar18;
 	int iVar19;
 	int iVar20;
-	int iVar21;
+	bool bVar21;
 	var uVar22;
 
 	Global_1268935->f_906.f_241[iParam2] = 0;
@@ -4303,7 +4303,7 @@ void func_112(int iParam0, var uParam1, int iParam2)
 			PED::_0xBC6DF00D7A4A6819(iVar9, uVar10, uVar11, uVar12, uVar13, uVar14, uVar15, uVar16, uVar17);
 			iVar18++;
 		}
-		PED::_0xCC8CA3E88256E58F(iVar9, 0, 1, 1, 1, 0);
+		PED::_0xCC8CA3E88256E58F(iVar9, 0, 1, 1, 1, false);
 		if (uParam1->f_2 == 2)
 		{
 			ENTITY::_SET_ENTITY_HEALTH(iVar9, 0, 0);
@@ -4319,7 +4319,7 @@ void func_112(int iParam0, var uParam1, int iParam2)
 		}
 		if (uParam1->f_92)
 		{
-			PED::_0x6569F31A01B4C097(iVar9, 0, 0);
+			PED::_0x6569F31A01B4C097(iVar9, 0, false);
 			ENTITY::_0x6BCF5F3D8FFE988D(iVar9, 1);
 		}
 		iVar19 = func_175(iParam2);
@@ -4332,12 +4332,12 @@ void func_112(int iParam0, var uParam1, int iParam2)
 			FIRE::START_ENTITY_FIRE(iVar9, 0f, -1, 8);
 		}
 		iVar20 = func_178(iVar9);
-		iVar21 = func_179(iVar20);
-		if (func_105(iVar21, 0))
+		bVar21 = func_179(iVar20);
+		if (func_105(bVar21, 0))
 		{
-			if (iVar21 != uParam1->f_1)
+			if (bVar21 != uParam1->f_1)
 			{
-				uParam1->f_1 = iVar21;
+				uParam1->f_1 = bVar21;
 			}
 		}
 		uVar22 = func_176(iParam0, iVar9);
@@ -4369,9 +4369,9 @@ void func_115(int iParam0)
 	Global_1939221->f_10451 = (Global_1939221->f_10451 || iParam0);
 }
 
-int func_116(var uParam0, int iParam1, int iParam2, bool bParam3)
+int func_116(int iParam0, int iParam1, int iParam2, bool bParam3)
 {
-	if (!func_37(uParam0, iParam1, 1, 1))
+	if (!func_37(iParam0, iParam1, 1, 1))
 	{
 		return 0;
 	}
@@ -4433,9 +4433,9 @@ int func_117(var uParam0, int iParam1)
 	return 1;
 }
 
-bool func_118(var uParam0)
+bool func_118(int iParam0)
 {
-	return (Global_17173.f_54.f_61.f_582 && uParam0) != 0;
+	return (Global_17173.f_54.f_61.f_582 && iParam0) != 0;
 }
 
 int func_119(var uParam0)
@@ -4458,7 +4458,7 @@ int func_119(var uParam0)
 	return 1;
 }
 
-int func_120(int iParam0, bool bParam1, var uParam2, int iParam3, int iParam4, int iParam5, int iParam6, bool bParam7)
+int func_120(int iParam0, bool bParam1, var uParam2, int iParam3, int iParam4, int iParam5, bool bParam6, bool bParam7)
 {
 	bool bVar0;
 	bool bVar1;
@@ -4565,7 +4565,7 @@ int func_120(int iParam0, bool bParam1, var uParam2, int iParam3, int iParam4, i
 			return 0;
 		}
 	}
-	if (iParam6 || (((*Global_262996)[&Global_1273882 /*70*/])->f_1.f_21.f_2 == -504335712 && func_192(Global_524288->f_39792)))
+	if (bParam6 || (((*Global_262996)[&Global_1273882 /*70*/])->f_1.f_21.f_2 == -504335712 && func_192(Global_524288->f_39792)))
 	{
 		bVar7 = true;
 	}
@@ -4729,14 +4729,14 @@ int func_122(int iParam0, bool bParam1, int iParam2)
 bool func_123(var uParam0)
 {
 	int iVar0;
-	var uVar1;
+	int iVar1;
 	struct<4> Var2;
 	bool bVar6;
 
 	bVar6 = true;
 	if (!ENTITY::_0x808077647856DE62(uParam0->f_18, 33))
 	{
-		ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, 1);
+		ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, true);
 	}
 	if (!ENTITY::_0x188736456D1DEDE6(uParam0->f_18, PLAYER::PLAYER_PED_ID()))
 	{
@@ -4745,8 +4745,8 @@ bool func_123(var uParam0)
 	iVar0 = 0;
 	while (iVar0 < 3)
 	{
-		uVar1 = func_86(iVar0);
-		if (PED::_0x608BC6A6AACD5036(&Var2, uParam0->f_18, uVar1, 0))
+		iVar1 = func_86(iVar0);
+		if (PED::_0x608BC6A6AACD5036(&Var2, uParam0->f_18, iVar1, 0))
 		{
 			if (!ENTITY::_0x188736456D1DEDE6(Var2.f_3, PLAYER::PLAYER_PED_ID()))
 			{
@@ -4926,9 +4926,9 @@ int func_132(int iParam0)
 	return (Global_1102098->f_34[iVar0 /*11*/])->f_6;
 }
 
-bool func_133(var uParam0, int iParam1)
+bool func_133(int iParam0, int iParam1)
 {
-	return (uParam0 && iParam1) != 0;
+	return (iParam0 && iParam1) != 0;
 }
 
 int func_134(var uParam0, int* iParam1, int iParam2)
@@ -5068,13 +5068,13 @@ float func_136(vector3 vParam0, vector3 vParam3)
 	return BUILTIN::VDIST(vParam0, vParam3);
 }
 
-float func_137(int iParam0, int iParam1, bool bParam2, int iParam3)
+float func_137(int iParam0, int iParam1, bool bParam2, bool bParam3)
 {
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) && iParam3)
+	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) && bParam3)
 	{
 		return 0f;
 	}
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam1) && iParam3)
+	if (!ENTITY::DOES_ENTITY_EXIST(iParam1) && bParam3)
 	{
 		return 0f;
 	}
@@ -5094,10 +5094,10 @@ void func_139(var uParam0)
 {
 	PED::SET_PED_CONFIG_FLAG(uParam0->f_18, 136, true);
 	PED::SET_PED_CAN_BE_TARGETTED(uParam0->f_18, false);
-	ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, 1);
-	PED::_0x6569F31A01B4C097(uParam0->f_18, 4, 0);
-	PED::_0x6569F31A01B4C097(uParam0->f_18, 0, 0);
-	PED::_0x6569F31A01B4C097(uParam0->f_18, 1, 0);
+	ENTITY::_0x18FF3110CF47115D(uParam0->f_18, 33, true);
+	PED::_0x6569F31A01B4C097(uParam0->f_18, 4, false);
+	PED::_0x6569F31A01B4C097(uParam0->f_18, 0, false);
+	PED::_0x6569F31A01B4C097(uParam0->f_18, 1, false);
 }
 
 void func_140(var uParam0, int iParam1)
@@ -5153,7 +5153,7 @@ float func_143()
 	return (BUILTIN::TO_FLOAT(MISC::GET_GAME_TIMER()) / 1000f);
 }
 
-bool func_144(var uParam0, var uParam1, int iParam2, int iParam3)
+bool func_144(var uParam0, int* iParam1, int iParam2, int iParam3)
 {
 	switch (iParam3)
 	{
@@ -5190,7 +5190,7 @@ bool func_144(var uParam0, var uParam1, int iParam2, int iParam3)
 		default:
 			break;
 	}
-	return uParam1->f_11 == iParam3;
+	return iParam1->f_11 == iParam3;
 }
 
 void func_145(int iParam0)
@@ -5201,7 +5201,7 @@ void func_145(int iParam0)
 	((*Global_1268274)[iVar0 /*20*/])->f_1 = (((*Global_1268274)[iVar0 /*20*/])->f_1 || iParam0);
 }
 
-void func_146(var uParam0, var uParam1, int iParam2)
+void func_146(var uParam0, var uParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
@@ -5229,7 +5229,7 @@ void func_146(var uParam0, var uParam1, int iParam2)
 			TASK::TASK_DISMOUNT_ANIMAL(iVar1, 0, 0, 0, 0, 0);
 			func_84(16, 1);
 		}
-		if (iParam2 && iVar1 == iVar2)
+		if (bParam2 && iVar1 == iVar2)
 		{
 			TASK::TASK_DISMOUNT_ANIMAL(iVar1, 0, 0, 0, 0, 0);
 		}
@@ -5372,35 +5372,35 @@ int func_154()
 	return 0;
 }
 
-void func_155(var uParam0, int iParam1, bool bParam2)
+void func_155(int iParam0, int iParam1, bool bParam2)
 {
 	if (bParam2)
 	{
-		func_168(uParam0, iParam1);
+		func_168(iParam0, iParam1);
 	}
 	else
 	{
-		func_185(uParam0, iParam1);
+		func_185(iParam0, iParam1);
 	}
 }
 
-int func_156(var uParam0)
+int func_156(int iParam0)
 {
-	if (!func_184(uParam0))
+	if (!func_184(iParam0))
 	{
 		return 0;
 	}
-	switch (uParam0->f_10)
+	switch (iParam0->f_10)
 	{
 		case 0:
 		case 1:
-			if (!func_214(uParam0))
+			if (!func_214(iParam0))
 			{
 				return 0;
 			}
 			break;
 		case 2:
-			if (!func_215(uParam0))
+			if (!func_215(iParam0))
 			{
 				return 0;
 			}
@@ -5409,11 +5409,11 @@ int func_156(var uParam0)
 	return 1;
 }
 
-void func_157(var uParam0, int iParam1, bool bParam2)
+void func_157(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 	}
 	if (iParam1 == 0 || iParam1 == 1)
@@ -5421,7 +5421,7 @@ void func_157(var uParam0, int iParam1, bool bParam2)
 		iVar0 = 0;
 		while (iVar0 < 10)
 		{
-			if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906[iVar0 /*24*/], uParam0))
+			if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906[iVar0 /*24*/], iParam0))
 			{
 			}
 			else
@@ -5439,7 +5439,7 @@ void func_157(var uParam0, int iParam1, bool bParam2)
 		iVar0 = 0;
 		while (iVar0 < 8)
 		{
-			if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906.f_271[iVar0 /*24*/], uParam0))
+			if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906.f_271[iVar0 /*24*/], iParam0))
 			{
 			}
 			else
@@ -5480,17 +5480,17 @@ void func_159(int iParam0, bool bParam1)
 	Global_1268935->f_11.f_465[iParam0] = func_219(func_218(iParam0), 10000, 0, 0, 0, 1);
 }
 
-int func_160(var uParam0, int iParam1, bool bParam2)
+int func_160(int iParam0, int iParam1, bool bParam2)
 {
 	if (bParam2)
 	{
-		if (func_220(uParam0, iParam1))
+		if (func_220(iParam0, iParam1))
 		{
 			return 1;
 		}
 		return 0;
 	}
-	func_37(uParam0, iParam1, 0, 0);
+	func_37(iParam0, iParam1, 0, 0);
 	if (func_110(Global_1903928, 2))
 	{
 		return 1;
@@ -5498,9 +5498,9 @@ int func_160(var uParam0, int iParam1, bool bParam2)
 	return 0;
 }
 
-int func_161(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
+int func_161(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 {
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return 0;
 	}
@@ -5508,7 +5508,7 @@ int func_161(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
 	{
 		iParam4 = func_158(bParam2);
 	}
-	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, uParam0, uParam1, !bParam3))
+	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, iParam0, iParam1, !bParam3))
 	{
 		return 0;
 	}
@@ -5523,29 +5523,29 @@ void func_162(var uParam0)
 	uParam0->f_3 = 0;
 }
 
-int func_163(var uParam0, var uParam1, bool bParam2)
+int func_163(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return 0;
 	}
 	iVar0 = func_158(bParam2);
-	if (!INVENTORY::_0x025A1B1FB03FBF61(iVar0, uParam0, uParam1, 29, 1))
+	if (!INVENTORY::_0x025A1B1FB03FBF61(iVar0, iParam0, iParam1, 29, 1))
 	{
 		return 0;
 	}
 	return 1;
 }
 
-int func_164(var uParam0, var uParam1)
+int func_164(var uParam0, int iParam1)
 {
-	*uParam0 = { *uParam1 };
-	uParam0->f_4 = uParam1->f_4;
-	uParam0->f_5 = { uParam1->f_5 };
-	uParam0->f_9 = uParam1->f_9;
-	uParam0->f_11 = uParam1->f_14;
+	*uParam0 = { *iParam1 };
+	uParam0->f_4 = iParam1->f_4;
+	uParam0->f_5 = { iParam1->f_5 };
+	uParam0->f_9 = iParam1->f_9;
+	uParam0->f_11 = iParam1->f_14;
 	if (!STREAMING::IS_MODEL_VALID(uParam0->f_11))
 	{
 		return 0;
@@ -5555,43 +5555,43 @@ int func_164(var uParam0, var uParam1)
 	{
 		return 0;
 	}
-	uParam0->f_12 = { uParam1->f_16 };
-	uParam0->f_27 = uParam1->f_25;
-	uParam0->f_20 = uParam1->f_24;
+	uParam0->f_12 = { iParam1->f_16 };
+	uParam0->f_27 = iParam1->f_25;
+	uParam0->f_20 = iParam1->f_24;
 	uParam0->f_10 = 0;
 	return 1;
 }
 
-int func_165(var uParam0, var uParam1, bool bParam2)
+int func_165(int iParam0, int iParam1, bool bParam2)
 {
 	int iVar0;
 
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return 0;
 	}
 	iVar0 = func_158(bParam2);
-	if (!INVENTORY::_0x025A1B1FB03FBF61(iVar0, uParam0, uParam1, 24, 1))
+	if (!INVENTORY::_0x025A1B1FB03FBF61(iVar0, iParam0, iParam1, 24, 1))
 	{
 		return 0;
 	}
 	return 1;
 }
 
-int func_166(var uParam0, var uParam1)
+int func_166(var uParam0, int iParam1)
 {
-	*uParam0 = { *uParam1 };
-	uParam0->f_4 = uParam1->f_4;
-	uParam0->f_5 = { uParam1->f_5 };
-	uParam0->f_9 = uParam1->f_9;
-	uParam0->f_11 = uParam1->f_14;
+	*uParam0 = { *iParam1 };
+	uParam0->f_4 = iParam1->f_4;
+	uParam0->f_5 = { iParam1->f_5 };
+	uParam0->f_9 = iParam1->f_9;
+	uParam0->f_11 = iParam1->f_14;
 	if (!STREAMING::IS_MODEL_VALID(uParam0->f_11))
 	{
 		return 0;
 	}
 	uParam0->f_22 = 0;
-	uParam0->f_12 = { uParam1->f_15 };
-	uParam0->f_20 = uParam1->f_23;
+	uParam0->f_12 = { iParam1->f_15 };
+	uParam0->f_20 = iParam1->f_23;
 	uParam0->f_10 = 2;
 	return 1;
 }
@@ -5614,9 +5614,9 @@ int func_167(int iParam0)
 	return uVar0;
 }
 
-void func_168(var uParam0, int iParam1)
+void func_168(int iParam0, int iParam1)
 {
-	func_221(&(uParam0->f_20), iParam1);
+	func_221(&(iParam0->f_20), iParam1);
 }
 
 int func_169(int iParam0, int iParam1)
@@ -5666,165 +5666,165 @@ char* func_170(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -974145463:
+		case -974145463: /* GXTEntry: "American Paint - Overo Coat" */
 			return "BREED_AMERICANPAINT_OVERO";
-		case 1432602132:
+		case 1432602132: /* GXTEntry: "American Paint - Tobiano Coat" */
 			return "BREED_AMERICANPAINT_TOBIANO";
-		case 92296905:
+		case 92296905: /* GXTEntry: "American Paint - Splashed White Coat" */
 			return "BREED_AMERICANPAINT_SPLASHEDWHITE";
-		case -842044823:
+		case -842044823: /* GXTEntry: "American Paint - Grey Overo Coat" */
 			return "BREED_AMERICANPAINT_GREYOVERO";
-		case 1371398552:
+		case 1371398552: /* GXTEntry: "American Standardbred - Black Coat" */
 			return "BREED_AMERICANSTANDARDBRED_BLACK";
-		case -745453539:
+		case -745453539: /* GXTEntry: "American Standardbred - Buckskin Coat" */
 			return "BREED_AMERICANSTANDARDBRED_BUCKSKIN";
-		case 1583029039:
+		case 1583029039: /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */
 			return "BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE";
-		case -783061276:
+		case -783061276: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
 			return "BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN";
-		case -1322521536:
+		case -1322521536: /* GXTEntry: "Andalusian - Dark Bay Coat" */
 			return "BREED_ANDALUSIAN_DARKBAY";
-		case 1100711204:
+		case 1100711204: /* GXTEntry: "Andalusian - Perlino Coat" */
 			return "BREED_ANDALUSIAN_PERLINO";
-		case 728055838:
+		case 728055838: /* GXTEntry: "Andalusian - Rose Grey Coat" */
 			return "BREED_ANDALUSIAN_ROSEGRAY";
-		case -1782334639:
+		case -1782334639: /* GXTEntry: "Appaloosa - Blanket Coat" */
 			return "BREED_APPALOOSA_BLANKET";
-		case -1181052732:
+		case -1181052732: /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */
 			return "BREED_APPALOOSA_LEOPARDBLANKET";
-		case -179102320:
+		case -179102320: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
 			return "BREED_APPALOOSA_BROWNLEOPARD";
-		case -1266863668:
+		case -1266863668: /* GXTEntry: "Appaloosa - Leopard Coat" */
 			return "BREED_APPALOOSA_LEOPARD";
-		case -2078767648:
+		case -2078767648: /* GXTEntry: "Arabian - Black Coat" */
 			return "BREED_ARABIAN_BLACK";
-		case -852553462:
+		case -852553462: /* GXTEntry: "Arabian - Rose Grey Bay Coat" */
 			return "BREED_ARABIAN_ROSEGREYBAY";
-		case -80004868:
+		case -80004868: /* GXTEntry: "Arabian - White Coat" */
 			return "BREED_ARABIAN_WHITE";
-		case 1813208211:
+		case 1813208211: /* GXTEntry: "Ardennes - Bay Roan Coat" */
 			return "BREED_ARDENNES_BAYROAN";
-		case 836323303:
+		case 836323303: /* GXTEntry: "Ardennes - Strawberry Roan Coat" */
 			return "BREED_ARDENNES_STRAWBERRYROAN";
-		case 153881023:
+		case 153881023: /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */
 			return "BREED_ARDENNES_IRONGREYROAN";
-		case -1256798240:
+		case -1256798240: /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */
 			return "BREED_BELGIAN_BLONDCHESTNUT";
 		case 2118089359:
 			return "BREED_BELGIAN_MEALYCHESTNUT";
-		case -1537586382:
+		case -1537586382: /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */
 			return "BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN";
-		case 1440692746:
+		case 1440692746: /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */
 			return "BREED_DUTCHWARMBLOOD_SEALBROWN";
-		case 697143532:
+		case 697143532: /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */
 			return "BREED_DUTCHWARMBLOOD_CHOCOLATEROAN";
-		case 281128160:
+		case 281128160: /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */
 			return "BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT";
-		case 1854519167:
+		case 1854519167: /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */
 			return "BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO";
-		case -1376299681:
+		case -1376299681: /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */
 			return "BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY";
 		case -1955947684:
 			return "BREED_KENTUCKYSADDLE_BLACK1";
-		case 1361788230:
+		case 1361788230: /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */
 			return "BREED_KENTUCKYSADDLE_CHESTNUTPINTO";
-		case 1974379573:
+		case 1974379573: /* GXTEntry: "Kentucky Saddler - Grey Coat" */
 			return "BREED_KENTUCKYSADDLE_GREY";
-		case 545109431:
+		case 545109431: /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */
 			return "BREED_KENTUCKYSADDLE_SILVERBAY";
-		case 1275638003:
+		case 1275638003: /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */
 			return "BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE";
-		case 2083573823:
+		case 2083573823: /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */
 			return "BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO";
-		case 1235275977:
+		case 1235275977: /* GXTEntry: "Morgan - Bay Coat" */
 			return "BREED_MORGAN_BAY";
-		case 892601357:
+		case 892601357: /* GXTEntry: "Morgan - Bay Roan Coat" */
 			return "BREED_MORGAN_BAYROAN";
-		case 1224695367:
+		case 1224695367: /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */
 			return "BREED_MORGAN_FLAXENCHESTNUT";
-		case 648301150:
+		case 648301150: /* GXTEntry: "Morgan - Palomino Coat" */
 			return "BREED_MORGAN_PALOMINO";
-		case -1597490733:
+		case -1597490733: /* GXTEntry: "Mustang - Grullo Dun Coat" */
 			return "BREED_MUSTANG_GRULLODUN";
-		case 2000205872:
+		case 2000205872: /* GXTEntry: "Mustang - Wild Bay Coat" */
 			return "BREED_MUSTANG_WILDBAY";
-		case -1428527735:
+		case -1428527735: /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */
 			return "BREED_MUSTANG_TIGERSTRIPEDBAY";
-		case 170010697:
+		case 170010697: /* GXTEntry: "Nokota - Blue Roan Coat" */
 			return "BREED_NOKOTA_BLUEROAN";
-		case -742726637:
+		case -742726637: /* GXTEntry: "Nokota - White Roan Coat" */
 			return "BREED_NOKOTA_WHITEROAN";
-		case -1714171692:
+		case -1714171692: /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */
 			return "BREED_NOKOTA_REVERSEDAPPLEROAN";
-		case -103101636:
+		case -103101636: /* GXTEntry: "Shire - Dark Bay Coat" */
 			return "BREED_SHIRE_DARKBAY";
-		case -1999094324:
+		case -1999094324: /* GXTEntry: "Shire - Light Grey Coat" */
 			return "BREED_SHIRE_LIGHTGREY";
-		case 1724200240:
+		case 1724200240: /* GXTEntry: "Suffolk Punch - Sorrel Coat" */
 			return "BREED_SUFFOLKPUNCH_SORREL";
-		case 237935328:
+		case 237935328: /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */
 			return "BREED_SUFFOLKPUNCH_REDCHESTNUT";
-		case 120848852:
+		case 120848852: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
 			return "BREED_TENNESSEEWALKER_BLACKRABICANO";
-		case -868094182:
+		case -868094182: /* GXTEntry: "Tennessee Walker - Chestnut Coat" */
 			return "BREED_TENNESSEEWALKER_CHESTNUT";
-		case -887362763:
+		case -887362763: /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */
 			return "BREED_TENNESSEEWALKER_DAPPLEBAY";
-		case -847714194:
+		case -847714194: /* GXTEntry: "Tennessee Walker - Red Roan Coat" */
 			return "BREED_TENNESSEEWALKER_REDROAN";
-		case 1756765331:
+		case 1756765331: /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */
 			return "BREED_TENNESSEEWALKER_FLAXENROAN";
-		case -813071670:
+		case -813071670: /* GXTEntry: "Thoroughbred - Blood Bay Coat" */
 			return "BREED_THOROUGHBRED_BLOODBAY";
-		case -1900569233:
+		case -1900569233: /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */
 			return "BREED_THOROUGHBRED_DAPPLEGREY";
-		case 1688250187:
+		case 1688250187: /* GXTEntry: "Thoroughbred - Brindle Coat" */
 			return "BREED_THOROUGHBRED_BRINDLE";
-		case -1262715164:
+		case -1262715164: /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */
 			return "BREED_THOROUGHBRED_BLACKCHESTNUT";
-		case 2010625508:
+		case 2010625508: /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */
 			return "BREED_THOROUGHBRED_REVERSEDAPPLEBLACK";
-		case -136225010:
+		case -136225010: /* GXTEntry: "Turkoman - Dark Bay Coat" */
 			return "BREED_TURKOMAN_DARKBAY";
-		case -225011104:
+		case -225011104: /* GXTEntry: "Turkoman - Gold Coat" */
 			return "BREED_TURKOMAN_GOLD";
-		case -1882436593:
+		case -1882436593: /* GXTEntry: "Turkoman - Silver Coat" */
 			return "BREED_TURKOMAN_SILVER";
-		case -757978903:
+		case -757978903: /* GXTEntry: "Breton - Red Roan Coat" */
 			return "BREED_BRETON_REDROAN";
-		case 1909854428:
+		case 1909854428: /* GXTEntry: "Breton - Sorrel Coat" */
 			return "BREED_BRETON_SORREL";
-		case 1592694494:
+		case 1592694494: /* GXTEntry: "Breton - Grullo Dun Coat" */
 			return "BREED_BRETON_GRULLODUN";
-		case 981469777:
+		case 981469777: /* GXTEntry: "Breton - Seal Brown Coat" */
 			return "BREED_BRETON_SEALBROWN";
-		case 1064693514:
+		case 1064693514: /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */
 			return "BREED_BRETON_MEALYDAPPLEBAY";
-		case -1365665739:
+		case -1365665739: /* GXTEntry: "Breton - Steel Grey Coat" */
 			return "BREED_BRETON_STEELGREY";
-		case 1577022605:
+		case 1577022605: /* GXTEntry: "Criollo - Blue Roan Overo Coat" */
 			return "BREED_CRIOLLO_BLUEROANOVERO";
-		case 381495209:
+		case 381495209: /* GXTEntry: "Criollo - Dun Coat" */
 			return "BREED_CRIOLLO_DUN";
-		case 3032834:
+		case 3032834: /* GXTEntry: "Criollo - Bay Brindle Coat" */
 			return "BREED_CRIOLLO_BAYBRINDLE";
-		case -1722101672:
+		case -1722101672: /* GXTEntry: "Criollo - Sorrel Overo Coat" */
 			return "BREED_CRIOLLO_SORRELOVERO";
-		case -189605757:
+		case -189605757: /* GXTEntry: "Criollo - Bay Frame Overo Coat" */
 			return "BREED_CRIOLLO_BAYFRAMEOVERO";
-		case 863391233:
+		case 863391233: /* GXTEntry: "Criollo - Marble Sabino Coat" */
 			return "BREED_CRIOLLO_MARBLESABINO";
-		case 885568364:
+		case 885568364: /* GXTEntry: "Kladruber - Black Coat" */
 			return "BREED_KLADRUBER_BLACK";
-		case -1540355548:
+		case -1540355548: /* GXTEntry: "Kladruber - White Coat" */
 			return "BREED_KLADRUBER_WHITE";
-		case -601560591:
+		case -601560591: /* GXTEntry: "Kladruber - Cremello Coat" */
 			return "BREED_KLADRUBER_CREMELLO";
-		case -370362766:
+		case -370362766: /* GXTEntry: "Kladruber - Grey Coat" */
 			return "BREED_KLADRUBER_GREY";
-		case -1698261864:
+		case -1698261864: /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */
 			return "BREED_KLADRUBER_DAPPLEROSEGREY";
-		case -670301166:
+		case -670301166: /* GXTEntry: "Kladruber - Silver Coat" */
 			return "BREED_KLADRUBER_SILVER";
 		case -302057902:
 			return "BREED_NORFOLKROADSTER_BLACK";
@@ -5838,79 +5838,79 @@ char* func_170(int iParam0)
 			return "BREED_NORFOLKROADSTER_DAPPLEDBUCKSKIN";
 		case 1589592948:
 			return "BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR";
-		case -1331210307:
+		case -1331210307: /* GXTEntry: "Donkey" */
 			return "BREED_DONKEY";
-		case 122449722:
+		case 122449722: /* GXTEntry: "Mule" */
 			return "BREED_MULE";
-		case -1784502482:
+		case -1784502482: /* GXTEntry: "Mule - Painted" */
 			return "BREED_MULE_PAINTED";
 		case -1943445834:
 			return "BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN";
-		case -635244104:
+		case -635244104: /* GXTEntry: "Appaloosa - Black Snowflake" */
 			return "BREED_APPALOOSA_BLACKSNOWFLAKE";
-		case -1427377767:
+		case -1427377767: /* GXTEntry: "Arabian - Grey Coat" */
 			return "BREED_ARABIAN_GREY";
-		case -2055655009:
+		case -2055655009: /* GXTEntry: "Arabian - Red Chestnut Coat" */
 			return "BREED_ARABIAN_REDCHESTNUT";
-		case -1293672675:
+		case -1293672675: /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */
 			return "BREED_HUNGARIANHALFBRED_LIVERCHESTNUT";
-		case -1179079660:
+		case -1179079660: /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */
 			return "BREED_MISSOURIFOXTROTTER_SABLECHAMPAGNE";
-		case 805526368:
+		case 805526368: /* GXTEntry: "Mustang - Golden Dun Coat" */
 			return "BREED_MUSTANG_GOLDENDUN";
-		case 1342496140:
+		case 1342496140: /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */
 			return "BREED_TENNESSEEWALKER_MAHOGANYBAY";
-		case -126555855:
+		case -126555855: /* GXTEntry: "Shire - Raven Black Coat" */
 			return "BREED_SHIRE_RAVENBLACK";
-		case 294243421:
+		case 294243421: /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */
 			return "BREED_BUELL_WARVETS";
-		case -997197050:
+		case -997197050: /* GXTEntry: "Thoroughbred - Seal Brown Coat" */
 			return "BREED_JOHN_ENDLESSSUMMER";
-		case -235714362:
+		case -235714362: /* GXTEntry: "Appaloosa - Blanket Coat" */
 			return "BREED_MURFREEBROOD_MANGE_01";
-		case -1678164:
+		case -1678164: /* GXTEntry: "Nokota - Blue Roan Coat" */
 			return "BREED_MURFREEBROOD_MANGE_02";
-		case -977833913:
+		case -977833913: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
 			return "BREED_MURFREEBROOD_MANGE_03";
-		case 1589164943:
+		case 1589164943: /* GXTEntry: "Thoroughbred - Silver Bay Coat" */
 			return "BREED_WINTER02_01";
-		case -1087523615:
+		case -1087523615: /* GXTEntry: "American Paint - Splashed White Coat" */
 			return "BREED_EAGLEFLIES";
-		case -496814209:
+		case -496814209: /* GXTEntry: "Ardennes - Chestnut Coat" */
 			return "BREED_GANG_BILL";
-		case 2109055751:
+		case 2109055751: /* GXTEntry: "Appaloosa - Grey Snowcap Spotted Coat" */
 			return "BREED_GANG_CHARLES";
-		case -776673611:
+		case -776673611: /* GXTEntry: "Nokota - Grey Roan Sabino Coat" */
 			return "BREED_GANG_CHARLES_ENDLESSSUMMER";
-		case 1764402253:
+		case 1764402253: /* GXTEntry: "Arabian - White Albino Coat" */
 			return "BREED_GANG_DUTCH";
-		case -1417310078:
+		case -1417310078: /* GXTEntry: "Turkoman - Silver Coat" */
 			return "BREED_GANG_HOSEA";
-		case 1096273915:
+		case 1096273915: /* GXTEntry: "American Paint - Grey Overo Coat" */
 			return "BREED_GANG_JAVIER";
-		case 772751081:
+		case 772751081: /* GXTEntry: "Hungarian Halfbred - Silver Dark Bay Coat" */
 			return "BREED_GANG_JOHN";
-		case -1140435723:
+		case -1140435723: /* GXTEntry: "Nokota - Smoky Black Coat" */
 			return "BREED_GANG_KAREN";
-		case 2002524329:
+		case 2002524329: /* GXTEntry: "Tennessee Walker - Flaxen Roan" */
 			return "BREED_GANG_KIERAN";
-		case 1151530184:
+		case 1151530184: /* GXTEntry: "Mustang - Light Palomino Coat" */
 			return "BREED_GANG_LENNY";
-		case -1266525037:
+		case -1266525037: /* GXTEntry: "Missouri Fox Trotter - Black Coat" */
 			return "BREED_GANG_MICAH";
-		case -2018137175:
+		case -2018137175: /* GXTEntry: "Turkoman - Gold Dapple Coat" */
 			return "BREED_GANG_SADIE";
-		case -574151692:
+		case -574151692: /* GXTEntry: "Mustang - Dark Bay Roan Coat" */
 			return "BREED_GANG_SADIE_ENDLESSSUMMER";
-		case 649786380:
+		case 649786380: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
 			return "BREED_GANG_SEAN";
-		case -1921328920:
+		case -1921328920: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
 			return "BREED_GANG_TRELAWNEY";
-		case -837607790:
+		case -837607790: /* GXTEntry: "Kentucky Saddler - Sabino Coat" */
 			return "BREED_GANG_UNCLE";
-		case 370424594:
+		case 370424594: /* GXTEntry: "Appaloosa - Few Spot Buckskin Coat" */
 			return "BREED_GANG_UNCLE_ENDLESSSUMMER";
-		case -364764277:
+		case -364764277: /* GXTEntry: "Scrawny Nag" */
 			return "BREED_MANGY_BACKUP";
 		default:
 			break;
@@ -5923,29 +5923,29 @@ var func_171(char[4] cParam0)
 	return cParam0;
 }
 
-int func_172(int iParam0)
+int func_172(bool bParam0)
 {
-	switch (iParam0)
+	switch (bParam0)
 	{
-		case -59585102:
+		case -59585102: /* GXTEntry: "Tonics Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_REMEDIES_MP");
-		case 1018123892:
+		case 1018123892: /* GXTEntry: "Ingredients Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_INGREDIENTS_MP");
-		case 982182330:
+		case 982182330: /* GXTEntry: "Materials Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_MATERIALS_MP");
-		case -1406390556:
+		case -1406390556: /* GXTEntry: "Valuables Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_VALUABLES_MP");
-		case -1455768246:
+		case -1455768246: /* GXTEntry: "Kit Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_KIT_MP");
-		case -921879912:
+		case -921879912: /* GXTEntry: "Provisions Satchel" */
 			return MISC::GET_HASH_KEY("KIT_POUCH_PROVISIONS_MP");
 	}
 	return 0;
 }
 
-bool func_173(var uParam0, var uParam1)
+bool func_173(var uParam0, int iParam1)
 {
-	return func_133(*uParam0, uParam1);
+	return func_133(*uParam0, iParam1);
 }
 
 void func_174(int iParam0)
@@ -5970,7 +5970,7 @@ int func_175(int iParam0)
 int func_176(int iParam0, int iParam1)
 {
 	int iVar0;
-	int iVar1;
+	bool bVar1;
 	var uVar2;
 
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
@@ -5982,8 +5982,8 @@ int func_176(int iParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = INVENTORY::_0x13D234A2A3F66E63(iParam0);
-	iVar1 = func_179(iParam1);
-	uVar2 = func_223(iVar0, iVar1, 1);
+	bVar1 = func_179(iParam1);
+	uVar2 = func_223(iVar0, bVar1, 1);
 	return uVar2;
 }
 
@@ -6005,27 +6005,27 @@ int func_178(int iParam0)
 	return iParam0;
 }
 
-int func_179(int iParam0)
+bool func_179(int iParam0)
 {
-	int iVar0;
+	bool bVar0;
 
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
-		return 0;
+		return false;
 	}
 	if (ENTITY::_0x9A100F1CF4546629(iParam0) || ENTITY::_0xC346A546612C49A9(iParam0))
 	{
-		iVar0 = func_225(&iParam0);
-		if (!func_105(iVar0, 0))
+		bVar0 = func_225(&iParam0);
+		if (!func_105(bVar0, 0))
 		{
-			iVar0 = func_226(iParam0);
+			bVar0 = func_226(iParam0);
 		}
 	}
 	else
 	{
-		iVar0 = func_226(iParam0);
+		bVar0 = func_226(iParam0);
 	}
-	return iVar0;
+	return bVar0;
 }
 
 bool func_180()
@@ -6067,22 +6067,22 @@ int func_183(int iParam0)
 	return 0;
 }
 
-int func_184(var uParam0)
+int func_184(int iParam0)
 {
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return 0;
 	}
-	if (uParam0->f_10 == -1)
+	if (iParam0->f_10 == -1)
 	{
 		return 0;
 	}
 	return 1;
 }
 
-void func_185(var uParam0, int iParam1)
+void func_185(int iParam0, int iParam1)
 {
-	func_227(&(uParam0->f_20), iParam1);
+	func_227(&(iParam0->f_20), iParam1);
 }
 
 void func_186()
@@ -6137,7 +6137,7 @@ bool func_192(int iParam0)
 	return ((iParam0 == -1759663922 || iParam0 == -318976023) || iParam0 == 772881414);
 }
 
-var func_193(bool bParam0, var uParam1, var uParam2)
+float func_193(bool bParam0, var uParam1, var uParam2)
 {
 	if (bParam0)
 	{
@@ -7114,19 +7114,19 @@ int func_213(int iParam0)
 	return -1;
 }
 
-int func_214(var uParam0)
+int func_214(int iParam0)
 {
 	func_236(&(Global_1903928->f_42));
-	if (!func_96(*uParam0, &(Global_1903928->f_42), 1, 0, -1))
+	if (!func_96(*iParam0, &(Global_1903928->f_42), 1, 0, -1))
 	{
 		return 0;
 	}
-	Global_1903928->f_42.f_14 = uParam0->f_11;
-	Global_1903928->f_42.f_15 = uParam0->f_22;
-	Global_1903928->f_42.f_16 = { uParam0->f_12 };
-	Global_1903928->f_42.f_25 = uParam0->f_27;
-	Global_1903928->f_42.f_24 = uParam0->f_20;
-	func_237(uParam0, &(Global_1903928->f_42.f_24));
+	Global_1903928->f_42.f_14 = iParam0->f_11;
+	Global_1903928->f_42.f_15 = iParam0->f_22;
+	Global_1903928->f_42.f_16 = { iParam0->f_12 };
+	Global_1903928->f_42.f_25 = iParam0->f_27;
+	Global_1903928->f_42.f_24 = iParam0->f_20;
+	func_237(iParam0, &(Global_1903928->f_42.f_24));
 	if (!func_238(&(Global_1903928->f_42), 0, 1))
 	{
 		return 0;
@@ -7134,18 +7134,18 @@ int func_214(var uParam0)
 	return 1;
 }
 
-int func_215(var uParam0)
+int func_215(int iParam0)
 {
 	struct<24> Var0;
 
 	Var0.f_9 = -1591664384;
-	if (!func_96(*uParam0, &Var0, 0, 0, -1))
+	if (!func_96(*iParam0, &Var0, 0, 0, -1))
 	{
 		return 0;
 	}
-	Var0.f_14 = uParam0->f_11;
-	Var0.f_15 = { uParam0->f_12 };
-	func_237(uParam0, &(Var0.f_23));
+	Var0.f_14 = iParam0->f_11;
+	Var0.f_15 = { iParam0->f_12 };
+	func_237(iParam0, &(Var0.f_23));
 	return func_239(&Var0, 0, 0);
 }
 
@@ -7231,11 +7231,11 @@ char* func_218(int iParam0)
 	return "";
 }
 
-var func_219(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
+int func_219(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
-	var uVar15;
+	int iVar15;
 
 	Var0 = -2;
 	Var0 = iParam1;
@@ -7243,15 +7243,15 @@ var func_219(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = uParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, iParam5);
-	return uVar15;
+	iVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	return iVar15;
 }
 
-int func_220(var uParam0, int iParam1)
+int func_220(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return 0;
 	}
@@ -7260,7 +7260,7 @@ int func_220(var uParam0, int iParam1)
 		iVar0 = 0;
 		while (iVar0 < 10)
 		{
-			if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906[iVar0 /*24*/], uParam0))
+			if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906[iVar0 /*24*/], iParam0))
 			{
 			}
 			else
@@ -7275,7 +7275,7 @@ int func_220(var uParam0, int iParam1)
 		iVar0 = 0;
 		while (iVar0 < 8)
 		{
-			if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906.f_271[iVar0 /*24*/], uParam0))
+			if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906.f_271[iVar0 /*24*/], iParam0))
 			{
 			}
 			else
@@ -7297,7 +7297,7 @@ void func_221(var uParam0, int iParam1)
 	func_241(uParam0, iParam1);
 }
 
-void func_222(int iParam0, var uParam1)
+void func_222(int iParam0, int iParam1)
 {
 	struct<6> Var0;
 	var uVar6;
@@ -7310,7 +7310,7 @@ void func_222(int iParam0, var uParam1)
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	Var0.f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 	Var0.f_4 = iParam0;
-	Var0.f_5 = uParam1;
+	Var0.f_5 = iParam1;
 	if (!NETWORK::_0x255A5EF65EDA9167(Var0.f_1))
 	{
 		return;
@@ -7338,18 +7338,18 @@ void func_222(int iParam0, var uParam1)
 	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, &Var0, 6, 0, &uVar6);
 }
 
-int func_223(int iParam0, int iParam1, int iParam2)
+int func_223(int iParam0, bool bParam1, bool bParam2)
 {
 	struct<5> Var0;
 	struct<4> Var5;
 
-	if (!func_105(iParam1, 0))
+	if (!func_105(bParam1, 0))
 	{
 		return 0;
 	}
 	Var0 = { func_242(iParam0) };
-	Var5 = { func_243(iParam0, iParam1, Var0, Var0.f_4) };
-	if (INVENTORY::_0xCB5D11F9508A928D(iParam0, &Var5, &Var0, iParam1, Var0.f_4, iParam2, 752097756))
+	Var5 = { func_243(iParam0, bParam1, Var0, Var0.f_4) };
+	if (INVENTORY::_0xCB5D11F9508A928D(iParam0, &Var5, &Var0, bParam1, Var0.f_4, bParam2, 752097756))
 	{
 		return 1;
 	}
@@ -7402,7 +7402,7 @@ void func_224(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	}
 	if (bVar0)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, 0);
+		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, false);
 	}
 }
 
@@ -7438,13 +7438,13 @@ int func_226(int iParam0)
 	return iVar0;
 }
 
-void func_227(var uParam0, var uParam1)
+void func_227(var uParam0, int iParam1)
 {
-	if (!func_173(uParam0, uParam1))
+	if (!func_173(uParam0, iParam1))
 	{
 		return;
 	}
-	func_248(uParam0, uParam1);
+	func_248(uParam0, iParam1);
 }
 
 void func_228(var uParam0)
@@ -7475,7 +7475,7 @@ void func_229(int iParam0)
 	struct<16> Var45;
 	struct<4> Var69;
 	struct<24> Var83;
-	int iVar107;
+	bool bVar107;
 	int iVar108;
 
 	if (iParam0 == 0)
@@ -7500,10 +7500,10 @@ void func_229(int iParam0)
 	Var16.f_9 = -1591664384;
 	Var45.f_9 = -1591664384;
 	Var69.f_9 = -1591664384;
-	iVar107 = 0;
-	while (iVar107 < iVar1)
+	bVar107 = false;
+	while (bVar107 < iVar1)
 	{
-		if (!INVENTORY::_0x82FA24C3D3FCD9B7(iVar0, iVar107, &Var69))
+		if (!INVENTORY::_0x82FA24C3D3FCD9B7(iVar0, bVar107, &Var69))
 		{
 		}
 		else if (!func_37(&Var69, iParam0, 0, 0))
@@ -7546,18 +7546,18 @@ void func_229(int iParam0)
 			Var83.f_7 = { Global_1903928->f_12 };
 			if (iVar108 == 0 || iVar108 == 1)
 			{
-				Var83.f_15 = { (Global_1268935->f_906[iVar107 /*24*/])->f_15 };
-				Var83.f_23 = (Global_1268935->f_906[iVar107 /*24*/])->f_23;
-				*(Global_1268935->f_906[iVar107 /*24*/]) = { Var83 };
+				Var83.f_15 = { (Global_1268935->f_906[bVar107 /*24*/])->f_15 };
+				Var83.f_23 = (Global_1268935->f_906[bVar107 /*24*/])->f_23;
+				*(Global_1268935->f_906[bVar107 /*24*/]) = { Var83 };
 			}
 			else if (iVar108 == 2)
 			{
-				Var83.f_15 = { (Global_1268935->f_906.f_271[iVar107 /*24*/])->f_15 };
-				Var83.f_23 = (Global_1268935->f_906.f_271[iVar107 /*24*/])->f_23;
-				*(Global_1268935->f_906.f_271[iVar107 /*24*/]) = { Var83 };
+				Var83.f_15 = { (Global_1268935->f_906.f_271[bVar107 /*24*/])->f_15 };
+				Var83.f_23 = (Global_1268935->f_906.f_271[bVar107 /*24*/])->f_23;
+				*(Global_1268935->f_906.f_271[bVar107 /*24*/]) = { Var83 };
 			}
 		}
-		iVar107++;
+		bVar107++;
 	}
 	func_253(iVar0);
 }
@@ -7895,33 +7895,33 @@ void func_236(var uParam0)
 	uParam0->f_28 = 0;
 }
 
-void func_237(var uParam0, var uParam1)
+void func_237(int iParam0, var uParam1)
 {
-	if (func_110(uParam0, 4))
+	if (func_110(iParam0, 4))
 	{
 		func_221(uParam1, 4);
 	}
-	if (func_110(uParam0, 2))
+	if (func_110(iParam0, 2))
 	{
 		func_221(uParam1, 2);
 	}
 }
 
-int func_238(var uParam0, bool bParam1, bool bParam2)
+int func_238(int iParam0, bool bParam1, bool bParam2)
 {
 	struct<28> Var0;
 
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return 0;
 	}
-	if (MISC::_0x375F5870A7B8BEC1(&(uParam0->f_16)))
+	if (MISC::_0x375F5870A7B8BEC1(&(iParam0->f_16)))
 	{
-		StringCopy(&(uParam0->f_16), func_27(), 64);
+		StringCopy(&(iParam0->f_16), func_27(), 64);
 	}
 	if (func_257(bParam2))
 	{
-		if (!INVENTORY::_0xD80A8854DB5CFBA5(func_158(bParam2), uParam0, uParam0, 29))
+		if (!INVENTORY::_0xD80A8854DB5CFBA5(func_158(bParam2), iParam0, iParam0, 29))
 		{
 			return 0;
 		}
@@ -7930,12 +7930,12 @@ int func_238(var uParam0, bool bParam1, bool bParam2)
 	{
 		Var0.f_9 = 1;
 		Var0.f_11 = -1591664384;
-		Var0 = { func_258(uParam0, 0) };
-		Var0.f_16 = { uParam0->f_16 };
-		Var0.f_25 = uParam0->f_27;
-		Var0.f_26 = uParam0->f_28;
-		Var0.f_24 = uParam0->f_25;
-		Var0.f_27 = uParam0->f_24;
+		Var0 = { func_258(iParam0, 0) };
+		Var0.f_16 = { iParam0->f_16 };
+		Var0.f_25 = iParam0->f_27;
+		Var0.f_26 = iParam0->f_28;
+		Var0.f_24 = iParam0->f_25;
+		Var0.f_27 = iParam0->f_24;
 		if (func_259(-1230526146, &Var0, bParam1) == -1)
 		{
 			return 0;
@@ -7944,17 +7944,17 @@ int func_238(var uParam0, bool bParam1, bool bParam2)
 	return 1;
 }
 
-int func_239(var uParam0, bool bParam1, bool bParam2)
+int func_239(int iParam0, bool bParam1, bool bParam2)
 {
 	struct<25> Var0;
 
-	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
+	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
 	{
 		return 0;
 	}
 	if (func_257(bParam2))
 	{
-		if (!INVENTORY::_0xD80A8854DB5CFBA5(func_158(bParam2), uParam0, uParam0, 24))
+		if (!INVENTORY::_0xD80A8854DB5CFBA5(func_158(bParam2), iParam0, iParam0, 24))
 		{
 			return 0;
 		}
@@ -7963,9 +7963,9 @@ int func_239(var uParam0, bool bParam1, bool bParam2)
 	{
 		Var0.f_9 = 1;
 		Var0.f_11 = -1591664384;
-		Var0 = { func_258(uParam0, 0) };
-		Var0.f_16 = { uParam0->f_15 };
-		Var0.f_24 = uParam0->f_23;
+		Var0 = { func_258(iParam0, 0) };
+		Var0.f_16 = { iParam0->f_15 };
+		Var0.f_24 = iParam0->f_23;
 		if (func_260(-1230526146, &Var0, bParam1) == -1)
 		{
 			return 0;
@@ -7983,29 +7983,29 @@ bool func_240(int iParam0)
 	return _NAMESPACE71::_0x59FA676177DBE4C9(iParam0) == 4;
 }
 
-void func_241(var uParam0, var uParam1)
+void func_241(var uParam0, int iParam1)
 {
-	func_261(uParam0, uParam1);
+	func_261(uParam0, iParam1);
 }
 
 struct<5> func_242(int iParam0)
 {
 	struct<5> Var0;
 
-	Var0 = { func_243(iParam0, 1328661203, func_94(), -1591664384) };
+	Var0 = { func_243(iParam0, joaat("CHARACTER"), func_94(), -1591664384) };
 	Var0.f_4 = 1084182731;
 	return Var0;
 }
 
-struct<4> func_243(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, var uParam5, int iParam6)
+struct<4> func_243(int iParam0, bool bParam1, var uParam2, int iParam3, var uParam4, var uParam5, bool bParam6)
 {
 	struct<4> Var0;
 
-	if (!func_105(iParam1, 0))
+	if (!func_105(bParam1, 0))
 	{
 		return Var0;
 	}
-	INVENTORY::_0x886DFD3E185C8A89(iParam0, &uParam2, iParam1, iParam6, &Var0);
+	INVENTORY::_0x886DFD3E185C8A89(iParam0, &uParam2, bParam1, bParam6, &Var0);
 	return Var0;
 }
 
@@ -8018,7 +8018,7 @@ void func_244(int iParam0, int iParam1, bool bParam2)
 	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, 0);
+		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, false);
 	}
 }
 
@@ -8034,7 +8034,7 @@ void func_245(int iParam0, bool bParam1)
 	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, 0);
+		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, false);
 	}
 }
 
@@ -8054,7 +8054,7 @@ int func_247(int iParam0)
 {
 	int iVar0;
 	int iVar1;
-	var uVar2;
+	int iVar2;
 	int iVar3;
 	int iVar4;
 	int iVar5;
@@ -8066,13 +8066,13 @@ int func_247(int iParam0)
 	}
 	iVar0 = iParam0;
 	iVar1 = PED::_0x88EFFED5FE8B0B4A(iVar0);
-	uVar2 = func_262(iVar0);
+	iVar2 = func_262(iVar0);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		return 0;
 	}
 	iVar3 = iVar1;
-	iVar4 = uVar2;
+	iVar4 = iVar2;
 	if (iVar4 < iVar3)
 	{
 		iVar1 = iVar4;
@@ -8096,20 +8096,20 @@ int func_247(int iParam0)
 	switch (iVar1)
 	{
 		case 2:
-			return -776155824;
+			return -776155824 /* GXTEntry: "Animal Carcass Perfect" */;
 		case 1:
-			return 1715058708;
+			return 1715058708 /* GXTEntry: "Animal Carcass Good Quality" */;
 		case 0:
-			return -45650221;
+			return -45650221 /* GXTEntry: "Animal Carcass Poor" */;
 		default:
 			break;
 	}
-	return -45650221;
+	return -45650221 /* GXTEntry: "Animal Carcass Poor" */;
 }
 
-void func_248(var uParam0, var uParam1)
+void func_248(var uParam0, int iParam1)
 {
-	func_264(uParam0, uParam1);
+	func_264(uParam0, iParam1);
 }
 
 void func_249(var uParam0)
@@ -8119,9 +8119,9 @@ void func_249(var uParam0)
 	uParam0->f_5 = -1;
 }
 
-int func_250(char* sParam0, var uParam1, var uParam2, int iParam3, bool bParam4)
+int func_250(char* sParam0, var uParam1, bool bParam2, int iParam3, bool bParam4)
 {
-	*uParam1 = INVENTORY::_0x80D78BDC9D88EF07(func_158(bParam4), sParam0, iParam3, uParam2);
+	*uParam1 = INVENTORY::_0x80D78BDC9D88EF07(func_158(bParam4), sParam0, iParam3, bParam2);
 	if (*uParam1 >= 0)
 	{
 		return 1;
@@ -8174,9 +8174,9 @@ struct<14> func_251(int iParam0, int iParam1, int iParam2, int iParam3, int iPar
 	return Var0;
 }
 
-int func_252(var uParam0, var uParam1, int iParam2, bool bParam3)
+int func_252(var uParam0, var uParam1, bool bParam2, bool bParam3)
 {
-	*uParam1 = INVENTORY::_0x640F890C3E5A3FFD(func_158(bParam3), uParam0, iParam2);
+	*uParam1 = INVENTORY::_0x640F890C3E5A3FFD(func_158(bParam3), uParam0, bParam2);
 	if (*uParam1 >= 0)
 	{
 		return 1;
@@ -8246,21 +8246,21 @@ int func_257(bool bParam0)
 	return INVENTORY::_0x0FBBFFC891A97C81(func_158(bParam0));
 }
 
-struct<16> func_258(var uParam0, bool bParam1)
+struct<16> func_258(int iParam0, bool bParam1)
 {
 	struct<16> Var0;
 
 	Var0.f_9 = 1;
 	Var0.f_11 = -1591664384;
-	Var0 = { *uParam0 };
-	Var0.f_4 = { uParam0->f_5 };
-	Var0.f_8 = uParam0->f_4;
-	Var0.f_9 = uParam0->f_11;
-	Var0.f_11 = uParam0->f_9;
-	Var0.f_10 = uParam0->f_10;
+	Var0 = { *iParam0 };
+	Var0.f_4 = { iParam0->f_5 };
+	Var0.f_8 = iParam0->f_4;
+	Var0.f_9 = iParam0->f_11;
+	Var0.f_11 = iParam0->f_9;
+	Var0.f_10 = iParam0->f_10;
 	if (bParam1)
 	{
-		Var0.f_15 = func_265(uParam0->f_4, -455129387);
+		Var0.f_15 = func_265(iParam0->f_4, joaat("DEFAULT"));
 		if (Var0.f_15 != 0)
 		{
 			Var0.f_4 = { func_94() };
@@ -8270,7 +8270,7 @@ struct<16> func_258(var uParam0, bool bParam1)
 	return Var0;
 }
 
-int func_259(int iParam0, var* uParam1, bool bParam2)
+int func_259(int iParam0, var uParam1, bool bParam2)
 {
 	int iVar0;
 
@@ -8297,7 +8297,7 @@ int func_259(int iParam0, var* uParam1, bool bParam2)
 	return -1;
 }
 
-int func_260(int iParam0, var* uParam1, bool bParam2)
+int func_260(int iParam0, var uParam1, bool bParam2)
 {
 	int iVar0;
 
@@ -8316,9 +8316,9 @@ int func_260(int iParam0, var* uParam1, bool bParam2)
 	return -1;
 }
 
-void func_261(var uParam0, var uParam1)
+void func_261(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
 int func_262(int iParam0)
@@ -8352,378 +8352,378 @@ int func_263(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 915880986:
-			return 1908704263;
-		case -1424697962:
-			return -2112217546;
-		case -1643384846:
-			return -1745255175;
-		case -847420802:
-			return -237368063;
-		case -662726703:
-			return 1598967299;
-		case 1760886130:
-			return -1809464109;
-		case -1243653490:
-			return -165201917;
-		case 1988467099:
-			return 815147738;
-		case -674590015:
-			return 1287583539;
-		case -1480423460:
-			return -2126985311;
-		case 924882045:
-			return -1268352491;
-		case 1415608202:
-			return -1940225526;
-		case -593311590:
-			return -212307068;
-		case 765085831:
-			return 355421032;
-		case 2094730711:
-			return 1657729714;
-		case -1310590179:
-			return 1350692346;
-		case 992366796:
-			return -257850294;
-		case -244657613:
-			return -918541014;
-		case -2026210939:
-			return -947573795;
-		case -1252472243:
-			return -2068302756;
-		case -980016656:
-			return 1650829985;
-		case -758005668:
-			return -1808044035;
-		case -2139551030:
-			return -1952647655;
-		case 1607144310:
-			return 1293221440;
-		case 80093385:
-			return -642946194;
-		case -867655342:
-			return 819214075;
-		case 991092621:
-			return -858652427;
-		case 871746664:
-			return 395625948;
-		case 1626949878:
-			return -2063800922;
-		case -1722483116:
-			return -2117103642;
-		case -1739474417:
-			return -1583694057;
-		case -161524199:
-			return -1550918713;
-		case 156979555:
-			return 836539658;
-		case 322141256:
-			return 773062352;
-		case 1310120320:
-			return 1306100270;
-		case -1228376431:
-			return -1063194668;
-		case 472142656:
-			return 337839068;
-		case -1837840093:
-			return -1426520714;
-		case 58634176:
-			return -1456429189;
-		case 1023080408:
-			return -2032809253;
-		case 1001171791:
-			return 781728005;
-		case 1210345318:
-			return 1202409779;
-		case 399553313:
-			return 1520877300;
-		case -1422869557:
-			return -1736624361;
-		case -1378812236:
-			return 719465997;
-		case 1011003885:
-			return -361486526;
-		case 651035143:
-			return -765274711;
-		case 2013022756:
-			return -887205673;
-		case -1186289527:
-			return -784020903;
-		case 877935135:
-			return -886117938;
-		case -39646495:
-			return -1416771220;
-		case 1582593525:
-			return 1648676911;
-		case -246542229:
-			return 2103833563;
-		case -529454751:
-			return -831636369;
-		case -46978629:
-			return -852290935;
-		case -1347000030:
-			return -1870415962;
-		case -505583391:
-			return -788684109;
-		case 1645887374:
-			return 1416435145;
-		case -1559227925:
-			return -1483088274;
-		case 1562528937:
-			return -791867098;
-		case -1471526136:
-			return -1689552552;
-		case -1440794801:
-			return -1850779170;
+		case 915880986: /* GXTEntry: "Good Alligator Carcass" */
+			return 1908704263 /* GXTEntry: "Good Skinned Alligator Carcass" */;
+		case -1424697962: /* GXTEntry: "Perfect Alligator Carcass" */
+			return -2112217546 /* GXTEntry: "Perfect Skinned Alligator Carcass" */;
+		case -1643384846: /* GXTEntry: "Poor Alligator Carcass" */
+			return -1745255175 /* GXTEntry: "Poor Skinned Alligator Carcass" */;
+		case -847420802: /* GXTEntry: "Good Armadillo Carcass" */
+			return -237368063 /* GXTEntry: "Good Skinned Armadillo Carcass" */;
+		case -662726703: /* GXTEntry: "Perfect Armadillo Carcass" */
+			return 1598967299 /* GXTEntry: "Perfect Skinned Armadillo Carcass" */;
+		case 1760886130: /* GXTEntry: "Poor Armadillo Carcass" */
+			return -1809464109 /* GXTEntry: "Poor Skinned Armadillo Carcass" */;
+		case -1243653490: /* GXTEntry: "Good Badger Carcass" */
+			return -165201917 /* GXTEntry: "Good Skinned Badger Carcass" */;
+		case 1988467099: /* GXTEntry: "Perfect Badger Carcass" */
+			return 815147738 /* GXTEntry: "Perfect Skinned Badger Carcass" */;
+		case -674590015: /* GXTEntry: "Poor Badger Carcass" */
+			return 1287583539 /* GXTEntry: "Poor Skinned Badger Carcass" */;
+		case -1480423460: /* GXTEntry: "Good Beaver Carcass" */
+			return -2126985311 /* GXTEntry: "Good Skinned Beaver Carcass" */;
+		case 924882045: /* GXTEntry: "Perfect Beaver Carcass" */
+			return -1268352491 /* GXTEntry: "Perfect Skinned Beaver Carcass" */;
+		case 1415608202: /* GXTEntry: "Poor Beaver Carcass" */
+			return -1940225526 /* GXTEntry: "Poor Skinned Beaver Carcass" */;
+		case -593311590: /* GXTEntry: "Good Bighorn Sheep Carcass" */
+			return -212307068 /* GXTEntry: "Good Skinned Bighorn Sheep Carcass" */;
+		case 765085831: /* GXTEntry: "Perfect Bighorn Sheep Carcass" */
+			return 355421032 /* GXTEntry: "Perfect Skinned Bighorn Sheep Carcass" */;
+		case 2094730711: /* GXTEntry: "Poor Bighorn Sheep Carcass" */
+			return 1657729714 /* GXTEntry: "Poor Skinned Bighorn Sheep Carcass" */;
+		case -1310590179: /* GXTEntry: "Good Buck Carcass" */
+			return 1350692346 /* GXTEntry: "Good Skinned Buck Carcass" */;
+		case 992366796: /* GXTEntry: "Perfect Buck Carcass" */
+			return -257850294 /* GXTEntry: "Perfect Skinned Buck Carcass" */;
+		case -244657613: /* GXTEntry: "Poor Buck Carcass" */
+			return -918541014 /* GXTEntry: "Poor Skinned Buck Carcass" */;
+		case -2026210939: /* GXTEntry: "Good California Condor Carcass" */
+			return -947573795 /* GXTEntry: "Good Plucked California Condor Carcass" */;
+		case -1252472243: /* GXTEntry: "Perfect California Condor Carcass" */
+			return -2068302756 /* GXTEntry: "Perfect Plucked California Condor Carcass" */;
+		case -980016656: /* GXTEntry: "Poor California Condor Carcass" */
+			return 1650829985 /* GXTEntry: "Poor Plucked California Condor Carcass" */;
+		case -758005668: /* GXTEntry: "Good Chicken Carcass" */
+			return -1808044035 /* GXTEntry: "Good Skinned Chicken Carcass" */;
+		case -2139551030: /* GXTEntry: "Perfect Chicken Carcass" */
+			return -1952647655 /* GXTEntry: "Perfect Skinned Chicken Carcass" */;
+		case 1607144310: /* GXTEntry: "Poor Chicken Carcass" */
+			return 1293221440 /* GXTEntry: "Poor Skinned Chicken Carcass" */;
+		case 80093385: /* GXTEntry: "Good Cormorant Carcass" */
+			return -642946194 /* GXTEntry: "Good Plucked Cormorant Carcass" */;
+		case -867655342: /* GXTEntry: "Perfect Cormorant Carcass" */
+			return 819214075 /* GXTEntry: "Perfect Plucked Cormorant Carcass" */;
+		case 991092621: /* GXTEntry: "Poor Cormorant Carcass" */
+			return -858652427 /* GXTEntry: "Poor Plucked Cormorant Carcass" */;
+		case 871746664: /* GXTEntry: "Good Cougar Carcass" */
+			return 395625948 /* GXTEntry: "Good Skinned Cougar Carcass" */;
+		case 1626949878: /* GXTEntry: "Perfect Cougar Carcass" */
+			return -2063800922 /* GXTEntry: "Perfect Skinned Cougar Carcass" */;
+		case -1722483116: /* GXTEntry: "Poor Cougar Carcass" */
+			return -2117103642 /* GXTEntry: "Poor Skinned Cougar Carcass" */;
+		case -1739474417: /* GXTEntry: "Good Coyote Carcass" */
+			return -1583694057 /* GXTEntry: "Good Skinned Coyote Carcass" */;
+		case -161524199: /* GXTEntry: "Perfect Coyote Carcass" */
+			return -1550918713 /* GXTEntry: "Perfect Skinned Coyote Carcass" */;
+		case 156979555: /* GXTEntry: "Poor Coyote Carcass" */
+			return 836539658 /* GXTEntry: "Poor Skinned Coyote Carcass" */;
+		case 322141256: /* GXTEntry: "Good Crane Carcass" */
+			return 773062352 /* GXTEntry: "Good Plucked Crane Carcass" */;
+		case 1310120320: /* GXTEntry: "Perfect Crane Carcass" */
+			return 1306100270 /* GXTEntry: "Perfect Plucked Crane Carcass" */;
+		case -1228376431: /* GXTEntry: "Poor Crane Carcass" */
+			return -1063194668 /* GXTEntry: "Poor Plucked Crane Carcass" */;
+		case 472142656: /* GXTEntry: "Good Deer Carcass" */
+			return 337839068 /* GXTEntry: "Good Skinned Deer Carcass" */;
+		case -1837840093: /* GXTEntry: "Perfect Deer Carcass" */
+			return -1426520714 /* GXTEntry: "Perfect Skinned Deer Carcass" */;
+		case 58634176: /* GXTEntry: "Poor Deer Carcass" */
+			return -1456429189 /* GXTEntry: "Poor Skinned Deer Carcass" */;
+		case 1023080408: /* GXTEntry: "Good Duck Carcass" */
+			return -2032809253 /* GXTEntry: "Good Skinned Duck Carcass" */;
+		case 1001171791: /* GXTEntry: "Perfect Duck Carcass" */
+			return 781728005 /* GXTEntry: "Perfect Skinned Duck Carcass" */;
+		case 1210345318: /* GXTEntry: "Poor Duck Carcass" */
+			return 1202409779 /* GXTEntry: "Poor Skinned Duck Carcass" */;
+		case 399553313: /* GXTEntry: "Good Eagle Carcass" */
+			return 1520877300 /* GXTEntry: "Good Plucked Eagle Carcass" */;
+		case -1422869557: /* GXTEntry: "Perfect Eagle Carcass" */
+			return -1736624361 /* GXTEntry: "Perfect Plucked Eagle Carcass" */;
+		case -1378812236: /* GXTEntry: "Poor Eagle Carcass" */
+			return 719465997 /* GXTEntry: "Poor Plucked Eagle Carcass" */;
+		case 1011003885: /* GXTEntry: "Good Egret Carcass" */
+			return -361486526 /* GXTEntry: "Good Skinned Egret Carcass" */;
+		case 651035143: /* GXTEntry: "Perfect Egret Carcass" */
+			return -765274711 /* GXTEntry: "Perfect Skinned Egret Carcass" */;
+		case 2013022756: /* GXTEntry: "Poor Egret Carcass" */
+			return -887205673 /* GXTEntry: "Poor Skinned Egret Carcass" */;
+		case -1186289527: /* GXTEntry: "Good Fox Carcass" */
+			return -784020903 /* GXTEntry: "Good Skinned Fox Carcass" */;
+		case 877935135: /* GXTEntry: "Perfect Fox Carcass" */
+			return -886117938 /* GXTEntry: "Perfect Skinned Fox Carcass" */;
+		case -39646495: /* GXTEntry: "Poor Fox Carcass" */
+			return -1416771220 /* GXTEntry: "Poor Skinned Fox Carcass" */;
+		case 1582593525: /* GXTEntry: "Good Gila Monster Carcass" */
+			return 1648676911 /* GXTEntry: "Good Skinned Gila Monster Carcass" */;
+		case -246542229: /* GXTEntry: "Perfect Gila Monster Carcass" */
+			return 2103833563 /* GXTEntry: "Perfect Skinned Gila Monster Carcass" */;
+		case -529454751: /* GXTEntry: "Poor Gila Monster Carcass" */
+			return -831636369 /* GXTEntry: "Poor Skinned Gila Monster Carcass" */;
+		case -46978629: /* GXTEntry: "Good Goat Carcass" */
+			return -852290935 /* GXTEntry: "Good Skinned Goat Carcass" */;
+		case -1347000030: /* GXTEntry: "Perfect Goat Carcass" */
+			return -1870415962 /* GXTEntry: "Perfect Skinned Goat Carcass" */;
+		case -505583391: /* GXTEntry: "Poor Goat Carcass" */
+			return -788684109 /* GXTEntry: "Poor Skinned Goat Carcass" */;
+		case 1645887374: /* GXTEntry: "Good Goose Carcass" */
+			return 1416435145 /* GXTEntry: "Good Skinned Goose Carcass" */;
+		case -1559227925: /* GXTEntry: "Perfect Goose Carcass" */
+			return -1483088274 /* GXTEntry: "Perfect Skinned Goose Carcass" */;
+		case 1562528937: /* GXTEntry: "Poor Goose Carcass" */
+			return -791867098 /* GXTEntry: "Poor Skinned Goose Carcass" */;
+		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
+			return -1689552552 /* GXTEntry: "Good Plucked Hawk Carcass" */;
+		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
+			return -1850779170 /* GXTEntry: "Perfect Plucked Hawk Carcass" */;
 		case 2144711797:
-			return -121487803;
-		case 718825539:
-			return -1280499288;
-		case 2105263879:
-			return 820245961;
-		case -905842006:
-			return -889526774;
-		case 1191274340:
-			return -521025998;
-		case 1613453781:
-			return 1583031244;
-		case -1030182399:
-			return -2115599211;
-		case 987967309:
-			return -767176802;
-		case -1060737769:
-			return -750945821;
-		case 553310445:
-			return -2135749211;
-		case -1838865945:
-			return 2063108046;
-		case 1418092959:
-			return 1299111759;
-		case -1315697778:
-			return 1595322723;
-		case -1772126340:
-			return 784918835;
-		case -935543049:
-			return -676310905;
-		case 1772544356:
-			return -1719545959;
-		case -266273535:
-			return -2142423934;
-		case -1670544626:
-			return 747751566;
-		case 1290960696:
-			return -1942682403;
-		case 1913571052:
-			return 1018433784;
-		case 1717601520:
-			return -796185392;
-		case 430397370:
-			return -49549406;
-		case 16287711:
-			return 857788498;
-		case -1356230367:
-			return 1223148871;
-		case 1417331079:
-			return 939407236;
-		case -884124246:
-			return 1608778431;
-		case 1884610748:
-			return -2033821082;
-		case 746558492:
-			return -993340234;
-		case -892811627:
-			return -1861062075;
-		case -2040522845:
-			return 1645001514;
-		case -1224510844:
-			return 782371031;
-		case 1334837390:
-			return 1255529169;
-		case 339620522:
-			return 70898308;
-		case 1770451033:
-			return -1050350982;
-		case 756657535:
-			return 581781784;
-		case 862898895:
-			return -1363330863;
-		case 1997845858:
-			return -1780911288;
-		case -1930144509:
-			return 1018306802;
-		case 1846915545:
-			return 1615521415;
-		case -1816929509:
-			return -1499066338;
-		case 1197831625:
-			return 1711081908;
-		case -1866642239:
-			return -164705;
-		case -1508120809:
-			return -2044044647;
-		case -1007681885:
-			return -859583379;
-		case 434924608:
-			return -759504052;
-		case 1666393029:
-			return 700225820;
-		case -1814593136:
-			return 136458586;
-		case -1188120304:
-			return 799105420;
-		case 1978734761:
-			return -481655757;
-		case -824902132:
-			return 484160931;
-		case -1015531226:
-			return 1010699907;
-		case -581619522:
-			return 1550264248;
-		case -861854914:
-			return -371992731;
-		case -545447034:
-			return 1090294483;
-		case -1824684934:
-			return -274175035;
-		case 980653387:
-			return -1064414912;
-		case -1011598664:
-			return -2091620305;
-		case -177476569:
-			return -468684824;
-		case 416630124:
-			return 1668870118;
-		case 1925728375:
-			return -534004020;
-		case -1080457688:
-			return -2126925270;
-		case 1742676369:
-			return 2008380517;
-		case -899751553:
-			return -510697884;
-		case 431501574:
-			return -955209948;
+			return -121487803 /* GXTEntry: "Poor Plucked Hawk Carcass" */;
+		case 718825539: /* GXTEntry: "Good Heron Carcass" */
+			return -1280499288 /* GXTEntry: "Good Skinned Heron Carcass" */;
+		case 2105263879: /* GXTEntry: "Perfect Heron Carcass" */
+			return 820245961 /* GXTEntry: "Perfect Skinned Heron Carcass" */;
+		case -905842006: /* GXTEntry: "Poor Heron Carcass" */
+			return -889526774 /* GXTEntry: "Poor Skinned Heron Carcass" */;
+		case 1191274340: /* GXTEntry: "Good Iguana Carcass" */
+			return -521025998 /* GXTEntry: "Good Skinned Iguana Carcass" */;
+		case 1613453781: /* GXTEntry: "Perfect Iguana Carcass" */
+			return 1583031244 /* GXTEntry: "Perfect Skinned Iguana Carcass" */;
+		case -1030182399: /* GXTEntry: "Poor Iguana Carcass" */
+			return -2115599211 /* GXTEntry: "Poor Skinned Iguana Carcass" */;
+		case 987967309: /* GXTEntry: "Good Loon Carcass" */
+			return -767176802 /* GXTEntry: "Good Skinned Loon Carcass" */;
+		case -1060737769: /* GXTEntry: "Perfect Loon Carcass" */
+			return -750945821 /* GXTEntry: "Perfect Skinned Loon Carcass" */;
+		case 553310445: /* GXTEntry: "Poor Loon Carcass" */
+			return -2135749211 /* GXTEntry: "Poor Skinned Loon Carcass" */;
+		case -1838865945: /* GXTEntry: "Good Muskrat Carcass" */
+			return 2063108046 /* GXTEntry: "Good Skinned Muskrat Carcass" */;
+		case 1418092959: /* GXTEntry: "Perfect Muskrat Carcass" */
+			return 1299111759 /* GXTEntry: "Perfect Skinned Muskrat Carcass" */;
+		case -1315697778: /* GXTEntry: "Poor Muskrat Carcass" */
+			return 1595322723 /* GXTEntry: "Poor Skinned Muskrat Carcass" */;
+		case -1772126340: /* GXTEntry: "Good Opossum Carcass" */
+			return 784918835 /* GXTEntry: "Good Skinned Opossum Carcass" */;
+		case -935543049: /* GXTEntry: "Perfect Opossum Carcass" */
+			return -676310905 /* GXTEntry: "Perfect Skinned Opossum Carcass" */;
+		case 1772544356: /* GXTEntry: "Poor Opossum Carcass" */
+			return -1719545959 /* GXTEntry: "Poor Skinned Opossum Carcass" */;
+		case -266273535: /* GXTEntry: "Good Owl Carcass" */
+			return -2142423934 /* GXTEntry: "Good Plucked Owl Carcass" */;
+		case -1670544626: /* GXTEntry: "Perfect Owl Carcass" */
+			return 747751566 /* GXTEntry: "Perfect Plucked Owl Carcass" */;
+		case 1290960696: /* GXTEntry: "Poor Owl Carcass" */
+			return -1942682403 /* GXTEntry: "Poor Plucked Owl Carcass" */;
+		case 1913571052: /* GXTEntry: "Good Panther Carcass" */
+			return 1018433784 /* GXTEntry: "Good Skinned Panther Carcass" */;
+		case 1717601520: /* GXTEntry: "Perfect Panther Carcass" */
+			return -796185392 /* GXTEntry: "Perfect Skinned Panther Carcass" */;
+		case 430397370: /* GXTEntry: "Poor Panther Carcass" */
+			return -49549406 /* GXTEntry: "Poor Skinned Panther Carcass" */;
+		case 16287711: /* GXTEntry: "Good Parrot Carcass" */
+			return 857788498 /* GXTEntry: "Good Plucked Parrot Carcass" */;
+		case -1356230367: /* GXTEntry: "Perfect Parrot Carcass" */
+			return 1223148871 /* GXTEntry: "Perfect Plucked Parrot Carcass" */;
+		case 1417331079: /* GXTEntry: "Poor Parrot Carcass" */
+			return 939407236 /* GXTEntry: "Poor Plucked Parrot Carcass" */;
+		case -884124246: /* GXTEntry: "Good Pelican Carcass" */
+			return 1608778431 /* GXTEntry: "Good Plucked Pelican Carcass" */;
+		case 1884610748: /* GXTEntry: "Perfect Pelican Carcass" */
+			return -2033821082 /* GXTEntry: "Perfect Plucked Pelican Carcass" */;
+		case 746558492: /* GXTEntry: "Poor Pelican Carcass" */
+			return -993340234 /* GXTEntry: "Poor Plucked Pelican Carcass" */;
+		case -892811627: /* GXTEntry: "Good Pheasant Carcass" */
+			return -1861062075 /* GXTEntry: "Good Skinned Pheasant Carcass" */;
+		case -2040522845: /* GXTEntry: "Perfect Pheasant Carcass" */
+			return 1645001514 /* GXTEntry: "Perfect Skinned Pheasant Carcass" */;
+		case -1224510844: /* GXTEntry: "Poor Pheasant Carcass" */
+			return 782371031 /* GXTEntry: "Poor Skinned Pheasant Carcass" */;
+		case 1334837390: /* GXTEntry: "Good Pig Carcass" */
+			return 1255529169 /* GXTEntry: "Good Skinned Pig Carcass" */;
+		case 339620522: /* GXTEntry: "Perfect Pig Carcass" */
+			return 70898308 /* GXTEntry: "Perfect Skinned Pig Carcass" */;
+		case 1770451033: /* GXTEntry: "Poor Pig Carcass" */
+			return -1050350982 /* GXTEntry: "Poor Skinned Pig Carcass" */;
+		case 756657535: /* GXTEntry: "Good Prairie Chicken Carcass" */
+			return 581781784 /* GXTEntry: "Good Skinned Prairie Chicken Carcass" */;
+		case 862898895: /* GXTEntry: "Perfect Prairie Chicken Carcass" */
+			return -1363330863 /* GXTEntry: "Perfect Skinned Prairie Chicken Carcass" */;
+		case 1997845858: /* GXTEntry: "Poor Prairie Chicken Carcass" */
+			return -1780911288 /* GXTEntry: "Poor Skinned Prairie Chicken Carcass" */;
+		case -1930144509: /* GXTEntry: "Good Pronghorn Carcass" */
+			return 1018306802 /* GXTEntry: "Good Skinned Pronghorn Carcass" */;
+		case 1846915545: /* GXTEntry: "Perfect Pronghorn Carcass" */
+			return 1615521415 /* GXTEntry: "Perfect Skinned Pronghorn Carcass" */;
+		case -1816929509: /* GXTEntry: "Poor Pronghorn Carcass" */
+			return -1499066338 /* GXTEntry: "Poor Skinned Pronghorn Carcass" */;
+		case 1197831625: /* GXTEntry: "Good Rabbit Carcass" */
+			return 1711081908 /* GXTEntry: "Good Skinned Rabbit Carcass" */;
+		case -1866642239: /* GXTEntry: "Perfect Rabbit Carcass" */
+			return -164705 /* GXTEntry: "Perfect Skinned Rabbit Carcass" */;
+		case -1508120809: /* GXTEntry: "Poor Rabbit Carcass" */
+			return -2044044647 /* GXTEntry: "Poor Skinned Rabbit Carcass" */;
+		case -1007681885: /* GXTEntry: "Good Raccoon Carcass" */
+			return -859583379 /* GXTEntry: "Good Skinned Raccoon Carcass" */;
+		case 434924608: /* GXTEntry: "Perfect Raccoon Carcass" */
+			return -759504052 /* GXTEntry: "Perfect Skinned Raccoon Carcass" */;
+		case 1666393029: /* GXTEntry: "Poor Raccoon Carcass" */
+			return 700225820 /* GXTEntry: "Poor Skinned Raccoon Carcass" */;
+		case -1814593136: /* GXTEntry: "Good Ram Carcass" */
+			return 136458586 /* GXTEntry: "Good Skinned Ram Carcass" */;
+		case -1188120304: /* GXTEntry: "Perfect Ram Carcass" */
+			return 799105420 /* GXTEntry: "Perfect Skinned Ram Carcass" */;
+		case 1978734761: /* GXTEntry: "Poor Ram Carcass" */
+			return -481655757 /* GXTEntry: "Poor Skinned Ram Carcass" */;
+		case -824902132: /* GXTEntry: "Good Raven Carcass" */
+			return 484160931 /* GXTEntry: "Good Plucked Raven Carcass" */;
+		case -1015531226: /* GXTEntry: "Perfect Raven Carcass" */
+			return 1010699907 /* GXTEntry: "Perfect Plucked Raven Carcass" */;
+		case -581619522: /* GXTEntry: "Poor Raven Carcass" */
+			return 1550264248 /* GXTEntry: "Poor Plucked Raven Carcass" */;
+		case -861854914: /* GXTEntry: "Good Red-footed Booby Carcass" */
+			return -371992731 /* GXTEntry: "Good Plucked Red-footed Booby Carcass" */;
+		case -545447034: /* GXTEntry: "Perfect Red-footed Booby Carcass" */
+			return 1090294483 /* GXTEntry: "Perfect Plucked Red-footed Booby Carcass" */;
+		case -1824684934: /* GXTEntry: "Poor Red-footed Booby Carcass" */
+			return -274175035 /* GXTEntry: "Poor Plucked Red-footed Booby Carcass" */;
+		case 980653387: /* GXTEntry: "Good Rooster Carcass" */
+			return -1064414912 /* GXTEntry: "Good Skinned Rooster Carcass" */;
+		case -1011598664: /* GXTEntry: "Perfect Rooster Carcass" */
+			return -2091620305 /* GXTEntry: "Perfect Skinned Rooster Carcass" */;
+		case -177476569: /* GXTEntry: "Poor Rooster Carcass" */
+			return -468684824 /* GXTEntry: "Poor Skinned Rooster Carcass" */;
+		case 416630124: /* GXTEntry: "Good Roseate Spoonbill Carcass" */
+			return 1668870118 /* GXTEntry: "Good Skinned Roseate Spoonbill Carcass" */;
+		case 1925728375: /* GXTEntry: "Perfect Roseate Spoonbill Carcass" */
+			return -534004020 /* GXTEntry: "Perfect Skinned Roseate Spoonbill Carcass" */;
+		case -1080457688: /* GXTEntry: "Poor Roseate Spoonbill Carcass" */
+			return -2126925270 /* GXTEntry: "Poor Skinned Roseate Spoonbill Carcass" */;
+		case 1742676369: /* GXTEntry: "Good Seagull Carcass" */
+			return 2008380517 /* GXTEntry: "Good Plucked Seagull Carcass" */;
+		case -899751553: /* GXTEntry: "Perfect Seagull Carcass" */
+			return -510697884 /* GXTEntry: "Perfect Plucked Seagull Carcass" */;
+		case 431501574: /* GXTEntry: "Poor Seagull Carcass" */
+			return -955209948 /* GXTEntry: "Poor Plucked Seagull Carcass" */;
 		case 2126795269:
-			return 1459836898;
-		case 1489051752:
-			return 303969766;
-		case -1705499323:
-			return -1707588662;
-		case -2013445740:
-			return -1224075784;
-		case 102446365:
-			return -1806671048;
-		case -1927342740:
-			return 749765420;
-		case -410900360:
-			return 462936163;
-		case -1073614594:
-			return -8888941;
-		case 2060013792:
-			return 1640227110;
-		case 581032175:
-			return -1241188722;
-		case -581931638:
-			return -1030962659;
-		case -1528265128:
-			return 112552982;
-		case -142632645:
-			return -1599578931;
-		case -2048519180:
-			return 1296331626;
-		case 1442025993:
-			return -1256398198;
-		case 441195430:
-			return 1297800973;
-		case 748665395:
-			return 1772582754;
-		case 351048413:
-			return -1459876379;
-		case -914779013:
-			return 1127406863;
-		case 1323485831:
-			return 1779996957;
-		case -365111821:
-			return 1885306923;
-		case 101495387:
-			return 1244107697;
-		case 157917500:
-			return -1201555940;
-		case -936537044:
-			return -668487833;
-		case -1610329427:
-			return -1178150148;
-		case -1836227998:
-			return 1171158615;
-		case 619479575:
-			return -2123554124;
-		case -1444929945:
-			return 1806705761;
-		case -929322235:
-			return 404581836;
-		case -548076717:
-			return 987197489;
-		case -281211381:
-			return -1259715647;
-		case 493457089:
-			return -1716717840;
-		case -479485786:
-			return -196277007;
-		case 27838955:
-			return -2064457926;
-		case 1641833719:
-			return 561267454;
-		case -314933180:
-			return 686253083;
+			return 1459836898 /* GXTEntry: "Good Skinned Sheep Carcass" */;
+		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
+			return 303969766 /* GXTEntry: "Perfect Skinned Sheep Carcass" */;
+		case -1705499323: /* GXTEntry: "Poor Sheep Carcass" */
+			return -1707588662 /* GXTEntry: "Poor Skinned Sheep Carcass" */;
+		case -2013445740: /* GXTEntry: "Good Skunk Carcass" */
+			return -1224075784 /* GXTEntry: "Good Skinned Skunk Carcass" */;
+		case 102446365: /* GXTEntry: "Perfect Skunk Carcass" */
+			return -1806671048 /* GXTEntry: "Perfect Skinned Skunk Carcass" */;
+		case -1927342740: /* GXTEntry: "Poor Skunk Carcass" */
+			return 749765420 /* GXTEntry: "Poor Skinned Skunk Carcass" */;
+		case -410900360: /* GXTEntry: "Good Black-tailed Rattlesnake Carcass" */
+			return 462936163 /* GXTEntry: "Good Skinned Black-Tailed Rattlesnake Carcass" */;
+		case -1073614594: /* GXTEntry: "Perfect Black-tailed Rattlesnake Carcass" */
+			return -8888941 /* GXTEntry: "Perfect Skinned Black-Tailed Rattlesnake Carcass" */;
+		case 2060013792: /* GXTEntry: "Poor Black-tailed Rattlesnake Carcass" */
+			return 1640227110 /* GXTEntry: "Poor Skinned Black-Tailed Rattlesnake Carcass" */;
+		case 581032175: /* GXTEntry: "Good Red Boa Carcass" */
+			return -1241188722 /* GXTEntry: "Good Skinned Red Boa Carcass" */;
+		case -581931638: /* GXTEntry: "Perfect Red Boa Carcass" */
+			return -1030962659 /* GXTEntry: "Perfect Skinned Red Boa Carcass" */;
+		case -1528265128: /* GXTEntry: "Poor Red Boa Carcass" */
+			return 112552982 /* GXTEntry: "Poor Skinned Red Boa Carcass" */;
+		case -142632645: /* GXTEntry: "Good Copperhead Carcass" */
+			return -1599578931 /* GXTEntry: "Good Skinned Copperhead Carcass" */;
+		case -2048519180: /* GXTEntry: "Perfect Copperhead Carcass" */
+			return 1296331626 /* GXTEntry: "Perfect Skinned Copperhead Carcass" */;
+		case 1442025993: /* GXTEntry: "Poor Copperhead Carcass" */
+			return -1256398198 /* GXTEntry: "Poor Skinned Copperhead Carcass" */;
+		case 441195430: /* GXTEntry: "Good Fer-de-Lance Carcass" */
+			return 1297800973 /* GXTEntry: "Good Skinned Fer-de-lance Carcass" */;
+		case 748665395: /* GXTEntry: "Perfect Fer-de-Lance Carcass" */
+			return 1772582754 /* GXTEntry: "Perfect Skinned Fer-de-lance Carcass" */;
+		case 351048413: /* GXTEntry: "Poor Fer-de-Lance Carcass" */
+			return -1459876379 /* GXTEntry: "Poor Skinned Fer-de-lance Carcass" */;
+		case -914779013: /* GXTEntry: "Good Snake Carcass" */
+			return 1127406863 /* GXTEntry: "Good Skinned Snake Carcass" */;
+		case 1323485831: /* GXTEntry: "Perfect Snake Carcass" */
+			return 1779996957 /* GXTEntry: "Perfect Skinned Snake Carcass" */;
+		case -365111821: /* GXTEntry: "Poor Snake Carcass" */
+			return 1885306923 /* GXTEntry: "Poor Skinned Snake Carcass" */;
+		case 101495387: /* GXTEntry: "Good Water Snake Carcass" */
+			return 1244107697 /* GXTEntry: "Good Skinned Water Snake Carcass" */;
+		case 157917500: /* GXTEntry: "Perfect Water Snake Carcass" */
+			return -1201555940 /* GXTEntry: "Perfect Skinned Water Snake Carcass" */;
+		case -936537044: /* GXTEntry: "Poor Water Snake Carcass" */
+			return -668487833 /* GXTEntry: "Poor Skinned Water Snake Carcass" */;
+		case -1610329427: /* GXTEntry: "Good Turkey Carcass" */
+			return -1178150148 /* GXTEntry: "Good Skinned Turkey Carcass" */;
+		case -1836227998: /* GXTEntry: "Perfect Turkey Carcass" */
+			return 1171158615 /* GXTEntry: "Perfect Skinned Turkey Carcass" */;
+		case 619479575: /* GXTEntry: "Poor Turkey Carcass" */
+			return -2123554124 /* GXTEntry: "Poor Skinned Turkey Carcass" */;
+		case -1444929945: /* GXTEntry: "Good Snapping Turtle Carcass" */
+			return 1806705761 /* GXTEntry: "Good Skinned Snapping Turtle Carcass" */;
+		case -929322235: /* GXTEntry: "Perfect Snapping Turtle Carcass" */
+			return 404581836 /* GXTEntry: "Perfect Skinned Snapping Turtle Carcass" */;
+		case -548076717: /* GXTEntry: "Poor Snapping Turtle Carcass" */
+			return 987197489 /* GXTEntry: "Poor Skinned Snapping Turtle Carcass" */;
+		case -281211381: /* GXTEntry: "Good Vulture Carcass" */
+			return -1259715647 /* GXTEntry: "Good Plucked Vulture Carcass" */;
+		case 493457089: /* GXTEntry: "Perfect Vulture Carcass" */
+			return -1716717840 /* GXTEntry: "Perfect Plucked Vulture Carcass" */;
+		case -479485786: /* GXTEntry: "Poor Vulture Carcass" */
+			return -196277007 /* GXTEntry: "Poor Plucked Vulture Carcass" */;
+		case 27838955: /* GXTEntry: "Good Wolf Carcass" */
+			return -2064457926 /* GXTEntry: "Good Skinned Wolf Carcass" */;
+		case 1641833719: /* GXTEntry: "Perfect Wolf Carcass" */
+			return 561267454 /* GXTEntry: "Perfect Skinned Wolf Carcass" */;
+		case -314933180: /* GXTEntry: "Poor Wolf Carcass" */
+			return 686253083 /* GXTEntry: "Poor Skinned Wolf Carcass" */;
 		default:
 			break;
 	}
 	return 0;
 }
 
-void func_264(var uParam0, var uParam1)
+void func_264(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && uParam1));
+	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
-int func_265(int iParam0, int iParam1)
+int func_265(bool bParam0, int iParam1)
 {
 	if (iParam1 == 0)
 	{
 		return 0;
 	}
-	return ITEMDATABASE::_0xF4452CE83118C738(iParam0, iParam1);
+	return ITEMDATABASE::_0xF4452CE83118C738(bParam0, iParam1);
 }
 
 int func_266(int iParam0, var uParam1)
 {
-	var uVar0;
+	int iVar0;
 
-	uVar0 = NETSHOPPING::_0x6C9F12700BCE69F4(iParam0, uParam1);
+	iVar0 = NETSHOPPING::_0x6C9F12700BCE69F4(iParam0, uParam1);
 	if (iParam0 == 1702063850)
 	{
-		if (func_133(uVar0, 2048))
+		if (func_133(iVar0, 2048))
 		{
 			return 0;
 		}
 	}
-	else if (func_133(uVar0, 8))
+	else if (func_133(iVar0, 8))
 	{
 		return 0;
 	}
-	else if (func_133(uVar0, 16))
+	else if (func_133(iVar0, 16))
 	{
 		return 0;
 	}
-	else if (func_133(uVar0, 65536))
+	else if (func_133(iVar0, 65536))
 	{
 		return 0;
 	}
 	return 1;
 }
 
-int func_267(bool bParam0, int iParam1, var* uParam2)
+int func_267(bool bParam0, int iParam1, var uParam2)
 {
 	if (bParam0)
 	{
@@ -8742,7 +8742,7 @@ int func_267(bool bParam0, int iParam1, var* uParam2)
 	return -1;
 }
 
-int func_268(bool bParam0, int iParam1, var* uParam2)
+int func_268(bool bParam0, int iParam1, var uParam2)
 {
 	if (bParam0)
 	{

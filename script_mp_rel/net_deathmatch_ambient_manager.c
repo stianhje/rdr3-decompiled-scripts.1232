@@ -340,7 +340,7 @@ void func_16(var uParam0, int iParam1)
 	*uParam0 = (*uParam0 || iParam1);
 }
 
-int func_17(bool bParam0, int iParam1)
+int func_17(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -350,13 +350,13 @@ int func_17(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -1621,7 +1621,7 @@ int func_53(int iParam0)
 	return 1;
 }
 
-var func_54(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var uParam10, var uParam11)
+var func_54(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int iParam10, int iParam11)
 {
 	var uVar0;
 	int iVar1;
@@ -1656,7 +1656,7 @@ var func_54(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 	iVar5 = Global_1273882->f_10;
 	iVar6 = Global_1273882->f_15;
 	bVar7 = true;
-	iVar9 = uParam10;
+	iVar9 = iParam10;
 	if (BUILTIN::VMAG2(vParam6) < 1f)
 	{
 		bVar7 = false;
@@ -1890,7 +1890,7 @@ int func_58(var uParam0)
 	return 1;
 }
 
-int func_59(var uParam0, bool bParam1, var uParam2, var uParam3, var uParam4, var uParam5)
+int func_59(var uParam0, bool bParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<29> Var0;
 	struct<2> Var32;
@@ -1929,10 +1929,10 @@ int func_59(var uParam0, bool bParam1, var uParam2, var uParam3, var uParam4, va
 	}
 	if (bParam1)
 	{
-		Var0.f_25 = uParam2;
-		Var0.f_26 = uParam3;
-		Var0.f_27 = uParam4;
-		Var0.f_28 = uParam5;
+		Var0.f_25 = iParam2;
+		Var0.f_26 = iParam3;
+		Var0.f_27 = iParam4;
+		Var0.f_28 = iParam5;
 	}
 	else if (!func_77(func_76(Var32), &Var0))
 	{
@@ -2583,35 +2583,35 @@ int func_86(int iParam0)
 	return -1;
 }
 
-int func_87(struct<2> Param0, var uParam2)
+int func_87(struct<2> Param0, int iParam2)
 {
 	if (!func_74(Param0))
 	{
 		return 0;
 	}
-	func_94(uParam2);
+	func_94(iParam2);
 	switch (Param0)
 	{
 		case 2:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 3:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 4:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 5:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 6:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 7:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 8:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
 			return 1;
 		default:
 			break;
@@ -2729,11 +2729,11 @@ void func_93(int iParam0)
 	}
 }
 
-void func_94(var uParam0)
+void func_94(int iParam0)
 {
-	*uParam0 = 0;
-	uParam0->f_1 = -1;
-	uParam0->f_2 = -1;
+	*iParam0 = 0;
+	iParam0->f_1 = -1;
+	iParam0->f_2 = -1;
 }
 
 struct<2> func_95(int iParam0, int iParam1)
@@ -2801,12 +2801,12 @@ int func_97(int iParam0)
 	return 0;
 }
 
-bool func_98(int iParam0, var uParam1, var uParam2)
+bool func_98(int iParam0, int iParam1, var uParam2)
 {
 	*uParam2 = Global_1131373->f_7;
 	uParam2->f_2 = 1351168281;
 	uParam2->f_3 = func_101(iParam0);
-	uParam2->f_4 = uParam1;
+	uParam2->f_4 = iParam1;
 	return DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(uParam2->f_1), uParam2);
 }
 
@@ -2978,7 +2978,7 @@ int func_101(int iParam0)
 			iVar0 = 1923799069;
 			break;
 		case 12:
-			iVar0 = -605765767;
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -3186,7 +3186,7 @@ int func_107(int iParam0)
 	{
 		case 987444055:
 			return -1;
-		case 1330140418:
+		case joaat("NORMAL"):
 			return 0;
 		case -640677282:
 			return 1;
@@ -3200,7 +3200,7 @@ int func_107(int iParam0)
 			return 5;
 		case 1004744465:
 			return 6;
-		case 672178273:
+		case joaat("bountyhunter"):
 			return 7;
 		case 1777227915:
 			return 8;

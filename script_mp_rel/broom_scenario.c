@@ -533,9 +533,9 @@ bool func_16(var uParam0)
 	return func_27(*uParam0, 1);
 }
 
-void func_17(var uParam0, int iParam1)
+void func_17(var uParam0, bool bParam1)
 {
-	if (iParam1 || !func_16(uParam0))
+	if (bParam1 || !func_16(uParam0))
 	{
 		func_28(uParam0);
 	}

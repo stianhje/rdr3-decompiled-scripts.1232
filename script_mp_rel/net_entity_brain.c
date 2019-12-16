@@ -68,7 +68,7 @@ void func_2(var uParam0, var uParam1)
 	uParam0->f_6 = BRAIN::_0x6818D1A194E29983();
 }
 
-int func_3(bool bParam0, int iParam1)
+int func_3(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -78,13 +78,13 @@ int func_3(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -331,17 +331,17 @@ void func_16(var uParam0)
 	func_35(uParam0);
 }
 
-void func_17(var uParam0, int iParam1, int iParam2)
+void func_17(var uParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 
-	if (iParam1 && !func_36(*uParam0))
+	if (bParam1 && !func_36(*uParam0))
 	{
 		*uParam0 = 0;
 		return;
 	}
 	iVar0 = func_37(*uParam0);
-	if (((*Global_1949749)[iVar0 /*23*/])->f_16 != SCRIPTS::GET_ID_OF_THIS_THREAD() && iParam2)
+	if (((*Global_1949749)[iVar0 /*23*/])->f_16 != SCRIPTS::GET_ID_OF_THIS_THREAD() && bParam2)
 	{
 		*uParam0 = 0;
 		return;
@@ -644,9 +644,9 @@ void func_38(int iParam0)
 	((*Global_1949749)[iParam0 /*23*/])->f_15 = -1f;
 }
 
-bool func_39(var uParam0, var uParam1)
+bool func_39(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 
 int func_40(int iParam0, bool bParam1)
@@ -790,9 +790,9 @@ char* func_52()
 	return "brain_timeStamp";
 }
 
-void func_53(var uParam0, var uParam1)
+void func_53(var uParam0, int iParam1)
 {
-	func_79(uParam0, uParam1);
+	func_79(uParam0, iParam1);
 }
 
 int func_54(int iParam0)
@@ -990,9 +990,9 @@ int func_78(struct<2> Param0)
 	return (Global_1070355->f_17817.f_1[iVar0 /*3*/])->f_2;
 }
 
-void func_79(var uParam0, var uParam1)
+void func_79(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
 char* func_80()
@@ -1005,7 +1005,7 @@ char* func_81()
 	return "brain_id";
 }
 
-var func_82(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var uParam10, var uParam11)
+var func_82(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int iParam10, int iParam11)
 {
 	var uVar0;
 	int iVar1;
@@ -1040,7 +1040,7 @@ var func_82(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 	iVar5 = Global_1273882->f_10;
 	iVar6 = Global_1273882->f_15;
 	bVar7 = true;
-	iVar9 = uParam10;
+	iVar9 = iParam10;
 	if (BUILTIN::VMAG2(vParam6) < 1f)
 	{
 		bVar7 = false;
@@ -1237,9 +1237,9 @@ var func_82(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, var 
 	return uVar0;
 }
 
-void func_83(var uParam0, var uParam1)
+void func_83(var uParam0, int iParam1)
 {
-	func_92(uParam0, uParam1);
+	func_92(uParam0, iParam1);
 }
 
 bool func_84(int iParam0, int iParam1)
@@ -1380,40 +1380,40 @@ bool func_91(int iParam0)
 	return NETWORK::_0xFE53B1F8D43F19BF(Global_1273882->f_10, iParam0) == 1;
 }
 
-void func_92(var uParam0, var uParam1)
+void func_92(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && uParam1));
+	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
-int func_93(struct<2> Param0, var uParam2)
+int func_93(struct<2> Param0, int iParam2)
 {
 	if (!func_49(Param0))
 	{
 		return 0;
 	}
-	func_97(uParam2);
+	func_97(iParam2);
 	switch (Param0)
 	{
 		case 2:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 3:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_602[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 4:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_2104[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 5:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12606[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 6:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_12908[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 7:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15910[Param0.f_1 /*3*/], 3);
 			return 1;
 		case 8:
-			MISC::_COPY_MEMORY(uParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
+			MISC::_COPY_MEMORY(iParam2, Global_1070355->f_634.f_15981[Param0.f_1 /*3*/], 3);
 			return 1;
 		default:
 			break;

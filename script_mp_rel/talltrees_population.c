@@ -85,7 +85,7 @@ int func_3()
 	return Global_1572887->f_13;
 }
 
-int func_4(bool bParam0, int iParam1)
+int func_4(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -95,13 +95,13 @@ int func_4(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -177,8 +177,8 @@ void func_7(int iParam0, int iParam1, bool bParam2)
 	POPULATION::_0x2161278C6322F740(iParam1 | 224 | 4096 | 2 | 4 | 1, 16384, 0, -1, -1, iParam0);
 }
 
-void func_8(var uParam0, int iParam1)
+void func_8(int iParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
+	*iParam0 = (*iParam0 - (*iParam0 && iParam1));
 }
 

@@ -68,7 +68,7 @@ void __EntryFunction__()
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-void func_1(int iParam0)
+void func_1(bool bParam0)
 {
 	int iVar0;
 	bool bVar1;
@@ -80,7 +80,7 @@ void func_1(int iParam0)
 	{
 		bVar1 = _NAMESPACE26::_0x4BE6C13A45CCA8EC(_NAMESPACE26::_0x901E0DC25080C8B9(iVar0)) == iVar0;
 	}
-	if (NETWORK::_0x8FB7C254CFCBF78E(&(Global_1572887->f_342)) && (iParam0 || bVar1))
+	if (NETWORK::_0x8FB7C254CFCBF78E(&(Global_1572887->f_342)) && (bParam0 || bVar1))
 	{
 		NETWORK::_0xE72E5C1289BD1F40(&(Global_1572887->f_342));
 	}
@@ -131,14 +131,14 @@ void func_6(int iParam0)
 	Global_1572887->f_248 = iParam0;
 }
 
-void func_7(int iParam0, var uParam1)
+void func_7(int iParam0, int iParam1)
 {
 	if (Global_1572864->f_17 != 0)
 	{
 		return;
 	}
 	Global_1572864->f_17 = iParam0;
-	Global_1572864->f_18 = uParam1;
+	Global_1572864->f_18 = iParam1;
 }
 
 void func_8(int iParam0)

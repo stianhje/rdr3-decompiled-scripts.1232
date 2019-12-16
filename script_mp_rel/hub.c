@@ -405,7 +405,7 @@ void func_31(int iParam0)
 	{
 	}
 	iVar0 = MISC::ABSI((Global_1273882->f_21 - Global_1958299->f_1));
-	UNK_0x25CC50EC1A6F3A96(&Global_1958299, Global_1958299->f_2, iVar0);
+	TELEMETRY::_0x25CC50EC1A6F3A96(&Global_1958299, Global_1958299->f_2, iVar0);
 	func_40(Global_1958299);
 }
 
@@ -485,7 +485,7 @@ void func_39(var uParam0)
 	int iVar18;
 	int iVar19;
 
-	iVar1 = UNK_0x97A3646645727F42(&iVar0);
+	iVar1 = INVENTORY::_0x97A3646645727F42(&iVar0);
 	Var2.f_9 = -1591664384;
 	iVar17 = 0;
 	iVar18 = 0;
@@ -559,7 +559,7 @@ int func_41(var uParam0)
 	{
 		return 0;
 	}
-	iVar1 = DATABINDING::_DATABDING_GET_ARRAY_COUNT(*uParam0);
+	iVar1 = DATABINDING::_DATABINDING_GET_ARRAY_COUNT(*uParam0);
 	iVar2 = 0;
 	while (iVar2 < iVar1)
 	{
@@ -589,9 +589,9 @@ void func_43(var uParam0)
 	*uParam0 = 0;
 }
 
-void func_44(var uParam0, int iParam1)
+void func_44(var uParam0, bool bParam1)
 {
-	if (iParam1 || !func_42(uParam0))
+	if (bParam1 || !func_42(uParam0))
 	{
 		func_46(uParam0);
 	}
@@ -723,23 +723,23 @@ void func_55(var uParam0, float fParam1)
 	uParam0->f_2 = 0f;
 }
 
-bool func_56(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, bool bParam5, bool bParam6, int iParam7)
+bool func_56(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, bool bParam5, bool bParam6, int iParam7)
 {
-	return func_68(&uParam0, uParam4, bParam5, bParam6, iParam7);
+	return func_68(&uParam0, iParam4, bParam5, bParam6, iParam7);
 }
 
-int func_57(int iParam0, int iParam1)
+int func_57(bool bParam0, int iParam1)
 {
-	if (iParam0 == 0)
+	if (bParam0 == 0)
 	{
 		return 0;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
 }
 
-bool func_58(int iParam0)
+bool func_58(bool bParam0)
 {
-	return func_69(iParam0) == -126813555;
+	return func_69(bParam0) == -126813555;
 }
 
 int func_59(var uParam0, var uParam1)
@@ -757,17 +757,17 @@ int func_59(var uParam0, var uParam1)
 	return 1;
 }
 
-bool func_60(int iParam0)
+bool func_60(bool bParam0)
 {
-	return func_69(iParam0) == 1946043663;
+	return func_69(bParam0) == 1946043663;
 }
 
 int func_61(var uParam0, var uParam1)
 {
-	int iVar0;
+	bool bVar0;
 	struct<34> Var1;
 
-	if (!func_70(uParam0, &iVar0))
+	if (!func_70(uParam0, &bVar0))
 	{
 		return 0;
 	}
@@ -775,7 +775,7 @@ int func_61(var uParam0, var uParam1)
 	{
 		return 0;
 	}
-	if (func_72(iVar0))
+	if (func_72(bVar0))
 	{
 		func_73(&Var1);
 		uParam1->f_1 = Var1.f_33;
@@ -785,7 +785,7 @@ int func_61(var uParam0, var uParam1)
 	return 1;
 }
 
-int func_62(var uParam0, var uParam1, int iParam2)
+int func_62(var uParam0, char[4] cParam1, int iParam2)
 {
 	int iVar0;
 	char cVar1[64];
@@ -800,12 +800,12 @@ int func_62(var uParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	iVar0 = DATABINDING::_DATABDING_GET_ARRAY_COUNT(&(uParam0->f_3[1]));
+	iVar0 = DATABINDING::_DATABINDING_GET_ARRAY_COUNT(&(uParam0->f_3[1]));
 	if (iParam2 == -1 || iParam2 >= iVar0)
 	{
 		StringCopy(&cVar1, "offer_item_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		if (!func_74(&uVar9, uParam0->f_3[1], cVar1, uParam1))
+		if (!func_74(&uVar9, uParam0->f_3[1], cVar1, cParam1))
 		{
 			return 0;
 		}
@@ -817,7 +817,7 @@ int func_62(var uParam0, var uParam1, int iParam2)
 		{
 			return 0;
 		}
-		if (!func_76(&uVar16, uParam1))
+		if (!func_76(&uVar16, cParam1))
 		{
 			return 0;
 		}
@@ -844,7 +844,7 @@ int func_64(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = DATABINDING::_DATABDING_GET_ARRAY_COUNT(*uParam0);
+	iVar0 = DATABINDING::_DATABINDING_GET_ARRAY_COUNT(*uParam0);
 	if (iParam1 < 0 || iParam1 >= iVar0)
 	{
 		return 0;
@@ -880,7 +880,7 @@ void func_67(var uParam0, int iParam1)
 	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
-int func_68(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
+int func_68(var uParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 {
 	if (!INVENTORY::_0xB881CA836CC4B6D4(uParam0))
 	{
@@ -890,22 +890,22 @@ int func_68(var uParam0, var uParam1, bool bParam2, bool bParam3, int iParam4)
 	{
 		iParam4 = func_77(bParam2);
 	}
-	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, uParam0, uParam1, !bParam3))
+	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, uParam0, iParam1, !bParam3))
 	{
 		return 0;
 	}
 	return 1;
 }
 
-int func_69(int iParam0)
+int func_69(bool bParam0)
 {
 	struct<2> Var0;
 
-	if (!func_57(iParam0, 0))
+	if (!func_57(bParam0, 0))
 	{
 		return 0;
 	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(iParam0, &Var0))
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &Var0))
 	{
 		return 0;
 	}
@@ -1016,23 +1016,23 @@ int func_71(var uParam0, var uParam1)
 	return 1;
 }
 
-int func_72(int iParam0)
+int func_72(bool bParam0)
 {
 	int iVar0;
 
-	if (!func_57(iParam0, 0))
+	if (!func_57(bParam0, 0))
 	{
 		return 0;
 	}
-	if (!func_60(iParam0))
+	if (!func_60(bParam0))
 	{
 		return 0;
 	}
-	if (!func_83(iParam0, MISC::GET_HASH_KEY("CI_TAG_OFFER_MYSTERY")))
+	if (!func_83(bParam0, MISC::GET_HASH_KEY("CI_TAG_OFFER_MYSTERY")))
 	{
 		return 0;
 	}
-	iVar0 = func_84(iParam0, 1);
+	iVar0 = func_84(bParam0, 1);
 	if (iVar0 != 0)
 	{
 		return 0;
@@ -1069,7 +1069,7 @@ int func_75(var uParam0, int iParam1, var uParam2)
 {
 	int iVar0;
 
-	iVar0 = DATABINDING::_DATABDING_GET_ARRAY_COUNT(&(uParam0->f_3[1]));
+	iVar0 = DATABINDING::_DATABINDING_GET_ARRAY_COUNT(&(uParam0->f_3[1]));
 	if (iParam1 < 0 || iParam1 >= iVar0)
 	{
 		return 0;
@@ -1078,17 +1078,17 @@ int func_75(var uParam0, int iParam1, var uParam2)
 	return 1;
 }
 
-int func_76(var uParam0, var uParam1)
+int func_76(var uParam0, char[4] cParam1)
 {
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam0))
 	{
 		return 0;
 	}
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, 440050042, *uParam1);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, 1058850005, uParam1->f_1);
-	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 1527945487, uParam1->f_2);
-	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 1024435631, uParam1->f_3);
-	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 596676017, uParam1->f_4);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, 440050042, *cParam1);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, 1058850005, cParam1->f_1);
+	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 1527945487, cParam1->f_2);
+	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 1024435631, cParam1->f_3);
+	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 596676017, cParam1->f_4);
 	return 1;
 }
 
@@ -1109,9 +1109,9 @@ int func_77(bool bParam0)
 	return 2;
 }
 
-int func_78(int iParam0)
+int func_78(bool bParam0)
 {
-	if (func_69(iParam0) == -126813555 || func_69(iParam0) == 1946043663)
+	if (func_69(bParam0) == -126813555 || func_69(bParam0) == 1946043663)
 	{
 		return 1;
 	}
@@ -1194,36 +1194,36 @@ int func_82(struct<4> Param0)
 	return func_89(func_88(Param0));
 }
 
-int func_83(int iParam0, int iParam1)
+int func_83(bool bParam0, int iParam1)
 {
-	if (!func_57(iParam0, 0))
+	if (!func_57(bParam0, 0))
 	{
-		return func_91(func_90(iParam0), iParam1);
+		return func_91(func_90(bParam0), iParam1);
 	}
 	if (iParam1 == 0)
 	{
 		return 0;
 	}
-	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(iParam0, iParam1, 1120943070))
+	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(bParam0, iParam1, 1120943070))
 	{
 		return 1;
 	}
 	return 0;
 }
 
-int func_84(int iParam0, int iParam1)
+int func_84(bool bParam0, bool bParam1)
 {
 	struct<6> Var0;
 
-	if (!func_57(iParam0, 0))
+	if (!func_57(bParam0, 0))
 	{
-		return func_92(func_90(iParam0), iParam1);
+		return func_92(func_90(bParam0), bParam1);
 	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(iParam0, &Var0) || Var0.f_5 == 0)
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &Var0) || Var0.f_5 == 0)
 	{
 		return 0;
 	}
-	if (iParam1 && NETWORK::_0xFBE782B3165AC8EC(Var0.f_5))
+	if (bParam1 && NETWORK::_0xFBE782B3165AC8EC(Var0.f_5))
 	{
 		return 0;
 	}
@@ -1241,7 +1241,7 @@ int func_86(var uParam0)
 	{
 		return 0;
 	}
-	return UNK_0x0137C77A2EC64536(uParam0);
+	return INVENTORY::_0x0137C77A2EC64536(uParam0);
 }
 
 bool func_87(var uParam0)
@@ -1255,7 +1255,7 @@ int func_88(var uParam0, var uParam1, var uParam2, var uParam3)
 	{
 		return 0;
 	}
-	return UNK_0x4A606C17276E1BCC(&uParam0);
+	return INVENTORY::_0x4A606C17276E1BCC(&uParam0);
 }
 
 bool func_89(int iParam0)
@@ -1267,9 +1267,9 @@ bool func_89(int iParam0)
 	return (NETWORK::GET_CLOUD_TIME_AS_INT() + func_94()) > iParam0;
 }
 
-int func_90(int iParam0)
+bool func_90(bool bParam0)
 {
-	return iParam0;
+	return bParam0;
 }
 
 int func_91(int iParam0, int iParam1)
@@ -1289,7 +1289,7 @@ int func_91(int iParam0, int iParam1)
 	return 0;
 }
 
-int func_92(int iParam0, var uParam1)
+int func_92(int iParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -1298,7 +1298,7 @@ int func_92(int iParam0, var uParam1)
 		return 0;
 	}
 	iVar0 = 0;
-	if ((iVar0 != 0 && uParam1) && NETWORK::_0xFBE782B3165AC8EC(iVar0))
+	if ((iVar0 != 0 && bParam1) && NETWORK::_0xFBE782B3165AC8EC(iVar0))
 	{
 		return 0;
 	}

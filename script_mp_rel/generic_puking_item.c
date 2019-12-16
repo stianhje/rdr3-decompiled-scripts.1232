@@ -98,9 +98,9 @@ int func_1(int iParam0, var uParam1, bool bParam2, var uParam3)
 	return 0;
 }
 
-void func_2(var uParam0, int iParam1)
+void func_2(var uParam0, bool bParam1)
 {
-	if (iParam1 || !func_3(uParam0))
+	if (bParam1 || !func_3(uParam0))
 	{
 		func_7(uParam0);
 	}
@@ -124,9 +124,9 @@ float func_4(var uParam0)
 	return (func_10() - uParam0->f_1);
 }
 
-void func_5(var uParam0, int iParam1)
+void func_5(int iParam0, int iParam1)
 {
-	*uParam0 = iParam1;
+	*iParam0 = iParam1;
 }
 
 void func_6(var uParam0)

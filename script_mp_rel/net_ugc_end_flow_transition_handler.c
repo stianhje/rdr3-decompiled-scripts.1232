@@ -53,8 +53,8 @@ void __EntryFunction__()
 	{
 		func_3(1);
 		NETWORK::_0x236905C700FDB54D();
-		PAD::DISABLE_CONTROL_ACTION(0, 1287709438, true);
-		PAD::DISABLE_CONTROL_ACTION(0, -484677055, true);
+		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_SATCHEL_MENU"), true);
+		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_MAP"), true);
 		func_4();
 		func_5();
 		switch (iLocal_32)
@@ -181,7 +181,7 @@ void func_1()
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 }
 
-int func_2(bool bParam0, int iParam1)
+int func_2(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -191,13 +191,13 @@ int func_2(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -309,7 +309,7 @@ void func_5()
 	{
 		uVar1 = -1;
 		func_31(Global_3407872, &uVar1);
-		iVar2 = BUILTIN::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(-1486408849, &uVar1, 1, 14335);
+		iVar2 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(-1486408849, &uVar1, 1, 14335);
 		if (SCRIPTS::_DOES_THREAD_EXIST(iVar2))
 		{
 			iLocal_35 = 1;
@@ -691,7 +691,7 @@ int func_35(vector3 vParam0)
 	return 0;
 }
 
-void func_36(int iParam0, bool bParam1, int iParam2, int iParam3)
+void func_36(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	func_51(iParam0);
 	if (!func_52(1))
@@ -706,7 +706,7 @@ void func_36(int iParam0, bool bParam1, int iParam2, int iParam3)
 	{
 		CAM::DO_SCREEN_FADE_OUT(iParam2);
 	}
-	if (iParam3 && func_55() == 4)
+	if (bParam3 && func_55() == 4)
 	{
 		func_24(17);
 	}
@@ -1078,24 +1078,24 @@ bool func_47(var uParam0)
 	return uParam0->f_1;
 }
 
-void func_48(var uParam0, var uParam1)
+void func_48(var uParam0, int iParam1)
 {
-	func_57(uParam0, uParam1);
+	func_57(uParam0, iParam1);
 }
 
-bool func_49(var uParam0)
+bool func_49(int iParam0)
 {
-	return func_58(Global_1070355->f_27136.f_19.f_1, uParam0);
+	return func_58(Global_1070355->f_27136.f_19.f_1, iParam0);
 }
 
-void func_50(var uParam0, var uParam1)
+void func_50(var uParam0, int iParam1)
 {
-	func_59(uParam0, uParam1);
+	func_59(uParam0, iParam1);
 }
 
-void func_51(var uParam0)
+void func_51(int iParam0)
 {
-	Global_1099293->f_26.f_12 = uParam0;
+	Global_1099293->f_26.f_12 = iParam0;
 }
 
 bool func_52(int iParam0)
@@ -1139,19 +1139,19 @@ void func_56(int iParam0)
 	Global_1099293->f_26.f_9 = (Global_1099293->f_26.f_9 || iParam0);
 }
 
-void func_57(var uParam0, var uParam1)
+void func_57(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
-bool func_58(var uParam0, var uParam1)
+bool func_58(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 
-void func_59(var uParam0, var uParam1)
+void func_59(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && uParam1));
+	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
 bool func_60(int iParam0)

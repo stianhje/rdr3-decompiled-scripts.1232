@@ -162,7 +162,7 @@ void __EntryFunction__()
 								Global_1051202->f_42 = 0;
 							}
 							func_34();
-							Global_1051202->f_16[0] = BUILTIN::START_NEW_SCRIPT(sVar0, 6000);
+							Global_1051202->f_16[0] = SCRIPTS::START_NEW_SCRIPT(sVar0, 6000);
 							SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(sVar0);
 							func_35();
 							func_6(0);
@@ -323,7 +323,7 @@ int func_7()
 	return 1;
 }
 
-int func_8(bool bParam0, int iParam1)
+int func_8(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
@@ -333,13 +333,13 @@ int func_8(bool bParam0, int iParam1)
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (iParam1 && NETWORK::_0xF2CBC969C4F090C7())
+		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
 		{
 		}
-		else if (iParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
+		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
 		{
 		}
-		else if (iParam1 && &Global_1572887 < 39)
+		else if (bParam1 && &Global_1572887 < 39)
 		{
 		}
 		else
@@ -889,14 +889,14 @@ void func_45()
 	}
 }
 
-void func_46(int iParam0, var uParam1)
+void func_46(int iParam0, int iParam1)
 {
 	if (Global_1572864->f_17 != 0)
 	{
 		return;
 	}
 	Global_1572864->f_17 = iParam0;
-	Global_1572864->f_18 = uParam1;
+	Global_1572864->f_18 = iParam1;
 }
 
 void func_47(int iParam0)
@@ -957,7 +957,7 @@ int func_52(vector3 vParam0)
 	return 0;
 }
 
-void func_53(int iParam0, bool bParam1, int iParam2, int iParam3)
+void func_53(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	func_63(iParam0);
 	if (!func_64(1))
@@ -972,7 +972,7 @@ void func_53(int iParam0, bool bParam1, int iParam2, int iParam3)
 	{
 		CAM::DO_SCREEN_FADE_OUT(iParam2);
 	}
-	if (iParam3 && func_67() == 4)
+	if (bParam3 && func_67() == 4)
 	{
 		func_49(17);
 	}
@@ -1097,9 +1097,9 @@ bool func_62(var uParam0, int iParam1, int iParam2)
 	return !bVar2;
 }
 
-void func_63(var uParam0)
+void func_63(int iParam0)
 {
-	Global_1099293->f_26.f_12 = uParam0;
+	Global_1099293->f_26.f_12 = iParam0;
 }
 
 bool func_64(int iParam0)
