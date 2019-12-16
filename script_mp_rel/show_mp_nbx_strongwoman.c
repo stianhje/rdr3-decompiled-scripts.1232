@@ -3352,7 +3352,7 @@ int func_41()
 	{
 		return 1;
 	}
-	if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(-1302053960))
+	if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(joaat("end_of_movie_marker")))
 	{
 		return 1;
 	}
@@ -4849,7 +4849,7 @@ int func_133(var uParam0, var uParam1, int iParam2)
 		while (iVar0 <= (iVar1 - 1))
 		{
 			iVar3 = iVar0;
-			if (func_176((*uParam0)[iVar0 /*5*/], func_174(iParam2), func_175(iParam2, iVar3), 1065353216))
+			if (func_176((*uParam0)[iVar0 /*5*/], func_174(iParam2), func_175(iParam2, iVar3), 1065353216 /* Float: 1f */))
 			{
 				iVar2++;
 			}
@@ -4868,7 +4868,7 @@ int func_133(var uParam0, var uParam1, int iParam2)
 		while (iVar0 <= (iVar1 - 1))
 		{
 			iVar4 = iVar0;
-			if (func_176(uParam0->f_31[iVar0 /*5*/], func_178(iParam2), func_179(iParam2, iVar4), 1065353216))
+			if (func_176(uParam0->f_31[iVar0 /*5*/], func_178(iParam2), func_179(iParam2, iVar4), 1065353216 /* Float: 1f */))
 			{
 				iVar2++;
 			}
@@ -4887,7 +4887,7 @@ int func_133(var uParam0, var uParam1, int iParam2)
 		while (iVar0 <= (iVar1 - 1))
 		{
 			iVar5 = iVar0;
-			if (func_176(uParam0->f_107[iVar0 /*5*/], func_181(iParam2), func_182(iParam2, iVar5), 1065353216))
+			if (func_176(uParam0->f_107[iVar0 /*5*/], func_181(iParam2), func_182(iParam2, iVar5), 1065353216 /* Float: 1f */))
 			{
 				iVar2++;
 			}
@@ -4901,11 +4901,11 @@ int func_133(var uParam0, var uParam1, int iParam2)
 	switch (iParam2)
 	{
 		case 0:
-			if (!func_13(*uParam1, 64) && func_176(uParam0->f_118[0 /*5*/], func_183(iParam2, 0), func_184(iParam2, 0), 1065353216))
+			if (!func_13(*uParam1, 64) && func_176(uParam0->f_118[0 /*5*/], func_183(iParam2, 0), func_184(iParam2, 0), 1065353216 /* Float: 1f */))
 			{
 				func_18(uParam1, 64);
 			}
-			if ((!func_13(*uParam1, 16384) && func_176(uParam0->f_118[1 /*5*/], func_183(iParam2, 1), func_184(iParam2, 1), 1065353216)) && func_176(uParam0->f_118[2 /*5*/], func_183(iParam2, 2), func_184(iParam2, 2), 1065353216))
+			if ((!func_13(*uParam1, 16384) && func_176(uParam0->f_118[1 /*5*/], func_183(iParam2, 1), func_184(iParam2, 1), 1065353216 /* Float: 1f */)) && func_176(uParam0->f_118[2 /*5*/], func_183(iParam2, 2), func_184(iParam2, 2), 1065353216 /* Float: 1f */))
 			{
 				func_18(uParam1, 16384);
 			}
@@ -4919,7 +4919,7 @@ int func_133(var uParam0, var uParam1, int iParam2)
 				while (iVar0 <= (iVar1 - 1))
 				{
 					iVar6 = iVar0;
-					if (func_176(uParam0->f_118[iVar0 /*5*/], func_183(iParam2, 0), func_184(iParam2, iVar6), 1065353216))
+					if (func_176(uParam0->f_118[iVar0 /*5*/], func_183(iParam2, 0), func_184(iParam2, iVar6), 1065353216 /* Float: 1f */))
 					{
 						iVar2++;
 					}

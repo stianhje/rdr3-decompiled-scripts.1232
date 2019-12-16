@@ -1008,7 +1008,7 @@ int func_53(bool bParam0)
 	int iVar6[4];
 	int iVar11;
 
-	iVar6[0] = -1499182641;
+	iVar6[0] = joaat("s_lootablemoneybox");
 	iVar6[1] = joaat("p_goldnugget01x");
 	iVar6[2] = 1528448748;
 	iVar6[3] = -1271488117;
@@ -1329,7 +1329,7 @@ void func_70(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_108(Global_1939168, 16384);
-	func_110(func_109(-1532769513, -36357794), 1);
+	func_110(func_109(-1532769513, joaat("areas")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:

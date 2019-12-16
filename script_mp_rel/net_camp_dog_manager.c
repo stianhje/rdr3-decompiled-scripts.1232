@@ -946,7 +946,7 @@ struct<4> func_57(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1270479))
 			{
-				*Global_1270479 = { func_58(joaat("CHARACTER"), func_78(), -1591664384, bParam0) };
+				*Global_1270479 = { func_58(joaat("character"), func_78(), -1591664384, bParam0) };
 			}
 			return *Global_1270479;
 		}
@@ -954,12 +954,12 @@ struct<4> func_57(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_12)))
 			{
-				Global_1270479->f_12 = { func_58(joaat("CHARACTER"), func_78(), -1591664384, 0) };
+				Global_1270479->f_12 = { func_58(joaat("character"), func_78(), -1591664384, 0) };
 			}
 			return Global_1270479->f_12;
 		}
 	}
-	return func_58(joaat("CHARACTER"), func_78(), -1591664384, bParam0);
+	return func_58(joaat("character"), func_78(), -1591664384, bParam0);
 }
 
 struct<4> func_58(bool bParam0, var uParam1, int iParam2, bool bParam3, var uParam4, bool bParam5, bool bParam6)

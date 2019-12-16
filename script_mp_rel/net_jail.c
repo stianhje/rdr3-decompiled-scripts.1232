@@ -856,7 +856,7 @@ void func_24()
 			Local_182.f_14 = { -3619.148f, -2604.207f, -14.3516f };
 			Local_182.f_20 = -65f;
 			Local_182.f_5 = -59369632;
-			Local_182.f_21 = 1237405687;
+			Local_182.f_21 = joaat("p_abe_cabinet01");
 			Local_182.f_17 = { -3616.951f, -2604.411f, -13.6566f };
 			(Local_215[0 /*9*/])->f_1 = { -3618.892f, -2601.67f, -13.1624f };
 			(Local_215[0 /*9*/])->f_4 = { -4.5768f, 0f, -163.6841f };
@@ -879,7 +879,7 @@ void func_24()
 			Local_182.f_14 = { -763.5278f, -1262.461f, 43.0233f };
 			Local_182.f_20 = -90f;
 			Local_182.f_5 = -2127191462;
-			Local_182.f_21 = 1237405687;
+			Local_182.f_21 = joaat("p_abe_cabinet01");
 			Local_182.f_17 = { -761.6234f, -1263.575f, 43.7253f };
 			(Local_215[0 /*9*/])->f_1 = { -761.3599f, -1262.154f, 44.124f };
 			(Local_215[0 /*9*/])->f_4 = { -2.1078f, -0.6279f, 141.409f };
@@ -971,7 +971,7 @@ void func_24()
 			Local_182.f_14 = { -5529.914f, -2925.074f, -2.3601f };
 			Local_182.f_20 = -65f;
 			Local_182.f_5 = 831345624;
-			Local_182.f_21 = 1237405687;
+			Local_182.f_21 = joaat("p_abe_cabinet01");
 			Local_182.f_17 = { -5529.914f, -2925.074f, -2.3601f };
 			(Local_215[0 /*9*/])->f_1 = { -5528.064f, -2923.999f, -1.1571f };
 			(Local_215[0 /*9*/])->f_4 = { -2.6775f, 0f, 164.663f };
@@ -994,7 +994,7 @@ void func_24()
 			Local_182.f_14 = { -272.0521f, 808.2583f, 118.3685f };
 			Local_182.f_20 = -170f;
 			Local_182.f_5 = 193903155;
-			Local_182.f_21 = 1237405687;
+			Local_182.f_21 = joaat("p_abe_cabinet01");
 			Local_182.f_17 = { -272.0521f, 808.2583f, 118.3685f };
 			(Local_215[0 /*9*/])->f_1 = { -275.3474f, 807.1092f, 119.2897f };
 			(Local_215[0 /*9*/])->f_4 = { 0.6224f, 0f, -96.0022f };
@@ -1149,7 +1149,7 @@ int func_37()
 	{
 		return 1;
 	}
-	if (Local_182.f_21 == 1237405687)
+	if (Local_182.f_21 == joaat("p_abe_cabinet01"))
 	{
 		MISC::SET_BIT(&(Local_182.f_3), 12);
 		return 1;
@@ -1662,7 +1662,7 @@ void func_49()
 	{
 		if (!func_107(iLocal_378))
 		{
-			iLocal_378 = func_112(func_111(), iLocal_246, Global_35, 3, 0, 0, 0, 4, 1070386381, 570, 4000, 10, 1073741824, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
+			iLocal_378 = func_112(func_111(), iLocal_246, Global_35, 3, 0, 0, 0, 4, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 		}
 		else if (func_113())
 		{
@@ -1692,7 +1692,7 @@ void func_50()
 	{
 		if (!func_107(iLocal_379))
 		{
-			iLocal_379 = func_112("JAIL_CELL_ACTIONS", iLocal_249, Global_35, 3, 0, 0, 0, 3, 0.2f, 570, 4000, 10, 1073741824, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
+			iLocal_379 = func_112("JAIL_CELL_ACTIONS", iLocal_249, Global_35, 3, 0, 0, 0, 3, 0.2f, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 		}
 		else if (!func_109() && !func_110())
 		{
@@ -1702,7 +1702,7 @@ void func_50()
 				func_117(iLocal_379, iLocal_353, 0, 1);
 				if (!func_107(iLocal_380))
 				{
-					iLocal_380 = func_112(func_118(), iLocal_250, Global_35, 3, 0, 0, 0, 0, 0.2f, 570, 4000, 10, 1073741824, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
+					iLocal_380 = func_112(func_118(), iLocal_250, Global_35, 3, 0, 0, 0, 0, 0.2f, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 					func_117(iLocal_380, iLocal_353, 0, 1);
 				}
 				else if (func_119(iLocal_380, 0))
@@ -1711,7 +1711,7 @@ void func_50()
 				}
 				if (!func_107(iLocal_381))
 				{
-					iLocal_381 = func_112(func_120(), iLocal_251, Global_35, 3, 0, 0, 0, 0, 0.2f, 570, 4000, 10, 1073741824, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
+					iLocal_381 = func_112(func_120(), iLocal_251, Global_35, 3, 0, 0, 0, 0, 0.2f, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 					func_117(iLocal_381, iLocal_353, 0, 1);
 				}
 				else if (func_119(iLocal_381, 0))
@@ -1720,7 +1720,7 @@ void func_50()
 				}
 				if (!func_107(iLocal_382))
 				{
-					iLocal_382 = func_112(func_121(), iLocal_252, Global_35, 3, 0, 0, 0, 0, 0.2f, 570, 4000, 10, 1073741824, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
+					iLocal_382 = func_112(func_121(), iLocal_252, Global_35, 3, 0, 0, 0, 0, 0.2f, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 					func_117(iLocal_382, iLocal_353, 0, 1);
 				}
 				else if (func_119(iLocal_382, 0))
@@ -2892,7 +2892,7 @@ int func_112(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 			iVar0++;
 			if (iVar1 != 0)
 			{
-				func_169(iVar1, iParam1, sParam0, 5, iParam3, iParam4, 0f, 0f, 0f, fParam8, 0, iParam2, 3, iParam6, iParam7, iParam9, iParam10, iParam11, iParam12, iParam13, 1065353216, 0, bParam5, 0, iParam14, bParam16);
+				func_169(iVar1, iParam1, sParam0, 5, iParam3, iParam4, 0f, 0f, 0f, fParam8, 0, iParam2, 3, iParam6, iParam7, iParam9, iParam10, iParam11, iParam12, iParam13, 1065353216 /* Float: 1f */, 0, bParam5, 0, iParam14, bParam16);
 				return iVar1;
 			}
 			return 0;
@@ -3337,34 +3337,34 @@ int func_135(int iParam0, int iParam1, var uParam2)
 
 	Var0 = -178401592;
 	Var0.f_1 = iParam0;
-	Var0.f_2 = -421429484;
+	Var0.f_2 = joaat("name");
 	Var0.f_3 = 1;
 	Var0.f_4 = iParam1;
 	DATAFILE::_0x91DED5DD64BB2691(&Var0);
-	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, -421429484))
+	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("name")))
 	{
 		*uParam2 = iParam0;
 		uParam2->f_9 = iParam1;
 		StringCopy(&(uParam2->f_1), "", 64);
 		StringIntConCat(&(uParam2->f_1), iVar7, 64);
-		DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, 828747869);
+		DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("type"));
 		uParam2->f_10.f_3 = func_181(iVar7);
 		uParam2->f_14.f_3 = uParam2->f_10.f_3;
 		uParam2->f_18.f_3 = uParam2->f_10.f_3;
 		switch (uParam2->f_10.f_3)
 		{
 			case 0:
-				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("DEFAULT")))
+				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 1:
-				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("DEFAULT")))
+				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 2:
-				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("DEFAULT")))
+				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("default")))
 				{
 				}
 				break;
@@ -3372,25 +3372,25 @@ int func_135(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_14.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_14), &Var0, -30349581);
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_14), &Var0, joaat("min"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_14.f_1), &Var0, -30349581);
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_14.f_1), &Var0, joaat("min"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_14.f_2), &Var0, -30349581);
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_14.f_2), &Var0, joaat("min"));
 				break;
 		}
 		switch (uParam2->f_18.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, 1616931012);
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("max"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, 1616931012);
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("max"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, 1616931012);
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("max"));
 				break;
 		}
 		switch (uParam2->f_10.f_3)
@@ -4387,13 +4387,13 @@ int func_181(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("INT"):
+		case joaat("int"):
 			iVar0 = 0;
 			break;
-		case -680700887:
+		case joaat("float"):
 			iVar0 = 1;
 			break;
-		case -945474286:
+		case joaat("bool"):
 			iVar0 = 2;
 			break;
 	}

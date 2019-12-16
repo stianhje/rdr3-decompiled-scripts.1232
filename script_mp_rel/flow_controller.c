@@ -4404,8 +4404,8 @@ int func_162(int iParam0)
 	Var2.f_26 = 2;
 	Var2.f_26.f_1 = -1;
 	Var2.f_26.f_1.f_1 = -1;
-	Var2.f_29 = 493038497;
-	Var2.f_29.f_1 = 493038497;
+	Var2.f_29 = joaat("none");
+	Var2.f_29.f_1 = joaat("none");
 	Var33.f_1 = -1;
 	if (!func_228())
 	{
@@ -5384,8 +5384,8 @@ int func_229(var uParam0, int iParam1)
 	Var225.f_26 = 2;
 	Var225.f_26.f_1 = -1;
 	Var225.f_26.f_1.f_1 = -1;
-	Var225.f_29 = 493038497;
-	Var225.f_29.f_1 = 493038497;
+	Var225.f_29 = joaat("none");
+	Var225.f_29.f_1 = joaat("none");
 	Var256 = -1;
 	Var256.f_1 = -1;
 	Var256.f_2 = -1;
@@ -5396,8 +5396,8 @@ int func_229(var uParam0, int iParam1)
 	Var256.f_26 = 2;
 	Var256.f_26.f_1 = -1;
 	Var256.f_26.f_1.f_1 = -1;
-	Var256.f_29 = 493038497;
-	Var256.f_29.f_1 = 493038497;
+	Var256.f_29 = joaat("none");
+	Var256.f_29.f_1 = joaat("none");
 	Var287 = 3;
 	Var287.f_1 = -1;
 	Var287.f_1.f_1 = -1;
@@ -5409,8 +5409,8 @@ int func_229(var uParam0, int iParam1)
 	Var287.f_1.f_26 = 2;
 	Var287.f_1.f_26.f_1 = -1;
 	Var287.f_1.f_26.f_1.f_1 = -1;
-	Var287.f_1.f_29 = 493038497;
-	Var287.f_1.f_29.f_1 = 493038497;
+	Var287.f_1.f_29 = joaat("none");
+	Var287.f_1.f_29.f_1 = joaat("none");
 	Var287.f_1.f_31 = -1;
 	Var287.f_1.f_31.f_1 = -1;
 	Var287.f_1.f_31.f_2 = -1;
@@ -5421,8 +5421,8 @@ int func_229(var uParam0, int iParam1)
 	Var287.f_1.f_31.f_26 = 2;
 	Var287.f_1.f_31.f_26.f_1 = -1;
 	Var287.f_1.f_31.f_26.f_1.f_1 = -1;
-	Var287.f_1.f_31.f_29 = 493038497;
-	Var287.f_1.f_31.f_29.f_1 = 493038497;
+	Var287.f_1.f_31.f_29 = joaat("none");
+	Var287.f_1.f_31.f_29.f_1 = joaat("none");
 	Var287.f_1.f_31.f_31 = -1;
 	Var287.f_1.f_31.f_31.f_1 = -1;
 	Var287.f_1.f_31.f_31.f_2 = -1;
@@ -5433,8 +5433,8 @@ int func_229(var uParam0, int iParam1)
 	Var287.f_1.f_31.f_31.f_26 = 2;
 	Var287.f_1.f_31.f_31.f_26.f_1 = -1;
 	Var287.f_1.f_31.f_31.f_26.f_1.f_1 = -1;
-	Var287.f_1.f_31.f_31.f_29 = 493038497;
-	Var287.f_1.f_31.f_31.f_29.f_1 = 493038497;
+	Var287.f_1.f_31.f_31.f_29 = joaat("none");
+	Var287.f_1.f_31.f_31.f_29.f_1 = joaat("none");
 	uVar381 = 3;
 	Var395 = -1;
 	uVar397 = -1;
@@ -6935,7 +6935,7 @@ int func_300(int iParam0, int iParam1)
 		case 1532822440:
 		case 1918154385:
 			return 1;
-		case 1539023636:
+		case joaat("dynamic"):
 			return iParam1;
 		default:
 			break;
@@ -10018,7 +10018,7 @@ int func_340(int iParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	if (uParam1->f_29.f_1 == 493038497)
+	if (uParam1->f_29.f_1 == joaat("none"))
 	{
 		return 0;
 	}
@@ -10044,13 +10044,13 @@ int func_340(int iParam0, var uParam1, int iParam2)
 	}
 	switch (uParam1->f_29.f_1)
 	{
-		case joaat("POSITIVE"):
+		case joaat("positive"):
 			if (iVar1 != 1)
 			{
 				return 7;
 			}
 			break;
-		case joaat("NEGATIVE"):
+		case joaat("negative"):
 			if (iVar1 != 2)
 			{
 				return 8;
@@ -10100,8 +10100,8 @@ int func_342(var uParam0, int iParam1)
 	Var0.f_26 = 2;
 	Var0.f_26.f_1 = -1;
 	Var0.f_26.f_1.f_1 = -1;
-	Var0.f_29 = 493038497;
-	Var0.f_29.f_1 = 493038497;
+	Var0.f_29 = joaat("none");
+	Var0.f_29.f_1 = joaat("none");
 	func_384(&Var0);
 	if (!func_30(Var0))
 	{
@@ -10287,7 +10287,7 @@ int func_347(var uParam0, int iParam1, int iParam2)
 	vector3 vVar5;
 	int iVar8;
 
-	bVar3 = func_375(iParam1, 1073741824);
+	bVar3 = func_375(iParam1, 1073741824 /* Float: 2f */);
 	bVar4 = func_375(iParam1, 536870912);
 	if (func_375(iParam1, 8192))
 	{
@@ -10298,7 +10298,7 @@ int func_347(var uParam0, int iParam1, int iParam2)
 		vVar5 = { func_392(_NAMESPACE26::_0x4BE6C13A45CCA8EC(iParam2)) };
 	}
 	func_393(*uParam0, &iVar1, &iVar2);
-	iVar8 = func_394(iVar1, iVar2, func_299(iVar1), vVar5, !bVar3, bVar4, 1, -1082130432);
+	iVar8 = func_394(iVar1, iVar2, func_299(iVar1), vVar5, !bVar3, bVar4, 1, -1082130432 /* Float: -1f */);
 	if (iVar8 != 0)
 	{
 		switch (iVar8)
@@ -10800,7 +10800,7 @@ void func_366(struct<5> Param0, var uParam5)
 					iVar4 = func_365(Param0, 1570262717, 1);
 					switch (iVar8)
 					{
-						case 1741842546:
+						case joaat("flags"):
 							iVar5 = func_287(iVar4, 1);
 							break;
 						case -146456760:
@@ -10819,7 +10819,7 @@ void func_366(struct<5> Param0, var uParam5)
 					{
 						switch (iVar8)
 						{
-							case 1741842546:
+							case joaat("flags"):
 								func_410(&(uParam5->f_23), func_409(iVar5, 1));
 								break;
 							case -146456760:
@@ -11580,36 +11580,36 @@ int func_414(int iParam0, int iParam1)
 
 	if (!func_443(iParam0))
 	{
-		return 493038497;
+		return joaat("none");
 	}
 	if (!func_444(&Var1))
 	{
-		return 493038497;
+		return joaat("none");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 7, 0, 0, 1))
 	{
-		return 493038497;
+		return joaat("none");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 8, iParam0, 0, 1))
 	{
-		return 493038497;
+		return joaat("none");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 24, 0, 0, 0))
 	{
-		return 493038497;
+		return joaat("none");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 25, -1395074057, 0, 0))
 	{
-		return 493038497;
+		return joaat("none");
 	}
 	iVar0 = func_447(Var1, 4);
 	if (iVar0 != 1)
 	{
-		return 493038497;
+		return joaat("none");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 26, 0, 0, 1))
 	{
-		return 493038497;
+		return joaat("none");
 	}
 	uVar6 = func_448(Var1);
 	if (iParam1 == 0)
@@ -11629,37 +11629,37 @@ int func_415(int iParam0, int iParam1, int iParam2, var uParam3, var uParam4)
 	if (!func_443(iParam0))
 	{
 		*uParam3 = -1;
-		*uParam4 = 493038497;
+		*uParam4 = joaat("none");
 		return 0;
 	}
 	if (!func_444(&Var0))
 	{
 		*uParam3 = -1;
-		*uParam4 = 493038497;
+		*uParam4 = joaat("none");
 		return 0;
 	}
 	if (!func_445(Var0, &(Var0.f_1), 7, 0, 0, 1))
 	{
 		*uParam3 = -1;
-		*uParam4 = 493038497;
+		*uParam4 = joaat("none");
 		return 0;
 	}
 	if (!func_445(Var0, &(Var0.f_1), 8, iParam0, 0, 1))
 	{
 		*uParam3 = -1;
-		*uParam4 = 493038497;
+		*uParam4 = joaat("none");
 		return 0;
 	}
 	if (!func_445(Var0, &(Var0.f_1), 21, 0, 0, 0))
 	{
 		*uParam3 = -1;
-		*uParam4 = 493038497;
+		*uParam4 = joaat("none");
 		return 0;
 	}
 	if (!func_445(Var0, &(Var0.f_1), 22, iParam2, 0, 0))
 	{
 		*uParam3 = -1;
-		*uParam4 = 493038497;
+		*uParam4 = joaat("none");
 		return 0;
 	}
 	*uParam3 = func_449(Var0);
@@ -11675,7 +11675,7 @@ int func_415(int iParam0, int iParam1, int iParam2, var uParam3, var uParam4)
 	if (*uParam3 == 0)
 	{
 		*uParam3 = -1;
-		*uParam4 = 493038497;
+		*uParam4 = joaat("none");
 		return 0;
 	}
 	return 1;
@@ -12089,7 +12089,7 @@ int func_438(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -12098,7 +12098,7 @@ int func_438(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -12122,16 +12122,16 @@ int func_438(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -12490,9 +12490,9 @@ int func_462(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 303108068:
+		case joaat("primary"):
 			return 0;
-		case -910931556:
+		case joaat("secondary"):
 			return 1;
 		case -177397452:
 			return 2;
@@ -12742,7 +12742,7 @@ int func_481(int iParam0)
 		case 974227447:
 		case 1427578635:
 		case 1532822440:
-		case 1539023636:
+		case joaat("dynamic"):
 		case 1884341302:
 		case 1918154385:
 			return 1;

@@ -1376,7 +1376,7 @@ void func_56()
 	func_101(10, "PMPLAYER_CRIME_STAT");
 	IntToString(&cVar0, func_44(-190907223), 64);
 	func_102(11, "PMPLAYER_PLAYERS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_115(-1756227506, joaat("LAW")), 64);
+	IntToString(&cVar0, func_115(-1756227506, joaat("law")), 64);
 	func_102(12, "PMPLAYER_LAW_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, func_115(-1756227506, -2141600017), 64);
 	func_102(13, "PMPLAYER_PEDS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
@@ -1391,9 +1391,9 @@ void func_56()
 	IntToString(&cVar0, func_115(-985869509, 450674483), 64);
 	func_102(15, "PMPLAYER_PEDS_LOOTED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	func_101(16, "PMPLAYER_HUNTING");
-	IntToString(&cVar0, func_115(-1756227506, joaat("ANIMAL")), 64);
+	IntToString(&cVar0, func_115(-1756227506, joaat("animal")), 64);
 	func_102(17, "PMPLAYER_ANIMALS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_116(1979337996, 953441746), 64);
+	IntToString(&cVar0, func_116(1979337996, joaat("killed")), 64);
 	func_102(18, "PMPLAYER_UNIQUE_ANIMALS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, ((func_115(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1740237568) + func_115(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1274681111)) + func_115(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, 1581042032)), 64);
 	func_102(19, "PMPLAYER_ANIMALS_SKINNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
@@ -6146,7 +6146,7 @@ int func_236(var uParam0, int iParam1)
 	{
 		*iParam1 = 4;
 	}
-	else if (func_264(uParam0, 1073741824))
+	else if (func_264(uParam0, 1073741824 /* Float: 2f */))
 	{
 		*iParam1 = 3;
 	}
@@ -6404,7 +6404,7 @@ struct<4> func_251(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1270479))
 			{
-				*Global_1270479 = { func_242(joaat("CHARACTER"), func_77(), -1591664384, bParam0) };
+				*Global_1270479 = { func_242(joaat("character"), func_77(), -1591664384, bParam0) };
 			}
 			return *Global_1270479;
 		}
@@ -6412,12 +6412,12 @@ struct<4> func_251(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_12)))
 			{
-				Global_1270479->f_12 = { func_242(joaat("CHARACTER"), func_77(), -1591664384, 0) };
+				Global_1270479->f_12 = { func_242(joaat("character"), func_77(), -1591664384, 0) };
 			}
 			return Global_1270479->f_12;
 		}
 	}
-	return func_242(joaat("CHARACTER"), func_77(), -1591664384, bParam0);
+	return func_242(joaat("character"), func_77(), -1591664384, bParam0);
 }
 
 int func_252(bool bParam0)

@@ -428,7 +428,7 @@ int func_26()
 			break;
 	}
 	fVar7 = (fVar7 + vVar4.z);
-	func_41(&uLocal_23, vVar1, vVar4.x, vVar4.y, fVar7, 35f, 20, 10, 1077936128, 1101004800, 1, 0, 0.24f, 0, 0, 1044549468);
+	func_41(&uLocal_23, vVar1, vVar4.x, vVar4.y, fVar7, 35f, 20, 10, 1077936128 /* Float: 3f */, 1101004800 /* Float: 20f */, 1, 0, 0.24f, 0, 0, 1044549468 /* Float: 0.19f */);
 	func_25(2);
 	return 1;
 }

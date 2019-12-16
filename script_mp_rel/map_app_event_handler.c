@@ -58,7 +58,7 @@ void __EntryFunction__()
 					func_5(&Var0, &Var4);
 					switch (Var0.f_2)
 					{
-						case -118315613:
+						case joaat("zone"):
 							Var4.f_4 = { Var0 };
 							Var4 = { Var0 };
 							switch (Var0)
@@ -309,7 +309,7 @@ int func_10(var uParam0)
 		if (!uParam0->f_28)
 		{
 			uParam0->f_38 = 0;
-			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(-2042186616, -556114113);
+			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), -556114113);
 			return 1;
 		}
 	}
@@ -429,7 +429,7 @@ void func_14(int iParam0, var uParam1)
 			func_5(&Var0, uParam1);
 			switch (Var0.f_2)
 			{
-				case -118315613:
+				case joaat("zone"):
 					uParam1->f_4 = { Var0 };
 					*uParam1 = { Var0 };
 					switch (Var0)
@@ -459,7 +459,7 @@ void func_14(int iParam0, var uParam1)
 							break;
 					}
 					break;
-				case -1287330983: /* GXTEntry: "Card" */
+				case joaat("card"):
 					if (Var0 == -1203660660)
 					{
 						if (func_46(uParam1))
@@ -1276,7 +1276,7 @@ void func_31(var uParam0)
 
 void func_32(var uParam0)
 {
-	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(-2042186616, 1136348382))
+	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), 1136348382))
 	{
 		uParam0->f_38 = 1;
 	}
@@ -1808,7 +1808,7 @@ void func_54(var uParam0, var uParam1)
 			else
 			{
 				iVar6 = func_101(iVar4);
-				if (iVar6 == 493038497)
+				if (iVar6 == joaat("none"))
 				{
 				}
 				else
@@ -1819,7 +1819,7 @@ void func_54(var uParam0, var uParam1)
 						{
 							if (!func_104(func_103(iVar4)))
 							{
-								iVar6 = -910931556;
+								iVar6 = joaat("secondary");
 							}
 						}
 						iVar5 = PLAYER::_0x8E84119A23C16623(func_105(iVar4, iVar6), 0, 0);
@@ -1833,12 +1833,12 @@ void func_54(var uParam0, var uParam1)
 							{
 								switch (iVar6)
 								{
-									case 303108068:
+									case joaat("primary"):
 										bVar3 = uParam1->f_8;
 										bVar1 = uParam1->f_12;
 										bVar2 = uParam1->f_13;
 										break;
-									case -910931556:
+									case joaat("secondary"):
 										if (func_103(iVar4) == -1211851008)
 										{
 											bVar3 = uParam1->f_8;
@@ -1862,10 +1862,10 @@ void func_54(var uParam0, var uParam1)
 							{
 								switch (func_106(iVar4, iVar6))
 								{
-									case 1830115867:
+									case joaat("female"):
 										bVar3 = -648664377; /* GXTEntry: "A stranger has some business for you." */
 										break;
-									case 472588819:
+									case joaat("male"):
 										bVar3 = 1463582430; /* GXTEntry: "A stranger has some business for you." */
 										break;
 									default:
@@ -5017,11 +5017,11 @@ int func_151(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -910931556:
+		case joaat("secondary"):
 			return 2;
-		case 303108068:
+		case joaat("primary"):
 			return 1;
-		case 493038497:
+		case joaat("none"):
 			return 0;
 		default:
 			break;
@@ -6854,7 +6854,7 @@ int func_250(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -6863,7 +6863,7 @@ int func_250(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -6887,16 +6887,16 @@ int func_250(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -7160,9 +7160,9 @@ int func_259(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 987444055:
+		case joaat("null"):
 			return -1;
-		case joaat("NORMAL"):
+		case joaat("normal"):
 			return 0;
 		case -640677282:
 			return 1;

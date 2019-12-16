@@ -61,7 +61,7 @@ void __EntryFunction__()
 	iVar2 = -1723036365;
 	if (func_3(0))
 	{
-		iVar2 = joaat("SHOP");
+		iVar2 = joaat("shop");
 	}
 	while (!func_4())
 	{

@@ -1158,7 +1158,7 @@ void func_63(int iParam0, bool bParam1)
 		}
 		return;
 	}
-	func_100(Var30.f_6, Var30, -1082130432, -1082130432, 1, 1, 1);
+	func_100(Var30.f_6, Var30, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, 1, 1, 1);
 	if (bParam1)
 	{
 		func_99(0);
@@ -1350,7 +1350,7 @@ void func_73(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_118(Global_1939168, 16384);
-	func_120(func_119(-1532769513, -36357794), 1);
+	func_120(func_119(-1532769513, joaat("areas")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:

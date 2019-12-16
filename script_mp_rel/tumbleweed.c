@@ -706,21 +706,21 @@ void func_28()
 
 void func_29(int iParam0)
 {
-	func_60(3, iLocal_27, iParam0, iLocal_28, iLocal_30, 4, 0, 0, -1082130432, 0);
+	func_60(3, iLocal_27, iParam0, iLocal_28, iLocal_30, 4, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_61(3, -460561996, 0, 0);
 	func_61(3, 687453229, 0, 0);
 	func_62(3, 8192);
 	func_63(3, 0);
 	func_64();
 	func_65(105);
-	func_60(6, iLocal_23, iParam0, iLocal_25, iLocal_26, 20, 0, 0, -1082130432, 0);
+	func_60(6, iLocal_23, iParam0, iLocal_25, iLocal_26, 20, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_61(6, 1880285656, 0, 0);
 	func_63(6, 0);
 	ENTITY::CREATE_MODEL_HIDE(-5479.709f, -2932.554f, -1.3902f, 1f, -1871171322, false);
-	func_60(10, iLocal_35, iParam0, iLocal_36, 0, 460, 0, 0, -1082130432, 0);
+	func_60(10, iLocal_35, iParam0, iLocal_36, 0, 460, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_62(10, 536870912);
 	func_63(10, 0);
-	func_60(9, iLocal_32, iParam0, 0, 0, 2, 1, 0, -1082130432, 0);
+	func_60(9, iLocal_32, iParam0, 0, 0, 2, 1, 0, -1082130432 /* Float: -1f */, 0);
 	func_62(9, 536870912);
 	func_62(9, 16384);
 	func_62(9, 32768);
@@ -1698,7 +1698,7 @@ void func_84(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_157(Global_1939168, 16384);
-	func_159(func_158(-1532769513, -36357794), 1);
+	func_159(func_158(-1532769513, joaat("areas")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -6191,7 +6191,7 @@ int func_228(int iParam0)
 		case 69:
 			return 922959422;
 		case 70:
-			return 1948709075;
+			return joaat("rage_p2_3");
 		case 71:
 			return 599204508;
 		case 74:
@@ -7222,7 +7222,7 @@ int func_258(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -7231,7 +7231,7 @@ int func_258(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -7255,16 +7255,16 @@ int func_258(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;

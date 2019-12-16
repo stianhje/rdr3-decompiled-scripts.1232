@@ -2448,7 +2448,7 @@ int func_101(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = -1890605720;
+	iVar0 = joaat("moodstressed");
 	TASK::TASK_BARK(iParam0, iParam1, iVar0);
 	return 1;
 }
@@ -2794,7 +2794,7 @@ int func_115(var uParam0)
 			func_154(uParam0, 2);
 			break;
 		case 2:
-			if (func_156(vVar17, &(uParam0->f_3), &bVar22, iVar6, 0, 1127481344, 1101004800, -1138501878, -1138501878, 0))
+			if (func_156(vVar17, &(uParam0->f_3), &bVar22, iVar6, 0, 1127481344 /* Float: 180f */, 1101004800 /* Float: 20f */, -1138501878 /* Float: -0.01f */, -1138501878 /* Float: -0.01f */, 0))
 			{
 				vVar23 = { func_71(uParam0) };
 				if (MISC::GET_GROUND_Z_FOR_3D_COORD(vVar23, &uVar26, 1))

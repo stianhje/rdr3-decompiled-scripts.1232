@@ -4314,7 +4314,7 @@ void func_187()
 		iVar1 = func_144(0);
 		WEAPON::_0x4820A6939D7CEF28(iVar0, 0);
 		WEAPON::_0xFCCC886EDE3C63EC(iVar0, 2, 0);
-		iVar2 = func_304(iVar1, iVar0, 1060437492);
+		iVar2 = func_304(iVar1, iVar0, 1060437492 /* Float: 0.707f */);
 		if (ENTITY::IS_ENTITY_DEAD(iVar1) || PED::IS_PED_INJURED(iVar1))
 		{
 			bVar3 = true;
@@ -6899,7 +6899,7 @@ void func_239()
 
 void func_240()
 {
-	func_385(&(Local_995.f_18.f_166), func_384(), 1, -1082130432);
+	func_385(&(Local_995.f_18.f_166), func_384(), 1, -1082130432 /* Float: -1f */);
 }
 
 void func_241()
@@ -8593,7 +8593,7 @@ int func_311(int iParam0, int iParam1)
 			{
 				return 0;
 			}
-			if (!func_234(-2147483648, -1, 1) && !func_234(1073741824, -1, 1))
+			if (!func_234(-2147483648, -1, 1) && !func_234(1073741824 /* Float: 2f */, -1, 1))
 			{
 				return 0;
 			}
@@ -8692,7 +8692,7 @@ void func_315(int iParam0, bool bParam1)
 	int iVar0;
 
 	iVar0 = func_144(iParam0);
-	func_462(iVar0, bParam1, 1, 0, 0, 0, 0, 1056964608, 1065353216, -1, 0, 0, 0, 0);
+	func_462(iVar0, bParam1, 1, 0, 0, 0, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
 	PED::SET_PED_COMBAT_ATTRIBUTES(iVar0, 46, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(iVar0, 5, true);
 	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, 1222652248);
@@ -9224,7 +9224,7 @@ int func_355(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4, fl
 		}
 		if (Global_1939168->f_19)
 		{
-			if (func_486(uParam2, 1065353216))
+			if (func_486(uParam2, 1065353216 /* Float: 1f */))
 			{
 				if (!uParam2->f_1 & 4 != 0)
 				{
@@ -9369,7 +9369,7 @@ int func_355(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4, fl
 			{
 				if (func_503(func_502(PLAYER::PLAYER_ID()), ENTITY::GET_ENTITY_COORDS(iParam0, true, false)) <= uParam2->f_30)
 				{
-					if (func_304(PLAYER::PLAYER_PED_ID(), iParam0, 1060437492) == 0)
+					if (func_304(PLAYER::PLAYER_PED_ID(), iParam0, 1060437492 /* Float: 0.707f */) == 0)
 					{
 						*iParam3 = 1048576;
 						func_481(iParam0, uParam2, *iParam3);
@@ -9577,7 +9577,7 @@ int func_357(int iParam0, int iParam1, int iParam2)
 			}
 			if (iParam1 != 0)
 			{
-				func_262(1073741824);
+				func_262(1073741824 /* Float: 2f */);
 			}
 			return 1;
 			return 0;
@@ -11304,7 +11304,7 @@ int func_433(int iParam0, int iParam1)
 		case 1532822440:
 		case 1918154385:
 			return 1;
-		case 1539023636:
+		case joaat("dynamic"):
 			return iParam1;
 		default:
 			break;
@@ -11390,11 +11390,11 @@ void func_439(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	if (!bParam2)
 	{
-		func_164(uParam0, 1073741824);
+		func_164(uParam0, 1073741824 /* Float: 2f */);
 	}
 	else
 	{
-		func_193(uParam0, 1073741824);
+		func_193(uParam0, 1073741824 /* Float: 2f */);
 	}
 	if (!bParam3)
 	{
@@ -13834,7 +13834,7 @@ int func_489(var uParam0, int iParam1, var uParam2, bool bParam3)
 		switch (iVar3)
 		{
 			case 0:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(217247011, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_explosion"), vVar0, uParam2->f_23))
 				{
 					func_580(uParam2, 1);
 					return 1;
@@ -13848,7 +13848,7 @@ int func_489(var uParam0, int iParam1, var uParam2, bool bParam3)
 				}
 				break;
 			case 2:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_potential_blast"), vVar0, uParam2->f_23))
 				{
 					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar4, 0, 0);
 					if (func_591(iParam1, vVar0, vVar4))
@@ -13865,14 +13865,14 @@ int func_489(var uParam0, int iParam1, var uParam2, bool bParam3)
 		switch (iVar3)
 		{
 			case 0:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(217247011, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_explosion"), vVar0, uParam2->f_23))
 				{
 					func_580(uParam2, 1);
 					return 1;
 				}
 				break;
 			case 2:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_potential_blast"), vVar0, uParam2->f_23))
 				{
 					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar7, 0, 0);
 					if (func_591(iParam1, vVar0, vVar7))
@@ -14464,7 +14464,7 @@ int func_509(int iParam0, var uParam1)
 	}
 	else if (func_499() - uParam1->f_4) > func_608(uParam1)
 	{
-		return func_609(iParam0, uParam1, 0, -1082130432);
+		return func_609(iParam0, uParam1, 0, -1082130432 /* Float: -1f */);
 	}
 	return 0;
 }
@@ -14593,7 +14593,7 @@ int func_514(int iParam0, var uParam1, var uParam2, float fParam3)
 		}
 		if (Global_1939168->f_19)
 		{
-			if (func_486(uParam1, 1065353216))
+			if (func_486(uParam1, 1065353216 /* Float: 1f */))
 			{
 				if (!uParam1->f_1 & 4 != 0)
 				{
@@ -14721,7 +14721,7 @@ void func_518(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4)
 
 	func_521(Local_995.f_18.f_158[iParam0], 1, 1);
 	iVar0 = func_144(0);
-	iVar1 = func_615(sParam1, iParam2, iVar0, iParam3, iParam4, 0, 0, 0, 1070386381, 570, 4000, 10, 1073741824, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
+	iVar1 = func_615(sParam1, iParam2, iVar0, iParam3, iParam4, 0, 0, 0, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 	iVar2 = func_616(iVar1);
 	func_617(iVar1, 18, 0, 1);
 	func_617(iVar1, 17, 0, 1);
@@ -15097,7 +15097,7 @@ void func_535(struct<2> Param0)
 		{
 			if (Var0.f_29 == -681494152)
 			{
-				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, -1423748980);
+				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("race"));
 			}
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_29, 0);
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_30, 0);
@@ -16847,7 +16847,7 @@ int func_615(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 			iVar0++;
 			if (iVar1 != 0)
 			{
-				func_665(iVar1, iParam1, sParam0, 5, iParam3, iParam4, 0f, 0f, 0f, fParam8, 0, iParam2, 3, iParam6, iParam7, iParam9, iParam10, iParam11, iParam12, iParam13, 1065353216, 0, bParam5, 0, iParam14, bParam16);
+				func_665(iVar1, iParam1, sParam0, 5, iParam3, iParam4, 0f, 0f, 0f, fParam8, 0, iParam2, 3, iParam6, iParam7, iParam9, iParam10, iParam11, iParam12, iParam13, 1065353216 /* Float: 1f */, 0, bParam5, 0, iParam14, bParam16);
 				return iVar1;
 			}
 			return 0;
@@ -17270,7 +17270,7 @@ struct<5> func_637(bool bParam0, bool bParam1, int iParam2)
 			Var0 = { func_640(889965687 /* GXTEntry: "Wardrobe" */, Var0, 1034665895, bParam1) };
 			Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, 889965687);
 			break;
-		case -427144552:
+		case joaat("weapon"):
 			Var0 = { func_676(bParam1) };
 			if (iParam2 && func_677(bParam0, 1))
 			{
@@ -17298,7 +17298,7 @@ struct<5> func_637(bool bParam0, bool bParam1, int iParam2)
 			}
 			break;
 		case joaat("coach"):
-		case -1784221369:
+		case joaat("horse"):
 			Var0.f_4 = 1782082944;
 			break;
 		case -1650247667:
@@ -17321,7 +17321,7 @@ struct<5> func_637(bool bParam0, bool bParam1, int iParam2)
 			}
 			break;
 		case -2130996531:
-		case joaat("DOG"):
+		case joaat("dog"):
 			if (func_680(bParam0, -1823706425))
 			{
 				Var0 = { func_640(-1838434463 /* GXTEntry: "Camp" */, Var0, 1084182731, bParam1) };
@@ -17380,7 +17380,7 @@ struct<5> func_637(bool bParam0, bool bParam1, int iParam2)
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("CHARACTER"));
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("character"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -17459,7 +17459,7 @@ int func_641(bool bParam0, var uParam1, var uParam2, bool bParam3, int iParam4, 
 			Var15.f_11 = uParam2->f_4;
 			Var15.f_9 = bParam3;
 			Var15.f_12 = iParam4;
-			iVar14 = func_687(1702063850, &Var15, 1);
+			iVar14 = func_687(joaat("use"), &Var15, 1);
 			if (iVar14 != -1)
 			{
 				Var31.f_7 = -142743235;
@@ -18367,7 +18367,7 @@ struct<4> func_674(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1270479))
 			{
-				*Global_1270479 = { func_640(joaat("CHARACTER"), func_705(), -1591664384, bParam0) };
+				*Global_1270479 = { func_640(joaat("character"), func_705(), -1591664384, bParam0) };
 			}
 			return *Global_1270479;
 		}
@@ -18375,12 +18375,12 @@ struct<4> func_674(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_12)))
 			{
-				Global_1270479->f_12 = { func_640(joaat("CHARACTER"), func_705(), -1591664384, 0) };
+				Global_1270479->f_12 = { func_640(joaat("character"), func_705(), -1591664384, 0) };
 			}
 			return Global_1270479->f_12;
 		}
 	}
-	return func_640(joaat("CHARACTER"), func_705(), -1591664384, bParam0);
+	return func_640(joaat("character"), func_705(), -1591664384, bParam0);
 }
 
 int func_675(bool bParam0)
@@ -18515,7 +18515,7 @@ int func_682(bool bParam0, struct<4> Param1, int iParam5, bool bParam6, bool bPa
 	{
 		return 0;
 	}
-	if (!bParam7 && func_709(bParam0, joaat("DEFAULT")) == 0)
+	if (!bParam7 && func_709(bParam0, joaat("default")) == 0)
 	{
 		bParam7 = true;
 	}
@@ -18909,7 +18909,7 @@ int func_707(bool bParam0, int iParam1, bool bParam2)
 {
 	if (bParam2 == 487172188)
 	{
-		if (ITEMDATABASE::_0xAA29A5F13B2C20B2(iParam1, joaat("DEFAULT")) == -1925887917)
+		if (ITEMDATABASE::_0xAA29A5F13B2C20B2(iParam1, joaat("default")) == -1925887917)
 		{
 			return 0;
 		}
@@ -18948,7 +18948,7 @@ int func_710(int iParam0, var uParam1)
 	int iVar0;
 
 	iVar0 = NETSHOPPING::_0x6C9F12700BCE69F4(iParam0, uParam1);
-	if (iParam0 == 1702063850)
+	if (iParam0 == joaat("use"))
 	{
 		if (func_163(iVar0, 2048))
 		{
@@ -19067,7 +19067,7 @@ int func_716(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -19076,7 +19076,7 @@ int func_716(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -19100,16 +19100,16 @@ int func_716(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -19315,9 +19315,9 @@ int func_722(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 987444055:
+		case joaat("null"):
 			return -1;
-		case joaat("NORMAL"):
+		case joaat("normal"):
 			return 0;
 		case -640677282:
 			return 1;

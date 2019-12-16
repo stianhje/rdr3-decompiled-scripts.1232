@@ -270,7 +270,7 @@ int func_10(var uParam0)
 	}
 	switch (uParam0->f_39)
 	{
-		case -143853107:
+		case joaat("p_carcasshanglrg01x"):
 			iVar9 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 			switch (func_23(uParam0->f_1))
 			{
@@ -306,10 +306,10 @@ int func_10(var uParam0)
 			uParam0->f_51 = 33646;
 			uParam0->f_55 = 0;
 			break;
-		case -1545270676:
-		case -146984653:
+		case joaat("p_carcasshangmed01a"):
+		case joaat("p_carcasshangmed01x"):
 			iVar9 = MISC::GET_RANDOM_INT_IN_RANGE(0, 3);
-			if (uParam0->f_39 == -146984653)
+			if (uParam0->f_39 == joaat("p_carcasshangmed01x"))
 			{
 				if (func_7(uParam0, 128))
 				{
@@ -344,7 +344,7 @@ int func_10(var uParam0)
 					break;
 			}
 			break;
-		case 635622754:
+		case joaat("p_carcasshangfish01a"):
 			iVar9 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 			switch (iVar9)
 			{
@@ -467,13 +467,13 @@ int func_15(int iParam0, var uParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return uParam1->f_39 == -143853107;
+			return uParam1->f_39 == joaat("p_carcasshanglrg01x");
 		case 1:
-			return (uParam1->f_39 == -146984653 || uParam1->f_39 == -1545270676);
+			return (uParam1->f_39 == joaat("p_carcasshangmed01x") || uParam1->f_39 == joaat("p_carcasshangmed01a"));
 		case 2:
 			return uParam1->f_39 == 1148808695;
 		case 3:
-			return uParam1->f_39 == 635622754;
+			return uParam1->f_39 == joaat("p_carcasshangfish01a");
 		default:
 			break;
 	}
@@ -733,12 +733,12 @@ Vector3 func_24(var uParam0)
 
 	switch (uParam0->f_39)
 	{
-		case -143853107:
+		case joaat("p_carcasshanglrg01x"):
 			iVar3 = 4;
 			break;
-		case -1545270676:
-		case -146984653:
-		case 635622754:
+		case joaat("p_carcasshangmed01a"):
+		case joaat("p_carcasshangmed01x"):
+		case joaat("p_carcasshangfish01a"):
 			iVar3 = 4;
 			break;
 	}
@@ -900,12 +900,12 @@ void func_34(var uParam0)
 	vVar1 = { 0f, 0f, 0f };
 	switch (uParam0->f_39)
 	{
-		case -143853107:
+		case joaat("p_carcasshanglrg01x"):
 			iVar0 = 1669298768;
 			vVar1 = { 0.155f, -0.9f, 0f };
 			break;
-		case -1545270676:
-		case 635622754:
+		case joaat("p_carcasshangmed01a"):
+		case joaat("p_carcasshangfish01a"):
 			iVar0 = -1091256437;
 			vVar1 = { -0.1f, -0.61f, 0f };
 			break;
@@ -1059,7 +1059,7 @@ int func_41(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -143853107:
+		case joaat("p_carcasshanglrg01x"):
 			if (iParam1 == 0)
 			{
 				return 4;
@@ -1069,9 +1069,9 @@ int func_41(int iParam0, int iParam1)
 				return 5;
 			}
 			break;
-		case -1545270676:
-		case -146984653:
-		case 635622754:
+		case joaat("p_carcasshangmed01a"):
+		case joaat("p_carcasshangmed01x"):
+		case joaat("p_carcasshangfish01a"):
 			if (iParam1 == 3)
 			{
 				return 2;

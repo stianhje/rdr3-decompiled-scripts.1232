@@ -59,8 +59,8 @@ void __EntryFunction__()
 	Var0.f_4.f_1.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 	Var0.f_4.f_1.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 	Var0.f_4.f_1.f_293 = 2;
-	Var0.f_4.f_1.f_293.f_1.f_1 = 923940998;
-	Var0.f_4.f_1.f_293.f_1.f_8.f_1 = 923940998;
+	Var0.f_4.f_1.f_293.f_1.f_1 = joaat("testpropgroup01x");
+	Var0.f_4.f_1.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
 	Var0.f_4.f_1.f_310 = 1;
 	Var0.f_4.f_1.f_326 = 6;
 	Var0.f_4.f_1.f_375 = 10;
@@ -100,8 +100,8 @@ void __EntryFunction__()
 	Var0.f_4.f_1.f_420.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 	Var0.f_4.f_1.f_420.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 	Var0.f_4.f_1.f_420.f_293 = 2;
-	Var0.f_4.f_1.f_420.f_293.f_1.f_1 = 923940998;
-	Var0.f_4.f_1.f_420.f_293.f_1.f_8.f_1 = 923940998;
+	Var0.f_4.f_1.f_420.f_293.f_1.f_1 = joaat("testpropgroup01x");
+	Var0.f_4.f_1.f_420.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
 	Var0.f_4.f_1.f_420.f_310 = 1;
 	Var0.f_4.f_1.f_420.f_326 = 6;
 	Var0.f_4.f_1.f_420.f_375 = 10;
@@ -141,8 +141,8 @@ void __EntryFunction__()
 	Var0.f_4.f_1.f_420.f_420.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 	Var0.f_4.f_1.f_420.f_420.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 	Var0.f_4.f_1.f_420.f_420.f_293 = 2;
-	Var0.f_4.f_1.f_420.f_420.f_293.f_1.f_1 = 923940998;
-	Var0.f_4.f_1.f_420.f_420.f_293.f_1.f_8.f_1 = 923940998;
+	Var0.f_4.f_1.f_420.f_420.f_293.f_1.f_1 = joaat("testpropgroup01x");
+	Var0.f_4.f_1.f_420.f_420.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
 	Var0.f_4.f_1.f_420.f_420.f_310 = 1;
 	Var0.f_4.f_1.f_420.f_420.f_326 = 6;
 	Var0.f_4.f_1.f_420.f_420.f_375 = 10;
@@ -834,8 +834,8 @@ void func_26(var uParam0)
 	Var1.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 	Var1.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 	Var1.f_293 = 2;
-	Var1.f_293.f_1.f_1 = 923940998;
-	Var1.f_293.f_1.f_8.f_1 = 923940998;
+	Var1.f_293.f_1.f_1 = joaat("testpropgroup01x");
+	Var1.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
 	Var1.f_310 = 1;
 	Var1.f_326 = 6;
 	Var1.f_375 = 10;
@@ -1546,8 +1546,8 @@ int func_62(var uParam0, vector3 vParam1, bool bParam4)
 		Var4.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 		Var4.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 		Var4.f_293 = 2;
-		Var4.f_293.f_1.f_1 = 923940998;
-		Var4.f_293.f_1.f_8.f_1 = 923940998;
+		Var4.f_293.f_1.f_1 = joaat("testpropgroup01x");
+		Var4.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
 		Var4.f_310 = 1;
 		Var4.f_326 = 6;
 		Var4.f_375 = 10;
@@ -1667,7 +1667,7 @@ int func_70(var uParam0, bool bParam1)
 		{
 			uParam0->f_8 = (uParam0->f_8 - (MISC::GET_FRAME_TIME() / func_99()));
 		}
-		uParam0->f_8 = func_100(uParam0->f_8, 0, 1065353216);
+		uParam0->f_8 = func_100(uParam0->f_8, 0, 1065353216 /* Float: 1f */);
 		GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(uParam0->f_7, "density", func_101(0f, 1f, uParam0->f_8), true);
 		GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION(uParam0->f_7, "size", func_101(0f, uParam0->f_5, uParam0->f_8), true);
 		if (bParam1)
@@ -2163,10 +2163,10 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[7 /*12*/])->f_1 = joaat("p_tentarmypup01x");
 					(uParam0->f_6[7 /*12*/])->f_2 = { -1384.472f, 389.1875f, 102.5022f };
 					(uParam0->f_6[7 /*12*/])->f_5 = { 0f, 0f, -26.4001f };
-					(uParam0->f_6[8 /*12*/])->f_1 = 1229219138;
+					(uParam0->f_6[8 /*12*/])->f_1 = joaat("p_bench03x");
 					(uParam0->f_6[8 /*12*/])->f_2 = { -1383.465f, 378.1525f, 102.9387f };
 					(uParam0->f_6[8 /*12*/])->f_5 = { 0f, 0f, 11.6f };
-					(uParam0->f_6[9 /*12*/])->f_1 = 1229219138;
+					(uParam0->f_6[9 /*12*/])->f_1 = joaat("p_bench03x");
 					(uParam0->f_6[9 /*12*/])->f_2 = { -1387.804f, 387.6171f, 102.598f };
 					(uParam0->f_6[9 /*12*/])->f_5 = { 0f, 0f, 30.8f };
 					(uParam0->f_310[0 /*15*/])->f_3 = { -604.8222f, -25.74674f, 86.09907f };
@@ -2555,7 +2555,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_12 = 1;
 					break;
 				case 25:
-					(uParam0->f_6[0 /*12*/])->f_1 = 401642131;
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_bench09x");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1205.565f, -1955.854f, 42.6f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 62.132f };
 					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_cs_book_small01x");
@@ -3561,7 +3561,7 @@ int func_107(var uParam0)
 	iVar0 = 0;
 	while (iVar0 < 2)
 	{
-		if ((uParam0->f_293[iVar0 /*8*/])->f_1 == 923940998)
+		if (uParam0->f_293[iVar0 /*8*/])->f_1 == joaat("testpropgroup01x")
 		{
 		}
 		else if (PROPSET::_DOES_PROPSET_EXIST(&(uParam0->f_293[iVar0 /*8*/])))
@@ -4806,7 +4806,7 @@ int func_154(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("PLAYER");
+			return joaat("player");
 		case 1:
 			return -1976316465;
 		case 2:

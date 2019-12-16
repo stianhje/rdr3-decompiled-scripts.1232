@@ -627,7 +627,7 @@ void func_16()
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(&(iLocal_24[iVar0])))
 		{
-			func_45(&(iLocal_24[iVar0]), VOLUME::_0xF70F00013A62F866(iLocal_77) + Vector(0f, 0f, (IntToFloat(iVar0) * 1f)), MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 2, 1073741824);
+			func_45(&(iLocal_24[iVar0]), VOLUME::_0xF70F00013A62F866(iLocal_77) + Vector(0f, 0f, (IntToFloat(iVar0) * 1f)), MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 360f), 2, 1073741824 /* Float: 2f */);
 			TASK::TASK_WANDER_IN_VOLUME(&(iLocal_24[iVar0]), iLocal_77, 1f, 3f, 1);
 		}
 		iVar0++;
@@ -1315,7 +1315,7 @@ int func_46(int iParam0, int iParam1, var uParam2, var uParam3, int iParam4, flo
 		}
 		if (Global_1939168->f_19)
 		{
-			if (func_72(uParam2, 1065353216))
+			if (func_72(uParam2, 1065353216 /* Float: 1f */))
 			{
 				if (!uParam2->f_1 & 4 != 0)
 				{
@@ -1460,7 +1460,7 @@ int func_46(int iParam0, int iParam1, var uParam2, var uParam3, int iParam4, flo
 			{
 				if (func_89(func_88(PLAYER::PLAYER_ID()), ENTITY::GET_ENTITY_COORDS(iParam0, true, false)) <= uParam2->f_30)
 				{
-					if (func_90(PLAYER::PLAYER_PED_ID(), iParam0, 1060437492) == 0)
+					if (func_90(PLAYER::PLAYER_PED_ID(), iParam0, 1060437492 /* Float: 0.707f */) == 0)
 					{
 						*uParam3 = 1048576;
 						func_67(iParam0, uParam2, *uParam3);
@@ -2336,7 +2336,7 @@ int func_75(var uParam0, int iParam1, var uParam2, bool bParam3)
 		switch (iVar3)
 		{
 			case 0:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(217247011, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_explosion"), vVar0, uParam2->f_23))
 				{
 					func_111(uParam2, 1);
 					return 1;
@@ -2350,7 +2350,7 @@ int func_75(var uParam0, int iParam1, var uParam2, bool bParam3)
 				}
 				break;
 			case 2:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_potential_blast"), vVar0, uParam2->f_23))
 				{
 					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar4, 0, 0);
 					if (func_123(iParam1, vVar0, vVar4))
@@ -2367,14 +2367,14 @@ int func_75(var uParam0, int iParam1, var uParam2, bool bParam3)
 		switch (iVar3)
 		{
 			case 0:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(217247011, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_explosion"), vVar0, uParam2->f_23))
 				{
 					func_111(uParam2, 1);
 					return 1;
 				}
 				break;
 			case 2:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_potential_blast"), vVar0, uParam2->f_23))
 				{
 					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar7, 0, 0);
 					if (func_123(iParam1, vVar0, vVar7))
@@ -2974,7 +2974,7 @@ int func_96(int iParam0, var uParam1)
 	}
 	else if (func_85() - uParam1->f_4) > func_144(uParam1)
 	{
-		return func_145(iParam0, uParam1, 0, -1082130432);
+		return func_145(iParam0, uParam1, 0, -1082130432 /* Float: -1f */);
 	}
 	return 0;
 }

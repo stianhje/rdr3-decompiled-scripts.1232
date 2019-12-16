@@ -261,9 +261,9 @@ void func_4()
 	{
 		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(29649618);
 	}
-	if (UIAPPS::_IS_APP_RUNNING(-1641598689) || UIAPPS::_IS_APP_ACTIVE(-1641598689))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("abilities")) || UIAPPS::_IS_APP_ACTIVE(joaat("abilities")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(-1641598689);
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("abilities"));
 	}
 	if (func_25())
 	{

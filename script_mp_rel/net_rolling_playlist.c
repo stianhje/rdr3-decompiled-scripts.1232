@@ -430,7 +430,7 @@ void func_6(var uParam0, var uParam1)
 			NETWORK::NETWORK_END_TUTORIAL_SESSION();
 		}
 	}
-	if ((func_22(uParam1, 2) || func_22(uParam1, 1)) && !func_24(1073741824))
+	if ((func_22(uParam1, 2) || func_22(uParam1, 1)) && !func_24(1073741824 /* Float: 2f */))
 	{
 		if (_NAMESPACE26::_0x424B17A7DC5C90BC(PLAYER::PLAYER_ID()))
 		{
@@ -2389,13 +2389,13 @@ void func_88()
 	{
 		return;
 	}
-	func_172(func_171(1511238709, 1994758582), 1);
+	func_172(func_171(joaat("attempts"), 1994758582), 1);
 	iVar1 = func_173(&iVar0, &iVar1);
 	if ((iVar1 == 1412564789 || iVar1 == 2090637823) || iVar1 == -1740003396)
 	{
-		func_172(func_171(1511238709, 862894291), 1);
+		func_172(func_171(joaat("attempts"), 862894291), 1);
 	}
-	func_172(func_171(1511238709, iVar1), 1);
+	func_172(func_171(joaat("attempts"), iVar1), 1);
 }
 
 var func_89(int iParam0, int iParam1)
@@ -2545,7 +2545,7 @@ void func_95()
 	CAM::DO_SCREEN_FADE_OUT(0);
 	func_176(10);
 	Global_1572887->f_106.f_77 = MISC::GET_GAME_TIMER();
-	func_58(1073741824);
+	func_58(1073741824 /* Float: 2f */);
 	func_58(131072);
 	func_175(4);
 }
@@ -4900,7 +4900,7 @@ int func_222(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -4909,7 +4909,7 @@ int func_222(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -4933,16 +4933,16 @@ int func_222(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -5148,9 +5148,9 @@ int func_228(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 987444055:
+		case joaat("null"):
 			return -1;
-		case joaat("NORMAL"):
+		case joaat("normal"):
 			return 0;
 		case -640677282:
 			return 1;
@@ -6927,7 +6927,7 @@ int func_307(int iParam0, int iParam1)
 		case 1532822440:
 		case 1918154385:
 			return 1;
-		case 1539023636:
+		case joaat("dynamic"):
 			return iParam1;
 		default:
 			break;

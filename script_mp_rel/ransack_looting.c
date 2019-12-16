@@ -1007,7 +1007,7 @@ void func_35(int iParam0)
 			break;
 		case 934878503:
 		case 1753153202:
-			if (ENTITY::GET_ENTITY_MODEL(iParam0->f_5) == 879616218)
+			if (ENTITY::GET_ENTITY_MODEL(iParam0->f_5) == joaat("p_medicinechest01x"))
 			{
 				iParam0->f_8 = 2;
 			}
@@ -1474,7 +1474,7 @@ void func_41(int iParam0)
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		DECORATOR::DECOR_SET_BOOL(iParam0, "scripted_loot_only", true);
-		ENTITY::_0x8C03CD6B5E0E85E8(iParam0, -1143637011);
+		ENTITY::_0x8C03CD6B5E0E85E8(iParam0, joaat("empty"));
 	}
 }
 
@@ -2258,7 +2258,7 @@ int func_82(bool bParam0)
 
 bool func_83(bool bParam0)
 {
-	return func_88(bParam0) == -427144552;
+	return func_88(bParam0) == joaat("weapon");
 }
 
 bool func_84(bool bParam0)

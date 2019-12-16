@@ -729,13 +729,13 @@ void func_28()
 
 void func_29(int iParam0)
 {
-	func_63(4, iLocal_22, iParam0, iLocal_23, 0, 44, 0, 0, -1082130432, 0);
+	func_63(4, iLocal_22, iParam0, iLocal_23, 0, 44, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_64(4, -919742804, 0, 0);
 	func_64(4, -1653762302, 0, 0);
 	func_64(4, 877945562, 0, 0);
 	func_65(4, 8192);
 	func_66(4, 0);
-	func_63(9, iLocal_32, iParam0, 0, 0, 2, 1, 0, -1082130432, 0);
+	func_63(9, iLocal_32, iParam0, 0, 0, 2, 1, 0, -1082130432 /* Float: -1f */, 0);
 	if (!func_67() && func_68())
 	{
 		func_64(9, 1471789970, 0, 0);
@@ -755,7 +755,7 @@ void func_29(int iParam0)
 	func_65(9, 4);
 	func_65(9, 16777216);
 	func_65(9, 67108864);
-	func_63(2, iLocal_24, iParam0, iLocal_25, iLocal_26, 1277952, 0, 0, -1082130432, 0);
+	func_63(2, iLocal_24, iParam0, iLocal_25, iLocal_26, 1277952, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_66(2, 0);
 	func_69();
 	func_70(94);
@@ -2277,7 +2277,7 @@ void func_90(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_175(Global_1939168, 16384);
-	func_177(func_176(-1532769513, -36357794), 1);
+	func_177(func_176(-1532769513, joaat("areas")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -7985,7 +7985,7 @@ int func_244(int iParam0)
 		case 69:
 			return 922959422;
 		case 70:
-			return 1948709075;
+			return joaat("rage_p2_3");
 		case 71:
 			return 599204508;
 		case 74:
@@ -9021,7 +9021,7 @@ int func_275(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -9030,7 +9030,7 @@ int func_275(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -9054,16 +9054,16 @@ int func_275(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;

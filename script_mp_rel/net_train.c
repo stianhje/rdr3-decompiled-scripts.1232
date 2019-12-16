@@ -1172,7 +1172,7 @@ void func_60()
 
 	fVar2 = 25f;
 	uVar7 = 1;
-	iVar0 = func_73(&uVar3, &uVar7, 3, Global_36, fVar2, 0, 0, 0, -1, 1, 1, -1082130432, 0, 1);
+	iVar0 = func_73(&uVar3, &uVar7, 3, Global_36, fVar2, 0, 0, 0, -1, 1, 1, -1082130432 /* Float: -1f */, 0, 1);
 	iVar1 = 0;
 	while (iVar1 <= (iVar0 - 1))
 	{

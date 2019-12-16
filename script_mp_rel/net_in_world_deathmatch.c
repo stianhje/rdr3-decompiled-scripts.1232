@@ -2717,7 +2717,7 @@ void func_101(int iParam0, var uParam1, var uParam2, int iParam3)
 			else
 			{
 				SCRIPTS::_0x7D654266025E921B(784116709);
-				func_17(func_16(1511238709, 596359697), 1);
+				func_17(func_16(joaat("attempts"), 596359697), 1);
 			}
 			func_200((*uParam2)[iParam0 /*25*/], 1);
 			break;
@@ -2732,7 +2732,7 @@ void func_101(int iParam0, var uParam1, var uParam2, int iParam3)
 						((*uParam2)[iParam0 /*25*/])->f_7[iVar0] = 255;
 						iVar0++;
 					}
-					func_17(func_16(1511238709, -785841056), 1);
+					func_17(func_16(joaat("attempts"), -785841056), 1);
 					func_200((*uParam2)[iParam0 /*25*/], 2);
 					func_205(&(iParam3->f_1151), 0);
 				}
@@ -2742,12 +2742,12 @@ void func_101(int iParam0, var uParam1, var uParam2, int iParam3)
 					iParam3->f_1052 = 0;
 					if (iParam3->f_1046 == 1)
 					{
-						func_17(func_16(1511238709, 346097770), 1);
+						func_17(func_16(joaat("attempts"), 346097770), 1);
 					}
 					else
 					{
-						func_17(func_16(1511238709, -2027482694), 1);
-						func_17(func_16(1511238709, -785841056), 1);
+						func_17(func_16(joaat("attempts"), -2027482694), 1);
+						func_17(func_16(joaat("attempts"), -785841056), 1);
 					}
 					Global_1102098->f_935.f_18 = 1;
 					func_200((*uParam2)[iParam0 /*25*/], 3);
@@ -3958,7 +3958,7 @@ void func_149(var uParam0, bool bParam1)
 {
 	int iVar0;
 
-	UIAPPS::_CLOSE_APP_BY_HASH(595204529);
+	UIAPPS::_CLOSE_APP_BY_HASH(joaat("leaderboards"));
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam0))
 	{
 		DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(*uParam0);
@@ -4759,7 +4759,7 @@ int func_186(var uParam0, var uParam1)
 				return 0;
 			}
 			func_301(&vVar0, 100f);
-			bVar4 = func_302(vVar0, uParam1->f_1110[uParam0->f_2 /*9*/], &bVar3, 1, 0, 180f, 1101004800, 0f, 120f, 0f);
+			bVar4 = func_302(vVar0, uParam1->f_1110[uParam0->f_2 /*9*/], &bVar3, 1, 0, 180f, 1101004800 /* Float: 20f */, 0f, 120f, 0f);
 			if (bVar3)
 			{
 				func_300(&(uParam0->f_2), 1);
@@ -4788,7 +4788,7 @@ int func_186(var uParam0, var uParam1)
 				return 0;
 			}
 			func_301(&vVar0, 100f);
-			bVar4 = func_302(vVar0, uParam1->f_1110[uParam0->f_2 /*9*/], &bVar3, 1, 0, 180f, 1101004800, 0f, 120f, 0f);
+			bVar4 = func_302(vVar0, uParam1->f_1110[uParam0->f_2 /*9*/], &bVar3, 1, 0, 180f, 1101004800 /* Float: 20f */, 0f, 120f, 0f);
 			if (bVar3)
 			{
 				func_300(&(uParam0->f_2), 2);
@@ -4815,7 +4815,7 @@ int func_186(var uParam0, var uParam1)
 			{
 				return 0;
 			}
-			bVar4 = func_302(vVar0, uParam1->f_1110[uParam0->f_2 /*9*/], &bVar3, 1, 0, 180f, 1101004800, 0f, 120f, 0f);
+			bVar4 = func_302(vVar0, uParam1->f_1110[uParam0->f_2 /*9*/], &bVar3, 1, 0, 180f, 1101004800 /* Float: 20f */, 0f, 120f, 0f);
 			if (bVar3)
 			{
 				func_300(&(uParam0->f_2), 3);
@@ -4842,7 +4842,7 @@ int func_186(var uParam0, var uParam1)
 			{
 				return 0;
 			}
-			bVar4 = func_302(vVar0, uParam1->f_1110[uParam0->f_2 /*9*/], &bVar3, 1, 0, 180f, 1101004800, 0f, 120f, 0f);
+			bVar4 = func_302(vVar0, uParam1->f_1110[uParam0->f_2 /*9*/], &bVar3, 1, 0, 180f, 1101004800 /* Float: 20f */, 0f, 120f, 0f);
 			if (bVar3)
 			{
 				func_300(&(uParam0->f_2), 5);
@@ -5592,7 +5592,7 @@ void func_214(var uParam0, var uParam1, int iParam2, int iParam3)
 	}
 	if (!func_320(iParam2->f_1147))
 	{
-		iParam2->f_1147 = func_335("FM_FAST_TRAVEL", joaat("INPUT_CONTEXT_Y"), Global_35, 2, 0, 0, 0, 5, 1070386381, 570, 4000, 10, 1073741824, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
+		iParam2->f_1147 = func_335("FM_FAST_TRAVEL", joaat("INPUT_CONTEXT_Y"), Global_35, 2, 0, 0, 0, 5, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 		if (iParam2->f_1147 != 0)
 		{
 			HUD::_UIPROMPT_SET_ATTRIBUTE(((*Global_1949749)[iParam2->f_1147 /*23*/])->f_3, 13, true);
@@ -6126,7 +6126,7 @@ void func_228(var uParam0, int iParam1)
 	{
 		return;
 	}
-	Var0 = { func_16(-406491492, 596359697) };
+	Var0 = { func_16(joaat("misc"), 596359697) };
 	iVar2 = uParam0->f_3;
 	iVar3 = func_365(Var0);
 	if (IntToFloat(iVar2) > 0f && iVar2 > iVar3)
@@ -6286,7 +6286,7 @@ void func_231(int iParam0)
 	}
 	if (iParam0->f_1088)
 	{
-		func_374(iParam0->f_1085, 0f, -1082130432, -1082130432, 1, 1, 1);
+		func_374(iParam0->f_1085, 0f, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, 1, 1, 1);
 		iParam0->f_1088 = 0;
 	}
 }
@@ -8103,7 +8103,7 @@ int func_335(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 			iVar0++;
 			if (iVar1 != 0)
 			{
-				func_452(iVar1, iParam1, sParam0, 5, iParam3, iParam4, 0f, 0f, 0f, fParam8, 0, iParam2, 3, iParam6, iParam7, iParam9, iParam10, iParam11, iParam12, iParam13, 1065353216, 0, bParam5, 0, iParam14, bParam16);
+				func_452(iVar1, iParam1, sParam0, 5, iParam3, iParam4, 0f, 0f, 0f, fParam8, 0, iParam2, 3, iParam6, iParam7, iParam9, iParam10, iParam11, iParam12, iParam13, 1065353216 /* Float: 1f */, 0, bParam5, 0, iParam14, bParam16);
 				return iVar1;
 			}
 			return 0;
@@ -10924,7 +10924,7 @@ void func_436(struct<2> Param0)
 		{
 			if (Var0.f_29 == -681494152)
 			{
-				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, -1423748980);
+				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("race"));
 			}
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_29, 0);
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_30, 0);
@@ -12032,7 +12032,7 @@ int func_488(int iParam0, int iParam1)
 		case 1532822440:
 		case 1918154385:
 			return 1;
-		case 1539023636:
+		case joaat("dynamic"):
 			return iParam1;
 		default:
 			break;
@@ -14000,7 +14000,7 @@ void func_531(int iParam0, var uParam1, int iParam2)
 			func_595(iParam0, uParam1, iParam2, -1);
 			break;
 		case 3:
-			func_596(iParam0, uParam1, iParam2, -1082130432);
+			func_596(iParam0, uParam1, iParam2, -1082130432 /* Float: -1f */);
 			break;
 		case 4:
 			func_597(iParam0, uParam1, iParam2, 0, 0);
@@ -15881,24 +15881,24 @@ void func_613(var uParam0, bool bParam1)
 			func_684(&(uParam0->f_198), 2);
 			break;
 		case 2:
-			iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(595204529, func_685(bParam1));
+			iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("leaderboards"), func_685(bParam1));
 			if (iVar1 == 0)
 			{
 				func_684(&(uParam0->f_198), 3);
 			}
-			else if (UIAPPS::_IS_APP_RUNNING(595204529))
+			else if (UIAPPS::_IS_APP_RUNNING(joaat("leaderboards")))
 			{
 				func_684(&(uParam0->f_198), 3);
 			}
 			break;
 		case 3:
-			if (UIAPPS::_IS_APP_RUNNING(595204529))
+			if (UIAPPS::_IS_APP_RUNNING(joaat("leaderboards")))
 			{
 				if (!bVar0)
 				{
 					AUDIO::PLAY_SOUND_FRONTEND("Leaderboard_Show", "MP_Leaderboard_Sounds", true, 0);
 				}
-				UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(595204529, func_686());
+				UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("leaderboards"), func_686());
 				func_684(&(uParam0->f_198), 4);
 			}
 			else if (func_687())
@@ -15909,13 +15909,13 @@ void func_613(var uParam0, bool bParam1)
 		case 4:
 			if (MISC::IS_BIT_SET(uParam0->f_158, 13))
 			{
-				if (UIAPPS::_IS_APP_RUNNING(595204529))
+				if (UIAPPS::_IS_APP_RUNNING(joaat("leaderboards")))
 				{
 					if (!bVar0)
 					{
 						AUDIO::PLAY_SOUND_FRONTEND("Leaderboard_Hide", "MP_Leaderboard_Sounds", true, 0);
 					}
-					UIAPPS::_CLOSE_APP_BY_HASH(595204529);
+					UIAPPS::_CLOSE_APP_BY_HASH(joaat("leaderboards"));
 					func_684(&(uParam0->f_198), 5);
 				}
 			}
@@ -17289,7 +17289,7 @@ int func_642(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -17298,7 +17298,7 @@ int func_642(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -17322,16 +17322,16 @@ int func_642(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -17537,9 +17537,9 @@ int func_648(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 987444055:
+		case joaat("null"):
 			return -1;
-		case joaat("NORMAL"):
+		case joaat("normal"):
 			return 0;
 		case -640677282:
 			return 1;
@@ -18747,7 +18747,7 @@ int func_685(bool bParam0)
 {
 	if (bParam0)
 	{
-		return 1022890889;
+		return joaat("leaderboard");
 	}
 	return -987928333;
 }
@@ -19224,7 +19224,7 @@ int func_697(int iParam0, int iParam1)
 				return 2;
 			}
 			break;
-		case -619998507:
+		case joaat("duration"):
 		case -594821844:
 		case 348502922:
 		case 1002704651:
@@ -22492,34 +22492,34 @@ int func_802(int iParam0, int iParam1, var uParam2)
 
 	Var0 = -178401592;
 	Var0.f_1 = iParam0;
-	Var0.f_2 = -421429484;
+	Var0.f_2 = joaat("name");
 	Var0.f_3 = 1;
 	Var0.f_4 = iParam1;
 	DATAFILE::_0x91DED5DD64BB2691(&Var0);
-	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, -421429484))
+	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("name")))
 	{
 		*uParam2 = iParam0;
 		uParam2->f_9 = iParam1;
 		StringCopy(&(uParam2->f_1), "", 64);
 		StringIntConCat(&(uParam2->f_1), iVar7, 64);
-		DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, 828747869);
+		DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("type"));
 		uParam2->f_10.f_3 = func_810(iVar7);
 		uParam2->f_14.f_3 = uParam2->f_10.f_3;
 		uParam2->f_18.f_3 = uParam2->f_10.f_3;
 		switch (uParam2->f_10.f_3)
 		{
 			case 0:
-				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("DEFAULT")))
+				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 1:
-				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("DEFAULT")))
+				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 2:
-				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("DEFAULT")))
+				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("default")))
 				{
 				}
 				break;
@@ -22527,25 +22527,25 @@ int func_802(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_14.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_14), &Var0, -30349581);
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_14), &Var0, joaat("min"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_14.f_1), &Var0, -30349581);
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_14.f_1), &Var0, joaat("min"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_14.f_2), &Var0, -30349581);
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_14.f_2), &Var0, joaat("min"));
 				break;
 		}
 		switch (uParam2->f_18.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, 1616931012);
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("max"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, 1616931012);
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("max"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, 1616931012);
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("max"));
 				break;
 		}
 		switch (uParam2->f_10.f_3)
@@ -22679,13 +22679,13 @@ int func_810(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("INT"):
+		case joaat("int"):
 			iVar0 = 0;
 			break;
-		case -680700887:
+		case joaat("float"):
 			iVar0 = 1;
 			break;
-		case -945474286:
+		case joaat("bool"):
 			iVar0 = 2;
 			break;
 	}

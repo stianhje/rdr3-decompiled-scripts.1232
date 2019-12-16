@@ -515,7 +515,7 @@ void func_21(int iParam0)
 				}
 				((*Global_1247291)[iParam0 /*10*/])->f_6 = { ((*Global_1246311)[iParam0 /*29*/])->f_12.f_4 };
 				func_44(iParam0, 1);
-				if (!func_45(((*Global_1246311)[iParam0 /*29*/])->f_12.f_1, (*Global_1247291)[iParam0 /*10*/], &bVar1, ((*Global_1246311)[iParam0 /*29*/])->f_12, 0, ((*Global_1246311)[iParam0 /*29*/])->f_12.f_8, 1101004800, -1138501878, -1138501878, ((*Global_1246311)[iParam0 /*29*/])->f_12.f_7))
+				if (!func_45(((*Global_1246311)[iParam0 /*29*/])->f_12.f_1, (*Global_1247291)[iParam0 /*10*/], &bVar1, ((*Global_1246311)[iParam0 /*29*/])->f_12, 0, ((*Global_1246311)[iParam0 /*29*/])->f_12.f_8, 1101004800 /* Float: 20f */, -1138501878 /* Float: -0.01f */, -1138501878 /* Float: -0.01f */, ((*Global_1246311)[iParam0 /*29*/])->f_12.f_7))
 				{
 					if (bVar1)
 					{

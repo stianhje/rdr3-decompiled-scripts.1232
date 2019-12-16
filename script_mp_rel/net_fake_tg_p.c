@@ -3343,7 +3343,7 @@ void func_65(var uParam0)
 		}
 		if ((uParam0->f_160[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*4*/])->f_2 == 0)
 		{
-			if (func_94(uParam0->f_8.f_2, uParam0->f_1, 1073741824, 1))
+			if (func_94(uParam0->f_8.f_2, uParam0->f_1, 1073741824 /* Float: 2f */, 1))
 			{
 				(uParam0->f_160[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*4*/])->f_2 = 1;
 			}
@@ -4593,11 +4593,11 @@ int func_115(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == -1763848034)
+			if (iParam1 == joaat("p_chair12x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 2096698905)
+			if (iParam1 == joaat("p_chair14x"))
 			{
 				return 1;
 			}
@@ -4605,7 +4605,7 @@ int func_115(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == 1999055955)
+			if (iParam1 == joaat("p_chair26x"))
 			{
 				return 1;
 			}
@@ -4645,7 +4645,7 @@ int func_115(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == -1618805595)
+			if (iParam1 == joaat("s_crateseat03x"))
 			{
 				return 1;
 			}

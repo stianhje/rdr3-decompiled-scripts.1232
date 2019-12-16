@@ -978,7 +978,7 @@ struct<5> func_41(int iParam0, bool bParam1, int iParam2)
 			Var0 = { func_59(889965687 /* GXTEntry: "Wardrobe" */, Var0, 1034665895, bParam1) };
 			Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, 889965687);
 			break;
-		case -427144552:
+		case joaat("weapon"):
 			Var0 = { func_60(bParam1) };
 			if (iParam2 && func_61(iParam0, 1))
 			{
@@ -1006,7 +1006,7 @@ struct<5> func_41(int iParam0, bool bParam1, int iParam2)
 			}
 			break;
 		case joaat("coach"):
-		case -1784221369:
+		case joaat("horse"):
 			Var0.f_4 = 1782082944;
 			break;
 		case -1650247667:
@@ -1029,7 +1029,7 @@ struct<5> func_41(int iParam0, bool bParam1, int iParam2)
 			}
 			break;
 		case -2130996531:
-		case joaat("DOG"):
+		case joaat("dog"):
 			if (func_65(iParam0, -1823706425))
 			{
 				Var0 = { func_59(-1838434463 /* GXTEntry: "Camp" */, Var0, 1084182731, bParam1) };
@@ -1088,7 +1088,7 @@ struct<5> func_41(int iParam0, bool bParam1, int iParam2)
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("CHARACTER"));
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("character"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -1566,7 +1566,7 @@ struct<4> func_57(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1270479))
 			{
-				*Global_1270479 = { func_59(joaat("CHARACTER"), func_73(), -1591664384, bParam0) };
+				*Global_1270479 = { func_59(joaat("character"), func_73(), -1591664384, bParam0) };
 			}
 			return *Global_1270479;
 		}
@@ -1574,12 +1574,12 @@ struct<4> func_57(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_12)))
 			{
-				Global_1270479->f_12 = { func_59(joaat("CHARACTER"), func_73(), -1591664384, 0) };
+				Global_1270479->f_12 = { func_59(joaat("character"), func_73(), -1591664384, 0) };
 			}
 			return Global_1270479->f_12;
 		}
 	}
-	return func_59(joaat("CHARACTER"), func_73(), -1591664384, bParam0);
+	return func_59(joaat("character"), func_73(), -1591664384, bParam0);
 }
 
 int func_58(int iParam0)
@@ -1791,7 +1791,7 @@ int func_75(int iParam0, struct<4> Param1, int iParam5, bool bParam6, bool bPara
 	{
 		return 0;
 	}
-	if (!bParam7 && func_82(iParam0, joaat("DEFAULT")) == 0)
+	if (!bParam7 && func_82(iParam0, joaat("default")) == 0)
 	{
 		bParam7 = true;
 	}
@@ -1833,7 +1833,7 @@ int func_77(int iParam0, int iParam1, int iParam2)
 {
 	if (iParam2 == 487172188)
 	{
-		if (ITEMDATABASE::_0xAA29A5F13B2C20B2(iParam1, joaat("DEFAULT")) == -1925887917)
+		if (ITEMDATABASE::_0xAA29A5F13B2C20B2(iParam1, joaat("default")) == -1925887917)
 		{
 			return 0;
 		}

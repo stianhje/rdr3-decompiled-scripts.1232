@@ -1743,7 +1743,7 @@ void func_93(var uParam0)
 		ENTITY::_0x18FF3110CF47115D(Global_35, 9, false);
 		func_252(func_251(func_250()), 1);
 		AUDIO::START_AUDIO_SCENE(func_253(uParam0->f_39));
-		func_254(493038497, 0);
+		func_254(joaat("none"), 0);
 		Call_Loc(uParam0->f_137);
 	}
 }
@@ -2991,8 +2991,8 @@ int func_165(var uParam0, var uParam1)
 
 void func_166()
 {
-	func_371(30, 1073741824);
-	func_371(31, 1073741824);
+	func_371(30, 1073741824 /* Float: 2f */);
+	func_371(31, 1073741824 /* Float: 2f */);
 	func_372();
 }
 
@@ -3714,8 +3714,8 @@ void func_187(var uParam0)
 
 void func_188()
 {
-	func_409(30, 1073741824);
-	func_409(31, 1073741824);
+	func_409(30, 1073741824 /* Float: 2f */);
+	func_409(31, 1073741824 /* Float: 2f */);
 	func_206(0);
 }
 
@@ -4208,7 +4208,7 @@ void func_208(var uParam0, int iParam1, bool bParam2)
 					func_450(iVar0);
 					TASK::CLEAR_PED_TASKS_IMMEDIATELY(iVar0, 0, 1);
 					func_451(uParam0, iParam1, 0);
-					func_452(uParam0, iParam1, "no_cards_idle_a", 1, 0f, 1040187392, 0, 1);
+					func_452(uParam0, iParam1, "no_cards_idle_a", 1, 0f, 1040187392 /* Float: 0.125f */, 0, 1);
 					PED::_0x2208438012482A1A(iVar0, false, false);
 					PED::SET_PED_KEEP_TASK(iVar0, true);
 				}
@@ -4440,8 +4440,8 @@ void func_215(var uParam0, int iParam1, int iParam2, float fParam3)
 			else
 			{
 				func_465(uParam0, iParam1, "HoldCardsIdleRequest", fParam3);
-				func_467(uParam0, iParam1, "hold_cards_idle_a_card1", func_466(uParam0, iParam1, 0), 4, 2, -1082130432);
-				func_467(uParam0, iParam1, "hold_cards_idle_a_card2", func_466(uParam0, iParam1, 1), 4, 2, -1082130432);
+				func_467(uParam0, iParam1, "hold_cards_idle_a_card1", func_466(uParam0, iParam1, 0), 4, 2, -1082130432 /* Float: -1f */);
+				func_467(uParam0, iParam1, "hold_cards_idle_a_card2", func_466(uParam0, iParam1, 1), 4, 2, -1082130432 /* Float: -1f */);
 			}
 		}
 		func_468(uParam0, iParam1, iParam2);
@@ -15392,7 +15392,7 @@ void func_451(var uParam0, int iParam1, int iParam2)
 	(uParam0->f_818[iParam1 /*63*/])->f_4 = iParam2;
 	if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(&(uParam0->f_818[iParam1 /*63*/])))
 	{
-		TASK::_0x615DC4A82E90BB48(&(uParam0->f_818[iParam1 /*63*/]), &(uParam0->f_1323[iParam2]), joaat("DEFAULT"));
+		TASK::_0x615DC4A82E90BB48(&(uParam0->f_818[iParam1 /*63*/]), &(uParam0->f_1323[iParam2]), joaat("default"));
 	}
 }
 
@@ -15708,7 +15708,7 @@ void func_465(var uParam0, int iParam1, char* sParam2, float fParam3)
 	Var2.f_6 = -1082130432;
 	Var2.f_9 = -1082130432;
 	Var2 = &uParam0->f_1323[iVar0];
-	Var2.f_1 = joaat("DEFAULT");
+	Var2.f_1 = joaat("default");
 	Var2.f_29 = sParam2;
 	Var2.f_33 = "CurrentPhase";
 	Var2.f_32 = "CurrentClip";
@@ -17075,7 +17075,7 @@ void func_517(var uParam0, int iParam1, bool bParam2)
 		case 2:
 			if (!func_150(uParam0->f_59))
 			{
-				uParam0->f_59 = func_1113("MG_LEAVE1", joaat("INPUT_MINIGAME_QUIT"), 5, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("MEDIUM_TIMED_EVENT"), 0);
+				uParam0->f_59 = func_1113("MG_LEAVE1", joaat("INPUT_MINIGAME_QUIT"), 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("MEDIUM_TIMED_EVENT"), 0);
 				func_1114(uParam0->f_59, 10, 1, 1);
 			}
 			break;
@@ -17087,7 +17087,7 @@ void func_517(var uParam0, int iParam1, bool bParam2)
 				{
 					iVar0 = 0;
 				}
-				uParam0->f_59 = func_1113("MG_LEAVE1", joaat("INPUT_MINIGAME_QUIT"), 7, 570, iVar0, 10, 1073741824, 0, 1065353216, 0, 3, joaat("MEDIUM_TIMED_EVENT"), 0);
+				uParam0->f_59 = func_1113("MG_LEAVE1", joaat("INPUT_MINIGAME_QUIT"), 7, 570, iVar0, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("MEDIUM_TIMED_EVENT"), 0);
 				func_1114(uParam0->f_59, 10, 1, 1);
 			}
 			break;
@@ -17418,7 +17418,7 @@ void func_538(var uParam0, var uParam1, int iParam2)
 		case 6:
 			func_1118(uParam0, iParam2, -1921404755);
 			func_1118(uParam0, iParam2, 1426724047);
-			if ((!func_1119(uParam0, iParam2, "sit_enter_left", 1065353216) && !func_1119(uParam0, iParam2, "sit_enter_right", 1065353216)) || func_1120(uParam0, iParam2, 1))
+			if ((!func_1119(uParam0, iParam2, "sit_enter_left", 1065353216 /* Float: 1f */) && !func_1119(uParam0, iParam2, "sit_enter_right", 1065353216 /* Float: 1f */)) || func_1120(uParam0, iParam2, 1))
 			{
 				func_465(uParam0, iParam2, "NoCardsIdleRequest", 0.5f);
 				func_1121(uParam0, iParam2, 1);
@@ -17463,7 +17463,7 @@ void func_540(var uParam0, var uParam1, int iParam2)
 		case 2:
 			if (!func_375(*uParam1, 716706914))
 			{
-				iVar0 = func_1123(2, *uParam0, uParam0->f_3, iParam2, 1051931443);
+				iVar0 = func_1123(2, *uParam0, uParam0->f_3, iParam2, 1051931443 /* Float: 0.35f */);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 				{
 					vVar1 = { ENTITY::GET_ENTITY_COORDS(iVar0, true, false) };
@@ -17582,7 +17582,7 @@ void func_540(var uParam0, var uParam1, int iParam2)
 						ENTITY::SET_ENTITY_COORDS(*uParam1, *(uParam0->f_1236[iParam2 /*3*/]) - Vector(0.5f, 0f, 0f), true, false, true, true);
 					}
 				}
-				func_452(uParam0, iParam2, "sit_enter_left", 2, 1040187392, 1040187392, 0, 1);
+				func_452(uParam0, iParam2, "sit_enter_left", 2, 1040187392 /* Float: 0.125f */, 1040187392 /* Float: 0.125f */, 0, 1);
 				func_1125(uParam0, iParam2, 0);
 				func_1121(uParam0, iParam2, 6);
 			}
@@ -17590,7 +17590,7 @@ void func_540(var uParam0, var uParam1, int iParam2)
 		case 6:
 			func_1118(uParam0, iParam2, -1921404755);
 			func_1118(uParam0, iParam2, 1426724047);
-			if ((!func_1119(uParam0, iParam2, "sit_enter_left", 1065353216) && !func_1119(uParam0, iParam2, "sit_enter_right", 1065353216)) || func_1126(uParam0, iParam2, 0))
+			if ((!func_1119(uParam0, iParam2, "sit_enter_left", 1065353216 /* Float: 1f */) && !func_1119(uParam0, iParam2, "sit_enter_right", 1065353216 /* Float: 1f */)) || func_1126(uParam0, iParam2, 0))
 			{
 				func_465(uParam0, iParam2, "NoCardsIdleRequest", 0.5f);
 				func_1121(uParam0, iParam2, 1);
@@ -17660,7 +17660,7 @@ void func_544(var uParam0, var uParam1, int iParam2)
 		case 6:
 			func_1118(uParam0, iParam2, -1921404755);
 			func_1118(uParam0, iParam2, 1426724047);
-			if (func_1119(uParam0, iParam2, "sit_enter_right", 1065353216))
+			if (func_1119(uParam0, iParam2, "sit_enter_right", 1065353216 /* Float: 1f */))
 			{
 				fVar0 = func_1129(uParam0, iParam2, "sit_enter_right");
 				if (fVar0 < fVar1)
@@ -17672,7 +17672,7 @@ void func_544(var uParam0, var uParam1, int iParam2)
 					ENTITY::SET_ENTITY_ALPHA(*uParam1, 255, false);
 				}
 			}
-			if (!func_1119(uParam0, iParam2, "sit_enter_right", 1065353216) || func_1126(uParam0, iParam2, 0))
+			if (!func_1119(uParam0, iParam2, "sit_enter_right", 1065353216 /* Float: 1f */) || func_1126(uParam0, iParam2, 0))
 			{
 				ENTITY::SET_ENTITY_ALPHA(*uParam1, 255, false);
 				func_465(uParam0, iParam2, "NoCardsIdleRequest", 0.5f);
@@ -17861,28 +17861,28 @@ void func_546(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -240642751))
 	{
-		func_467(uParam0, iParam2, "shuffle_enter_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "shuffle_enter_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 190968016))
 	{
-		func_467(uParam0, iParam2, "shuffle_standard_front_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "shuffle_standard_front_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1711999502))
 	{
-		func_467(uParam0, iParam2, "shuffle_riffle_front_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "shuffle_riffle_front_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 96509896))
 	{
-		func_467(uParam0, iParam2, "shuffle_standard_left_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "shuffle_standard_left_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1301672132))
 	{
-		func_467(uParam0, iParam2, "shuffle_riffle_left_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "shuffle_riffle_left_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1846387738))
 	{
-		func_467(uParam0, iParam2, "deal_to_hold_cards_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "deal_to_hold_cards_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "deal_to_hold_cards_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "deal_to_hold_cards_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -18137,88 +18137,88 @@ void func_548(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1228639662))
 	{
-		func_467(uParam0, iParam2, "flop_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_card1", func_1138(uParam0, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_card2", func_1138(uParam0, 1), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_card3", func_1138(uParam0, 2), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "flop_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_card1", func_1138(uParam0, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_card2", func_1138(uParam0, 1), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_card3", func_1138(uParam0, 2), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -572100475))
 	{
-		func_467(uParam0, iParam2, "flop_enter_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "flop_enter_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -113517709))
 	{
-		func_467(uParam0, iParam2, "flop_exit_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "flop_exit_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 711118658))
 	{
-		func_467(uParam0, iParam2, "turn_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_no_cards_card1", func_1138(uParam0, 3), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "turn_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_no_cards_card1", func_1138(uParam0, 3), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 437520029))
 	{
-		func_467(uParam0, iParam2, "river_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "river_no_cards_card1", func_1138(uParam0, 4), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "river_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "river_no_cards_card1", func_1138(uParam0, 4), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 419783961))
 	{
-		func_467(uParam0, iParam2, "flop_turn_river_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card1", func_1138(uParam0, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card2", func_1138(uParam0, 1), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card3", func_1138(uParam0, 2), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card4", func_1138(uParam0, 3), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card5", func_1138(uParam0, 4), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "flop_turn_river_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card1", func_1138(uParam0, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card2", func_1138(uParam0, 1), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card3", func_1138(uParam0, 2), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card4", func_1138(uParam0, 3), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_no_cards_card5", func_1138(uParam0, 4), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 381129739))
 	{
-		func_467(uParam0, iParam2, "turn_river_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_river_no_cards_card1", func_1138(uParam0, 3), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_river_no_cards_card2", func_1138(uParam0, 4), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "turn_river_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_river_no_cards_card1", func_1138(uParam0, 3), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_river_no_cards_card2", func_1138(uParam0, 4), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -95084943))
 	{
-		func_467(uParam0, iParam2, "flop_enter_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_enter_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_enter_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "flop_enter_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_enter_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_enter_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -607868067))
 	{
-		func_467(uParam0, iParam2, "flop_exit_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_exit_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_exit_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "flop_exit_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_exit_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_exit_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1776513281))
 	{
-		func_467(uParam0, iParam2, "turn_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_hold_cards_card3", func_1138(uParam0, 3), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "turn_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_hold_cards_card3", func_1138(uParam0, 3), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1551570381))
 	{
-		func_467(uParam0, iParam2, "river_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "river_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "river_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "river_hold_cards_card3", func_1138(uParam0, 4), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "river_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "river_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "river_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "river_hold_cards_card3", func_1138(uParam0, 4), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 198906537))
 	{
-		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card3", func_1138(uParam0, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card4", func_1138(uParam0, 1), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card5", func_1138(uParam0, 2), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card6", func_1138(uParam0, 3), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card7", func_1138(uParam0, 4), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card3", func_1138(uParam0, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card4", func_1138(uParam0, 1), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card5", func_1138(uParam0, 2), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card6", func_1138(uParam0, 3), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "flop_turn_river_hold_cards_card7", func_1138(uParam0, 4), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 947648498))
 	{
-		func_467(uParam0, iParam2, "turn_river_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_river_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_river_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_river_hold_cards_card3", func_1138(uParam0, 3), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "turn_river_hold_cards_card4", func_1138(uParam0, 4), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "turn_river_hold_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_river_hold_cards_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_river_hold_cards_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_river_hold_cards_card3", func_1138(uParam0, 3), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "turn_river_hold_cards_card4", func_1138(uParam0, 4), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 531650300))
 	{
@@ -18295,8 +18295,8 @@ void func_550(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1087743179))
 	{
-		func_467(uParam0, iParam2, "hold_cards_enter_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "hold_cards_enter_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "hold_cards_enter_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "hold_cards_enter_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -18344,18 +18344,18 @@ void func_551(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1601457590))
 	{
-		func_467(uParam0, iParam2, "peek_enter_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "peek_enter_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "peek_enter_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "peek_enter_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 611442489))
 	{
-		func_467(uParam0, iParam2, "peek_idle_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "peek_idle_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "peek_idle_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "peek_idle_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1497341761))
 	{
-		func_467(uParam0, iParam2, "peek_exit_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "peek_exit_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "peek_exit_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "peek_exit_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -18394,7 +18394,7 @@ void func_552(var uParam0, var uParam1, int iParam2)
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -131858145))
 	{
 		func_1140(uParam0, iParam2, iVar0, iVar2, 0, func_1139(iVar1, 4), 0, 0);
-		func_467(uParam0, iParam2, "bet_blind_a_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_blind_a_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -18434,30 +18434,30 @@ void func_553(var uParam0, var uParam1, int iParam2)
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1753320602))
 	{
 		func_1140(uParam0, iParam2, iVar0, iVar2, 0, func_1139(iVar1, 4), 0, 0);
-		func_467(uParam0, iParam2, "bet_stack_a_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_a_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_a_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_stack_a_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_a_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_a_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1249714093))
 	{
 		func_1140(uParam0, iParam2, iVar0, iVar2, 0, func_1139(iVar1, 4), 0, 0);
-		func_467(uParam0, iParam2, "bet_stack_b_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_b_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_b_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_stack_b_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_b_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_b_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 2023235118))
 	{
 		func_1140(uParam0, iParam2, iVar0, iVar2, 0, func_1139(iVar1, 4), 0, 0);
-		func_467(uParam0, iParam2, "bet_stack_c_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_c_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_c_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_stack_c_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_c_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_c_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -431766831))
 	{
 		func_1140(uParam0, iParam2, iVar0, iVar2, 0, func_1139(iVar1, 4), 0, 0);
-		func_467(uParam0, iParam2, "bet_stack_d_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_d_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_d_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_stack_d_chips", func_1141(uParam0, iParam2, iVar0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_d_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_d_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -18555,23 +18555,23 @@ void func_554(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1753320602))
 	{
-		func_467(uParam0, iParam2, "bet_stack_a_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_a_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_stack_a_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_a_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1249714093))
 	{
-		func_467(uParam0, iParam2, "bet_stack_b_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_b_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_stack_b_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_b_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 2023235118))
 	{
-		func_467(uParam0, iParam2, "bet_stack_c_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_c_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_stack_c_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_c_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -431766831))
 	{
-		func_467(uParam0, iParam2, "bet_stack_d_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_stack_d_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_stack_d_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_stack_d_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -18623,12 +18623,12 @@ void func_556(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 727682306))
 	{
-		func_467(uParam0, iParam2, "bet_all_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_all_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_all_bank_01", func_1155(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_all_bank_02", func_1155(uParam0, iParam2, 1), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_all_bank_03", func_1155(uParam0, iParam2, 2), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "bet_all_bank_05", func_1155(uParam0, iParam2, 3), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "bet_all_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_all_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_all_bank_01", func_1155(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_all_bank_02", func_1155(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_all_bank_03", func_1155(uParam0, iParam2, 2), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "bet_all_bank_05", func_1155(uParam0, iParam2, 3), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -18662,18 +18662,18 @@ void func_557(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1798862211))
 	{
-		func_467(uParam0, iParam2, "check_a_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "check_a_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "check_a_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "check_a_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1444041649))
 	{
-		func_467(uParam0, iParam2, "check_b_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "check_b_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "check_b_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "check_b_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1739656056))
 	{
-		func_467(uParam0, iParam2, "check_c_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "check_c_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "check_c_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "check_c_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -18728,40 +18728,40 @@ void func_558(var uParam0, var uParam1, int iParam2)
 			case 0:
 				if (uParam1->f_43 == 0)
 				{
-					func_467(uParam0, iParam2, "reveal_win_a_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-					func_467(uParam0, iParam2, "reveal_win_a_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+					func_467(uParam0, iParam2, "reveal_win_a_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+					func_467(uParam0, iParam2, "reveal_win_a_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 				}
 				else if (uParam1->f_43 == 1)
 				{
-					func_467(uParam0, iParam2, "reveal_win_b_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-					func_467(uParam0, iParam2, "reveal_win_b_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+					func_467(uParam0, iParam2, "reveal_win_b_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+					func_467(uParam0, iParam2, "reveal_win_b_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 				}
 				else if (uParam1->f_43 == 2)
 				{
-					func_467(uParam0, iParam2, "reveal_win_c_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-					func_467(uParam0, iParam2, "reveal_win_c_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+					func_467(uParam0, iParam2, "reveal_win_c_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+					func_467(uParam0, iParam2, "reveal_win_c_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 				}
 				break;
 			case 1:
 				if (uParam1->f_43 == 0)
 				{
-					func_467(uParam0, iParam2, "reveal_loss_a_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-					func_467(uParam0, iParam2, "reveal_loss_a_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+					func_467(uParam0, iParam2, "reveal_loss_a_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+					func_467(uParam0, iParam2, "reveal_loss_a_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 				}
 				else if (uParam1->f_43 == 1)
 				{
-					func_467(uParam0, iParam2, "reveal_loss_b_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-					func_467(uParam0, iParam2, "reveal_loss_b_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+					func_467(uParam0, iParam2, "reveal_loss_b_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+					func_467(uParam0, iParam2, "reveal_loss_b_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 				}
 				else if (uParam1->f_43 == 2)
 				{
-					func_467(uParam0, iParam2, "reveal_loss_c_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-					func_467(uParam0, iParam2, "reveal_loss_c_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+					func_467(uParam0, iParam2, "reveal_loss_c_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+					func_467(uParam0, iParam2, "reveal_loss_c_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 				}
 				break;
 			case 2:
-				func_467(uParam0, iParam2, "reveal_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-				func_467(uParam0, iParam2, "reveal_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+				func_467(uParam0, iParam2, "reveal_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+				func_467(uParam0, iParam2, "reveal_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 				break;
 		}
 	}
@@ -18788,7 +18788,7 @@ void func_560(var uParam0, var uParam1, int iParam2)
 		case 47:
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "WinLossType", BUILTIN::TO_FLOAT(uParam1->f_41));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "ReturnCardType", BUILTIN::TO_FLOAT(iVar0));
-			if (((func_1117(uParam1, "ReturnRevealEnterAnimFinished") || func_1117(uParam1, "ReturnEnterHoldCardsAnimFinished")) || func_1157(uParam0, iParam2, 1842457532, 1)) || func_1157(uParam0, iParam2, 1426724047, 1))
+			if (((func_1117(uParam1, "ReturnRevealEnterAnimFinished") || func_1117(uParam1, "ReturnEnterHoldCardsAnimFinished")) || func_1157(uParam0, iParam2, joaat("blendout"), 1)) || func_1157(uParam0, iParam2, 1426724047, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "ReturnCards");
 				func_1121(uParam0, iParam2, 48);
@@ -18817,48 +18817,48 @@ void func_560(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1317959855))
 	{
-		func_467(uParam0, iParam2, "return_enter_hold_cards_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "return_enter_hold_cards_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "return_enter_hold_cards_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "return_enter_hold_cards_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1257930565))
 	{
-		func_467(uParam0, iParam2, "return_reveal_enter_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "return_reveal_enter_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "return_reveal_enter_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "return_reveal_enter_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1911579200))
 	{
-		func_467(uParam0, iParam2, "return_fold_enter_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "return_fold_enter_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "return_fold_enter_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "return_fold_enter_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -173534072))
 	{
-		func_467(uParam0, iParam2, "return_1_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "return_1_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "return_1_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "return_1_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1540636))
 	{
-		func_467(uParam0, iParam2, "return_2_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "return_2_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "return_2_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "return_2_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 693530283))
 	{
-		func_467(uParam0, iParam2, "return_3_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "return_3_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "return_3_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "return_3_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 2123629490))
 	{
-		func_467(uParam0, iParam2, "return_4_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "return_4_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "return_4_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "return_4_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 595740131))
 	{
-		func_467(uParam0, iParam2, "return_5_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "return_5_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "return_5_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "return_5_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -252921886))
 	{
-		func_467(uParam0, iParam2, "return_6_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "return_6_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "return_6_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "return_6_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19200,29 +19200,29 @@ void func_566(var uParam0, var uParam1, int iParam2)
 		{
 			if (!bVar1)
 			{
-				func_467(uParam0, iParam2, "board_return_reveal_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-				func_467(uParam0, iParam2, "board_return_reveal_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+				func_467(uParam0, iParam2, "board_return_reveal_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+				func_467(uParam0, iParam2, "board_return_reveal_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 			}
 		}
 		if (func_971(uParam0, 0))
 		{
-			func_467(uParam0, iParam2, "board_return_reveal_card3", func_1138(uParam0, 0), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "board_return_reveal_card3", func_1138(uParam0, 0), 0, 2, -1082130432 /* Float: -1f */);
 		}
 		if (func_971(uParam0, 1))
 		{
-			func_467(uParam0, iParam2, "board_return_reveal_card4", func_1138(uParam0, 1), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "board_return_reveal_card4", func_1138(uParam0, 1), 0, 2, -1082130432 /* Float: -1f */);
 		}
 		if (func_971(uParam0, 2))
 		{
-			func_467(uParam0, iParam2, "board_return_reveal_card5", func_1138(uParam0, 2), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "board_return_reveal_card5", func_1138(uParam0, 2), 0, 2, -1082130432 /* Float: -1f */);
 		}
 		if (func_971(uParam0, 3))
 		{
-			func_467(uParam0, iParam2, "board_return_reveal_card6", func_1138(uParam0, 3), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "board_return_reveal_card6", func_1138(uParam0, 3), 0, 2, -1082130432 /* Float: -1f */);
 		}
 		if (func_971(uParam0, 4))
 		{
-			func_467(uParam0, iParam2, "board_return_reveal_card7", func_1138(uParam0, 4), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "board_return_reveal_card7", func_1138(uParam0, 4), 0, 2, -1082130432 /* Float: -1f */);
 		}
 		iVar4 = 0;
 		while (iVar4 < 6)
@@ -19231,8 +19231,8 @@ void func_566(var uParam0, var uParam1, int iParam2)
 			{
 				if (func_771(uParam0, iVar4))
 				{
-					func_467(uParam0, iParam2, "board_return_reveal_card8", func_466(uParam0, iVar4, 0), 0, 2, -1082130432);
-					func_467(uParam0, iParam2, "board_return_reveal_card9", func_466(uParam0, iVar4, 1), 0, 2, -1082130432);
+					func_467(uParam0, iParam2, "board_return_reveal_card8", func_466(uParam0, iVar4, 0), 0, 2, -1082130432 /* Float: -1f */);
+					func_467(uParam0, iParam2, "board_return_reveal_card9", func_466(uParam0, iVar4, 1), 0, 2, -1082130432 /* Float: -1f */);
 				}
 			}
 			iVar4++;
@@ -19240,23 +19240,23 @@ void func_566(var uParam0, var uParam1, int iParam2)
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 637998928))
 	{
-		func_467(uParam0, iParam2, "pass_deck_1_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_1_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1482447871))
 	{
-		func_467(uParam0, iParam2, "pass_deck_2_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_2_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 66477882))
 	{
-		func_467(uParam0, iParam2, "pass_deck_3_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_3_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 2130775593))
 	{
-		func_467(uParam0, iParam2, "pass_deck_4_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_4_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -2138078509))
 	{
-		func_467(uParam0, iParam2, "pass_deck_5_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_5_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19297,27 +19297,27 @@ void func_567(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1157265058))
 	{
-		func_467(uParam0, iParam2, "pass_deck_enter_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_enter_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 637998928))
 	{
-		func_467(uParam0, iParam2, "pass_deck_1_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_1_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1482447871))
 	{
-		func_467(uParam0, iParam2, "pass_deck_2_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_2_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 66477882))
 	{
-		func_467(uParam0, iParam2, "pass_deck_3_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_3_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 2130775593))
 	{
-		func_467(uParam0, iParam2, "pass_deck_4_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_4_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -2138078509))
 	{
-		func_467(uParam0, iParam2, "pass_deck_5_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "pass_deck_5_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19361,15 +19361,15 @@ void func_568(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1258893207))
 	{
-		func_467(uParam0, iParam2, "receive_deck_enter_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "receive_deck_enter_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -854598449))
 	{
-		func_467(uParam0, iParam2, "receive_deck_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "receive_deck_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -698177614))
 	{
-		func_467(uParam0, iParam2, "receive_deck_exit_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "receive_deck_exit_no_cards_deck", func_1136(uParam0), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19418,13 +19418,13 @@ void func_569(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 827336758))
 	{
-		func_467(uParam0, iParam2, "mood_enter_hold_cards_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "mood_enter_hold_cards_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "mood_enter_hold_cards_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "mood_enter_hold_cards_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -13143479))
 	{
-		func_467(uParam0, iParam2, "mood_exit_hold_cards_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "mood_exit_hold_cards_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "mood_exit_hold_cards_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "mood_exit_hold_cards_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19552,49 +19552,49 @@ void func_575(var uParam0, var uParam1, int iParam2)
 	{
 		if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 953493909))
 		{
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_A_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_A_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_A_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_A_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 		}
 		else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 813983831))
 		{
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_B_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_B_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_B_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_B_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 		}
 		else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1823711918))
 		{
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_C_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_C_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_C_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_C_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 		}
 		else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -1179453188))
 		{
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_D_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_D_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_D_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_D_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 		}
 		else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -31018127))
 		{
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_E_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_E_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_E_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+			func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_SUBTLE_E_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 		}
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -308856369))
 	{
-		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_B_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_B_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_B_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_B_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -89351506))
 	{
-		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_C_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_C_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_C_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_C_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -288032489))
 	{
-		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_D_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_D_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_D_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_D_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 	else if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, -496151764))
 	{
-		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_E_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432);
-		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_E_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432);
+		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_E_card1", func_466(uParam0, iParam2, 0), 4, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "HOLD_CARDS_IDLE_E_card2", func_466(uParam0, iParam2, 1), 4, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19675,8 +19675,8 @@ void func_577(var uParam0, var uParam1, int iParam2)
 			StringConCat(&cVar3, "_card1", 64);
 			StringConCat(&Var11, "_card2", 64);
 		}
-		func_467(uParam0, iParam2, &cVar3, func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, &Var11, func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, &cVar3, func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, &Var11, func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19753,7 +19753,7 @@ void func_580(var uParam0, var uParam1, int iParam2)
 			func_1121(uParam0, iParam2, 63);
 			break;
 		case 63:
-			if ((((!func_1119(uParam0, iParam2, "sit_exit_left", 1065353216) && !func_1119(uParam0, iParam2, "sit_exit_right", 1065353216)) && !func_1119(uParam0, iParam2, "sit_exit_left_loss_a", 1065353216)) && !func_1119(uParam0, iParam2, "sit_exit_left_loss_b", 1065353216)) || (!bVar0 && func_1120(uParam0, iParam2, 0)))
+			if ((((!func_1119(uParam0, iParam2, "sit_exit_left", 1065353216 /* Float: 1f */) && !func_1119(uParam0, iParam2, "sit_exit_right", 1065353216 /* Float: 1f */)) && !func_1119(uParam0, iParam2, "sit_exit_left_loss_a", 1065353216 /* Float: 1f */)) && !func_1119(uParam0, iParam2, "sit_exit_left_loss_b", 1065353216 /* Float: 1f */)) || (!bVar0 && func_1120(uParam0, iParam2, 0)))
 			{
 				func_208(uParam0, iParam2, 0);
 				return;
@@ -19762,8 +19762,8 @@ void func_580(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 677502514))
 	{
-		func_467(uParam0, iParam2, "fold_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "fold_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "fold_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "fold_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19807,7 +19807,7 @@ void func_581(var uParam0, var uParam1, int iParam2)
 			func_1121(uParam0, iParam2, 63);
 			break;
 		case 63:
-			if ((((!func_1119(uParam0, iParam2, "sit_exit_left", 1065353216) && !func_1119(uParam0, iParam2, "sit_exit_right", 1065353216)) && !func_1119(uParam0, iParam2, "sit_exit_left_loss_a", 1065353216)) && !func_1119(uParam0, iParam2, "sit_exit_left_loss_b", 1065353216)) || func_1120(uParam0, iParam2, 0))
+			if ((((!func_1119(uParam0, iParam2, "sit_exit_left", 1065353216 /* Float: 1f */) && !func_1119(uParam0, iParam2, "sit_exit_right", 1065353216 /* Float: 1f */)) && !func_1119(uParam0, iParam2, "sit_exit_left_loss_a", 1065353216 /* Float: 1f */)) && !func_1119(uParam0, iParam2, "sit_exit_left_loss_b", 1065353216 /* Float: 1f */)) || func_1120(uParam0, iParam2, 0))
 			{
 				if (PED::IS_PED_A_PLAYER(*uParam1))
 				{
@@ -19855,8 +19855,8 @@ void func_581(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 677502514))
 	{
-		func_467(uParam0, iParam2, "fold_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "fold_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "fold_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "fold_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19885,8 +19885,8 @@ void func_582(var uParam0, var uParam1, int iParam2)
 		}
 		return;
 	}
-	fVar8 = func_1175(uParam0->f_699, 0, 1065353216);
-	fVar9 = func_1175(uParam0->f_700, 0, 1065353216);
+	fVar8 = func_1175(uParam0->f_699, 0, 1065353216 /* Float: 1f */);
+	fVar9 = func_1175(uParam0->f_700, 0, 1065353216 /* Float: 1f */);
 	switch (uParam1->f_9)
 	{
 		case 61:
@@ -19898,41 +19898,41 @@ void func_582(var uParam0, var uParam1, int iParam2)
 		case 62:
 			if (uParam1->f_41 == 2)
 			{
-				func_452(uParam0, iParam2, "sit_exit_right", 2, 1040187392, 1040187392, 0, 1);
+				func_452(uParam0, iParam2, "sit_exit_right", 2, 1040187392 /* Float: 0.125f */, 1040187392 /* Float: 0.125f */, 0, 1);
 			}
 			else if (uParam1->f_41 == 1)
 			{
 				if (uParam1->f_43 == 0)
 				{
-					func_452(uParam0, iParam2, "sit_exit_right_loss_a", 2, 1040187392, 1040187392, 0, 1);
+					func_452(uParam0, iParam2, "sit_exit_right_loss_a", 2, 1040187392 /* Float: 0.125f */, 1040187392 /* Float: 0.125f */, 0, 1);
 				}
 				else
 				{
-					func_452(uParam0, iParam2, "sit_exit_right_loss_b", 2, 1040187392, 1040187392, 0, 1);
+					func_452(uParam0, iParam2, "sit_exit_right_loss_b", 2, 1040187392 /* Float: 0.125f */, 1040187392 /* Float: 0.125f */, 0, 1);
 				}
 			}
 			func_1121(uParam0, iParam2, 63);
 			break;
 		case 63:
 			fVar6 = -1f;
-			if (func_1119(uParam0, iParam2, "sit_exit_right", 1065353216))
+			if (func_1119(uParam0, iParam2, "sit_exit_right", 1065353216 /* Float: 1f */))
 			{
 				fVar6 = func_1129(uParam0, iParam2, "sit_exit_right");
 			}
-			if (func_1119(uParam0, iParam2, "sit_exit_right_loss_a", 1065353216))
+			if (func_1119(uParam0, iParam2, "sit_exit_right_loss_a", 1065353216 /* Float: 1f */))
 			{
 				fVar6 = func_1129(uParam0, iParam2, "sit_exit_right_loss_a");
 			}
-			if (func_1119(uParam0, iParam2, "sit_exit_right_loss_b", 1065353216))
+			if (func_1119(uParam0, iParam2, "sit_exit_right_loss_b", 1065353216 /* Float: 1f */))
 			{
 				fVar6 = func_1129(uParam0, iParam2, "sit_exit_right_loss_b");
 			}
 			if (fVar6 >= fVar8)
 			{
-				fVar7 = func_1175((1f - ((fVar6 - fVar8) / fVar9)), 0, 1065353216);
+				fVar7 = func_1175((1f - ((fVar6 - fVar8) / fVar9)), 0, 1065353216 /* Float: 1f */);
 				ENTITY::SET_ENTITY_ALPHA(*uParam1, BUILTIN::ROUND((255f * fVar7)), false);
 			}
-			if ((!func_1119(uParam0, iParam2, "sit_exit_right", 1065353216) && !func_1119(uParam0, iParam2, "sit_exit_right_loss_a", 1065353216)) && !func_1119(uParam0, iParam2, "sit_exit_right_loss_b", 1065353216))
+			if ((!func_1119(uParam0, iParam2, "sit_exit_right", 1065353216 /* Float: 1f */) && !func_1119(uParam0, iParam2, "sit_exit_right_loss_a", 1065353216 /* Float: 1f */)) && !func_1119(uParam0, iParam2, "sit_exit_right_loss_b", 1065353216 /* Float: 1f */))
 			{
 				func_454(uParam0, iParam2);
 				return;
@@ -19941,8 +19941,8 @@ void func_582(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 677502514))
 	{
-		func_467(uParam0, iParam2, "fold_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "fold_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "fold_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "fold_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -19998,16 +19998,16 @@ void func_583(var uParam0, var uParam1, int iParam2)
 		}
 		Var6 = { cVar2 };
 		StringConCat(&Var6, "_bank_01", 32);
-		func_467(uParam0, iParam2, &Var6, uParam0->f_74[iParam2 /*30*/][0], 0, 2, -1082130432);
+		func_467(uParam0, iParam2, &Var6, uParam0->f_74[iParam2 /*30*/][0], 0, 2, -1082130432 /* Float: -1f */);
 		Var6 = { cVar2 };
 		StringConCat(&Var6, "_bank_02", 32);
-		func_467(uParam0, iParam2, &Var6, uParam0->f_74[iParam2 /*30*/][1], 0, 2, -1082130432);
+		func_467(uParam0, iParam2, &Var6, uParam0->f_74[iParam2 /*30*/][1], 0, 2, -1082130432 /* Float: -1f */);
 		Var6 = { cVar2 };
 		StringConCat(&Var6, "_bank_03", 32);
-		func_467(uParam0, iParam2, &Var6, uParam0->f_74[iParam2 /*30*/][2], 0, 2, -1082130432);
+		func_467(uParam0, iParam2, &Var6, uParam0->f_74[iParam2 /*30*/][2], 0, 2, -1082130432 /* Float: -1f */);
 		Var6 = { cVar2 };
 		StringConCat(&Var6, "_bank_05", 32);
-		func_467(uParam0, iParam2, &Var6, uParam0->f_74[iParam2 /*30*/][3], 0, 2, -1082130432);
+		func_467(uParam0, iParam2, &Var6, uParam0->f_74[iParam2 /*30*/][3], 0, 2, -1082130432 /* Float: -1f */);
 	}
 }
 
@@ -20048,7 +20048,7 @@ void func_584(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 62:
-			func_452(uParam0, iParam2, sVar2, 2, 0.5f, 1040187392, 0, 1);
+			func_452(uParam0, iParam2, sVar2, 2, 0.5f, 1040187392 /* Float: 0.125f */, 0, 1);
 			func_1121(uParam0, iParam2, 63);
 			break;
 		case 63:
@@ -20059,7 +20059,7 @@ void func_584(var uParam0, var uParam1, int iParam2)
 					func_849(uParam0, iParam2, 0, 1);
 				}
 			}
-			if (!func_1119(uParam0, iParam2, sVar2, 1065353216) || func_1120(uParam0, iParam2, 0))
+			if (!func_1119(uParam0, iParam2, sVar2, 1065353216 /* Float: 1f */) || func_1120(uParam0, iParam2, 0))
 			{
 				if (func_1177(uParam0, iParam2))
 				{
@@ -20076,8 +20076,8 @@ void func_584(var uParam0, var uParam1, int iParam2)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 677502514))
 	{
-		func_467(uParam0, iParam2, "fold_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432);
-		func_467(uParam0, iParam2, "fold_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432);
+		func_467(uParam0, iParam2, "fold_card1", func_466(uParam0, iParam2, 0), 0, 2, -1082130432 /* Float: -1f */);
+		func_467(uParam0, iParam2, "fold_card2", func_466(uParam0, iParam2, 1), 0, 2, -1082130432 /* Float: -1f */);
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(*uParam1, 1852719906))
 	{
@@ -20758,7 +20758,7 @@ void func_621(var uParam0, var uParam1)
 		if (&uParam0->f_1670[iVar3 /*13*/])
 		{
 			iVar2 = (uParam0->f_1670[iVar3 /*13*/])->f_3;
-			fVar4 = func_1175((BUILTIN::TO_FLOAT(iVar2) / BUILTIN::TO_FLOAT(iVar1)), 0, 1065353216);
+			fVar4 = func_1175((BUILTIN::TO_FLOAT(iVar2) / BUILTIN::TO_FLOAT(iVar1)), 0, 1065353216 /* Float: 1f */);
 			fVar5 = 0f;
 			fVar6 = ((1f - fVar4) + ((fVar5 * 0.5f) * fVar4));
 			(uParam0->f_1670[iVar3 /*13*/])->f_5 = fVar4;
@@ -20836,7 +20836,7 @@ void func_623(var uParam0, var uParam1)
 {
 	if (func_617(uParam1, uParam0->f_151.f_9))
 	{
-		func_1214(func_1213(1511238709, -1672018311), 1);
+		func_1214(func_1213(joaat("attempts"), -1672018311), 1);
 	}
 }
 
@@ -21438,7 +21438,7 @@ int func_655(var uParam0, var uParam1, var uParam2, var uParam3)
 		}
 		else
 		{
-			fVar0 = func_1175((func_125(&(uParam0->f_151.f_1640)) / uParam0->f_151.f_1457), 0, 1065353216);
+			fVar0 = func_1175((func_125(&(uParam0->f_151.f_1640)) / uParam0->f_151.f_1457), 0, 1065353216 /* Float: 1f */);
 			if (fVar0 > uParam1->f_1458)
 			{
 				if (!uParam0->f_151.f_2183)
@@ -21457,7 +21457,7 @@ int func_655(var uParam0, var uParam1, var uParam2, var uParam3)
 			fVar7 = uParam1->f_1467;
 			fVar8 = uParam1->f_1468;
 			fVar9 = uParam1->f_1469;
-			fVar10 = func_1175((func_125(&(uParam1->f_1640)) / uParam1->f_1457), 0, 1065353216);
+			fVar10 = func_1175((func_125(&(uParam1->f_1640)) / uParam1->f_1457), 0, 1065353216 /* Float: 1f */);
 			fVar11 = uParam1->f_1470;
 			if (fVar10 < fVar4)
 			{
@@ -21645,7 +21645,7 @@ void func_661(var uParam0, var uParam1)
 		}
 		if (func_266(&(uParam1->f_1650)))
 		{
-			fVar1 = func_1175((func_125(&(uParam1->f_1650)) / uParam1->f_1457), 0, 1065353216);
+			fVar1 = func_1175((func_125(&(uParam1->f_1650)) / uParam1->f_1457), 0, 1065353216 /* Float: 1f */);
 			if (fVar1 > uParam1->f_1458)
 			{
 				fVar2 = (1f - ((fVar1 - uParam1->f_1458) / (1f - uParam1->f_1458)));
@@ -25085,7 +25085,7 @@ void func_741(var uParam0, bool bParam1)
 	{
 		if (!func_150(uParam0->f_498))
 		{
-			uParam0->f_498 = func_1113("MGPKR_UI_MUCK", joaat("INPUT_MINIGAME_POKER_FOLD"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+			uParam0->f_498 = func_1113("MGPKR_UI_MUCK", joaat("INPUT_MINIGAME_POKER_FOLD"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 			func_265(&(uParam0->f_501));
 		}
 	}
@@ -25812,7 +25812,7 @@ void func_767(var uParam0, var uParam1)
 		if (&uParam0->f_1670[iVar12 /*13*/])
 		{
 			iVar15 = (uParam0->f_1670[iVar12 /*13*/])->f_3;
-			fVar16 = func_1175((BUILTIN::TO_FLOAT(iVar15) / BUILTIN::TO_FLOAT(iVar14)), 0, 1065353216);
+			fVar16 = func_1175((BUILTIN::TO_FLOAT(iVar15) / BUILTIN::TO_FLOAT(iVar14)), 0, 1065353216 /* Float: 1f */);
 			fVar17 = 0f;
 			fVar18 = ((1f - fVar16) + ((fVar17 * 0.5f) * fVar16));
 			(uParam0->f_1670[iVar12 /*13*/])->f_5 = fVar16;
@@ -26578,7 +26578,7 @@ void func_808(var uParam0, int iParam1)
 		fVar2 = 0f;
 		if (uParam0->f_1670.f_126 > 0)
 		{
-			fVar1 = func_1175((BUILTIN::TO_FLOAT(iVar0) / BUILTIN::TO_FLOAT(uParam0->f_1670.f_125)), 0, 1065353216);
+			fVar1 = func_1175((BUILTIN::TO_FLOAT(iVar0) / BUILTIN::TO_FLOAT(uParam0->f_1670.f_125)), 0, 1065353216 /* Float: 1f */);
 		}
 		(uParam0->f_1670[iParam1 /*13*/])->f_5 = fVar1;
 		(uParam0->f_1670[iParam1 /*13*/])->f_6 = fVar2;
@@ -28652,8 +28652,8 @@ void func_922(var uParam0, bool bParam1)
 			{
 				if (ENTITY::HAS_ANIM_EVENT_FIRED(iVar1, -1523471413))
 				{
-					func_467(uParam0, iVar0, "hold_cards_idle_a_card1", func_466(uParam0, iVar0, 0), 4, 2, -1082130432);
-					func_467(uParam0, iVar0, "hold_cards_idle_a_card2", func_466(uParam0, iVar0, 1), 4, 2, -1082130432);
+					func_467(uParam0, iVar0, "hold_cards_idle_a_card1", func_466(uParam0, iVar0, 0), 4, 2, -1082130432 /* Float: -1f */);
+					func_467(uParam0, iVar0, "hold_cards_idle_a_card2", func_466(uParam0, iVar0, 1), 4, 2, -1082130432 /* Float: -1f */);
 				}
 			}
 			if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iVar1))
@@ -28724,8 +28724,8 @@ void func_923(var uParam0)
 							fVar2 = 1f;
 							break;
 						case 3:
-							fVar3 = func_1175((1f - (2f * fVar4)), 0, 1065353216);
-							fVar2 = func_1175(((2f * fVar4) - 1f), 0, 1065353216);
+							fVar3 = func_1175((1f - (2f * fVar4)), 0, 1065353216 /* Float: 1f */);
+							fVar2 = func_1175(((2f * fVar4) - 1f), 0, 1065353216 /* Float: 1f */);
 							break;
 					}
 					if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_74[iVar0 /*30*/][iVar1]))
@@ -28780,8 +28780,8 @@ void func_923(var uParam0)
 							fVar2 = 1f;
 							break;
 						case 3:
-							fVar3 = func_1175((1f - (2f * fVar4)), 0, 1065353216);
-							fVar2 = func_1175(((2f * fVar4) - 1f), 0, 1065353216);
+							fVar3 = func_1175((1f - (2f * fVar4)), 0, 1065353216 /* Float: 1f */);
+							fVar2 = func_1175(((2f * fVar4) - 1f), 0, 1065353216 /* Float: 1f */);
 							break;
 					}
 					if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_255[iVar0 /*30*/][iVar1]))
@@ -28836,8 +28836,8 @@ void func_923(var uParam0)
 							fVar2 = 1f;
 							break;
 						case 3:
-							fVar3 = func_1175((1f - (2f * fVar4)), 0, 1065353216);
-							fVar2 = func_1175(((2f * fVar4) - 1f), 0, 1065353216);
+							fVar3 = func_1175((1f - (2f * fVar4)), 0, 1065353216 /* Float: 1f */);
+							fVar2 = func_1175(((2f * fVar4) - 1f), 0, 1065353216 /* Float: 1f */);
 							break;
 					}
 					if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_436[iVar0 /*30*/][iVar1]))
@@ -29654,13 +29654,13 @@ int func_960(var uParam0, var uParam1, var uParam2)
 			iVar1 = func_1139(uParam2->f_13, func_1433(uParam0, func_952()));
 			if (!func_150(uParam0->f_465.f_18))
 			{
-				uParam0->f_465.f_18 = func_1113("MGPKR_UI_BUYIN", joaat("INPUT_MINIGAME_POKER_CHECK_FOLD"), 4, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+				uParam0->f_465.f_18 = func_1113("MGPKR_UI_BUYIN", joaat("INPUT_MINIGAME_POKER_CHECK_FOLD"), 4, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 			}
 			if (!func_150(uParam0->f_465.f_19))
 			{
 				if (iVar0 != iVar1)
 				{
-					uParam0->f_465.f_19 = func_1113("MGPKR_UI_ALTER", joaat("INPUT_MINIGAME_CHANGE_BET_AXIS_Y"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+					uParam0->f_465.f_19 = func_1113("MGPKR_UI_ALTER", joaat("INPUT_MINIGAME_CHANGE_BET_AXIS_Y"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 				}
 			}
 			iVar2 = 0;
@@ -29954,7 +29954,7 @@ void func_967(var uParam0, bool bParam1)
 	{
 		if (!func_150(uParam0->f_495))
 		{
-			uParam0->f_499 = func_1113("MGPKR_UI_HANDS", joaat("INPUT_MINIGAME_POKER_SHOW_POSSIBLE_HANDS"), 3, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+			uParam0->f_499 = func_1113("MGPKR_UI_HANDS", joaat("INPUT_MINIGAME_POKER_SHOW_POSSIBLE_HANDS"), 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 			func_1114(uParam0->f_499, 14, 1, 1);
 			func_1114(uParam0->f_499, 17, 1, 1);
 		}
@@ -29971,7 +29971,7 @@ void func_968(var uParam0, bool bParam1)
 	{
 		if (!func_150(uParam0->f_494))
 		{
-			uParam0->f_494 = func_1113("MGPKR_UI_HOLE", joaat("INPUT_MINIGAME_POKER_YOUR_CARDS"), 3, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+			uParam0->f_494 = func_1113("MGPKR_UI_HOLE", joaat("INPUT_MINIGAME_POKER_YOUR_CARDS"), 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 			func_1114(uParam0->f_494, 14, 1, 1);
 			func_1114(uParam0->f_494, 17, 1, 1);
 		}
@@ -29988,7 +29988,7 @@ void func_969(var uParam0, bool bParam1)
 	{
 		if (!func_150(uParam0->f_495))
 		{
-			uParam0->f_495 = func_1113("MGPKR_UI_BOARD", joaat("INPUT_MINIGAME_POKER_COMMUNITY_CARDS"), 3, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+			uParam0->f_495 = func_1113("MGPKR_UI_BOARD", joaat("INPUT_MINIGAME_POKER_COMMUNITY_CARDS"), 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 			func_1114(uParam0->f_495, 14, 1, 1);
 			func_1114(uParam0->f_495, 17, 1, 1);
 		}
@@ -30043,7 +30043,7 @@ void func_974(var uParam0, bool bParam1)
 	{
 		if (!func_150(uParam0->f_500))
 		{
-			uParam0->f_500 = func_1113("MGPKR_UI_FREE_LOOK", joaat("INPUT_PC_FREE_LOOK"), 3, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+			uParam0->f_500 = func_1113("MGPKR_UI_FREE_LOOK", joaat("INPUT_PC_FREE_LOOK"), 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 			func_1114(uParam0->f_500, 14, 1, 1);
 			func_1114(uParam0->f_500, 17, 1, 1);
 		}
@@ -30205,23 +30205,23 @@ void func_985(var uParam0, var uParam1, var uParam2)
 					{
 						if (uParam0->f_485.f_2 == 0)
 						{
-							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_MP", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_MP", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 						}
 						else if (uParam0->f_485.f_2 == 1)
 						{
-							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_CHECK", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_CHECK", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 						}
 						else if (uParam0->f_485.f_2 == 2)
 						{
-							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_CHECK_FOLD", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_CHECK_FOLD", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 						}
 						else if (uParam0->f_485.f_2 == 3)
 						{
-							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_CALL_ANY", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_CALL_ANY", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 						}
 						else if (uParam0->f_485.f_2 == 5)
 						{
-							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_FOLD", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_4 = func_1113("MGPKR_UI_PRETURN_MENU_FOLD", joaat("INPUT_MINIGAME_HELP_NEXT"), 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 						}
 						func_1453(uParam0->f_485.f_4, 1, 1);
 						func_1454(uParam0->f_485.f_4, 1, 1);
@@ -30264,7 +30264,7 @@ void func_985(var uParam0, var uParam1, var uParam2)
 						HUD::_UIPROMPT_SET_ACTIVE_GROUP_THIS_FRAME(635838715, "MGPKR_UI_PRETURN_MENU_MP", 1, 0, 0, 0);
 						if (!func_150(uParam0->f_485.f_5))
 						{
-							uParam0->f_485.f_5 = func_1113("MGPKR_UI_PRETURN_CHECK", joaat("INPUT_MINIGAME_POKER_BET"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_5 = func_1113("MGPKR_UI_PRETURN_CHECK", joaat("INPUT_MINIGAME_POKER_BET"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 							func_1458(uParam0->f_485.f_5, 635838715, 0, 1);
 							if (uParam0->f_485.f_2 == 1)
 							{
@@ -30273,7 +30273,7 @@ void func_985(var uParam0, var uParam1, var uParam2)
 						}
 						if (!func_150(uParam0->f_485.f_6))
 						{
-							uParam0->f_485.f_6 = func_1113("MGPKR_UI_PRETURN_FOLD", joaat("INPUT_MINIGAME_POKER_FOLD"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_6 = func_1113("MGPKR_UI_PRETURN_FOLD", joaat("INPUT_MINIGAME_POKER_FOLD"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 							func_1458(uParam0->f_485.f_6, 635838715, 0, 1);
 							if (uParam0->f_485.f_2 == 5)
 							{
@@ -30282,7 +30282,7 @@ void func_985(var uParam0, var uParam1, var uParam2)
 						}
 						if (!func_150(uParam0->f_485.f_7))
 						{
-							uParam0->f_485.f_7 = func_1113("MGPKR_UI_PRETURN_CHECK_FOLD", joaat("INPUT_MINIGAME_POKER_CHECK_FOLD"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_7 = func_1113("MGPKR_UI_PRETURN_CHECK_FOLD", joaat("INPUT_MINIGAME_POKER_CHECK_FOLD"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 							func_1458(uParam0->f_485.f_7, 635838715, 0, 1);
 							if (uParam0->f_485.f_2 == 2)
 							{
@@ -30291,7 +30291,7 @@ void func_985(var uParam0, var uParam1, var uParam2)
 						}
 						if (!func_150(uParam0->f_485.f_8))
 						{
-							uParam0->f_485.f_8 = func_1113("MGPKR_UI_PRETURN_CANCEL", joaat("INPUT_MINIGAME_QUIT"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_8 = func_1113("MGPKR_UI_PRETURN_CANCEL", joaat("INPUT_MINIGAME_QUIT"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 							func_1458(uParam0->f_485.f_8, 635838715, 0, 1);
 							if (uParam0->f_485.f_2 == 0)
 							{
@@ -30367,7 +30367,7 @@ void func_985(var uParam0, var uParam1, var uParam2)
 						HUD::_UIPROMPT_SET_ACTIVE_GROUP_THIS_FRAME(635838715, "MGPKR_UI_PRETURN_MENU_MP", 1, 0, 0, 0);
 						if (!func_150(uParam0->f_485.f_5))
 						{
-							uParam0->f_485.f_5 = func_1113("MGPKR_UI_PRETURN_CALL_ANY", joaat("INPUT_MINIGAME_POKER_BET"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_5 = func_1113("MGPKR_UI_PRETURN_CALL_ANY", joaat("INPUT_MINIGAME_POKER_BET"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 							func_1458(uParam0->f_485.f_5, 635838715, 0, 1);
 							if (uParam0->f_485.f_2 == 3)
 							{
@@ -30376,7 +30376,7 @@ void func_985(var uParam0, var uParam1, var uParam2)
 						}
 						if (!func_150(uParam0->f_485.f_6))
 						{
-							uParam0->f_485.f_6 = func_1113("MGPKR_UI_PRETURN_FOLD", joaat("INPUT_MINIGAME_POKER_FOLD"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_6 = func_1113("MGPKR_UI_PRETURN_FOLD", joaat("INPUT_MINIGAME_POKER_FOLD"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 							func_1458(uParam0->f_485.f_6, 635838715, 0, 1);
 							if (uParam0->f_485.f_2 == 5)
 							{
@@ -30385,7 +30385,7 @@ void func_985(var uParam0, var uParam1, var uParam2)
 						}
 						if (!func_150(uParam0->f_485.f_8))
 						{
-							uParam0->f_485.f_8 = func_1113("MGPKR_UI_PRETURN_CANCEL", joaat("INPUT_MINIGAME_QUIT"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+							uParam0->f_485.f_8 = func_1113("MGPKR_UI_PRETURN_CANCEL", joaat("INPUT_MINIGAME_QUIT"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 							func_1458(uParam0->f_485.f_8, 635838715, 0, 1);
 							if (uParam0->f_485.f_2 == 0)
 							{
@@ -31444,7 +31444,7 @@ void func_1029(var uParam0, int iParam1)
 			iVar0 = &uParam0->f_818[iParam1 /*63*/];
 			WEAPON::_0xFCCC886EDE3C63EC(iVar0, 2, 1);
 			ENTITY::SET_ENTITY_ALPHA(&(uParam0->f_818[iParam1 /*63*/]), 0, false);
-			func_452(uParam0, iParam1, "sit_enter_right", 2, 0f, 1040187392, 0, 1);
+			func_452(uParam0, iParam1, "sit_enter_right", 2, 0f, 1040187392 /* Float: 0.125f */, 0, 1);
 			func_1125(uParam0, iParam1, 0);
 			func_1121(uParam0, iParam1, 6);
 		}
@@ -31508,7 +31508,7 @@ void func_1031(var uParam0, int iParam1, bool bParam2)
 			{
 				fVar0 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.1f, 0.75f);
 			}
-			func_452(uParam0, iParam1, "sit_enter_left", 2, 0f, 1040187392, fVar0, !bParam2);
+			func_452(uParam0, iParam1, "sit_enter_left", 2, 0f, 1040187392 /* Float: 0.125f */, fVar0, !bParam2);
 		}
 		func_468(uParam0, iParam1, 1);
 		func_1222(uParam0, iParam1, 0);
@@ -33418,23 +33418,23 @@ void func_1149(var uParam0, var uParam1, int iParam2, int iParam3)
 	{
 		if (uParam1->f_1 == 1)
 		{
-			func_467(uParam0, iParam2, "bet_blind_a_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "bet_blind_a_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432 /* Float: -1f */);
 		}
 		else if (uParam1->f_43 == 0)
 		{
-			func_467(uParam0, iParam2, "bet_stack_a_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "bet_stack_a_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432 /* Float: -1f */);
 		}
 		else if (uParam1->f_43 == 1)
 		{
-			func_467(uParam0, iParam2, "bet_stack_b_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "bet_stack_b_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432 /* Float: -1f */);
 		}
 		else if (uParam1->f_43 == 2)
 		{
-			func_467(uParam0, iParam2, "bet_stack_c_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "bet_stack_c_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432 /* Float: -1f */);
 		}
 		else if (uParam1->f_43 == 3)
 		{
-			func_467(uParam0, iParam2, "bet_stack_d_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432);
+			func_467(uParam0, iParam2, "bet_stack_d_chips", func_1141(uParam0, iParam2, iParam3), 0, 2, -1082130432 /* Float: -1f */);
 		}
 	}
 }
@@ -35514,20 +35514,20 @@ int func_1239(var uParam0, var uParam1, var uParam2, int iParam3, bool bParam4)
 		{
 			if (!func_150(uParam0->f_442.f_20))
 			{
-				uParam0->f_442.f_20 = func_1113("MGPKR_UI_BET2", joaat("INPUT_MINIGAME_POKER_BET"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+				uParam0->f_442.f_20 = func_1113("MGPKR_UI_BET2", joaat("INPUT_MINIGAME_POKER_BET"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 				func_1458(uParam0->f_442.f_20, 160258628, 0, 1);
 			}
 			if (!func_150(uParam0->f_442.f_21))
 			{
 				if (uParam0->f_442.f_1)
 				{
-					uParam0->f_442.f_21 = func_1113("MGPKR_UI_FOLD2", joaat("INPUT_MINIGAME_POKER_FOLD"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+					uParam0->f_442.f_21 = func_1113("MGPKR_UI_FOLD2", joaat("INPUT_MINIGAME_POKER_FOLD"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 					func_1458(uParam0->f_442.f_21, 160258628, 0, 1);
 				}
 			}
 			if (!func_150(uParam0->f_442.f_22))
 			{
-				uParam0->f_442.f_22 = func_1113("MGPKR_UI_ALTER", joaat("INPUT_MINIGAME_CHANGE_BET_AXIS_Y"), 0, 570, 4000, 10, 1073741824, 0, 1065353216, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+				uParam0->f_442.f_22 = func_1113("MGPKR_UI_ALTER", joaat("INPUT_MINIGAME_CHANGE_BET_AXIS_Y"), 0, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
 				func_1458(uParam0->f_442.f_22, 160258628, 0, 1);
 			}
 			func_1559(uParam1, uParam2, iParam3, &iVar0, &iVar1, &iVar2, 1);
@@ -39579,7 +39579,7 @@ void func_1429(int iParam0)
 			}
 			else
 			{
-				func_1623(Global_35, Global_1051387->f_3666.f_2, ENTITY::GET_ENTITY_HEADING(Global_35), 2, 1073741824);
+				func_1623(Global_35, Global_1051387->f_3666.f_2, ENTITY::GET_ENTITY_HEADING(Global_35), 2, 1073741824 /* Float: 2f */);
 				CAM::DO_SCREEN_FADE_IN(500);
 				func_1612();
 			}
@@ -39749,7 +39749,7 @@ int func_1431(int iParam0)
 		case 69:
 			return 922959422;
 		case 70:
-			return 1948709075;
+			return joaat("rage_p2_3");
 		case 71:
 			return 599204508;
 		case 74:
@@ -43079,11 +43079,11 @@ int func_1535(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == -1763848034)
+			if (iParam1 == joaat("p_chair12x"))
 			{
 				return 1;
 			}
-			if (iParam1 == 2096698905)
+			if (iParam1 == joaat("p_chair14x"))
 			{
 				return 1;
 			}
@@ -43091,7 +43091,7 @@ int func_1535(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == 1999055955)
+			if (iParam1 == joaat("p_chair26x"))
 			{
 				return 1;
 			}
@@ -43131,7 +43131,7 @@ int func_1535(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == -1618805595)
+			if (iParam1 == joaat("s_crateseat03x"))
 			{
 				return 1;
 			}
@@ -46243,7 +46243,7 @@ int func_1658(int iParam0, int iParam1)
 		case 1532822440:
 		case 1918154385:
 			return 1;
-		case 1539023636:
+		case joaat("dynamic"):
 			return iParam1;
 		default:
 			break;
@@ -48237,7 +48237,7 @@ int func_1699(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -48246,7 +48246,7 @@ int func_1699(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -48270,16 +48270,16 @@ int func_1699(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;

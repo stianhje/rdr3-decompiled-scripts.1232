@@ -2254,7 +2254,7 @@ int func_58(var uParam0, var uParam1, int iParam2)
 		while (iVar0 <= (iVar1 - 1))
 		{
 			iVar3 = iVar0;
-			if (func_152((*uParam1)[iVar0 /*5*/], func_150(iParam2), func_151(iParam2, iVar3), 1065353216))
+			if (func_152((*uParam1)[iVar0 /*5*/], func_150(iParam2), func_151(iParam2, iVar3), 1065353216 /* Float: 1f */))
 			{
 				iVar2++;
 			}
@@ -2273,7 +2273,7 @@ int func_58(var uParam0, var uParam1, int iParam2)
 		while (iVar0 <= (iVar1 - 1))
 		{
 			iVar4 = iVar0;
-			if (func_152(uParam1->f_31[iVar0 /*5*/], func_154(iParam2), func_155(iParam2, iVar4), 1065353216))
+			if (func_152(uParam1->f_31[iVar0 /*5*/], func_154(iParam2), func_155(iParam2, iVar4), 1065353216 /* Float: 1f */))
 			{
 				iVar2++;
 			}
@@ -2292,7 +2292,7 @@ int func_58(var uParam0, var uParam1, int iParam2)
 		while (iVar0 <= (iVar1 - 1))
 		{
 			iVar5 = iVar0;
-			if (func_152(uParam1->f_107[iVar0 /*5*/], func_157(iParam2), func_158(iParam2, iVar5), 1065353216))
+			if (func_152(uParam1->f_107[iVar0 /*5*/], func_157(iParam2), func_158(iParam2, iVar5), 1065353216 /* Float: 1f */))
 			{
 				iVar2++;
 			}
@@ -2306,11 +2306,11 @@ int func_58(var uParam0, var uParam1, int iParam2)
 	switch (iParam2)
 	{
 		case 0:
-			if (!func_84(uParam0->f_250, 64) && func_152(uParam1->f_118[0 /*5*/], func_159(iParam2, 0), func_160(iParam2, 0), 1065353216))
+			if (!func_84(uParam0->f_250, 64) && func_152(uParam1->f_118[0 /*5*/], func_159(iParam2, 0), func_160(iParam2, 0), 1065353216 /* Float: 1f */))
 			{
 				func_51(&(uParam0->f_250), 64);
 			}
-			if ((!func_84(uParam0->f_250, 16384) && func_152(uParam1->f_118[1 /*5*/], func_159(iParam2, 1), func_160(iParam2, 1), 1065353216)) && func_152(uParam1->f_118[2 /*5*/], func_159(iParam2, 2), func_160(iParam2, 2), 1065353216))
+			if ((!func_84(uParam0->f_250, 16384) && func_152(uParam1->f_118[1 /*5*/], func_159(iParam2, 1), func_160(iParam2, 1), 1065353216 /* Float: 1f */)) && func_152(uParam1->f_118[2 /*5*/], func_159(iParam2, 2), func_160(iParam2, 2), 1065353216 /* Float: 1f */))
 			{
 				func_51(&(uParam0->f_250), 16384);
 			}
@@ -2324,7 +2324,7 @@ int func_58(var uParam0, var uParam1, int iParam2)
 				while (iVar0 <= (iVar1 - 1))
 				{
 					iVar6 = iVar0;
-					if (func_152(uParam1->f_118[iVar0 /*5*/], func_159(iParam2, 0), func_160(iParam2, iVar6), 1065353216))
+					if (func_152(uParam1->f_118[iVar0 /*5*/], func_159(iParam2, 0), func_160(iParam2, iVar6), 1065353216 /* Float: 1f */))
 					{
 						iVar2++;
 					}
@@ -2583,7 +2583,7 @@ void func_63(var uParam0, var uParam1)
 			}
 			if (!func_21(&(uParam1->f_291[2])))
 			{
-				uParam1->f_291[2] = func_165("INTERACT_LOOK", joaat("INPUT_FOCUS_CAM"), 6, 570, 570, 10, 1073741824, 0, 1065353216, 0, 1, joaat("SHORT_TIMED_EVENT"), 0);
+				uParam1->f_291[2] = func_165("INTERACT_LOOK", joaat("INPUT_FOCUS_CAM"), 6, 570, 570, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 1, joaat("SHORT_TIMED_EVENT"), 0);
 			}
 			else if (func_166(&(uParam1->f_291[2]), 1))
 			{

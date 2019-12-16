@@ -853,11 +853,11 @@ int func_18()
 		}
 		if (!func_92(&(Local_21.f_34[iVar27 /*4*/])))
 		{
-			Local_21.f_34[iVar27 /*4*/] = func_94(func_93(iVar27, 0), joaat("INPUT_CONTEXT_Y"), (Local_21.f_34[iVar27 /*4*/])->f_2, 3, 0, 0, 5, 570, 4000, 10, 1073741824, 0, joaat("SHORT_TIMED_EVENT"), 0);
+			Local_21.f_34[iVar27 /*4*/] = func_94(func_93(iVar27, 0), joaat("INPUT_CONTEXT_Y"), (Local_21.f_34[iVar27 /*4*/])->f_2, 3, 0, 0, 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0);
 		}
 		if ((iVar27 == 0 || iVar27 == 1) && !func_92((Local_21.f_34[iVar27 /*4*/])->f_1))
 		{
-			(Local_21.f_34[iVar27 /*4*/])->f_1 = func_94(func_93(iVar27, 1), joaat("INPUT_CONTEXT_B"), (Local_21.f_34[iVar27 /*4*/])->f_2, 3, 0, 0, 5, 570, 4000, 10, 1073741824, 0, joaat("SHORT_TIMED_EVENT"), 0);
+			(Local_21.f_34[iVar27 /*4*/])->f_1 = func_94(func_93(iVar27, 1), joaat("INPUT_CONTEXT_B"), (Local_21.f_34[iVar27 /*4*/])->f_2, 3, 0, 0, 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0);
 			if (!bVar26)
 			{
 				func_95((Local_21.f_34[iVar27 /*4*/])->f_1, 0, 0);
@@ -2890,7 +2890,7 @@ int func_94(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	}
 	if (iVar1 != 0)
 	{
-		func_173(iVar1, iParam1, sParam0, 2, iParam3, iParam4, 0f, 0f, 0f, 0f, iParam2, 0, 1, iParam5, iParam6, iParam7, iParam8, iParam9, iParam10, iParam11, 1065353216, 0, 0, 0, iParam12, bParam13);
+		func_173(iVar1, iParam1, sParam0, 2, iParam3, iParam4, 0f, 0f, 0f, 0f, iParam2, 0, 1, iParam5, iParam6, iParam7, iParam8, iParam9, iParam10, iParam11, 1065353216 /* Float: 1f */, 0, 0, 0, iParam12, bParam13);
 		return iVar1;
 	}
 	return 0;

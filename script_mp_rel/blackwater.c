@@ -779,24 +779,24 @@ void func_28()
 
 void func_29(int iParam0)
 {
-	func_65(3, iLocal_68, iParam0, iLocal_69, iLocal_70, 4, 0, 0, -1082130432, 0);
+	func_65(3, iLocal_68, iParam0, iLocal_69, iLocal_70, 4, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_66(3, -1498321761, 0, 0);
 	func_66(3, -1252390440, 0, 0);
 	func_66(3, 2046989122, 0, 0);
 	func_67(3, 8192);
 	func_68(3, 0);
-	func_65(25, iLocal_89, iParam0, 0, 0, 2, 0, 0, -1082130432, 0);
+	func_65(25, iLocal_89, iParam0, 0, 0, 2, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_67(25, 1);
 	func_67(25, 16384);
 	func_67(25, 8192);
 	func_67(25, 536870912);
-	func_65(7, iLocal_76, iParam0, iLocal_78, 0, 4, 0, 0, -1082130432, 0);
+	func_65(7, iLocal_76, iParam0, iLocal_78, 0, 4, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_66(7, -1768302830, 0, 0);
 	func_68(7, 0);
-	func_65(10, iLocal_94, iParam0, iLocal_95, 0, 460, 1, 0, -1082130432, 0);
+	func_65(10, iLocal_94, iParam0, iLocal_95, 0, 460, 1, 0, -1082130432 /* Float: -1f */, 0);
 	func_67(10, 536870912);
 	func_68(10, 0);
-	func_65(9, iLocal_92, iParam0, 0, 0, 2, 1, 0, -1082130432, 0);
+	func_65(9, iLocal_92, iParam0, 0, 0, 2, 1, 0, -1082130432 /* Float: -1f */, 0);
 	func_67(9, 536870912);
 	func_67(9, 16384);
 	func_67(9, 32768);
@@ -822,18 +822,18 @@ void func_29(int iParam0)
 	}
 	func_71();
 	func_72(10);
-	func_65(8, iLocal_74, iParam0, iLocal_75, 0, 4098, 0, 0, -1082130432, 0);
+	func_65(8, iLocal_74, iParam0, iLocal_75, 0, 4098, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_66(8, -1782375478, 0, 0);
 	func_66(8, 1632219860, 0, 0);
 	func_66(8, 2004868928, 0, 0);
 	func_68(8, 0);
-	func_65(2, iLocal_84, iParam0, iLocal_85, iLocal_86, 1277952, 0, 0, -1082130432, 0);
+	func_65(2, iLocal_84, iParam0, iLocal_85, iLocal_86, 1277952, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_66(2, 2124421956, 0, 0);
 	func_66(2, 1861385249, 0, 0);
 	func_66(2, -1688963720, 0, 0);
 	func_66(2, 1730262833, 0, 0);
 	func_68(2, 0);
-	func_65(18, iLocal_96, iParam0, iLocal_97, 0, 524290, 0, 0, -1082130432, 0);
+	func_65(18, iLocal_96, iParam0, iLocal_97, 0, 524290, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_66(18, 123675751, 0, 0);
 	func_66(18, 1079875175, 0, 0);
 	func_68(18, 0);
@@ -2798,7 +2798,7 @@ void func_100(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_207(Global_1939168, 16384);
-	func_209(func_208(-1532769513, -36357794), 1);
+	func_209(func_208(-1532769513, joaat("areas")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -9507,7 +9507,7 @@ int func_303(int iParam0)
 		case 69:
 			return 922959422;
 		case 70:
-			return 1948709075;
+			return joaat("rage_p2_3");
 		case 71:
 			return 599204508;
 		case 74:
@@ -10713,7 +10713,7 @@ int func_340(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -10722,7 +10722,7 @@ int func_340(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -10746,16 +10746,16 @@ int func_340(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;

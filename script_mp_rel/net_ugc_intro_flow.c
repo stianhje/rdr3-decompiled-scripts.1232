@@ -82,7 +82,7 @@ void __EntryFunction__()
 	{
 		bLocal_35 = true;
 	}
-	else if (func_2(1073741824))
+	else if (func_2(1073741824 /* Float: 2f */))
 	{
 		bLocal_36 = true;
 	}
@@ -997,9 +997,9 @@ void func_36()
 	{
 		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(29649618);
 	}
-	if (UIAPPS::_IS_APP_RUNNING(-1641598689) || UIAPPS::_IS_APP_ACTIVE(-1641598689))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("abilities")) || UIAPPS::_IS_APP_ACTIVE(joaat("abilities")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(-1641598689);
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("abilities"));
 	}
 	if (func_67())
 	{
@@ -2077,7 +2077,7 @@ void func_72()
 		{
 			vVar0 = { PED::GET_PED_BONE_COORDS(iLocal_33, 21030, 0f, 0.65f, 0f) };
 			vVar3 = { ENTITY::GET_ENTITY_ROTATION(iLocal_33, 0) };
-			func_93(vVar0, vVar3, 1110704128);
+			func_93(vVar0, vVar3, 1110704128 /* Float: 45f */);
 		}
 	}
 	if (func_94())
@@ -2269,7 +2269,7 @@ int func_79()
 			vVar16 = { CAM::GET_GAMEPLAY_CAM_ROT(2) };
 			vVar19 = { Global_3145858->f_188 };
 			vVar19.f_2 = (vVar19.z + 5f);
-			func_93(vVar19, vVar16, 1110704128);
+			func_93(vVar19, vVar16, 1110704128 /* Float: 45f */);
 		}
 		else
 		{

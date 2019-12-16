@@ -4242,11 +4242,11 @@ void func_165(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	if (!bParam2)
 	{
-		func_167(uParam0, 1073741824);
+		func_167(uParam0, 1073741824 /* Float: 2f */);
 	}
 	else
 	{
-		func_192(uParam0, 1073741824);
+		func_192(uParam0, 1073741824 /* Float: 2f */);
 	}
 	if (!bParam3)
 	{
@@ -5058,7 +5058,7 @@ int func_200()
 
 int func_201()
 {
-	return -1027137108;
+	return joaat("pg_ambient_campfire04x");
 }
 
 bool func_202(int iParam0)
@@ -7501,7 +7501,7 @@ int func_290(int iParam0, int iParam1, var uParam2, var uParam3, int iParam4, fl
 		}
 		if (Global_1939168->f_19)
 		{
-			if (func_360(uParam2, 1065353216))
+			if (func_360(uParam2, 1065353216 /* Float: 1f */))
 			{
 				if (!uParam2->f_1 & 4 != 0)
 				{
@@ -7646,7 +7646,7 @@ int func_290(int iParam0, int iParam1, var uParam2, var uParam3, int iParam4, fl
 			{
 				if (func_377(func_376(PLAYER::PLAYER_ID()), ENTITY::GET_ENTITY_COORDS(iParam0, true, false)) <= uParam2->f_30)
 				{
-					if (func_378(PLAYER::PLAYER_PED_ID(), iParam0, 1060437492) == 0)
+					if (func_378(PLAYER::PLAYER_PED_ID(), iParam0, 1060437492 /* Float: 0.707f */) == 0)
 					{
 						*uParam3 = 1048576;
 						func_355(iParam0, uParam2, *uParam3);
@@ -8467,7 +8467,7 @@ void func_313()
 				{
 					fVar3 = 20f;
 				}
-				if (func_405(iVar2, fVar3, 1092616192))
+				if (func_405(iVar2, fVar3, 1092616192 /* Float: 10f */))
 				{
 					func_315(NETWORK::PARTICIPANT_ID_TO_INT(), iVar1, 8);
 				}
@@ -8728,7 +8728,7 @@ int func_321(int iParam0)
 		return 0;
 	}
 	vVar2 = { ENTITY::GET_ENTITY_COORDS(iVar0, true, false) };
-	iVar5 = func_415(vVar2, &uVar1, 1203982208, 0, 0, 1);
+	iVar5 = func_415(vVar2, &uVar1, 1203982208 /* Float: 99999f */, 0, 0, 1);
 	if (!NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar5))
 	{
 		return 0;
@@ -9121,7 +9121,7 @@ int func_333(int iParam0, int iParam1)
 		case 1532822440:
 		case 1918154385:
 			return 1;
-		case 1539023636:
+		case joaat("dynamic"):
 			return iParam1;
 		default:
 			break;
@@ -9403,7 +9403,7 @@ void func_351(struct<2> Param0)
 		{
 			if (Var0.f_29 == -681494152)
 			{
-				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, -1423748980);
+				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("race"));
 			}
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_29, 0);
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_30, 0);
@@ -9915,7 +9915,7 @@ int func_363(var uParam0, int iParam1, var uParam2, bool bParam3)
 		switch (iVar3)
 		{
 			case 0:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(217247011, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_explosion"), vVar0, uParam2->f_23))
 				{
 					func_445(uParam2, 1);
 					return 1;
@@ -9929,7 +9929,7 @@ int func_363(var uParam0, int iParam1, var uParam2, bool bParam3)
 				}
 				break;
 			case 2:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_potential_blast"), vVar0, uParam2->f_23))
 				{
 					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar4, 0, 0);
 					if (func_457(iParam1, vVar0, vVar4))
@@ -9946,14 +9946,14 @@ int func_363(var uParam0, int iParam1, var uParam2, bool bParam3)
 		switch (iVar3)
 		{
 			case 0:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(217247011, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_explosion"), vVar0, uParam2->f_23))
 				{
 					func_445(uParam2, 1);
 					return 1;
 				}
 				break;
 			case 2:
-				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-966930978, vVar0, uParam2->f_23))
+				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_potential_blast"), vVar0, uParam2->f_23))
 				{
 					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("weapon_thrown_dynamite"), uParam2->f_28, &vVar7, 0, 0);
 					if (func_457(iParam1, vVar0, vVar7))
@@ -10553,7 +10553,7 @@ int func_384(int iParam0, var uParam1)
 	}
 	else if (func_373() - uParam1->f_4) > func_477(uParam1)
 	{
-		return func_478(iParam0, uParam1, 0, -1082130432);
+		return func_478(iParam0, uParam1, 0, -1082130432 /* Float: -1f */);
 	}
 	return 0;
 }
@@ -15708,7 +15708,7 @@ int func_548(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -15717,7 +15717,7 @@ int func_548(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -15741,16 +15741,16 @@ int func_548(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -15956,9 +15956,9 @@ int func_554(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 987444055:
+		case joaat("null"):
 			return -1;
-		case joaat("NORMAL"):
+		case joaat("normal"):
 			return 0;
 		case -640677282:
 			return 1;

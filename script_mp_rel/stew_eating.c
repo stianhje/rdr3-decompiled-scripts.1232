@@ -695,7 +695,7 @@ void func_29(bool bParam0, bool bParam1, bool bParam2, int iParam3)
 	}
 	if (func_17(bParam0, 1939071949))
 	{
-		func_56(func_59(1368284188, -939665347), 1);
+		func_56(func_59(joaat("used"), -939665347), 1);
 	}
 	if (func_17(bParam0, 1992556171))
 	{
@@ -710,51 +710,51 @@ void func_29(bool bParam0, bool bParam1, bool bParam2, int iParam3)
 		case -1921080134: /* GXTEntry: "Classic Oatcakes" */
 		case -635441454: /* GXTEntry: "Sugar Cube" */
 		case 1448771675: /* GXTEntry: "Hay" */
-			func_56(func_59(1368284188, -2049431929 /* GXTEntry: "Feed Bag" */), 1);
+			func_56(func_59(joaat("used"), -2049431929 /* GXTEntry: "Feed Bag" */), 1);
 			break;
 	}
 	switch (bParam0)
 	{
 		case 299161628: /* GXTEntry: "Moonshine" */
-			func_56(func_59(1368284188, 304473406), 1);
+			func_56(func_59(joaat("used"), 304473406), 1);
 			break;
 		case -1907044919: /* GXTEntry: "Opened Kentucky Bourbon" */
 		case 688258043: /* GXTEntry: "Kentucky Bourbon" */
-			func_56(func_59(1368284188, 894597474 /* GXTEntry: "Whiskey" */), 1);
+			func_56(func_59(joaat("used"), joaat("whiskey")), 1);
 			break;
 		case -541584777: /* GXTEntry: "Opened Cocaine Gum" */
 		case 206762213: /* GXTEntry: "Cocaine Gum" */
-			func_56(func_59(1368284188, 2119695263), 1);
+			func_56(func_59(joaat("used"), 2119695263), 1);
 			break;
 		case -653299524: /* GXTEntry: "Snake Oil" */
 		case -486559882: /* GXTEntry: "Potent Snake Oil" */
 		case 376981280: /* GXTEntry: "Opened Snake Oil" */
-			func_56(func_59(1368284188, -1791969490), 1);
+			func_56(func_59(joaat("used"), -1791969490), 1);
 			break;
 		case -324053813: /* GXTEntry: "Chewing Tobacco" */
 		case 998010398: /* GXTEntry: "Opened Chewing Tobacco" */
-			func_56(func_59(1368284188, -155567636), 1);
+			func_56(func_59(joaat("used"), -155567636), 1);
 			break;
 		case -2042563684: /* GXTEntry: "Horse Medicine" */
 		case -1871448371: /* GXTEntry: "Special Horse Medicine" */
 		case -834705084: /* GXTEntry: "Opened Horse Medicine" */
 		case -623409049: /* GXTEntry: "Potent Horse Medicine" */
-			func_56(func_59(1368284188, 497247514), 1);
+			func_56(func_59(joaat("used"), 497247514), 1);
 			break;
 		case 1929383243: /* GXTEntry: "Herbivore Bait" */
 		case 2036955137: /* GXTEntry: "Potent Herbivore Bait" */
-			func_56(func_59(1368284188, -868741806), 1);
+			func_56(func_59(joaat("used"), -868741806), 1);
 			break;
 		case -1635450397: /* GXTEntry: "Predator Bait" */
 		case 1831763320: /* GXTEntry: "Potent Predator Bait" */
-			func_56(func_59(1368284188, -208442209), 1);
+			func_56(func_59(joaat("used"), -208442209), 1);
 			break;
 	}
 	if (func_60() == -1)
 	{
 		if (bParam0 == -1976480343)
 		{
-			func_56(func_59(1368284188, 595572217), 1);
+			func_56(func_59(joaat("used"), 595572217), 1);
 		}
 	}
 	if (bParam1)
@@ -3841,7 +3841,7 @@ int func_146(int iParam0, int iParam1)
 				return 2;
 			}
 			break;
-		case -619998507:
+		case joaat("duration"):
 		case -594821844:
 		case 348502922:
 		case 1002704651:
@@ -6000,34 +6000,34 @@ int func_212(int iParam0, int iParam1, var uParam2)
 
 	Var0 = -178401592;
 	Var0.f_1 = iParam0;
-	Var0.f_2 = -421429484;
+	Var0.f_2 = joaat("name");
 	Var0.f_3 = 1;
 	Var0.f_4 = iParam1;
 	DATAFILE::_0x91DED5DD64BB2691(&Var0);
-	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, -421429484))
+	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("name")))
 	{
 		*uParam2 = iParam0;
 		uParam2->f_9 = iParam1;
 		StringCopy(&(uParam2->f_1), "", 64);
 		StringIntConCat(&(uParam2->f_1), iVar7, 64);
-		DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, 828747869);
+		DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("type"));
 		uParam2->f_10.f_3 = func_216(iVar7);
 		uParam2->f_14.f_3 = uParam2->f_10.f_3;
 		uParam2->f_18.f_3 = uParam2->f_10.f_3;
 		switch (uParam2->f_10.f_3)
 		{
 			case 0:
-				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("DEFAULT")))
+				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 1:
-				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("DEFAULT")))
+				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 2:
-				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("DEFAULT")))
+				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("default")))
 				{
 				}
 				break;
@@ -6035,25 +6035,25 @@ int func_212(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_14.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_14), &Var0, -30349581);
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_14), &Var0, joaat("min"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_14.f_1), &Var0, -30349581);
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_14.f_1), &Var0, joaat("min"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_14.f_2), &Var0, -30349581);
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_14.f_2), &Var0, joaat("min"));
 				break;
 		}
 		switch (uParam2->f_18.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, 1616931012);
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("max"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, 1616931012);
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("max"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, 1616931012);
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("max"));
 				break;
 		}
 		switch (uParam2->f_10.f_3)
@@ -6129,13 +6129,13 @@ int func_216(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("INT"):
+		case joaat("int"):
 			iVar0 = 0;
 			break;
-		case -680700887:
+		case joaat("float"):
 			iVar0 = 1;
 			break;
-		case -945474286:
+		case joaat("bool"):
 			iVar0 = 2;
 			break;
 	}

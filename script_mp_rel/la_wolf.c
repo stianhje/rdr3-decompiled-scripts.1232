@@ -4385,7 +4385,7 @@ void func_190()
 		iVar10 = 0;
 		while (iVar10 < 3)
 		{
-			func_231(Local_607.f_264.f_13[iVar10 /*9*/], fVar5, 1082130432, 0, 0, 0, 0);
+			func_231(Local_607.f_264.f_13[iVar10 /*9*/], fVar5, 1082130432 /* Float: 4f */, 0, 0, 0, 0);
 			iVar10++;
 		}
 		if (func_232(&(Local_607.f_264.f_13), Local_607.f_264, Local_607.f_264.f_8))
@@ -5140,7 +5140,7 @@ int func_237(int iParam0, int iParam1)
 		case 1532822440:
 		case 1918154385:
 			return 1;
-		case 1539023636:
+		case joaat("dynamic"):
 			return iParam1;
 		default:
 			break;

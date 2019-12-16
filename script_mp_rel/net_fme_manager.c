@@ -781,13 +781,13 @@ void func_41()
 			func_61(0);
 			return;
 		}
-		if (func_62(joaat("STANDARD")))
+		if (func_62(joaat("standard")))
 		{
 			func_39();
 		}
 		else
 		{
-			func_63(joaat("STANDARD"));
+			func_63(joaat("standard"));
 		}
 	}
 }
@@ -1045,7 +1045,7 @@ bool func_62(int iParam0)
 	MISC::SET_RANDOM_SEED(iVar0);
 	switch (iParam0)
 	{
-		case joaat("STANDARD"):
+		case joaat("standard"):
 			if (!func_76(&iVar1, &iVar2, &iVar3))
 			{
 				MISC::SET_RANDOM_SEED(MISC::GET_GAME_TIMER());
@@ -1066,7 +1066,7 @@ bool func_62(int iParam0)
 	{
 		switch (iParam0)
 		{
-			case joaat("STANDARD"):
+			case joaat("standard"):
 				Global_1182978->f_224 = iVar1;
 				break;
 			case joaat("themed"):
@@ -1092,7 +1092,7 @@ void func_63(int iParam0)
 	CLOCK::_0x28EEACE9B43D9597(&uVar0, &Var14, &Var7);
 	switch (iParam0)
 	{
-		case joaat("STANDARD"):
+		case joaat("standard"):
 			Global_1182978->f_210 = { Var7 };
 			break;
 		case joaat("themed"):
@@ -1271,7 +1271,7 @@ struct<7> func_74(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("STANDARD"):
+		case joaat("standard"):
 			return Global_1182978->f_210;
 		case joaat("themed"):
 			return Global_1182978->f_217;
@@ -2913,23 +2913,23 @@ int func_133(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 981881731:
+		case joaat("micro"):
 			return 128;
 		case -1598299820:
 			return 200;
 		case 746035441:
 			return 400;
-		case joaat("MINI"):
+		case joaat("mini"):
 			return 512;
 		case 1567969312:
 			return 600;
 		case 849942934:
 			return 800;
-		case joaat("DEFAULT"):
+		case joaat("default"):
 			return 1024;
 		case 662654967:
 			return 1026;
-		case -1230526146:
+		case joaat("update"):
 			return 1300;
 		case 356437857:
 			return 1301;
@@ -3007,7 +3007,7 @@ int func_133(int iParam0)
 			return 6001;
 		case -45677744:
 			return 6002;
-		case joaat("SHOP"):
+		case joaat("shop"):
 			return 6005;
 		case -192136878:
 			return 6010;
@@ -3033,11 +3033,11 @@ int func_133(int iParam0)
 			return 10003;
 		case 2013232686:
 			return 14335;
-		case -1181533807:
+		case joaat("transition"):
 			return 25500;
 		case joaat("mission_creator"):
 			return 40500;
-		case -1950263389:
+		case joaat("mission"):
 			return 45000;
 		case 56269207:
 			return 68000;
@@ -3296,7 +3296,7 @@ int func_142(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("STANDARD"):
+		case joaat("standard"):
 		case 1038512660:
 			iVar0 = 0;
 			iVar1 = 0;
@@ -4622,7 +4622,7 @@ int func_201(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -4631,7 +4631,7 @@ int func_201(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -4655,16 +4655,16 @@ int func_201(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -4870,9 +4870,9 @@ int func_207(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 987444055:
+		case joaat("null"):
 			return -1;
-		case joaat("NORMAL"):
+		case joaat("normal"):
 			return 0;
 		case -640677282:
 			return 1;

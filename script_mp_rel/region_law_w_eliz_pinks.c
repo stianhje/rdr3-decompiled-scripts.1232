@@ -300,7 +300,7 @@ void func_6()
 				fVar6 = 70f;
 			}
 			fVar5 = 45f;
-			if (func_26(vVar2, &Local_19, &bVar1, 1, 1, fVar5, 1101004800, fVar6, (fLocal_31 - 10f), 0))
+			if (func_26(vVar2, &Local_19, &bVar1, 1, 1, fVar5, 1101004800 /* Float: 20f */, fVar6, (fLocal_31 - 10f), 0))
 			{
 				if (((!func_27(Local_19.f_3, 0, 0, 0) && !func_28(iLocal_43, Local_19.f_3)) && (func_29(Local_19.f_3) == 4 || func_29(Local_19.f_3) == 12)) && WATER::TEST_VERTICAL_PROBE_AGAINST_ALL_WATER(Local_19.f_3, 0, &(Local_19.f_3.f_2)) != 1)
 				{
@@ -888,7 +888,7 @@ void func_33(int iParam0)
 	TASK::_0x9DE63896B176EA94(&(iLocal_47[iParam0]), false);
 	LAW::_0x819ADD5EF1742F47(&(iLocal_47[iParam0]), 1);
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_47[iParam0]), 27, true);
-	PED::_0x712B2C2B2471B493(&(iLocal_47[iParam0]), joaat("DISABLED"));
+	PED::_0x712B2C2B2471B493(&(iLocal_47[iParam0]), joaat("disabled"));
 	WEAPON::SET_PED_DROPS_WEAPONS_WHEN_DEAD(&(iLocal_47[iParam0]), false);
 	WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_47[iParam0]), joaat("group_sniper"), 100, true, false, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 }

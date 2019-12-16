@@ -1358,7 +1358,7 @@ void func_73(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_116(Global_1939168, 16384);
-	func_118(func_117(-1532769513, -36357794), 1);
+	func_118(func_117(-1532769513, joaat("areas")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:

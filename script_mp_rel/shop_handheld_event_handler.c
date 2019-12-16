@@ -25,7 +25,7 @@ void __EntryFunction__()
 
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		func_1(-1828211665);
+		func_1(joaat("closing"));
 	}
 	if (Global_1572887->f_13 == 0)
 	{
@@ -53,7 +53,7 @@ void __EntryFunction__()
 		if (bVar0)
 		{
 			TASK::CLEAR_PED_SECONDARY_TASK(PLAYER::PLAYER_PED_ID());
-			func_1(-1828211665);
+			func_1(joaat("closing"));
 		}
 		else
 		{
@@ -88,7 +88,7 @@ void __EntryFunction__()
 			BUILTIN::WAIT(0);
 		}
 	}
-	func_1(-1828211665);
+	func_1(joaat("closing"));
 }
 
 void func_1(int iParam0)

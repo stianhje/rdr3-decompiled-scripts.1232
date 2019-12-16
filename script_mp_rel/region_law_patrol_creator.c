@@ -344,7 +344,7 @@ void func_9()
 			{
 				iVar2 = 14;
 			}
-			if (func_28(Global_36, &Local_19, &bVar1, iVar2, 1, 1127481344, 1101004800, 80f, 120f, 0))
+			if (func_28(Global_36, &Local_19, &bVar1, iVar2, 1, 1127481344 /* Float: 180f */, 1101004800 /* Float: 20f */, 80f, 120f, 0))
 			{
 				if (!func_29(Local_19.f_3, 0, 0, 0) && WATER::TEST_VERTICAL_PROBE_AGAINST_ALL_WATER(Local_19.f_3, 0, &(Local_19.f_3.f_2)) != 1)
 				{
@@ -1900,7 +1900,7 @@ void func_61(int iParam0)
 	LAW::_0x819ADD5EF1742F47(iParam0, 2);
 	LAW::_0x819ADD5EF1742F47(iParam0, 1);
 	PED::SET_PED_CONFIG_FLAG(iParam0, 188, true);
-	PED::_0xBD75500141E4725C(iParam0, joaat("LAW"));
+	PED::_0xBD75500141E4725C(iParam0, joaat("law"));
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 39, true);
 	TASK::_0x9DE63896B176EA94(iParam0, false);
 	WEAPON::SET_PED_DROPS_WEAPONS_WHEN_DEAD(iParam0, false);

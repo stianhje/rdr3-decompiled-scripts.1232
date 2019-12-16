@@ -3355,8 +3355,8 @@ void func_125()
 	int iVar0;
 	int iVar1;
 
-	func_186(50f, 20f, 1, 1077936128, 0);
-	func_187(1065353216, 1065353216);
+	func_186(50f, 20f, 1, 1077936128 /* Float: 3f */, 0);
+	func_187(1065353216 /* Float: 1f */, 1065353216 /* Float: 1f */);
 	iVar0 = 0;
 	while (iVar0 <= 0)
 	{
@@ -4211,7 +4211,7 @@ void func_196()
 		iVar10 = 0;
 		while (iVar10 < 1)
 		{
-			func_232(Local_110.f_31.f_13[iVar10 /*9*/], fVar5, 1082130432, 0, 0, 0, 0);
+			func_232(Local_110.f_31.f_13[iVar10 /*9*/], fVar5, 1082130432 /* Float: 4f */, 0, 0, 0, 0);
 			iVar10++;
 		}
 		if (func_233(&(Local_110.f_31.f_13), Local_110.f_31, Local_110.f_31.f_8))
@@ -4353,7 +4353,7 @@ void func_202()
 		{
 			if (!func_249(2))
 			{
-				if (!EVENT::IS_SHOCKING_EVENT_IN_SPHERE(217247011, ENTITY::GET_ENTITY_COORDS((Local_110.f_18.f_4[0 /*2*/])->f_1, false, false), 2f) && !EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_fire"), ENTITY::GET_ENTITY_COORDS((Local_110.f_18.f_4[0 /*2*/])->f_1, false, false), 2f))
+				if (!EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_explosion"), ENTITY::GET_ENTITY_COORDS((Local_110.f_18.f_4[0 /*2*/])->f_1, false, false), 2f) && !EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("event_shocking_fire"), ENTITY::GET_ENTITY_COORDS((Local_110.f_18.f_4[0 /*2*/])->f_1, false, false), 2f))
 				{
 					func_250(-2076515520, 1, 0);
 				}
@@ -5617,7 +5617,7 @@ int func_266(int iParam0, int iParam1)
 		case 1532822440:
 		case 1918154385:
 			return 1;
-		case 1539023636:
+		case joaat("dynamic"):
 			return iParam1;
 		default:
 			break;
@@ -6199,7 +6199,7 @@ void func_292(struct<2> Param0)
 		{
 			if (Var0.f_29 == -681494152)
 			{
-				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, -1423748980);
+				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("race"));
 			}
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_29, 0);
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_30, 0);
@@ -7122,7 +7122,7 @@ int func_335(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -7131,7 +7131,7 @@ int func_335(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -7155,16 +7155,16 @@ int func_335(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -7370,9 +7370,9 @@ int func_341(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 987444055:
+		case joaat("null"):
 			return -1;
-		case joaat("NORMAL"):
+		case joaat("normal"):
 			return 0;
 		case -640677282:
 			return 1;

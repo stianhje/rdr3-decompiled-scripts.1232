@@ -848,29 +848,29 @@ void func_28()
 
 void func_29(int iParam0)
 {
-	func_68(3, iLocal_31, iParam0, iLocal_40, iLocal_34, 4, 0, 0, -1082130432, 0);
+	func_68(3, iLocal_31, iParam0, iLocal_40, iLocal_34, 4, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_69(3, 972368328, 0, 0);
 	func_69(3, 1060413677, 0, 0);
 	func_70(3, 8192);
 	func_71(3, 0);
-	func_68(6, iLocal_38, iParam0, iLocal_35, iLocal_37, 20, 0, 0, -1082130432, 0);
+	func_68(6, iLocal_38, iParam0, iLocal_35, iLocal_37, 20, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_69(6, 393076024, 0, 0);
 	func_69(6, 934926308, 0, 0);
 	func_69(6, 743565308, 0, 0);
 	func_71(6, 0);
-	func_68(25, iLocal_75, iParam0, 0, 0, 2, 0, 0, -1082130432, 0);
+	func_68(25, iLocal_75, iParam0, 0, 0, 2, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_70(25, 1);
 	func_70(25, 16384);
 	func_70(25, 8192);
 	func_70(25, 536870912);
 	func_72();
 	func_73(36);
-	func_68(10, iLocal_43, iParam0, iLocal_44, 0, 460, 0, 0, -1082130432, 0);
+	func_68(10, iLocal_43, iParam0, iLocal_44, 0, 460, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_70(10, 536870912);
 	func_71(10, 0);
-	func_68(4, iLocal_41, iParam0, iLocal_42, 0, 44, 0, 0, -1082130432, 0);
+	func_68(4, iLocal_41, iParam0, iLocal_42, 0, 44, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_71(4, 0);
-	func_68(2, iLocal_22, iParam0, iLocal_26, iLocal_27, 1277952, 0, 0, -1082130432, 0);
+	func_68(2, iLocal_22, iParam0, iLocal_26, iLocal_27, 1277952, 0, 0, -1082130432 /* Float: -1f */, 0);
 	func_69(2, 414143916, 0, 0);
 	func_69(2, 1567970773, 0, 0);
 	func_69(2, 2049773380, 0, 0);
@@ -2029,7 +2029,7 @@ void func_93(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_174(Global_1939168, 16384);
-	func_156(func_175(-1532769513, -36357794), 1);
+	func_156(func_175(-1532769513, joaat("areas")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -7907,7 +7907,7 @@ int func_256(int iParam0)
 		case 69:
 			return 922959422;
 		case 70:
-			return 1948709075;
+			return joaat("rage_p2_3");
 		case 71:
 			return 599204508;
 		case 74:
@@ -8954,7 +8954,7 @@ int func_287(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1649591222;
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -8963,7 +8963,7 @@ int func_287(int iParam0)
 			iVar0 = -1841318328;
 			break;
 		case -2:
-			iVar0 = 1293082345;
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -8987,16 +8987,16 @@ int func_287(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = -1480791665;
+			iVar0 = joaat("property");
 			break;
 		case 10:
 			iVar0 = 1894568478;
 			break;
 		case 11:
-			iVar0 = 1923799069;
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;

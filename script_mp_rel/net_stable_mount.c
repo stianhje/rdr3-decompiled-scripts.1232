@@ -2127,7 +2127,7 @@ int func_44(var uParam0, var uParam1)
 	{
 		*uParam1 = 4;
 	}
-	else if (func_110(uParam0, 1073741824))
+	else if (func_110(uParam0, 1073741824 /* Float: 2f */))
 	{
 		*uParam1 = 3;
 	}
@@ -4382,7 +4382,7 @@ int func_116(int iParam0, int iParam1, int iParam2, bool bParam3)
 	func_185(Global_1903928, 536870912);
 	func_185(Global_1903928, 268435456);
 	func_185(Global_1903928, -2147483648);
-	func_185(Global_1903928, 1073741824);
+	func_185(Global_1903928, 1073741824 /* Float: 2f */);
 	func_185(Global_1903928, 134217728);
 	switch (iParam2)
 	{
@@ -4396,7 +4396,7 @@ int func_116(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_168(Global_1903928, 536870912);
 			break;
 		case 3:
-			func_168(Global_1903928, 1073741824);
+			func_168(Global_1903928, 1073741824 /* Float: 2f */);
 			break;
 		case 4:
 			func_168(Global_1903928, -2147483648);
@@ -7936,7 +7936,7 @@ int func_238(int iParam0, bool bParam1, bool bParam2)
 		Var0.f_26 = iParam0->f_28;
 		Var0.f_24 = iParam0->f_25;
 		Var0.f_27 = iParam0->f_24;
-		if (func_259(-1230526146, &Var0, bParam1) == -1)
+		if (func_259(joaat("update"), &Var0, bParam1) == -1)
 		{
 			return 0;
 		}
@@ -7966,7 +7966,7 @@ int func_239(int iParam0, bool bParam1, bool bParam2)
 		Var0 = { func_258(iParam0, 0) };
 		Var0.f_16 = { iParam0->f_15 };
 		Var0.f_24 = iParam0->f_23;
-		if (func_260(-1230526146, &Var0, bParam1) == -1)
+		if (func_260(joaat("update"), &Var0, bParam1) == -1)
 		{
 			return 0;
 		}
@@ -7992,7 +7992,7 @@ struct<5> func_242(int iParam0)
 {
 	struct<5> Var0;
 
-	Var0 = { func_243(iParam0, joaat("CHARACTER"), func_94(), -1591664384) };
+	Var0 = { func_243(iParam0, joaat("character"), func_94(), -1591664384) };
 	Var0.f_4 = 1084182731;
 	return Var0;
 }
@@ -8260,7 +8260,7 @@ struct<16> func_258(int iParam0, bool bParam1)
 	Var0.f_10 = iParam0->f_10;
 	if (bParam1)
 	{
-		Var0.f_15 = func_265(iParam0->f_4, joaat("DEFAULT"));
+		Var0.f_15 = func_265(iParam0->f_4, joaat("default"));
 		if (Var0.f_15 != 0)
 		{
 			Var0.f_4 = { func_94() };
@@ -8701,7 +8701,7 @@ int func_266(int iParam0, var uParam1)
 	int iVar0;
 
 	iVar0 = NETSHOPPING::_0x6C9F12700BCE69F4(iParam0, uParam1);
-	if (iParam0 == 1702063850)
+	if (iParam0 == joaat("use"))
 	{
 		if (func_133(iVar0, 2048))
 		{

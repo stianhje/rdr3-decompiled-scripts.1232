@@ -1642,7 +1642,7 @@ void func_78(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_126(Global_1939168, 16384);
-	func_128(func_127(-1532769513, -36357794), 1);
+	func_128(func_127(-1532769513, joaat("areas")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -5432,7 +5432,7 @@ int func_194(int iParam0)
 		case 69:
 			return 922959422;
 		case 70:
-			return 1948709075;
+			return joaat("rage_p2_3");
 		case 71:
 			return 599204508;
 		case 74:

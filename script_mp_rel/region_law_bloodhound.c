@@ -358,7 +358,7 @@ int func_10()
 
 	fVar0 = 25f;
 	fVar1 = 60f;
-	if (!func_20(vLocal_89, &Local_80, &uVar2, 1, 1, 1127481344, 50f, fVar0, fVar1, 0))
+	if (!func_20(vLocal_89, &Local_80, &uVar2, 1, 1, 1127481344 /* Float: 180f */, 50f, fVar0, fVar1, 0))
 	{
 		return 0;
 	}

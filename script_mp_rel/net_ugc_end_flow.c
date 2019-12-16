@@ -1382,9 +1382,9 @@ void func_50()
 	{
 		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(29649618);
 	}
-	if (UIAPPS::_IS_APP_RUNNING(-1641598689) || UIAPPS::_IS_APP_ACTIVE(-1641598689))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("abilities")) || UIAPPS::_IS_APP_ACTIVE(joaat("abilities")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(-1641598689);
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("abilities"));
 	}
 	if (func_138())
 	{
@@ -2171,7 +2171,7 @@ int func_77()
 			{
 				iLocal_243 = 1834537343;
 				iLocal_246 = 22956558;
-				iLocal_247 = 821931868;
+				iLocal_247 = joaat("clouds");
 				if (MISC::IS_BIT_SET(iLocal_398, 12))
 				{
 					if (MISC::IS_BIT_SET(iLocal_396, 30))
@@ -2368,7 +2368,7 @@ int func_77()
 				{
 					if (MISC::IS_BIT_SET(iLocal_396, 31))
 					{
-						iLocal_247 = 821931868;
+						iLocal_247 = joaat("clouds");
 						func_181(0.978f, -0.448f, 329f, 3233.729f, 262.921f, -2070.11f);
 					}
 					else if (MISC::IS_BIT_SET(iLocal_396, 30))
@@ -2388,7 +2388,7 @@ int func_77()
 				}
 				else
 				{
-					iLocal_247 = 821931868;
+					iLocal_247 = joaat("clouds");
 					func_181(0.418f, 0.191f, 698.75f, 487.565f, 1166.487f, -492.181f);
 				}
 			}
@@ -2525,12 +2525,12 @@ int func_80()
 	{
 		STREAMING::REQUEST_MODEL(iLocal_265, false);
 	}
-	STREAMING::REQUEST_MODEL(-1528680970, false);
+	STREAMING::REQUEST_MODEL(joaat("p_chair09x"), false);
 	STREAMING::REQUEST_MODEL(joaat("p_crate01x"), false);
 	STREAMING::REQUEST_MODEL(-728725588, false);
 	STREAMING::REQUEST_MODEL(joaat("p_crate02x"), false);
-	STREAMING::REQUEST_MODEL(1749359648, false);
-	if (((((!STREAMING::HAS_MODEL_LOADED(iLocal_264) && !STREAMING::HAS_MODEL_LOADED(-1528680970)) && !STREAMING::HAS_MODEL_LOADED(joaat("p_crate01x"))) && !STREAMING::HAS_MODEL_LOADED(-728725588)) && !STREAMING::HAS_MODEL_LOADED(joaat("p_crate02x"))) && !STREAMING::HAS_MODEL_LOADED(1749359648))
+	STREAMING::REQUEST_MODEL(joaat("p_crate05x"), false);
+	if (((((!STREAMING::HAS_MODEL_LOADED(iLocal_264) && !STREAMING::HAS_MODEL_LOADED(joaat("p_chair09x"))) && !STREAMING::HAS_MODEL_LOADED(joaat("p_crate01x"))) && !STREAMING::HAS_MODEL_LOADED(-728725588)) && !STREAMING::HAS_MODEL_LOADED(joaat("p_crate02x"))) && !STREAMING::HAS_MODEL_LOADED(joaat("p_crate05x")))
 	{
 		return 0;
 	}
@@ -2650,24 +2650,24 @@ void func_89(var uParam0, bool bParam1)
 			func_187(&(uParam0->f_198), 2);
 			break;
 		case 2:
-			iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(595204529, func_188(bParam1));
+			iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("leaderboards"), func_188(bParam1));
 			if (iVar1 == 0)
 			{
 				func_187(&(uParam0->f_198), 3);
 			}
-			else if (UIAPPS::_IS_APP_RUNNING(595204529))
+			else if (UIAPPS::_IS_APP_RUNNING(joaat("leaderboards")))
 			{
 				func_187(&(uParam0->f_198), 3);
 			}
 			break;
 		case 3:
-			if (UIAPPS::_IS_APP_RUNNING(595204529))
+			if (UIAPPS::_IS_APP_RUNNING(joaat("leaderboards")))
 			{
 				if (!bVar0)
 				{
 					AUDIO::PLAY_SOUND_FRONTEND("Leaderboard_Show", "MP_Leaderboard_Sounds", true, 0);
 				}
-				UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(595204529, func_189());
+				UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("leaderboards"), func_189());
 				func_187(&(uParam0->f_198), 4);
 			}
 			else if (func_190())
@@ -2678,13 +2678,13 @@ void func_89(var uParam0, bool bParam1)
 		case 4:
 			if (MISC::IS_BIT_SET(uParam0->f_158, 13))
 			{
-				if (UIAPPS::_IS_APP_RUNNING(595204529))
+				if (UIAPPS::_IS_APP_RUNNING(joaat("leaderboards")))
 				{
 					if (!bVar0)
 					{
 						AUDIO::PLAY_SOUND_FRONTEND("Leaderboard_Hide", "MP_Leaderboard_Sounds", true, 0);
 					}
-					UIAPPS::_CLOSE_APP_BY_HASH(595204529);
+					UIAPPS::_CLOSE_APP_BY_HASH(joaat("leaderboards"));
 					func_187(&(uParam0->f_198), 5);
 				}
 			}
@@ -3144,8 +3144,8 @@ void func_109()
 		{
 			STREAMING::REQUEST_MODEL(-728725588, false);
 			STREAMING::REQUEST_MODEL(joaat("p_crate02x"), false);
-			STREAMING::REQUEST_MODEL(1749359648, false);
-			if ((STREAMING::HAS_MODEL_LOADED(-728725588) && STREAMING::HAS_MODEL_LOADED(joaat("p_crate02x"))) && STREAMING::HAS_MODEL_LOADED(1749359648))
+			STREAMING::REQUEST_MODEL(joaat("p_crate05x"), false);
+			if ((STREAMING::HAS_MODEL_LOADED(-728725588) && STREAMING::HAS_MODEL_LOADED(joaat("p_crate02x"))) && STREAMING::HAS_MODEL_LOADED(joaat("p_crate05x")))
 			{
 				if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_540[0])))
 				{
@@ -3161,13 +3161,13 @@ void func_109()
 				}
 				if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_540[2])))
 				{
-					iLocal_540[2] = OBJECT::CREATE_OBJECT(1749359648, vLocal_237, false, true, false, false, true);
+					iLocal_540[2] = OBJECT::CREATE_OBJECT(joaat("p_crate05x"), vLocal_237, false, true, false, false, true);
 					StringCopy(&cVar1, "CRATE_03", 16);
 					func_199(iLocal_540[2], cVar1);
 				}
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(-728725588);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("p_crate02x"));
-				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(1749359648);
+				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("p_crate05x"));
 				MISC::SET_BIT(&iLocal_399, 3);
 				return;
 			}
@@ -3197,15 +3197,15 @@ void func_109()
 	}
 	if (!MISC::IS_BIT_SET(iLocal_399, 2))
 	{
-		STREAMING::REQUEST_MODEL(-1528680970, false);
-		if (STREAMING::HAS_MODEL_LOADED(-1528680970))
+		STREAMING::REQUEST_MODEL(joaat("p_chair09x"), false);
+		if (STREAMING::HAS_MODEL_LOADED(joaat("p_chair09x")))
 		{
 			iVar0 = 0;
 			while (iVar0 <= (iLocal_269 - 1))
 			{
 				if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_523[iVar0])))
 				{
-					iLocal_523[iVar0] = OBJECT::CREATE_OBJECT(-1528680970, vLocal_237, false, true, false, false, true);
+					iLocal_523[iVar0] = OBJECT::CREATE_OBJECT(joaat("p_chair09x"), vLocal_237, false, true, false, false, true);
 					StringCopy(&cVar1, "CHAIR_", 16);
 					if (iVar0 < 10)
 					{
@@ -3216,7 +3216,7 @@ void func_109()
 				}
 				iVar0++;
 			}
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(-1528680970);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("p_chair09x"));
 			MISC::SET_BIT(&iLocal_399, 2);
 			return;
 		}
@@ -4220,7 +4220,7 @@ void func_152(int iParam0, bool bParam1)
 		}
 		return;
 	}
-	func_242(Var30.f_6, Var30, -1082130432, -1082130432, 1, 1, 1);
+	func_242(Var30.f_6, Var30, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, 1, 1, 1);
 	if (bParam1)
 	{
 		func_128(0);
@@ -4382,7 +4382,7 @@ void func_166(var uParam0, bool bParam1)
 {
 	int iVar0;
 
-	UIAPPS::_CLOSE_APP_BY_HASH(595204529);
+	UIAPPS::_CLOSE_APP_BY_HASH(joaat("leaderboards"));
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam0))
 	{
 		DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(*uParam0);
@@ -4768,7 +4768,7 @@ int func_188(bool bParam0)
 {
 	if (bParam0)
 	{
-		return 1022890889;
+		return joaat("leaderboard");
 	}
 	return -987928333;
 }
