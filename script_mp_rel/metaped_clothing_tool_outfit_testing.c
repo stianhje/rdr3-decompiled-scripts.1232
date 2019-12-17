@@ -189,95 +189,21 @@ void __EntryFunction__()
 
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	func_1(-1);
+	aggregate.metaped_clothing_gender_swap.func_1(-1);
 	bVar0 = false;
 	while (!bVar0 && iLocal_179 < 3)
 	{
-		if (func_2() == -1)
+		if (aggregate.aberdeenpigfarm.func_45() == -1)
 		{
 		}
 		else
 		{
-			bVar0 = func_3(0, 0);
+			bVar0 = aggregate.error_listener.func_3(0, 0);
 		}
 		func_4(&iLocal_179, &uLocal_21);
 		BUILTIN::WAIT(0);
 	}
-	func_5();
-}
-
-void func_1(int iParam0)
-{
-	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
-	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(1);
-	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-}
-
-int func_2()
-{
-	return Global_1572887->f_13;
-}
-
-int func_3(bool bParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (Global_1572887->f_12)
-	{
-		return 0;
-	}
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
-		{
-		}
-		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
-		{
-		}
-		else if (bParam1 && &Global_1572887 < 39)
-		{
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
-	{
-		return 1;
-	}
-	if (SCRIPTS::_0x9E4EF615E307FBBE())
-	{
-		switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-		{
-			case 0:
-				return 1;
-			case 1:
-				return 1;
-			case 2:
-				if (!bParam0)
-				{
-					return 1;
-				}
-				break;
-			case 4:
-				return 1;
-			case 3:
-				return 1;
-			default:
-				return 1;
-		}
-	}
-	iVar0 = 0;
-	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
-	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
-		{
-			return 1;
-		}
-		iVar0++;
-	}
-	return 0;
+	aggregate.aberdeenpigfarm.func_46();
 }
 
 void func_4(int iParam0, var uParam1)
@@ -285,29 +211,19 @@ void func_4(int iParam0, var uParam1)
 	switch (*iParam0)
 	{
 		case 0:
-			func_6(iParam0, 1);
+			aggregate.coffee_drinking.func_5(iParam0, 1);
 			break;
 		case 1:
-			func_6(iParam0, 2);
+			aggregate.coffee_drinking.func_5(iParam0, 2);
 			break;
 		case 2:
 			if (iParam0->f_2)
 			{
-				func_6(iParam0, 3);
+				aggregate.coffee_drinking.func_5(iParam0, 3);
 			}
 			break;
 		case 3:
 			break;
 	}
-}
-
-void func_5()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
-}
-
-void func_6(int iParam0, int iParam1)
-{
-	*iParam0 = iParam1;
 }
 

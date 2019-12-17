@@ -185,7 +185,7 @@
 	int iLocal_200 = 0;
 	var uLocal_201[10] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 	int iLocal_212 = 0;
-	var uLocal_213 = 0;
+	int iLocal_213 = 0;
 	var uLocal_214 = 0;
 	var uLocal_215 = 0;
 	var uLocal_216 = 0;
@@ -197,89 +197,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-void __EntryFunction__()
-{
-	iLocal_13 = 1;
-	fLocal_20 = 1f;
-	fLocal_21 = 1f;
-	iLocal_15 = vScriptParam_0.x;
-	iLocal_16 = vScriptParam_0.y;
-	uLocal_17 = vScriptParam_0.z;
-	func_1();
-	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
-	{
-		func_2();
-	}
-	while (!SCRIPTS::_0x9E4EF615E307FBBE() && func_3())
-	{
-		func_4();
-		func_5();
-		func_6();
-		BUILTIN::WAIT(0);
-	}
-	func_2();
-}
-
-void func_1()
-{
-}
-
-void func_2()
-{
-	func_7();
-	SCRIPTS::_0xE7282390542F570D(iLocal_15);
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		func_8();
-	}
-	else
-	{
-		SCRIPTS::TERMINATE_THIS_THREAD();
-	}
-}
-
-int func_3()
-{
-	if (iLocal_14 != 0)
-	{
-		if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iLocal_14) == 0)
-		{
-			return iLocal_13;
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	return iLocal_13;
-}
-
-void func_4()
-{
-}
-
-void func_5()
-{
-	int iVar0;
-
-	iVar0 = 0;
-	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(2))
-	{
-		switch (SCRIPTS::GET_EVENT_AT_INDEX(2, iVar0))
-		{
-			case -45008988:
-				func_9(iVar0);
-				break;
-			case -456923784:
-				func_10(iVar0);
-				break;
-			case -843555838:
-				func_11(iVar0);
-				break;
-		}
-		iVar0++;
-	}
-}
+// __EntryFunction__ == armoire_corpse_scenario.__EntryFunction__
 
 void func_6()
 {
@@ -303,7 +221,7 @@ void func_6()
 		if (ENTITY::DOES_ENTITY_EXIST(Local_23.f_5))
 		{
 			iLocal_212 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(Local_23.f_5);
-			if (!func_14(uLocal_188, 4))
+			if (!aggregate.aberdeenpigfarm.func_175(uLocal_188, 4))
 			{
 				if (!NETWORK::NETWORK_GET_ENTITY_IS_NETWORKED(Local_23.f_5))
 				{
@@ -313,24 +231,24 @@ void func_6()
 			OBJECT::_0xB6CBD40F8EA69E8A(ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(Local_23.f_5));
 		}
 	}
-	else if (!func_14(uLocal_188, 1))
+	else if (!aggregate.aberdeenpigfarm.func_175(uLocal_188, 1))
 	{
-		if (!func_14(uLocal_188, 4))
+		if (!aggregate.aberdeenpigfarm.func_175(uLocal_188, 4))
 		{
 			if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(Local_23.f_5))
 			{
-				func_15(&uLocal_188, 1);
+				aggregate.aberdeenpigfarm.func_106(&uLocal_188, 1);
 			}
-			else if (!func_14(uLocal_188, 2))
+			else if (!aggregate.aberdeenpigfarm.func_175(uLocal_188, 2))
 			{
 				NETWORK::NETWORK_REQUEST_CONTROL_OF_ENTITY(Local_23.f_5);
-				func_15(&uLocal_188, 2);
+				aggregate.aberdeenpigfarm.func_106(&uLocal_188, 2);
 			}
 		}
 		else
 		{
-			func_15(&uLocal_188, 2);
-			func_15(&uLocal_188, 1);
+			aggregate.aberdeenpigfarm.func_106(&uLocal_188, 2);
+			aggregate.aberdeenpigfarm.func_106(&uLocal_188, 1);
 		}
 	}
 	switch (iLocal_217)
@@ -339,7 +257,7 @@ void func_6()
 			if (!ENTITY::DOES_ENTITY_EXIST(Local_23.f_5))
 			{
 			}
-			else if (!func_14(uLocal_188, 1))
+			else if (!aggregate.aberdeenpigfarm.func_175(uLocal_188, 1))
 			{
 			}
 			else if (!OBJECT::_0xB6CBD40F8EA69E8A(ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(Local_23.f_5)))
@@ -358,7 +276,7 @@ void func_6()
 					return;
 				}
 				func_16(&Local_23);
-				func_17(&Local_23);
+				aggregate.fm_mission_controller.func_2849(&Local_23);
 				bLocal_220 = func_18(&Local_23);
 				if (bLocal_220)
 				{
@@ -369,11 +287,11 @@ void func_6()
 					Local_23.f_3 = 1;
 					func_20(0, 0f, 0f, 0f, &iLocal_212, 0, 0);
 				}
-				uLocal_213 = func_21(&Local_23, bLocal_220);
+				iLocal_213 = func_21(&Local_23, bLocal_220);
 				func_22(Local_23.f_5);
 				Local_23.f_1 = ENTITY::GET_ENTITY_MODEL(Local_23.f_5);
 				func_23(&Local_23);
-				func_24(&uLocal_214);
+				aggregate.barcustomer_interaction.func_43(&uLocal_214);
 				iLocal_217 = 1;
 			}
 			break;
@@ -389,7 +307,7 @@ void func_6()
 				while (iLocal_221 < 10)
 				{
 					MISC::_INT_TO_STRING(iLocal_221, "%i", &uVar0);
-					func_26(uLocal_189[iLocal_221], &Local_23, iLocal_221, uLocal_201[iLocal_221], &uVar0, 0, 1, 1, func_25(&uLocal_214, 2f));
+					func_26(uLocal_189[iLocal_221], &Local_23, iLocal_221, uLocal_201[iLocal_221], &uVar0, 0, 1, 1, aggregate.broom_scenario.func_18(&uLocal_214, 2f));
 					iLocal_221++;
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(Local_23.f_5))
@@ -402,7 +320,7 @@ void func_6()
 					vVar4 = { TASK::_0xA8452DD321607029(iLocal_16, 1) };
 					vVar7 = { 0f, 0f, TASK::_0xB93EA7184BAA85C3(iLocal_16, 1) };
 				}
-				func_27(&iLocal_200, &uLocal_213, &Local_23, vVar4, vVar7);
+				func_27(&iLocal_200, &iLocal_213, &Local_23, vVar4, vVar7);
 			}
 			bLocal_219 = true;
 			iLocal_221 = 0;
@@ -421,7 +339,7 @@ void func_6()
 					}
 					if (bLocal_219)
 					{
-						func_24(&uLocal_214);
+						aggregate.barcustomer_interaction.func_43(&uLocal_214);
 						iLocal_217 = 2;
 					}
 					Jump @859; //curOff = 672
@@ -436,7 +354,7 @@ void func_6()
 						while (iLocal_221 < 10)
 						{
 							MISC::_INT_TO_STRING(iLocal_221, "%i", &uVar10);
-							func_26(uLocal_189[iLocal_221], &Local_23, iLocal_221, uLocal_201[iLocal_221], &uVar10, 0, 1, 0, func_25(&uLocal_214, 2f));
+							func_26(uLocal_189[iLocal_221], &Local_23, iLocal_221, uLocal_201[iLocal_221], &uVar10, 0, 1, 0, aggregate.broom_scenario.func_18(&uLocal_214, 2f));
 							iLocal_221++;
 						}
 					}
@@ -453,7 +371,7 @@ void func_6()
 							iLocal_221++;
 							if (bLocal_219)
 							{
-								func_28(&uLocal_214);
+								aggregate.barcustomer_interaction.func_50(&uLocal_214);
 								func_29(&Local_23);
 								iLocal_217 = 3;
 							}
@@ -467,7 +385,10 @@ void func_6()
 					}
 				}
 			}
-		}
+			default:
+				break;
+	}
+}
 
 void func_7()
 {
@@ -477,47 +398,6 @@ void func_7()
 		{
 			func_30(Local_23.f_5);
 		}
-	}
-}
-
-void func_8()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
-}
-
-void func_9(int iParam0)
-{
-	int iVar0;
-
-	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
-	if (iVar0 == iLocal_15)
-	{
-		SCRIPTS::SET_EVENT_FLAG_FOR_DELETION(2, iParam0, 1);
-		func_31(&iVar0);
-	}
-}
-
-void func_10(int iParam0)
-{
-	int iVar0;
-
-	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
-	if (iVar0 == iLocal_15)
-	{
-		SCRIPTS::SET_EVENT_FLAG_FOR_DELETION(2, iParam0, 1);
-		func_32(&iVar0);
-	}
-}
-
-void func_11(int iParam0)
-{
-	int iVar0;
-
-	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
-	if (iVar0 == iLocal_15)
-	{
-		SCRIPTS::SET_EVENT_FLAG_FOR_DELETION(2, iParam0, 1);
-		func_33(&iVar0);
 	}
 }
 
@@ -538,7 +418,7 @@ void func_12(int iParam0)
 
 void func_13()
 {
-	if (!func_14(uLocal_188, 8))
+	if (!aggregate.aberdeenpigfarm.func_175(uLocal_188, 8))
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(Local_23.f_5))
 		{
@@ -546,20 +426,10 @@ void func_13()
 		}
 		if (!func_34(&(Local_23.f_5)))
 		{
-			func_15(&uLocal_188, 4);
+			aggregate.aberdeenpigfarm.func_106(&uLocal_188, 4);
 		}
-		func_15(&uLocal_188, 8);
+		aggregate.aberdeenpigfarm.func_106(&uLocal_188, 8);
 	}
-}
-
-bool func_14(var uParam0, int iParam1)
-{
-	return (uParam0 && iParam1) != 0;
-}
-
-void func_15(var uParam0, int iParam1)
-{
-	*uParam0 = (*uParam0 || iParam1);
 }
 
 void func_16(int iParam0)
@@ -577,13 +447,6 @@ void func_16(int iParam0)
 		iParam0->f_154[iVar0] = -1;
 		iVar0++;
 	}
-}
-
-void func_17(int iParam0)
-{
-	func_35(iParam0);
-	func_36(iParam0);
-	func_37(iParam0);
 }
 
 int func_18(int iParam0)
@@ -607,20 +470,20 @@ int func_18(int iParam0)
 	return 1;
 }
 
-int func_19(int iParam0)
+bool func_19(int iParam0)
 {
 	if ((((((((DECORATOR::DECOR_EXIST_ON(iParam0, "loot_empty") || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_money")) || DECORATOR::DECOR_EXIST_ON(iParam0, "fLoot_money")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_type1")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_type2")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_ammo1_type")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_ammo2_type")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_ammo3_type")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_weapon"))
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
 void func_20(int iParam0, vector3 vParam1, int iParam4, int iParam5, int iParam6)
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(*iParam4))
 	{
-		*iParam4 = func_40(iParam0, vParam1, iParam5, iParam6);
+		*iParam4 = aggregate.fm_mission_controller.func_6821(iParam0, vParam1, iParam5, iParam6);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam4))
 	{
@@ -673,7 +536,7 @@ void func_22(int iParam0)
 	{
 		return;
 	}
-	if (func_14(OBJECT::_0x2BF1953C0C21AC88(iVar0), 1))
+	if (aggregate.aberdeenpigfarm.func_175(OBJECT::_0x2BF1953C0C21AC88(iVar0), 1))
 	{
 		DECORATOR::DECOR_SET_BOOL(iParam0, "loot_empty", true);
 		return;
@@ -768,24 +631,6 @@ void func_23(int iParam0)
 	}
 }
 
-void func_24(var uParam0)
-{
-	func_49(uParam0, 0f);
-}
-
-int func_25(var uParam0, float fParam1)
-{
-	if (!func_50(uParam0))
-	{
-		return 0;
-	}
-	if (func_51(uParam0) > fParam1)
-	{
-		return 1;
-	}
-	return 0;
-}
-
 void func_26(var uParam0, int iParam1, int iParam2, var uParam3, char* sParam4, bool bParam5, bool bParam6, bool bParam7, bool bParam8)
 {
 	vector3 vVar0;
@@ -836,8 +681,8 @@ void func_26(var uParam0, int iParam1, int iParam2, var uParam3, char* sParam4, 
 					OBJECT::_0x1461DF6DB886BE3F(*uParam3);
 					if (bParam6)
 					{
-						iVar6 = func_53(iParam1->f_4, &(iParam1->f_154[iParam2]), 0);
-						vVar0 = { func_54(iParam1->f_4, *(iParam1->f_37[iParam2 /*3*/]), ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(iParam1->f_5, vVar0)) };
+						iVar6 = aggregate.blackwater.func_292(iParam1->f_4, &(iParam1->f_154[iParam2]), 0);
+						vVar0 = { aggregate.fme_escaped_convicts.func_1089(iParam1->f_4, *(iParam1->f_37[iParam2 /*3*/]), ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(iParam1->f_5, vVar0)) };
 						ENTITY::ATTACH_ENTITY_TO_ENTITY(*uParam3, iParam1->f_5, iVar6, vVar0, *(iParam1->f_68[iParam2 /*3*/]), 0, 0, 0, 0, 2, 1, 0, 0);
 					}
 					else
@@ -889,9 +734,12 @@ void func_26(var uParam0, int iParam1, int iParam2, var uParam3, char* sParam4, 
 					}
 				}
 			}
-		}
+			default:
+				break;
+	}
+}
 
-void func_27(int iParam0, var uParam1, int iParam2, vector3 vParam3, vector3 vParam6)
+void func_27(int iParam0, int iParam1, int iParam2, vector3 vParam3, vector3 vParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -899,9 +747,9 @@ void func_27(int iParam0, var uParam1, int iParam2, vector3 vParam3, vector3 vPa
 	switch (*iParam0)
 	{
 		case 0:
-			if (*uParam1 != 0)
+			if (*iParam1 != 0)
 			{
-				STREAMING::REQUEST_MODEL(*uParam1, false);
+				STREAMING::REQUEST_MODEL(*iParam1, false);
 				*iParam0 = 1;
 			}
 			else
@@ -910,16 +758,16 @@ void func_27(int iParam0, var uParam1, int iParam2, vector3 vParam3, vector3 vPa
 			}
 			break;
 		case 1:
-			if (STREAMING::HAS_MODEL_LOADED(*uParam1))
+			if (STREAMING::HAS_MODEL_LOADED(*iParam1))
 			{
-				if (*uParam1 == -180727039)
+				if (*iParam1 == -180727039)
 				{
 					vParam3 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vParam3, vParam6.z, 0f, 0f, 0.08f) };
 				}
-				iVar0 = OBJECT::CREATE_OBJECT(*uParam1, vParam3, func_34(&(iParam2->f_5)), true, false, false, false);
+				iVar0 = OBJECT::CREATE_OBJECT(*iParam1, vParam3, func_34(&(iParam2->f_5)), true, false, false, false);
 				if (ENTITY::DOES_ENTITY_EXIST(iParam2->f_5))
 				{
-					iVar1 = func_53(iParam2->f_4, &(iParam2->f_154[0]), 0);
+					iVar1 = aggregate.blackwater.func_292(iParam2->f_4, &(iParam2->f_154[0]), 0);
 					ENTITY::ATTACH_ENTITY_TO_ENTITY(iVar0, iParam2->f_5, iVar1, 0f, 0f, 0f, 0f, 0f, 0f, 0, 0, 0, 0, 2, 1, 1, 0);
 				}
 				else
@@ -932,13 +780,6 @@ void func_27(int iParam0, var uParam1, int iParam2, vector3 vParam3, vector3 vPa
 		case 4:
 			break;
 	}
-}
-
-void func_28(var uParam0)
-{
-	uParam0->f_1 = 0f;
-	uParam0->f_2 = 0f;
-	*uParam0 = 0;
 }
 
 void func_29(int iParam0)
@@ -957,16 +798,12 @@ void func_30(int iParam0)
 	}
 	if (NETWORK::NETWORK_IS_IN_SESSION())
 	{
-		func_56(func_55(-1482693337), 1);
+		aggregate.aberdeenpigfarm.func_108(aggregate.coffee_drinking.func_100(-1482693337), 1);
 	}
 	else
 	{
-		func_56(func_55(822398076), 1);
+		aggregate.aberdeenpigfarm.func_108(aggregate.coffee_drinking.func_100(822398076), 1);
 	}
-}
-
-void func_31(int iParam0)
-{
 }
 
 void func_32(int iParam0)
@@ -982,10 +819,6 @@ void func_32(int iParam0)
 			func_30(Local_23.f_5);
 		}
 	}
-}
-
-void func_33(int iParam0)
-{
 }
 
 bool func_34(var uParam0)
@@ -1358,7 +1191,7 @@ void func_37(int iParam0)
 		}
 		iVar0++;
 	}
-	func_68(&uVar13, 10, 1);
+	aggregate.flow_controller.func_274(&uVar13, 10, 1);
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
@@ -1377,7 +1210,7 @@ void func_37(int iParam0)
 	}
 }
 
-int func_38(int iParam0)
+bool func_38(int iParam0)
 {
 	int iVar0;
 	int iVar1;
@@ -1388,16 +1221,16 @@ int func_38(int iParam0)
 
 	if (!ENTITY::IS_ENTITY_ATTACHED_TO_ANY_VEHICLE(iParam0->f_5))
 	{
-		return 0;
+		return false;
 	}
 	iVar0 = ENTITY::GET_ENTITY_ATTACHED_TO(iParam0->f_5);
 	if (VEHICLE::IS_THIS_MODEL_A_TRAIN(ENTITY::GET_ENTITY_MODEL(iVar0)))
 	{
-		return 0;
+		return false;
 	}
 	if (!PROPSET::_0x53784CEA0159439B(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iVar0)))
 	{
-		return 0;
+		return false;
 	}
 	iVar1 = PROPSET::_0xCE2ACD6F602803E5(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iVar0));
 	iVar2 = ITEMSET::CREATE_ITEMSET(true);
@@ -1405,7 +1238,7 @@ int func_38(int iParam0)
 	if (iVar3 <= 0)
 	{
 		ITEMSET::DESTROY_ITEMSET(iVar2);
-		return 0;
+		return false;
 	}
 	iVar4 = 0;
 	while (iVar4 < iVar3)
@@ -1414,15 +1247,15 @@ int func_38(int iParam0)
 		if (iParam0->f_5 == MISC::_0xEE04C0AFD4EFAF0E(iVar5))
 		{
 			ITEMSET::DESTROY_ITEMSET(iVar2);
-			return 1;
+			return true;
 		}
 		iVar4++;
 	}
 	ITEMSET::DESTROY_ITEMSET(iVar2);
-	return 0;
+	return false;
 }
 
-int func_39(vector3 vParam0)
+bool func_39(vector3 vParam0)
 {
 	int iVar0;
 
@@ -1431,42 +1264,10 @@ int func_39(vector3 vParam0)
 		iVar0 = INTERIOR::GET_INTERIOR_FROM_COLLISION(vParam0);
 		if (INTERIOR::IS_VALID_INTERIOR(iVar0))
 		{
-			return 1;
+			return true;
 		}
 	}
-	return 0;
-}
-
-int func_40(int iParam0, vector3 vParam1, int iParam4, int iParam5)
-{
-	int iVar0;
-	int iVar1;
-
-	STREAMING::REQUEST_MODEL(iParam0, false);
-	if (!STREAMING::HAS_MODEL_LOADED(iParam0))
-	{
-		return 0;
-	}
-	if (!TASK::_0x841475AC96E794D1(iParam4) && iParam5 != 0)
-	{
-		iParam4 = TASK::_0xF533D68FF970D190(vParam1, iParam5, 1f, 0, 0);
-	}
-	if (TASK::_0x841475AC96E794D1(iParam4))
-	{
-		if (TASK::_0xEA31F199A73801D3(iParam4))
-		{
-			iVar1 = TASK::_0x295514F198EFD0CA(iParam4, "CONTAINER");
-			if (ENTITY::IS_ENTITY_AN_OBJECT(iVar1))
-			{
-				iVar0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar1);
-			}
-		}
-	}
-	else
-	{
-		iVar0 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(vParam1, 0.5f, iParam0, false, false, true);
-	}
-	return iVar0;
+	return false;
 }
 
 void func_41(int iParam0)
@@ -1537,13 +1338,13 @@ int func_46(int iParam0)
 	return 0;
 }
 
-int func_47(int iParam0)
+bool func_47(int iParam0)
 {
 	if ((ENTITY::DOES_ENTITY_EXIST(iParam0) && DECORATOR::DECOR_EXIST_ON(iParam0, "scripted_loot_only")) && DECORATOR::DECOR_GET_BOOL(iParam0, "scripted_loot_only"))
 	{
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
 void func_48(int iParam0, int iParam1, int iParam2)
@@ -1561,39 +1362,13 @@ void func_48(int iParam0, int iParam1, int iParam2)
 	while (!func_19(iParam0->f_5) && iVar8 < iParam2)
 	{
 		bVar0 = func_70(iParam0->f_5, &uVar9, &uVar1, &uVar11, &uVar12, &vVar2, &vVar5, &bVar10);
-		if (func_71(bVar0, 0))
+		if (aggregate.bandana.func_30(bVar0, 0))
 		{
 			func_72(iParam0, uVar1, vVar2, vVar5, bVar0, uVar9, uVar11, uVar12, bVar10);
 			iParam1->f_1[iVar8] = bVar0;
 			iVar8++;
 		}
 	}
-}
-
-void func_49(var uParam0, float fParam1)
-{
-	uParam0->f_1 = (func_73() - fParam1);
-	func_74(uParam0, 1);
-	func_75(uParam0, 2);
-	uParam0->f_2 = 0f;
-}
-
-bool func_50(var uParam0)
-{
-	return func_76(*uParam0, 1);
-}
-
-float func_51(var uParam0)
-{
-	if (!func_50(uParam0))
-	{
-		return uParam0->f_1;
-	}
-	if (func_77(uParam0))
-	{
-		return uParam0->f_2;
-	}
-	return (func_73() - uParam0->f_1);
 }
 
 void func_52(int iParam0, var uParam1, int iParam2, int iParam3)
@@ -1608,48 +1383,13 @@ void func_52(int iParam0, var uParam1, int iParam2, int iParam3)
 	}
 }
 
-int func_53(bool bParam0, var uParam1, int iParam2)
-{
-	if (bParam0)
-	{
-		return uParam1;
-	}
-	return iParam2;
-}
-
-Vector3 func_54(bool bParam0, vector3 vParam1, vector3 vParam4)
-{
-	if (bParam0)
-	{
-		return vParam1;
-	}
-	return vParam4;
-}
-
-struct<2> func_55(int iParam0)
-{
-	struct<2> Var0;
-
-	Var0.f_1 = iParam0;
-	return Var0;
-}
-
-void func_56(var uParam0, int iParam1, bool bParam2)
-{
-	if (!STATS::_STAT_ID_IS_VALID(&uParam0))
-	{
-		return;
-	}
-	STATS::_0x6A0184E904CDF25E(&uParam0, bParam2);
-}
-
-int func_57(int iParam0)
+bool func_57(int iParam0)
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return DECORATOR::DECOR_EXIST_ON(iParam0, "chest_open");
 	}
-	return 0;
+	return false;
 }
 
 int func_58(int iParam0, int iParam1)
@@ -1664,14 +1404,14 @@ int func_58(int iParam0, int iParam1)
 	return 0;
 }
 
-void func_59(int iParam0, var uParam1)
+void func_59(int iParam0, int iParam1)
 {
 	int iVar0;
 
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		iParam0->f_154[iVar0] = uParam1;
+		iParam0->f_154[iVar0] = iParam1;
 		iVar0++;
 	}
 }
@@ -1692,7 +1432,7 @@ void func_60(int iParam0)
 	*(vVar0[7 /*3*/]) = { 0.35f, 0.09f, -0.25f };
 	*(vVar0[8 /*3*/]) = { 0.49f, 0.19f, -0.25f };
 	*(vVar0[9 /*3*/]) = { 0.63f, 0.08f, -0.25f };
-	func_68(&uVar31, 10, 1);
+	aggregate.flow_controller.func_274(&uVar31, 10, 1);
 	iVar42 = 0;
 	while (iVar42 < 9)
 	{
@@ -1717,7 +1457,7 @@ void func_61(int iParam0)
 	*(vVar0[7 /*3*/]) = { 0.35f, 0.09f, -0.35f };
 	*(vVar0[8 /*3*/]) = { 0.49f, 0.19f, -0.35f };
 	*(vVar0[9 /*3*/]) = { 0.63f, 0.08f, -0.35f };
-	func_68(&uVar31, 10, 1);
+	aggregate.flow_controller.func_274(&uVar31, 10, 1);
 	iVar42 = 0;
 	while (iVar42 < 9)
 	{
@@ -1766,7 +1506,7 @@ void func_63(int iParam0)
 	*(vVar0[7 /*3*/]) = { -0.23f, 0.36f, -0.04f };
 	*(vVar0[8 /*3*/]) = { -0.05f, 0.38f, -0.04f };
 	*(vVar0[9 /*3*/]) = { 0.08f, 0.34f, -0.04f };
-	func_68(&uVar31, 10, 1);
+	aggregate.flow_controller.func_274(&uVar31, 10, 1);
 	iVar42 = 0;
 	while (iVar42 < 9)
 	{
@@ -1791,7 +1531,7 @@ void func_64(int iParam0)
 	*(vVar0[7 /*3*/]) = { 0.13f, 0.03f, 0.11f };
 	*(vVar0[8 /*3*/]) = { 0.27f, 0.12f, 0.11f };
 	*(vVar0[9 /*3*/]) = { 0.28f, -0.03f, 0.11f };
-	func_68(&uVar31, 10, 1);
+	aggregate.flow_controller.func_274(&uVar31, 10, 1);
 	iVar42 = 0;
 	while (iVar42 < 10)
 	{
@@ -1814,7 +1554,7 @@ void func_65(int iParam0)
 	*(vVar0[4 /*3*/]) = { -0.16f, 0.07f, 0.02f };
 	*(vVar0[5 /*3*/]) = { 0.16f, 0.07f, 0.02f };
 	iParam0->f_2 = 6;
-	func_68(&uVar31, iParam0->f_2, 1);
+	aggregate.flow_controller.func_274(&uVar31, iParam0->f_2, 1);
 	iVar42 = 0;
 	while (iVar42 < iParam0->f_2)
 	{
@@ -1836,7 +1576,7 @@ void func_66(int iParam0)
 	*(vVar0[3 /*3*/]) = { 0.11f, -0.07f, 0.02f };
 	*(vVar0[4 /*3*/]) = { 0f, 0f, 0.02f };
 	iParam0->f_2 = 5;
-	func_68(&uVar31, iParam0->f_2, 1);
+	aggregate.flow_controller.func_274(&uVar31, iParam0->f_2, 1);
 	iVar42 = 0;
 	while (iVar42 < iParam0->f_2)
 	{
@@ -1863,40 +1603,12 @@ void func_67(int iParam0)
 		iVar43++;
 	}
 	iParam0->f_2 = 2;
-	func_68(&uVar31, iParam0->f_2, 1);
+	aggregate.flow_controller.func_274(&uVar31, iParam0->f_2, 1);
 	iVar43 = 0;
 	while (iVar43 < iParam0->f_2)
 	{
 		*(iParam0->f_37[iVar43 /*3*/]) = { *(vVar0[&uVar31[iVar43] /*3*/]) };
 		iVar43++;
-	}
-}
-
-void func_68(var uParam0, int iParam1, bool bParam2)
-{
-	var uVar0;
-	int iVar1;
-	int iVar2;
-
-	iVar2 = 0;
-	if (bParam2)
-	{
-		iVar2 = 0;
-		while (iVar2 <= (iParam1 - 1))
-		{
-			(*uParam0)[iVar2] = iVar2;
-			iVar2++;
-		}
-	}
-	iVar2 = (iParam1 - 1);
-	iVar2 = (iParam1 - 1);
-	while (iVar2 >= 0)
-	{
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(0, iVar2);
-		uVar0 = uParam0[iVar2];
-		(*uParam0)[iVar2] = uParam0[iVar1];
-		(*uParam0)[iVar1] = uVar0;
-		iVar2 = (iVar2 + -1);
 	}
 }
 
@@ -1909,7 +1621,7 @@ float func_69(float fParam0, float fParam1, float fParam2, float fParam3, float 
 	{
 		return fParam1;
 	}
-	fVar0 = func_80(func_79(), fParam3, fParam4);
+	fVar0 = aggregate.fme_dead_drop.func_1207(aggregate.fme_escaped_convicts.func_724(), fParam3, fParam4);
 	if (*iParam5)
 	{
 		if ((fVar0 + fParam0) > fParam2)
@@ -1973,7 +1685,7 @@ int func_70(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 		*uParam3 = DECORATOR::DECOR_GET_FLOAT(iParam0, "fLoot_money");
 		DECORATOR::DECOR_REMOVE(iParam0, "fLoot_money");
 		*uParam2 = 0;
-		return func_81(*uParam3);
+		return aggregate.fme_animal_tagging.func_1249(*uParam3);
 	}
 	StringCopy(&cVar6, "loot_ammo", 16);
 	iVar5 = 1;
@@ -2100,15 +1812,6 @@ int func_70(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 	return 0;
 }
 
-bool func_71(bool bParam0, int iParam1)
-{
-	if (bParam0 == 0)
-	{
-		return false;
-	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
-}
-
 void func_72(int iParam0, var uParam1, vector3 vParam2, vector3 vParam5, bool bParam8, var uParam9, var uParam10, var uParam11, bool bParam12)
 {
 	int iVar0;
@@ -2124,17 +1827,17 @@ void func_72(int iParam0, var uParam1, vector3 vParam2, vector3 vParam5, bool bP
 			(iParam0->f_103[iVar0 /*5*/])->f_1 = uParam9;
 			(iParam0->f_103[iVar0 /*5*/])->f_2 = uParam10;
 			(iParam0->f_103[iVar0 /*5*/])->f_4 = uParam11;
-			if (func_83((iParam0->f_103[iVar0 /*5*/])->f_3) && func_84((iParam0->f_103[iVar0 /*5*/])->f_3))
+			if (aggregate.doc_book.func_158((iParam0->f_103[iVar0 /*5*/])->f_3) && aggregate.bandana.func_71((iParam0->f_103[iVar0 /*5*/])->f_3))
 			{
 				func_85(iParam0->f_37[iVar0 /*3*/], iParam0->f_68[iVar0 /*3*/]);
 			}
 			else
 			{
-				if (!func_86(vParam2))
+				if (!aggregate.annesburg.func_121(vParam2))
 				{
 					*(iParam0->f_37[iVar0 /*3*/]) = { vParam2 };
 				}
-				if (!func_86(vParam5))
+				if (!aggregate.annesburg.func_121(vParam5))
 				{
 					*(iParam0->f_68[iVar0 /*3*/]) = { vParam5 };
 				}
@@ -2145,38 +1848,6 @@ void func_72(int iParam0, var uParam1, vector3 vParam2, vector3 vParam5, bool bP
 			iVar0++;
 		}
 	}
-}
-
-float func_73()
-{
-	int iVar0;
-
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		iVar0 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-		return (BUILTIN::TO_FLOAT(iVar0) / 1000f);
-	}
-	return (BUILTIN::TO_FLOAT(MISC::GET_GAME_TIMER()) / 1000f);
-}
-
-void func_74(var uParam0, int iParam1)
-{
-	*uParam0 = (*uParam0 || iParam1);
-}
-
-void func_75(var uParam0, int iParam1)
-{
-	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
-}
-
-bool func_76(var uParam0, int iParam1)
-{
-	return (uParam0 && iParam1) != 0;
-}
-
-bool func_77(var uParam0)
-{
-	return func_76(*uParam0, 2);
 }
 
 char* func_78(int iParam0, int iParam1)
@@ -2224,61 +1895,19 @@ char* func_78(int iParam0, int iParam1)
 	return "";
 }
 
-int func_79()
-{
-	if (MISC::IS_BIT_SET(MISC::GET_RANDOM_INT_IN_RANGE(0, 65536), 0))
-	{
-		return 1;
-	}
-	return 0;
-}
-
-float func_80(bool bParam0, float fParam1, float fParam2)
-{
-	if (bParam0)
-	{
-		return fParam1;
-	}
-	return fParam2;
-}
-
-int func_81(var uParam0)
-{
-	return 0;
-}
-
-int func_82(bool bParam0)
+bool func_82(bool bParam0)
 {
 	if (WEAPON::IS_WEAPON_VALID(bParam0))
 	{
 		return bParam0;
 	}
-	return 0;
-}
-
-bool func_83(bool bParam0)
-{
-	return func_88(bParam0) == joaat("weapon");
-}
-
-bool func_84(bool bParam0)
-{
-	return WEAPON::_0xC4DEC3CA8C365A5D(bParam0);
+	return false;
 }
 
 void func_85(var uParam0, var uParam1)
 {
 	*uParam0 = { -0.12f, 0.12f, 0.12f };
 	*uParam1 = { 90f, 0f, 115f };
-}
-
-int func_86(vector3 vParam0)
-{
-	if ((vParam0.x == 0f && vParam0.y == 0f) && vParam0.z == 0f)
-	{
-		return 1;
-	}
-	return 0;
 }
 
 char* func_87(int iParam0)
@@ -2303,20 +1932,5 @@ char* func_87(int iParam0)
 			return "p_DRAWER_DBL_Drawer4_NUB";
 	}
 	return "";
-}
-
-int func_88(bool bParam0)
-{
-	vector3 vVar0;
-
-	if (!func_71(bParam0, 0))
-	{
-		return 0;
-	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &vVar0))
-	{
-		return 0;
-	}
-	return vVar0.z;
 }
 

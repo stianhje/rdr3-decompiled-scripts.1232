@@ -37,7 +37,7 @@ void __EntryFunction__()
 		func_1(&Local_13);
 	}
 	vVar0 = { ENTITY::GET_ENTITY_COORDS(Local_13.f_1, false, false) };
-	if (!func_2(vVar0))
+	if (!aggregate.fme_animal_tagging.func_516(vVar0))
 	{
 		func_1(&Local_13);
 	}
@@ -49,76 +49,76 @@ void __EntryFunction__()
 			Local_13.f_13 = 0;
 			if (Global_1939168->f_6)
 			{
-				func_3(&Local_13, 5);
+				aggregate.item_bait_herbivore.func_1(&Local_13, 5);
 			}
 		}
-		if (func_4(&Global_1939168, 4194304))
+		if (aggregate.aberdeenpigfarm.func_175(&Global_1939168, 4194304))
 		{
-			func_3(&Local_13, 5);
+			aggregate.item_bait_herbivore.func_1(&Local_13, 5);
 		}
 		if (SCRIPTS::_0x9E4EF615E307FBBE())
 		{
 			func_1(&Local_13);
 		}
-		switch (func_5(&Local_13))
+		switch (aggregate.bandana.func_20(&Local_13))
 		{
 			case 0:
-				if (func_6(&Local_13))
+				if (aggregate.binoculars.func_15(&Local_13))
 				{
 					func_7(&Local_13);
-					func_8(&Local_13);
+					aggregate.binoculars.func_16(&Local_13);
 				}
 				if (TASK::_0x841475AC96E794D1(Local_13.f_2))
 				{
 					if (func_9(Global_36) && func_10(&Local_13))
 					{
-						func_3(&Local_13, 1);
+						aggregate.item_bait_herbivore.func_1(&Local_13, 1);
 					}
 				}
 				else
 				{
-					func_3(&Local_13, 5);
+					aggregate.item_bait_herbivore.func_1(&Local_13, 5);
 				}
 				break;
 			case 1:
-				if (func_6(&Local_13))
+				if (aggregate.binoculars.func_15(&Local_13))
 				{
-					func_8(&Local_13);
+					aggregate.binoculars.func_16(&Local_13);
 				}
 				if (func_11(&Local_13))
 				{
-					func_3(&Local_13, 2);
+					aggregate.item_bait_herbivore.func_1(&Local_13, 2);
 				}
 				break;
 			case 2:
-				if (func_6(&Local_13))
+				if (aggregate.binoculars.func_15(&Local_13))
 				{
-					func_8(&Local_13);
+					aggregate.binoculars.func_16(&Local_13);
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(Local_13.f_1))
 				{
 					if (func_12(&Local_13))
 					{
-						func_3(&Local_13, 3);
+						aggregate.item_bait_herbivore.func_1(&Local_13, 3);
 					}
 				}
 				break;
 			case 3:
-				if (func_6(&Local_13))
+				if (aggregate.binoculars.func_15(&Local_13))
 				{
 					func_13(&Local_13);
 					func_14(&Local_13);
-					func_8(&Local_13);
+					aggregate.binoculars.func_16(&Local_13);
 				}
 				if (func_15(Local_13.f_11))
 				{
-					func_3(&Local_13, 4);
+					aggregate.item_bait_herbivore.func_1(&Local_13, 4);
 				}
 				break;
 			case 4:
-				if (func_6(&Local_13))
+				if (aggregate.binoculars.func_15(&Local_13))
 				{
-					func_8(&Local_13);
+					aggregate.binoculars.func_16(&Local_13);
 				}
 				break;
 			case 5:
@@ -150,32 +150,6 @@ void func_1(var uParam0)
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-int func_2(var uParam0, var uParam1, var uParam2)
-{
-	return 0;
-}
-
-void func_3(var uParam0, int iParam1)
-{
-	*uParam0 = iParam1;
-	func_16(uParam0);
-}
-
-bool func_4(var uParam0, int iParam1)
-{
-	return (uParam0 && iParam1) != 0;
-}
-
-int func_5(var uParam0)
-{
-	return *uParam0;
-}
-
-bool func_6(var uParam0)
-{
-	return uParam0->f_14;
-}
-
 void func_7(var uParam0)
 {
 	uParam0->f_3[0] = 1477581656;
@@ -184,11 +158,6 @@ void func_7(var uParam0)
 	{
 		uParam0->f_11 = ANIMSCENE::_CREATE_ANIM_SCENE("script@proc@shoprobberies@GLOBAL@EVENT_OPEN_REGISTER@BASE", 2, 0, false, true);
 	}
-}
-
-void func_8(var uParam0)
-{
-	uParam0->f_14 = 0;
 }
 
 int func_9(vector3 vParam0)
@@ -236,7 +205,7 @@ int func_10(var uParam0)
 	return 1;
 }
 
-int func_11(var uParam0)
+bool func_11(var uParam0)
 {
 	int iVar0;
 	int iVar1;
@@ -249,16 +218,16 @@ int func_11(var uParam0)
 		{
 			if (!STREAMING::HAS_MODEL_LOADED(iVar1))
 			{
-				return 0;
+				return false;
 			}
 		}
 		iVar0++;
 	}
 	if (!ANIMSCENE::_0x477122B8D05E7968(uParam0->f_11, 1, 0))
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
 bool func_12(var uParam0)
@@ -296,17 +265,12 @@ void func_14(var uParam0)
 	ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(uParam0->f_11, "pblMain", true);
 }
 
-int func_15(int iParam0)
+bool func_15(int iParam0)
 {
 	if (ANIMSCENE::_0x3FBC3F51BF12DFBF(iParam0) >= 1f)
 	{
-		return 1;
+		return true;
 	}
-	return 0;
-}
-
-void func_16(var uParam0)
-{
-	uParam0->f_14 = 1;
+	return false;
 }
 

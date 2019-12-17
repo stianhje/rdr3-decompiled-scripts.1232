@@ -41,87 +41,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-void __EntryFunction__()
-{
-	iLocal_13 = 1;
-	iLocal_15 = vScriptParam_0.x;
-	uLocal_16 = vScriptParam_0.y;
-	uLocal_17 = vScriptParam_0.z;
-	func_1();
-	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
-	{
-		func_2();
-	}
-	while (!SCRIPTS::_0x9E4EF615E307FBBE() && func_3())
-	{
-		func_4();
-		func_5();
-		func_6();
-		BUILTIN::WAIT(0);
-	}
-	func_2();
-}
-
-void func_1()
-{
-}
-
-void func_2()
-{
-	func_7();
-	SCRIPTS::_0xE7282390542F570D(iLocal_15);
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		func_8();
-	}
-	else
-	{
-		SCRIPTS::TERMINATE_THIS_THREAD();
-	}
-}
-
-int func_3()
-{
-	if (iLocal_14 != 0)
-	{
-		if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iLocal_14) == 0)
-		{
-			return iLocal_13;
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	return iLocal_13;
-}
-
-void func_4()
-{
-}
-
-void func_5()
-{
-	int iVar0;
-
-	iVar0 = 0;
-	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(2))
-	{
-		switch (SCRIPTS::GET_EVENT_AT_INDEX(2, iVar0))
-		{
-			case -45008988:
-				func_9(iVar0);
-				break;
-			case -456923784:
-				func_10(iVar0);
-				break;
-			case -843555838:
-				func_11(iVar0);
-				break;
-		}
-		iVar0++;
-	}
-}
+// __EntryFunction__ == ambient_fishing_scenario.__EntryFunction__
 
 void func_6()
 {
@@ -138,14 +58,14 @@ void func_6()
 		iLocal_13 = 0;
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Local_18.f_25)) && !SCRIPTS::HAS_SCRIPT_LOADED(&(Local_18.f_25)))
 		{
-			if (func_12())
+			if (aggregate.mp_intro.func_430())
 			{
-				func_13(0);
+				aggregate.dynamic_craft_scenario.func_257(0);
 			}
 		}
 		return;
 	}
-	switch (func_14())
+	switch (aggregate.fme_supply_train.func_900())
 	{
 		case 0:
 			if (func_15())
@@ -174,7 +94,7 @@ void func_6()
 				Local_18.f_15 = Local_18.f_5;
 				Local_18.f_15.f_3 = 1;
 				Local_18.f_29 = 1024;
-				func_16();
+				aggregate.fme_golden_hat.func_194();
 			}
 			func_17(1);
 			break;
@@ -183,15 +103,15 @@ void func_6()
 			{
 				SCRIPTS::REQUEST_SCRIPT(&(Local_18.f_25));
 				func_18();
-				func_13(1);
-				func_16();
+				aggregate.dynamic_craft_scenario.func_257(1);
+				aggregate.fme_golden_hat.func_194();
 			}
 			func_17(2);
 			break;
 		case 2:
 			if (func_15())
 			{
-				func_16();
+				aggregate.fme_golden_hat.func_194();
 			}
 			if ((SCRIPTS::HAS_SCRIPT_LOADED(&(Local_18.f_25)) && TASK::IS_PED_ACTIVE_IN_SCENARIO(Local_18, 0)) && func_19())
 			{
@@ -223,7 +143,7 @@ void func_6()
 						}
 					}
 				}
-				else if (func_20() == 1)
+				else if (aggregate.aberdeenpigfarm.func_66() == 1)
 				{
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_78))
 					{
@@ -257,11 +177,11 @@ void func_6()
 			}
 			if (func_15())
 			{
-				func_16();
+				aggregate.fme_golden_hat.func_194();
 			}
 			if (ENTITY::DOES_ENTITY_EXIST(iLocal_78))
 			{
-				if (func_20() == 1 || func_20() == 9)
+				if (aggregate.aberdeenpigfarm.func_66() == 1 || aggregate.aberdeenpigfarm.func_66() == 9)
 				{
 					if ((ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_78, "script_re@murder_campfire@head_note", "enter_head", 1) && ENTITY::_0x627520389E288A73(iLocal_78, "script_re@murder_campfire@head_note", "enter_head") > 0.49f) || (ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_78, "script_re@murder_campfire@knife_note", "enter_head", 1) && ENTITY::_0x627520389E288A73(iLocal_78, "script_re@murder_campfire@head_note", "enter_head") > 0.9f))
 					{
@@ -287,88 +207,9 @@ void func_6()
 	}
 }
 
-void func_7()
-{
-}
-
-void func_8()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
-}
-
-void func_9(int iParam0)
-{
-	int iVar0;
-
-	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
-	if (iVar0 == iLocal_15)
-	{
-		SCRIPTS::SET_EVENT_FLAG_FOR_DELETION(2, iParam0, 1);
-		func_21(&iVar0);
-	}
-}
-
-void func_10(int iParam0)
-{
-	int iVar0;
-
-	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
-	if (iVar0 == iLocal_15)
-	{
-		SCRIPTS::SET_EVENT_FLAG_FOR_DELETION(2, iParam0, 1);
-		func_22(&iVar0);
-	}
-}
-
-void func_11(int iParam0)
-{
-	int iVar0;
-
-	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
-	if (iVar0 == iLocal_15)
-	{
-		SCRIPTS::SET_EVENT_FLAG_FOR_DELETION(2, iParam0, 1);
-		func_23(&iVar0);
-	}
-}
-
-int func_12()
-{
-	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && TASK::_0x038B1F1674F0E242(Global_35))
-	{
-		return 1;
-	}
-	return 0;
-}
-
-void func_13(int iParam0)
-{
-	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
-	{
-		if (iParam0 == 1)
-		{
-			DECORATOR::DECOR_SET_BOOL(PLAYER::PLAYER_PED_ID(), "Inspecting_Item", true);
-		}
-		else if (DECORATOR::DECOR_EXIST_ON(PLAYER::PLAYER_PED_ID(), "Inspecting_Item"))
-		{
-			DECORATOR::DECOR_REMOVE(PLAYER::PLAYER_PED_ID(), "Inspecting_Item");
-		}
-	}
-}
-
-int func_14()
-{
-	return Local_18.f_33;
-}
-
 bool func_15()
 {
 	return Local_18.f_32;
-}
-
-void func_16()
-{
-	Local_18.f_32 = 0;
 }
 
 void func_17(int iParam0)
@@ -393,25 +234,20 @@ void func_18()
 	}
 }
 
-int func_19()
+bool func_19()
 {
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Local_18.f_7)))
 	{
 		if (STREAMING::HAS_ANIM_DICT_LOADED(&(Local_18.f_7)))
 		{
-			return 1;
+			return true;
 		}
 	}
 	else
 	{
-		return 1;
+		return true;
 	}
-	return 0;
-}
-
-int func_20()
-{
-	return Global_1896610->f_41;
+	return false;
 }
 
 void func_21(int iParam0)
@@ -425,10 +261,6 @@ void func_22(int iParam0)
 	{
 		iLocal_13 = 0;
 	}
-}
-
-void func_23(int iParam0)
-{
 }
 
 void func_24()

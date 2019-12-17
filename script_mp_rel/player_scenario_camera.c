@@ -120,7 +120,7 @@ void func_5()
 	DATAFILE::_DATAFILE_REGISTER_QUERY(Local_0.f_34, -302997874, "CameraData/Scenarios/Camera(%i):request");
 }
 
-int func_6()
+bool func_6()
 {
 	struct<4> Var0;
 	int iVar5;
@@ -141,11 +141,11 @@ int func_6()
 		{
 			Var0.f_2 = -302997874;
 			DATAFILE::_DATAFILE_GET_STRING(&(Local_0.f_36), &Var0);
-			return 1;
+			return true;
 		}
 		iVar6++;
 	}
-	return 0;
+	return false;
 }
 
 void func_7(char* sParam0, char* sParam1)
@@ -156,7 +156,7 @@ void func_7(char* sParam0, char* sParam1)
 	Local_0.f_44 = 1;
 }
 
-int func_8()
+bool func_8()
 {
 	if (CAM::_0xDD0B7C5AE58F721D(&(Local_0.f_1)) && !CAM::_0x927B810E43E99932(&(Local_0.f_1)))
 	{
@@ -165,8 +165,8 @@ int func_8()
 		Local_0.f_1.f_21 = 1;
 		Local_0.f_1.f_22 = { 0f, 0f, TASK::_0xB93EA7184BAA85C3(Local_0.f_32, 1) };
 		CAM::_0xAC77757C05DE9E5A(&(Local_0.f_1));
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 

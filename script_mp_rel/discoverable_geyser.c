@@ -82,16 +82,16 @@ void func_1()
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-int func_2()
+bool func_2()
 {
 	if (SCRIPTS::_0x9E4EF615E307FBBE())
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
-int func_3(var uParam0)
+bool func_3(var uParam0)
 {
 	int iVar0;
 
@@ -99,9 +99,9 @@ int func_3(var uParam0)
 	{
 		iVar0 = TASK::_0xA92450B5AE687AAF(uParam0->f_1);
 		Local_49 = func_6(iVar0);
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
 void func_4()
@@ -122,12 +122,12 @@ void func_4()
 		{
 			return;
 		}
-		if (func_8(Global_35, &((Local_13[iVar0 /*10*/])->f_1[2]), 1, 0))
+		if (aggregate.annesburg.func_142(Global_35, &((Local_13[iVar0 /*10*/])->f_1[2]), 1, 0))
 		{
 			iVar2 = 3;
 			while (iVar2 <= 5)
 			{
-				if (func_8(Global_35, &((Local_13[iVar0 /*10*/])->f_1[iVar2]), 1, 0))
+				if (aggregate.annesburg.func_142(Global_35, &((Local_13[iVar0 /*10*/])->f_1[iVar2]), 1, 0))
 				{
 					Local_13.f_31 = iVar2;
 					bVar3 = PED::IS_PED_ON_MOUNT(PLAYER::PLAYER_PED_ID());
@@ -137,17 +137,17 @@ void func_4()
 					}
 					if (ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()) || (bVar3 && ENTITY::IS_ENTITY_IN_WATER(iVar4)))
 					{
-						if (!func_9())
+						if (!aggregate.discoverable_geyser.func_9())
 						{
 							func_10(1);
 						}
 					}
-					else if (func_9())
+					else if (aggregate.discoverable_geyser.func_9())
 					{
 						func_10(0);
 					}
 				}
-				else if (func_9() && Local_13.f_31 == iVar2)
+				else if (aggregate.discoverable_geyser.func_9() && Local_13.f_31 == iVar2)
 				{
 					func_10(0);
 				}
@@ -157,7 +157,7 @@ void func_4()
 		switch (&Local_13[iVar0 /*10*/])
 		{
 			case 0:
-				func_11(Local_13[iVar0 /*10*/], 1);
+				aggregate.discoverable_geyser.func_11(Local_13[iVar0 /*10*/], 1);
 				break;
 			case 1:
 				STREAMING::REQUEST_PTFX_ASSET();
@@ -165,7 +165,7 @@ void func_4()
 				{
 					return;
 				}
-				func_11(Local_13[iVar0 /*10*/], 2);
+				aggregate.discoverable_geyser.func_11(Local_13[iVar0 /*10*/], 2);
 				break;
 			case 2:
 				iVar5 = 0;
@@ -185,7 +185,7 @@ void func_4()
 				{
 					return;
 				}
-				if (func_11(Local_13[iVar0 /*10*/], func_15(iVar1)))
+				if (aggregate.discoverable_geyser.func_11(Local_13[iVar0 /*10*/], func_15(iVar1)))
 				{
 					func_16(iVar1, &(Local_13[iVar0 /*10*/]));
 				}
@@ -195,7 +195,7 @@ void func_4()
 			case 5:
 			case 6:
 				func_17(iVar1);
-				if (func_11(Local_13[iVar0 /*10*/], func_15(iVar1)))
+				if (aggregate.discoverable_geyser.func_11(Local_13[iVar0 /*10*/], func_15(iVar1)))
 				{
 					func_16(iVar1, &(Local_13[iVar0 /*10*/]));
 				}
@@ -238,51 +238,23 @@ int func_6(int iParam0)
 	return 0;
 }
 
-int func_7(int iParam0)
+bool func_7(int iParam0)
 {
 	switch (iParam0)
 	{
 		case 0:
-			return 1;
+			return true;
 		case 1:
-			return 1;
+			return true;
 		case 2:
-			return 1;
+			return true;
 	}
-	return 0;
-}
-
-bool func_8(int iParam0, int iParam1, bool bParam2, int iParam3)
-{
-	if (bParam2 && ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-		return false;
-	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam1))
-	{
-		return false;
-	}
-	return ENTITY::IS_ENTITY_IN_VOLUME(iParam0, iParam1, bParam2, iParam3);
-}
-
-bool func_9()
-{
-	return Global_1954462->f_1331.f_96 == 0;
+	return false;
 }
 
 void func_10(int iParam0)
 {
 	Global_1954462->f_1331 = iParam0;
-}
-
-int func_11(var uParam0, int iParam1)
-{
-	if (*uParam0 != iParam1)
-	{
-		*uParam0 = iParam1;
-		return 1;
-	}
-	return 0;
 }
 
 struct<11> func_12(int iParam0, int iParam1)
@@ -436,7 +408,7 @@ struct<11> func_12(int iParam0, int iParam1)
 	return Var0;
 }
 
-int func_13(var uParam0, struct<10> Param1, var uParam11)
+bool func_13(var uParam0, struct<10> Param1, var uParam11)
 {
 	if (!VOLUME::_0x92A78D0BEDB332A3(*uParam0))
 	{
@@ -444,9 +416,9 @@ int func_13(var uParam0, struct<10> Param1, var uParam11)
 	}
 	if (!VOLUME::_0x92A78D0BEDB332A3(*uParam0))
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
 Vector3 func_14(int iParam0)
@@ -521,7 +493,7 @@ void func_16(int iParam0, int iParam1)
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION((Local_13[iParam0 /*10*/])->f_8, "Erupt", 1f, false);
 				if (Local_13.f_33 == 0)
 				{
-					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(-998484125, func_14(iParam0), -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 3, 1);
+					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(-998484125, func_14(iParam0), -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, 3, 1);
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(PED::GET_MOUNT(Global_35)) && !ENTITY::IS_ENTITY_DEAD(PED::GET_MOUNT(Global_35)))
 				{
@@ -538,7 +510,7 @@ void func_16(int iParam0, int iParam1)
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION((Local_13[iParam0 /*10*/])->f_8, "Erupt", 1f, false);
 				if (Local_13.f_33 == 0)
 				{
-					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(-998484125, func_14(iParam0), -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 3, 1);
+					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(-998484125, func_14(iParam0), -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, 3, 1);
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(PED::GET_MOUNT(Global_35)) && !ENTITY::IS_ENTITY_DEAD(PED::GET_MOUNT(Global_35)))
 				{
@@ -573,7 +545,7 @@ void func_17(int iParam0)
 	vVar6 = { func_14(iParam0) };
 	vVar6.f_2 = vVar3.z;
 	vVar0 = { vVar3 - vVar6 };
-	vVar0 = { func_23(vVar0) };
+	vVar0 = { aggregate.ambient_fishing_scenario.func_26(vVar0) };
 	PED::SET_PED_TO_RAGDOLL_WITH_FALL(Global_35, 3000, 5000, 0, vVar0, 204f, 0f, 0f, 0f, 0f, 0f, 0f);
 	ENTITY::APPLY_FORCE_TO_ENTITY(Global_35, 1, vVar0 * Vector(6f, 6f, 6f), 0f, 0f, 0f, 0, false, false, true, false, true);
 	(Local_13[iParam0 /*10*/])->f_9 = 1;
@@ -587,72 +559,52 @@ void func_18(var uParam0)
 	}
 }
 
-int func_19(int iParam0)
+bool func_19(int iParam0)
 {
 	int iVar0;
 
 	iVar0 = (Local_13.f_32 % func_24(iParam0));
 	if (iVar0 >= 0 && iVar0 < func_25(iParam0))
 	{
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
-int func_20(int iParam0)
+bool func_20(int iParam0)
 {
 	int iVar0;
 
 	iVar0 = (Local_13.f_32 % func_24(iParam0));
 	if (iVar0 >= func_25(iParam0) && iVar0 < (func_25(iParam0) + func_26(iParam0)))
 	{
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
-int func_21(int iParam0)
+bool func_21(int iParam0)
 {
 	int iVar0;
 
 	iVar0 = (Local_13.f_32 % func_24(iParam0));
 	if (iVar0 >= (func_25(iParam0) + func_26(iParam0)) && iVar0 < ((func_25(iParam0) + func_26(iParam0)) + func_27(iParam0)))
 	{
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
-int func_22(int iParam0)
+bool func_22(int iParam0)
 {
 	int iVar0;
 
 	iVar0 = (Local_13.f_32 % func_24(iParam0));
 	if (iVar0 >= ((func_25(iParam0) + func_26(iParam0)) + func_27(iParam0)) && iVar0 < (((func_25(iParam0) + func_26(iParam0)) + func_27(iParam0)) + func_28(iParam0)))
 	{
-		return 1;
+		return true;
 	}
-	return 0;
-}
-
-Vector3 func_23(vector3 vParam0)
-{
-	float fVar0;
-	float fVar1;
-
-	fVar0 = BUILTIN::VMAG(vParam0);
-	if (fVar0 != 0f)
-	{
-		fVar1 = (1f / fVar0);
-		vParam0 = { vParam0 * Vector(fVar1, fVar1, fVar1) };
-	}
-	else
-	{
-		vParam0.x = 0f;
-		vParam0.f_1 = 0f;
-		vParam0.f_2 = 0f;
-	}
-	return vParam0;
+	return false;
 }
 
 int func_24(int iParam0)

@@ -22,13 +22,13 @@ void __EntryFunction__()
 {
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		func_1();
+		aggregate.aberdeenpigfarm.func_46();
 	}
 	Local_13 = vScriptParam_0.x;
 	Local_13.f_1 = vScriptParam_0.y;
 	if (func_2(Local_13.f_1) && func_3(Local_13))
 	{
-		while (!func_4(1) && !func_5(32768))
+		while (!aggregate.herb.func_62(1) && !aggregate.binoculars.func_66(32768))
 		{
 			if (func_6(vScriptParam_0.f_2))
 			{
@@ -39,12 +39,7 @@ void __EntryFunction__()
 			}
 		}
 	}
-	func_1();
-}
-
-void func_1()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
+	aggregate.aberdeenpigfarm.func_46();
 }
 
 int func_2(int iParam0)
@@ -65,39 +60,7 @@ int func_3(int iParam0)
 	return 1;
 }
 
-int func_4(bool bParam0)
-{
-	if (SCRIPTS::_0x9E4EF615E307FBBE())
-	{
-		switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-		{
-			case 0:
-				return 1;
-			case 1:
-				return 1;
-			case 2:
-				if (!bParam0)
-				{
-					return 1;
-				}
-				break;
-			case 4:
-				return 1;
-			case 3:
-				return 1;
-			default:
-				return 1;
-		}
-	}
-	return 0;
-}
-
-bool func_5(int iParam0)
-{
-	return (Global_1572864->f_3 && iParam0) != 0;
-}
-
-int func_6(vector3 vParam0)
+bool func_6(vector3 vParam0)
 {
 	if ((MISC::GET_FRAME_COUNT() % 10) == 0)
 	{
@@ -105,19 +68,14 @@ int func_6(vector3 vParam0)
 		{
 			if (MISC::GET_DISTANCE_BETWEEN_COORDS(Global_36, vParam0, true) > 20f)
 			{
-				return 1;
+				return true;
 			}
 		}
-		if (func_7(&Global_1939168, 4194304))
+		if (aggregate.aberdeenpigfarm.func_175(&Global_1939168, 4194304))
 		{
-			return 1;
+			return true;
 		}
 	}
-	return 0;
-}
-
-bool func_7(var uParam0, int iParam1)
-{
-	return (uParam0 && iParam1) != 0;
+	return false;
 }
 

@@ -24,11 +24,6 @@ void __EntryFunction__()
 {
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	func_1();
-}
-
-void func_1()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
+	aggregate.aberdeenpigfarm.func_46();
 }
 

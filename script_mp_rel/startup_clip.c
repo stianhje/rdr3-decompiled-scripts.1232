@@ -42,8 +42,8 @@ void __EntryFunction__()
 	bVar0 = true;
 	if (bVar0)
 	{
-		func_1(0);
-		func_2();
+		aggregate.mp_freemode_tutorial.func_692(0);
+		aggregate.startup.func_75();
 	}
 	while (bVar0)
 	{
@@ -57,101 +57,14 @@ void __EntryFunction__()
 		}
 		BUILTIN::WAIT(0);
 	}
-	func_1(0);
-	func_2();
+	aggregate.mp_freemode_tutorial.func_692(0);
+	aggregate.startup.func_75();
 	if (REPLAY::_0x9EEB007317FA3B9C())
 	{
 		REPLAY::_0xCEEC64BD27A59312(1);
 	}
 	MISC::_GAME_TRANSITION_MANAGER_SHUTDOWN();
-	func_3(0, -1);
+	aggregate.fm_deathmatch_controller.func_798(0, -1);
 	SCRIPTS::TERMINATE_THIS_THREAD();
-}
-
-void func_1(bool bParam0)
-{
-	int iVar0;
-	bool bVar1;
-	struct<31> Var2;
-
-	iVar0 = PLAYER::PLAYER_ID();
-	bVar1 = false;
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		bVar1 = _NAMESPACE26::_0x4BE6C13A45CCA8EC(_NAMESPACE26::_0x901E0DC25080C8B9(iVar0)) == iVar0;
-	}
-	if (NETWORK::_0x8FB7C254CFCBF78E(&(Global_1572887->f_342)) && (bParam0 || bVar1))
-	{
-		NETWORK::_0xE72E5C1289BD1F40(&(Global_1572887->f_342));
-	}
-	Var2.f_5 = 2;
-	Var2.f_22 = -1;
-	Var2.f_23 = -1;
-	Var2.f_24 = -1;
-	Var2.f_29 = -1;
-	Global_1572887->f_342 = { Var2 };
-}
-
-void func_2()
-{
-	func_4();
-	func_5(-1);
-	func_6(0);
-	Global_1572887->f_248.f_63 = 0;
-	Global_1572887->f_248.f_90 = 0;
-	Global_1572887->f_248.f_1 = -1;
-	if (Global_1572887->f_248.f_86 == 2)
-	{
-		Global_1572887->f_248.f_86 = 0;
-	}
-}
-
-void func_3(int iParam0, int iParam1)
-{
-	if (iParam0 != 0)
-	{
-		func_7(iParam0, iParam1);
-	}
-	func_8(4);
-	func_9(1);
-}
-
-void func_4()
-{
-	Global_1572887->f_248.f_62 = MISC::GET_GAME_TIMER();
-}
-
-void func_5(int iParam0)
-{
-	Global_1572887->f_248.f_2 = iParam0;
-}
-
-void func_6(int iParam0)
-{
-	Global_1572887->f_248 = iParam0;
-}
-
-void func_7(int iParam0, int iParam1)
-{
-	if (Global_1572864->f_17 != 0)
-	{
-		return;
-	}
-	Global_1572864->f_17 = iParam0;
-	Global_1572864->f_18 = iParam1;
-}
-
-void func_8(int iParam0)
-{
-	Global_1572864->f_3 = (Global_1572864->f_3 || iParam0);
-}
-
-void func_9(int iParam0)
-{
-	if (iParam0 == 0)
-	{
-		iParam0 = 1;
-	}
-	Global_1572864->f_1 = iParam0;
 }
 

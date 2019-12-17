@@ -47,7 +47,7 @@ void __EntryFunction__()
 	Var0.f_124 = 1;
 	Var0.f_125 = 1;
 	Var0.f_102 = TASK::_0x804425C4BBD00883(Global_35);
-	if (!func_2(Var0.f_102, 0))
+	if (!aggregate.bandana.func_30(Var0.f_102, 0))
 	{
 		Global_1912966 = 0;
 	}
@@ -71,13 +71,13 @@ void __EntryFunction__()
 	{
 		Var0.f_116 = 1;
 	}
-	if (func_3(Var0.f_102, -1903335637))
+	if (aggregate.bandana.func_11(Var0.f_102, -1903335637))
 	{
-		PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_DOCUMENT_FLIP_AVAILABLE", 1, -1);
+		PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_DOCUMENT_FLIP_AVAILABLE", true, -1);
 	}
 	else
 	{
-		PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_DOCUMENT_FLIP_AVAILABLE", 0, -1);
+		PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_DOCUMENT_FLIP_AVAILABLE", false, -1);
 	}
 	while (!func_4())
 	{
@@ -95,7 +95,7 @@ void __EntryFunction__()
 			{
 				if (!PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE"))
 				{
-					PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", 1, -1);
+					PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", true, -1);
 				}
 				if (PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 				{
@@ -110,14 +110,14 @@ void __EntryFunction__()
 			}
 			else if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE"))
 			{
-				PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", 0, -1);
+				PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", false, -1);
 			}
 		}
 		else
 		{
 			if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE"))
 			{
-				PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", 0, -1);
+				PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", false, -1);
 			}
 			if (UIAPPS::_IS_APP_RUNNING(-605293197))
 			{
@@ -139,55 +139,29 @@ void func_1()
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-int func_2(bool bParam0, int iParam1)
+bool func_4()
 {
-	if (bParam0 == 0)
+	if (Global_1572887->f_13 == 0 && aggregate.aberdeenpigfarm.func_49(0, 0))
 	{
-		return 0;
-	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
-}
-
-int func_3(bool bParam0, int iParam1)
-{
-	if (!func_2(bParam0, 0))
-	{
-		return func_7(func_6(bParam0), iParam1);
-	}
-	if (iParam1 == 0)
-	{
-		return 0;
-	}
-	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(bParam0, iParam1, 1120943070))
-	{
-		return 1;
-	}
-	return 0;
-}
-
-int func_4()
-{
-	if (Global_1572887->f_13 == 0 && func_8(0, 0))
-	{
-		return 1;
+		return true;
 	}
 	if (ENTITY::IS_ENTITY_DEAD(Global_35))
 	{
-		return 1;
+		return true;
 	}
 	if (SCRIPTS::_0x9E4EF615E307FBBE())
 	{
-		return 1;
+		return true;
 	}
 	if (!TASK::_0x038B1F1674F0E242(Global_35))
 	{
-		return 1;
+		return true;
 	}
-	if (!func_9())
+	if (!aggregate.fm_race_controller.func_1990())
 	{
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
 void func_5(var uParam0)
@@ -226,95 +200,6 @@ void func_5(var uParam0)
 		}
 		iVar1++;
 	}
-}
-
-bool func_6(bool bParam0)
-{
-	return bParam0;
-}
-
-int func_7(int iParam0, int iParam1)
-{
-	if (!func_12(iParam0, 2))
-	{
-		return 0;
-	}
-	if (iParam1 == 0)
-	{
-		return 0;
-	}
-	if (ITEMDATABASE::_0x99C6EA66DFE73757(iParam0, iParam1, 1120943070))
-	{
-		return 1;
-	}
-	return 0;
-}
-
-int func_8(bool bParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (Global_1572887->f_12)
-	{
-		return 0;
-	}
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
-		{
-		}
-		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
-		{
-		}
-		else if (bParam1 && &Global_1572887 < 39)
-		{
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
-	{
-		return 1;
-	}
-	if (SCRIPTS::_0x9E4EF615E307FBBE())
-	{
-		switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-		{
-			case 0:
-				return 1;
-			case 1:
-				return 1;
-			case 2:
-				if (!bParam0)
-				{
-					return 1;
-				}
-				break;
-			case 4:
-				return 1;
-			case 3:
-				return 1;
-			default:
-				return 1;
-		}
-	}
-	iVar0 = 0;
-	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
-	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
-		{
-			return 1;
-		}
-		iVar0++;
-	}
-	return 0;
-}
-
-bool func_9()
-{
-	return func_13(1);
 }
 
 void func_10(var uParam0)
@@ -367,29 +252,5 @@ void func_11(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 	StringIntConCat(&cVar0, iParam1, 16);
 	uParam0->f_76[iParam1] = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam0->f_63, &cVar0);
 	DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(uParam0->f_76[iParam1]), "isVisible", bParam3);
-}
-
-int func_12(int iParam0, int iParam1)
-{
-	if (iParam0 == 0)
-	{
-		return 0;
-	}
-	return ITEMDATABASE::_0x4308812A6E9CA62E(iParam0, iParam1);
-}
-
-bool func_13(int iParam0)
-{
-	return func_14(iParam0);
-}
-
-bool func_14(int iParam0)
-{
-	return func_15(Global_1939057->f_38, iParam0);
-}
-
-bool func_15(var uParam0, int iParam1)
-{
-	return (uParam0 && iParam1) != 0;
 }
 

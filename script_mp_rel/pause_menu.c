@@ -89,9 +89,9 @@ void __EntryFunction__()
 	Local_23.f_179 = 0;
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(iVar1, true);
 	_NAMESPACE71::_0xDD1232B332CBB9E7(6, 1, 0);
-	func_5(&Global_26385);
+	aggregate.flow_controller.func_191(&Global_26385);
 	func_6();
-	while ((!SCRIPTS::_0x9E4EF615E307FBBE() && !func_7(Global_26385)) && !bVar25)
+	while ((!SCRIPTS::_0x9E4EF615E307FBBE() && !aggregate.aberdeenpigfarm.func_158(Global_26385)) && !bVar25)
 	{
 		func_8(&Local_23);
 		func_9(&Local_23);
@@ -103,12 +103,12 @@ void __EntryFunction__()
 	if (bVar25)
 	{
 		CAM::DO_SCREEN_FADE_OUT(0);
-		func_13(0, -1);
+		aggregate.fm_deathmatch_controller.func_798(0, -1);
 	}
 	func_4(iVar1, iVar2);
 }
 
-int func_1(var uParam0)
+bool func_1(var uParam0)
 {
 	int iVar0;
 	int iVar1;
@@ -121,14 +121,14 @@ int func_1(var uParam0)
 		iVar1 = func_14(iVar2, 1);
 		if (!func_15(uParam0, iVar1))
 		{
-			return 0;
+			return false;
 		}
 		iVar2++;
 	}
-	return 1;
+	return true;
 }
 
-var func_2()
+char* func_2()
 {
 	char cVar0[16];
 	float fVar2;
@@ -136,10 +136,10 @@ var func_2()
 	fVar2 = STATS::_0x9D0F5D2E1951CD84();
 	StringCopy(&cVar0, MISC::_0x2B6846401D68E563(fVar2, 1), 16);
 	StringConCat(&cVar0, "%", 16);
-	return func_16(cVar0);
+	return aggregate.fme_animal_tagging_offline.func_67(cVar0);
 }
 
-var func_3()
+char* func_3()
 {
 	char cVar0[16];
 	float fVar2;
@@ -151,12 +151,12 @@ var func_3()
 	fVar4 = ((fVar2 / fVar3) * 100f);
 	StringCopy(&cVar0, MISC::_0x2B6846401D68E563(fVar4, 1), 16);
 	StringConCat(&cVar0, "%", 16);
-	return func_16(cVar0);
+	return aggregate.fme_animal_tagging_offline.func_67(cVar0);
 }
 
 void func_4(int iParam0, int iParam1)
 {
-	if (func_7(Global_26385))
+	if (aggregate.aberdeenpigfarm.func_158(Global_26385))
 	{
 		func_17();
 	}
@@ -173,12 +173,6 @@ void func_4(int iParam0, int iParam1)
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-void func_5(var uParam0)
-{
-	*uParam0 = -1;
-	uParam0->f_1 = -1;
-}
-
 void func_6()
 {
 	struct<8> Var0;
@@ -189,15 +183,15 @@ void func_6()
 	bool bVar15;
 	char* sVar16;
 	int iVar17;
-	char* sVar18;
+	int iVar18;
 	bool bVar19;
 	float fVar20;
 	float fVar21;
 	float fVar22;
 	float fVar23;
 
-	Var8 = { func_19(0, 1, 0, -1) };
-	Var0 = { func_20(&Var8, 0, 1) };
+	Var8 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
+	Var0 = { aggregate.net_main_offline.func_2892(&Var8, 0, 1) };
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1954462->f_5.f_1, &(Global_17173.f_54.f_644.f_1783));
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1954462->f_5.f_4, &Var0);
 	func_21();
@@ -225,13 +219,13 @@ void func_6()
 	sVar13 = "PMPLAYER_CONDITION_TEMPERATURE_FAIR";
 	bVar14 = false;
 	sVar16 = "";
-	if (func_26())
+	if (aggregate.fm_deathmatch_controller.func_2355())
 	{
 		sVar13 = "PMPLAYER_CONDITION_TEMPERATURE_COLD";
 		bVar14 = true;
 		sVar16 = "rpg_cold";
 	}
-	else if (func_27())
+	else if (aggregate.discoverable_geyser.func_9())
 	{
 		sVar13 = "PMPLAYER_CONDITION_TEMPERATURE_HOT";
 		bVar14 = true;
@@ -240,19 +234,19 @@ void func_6()
 	func_24(0, 1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CONDITION_TEMPERATURE"), MISC::_CREATE_VAR_STRING(2, sVar13), bVar14, sVar16, "pausemenu_player", bVar14, joaat("COLOR_WHITE"));
 	func_28(1, bVar14, bVar14, sVar16);
 	func_24(0, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_RANK"), "", 0, "Rank_Shield", "pm_player_mp", 1, joaat("COLOR_WHITE"));
-	sVar13 = func_29(Global_1137800[&Global_1273882 /*34*/]);
+	sVar13 = aggregate.error_listener.func_18(Global_1137800[&Global_1273882 /*34*/]);
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_68[2]), sVar13);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(&((Global_1954462->f_5.f_14[0 /*82*/])->f_75[2]), true);
 	iVar17 = NETWORK::_0xDB438CC9BC6F4022();
-	sVar18 = func_30(Global_1137800[&Global_1273882 /*34*/] + 1);
-	sVar13 = MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", iVar17, sVar18);
+	iVar18 = func_30(Global_1137800[&Global_1273882 /*34*/] + 1);
+	sVar13 = MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", iVar17, iVar18);
 	func_24(0, 3, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_RANK_XP"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
-	sVar16 = func_32(func_31(255));
+	sVar16 = func_32(aggregate.flow_controller.func_219(255));
 	func_24(0, 4, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HONOR"), "", 0, sVar16, "pausemenu_player", 1, joaat("COLOR_WHITE"));
-	sVar13 = func_34(func_33(PLAYER::PLAYER_ID(), 0), &bVar14, &bVar19);
+	sVar13 = func_34(aggregate.fme_animal_tagging.func_726(PLAYER::PLAYER_ID(), 0), &bVar14, &bVar19);
 	func_24(0, 5, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_GENERAL_HOSTILITY"), MISC::_CREATE_VAR_STRING(2, sVar13), bVar14, "ONLINE_OPTIONS_HOSTILITY", "mp_online_options", 1, bVar19);
-	fVar20 = func_35(0, 2);
-	fVar21 = BUILTIN::TO_FLOAT(func_36(0, 2));
+	fVar20 = aggregate.coffee_drinking.func_38(0, 2);
+	fVar21 = BUILTIN::TO_FLOAT(aggregate.fm_deathmatch_controller.func_1875(0, 2));
 	fVar21 = (fVar21 / func_37());
 	fVar22 = ((fVar20 / 100f) * (fVar21 / 60f));
 	fVar23 = (100f * (BUILTIN::TO_FLOAT(func_38(0, 2)) / fVar21));
@@ -264,10 +258,10 @@ void func_6()
 	bVar14 = fVar23 > 100f;
 	bVar19 = func_39(bVar14, joaat("COLOR_RED"), joaat("COLOR_WHITE"));
 	func_24(1, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), sVar13, bVar14, func_40(fVar23), "pausemenu_player_update", fVar23 != 100f, bVar19);
-	bVar14 = func_41();
+	bVar14 = aggregate.fm_deathmatch_controller.func_2354();
 	func_42(1, bVar14, bVar14);
-	fVar20 = func_35(1, 2);
-	fVar21 = BUILTIN::TO_FLOAT(func_36(1, 2));
+	fVar20 = aggregate.coffee_drinking.func_38(1, 2);
+	fVar21 = BUILTIN::TO_FLOAT(aggregate.fm_deathmatch_controller.func_1875(1, 2));
 	fVar21 = (fVar21 / func_37());
 	fVar22 = ((fVar20 / 100f) * (fVar21 / 60f));
 	fVar23 = (100f * (BUILTIN::TO_FLOAT(func_38(1, 2)) / fVar21));
@@ -279,8 +273,8 @@ void func_6()
 	bVar14 = fVar23 > 100f;
 	bVar19 = func_39(bVar14, joaat("COLOR_RED"), joaat("COLOR_WHITE"));
 	func_24(2, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), sVar13, bVar14, func_40(fVar23), "pausemenu_player_update", fVar23 != 100f, bVar19);
-	fVar20 = func_35(2, 2);
-	fVar21 = BUILTIN::TO_FLOAT(func_36(2, 2));
+	fVar20 = aggregate.coffee_drinking.func_38(2, 2);
+	fVar21 = BUILTIN::TO_FLOAT(aggregate.fm_deathmatch_controller.func_1875(2, 2));
 	fVar21 = (fVar21 / func_37());
 	fVar22 = ((fVar20 / 100f) * (fVar21 / 60f));
 	fVar23 = (100f * (BUILTIN::TO_FLOAT(func_38(2, 2)) / fVar21));
@@ -294,34 +288,17 @@ void func_6()
 	func_24(3, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), sVar13, bVar14, func_40(fVar23), "pausemenu_player_update", fVar23 != 100f, bVar19);
 	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_43());
 	func_24(4, 0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_STORY_COMPLETE"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
-	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_44(-1756227506));
+	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", aggregate.pause_menu.func_112(-1756227506));
 	func_24(4, 1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_TOTAL_KILLS"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
-	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_44(-1048906573));
+	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", aggregate.pause_menu.func_112(-1048906573));
 	func_24(4, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_TOTAL_DEATHS"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
-}
-
-int func_7(struct<2> Param0)
-{
-	if (!func_45(Param0))
-	{
-		return 0;
-	}
-	if (Param0.f_1 < 0)
-	{
-		return 0;
-	}
-	if (Param0.f_1 >= func_46(Param0))
-	{
-		return 0;
-	}
-	return 1;
 }
 
 void func_8(var uParam0)
 {
 	bool bVar0;
 
-	if (func_47(uParam0, 0))
+	if (aggregate.fishing_core.func_34(uParam0, 0))
 	{
 		func_48(uParam0, 0, 0);
 	}
@@ -358,7 +335,7 @@ void func_9(var uParam0)
 			case 1:
 				if (!NETWORK::_0xE2C3CEC3C0903A00("mugshot"))
 				{
-					Var0 = { func_49() };
+					Var0 = { aggregate.fme_animal_tagging.func_783() };
 					uParam0->f_1 = NETWORK::_0x9B5DB6CEAFAA10BB(&Var0, 0, "mugshot", 1);
 					if (uParam0->f_1 != -1)
 					{
@@ -405,7 +382,7 @@ void func_10()
 					switch (Var0.f_2)
 					{
 						case 766694521:
-							func_51(455956792);
+							aggregate.hub.func_32(455956792);
 							break;
 						case -385109718:
 							func_52();
@@ -448,17 +425,17 @@ void func_11(var uParam0)
 	int iVar1;
 
 	iVar0 = UIAPPS::_0x96FD694FE5BE55DC(29649618);
-	iVar1 = func_59(uParam0);
+	iVar1 = aggregate.camera_item.func_12(uParam0);
 	if (iVar0 != iVar1)
 	{
 		if (iVar1 != 0)
 		{
-			func_60(uParam0, iVar1);
+			aggregate.pause_menu.func_60(uParam0, iVar1);
 		}
-		func_61(uParam0, iVar0);
-		func_62(uParam0, iVar0);
+		aggregate.camera_item.func_77(uParam0, iVar0);
+		aggregate.pause_menu.func_60(uParam0, iVar0);
 	}
-	func_63(uParam0, iVar0);
+	aggregate.pause_menu.func_60(uParam0, iVar0);
 }
 
 int func_12()
@@ -486,16 +463,6 @@ int func_12()
 		}
 	}
 	return 0;
-}
-
-void func_13(int iParam0, int iParam1)
-{
-	if (iParam0 != 0)
-	{
-		func_64(iParam0, iParam1);
-	}
-	func_65(4);
-	func_66(1);
 }
 
 int func_14(int iParam0, int iParam1)
@@ -529,16 +496,11 @@ int func_15(var uParam0, int iParam1)
 	return 0;
 }
 
-char* func_16(char[4] cParam0, char[4] cParam1)
-{
-	return HUD::_0xD8402B858F4DDD88(&cParam0, HUD::GET_LENGTH_OF_LITERAL_STRING(&cParam0));
-}
-
 void func_17()
 {
 	Global_0.f_6 = MISC::GET_GAME_TIMER();
 	Global_0.f_3 = { Global_36 };
-	func_68(&Global_0);
+	aggregate.binoculars.func_16(&Global_0);
 }
 
 int func_18(var uParam0)
@@ -552,108 +514,10 @@ int func_18(var uParam0)
 	while (iVar2 < iVar0)
 	{
 		iVar1 = func_14(iVar2, 1);
-		func_69(uParam0, iVar1);
+		aggregate.pause_menu.func_60(uParam0, iVar1);
 		iVar2++;
 	}
 	return 1;
-}
-
-struct<4> func_19(bool bParam0, bool bParam1, bool bParam2, int iParam3)
-{
-	struct<4> Var0;
-	struct<4> Var29;
-	bool bVar33;
-	int iVar34;
-	struct<4> Var35;
-
-	Var0.f_9 = -1591664384;
-	if (!func_70(&Var0, bParam0))
-	{
-	}
-	if (!bParam2)
-	{
-		Var29 = { func_71() };
-		if (func_72() && INVENTORY::_0xB881CA836CC4B6D4(&Var29))
-		{
-			Var0 = { Var29 };
-		}
-		else if (!INVENTORY::_0x4C543D5DFCD2DAFD(&Var29, &Var0))
-		{
-			func_73(&Var0, 0);
-		}
-	}
-	if (iParam3 == -1)
-	{
-		iParam3 = func_74(PLAYER::PLAYER_ID());
-	}
-	bVar33 = func_75(75);
-	if (bVar33)
-	{
-		iParam3 = 3;
-	}
-	iVar34 = func_76(iParam3, 0);
-	if (iVar34 != 3)
-	{
-		if (INVENTORY::_0xB881CA836CC4B6D4(Global_17173.f_54.f_61[iVar34 /*4*/]))
-		{
-			Var0 = { *(Global_17173.f_54.f_61[iVar34 /*4*/]) };
-		}
-	}
-	if (!INVENTORY::_0xB881CA836CC4B6D4(&Var0))
-	{
-		if (!bParam1)
-		{
-			return func_77();
-		}
-		if (!func_78(&Var0, 0))
-		{
-			Var35 = { func_79(bParam0) };
-		}
-		else
-		{
-			Var35 = { Var0 };
-		}
-		return Var35;
-	}
-	return Var0;
-}
-
-struct<8> func_20(int iParam0, int iParam1, bool bParam2)
-{
-	char cVar0[64];
-	struct<42> Var8;
-	struct<8> Var50;
-
-	StringCopy(&cVar0, "", 64);
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return cVar0;
-	}
-	Var8 = { func_80(iParam0, iParam1, 0) };
-	cVar0 = { Var8.f_12 };
-	if (bParam2)
-	{
-		if (func_81(iParam0, &Var50))
-		{
-			cVar0 = { Var50 };
-		}
-	}
-	if (MISC::COMPARE_STRINGS(&cVar0, func_82(), false, -1) == 0)
-	{
-		StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, func_83(Var8.f_22)), 64);
-	}
-	if (HUD::GET_LENGTH_OF_LITERAL_STRING(&cVar0) == 0)
-	{
-		if (Var8.f_22 != 0)
-		{
-			StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, func_84(Var8.f_22)), 64);
-		}
-		else
-		{
-			StringCopy(&cVar0, "", 64);
-		}
-	}
-	return cVar0;
 }
 
 void func_21()
@@ -709,26 +573,11 @@ void func_25(int iParam0, bool bParam1, bool bParam2)
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1954462->f_5.f_14[iParam0 /*82*/])->f_10, bParam2);
 }
 
-bool func_26()
-{
-	return Global_1954462->f_1331.f_96 == 2;
-}
-
-bool func_27()
-{
-	return Global_1954462->f_1331.f_96 == 0;
-}
-
 void func_28(int iParam0, bool bParam1, bool bParam2, char* sParam3)
 {
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1954462->f_5.f_14[iParam0 /*82*/])->f_15, bParam1);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1954462->f_5.f_14[iParam0 /*82*/])->f_14, bParam2);
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING((Global_1954462->f_5.f_14[iParam0 /*82*/])->f_16, sParam3);
-}
-
-char* func_29(int iParam0)
-{
-	return MISC::_0x2B6846401D68E563(BUILTIN::TO_FLOAT(iParam0), 0);
 }
 
 int func_30(int iParam0)
@@ -738,19 +587,6 @@ int func_30(int iParam0)
 		return -1;
 	}
 	return &(Global_1131373->f_11.f_556[(iParam0 - 1)]);
-}
-
-int func_31(int iParam0)
-{
-	if (iParam0 == 255)
-	{
-		iParam0 = PLAYER::NETWORK_PLAYER_ID_TO_INT();
-	}
-	if (iParam0 < 0 || iParam0 >= 32)
-	{
-		return -1;
-	}
-	return ((*Global_1137800)[iParam0 /*34*/])->f_8.f_1;
 }
 
 char* func_32(int iParam0)
@@ -793,65 +629,6 @@ char* func_32(int iParam0)
 	return "HONOR_GOOD_1";
 }
 
-int func_33(int iParam0, bool bParam1)
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
-
-	iVar0 = BUILTIN::FLOOR(func_85(iParam0, bParam1));
-	if (bParam1)
-	{
-		iVar3 = iParam0;
-		if (iVar3 < 0 || iVar3 >= 32)
-		{
-			iVar2 = 0;
-		}
-		else
-		{
-			iVar2 = BUILTIN::FLOOR(((*Global_1097609)[iVar3 /*51*/])->f_18);
-		}
-		if (iVar2 > iVar0)
-		{
-			iVar1 = iVar2;
-		}
-		else
-		{
-			iVar1 = iVar0;
-		}
-	}
-	else
-	{
-		iVar1 = iVar0;
-	}
-	if (iVar1 < Global_1901929->f_672.f_31)
-	{
-		return 0;
-	}
-	if (iVar1 < Global_1901929->f_672.f_32)
-	{
-		return 1;
-	}
-	if (iVar1 < Global_1901929->f_672.f_33)
-	{
-		return 2;
-	}
-	if (iVar1 < Global_1901929->f_672.f_34)
-	{
-		return 3;
-	}
-	if (iVar1 < Global_1901929->f_672.f_35)
-	{
-		return 4;
-	}
-	if (iVar1 < Global_1901929->f_672.f_36)
-	{
-		return 5;
-	}
-	return 6;
-}
-
 char* func_34(int iParam0, bool bParam1, bool bParam2)
 {
 	switch (iParam0)
@@ -876,74 +653,6 @@ char* func_34(int iParam0, bool bParam1, bool bParam2)
 	return "PMPLAYER_GENERAL_HOSTILITY_MID";
 }
 
-float func_35(int iParam0, int iParam1)
-{
-	if (iParam1 == 2)
-	{
-		iParam1 = func_86(2);
-	}
-	switch (iParam1)
-	{
-		case 0:
-			return &(Global_1954462->f_1331.f_6[iParam0 /*3*/]);
-		case 1:
-			return &(Global_1954462->f_1465.f_2.f_6[iParam0 /*3*/]);
-		default:
-			break;
-	}
-	return -1f;
-}
-
-int func_36(int iParam0, int iParam1)
-{
-	if (iParam1 == 2)
-	{
-		iParam1 = func_86(2);
-	}
-	switch (iParam1)
-	{
-		case 0:
-			switch (iParam0)
-			{
-				case 0:
-					if (func_41())
-					{
-						return 1200;
-					}
-					else if (func_26())
-					{
-						return 1200;
-					}
-					else if (func_27())
-					{
-						return 1200;
-					}
-					return Global_1954462->f_1331.f_81;
-				case 2:
-					return Global_1954462->f_1331.f_83;
-				case 1:
-					return Global_1954462->f_1331.f_82;
-				default:
-					break;
-			}
-			break;
-		case 1:
-			switch (iParam0)
-			{
-				case 0:
-					return Global_1954462->f_1465.f_2.f_81;
-				case 2:
-					return Global_1954462->f_1465.f_2.f_83;
-				case 1:
-					return Global_1954462->f_1465.f_2.f_82;
-				default:
-					break;
-			}
-			break;
-	}
-	return -1;
-}
-
 float func_37()
 {
 	return Global_1954462->f_1331.f_98;
@@ -953,7 +662,7 @@ int func_38(int iParam0, int iParam1)
 {
 	if (iParam1 == 2)
 	{
-		iParam1 = func_86(2);
+		iParam1 = aggregate.coffee_drinking.func_58(2);
 	}
 	switch (iParam1)
 	{
@@ -987,7 +696,7 @@ int func_38(int iParam0, int iParam1)
 	return -1;
 }
 
-int func_39(bool bParam0, int iParam1, int iParam2)
+bool func_39(bool bParam0, int iParam1, int iParam2)
 {
 	if (bParam0)
 	{
@@ -1009,11 +718,6 @@ char* func_40(float fParam0)
 	return "";
 }
 
-bool func_41()
-{
-	return (Global_1138889->f_18706[20 /*195*/])->f_194;
-}
-
 void func_42(int iParam0, bool bParam1, bool bParam2)
 {
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1954462->f_5.f_14[iParam0 /*82*/])->f_13, bParam1);
@@ -1028,7 +732,7 @@ int func_43()
 	iVar0 = 13;
 	while (iVar0 <= 25)
 	{
-		if (func_87(iVar0))
+		if (aggregate.flow_controller.func_138(iVar0))
 		{
 			iVar1++;
 		}
@@ -1037,81 +741,16 @@ int func_43()
 	return iVar1;
 }
 
-int func_44(int iParam0)
-{
-	var uVar0;
-	struct<2> Var1;
-
-	Var1 = { func_88(iParam0) };
-	STATS::STAT_ID_GET_INT(&Var1, &uVar0);
-	return uVar0;
-}
-
-int func_45(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 2:
-		case 3:
-		case 4:
-		case 5:
-		case 6:
-		case 7:
-		case 8:
-			return 1;
-		default:
-			break;
-	}
-	return 0;
-}
-
-int func_46(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 2:
-			return Global_1070355->f_634.f_601;
-		case 3:
-			return Global_1070355->f_634.f_2103;
-		case 4:
-			return Global_1070355->f_634.f_12605;
-		case 5:
-			return Global_1070355->f_634.f_12907;
-		case 6:
-			return Global_1070355->f_634.f_15909;
-		case 7:
-			return Global_1070355->f_634.f_15980;
-		case 8:
-			return Global_1070355->f_634.f_17182;
-		default:
-			break;
-	}
-	return -1;
-}
-
-bool func_47(var uParam0, int iParam1)
-{
-	return func_89(uParam0->f_192, iParam1);
-}
-
 void func_48(var uParam0, int iParam1, bool bParam2)
 {
 	if (bParam2)
 	{
-		func_90(&(uParam0->f_192), iParam1);
+		aggregate.fme_round_up.func_1144(&(uParam0->f_192), iParam1);
 	}
 	else
 	{
-		func_91(&(uParam0->f_192), iParam1);
+		aggregate.fme_round_up.func_1140(&(uParam0->f_192), iParam1);
 	}
-}
-
-struct<7> func_49()
-{
-	struct<7> Var0;
-
-	NETWORK::NETWORK_GET_LOCAL_HANDLE(&Var0);
-	return Var0;
 }
 
 void func_50(int iParam0)
@@ -1142,11 +781,6 @@ void func_50(int iParam0)
 	}
 }
 
-void func_51(int iParam0)
-{
-	Global_1958299 = iParam0;
-}
-
 void func_52()
 {
 	char* sVar0;
@@ -1160,9 +794,9 @@ void func_52()
 	func_100(MISC::_CREATE_VAR_STRING(2, func_99(0)));
 	func_101(0, "PMPLAYER_STATISTICS");
 	func_102(1, "PMPLAYER_OVERVIEW", "", 1, 0, 0, 0, 0, 0, 0);
-	sVar0 = func_29(Global_1137800[&Global_1273882 /*34*/]);
+	sVar0 = aggregate.error_listener.func_18(Global_1137800[&Global_1273882 /*34*/]);
 	func_102(2, "PMPLAYER_RANK", "", 1, 0, 0, "", "", sVar0, 1);
-	func_102(3, "PMPLAYER_HONOR", "", 1, 0, 1, func_32(func_31(255)), "pausemenu_player", 0, 0);
+	func_102(3, "PMPLAYER_HONOR", "", 1, 0, 1, func_32(aggregate.flow_controller.func_219(255)), "pausemenu_player", 0, 0);
 	func_101(4, "PMPLAYER_CONDITIONS");
 	StringCopy(&cVar1, DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_40[0])), 24);
 	bVar4 = DATABINDING::_DATABINDING_READ_DATA_BOOL(&((Global_1954462->f_5.f_14[0 /*82*/])->f_61[0]));
@@ -1176,11 +810,11 @@ void func_52()
 		func_102(5, "PMPLAYER_CONDITION_WEIGHT", sVar0, 1, 0, 0, 0, 0, 0, 0);
 	}
 	sVar0 = DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_26[1]));
-	if (func_27())
+	if (aggregate.discoverable_geyser.func_9())
 	{
 		func_102(6, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 1, 1, "rpg_hot", "pausemenu_player", 0, 0);
 	}
-	else if (func_26())
+	else if (aggregate.fm_deathmatch_controller.func_2355())
 	{
 		func_102(6, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 1, 1, "rpg_cold", "pausemenu_player", 0, 0);
 	}
@@ -1188,7 +822,7 @@ void func_52()
 	{
 		func_102(6, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 0, 0, 0, 0, 0, 0);
 	}
-	if (func_41())
+	if (aggregate.fm_deathmatch_controller.func_2354())
 	{
 		func_102(7, "PMPLAYER_CONDITION_TOXICITY", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CONDITION_TOXICITY_POISONED"), 1, 1, 1, "rpg_sick", "pausemenu_player", 0, 0);
 	}
@@ -1196,7 +830,7 @@ void func_52()
 	{
 		func_102(7, "PMPLAYER_CONDITION_TOXICITY", "", 0, 0, 0, 0, 0, 0, 0);
 	}
-	sVar0 = func_34(func_33(PLAYER::PLAYER_ID(), 0), &bVar5, &uVar6);
+	sVar0 = func_34(aggregate.fme_animal_tagging.func_726(PLAYER::PLAYER_ID(), 0), &bVar5, &uVar6);
 	func_102(8, "PMPLAYER_GENERAL_HOSTILITY", MISC::_CREATE_VAR_STRING(2, sVar0), 1, bVar5, 1, "ONLINE_OPTIONS_HOSTILITY", "mp_online_options", 0, 0);
 	func_103(0);
 	func_104(0);
@@ -1215,7 +849,7 @@ void func_53()
 	func_100(MISC::_CREATE_VAR_STRING(2, func_99(1)));
 	func_101(0, "PMPLAYER_STATISTICS");
 	func_102(1, "PMPLAYER_OVERVIEW", "", 1, 0, 0, 0, 0, 0, 0);
-	sVar1 = func_105(0, 2) + 5;
+	sVar1 = aggregate.fishing_core.func_564(0, 2) + 5;
 	func_102(2, "PMPLAYER_PROGRESSION", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_LEVEL", sVar1), 1, 0, 0, 0, 0, 0, 0);
 	func_101(3, "PMPLAYER_CONDITIONS");
 	StringCopy(&cVar2, DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_40[0])), 24);
@@ -1230,11 +864,11 @@ void func_53()
 		func_102(4, "PMPLAYER_CONDITION_WEIGHT", sVar0, 1, 0, 0, 0, 0, 0, 0);
 	}
 	sVar0 = DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_26[1]));
-	if (func_27())
+	if (aggregate.discoverable_geyser.func_9())
 	{
 		func_102(5, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 1, 1, "rpg_hot", "pausemenu_player", 0, 0);
 	}
-	else if (func_26())
+	else if (aggregate.fm_deathmatch_controller.func_2355())
 	{
 		func_102(5, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 1, 1, "rpg_cold", "pausemenu_player", 0, 0);
 	}
@@ -1242,7 +876,7 @@ void func_53()
 	{
 		func_102(5, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 0, 0, 0, 0, 0, 0);
 	}
-	if (func_41())
+	if (aggregate.fm_deathmatch_controller.func_2354())
 	{
 		func_102(6, "PMPLAYER_CONDITION_TOXICITY", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CONDITION_TOXICITY_POISONED"), 1, 1, 1, "rpg_sick", "pausemenu_player", 0, 0);
 	}
@@ -1268,7 +902,7 @@ void func_54()
 	func_100(MISC::_CREATE_VAR_STRING(2, func_99(2)));
 	func_101(0, "PMPLAYER_STATISTICS");
 	func_102(1, "PMPLAYER_OVERVIEW", "", 1, 0, 0, 0, 0, 0, 0);
-	sVar1 = func_105(1, 2) + 5;
+	sVar1 = aggregate.fishing_core.func_564(1, 2) + 5;
 	func_102(2, "PMPLAYER_PROGRESSION", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_LEVEL", sVar1), 1, 0, 0, 0, 0, 0, 0);
 	func_101(3, "PMPLAYER_CONDITIONS");
 	StringCopy(&cVar2, DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_40[0])), 24);
@@ -1300,7 +934,7 @@ void func_55()
 	func_100(MISC::_CREATE_VAR_STRING(2, func_99(3)));
 	func_101(0, "PMPLAYER_STATISTICS");
 	func_102(1, "PMPLAYER_OVERVIEW", "", 1, 0, 0, 0, 0, 0, 0);
-	sVar1 = func_105(2, 2) + 5;
+	sVar1 = aggregate.fishing_core.func_564(2, 2) + 5;
 	func_102(2, "PMPLAYER_PROGRESSION", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_LEVEL", sVar1), 1, 0, 0, 0, 0, 0, 0);
 	func_101(3, "PMPLAYER_CONDITIONS");
 	StringCopy(&cVar2, DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_40[0])), 24);
@@ -1349,19 +983,19 @@ void func_56()
 	func_102(4, "PMPLAYER_CASH_SPENT", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(10, "PMPLAYER_GOLD", func_109((func_108(1919677834) / 100f), 2)), 64);
 	func_102(5, "PMPLAYER_GOLD_SPENT", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_44(-1756227506), 64);
+	IntToString(&cVar0, aggregate.pause_menu.func_112(-1756227506), 64);
 	func_102(6, "PMPLAYER_TOTAL_KILLS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_44(-1048906573), 64);
+	IntToString(&cVar0, aggregate.pause_menu.func_112(-1048906573), 64);
 	func_102(7, "PMPLAYER_TOTAL_DEATHS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar8 = (func_44(85200619) / 1000);
+	iVar8 = (aggregate.pause_menu.func_112(85200619) / 1000);
 	iVar9 = (iVar8 / 60);
 	iVar10 = (iVar9 / 60);
 	iVar11 = (iVar10 / 24);
 	iVar10 = (iVar10 % 24);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_DAYS_AND_HOURS", iVar11, iVar10), 64);
 	func_102(8, "PMPLAYER_TIME_ONLINE", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	func_110("ALL HORSES", &iVar12, &iVar13, -1591664384, 0);
-	func_111(iVar12);
+	aggregate.binoculars.func_70("ALL HORSES", &iVar12, &iVar13, -1591664384, 0);
+	aggregate.binoculars.func_73(iVar12);
 	iVar14 = func_112(356744246);
 	if (iVar14 >= iVar13)
 	{
@@ -1370,17 +1004,17 @@ void func_56()
 	else
 	{
 		IntToString(&cVar0, iVar13, 64);
-		func_114(func_113(356744246), (iVar13 - iVar14));
+		aggregate.aberdeenpigfarm.func_108(aggregate.coffee_drinking.func_100(356744246), (iVar13 - iVar14));
 	}
 	func_102(9, "PMPLAYER_HORSES_OWNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	func_101(10, "PMPLAYER_CRIME_STAT");
-	IntToString(&cVar0, func_44(-190907223), 64);
+	IntToString(&cVar0, aggregate.pause_menu.func_112(-190907223), 64);
 	func_102(11, "PMPLAYER_PLAYERS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_115(-1756227506, joaat("law")), 64);
+	IntToString(&cVar0, aggregate.flow_controller.func_164(-1756227506, joaat("law")), 64);
 	func_102(12, "PMPLAYER_LAW_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_115(-1756227506, -2141600017), 64);
+	IntToString(&cVar0, aggregate.flow_controller.func_164(-1756227506, -2141600017), 64);
 	func_102(13, "PMPLAYER_PEDS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar8 = (func_115(719716304, -2140438327) / 1000);
+	iVar8 = (aggregate.flow_controller.func_164(719716304, -2140438327) / 1000);
 	iVar9 = (iVar8 / 60);
 	iVar10 = (iVar9 / 60);
 	iVar11 = (iVar10 / 24);
@@ -1388,22 +1022,22 @@ void func_56()
 	iVar9 = (iVar9 % 60);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_DAYS_HOURS_MINUTES", iVar11, iVar10, iVar9), 64);
 	func_102(14, "PMPLAYER_TIME_WANTED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_115(-985869509, 450674483), 64);
+	IntToString(&cVar0, aggregate.flow_controller.func_164(-985869509, 450674483), 64);
 	func_102(15, "PMPLAYER_PEDS_LOOTED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	func_101(16, "PMPLAYER_HUNTING");
-	IntToString(&cVar0, func_115(-1756227506, joaat("animal")), 64);
+	IntToString(&cVar0, aggregate.flow_controller.func_164(-1756227506, joaat("animal")), 64);
 	func_102(17, "PMPLAYER_ANIMALS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, func_116(1979337996, joaat("killed")), 64);
 	func_102(18, "PMPLAYER_UNIQUE_ANIMALS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, ((func_115(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1740237568) + func_115(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1274681111)) + func_115(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, 1581042032)), 64);
+	IntToString(&cVar0, ((aggregate.flow_controller.func_164(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1740237568) + aggregate.flow_controller.func_164(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1274681111)) + aggregate.flow_controller.func_164(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, 1581042032)), 64);
 	func_102(19, "PMPLAYER_ANIMALS_SKINNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, ((func_116(1979337996, -212244724 /* GXTEntry: "Skinned 1 ~a~" */) + func_116(1979337996, -1366121835)) + func_116(1979337996, -717883113)), 64);
 	func_102(20, "PMPLAYER_UNIQUE_ANIMALS_SKINNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_115(-1628183403, 1201668600), 64);
+	IntToString(&cVar0, aggregate.flow_controller.func_164(-1628183403, 1201668600), 64);
 	func_102(21, "PMPLAYER_PERFEECT_KILLS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(10, "PMPLAYER_MONEY", func_109((func_108(324591737) / 100f), 2)), 64);
 	func_102(22, "PMPLAYER_HUNTING_PROFITS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_44(-851700877), 64);
+	IntToString(&cVar0, aggregate.pause_menu.func_112(-851700877), 64);
 	func_102(23, "PMPLAYER_FISH_CAUGHT", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	if (MISC::_SHOULD_USE_METRIC_WEIGHT())
 	{
@@ -1412,7 +1046,7 @@ void func_56()
 	}
 	else
 	{
-		iVar16 = func_44(-789991418);
+		iVar16 = aggregate.pause_menu.func_112(-789991418);
 		fVar17 = (func_108(-789991418) - BUILTIN::TO_FLOAT(iVar16));
 		StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_LB_AND_OZ", iVar16, BUILTIN::ROUND((16f * fVar17))), 64);
 	}
@@ -1420,8 +1054,8 @@ void func_56()
 	func_101(25, "PMPLAYER_CONTENT");
 	IntToString(&cVar0, func_43(), 64);
 	func_102(26, "PMPLAYER_STORY_COMPLETE", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar18 = func_115(-1892463704, 1994758582);
-	iVar19 = func_115(1374282888, 1994758582);
+	iVar18 = aggregate.flow_controller.func_164(-1892463704, 1994758582);
+	iVar19 = aggregate.flow_controller.func_164(1374282888, 1994758582);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_VALUE", (iVar18 * 100 / (iVar18 + iVar19))), 64);
 	func_102(27, "PMPLAYER_SERIES_COMPLETE_PER", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, (iVar18 + iVar19), 64);
@@ -1437,8 +1071,8 @@ void func_57()
 	struct<4> Var0;
 	int iVar4;
 	bool bVar5;
-	var uVar6;
-	char* sVar7;
+	int iVar6;
+	int iVar7;
 	char cVar8[64];
 	int iVar16;
 	bool bVar17;
@@ -1456,29 +1090,29 @@ void func_57()
 
 	func_98(1, 1);
 	Global_1954462->f_5.f_1325 = 5;
-	Var0 = { func_19(0, 1, 0, -1) };
+	Var0 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
 	iVar4 = PLAYER::_0xF49F14462F0AE27C(PLAYER::PLAYER_ID());
 	bVar5 = ENTITY::DOES_ENTITY_EXIST(iVar4);
 	if (bVar5)
 	{
-		uVar6 = func_117(iVar4);
-		sVar7 = func_118(iVar4);
+		iVar6 = func_117(iVar4);
+		iVar7 = aggregate.mp_intro.func_3344(iVar4);
 	}
 	else
 	{
-		uVar6 = func_119(&Var0, 0);
-		sVar7 = func_120(&Var0, 0);
+		iVar6 = func_119(&Var0, 0);
+		iVar7 = aggregate.fme_animal_tagging.func_605(&Var0, 0);
 	}
-	uVar6 = uVar6;
-	StringCopy(&cVar8, MISC::_CREATE_VAR_STRING(2, "HORSE_BONDING_LEVEL", sVar7), 64);
+	iVar6 = iVar6;
+	StringCopy(&cVar8, MISC::_CREATE_VAR_STRING(2, "HORSE_BONDING_LEVEL", iVar7), 64);
 	bVar17 = false;
 	if (bVar5)
 	{
-		iVar16 = func_121(iVar4, 0);
+		iVar16 = aggregate.net_main_offline.func_4607(iVar4, 0);
 	}
 	else
 	{
-		iVar16 = func_122(Var0, 0);
+		iVar16 = aggregate.net_main_offline.func_4616(Var0, 0);
 	}
 	if (iVar16 <= 50)
 	{
@@ -1498,7 +1132,7 @@ void func_57()
 	bVar27 = false;
 	if (bVar5)
 	{
-		fVar26 = func_123(iVar4);
+		fVar26 = aggregate.net_main_offline.func_6329(iVar4);
 	}
 	if (fVar26 > 0f)
 	{
@@ -1509,22 +1143,22 @@ void func_57()
 	{
 		StringCopy(&cVar28, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_CONDITION_MOOD_CALM"), 64);
 	}
-	if (func_124(-415648720, &bVar36))
+	if (aggregate.fm_deathmatch_controller.func_2458(-415648720, &bVar36))
 	{
-		if (func_125(bVar36, &iVar45, 14460646, 0))
+		if (aggregate.mp_intro.func_2571(bVar36, &iVar45, 14460646, 0))
 		{
 			StringCopy(&cVar37, HUD::_GET_LABEL_TEXT_BY_HASH(iVar45), 64);
 		}
 	}
-	if (func_124(986998820, &bVar47))
+	if (aggregate.fm_deathmatch_controller.func_2458(986998820, &bVar47))
 	{
-		StringCopy(&cVar48, func_126(bVar47), 64);
+		StringCopy(&cVar48, aggregate.fm_mission_controller.func_4327(bVar47), 64);
 	}
 	StringCopy(&cVar56, DATABINDING::_DATABINDING_READ_DATA_STRING(Global_1954462->f_5.f_4), 64);
 	sVar64 = MISC::_CREATE_VAR_STRING(2, "AT_HORSE");
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(&cVar56))
 	{
-		sVar64 = func_127(&cVar56);
+		sVar64 = aggregate.fm_mission_controller.func_3989(&cVar56);
 	}
 	func_100(sVar64);
 	func_101(0, "PMPLAYER_STATS");
@@ -1544,73 +1178,9 @@ void func_57()
 
 void func_58()
 {
-	func_65(4);
-	func_66(2);
-	func_128(joaat("single_player"), 0);
-}
-
-int func_59(var uParam0)
-{
-	return uParam0->f_193;
-}
-
-void func_60(var uParam0, int iParam1)
-{
-	switch (iParam1)
-	{
-		case 1271225230:
-			func_129(uParam0);
-			break;
-	}
-}
-
-void func_61(var uParam0, int iParam1)
-{
-	uParam0->f_193 = iParam1;
-}
-
-void func_62(var uParam0, int iParam1)
-{
-	switch (iParam1)
-	{
-		case 1271225230:
-			func_130(uParam0);
-			break;
-	}
-}
-
-void func_63(var uParam0, int iParam1)
-{
-	switch (iParam1)
-	{
-		case 1271225230:
-			func_131(uParam0);
-			break;
-	}
-}
-
-void func_64(int iParam0, int iParam1)
-{
-	if (Global_1572864->f_17 != 0)
-	{
-		return;
-	}
-	Global_1572864->f_17 = iParam0;
-	Global_1572864->f_18 = iParam1;
-}
-
-void func_65(int iParam0)
-{
-	Global_1572864->f_3 = (Global_1572864->f_3 || iParam0);
-}
-
-void func_66(int iParam0)
-{
-	if (iParam0 == 0)
-	{
-		iParam0 = 1;
-	}
-	Global_1572864->f_1 = iParam0;
+	aggregate.fm_deathmatch_controller.func_1253(4);
+	aggregate.fm_deathmatch_controller.func_1254(2);
+	aggregate.pausemenu_multiplayer.func_5(joaat("single_player"), 0);
 }
 
 int func_67(var uParam0)
@@ -1622,518 +1192,10 @@ int func_67(var uParam0)
 	return 1;
 }
 
-void func_68(var uParam0)
-{
-	uParam0->f_2 = 0;
-}
-
-void func_69(var uParam0, int iParam1)
-{
-	switch (iParam1)
-	{
-		case 1271225230:
-			func_133(uParam0);
-			break;
-	}
-}
-
-int func_70(var uParam0, bool bParam1)
-{
-	struct<29> Var0;
-	struct<14> Var29;
-	int iVar43;
-	int iVar44;
-	struct<10> Var45;
-	bool bVar59;
-
-	Var0.f_9 = -1591664384;
-	Var29 = { func_134(0, -1591664384, -1591664384, -1591664384, -1675500494, 0, 0) };
-	if (func_135(&Var29, &iVar43, &iVar44, bParam1))
-	{
-		Var45.f_9 = -1591664384;
-		bVar59 = false;
-		while (bVar59 < iVar44)
-		{
-			if (func_136(&Var45, bVar59, iVar43, iVar44))
-			{
-				if (func_137(&Var45, &Var0, 0))
-				{
-					if (func_138(&(Var0.f_24), 16))
-					{
-						*uParam0 = { Var0 };
-						func_111(iVar43);
-						return 1;
-					}
-				}
-			}
-			bVar59++;
-		}
-		func_111(iVar43);
-	}
-	return 0;
-}
-
-struct<4> func_71()
-{
-	return Global_1268935->f_11.f_348;
-}
-
-bool func_72()
-{
-	return Global_1268935->f_11.f_356 > Global_1273882->f_21;
-}
-
-void func_73(var uParam0, bool bParam1)
-{
-	Global_1268935->f_11.f_348 = { *uParam0 };
-	if (bParam1)
-	{
-		Global_1268935->f_11.f_356 = Global_1273882->f_21 + 10;
-	}
-}
-
-int func_74(int iParam0)
-{
-	var uVar0;
-	bool bVar1;
-
-	uVar0 = func_139(iParam0);
-	bVar1 = func_141(func_140(), 0, 0);
-	if (!bVar1)
-	{
-		return 3;
-	}
-	return uVar0;
-}
-
-bool func_75(int iParam0)
-{
-	return func_142(&(Global_3145858->f_6), iParam0);
-}
-
-int func_76(int iParam0, int iParam1)
-{
-	if (iParam1 == 0)
-	{
-		switch (iParam0)
-		{
-			case 0:
-				return 0;
-			case 1:
-				return 1;
-			case 2:
-				return 2;
-			case 3:
-				return 3;
-			default:
-				break;
-		}
-	}
-	else
-	{
-		switch (iParam0)
-		{
-			case 0:
-				return 4;
-			case 1:
-				return 5;
-			case 2:
-				return 6;
-			case 3:
-				return 7;
-			default:
-				break;
-		}
-	}
-	return -1;
-}
-
-struct<4> func_77()
-{
-	struct<4> Var0;
-
-	return Var0;
-}
-
-int func_78(var uParam0, bool bParam1)
-{
-	struct<29> Var0;
-	struct<14> Var29;
-	int iVar43;
-	int iVar44;
-	struct<10> Var45;
-	bool bVar59;
-
-	Var0.f_9 = -1591664384;
-	Var29 = { func_134(0, -1591664384, -1591664384, -1591664384, -1675500494, 0, 0) };
-	if (func_135(&Var29, &iVar43, &iVar44, bParam1))
-	{
-		Var45.f_9 = -1591664384;
-		bVar59 = false;
-		while (bVar59 < iVar44)
-		{
-			if (func_136(&Var45, bVar59, iVar43, iVar44))
-			{
-				if (func_137(&Var45, &Var0, 0))
-				{
-					if (func_138(&(Var0.f_24), 32))
-					{
-						*uParam0 = { Var0 };
-						func_111(iVar43);
-						return 1;
-					}
-				}
-			}
-			bVar59++;
-		}
-		func_111(iVar43);
-	}
-	return 0;
-}
-
-struct<4> func_79(bool bParam0)
-{
-	int iVar0;
-	int iVar1;
-	struct<4> Var2;
-	bool bVar16;
-
-	Var2.f_9 = -1591664384;
-	if (!func_110("ALL HORSES", &iVar0, &iVar1, -1591664384, bParam0))
-	{
-		return Var2;
-	}
-	bVar16 = false;
-	while (bVar16 < iVar1)
-	{
-		if (!func_136(&Var2, bVar16, iVar0, iVar1))
-		{
-		}
-		else if (INVENTORY::_0xB881CA836CC4B6D4(&Var2))
-		{
-		}
-		else
-		{
-			bVar16++;
-		}
-	}
-	func_111(iVar0);
-	return Var2;
-}
-
-struct<42> func_80(int iParam0, int iParam1, bool bParam2)
-{
-	struct<42> Var0;
-
-	Var0.f_10 = -1;
-	Var0.f_23 = 3;
-	Var0.f_28 = 13;
-	func_143(iParam0, iParam1, &Var0, bParam2);
-	return Var0;
-}
-
-int func_81(int iParam0, var uParam1)
-{
-	int iVar0;
-
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return 0;
-	}
-	iVar0 = 0;
-	while (iVar0 < 10)
-	{
-		if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_1268935->f_906[iVar0 /*24*/], iParam0))
-		{
-		}
-		else
-		{
-			if ((Global_1268935->f_906[iVar0 /*24*/])->f_23 < Global_1273882->f_21)
-			{
-				*uParam1 = { (Global_1268935->f_906[iVar0 /*24*/])->f_7 };
-				return 1;
-			}
-			*uParam1 = { (Global_1268935->f_906[iVar0 /*24*/])->f_15 };
-			return 1;
-		}
-		iVar0++;
-	}
-	return 0;
-}
-
-char* func_82()
-{
-	return "UNNAMED_HORSE";
-}
-
-char* func_83(int iParam0)
-{
-	switch (iParam0)
-	{
-		case -974145463: /* GXTEntry: "American Paint - Overo Coat" */
-		case -842044823: /* GXTEntry: "American Paint - Grey Overo Coat" */
-		case 92296905: /* GXTEntry: "American Paint - Splashed White Coat" */
-		case 1432602132: /* GXTEntry: "American Paint - Tobiano Coat" */
-			return "BREED_AMERICANPAINT";
-		case -1943445834:
-		case -783061276: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
-		case -745453539: /* GXTEntry: "American Standardbred - Buckskin Coat" */
-		case 1371398552: /* GXTEntry: "American Standardbred - Black Coat" */
-		case 1583029039: /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */
-			return "BREED_AMERICANSTANDARDBRED";
-		case -1322521536: /* GXTEntry: "Andalusian - Dark Bay Coat" */
-		case 728055838: /* GXTEntry: "Andalusian - Rose Grey Coat" */
-		case 1100711204: /* GXTEntry: "Andalusian - Perlino Coat" */
-			return "BREED_ANDALUSIAN";
-		case -1782334639: /* GXTEntry: "Appaloosa - Blanket Coat" */
-		case -1266863668: /* GXTEntry: "Appaloosa - Leopard Coat" */
-		case -1181052732: /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */
-		case -635244104: /* GXTEntry: "Appaloosa - Black Snowflake" */
-		case -179102320: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
-			return "BREED_APPALOOSA";
-		case -2078767648: /* GXTEntry: "Arabian - Black Coat" */
-		case -2055655009: /* GXTEntry: "Arabian - Red Chestnut Coat" */
-		case -1427377767: /* GXTEntry: "Arabian - Grey Coat" */
-		case -852553462: /* GXTEntry: "Arabian - Rose Grey Bay Coat" */
-		case -80004868: /* GXTEntry: "Arabian - White Coat" */
-			return "BREED_ARABIAN";
-		case 153881023: /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */
-		case 836323303: /* GXTEntry: "Ardennes - Strawberry Roan Coat" */
-		case 1813208211: /* GXTEntry: "Ardennes - Bay Roan Coat" */
-			return "BREED_ARDENNES";
-		case -1256798240: /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */
-		case 2118089359:
-			return "BREED_BELGIAN";
-		case -1537586382: /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */
-		case 697143532: /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */
-		case 1440692746: /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */
-			return "BREED_DUTCHWARMBLOOD";
-		case -1376299681: /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */
-		case -1293672675: /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */
-		case 281128160: /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */
-		case 1854519167: /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */
-			return "BREED_HUNGARIANHALFBRED";
-		case -1955947684:
-		case 545109431: /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */
-		case 1361788230: /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */
-		case 1974379573: /* GXTEntry: "Kentucky Saddler - Grey Coat" */
-			return "BREED_KENTUCKYSADDLE";
-		case -1179079660: /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */
-		case 1275638003: /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */
-		case 2083573823: /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */
-			return "BREED_MISSOURIFOXTROTTER";
-		case 648301150: /* GXTEntry: "Morgan - Palomino Coat" */
-		case 892601357: /* GXTEntry: "Morgan - Bay Roan Coat" */
-		case 1224695367: /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */
-		case 1235275977: /* GXTEntry: "Morgan - Bay Coat" */
-			return "BREED_MORGAN";
-		case -1597490733: /* GXTEntry: "Mustang - Grullo Dun Coat" */
-		case -1428527735: /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */
-		case 805526368: /* GXTEntry: "Mustang - Golden Dun Coat" */
-		case 2000205872: /* GXTEntry: "Mustang - Wild Bay Coat" */
-			return "BREED_MUSTANG";
-		case -1714171692: /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */
-		case -742726637: /* GXTEntry: "Nokota - White Roan Coat" */
-		case 170010697: /* GXTEntry: "Nokota - Blue Roan Coat" */
-			return "BREED_NOKOTA";
-		case -1999094324: /* GXTEntry: "Shire - Light Grey Coat" */
-		case -126555855: /* GXTEntry: "Shire - Raven Black Coat" */
-		case -103101636: /* GXTEntry: "Shire - Dark Bay Coat" */
-			return "BREED_SHIRE";
-		case 237935328: /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */
-		case 1724200240: /* GXTEntry: "Suffolk Punch - Sorrel Coat" */
-			return "BREED_SUFFOLKPUNCH";
-		case -887362763: /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */
-		case -868094182: /* GXTEntry: "Tennessee Walker - Chestnut Coat" */
-		case -847714194: /* GXTEntry: "Tennessee Walker - Red Roan Coat" */
-		case 120848852: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
-		case 1342496140: /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */
-		case 1756765331: /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */
-			return "BREED_TENNESSEEWALKER";
-		case -1900569233: /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */
-		case -1262715164: /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */
-		case -813071670: /* GXTEntry: "Thoroughbred - Blood Bay Coat" */
-		case 1688250187: /* GXTEntry: "Thoroughbred - Brindle Coat" */
-		case 2010625508: /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */
-			return "BREED_THOROUGHBRED";
-		case -1882436593: /* GXTEntry: "Turkoman - Silver Coat" */
-		case -225011104: /* GXTEntry: "Turkoman - Gold Coat" */
-		case -136225010: /* GXTEntry: "Turkoman - Dark Bay Coat" */
-			return "BREED_TURKOMAN";
-		case -1365665739: /* GXTEntry: "Breton - Steel Grey Coat" */
-		case -757978903: /* GXTEntry: "Breton - Red Roan Coat" */
-		case 981469777: /* GXTEntry: "Breton - Seal Brown Coat" */
-		case 1064693514: /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */
-		case 1592694494: /* GXTEntry: "Breton - Grullo Dun Coat" */
-		case 1909854428: /* GXTEntry: "Breton - Sorrel Coat" */
-			return "BREED_BRETON";
-		case -1722101672: /* GXTEntry: "Criollo - Sorrel Overo Coat" */
-		case -189605757: /* GXTEntry: "Criollo - Bay Frame Overo Coat" */
-		case 3032834: /* GXTEntry: "Criollo - Bay Brindle Coat" */
-		case 381495209: /* GXTEntry: "Criollo - Dun Coat" */
-		case 863391233: /* GXTEntry: "Criollo - Marble Sabino Coat" */
-		case 1577022605: /* GXTEntry: "Criollo - Blue Roan Overo Coat" */
-			return "BREED_CRIOLLO";
-		case -1698261864: /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */
-		case -1540355548: /* GXTEntry: "Kladruber - White Coat" */
-		case -670301166: /* GXTEntry: "Kladruber - Silver Coat" */
-		case -601560591: /* GXTEntry: "Kladruber - Cremello Coat" */
-		case -370362766: /* GXTEntry: "Kladruber - Grey Coat" */
-		case 885568364: /* GXTEntry: "Kladruber - Black Coat" */
-			return "BREED_KLADRUBER";
-		case -1824684932:
-		case -769035812:
-		case -302057902:
-		case 821735821:
-		case 1257620801:
-		case 1589592948:
-			return "BREED_NORFOLKROADSTER";
-		case -1331210307: /* GXTEntry: "Donkey" */
-			return "BREED_DONKEY";
-		case -1784502482: /* GXTEntry: "Mule - Painted" */
-		case 122449722: /* GXTEntry: "Mule" */
-			return "BREED_MULE";
-		case 294243421: /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */
-			return "BREED_DUTCHWARMBLOOD";
-		case -997197050: /* GXTEntry: "Thoroughbred - Seal Brown Coat" */
-			return "BREED_THOROUGHBRED";
-		case -235714362: /* GXTEntry: "Appaloosa - Blanket Coat" */
-			return "BREED_TENNESSEEWALKER";
-		case -1678164: /* GXTEntry: "Nokota - Blue Roan Coat" */
-			return "BREED_NOKOTA";
-		case -977833913: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
-			return "BREED_APPALOOSA";
-		case 1589164943: /* GXTEntry: "Thoroughbred - Silver Bay Coat" */
-			return "BREED_THOROUGHBRED";
-		case -1087523615: /* GXTEntry: "American Paint - Splashed White Coat" */
-			return "BREED_AMERICANPAINT";
-		case -496814209: /* GXTEntry: "Ardennes - Chestnut Coat" */
-			return "BREED_ARDENNES";
-		case 2109055751: /* GXTEntry: "Appaloosa - Grey Snowcap Spotted Coat" */
-			return "BREED_APPALOOSA";
-		case -776673611: /* GXTEntry: "Nokota - Grey Roan Sabino Coat" */
-			return "BREED_NOKOTA";
-		case 1764402253: /* GXTEntry: "Arabian - White Albino Coat" */
-			return "BREED_ARABIAN";
-		case -1417310078: /* GXTEntry: "Turkoman - Silver Coat" */
-			return "BREED_TURKOMAN";
-		case 1096273915: /* GXTEntry: "American Paint - Grey Overo Coat" */
-			return "BREED_AMERICANPAINT";
-		case 772751081: /* GXTEntry: "Hungarian Halfbred - Silver Dark Bay Coat" */
-			return "BREED_HUNGARIANHALFBRED";
-		case -1140435723: /* GXTEntry: "Nokota - Smoky Black Coat" */
-			return "BREED_NOKOTA";
-		case 2002524329: /* GXTEntry: "Tennessee Walker - Flaxen Roan" */
-			return "BREED_TENNESSEEWALKER";
-		case 1151530184: /* GXTEntry: "Mustang - Light Palomino Coat" */
-			return "BREED_MUSTANG";
-		case -1266525037: /* GXTEntry: "Missouri Fox Trotter - Black Coat" */
-			return "BREED_MISSOURIFOXTROTTER";
-		case -2018137175: /* GXTEntry: "Turkoman - Gold Dapple Coat" */
-			return "BREED_TURKOMAN";
-		case -574151692: /* GXTEntry: "Mustang - Dark Bay Roan Coat" */
-			return "BREED_MUSTANG";
-		case 649786380: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
-			return "BREED_AMERICANSTANDARDBRED";
-		case -1921328920: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
-			return "BREED_APPALOOSA";
-		case -837607790: /* GXTEntry: "Kentucky Saddler - Sabino Coat" */
-			return "BREED_KENTUCKYSADDLE";
-		case 370424594: /* GXTEntry: "Appaloosa - Few Spot Buckskin Coat" */
-			return "BREED_APPALOOSA";
-		case -364764277: /* GXTEntry: "Scrawny Nag" */
-			return "BREED_MANGY_BACKUP";
-		default:
-			break;
-	}
-	return "BREED_INVALID";
-}
-
-var func_84(int iParam0)
-{
-	char cVar0[64];
-
-	StringCopy(&cVar0, func_144(iParam0), 64);
-	StringConCat(&cVar0, "_BREED", 64);
-	return func_127(&cVar0);
-}
-
-float func_85(int iParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (!Global_1131373->f_6289)
-	{
-		return 0f;
-	}
-	if (iParam0 == &Global_1273882->f_154[&Global_1273882])
-	{
-		return Global_17173.f_2619;
-	}
-	if (!NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
-	{
-		return 0f;
-	}
-	iVar0 = iParam0;
-	if (iVar0 < 0 || iVar0 >= 32)
-	{
-		return 0f;
-	}
-	if ((_NAMESPACE26::_0x149A2751AB66AC02(_NAMESPACE26::_0x901E0DC25080C8B9(iParam0)) > 1 && bParam1) && ((*Global_1097609)[iVar0 /*51*/])->f_18 >= ((*Global_1097609)[iVar0 /*51*/])->f_45)
-	{
-		return ((*Global_1097609)[iVar0 /*51*/])->f_18;
-	}
-	return ((*Global_1097609)[iVar0 /*51*/])->f_45;
-}
-
-int func_86(int iParam0)
-{
-	return func_146(func_145(iParam0));
-}
-
-bool func_87(int iParam0)
-{
-	int iVar0;
-
-	if (!(iParam0 > -1 && iParam0 <= 80))
-	{
-		return false;
-	}
-	iVar0 = func_147(2, iParam0);
-	if (iVar0 == 0)
-	{
-		return false;
-	}
-	return NETWORK::_0xFBE782B3165AC8EC(iVar0);
-}
-
-struct<2> func_88(int iParam0)
-{
-	struct<2> Var0;
-
-	Var0 = iParam0;
-	return Var0;
-}
-
-bool func_89(int iParam0, int iParam1)
-{
-	return MISC::IS_BIT_SET(iParam0, iParam1);
-}
-
-void func_90(int* iParam0, int iParam1)
-{
-	MISC::SET_BIT(iParam0, iParam1);
-}
-
-void func_91(int* iParam0, int iParam1)
-{
-	MISC::CLEAR_BIT(iParam0, iParam1);
-}
-
 void func_92(int iParam0)
 {
 	int iVar0;
-	char* sVar1;
+	int iVar1;
 
 	func_148(0);
 	func_149(0);
@@ -2160,8 +1222,8 @@ void func_92(int iParam0)
 			func_156("PMPLAYER_RANK");
 			func_98(0, 1);
 			iVar0 = NETWORK::_0xDB438CC9BC6F4022();
-			sVar1 = func_30(Global_1137800[&Global_1273882 /*34*/] + 1);
-			func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_PROGRESSION_STAT_NEXT"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", iVar0, sVar1), 0, 0, 0, 0, 0, 0, 0, 0);
+			iVar1 = func_30(Global_1137800[&Global_1273882 /*34*/] + 1);
+			func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_PROGRESSION_STAT_NEXT"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", iVar0, iVar1), 0, 0, 0, 0, 0, 0, 0, 0);
 			func_106("PMPLAYER_RANK_TOOLTIP");
 			break;
 		case 3:
@@ -2480,23 +1542,23 @@ void func_97(int iParam0)
 	float fVar30;
 	int iVar31;
 	int iVar32;
-	char* sVar33;
-	char* sVar34;
+	int iVar33;
+	int iVar34;
 
-	Var0 = { func_19(0, 1, 0, -1) };
+	Var0 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
 	iVar4 = func_169(&Var0, 0);
 	iVar5 = func_170(iVar4);
 	iVar6 = PLAYER::_0xF49F14462F0AE27C(PLAYER::PLAYER_ID());
 	bVar11 = ENTITY::DOES_ENTITY_EXIST(iVar6);
 	if (bVar11)
 	{
-		iVar7 = func_171(iVar6);
-		iVar9 = func_172(iVar6);
+		iVar7 = aggregate.net_main_offline.func_6481(iVar6);
+		iVar9 = aggregate.net_main_offline.func_6481(iVar6);
 	}
 	else
 	{
-		iVar7 = func_173(iVar5);
-		iVar9 = func_174(iVar5);
+		iVar7 = aggregate.pause_menu.func_173(iVar5);
+		iVar9 = aggregate.pause_menu.func_173(iVar5);
 	}
 	iVar8 = func_175(Var0, 0);
 	iVar10 = func_175(Var0, 1);
@@ -2515,19 +1577,19 @@ void func_97(int iParam0)
 			func_155(func_154(5));
 			func_156("PMPLAYER_OVERVIEW");
 			func_98(0, 1);
-			Var21 = { func_19(0, 1, 0, -1) };
-			func_176(&Var21, &iVar19, &iVar20);
+			Var21 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
+			aggregate.mp_intro.func_1767(&Var21, &iVar19, &iVar20);
 			iVar19 = BUILTIN::FLOOR((IntToFloat(iVar19) * 0.01f));
 			iVar20 = BUILTIN::FLOOR((IntToFloat(iVar20) * 0.01f));
-			fVar25 = (IntToFloat(func_177(iVar5) + 1) * 10f);
+			fVar25 = (IntToFloat(aggregate.pause_menu.func_173(iVar5) + 1) * 10f);
 			fVar26 = (fVar25 + (BUILTIN::TO_FLOAT(iVar19) * 10f));
 			fVar27 = ((fVar25 + (3f * 10f)) * 0.01f);
-			fVar28 = (IntToFloat(func_178(iVar5) + 1) * 10f);
+			fVar28 = (IntToFloat(aggregate.pause_menu.func_173(iVar5) + 1) * 10f);
 			fVar29 = (fVar28 + (BUILTIN::TO_FLOAT(iVar20) * 10f));
 			fVar30 = ((fVar28 + (2f * 10f)) * 0.01f);
 			func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_SPEED"), "", 0, 0, 0, 1, fVar25, fVar26, fVar27, 0);
 			func_157(1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_ACCELERATION"), "", 0, 0, 0, 1, fVar28, fVar29, fVar30, 0);
-			func_157(2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_HANDLING"), MISC::_CREATE_VAR_STRING(2, func_180(func_179(iVar5))), 0, 0, 0, 0, 0, 0, 0, 0);
+			func_157(2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_HANDLING"), MISC::_CREATE_VAR_STRING(2, aggregate.mp_intro.func_1768(aggregate.mp_intro.func_1763(iVar5))), 0, 0, 0, 0, 0, 0, 0, 0);
 			func_103(1);
 			func_104(1);
 			func_151(1);
@@ -2598,17 +1660,17 @@ void func_97(int iParam0)
 				}
 			}
 			iVar31 = 1;
-			if (func_184(Var0, -653439684, 0, -1) == 515427499)
+			if (aggregate.bandana.func_81(Var0, -653439684, 0, -1) == 515427499)
 			{
 				iVar31 = 2;
 			}
 			if (INVENTORY::_0xB881CA836CC4B6D4(&Var0))
 			{
-				func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_TYPE"), MISC::_CREATE_VAR_STRING(2, func_186(func_185(iVar5), iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
-				func_157(1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_BREED"), MISC::_CREATE_VAR_STRING(2, func_84(iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
-				func_157(2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_GENDER"), MISC::_CREATE_VAR_STRING(2, func_187(iVar31)), 0, 0, 0, 0, 0, 0, 0, 0);
+				func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_TYPE"), MISC::_CREATE_VAR_STRING(2, aggregate.mp_intro.func_1769(aggregate.mp_intro.func_1764(iVar5), iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
+				func_157(1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_BREED"), MISC::_CREATE_VAR_STRING(2, aggregate.net_camp.func_1392(iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
+				func_157(2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_GENDER"), MISC::_CREATE_VAR_STRING(2, aggregate.mp_intro.func_1921(iVar31)), 0, 0, 0, 0, 0, 0, 0, 0);
 				func_157(3, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_WEIGHT"), MISC::_CREATE_VAR_STRING(2, &cVar15), 0, 0, 0, 0, 0, 0, 0, 0);
-				func_157(4, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_COAT"), MISC::_CREATE_VAR_STRING(2, func_188(iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
+				func_157(4, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_COAT"), MISC::_CREATE_VAR_STRING(2, aggregate.mp_intro.func_1771(iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
 			}
 			else
 			{
@@ -2627,25 +1689,25 @@ void func_97(int iParam0)
 			func_98(0, 1);
 			if (bVar11)
 			{
-				sVar33 = func_117(iVar6);
-				iVar32 = func_118(iVar6);
+				iVar33 = func_117(iVar6);
+				iVar32 = aggregate.mp_intro.func_3344(iVar6);
 			}
 			else
 			{
-				sVar33 = func_119(&Var0, 0);
-				iVar32 = func_120(&Var0, 0);
+				iVar33 = func_119(&Var0, 0);
+				iVar32 = aggregate.fme_animal_tagging.func_605(&Var0, 0);
 			}
 			if (iVar32 < 4)
 			{
-				sVar34 = func_189(iVar5, iVar32 + 1);
+				iVar34 = aggregate.fme_animal_tagging.func_1008(iVar5, iVar32 + 1);
 			}
 			else
 			{
-				sVar34 = func_189(iVar5, iVar32);
-				sVar33 = sVar34;
+				iVar34 = aggregate.fme_animal_tagging.func_1008(iVar5, iVar32);
+				iVar33 = iVar34;
 			}
 			func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_LEVEL"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y", iVar32, 4), 0, 0, 0, 0, 0, 0, 0, 0);
-			func_157(1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_PROGRESSION_STAT_NEXT"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y", sVar33, sVar34), 0, 0, 0, 0, 0, 0, 0, 0);
+			func_157(1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_PROGRESSION_STAT_NEXT"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y", iVar33, iVar34), 0, 0, 0, 0, 0, 0, 0, 0);
 			func_106("PMPLAYER_HORSE_BONDING_TIP");
 			func_151(1);
 			break;
@@ -2674,7 +1736,7 @@ void func_97(int iParam0)
 			func_155("PMPLAYER_HORSE_CONDITION_CLEANLINESS_DESC");
 			func_156("PMPLAYER_HORSE_CONDITION_CLEANLINESS");
 			func_98(0, 1);
-			if (func_122(Var0, 0) > 50)
+			if (aggregate.net_main_offline.func_4616(Var0, 0) > 50)
 			{
 				func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_PLUS_VALUE", BUILTIN::ROUND(MISC::ABSF((0.25f * 100f)))), 1, 0, 1, 0, 0, 0, 0, "RPG_Horse_Health");
 				func_167(0, "RPG_ARROW_DOWN", 0);
@@ -2776,24 +1838,6 @@ void func_104(bool bParam0)
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1954462->f_5.f_425.f_10, bParam0);
 }
 
-int func_105(int iParam0, int iParam1)
-{
-	if (iParam1 == 2)
-	{
-		iParam1 = func_86(1);
-	}
-	switch (iParam1)
-	{
-		case 0:
-			return &(Global_1954462->f_1331.f_50[iParam0]);
-		case 1:
-			return &(Global_1954462->f_1465.f_2.f_50[iParam0]);
-		default:
-			break;
-	}
-	return 1;
-}
-
 void func_106(char* sParam0)
 {
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1954462->f_5.f_425.f_5, sParam0);
@@ -2806,7 +1850,7 @@ void func_107()
 	char cVar9[16];
 	int iVar11;
 
-	Var0 = { func_88(-43471346) };
+	Var0 = { aggregate.coffee_drinking.func_50(-43471346) };
 	STATS::STAT_ID_GET_DATE(&Var0, &vVar2);
 	iVar11 = LOCALIZATION::_LOCALIZATION_GET_USER_LANGUAGE();
 	switch (iVar11)
@@ -2865,40 +1909,17 @@ float func_108(int iParam0)
 	var uVar0;
 	struct<2> Var1;
 
-	Var1 = { func_88(iParam0) };
+	Var1 = { aggregate.coffee_drinking.func_50(iParam0) };
 	STATS::STAT_ID_GET_FLOAT(&Var1, &uVar0);
 	return uVar0;
 }
 
-var func_109(float fParam0, int iParam1)
+char* func_109(float fParam0, int iParam1)
 {
 	char* sVar0;
 
 	sVar0 = MISC::_0x2B6846401D68E563(fParam0, iParam1);
-	return func_193(sVar0, joaat("COLOR_PURE_WHITE"));
-}
-
-int func_110(char* sParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
-{
-	*iParam1 = INVENTORY::_0x80D78BDC9D88EF07(func_194(bParam4), sParam0, iParam3, bParam2);
-	if (*iParam1 >= 0)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-int func_111(int iParam0)
-{
-	if (iParam0 < 0)
-	{
-		return 0;
-	}
-	if (!INVENTORY::_0x42A2F33A1942E865(iParam0))
-	{
-		return 0;
-	}
-	return 1;
+	return aggregate.aberdeenpigfarm.func_103(sVar0, joaat("COLOR_PURE_WHITE"));
 }
 
 int func_112(int iParam0)
@@ -2906,34 +1927,7 @@ int func_112(int iParam0)
 	var uVar0;
 	struct<2> Var1;
 
-	Var1 = { func_113(iParam0) };
-	STATS::STAT_ID_GET_INT(&Var1, &uVar0);
-	return uVar0;
-}
-
-struct<2> func_113(int iParam0)
-{
-	struct<2> Var0;
-
-	Var0.f_1 = iParam0;
-	return Var0;
-}
-
-void func_114(var uParam0, int iParam1, bool bParam2)
-{
-	if (!STATS::_STAT_ID_IS_VALID(&uParam0))
-	{
-		return;
-	}
-	STATS::_0x6A0184E904CDF25E(&uParam0, bParam2);
-}
-
-int func_115(int iParam0, int iParam1)
-{
-	var uVar0;
-	struct<2> Var1;
-
-	Var1 = { func_195(iParam0, iParam1) };
+	Var1 = { aggregate.coffee_drinking.func_100(iParam0) };
 	STATS::STAT_ID_GET_INT(&Var1, &uVar0);
 	return uVar0;
 }
@@ -2978,188 +1972,12 @@ int func_117(int iParam0)
 	return uVar0;
 }
 
-int func_118(int iParam0)
+int func_119(int iParam0, int iParam1)
 {
-	int iVar0;
-
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return 0;
-	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
-	{
-	}
-	iVar0 = ATTRIBUTE::GET_ATTRIBUTE_RANK(iParam0, 7);
-	return iVar0;
-}
-
-var func_119(int iParam0, int iParam1)
-{
-	if (!func_196(iParam0, iParam1, 0, 0))
+	if (!aggregate.fme_animal_tagging.func_838(iParam0, iParam1, 0, 0))
 	{
 	}
 	return Global_1903928->f_27;
-}
-
-int func_120(int iParam0, int iParam1)
-{
-	var uVar0;
-
-	if (!func_196(iParam0, iParam1, 0, 0))
-	{
-	}
-	if (!func_197(Global_1903928))
-	{
-		return 0;
-	}
-	uVar0 = func_198(Global_1903928->f_11, Global_1903928->f_27);
-	return uVar0;
-}
-
-int func_121(int iParam0, int iParam1)
-{
-	int iVar0;
-
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return 0;
-	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
-	{
-		return 0;
-	}
-	if (func_199(iParam1, &iVar0))
-	{
-		return ATTRIBUTE::GET_ATTRIBUTE_BASE_RANK(iParam0, iVar0);
-	}
-	return 0;
-}
-
-int func_122(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4)
-{
-	int iVar0;
-
-	if (!INVENTORY::_0xB881CA836CC4B6D4(&uParam0))
-	{
-		return 0;
-	}
-	iVar0 = 0;
-	while (iVar0 < 10)
-	{
-		if (INVENTORY::_0x4C543D5DFCD2DAFD(Global_17173.f_54.f_61.f_41[iVar0 /*54*/], &uParam0))
-		{
-			return &((Global_17173.f_54.f_61.f_41[iVar0 /*54*/])->f_38[iParam4 /*4*/]);
-		}
-		iVar0++;
-	}
-	if (!func_200(&uParam0))
-	{
-		return 0;
-	}
-	return 0;
-}
-
-float func_123(int iParam0)
-{
-	var uVar0;
-
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return 0f;
-	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-		return 0f;
-	}
-	if (PED::IS_PED_INJURED(iParam0))
-	{
-		return 0f;
-	}
-	if (TASK::IS_PED_IN_WRITHE(iParam0))
-	{
-		return 0f;
-	}
-	uVar0 = PED::_0x42688E94E96FD9B4(iParam0, 3, 0);
-	return uVar0;
-}
-
-int func_124(int iParam0, bool bParam1)
-{
-	struct<4> Var0;
-
-	if (!func_201(856287005, iParam0))
-	{
-		return 0;
-	}
-	Var0 = { func_202() };
-	*bParam1 = func_184(Var0, iParam0, 0, -1);
-	if (!func_203(*bParam1, 0))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_125(bool bParam0, int iParam1, int iParam2, int iParam3)
-{
-	int iVar0;
-	struct<19> Var1;
-
-	Var1.f_2 = 5;
-	Var1.f_18 = 8;
-	if (ITEMDATABASE::_ITEM_DATABASE_FILLOUT_UI_DATA(bParam0, &Var1))
-	{
-		iVar0 = 0;
-		while (iVar0 < 8)
-		{
-			if (iParam2 != 0 && (Var1.f_18[iVar0 /*2*/])->f_1 != iParam2)
-			{
-				Jump @117; //curOff = 67
-			}
-			else if (iParam3 != 0 && &Var1.f_18[iVar0 /*2*/] != iParam3)
-			{
-			}
-			else
-			{
-				*iParam1 = { *(Var1.f_18[iVar0 /*2*/]) };
-				return 1;
-			}
-			iVar0++;
-		}
-	}
-	return 0;
-}
-
-char* func_126(bool bParam0)
-{
-	int iVar0;
-
-	if (!func_203(bParam0, 0))
-	{
-		return "";
-	}
-	iVar0 = func_204(bParam0);
-	if (iVar0 == 0)
-	{
-		return "";
-	}
-	return HUD::_GET_LABEL_TEXT_BY_HASH(iVar0);
-}
-
-var func_127(char[4] cParam0)
-{
-	return cParam0;
-}
-
-void func_128(int iParam0, int iParam1)
-{
-	Global_1572887->f_387 = iParam0;
-	Global_1572887->f_387.f_1 = iParam1;
-	func_205();
-}
-
-void func_129(var uParam0)
-{
 }
 
 void func_130(var uParam0)
@@ -3169,872 +1987,24 @@ void func_130(var uParam0)
 
 void func_131(var uParam0)
 {
-	if (func_47(uParam0, 0))
+	if (aggregate.fishing_core.func_34(uParam0, 0))
 	{
 		func_48(uParam0, 1, 1);
 	}
-	if (func_47(uParam0, 1))
+	if (aggregate.fishing_core.func_34(uParam0, 1))
 	{
 		func_48(uParam0, 1, 0);
-		func_207(uParam0, 1145633164, func_206());
+		func_207(uParam0, 1145633164, aggregate.fishing_core.func_279());
 		func_207(uParam0, -359624034, func_208());
 	}
 }
 
-int func_132(var uParam0)
+bool func_132(var uParam0)
 {
 	uParam0->f_194[0] = DATABINDING::_0xD7DB94AB78E8EBE4("", 1395437865);
-	uParam0->f_194.f_2[0] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(&(uParam0->f_194[0]), 1145633164, func_206());
+	uParam0->f_194.f_2[0] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(&(uParam0->f_194[0]), 1145633164, aggregate.fishing_core.func_279());
 	uParam0->f_194.f_2[1] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(&(uParam0->f_194[0]), -359624034, func_208());
-	return 1;
-}
-
-void func_133(var uParam0)
-{
-	func_209(uParam0);
-}
-
-struct<14> func_134(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
-{
-	struct<14> Var0;
-
-	Var0 = -1;
-	Var0.f_1 = -1;
-	Var0.f_2 = -1;
-	Var0.f_3 = -1;
-	Var0.f_4 = -1;
-	Var0.f_5 = -1;
-	Var0.f_6 = -1;
-	Var0.f_7 = -1;
-	Var0.f_8 = -1;
-	Var0.f_13 = -1;
-	if (iParam0 != 0)
-	{
-		Var0 = iParam0;
-	}
-	if (iParam1 != 0 && iParam1 != -1591664384)
-	{
-		Var0.f_1 = iParam1;
-	}
-	if (iParam2 != 0 && iParam2 != -1591664384)
-	{
-		Var0.f_2 = iParam2;
-	}
-	if (iParam3 != 0 && iParam3 != -1591664384)
-	{
-		Var0.f_3 = iParam3;
-	}
-	if (iParam4 != 0)
-	{
-		Var0.f_4 = iParam4;
-	}
-	if (iParam5 != 0)
-	{
-		Var0.f_5 = iParam5;
-	}
-	if (iParam6 != 0)
-	{
-		Var0.f_8 = iParam6;
-	}
-	return Var0;
-}
-
-int func_135(var uParam0, int iParam1, bool bParam2, bool bParam3)
-{
-	*iParam1 = INVENTORY::_0x640F890C3E5A3FFD(func_194(bParam3), uParam0, bParam2);
-	if (*iParam1 >= 0)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-int func_136(int iParam0, bool bParam1, int iParam2, bool bParam3)
-{
-	if (iParam2 < 0)
-	{
-		return 0;
-	}
-	if (bParam1 < 0 || bParam1 >= bParam3)
-	{
-		return 0;
-	}
-	if (!INVENTORY::_0x82FA24C3D3FCD9B7(iParam2, bParam1, iParam0))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_137(int iParam0, int iParam1, bool bParam2)
-{
-	int iVar0;
-
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return 0;
-	}
-	iVar0 = func_194(bParam2);
-	if (!INVENTORY::_0x025A1B1FB03FBF61(iVar0, iParam0, iParam1, 29, 1))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-bool func_138(var uParam0, int iParam1)
-{
-	return func_210(*uParam0, iParam1);
-}
-
-int func_139(int iParam0)
-{
-	int iVar0;
-	int iVar1;
-	var uVar2;
-
-	if (!&Global_1048577)
-	{
-		return 3;
-	}
-	iVar0 = ((*Global_262996)[iParam0 /*70*/])->f_1.f_21.f_2;
-	iVar1 = func_211(iVar0);
-	uVar2 = func_212(iVar0, iVar1);
-	return uVar2;
-}
-
-struct<2> func_140()
-{
-	struct<2> Var0;
-
-	Var0 = -1;
-	Var0.f_1 = -1;
-	return Var0;
-}
-
-int func_141(struct<2> Param0, int iParam2, int iParam3)
-{
-	if (Global_265331->f_124445.f_134 & 8 != 0)
-	{
-		Global_1070355->f_26837 = 1;
-		return 1;
-	}
-	if (func_7(*Global_1051163) && !func_213(*Global_1051163, Param0))
-	{
-		Global_1070355->f_26837 = 2;
-		return 1;
-	}
-	if (iParam2 != 0 && func_214(iParam2))
-	{
-		return 1;
-	}
-	if (iParam3 != 0 && func_215(iParam3, 255))
-	{
-		Global_1070355->f_26837 = 4;
-		return 1;
-	}
-	if (Global_262996[&Global_1273882 /*70*/] > 2)
-	{
-		Global_1070355->f_26837 = 5;
-		return 1;
-	}
-	if (&Global_262155 >= 1)
-	{
-		Global_1070355->f_26837 = 6;
-		return 1;
-	}
-	if (func_216())
-	{
-		Global_1070355->f_26837 = 7;
-		return 1;
-	}
-	if (Global_1572887->f_7 & 1 != 0)
-	{
-		if (!func_7(*Global_1051163))
-		{
-			Global_1070355->f_26837 = 8;
-			return 1;
-		}
-	}
-	if (Global_265331->f_124602 != 0 && SCRIPTS::_DOES_THREAD_EXIST(Global_265331->f_124602))
-	{
-		Global_1070355->f_26837 = 9;
-		return 1;
-	}
-	Global_1070355->f_26837 = 0;
-	return 0;
-}
-
-bool func_142(var uParam0, int iParam1)
-{
-	int iVar0;
-	int iVar1;
-
-	iVar0 = (iParam1 / 32);
-	iVar1 = (iParam1 - iVar0 * 32);
-	return MISC::IS_BIT_SET(uParam0[iVar0], iVar1);
-}
-
-int func_143(int iParam0, int iParam1, int iParam2, bool bParam3)
-{
-	if (iParam1 == -1)
-	{
-		return 0;
-	}
-	func_217(iParam2);
-	switch (iParam1)
-	{
-		case 0:
-		case 1:
-			if (!func_218(iParam0, iParam2))
-			{
-				return 0;
-			}
-			break;
-		case 2:
-			if (!func_219(iParam0, iParam2))
-			{
-				return 0;
-			}
-			break;
-	}
-	if (bParam3)
-	{
-		func_220(iParam2);
-	}
-	return 1;
-}
-
-char* func_144(int iParam0)
-{
-	switch (iParam0)
-	{
-		case -974145463: /* GXTEntry: "American Paint - Overo Coat" */
-			return "BREED_AMERICANPAINT_OVERO";
-		case 1432602132: /* GXTEntry: "American Paint - Tobiano Coat" */
-			return "BREED_AMERICANPAINT_TOBIANO";
-		case 92296905: /* GXTEntry: "American Paint - Splashed White Coat" */
-			return "BREED_AMERICANPAINT_SPLASHEDWHITE";
-		case -842044823: /* GXTEntry: "American Paint - Grey Overo Coat" */
-			return "BREED_AMERICANPAINT_GREYOVERO";
-		case 1371398552: /* GXTEntry: "American Standardbred - Black Coat" */
-			return "BREED_AMERICANSTANDARDBRED_BLACK";
-		case -745453539: /* GXTEntry: "American Standardbred - Buckskin Coat" */
-			return "BREED_AMERICANSTANDARDBRED_BUCKSKIN";
-		case 1583029039: /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */
-			return "BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE";
-		case -783061276: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
-			return "BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN";
-		case -1322521536: /* GXTEntry: "Andalusian - Dark Bay Coat" */
-			return "BREED_ANDALUSIAN_DARKBAY";
-		case 1100711204: /* GXTEntry: "Andalusian - Perlino Coat" */
-			return "BREED_ANDALUSIAN_PERLINO";
-		case 728055838: /* GXTEntry: "Andalusian - Rose Grey Coat" */
-			return "BREED_ANDALUSIAN_ROSEGRAY";
-		case -1782334639: /* GXTEntry: "Appaloosa - Blanket Coat" */
-			return "BREED_APPALOOSA_BLANKET";
-		case -1181052732: /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */
-			return "BREED_APPALOOSA_LEOPARDBLANKET";
-		case -179102320: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
-			return "BREED_APPALOOSA_BROWNLEOPARD";
-		case -1266863668: /* GXTEntry: "Appaloosa - Leopard Coat" */
-			return "BREED_APPALOOSA_LEOPARD";
-		case -2078767648: /* GXTEntry: "Arabian - Black Coat" */
-			return "BREED_ARABIAN_BLACK";
-		case -852553462: /* GXTEntry: "Arabian - Rose Grey Bay Coat" */
-			return "BREED_ARABIAN_ROSEGREYBAY";
-		case -80004868: /* GXTEntry: "Arabian - White Coat" */
-			return "BREED_ARABIAN_WHITE";
-		case 1813208211: /* GXTEntry: "Ardennes - Bay Roan Coat" */
-			return "BREED_ARDENNES_BAYROAN";
-		case 836323303: /* GXTEntry: "Ardennes - Strawberry Roan Coat" */
-			return "BREED_ARDENNES_STRAWBERRYROAN";
-		case 153881023: /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */
-			return "BREED_ARDENNES_IRONGREYROAN";
-		case -1256798240: /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */
-			return "BREED_BELGIAN_BLONDCHESTNUT";
-		case 2118089359:
-			return "BREED_BELGIAN_MEALYCHESTNUT";
-		case -1537586382: /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */
-			return "BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN";
-		case 1440692746: /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */
-			return "BREED_DUTCHWARMBLOOD_SEALBROWN";
-		case 697143532: /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */
-			return "BREED_DUTCHWARMBLOOD_CHOCOLATEROAN";
-		case 281128160: /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */
-			return "BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT";
-		case 1854519167: /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */
-			return "BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO";
-		case -1376299681: /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */
-			return "BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY";
-		case -1955947684:
-			return "BREED_KENTUCKYSADDLE_BLACK1";
-		case 1361788230: /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */
-			return "BREED_KENTUCKYSADDLE_CHESTNUTPINTO";
-		case 1974379573: /* GXTEntry: "Kentucky Saddler - Grey Coat" */
-			return "BREED_KENTUCKYSADDLE_GREY";
-		case 545109431: /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */
-			return "BREED_KENTUCKYSADDLE_SILVERBAY";
-		case 1275638003: /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */
-			return "BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE";
-		case 2083573823: /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */
-			return "BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO";
-		case 1235275977: /* GXTEntry: "Morgan - Bay Coat" */
-			return "BREED_MORGAN_BAY";
-		case 892601357: /* GXTEntry: "Morgan - Bay Roan Coat" */
-			return "BREED_MORGAN_BAYROAN";
-		case 1224695367: /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */
-			return "BREED_MORGAN_FLAXENCHESTNUT";
-		case 648301150: /* GXTEntry: "Morgan - Palomino Coat" */
-			return "BREED_MORGAN_PALOMINO";
-		case -1597490733: /* GXTEntry: "Mustang - Grullo Dun Coat" */
-			return "BREED_MUSTANG_GRULLODUN";
-		case 2000205872: /* GXTEntry: "Mustang - Wild Bay Coat" */
-			return "BREED_MUSTANG_WILDBAY";
-		case -1428527735: /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */
-			return "BREED_MUSTANG_TIGERSTRIPEDBAY";
-		case 170010697: /* GXTEntry: "Nokota - Blue Roan Coat" */
-			return "BREED_NOKOTA_BLUEROAN";
-		case -742726637: /* GXTEntry: "Nokota - White Roan Coat" */
-			return "BREED_NOKOTA_WHITEROAN";
-		case -1714171692: /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */
-			return "BREED_NOKOTA_REVERSEDAPPLEROAN";
-		case -103101636: /* GXTEntry: "Shire - Dark Bay Coat" */
-			return "BREED_SHIRE_DARKBAY";
-		case -1999094324: /* GXTEntry: "Shire - Light Grey Coat" */
-			return "BREED_SHIRE_LIGHTGREY";
-		case 1724200240: /* GXTEntry: "Suffolk Punch - Sorrel Coat" */
-			return "BREED_SUFFOLKPUNCH_SORREL";
-		case 237935328: /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */
-			return "BREED_SUFFOLKPUNCH_REDCHESTNUT";
-		case 120848852: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
-			return "BREED_TENNESSEEWALKER_BLACKRABICANO";
-		case -868094182: /* GXTEntry: "Tennessee Walker - Chestnut Coat" */
-			return "BREED_TENNESSEEWALKER_CHESTNUT";
-		case -887362763: /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */
-			return "BREED_TENNESSEEWALKER_DAPPLEBAY";
-		case -847714194: /* GXTEntry: "Tennessee Walker - Red Roan Coat" */
-			return "BREED_TENNESSEEWALKER_REDROAN";
-		case 1756765331: /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */
-			return "BREED_TENNESSEEWALKER_FLAXENROAN";
-		case -813071670: /* GXTEntry: "Thoroughbred - Blood Bay Coat" */
-			return "BREED_THOROUGHBRED_BLOODBAY";
-		case -1900569233: /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */
-			return "BREED_THOROUGHBRED_DAPPLEGREY";
-		case 1688250187: /* GXTEntry: "Thoroughbred - Brindle Coat" */
-			return "BREED_THOROUGHBRED_BRINDLE";
-		case -1262715164: /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */
-			return "BREED_THOROUGHBRED_BLACKCHESTNUT";
-		case 2010625508: /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */
-			return "BREED_THOROUGHBRED_REVERSEDAPPLEBLACK";
-		case -136225010: /* GXTEntry: "Turkoman - Dark Bay Coat" */
-			return "BREED_TURKOMAN_DARKBAY";
-		case -225011104: /* GXTEntry: "Turkoman - Gold Coat" */
-			return "BREED_TURKOMAN_GOLD";
-		case -1882436593: /* GXTEntry: "Turkoman - Silver Coat" */
-			return "BREED_TURKOMAN_SILVER";
-		case -757978903: /* GXTEntry: "Breton - Red Roan Coat" */
-			return "BREED_BRETON_REDROAN";
-		case 1909854428: /* GXTEntry: "Breton - Sorrel Coat" */
-			return "BREED_BRETON_SORREL";
-		case 1592694494: /* GXTEntry: "Breton - Grullo Dun Coat" */
-			return "BREED_BRETON_GRULLODUN";
-		case 981469777: /* GXTEntry: "Breton - Seal Brown Coat" */
-			return "BREED_BRETON_SEALBROWN";
-		case 1064693514: /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */
-			return "BREED_BRETON_MEALYDAPPLEBAY";
-		case -1365665739: /* GXTEntry: "Breton - Steel Grey Coat" */
-			return "BREED_BRETON_STEELGREY";
-		case 1577022605: /* GXTEntry: "Criollo - Blue Roan Overo Coat" */
-			return "BREED_CRIOLLO_BLUEROANOVERO";
-		case 381495209: /* GXTEntry: "Criollo - Dun Coat" */
-			return "BREED_CRIOLLO_DUN";
-		case 3032834: /* GXTEntry: "Criollo - Bay Brindle Coat" */
-			return "BREED_CRIOLLO_BAYBRINDLE";
-		case -1722101672: /* GXTEntry: "Criollo - Sorrel Overo Coat" */
-			return "BREED_CRIOLLO_SORRELOVERO";
-		case -189605757: /* GXTEntry: "Criollo - Bay Frame Overo Coat" */
-			return "BREED_CRIOLLO_BAYFRAMEOVERO";
-		case 863391233: /* GXTEntry: "Criollo - Marble Sabino Coat" */
-			return "BREED_CRIOLLO_MARBLESABINO";
-		case 885568364: /* GXTEntry: "Kladruber - Black Coat" */
-			return "BREED_KLADRUBER_BLACK";
-		case -1540355548: /* GXTEntry: "Kladruber - White Coat" */
-			return "BREED_KLADRUBER_WHITE";
-		case -601560591: /* GXTEntry: "Kladruber - Cremello Coat" */
-			return "BREED_KLADRUBER_CREMELLO";
-		case -370362766: /* GXTEntry: "Kladruber - Grey Coat" */
-			return "BREED_KLADRUBER_GREY";
-		case -1698261864: /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */
-			return "BREED_KLADRUBER_DAPPLEROSEGREY";
-		case -670301166: /* GXTEntry: "Kladruber - Silver Coat" */
-			return "BREED_KLADRUBER_SILVER";
-		case -302057902:
-			return "BREED_NORFOLKROADSTER_BLACK";
-		case 1257620801:
-			return "BREED_NORFOLKROADSTER_SPECKLEDGREY";
-		case 821735821:
-			return "BREED_NORFOLKROADSTER_PIEBALDROAN";
-		case -769035812:
-			return "BREED_NORFOLKROADSTER_ROSEGREY";
-		case -1824684932:
-			return "BREED_NORFOLKROADSTER_DAPPLEDBUCKSKIN";
-		case 1589592948:
-			return "BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR";
-		case -1331210307: /* GXTEntry: "Donkey" */
-			return "BREED_DONKEY";
-		case 122449722: /* GXTEntry: "Mule" */
-			return "BREED_MULE";
-		case -1784502482: /* GXTEntry: "Mule - Painted" */
-			return "BREED_MULE_PAINTED";
-		case -1943445834:
-			return "BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN";
-		case -635244104: /* GXTEntry: "Appaloosa - Black Snowflake" */
-			return "BREED_APPALOOSA_BLACKSNOWFLAKE";
-		case -1427377767: /* GXTEntry: "Arabian - Grey Coat" */
-			return "BREED_ARABIAN_GREY";
-		case -2055655009: /* GXTEntry: "Arabian - Red Chestnut Coat" */
-			return "BREED_ARABIAN_REDCHESTNUT";
-		case -1293672675: /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */
-			return "BREED_HUNGARIANHALFBRED_LIVERCHESTNUT";
-		case -1179079660: /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */
-			return "BREED_MISSOURIFOXTROTTER_SABLECHAMPAGNE";
-		case 805526368: /* GXTEntry: "Mustang - Golden Dun Coat" */
-			return "BREED_MUSTANG_GOLDENDUN";
-		case 1342496140: /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */
-			return "BREED_TENNESSEEWALKER_MAHOGANYBAY";
-		case -126555855: /* GXTEntry: "Shire - Raven Black Coat" */
-			return "BREED_SHIRE_RAVENBLACK";
-		case 294243421: /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */
-			return "BREED_BUELL_WARVETS";
-		case -997197050: /* GXTEntry: "Thoroughbred - Seal Brown Coat" */
-			return "BREED_JOHN_ENDLESSSUMMER";
-		case -235714362: /* GXTEntry: "Appaloosa - Blanket Coat" */
-			return "BREED_MURFREEBROOD_MANGE_01";
-		case -1678164: /* GXTEntry: "Nokota - Blue Roan Coat" */
-			return "BREED_MURFREEBROOD_MANGE_02";
-		case -977833913: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
-			return "BREED_MURFREEBROOD_MANGE_03";
-		case 1589164943: /* GXTEntry: "Thoroughbred - Silver Bay Coat" */
-			return "BREED_WINTER02_01";
-		case -1087523615: /* GXTEntry: "American Paint - Splashed White Coat" */
-			return "BREED_EAGLEFLIES";
-		case -496814209: /* GXTEntry: "Ardennes - Chestnut Coat" */
-			return "BREED_GANG_BILL";
-		case 2109055751: /* GXTEntry: "Appaloosa - Grey Snowcap Spotted Coat" */
-			return "BREED_GANG_CHARLES";
-		case -776673611: /* GXTEntry: "Nokota - Grey Roan Sabino Coat" */
-			return "BREED_GANG_CHARLES_ENDLESSSUMMER";
-		case 1764402253: /* GXTEntry: "Arabian - White Albino Coat" */
-			return "BREED_GANG_DUTCH";
-		case -1417310078: /* GXTEntry: "Turkoman - Silver Coat" */
-			return "BREED_GANG_HOSEA";
-		case 1096273915: /* GXTEntry: "American Paint - Grey Overo Coat" */
-			return "BREED_GANG_JAVIER";
-		case 772751081: /* GXTEntry: "Hungarian Halfbred - Silver Dark Bay Coat" */
-			return "BREED_GANG_JOHN";
-		case -1140435723: /* GXTEntry: "Nokota - Smoky Black Coat" */
-			return "BREED_GANG_KAREN";
-		case 2002524329: /* GXTEntry: "Tennessee Walker - Flaxen Roan" */
-			return "BREED_GANG_KIERAN";
-		case 1151530184: /* GXTEntry: "Mustang - Light Palomino Coat" */
-			return "BREED_GANG_LENNY";
-		case -1266525037: /* GXTEntry: "Missouri Fox Trotter - Black Coat" */
-			return "BREED_GANG_MICAH";
-		case -2018137175: /* GXTEntry: "Turkoman - Gold Dapple Coat" */
-			return "BREED_GANG_SADIE";
-		case -574151692: /* GXTEntry: "Mustang - Dark Bay Roan Coat" */
-			return "BREED_GANG_SADIE_ENDLESSSUMMER";
-		case 649786380: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
-			return "BREED_GANG_SEAN";
-		case -1921328920: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
-			return "BREED_GANG_TRELAWNEY";
-		case -837607790: /* GXTEntry: "Kentucky Saddler - Sabino Coat" */
-			return "BREED_GANG_UNCLE";
-		case 370424594: /* GXTEntry: "Appaloosa - Few Spot Buckskin Coat" */
-			return "BREED_GANG_UNCLE_ENDLESSSUMMER";
-		case -364764277: /* GXTEntry: "Scrawny Nag" */
-			return "BREED_MANGY_BACKUP";
-		default:
-			break;
-	}
-	return "";
-}
-
-bool func_145(int iParam0)
-{
-	return func_221(&(Global_1954462->f_1465), iParam0, 1);
-}
-
-int func_146(bool bParam0)
-{
-	if (bParam0)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-int func_147(int iParam0, int iParam1)
-{
-	switch (iParam1)
-	{
-		case 0:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -348950400;
-				case 2:
-					return 239417318;
-				case 3:
-					return 239417318;
-				default:
-					break;
-			}
-			break;
-		case 1:
-			switch (iParam0)
-			{
-				case 0:
-					return 1307826022;
-				case 2:
-					return -59491839;
-				default:
-					break;
-			}
-			break;
-		case 2:
-			switch (iParam0)
-			{
-				case 0:
-					return 1907908866;
-				case 2:
-					return -59491839;
-				default:
-					break;
-			}
-			break;
-		case 3:
-			switch (iParam0)
-			{
-				case 0:
-					return -889182566;
-				case 2:
-					return -59491839;
-				default:
-					break;
-			}
-			break;
-		case 4:
-			switch (iParam0)
-			{
-				case 0:
-					return -474428808;
-				case 2:
-					return -59491839;
-				default:
-					break;
-			}
-			break;
-		case 5:
-			switch (iParam0)
-			{
-				case 0:
-					return 16540788;
-				case 2:
-					return 1377133516;
-				default:
-					break;
-			}
-			break;
-		case 6:
-			switch (iParam0)
-			{
-				case 0:
-					return -481682130;
-				case 2:
-					return 1377133516;
-				default:
-					break;
-			}
-			break;
-		case 7:
-			switch (iParam0)
-			{
-				case 0:
-					return -1990849941;
-				case 2:
-					return 1377133516;
-				default:
-					break;
-			}
-			break;
-		case 8:
-			switch (iParam0)
-			{
-				case 0:
-					return -1265587408;
-				case 2:
-					return 1377133516;
-				default:
-					break;
-			}
-			break;
-		case 9:
-			switch (iParam0)
-			{
-				case 0:
-					return 1087345397;
-				case 2:
-					return 319921153;
-				default:
-					break;
-			}
-			break;
-		case 10:
-			switch (iParam0)
-			{
-				case 0:
-					return -1817797378;
-				case 2:
-					return 319921153;
-				default:
-					break;
-			}
-			break;
-		case 11:
-			switch (iParam0)
-			{
-				case 0:
-					return -1142776975;
-				case 2:
-					return 319921153;
-				default:
-					break;
-			}
-			break;
-		case 12:
-			switch (iParam0)
-			{
-				case 0:
-					return 2117980229;
-				case 2:
-					return 319921153;
-				default:
-					break;
-			}
-			break;
-		case 13:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return 1427667791;
-				case 2:
-					return -1124047374;
-				case 3:
-					return -311950714;
-				case 4:
-					return -1877729336;
-				default:
-					break;
-			}
-			break;
-		case 14:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return 1733369788;
-				case 2:
-					return -1291660805;
-				case 3:
-					return 53620250;
-				case 4:
-					return -967242671;
-				default:
-					break;
-			}
-			break;
-		case 15:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return 1751392738;
-				case 2:
-					return -1002933146;
-				case 3:
-					return 300796817;
-				case 4:
-					return -1332027179;
-				default:
-					break;
-			}
-			break;
-		case 16:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -1523907969;
-				case 2:
-					return -1340126692;
-				case 3:
-					return -1177458231;
-				case 4:
-					return 1413260826;
-				default:
-					break;
-			}
-			break;
-		case 17:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return 318496303;
-				case 2:
-					return -1612797541;
-				case 3:
-					return -1876683153;
-				case 4:
-					return 1251939043;
-				default:
-					break;
-			}
-			break;
-		case 18:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -411791259;
-				case 2:
-					return 1855246300;
-				case 3:
-					return 763461736;
-				case 4:
-					return -92262210;
-				default:
-					break;
-			}
-			break;
-		case 19:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -644680542;
-				case 2:
-					return 2084465459;
-				case 3:
-					return 1616668189;
-				case 4:
-					return -1758631398;
-				default:
-					break;
-			}
-			break;
-		case 20:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -1585597204;
-				case 2:
-					return 941214835;
-				case 3:
-					return 68299210;
-				case 4:
-					return 1699902717;
-				default:
-					break;
-			}
-			break;
-		case 21:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -913454268;
-				case 2:
-					return 1265238199;
-				case 3:
-					return -1638616368;
-				case 4:
-					return 1550104174;
-				default:
-					break;
-			}
-			break;
-		case 22:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -1239767970;
-				case 2:
-					return -1099733308;
-				case 3:
-					return -697261301;
-				case 4:
-					return 1865014264;
-				default:
-					break;
-			}
-			break;
-		case 23:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -1227772128;
-				case 2:
-					return 1853607854;
-				case 3:
-					return 1511414161;
-				case 4:
-					return -2030843481;
-				default:
-					break;
-			}
-			break;
-		case 24:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -1597340910;
-				case 2:
-					return 885906515;
-				case 3:
-					return -674835160;
-				case 4:
-					return 867181329;
-				default:
-					break;
-			}
-			break;
-		case 25:
-			switch (iParam0)
-			{
-				case 0:
-				case 1:
-					return -1824548752;
-				case 2:
-					return -645886158;
-				case 3:
-					return 825197572;
-				case 4:
-					return 1390137360;
-				default:
-					break;
-			}
-			break;
-	}
-	return 0;
+	return true;
 }
 
 void func_148(bool bParam0)
@@ -4203,7 +2173,7 @@ char* func_161()
 
 void func_162()
 {
-	if (func_26() || func_27())
+	if (aggregate.fm_deathmatch_controller.func_2355() || aggregate.discoverable_geyser.func_9())
 	{
 		func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_PLUS_VALUE", 900), 1, 0, 1, 0, 0f, 0f, 0f, "RPG_Health");
 		func_167(0, "RPG_ARROW_DOWN", 0);
@@ -4226,7 +2196,7 @@ char* func_164()
 
 void func_165()
 {
-	if (func_41())
+	if (aggregate.fm_deathmatch_controller.func_2354())
 	{
 		func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_PLUS_VALUE", 900), 1, 0, 1, 0, 0f, 0f, 0f, "RPG_Health");
 		func_167(0, "RPG_ARROW_DOWN", 0);
@@ -4283,9 +2253,9 @@ void func_168(int iParam0, char* sParam1, char* sParam2, char* sParam3)
 	bool bVar5;
 	char* sVar6;
 
-	fVar0 = func_224(iParam0, 2);
-	iVar1 = func_225(fVar0);
-	fVar2 = BUILTIN::TO_FLOAT(func_226(iVar1 + 1));
+	fVar0 = aggregate.coffee_drinking.func_40(iParam0, 2);
+	iVar1 = aggregate.net_char_creator.func_803(fVar0);
+	fVar2 = BUILTIN::TO_FLOAT(aggregate.fme_animal_tagging.func_857(iVar1 + 1));
 	iVar3 = iVar1 + 5;
 	iVar4 = 5 + 5;
 	if (iVar3 < iVar4)
@@ -4294,13 +2264,13 @@ void func_168(int iParam0, char* sParam1, char* sParam2, char* sParam3)
 		bVar5++;
 	}
 	func_157(bVar5, MISC::_CREATE_VAR_STRING(2, sParam2), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y", iVar3, iVar4), 0, 0, 0, 0, 0, 0, 0, 0);
-	sVar6 = func_228(func_227(iVar3, 0));
+	sVar6 = aggregate.fme_animal_tagging.func_1677(func_227(iVar3, 0));
 	func_152(1, sVar6, sParam3);
 }
 
 int func_169(int iParam0, int iParam1)
 {
-	func_196(iParam0, iParam1, 0, 0);
+	aggregate.fme_animal_tagging.func_838(iParam0, iParam1, 0, 0);
 	return Global_1903928->f_22;
 }
 
@@ -4524,204 +2494,15 @@ int func_170(int iParam0)
 	return 0;
 }
 
-int func_171(int iParam0)
-{
-	int iVar0;
-
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return 0;
-	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-	}
-	iVar0 = ATTRIBUTE::GET_ATTRIBUTE_RANK(iParam0, func_229());
-	return iVar0;
-}
-
-int func_172(int iParam0)
-{
-	int iVar0;
-
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return 0;
-	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-	}
-	iVar0 = ATTRIBUTE::GET_ATTRIBUTE_RANK(iParam0, func_230());
-	return iVar0;
-}
-
-int func_173(int iParam0)
-{
-	int iVar0;
-
-	if (!STREAMING::IS_MODEL_VALID(iParam0))
-	{
-		return 0;
-	}
-	iVar0 = ATTRIBUTE::GET_DEFAULT_ATTRIBUTE_RANK(iParam0, func_229());
-	return iVar0;
-}
-
-int func_174(int iParam0)
-{
-	int iVar0;
-
-	if (!STREAMING::IS_MODEL_VALID(iParam0))
-	{
-		return 0;
-	}
-	iVar0 = ATTRIBUTE::GET_DEFAULT_ATTRIBUTE_RANK(iParam0, func_230());
-	return iVar0;
-}
-
 int func_175(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4)
 {
 	int iVar0;
 
-	if (!func_231(&uParam0, &iVar0))
+	if (!aggregate.net_main_offline.func_5758(&uParam0, &iVar0))
 	{
 		return 0;
 	}
 	return &((Global_17173.f_54.f_61.f_41[iVar0 /*54*/])->f_29[iParam4 /*4*/]);
-}
-
-void func_176(var uParam0, int iParam1, int iParam2)
-{
-	struct<4> Var0;
-	struct<2> Var14;
-	vector3 vVar36;
-	int iVar43;
-	bool bVar44;
-	struct<2> Var45;
-	vector3 vVar67;
-	int iVar74;
-
-	Var0.f_9 = -1591664384;
-	if (func_232(*uParam0, -415648720, &Var0, 1, -1))
-	{
-		if (func_203(Var0.f_4, 0))
-		{
-			Var14.f_1 = 20;
-			if (ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_EFFECTS_IDS(Var0.f_4, &Var14) && Var14 > 0)
-			{
-				iVar43 = 0;
-				while (iVar43 < Var14)
-				{
-					if (ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_EFFECTS_ID_INFO(&(Var14.f_1[iVar43]), &vVar36))
-					{
-						if (vVar36.y == -1620444701)
-						{
-							*iParam1 = (*iParam1 + vVar36.z);
-						}
-						else if (vVar36.y == 2086291460)
-						{
-							*iParam2 = (*iParam2 + vVar36.z);
-						}
-					}
-					iVar43++;
-				}
-			}
-		}
-		bVar44 = func_184(Var0, 986998820, 0, -1);
-		if (func_203(bVar44, 0))
-		{
-			Var45.f_1 = 20;
-			if (ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_EFFECTS_IDS(bVar44, &Var45) && Var45 > 0)
-			{
-				iVar74 = 0;
-				while (iVar74 < Var45)
-				{
-					if (ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_EFFECTS_ID_INFO(&(Var45.f_1[iVar74]), &vVar67))
-					{
-						if (vVar67.y == -1620444701)
-						{
-							*iParam1 = (*iParam1 + vVar67.z);
-						}
-						else if (vVar67.y == 2086291460)
-						{
-							*iParam2 = (*iParam2 + vVar67.z);
-						}
-					}
-					iVar74++;
-				}
-			}
-		}
-	}
-}
-
-int func_177(int iParam0)
-{
-	int iVar0;
-
-	if (!STREAMING::IS_MODEL_VALID(iParam0))
-	{
-		return 0;
-	}
-	iVar0 = ATTRIBUTE::GET_DEFAULT_ATTRIBUTE_RANK(iParam0, func_233());
-	return iVar0;
-}
-
-int func_178(int iParam0)
-{
-	int iVar0;
-
-	if (!STREAMING::IS_MODEL_VALID(iParam0))
-	{
-		return 0;
-	}
-	iVar0 = ATTRIBUTE::GET_DEFAULT_ATTRIBUTE_RANK(iParam0, func_234());
-	return iVar0;
-}
-
-int func_179(int iParam0)
-{
-	int iVar0;
-
-	if (!STREAMING::IS_MODEL_VALID(iParam0))
-	{
-		return -1;
-	}
-	iVar0 = func_235(iParam0);
-	switch (iVar0)
-	{
-		case 0:
-		case 1:
-			return 0;
-		case 2:
-		case 3:
-			return 1;
-		case 4:
-		case 5:
-			return 2;
-		case 6:
-		case 7:
-		case 8:
-		case 9:
-			return 3;
-	}
-	return -1;
-}
-
-char* func_180(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return "HORSE_HANDLING_HEAVY";
-		case 1:
-			return "HORSE_HANDLING_STANDARD";
-		case 2:
-			return "HORSE_HANDLING_RACE";
-		case 3:
-			return "HORSE_HANDLING_ELITE";
-		default:
-			break;
-	}
-	return "";
 }
 
 void func_181(bool bParam0, float fParam1, bool bParam2)
@@ -4740,548 +2521,15 @@ void func_182(bool bParam0, float fParam1, bool bParam2)
 
 int func_183(int iParam0, int iParam1, int iParam2)
 {
-	if (!func_196(iParam0, iParam1, 1, 1))
+	if (!aggregate.fme_animal_tagging.func_838(iParam0, iParam1, 1, 1))
 	{
 		return 0;
 	}
-	if (!func_197(Global_1903928))
+	if (!aggregate.fme_animal_tagging.func_839(Global_1903928))
 	{
 		return 0;
 	}
 	return func_236(Global_1903928, iParam2);
-}
-
-int func_184(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, bool bParam5, int iParam6)
-{
-	return func_237(&uParam0, bParam4, bParam5, iParam6);
-}
-
-int func_185(int iParam0)
-{
-	if (iParam0 == 808655744)
-	{
-		return 779169510;
-	}
-	switch (iParam0)
-	{
-		case joaat("a_c_horse_americanpaint_overo"):
-			return -311956671 /* GXTEntry: "Work" */;
-		case joaat("a_c_horse_americanpaint_tobiano"):
-			return -311956671 /* GXTEntry: "Work" */;
-		case 1792770814:
-			return -311956671 /* GXTEntry: "Work" */;
-		case -1963397600:
-			return -311956671 /* GXTEntry: "Work" */;
-		case -1250098797:
-			return 356361174 /* GXTEntry: "Race" */;
-		case -318278790:
-			return 356361174 /* GXTEntry: "Race" */;
-		case 55096099:
-			return 356361174 /* GXTEntry: "Race" */;
-		case -458397856:
-			return 356361174 /* GXTEntry: "Race" */;
-		case -444610976:
-			return -1771663379 /* GXTEntry: "War" */;
-		case 746627200:
-			return -1771663379 /* GXTEntry: "War" */;
-		case 705691988:
-			return -1771663379 /* GXTEntry: "War" */;
-		case joaat("a_c_horse_appaloosa_blanket"):
-			return -311956671 /* GXTEntry: "Work" */;
-		case -1554827654:
-			return -311956671 /* GXTEntry: "Work" */;
-		case -1029277326:
-			return -311956671 /* GXTEntry: "Work" */;
-		case joaat("a_c_horse_appaloosa_leopard"):
-			return -311956671 /* GXTEntry: "Work" */;
-		case joaat("a_c_horse_arabian_black"):
-			return -2030355032 /* GXTEntry: "Superior" */;
-		case -403470324:
-			return -2030355032 /* GXTEntry: "Superior" */;
-		case joaat("a_c_horse_arabian_white"):
-			return -2030355032 /* GXTEntry: "Superior" */;
-		case joaat("a_c_horse_ardennes_bayroan"):
-			return -1771663379 /* GXTEntry: "War" */;
-		case -635239558:
-			return -1771663379 /* GXTEntry: "War" */;
-		case joaat("a_c_horse_ardennes_irongreyroan"):
-			return -1771663379 /* GXTEntry: "War" */;
-		case joaat("a_c_horse_belgian_blondchestnut"):
-			return 918497150 /* GXTEntry: "Draft" */;
-		case joaat("a_c_horse_belgian_mealychestnut"):
-			return 918497150 /* GXTEntry: "Draft" */;
-		case 1593035738:
-			return -311956671 /* GXTEntry: "Work" */;
-		case 861505058:
-			return -311956671 /* GXTEntry: "Work" */;
-		case 687445866:
-			return -311956671 /* GXTEntry: "Work" */;
-		case 1705182311:
-			return -1771663379 /* GXTEntry: "War" */;
-		case -78273782:
-			return -1771663379 /* GXTEntry: "War" */;
-		case -819697512:
-			return -1771663379 /* GXTEntry: "War" */;
-		case -247265944:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case -1265030920:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case 2024948086:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case 1696286663:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case -1342159303:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 2030804811:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case 1230359523:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case -1038436471:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case 96930969:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case -1180427609:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case joaat("a_c_horse_mustang_wildbay"):
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 43825738:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case joaat("a_c_horse_nokota_blueroan"):
-			return 356361174 /* GXTEntry: "Race" */;
-		case -1261814606:
-			return 356361174 /* GXTEntry: "Race" */;
-		case 107013696:
-			return 356361174 /* GXTEntry: "Race" */;
-		case 1066034872:
-			return 918497150 /* GXTEntry: "Draft" */;
-		case 36009259:
-			return 918497150 /* GXTEntry: "Draft" */;
-		case -1599683008:
-			return 918497150 /* GXTEntry: "Draft" */;
-		case -1693870200:
-			return 918497150 /* GXTEntry: "Draft" */;
-		case 1072019803:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case 1074477367:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case -85890205:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case -727455979:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case -1667789645:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case -1924405794:
-			return 356361174 /* GXTEntry: "Race" */;
-		case joaat("a_c_horse_thoroughbred_dapplegrey"):
-			return 356361174 /* GXTEntry: "Race" */;
-		case -526169133:
-			return 356361174 /* GXTEntry: "Race" */;
-		case 2120708491:
-			return 356361174 /* GXTEntry: "Race" */;
-		case 900144280:
-			return 356361174 /* GXTEntry: "Race" */;
-		case 1133837220:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case joaat("a_c_horse_turkoman_gold"):
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -1604180548:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -683592019:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 337109765:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -619132373:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 1544366970:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -1441144351:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -1717674545:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 1825358734:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 1138427579:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -1720251851:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 506887890:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 766293155:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 2147082926:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -1616287563:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -127412252:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -1881155818:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -955237712:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -647020346:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -1846319726:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 1007570567:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 1029339151:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -1424767799:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -217135948:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case -156439156:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 1344011125:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case joaat("a_c_donkey_01"):
-			return 1090011026 /* GXTEntry: "Other" */;
-		case joaat("a_c_horsemule_01"):
-			return 1090011026 /* GXTEntry: "Other" */;
-		case joaat("a_c_horsemulepainted_01"):
-			return 1090011026 /* GXTEntry: "Other" */;
-		case 1883159941:
-			return 356361174 /* GXTEntry: "Race" */;
-		case -1028075925:
-			return -311956671 /* GXTEntry: "Work" */;
-		case 84224102:
-			return -2030355032 /* GXTEntry: "Superior" */;
-		case 1496579364:
-			return -2030355032 /* GXTEntry: "Superior" */;
-		case -1896838685:
-			return -1771663379 /* GXTEntry: "War" */;
-		case -420599285:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 478986344:
-			return -1651618152 /* GXTEntry: "Multi Class" */;
-		case 446670976:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case joaat("a_c_horse_shire_ravenblack"):
-			return 918497150 /* GXTEntry: "Draft" */;
-		case 549900435:
-			return -311956671 /* GXTEntry: "Work" */;
-		case -2063289686:
-			return 356361174 /* GXTEntry: "Race" */;
-		case 917402668:
-			return 997958153 /* GXTEntry: "Riding" */;
-		case -914712122:
-			return 356361174 /* GXTEntry: "Race" */;
-		case -598917269:
-			return -311956671 /* GXTEntry: "Work" */;
-		case joaat("a_c_horse_winter02_01"):
-			return 356361174 /* GXTEntry: "Race" */;
-		default:
-			break;
-	}
-	return 779169510;
-}
-
-char* func_186(int iParam0, int iParam1)
-{
-	switch (iParam0)
-	{
-		case 997958153: /* GXTEntry: "Riding" */
-			return "HORSE_CLASS_RIDING";
-		case 918497150: /* GXTEntry: "Draft" */
-			return "HORSE_CLASS_DRAFT";
-		case 356361174: /* GXTEntry: "Race" */
-			return "HORSE_CLASS_RACE";
-		case -1771663379: /* GXTEntry: "War" */
-			return "HORSE_CLASS_WAR";
-		case -311956671: /* GXTEntry: "Work" */
-			return "HORSE_CLASS_WORK";
-		case -1651618152: /* GXTEntry: "Multi Class" */
-			return func_238(iParam1);
-		case -2030355032: /* GXTEntry: "Superior" */
-			return "HORSE_CLASS_SUPERIOR";
-		case 1090011026: /* GXTEntry: "Other" */
-			return "HORSE_CLASS_OTHER";
-		default:
-			break;
-	}
-	return "";
-}
-
-char* func_187(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 1:
-			return "HORSE_GENDER_MALE";
-		case 2:
-			return "HORSE_GENDER_FEMALE";
-	}
-	return "HORSE_GENDER_UNKNOWN";
-}
-
-char* func_188(int iParam0)
-{
-	switch (iParam0)
-	{
-		case -974145463: /* GXTEntry: "American Paint - Overo Coat" */
-			return "COAT_OVERO";
-		case 1432602132: /* GXTEntry: "American Paint - Tobiano Coat" */
-			return "COAT_TOB";
-		case 92296905: /* GXTEntry: "American Paint - Splashed White Coat" */
-			return "COAT_SPLASHWHITE";
-		case -842044823: /* GXTEntry: "American Paint - Grey Overo Coat" */
-			return "COAT_GREYOVERO";
-		case 1371398552: /* GXTEntry: "American Standardbred - Black Coat" */
-			return "COAT_BLACK";
-		case -745453539: /* GXTEntry: "American Standardbred - Buckskin Coat" */
-			return "COAT_BUCKSKIN";
-		case 1583029039: /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */
-			return "COAT_PALDAP";
-		case -783061276: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
-			return "COAT_SILVERTAILBUCKSKIN";
-		case -1322521536: /* GXTEntry: "Andalusian - Dark Bay Coat" */
-			return "COAT_DARKBAY";
-		case 1100711204: /* GXTEntry: "Andalusian - Perlino Coat" */
-			return "COAT_PERLINO";
-		case 728055838: /* GXTEntry: "Andalusian - Rose Grey Coat" */
-			return "COAT_ROSEGREY";
-		case -1782334639: /* GXTEntry: "Appaloosa - Blanket Coat" */
-			return "COAT_BLANKET";
-		case -1181052732: /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */
-			return "COAT_LEOPBLANKET";
-		case -179102320: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
-			return "COAT_BRLEOP";
-		case -1266863668: /* GXTEntry: "Appaloosa - Leopard Coat" */
-			return "COAT_LEOP";
-		case -2078767648: /* GXTEntry: "Arabian - Black Coat" */
-			return "COAT_BLACK";
-		case -852553462: /* GXTEntry: "Arabian - Rose Grey Bay Coat" */
-			return "COAT_ROSEGREYBAY";
-		case -80004868: /* GXTEntry: "Arabian - White Coat" */
-			return "COAT_WHITE";
-		case 1813208211: /* GXTEntry: "Ardennes - Bay Roan Coat" */
-			return "COAT_BAYR";
-		case 836323303: /* GXTEntry: "Ardennes - Strawberry Roan Coat" */
-			return "COAT_STRAWR";
-		case 153881023: /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */
-			return "COAT_IRONGREYR";
-		case -1256798240: /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */
-			return "COAT_BLONDCH";
-		case 2118089359:
-			return "COAT_MEALYCH";
-		case -1537586382: /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */
-			return "COAT_SOOTYBUCKSKIN";
-		case 1440692746: /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */
-			return "COAT_SEALBR";
-		case 697143532: /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */
-			return "COAT_CHOCR";
-		case 281128160: /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */
-			return "COAT_FLAXCH";
-		case 1854519167: /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */
-			return "COAT_PIETOB";
-		case -1376299681: /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */
-			return "COAT_DAPDARKGREY";
-		case -1955947684:
-			return "COAT_BLACK";
-		case 1361788230: /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */
-			return "COAT_CHPIN";
-		case 1974379573: /* GXTEntry: "Kentucky Saddler - Grey Coat" */
-			return "COAT_GREY";
-		case 545109431: /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */
-			return "COAT_SILVERBAY";
-		case 1275638003: /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */
-			return "COAT_AMBCHA";
-		case 2083573823: /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */
-			return "COAT_SILVERDAPPINT";
-		case 1235275977: /* GXTEntry: "Morgan - Bay Coat" */
-			return "COAT_BAY";
-		case 892601357: /* GXTEntry: "Morgan - Bay Roan Coat" */
-			return "COAT_BAYR";
-		case 1224695367: /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */
-			return "COAT_FLAXCH";
-		case 648301150: /* GXTEntry: "Morgan - Palomino Coat" */
-			return "COAT_PAL";
-		case -1597490733: /* GXTEntry: "Mustang - Grullo Dun Coat" */
-			return "COAT_GRULDUN";
-		case 2000205872: /* GXTEntry: "Mustang - Wild Bay Coat" */
-			return "COAT_WILDBAY";
-		case -1428527735: /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */
-			return "COAT_TIGSTRBAY";
-		case 170010697: /* GXTEntry: "Nokota - Blue Roan Coat" */
-			return "COAT_BLUER";
-		case -742726637: /* GXTEntry: "Nokota - White Roan Coat" */
-			return "COAT_WHITER";
-		case -1714171692: /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */
-			return "COAT_REVDAPR";
-		case -103101636: /* GXTEntry: "Shire - Dark Bay Coat" */
-			return "COAT_DARKBAY";
-		case -1999094324: /* GXTEntry: "Shire - Light Grey Coat" */
-			return "COAT_LGREY";
-		case 1724200240: /* GXTEntry: "Suffolk Punch - Sorrel Coat" */
-			return "COAT_SORREL";
-		case 237935328: /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */
-			return "COAT_REDCH";
-		case 120848852: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
-			return "COAT_BLACKRAB";
-		case -868094182: /* GXTEntry: "Tennessee Walker - Chestnut Coat" */
-			return "COAT_CH";
-		case -887362763: /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */
-			return "COAT_DAPBAY";
-		case -847714194: /* GXTEntry: "Tennessee Walker - Red Roan Coat" */
-			return "COAT_REDR";
-		case 1756765331: /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */
-			return "COAT_FLAXR";
-		case -813071670: /* GXTEntry: "Thoroughbred - Blood Bay Coat" */
-			return "COAT_BLBAY";
-		case -1900569233: /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */
-			return "COAT_DAPGREY";
-		case 1688250187: /* GXTEntry: "Thoroughbred - Brindle Coat" */
-			return "COAT_BRINDLE";
-		case -1262715164: /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */
-			return "COAT_BLACKCH";
-		case 2010625508: /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */
-			return "COAT_REVDAPBLACK";
-		case -136225010: /* GXTEntry: "Turkoman - Dark Bay Coat" */
-			return "COAT_DARKBAY";
-		case -225011104: /* GXTEntry: "Turkoman - Gold Coat" */
-			return "COAT_GOLD";
-		case -1882436593: /* GXTEntry: "Turkoman - Silver Coat" */
-			return "COAT_SILVER";
-		case -757978903: /* GXTEntry: "Breton - Red Roan Coat" */
-			return "COAT_REDR";
-		case 1909854428: /* GXTEntry: "Breton - Sorrel Coat" */
-			return "COAT_SORREL";
-		case 1592694494: /* GXTEntry: "Breton - Grullo Dun Coat" */
-			return "COAT_GRULDUN";
-		case 981469777: /* GXTEntry: "Breton - Seal Brown Coat" */
-			return "COAT_SEALBR";
-		case 1064693514: /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */
-			return "COAT_MEALYDAPBAY";
-		case -1365665739: /* GXTEntry: "Breton - Steel Grey Coat" */
-			return "COAT_STEELGREY";
-		case 1577022605: /* GXTEntry: "Criollo - Blue Roan Overo Coat" */
-			return "COAT_BLUEROANOVERO";
-		case 381495209: /* GXTEntry: "Criollo - Dun Coat" */
-			return "COAT_DUN";
-		case 3032834: /* GXTEntry: "Criollo - Bay Brindle Coat" */
-			return "COAT_BAYBRINDLE";
-		case -1722101672: /* GXTEntry: "Criollo - Sorrel Overo Coat" */
-			return "COAT_SORRELOVERO";
-		case -189605757: /* GXTEntry: "Criollo - Bay Frame Overo Coat" */
-			return "COAT_BAYFRAMEOVERO";
-		case 863391233: /* GXTEntry: "Criollo - Marble Sabino Coat" */
-			return "COAT_MARBLESABINO";
-		case 885568364: /* GXTEntry: "Kladruber - Black Coat" */
-			return "COAT_BLACK";
-		case -1540355548: /* GXTEntry: "Kladruber - White Coat" */
-			return "COAT_WHITE";
-		case -601560591: /* GXTEntry: "Kladruber - Cremello Coat" */
-			return "COAT_CREM";
-		case -370362766: /* GXTEntry: "Kladruber - Grey Coat" */
-			return "COAT_GREY";
-		case -1698261864: /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */
-			return "COAT_DAPROSEGREY";
-		case -670301166: /* GXTEntry: "Kladruber - Silver Coat" */
-			return "COAT_SILVER";
-		case -302057902:
-			return "COAT_BLACK";
-		case 1257620801:
-			return "COAT_SPECKLEDGREY";
-		case 821735821:
-			return "COAT_PIEROAN";
-		case -769035812:
-			return "COAT_ROSEGREY";
-		case -1824684932:
-			return "COAT_DAPBUCKSKIN";
-		case 1589592948:
-			return "COAT_SPOTTEDTRICOLOR";
-		case -1331210307: /* GXTEntry: "Donkey" */
-			return "COAT_NONE";
-		case 122449722: /* GXTEntry: "Mule" */
-			return "COAT_NONE";
-		case -1784502482: /* GXTEntry: "Mule - Painted" */
-			return "COAT_NONE";
-		case -1943445834:
-			return "COAT_LIGHTBUCKSKIN";
-		case -635244104: /* GXTEntry: "Appaloosa - Black Snowflake" */
-			return "COAT_BLACKSNO";
-		case -1427377767: /* GXTEntry: "Arabian - Grey Coat" */
-			return "COAT_GREY";
-		case -2055655009: /* GXTEntry: "Arabian - Red Chestnut Coat" */
-			return "COAT_REDCH";
-		case -1293672675: /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */
-			return "COAT_LIVERCH";
-		case -1179079660: /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */
-			return "COAT_SABLECHAMP";
-		case 805526368: /* GXTEntry: "Mustang - Golden Dun Coat" */
-			return "COAT_GOLDENDUN";
-		case 1342496140: /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */
-			return "COAT_MAHBAY";
-		case -126555855: /* GXTEntry: "Shire - Raven Black Coat" */
-			return "COAT_RAVBLACK";
-		case 294243421: /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */
-			return "COAT_CHEMGOLD";
-		case -997197050: /* GXTEntry: "Thoroughbred - Seal Brown Coat" */
-			return "COAT_SEALBR";
-		case -235714362: /* GXTEntry: "Appaloosa - Blanket Coat" */
-			return "COAT_BLANKET";
-		case -1678164: /* GXTEntry: "Nokota - Blue Roan Coat" */
-			return "COAT_BLUER";
-		case -977833913: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
-			return "COAT_BLACKRAB";
-		case 1589164943: /* GXTEntry: "Thoroughbred - Silver Bay Coat" */
-			return "COAT_SILVERBAY";
-		case -1087523615: /* GXTEntry: "American Paint - Splashed White Coat" */
-			return "COAT_SPLASHWHITE";
-		case -496814209: /* GXTEntry: "Ardennes - Chestnut Coat" */
-			return "COAT_BROWNR";
-		case 2109055751: /* GXTEntry: "Appaloosa - Grey Snowcap Spotted Coat" */
-			return "COAT_GREYSNOWCAPSPOTTED";
-		case -776673611: /* GXTEntry: "Nokota - Grey Roan Sabino Coat" */
-			return "COAT_GREYROANSABINO";
-		case 1764402253: /* GXTEntry: "Arabian - White Albino Coat" */
-			return "COAT_ALBINO";
-		case -1417310078: /* GXTEntry: "Turkoman - Silver Coat" */
-			return "COAT_SILVER";
-		case 1096273915: /* GXTEntry: "American Paint - Grey Overo Coat" */
-			return "COAT_GREYOVERO";
-		case 772751081: /* GXTEntry: "Hungarian Halfbred - Silver Dark Bay Coat" */
-			return "COAT_SILVERDARKBAY";
-		case -1140435723: /* GXTEntry: "Nokota - Smoky Black Coat" */
-			return "COAT_SMOKYBLACK";
-		case 2002524329: /* GXTEntry: "Tennessee Walker - Flaxen Roan" */
-			return "COAT_FLAXR";
-		case 1151530184: /* GXTEntry: "Mustang - Light Palomino Coat" */
-			return "COAT_LIGHTPALOMINO";
-		case -1266525037: /* GXTEntry: "Missouri Fox Trotter - Black Coat" */
-			return "COAT_BLACK";
-		case -2018137175: /* GXTEntry: "Turkoman - Gold Dapple Coat" */
-			return "COAT_GOLDDAP";
-		case -574151692: /* GXTEntry: "Mustang - Dark Bay Roan Coat" */
-			return "COAT_DARKBAYROAN";
-		case 649786380: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
-			return "COAT_SILVERTAILBUCKSKIN";
-		case -1921328920: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
-			return "COAT_BRLEOP";
-		case -837607790: /* GXTEntry: "Kentucky Saddler - Sabino Coat" */
-			return "COAT_SABINO";
-		case 370424594: /* GXTEntry: "Appaloosa - Few Spot Buckskin Coat" */
-			return "COAT_FEWSPOTBUCKSKIN";
-		case -364764277: /* GXTEntry: "Scrawny Nag" */
-			return "COAT_MANGY";
-		default:
-			break;
-	}
-	return "";
-}
-
-var func_189(int iParam0, int iParam1)
-{
-	var uVar0;
-
-	if (!STREAMING::IS_MODEL_VALID(iParam0))
-	{
-		iParam0 = 1074477367;
-	}
-	uVar0 = ATTRIBUTE::GET_DEFAULT_ATTRIBUTE_POINTS_NEEDED_FOR_RANK(iParam0, 7, iParam1);
-	return uVar0;
 }
 
 void func_190(bool bParam0, var uParam1, int iParam2)
@@ -5290,7 +2538,7 @@ void func_190(bool bParam0, var uParam1, int iParam2)
 	char* sVar1;
 
 	fVar0 = (func_239(*uParam1, iParam2) * 100f);
-	sVar1 = func_240(0 == iParam2, "RPG_Horse_Health", "RPG_Horse_Stamina");
+	sVar1 = aggregate.doc_book.func_204(0 == iParam2, "RPG_Horse_Health", "RPG_Horse_Stamina");
 	if (fVar0 > 0f)
 	{
 		func_157(bParam0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_PLUS_VALUE", BUILTIN::ROUND(fVar0)), 1, 0, 1, 0, 0, 0, 0, sVar1);
@@ -5320,9 +2568,9 @@ void func_191()
 	struct<6> Var32;
 	int iVar39;
 
-	Var1 = { func_19(0, 1, 0, -1) };
-	bVar0 = func_241(Var1, -415648720, 0, 0);
-	if (!func_203(bVar0, 0))
+	Var1 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
+	bVar0 = aggregate.bandana.func_84(Var1, -415648720, 0, 0);
+	if (!aggregate.bandana.func_30(bVar0, 0))
 	{
 		return;
 	}
@@ -5403,15 +2651,15 @@ void func_192()
 	struct<6> Var35;
 	int iVar42;
 
-	Var2 = { func_19(0, 1, 0, -1) };
-	bVar1 = func_241(Var2, -415648720, 0, 0);
-	if (!func_203(bVar1, 0))
+	Var2 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
+	bVar1 = aggregate.bandana.func_84(Var2, -415648720, 0, 0);
+	if (!aggregate.bandana.func_30(bVar1, 0))
 	{
 		return;
 	}
-	Var6 = { func_242(bVar1, Var2, -415648720, 0) };
-	bVar0 = func_184(Var6, 986998820, 0, -1);
-	if (!func_203(bVar0, 0))
+	Var6 = { aggregate.bandana.func_59(bVar1, Var2, -415648720, 0) };
+	bVar0 = aggregate.bandana.func_81(Var6, 986998820, 0, -1);
+	if (!aggregate.bandana.func_30(bVar0, 0))
 	{
 		return;
 	}
@@ -5447,174 +2695,7 @@ void func_192()
 	}
 }
 
-char* func_193(char* sParam0, int iParam1)
-{
-	if (iParam1 == joaat("COLOR_PURE_WHITE"))
-	{
-		return MISC::_CREATE_VAR_STRING(10, "LITERAL_STRING", sParam0);
-	}
-	return func_243(MISC::_CREATE_VAR_STRING(10, "LITERAL_STRING", sParam0), iParam1);
-}
-
-int func_194(bool bParam0)
-{
-	if (func_244() == -1)
-	{
-		if (!bParam0 && INVENTORY::_0x7C7E4AB748EA3B07())
-		{
-			return 5;
-		}
-		return 1;
-	}
-	if (!bParam0 && INVENTORY::_0x13D234A2A3F66E63(PLAYER::PLAYER_PED_ID()) == 3)
-	{
-		return 3;
-	}
-	return 2;
-}
-
-struct<2> func_195(int iParam0, int iParam1)
-{
-	struct<2> Var0;
-
-	Var0 = iParam0;
-	Var0.f_1 = iParam1;
-	return Var0;
-}
-
-int func_196(int iParam0, int iParam1, bool bParam2, bool bParam3)
-{
-	if (iParam1 == -1)
-	{
-		return 0;
-	}
-	func_217(Global_1903928);
-	switch (iParam1)
-	{
-		case 0:
-		case 1:
-			if (!func_245(iParam0, Global_1903928, &(Global_1903928->f_71), bParam3))
-			{
-				return 0;
-			}
-			break;
-		case 2:
-			if (!func_246(iParam0, Global_1903928, &(Global_1903928->f_100), bParam3))
-			{
-				return 0;
-			}
-			break;
-	}
-	if (bParam2)
-	{
-		func_220(Global_1903928);
-	}
-	return 1;
-}
-
-int func_197(int iParam0)
-{
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return 0;
-	}
-	if (iParam0->f_10 == -1)
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_198(int iParam0, int iParam1)
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-
-	iVar0 = 0;
-	while (iVar0 < 4)
-	{
-		iVar1 = iVar0 + 1;
-		iVar2 = func_189(iParam0, iVar1);
-		if (iParam1 < iVar2)
-		{
-			return iVar0;
-		}
-		iVar0++;
-	}
-	return 4;
-}
-
-int func_199(int iParam0, int iParam1)
-{
-	switch (iParam0)
-	{
-		case 0:
-			*iParam1 = 16;
-			break;
-		case 1:
-			*iParam1 = 8;
-			break;
-		case 2:
-			*iParam1 = 13;
-			break;
-		default:
-			return 0;
-	}
-	return 1;
-}
-
-int func_200(int iParam0)
-{
-	struct<4> Var0;
-	struct<10> Var4;
-	bool bVar18;
-	int iVar19;
-
-	Var0 = { func_77() };
-	if (INVENTORY::_0x4C543D5DFCD2DAFD(iParam0, &Var0))
-	{
-		return 0;
-	}
-	Var4.f_9 = -1591664384;
-	iVar19 = 0;
-	while (iVar19 < 10)
-	{
-		if (INVENTORY::_0x4C543D5DFCD2DAFD(Global_17173.f_54.f_61.f_41[iVar19 /*54*/], iParam0))
-		{
-			bVar18 = true;
-		}
-		else if (INVENTORY::_0x4C543D5DFCD2DAFD(Global_17173.f_54.f_61.f_41[iVar19 /*54*/], &Var0))
-		{
-			func_247(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]);
-			*(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]) = { *iParam0 };
-			bVar18 = true;
-		}
-		else
-		{
-			if (func_248(*(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]), &Var4, 1, 1, -1))
-			{
-			}
-			else
-			{
-				func_247(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]);
-				*(Global_17173.f_54.f_61.f_41[iVar19 /*54*/]) = { *iParam0 };
-				bVar18 = true;
-			}
-			else
-			{
-				iVar19++;
-			}
-		}
-	}
-	if (!bVar18)
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_201(bool bParam0, int iParam1)
+bool func_201(bool bParam0, int iParam1)
 {
 	bool bVar0;
 	int iVar1;
@@ -5624,10 +2705,10 @@ int func_201(bool bParam0, int iParam1)
 
 	if (bParam0 != 0)
 	{
-		iVar5 = func_249(bParam0);
+		iVar5 = aggregate.bandana.func_10(bParam0);
 		if (iVar5 != 0)
 		{
-			iVar6 = func_250(bParam0);
+			iVar6 = aggregate.fm_deathmatch_controller.func_3052(bParam0);
 			bVar0 = false;
 			while (bVar0 < iVar6)
 			{
@@ -5636,91 +2717,14 @@ int func_201(bool bParam0, int iParam1)
 					iVar4 = iVar1;
 					if (iVar4 == iParam1)
 					{
-						return 1;
+						return true;
 					}
 				}
 				bVar0++;
 			}
 		}
 	}
-	return 0;
-}
-
-struct<4> func_202()
-{
-	struct<4> Var0;
-
-	Var0 = { func_251(0) };
-	return func_242(856287005, Var0, -218846335, 0);
-}
-
-bool func_203(bool bParam0, int iParam1)
-{
-	if (bParam0 == 0)
-	{
-		return false;
-	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
-}
-
-bool func_204(bool bParam0)
-{
-	int iVar0;
-
-	if (!func_203(bParam0, 0))
-	{
-		return false;
-	}
-	iVar0 = func_252(bParam0);
-	if (iVar0 != 0)
-	{
-		return iVar0;
-	}
-	return bParam0;
-}
-
-void func_205()
-{
-	int iVar0;
-	int iVar1;
-
-	iVar0 = Global_1572887->f_387.f_1;
-	iVar1 = 0;
-	iVar1 = 0;
-	while (iVar1 <= 30)
-	{
-		if (MISC::IS_BIT_SET(iVar0, iVar1))
-		{
-		}
-		iVar1++;
-	}
-	if (Global_1572887->f_387.f_2 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_3 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_4 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_5 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_6 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_8 != 0)
-	{
-	}
-}
-
-int func_206()
-{
-	if (func_253())
-	{
-		return 1;
-	}
-	return 0;
+	return false;
 }
 
 int func_207(var uParam0, int iParam1, bool bParam2)
@@ -5737,215 +2741,22 @@ int func_207(var uParam0, int iParam1, bool bParam2)
 	return 1;
 }
 
-int func_208()
+bool func_208()
 {
 	if (func_255())
 	{
-		return 1;
+		return true;
 	}
 	if (SOCIALCLUBFEED::_0x068332D20CB6F897())
 	{
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
 void func_209(var uParam0)
 {
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(&(uParam0->f_194[0]));
-}
-
-bool func_210(var uParam0, int iParam1)
-{
-	return (uParam0 && iParam1) != 0;
-}
-
-int func_211(int iParam0)
-{
-	if (iParam0 == 395262693 || iParam0 == -933924539)
-	{
-		return 482206342;
-	}
-	return Global_524288->f_39792;
-}
-
-int func_212(int iParam0, int iParam1)
-{
-	int iVar0;
-
-	switch (iParam0)
-	{
-		case -504335712:
-			if (func_256(iParam1))
-			{
-				iVar0 = 1;
-			}
-			else
-			{
-				iVar0 = 2;
-			}
-			break;
-		case 395262693:
-			iVar0 = 2;
-			break;
-		case -933924539:
-			iVar0 = 0;
-			break;
-		default:
-			iVar0 = 3;
-			break;
-	}
-	return iVar0;
-}
-
-bool func_213(struct<2> Param0, struct<2> Param2)
-{
-	return (Param0 == Param2 && Param0.f_1 == Param2.f_1);
-}
-
-bool func_214(int iParam0)
-{
-	if (Global_1572887->f_13 == -1)
-	{
-		return false;
-	}
-	return (Global_1184367->f_1 && iParam0) != 0;
-}
-
-bool func_215(int iParam0, int iParam1)
-{
-	if (!Global_1070355->f_3)
-	{
-		return false;
-	}
-	if (!NETWORK::NETWORK_IS_IN_SESSION())
-	{
-		return false;
-	}
-	if (iParam1 == 255)
-	{
-		iParam1 = PLAYER::NETWORK_PLAYER_ID_TO_INT();
-	}
-	return (Global_1183982[iParam1 /*12*/] && iParam0) != 0;
-}
-
-int func_216()
-{
-	if (&Global_1048576)
-	{
-		return 1;
-	}
-	if (Global_1572887->f_4)
-	{
-		return 1;
-	}
-	if (&Global_2883584)
-	{
-		return 1;
-	}
-	if (&Global_1048577)
-	{
-		return 1;
-	}
-	if (!func_7(*Global_1051163) && Global_1572887->f_7 & 1 != 0)
-	{
-		return 1;
-	}
-	return 0;
-}
-
-void func_217(int iParam0)
-{
-	int iVar0;
-
-	func_257(iParam0);
-	iParam0->f_4 = 0;
-	iParam0->f_5 = { func_77() };
-	iParam0->f_9 = 0;
-	iParam0->f_10 = -1;
-	iParam0->f_11 = 0;
-	StringCopy(&(iParam0->f_12), "", 64);
-	iParam0->f_20 = 0;
-	iParam0->f_22 = 0;
-	iVar0 = 0;
-	while (iVar0 < 3)
-	{
-		iParam0->f_23[iVar0] = 0f;
-		iVar0++;
-	}
-	iParam0->f_27 = 0;
-	iVar0 = 0;
-	iVar0 = 0;
-	while (iVar0 < 13)
-	{
-		iParam0->f_28[iVar0] = 0;
-		iVar0++;
-	}
-}
-
-int func_218(int iParam0, int iParam1)
-{
-	func_258(&(Global_1903928->f_42));
-	if (!func_245(iParam0, iParam1, &(Global_1903928->f_42), 0))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_219(int iParam0, int iParam1)
-{
-	struct<10> Var0;
-
-	Var0.f_9 = -1591664384;
-	if (!func_246(iParam0, iParam1, &Var0, 0))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-void func_220(int iParam0)
-{
-	int iVar0;
-	var uVar1;
-	var uVar2;
-	int iVar3;
-
-	if (!func_259(iParam0->f_10))
-	{
-		return;
-	}
-	func_260(iParam0, 8);
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return;
-	}
-	iVar0 = func_194(0);
-	iVar3 = 0;
-	while (iVar3 < 13)
-	{
-		uVar1 = func_261(iVar3, 1);
-		if (!INVENTORY::_0x6862E4D93F64CF01(iVar0, iParam0, uVar1, &uVar2))
-		{
-		}
-		else
-		{
-			iParam0->f_28[iVar3] = uVar2;
-		}
-		iVar3++;
-	}
-}
-
-bool func_221(var uParam0, int iParam1, int iParam2)
-{
-	int iVar0;
-	int iVar1;
-
-	return MISC::IS_BIT_SET(uParam0[(iParam1 / 31)], (iParam1 % 31));
-	iVar0 = (iParam1 / 31);
-	iVar1 = (iParam1 % 31);
-	return MISC::IS_BIT_SET(uParam0[iVar0], iVar1);
 }
 
 char* func_222(int iParam0)
@@ -5986,77 +2797,6 @@ char* func_223(int iParam0)
 	return "";
 }
 
-float func_224(int iParam0, int iParam1)
-{
-	if (iParam1 == 2)
-	{
-		iParam1 = func_86(1);
-	}
-	switch (iParam1)
-	{
-		case 0:
-			return &(Global_1954462->f_1331.f_26[iParam0]);
-		case 1:
-			return &(Global_1954462->f_1465.f_2.f_26[iParam0]);
-		default:
-			break;
-	}
-	return -1f;
-}
-
-int func_225(float fParam0)
-{
-	if (fParam0 < IntToFloat(0))
-	{
-		return -1;
-	}
-	if (fParam0 < IntToFloat(100))
-	{
-		return 0;
-	}
-	if (fParam0 < IntToFloat(300))
-	{
-		return 1;
-	}
-	if (fParam0 < IntToFloat(700))
-	{
-		return 2;
-	}
-	if (fParam0 < IntToFloat(1500))
-	{
-		return 3;
-	}
-	if (fParam0 < IntToFloat(3100))
-	{
-		return 4;
-	}
-	return 5;
-}
-
-int func_226(int iParam0)
-{
-	switch (iParam0)
-	{
-		case -1:
-			return -1;
-		case 0:
-			return 0;
-		case 1:
-			return 100;
-		case 2:
-			return 300;
-		case 3:
-			return 700;
-		case 4:
-			return 1500;
-		case 5:
-			return 3100;
-		default:
-			break;
-	}
-	return 100;
-}
-
 struct<4> func_227(int iParam0, int iParam1)
 {
 	char cVar0[32];
@@ -6076,89 +2816,25 @@ struct<4> func_227(int iParam0, int iParam1)
 	return cVar0;
 }
 
-char* func_228(var uParam0, var uParam1, var uParam2, var uParam3)
-{
-	return HUD::_0xD8402B858F4DDD88(&uParam0, HUD::GET_LENGTH_OF_LITERAL_STRING(&uParam0));
-}
-
-int func_229()
-{
-	return 0;
-}
-
-int func_230()
-{
-	return 1;
-}
-
-int func_231(int iParam0, int iParam1)
-{
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return 0;
-	}
-	*iParam1 = 0;
-	*iParam1 = 0;
-	while (*iParam1 < 10)
-	{
-		if (!INVENTORY::_0x4C543D5DFCD2DAFD(Global_17173.f_54.f_61.f_41[*iParam1 /*54*/], iParam0))
-		{
-		}
-		else
-		{
-			return 1;
-		}
-		*iParam1++;
-	}
-	return 0;
-}
-
-bool func_232(var uParam0, int iParam1, var uParam2, int iParam3, bool bParam4, int iParam5, bool bParam6, int iParam7)
-{
-	return func_262(&uParam0, bParam4, iParam5, bParam6, iParam7);
-}
-
-int func_233()
-{
-	return 5;
-}
-
-int func_234()
-{
-	return 6;
-}
-
-int func_235(int iParam0)
-{
-	int iVar0;
-
-	if (!STREAMING::IS_MODEL_VALID(iParam0))
-	{
-		return 0;
-	}
-	iVar0 = ATTRIBUTE::GET_DEFAULT_ATTRIBUTE_RANK(iParam0, func_263());
-	return iVar0;
-}
-
 int func_236(var uParam0, int iParam1)
 {
-	if (func_264(uParam0, -2147483648))
+	if (aggregate.mp_freemode_tutorial.func_845(uParam0, -2147483648))
 	{
 		*iParam1 = 4;
 	}
-	else if (func_264(uParam0, 1073741824 /* Float: 2f */))
+	else if (aggregate.mp_freemode_tutorial.func_845(uParam0, 1073741824 /* Float: 2f */))
 	{
 		*iParam1 = 3;
 	}
-	else if (func_264(uParam0, 536870912))
+	else if (aggregate.mp_freemode_tutorial.func_845(uParam0, 536870912))
 	{
 		*iParam1 = 2;
 	}
-	else if (func_264(uParam0, 268435456))
+	else if (aggregate.mp_freemode_tutorial.func_845(uParam0, 268435456))
 	{
 		*iParam1 = 1;
 	}
-	else if (func_264(uParam0, 134217728))
+	else if (aggregate.mp_freemode_tutorial.func_845(uParam0, 134217728))
 	{
 		*iParam1 = 0;
 	}
@@ -6169,73 +2845,12 @@ int func_236(var uParam0, int iParam1)
 	return 1;
 }
 
-int func_237(int iParam0, bool bParam1, bool bParam2, int iParam3)
-{
-	struct<10> Var0;
-
-	Var0.f_9 = -1591664384;
-	if (func_262(iParam0, bParam1, &Var0, bParam2, iParam3))
-	{
-		return Var0.f_4;
-	}
-	return 0;
-}
-
-char* func_238(int iParam0)
-{
-	switch (iParam0)
-	{
-		case -1179079660: /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */
-		case 1275638003: /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */
-		case 2083573823: /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */
-			return "HORSE_CLASS_MULTI";
-		case -1597490733: /* GXTEntry: "Mustang - Grullo Dun Coat" */
-		case -1428527735: /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */
-		case 805526368: /* GXTEntry: "Mustang - Golden Dun Coat" */
-		case 2000205872: /* GXTEntry: "Mustang - Wild Bay Coat" */
-			return "HORSE_CLASS_MULTI";
-		case -1882436593: /* GXTEntry: "Turkoman - Silver Coat" */
-		case -225011104: /* GXTEntry: "Turkoman - Gold Coat" */
-		case -136225010: /* GXTEntry: "Turkoman - Dark Bay Coat" */
-			return "HORSE_CLASS_MULTI";
-		case -1365665739: /* GXTEntry: "Breton - Steel Grey Coat" */
-		case -757978903: /* GXTEntry: "Breton - Red Roan Coat" */
-		case 981469777: /* GXTEntry: "Breton - Seal Brown Coat" */
-		case 1064693514: /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */
-		case 1592694494: /* GXTEntry: "Breton - Grullo Dun Coat" */
-		case 1909854428: /* GXTEntry: "Breton - Sorrel Coat" */
-			return "HORSE_CLASS_MULTI";
-		case -1722101672: /* GXTEntry: "Criollo - Sorrel Overo Coat" */
-		case -189605757: /* GXTEntry: "Criollo - Bay Frame Overo Coat" */
-		case 3032834: /* GXTEntry: "Criollo - Bay Brindle Coat" */
-		case 381495209: /* GXTEntry: "Criollo - Dun Coat" */
-		case 863391233: /* GXTEntry: "Criollo - Marble Sabino Coat" */
-		case 1577022605: /* GXTEntry: "Criollo - Blue Roan Overo Coat" */
-			return "HORSE_CLASS_MULTI";
-		case -1698261864: /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */
-		case -1540355548: /* GXTEntry: "Kladruber - White Coat" */
-		case -670301166: /* GXTEntry: "Kladruber - Silver Coat" */
-		case -601560591: /* GXTEntry: "Kladruber - Cremello Coat" */
-		case -370362766: /* GXTEntry: "Kladruber - Grey Coat" */
-		case 885568364: /* GXTEntry: "Kladruber - Black Coat" */
-			return "HORSE_CLASS_MULTI";
-		case -1824684932:
-		case -769035812:
-		case -302057902:
-		case 821735821:
-		case 1257620801:
-		case 1589592948:
-			return "HORSE_CLASS_MULTI";
-	}
-	return "HORSE_CLASS_MULTI";
-}
-
 float func_239(struct<4> Param0, int iParam4)
 {
 	float fVar0;
 
 	fVar0 = 0f;
-	if (iParam4 == 0 && func_122(Param0, 0) > 50)
+	if (iParam4 == 0 && aggregate.net_main_offline.func_4616(Param0, 0) > 50)
 	{
 		fVar0 = (fVar0 + 0.25f);
 	}
@@ -6243,204 +2858,7 @@ float func_239(struct<4> Param0, int iParam4)
 	return fVar0;
 }
 
-char* func_240(bool bParam0, char* sParam1, char* sParam2)
-{
-	if (bParam0)
-	{
-		return sParam1;
-	}
-	return sParam2;
-}
-
-int func_241(struct<4> Param0, int iParam4, int iParam5, bool bParam6)
-{
-	struct<10> Var0;
-
-	Var0.f_9 = -1591664384;
-	if (func_266(Param0, iParam4, &Var0, iParam5, bParam6))
-	{
-		return Var0.f_4;
-	}
-	return 0;
-}
-
-struct<4> func_242(bool bParam0, var uParam1, int iParam2, bool bParam3, var uParam4, bool bParam5, bool bParam6)
-{
-	struct<4> Var0;
-
-	if (!func_203(bParam0, 0))
-	{
-		return Var0;
-	}
-	INVENTORY::_0x886DFD3E185C8A89(func_194(bParam6), &uParam1, bParam0, bParam5, &Var0);
-	return Var0;
-}
-
-char* func_243(char* sParam0, int iParam1)
-{
-	return MISC::_CREATE_VAR_STRING(42, "COLOR_STRING", MISC::_CREATE_COLOR_STRING(iParam1), sParam0);
-}
-
-int func_244()
-{
-	return Global_1572887->f_13;
-}
-
-int func_245(int iParam0, int iParam1, int iParam2, bool bParam3)
-{
-	if (!func_137(iParam0, iParam2, bParam3))
-	{
-		return 0;
-	}
-	if (!func_267(iParam1, iParam2))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_246(int iParam0, int iParam1, int iParam2, bool bParam3)
-{
-	if (!func_268(iParam0, iParam2, bParam3))
-	{
-		return 0;
-	}
-	if (!func_269(iParam1, iParam2))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-void func_247(var uParam0)
-{
-	int iVar0;
-
-	*uParam0 = { func_77() };
-	iVar0 = 0;
-	while (iVar0 < 24)
-	{
-		uParam0->f_4[iVar0] = 0f;
-		iVar0++;
-	}
-	iVar0 = 0;
-	iVar0 = 0;
-	while (iVar0 < 2)
-	{
-		uParam0->f_29[iVar0 /*4*/] = 100;
-		(uParam0->f_29[iVar0 /*4*/])->f_1 = 0f;
-		(uParam0->f_29[iVar0 /*4*/])->f_2 = 0f;
-		(uParam0->f_29[iVar0 /*4*/])->f_3 = 0;
-		iVar0++;
-	}
-	iVar0 = 0;
-	iVar0 = 0;
-	while (iVar0 < 3)
-	{
-		switch (iVar0)
-		{
-			case 0:
-				uParam0->f_38[iVar0 /*4*/] = 100;
-				break;
-			case 1:
-				uParam0->f_38[iVar0 /*4*/] = 0;
-				break;
-			case 2:
-				uParam0->f_38[iVar0 /*4*/] = 50;
-				break;
-		}
-		(uParam0->f_38[iVar0 /*4*/])->f_1 = 0f;
-		(uParam0->f_38[iVar0 /*4*/])->f_2 = 0f;
-		(uParam0->f_38[iVar0 /*4*/])->f_3 = 0;
-		iVar0++;
-	}
-	uParam0->f_51 = { 0f, 0f, 0f };
-}
-
-bool func_248(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, bool bParam5, bool bParam6, int iParam7)
-{
-	return func_270(&uParam0, iParam4, bParam5, bParam6, iParam7);
-}
-
-int func_249(bool bParam0)
-{
-	struct<2> Var0;
-
-	if (!func_203(bParam0, 0))
-	{
-		return 0;
-	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &Var0))
-	{
-		return 0;
-	}
-	return Var0.f_1;
-}
-
-int func_250(bool bParam0)
-{
-	int iVar0;
-
-	if (!func_203(bParam0, 0))
-	{
-		return 0;
-	}
-	iVar0 = func_249(bParam0);
-	if (iVar0 == 0)
-	{
-		return 0;
-	}
-	return ITEMDATABASE::_ITEM_DATABASE_GET_HAS_SLOT_COUNT(iVar0);
-}
-
-struct<4> func_251(bool bParam0)
-{
-	int iVar0;
-
-	if (Global_1572887->f_13 == 0)
-	{
-		iVar0 = func_194(bParam0);
-		if (iVar0 == 2)
-		{
-			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1270479))
-			{
-				*Global_1270479 = { func_242(joaat("character"), func_77(), -1591664384, bParam0) };
-			}
-			return *Global_1270479;
-		}
-		else if (iVar0 == 3)
-		{
-			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_12)))
-			{
-				Global_1270479->f_12 = { func_242(joaat("character"), func_77(), -1591664384, 0) };
-			}
-			return Global_1270479->f_12;
-		}
-	}
-	return func_242(joaat("character"), func_77(), -1591664384, bParam0);
-}
-
-int func_252(bool bParam0)
-{
-	switch (bParam0)
-	{
-		case -59585102: /* GXTEntry: "Tonics Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_REMEDIES_MP");
-		case 1018123892: /* GXTEntry: "Ingredients Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_INGREDIENTS_MP");
-		case 982182330: /* GXTEntry: "Materials Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_MATERIALS_MP");
-		case -1406390556: /* GXTEntry: "Valuables Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_VALUABLES_MP");
-		case -1455768246: /* GXTEntry: "Kit Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_KIT_MP");
-		case -921879912: /* GXTEntry: "Provisions Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_PROVISIONS_MP");
-	}
-	return 0;
-}
-
-int func_253()
+bool func_253()
 {
 	int iVar0;
 	int iVar1;
@@ -6454,11 +2872,11 @@ int func_253()
 		}
 		else
 		{
-			return 1;
+			return true;
 		}
 		iVar1++;
 	}
-	return 0;
+	return false;
 }
 
 int func_254(int iParam0, int iParam1)
@@ -6482,7 +2900,7 @@ int func_254(int iParam0, int iParam1)
 	return -1;
 }
 
-int func_255()
+bool func_255()
 {
 	int iVar0;
 	int iVar1;
@@ -6497,7 +2915,7 @@ int func_255()
 		if (!INVENTORY::_0x82FA24C3D3FCD9B7(iVar1, bVar16, &Var2))
 		{
 		}
-		else if (!func_272(&Var2))
+		else if (!aggregate.doc_book.func_308(&Var2))
 		{
 		}
 		else if (!func_273(Var2.f_9))
@@ -6509,149 +2927,12 @@ int func_255()
 		else
 		{
 			INVENTORY::_0x42A2F33A1942E865(iVar1);
-			return 1;
+			return true;
 		}
 		bVar16++;
 	}
 	INVENTORY::_0x42A2F33A1942E865(iVar1);
-	return 0;
-}
-
-bool func_256(int iParam0)
-{
-	return ((iParam0 == -1759663922 || iParam0 == -318976023) || iParam0 == 772881414);
-}
-
-void func_257(int iParam0)
-{
-	*iParam0 = 0;
-	iParam0->f_1 = 0;
-	iParam0->f_2 = 0;
-	iParam0->f_3 = 0;
-}
-
-void func_258(var uParam0)
-{
-	*uParam0 = 0;
-	uParam0->f_1 = 0;
-	uParam0->f_2 = 0;
-	uParam0->f_3 = 0;
-	uParam0->f_4 = 0;
-	uParam0->f_5 = 0;
-	uParam0->f_5.f_1 = 0;
-	uParam0->f_5.f_2 = 0;
-	uParam0->f_5.f_3 = 0;
-	uParam0->f_9 = -1591664384;
-	uParam0->f_10 = 0;
-	uParam0->f_11 = 0;
-	uParam0->f_12 = 0;
-	uParam0->f_14 = 0;
-	uParam0->f_15 = 0;
-	StringCopy(&(uParam0->f_16), "", 64);
-	uParam0->f_24 = 0;
-	uParam0->f_25 = 0;
-	uParam0->f_26 = 0;
-	uParam0->f_27 = 0;
-	uParam0->f_28 = 0;
-}
-
-int func_259(int iParam0)
-{
-	var uVar0;
-
-	if (iParam0 == -1)
-	{
-		return 0;
-	}
-	func_275();
-	Global_1903928->f_124.f_2 = 834733495;
-	Global_1903928->f_124.f_3 = func_276(iParam0);
-	if (!DATAFILE::_DATAFILE_GET_BOOL(&uVar0, &(Global_1903928->f_124)))
-	{
-		return 0;
-	}
-	return uVar0;
-}
-
-void func_260(int iParam0, int iParam1)
-{
-	func_277(&(iParam0->f_20), iParam1);
-}
-
-int func_261(int iParam0, int iParam1)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return -1;
-		case 1:
-			return -742846258;
-		case 2:
-			return 131724934;
-		case 3:
-			return 325433051;
-		case 4:
-			return -1943296527;
-		case 5:
-			return 1586684911;
-		case 6:
-			return -1171161482;
-		case 7:
-			return 1038672528;
-		case 8:
-			return -1073329868;
-		case 9:
-			return 1263489075;
-		case 10:
-			return 966390205;
-		case 11:
-			return -2046198715;
-		case 12:
-			return 13;
-		default:
-			break;
-	}
-	if (iParam1 >= 1)
-	{
-	}
-	return StackVal;
-	if (iParam1 >= 1)
-	{
-	}
-	return StackVal;
-}
-
-int func_262(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4)
-{
-	var uVar0;
-
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return 0;
-	}
-	if (iParam4 == -1)
-	{
-		iParam4 = func_194(bParam3);
-	}
-	if (!INVENTORY::_0x22E590F108289A9D(iParam4, iParam0, bParam1, &uVar0))
-	{
-		return 0;
-	}
-	if (!func_270(&uVar0, iParam2, bParam3, 0, iParam4))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_263()
-{
-	return 4;
-}
-
-bool func_264(var uParam0, int iParam1)
-{
-	return func_138(&(uParam0->f_20), iParam1);
+	return false;
 }
 
 float func_265(int iParam0)
@@ -6662,493 +2943,64 @@ float func_265(int iParam0)
 	return uVar0;
 }
 
-int func_266(var uParam0, int iParam1, var uParam2, int iParam3, bool bParam4, var uParam5, int iParam6, bool bParam7)
-{
-	int iVar0;
-
-	iVar0 = func_194(bParam7);
-	if (INVENTORY::_0x033EE4B89F3AC545(iVar0, &uParam0, bParam4) <= iParam6)
-	{
-		return 0;
-	}
-	if (!INVENTORY::_0xBE012571B25F5ACA(iVar0, &uParam0, bParam4, iParam6, uParam5))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_267(int iParam0, int iParam1)
-{
-	*iParam0 = { *iParam1 };
-	iParam0->f_4 = iParam1->f_4;
-	iParam0->f_5 = { iParam1->f_5 };
-	iParam0->f_9 = iParam1->f_9;
-	iParam0->f_11 = iParam1->f_14;
-	if (!STREAMING::IS_MODEL_VALID(iParam0->f_11))
-	{
-		return 0;
-	}
-	iParam0->f_22 = func_278(iParam0->f_11);
-	if (iParam0->f_22 == 0)
-	{
-		return 0;
-	}
-	iParam0->f_12 = { iParam1->f_16 };
-	iParam0->f_27 = iParam1->f_25;
-	iParam0->f_20 = iParam1->f_24;
-	iParam0->f_10 = 0;
-	return 1;
-}
-
-int func_268(int iParam0, int iParam1, bool bParam2)
-{
-	int iVar0;
-
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return 0;
-	}
-	iVar0 = func_194(bParam2);
-	if (!INVENTORY::_0x025A1B1FB03FBF61(iVar0, iParam0, iParam1, 24, 1))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_269(int iParam0, int iParam1)
-{
-	*iParam0 = { *iParam1 };
-	iParam0->f_4 = iParam1->f_4;
-	iParam0->f_5 = { iParam1->f_5 };
-	iParam0->f_9 = iParam1->f_9;
-	iParam0->f_11 = iParam1->f_14;
-	if (!STREAMING::IS_MODEL_VALID(iParam0->f_11))
-	{
-		return 0;
-	}
-	iParam0->f_22 = 0;
-	iParam0->f_12 = { iParam1->f_15 };
-	iParam0->f_20 = iParam1->f_23;
-	iParam0->f_10 = 2;
-	return 1;
-}
-
-int func_270(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
-{
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return 0;
-	}
-	if (iParam4 == -1)
-	{
-		iParam4 = func_194(bParam2);
-	}
-	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, iParam0, iParam1, !bParam3))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_271(int iParam0)
+bool func_271(int iParam0)
 {
 	int iVar0;
 	int iVar1;
 
-	iVar0 = func_279(iParam0);
-	iVar1 = func_280(iVar0);
+	iVar0 = aggregate.net_main_offline.func_1713(iParam0);
+	iVar1 = aggregate.fme_animal_tagging_offline.func_204(iVar0);
 	if (!UNLOCK::_UNLOCK_IS_NEW(iVar1))
 	{
-		return 0;
+		return false;
 	}
 	if (func_281(iParam0))
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
-int func_272(var uParam0)
-{
-	if (((*uParam0 == 0 && uParam0->f_1 == 0) && uParam0->f_2 == 0) && uParam0->f_3 == 0)
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_273(int iParam0)
+bool func_273(int iParam0)
 {
 	if (iParam0 == 1045621973)
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
-int func_274(var uParam0)
+bool func_274(var uParam0)
 {
 	struct<10> Var0;
 
-	if (!func_272(uParam0))
+	if (!aggregate.doc_book.func_308(uParam0))
 	{
-		return 0;
+		return false;
 	}
 	Var0.f_9 = -1591664384;
-	if (!func_248(*uParam0, &Var0, 1, 0, -1))
+	if (!aggregate.bandana.func_66(*uParam0, &Var0, 1, 0, -1))
 	{
-		return 0;
+		return false;
 	}
-	if (!func_203(Var0.f_4, 0))
+	if (!aggregate.bandana.func_30(Var0.f_4, 0))
 	{
-		return 0;
+		return false;
 	}
-	return func_282(Var0.f_4);
+	return aggregate.hub.func_87(Var0.f_4);
 }
 
-void func_275()
-{
-	Global_1903928->f_124 = (Global_1070355->f_26934[48 /*4*/])->f_3;
-	Global_1903928->f_124.f_1 = 0;
-	Global_1903928->f_124.f_2 = 0;
-	Global_1903928->f_124.f_3 = 0;
-	Global_1903928->f_124.f_4 = 0;
-}
-
-int func_276(int iParam0)
-{
-	switch (iParam0)
-	{
-		case -1:
-			return -1844561321;
-		case 0:
-			return 1653124001;
-		case 1:
-			return -430733995;
-		case 2:
-			return 1501387297;
-		case 3:
-			return -1143491563;
-		case 4:
-			return -1460176899;
-		case 5:
-			return 1003181529;
-		default:
-			break;
-	}
-	return 0;
-}
-
-void func_277(var uParam0, int iParam1)
-{
-	if (func_138(uParam0, iParam1))
-	{
-		return;
-	}
-	func_283(uParam0, iParam1);
-}
-
-int func_278(int iParam0)
-{
-	if (iParam0 == 808655744)
-	{
-		return -364764277 /* GXTEntry: "Scrawny Nag" */;
-	}
-	switch (iParam0)
-	{
-		case joaat("a_c_horse_americanpaint_overo"):
-			return -974145463 /* GXTEntry: "American Paint - Overo Coat" */;
-		case joaat("a_c_horse_americanpaint_tobiano"):
-			return 1432602132 /* GXTEntry: "American Paint - Tobiano Coat" */;
-		case 1792770814:
-			return 92296905 /* GXTEntry: "American Paint - Splashed White Coat" */;
-		case -1963397600:
-			return -842044823 /* GXTEntry: "American Paint - Grey Overo Coat" */;
-		case -1250098797:
-			return 1371398552 /* GXTEntry: "American Standardbred - Black Coat" */;
-		case -318278790:
-			return -745453539 /* GXTEntry: "American Standardbred - Buckskin Coat" */;
-		case 55096099:
-			return 1583029039 /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */;
-		case -458397856:
-			return -783061276 /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */;
-		case -444610976:
-			return -1322521536 /* GXTEntry: "Andalusian - Dark Bay Coat" */;
-		case 746627200:
-			return 728055838 /* GXTEntry: "Andalusian - Rose Grey Coat" */;
-		case 705691988:
-			return 1100711204 /* GXTEntry: "Andalusian - Perlino Coat" */;
-		case joaat("a_c_horse_appaloosa_blanket"):
-			return -1782334639 /* GXTEntry: "Appaloosa - Blanket Coat" */;
-		case -1554827654:
-			return -1181052732 /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */;
-		case -1029277326:
-			return -179102320 /* GXTEntry: "Appaloosa - Brown Leopard Coat" */;
-		case joaat("a_c_horse_appaloosa_leopard"):
-			return -1266863668 /* GXTEntry: "Appaloosa - Leopard Coat" */;
-		case joaat("a_c_horse_arabian_black"):
-			return -2078767648 /* GXTEntry: "Arabian - Black Coat" */;
-		case -403470324:
-			return -852553462 /* GXTEntry: "Arabian - Rose Grey Bay Coat" */;
-		case joaat("a_c_horse_arabian_white"):
-			return -80004868 /* GXTEntry: "Arabian - White Coat" */;
-		case joaat("a_c_horse_ardennes_bayroan"):
-			return 1813208211 /* GXTEntry: "Ardennes - Bay Roan Coat" */;
-		case -635239558:
-			return 836323303 /* GXTEntry: "Ardennes - Strawberry Roan Coat" */;
-		case joaat("a_c_horse_ardennes_irongreyroan"):
-			return 153881023 /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */;
-		case joaat("a_c_horse_belgian_blondchestnut"):
-			return -1256798240 /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */;
-		case joaat("a_c_horse_belgian_mealychestnut"):
-			return 2118089359;
-		case 1593035738:
-			return -1537586382 /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */;
-		case 861505058:
-			return 1440692746 /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */;
-		case 687445866:
-			return 697143532 /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */;
-		case 1705182311:
-			return 281128160 /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */;
-		case -78273782:
-			return 1854519167 /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */;
-		case -819697512:
-			return -1376299681 /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */;
-		case -247265944:
-			return -1955947684;
-		case -1265030920:
-			return 1361788230 /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */;
-		case 2024948086:
-			return 1974379573 /* GXTEntry: "Kentucky Saddler - Grey Coat" */;
-		case 1696286663:
-			return 545109431 /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */;
-		case -1342159303:
-			return 1275638003 /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */;
-		case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
-			return 2083573823 /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */;
-		case 2030804811:
-			return 1235275977 /* GXTEntry: "Morgan - Bay Coat" */;
-		case 1230359523:
-			return 892601357 /* GXTEntry: "Morgan - Bay Roan Coat" */;
-		case -1038436471:
-			return 1224695367 /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */;
-		case 96930969:
-			return 648301150 /* GXTEntry: "Morgan - Palomino Coat" */;
-		case -1180427609:
-			return -1597490733 /* GXTEntry: "Mustang - Grullo Dun Coat" */;
-		case joaat("a_c_horse_mustang_wildbay"):
-			return 2000205872 /* GXTEntry: "Mustang - Wild Bay Coat" */;
-		case 43825738:
-			return -1428527735 /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */;
-		case joaat("a_c_horse_nokota_blueroan"):
-			return 170010697 /* GXTEntry: "Nokota - Blue Roan Coat" */;
-		case -1261814606:
-			return -742726637 /* GXTEntry: "Nokota - White Roan Coat" */;
-		case 107013696:
-			return -1714171692 /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */;
-		case 1066034872:
-			return -103101636 /* GXTEntry: "Shire - Dark Bay Coat" */;
-		case 36009259:
-			return -1999094324 /* GXTEntry: "Shire - Light Grey Coat" */;
-		case -1599683008:
-			return 1724200240 /* GXTEntry: "Suffolk Punch - Sorrel Coat" */;
-		case -1693870200:
-			return 237935328 /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */;
-		case 1072019803:
-			return 120848852 /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */;
-		case 1074477367:
-			return -868094182 /* GXTEntry: "Tennessee Walker - Chestnut Coat" */;
-		case -85890205:
-			return -887362763 /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */;
-		case -727455979:
-			return -847714194 /* GXTEntry: "Tennessee Walker - Red Roan Coat" */;
-		case -1667789645:
-			return 1756765331 /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */;
-		case -1924405794:
-			return -813071670 /* GXTEntry: "Thoroughbred - Blood Bay Coat" */;
-		case joaat("a_c_horse_thoroughbred_dapplegrey"):
-			return -1900569233 /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */;
-		case -526169133:
-			return 1688250187 /* GXTEntry: "Thoroughbred - Brindle Coat" */;
-		case 2120708491:
-			return -1262715164 /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */;
-		case 900144280:
-			return 2010625508 /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */;
-		case 1133837220:
-			return -136225010 /* GXTEntry: "Turkoman - Dark Bay Coat" */;
-		case joaat("a_c_horse_turkoman_gold"):
-			return -225011104 /* GXTEntry: "Turkoman - Gold Coat" */;
-		case -1604180548:
-			return -1882436593 /* GXTEntry: "Turkoman - Silver Coat" */;
-		case -683592019:
-			return -757978903 /* GXTEntry: "Breton - Red Roan Coat" */;
-		case 337109765:
-			return 1909854428 /* GXTEntry: "Breton - Sorrel Coat" */;
-		case -619132373:
-			return 1592694494 /* GXTEntry: "Breton - Grullo Dun Coat" */;
-		case 1544366970:
-			return 981469777 /* GXTEntry: "Breton - Seal Brown Coat" */;
-		case -1441144351:
-			return 1064693514 /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */;
-		case -1717674545:
-			return -1365665739 /* GXTEntry: "Breton - Steel Grey Coat" */;
-		case 1825358734:
-			return 1577022605 /* GXTEntry: "Criollo - Blue Roan Overo Coat" */;
-		case 1138427579:
-			return 381495209 /* GXTEntry: "Criollo - Dun Coat" */;
-		case -1720251851:
-			return 3032834 /* GXTEntry: "Criollo - Bay Brindle Coat" */;
-		case 506887890:
-			return -1722101672 /* GXTEntry: "Criollo - Sorrel Overo Coat" */;
-		case 766293155:
-			return -189605757 /* GXTEntry: "Criollo - Bay Frame Overo Coat" */;
-		case 2147082926:
-			return 863391233 /* GXTEntry: "Criollo - Marble Sabino Coat" */;
-		case -1616287563:
-			return 885568364 /* GXTEntry: "Kladruber - Black Coat" */;
-		case -127412252:
-			return -1540355548 /* GXTEntry: "Kladruber - White Coat" */;
-		case -1881155818:
-			return -601560591 /* GXTEntry: "Kladruber - Cremello Coat" */;
-		case -955237712:
-			return -370362766 /* GXTEntry: "Kladruber - Grey Coat" */;
-		case -647020346:
-			return -1698261864 /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */;
-		case -1846319726:
-			return -670301166 /* GXTEntry: "Kladruber - Silver Coat" */;
-		case 1007570567:
-			return -302057902;
-		case 1029339151:
-			return 1257620801;
-		case -1424767799:
-			return 821735821;
-		case -217135948:
-			return -769035812;
-		case -156439156:
-			return -1824684932;
-		case 1344011125:
-			return 1589592948;
-		case joaat("a_c_donkey_01"):
-			return -1331210307 /* GXTEntry: "Donkey" */;
-		case joaat("a_c_horsemule_01"):
-			return 122449722 /* GXTEntry: "Mule" */;
-		case joaat("a_c_horsemulepainted_01"):
-			return -1784502482 /* GXTEntry: "Mule - Painted" */;
-		case 1883159941:
-			return -1943445834;
-		case -1028075925:
-			return -635244104 /* GXTEntry: "Appaloosa - Black Snowflake" */;
-		case 84224102:
-			return -1427377767 /* GXTEntry: "Arabian - Grey Coat" */;
-		case 1496579364:
-			return -2055655009 /* GXTEntry: "Arabian - Red Chestnut Coat" */;
-		case -1896838685:
-			return -1293672675 /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */;
-		case -420599285:
-			return -1179079660 /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */;
-		case 478986344:
-			return 805526368 /* GXTEntry: "Mustang - Golden Dun Coat" */;
-		case 446670976:
-			return 1342496140 /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */;
-		case joaat("a_c_horse_shire_ravenblack"):
-			return -126555855 /* GXTEntry: "Shire - Raven Black Coat" */;
-		case 549900435:
-			return 294243421 /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */;
-		case -2063289686:
-			return -997197050 /* GXTEntry: "Thoroughbred - Seal Brown Coat" */;
-		case 917402668:
-			return -235714362 /* GXTEntry: "Appaloosa - Blanket Coat" */;
-		case -914712122:
-			return -1678164 /* GXTEntry: "Nokota - Blue Roan Coat" */;
-		case -598917269:
-			return -977833913 /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */;
-		case joaat("a_c_horse_winter02_01"):
-			return 1589164943 /* GXTEntry: "Thoroughbred - Silver Bay Coat" */;
-		default:
-			break;
-	}
-	return 0;
-}
-
-int func_279(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 3:
-			return 12;
-		case 2:
-			return 7;
-		case 1:
-			return 11;
-		case 0:
-			return 15;
-		default:
-			break;
-	}
-	return -1;
-}
-
-int func_280(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return joaat("CHARACTER_RANK");
-		case 7:
-			return joaat("CHARACTER_RANK_BOUNTY_HUNTER");
-		case 12:
-			return joaat("CHARACTER_RANK_COLLECTOR");
-		case 11:
-			return joaat("CHARACTER_RANK_TRADER");
-		case 13:
-			return 705255263 /* GXTEntry: "Club Rewards" */;
-		case 14:
-			return -471215553 /* GXTEntry: "Club Rewards" */;
-		case 15:
-			return 1371028520;
-		case 16:
-			return 1479488426;
-		case 17:
-			return -170363364;
-		default:
-			break;
-	}
-	return 0;
-}
-
-int func_281(int iParam0)
+bool func_281(int iParam0)
 {
 	switch (iParam0)
 	{
 		case 0:
 			if (!UNLOCK::_UNLOCK_IS_UNLOCKED(-1348352077))
 			{
-				return 1;
+				return true;
 			}
 			break;
 	}
-	return 0;
-}
-
-bool func_282(var uParam0)
-{
-	return UNLOCK::_UNLOCK_IS_NEW(func_284(uParam0));
-}
-
-void func_283(var uParam0, int iParam1)
-{
-	func_285(uParam0, iParam1);
-}
-
-var func_284(var uParam0)
-{
-	return uParam0;
-}
-
-void func_285(var uParam0, int iParam1)
-{
-	*uParam0 = (*uParam0 || iParam1);
+	return false;
 }
 

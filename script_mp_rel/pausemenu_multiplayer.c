@@ -73,94 +73,38 @@ void __EntryFunction__()
 
 void func_1(bool bParam0)
 {
-	func_4(68);
+	aggregate.fm_deathmatch_controller.func_1253(68);
 	if (bParam0)
 	{
-		func_5(joaat("freeroam"), 16);
+		aggregate.pausemenu_multiplayer.func_5(joaat("freeroam"), 16);
 	}
 	else
 	{
-		func_5(joaat("freeroam"), 0);
+		aggregate.pausemenu_multiplayer.func_5(joaat("freeroam"), 0);
 	}
-	func_6(3);
+	aggregate.fm_deathmatch_controller.func_1254(3);
 }
 
-int func_2()
+bool func_2()
 {
 	if (MISC::IS_ORBIS_VERSION())
 	{
 		if (!NETWORK::_0x595F028698072DD9(-1))
 		{
 			NETWORK::_0x5C497525F803486B();
-			return 0;
+			return false;
 		}
 	}
-	func_4(68);
-	func_5(joaat("mission_creator"), 2);
-	func_6(3);
-	return 1;
+	aggregate.fm_deathmatch_controller.func_1253(68);
+	aggregate.pausemenu_multiplayer.func_5(joaat("mission_creator"), 2);
+	aggregate.fm_deathmatch_controller.func_1254(3);
+	return true;
 }
 
 void func_3()
 {
-	func_4(4);
-	func_6(2);
-	func_5(joaat("single_player"), 0);
-}
-
-void func_4(int iParam0)
-{
-	Global_1572864->f_3 = (Global_1572864->f_3 || iParam0);
-}
-
-void func_5(int iParam0, int iParam1)
-{
-	Global_1572887->f_387 = iParam0;
-	Global_1572887->f_387.f_1 = iParam1;
-	func_7();
-}
-
-void func_6(int iParam0)
-{
-	if (iParam0 == 0)
-	{
-		iParam0 = 1;
-	}
-	Global_1572864->f_1 = iParam0;
-}
-
-void func_7()
-{
-	int iVar0;
-	int iVar1;
-
-	iVar0 = Global_1572887->f_387.f_1;
-	iVar1 = 0;
-	iVar1 = 0;
-	while (iVar1 <= 30)
-	{
-		if (MISC::IS_BIT_SET(iVar0, iVar1))
-		{
-		}
-		iVar1++;
-	}
-	if (Global_1572887->f_387.f_2 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_3 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_4 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_5 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_6 != -1)
-	{
-	}
-	if (Global_1572887->f_387.f_8 != 0)
-	{
-	}
+	aggregate.fm_deathmatch_controller.func_1253(4);
+	aggregate.fm_deathmatch_controller.func_1254(2);
+	aggregate.pausemenu_multiplayer.func_5(joaat("single_player"), 0);
 }
 

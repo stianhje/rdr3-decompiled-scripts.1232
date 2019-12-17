@@ -14,8 +14,5 @@
 	var uLocal_12 = 0;
 #endregion
 
-void __EntryFunction__()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
-}
+// __EntryFunction__ == aberdeenpigfarm.func_46
 

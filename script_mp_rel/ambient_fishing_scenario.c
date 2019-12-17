@@ -25,87 +25,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-void __EntryFunction__()
-{
-	iLocal_13 = 1;
-	iLocal_15 = vScriptParam_0.x;
-	uLocal_16 = vScriptParam_0.y;
-	uLocal_17 = vScriptParam_0.z;
-	func_1();
-	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
-	{
-		func_2();
-	}
-	while (!SCRIPTS::_0x9E4EF615E307FBBE() && func_3())
-	{
-		func_4();
-		func_5();
-		func_6();
-		BUILTIN::WAIT(0);
-	}
-	func_2();
-}
-
-void func_1()
-{
-}
-
-void func_2()
-{
-	func_7();
-	SCRIPTS::_0xE7282390542F570D(iLocal_15);
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		func_8();
-	}
-	else
-	{
-		SCRIPTS::TERMINATE_THIS_THREAD();
-	}
-}
-
-int func_3()
-{
-	if (iLocal_14 != 0)
-	{
-		if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iLocal_14) == 0)
-		{
-			return iLocal_13;
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	return iLocal_13;
-}
-
-void func_4()
-{
-}
-
-void func_5()
-{
-	int iVar0;
-
-	iVar0 = 0;
-	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(2))
-	{
-		switch (SCRIPTS::GET_EVENT_AT_INDEX(2, iVar0))
-		{
-			case -45008988:
-				func_9(iVar0);
-				break;
-			case -456923784:
-				func_10(iVar0);
-				break;
-			case -843555838:
-				func_11(iVar0);
-				break;
-		}
-		iVar0++;
-	}
-}
+// __EntryFunction__ == ambient_fishing_scenario.__EntryFunction__
 
 void func_6()
 {
@@ -152,60 +72,14 @@ void func_6()
 	}
 }
 
-void func_7()
-{
-	func_14();
-}
-
-void func_8()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
-}
-
-void func_9(int iParam0)
-{
-	int iVar0;
-
-	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
-	if (iVar0 == iLocal_15)
-	{
-		SCRIPTS::SET_EVENT_FLAG_FOR_DELETION(2, iParam0, 1);
-		func_15(&iVar0);
-	}
-}
-
-void func_10(int iParam0)
-{
-	int iVar0;
-
-	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
-	if (iVar0 == iLocal_15)
-	{
-		SCRIPTS::SET_EVENT_FLAG_FOR_DELETION(2, iParam0, 1);
-		func_16(&iVar0);
-	}
-}
-
-void func_11(int iParam0)
-{
-	int iVar0;
-
-	SCRIPTS::GET_EVENT_DATA(2, iParam0, &iVar0, 2);
-	if (iVar0 == iLocal_15)
-	{
-		SCRIPTS::SET_EVENT_FLAG_FOR_DELETION(2, iParam0, 1);
-		func_17(&iVar0);
-	}
-}
-
 void func_12(int iParam0, int iParam1)
 {
 	switch (Local_18)
 	{
 		case 0:
-			if (((func_18() != 0 && ENTITY::DOES_ENTITY_EXIST(iParam1)) && func_19()) && func_20(iParam1))
+			if (((aggregate.aberdeenpigfarm.func_45() != 0 && ENTITY::DOES_ENTITY_EXIST(iParam1)) && func_19()) && func_20(iParam1))
 			{
-				func_21(1);
+				aggregate.ambient_fishing_scenario.func_21(1);
 			}
 			break;
 		case 1:
@@ -213,7 +87,7 @@ void func_12(int iParam0, int iParam1)
 		case 2:
 			if (func_22(iParam0))
 			{
-				func_21(3);
+				aggregate.ambient_fishing_scenario.func_21(3);
 			}
 			break;
 		case 3:
@@ -221,7 +95,7 @@ void func_12(int iParam0, int iParam1)
 		case 4:
 			if (func_23())
 			{
-				func_21(1);
+				aggregate.ambient_fishing_scenario.func_21(1);
 			}
 			break;
 		case 5:
@@ -245,7 +119,7 @@ void func_13()
 {
 	if (Local_18 == 1)
 	{
-		func_21(2);
+		aggregate.ambient_fishing_scenario.func_21(2);
 	}
 }
 
@@ -269,36 +143,19 @@ void func_14()
 	func_24(&(Local_18.f_5));
 	func_24(&(Local_18.f_6));
 	func_24(&(Local_18.f_7));
-	func_21(0);
+	aggregate.ambient_fishing_scenario.func_21(0);
 }
 
-void func_15(int iParam0)
-{
-}
-
-void func_16(int iParam0)
-{
-}
-
-void func_17(int iParam0)
-{
-}
-
-int func_18()
-{
-	return Global_1572887->f_13;
-}
-
-int func_19()
+bool func_19()
 {
 	STREAMING::REQUEST_MODEL(Local_18.f_1, false);
 	STREAMING::REQUEST_MODEL(Local_18.f_2, false);
 	STREAMING::REQUEST_MODEL(Local_18.f_3, false);
 	if ((STREAMING::HAS_MODEL_LOADED(Local_18.f_1) && STREAMING::HAS_MODEL_LOADED(Local_18.f_2)) && STREAMING::HAS_MODEL_LOADED(Local_18.f_3))
 	{
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
 bool func_20(int iParam0)
@@ -340,10 +197,10 @@ bool func_20(int iParam0)
 		if (!PHYSICS::DOES_ROPE_EXIST(Local_18.f_8))
 		{
 			vVar4 = { vVar1 };
-			Local_18.f_8 = PHYSICS::_0xE9C59F6809373A99(vVar4, 0f, 0f, 0f, Local_18.f_12, 8, 0, -1, -1082130432);
+			Local_18.f_8 = PHYSICS::_0xE9C59F6809373A99(vVar4, 0f, 0f, 0f, Local_18.f_12, 8, 0, -1, -1082130432 /* Float: -1f */);
 			PHYSICS::_0xD699E688B49C0FD2(Local_18.f_8, 0.5f, Local_18.f_10, Local_18.f_10, 1);
 			PHYSICS::_0x462FF2A432733A44(Local_18.f_8, iParam0, Local_18.f_5, 0f, 0f, 0f, 0f, 0f, 0f, Local_18.f_4, "rod_attach");
-			PHYSICS::_0x3C6490D940FF5D0B(Local_18.f_8, 0, 0, -1082130432, 1);
+			PHYSICS::_0x3C6490D940FF5D0B(Local_18.f_8, 0, 0, -1082130432 /* Float: -1f */, 1);
 			PHYSICS::_0xBB3E9B073E66C3C9(Local_18.f_8, 1, 1, 1, 0);
 			PHYSICS::_0x423C6B1F3786D28B(Local_18.f_8, 1);
 			PHYSICS::ROPE_SET_UPDATE_ORDER(Local_18.f_8, 1);
@@ -353,10 +210,10 @@ bool func_20(int iParam0)
 		if (!PHYSICS::DOES_ROPE_EXIST(Local_18.f_9))
 		{
 			vVar4 = { ENTITY::GET_ENTITY_COORDS(Local_18.f_5, true, false) };
-			Local_18.f_9 = PHYSICS::_0xE9C59F6809373A99(vVar4, 0f, 0f, 0f, Local_18.f_11, 10, 0, -1, -1082130432);
+			Local_18.f_9 = PHYSICS::_0xE9C59F6809373A99(vVar4, 0f, 0f, 0f, Local_18.f_11, 10, 0, -1, -1082130432 /* Float: -1f */);
 			PHYSICS::_0xD699E688B49C0FD2(Local_18.f_9, 0.5f, Local_18.f_11, Local_18.f_11, 1);
 			PHYSICS::_0x462FF2A432733A44(Local_18.f_9, Local_18.f_5, Local_18.f_6, 0f, 0f, 0f, 0f, 0f, 0f, "hook_attach", "fishingLine_bone");
-			PHYSICS::_0x3C6490D940FF5D0B(Local_18.f_9, 0, 0, -1082130432, 1);
+			PHYSICS::_0x3C6490D940FF5D0B(Local_18.f_9, 0, 0, -1082130432 /* Float: -1f */, 1);
 			PHYSICS::_0xBB3E9B073E66C3C9(Local_18.f_9, 1, 1, 1, 0);
 			PHYSICS::ROPE_SET_UPDATE_ORDER(Local_18.f_9, 1);
 			PHYSICS::_0xC89E7410A93AC19A(Local_18.f_9, 0f);
@@ -365,19 +222,11 @@ bool func_20(int iParam0)
 	return (PHYSICS::DOES_ROPE_EXIST(Local_18.f_8) && PHYSICS::DOES_ROPE_EXIST(Local_18.f_9));
 }
 
-void func_21(int iParam0)
-{
-	if (Local_18 != iParam0)
-	{
-		Local_18 = iParam0;
-	}
-}
-
-int func_22(int iParam0)
+bool func_22(int iParam0)
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) || !PHYSICS::DOES_ROPE_EXIST(Local_18.f_8))
 	{
-		return 0;
+		return false;
 	}
 	if (Local_18.f_17 == 0)
 	{
@@ -390,16 +239,16 @@ int func_22(int iParam0)
 	{
 		PHYSICS::STOP_ROPE_UNWINDING_FRONT(Local_18.f_8);
 		Local_18.f_17 = 0;
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
-int func_23()
+bool func_23()
 {
 	if ((!PHYSICS::DOES_ROPE_EXIST(Local_18.f_8) || !ENTITY::DOES_ENTITY_EXIST(Local_18.f_5)) || !ENTITY::DOES_ENTITY_EXIST(Local_18.f_6))
 	{
-		return 0;
+		return false;
 	}
 	if (Local_18.f_17 == 0)
 	{
@@ -413,9 +262,9 @@ int func_23()
 		Local_18.f_17 = 0;
 		PHYSICS::SET_DAMPING(Local_18.f_5, 0, Local_18.f_15);
 		PHYSICS::SET_DAMPING(Local_18.f_6, 0, Local_18.f_15);
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
 void func_24(int* iParam0)
@@ -457,11 +306,11 @@ void func_25(int iParam0)
 	vVar0 = { ENTITY::GET_ENTITY_COORDS(Local_18.f_5, true, false) };
 	fVar3 = ENTITY::GET_ENTITY_HEADING(iParam0);
 	vVar4 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vVar0, fVar3, 0f, 10f, 0f) };
-	vVar7 = { func_26(vVar4 - vVar0) };
+	vVar7 = { aggregate.ambient_fishing_scenario.func_26(vVar4 - vVar0) };
 	fVar10 = 1f;
 	fVar11 = 0f;
 	func_27(&fVar10, &fVar11, 45f);
-	vVar12 = { func_26(vVar7.x, vVar7.y, fVar11) };
+	vVar12 = { aggregate.ambient_fishing_scenario.func_26(vVar7.x, vVar7.y, fVar11) };
 	vVar15 = { vVar12 * FtoV((Local_18.f_12 * 5f)) };
 	PHYSICS::SET_DAMPING(Local_18.f_5, 0, Local_18.f_16);
 	PHYSICS::SET_DAMPING(Local_18.f_6, 0, Local_18.f_16);
@@ -469,26 +318,6 @@ void func_25(int iParam0)
 	ENTITY::APPLY_FORCE_TO_ENTITY(Local_18.f_6, 3, vVar15, 0f, 0f, 0f, 0, false, true, true, false, true);
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_18.f_5, 1);
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_18.f_6, 1);
-}
-
-Vector3 func_26(vector3 vParam0)
-{
-	float fVar0;
-	float fVar1;
-
-	fVar0 = BUILTIN::VMAG(vParam0);
-	if (fVar0 != 0f)
-	{
-		fVar1 = (1f / fVar0);
-		vParam0 = { vParam0 * Vector(fVar1, fVar1, fVar1) };
-	}
-	else
-	{
-		vParam0.x = 0f;
-		vParam0.f_1 = 0f;
-		vParam0.f_2 = 0f;
-	}
-	return vParam0;
 }
 
 void func_27(float fParam0, float fParam1, float fParam2)

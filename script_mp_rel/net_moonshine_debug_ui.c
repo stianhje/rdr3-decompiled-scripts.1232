@@ -27,11 +27,6 @@
 void __EntryFunction__()
 {
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-	func_1();
-}
-
-void func_1()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
+	aggregate.aberdeenpigfarm.func_46();
 }
 

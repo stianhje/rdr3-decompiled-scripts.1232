@@ -153,7 +153,7 @@ int func_2(int* iParam0)
 		return 1;
 	}
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-	func_6(iParam0, -2017342099);
+	aggregate.camera_item.func_77(iParam0, -2017342099);
 	if (!func_7(iParam0))
 	{
 		return 1;
@@ -169,7 +169,7 @@ int func_2(int* iParam0)
 
 void func_3(int iParam0)
 {
-	func_11(0, -1343026476);
+	aggregate.dynamic_craft_scenario.func_385(0, -1343026476);
 	func_12();
 	func_13(iParam0);
 	if (!func_14(iParam0))
@@ -221,25 +221,20 @@ void func_5(int* iParam0)
 	}
 }
 
-void func_6(var uParam0, int iParam1)
-{
-	uParam0->f_1 = iParam1;
-}
-
-int func_7(var uParam0)
+bool func_7(var uParam0)
 {
 	uParam0->f_94 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "weapon_locker");
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_94))
 	{
-		return 0;
+		return false;
 	}
 	uParam0->f_94.f_1 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_94, "header_text", MISC::_CREATE_VAR_STRING(2, "WL_HEADER"));
 	uParam0->f_94.f_2 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_94, "footer_text", "Footer text");
 	uParam0->f_94.f_3 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_94, "footer_color", joaat("COLOR_WHITE"));
-	return 1;
+	return true;
 }
 
-int func_8(var uParam0)
+bool func_8(var uParam0)
 {
 	var uVar0;
 	char* sVar6;
@@ -247,15 +242,15 @@ int func_8(var uParam0)
 
 	if (!func_19(uParam0, &(uParam0->f_94)))
 	{
-		return 0;
+		return false;
 	}
 	if (!func_20(&(uParam0->f_2.f_2), &(uParam0->f_2), &uVar0))
 	{
-		return 0;
+		return false;
 	}
 	if (func_21(&(uParam0->f_2.f_13), &(uParam0->f_2), 1673159803))
 	{
-		func_22(&(uParam0->f_2.f_13));
+		aggregate.binoculars.func_16(&(uParam0->f_2.f_13));
 		iVar7 = 0;
 		while (iVar7 < 4)
 		{
@@ -269,53 +264,26 @@ int func_8(var uParam0)
 	}
 	else
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
 void func_9(int* iParam0, int iParam1)
 {
-	if (func_25(iParam0) != iParam1)
+	if (aggregate.camera_item.func_12(iParam0) != iParam1)
 	{
-		func_6(iParam0, iParam1);
-		func_26(iParam0, func_25(iParam0));
-		func_27(iParam0, func_25(iParam0));
+		aggregate.camera_item.func_77(iParam0, iParam1);
+		func_26(iParam0, aggregate.camera_item.func_12(iParam0));
+		func_27(iParam0, aggregate.camera_item.func_12(iParam0));
 	}
-	func_28(iParam0, func_25(iParam0));
-	func_29(iParam0, func_25(iParam0));
+	func_28(iParam0, aggregate.camera_item.func_12(iParam0));
+	func_29(iParam0, aggregate.camera_item.func_12(iParam0));
 }
 
 void func_10(int* iParam0)
 {
 	WEAPON::_0x94A3C1B804D291EC(Global_35, 0, 0, 1, 0);
-}
-
-int func_11(bool bParam0, int iParam1)
-{
-	if (!NETWORK::NETWORK_IS_IN_SESSION())
-	{
-		return 0;
-	}
-	if (!Global_1099293->f_16)
-	{
-		return 0;
-	}
-	if (!func_30())
-	{
-		return 0;
-	}
-	if (!func_31())
-	{
-		return 0;
-	}
-	Global_0 = iParam1;
-	if (bParam0)
-	{
-		func_32(&Global_0, 8);
-	}
-	func_32(&Global_0, 1);
-	return 1;
 }
 
 void func_12()
@@ -332,42 +300,42 @@ void func_13(int iParam0)
 	UIAPPS::_CLOSE_APP_BY_HASH(1937840514);
 }
 
-int func_14(int iParam0)
+bool func_14(int iParam0)
 {
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(iParam0->f_94))
 	{
-		return 0;
+		return false;
 	}
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(iParam0->f_94);
-	return 1;
+	return true;
 }
 
-int func_15(int iParam0)
+bool func_15(int iParam0)
 {
-	if (!func_33(iParam0))
+	if (!aggregate.benedictpoint.func_17(iParam0))
 	{
 	}
-	return 1;
+	return true;
 }
 
-int func_16(int iParam0)
+bool func_16(int iParam0)
 {
 	if (!UIAPPS::_CAN_LAUNCH_APP_BY_HASH(iParam0))
 	{
-		return 0;
+		return false;
 	}
 	switch (UIAPPS::_LAUNCH_APP_BY_HASH(1937840514))
 	{
 		case 0:
-			return 1;
+			return true;
 		case 1:
-			return 0;
+			return false;
 		case 2:
-			return 0;
+			return false;
 		default:
 			break;
 	}
-	return 0;
+	return false;
 }
 
 void func_17(int* iParam0)
@@ -382,9 +350,9 @@ void func_17(int* iParam0)
 			UIEVENTS::_EVENT_MANAGER_POP_EVENT(1600976403);
 		}
 	}
-	if (func_35(iParam0))
+	if (aggregate.net_cutscene.func_40(iParam0))
 	{
-		Var0 = { func_36(iParam0) };
+		Var0 = { aggregate.hub_offers.func_24(iParam0) };
 		func_34(iParam0, &Var0);
 		func_37(iParam0);
 	}
@@ -394,24 +362,24 @@ void func_18(int* iParam0)
 {
 	struct<4> Var0;
 
-	if (func_35(iParam0))
+	if (aggregate.net_cutscene.func_40(iParam0))
 	{
-		Var0 = { func_36(iParam0) };
+		Var0 = { aggregate.hub_offers.func_24(iParam0) };
 		func_34(iParam0, &Var0);
 		func_37(iParam0);
 	}
 }
 
-int func_19(var uParam0, var uParam1)
+bool func_19(var uParam0, var uParam1)
 {
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam1))
 	{
-		return 0;
+		return false;
 	}
 	uParam0->f_2 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(*uParam1, "weapons_page");
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_2))
 	{
-		return 0;
+		return false;
 	}
 	uParam0->f_2.f_1 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST(uParam0->f_2, "weapon_list");
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_2.f_1))
@@ -420,14 +388,14 @@ int func_19(var uParam0, var uParam1)
 	}
 	uParam0->f_2.f_90 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_2, "weapon_list_hint_visible", false);
 	uParam0->f_2.f_91 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_2, "weapon_list_hint_label", false);
-	return 1;
+	return true;
 }
 
-int func_20(var uParam0, var uParam1, var uParam2)
+bool func_20(var uParam0, var uParam1, var uParam2)
 {
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam1))
 	{
-		return 0;
+		return false;
 	}
 	*uParam0 = *uParam1;
 	uParam0->f_1 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam1, "weapon_stat_visible", *uParam2);
@@ -436,14 +404,14 @@ int func_20(var uParam0, var uParam1, var uParam2)
 	uParam0->f_4 = DATABINDING::_DATABINDING_ADD_DATA_INT(*uParam1, "WeaponAccuracyNew", uParam2->f_3);
 	uParam0->f_5 = DATABINDING::_DATABINDING_ADD_DATA_INT(*uParam1, "WeaponFireRateNew", uParam2->f_4);
 	uParam0->f_6 = DATABINDING::_DATABINDING_ADD_DATA_INT(*uParam1, "WeaponReloadNew", uParam2->f_5);
-	return 1;
+	return true;
 }
 
-int func_21(var uParam0, var uParam1, int iParam2)
+bool func_21(var uParam0, var uParam1, int iParam2)
 {
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam1))
 	{
-		return 0;
+		return false;
 	}
 	*uParam0 = *uParam1;
 	uParam0->f_1 = DATABINDING::_DATABINDING_ADD_DATA_INT(*uParam1, "tabCount", false);
@@ -453,12 +421,7 @@ int func_21(var uParam0, var uParam1, int iParam2)
 	uParam0->f_5 = 1;
 	uParam0->f_4 = 0;
 	uParam0->f_6 = 0;
-	return 1;
-}
-
-void func_22(var uParam0)
-{
-	uParam0->f_4 = 0;
+	return true;
 }
 
 char* func_23(int iParam0)
@@ -479,29 +442,24 @@ char* func_23(int iParam0)
 	return "INVALID_LABEL";
 }
 
-int func_24(var uParam0, var uParam1, int iParam2, char* sParam3)
+bool func_24(var uParam0, var uParam1, int iParam2, char* sParam3)
 {
 	int iVar0;
 
 	iVar0 = *uParam1;
 	if (uParam0->f_4 >= iVar0)
 	{
-		return 0;
+		return false;
 	}
 	if (!uParam0->f_5)
 	{
-		return 0;
+		return false;
 	}
 	(*uParam1)[uParam0->f_4 /*17*/] = iParam2;
-	((*uParam1)[uParam0->f_4 /*17*/])->f_1 = { func_38(sParam3) };
+	((*uParam1)[uParam0->f_4 /*17*/])->f_1 = { aggregate.net_mc_vs_mission_intro.func_1797(sParam3) };
 	uParam0->f_4++;
 	DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam0->f_1, uParam0->f_4);
-	return 1;
-}
-
-int func_25(int* iParam0)
-{
-	return iParam0->f_1;
+	return true;
 }
 
 void func_26(var uParam0, int iParam1)
@@ -509,7 +467,7 @@ void func_26(var uParam0, int iParam1)
 	switch (iParam1)
 	{
 		case -488492526:
-			func_39(uParam0);
+			aggregate.aberdeenpigfarm.func_154(uParam0);
 			break;
 	}
 }
@@ -544,30 +502,6 @@ void func_29(int* iParam0, int iParam1)
 	}
 }
 
-bool func_30()
-{
-	return !Global_1572887->f_9;
-}
-
-int func_31()
-{
-	if (NETWORK::_0xDD73C9838CE7181D())
-	{
-		return 1;
-	}
-	return 0;
-}
-
-void func_32(var uParam0, int iParam1)
-{
-	uParam0->f_2 = (uParam0->f_2 || iParam1);
-}
-
-int func_33(int iParam0)
-{
-	return 1;
-}
-
 void func_34(int* iParam0, int iParam1)
 {
 	int iVar0;
@@ -579,7 +513,7 @@ void func_34(int* iParam0, int iParam1)
 			func_43(iParam0);
 			break;
 		case -1740156697:
-			if (func_44(&(iParam0->f_2.f_13)))
+			if (aggregate.binoculars.func_15(&(iParam0->f_2.f_13)))
 			{
 			}
 			else
@@ -608,55 +542,55 @@ void func_34(int* iParam0, int iParam1)
 				case -1313710397:
 					if (func_49(&(iParam1->f_3), 2))
 					{
-						func_50(iParam0, 0, 1);
+						aggregate.hub_offers.func_26(iParam0, 0, 1);
 					}
 					break;
 				case -1756222973:
 					if (func_49(&(iParam1->f_3), 3))
 					{
-						func_50(iParam0, 0, 1);
+						aggregate.hub_offers.func_26(iParam0, 0, 1);
 					}
 					break;
 				case -1073027202:
 					if (func_51(&(iParam1->f_3)))
 					{
-						func_50(iParam0, 0, 1);
+						aggregate.hub_offers.func_26(iParam0, 0, 1);
 					}
 					break;
 				case -1103499950:
 					if (func_52(&(iParam1->f_3)))
 					{
-						func_50(iParam0, 0, 1);
+						aggregate.hub_offers.func_26(iParam0, 0, 1);
 					}
 					break;
 				case -946029012:
 					if (func_49(&(iParam1->f_3), 10))
 					{
-						func_50(iParam0, 0, 1);
+						aggregate.hub_offers.func_26(iParam0, 0, 1);
 					}
 					break;
 				case 1554581363:
 					if (func_49(&(iParam1->f_3), 9))
 					{
-						func_50(iParam0, 0, 1);
+						aggregate.hub_offers.func_26(iParam0, 0, 1);
 					}
 					break;
 				case 941907253:
 					if (func_49(&(iParam1->f_3), 4))
 					{
-						func_50(iParam0, 0, 1);
+						aggregate.hub_offers.func_26(iParam0, 0, 1);
 					}
 					break;
 				case -466398939:
 					if (func_49(&(iParam1->f_3), 7))
 					{
-						func_50(iParam0, 0, 1);
+						aggregate.hub_offers.func_26(iParam0, 0, 1);
 					}
 					break;
 				case -260514364:
 					if (func_49(&(iParam1->f_3), 8))
 					{
-						func_50(iParam0, 0, 1);
+						aggregate.hub_offers.func_26(iParam0, 0, 1);
 					}
 					break;
 			}
@@ -674,16 +608,6 @@ void func_34(int* iParam0, int iParam1)
 	}
 }
 
-bool func_35(int* iParam0)
-{
-	return iParam0->f_98 != 0;
-}
-
-struct<4> func_36(int* iParam0)
-{
-	return iParam0->f_98;
-}
-
 void func_37(int* iParam0)
 {
 	var uVar0;
@@ -692,18 +616,6 @@ void func_37(int* iParam0)
 	iParam0->f_98.f_2 = 0;
 	iParam0->f_98.f_1 = 0;
 	iParam0->f_98.f_3 = uVar0;
-}
-
-struct<16> func_38(char* sParam0)
-{
-	char cVar0[128];
-
-	StringCopy(&cVar0, sParam0, 128);
-	return cVar0;
-}
-
-void func_39(var uParam0)
-{
 }
 
 void func_40(var uParam0)
@@ -719,13 +631,13 @@ void func_41(int* iParam0)
 {
 	int iVar0;
 
-	if (func_44(&(iParam0->f_2.f_13)))
+	if (aggregate.binoculars.func_15(&(iParam0->f_2.f_13)))
 	{
-		func_50(iParam0, 0, 1);
+		aggregate.hub_offers.func_26(iParam0, 0, 1);
 	}
-	if (func_54(iParam0, 0))
+	if (aggregate.fme_animal_tagging.func_1458(iParam0, 0))
 	{
-		func_50(iParam0, 0, 0);
+		aggregate.hub_offers.func_26(iParam0, 0, 0);
 		iVar0 = func_55(iParam0);
 		if (!func_56(iParam0, iVar0))
 		{
@@ -759,7 +671,7 @@ void func_42(var uParam0, var uParam1)
 		return;
 	}
 	iVar1 = *uParam1;
-	iVar2 = func_61(uParam0);
+	iVar2 = aggregate.camera_item.func_12(uParam0);
 	iVar3 = (iVar2 - 1);
 	if (iVar0 < 0 || iVar0 > iVar3)
 	{
@@ -785,11 +697,6 @@ int func_43(var uParam0)
 	return 1;
 }
 
-bool func_44(var uParam0)
-{
-	return uParam0->f_6;
-}
-
 int func_45(var uParam0, int iParam1)
 {
 	if (*iParam1 == 0)
@@ -800,7 +707,7 @@ int func_45(var uParam0, int iParam1)
 	return 1;
 }
 
-int func_46(var uParam0, var uParam1)
+bool func_46(var uParam0, var uParam1)
 {
 	bool bVar0;
 	bool bVar1;
@@ -808,31 +715,31 @@ int func_46(var uParam0, var uParam1)
 
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam1))
 	{
-		return 0;
+		return false;
 	}
 	bVar0 = DATABINDING::_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT(*uParam1, "inventory_item");
 	bVar1 = DATABINDING::_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT(*uParam1, "inventory_item_slot");
-	Var2 = { func_63(bVar0, func_62(0), bVar1, 0) };
-	if (!func_64(&Var2))
+	Var2 = { aggregate.bandana.func_59(bVar0, aggregate.bandana.func_60(0), bVar1, 0) };
+	if (!aggregate.doc_book.func_308(&Var2))
 	{
-		return 0;
+		return false;
 	}
 	func_65(uParam0, Var2);
-	return 1;
+	return true;
 }
 
-int func_47(var uParam0, var uParam1)
+bool func_47(var uParam0, var uParam1)
 {
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam1))
 	{
-		return 0;
+		return false;
 	}
 	DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam0->f_2, DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(*uParam1, "stat_damage"));
 	DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam0->f_3, DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(*uParam1, "stat_range"));
 	DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam0->f_4, DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(*uParam1, "stat_accuracy"));
 	DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam0->f_5, DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(*uParam1, "stat_firerate"));
 	DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam0->f_6, DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(*uParam1, "stat_reload"));
-	return 1;
+	return true;
 }
 
 void func_48(var uParam0, int iParam1)
@@ -854,41 +761,29 @@ void func_48(var uParam0, int iParam1)
 	}
 }
 
-int func_49(var uParam0, int iParam1)
+bool func_49(var uParam0, int iParam1)
 {
 	bool bVar0;
 	bool bVar1;
 
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam0))
 	{
-		return 0;
+		return false;
 	}
 	bVar0 = DATABINDING::_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT(*uParam0, "inventory_item");
-	if (!func_67(bVar0, 0))
+	if (!aggregate.bandana.func_30(bVar0, 0))
 	{
-		return 0;
+		return false;
 	}
 	bVar1 = DATABINDING::_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT(*uParam0, "inventory_item_slot");
 	if (!func_68(bVar0, bVar1, iParam1))
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
-void func_50(int* iParam0, int iParam1, bool bParam2)
-{
-	if (bParam2)
-	{
-		func_69(iParam0, iParam1);
-	}
-	else
-	{
-		func_70(iParam0, iParam1);
-	}
-}
-
-int func_51(var uParam0)
+bool func_51(var uParam0)
 {
 	bool bVar0;
 	bool bVar1;
@@ -896,27 +791,27 @@ int func_51(var uParam0)
 
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam0))
 	{
-		return 0;
+		return false;
 	}
 	bVar0 = DATABINDING::_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT(*uParam0, "inventory_item");
-	if (!func_67(bVar0, 0))
+	if (!aggregate.bandana.func_30(bVar0, 0))
 	{
-		return 0;
+		return false;
 	}
 	bVar1 = DATABINDING::_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT(*uParam0, "inventory_item_slot");
-	Var2 = { func_63(bVar0, func_62(0), bVar1, 0) };
-	if (!func_64(&Var2))
+	Var2 = { aggregate.bandana.func_59(bVar0, aggregate.bandana.func_60(0), bVar1, 0) };
+	if (!aggregate.doc_book.func_308(&Var2))
 	{
-		return 0;
+		return false;
 	}
 	if (!func_71(&Var2))
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
-int func_52(var uParam0)
+bool func_52(var uParam0)
 {
 	bool bVar0;
 	bool bVar1;
@@ -924,34 +819,29 @@ int func_52(var uParam0)
 
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam0))
 	{
-		return 0;
+		return false;
 	}
 	bVar0 = DATABINDING::_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT(*uParam0, "inventory_item");
-	if (!func_67(bVar0, 0))
+	if (!aggregate.bandana.func_30(bVar0, 0))
 	{
-		return 0;
+		return false;
 	}
 	bVar1 = DATABINDING::_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT(*uParam0, "inventory_item_slot");
-	Var2 = { func_63(bVar0, func_62(0), bVar1, 0) };
-	if (!func_64(&Var2))
+	Var2 = { aggregate.bandana.func_59(bVar0, aggregate.bandana.func_60(0), bVar1, 0) };
+	if (!aggregate.doc_book.func_308(&Var2))
 	{
-		return 0;
+		return false;
 	}
 	if (!func_72(&Var2))
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
 void func_53(int* iParam0)
 {
-	func_73(&(iParam0->f_2.f_9));
-}
-
-bool func_54(int* iParam0, int iParam1)
-{
-	return func_74(*iParam0, iParam1);
+	aggregate.fme_animal_tagging.func_407(&(iParam0->f_2.f_9));
 }
 
 int func_55(int* iParam0)
@@ -959,7 +849,7 @@ int func_55(int* iParam0)
 	return func_75(&(iParam0->f_2.f_13), &(iParam0->f_2.f_21));
 }
 
-int func_56(int* iParam0, int iParam1)
+bool func_56(int* iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -969,9 +859,9 @@ int func_56(int* iParam0, int iParam1)
 	bool bVar18;
 	int iVar19;
 
-	if (!func_76("ALL WEAPONS", &iVar0, &iVar1, -1591664384, 1))
+	if (!aggregate.binoculars.func_70("ALL WEAPONS", &iVar0, &iVar1, -1591664384, 1))
 	{
-		return 0;
+		return false;
 	}
 	Var2.f_9 = -1591664384;
 	bVar17 = false;
@@ -981,7 +871,7 @@ int func_56(int* iParam0, int iParam1)
 		bVar18 = false;
 		while (bVar18 < iVar1)
 		{
-			if (!func_77(&Var2, bVar18, iVar0, iVar1))
+			if (!aggregate.binoculars.func_71(&Var2, bVar18, iVar0, iVar1))
 			{
 			}
 			else if (!func_78(Var2.f_4))
@@ -1029,14 +919,15 @@ int func_56(int* iParam0, int iParam1)
 							if (!func_82(iParam0, bVar17))
 							{
 							}
-							if (!func_83(iVar0))
+							if (!aggregate.net_main_offline.func_1258(iVar0))
 							{
 							}
-							return 1;
+							return true;
 						}
 					}
 				}
 			}
+		}
 
 void func_57(int* iParam0)
 {
@@ -1080,13 +971,13 @@ void func_59(int* iParam0, int iParam1)
 	if (iVar0 > 0)
 	{
 		Var1 = -1740156697;
-		if (func_44(&(iParam0->f_2.f_13)))
+		if (aggregate.binoculars.func_15(&(iParam0->f_2.f_13)))
 		{
 			Var1.f_1 = 0;
 		}
 		else
 		{
-			Var1.f_1 = func_89(iParam0);
+			Var1.f_1 = aggregate.mp_intro.func_1761(iParam0);
 			if (Var1.f_1 >= iVar0)
 			{
 				Var1.f_1 = (iVar0 - 1);
@@ -1111,59 +1002,9 @@ int func_60(var uParam0)
 	return DATABINDING::_DATABINDING_READ_DATA_INT(uParam0->f_3);
 }
 
-int func_61(var uParam0)
-{
-	return uParam0->f_4;
-}
-
-struct<4> func_62(bool bParam0)
-{
-	int iVar0;
-
-	iVar0 = func_93(bParam0);
-	if (iVar0 == 2)
-	{
-		if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_4)))
-		{
-			Global_1270479->f_4 = { func_63(923904168, func_94(bParam0), -740156546, bParam0) };
-		}
-		return Global_1270479->f_4;
-	}
-	else if (iVar0 == 3)
-	{
-		if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_16)))
-		{
-			Global_1270479->f_16 = { func_63(923904168, func_94(bParam0), -740156546, 0) };
-		}
-		return Global_1270479->f_16;
-	}
-	return func_63(923904168, func_94(bParam0), -740156546, 0);
-}
-
-struct<4> func_63(bool bParam0, var uParam1, bool bParam2, bool bParam3, var uParam4, bool bParam5, bool bParam6)
-{
-	struct<4> Var0;
-
-	if (!func_67(bParam0, 0))
-	{
-		return Var0;
-	}
-	INVENTORY::_0x886DFD3E185C8A89(func_93(bParam6), &uParam1, bParam0, bParam5, &Var0);
-	return Var0;
-}
-
-int func_64(int iParam0)
-{
-	if (((*iParam0 == 0 && iParam0->f_1 == 0) && iParam0->f_2 == 0) && iParam0->f_3 == 0)
-	{
-		return 0;
-	}
-	return 1;
-}
-
 int func_65(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)
 {
-	if (!func_64(&uParam1))
+	if (!aggregate.doc_book.func_308(&uParam1))
 	{
 		return 0;
 	}
@@ -1171,7 +1012,7 @@ int func_65(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4)
 	return 1;
 }
 
-int func_66(var uParam0, int iParam1)
+bool func_66(var uParam0, int iParam1)
 {
 	char* sVar0;
 	struct<4> Var1;
@@ -1191,10 +1032,10 @@ int func_66(var uParam0, int iParam1)
 			sVar0 = "WL_NUMBER_EQUIPPED";
 			break;
 		default:
-			return 0;
+			return false;
 	}
-	Var1 = { func_95(uParam0) };
-	if (func_64(&Var1))
+	Var1 = { aggregate.mp_intro.func_1882(uParam0) };
+	if (aggregate.doc_book.func_308(&Var1))
 	{
 		Var5.f_9 = -1591664384;
 		if (INVENTORY::_0x025A1B1FB03FBF61(2, &Var1, &Var5, 22, 1))
@@ -1204,11 +1045,11 @@ int func_66(var uParam0, int iParam1)
 		{
 			case 3:
 				func_97(uParam0, MISC::_CREATE_VAR_STRING(2, "WL_FOOTER_ALWAYS_MELEE"));
-				return 1;
+				return true;
 			case 4:
 			case 5:
 				func_97(uParam0, MISC::_CREATE_VAR_STRING(2, "WL_FOOTER_ALWAYS_SIDEARMS"));
-				return 1;
+				return true;
 		}
 	}
 	if (func_84(uParam0) > 0)
@@ -1219,19 +1060,10 @@ int func_66(var uParam0, int iParam1)
 	{
 		func_43(uParam0);
 	}
-	return 1;
+	return true;
 }
 
-bool func_67(bool bParam0, int iParam1)
-{
-	if (bParam0 == 0)
-	{
-		return false;
-	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
-}
-
-int func_68(bool bParam0, bool bParam1, int iParam2)
+bool func_68(bool bParam0, bool bParam1, int iParam2)
 {
 	int iVar0;
 	struct<4> Var1;
@@ -1247,11 +1079,11 @@ int func_68(bool bParam0, bool bParam1, int iParam2)
 	int iVar83;
 	int iVar84;
 
-	Var1 = { func_63(bParam0, func_62(0), bParam1, 0) };
+	Var1 = { aggregate.bandana.func_59(bParam0, aggregate.bandana.func_60(0), bParam1, 0) };
 	Var5.f_9 = -1591664384;
 	if (!INVENTORY::_0x025A1B1FB03FBF61(2, &Var1, &Var5, 22, 1))
 	{
-		return 0;
+		return false;
 	}
 	iVar0 = Var5.f_14;
 	Var28.f_9 = -1591664384;
@@ -1259,7 +1091,7 @@ int func_68(bool bParam0, bool bParam1, int iParam2)
 	{
 		if (!INVENTORY::_0x025A1B1FB03FBF61(2, &uVar50, &Var28, 22, 1))
 		{
-			return 0;
+			return false;
 		}
 		iVar27 = Var28.f_14;
 	}
@@ -1320,7 +1152,7 @@ int func_68(bool bParam0, bool bParam1, int iParam2)
 							}
 							if (!bVar54)
 							{
-								if (func_64(&uVar50))
+								if (aggregate.doc_book.func_308(&uVar50))
 								{
 									if (func_103(bParam0, iVar27, iVar0))
 									{
@@ -1330,54 +1162,45 @@ int func_68(bool bParam0, bool bParam1, int iParam2)
 									}
 								}
 							}
-							return 1;
+							return true;
 						}
 					}
 				}
 			}
 		}
 	}
-
-void func_69(int* iParam0, int iParam1)
-{
-	MISC::SET_BIT(iParam0, iParam1);
 }
 
-void func_70(int* iParam0, int iParam1)
-{
-	MISC::CLEAR_BIT(iParam0, iParam1);
-}
-
-int func_71(int iParam0)
+bool func_71(int iParam0)
 {
 	struct<22> Var0;
 
 	Var0.f_9 = -1591664384;
 	if (!INVENTORY::_0x025A1B1FB03FBF61(2, iParam0, &Var0, 22, 1))
 	{
-		return 0;
+		return false;
 	}
 	Var0.f_21 = 0;
 	if (!INVENTORY::_0xD80A8854DB5CFBA5(2, iParam0, &Var0, 22))
 	{
-		return 0;
+		return false;
 	}
 	func_104(Var0.f_4);
 	if (Var0.f_14 >= 0)
 	{
 		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, Var0.f_14, false, false);
 	}
-	return 1;
+	return true;
 }
 
-int func_72(int iParam0)
+bool func_72(int iParam0)
 {
 	struct<22> Var0;
 
 	Var0.f_9 = -1591664384;
 	if (!INVENTORY::_0x025A1B1FB03FBF61(2, iParam0, &Var0, 22, 1))
 	{
-		return 0;
+		return false;
 	}
 	Var0.f_21 = 1;
 	if (func_80(&Var0) == 2)
@@ -1386,26 +1209,13 @@ int func_72(int iParam0)
 	}
 	if (!INVENTORY::_0xD80A8854DB5CFBA5(2, iParam0, &Var0, 22))
 	{
-		return 0;
+		return false;
 	}
 	if (Var0.f_14 >= 0)
 	{
 		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, Var0.f_14, false, false);
 	}
-	return 1;
-}
-
-void func_73(var uParam0)
-{
-	*uParam0 = 0;
-	uParam0->f_1 = 0;
-	uParam0->f_2 = 0;
-	uParam0->f_3 = 0;
-}
-
-bool func_74(int iParam0, int iParam1)
-{
-	return MISC::IS_BIT_SET(iParam0, iParam1);
+	return true;
 }
 
 int func_75(var uParam0, var uParam1)
@@ -1426,48 +1236,21 @@ int func_75(var uParam0, var uParam1)
 	return uParam1[iVar1 /*17*/];
 }
 
-int func_76(char* sParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
+bool func_78(bool bParam0)
 {
-	*iParam1 = INVENTORY::_0x80D78BDC9D88EF07(func_93(bParam4), sParam0, iParam3, bParam2);
-	if (*iParam1 >= 0)
+	if (!aggregate.bandana.func_30(bParam0, 0))
 	{
-		return 1;
-	}
-	return 0;
-}
-
-int func_77(int iParam0, bool bParam1, int iParam2, bool bParam3)
-{
-	if (iParam2 < 0)
-	{
-		return 0;
-	}
-	if (bParam1 < 0 || bParam1 >= bParam3)
-	{
-		return 0;
-	}
-	if (!INVENTORY::_0x82FA24C3D3FCD9B7(iParam2, bParam1, iParam0))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_78(bool bParam0)
-{
-	if (!func_67(bParam0, 0))
-	{
-		return 0;
+		return false;
 	}
 	if (!WEAPON::IS_WEAPON_VALID(bParam0))
 	{
-		return 0;
+		return false;
 	}
 	if (!WEAPON::_0x705BE297EEBDB95D(bParam0) && !WEAPON::_0xC4DEC3CA8C365A5D(bParam0))
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
 int func_79(bool bParam0)
@@ -1527,7 +1310,7 @@ int func_80(int iParam0)
 	return -1;
 }
 
-int func_81(int* iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4, int iParam5)
+bool func_81(int* iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<13> Var0;
 	bool bVar53;
@@ -1535,7 +1318,7 @@ int func_81(int* iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4, 
 
 	if (!func_78(bParam2))
 	{
-		return 0;
+		return false;
 	}
 	Var0 = 1;
 	Var0.f_1 = 1;
@@ -1548,7 +1331,7 @@ int func_81(int* iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4, 
 	Var0.f_12 = -1;
 	if (!func_105(bParam2, iParam3, &Var0, iParam4, iParam5))
 	{
-		return 0;
+		return false;
 	}
 	bVar53 = true;
 	if (bParam1 < func_84(iParam0))
@@ -1565,29 +1348,29 @@ int func_81(int* iParam0, bool bParam1, bool bParam2, int iParam3, int iParam4, 
 	{
 		if (!func_107(iParam0, &Var0))
 		{
-			return 0;
+			return false;
 		}
 	}
-	return 1;
+	return true;
 }
 
-int func_82(int* iParam0, bool bParam1)
+bool func_82(int* iParam0, bool bParam1)
 {
 	bool bVar0;
 	bool bVar1;
 
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(iParam0->f_2.f_1))
 	{
-		return 0;
+		return false;
 	}
 	bVar0 = DATABINDING::_DATABINDING_GET_ARRAY_COUNT(iParam0->f_2.f_1);
 	if (bVar0 == 0)
 	{
-		return 1;
+		return true;
 	}
 	if (bParam1 < 0 || bParam1 > bVar0)
 	{
-		return 0;
+		return false;
 	}
 	bVar1 = bVar0;
 	while (bVar1 >= bParam1)
@@ -1595,20 +1378,7 @@ int func_82(int* iParam0, bool bParam1)
 		DATABINDING::_0x6318FB3BE37E11B3(iParam0->f_2.f_1, bVar1);
 		bVar1 = (bVar1 + -1);
 	}
-	return 1;
-}
-
-int func_83(int iParam0)
-{
-	if (iParam0 < 0)
-	{
-		return 0;
-	}
-	if (!INVENTORY::_0x42A2F33A1942E865(iParam0))
-	{
-		return 0;
-	}
-	return 1;
+	return true;
 }
 
 int func_84(int* iParam0)
@@ -1660,11 +1430,6 @@ int func_88(int* iParam0, bool bParam1)
 	return 1;
 }
 
-var func_89(int* iParam0)
-{
-	return iParam0->f_102.f_1;
-}
-
 int func_90(int iParam0)
 {
 	switch (iParam0)
@@ -1683,81 +1448,32 @@ int func_90(int iParam0)
 	return 0;
 }
 
-int func_91(int* iParam0, bool bParam1, var uParam2)
+bool func_91(int* iParam0, bool bParam1, var uParam2)
 {
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(iParam0->f_2.f_1))
 	{
-		return 0;
+		return false;
 	}
 	if (bParam1 < 0 || bParam1 >= DATABINDING::_DATABINDING_GET_ARRAY_COUNT(iParam0->f_2.f_1))
 	{
-		return 0;
+		return false;
 	}
 	*uParam2 = DATABINDING::_DATABINDING_GET_ITEM_CONTEXT_BY_INDEX(iParam0->f_2.f_1, bParam1);
-	return 1;
+	return true;
 }
 
-int func_92(int* iParam0, int iParam1)
+bool func_92(int* iParam0, int iParam1)
 {
 	if (*iParam1 == 0)
 	{
-		return 0;
+		return false;
 	}
 	if (iParam0->f_98 != 0)
 	{
-		return 0;
+		return false;
 	}
 	MISC::_COPY_MEMORY(&(iParam0->f_98), iParam1, 4);
-	return 1;
-}
-
-int func_93(bool bParam0)
-{
-	if (func_108() == -1)
-	{
-		if (!bParam0 && INVENTORY::_0x7C7E4AB748EA3B07())
-		{
-			return 5;
-		}
-		return 1;
-	}
-	if (!bParam0 && INVENTORY::_0x13D234A2A3F66E63(PLAYER::PLAYER_PED_ID()) == 3)
-	{
-		return 3;
-	}
-	return 2;
-}
-
-struct<4> func_94(bool bParam0)
-{
-	int iVar0;
-
-	if (Global_1572887->f_13 == 0)
-	{
-		iVar0 = func_93(bParam0);
-		if (iVar0 == 2)
-		{
-			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1270479))
-			{
-				*Global_1270479 = { func_63(joaat("character"), func_109(), -1591664384, bParam0) };
-			}
-			return *Global_1270479;
-		}
-		else if (iVar0 == 3)
-		{
-			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_12)))
-			{
-				Global_1270479->f_12 = { func_63(joaat("character"), func_109(), -1591664384, 0) };
-			}
-			return Global_1270479->f_12;
-		}
-	}
-	return func_63(joaat("character"), func_109(), -1591664384, bParam0);
-}
-
-struct<4> func_95(var uParam0)
-{
-	return uParam0->f_2.f_9;
+	return true;
 }
 
 int func_96(int iParam0)
@@ -1765,12 +1481,12 @@ int func_96(int iParam0)
 	struct<15> Var0;
 	int iVar22;
 
-	if (!func_64(iParam0))
+	if (!aggregate.doc_book.func_308(iParam0))
 	{
 		return 1;
 	}
 	Var0.f_9 = -1591664384;
-	if (!INVENTORY::_0x025A1B1FB03FBF61(func_93(0), iParam0, &Var0, 22, 1))
+	if (!INVENTORY::_0x025A1B1FB03FBF61(aggregate.bandana.func_72(0), iParam0, &Var0, 22, 1))
 	{
 		return 2;
 	}
@@ -1801,7 +1517,7 @@ int func_97(var uParam0, char* sParam1)
 
 int func_98(bool bParam0)
 {
-	if (!func_67(bParam0, 0))
+	if (!aggregate.bandana.func_30(bParam0, 0))
 	{
 		return 0;
 	}
@@ -1828,15 +1544,15 @@ int func_98(bool bParam0)
 	return 0;
 }
 
-int func_99(bool bParam0, int iParam1, int iParam2)
+bool func_99(bool bParam0, int iParam1, int iParam2)
 {
-	if (!func_67(bParam0, 0))
+	if (!aggregate.bandana.func_30(bParam0, 0))
 	{
-		return 0;
+		return false;
 	}
 	if (!WEAPON::IS_WEAPON_VALID(bParam0))
 	{
-		return 0;
+		return false;
 	}
 	if (WEAPON::_0xC4DEC3CA8C365A5D(bParam0))
 	{
@@ -1844,10 +1560,10 @@ int func_99(bool bParam0, int iParam1, int iParam2)
 		{
 			case 0:
 				*iParam2 = 8;
-				return 1;
+				return true;
 			case 1:
 				*iParam2 = 7;
-				return 1;
+				return true;
 			default:
 				break;
 		}
@@ -1858,10 +1574,10 @@ int func_99(bool bParam0, int iParam1, int iParam2)
 		{
 			case 0:
 				*iParam2 = 10;
-				return 1;
+				return true;
 			case 1:
 				*iParam2 = 9;
-				return 1;
+				return true;
 			default:
 				break;
 		}
@@ -1872,10 +1588,10 @@ int func_99(bool bParam0, int iParam1, int iParam2)
 		{
 			case 0:
 				*iParam2 = 2;
-				return 1;
+				return true;
 			case 1:
 				*iParam2 = 3;
-				return 1;
+				return true;
 			default:
 				break;
 		}
@@ -1883,22 +1599,22 @@ int func_99(bool bParam0, int iParam1, int iParam2)
 	else if (WEAPON::_0x959383DCD42040DA(bParam0))
 	{
 		*iParam2 = 4;
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
-int func_100(int iParam0)
+bool func_100(int iParam0)
 {
 	switch (iParam0)
 	{
 		case 3:
 			return func_110();
 	}
-	return 1;
+	return true;
 }
 
-int func_101(int iParam0, int iParam1, bool bParam2)
+bool func_101(int iParam0, int iParam1, bool bParam2)
 {
 	struct<4> Var0;
 	struct<13> Var22;
@@ -1910,12 +1626,12 @@ int func_101(int iParam0, int iParam1, bool bParam2)
 	Var0.f_9 = -1591664384;
 	if (!INVENTORY::_0x025A1B1FB03FBF61(2, iParam0, &Var0, 22, 1))
 	{
-		return 0;
+		return false;
 	}
 	Var0.f_21 = 1;
 	if (!INVENTORY::_0xD80A8854DB5CFBA5(2, iParam0, &Var0, 22))
 	{
-		return 0;
+		return false;
 	}
 	Var22.f_7 = 752097756;
 	Var22.f_8 = 1056964608;
@@ -1929,23 +1645,23 @@ int func_101(int iParam0, int iParam1, bool bParam2)
 	}
 	else
 	{
-		return 0;
+		return false;
 	}
 	if (bParam2)
 	{
 		if (func_111(Var22.f_6, &iVar44))
 		{
-			StringCopy(&cVar45, func_112(Var22.f_4), 64);
+			StringCopy(&cVar45, aggregate.fm_mission_controller.func_4327(Var22.f_4), 64);
 			StringCopy(&cVar53, HUD::_GET_LABEL_TEXT_BY_HASH(iVar44), 64);
-			func_113(MISC::_CREATE_VAR_STRING(42, "WL_TICKER_EQUIPPED_TO", &cVar45, &cVar53), -2, 0, 0, 0, 1);
+			aggregate.fme_animal_tagging.func_566(MISC::_CREATE_VAR_STRING(42, "WL_TICKER_EQUIPPED_TO", &cVar45, &cVar53), -2, 0, 0, 0, 1);
 		}
 	}
-	return 1;
+	return true;
 }
 
 int func_102(bool bParam0)
 {
-	if (!func_67(bParam0, 0))
+	if (!aggregate.bandana.func_30(bParam0, 0))
 	{
 		return 0;
 	}
@@ -1953,29 +1669,29 @@ int func_102(bool bParam0)
 	return 1;
 }
 
-int func_103(bool bParam0, int iParam1, int iParam2)
+bool func_103(bool bParam0, int iParam1, int iParam2)
 {
-	if (!func_67(bParam0, 0))
+	if (!aggregate.bandana.func_30(bParam0, 0))
 	{
-		return 0;
+		return false;
 	}
 	if (WEAPON::_0x0556E9D2ECF39D01(bParam0))
 	{
 		if (iParam1 == 10 && iParam2 == 9)
 		{
-			return 1;
+			return true;
 		}
 		if (iParam2 == 10 && iParam1 == 9)
 		{
-			return 1;
+			return true;
 		}
 	}
-	return 0;
+	return false;
 }
 
 int func_104(bool bParam0)
 {
-	if (!func_67(bParam0, 0))
+	if (!aggregate.bandana.func_30(bParam0, 0))
 	{
 		return 0;
 	}
@@ -1983,15 +1699,15 @@ int func_104(bool bParam0)
 	return 1;
 }
 
-int func_105(bool bParam0, int iParam1, var uParam2, int iParam3, int iParam4)
+bool func_105(bool bParam0, int iParam1, var uParam2, int iParam3, int iParam4)
 {
 	struct<5> Var0;
 
 	if (!func_78(bParam0))
 	{
-		return 0;
+		return false;
 	}
-	if (INVENTORY::_0xE787F05DFC977BDE(func_93(1), bParam0, false) > 1)
+	if (INVENTORY::_0xE787F05DFC977BDE(aggregate.bandana.func_72(1), bParam0, false) > 1)
 	{
 		if (func_114(iParam1, &(uParam2->f_28), &(uParam2->f_27)))
 		{
@@ -2014,7 +1730,7 @@ int func_105(bool bParam0, int iParam1, var uParam2, int iParam3, int iParam4)
 			uParam2->f_5 = -1694113483;
 			break;
 	}
-	StringCopy(&(uParam2->f_16), func_112(bParam0), 64);
+	StringCopy(&(uParam2->f_16), aggregate.fm_mission_controller.func_4327(bParam0), 64);
 	if (!func_115(bParam0, &Var0))
 	{
 	}
@@ -2027,40 +1743,40 @@ int func_105(bool bParam0, int iParam1, var uParam2, int iParam3, int iParam4)
 	uParam2->f_9 = 0;
 	if (!func_116(bParam0, iParam1, uParam2))
 	{
-		return 0;
+		return false;
 	}
 	if (!func_117(iParam3, uParam2))
 	{
-		return 0;
+		return false;
 	}
 	uParam2->f_51 = bParam0;
 	uParam2->f_52 = iParam1;
-	return 1;
+	return true;
 }
 
-int func_106(var uParam0, var uParam1)
+bool func_106(var uParam0, var uParam1)
 {
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*uParam0))
 	{
-		return 0;
+		return false;
 	}
-	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_118(0), *uParam1);
-	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_118(1), uParam1->f_1);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(2), uParam1->f_2);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(54), uParam1->f_3);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(55), uParam1->f_4);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(57), uParam1->f_5);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(56), uParam1->f_6);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(58), uParam1->f_7);
-	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_118(59), uParam1->f_8);
-	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_118(60), uParam1->f_9);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(9), uParam1->f_27);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(10), uParam1->f_28);
-	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_118(11), uParam1->f_29);
-	DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(*uParam0, func_118(15), &(uParam1->f_16));
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(21), uParam1->f_24);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_118(22), uParam1->f_25);
-	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_118(23), uParam1->f_26);
+	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(0), *uParam1);
+	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(1), uParam1->f_1);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(2), uParam1->f_2);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(54), uParam1->f_3);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(55), uParam1->f_4);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(57), uParam1->f_5);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(56), uParam1->f_6);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(58), uParam1->f_7);
+	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(59), uParam1->f_8);
+	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(60), uParam1->f_9);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(9), uParam1->f_27);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(10), uParam1->f_28);
+	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(11), uParam1->f_29);
+	DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(15), &(uParam1->f_16));
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(21), uParam1->f_24);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(22), uParam1->f_25);
+	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, aggregate.fme_animal_tagging.func_979(23), uParam1->f_26);
 	DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(*uParam0, "stat_damage", uParam1->f_30);
 	DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(*uParam0, "stat_range", uParam1->f_31);
 	DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(*uParam0, "stat_accuracy", uParam1->f_32);
@@ -2084,130 +1800,86 @@ int func_106(var uParam0, var uParam1)
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, "dynamic_list_item_prompt_dright_hash", uParam1->f_50);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, "inventory_item", uParam1->f_51);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, "inventory_item_slot", uParam1->f_52);
-	return 1;
+	return true;
 }
 
-int func_107(int* iParam0, char[4] cParam1)
+bool func_107(int* iParam0, char[4] cParam1)
 {
 	char cVar0[64];
 	int iVar8;
 
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(iParam0->f_2))
 	{
-		return 0;
+		return false;
 	}
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(iParam0->f_2.f_1))
 	{
-		return 0;
+		return false;
 	}
 	StringCopy(&cVar0, "Entry_", 64);
 	StringIntConCat(&cVar0, DATABINDING::_DATABINDING_GET_ARRAY_COUNT(iParam0->f_2.f_1), 64);
 	func_119(&iVar8, iParam0->f_2.f_1, cVar0, cParam1);
 	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(iParam0->f_2.f_1, -1, "pm_dynamic_text_and_end_image", iVar8);
-	return 1;
+	return true;
 }
 
-int func_108()
+bool func_110()
 {
-	return Global_1572887->f_13;
-}
-
-struct<4> func_109()
-{
-	struct<4> Var0;
-
-	return Var0;
-}
-
-int func_110()
-{
-	if (!func_120())
+	if (!aggregate.bandana.func_74())
 	{
-		return 0;
+		return false;
 	}
-	if (func_121() < 2)
+	if (aggregate.shop_butcher.func_1682() < 2)
 	{
-		return 0;
+		return false;
 	}
-	return 1;
+	return true;
 }
 
-int func_111(int iParam0, int iParam1)
+bool func_111(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
 		case 4:
 			*iParam1 = 825261881; /* GXTEntry: "Melee" */
-			return 1;
+			return true;
 		case 3:
 			*iParam1 = -2078679563; /* GXTEntry: "Off-Hand Sidearm" */
-			return 1;
+			return true;
 		case 2:
 			*iParam1 = 258571561; /* GXTEntry: "Sidearm" */
-			return 1;
+			return true;
 		case 9:
 			*iParam1 = 1282885388; /* GXTEntry: "Back" */
-			return 1;
+			return true;
 		case 10:
 			*iParam1 = -1522249011; /* GXTEntry: "Shoulder" */
-			return 1;
+			return true;
 		default:
 			break;
 	}
-	return 0;
+	return false;
 }
 
-char* func_112(bool bParam0)
-{
-	int iVar0;
-
-	if (!func_67(bParam0, 0))
-	{
-		return "";
-	}
-	iVar0 = func_122(bParam0);
-	if (iVar0 == 0)
-	{
-		return "";
-	}
-	return HUD::_GET_LABEL_TEXT_BY_HASH(iVar0);
-}
-
-var func_113(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
-{
-	struct<4> Var0;
-	struct<2> Var13;
-	var uVar17;
-
-	Var0 = -2;
-	Var0 = iParam1;
-	Var0.f_1 = iParam2;
-	Var0.f_2 = iParam3;
-	Var0.f_3 = iParam4;
-	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_0xB2920B9760F0F36B(&Var0, &Var13, bParam5);
-	return uVar17;
-}
-
-int func_114(int iParam0, var uParam1, var uParam2)
+bool func_114(int iParam0, var uParam1, var uParam2)
 {
 	switch (iParam0)
 	{
 		case 1728382685: /* GXTEntry: "Right" */
 			*uParam2 = 1210712530;
 			*uParam1 = -2098954619;
-			return 1;
+			return true;
 		case -649335959: /* GXTEntry: "Left" */
 			*uParam2 = 1210712530;
 			*uParam1 = -1498731425;
-			return 1;
+			return true;
 		default:
 			break;
 	}
-	return 0;
+	return false;
 }
 
-int func_115(bool bParam0, var uParam1)
+bool func_115(bool bParam0, var uParam1)
 {
 	struct<2> Var0;
 	vector3 vVar22;
@@ -2232,25 +1904,25 @@ int func_115(bool bParam0, var uParam1)
 	int iVar55;
 	int iVar56;
 
-	if (!func_67(bParam0, 0))
+	if (!aggregate.bandana.func_30(bParam0, 0))
 	{
-		return 0;
+		return false;
 	}
-	if (!func_123(bParam0))
+	if (!aggregate.doc_book.func_158(bParam0))
 	{
-		return 0;
+		return false;
 	}
 	Var0.f_1 = 20;
 	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_EFFECTS_IDS(bParam0, &Var0))
 	{
-		return 0;
+		return false;
 	}
 	if (Var0 <= 0)
 	{
-		return 0;
+		return false;
 	}
 	fVar34 = 100f;
-	Var35 = { func_124(-664570214, WEAPON::_0x8EC44AE8DECFF841(bParam0)) };
+	Var35 = { aggregate.aberdeenpigfarm.func_107(-664570214, WEAPON::_0x8EC44AE8DECFF841(bParam0)) };
 	if (STATS::_STAT_ID_IS_VALID(&Var35))
 	{
 		STATS::STAT_ID_GET_FLOAT(&Var35, &fVar34);
@@ -2298,17 +1970,17 @@ int func_115(bool bParam0, var uParam1)
 	iVar38 = 0;
 	iVar39 = 0;
 	iVar40 = 0;
-	Var41 = { func_125(bParam0, 0, 0) };
-	Var46 = { func_63(bParam0, Var41, Var41.f_4, 0) };
-	iVar50 = func_126(bParam0);
+	Var41 = { aggregate.bandana.func_41(bParam0, 0, 0) };
+	Var46 = { aggregate.bandana.func_59(bParam0, Var41, Var41.f_4, 0) };
+	iVar50 = aggregate.net_camp.func_2216(bParam0);
 	bVar51 = false;
 	while (bVar51 < iVar50)
 	{
-		iVar52 = func_127(bParam0, bVar51);
+		iVar52 = aggregate.mp_freemode_tutorial.func_585(bParam0, bVar51);
 		if (iVar52 != 0)
 		{
-			bVar53 = func_128(Var46, iVar52, 0, -1);
-			if (func_67(bVar53, 0))
+			bVar53 = aggregate.bandana.func_81(Var46, iVar52, 0, -1);
+			if (aggregate.bandana.func_30(bVar53, 0))
 			{
 				if (ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_EFFECTS_IDS(bVar53, &Var0))
 				{
@@ -2346,10 +2018,10 @@ int func_115(bool bParam0, var uParam1)
 	uParam1->f_4 = iVar56;
 	uParam1->f_2 = iVar31;
 	uParam1->f_3 = iVar32;
-	return 1;
+	return true;
 }
 
-int func_116(bool bParam0, bool bParam1, var uParam2)
+bool func_116(bool bParam0, bool bParam1, var uParam2)
 {
 	struct<4> Var0;
 	int iVar4;
@@ -2358,16 +2030,16 @@ int func_116(bool bParam0, bool bParam1, var uParam2)
 
 	if (!func_78(bParam0))
 	{
-		return 0;
+		return false;
 	}
-	Var0 = { func_63(bParam0, func_62(0), bParam1, 0) };
-	if (!func_64(&Var0))
+	Var0 = { aggregate.bandana.func_59(bParam0, aggregate.bandana.func_60(0), bParam1, 0) };
+	if (!aggregate.doc_book.func_308(&Var0))
 	{
-		return 0;
+		return false;
 	}
-	if (!func_129(bParam0, 1728382685 /* GXTEntry: "Right" */, 0) && !func_129(bParam0, -649335959 /* GXTEntry: "Left" */, 0))
+	if (!aggregate.mp_intro.func_2579(bParam0, 1728382685 /* GXTEntry: "Right" */, 0) && !aggregate.mp_intro.func_2579(bParam0, -649335959 /* GXTEntry: "Left" */, 0))
 	{
-		return 0;
+		return false;
 	}
 	iVar5 = func_98(bParam0);
 	iVar6 = 0;
@@ -2408,10 +2080,10 @@ int func_116(bool bParam0, bool bParam1, var uParam2)
 	uParam2->f_47 = func_134(&Var0) == 0;
 	uParam2->f_49 = 1901059961; /* GXTEntry: "Stow on your horse" */
 	uParam2->f_50 = -1103499950;
-	return 1;
+	return true;
 }
 
-int func_117(int iParam0, var uParam1)
+bool func_117(int iParam0, var uParam1)
 {
 	var uVar0;
 	var uVar1;
@@ -2419,204 +2091,12 @@ int func_117(int iParam0, var uParam1)
 	if (!func_135(iParam0, &uVar0, &uVar1))
 	{
 		uParam1->f_26 = 0;
-		return 0;
+		return false;
 	}
 	uParam1->f_26 = 1;
 	uParam1->f_25 = uVar0;
 	uParam1->f_24 = uVar1;
-	return 1;
-}
-
-char* func_118(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return "dynamic_list_item_enabled";
-		case 1:
-			return "dynamic_list_item_visible";
-		case 2:
-			return "dynamic_list_item_main_color";
-		case 3:
-			return "dynamic_list_item_secondary_color";
-		case 4:
-			return "dynamic_list_item_tertiary_color";
-		case 5:
-			return "dynamic_list_item_main_img_texture_dic";
-		case 6:
-			return "dynamic_list_item_main_img_texture";
-		case 7:
-			return "dynamic_list_item_main_img_visible";
-		case 8:
-			return "dynamic_list_item_main_img_enabled";
-		case 9:
-			return "dynamic_list_item_status_icon_texture_dic";
-		case 10:
-			return "dynamic_list_item_status_icon_texture";
-		case 11:
-			return "dynamic_list_item_status_icon_visible";
-		case 12:
-			return "dynamic_list_item_deco_texture_dic";
-		case 13:
-			return "dynamic_list_item_deco__texture";
-		case 14:
-			return "dynamic_list_item_deco_visible";
-		case 15:
-			return "dynamic_list_item_raw_text_entry";
-		case 16:
-			return "dynamic_list_item_text_label_entry";
-		case 17:
-			return "dynamic_list_item_secondary_raw_text_entry";
-		case 18:
-			return "dynamic_list_item_secondary_text_label_entry";
-		case 19:
-			return "dynamic_list_item_secondary_text_visible";
-		case 20:
-			return "dynamic_list_item_secondary_text_enabled";
-		case 21:
-			return "dynamic_list_item_end_img_texture_dic";
-		case 22:
-			return "dynamic_list_item_end_img_texture";
-		case 23:
-			return "dynamic_list_item_end_img_visible";
-		case 24:
-			return "dynamic_list_item_corner_end_img_texture_dic";
-		case 25:
-			return "dynamic_list_item_corner_end_img_texture";
-		case 26:
-			return "dynamic_list_item_corner_end_img_visible";
-		case 27:
-			return "dynamic_list_item_entry_player_index";
-		case 28:
-			return "dynamic_list_item_entry_friend_index";
-		case 29:
-			return "dynamic_list_item_player_gamer_handle";
-		case 30:
-			return "dynamic_list_item_option_stepper_visible";
-		case 31:
-			return "dynamic_list_item_option_stepper_text_enabled";
-		case 32:
-			return "dynamic_list_item_option_stepper_items";
-		case 33:
-			return "dynamic_list_item_option_stepper_current_hash";
-		case 34:
-			return "dynamic_list_item_option_stepper_current_index";
-		case 35:
-			return "dynamic_list_item_option_stepper_max_index";
-		case 36:
-			return "dynamic_list_item_left_chevron_enabled";
-		case 37:
-			return "dynamic_list_item_right_chevron_enabled";
-		case 38:
-			return "dynamic_list_item_option_stepper_index_change_ui_event_hash";
-		case 39:
-			return "dynamic_list_item_main_fill_maximum";
-		case 40:
-			return "dynamic_list_item_main_fill_value";
-		case 41:
-			return "dynamic_list_item_extra_text_field_entry_one_raw_text";
-		case 42:
-			return "dynamic_list_item_extra_text_field_entry_two_raw_text";
-		case 43:
-			return "dynamic_list_item_extra_text_field_entry_three_raw_text";
-		case 44:
-			return "dynamic_list_item_extra_text_field_entry_one_visibility";
-		case 45:
-			return "dynamic_list_item_extra_text_field_entry_two_visibility";
-		case 46:
-			return "dynamic_list_item_extra_text_field_entry_three_visibility";
-		case 47:
-			return "dynamic_list_item_extra_img_texture_one_dic";
-		case 48:
-			return "dynamic_list_item_extra_img_one_texture";
-		case 49:
-			return "dynamic_list_item_extra_img_one_visible";
-		case 50:
-			return "dynamic_list_item_extra_int_field_one_value";
-		case 51:
-			return "dynamic_list_item_extra_int_field_two_value";
-		case 52:
-			return "dynamic_list_item_extra_vector_field_one_value";
-		case 53:
-			return "dynamic_list_item_extra_bool_field_one_value";
-		case 54:
-			return "dynamic_list_item_link";
-		case 55:
-			return "dynamic_list_item_event_channel_hash";
-		case 56:
-			return "dynamic_list_item_focus_hash";
-		case 57:
-			return "dynamic_list_item_select_hash";
-		case 58:
-			return "dynamic_list_item_prompt_text";
-		case 59:
-			return "dynamic_list_item_prompt_enabled";
-		case 60:
-			return "dynamic_list_item_prompt_visible";
-		case 64:
-			return "dynamic_list_item_prompt_option_text";
-		case 65:
-			return "dynamic_list_item_prompt_option_enabled";
-		case 66:
-			return "dynamic_list_item_prompt_option_visible";
-		case 67:
-			return "dynamic_list_item_prompt_option_select_hash";
-		case 68:
-			return "dynamic_list_item_prompt_toggle_text";
-		case 69:
-			return "dynamic_list_item_prompt_toggle_enabled";
-		case 70:
-			return "dynamic_list_item_prompt_toggle_visible";
-		case 71:
-			return "dynamic_list_item_prompt_toggle_select_hash";
-		case 72:
-			return "dynamic_list_item_prompt_r3_text";
-		case 73:
-			return "dynamic_list_item_prompt_r3_enabled";
-		case 74:
-			return "dynamic_list_item_prompt_r3_visible";
-		case 75:
-			return "dynamic_list_item_select_r3_select_hash";
-		case 76:
-			return "dynamic_list_item_prompt_dpad_left_right_text";
-		case 77:
-			return "dynamic_list_item_prompt_dpad_left_right_enabled";
-		case 78:
-			return "dynamic_list_item_prompt_dpad_left_right_visible";
-		case 79:
-			return "dynamic_list_item_select_dpad_left_right_select_hash";
-		case 80:
-			return "mount_collection_index";
-		case 81:
-			return "dynamic_list_item_rename_prompt_enabled";
-		case 82:
-			return "dynamic_list_item_rename_prompt_visible";
-		case 83:
-			return "dynamic_list_item_stats_info_toggle_prompt_text";
-		case 84:
-			return "invite_unique_id";
-		case 85:
-			return "invite_tracked";
-		case 86:
-			return "invite_processed";
-		case 87:
-			return "invite_script_type";
-		case 88:
-			return "invite_gang_id";
-		case 89:
-			return "invite_expiration_time";
-		case 90:
-			return "invite_filter_type";
-		case 91:
-			return "invite_feed_message_id";
-		case 92:
-			return "invite_all_enabled";
-		case 93:
-			return "invite_all_visible";
-		default:
-			break;
-	}
-	return "null";
+	return true;
 }
 
 int func_119(int iParam0, int iParam1, char[32] cParam2, char[4] cParam10)
@@ -2625,14 +2105,14 @@ int func_119(int iParam0, int iParam1, char[32] cParam2, char[4] cParam10)
 	{
 		return 0;
 	}
-	func_136(iParam0, iParam1, cParam2, *cParam10);
+	aggregate.net_main_offline.func_3773(iParam0, iParam1, cParam2, *cParam10);
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(*iParam0))
 	{
 		return 0;
 	}
-	iParam0->f_22 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(9), cParam10->f_27);
-	iParam0->f_23 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(10), cParam10->f_28);
-	iParam0->f_24 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam0, func_118(11), cParam10->f_29);
+	iParam0->f_22 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, aggregate.fme_animal_tagging.func_979(9), cParam10->f_27);
+	iParam0->f_23 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, aggregate.fme_animal_tagging.func_979(10), cParam10->f_28);
+	iParam0->f_24 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam0, aggregate.fme_animal_tagging.func_979(11), cParam10->f_29);
 	iParam0->f_25 = DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam0, "stat_damage", cParam10->f_30);
 	iParam0->f_26 = DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam0, "stat_range", cParam10->f_31);
 	iParam0->f_27 = DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam0, "stat_accuracy", cParam10->f_32);
@@ -2659,283 +2139,17 @@ int func_119(int iParam0, int iParam1, char[32] cParam2, char[4] cParam10)
 	return 1;
 }
 
-bool func_120()
-{
-	return (func_137(-1185145312 /* GXTEntry: "Upgraded Off-Hand Holster" */, 0, 0, 0) > 0 && func_128(func_63(889965687 /* GXTEntry: "Wardrobe" */, func_94(1), 1034665895, 1), -234132662, 1, -1) != 0);
-}
-
-int func_121()
-{
-	int iVar0;
-	bool bVar1;
-	bool bVar2;
-	int iVar3;
-	struct<10> Var4;
-
-	Var4.f_9 = -1591664384;
-	if (func_76("ALL WEAPONS", &iVar0, &bVar1, -1591664384, 0))
-	{
-		bVar2 = false;
-		while (bVar2 < bVar1)
-		{
-			if (!func_77(&Var4, bVar2, iVar0, bVar1))
-			{
-			}
-			else if (WEAPON::_0xD955FEE4B87AFA07(Var4.f_4))
-			{
-				iVar3++;
-			}
-			bVar2++;
-		}
-		func_83(iVar0);
-	}
-	return iVar3;
-}
-
-bool func_122(bool bParam0)
-{
-	int iVar0;
-
-	if (!func_67(bParam0, 0))
-	{
-		return false;
-	}
-	iVar0 = func_138(bParam0);
-	if (iVar0 != 0)
-	{
-		return iVar0;
-	}
-	return bParam0;
-}
-
-bool func_123(bool bParam0)
-{
-	return func_139(bParam0) == joaat("weapon");
-}
-
-struct<2> func_124(int iParam0, int iParam1)
-{
-	struct<2> Var0;
-
-	Var0 = iParam0;
-	Var0.f_1 = iParam1;
-	return Var0;
-}
-
-struct<5> func_125(bool bParam0, bool bParam1, int iParam2)
-{
-	struct<5> Var0;
-	int iVar5;
-	struct<10> Var6;
-	struct<10> Var28;
-
-	Var0 = { func_94(bParam1) };
-	Var0.f_4 = 1084182731;
-	iVar5 = func_139(bParam0);
-	switch (iVar5)
-	{
-		case joaat("clothing"):
-			Var0 = { func_63(889965687 /* GXTEntry: "Wardrobe" */, Var0, 1034665895, bParam1) };
-			Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, 889965687);
-			break;
-		case joaat("weapon"):
-			Var0 = { func_62(bParam1) };
-			if (iParam2 && func_140(bParam0, 1))
-			{
-				Var6.f_9 = -1591664384;
-				if (!func_141(bParam0, &Var0, 1728382685 /* GXTEntry: "Right" */, 0, 0))
-				{
-					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
-				}
-				else if (!func_141(bParam0, &Var0, -649335959 /* GXTEntry: "Left" */, 0, 0))
-				{
-					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
-				}
-				else if (func_142(bParam0, &Var6, 1728382685 /* GXTEntry: "Right" */))
-				{
-					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
-				}
-				else
-				{
-					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
-				}
-			}
-			else
-			{
-				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
-			}
-			break;
-		case joaat("coach"):
-		case joaat("horse"):
-			Var0.f_4 = 1782082944;
-			break;
-		case -1650247667:
-			Var0.f_4 = -1591664384;
-			Var0 = { func_143(bParam1) };
-			switch (func_144(bParam0))
-			{
-				case -1070622585:
-					Var0.f_4 = -6796437;
-					break;
-				case -1057349201:
-					Var0.f_4 = 1473261684;
-					break;
-				case 874188557:
-					Var0.f_4 = -241855024;
-					break;
-				case -2101244071:
-					Var0.f_4 = -268116367;
-					break;
-			}
-			break;
-		case -2130996531:
-		case joaat("dog"):
-			if (func_145(bParam0, -1823706425))
-			{
-				Var0 = { func_63(-1838434463 /* GXTEntry: "Camp" */, Var0, 1084182731, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, -1838434463);
-			}
-			else if (func_145(bParam0, -1483207246))
-			{
-				Var0 = { func_63(889965687 /* GXTEntry: "Wardrobe" */, Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, 889965687);
-			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, -1911121386))
-			{
-				Var0 = { func_63(-1838434463 /* GXTEntry: "Camp" */, Var0, 1084182731, bParam1) };
-				Var0.f_4 = -1911121386;
-			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, -1311702610))
-			{
-				Var0.f_4 = -1311702610;
-			}
-			else if (func_145(bParam0, -1653629781))
-			{
-				Var0 = { func_63(1384535894, Var0, 1784584921, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, 1384535894);
-			}
-			break;
-		default:
-			if (INVENTORY::_0x780C5B9AE2819807(bParam0, 1084182731))
-			{
-				Var0.f_4 = 1084182731;
-			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, 1034665895))
-			{
-				Var0.f_4 = 1034665895;
-			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, -833319691))
-			{
-				Var28.f_9 = -1591664384;
-				if (!func_146(Var0, &Var28, bParam1, 0, -1))
-				{
-					Var0.f_4 = 0;
-				}
-				else
-				{
-					Var0 = { Var28.f_5 };
-					Var0.f_4 = -833319691;
-				}
-			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, -718417579))
-			{
-				Var0.f_4 = -718417579;
-			}
-			else if (func_145(bParam0, -1653629781))
-			{
-				Var0 = { func_63(1384535894, Var0, 1784584921, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, 1384535894);
-			}
-			else
-			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("character"));
-				if (Var0.f_4 == 0)
-				{
-				}
-			}
-			break;
-	}
-	return Var0;
-}
-
-int func_126(bool bParam0)
-{
-	int iVar0;
-
-	if (!func_67(bParam0, 0))
-	{
-		return 0;
-	}
-	iVar0 = func_144(bParam0);
-	if (iVar0 == 0)
-	{
-		return 0;
-	}
-	return ITEMDATABASE::_ITEM_DATABASE_GET_HAS_SLOT_COUNT(iVar0);
-}
-
-int func_127(bool bParam0, bool bParam1)
-{
-	int iVar0;
-	var uVar1;
-
-	if (bParam0 != 0)
-	{
-		iVar0 = func_144(bParam0);
-		if (iVar0 != 0)
-		{
-			if (bParam1 >= 0 && bParam1 < func_126(bParam0))
-			{
-				if (ITEMDATABASE::_ITEM_DATABASE_GET_HAS_SLOT_INFO(iVar0, bParam1, &uVar1))
-				{
-					return uVar1;
-				}
-			}
-		}
-	}
-	return 0;
-}
-
-int func_128(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, bool bParam5, int iParam6)
-{
-	return func_147(&uParam0, bParam4, bParam5, iParam6);
-}
-
-int func_129(bool bParam0, int iParam1, bool bParam2)
-{
-	struct<10> Var0;
-	var uVar22;
-
-	Var0.f_9 = -1591664384;
-	if (!func_67(bParam0, 0))
-	{
-		return 0;
-	}
-	if (!func_148(bParam0, &uVar22, &Var0, iParam1))
-	{
-		return 0;
-	}
-	if (!bParam2)
-	{
-		if (func_142(bParam0, &Var0, iParam1))
-		{
-			return 0;
-		}
-	}
-	return 1;
-}
-
 int func_130(int iParam0, int iParam1)
 {
 	struct<10> Var0;
 	var uVar22;
 
-	if (!func_64(iParam0))
+	if (!aggregate.doc_book.func_308(iParam0))
 	{
 		return 1;
 	}
 	Var0.f_9 = -1591664384;
-	if (!INVENTORY::_0x025A1B1FB03FBF61(func_93(0), iParam0, &Var0, 22, 1))
+	if (!INVENTORY::_0x025A1B1FB03FBF61(aggregate.bandana.func_72(0), iParam0, &Var0, 22, 1))
 	{
 		return 2;
 	}
@@ -2944,9 +2158,9 @@ int func_130(int iParam0, int iParam1)
 	}
 	if (func_80(iParam0) == 0)
 	{
-		if (func_64(&uVar22))
+		if (aggregate.doc_book.func_308(&uVar22))
 		{
-			if (func_149(iParam0, &uVar22))
+			if (aggregate.fishing_core.func_583(iParam0, &uVar22))
 			{
 				return 3;
 			}
@@ -2962,74 +2176,74 @@ int func_130(int iParam0, int iParam1)
 	return 0;
 }
 
-int func_131(int iParam0, var uParam1)
+bool func_131(int iParam0, var uParam1)
 {
 	switch (iParam0)
 	{
 		case 4:
 			*uParam1 = 1000849983; /* GXTEntry: "Equip to Melee" */
-			return 1;
+			return true;
 		case 3:
 			*uParam1 = -327947319; /* GXTEntry: "Equip Off-Hand Sidearm" */
-			return 1;
+			return true;
 		case 2:
 			*uParam1 = 1588146127; /* GXTEntry: "Equip Sidearm" */
-			return 1;
+			return true;
 		case 7:
 		case 9:
 			*uParam1 = 297513196; /* GXTEntry: "Equip to Back" */
-			return 1;
+			return true;
 		case 8:
 		case 10:
 			*uParam1 = 108789798; /* GXTEntry: "Equip to Shoulder" */
-			return 1;
+			return true;
 		default:
 			break;
 	}
-	return 0;
+	return false;
 }
 
-int func_132(int iParam0, var uParam1)
+bool func_132(int iParam0, var uParam1)
 {
 	switch (iParam0)
 	{
 		case 4:
 			*uParam1 = 941907253;
-			return 1;
+			return true;
 		case 3:
 			*uParam1 = -1756222973;
-			return 1;
+			return true;
 		case 2:
 			*uParam1 = -1313710397;
-			return 1;
+			return true;
 		case 9:
 			*uParam1 = 1554581363;
-			return 1;
+			return true;
 		case 10:
 			*uParam1 = -946029012;
-			return 1;
+			return true;
 		case 7:
 			*uParam1 = -466398939;
-			return 1;
+			return true;
 		case 8:
 			*uParam1 = -260514364;
-			return 1;
+			return true;
 		default:
 			break;
 	}
-	return 0;
+	return false;
 }
 
 int func_133(int iParam0)
 {
 	struct<10> Var0;
 
-	if (!func_64(iParam0))
+	if (!aggregate.doc_book.func_308(iParam0))
 	{
 		return 1;
 	}
 	Var0.f_9 = -1591664384;
-	if (!INVENTORY::_0x025A1B1FB03FBF61(func_93(0), iParam0, &Var0, 22, 1))
+	if (!INVENTORY::_0x025A1B1FB03FBF61(aggregate.bandana.func_72(0), iParam0, &Var0, 22, 1))
 	{
 		return 2;
 	}
@@ -3056,12 +2270,12 @@ int func_134(int iParam0)
 {
 	struct<10> Var0;
 
-	if (!func_64(iParam0))
+	if (!aggregate.doc_book.func_308(iParam0))
 	{
 		return 1;
 	}
 	Var0.f_9 = -1591664384;
-	if (!INVENTORY::_0x025A1B1FB03FBF61(func_93(0), iParam0, &Var0, 22, 1))
+	if (!INVENTORY::_0x025A1B1FB03FBF61(aggregate.bandana.func_72(0), iParam0, &Var0, 22, 1))
 	{
 		return 1;
 	}
@@ -3088,217 +2302,26 @@ int func_134(int iParam0)
 	return 0;
 }
 
-int func_135(int iParam0, var uParam1, var uParam2)
+bool func_135(int iParam0, var uParam1, var uParam2)
 {
 	switch (iParam0)
 	{
 		case 0:
 			*uParam2 = 1210712530;
 			*uParam1 = 863205103;
-			return 1;
+			return true;
 		case 1:
 			*uParam2 = 1210712530;
 			*uParam1 = -2122928365;
-			return 1;
+			return true;
 		case 2:
 			*uParam2 = 1210712530;
 			*uParam1 = -229529296;
-			return 1;
+			return true;
 		default:
 			break;
 	}
-	return 0;
-}
-
-void func_136(int iParam0, int iParam1, char[32] cParam2, struct<27> Param10)
-{
-	func_151(iParam0, iParam1, cParam2, Param10);
-	iParam0->f_18 = DATABINDING::_DATABINDING_ADD_DATA_STRING(*iParam0, func_118(15), &(Param10.f_16));
-	iParam0->f_19 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(21), Param10.f_24);
-	iParam0->f_20 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(22), Param10.f_25);
-	iParam0->f_21 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam0, func_118(23), Param10.f_26);
-}
-
-int func_137(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
-{
-	if (func_152(bParam0) && !bParam2)
-	{
-		return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, bParam0);
-	}
-	return INVENTORY::_0xE787F05DFC977BDE(func_93(bParam1), bParam0, bParam3);
-}
-
-int func_138(bool bParam0)
-{
-	switch (bParam0)
-	{
-		case -59585102: /* GXTEntry: "Tonics Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_REMEDIES_MP");
-		case 1018123892: /* GXTEntry: "Ingredients Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_INGREDIENTS_MP");
-		case 982182330: /* GXTEntry: "Materials Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_MATERIALS_MP");
-		case -1406390556: /* GXTEntry: "Valuables Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_VALUABLES_MP");
-		case -1455768246: /* GXTEntry: "Kit Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_KIT_MP");
-		case -921879912: /* GXTEntry: "Provisions Satchel" */
-			return MISC::GET_HASH_KEY("KIT_POUCH_PROVISIONS_MP");
-	}
-	return 0;
-}
-
-int func_139(bool bParam0)
-{
-	vector3 vVar0;
-
-	if (!func_67(bParam0, 0))
-	{
-		return 0;
-	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &vVar0))
-	{
-		return 0;
-	}
-	return vVar0.z;
-}
-
-int func_140(bool bParam0, bool bParam1)
-{
-	if (func_144(bParam0) == 1779021115)
-	{
-		return 0;
-	}
-	if (WEAPON::_0xD955FEE4B87AFA07(bParam0))
-	{
-		if (bParam1)
-		{
-			return func_120();
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	return 0;
-}
-
-bool func_141(bool bParam0, var uParam1, int iParam2, int iParam3, int iParam4)
-{
-	return func_153(bParam0, *uParam1, iParam2, iParam3, 1, iParam4) > 0;
-}
-
-int func_142(bool bParam0, int iParam1, int iParam2)
-{
-	var uVar0;
-
-	if (func_148(bParam0, &uVar0, iParam1, iParam2))
-	{
-		return iParam1->f_17 > 0f;
-	}
-	return 0;
-}
-
-struct<4> func_143(bool bParam0)
-{
-	int iVar0;
-
-	iVar0 = func_93(bParam0);
-	if (iVar0 == 2 || iVar0 == 3)
-	{
-		if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_8)))
-		{
-			Global_1270479->f_8 = { func_63(271701509, func_94(bParam0), 12999093, 0) };
-		}
-		return Global_1270479->f_8;
-	}
-	return func_63(271701509, func_94(bParam0), 12999093, 0);
-}
-
-int func_144(bool bParam0)
-{
-	struct<2> Var0;
-
-	if (!func_67(bParam0, 0))
-	{
-		return 0;
-	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &Var0))
-	{
-		return 0;
-	}
-	return Var0.f_1;
-}
-
-int func_145(bool bParam0, int iParam1)
-{
-	bool bVar0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
-
-	if (bParam0 == 0 || iParam1 == 0)
-	{
-		return 0;
-	}
-	iVar1 = func_144(bParam0);
-	iVar3 = ITEMDATABASE::_ITEM_DATABASE_GET_FITS_SLOT_COUNT(iVar1);
-	iVar2 = 0;
-	while (iVar2 < iVar3)
-	{
-		if (ITEMDATABASE::_ITEM_DATABASE_GET_FITS_SLOT_INFO(iVar1, iVar2, &bVar0))
-		{
-			if (func_154(bParam0, iParam1, bVar0))
-			{
-				return 1;
-			}
-		}
-		iVar2++;
-	}
-	return 0;
-}
-
-bool func_146(var uParam0, var uParam1, bool bParam2, int iParam3, int iParam4, bool bParam5, bool bParam6, int iParam7)
-{
-	return func_155(&uParam0, iParam4, bParam5, bParam6, iParam7);
-}
-
-int func_147(int iParam0, bool bParam1, bool bParam2, int iParam3)
-{
-	struct<10> Var0;
-
-	Var0.f_9 = -1591664384;
-	if (func_156(iParam0, bParam1, &Var0, bParam2, iParam3))
-	{
-		return Var0.f_4;
-	}
-	return 0;
-}
-
-int func_148(bool bParam0, int iParam1, int iParam2, bool bParam3)
-{
-	int iVar0;
-
-	iVar0 = func_93(0);
-	*iParam1 = { func_63(bParam0, func_62(0), bParam3, 0) };
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam1))
-	{
-		return 0;
-	}
-	if (!INVENTORY::_0x025A1B1FB03FBF61(iVar0, iParam1, iParam2, 22, 1))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_149(int iParam0, var uParam1)
-{
-	if (((*iParam0 == *uParam1 && iParam0->f_1 == uParam1->f_1) && iParam0->f_2 == uParam1->f_2) && iParam0->f_3 == uParam1->f_3)
-	{
-		return 1;
-	}
-	return 0;
+	return false;
 }
 
 int func_150(int iParam0)
@@ -3306,12 +2329,12 @@ int func_150(int iParam0)
 	struct<15> Var0;
 	int iVar22;
 
-	if (!func_64(iParam0))
+	if (!aggregate.doc_book.func_308(iParam0))
 	{
 		return 1;
 	}
 	Var0.f_9 = -1591664384;
-	if (!INVENTORY::_0x025A1B1FB03FBF61(func_93(0), iParam0, &Var0, 22, 1))
+	if (!INVENTORY::_0x025A1B1FB03FBF61(aggregate.bandana.func_72(0), iParam0, &Var0, 22, 1))
 	{
 		return 2;
 	}
@@ -3331,130 +2354,5 @@ int func_150(int iParam0)
 		}
 	}
 	return 0;
-}
-
-void func_151(int iParam0, int iParam1, char[4] cParam2, char[4] cParam3, char[4] cParam4, char[4] cParam5, char[4] cParam6, char[4] cParam7, char[4] cParam8, char[4] cParam9, struct<16> Param10)
-{
-	*iParam0 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(iParam1, &cParam2);
-	iParam0->f_1 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam0, func_118(0), Param10);
-	iParam0->f_2 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam0, func_118(1), Param10.f_1);
-	iParam0->f_3 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(2), Param10.f_2);
-	iParam0->f_4 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(54), Param10.f_3);
-	iParam0->f_5 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(55), Param10.f_4);
-	iParam0->f_7 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(57), Param10.f_5);
-	iParam0->f_6 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(56), Param10.f_6);
-	if (Param10.f_7 == 0)
-	{
-		Param10.f_7 = joaat("ib_select");
-	}
-	iParam0->f_8 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(58), Param10.f_7);
-	iParam0->f_9 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam0, func_118(59), Param10.f_8);
-	iParam0->f_10 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam0, func_118(60), Param10.f_9);
-	iParam0->f_11 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(61), Param10.f_10);
-	iParam0->f_13 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(67), Param10.f_11);
-	iParam0->f_12 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(62), Param10.f_12);
-	if (Param10.f_13 == 0)
-	{
-		Param10.f_13 = joaat("ib_select");
-	}
-	iParam0->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam0, func_118(64), Param10.f_13);
-	iParam0->f_15 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam0, func_118(65), Param10.f_14);
-	iParam0->f_16 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam0, func_118(66), Param10.f_15);
-}
-
-bool func_152(bool bParam0)
-{
-	return WEAPON::_0x1F7977C9101F807F(bParam0);
-}
-
-int func_153(bool bParam0, struct<4> Param1, bool bParam5, bool bParam6, bool bParam7, bool bParam8)
-{
-	int iVar0;
-	struct<4> Var1;
-
-	if (!func_67(bParam0, 0))
-	{
-		return 0;
-	}
-	if (!bParam7 && func_157(bParam0, joaat("default")) == 0)
-	{
-		bParam7 = true;
-	}
-	iVar0 = 0;
-	if (bParam7)
-	{
-		Var1 = { func_63(bParam0, Param1, bParam5, bParam6) };
-		if (!INVENTORY::_0xB881CA836CC4B6D4(&Var1))
-		{
-			return 0;
-		}
-		iVar0 = INVENTORY::_0xC97E0D2302382211(func_93(bParam6), &Var1, bParam8);
-	}
-	else
-	{
-		iVar0 = INVENTORY::_0xE787F05DFC977BDE(func_93(bParam6), bParam0, bParam8);
-	}
-	return iVar0;
-}
-
-int func_154(bool bParam0, int iParam1, bool bParam2)
-{
-	if (bParam2 == 487172188)
-	{
-		if (ITEMDATABASE::_0xAA29A5F13B2C20B2(iParam1, joaat("default")) == -1925887917)
-		{
-			return 0;
-		}
-	}
-	return ITEMDATABASE::_ITEM_DATABASE_CAN_EQUIP_ITEM_ON_CATEGORY(bParam0, iParam1, bParam2);
-}
-
-int func_155(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
-{
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return 0;
-	}
-	if (iParam4 == -1)
-	{
-		iParam4 = func_93(bParam2);
-	}
-	if (!INVENTORY::_0x9700E8EFC4AB9089(iParam4, iParam0, iParam1, !bParam3))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_156(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4)
-{
-	var uVar0;
-
-	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam0))
-	{
-		return 0;
-	}
-	if (iParam4 == -1)
-	{
-		iParam4 = func_93(bParam3);
-	}
-	if (!INVENTORY::_0x22E590F108289A9D(iParam4, iParam0, bParam1, &uVar0))
-	{
-		return 0;
-	}
-	if (!func_155(&uVar0, iParam2, bParam3, 0, iParam4))
-	{
-		return 0;
-	}
-	return 1;
-}
-
-int func_157(bool bParam0, int iParam1)
-{
-	if (iParam1 == 0)
-	{
-		return 0;
-	}
-	return ITEMDATABASE::_0xF4452CE83118C738(bParam0, iParam1);
 }
 

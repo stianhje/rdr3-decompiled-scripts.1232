@@ -35,7 +35,7 @@ void __EntryFunction__()
 		return;
 	}
 	bVar0 = false;
-	while (!func_2(1, 1))
+	while (!aggregate.aberdeenpigfarm.func_49(1, 1))
 	{
 		bVar0 = false;
 		if (SCRIPTS::_0x9E4EF615E307FBBE())
@@ -46,7 +46,7 @@ void __EntryFunction__()
 		{
 			bVar0 = true;
 		}
-		if (func_3())
+		if (aggregate.mp_intro.func_877())
 		{
 			bVar0 = true;
 		}
@@ -94,72 +94,5 @@ void __EntryFunction__()
 void func_1(int iParam0)
 {
 	Global_1915170->f_21989.f_4 = iParam0;
-}
-
-int func_2(bool bParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (Global_1572887->f_12)
-	{
-		return 0;
-	}
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
-		{
-		}
-		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
-		{
-		}
-		else if (bParam1 && &Global_1572887 < 39)
-		{
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
-	{
-		return 1;
-	}
-	if (SCRIPTS::_0x9E4EF615E307FBBE())
-	{
-		switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-		{
-			case 0:
-				return 1;
-			case 1:
-				return 1;
-			case 2:
-				if (!bParam0)
-				{
-					return 1;
-				}
-				break;
-			case 4:
-				return 1;
-			case 3:
-				return 1;
-			default:
-				return 1;
-		}
-	}
-	iVar0 = 0;
-	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
-	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
-		{
-			return 1;
-		}
-		iVar0++;
-	}
-	return 0;
-}
-
-bool func_3()
-{
-	return Global_1099293->f_331;
 }
 

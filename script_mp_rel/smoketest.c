@@ -18,9 +18,5 @@
 	float fLocal_16 = 0f;
 #endregion
 
-void __EntryFunction__()
-{
-	fLocal_15 = 1f;
-	fLocal_16 = 1f;
-}
+// __EntryFunction__ == net_msm_local.__EntryFunction__
 

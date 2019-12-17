@@ -24,18 +24,18 @@ void __EntryFunction__()
 	bVar0 = false;
 	while (!bVar0)
 	{
-		if (func_2() == -1)
+		if (aggregate.aberdeenpigfarm.func_45() == -1)
 		{
 			bVar0 = SCRIPTS::_0x9E4EF615E307FBBE();
 		}
 		else
 		{
-			bVar0 = func_3(1, 1);
+			bVar0 = aggregate.error_listener.func_3(1, 1);
 		}
 		func_4();
 		BUILTIN::WAIT(0);
 	}
-	func_5();
+	aggregate.dynamic_craft_scenario.func_12();
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
@@ -87,73 +87,6 @@ void func_1()
 	StringCopy(&((Global_25757.f_197[5 /*21*/])->f_5), "Critical error detected, this might cause unexpected behaviour. Please restart the game.", 128);
 }
 
-int func_2()
-{
-	return Global_1572887->f_13;
-}
-
-int func_3(bool bParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (Global_1572887->f_12)
-	{
-		return 0;
-	}
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
-		{
-		}
-		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
-		{
-		}
-		else if (bParam1 && &Global_1572887 < 39)
-		{
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
-	{
-		return 1;
-	}
-	if (SCRIPTS::_0x9E4EF615E307FBBE())
-	{
-		switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-		{
-			case 0:
-				return 1;
-			case 1:
-				return 1;
-			case 2:
-				if (!bParam0)
-				{
-					return 1;
-				}
-				break;
-			case 4:
-				return 1;
-			case 3:
-				return 1;
-			default:
-				return 1;
-		}
-	}
-	iVar0 = 0;
-	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
-	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
-		{
-			return 1;
-		}
-		iVar0++;
-	}
-	return 0;
-}
-
 void func_4()
 {
 	func_6();
@@ -181,11 +114,6 @@ void func_4()
 	func_10(1);
 	func_11(Global_25757.f_1[0 /*19*/]);
 	func_12();
-	func_10(0);
-}
-
-void func_5()
-{
 	func_10(0);
 }
 
@@ -249,10 +177,10 @@ void func_11(char* sParam0)
 	}
 	fVar0 = (IntToFloat(MISC::GET_GAME_TIMER()) / 1000f);
 	fVar1 = ((0.5f * BUILTIN::SIN((250f * (fVar0 - 0f)))) + 0.5f);
-	(Global_25757.f_324[0 /*8*/])->f_4 = BUILTIN::FLOOR(func_14(200f, 100f, fVar1));
-	(Global_25757.f_324[0 /*8*/])->f_5 = BUILTIN::FLOOR(func_14(4f, 60f, fVar1));
-	(Global_25757.f_324[0 /*8*/])->f_6 = BUILTIN::FLOOR(func_14(0f, 58f, fVar1));
-	(Global_25757.f_324[0 /*8*/])->f_7 = BUILTIN::FLOOR(func_14(200f, 200f, fVar1));
+	(Global_25757.f_324[0 /*8*/])->f_4 = BUILTIN::FLOOR(aggregate.electric_lantern.func_8(200f, 100f, fVar1));
+	(Global_25757.f_324[0 /*8*/])->f_5 = BUILTIN::FLOOR(aggregate.electric_lantern.func_8(4f, 60f, fVar1));
+	(Global_25757.f_324[0 /*8*/])->f_6 = BUILTIN::FLOOR(aggregate.electric_lantern.func_8(0f, 58f, fVar1));
+	(Global_25757.f_324[0 /*8*/])->f_7 = BUILTIN::FLOOR(aggregate.electric_lantern.func_8(200f, 200f, fVar1));
 	func_15(Global_25757.f_324[0 /*8*/]);
 	StringCopy(&((Global_25757.f_197[0 /*21*/])->f_5), "Script: '", 128);
 	StringConCat(&((Global_25757.f_197[0 /*21*/])->f_5), sParam0, 128);
@@ -278,7 +206,7 @@ void func_12()
 	func_16(Global_25757.f_197[5 /*21*/]);
 }
 
-int func_13(int iParam0, int iParam1)
+bool func_13(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -288,7 +216,7 @@ int func_13(int iParam0, int iParam1)
 	{
 		if (iVar0 == 0)
 		{
-			StringCopy(Global_25757.f_1[iVar0 /*19*/], func_18(iParam0), 128);
+			StringCopy(Global_25757.f_1[iVar0 /*19*/], aggregate.error_listener.func_18(iParam0), 128);
 			(Global_25757.f_1[iVar0 /*19*/])->f_16 = iParam0;
 			(Global_25757.f_1[iVar0 /*19*/])->f_17 = iParam1;
 			(Global_25757.f_1[iVar0 /*19*/])->f_18 = MISC::GET_FRAME_COUNT();
@@ -304,12 +232,7 @@ int func_13(int iParam0, int iParam1)
 		iVar0 = (iVar0 + -1);
 	}
 	Global_25757++;
-	return 1;
-}
-
-float func_14(float fParam0, float fParam1, float fParam2)
-{
-	return (((1f - fParam2) * fParam0) + (fParam2 * fParam1));
+	return true;
 }
 
 void func_15(var uParam0)
@@ -347,30 +270,11 @@ char* func_17(int iParam0)
 		default:
 			break;
 	}
-	return func_18(iParam0);
-}
-
-var func_18(int iParam0)
-{
-	return MISC::_0x2B6846401D68E563(BUILTIN::TO_FLOAT(iParam0), 0);
+	return aggregate.error_listener.func_18(iParam0);
 }
 
 void func_19(float fParam0, float fParam1, char* sParam2, char* sParam3)
 {
-	HUD::_DISPLAY_TEXT(MISC::_CREATE_VAR_STRING(10, "VAR_STRING_1", func_20(sParam3, joaat("COLOR_PURE_WHITE"))), fParam0, fParam1);
-}
-
-char* func_20(char* sParam0, int iParam1)
-{
-	if (iParam1 == joaat("COLOR_PURE_WHITE"))
-	{
-		return MISC::_CREATE_VAR_STRING(10, "LITERAL_STRING", sParam0);
-	}
-	return func_21(MISC::_CREATE_VAR_STRING(10, "LITERAL_STRING", sParam0), iParam1);
-}
-
-char* func_21(char* sParam0, int iParam1)
-{
-	return MISC::_CREATE_VAR_STRING(42, "COLOR_STRING", MISC::_CREATE_COLOR_STRING(iParam1), sParam0);
+	HUD::_DISPLAY_TEXT(MISC::_CREATE_VAR_STRING(10, "VAR_STRING_1", aggregate.aberdeenpigfarm.func_103(sParam3, joaat("COLOR_PURE_WHITE"))), fParam0, fParam1);
 }
 

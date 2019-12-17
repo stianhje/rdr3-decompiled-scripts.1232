@@ -18,84 +18,17 @@ void __EntryFunction__()
 {
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		func_1();
+		aggregate.aberdeenpigfarm.func_46();
 	}
 	while (true)
 	{
-		if (func_2(0, 0))
+		if (aggregate.aberdeenpigfarm.func_49(0, 0))
 		{
-			func_1();
+			aggregate.aberdeenpigfarm.func_46();
 		}
 		BUILTIN::WAIT(0);
 	}
-	func_1();
+	aggregate.aberdeenpigfarm.func_46();
 	SCRIPTS::TERMINATE_THIS_THREAD();
-}
-
-void func_1()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
-}
-
-int func_2(bool bParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (Global_1572887->f_12)
-	{
-		return 0;
-	}
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
-		{
-		}
-		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
-		{
-		}
-		else if (bParam1 && &Global_1572887 < 39)
-		{
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
-	{
-		return 1;
-	}
-	if (SCRIPTS::_0x9E4EF615E307FBBE())
-	{
-		switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-		{
-			case 0:
-				return 1;
-			case 1:
-				return 1;
-			case 2:
-				if (!bParam0)
-				{
-					return 1;
-				}
-				break;
-			case 4:
-				return 1;
-			case 3:
-				return 1;
-			default:
-				return 1;
-		}
-	}
-	iVar0 = 0;
-	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
-	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
-		{
-			return 1;
-		}
-		iVar0++;
-	}
-	return 0;
 }
 

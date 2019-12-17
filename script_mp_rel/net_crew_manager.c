@@ -16,102 +16,14 @@
 
 void __EntryFunction__()
 {
-	func_1();
-	while (!func_2(0, 0))
+	aggregate.net_camp_dog_manager.func_1();
+	while (!aggregate.aberdeenpigfarm.func_49(0, 0))
 	{
-		func_3();
+		aggregate.fme_animal_tagging.func_4();
 		BUILTIN::WAIT(0);
 	}
 	func_4();
-	func_5();
-}
-
-void func_1()
-{
-	int iVar0;
-
-	iVar0 = MISC::GET_GAME_TIMER();
-	func_6(32, -1);
-	func_7();
-	if (func_8())
-	{
-		func_5();
-	}
-	func_9();
-	func_10(0);
-	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
-	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(1);
-}
-
-int func_2(bool bParam0, bool bParam1)
-{
-	int iVar0;
-
-	if (Global_1572887->f_12)
-	{
-		return 0;
-	}
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		if (bParam1 && NETWORK::_0xF2CBC969C4F090C7())
-		{
-		}
-		else if (bParam1 && NETWORK::NETWORK_IS_SESSION_ACTIVE())
-		{
-		}
-		else if (bParam1 && &Global_1572887 < 39)
-		{
-		}
-		else
-		{
-			return 1;
-		}
-	}
-	if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
-	{
-		return 1;
-	}
-	if (SCRIPTS::_0x9E4EF615E307FBBE())
-	{
-		switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-		{
-			case 0:
-				return 1;
-			case 1:
-				return 1;
-			case 2:
-				if (!bParam0)
-				{
-					return 1;
-				}
-				break;
-			case 4:
-				return 1;
-			case 3:
-				return 1;
-			default:
-				return 1;
-		}
-	}
-	iVar0 = 0;
-	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
-	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
-		{
-			return 1;
-		}
-		iVar0++;
-	}
-	return 0;
-}
-
-void func_3()
-{
-	if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
-	{
-		func_11();
-	}
-	func_12();
+	aggregate.aberdeenpigfarm.func_46();
 }
 
 void func_4()
@@ -129,187 +41,15 @@ void func_4()
 	}
 }
 
-void func_5()
-{
-	SCRIPTS::TERMINATE_THIS_THREAD();
-}
-
-void func_6(int iParam0, int iParam1)
-{
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		func_5();
-	}
-	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(iParam0, false, iParam1);
-}
-
-int func_7()
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-
-	iVar0 = NETWORK::NETWORK_GET_SCRIPT_STATUS();
-	iVar1 = MISC::GET_GAME_TIMER();
-	iVar2 = NETWORK::NETWORK_GET_TIMEOUT_TIME();
-	if (iVar2 < 50000)
-	{
-		iVar2 = 50000;
-	}
-	while (iVar0 != 2)
-	{
-		if (MISC::GET_GAME_TIMER() - iVar1) > (iVar2 - 5000)
-		{
-		}
-		if ((MISC::GET_GAME_TIMER() - iVar1) > 300000)
-		{
-			func_5();
-		}
-		if (SCRIPTS::_0x9E4EF615E307FBBE())
-		{
-			switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-			{
-				case 0:
-					break;
-				case 1:
-					func_5();
-					break;
-				case 2:
-					func_5();
-					break;
-				case 4:
-					func_5();
-					break;
-				case 3:
-					func_5();
-					break;
-				default:
-					break;
-			}
-		}
-		if (((iVar0 == 3 || iVar0 == 4) || iVar0 == 5) || iVar0 == 6)
-		{
-			func_5();
-		}
-		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-		{
-			func_5();
-		}
-		if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
-		{
-			func_5();
-		}
-		if (func_13() == 0)
-		{
-			if (func_14())
-			{
-				func_5();
-			}
-		}
-		BUILTIN::WAIT(0);
-		iVar0 = NETWORK::NETWORK_GET_SCRIPT_STATUS();
-	}
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		func_5();
-	}
-	return 1;
-}
-
-int func_8()
-{
-	if (Global_1572887->f_9)
-	{
-		return 0;
-	}
-	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-	{
-		return 1;
-	}
-	if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
-	{
-		return 1;
-	}
-	return 0;
-}
-
 void func_9()
 {
-	func_15(Global_1182187);
+	aggregate.mp_intro.func_590(Global_1182187);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(Global_1182187, 2, 5);
-	func_16(NETWORK::_0xBA24095EA96DFE17(Global_1182187), 2, "g_mpNetCrewHostData");
-	func_17(Global_1182189);
+	aggregate.flow_controller.func_12(NETWORK::_0xBA24095EA96DFE17(Global_1182187), 2, "g_mpNetCrewHostData");
+	aggregate.net_crew_manager.func_17(Global_1182189);
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(Global_1182189, 545, 6);
-	func_18(NETWORK::_0x690806BC83BC8CA2((*Global_1182189)[0 /*17*/]), 545, "g_mpNetCrewPlayerData");
+	aggregate.flow_controller.func_12(NETWORK::_0x690806BC83BC8CA2((*Global_1182189)[0 /*17*/]), 545, "g_mpNetCrewPlayerData");
 	func_19(Global_1182734);
-}
-
-void func_10(bool bParam0)
-{
-	int iVar0;
-	struct<8> Var1;
-	int iVar9;
-
-	iVar0 = (MISC::_GET_SYSTEM_TIME() + 180000);
-	iVar9 = 0;
-	Var1 = { Var1 };
-	while (true)
-	{
-		iVar9++;
-		if (bParam0)
-		{
-			NETWORK::_0x236905C700FDB54D();
-		}
-		if (SCRIPTS::_0x9E4EF615E307FBBE())
-		{
-			switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-			{
-				case 0:
-					break;
-				case 1:
-					func_5();
-					break;
-				case 2:
-					func_5();
-					break;
-				case 4:
-					func_5();
-					break;
-				case 3:
-					func_5();
-					break;
-				default:
-					break;
-			}
-		}
-		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
-		{
-			return;
-		}
-		if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
-		{
-			StringCopy(&Var1, "HOST", 64);
-		}
-		else
-		{
-			StringCopy(&Var1, "CLIENT", 64);
-		}
-		if (NETWORK::_0x5D10B3795F3FC886())
-		{
-			return;
-		}
-		if (MISC::_GET_SYSTEM_TIME() >= iVar0)
-		{
-			func_5();
-			return;
-		}
-		BUILTIN::WAIT(0);
-	}
-}
-
-void func_11()
-{
-	func_20();
 }
 
 void func_12()
@@ -321,57 +61,18 @@ void func_12()
 			{
 				return;
 			}
-			if (func_21(2))
+			if (aggregate.net_crew_manager.func_21(2))
 			{
 				((*Global_1182189)[PLAYER::PLAYER_ID() /*17*/])->f_15 = 1;
 			}
 			func_22();
-			func_23();
+			aggregate.fme_escaped_convicts.func_423();
 			Global_1182734 = 1;
 			break;
 		case 1:
 			func_24();
 			break;
 	}
-}
-
-int func_13()
-{
-	return Global_1572887->f_13;
-}
-
-bool func_14()
-{
-	return Global_1051202->f_8;
-}
-
-void func_15(var uParam0)
-{
-	struct<2> Var0;
-
-	*uParam0 = { Var0 };
-}
-
-int func_16(var uParam0, int iParam1, char* sParam2)
-{
-	return 1;
-}
-
-void func_17(var uParam0)
-{
-	int iVar0;
-
-	iVar0 = 0;
-	while (iVar0 <= 31)
-	{
-		func_25((*uParam0)[iVar0 /*17*/]);
-		iVar0++;
-	}
-}
-
-int func_18(var uParam0, int iParam1, char* sParam2)
-{
-	return 1;
 }
 
 void func_19(var uParam0)
@@ -409,11 +110,6 @@ void func_20()
 	}
 }
 
-bool func_21(int iParam0)
-{
-	return func_26(Global_1181794->f_1, iParam0);
-}
-
 void func_22()
 {
 	int iVar0;
@@ -428,18 +124,6 @@ void func_22()
 			((*Global_1182189)[iVar0 /*17*/])->f_9[iVar1] = &Global_1181794->f_35[iVar1 /*22*/];
 		}
 		iVar1++;
-	}
-}
-
-void func_23()
-{
-	int iVar0;
-
-	iVar0 = 0;
-	while (iVar0 <= 31)
-	{
-		func_27(iVar0);
-		iVar0++;
 	}
 }
 
@@ -464,11 +148,6 @@ void func_25(var uParam0)
 
 	Var0.f_9 = 5;
 	*uParam0 = { Var0 };
-}
-
-bool func_26(var uParam0, int iParam1)
-{
-	return (uParam0 && iParam1) != 0;
 }
 
 void func_27(int iParam0)
@@ -540,19 +219,19 @@ void func_30()
 	}
 }
 
-int func_31()
+bool func_31()
 {
 	if (Global_1182734->f_107 == 0)
 	{
 		Global_1182734->f_107 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-		return 1;
+		return true;
 	}
 	else if (NETWORK::GET_TIME_DIFFERENCE(Global_1182734->f_107, NETWORK::GET_NETWORK_TIME_ACCURATE()) > 2000)
 	{
 		Global_1182734->f_107 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-		return 1;
+		return true;
 	}
-	return 0;
+	return false;
 }
 
 void func_32()
@@ -633,22 +312,17 @@ void func_34(int iParam0, int iParam1)
 	(Global_1182734->f_1[iParam0 /*3*/])->f_1 = iParam1;
 }
 
-int func_35(int iParam0)
+bool func_35(int iParam0)
 {
 	struct<8> Var0;
 	char* sVar8;
 
 	if (CREW::NETWORK_CLAN_IS_EMBLEM_READY(&(Global_1182734->f_1[iParam0 /*3*/]), &Var0))
 	{
-		sVar8 = func_36(Var0);
+		sVar8 = aggregate.blackwater.func_268(Var0);
 		(Global_1182734->f_1[iParam0 /*3*/])->f_2 = MISC::GET_HASH_KEY(sVar8);
-		return 1;
+		return true;
 	}
-	return 0;
-}
-
-char* func_36(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7)
-{
-	return HUD::_0xD8402B858F4DDD88(&uParam0, HUD::GET_LENGTH_OF_LITERAL_STRING(&uParam0));
+	return false;
 }
 

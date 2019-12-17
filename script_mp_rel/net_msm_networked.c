@@ -22,9 +22,5 @@
 	var uLocal_20 = 0;
 #endregion
 
-void __EntryFunction__()
-{
-	fLocal_16 = 1f;
-	fLocal_17 = 1f;
-}
+// __EntryFunction__ == net_msm_local.__EntryFunction__
 
