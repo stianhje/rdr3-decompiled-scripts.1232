@@ -27,8 +27,8 @@ void __EntryFunction__()
 	fLocal_16 = 1f;
 	func_1();
 	sVar0 = "net_ambient_content_evaluator";
-	aggregate.fme_animal_tagging.func_1407(&uVar1);
-	while (!aggregate.aberdeenpigfarm.func_49(0, 0))
+	aggregate_func_4480(&uVar1);
+	while (!aggregate_func_523(0, 0))
 	{
 		if (func_4())
 		{
@@ -45,16 +45,16 @@ void __EntryFunction__()
 		func_6(Global_1196787, sVar0, &uVar1);
 		BUILTIN::WAIT(0);
 	}
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_2819();
 }
 
 void func_1()
 {
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
-	aggregate.flow_controller.func_8();
-	if (aggregate.flow_controller.func_9())
+	aggregate_func_306();
+	if (aggregate_func_2318())
 	{
-		aggregate.aberdeenpigfarm.func_46();
+		aggregate_func_2819();
 	}
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 	MISC::_0xB711EB4BC8D06013();
@@ -62,7 +62,7 @@ void func_1()
 
 bool func_4()
 {
-	return !aggregate.fme_animal_tagging.func_16(aggregate.gfh_campworks.func_16(), 0, 0);
+	return !aggregate_func_2889(aggregate_func_7387(), 0, 0);
 }
 
 void func_5(var uParam0, char* sParam1)
@@ -104,13 +104,13 @@ void func_6(var uParam0, char* sParam1, var uParam2)
 	{
 		return;
 	}
-	if (aggregate.broom_scenario.func_18(uParam2, 30000))
+	if (aggregate_func_4628(uParam2, 30000))
 	{
 		if (SCRIPTS::_DOES_THREAD_EXIST(*uParam0))
 		{
 			SCRIPTS::_0x7DE4643157AD646C(*uParam0);
 		}
-		aggregate.fme_animal_tagging.func_1407(uParam2);
+		aggregate_func_4480(uParam2);
 	}
 }
 

@@ -24,24 +24,24 @@ void __EntryFunction__()
 
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	aggregate.bayounwa_population.func_1();
+	aggregate_func_685();
 	bVar0 = true;
 	while (bVar0)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() == -1)
+		if (aggregate_func_4251() == -1)
 		{
 		}
 		else
 		{
 			Global_1896610->f_51 = NETWORK::_0xFB9ECED5B68F3B78(Global_1896610->f_42);
-			if (aggregate.aberdeenpigfarm.func_49(1, 1))
+			if (aggregate_func_523(1, 1))
 			{
 				bVar0 = false;
 			}
 		}
 		BUILTIN::WAIT(0);
 	}
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 

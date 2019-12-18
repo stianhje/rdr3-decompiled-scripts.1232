@@ -31,7 +31,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -41,15 +41,15 @@ bool func_13()
 
 void func_25()
 {
-	if (aggregate.aberdeenpigfarm.func_45() == 0)
+	if (aggregate_func_4251() == 0)
 	{
-		aggregate.blackwater.func_55(-1014145132, 1, 0);
+		aggregate_func_7185(-1014145132, 1, 0);
 	}
 }
 
 void func_36(int iParam0, var uParam1)
 {
 	iParam0 = iParam0;
-	aggregate.aguasdulces.func_59(uParam1, iLocal_13, 5);
+	aggregate_func_3063(uParam1, iLocal_13, 5);
 }
 

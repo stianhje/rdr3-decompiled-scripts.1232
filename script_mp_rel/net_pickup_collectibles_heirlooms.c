@@ -166,7 +166,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == net_pickup_collectibles_bottles.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1406
 
 void func_1(var uParam0, struct<2> Param1, var uParam3)
 {
@@ -265,7 +265,7 @@ void func_1(var uParam0, struct<2> Param1, var uParam3)
 		iVar0 = BUILTIN::ROUND(TASK::_0x6718F40313A2B5A6(iVar1));
 		if (iVar0 == 0)
 		{
-			aggregate.net_arrowheads.func_10(uParam0, 4);
+			aggregate_func_7269(uParam0, 4);
 		}
 	}
 	uParam0->f_9 = 1;

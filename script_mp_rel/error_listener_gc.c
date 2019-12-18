@@ -31,13 +31,13 @@ void __EntryFunction__()
 	bVar0 = false;
 	while (!bVar0)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() == -1)
+		if (aggregate_func_4251() == -1)
 		{
 			bVar0 = SCRIPTS::_0x9E4EF615E307FBBE();
 		}
 		else
 		{
-			bVar0 = aggregate.error_listener.func_3(1, 1);
+			bVar0 = aggregate_func_578(1, 1);
 		}
 		BUILTIN::WAIT(0);
 	}

@@ -24,6 +24,6 @@ void __EntryFunction__()
 {
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_2819();
 }
 

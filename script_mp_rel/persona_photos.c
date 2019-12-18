@@ -32,7 +32,7 @@ void __EntryFunction__()
 		BUILTIN::WAIT(0);
 	}
 	func_4(&Local_13);
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_2819();
 }
 
 void func_1(vector3 vParam0)
@@ -63,7 +63,7 @@ bool func_2(var uParam0)
 {
 	int iVar0;
 
-	if (aggregate.aberdeenpigfarm.func_49(0, 0))
+	if (aggregate_func_523(0, 0))
 	{
 		return true;
 	}
@@ -80,7 +80,7 @@ bool func_3(var uParam0)
 	bool bVar0;
 	int iVar1;
 
-	switch (aggregate.bandana.func_20(uParam0))
+	switch (aggregate_func_4641(uParam0))
 	{
 		case 0:
 			if (GRAPHICS::_0xAF6E67D073D2DCE2())
@@ -115,20 +115,20 @@ bool func_3(var uParam0)
 						{
 							iVar1++;
 						}
-						aggregate.coffee_drinking.func_5(uParam0, 1);
+						aggregate_func_4252(uParam0, 1);
 						Jump @295; //curOff = 210
 						if (func_9(uParam0))
 						{
-							aggregate.coffee_drinking.func_5(uParam0, 2);
+							aggregate_func_4252(uParam0, 2);
 						}
 						Jump @295; //curOff = 229
 						if (func_10(uParam0))
 						{
 							func_11(uParam0, uParam0->f_356);
-							aggregate.camera_item.func_77(uParam0, 0);
+							aggregate_func_4242(uParam0, 0);
 							if (uParam0->f_357 >= uParam0->f_358)
 							{
-								aggregate.coffee_drinking.func_5(uParam0, 4);
+								aggregate_func_4252(uParam0, 4);
 							}
 							else
 							{
@@ -256,17 +256,17 @@ bool func_10(var uParam0)
 				return false;
 			}
 			iVar1 = (uParam0->f_3[iVar0 /*11*/])->f_1;
-			if (aggregate.fme_animal_tagging.func_1546(iVar1, uParam0->f_2) != 0)
+			if (aggregate_func_5227(iVar1, uParam0->f_2) != 0)
 			{
-				aggregate.fme_animal_tagging.func_1423(iVar1, uParam0->f_2);
+				aggregate_func_1627(iVar1, uParam0->f_2);
 			}
-			aggregate.fme_animal_tagging.func_1548(iVar1, uParam0->f_2, 1);
+			aggregate_func_2123(iVar1, uParam0->f_2, 1);
 			func_15(256);
 			GRAPHICS::_0x3E2FDDBE435A8787();
 			GRAPHICS::_0x196D3ACBEBA4A44B(1);
 			GRAPHICS::_0xD9C24F53631F2372(&((uParam0->f_3[iVar0 /*11*/])->f_3), &(uParam0->f_3[iVar0 /*11*/]), 0);
 			PED::FORCE_PED_MOTION_STATE(&(uParam0->f_3[iVar0 /*11*/]), 247561816, false, 0, false);
-			aggregate.camera_item.func_77(uParam0, 1);
+			aggregate_func_4242(uParam0, 1);
 			break;
 		case 1:
 			PED::FORCE_PED_MOTION_STATE(&(uParam0->f_3[iVar0 /*11*/]), 247561816, false, 0, false);
@@ -278,14 +278,14 @@ bool func_10(var uParam0)
 				case 1:
 				case 2:
 					iVar1 = (uParam0->f_3[iVar0 /*11*/])->f_1;
-					bVar2 = NETWORK::_0x2A48D9567940598F(&((uParam0->f_3[iVar0 /*11*/])->f_3), iVar1, 1, aggregate.fme_animal_tagging.func_1547(uParam0->f_2));
+					bVar2 = NETWORK::_0x2A48D9567940598F(&((uParam0->f_3[iVar0 /*11*/])->f_3), iVar1, 1, aggregate_func_5228(uParam0->f_2));
 					break;
 			}
 			if (!bVar2)
 			{
 				return false;
 			}
-			aggregate.camera_item.func_77(uParam0, 2);
+			aggregate_func_4242(uParam0, 2);
 			break;
 		case 2:
 			PED::FORCE_PED_MOTION_STATE(&(uParam0->f_3[iVar0 /*11*/]), 247561816, false, 0, false);
@@ -296,9 +296,9 @@ bool func_10(var uParam0)
 			uParam0->f_357++;
 			if (uParam0->f_2 == 1 || uParam0->f_2 == 2)
 			{
-				aggregate.fme_animal_tagging.func_1548((uParam0->f_3[iVar0 /*11*/])->f_1, uParam0->f_2, 2);
+				aggregate_func_2123((uParam0->f_3[iVar0 /*11*/])->f_1, uParam0->f_2, 2);
 			}
-			aggregate.camera_item.func_77(uParam0, 3);
+			aggregate_func_4242(uParam0, 3);
 			break;
 		case 3:
 			return true;

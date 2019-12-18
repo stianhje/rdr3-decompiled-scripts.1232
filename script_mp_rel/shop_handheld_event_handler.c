@@ -35,7 +35,7 @@ void __EntryFunction__()
 		return;
 	}
 	bVar0 = false;
-	while (!aggregate.aberdeenpigfarm.func_49(1, 1))
+	while (!aggregate_func_523(1, 1))
 	{
 		bVar0 = false;
 		if (SCRIPTS::_0x9E4EF615E307FBBE())
@@ -46,7 +46,7 @@ void __EntryFunction__()
 		{
 			bVar0 = true;
 		}
-		if (aggregate.mp_intro.func_877())
+		if (aggregate_func_5548())
 		{
 			bVar0 = true;
 		}

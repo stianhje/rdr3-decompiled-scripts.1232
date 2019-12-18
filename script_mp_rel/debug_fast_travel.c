@@ -8,10 +8,10 @@ void __EntryFunction__()
 	{
 		func_1();
 	}
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 	while (!bLocal_0)
 	{
-		aggregate.aberdeenpigfarm.func_23();
+		aggregate_func_4238();
 		BUILTIN::WAIT(0);
 	}
 	func_1();

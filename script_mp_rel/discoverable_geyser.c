@@ -12,7 +12,7 @@
 	var uLocal_10 = 0;
 	var uLocal_11 = 0;
 	var uLocal_12 = 0;
-	struct<10> Local_13 = { 3, 0, 6, 0, 0, 0, 0, 0, 0, 0 } ;
+	struct<33> Local_13 = { 3, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
 	var uLocal_23 = 0;
 	var uLocal_24 = 0;
 	var uLocal_25 = 6;
@@ -91,13 +91,13 @@ bool func_2()
 	return true;
 }
 
-bool func_3(var uParam0)
+bool func_3(int iParam0)
 {
 	int iVar0;
 
 	if (Local_49 == 0)
 	{
-		iVar0 = TASK::_0xA92450B5AE687AAF(uParam0->f_1);
+		iVar0 = TASK::_0xA92450B5AE687AAF(iParam0->f_1);
 		Local_49 = func_6(iVar0);
 		return false;
 	}
@@ -122,12 +122,12 @@ void func_4()
 		{
 			return;
 		}
-		if (aggregate.annesburg.func_142(Global_35, &((Local_13[iVar0 /*10*/])->f_1[2]), 1, 0))
+		if (aggregate_func_1520(Global_35, &((Local_13[iVar0 /*10*/])->f_1[2]), 1, 0))
 		{
 			iVar2 = 3;
 			while (iVar2 <= 5)
 			{
-				if (aggregate.annesburg.func_142(Global_35, &((Local_13[iVar0 /*10*/])->f_1[iVar2]), 1, 0))
+				if (aggregate_func_1520(Global_35, &((Local_13[iVar0 /*10*/])->f_1[iVar2]), 1, 0))
 				{
 					Local_13.f_31 = iVar2;
 					bVar3 = PED::IS_PED_ON_MOUNT(PLAYER::PLAYER_PED_ID());
@@ -137,17 +137,17 @@ void func_4()
 					}
 					if (ENTITY::IS_ENTITY_IN_WATER(PLAYER::PLAYER_PED_ID()) || (bVar3 && ENTITY::IS_ENTITY_IN_WATER(iVar4)))
 					{
-						if (!aggregate.discoverable_geyser.func_9())
+						if (!aggregate_func_7464())
 						{
 							func_10(1);
 						}
 					}
-					else if (aggregate.discoverable_geyser.func_9())
+					else if (aggregate_func_7464())
 					{
 						func_10(0);
 					}
 				}
-				else if (aggregate.discoverable_geyser.func_9() && Local_13.f_31 == iVar2)
+				else if (aggregate_func_7464() && Local_13.f_31 == iVar2)
 				{
 					func_10(0);
 				}
@@ -157,7 +157,7 @@ void func_4()
 		switch (&Local_13[iVar0 /*10*/])
 		{
 			case 0:
-				aggregate.discoverable_geyser.func_11(Local_13[iVar0 /*10*/], 1);
+				aggregate_func_6664(Local_13[iVar0 /*10*/], 1);
 				break;
 			case 1:
 				STREAMING::REQUEST_PTFX_ASSET();
@@ -165,7 +165,7 @@ void func_4()
 				{
 					return;
 				}
-				aggregate.discoverable_geyser.func_11(Local_13[iVar0 /*10*/], 2);
+				aggregate_func_6664(Local_13[iVar0 /*10*/], 2);
 				break;
 			case 2:
 				iVar5 = 0;
@@ -185,7 +185,7 @@ void func_4()
 				{
 					return;
 				}
-				if (aggregate.discoverable_geyser.func_11(Local_13[iVar0 /*10*/], func_15(iVar1)))
+				if (aggregate_func_6664(Local_13[iVar0 /*10*/], func_15(iVar1)))
 				{
 					func_16(iVar1, &(Local_13[iVar0 /*10*/]));
 				}
@@ -195,7 +195,7 @@ void func_4()
 			case 5:
 			case 6:
 				func_17(iVar1);
-				if (aggregate.discoverable_geyser.func_11(Local_13[iVar0 /*10*/], func_15(iVar1)))
+				if (aggregate_func_6664(Local_13[iVar0 /*10*/], func_15(iVar1)))
 				{
 					func_16(iVar1, &(Local_13[iVar0 /*10*/]));
 				}
@@ -545,7 +545,7 @@ void func_17(int iParam0)
 	vVar6 = { func_14(iParam0) };
 	vVar6.f_2 = vVar3.z;
 	vVar0 = { vVar3 - vVar6 };
-	vVar0 = { aggregate.ambient_fishing_scenario.func_26(vVar0) };
+	vVar0 = { aggregate_func_2907(vVar0) };
 	PED::SET_PED_TO_RAGDOLL_WITH_FALL(Global_35, 3000, 5000, 0, vVar0, 204f, 0f, 0f, 0f, 0f, 0f, 0f);
 	ENTITY::APPLY_FORCE_TO_ENTITY(Global_35, 1, vVar0 * Vector(6f, 6f, 6f), 0f, 0f, 0f, 0, false, false, true, false, true);
 	(Local_13[iParam0 /*10*/])->f_9 = 1;

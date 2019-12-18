@@ -32,7 +32,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 void func_6(int iParam0)
 {
@@ -45,7 +45,7 @@ bool func_40(int iParam0)
 	switch (iLocal_14)
 	{
 		case 0:
-			if (STREAMING::HAS_MODEL_LOADED(func_53()) && !aggregate.aberdeenpigfarm.func_62())
+			if (STREAMING::HAS_MODEL_LOADED(func_53()) && !aggregate_func_4506())
 			{
 				iLocal_14 = 1;
 			}

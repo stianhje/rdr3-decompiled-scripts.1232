@@ -41,7 +41,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == ambient_fishing_scenario.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1747
 
 void func_6()
 {
@@ -58,17 +58,17 @@ void func_6()
 		iLocal_13 = 0;
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Local_18.f_25)) && !SCRIPTS::HAS_SCRIPT_LOADED(&(Local_18.f_25)))
 		{
-			if (aggregate.mp_intro.func_430())
+			if (aggregate_func_1569())
 			{
-				aggregate.dynamic_craft_scenario.func_257(0);
+				aggregate_func_564(0);
 			}
 		}
 		return;
 	}
-	switch (aggregate.fme_supply_train.func_900())
+	switch (aggregate_func_5076())
 	{
 		case 0:
-			if (func_15())
+			if (aggregate_func_9351())
 			{
 				Local_18.f_30 = TASK::_0x2D0571BB55879DA2(Local_18);
 				StringCopy(&(Local_18.f_25), "doc_treasure_map", 32);
@@ -94,30 +94,30 @@ void func_6()
 				Local_18.f_15 = Local_18.f_5;
 				Local_18.f_15.f_3 = 1;
 				Local_18.f_29 = 1024;
-				aggregate.fme_golden_hat.func_194();
+				aggregate_func_7241();
 			}
-			func_17(1);
+			aggregate_func_9352(1);
 			break;
 		case 1:
-			if (func_15())
+			if (aggregate_func_9351())
 			{
 				SCRIPTS::REQUEST_SCRIPT(&(Local_18.f_25));
 				func_18();
-				aggregate.dynamic_craft_scenario.func_257(1);
-				aggregate.fme_golden_hat.func_194();
+				aggregate_func_564(1);
+				aggregate_func_7241();
 			}
-			func_17(2);
+			aggregate_func_9352(2);
 			break;
 		case 2:
-			if (func_15())
+			if (aggregate_func_9351())
 			{
-				aggregate.fme_golden_hat.func_194();
+				aggregate_func_7241();
 			}
 			if ((SCRIPTS::HAS_SCRIPT_LOADED(&(Local_18.f_25)) && TASK::IS_PED_ACTIVE_IN_SCENARIO(Local_18, 0)) && func_19())
 			{
 				Local_18.f_31 = SCRIPTS::START_NEW_SCRIPT_WITH_ARGS(&(Local_18.f_25), &(Local_18.f_15), 10, Local_18.f_29);
 				SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(&(Local_18.f_25));
-				func_17(3);
+				aggregate_func_9352(3);
 				fVar1 = 0f;
 				if (ENTITY::IS_ENTITY_PLAYING_ANIM(Local_18, "script_re@murder_campfire@knife_note", "enter", 1))
 				{
@@ -143,7 +143,7 @@ void func_6()
 						}
 					}
 				}
-				else if (aggregate.aberdeenpigfarm.func_66() == 1)
+				else if (aggregate_func_4371() == 1)
 				{
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_78))
 					{
@@ -175,13 +175,13 @@ void func_6()
 					_NAMESPACE29::_0x66F9EB44342BB4C5(Global_35, &Local_52);
 				}
 			}
-			if (func_15())
+			if (aggregate_func_9351())
 			{
-				aggregate.fme_golden_hat.func_194();
+				aggregate_func_7241();
 			}
 			if (ENTITY::DOES_ENTITY_EXIST(iLocal_78))
 			{
-				if (aggregate.aberdeenpigfarm.func_66() == 1 || aggregate.aberdeenpigfarm.func_66() == 9)
+				if (aggregate_func_4371() == 1 || aggregate_func_4371() == 9)
 				{
 					if ((ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_78, "script_re@murder_campfire@head_note", "enter_head", 1) && ENTITY::_0x627520389E288A73(iLocal_78, "script_re@murder_campfire@head_note", "enter_head") > 0.49f) || (ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_78, "script_re@murder_campfire@knife_note", "enter_head", 1) && ENTITY::_0x627520389E288A73(iLocal_78, "script_re@murder_campfire@head_note", "enter_head") > 0.9f))
 					{
@@ -205,17 +205,6 @@ void func_6()
 			}
 			break;
 	}
-}
-
-bool func_15()
-{
-	return Local_18.f_32;
-}
-
-void func_17(int iParam0)
-{
-	Local_18.f_33 = iParam0;
-	func_24();
 }
 
 void func_18()
@@ -248,11 +237,6 @@ bool func_19()
 		return true;
 	}
 	return false;
-}
-
-void func_21(int iParam0)
-{
-	Local_18 = iParam0->f_1;
 }
 
 void func_22(int iParam0)

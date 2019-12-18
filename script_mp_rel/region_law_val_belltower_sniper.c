@@ -67,7 +67,7 @@ void __EntryFunction__()
 		SCRIPTS::TERMINATE_THIS_THREAD();
 	}
 	func_2();
-	while (aggregate.fme_animal_tagging.func_1249(uScriptParam_0) && func_4())
+	while (aggregate_func_4350(uScriptParam_0) && func_4())
 	{
 		func_5();
 		BUILTIN::WAIT(0);
@@ -77,15 +77,15 @@ void __EntryFunction__()
 
 void func_1()
 {
-	if (aggregate.barcustomer_interaction.func_12(iLocal_46, 0))
+	if (aggregate_func_402(iLocal_46, 0))
 	{
-		aggregate.fishing_core.func_116(&iLocal_46);
+		aggregate_func_581(&iLocal_46);
 	}
 	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_47))
 	{
 		VOLUME::_0x43F867EF5C463A53(iLocal_47);
 	}
-	LAW::_0x7EF2A2FE38D74456(aggregate.region_law_rho_law_swarm.func_5(7), 0);
+	LAW::_0x7EF2A2FE38D74456(aggregate_func_8613(7), 0);
 }
 
 void func_2()
@@ -103,12 +103,12 @@ int func_4()
 	{
 		return 0;
 	}
-	fVar0 = aggregate.fishing_core.func_39(Global_35, vLocal_49, 1);
+	fVar0 = aggregate_func_1501(Global_35, vLocal_49, 1);
 	if (fVar0 > 100f)
 	{
 		return 0;
 	}
-	if (aggregate.fishing_core.func_161(&uLocal_52) > 120f)
+	if (aggregate_func_4850(&uLocal_52) > 120f)
 	{
 		return 0;
 	}
@@ -131,12 +131,12 @@ void func_5()
 			break;
 		case 4:
 			func_11();
-			aggregate.barcustomer_interaction.func_43(&uLocal_52);
+			aggregate_func_4283(&uLocal_52);
 			iLocal_45 = 5;
 			break;
 		case 5:
 			func_13(iLocal_46, joaat("INPUT_FOCUS_CAM"));
-			if (!aggregate.barcustomer_interaction.func_12(iLocal_46, 0))
+			if (!aggregate_func_402(iLocal_46, 0))
 			{
 				iLocal_45 = 6;
 			}
@@ -151,7 +151,7 @@ void func_11()
 {
 	int iVar0;
 
-	iLocal_46 = aggregate.butchercreek.func_91(iLocal_48, vLocal_49, 101.6932f, 1, 1, 0, 1, 1, 1, 0, 0);
+	iLocal_46 = aggregate_func_2073(iLocal_48, vLocal_49, 101.6932f, 1, 1, 0, 1, 1, 1, 0, 0);
 	WEAPON::_GIVE_WEAPON_TO_PED_2(iLocal_46, joaat("weapon_sniperrifle_carcano"), 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 	PED::_0xFC3DB99C8144CD81(iLocal_46, iLocal_47, 0, 0, 0);
 	PED::SET_PED_CONFIG_FLAG(iLocal_46, 263, true);
@@ -184,7 +184,7 @@ void func_13(int iParam0, int iParam1)
 
 void func_19(int iParam0)
 {
-	if (!aggregate.barcustomer_interaction.func_12(iParam0, 0))
+	if (!aggregate_func_402(iParam0, 0))
 	{
 		return;
 	}

@@ -18,5 +18,5 @@
 	float fLocal_16 = 0f;
 #endregion
 
-// __EntryFunction__ == net_msm_local.__EntryFunction__
+// __EntryFunction__ == aggregate_func_8600
 

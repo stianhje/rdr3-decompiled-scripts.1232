@@ -27,15 +27,15 @@ void __EntryFunction__()
 	bVar0 = ScriptParam_0.f_1;
 	bVar1 = ScriptParam_0.f_3;
 	bVar2 = ScriptParam_0.f_4;
-	iVar5 = aggregate.coffee_drinking.func_52(bVar0);
+	iVar5 = aggregate_func_4494(bVar0);
 	bVar6 = false;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		aggregate.coffee_drinking.func_5(&Var3, 3);
+		aggregate_func_4252(&Var3, 3);
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(Global_35))
 	{
-		if (aggregate.fm_mission_controller.func_5479(Global_35, 0) != joaat("weapon_unarmed"))
+		if (aggregate_func_3123(Global_35, 0) != joaat("weapon_unarmed"))
 		{
 			WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
 		}
@@ -45,25 +45,25 @@ void __EntryFunction__()
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(Global_35) || ENTITY::IS_ENTITY_DEAD(Global_35))
 		{
-			aggregate.coffee_drinking.func_5(&Var3, 3);
+			aggregate_func_4252(&Var3, 3);
 		}
-		switch (aggregate.bandana.func_20(&Var3))
+		switch (aggregate_func_4641(&Var3))
 		{
 			case 0:
-				if (aggregate.fm_mission_controller.func_5479(Global_35, 0) != joaat("weapon_unarmed"))
+				if (aggregate_func_3123(Global_35, 0) != joaat("weapon_unarmed"))
 				{
 				}
 				else
 				{
-					aggregate.coffee_drinking.func_5(&Var3, 1);
+					aggregate_func_4252(&Var3, 1);
 				}
 				break;
 			case 1:
 				func_5(iVar5);
 				func_6(bVar0);
 				Var3.f_1 = MISC::GET_GAME_TIMER();
-				aggregate.coffee_drinking.func_53(iVar5, 1);
-				aggregate.coffee_drinking.func_5(&Var3, 2);
+				aggregate_func_2919(iVar5, 1);
+				aggregate_func_4252(&Var3, 2);
 				break;
 			case 2:
 				if (bVar2)
@@ -71,25 +71,25 @@ void __EntryFunction__()
 					if ((MISC::GET_GAME_TIMER() - Var3.f_1) > 5500)
 					{
 						bVar6 = func_8(ScriptParam_0);
-						aggregate.herb.func_106(iVar5, 1, !bVar6);
+						aggregate_func_4691(iVar5, 1, !bVar6);
 						if (bVar1)
 						{
 							func_10(iVar5, bVar6, 1, 0);
 						}
 						if (bVar6)
 						{
-							aggregate.doc_book.func_113(238, aggregate.coffee_drinking.func_99(iVar5), 1);
+							aggregate_func_4740(238, aggregate_func_4539(iVar5), 1);
 						}
-						aggregate.coffee_drinking.func_5(&Var3, 3);
+						aggregate_func_4252(&Var3, 3);
 					}
 				}
 				else
 				{
-					aggregate.coffee_drinking.func_5(&Var3, 3);
+					aggregate_func_4252(&Var3, 3);
 				}
 				break;
 			case 3:
-				aggregate.aberdeenpigfarm.func_46();
+				aggregate_func_2819();
 				break;
 		}
 		BUILTIN::WAIT(0);
@@ -100,13 +100,13 @@ void func_5(int iParam0)
 {
 	var uVar0;
 
-	uVar0 = aggregate.doc_book.func_201(MISC::_CREATE_VAR_STRING(10, "ITEM_TASTED_PUMP_MULT", MISC::_CREATE_VAR_STRING(0, aggregate.fm_mission_controller.func_1773(aggregate.herb.func_107(iParam0))), 1), "", 0, 0, joaat("COLOR_PURE_WHITE"), "Transaction_Feed_Sounds", "Transaction_Positive", 0, 1);
+	uVar0 = aggregate_func_2861(MISC::_CREATE_VAR_STRING(10, "ITEM_TASTED_PUMP_MULT", MISC::_CREATE_VAR_STRING(0, aggregate_func_4462(aggregate_func_4781(iParam0))), 1), "", 0, 0, joaat("COLOR_PURE_WHITE"), "Transaction_Feed_Sounds", "Transaction_Positive", 0, 1);
 	(*Global_1914742)[iParam0 /*4*/] = uVar0;
 }
 
 void func_6(bool bParam0)
 {
-	if (!aggregate.bandana.func_30(bParam0, 0))
+	if (!aggregate_func_2823(bParam0, 0))
 	{
 	}
 }
@@ -122,13 +122,13 @@ int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8,
 	iVar0 = Param0.f_1;
 	bVar1 = Param0.f_3;
 	bVar2 = Param0.f_4;
-	iVar3 = aggregate.coffee_drinking.func_52(iVar0);
-	if (!bVar2 || aggregate.dynamic_craft_scenario.func_329(iVar3))
+	iVar3 = aggregate_func_4494(iVar0);
+	if (!bVar2 || aggregate_func_4668(iVar3))
 	{
 		return 0;
 	}
 	bVar4 = func_22(iVar3);
-	if ((!bVar1 || !aggregate.bandana.func_30(bVar4, 0)) || func_23(bVar4))
+	if ((!bVar1 || !aggregate_func_2823(bVar4, 0)) || func_23(bVar4))
 	{
 		return 0;
 	}
@@ -137,7 +137,7 @@ int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8,
 
 void func_10(int iParam0, bool bParam1, bool bParam2, int iParam3)
 {
-	if (!aggregate.dynamic_craft_scenario.func_328(iParam0))
+	if (!aggregate_func_4542(iParam0))
 	{
 		return;
 	}
@@ -146,7 +146,7 @@ void func_10(int iParam0, bool bParam1, bool bParam2, int iParam3)
 
 bool func_22(int iParam0)
 {
-	if (!aggregate.dynamic_craft_scenario.func_328(iParam0))
+	if (!aggregate_func_4542(iParam0))
 	{
 		return false;
 	}
@@ -219,7 +219,7 @@ int func_31(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 	struct<37> Var2;
 	int iVar49;
 
-	if (!aggregate.bandana.func_30(bParam0, 0))
+	if (!aggregate_func_2823(bParam0, 0))
 	{
 		return 0;
 	}
@@ -257,21 +257,21 @@ int func_31(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 	{
 		if (!bParam2)
 		{
-			if (aggregate.aberdeenpigfarm.func_45() != -1)
+			if (aggregate_func_4251() != -1)
 			{
-				aggregate.binoculars.func_18(571, 1);
+				aggregate_func_4322(571, 1);
 			}
 			else
 			{
-				aggregate.binoculars.func_18(235, 0);
+				aggregate_func_4322(235, 0);
 			}
 		}
 	}
 	if (bParam3)
 	{
-		if (!aggregate.aberdeenpigfarm.func_125(0, 0, 1))
+		if (!aggregate_func_1135(0, 0, 1))
 		{
-			aggregate.dynamic_craft_scenario.func_333(1, 5);
+			aggregate_func_2895(1, 5);
 		}
 	}
 	if (bVar0)
@@ -281,28 +281,28 @@ int func_31(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 	return 0;
 }
 
-int func_39(bool bParam0, int iParam1, bool bParam2)
+bool func_39(bool bParam0, int iParam1, bool bParam2)
 {
 	var uVar0[10];
 	int iVar11;
 	int iVar12;
 	int iVar13;
 
-	if (!aggregate.bandana.func_30(bParam0, 0))
+	if (!aggregate_func_2823(bParam0, 0))
 	{
-		return aggregate.fm_mission_controller.func_6317(aggregate.fm_mission_controller.func_4316(bParam0), iParam1, bParam2);
+		return aggregate_func_2070(aggregate_func_4280(bParam0), iParam1, bParam2);
 	}
-	if (aggregate.fme_animal_tagging.func_1526(bParam0))
+	if (aggregate_func_4537(bParam0))
 	{
-		return func_62(aggregate.fme_animal_tagging.func_1527(bParam0, 1), iParam1);
+		return func_62(aggregate_func_2035(bParam0, 1), iParam1);
 	}
-	if ((bParam2 && aggregate.aberdeenpigfarm.func_45() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(bParam0))
+	if ((bParam2 && aggregate_func_4251() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(bParam0))
 	{
-		return 1;
+		return true;
 	}
-	if (!aggregate.fm_mission_controller.func_6319(bParam0, iParam1, &uVar0, &iVar11) || iVar11 < 1)
+	if (!aggregate_func_2983(bParam0, iParam1, &uVar0, &iVar11) || iVar11 < 1)
 	{
-		return 0;
+		return false;
 	}
 	iVar12 = 0;
 	while (iVar12 < iVar11)
@@ -313,11 +313,11 @@ int func_39(bool bParam0, int iParam1, bool bParam2)
 		}
 		else if (!UNLOCK::_UNLOCK_IS_UNLOCKED(iVar13))
 		{
-			return 1;
+			return true;
 		}
 		iVar12++;
 	}
-	return 0;
+	return false;
 }
 
 bool func_51(bool bParam0, int iParam1)
@@ -328,11 +328,11 @@ bool func_51(bool bParam0, int iParam1)
 	int iVar13;
 	int iVar14;
 
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
 		return false;
 	}
-	if (aggregate.fm_mission_controller.func_6319(bParam0, iParam1, &uVar2, &iVar1))
+	if (aggregate_func_2983(bParam0, iParam1, &uVar2, &iVar1))
 	{
 		iVar14 = 0;
 		while (iVar14 < iVar1)

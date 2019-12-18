@@ -22,5 +22,5 @@
 	var uLocal_20 = 0;
 #endregion
 
-// __EntryFunction__ == net_msm_local.__EntryFunction__
+// __EntryFunction__ == aggregate_func_8600
 

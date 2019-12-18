@@ -38,19 +38,19 @@ void __EntryFunction__()
 	iLocal_15 = vScriptParam_0.x;
 	uLocal_16 = vScriptParam_0.y;
 	iLocal_17 = vScriptParam_0.z;
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		aggregate.ambient_fishing_scenario.func_2();
+		aggregate_func_1689();
 	}
-	while (!SCRIPTS::_0x9E4EF615E307FBBE() && aggregate.ambient_fishing_scenario.func_3())
+	while (!SCRIPTS::_0x9E4EF615E307FBBE() && aggregate_func_3440())
 	{
-		aggregate.aberdeenpigfarm.func_23();
-		aggregate.ambient_fishing_scenario.func_5();
+		aggregate_func_4238();
+		aggregate_func_2374();
 		func_6();
 		BUILTIN::WAIT(0);
 	}
-	aggregate.ambient_fishing_scenario.func_2();
+	aggregate_func_1689();
 }
 
 void func_6()
@@ -67,7 +67,7 @@ void func_6()
 				return;
 			}
 			iLocal_85 = TASK::_0x5BA659955369B0E2(uLocal_16);
-			if (!aggregate.barcustomer_interaction.func_12(iLocal_85, 0))
+			if (!aggregate_func_402(iLocal_85, 0))
 			{
 				iLocal_18 = 7;
 				return;
@@ -91,12 +91,12 @@ void func_6()
 			iLocal_18 = 1;
 			break;
 		case 1:
-			if (!aggregate.barcustomer_interaction.func_12(Global_35, 0))
+			if (!aggregate_func_402(Global_35, 0))
 			{
 				iLocal_18 = 7;
 				return;
 			}
-			if (!aggregate.barcustomer_interaction.func_12(iLocal_85, 0))
+			if (!aggregate_func_402(iLocal_85, 0))
 			{
 				iLocal_18 = 7;
 				return;
@@ -106,7 +106,7 @@ void func_6()
 				iLocal_18 = 7;
 				return;
 			}
-			if (aggregate.broom_scenario.func_14(Global_35, iLocal_85, 1) > 1225f)
+			if (aggregate_func_645(Global_35, iLocal_85, 1) > 1225f)
 			{
 				return;
 			}
@@ -158,11 +158,11 @@ void func_6()
 				iLocal_18 = 7;
 				return;
 			}
-			if (!aggregate.barcustomer_interaction.func_42(&uLocal_88))
+			if (!aggregate_func_4260(&uLocal_88))
 			{
-				aggregate.barcustomer_interaction.func_25(&uLocal_88, 0);
+				aggregate_func_4293(&uLocal_88, 0);
 			}
-			if (aggregate.broom_scenario.func_18(&uLocal_88, fLocal_91) && TASK::_0x02EBBB3989B7E695(iLocal_85))
+			if (aggregate_func_4628(&uLocal_88, fLocal_91) && TASK::_0x02EBBB3989B7E695(iLocal_85))
 			{
 				iLocal_18 = 4;
 			}
@@ -179,7 +179,7 @@ void func_6()
 				{
 					fLocal_91 = (Local_19[iLocal_86 /*13*/])->f_12;
 					iLocal_86++;
-					aggregate.barcustomer_interaction.func_50(&uLocal_88);
+					aggregate_func_4313(&uLocal_88);
 					if (iLocal_86 < iLocal_87)
 					{
 						iLocal_18 = 3;
@@ -197,11 +197,11 @@ void func_6()
 				iLocal_18 = 7;
 				return;
 			}
-			if (!aggregate.barcustomer_interaction.func_42(&uLocal_88))
+			if (!aggregate_func_4260(&uLocal_88))
 			{
-				aggregate.barcustomer_interaction.func_25(&uLocal_88, 0);
+				aggregate_func_4293(&uLocal_88, 0);
 			}
-			if (aggregate.broom_scenario.func_18(&uLocal_88, fLocal_91) && TASK::_0x02EBBB3989B7E695(iLocal_85))
+			if (aggregate_func_4628(&uLocal_88, fLocal_91) && TASK::_0x02EBBB3989B7E695(iLocal_85))
 			{
 				iLocal_18 = 6;
 			}
@@ -214,7 +214,7 @@ void func_6()
 			}
 			if (!bLocal_92)
 			{
-				if (!aggregate.barcustomer_interaction.func_46(iLocal_85, -76381094))
+				if (!aggregate_func_927(iLocal_85, -76381094))
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_85, 1, 0);
 					TASK::_TASK_USE_SCENARIO_POINT(iLocal_85, &(uLocal_93[0]), 0, 0, true, false, 0, false, -1082130432 /* Float: -1f */, 0);
@@ -297,11 +297,11 @@ bool func_13(int iParam0, int iParam1)
 
 bool func_15()
 {
-	if (!aggregate.barcustomer_interaction.func_12(Global_35, 0))
+	if (!aggregate_func_402(Global_35, 0))
 	{
 		return true;
 	}
-	if (!aggregate.barcustomer_interaction.func_12(iLocal_85, 0))
+	if (!aggregate_func_402(iLocal_85, 0))
 	{
 		return true;
 	}

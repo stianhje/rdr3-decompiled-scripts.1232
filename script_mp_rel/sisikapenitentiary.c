@@ -33,7 +33,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -68,19 +68,19 @@ bool func_40(int iParam0)
 	iParam0 = iParam0;
 	bVar0 = true;
 	bVar1 = false;
-	if (!aggregate.annesburg.func_109())
+	if (!aggregate_func_2820())
 	{
 		bVar0 = false;
 	}
-	if (aggregate.fme_animal_tagging.func_884())
+	if (aggregate_func_4478())
 	{
 		bVar0 = false;
 	}
-	if (aggregate.net_main_offline.func_5920() && aggregate.fme_animal_tagging.func_833(68))
+	if (aggregate_func_7305() && aggregate_func_4790(68))
 	{
 		bVar0 = false;
 	}
-	if (aggregate.net_main_offline.func_5920() && aggregate.fme_animal_tagging.func_833(82))
+	if (aggregate_func_7305() && aggregate_func_4790(82))
 	{
 		bVar1 = true;
 	}
@@ -88,15 +88,15 @@ bool func_40(int iParam0)
 	{
 		bVar1 = false;
 	}
-	if (bVar0 && aggregate.annesburg.func_111(255))
+	if (bVar0 && aggregate_func_4367(255))
 	{
 		if (bVar1)
 		{
-			aggregate.fm_deathmatch_controller.func_1542(PLAYER::PLAYER_PED_ID(), joaat("weapon_drowning"), 0, 0);
+			aggregate_func_375(PLAYER::PLAYER_PED_ID(), joaat("weapon_drowning"), 0, 0);
 		}
 		else
 		{
-			aggregate.fm_deathmatch_controller.func_371(5, 0);
+			aggregate_func_2435(5, 0);
 		}
 	}
 	return true;

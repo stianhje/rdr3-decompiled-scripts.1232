@@ -6,14 +6,14 @@ void __EntryFunction__()
 {
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		aggregate.aberdeenpigfarm.func_23();
+		aggregate_func_4238();
 	}
-	aggregate.aberdeenpigfarm.func_23();
-	while (!aggregate.herb.func_62(1) && !bLocal_0)
+	aggregate_func_4238();
+	while (!aggregate_func_2039(1) && !bLocal_0)
 	{
-		aggregate.aberdeenpigfarm.func_23();
+		aggregate_func_4238();
 		BUILTIN::WAIT(0);
 	}
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 }
 

@@ -37,7 +37,7 @@ void __EntryFunction__()
 		func_1(&Local_13);
 	}
 	vVar0 = { ENTITY::GET_ENTITY_COORDS(Local_13.f_1, false, false) };
-	if (!aggregate.fme_animal_tagging.func_516(vVar0))
+	if (!aggregate_func_6841(vVar0))
 	{
 		func_1(&Local_13);
 	}
@@ -49,76 +49,76 @@ void __EntryFunction__()
 			Local_13.f_13 = 0;
 			if (Global_1939168->f_6)
 			{
-				aggregate.item_bait_herbivore.func_1(&Local_13, 5);
+				aggregate_func_8169(&Local_13, 5);
 			}
 		}
-		if (aggregate.aberdeenpigfarm.func_175(&Global_1939168, 4194304))
+		if (aggregate_func_4240(&Global_1939168, 4194304))
 		{
-			aggregate.item_bait_herbivore.func_1(&Local_13, 5);
+			aggregate_func_8169(&Local_13, 5);
 		}
 		if (SCRIPTS::_0x9E4EF615E307FBBE())
 		{
 			func_1(&Local_13);
 		}
-		switch (aggregate.bandana.func_20(&Local_13))
+		switch (aggregate_func_4641(&Local_13))
 		{
 			case 0:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
 					func_7(&Local_13);
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				if (TASK::_0x841475AC96E794D1(Local_13.f_2))
 				{
 					if (func_9(Global_36) && func_10(&Local_13))
 					{
-						aggregate.item_bait_herbivore.func_1(&Local_13, 1);
+						aggregate_func_8169(&Local_13, 1);
 					}
 				}
 				else
 				{
-					aggregate.item_bait_herbivore.func_1(&Local_13, 5);
+					aggregate_func_8169(&Local_13, 5);
 				}
 				break;
 			case 1:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				if (func_11(&Local_13))
 				{
-					aggregate.item_bait_herbivore.func_1(&Local_13, 2);
+					aggregate_func_8169(&Local_13, 2);
 				}
 				break;
 			case 2:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(Local_13.f_1))
 				{
 					if (func_12(&Local_13))
 					{
-						aggregate.item_bait_herbivore.func_1(&Local_13, 3);
+						aggregate_func_8169(&Local_13, 3);
 					}
 				}
 				break;
 			case 3:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
 					func_13(&Local_13);
 					func_14(&Local_13);
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				if (func_15(Local_13.f_11))
 				{
-					aggregate.item_bait_herbivore.func_1(&Local_13, 4);
+					aggregate_func_8169(&Local_13, 4);
 				}
 				break;
 			case 4:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				break;
 			case 5:

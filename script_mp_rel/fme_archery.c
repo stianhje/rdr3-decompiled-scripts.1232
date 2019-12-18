@@ -61,7 +61,7 @@
 	var uLocal_1205 = 255;
 	var uLocal_1206 = 255;
 	struct<6> Local_1207[32];
-	struct<1422> Local_1400 = { -1, -1, 0, 0, 0, 255, 0, -1, -1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 404851220, 0, 0, 0, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -1, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0 } ;
+	struct<1442> Local_1400 = { -1, -1, 0, 0, 0, 255, 0, -1, -1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1082130432, 0, 0, 0, 0, 404851220, 0, 0, 0, 0, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, -1, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 1224195223, 1825312110, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
 	var uLocal_2842 = 0;
 	var uLocal_2843 = 0;
 	var uLocal_2844 = 0;
@@ -85,23 +85,23 @@ void __EntryFunction__()
 	fLocal_2847 = 1f;
 	fLocal_2848 = 1f;
 	iVar0 = ScriptParam_0;
-	aggregate.fme_animal_tagging.func_1(iVar0);
-	aggregate.fme_animal_tagging.func_2(&ScriptParam_0);
-	while (!aggregate.fme_animal_tagging.func_3(ScriptParam_0.f_7))
+	aggregate_func_825(iVar0);
+	aggregate_func_3464(&ScriptParam_0);
+	while (!aggregate_func_6730(ScriptParam_0.f_7))
 	{
-		aggregate.fme_animal_tagging.func_4();
+		aggregate_func_2960();
 		BUILTIN::WAIT(0);
 	}
-	aggregate.fme_animal_tagging.func_5();
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_1703();
+	aggregate_func_2819();
 }
 
 void func_11()
 {
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&Local_7, 123, 38);
-	aggregate.flow_controller.func_12(NETWORK::_0xBA24095EA96DFE17(&Local_7), 123, "m_hostData");
+	aggregate_func_4288(NETWORK::_0xBA24095EA96DFE17(&Local_7), 123, "m_hostData");
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(&Local_130, 161, 39);
-	aggregate.flow_controller.func_12(NETWORK::_0x690806BC83BC8CA2(Local_130[0 /*5*/]), 161, "m_clientData");
+	aggregate_func_4288(NETWORK::_0x690806BC83BC8CA2(Local_130[0 /*5*/]), 161, "m_clientData");
 }
 
 void func_64()
@@ -117,7 +117,7 @@ void func_64()
 
 void func_125()
 {
-	aggregate.fme_archery.func_343(func_342(), 1, 1);
+	aggregate_func_1312(func_342(), 1, 1);
 	DATAFILE::_DATAFILE_UNLOAD(Local_291.f_1);
 	func_344();
 	func_345();
@@ -131,7 +131,7 @@ char* func_166()
 
 void func_167()
 {
-	if (!aggregate.fme_animal_tagging.func_50(func_387(), &(Local_291.f_1), 600, -1, 0, 0))
+	if (!aggregate_func_1649(func_387(), &(Local_291.f_1), 600, -1, 0, 0))
 	{
 	}
 	DATAFILE::_DATAFILE_REGISTER_QUERY(Local_291.f_1, 0, "locations/location(id=%x)/variants");
@@ -154,7 +154,7 @@ bool func_180(int iParam0)
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
-		if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::INT_TO_PARTICIPANTINDEX(iVar0)) && !aggregate.aberdeenpigfarm.func_175((Local_1207[iVar0 /*6*/])->f_1, iParam0))
+		if (NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::INT_TO_PARTICIPANTINDEX(iVar0)) && !aggregate_func_4240((Local_1207[iVar0 /*6*/])->f_1, iParam0))
 		{
 			return false;
 		}
@@ -167,11 +167,11 @@ bool func_196()
 {
 	if (func_402(1))
 	{
-		if (!aggregate.barcustomer_interaction.func_42(&Local_7))
+		if (!aggregate_func_4260(&Local_7))
 		{
-			aggregate.fme_animal_tagging.func_1407(&Local_7);
+			aggregate_func_4480(&Local_7);
 		}
-		if (aggregate.fme_animal_tagging.func_181(&Local_7) > 7000)
+		if (aggregate_func_4732(&Local_7) > 7000)
 		{
 			return true;
 		}
@@ -214,11 +214,11 @@ void func_249()
 	{
 		func_485();
 	}
-	if (!aggregate.fme_animal_tagging.func_152(Local_1400.f_1332))
+	if (!aggregate_func_6777(Local_1400.f_1332))
 	{
 		return;
 	}
-	aggregate.fme_archery.func_343(func_486(), 1, 0);
+	aggregate_func_1312(func_486(), 1, 0);
 	func_487();
 	func_488();
 	Global_1912861 = -789269373;
@@ -242,7 +242,7 @@ char[] func_308(char* sParam0)
 	return MISC::_CREATE_VAR_STRING(6, "FMARCH_SHARD_OUTRO_PRIMARY_WON", sParam0);
 }
 
-char* func_311(var uParam0, var uParam1, char[4] cParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, char[4] cParam9)
+char[] func_311(var uParam0, var uParam1, char[4] cParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, char[4] cParam9)
 {
 	return MISC::_CREATE_VAR_STRING(2, "FMARCH_SHARD_OUTRO_PRIMARY_FAILED");
 }
@@ -420,7 +420,7 @@ bool func_402(int iParam0)
 		if (!NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar0) || !NETWORK::NETWORK_IS_PLAYER_A_PARTICIPANT(iVar0))
 		{
 		}
-		else if (!aggregate.fme_animal_tagging.func_1458(Local_130[iVar1 /*5*/], iParam0))
+		else if (!aggregate_func_4368(Local_130[iVar1 /*5*/], iParam0))
 		{
 			return false;
 		}
@@ -435,7 +435,7 @@ void func_420()
 	func_344();
 	func_345();
 	func_576();
-	aggregate.fme_archery.func_343(func_342(), 1, 1);
+	aggregate_func_1312(func_342(), 1, 1);
 }
 
 int func_421(int iParam0)
@@ -577,7 +577,7 @@ void func_517()
 	while (iVar3 <= (Local_291.f_134 - 1))
 	{
 		iVar0 = (Global_1273882->f_20 - (Local_291.f_123[iVar3 /*2*/])->f_1);
-		fVar2 = MISC::_0xEF50E344A8F93784(aggregate.fme_archery.func_766((IntToFloat(iVar0) / 1000f), 1f), 0f, 1f, 18);
+		fVar2 = MISC::_0xEF50E344A8F93784(aggregate_func_5608((IntToFloat(iVar0) / 1000f), 1f), 0f, 1f, 18);
 		func_767(&(Local_291.f_123[iVar3 /*2*/]), (1f - fVar2), fVar2);
 		if (IntToFloat(iVar0) >= 1000f)
 		{
@@ -641,19 +641,19 @@ void func_519()
 	int iVar0;
 
 	iVar0 = NETWORK::PARTICIPANT_ID_TO_INT();
-	if (!aggregate.fme_animal_tagging.func_152(iVar0))
+	if (!aggregate_func_6777(iVar0))
 	{
 		return;
 	}
-	if (aggregate.fme_animal_tagging.func_1458(Local_130[iVar0 /*5*/], 1) && !func_402(1))
+	if (aggregate_func_4368(Local_130[iVar0 /*5*/], 1) && !func_402(1))
 	{
-		aggregate.fme_animal_tagging.func_425(14, "FMARCH_OBJECTIVE_END", -1, 0);
+		aggregate_func_3535(14, "FMARCH_OBJECTIVE_END", -1, 0);
 	}
 	else
 	{
-		aggregate.fme_animal_tagging.func_425(6, "FMARCH_OBJECTIVE", -1, 0);
+		aggregate_func_3535(6, "FMARCH_OBJECTIVE", -1, 0);
 	}
-	if (!aggregate.annesburg.func_264(&((Local_130[iVar0 /*5*/])->f_1), Local_291.f_114, 3) && !MAP::DOES_BLIP_EXIST(&(Local_291.f_2[Local_291.f_114])))
+	if (!aggregate_func_1963(&((Local_130[iVar0 /*5*/])->f_1), Local_291.f_114, 3) && !MAP::DOES_BLIP_EXIST(&(Local_291.f_2[Local_291.f_114])))
 	{
 		func_748(Local_291.f_114);
 	}
@@ -677,7 +677,7 @@ void func_520()
 {
 	if (!AUDIO::AUDIO_IS_SCRIPTED_MUSIC_PLAYING() && Local_1157 == 5)
 	{
-		aggregate.fme_archery.func_343(func_486(), 1, 0);
+		aggregate_func_1312(func_486(), 1, 0);
 	}
 }
 
@@ -697,7 +697,7 @@ void func_576()
 			{
 				PLAYER::_0xDC5E09D012D759C4(iVar2, iVar2, 0);
 				PLAYER::_0x9A957912CE2EABD1(PLAYER::GET_PLAYER_INDEX(), iVar2, &uVar0);
-				func_807(ENTITY::GET_ENTITY_COORDS(iVar2, true, false), 1065353216 /* Float: 1f */);
+				aggregate_func_1473(ENTITY::GET_ENTITY_COORDS(iVar2, true, false), 1065353216 /* Float: 1f */);
 				ENTITY::DELETE_ENTITY(&iVar2);
 			}
 		}
@@ -752,14 +752,14 @@ void func_654()
 	float fVar2;
 
 	iVar0 = Local_1400.f_1276;
-	iVar1 = aggregate.fme_animal_tagging.func_183(2);
+	iVar1 = aggregate_func_2393(2);
 	if (iVar1 > iVar0)
 	{
 		iVar1 = iVar0;
 	}
 	fVar2 = (BUILTIN::TO_FLOAT(iVar0) / BUILTIN::TO_FLOAT(25));
 	iLocal_4 = (30 + BUILTIN::FLOOR((fVar2 * BUILTIN::TO_FLOAT(iVar1))));
-	iLocal_4 = aggregate.fishing_core.func_224(iLocal_4, 30, 55);
+	iLocal_4 = aggregate_func_5045(iLocal_4, 30, 55);
 }
 
 bool func_655(var uParam0, var uParam1)
@@ -832,13 +832,13 @@ void func_656(var uParam0)
 	iVar0 = 0;
 	while (iVar0 <= (uParam0->f_126 - 1))
 	{
-		if (aggregate.fme_archery.func_922(Local_7.f_3[Local_7.f_59], func_421(((*uParam0)[iVar0 /*5*/])->f_4), *((*uParam0)[iVar0 /*5*/]), 1, 0))
+		if (aggregate_func_930(Local_7.f_3[Local_7.f_59], func_421(((*uParam0)[iVar0 /*5*/])->f_4), *((*uParam0)[iVar0 /*5*/]), 1, 0))
 		{
 			ENTITY::SET_ENTITY_HEADING(NETWORK::NET_TO_ENT(&(Local_7.f_3[Local_7.f_59])), ((*uParam0)[iVar0 /*5*/])->f_3);
 			OBJECT::SET_OBJECT_TARGETTABLE(NETWORK::NET_TO_OBJ(&(Local_7.f_3[Local_7.f_59])), true);
 			GRAPHICS::_0x7DFB49BCDB73089A(NETWORK::NET_TO_OBJ(&(Local_7.f_3[Local_7.f_59])), true);
 			GRAPHICS::_0x7C348310A6E2FB91(NETWORK::NET_TO_OBJ(&(Local_7.f_3[Local_7.f_59])), 0);
-			func_807(ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_OBJ(&(Local_7.f_3[Local_7.f_59])), true, false), 1065353216 /* Float: 1f */);
+			aggregate_func_1473(ENTITY::GET_ENTITY_COORDS(NETWORK::NET_TO_OBJ(&(Local_7.f_3[Local_7.f_59])), true, false), 1065353216 /* Float: 1f */);
 			if (((*uParam0)[iVar0 /*5*/])->f_4 == 863196319)
 			{
 				ENTITY::SET_ENTITY_COORDS(NETWORK::NET_TO_ENT(&(Local_7.f_3[Local_7.f_59])), *((*uParam0)[iVar0 /*5*/]) + Vector(0.05f, 0f, 0f), true, false, true, true);
@@ -861,9 +861,9 @@ void func_695(float fParam0, var uParam1, var uParam2)
 	int iVar0;
 
 	iVar0 = func_474();
-	if (iVar0 != 0 && aggregate.binoculars.func_32(iVar0, 1))
+	if (iVar0 != 0 && aggregate_func_2850(iVar0, 1))
 	{
-		func_965(iVar0, 0, 1);
+		aggregate_func_1474(iVar0, 0, 1);
 	}
 }
 
@@ -886,7 +886,7 @@ void func_747(int iParam0, var uParam1)
 			vVar1 = { ENTITY::_0x5E214112806591EA(iParam0, iVar0) };
 		}
 	}
-	if (aggregate.annesburg.func_121(vVar1))
+	if (aggregate_func_4268(vVar1))
 	{
 		ENTITY::_0xF3FDA9A617A15145(iParam0, &vVar5, &vVar8);
 		vVar1 = { func_996(vVar5, vVar8) };
@@ -961,7 +961,7 @@ void func_768(int iParam0, int iParam1)
 			*(Local_291.f_135[iParam1 /*12*/]) = { ENTITY::GET_WORLD_POSITION_OF_ENTITY_BONE(iParam0, iVar1) };
 			(Local_291.f_135[iParam1 /*12*/])->f_9 = { (Local_291.f_135[iParam1 /*12*/])->f_6 };
 			(Local_291.f_135[iParam1 /*12*/])->f_6 = { ENTITY::_0x3AB3A77672F6473F(iParam0, iVar1, 0, 2) };
-			if (aggregate.annesburg.func_121((Local_291.f_135[iParam1 /*12*/])->f_3))
+			if (aggregate_func_4268((Local_291.f_135[iParam1 /*12*/])->f_3))
 			{
 				(Local_291.f_135[iParam1 /*12*/])->f_3 = { ENTITY::GET_WORLD_POSITION_OF_ENTITY_BONE(iParam0, iVar1) };
 			}
@@ -974,11 +974,11 @@ void func_769(int iParam0)
 	int iVar0;
 
 	iVar0 = NETWORK::PARTICIPANT_ID_TO_INT();
-	if (aggregate.annesburg.func_264(&((Local_130[iVar0 /*5*/])->f_1), iParam0, 3))
+	if (aggregate_func_1963(&((Local_130[iVar0 /*5*/])->f_1), iParam0, 3))
 	{
 		if ((&Local_291.f_58[iParam0] - Global_1273882->f_20) >= 120000)
 		{
-			aggregate.annesburg.func_233(&((Local_130[iVar0 /*5*/])->f_1), iParam0, 3);
+			aggregate_func_2007(&((Local_130[iVar0 /*5*/])->f_1), iParam0, 3);
 			OBJECT::SET_OBJECT_TARGETTABLE(NETWORK::NET_TO_OBJ(&(Local_7.f_3[iParam0])), true);
 			ENTITY::SET_ENTITY_IS_TARGET_PRIORITY(NETWORK::NET_TO_OBJ(&(Local_7.f_3[iParam0])), true, 0f);
 			GRAPHICS::_0x7DFB49BCDB73089A(NETWORK::NET_TO_OBJ(&(Local_7.f_3[iParam0])), true);
@@ -992,7 +992,7 @@ void func_770(int iParam0)
 	var uVar0;
 	int iVar1;
 
-	if (!aggregate.annesburg.func_264(&((Local_130[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/])->f_1), iParam0, 3))
+	if (!aggregate_func_1963(&((Local_130[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/])->f_1), iParam0, 3))
 	{
 		if (iLocal_5 < 31)
 		{
@@ -1017,88 +1017,29 @@ void func_771()
 	int iVar0;
 
 	iVar0 = NETWORK::PARTICIPANT_ID_TO_INT();
-	if (aggregate.bandana.func_75(954660191 /* GXTEntry: "Arrows" */, aggregate.bandana.func_57(0), -1591664384, 0, 0, 0) < 6)
+	if (aggregate_func_1500(954660191 /* GXTEntry: "Arrows" */, aggregate_func_1967(0), -1591664384, 0, 0, 0) < 6)
 	{
-		if (!aggregate.fme_animal_tagging.func_1458(Local_130[iVar0 /*5*/], 2))
+		if (!aggregate_func_4368(Local_130[iVar0 /*5*/], 2))
 		{
-			aggregate.bandana.func_26(Local_130[iVar0 /*5*/], 2);
-			Local_1400.f_1289 = aggregate.fme_animal_tagging.func_436("FMARCH_LOW_AMMO");
+			aggregate_func_4247(Local_130[iVar0 /*5*/], 2);
+			Local_1400.f_1289 = aggregate_func_3074("FMARCH_LOW_AMMO");
 		}
-		if (!aggregate.fme_animal_tagging.func_1458(Local_130[iVar0 /*5*/], 4))
+		if (!aggregate_func_4368(Local_130[iVar0 /*5*/], 4))
 		{
-			aggregate.bandana.func_26(Local_130[iVar0 /*5*/], 4);
+			aggregate_func_4247(Local_130[iVar0 /*5*/], 4);
 		}
 	}
-	else if (aggregate.fme_animal_tagging.func_1458(Local_130[iVar0 /*5*/], 4))
+	else if (aggregate_func_4368(Local_130[iVar0 /*5*/], 4))
 	{
-		aggregate.bandana.func_26(Local_130[iVar0 /*5*/], 4);
+		aggregate_func_4247(Local_130[iVar0 /*5*/], 4);
 	}
 }
 
-void func_807(vector3 vParam0, int iParam3)
+bool func_934(int iParam0, int iParam1)
 {
-	struct<10> Var0;
-	var uVar10;
-
-	Var0 = 56;
-	Var0.f_1 = PLAYER::PLAYER_ID();
-	Var0.f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	Var0.f_4 = Local_1400;
-	Var0.f_5 = 1;
-	Var0.f_6 = { vParam0 };
-	Var0.f_9 = iParam3;
-	uVar10 = aggregate.dynamic_craft_scenario.func_194(0, 8);
-	if (!SCRIPTS::_0x179A6F0EE2E79026(&uVar10))
-	{
-		return;
-	}
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, &Var0, 10, 37, &uVar10);
-}
-
-bool func_934(var uParam0, var uParam1)
-{
-	*uParam0 = 954660191; /* GXTEntry: "Arrows" */
-	*uParam1 = 15;
+	*iParam0 = 954660191; /* GXTEntry: "Arrows" */
+	*iParam1 = 15;
 	return true;
-}
-
-void func_965(int iParam0, int iParam1, bool bParam2)
-{
-	int iVar0;
-
-	if (!aggregate.fme_archery.func_1136(iParam0))
-	{
-	}
-	iVar0 = 88;
-	if (bParam2)
-	{
-		iVar0 = 89;
-	}
-	if (!aggregate.fme_archery.func_165(iVar0))
-	{
-	}
-	Global_1099293->f_368 = iParam0;
-	if (iParam1 == 0)
-	{
-		return;
-	}
-	if (!WEAPON::_0x918990BD9CE08582(PLAYER::PLAYER_PED_ID()))
-	{
-		return;
-	}
-	if (!WEAPON::_0xD955FEE4B87AFA07(iParam0))
-	{
-		return;
-	}
-	if (!WEAPON::_0xD955FEE4B87AFA07(iParam1))
-	{
-		return;
-	}
-	if (!aggregate.fme_archery.func_1136(iParam1))
-	{
-		return;
-	}
-	Global_1099293->f_369 = iParam1;
 }
 
 bool func_994(int iParam0)
@@ -1153,7 +1094,7 @@ bool func_1000(int iParam0)
 	{
 		return false;
 	}
-	return iParam0 == aggregate.annesburg.func_253(iVar0);
+	return iParam0 == aggregate_func_4270(iVar0);
 }
 
 void func_1001(int iParam0, vector3 vParam1)
@@ -1181,7 +1122,7 @@ void func_1001(int iParam0, vector3 vParam1)
 		if (NETWORK::NET_TO_ENT(&(Local_7.f_3[iVar1])) == iParam0)
 		{
 			iVar2 = NETWORK::PARTICIPANT_ID_TO_INT();
-			if (aggregate.annesburg.func_264(&((Local_130[iVar2 /*5*/])->f_1), iVar1, 3))
+			if (aggregate_func_1963(&((Local_130[iVar2 /*5*/])->f_1), iVar1, 3))
 			{
 				return;
 			}
@@ -1225,35 +1166,35 @@ void func_1001(int iParam0, vector3 vParam1)
 				return;
 			}
 			_NAMESPACE71::_0xDD1232B332CBB9E7(10, 1, 0);
-			aggregate.annesburg.func_240(&((Local_130[iVar2 /*5*/])->f_1), iVar1, 3);
+			aggregate_func_1989(&((Local_130[iVar2 /*5*/])->f_1), iVar1, 3);
 			if (MAP::DOES_BLIP_EXIST(&(Local_291.f_2[iVar1])))
 			{
 				MAP::REMOVE_BLIP(Local_291.f_2[iVar1]);
 			}
 			func_1151(iParam0);
-			aggregate.fme_archery.func_1152(MISC::_CREATE_VAR_STRING(6, sVar7, fVar4), 0, -2, 0, 0, 0, 1);
+			aggregate_func_3722(MISC::_CREATE_VAR_STRING(6, sVar7, fVar4), 0, -2, 0, 0, 0, 1);
 			AUDIO::PLAY_SOUND_FRONTEND(sVar8, "FMA_ARCHERY_Sounds", true, 0);
-			vVar14 = { aggregate.camera_item.func_108(PLAYER::GET_PLAYER_INDEX()) };
+			vVar14 = { aggregate_func_1977(PLAYER::GET_PLAYER_INDEX()) };
 			fVar17 = BUILTIN::VDIST2(vVar14, vVar9);
 			if (fVar17 > (fLocal_0 * fLocal_0))
 			{
-				iVar5 = aggregate.fishing_core.func_224(BUILTIN::FLOOR((BUILTIN::SQRT(fVar17) * fLocal_1)), 0, 100);
-				aggregate.fme_archery.func_1152(MISC::_CREATE_VAR_STRING(2, "FMARCH_LONG_SHOT", iVar5), 0, -2, 0, 0, 0, 1);
+				iVar5 = aggregate_func_5045(BUILTIN::FLOOR((BUILTIN::SQRT(fVar17) * fLocal_1)), 0, 100);
+				aggregate_func_3722(MISC::_CREATE_VAR_STRING(2, "FMARCH_LONG_SHOT", iVar5), 0, -2, 0, 0, 0, 1);
 			}
-			bVar18 = aggregate.fme_archery.func_1154((Local_291.f_135[iVar1 /*12*/])->f_3, *(Local_291.f_135[iVar1 /*12*/]), 0.01f, 1);
-			bVar19 = !aggregate.fme_archery.func_1154((Local_291.f_135[iVar1 /*12*/])->f_9, (Local_291.f_135[iVar1 /*12*/])->f_6, 0.01f, 1);
+			bVar18 = aggregate_func_1533((Local_291.f_135[iVar1 /*12*/])->f_3, *(Local_291.f_135[iVar1 /*12*/]), 0.01f, 1);
+			bVar19 = !aggregate_func_1533((Local_291.f_135[iVar1 /*12*/])->f_9, (Local_291.f_135[iVar1 /*12*/])->f_6, 0.01f, 1);
 			if (!bVar18 || bVar19)
 			{
 				iVar6 = 25;
-				aggregate.fme_archery.func_1152(MISC::_CREATE_VAR_STRING(2, "FMARCH_MOVING_TARGET", iVar6), 0, -2, 0, 0, 0, 1);
+				aggregate_func_3722(MISC::_CREATE_VAR_STRING(2, "FMARCH_MOVING_TARGET", iVar6), 0, -2, 0, 0, 0, 1);
 			}
-			if ((Local_1400.f_1277 < aggregate.fme_animal_tagging.func_433() && !aggregate.fme_animal_tagging.func_1458(Local_130[iVar2 /*5*/], 8)) && aggregate.fme_animal_tagging.func_435(Local_1400.f_1289))
+			if ((Local_1400.f_1277 < aggregate_func_6818() && !aggregate_func_4368(Local_130[iVar2 /*5*/], 8)) && aggregate_func_3482(Local_1400.f_1289))
 			{
-				aggregate.bandana.func_26(Local_130[iVar2 /*5*/], 8);
-				Local_1400.f_1289 = aggregate.fme_animal_tagging.func_436("FMARCH_HELP_HIT_TARGET");
+				aggregate_func_4247(Local_130[iVar2 /*5*/], 8);
+				Local_1400.f_1289 = aggregate_func_3074("FMARCH_HELP_HIT_TARGET");
 			}
 			Local_291.f_116++;
-			aggregate.fme_archery.func_1155(((fVar4 + IntToFloat(iVar5)) + IntToFloat(iVar6)));
+			aggregate_func_7436(((fVar4 + IntToFloat(iVar5)) + IntToFloat(iVar6)));
 			ENTITY::SET_ENTITY_IS_TARGET_PRIORITY(NETWORK::NET_TO_OBJ(&(Local_7.f_3[iVar1])), false, 0f);
 			OBJECT::SET_OBJECT_TARGETTABLE(NETWORK::NET_TO_OBJ(&(Local_7.f_3[iVar1])), false);
 			GRAPHICS::_0x7DFB49BCDB73089A(NETWORK::NET_TO_OBJ(&(Local_7.f_3[iVar1])), false);
@@ -1277,52 +1218,5 @@ void func_1151(int iParam0)
 	(Local_291.f_123[Local_291.f_134 /*2*/])->f_1 = Global_1273882->f_20;
 	func_767(iParam0, 1f, 0f);
 	Local_291.f_134++;
-}
-
-bool func_1308(int iParam0)
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
-	int iVar4;
-	struct<14> Var5;
-	struct<14> Var19;
-
-	if (!WEAPON::IS_WEAPON_VALID(iParam0))
-	{
-		return false;
-	}
-	iVar2 = INVENTORY::_0x13D234A2A3F66E63(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()));
-	iVar3 = INVENTORY::_0x80D78BDC9D88EF07(iVar2, "ALL WEAPONS", -1591664384, &iVar0);
-	if (iVar3 < 0)
-	{
-		INVENTORY::_0x42A2F33A1942E865(iVar3);
-		return false;
-	}
-	if (iVar0 <= 0)
-	{
-		INVENTORY::_0x42A2F33A1942E865(iVar3);
-		return false;
-	}
-	iVar4 = 0;
-	iVar1 = 0;
-	Var5.f_9 = -1591664384;
-	Var19.f_9 = -1591664384;
-	iVar1 = 0;
-	while (iVar1 < iVar0)
-	{
-		Var5 = { Var19 };
-		if (INVENTORY::_0x82FA24C3D3FCD9B7(iVar3, iVar1, &Var5))
-		{
-			if (Var5.f_4 == iParam0)
-			{
-				iVar4 = 1;
-			}
-		}
-		iVar1++;
-	}
-	INVENTORY::_0x42A2F33A1942E865(iVar3);
-	return iVar4;
 }
 

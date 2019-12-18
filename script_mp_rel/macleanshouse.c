@@ -35,7 +35,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -77,24 +77,24 @@ bool func_13()
 
 void func_30(int iParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
 		return;
 	}
-	aggregate.annesburg.func_67(899, iLocal_15, 1);
-	aggregate.annesburg.func_67(766, iLocal_15, 0);
-	aggregate.annesburg.func_67(900, iLocal_15, 0);
+	aggregate_func_2366(899, iLocal_15, 1);
+	aggregate_func_2366(766, iLocal_15, 0);
+	aggregate_func_2366(900, iLocal_15, 0);
 	VOLUME::_0x4A8FEFC43FD8AC9B(iLocal_15, 3, 1);
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate.aberdeenpigfarm.func_120(900));
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate.aberdeenpigfarm.func_120(766));
-	PED::_0x931B241409216C1F(aggregate.aberdeenpigfarm.func_174(899), aggregate.aberdeenpigfarm.func_174(766), 0);
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate_func_4452(900));
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate_func_4452(766));
+	PED::_0x931B241409216C1F(aggregate_func_1988(899), aggregate_func_1988(766), 0);
 }
 
 void func_80(int iParam0)
 {
 	LAW::_REMOVE_GUARD_ZONE(sLocal_14);
-	aggregate.annesburg.func_166(iLocal_17);
-	aggregate.annesburg.func_166(iLocal_16);
+	aggregate_func_2017(iLocal_17);
+	aggregate_func_2017(iLocal_16);
 	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_15))
 	{
 		VOLUME::_0x998202B206872672(iLocal_15);

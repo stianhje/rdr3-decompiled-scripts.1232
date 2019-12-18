@@ -31,15 +31,15 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_40(int iParam0)
 {
-	if (aggregate.adlerranch.func_61(&bLocal_18))
+	if (aggregate_func_6721(&bLocal_18))
 	{
 		if (bLocal_18)
 		{
-			aggregate.armadillo.func_69(1510914117, 1);
+			aggregate_func_6624(1510914117, 1);
 		}
 	}
 	return false;

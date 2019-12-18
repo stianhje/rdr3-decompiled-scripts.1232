@@ -34,7 +34,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -49,24 +49,24 @@ bool func_13()
 
 void func_29(int iParam0)
 {
-	aggregate.annesburg.func_63(2, iLocal_21, iParam0, iLocal_22, iLocal_23, 1277952, 0, 0, -1082130432 /* Float: -1f */, 0);
-	aggregate.annesburg.func_66(2, 1217836331, 0, 0);
-	aggregate.beechershope.func_59(2, 0);
+	aggregate_func_348(2, iLocal_21, iParam0, iLocal_22, iLocal_23, 1277952, 0, 0, -1082130432 /* Float: -1f */, 0);
+	aggregate_func_7096(2, 1217836331, 0, 0);
+	aggregate_func_1218(2, 0);
 }
 
 void func_30(int iParam0)
 {
-	aggregate.annesburg.func_67(795, iLocal_21, 1);
+	aggregate_func_2366(795, iLocal_21, 1);
 }
 
 void func_36(int iParam0, var uParam1)
 {
-	aggregate.aguasdulces.func_59(uParam1, iLocal_21, 10);
+	aggregate_func_3063(uParam1, iLocal_21, 10);
 }
 
 bool func_40(int iParam0)
 {
-	aggregate.annesburg.func_79(28, iLocal_21, &uLocal_24);
+	aggregate_func_7429(28, iLocal_21, &uLocal_24);
 	return true;
 }
 

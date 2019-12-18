@@ -27,21 +27,21 @@ void __EntryFunction__()
 	{
 		if (func_3())
 		{
-			vVar0 = { aggregate.ambient_fishing_scenario.func_26(ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Global_35, 0f, 5f, 0f) - ENTITY::GET_ENTITY_COORDS(Global_35, true, false)) };
+			vVar0 = { aggregate_func_2907(ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Global_35, 0f, 5f, 0f) - ENTITY::GET_ENTITY_COORDS(Global_35, true, false)) };
 			vVar3 = { func_5() };
 			vVar3.f_2 = Global_36.f_2;
-			vVar6 = { aggregate.ambient_fishing_scenario.func_26(vVar3 - Global_36) };
-			fVar9 = MISC::ACOS(aggregate.electric_lantern.func_6(vVar0, vVar6));
+			vVar6 = { aggregate_func_2907(vVar3 - Global_36) };
+			fVar9 = MISC::ACOS(aggregate_func_5364(vVar0, vVar6));
 			fVar10 = (180f - fVar9);
 			fVar11 = (fVar10 / 180f);
-			aggregate.coffee_drinking.func_45(fVar11, 0f, 1f);
+			aggregate_func_4333(fVar11, 0f, 1f);
 			iVar12 = 255;
 			iVar13 = 195;
 			iVar14 = 77;
 			iVar15 = 255;
 			iVar16 = 30;
 			iVar17 = 0;
-			GRAPHICS::_0x6EC2A67962296F49(iLocal_0, BUILTIN::FLOOR(aggregate.electric_lantern.func_8(BUILTIN::TO_FLOAT(iVar12), BUILTIN::TO_FLOAT(iVar15), fVar11)), BUILTIN::FLOOR(aggregate.electric_lantern.func_8(BUILTIN::TO_FLOAT(iVar13), BUILTIN::TO_FLOAT(iVar16), fVar11)), BUILTIN::FLOOR(aggregate.electric_lantern.func_8(BUILTIN::TO_FLOAT(iVar14), BUILTIN::TO_FLOAT(iVar17), fVar11)));
+			GRAPHICS::_0x6EC2A67962296F49(iLocal_0, BUILTIN::FLOOR(aggregate_func_4928(BUILTIN::TO_FLOAT(iVar12), BUILTIN::TO_FLOAT(iVar15), fVar11)), BUILTIN::FLOOR(aggregate_func_4928(BUILTIN::TO_FLOAT(iVar13), BUILTIN::TO_FLOAT(iVar16), fVar11)), BUILTIN::FLOOR(aggregate_func_4928(BUILTIN::TO_FLOAT(iVar14), BUILTIN::TO_FLOAT(iVar17), fVar11)));
 		}
 		BUILTIN::WAIT(0);
 	}

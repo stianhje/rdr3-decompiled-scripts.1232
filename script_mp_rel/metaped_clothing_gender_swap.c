@@ -1,6 +1,6 @@
 void __EntryFunction__()
 {
-	aggregate.metaped_clothing_gender_swap.func_1(-1);
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_1829(-1);
+	aggregate_func_2819();
 }
 

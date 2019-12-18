@@ -33,7 +33,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 void func_6(int iParam0)
 {
@@ -49,7 +49,7 @@ bool func_40(int iParam0)
 	switch (iLocal_21)
 	{
 		case 0:
-			if ((((STREAMING::HAS_MODEL_LOADED(joaat("a_m_m_unicorpse_01")) && PED::_0x5E420FF293EE5472()) && ANIMSCENE::_0x25557E324489393C(iLocal_20)) && ANIMSCENE::_0x477122B8D05E7968(iLocal_20, 1, 0)) && !aggregate.aberdeenpigfarm.func_62())
+			if ((((STREAMING::HAS_MODEL_LOADED(joaat("a_m_m_unicorpse_01")) && PED::_0x5E420FF293EE5472()) && ANIMSCENE::_0x25557E324489393C(iLocal_20)) && ANIMSCENE::_0x477122B8D05E7968(iLocal_20, 1, 0)) && !aggregate_func_4506())
 			{
 				iLocal_21 = 1;
 			}
@@ -141,12 +141,12 @@ void func_65()
 
 void func_66()
 {
-	aggregate.deadsettler.func_105(&(uLocal_13[0]), -2089787434);
-	aggregate.deadsettler.func_105(&(uLocal_13[1]), 1908325491);
-	aggregate.deadsettler.func_105(&(uLocal_13[2]), 254342877);
-	aggregate.deadsettler.func_105(&(uLocal_13[3]), -52800960);
-	aggregate.deadsettler.func_105(&(uLocal_13[4]), -1197356488);
-	aggregate.deadsettler.func_105(&(uLocal_13[5]), -1427362099);
+	aggregate_func_288(&(uLocal_13[0]), -2089787434);
+	aggregate_func_288(&(uLocal_13[1]), 1908325491);
+	aggregate_func_288(&(uLocal_13[2]), 254342877);
+	aggregate_func_288(&(uLocal_13[3]), -52800960);
+	aggregate_func_288(&(uLocal_13[4]), -1197356488);
+	aggregate_func_288(&(uLocal_13[5]), -1427362099);
 }
 
 int func_67()
@@ -280,7 +280,7 @@ int func_102(var uParam0, int iParam1, var uParam2, vector3 vParam3, float fPara
 	{
 		return 1;
 	}
-	*uParam0 = aggregate.butchercreek.func_91(iParam1, vParam3, fParam6, 0, 0, 0, 1, 1, 0, 0, 1);
+	*uParam0 = aggregate_func_2073(iParam1, vParam3, fParam6, 0, 0, 0, 1, 1, 0, 0, 1);
 	if (ENTITY::DOES_ENTITY_EXIST(*uParam0))
 	{
 		*uParam2 = 1;

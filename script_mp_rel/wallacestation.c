@@ -36,7 +36,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -59,32 +59,32 @@ bool func_13()
 
 void func_29(int iParam0)
 {
-	aggregate.annesburg.func_63(3, iLocal_23, iParam0, iLocal_24, iLocal_25, 4, 0, 0, -1082130432 /* Float: -1f */, 0);
-	aggregate.annesburg.func_66(3, 96424206, 0, 0);
-	aggregate.annesburg.func_66(3, 381066979, 0, 0);
-	aggregate.annesburg.func_64(3, 8192);
-	aggregate.beechershope.func_59(3, 0);
-	aggregate.annesburg.func_63(2, iLocal_21, iParam0, iLocal_22, 0, 1277952, 0, 0, -1082130432 /* Float: -1f */, 0);
-	aggregate.annesburg.func_66(2, 96424206, 0, 0);
-	aggregate.annesburg.func_66(2, 381066979, 0, 0);
-	aggregate.beechershope.func_59(2, 0);
+	aggregate_func_348(3, iLocal_23, iParam0, iLocal_24, iLocal_25, 4, 0, 0, -1082130432 /* Float: -1f */, 0);
+	aggregate_func_7096(3, 96424206, 0, 0);
+	aggregate_func_7096(3, 381066979, 0, 0);
+	aggregate_func_6609(3, 8192);
+	aggregate_func_1218(3, 0);
+	aggregate_func_348(2, iLocal_21, iParam0, iLocal_22, 0, 1277952, 0, 0, -1082130432 /* Float: -1f */, 0);
+	aggregate_func_7096(2, 96424206, 0, 0);
+	aggregate_func_7096(2, 381066979, 0, 0);
+	aggregate_func_1218(2, 0);
 }
 
 void func_30(int iParam0)
 {
-	aggregate.annesburg.func_67(796, iLocal_21, 1);
-	aggregate.annesburg.func_67(797, iLocal_23, 1);
+	aggregate_func_2366(796, iLocal_21, 1);
+	aggregate_func_2366(797, iLocal_23, 1);
 }
 
 void func_36(int iParam0, var uParam1)
 {
-	aggregate.aguasdulces.func_59(uParam1, iLocal_23, 2);
-	aggregate.aguasdulces.func_59(uParam1, iLocal_21, 10);
+	aggregate_func_3063(uParam1, iLocal_23, 2);
+	aggregate_func_3063(uParam1, iLocal_21, 10);
 }
 
 bool func_40(int iParam0)
 {
-	aggregate.annesburg.func_79(100, iLocal_21, &uLocal_26);
+	aggregate_func_7429(100, iLocal_21, &uLocal_26);
 	return false;
 }
 

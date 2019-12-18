@@ -31,20 +31,20 @@ void __EntryFunction__()
 
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	aggregate.bayounwa_population.func_1();
+	aggregate_func_685();
 	func_2();
 	func_3();
 	func_4();
 	bVar0 = true;
 	while (bVar0)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() == -1)
+		if (aggregate_func_4251() == -1)
 		{
 		}
 		else
 		{
 			Global_1896610->f_51 = NETWORK::_0xFB9ECED5B68F3B78(Global_1896610->f_42);
-			if (aggregate.aberdeenpigfarm.func_49(1, 1))
+			if (aggregate_func_523(1, 1))
 			{
 				bVar0 = false;
 			}
@@ -58,17 +58,17 @@ void __EntryFunction__()
 void func_2()
 {
 	iLocal_17 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(352.5f, 1492.5f, 160f, 0f, 0f, 0f, 75f, 75f, 50f, "m_volOldFortWallace_Restriction");
-	aggregate.annesburg.func_54(iLocal_17);
+	aggregate_func_1306(iLocal_17);
 	iLocal_18 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volBacchusStation_Restriction");
 	VOLUME::_0xBCE668AAF83608BE(iLocal_18, 576.5f, 1692.5f, 190f, 0f, 0f, -45f, 40f, 22f, 15f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_18, 565f, 1713f, 190f, 0f, 0f, 0f, 33f, 33f, 15f);
-	aggregate.bayounwa_population.func_8(iLocal_18, 0, 0);
+	aggregate_func_1308(iLocal_18, 0, 0);
 	iLocal_19 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volSixPointCabin_Restriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_19, -61.78288f, 1236.599f, 171.7316f, 0f, 0f, 30.49994f, 17.57404f, 11.67279f, 13.05081f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_19, -26.60302f, 1223.117f, 175.0363f, 0f, 0f, 0f, 17.60465f, 14.42418f, 5.206519f);
-	aggregate.bayounwa_population.func_10(iLocal_19, 0, 0);
+	aggregate_func_1314(iLocal_19, 0, 0);
 	iLocal_20 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(800f, 890f, 118f, 0f, 0f, 66f, 80f, 65f, 12f, "m_volCarmodyDell_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_20);
+	aggregate_func_1307(iLocal_20);
 }
 
 void func_3()
@@ -102,8 +102,8 @@ void func_3()
 
 void func_4()
 {
-	aggregate.armadillo.func_69(160425541, 1);
-	aggregate.armadillo.func_69(-1127035680, 1);
+	aggregate_func_6624(160425541, 1);
+	aggregate_func_6624(-1127035680, 1);
 }
 
 void func_7()

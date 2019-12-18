@@ -18,17 +18,17 @@ void __EntryFunction__()
 {
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		aggregate.aberdeenpigfarm.func_46();
+		aggregate_func_2819();
 	}
 	while (true)
 	{
-		if (aggregate.aberdeenpigfarm.func_49(0, 0))
+		if (aggregate_func_523(0, 0))
 		{
-			aggregate.aberdeenpigfarm.func_46();
+			aggregate_func_2819();
 		}
 		BUILTIN::WAIT(0);
 	}
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_2819();
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 

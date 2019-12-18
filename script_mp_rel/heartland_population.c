@@ -59,7 +59,7 @@ void __EntryFunction__()
 	fLocal_20 = 100f;
 	fLocal_21 = 100f;
 	fLocal_22 = 0f;
-	aggregate.bayounwa_population.func_1();
+	aggregate_func_685();
 	func_2();
 	func_3();
 	iVar0 = VOLUME::_CREATE_VOLUME_CYLINDER(-128f, 153f, 92.509f, 0f, 0f, 0f, 7.5f, 7.5f, 10f);
@@ -71,13 +71,13 @@ void __EntryFunction__()
 	bVar1 = true;
 	while (bVar1)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() == -1)
+		if (aggregate_func_4251() == -1)
 		{
 		}
 		else
 		{
 			Global_1896610->f_51 = NETWORK::_0xFB9ECED5B68F3B78(Global_1896610->f_42);
-			if (aggregate.aberdeenpigfarm.func_49(1, 1))
+			if (aggregate_func_523(1, 1))
 			{
 				bVar1 = false;
 			}
@@ -101,30 +101,30 @@ void func_2()
 void func_3()
 {
 	iLocal_23 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(1800f, -65f, 58.316f, 0f, 0f, 0f, 50f, 50f, 10f, "m_volAberdeenPigFarm_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_23);
+	aggregate_func_1307(iLocal_23);
 	iLocal_24 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(800f, 890f, 118f, 0f, 0f, 66f, 80f, 65f, 12f, "m_volCarmodyDell_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_24);
+	aggregate_func_1307(iLocal_24);
 	iLocal_26 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("HRT_volCornwall_Restriction");
 	VOLUME::_0xBCE668AAF83608BE(iLocal_26, 557.5f, 585f, 120f, 0f, 0f, -16f, 60f, 100f, 15f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_26, 495f, 650f, 120f, 0f, 0f, 0f, 80f, 80f, 15f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_26, 582.5f, 695f, 120f, 0f, 0f, 0f, 25f, 25f, 15f);
-	if (aggregate.aberdeenpigfarm.func_123())
+	if (aggregate_func_4248())
 	{
 		POPULATION::_0xB56D41A694E42E86(iLocal_26, 2238463, 0, 0, -1, -1, 0);
 		POPULATION::_0x18262CAFEBB5FBE1(iLocal_26, 2238463, 0, 0, -1, -1, 0);
 	}
 	else
 	{
-		aggregate.bayounwa_population.func_9(iLocal_26, 0, 0);
+		aggregate_func_1368(iLocal_26, 0, 0);
 	}
 	iLocal_27 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1120f, 432.5f, 94.789f, 0f, 0f, 45f, 150f, 135f, 20f, "m_volCropFarm_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_27);
+	aggregate_func_1307(iLocal_27);
 	iLocal_28 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(892.5f, 260f, 102.5f, 0f, 0f, 0f, 35f, 35f, 20f, "m_volLarnedSod_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_28);
+	aggregate_func_1307(iLocal_28);
 	iLocal_29 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-62.5f, -397.5f, 75f, 0f, 0f, 0f, 25f, 25f, 15f, "m_volSouthernShack_Restriction");
-	aggregate.bayounwa_population.func_9(iLocal_29, 0, 0);
+	aggregate_func_1368(iLocal_29, 0, 0);
 	iLocal_30 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-340.7f, -349.1f, 127.9f, 0f, 0f, 0f, 50f, 50f, 50f, "m_volFlatneckStation_Restriction");
-	aggregate.annesburg.func_54(iLocal_30);
+	aggregate_func_1306(iLocal_30);
 	iLocal_31 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volValentine_Restriction");
 	VOLUME::_0xBCE668AAF83608BE(iLocal_31, -205f, 670f, 115f, 0f, 0f, 0f, 125f, 125f, 15f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_31, -330f, 795f, 115f, 0f, 0f, 0f, 125f, 125f, 15f);
@@ -133,7 +133,7 @@ void func_3()
 	VOLUME::_0xBCE668AAF83608BE(iLocal_31, -390f, 920f, 115f, 0f, 0f, 0f, 60f, 60f, 15f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_31, -250f, 935f, 130f, 0f, 0f, 0f, 70f, 70f, 20f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_31, -330f, 970f, 125f, 0f, 0f, 0f, 60f, 60f, 15f);
-	func_11(iLocal_31);
+	aggregate_func_1481(iLocal_31);
 	iLocal_33 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(311.33f, 301.2739f, 147.3381f, 0f, 0f, 0f, 25f, 25f, 50f, "m_volGiantRock_Restriction1");
 	POPULATION::_0xB56D41A694E42E86(iLocal_33, 2228479, 16384, 0, -1, -1, 0);
 	POPULATION::_0x18262CAFEBB5FBE1(iLocal_33, 2228479, 16384, 0, -1, -1, 0);
@@ -147,28 +147,28 @@ void func_3()
 	POPULATION::_0x18262CAFEBB5FBE1(iLocal_35, 2228479, 16384, 0, -1, -1, 0);
 	POPULATION::_0x2161278C6322F740(2228479, 16384, 0, -1, -1, iLocal_35);
 	iLocal_32 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1520f, 440f, 92.5f, 0f, 0f, 0f, 20f, 50f, 10f, "m_volER_Trainstation_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_32);
+	aggregate_func_1307(iLocal_32);
 	iLocal_36 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-838f, 343f, 95.5f, 0f, 0f, 0f, 80f, 50f, 44f, "m_volDownesRanch_Restriction");
-	aggregate.bayounwa_population.func_9(iLocal_36, 0, 0);
+	aggregate_func_1368(iLocal_36, 0, 0);
 	iLocal_37 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(1416.5f, 321.5f, 93f, 0f, 0f, -21f, 70f, 80f, 25f, "m_volEmeraldRanch_Restriction");
-	aggregate.bayounwa_population.func_8(iLocal_37, 0, 0);
+	aggregate_func_1308(iLocal_37, 0, 0);
 	iLocal_38 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1185.274f, -101.3631f, 105f, 0f, 0f, 0f, 15f, 10f, 30f, "m_volRuinsNorthOfHorseShop_Restriction");
-	aggregate.bayounwa_population.func_9(iLocal_38, 0, 0);
+	aggregate_func_1368(iLocal_38, 0, 0);
 	iLocal_39 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volFlatIronLakeIsland_Restriction");
 	VOLUME::_0xBCE668AAF83608BE(iLocal_39, 237.213f, -769.7713f, 42.9804f, 0f, 0f, 0f, 156.4307f, 81.38799f, 25.72252f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_39, -401.9616f, -1012.638f, 42.9804f, 0f, 0f, -51.00734f, 240.5335f, 103.688f, 24.89919f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_39, 440.3216f, -1462.027f, 55.90892f, 0f, 0f, 13.40226f, 421.2939f, 982.8425f, 99.70844f);
-	aggregate.bigvalley_population.func_12(iLocal_39, 0, 0);
+	aggregate_func_1416(iLocal_39, 0, 0);
 	iLocal_25 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-435.5f, 498f, 107f, 0f, 0f, -7f, 27f, 17f, 20f, "m_volCastorsPond_Restriction");
-	aggregate.bayounwa_population.func_8(iLocal_25, 0, 0);
+	aggregate_func_1308(iLocal_25, 0, 0);
 	iLocal_40 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volSixPointCabin_Restriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_40, -61.78288f, 1236.599f, 171.7316f, 0f, 0f, 30.49994f, 17.57404f, 11.67279f, 13.05081f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_40, -26.60302f, 1223.117f, 175.0363f, 0f, 0f, 0f, 17.60465f, 14.42418f, 5.206519f);
-	aggregate.bayounwa_population.func_10(iLocal_40, 0, 0);
+	aggregate_func_1314(iLocal_40, 0, 0);
 	iLocal_41 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volBardsCrossing_Restriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_41, -730.6474f, -548.0654f, 77.02292f, 0f, 0f, 27f, 353.0691f, 8.967957f, 13.35221f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_41, -892.4706f, -627.4682f, 77.26994f, 0f, 0f, 18.91964f, 20.99991f, 7.632857f, 11.3815f);
-	aggregate.bayounwa_population.func_10(iLocal_41, 0, 0);
+	aggregate_func_1314(iLocal_41, 0, 0);
 	iLocal_42 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volLimpany_Restriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_42, -344.2052f, -155.7421f, 51.92712f, 0f, 0f, -25.599f, 7.007796f, 12.39152f, 9.160034f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_42, -326.2495f, -151.1143f, 51.75295f, 0f, 0f, -40.79212f, 9.133691f, 7.226022f, 8.362908f);
@@ -179,30 +179,19 @@ void func_3()
 	VOLUME::_0x39816F6F94F385AD(iLocal_42, -317.6271f, -131.9343f, 51.76871f, 0f, 0f, 0f, 6.531308f, 7.349917f, 8.040896f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_42, -314.7265f, -105.8513f, 50.30021f, 0f, 0f, 33.49742f, 11.55198f, 8.022533f, 6.21626f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_42, -372.8026f, -109.9615f, 47.05131f, 0f, 0f, -34.51117f, 5.588199f, 6.904874f, 7.632836f);
-	aggregate.bayounwa_population.func_8(iLocal_42, 0, 0);
+	aggregate_func_1308(iLocal_42, 0, 0);
 	iLocal_43 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volBurnedSettlement_Restriction");
 	VOLUME::_0xBCE668AAF83608BE(iLocal_43, -355f, -132.5f, 50f, 0f, 0f, -20f, 50f, 30f, 25f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_43, -320f, -115f, 50f, 0f, 0f, 0f, 20f, 20f, 25f);
-	aggregate.bayounwa_population.func_9(iLocal_43, 0, 0);
+	aggregate_func_1368(iLocal_43, 0, 0);
 	iLocal_44 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volFishermansShack_Restriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_44, 343.054f, -669.0029f, 42.165f, 0f, 0f, -31.01126f, 11.02041f, 15.73973f, 10.95584f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_44, 338.9478f, -681.7498f, 43.02779f, 0f, 0f, -31.24687f, 3.800817f, 10.34941f, 9.244935f);
-	aggregate.bayounwa_population.func_10(iLocal_44, 0, 0);
+	aggregate_func_1314(iLocal_44, 0, 0);
 }
 
 void func_6()
 {
 	FLOCK::_0xFB16F08F47B83B4C(904876610);
-}
-
-void func_11(int iParam0)
-{
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam0))
-	{
-		return;
-	}
-	POPULATION::_0xB56D41A694E42E86(iParam0, 2229503, 0, 0, -1, -1, 2);
-	POPULATION::_0x18262CAFEBB5FBE1(iParam0, 2229503, 0, 0, -1, -1, 0);
-	POPULATION::_0x2161278C6322F740(2229503, 0, 0, -1, -1, iParam0);
 }
 

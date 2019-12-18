@@ -42,8 +42,8 @@ void __EntryFunction__()
 	bVar0 = true;
 	if (bVar0)
 	{
-		aggregate.mp_freemode_tutorial.func_692(0);
-		aggregate.startup.func_75();
+		aggregate_func_828(0);
+		aggregate_func_8631();
 	}
 	while (bVar0)
 	{
@@ -57,14 +57,14 @@ void __EntryFunction__()
 		}
 		BUILTIN::WAIT(0);
 	}
-	aggregate.mp_freemode_tutorial.func_692(0);
-	aggregate.startup.func_75();
+	aggregate_func_828(0);
+	aggregate_func_8631();
 	if (REPLAY::_0x9EEB007317FA3B9C())
 	{
 		REPLAY::_0xCEEC64BD27A59312(1);
 	}
 	MISC::_GAME_TRANSITION_MANAGER_SHUTDOWN();
-	aggregate.fm_deathmatch_controller.func_798(0, -1);
+	aggregate_func_7013(0, -1);
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 

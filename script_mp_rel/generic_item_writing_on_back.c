@@ -47,7 +47,7 @@ void __EntryFunction__()
 	Var0.f_124 = 1;
 	Var0.f_125 = 1;
 	Var0.f_102 = TASK::_0x804425C4BBD00883(Global_35);
-	if (!aggregate.bandana.func_30(Var0.f_102, 0))
+	if (!aggregate_func_2823(Var0.f_102, 0))
 	{
 		Global_1912966 = 0;
 	}
@@ -71,7 +71,7 @@ void __EntryFunction__()
 	{
 		Var0.f_116 = 1;
 	}
-	if (aggregate.bandana.func_11(Var0.f_102, -1903335637))
+	if (aggregate_func_2852(Var0.f_102, -1903335637))
 	{
 		PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_DOCUMENT_FLIP_AVAILABLE", true, -1);
 	}
@@ -141,7 +141,7 @@ void func_1()
 
 bool func_4()
 {
-	if (Global_1572887->f_13 == 0 && aggregate.aberdeenpigfarm.func_49(0, 0))
+	if (Global_1572887->f_13 == 0 && aggregate_func_523(0, 0))
 	{
 		return true;
 	}
@@ -157,7 +157,7 @@ bool func_4()
 	{
 		return true;
 	}
-	if (!aggregate.fm_race_controller.func_1990())
+	if (!aggregate_func_6547())
 	{
 		return true;
 	}
@@ -174,7 +174,7 @@ void func_5(var uParam0)
 	{
 		DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(iLocal_22);
 	}
-	func_10(uParam0);
+	aggregate_func_865(uParam0);
 	iLocal_22 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "Translate");
 	uParam0->f_5.f_63 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(iLocal_22, "Generic");
 	iVar2 = 0;
@@ -188,11 +188,11 @@ void func_5(var uParam0)
 			switch (&uParam0->f_5.f_2[iVar1 /*5*/])
 			{
 				case 1410847083:
-					func_11(&(uParam0->f_5), iVar2, 1, 1, 0);
+					aggregate_func_1069(&(uParam0->f_5), iVar2, 1, 1, 0);
 					iVar2++;
 					break;
 				case -641080715:
-					func_11(&(uParam0->f_5), iVar2, 3, 1, 0);
+					aggregate_func_1069(&(uParam0->f_5), iVar2, 3, 1, 0);
 					iVar2++;
 					break;
 			}
@@ -200,57 +200,5 @@ void func_5(var uParam0)
 		}
 		iVar1++;
 	}
-}
-
-void func_10(var uParam0)
-{
-	int iVar0;
-
-	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_5.f_63))
-	{
-		DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uParam0->f_5.f_63);
-	}
-	iVar0 = 0;
-	while (iVar0 < 11)
-	{
-		if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(&(uParam0->f_5.f_64[iVar0])))
-		{
-			DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(&(uParam0->f_5.f_64[iVar0]));
-		}
-		if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(&(uParam0->f_5.f_76[iVar0])))
-		{
-			DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(&(uParam0->f_5.f_76[iVar0]));
-		}
-		iVar0++;
-	}
-	iVar0 = 0;
-	while (iVar0 < uParam0->f_5.f_2)
-	{
-		(uParam0->f_5.f_2[iVar0 /*5*/])->f_3 = 0;
-		iVar0++;
-	}
-}
-
-void func_11(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
-{
-	char cVar0[16];
-
-	if (iParam1 >= 11)
-	{
-		return;
-	}
-	StringCopy(&cVar0, "textField", 16);
-	StringIntConCat(&cVar0, iParam1, 16);
-	if (bParam4)
-	{
-		StringConCat(&cVar0, "Strike", 16);
-	}
-	uParam0->f_64[iParam1] = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam0->f_63, &cVar0);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(&(uParam0->f_64[iParam1]), "text", *uParam0);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(&(uParam0->f_64[iParam1]), "style", iParam2);
-	StringCopy(&cVar0, "divider", 16);
-	StringIntConCat(&cVar0, iParam1, 16);
-	uParam0->f_76[iParam1] = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam0->f_63, &cVar0);
-	DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(uParam0->f_76[iParam1]), "isVisible", bParam3);
 }
 

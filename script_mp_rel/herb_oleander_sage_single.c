@@ -31,7 +31,7 @@
 	var uScriptParam_2 = 0;
 #endregion
 
-// __EntryFunction__ == herb.__EntryFunction__
+// __EntryFunction__ == aggregate_func_123
 
 void func_1(var uParam0)
 {
@@ -48,83 +48,83 @@ void func_149(int iParam0)
 	switch (iParam0)
 	{
 		case 5:
-			aggregate.binoculars.func_18(239, 0);
+			aggregate_func_4322(239, 0);
 			break;
 		case 16:
-			aggregate.binoculars.func_18(240, 0);
+			aggregate_func_4322(240, 0);
 			break;
 		case 33:
-			aggregate.binoculars.func_18(241, 0);
+			aggregate_func_4322(241, 0);
 			break;
 		case 51:
-			aggregate.binoculars.func_18(242, 0);
+			aggregate_func_4322(242, 0);
 			break;
 		case 2:
-			aggregate.binoculars.func_18(243, 0);
+			aggregate_func_4322(243, 0);
 			break;
 		case 3:
-			aggregate.binoculars.func_18(244, 0);
+			aggregate_func_4322(244, 0);
 			break;
 		case 52:
-			aggregate.binoculars.func_18(245, 0);
+			aggregate_func_4322(245, 0);
 			break;
 		case 15:
-			aggregate.binoculars.func_18(246, 0);
+			aggregate_func_4322(246, 0);
 			break;
 		case 23:
-			aggregate.binoculars.func_18(247, 0);
+			aggregate_func_4322(247, 0);
 			break;
 		case 37:
-			aggregate.binoculars.func_18(248, 0);
+			aggregate_func_4322(248, 0);
 			break;
 		case 26:
-			aggregate.binoculars.func_18(249, 0);
+			aggregate_func_4322(249, 0);
 			break;
 		case 13:
-			aggregate.binoculars.func_18(250, 0);
+			aggregate_func_4322(250, 0);
 			break;
 		case 19:
-			aggregate.binoculars.func_18(251, 0);
+			aggregate_func_4322(251, 0);
 			break;
 		case 34:
-			aggregate.binoculars.func_18(252, 0);
+			aggregate_func_4322(252, 0);
 			break;
 		case 38:
-			aggregate.binoculars.func_18(253, 0);
+			aggregate_func_4322(253, 0);
 			break;
 		case 49:
-			aggregate.binoculars.func_18(254, 0);
+			aggregate_func_4322(254, 0);
 			break;
 		case 7:
-			aggregate.binoculars.func_18(255, 0);
+			aggregate_func_4322(255, 0);
 			break;
 		case 20:
-			aggregate.binoculars.func_18(256, 0);
+			aggregate_func_4322(256, 0);
 			break;
 		case 18:
-			aggregate.binoculars.func_18(257, 0);
+			aggregate_func_4322(257, 0);
 			break;
 		case 6:
-			aggregate.binoculars.func_18(258, 0);
+			aggregate_func_4322(258, 0);
 			break;
 		case 29:
-			aggregate.binoculars.func_18(259, 0);
+			aggregate_func_4322(259, 0);
 			Jump @501; //curOff = 407
-			aggregate.binoculars.func_18(260, 0);
+			aggregate_func_4322(260, 0);
 			Jump @501; //curOff = 418
 			Jump @501; //curOff = 421
-			aggregate.binoculars.func_18(262, 0);
+			aggregate_func_4322(262, 0);
 			Jump @501; //curOff = 432
-			aggregate.binoculars.func_18(263, 0);
+			aggregate_func_4322(263, 0);
 			Jump @501; //curOff = 443
-			aggregate.binoculars.func_18(264, 0);
+			aggregate_func_4322(264, 0);
 			Jump @501; //curOff = 454
-			aggregate.binoculars.func_18(265, 0);
+			aggregate_func_4322(265, 0);
 			Jump @501; //curOff = 465
-			aggregate.binoculars.func_18(266, 0);
+			aggregate_func_4322(266, 0);
 			Jump @501; //curOff = 476
-			aggregate.binoculars.func_18(267, 0);
+			aggregate_func_4322(267, 0);
 			Jump @501; //curOff = 487
-			aggregate.binoculars.func_18(268, 0);
+			aggregate_func_4322(268, 0);
 		}
 

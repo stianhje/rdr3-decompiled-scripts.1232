@@ -25,11 +25,11 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == armoire_corpse_scenario.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1803
 
 void func_6()
 {
-	if (PED::IS_PED_INJURED(Global_35) || aggregate.aberdeenpigfarm.func_45() != 0)
+	if (PED::IS_PED_INJURED(Global_35) || aggregate_func_4251() != 0)
 	{
 		iLocal_13 = 0;
 		return;
@@ -42,9 +42,9 @@ void func_6()
 		PED::_0xA7A806677F8DE138(Global_35);
 		bLocal_22 = true;
 		iLocal_13 = 0;
-		if (aggregate.coffee_drinking.func_6(1))
+		if (aggregate_func_7073(1))
 		{
-			aggregate.coffee_drinking.func_7(-0.3f, 0);
+			aggregate_func_7706(-0.3f, 0);
 		}
 	}
 	if (!PED::IS_PED_USING_ANY_SCENARIO(Global_35))

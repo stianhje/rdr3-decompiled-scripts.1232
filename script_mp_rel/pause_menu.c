@@ -89,9 +89,9 @@ void __EntryFunction__()
 	Local_23.f_179 = 0;
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(iVar1, true);
 	_NAMESPACE71::_0xDD1232B332CBB9E7(6, 1, 0);
-	aggregate.flow_controller.func_191(&Global_26385);
+	aggregate_func_4684(&Global_26385);
 	func_6();
-	while ((!SCRIPTS::_0x9E4EF615E307FBBE() && !aggregate.aberdeenpigfarm.func_158(Global_26385)) && !bVar25)
+	while ((!SCRIPTS::_0x9E4EF615E307FBBE() && !aggregate_func_4255(Global_26385)) && !bVar25)
 	{
 		func_8(&Local_23);
 		func_9(&Local_23);
@@ -103,7 +103,7 @@ void __EntryFunction__()
 	if (bVar25)
 	{
 		CAM::DO_SCREEN_FADE_OUT(0);
-		aggregate.fm_deathmatch_controller.func_798(0, -1);
+		aggregate_func_7013(0, -1);
 	}
 	func_4(iVar1, iVar2);
 }
@@ -136,7 +136,7 @@ char* func_2()
 	fVar2 = STATS::_0x9D0F5D2E1951CD84();
 	StringCopy(&cVar0, MISC::_0x2B6846401D68E563(fVar2, 1), 16);
 	StringConCat(&cVar0, "%", 16);
-	return aggregate.fme_animal_tagging_offline.func_67(cVar0);
+	return aggregate_func_2280(cVar0);
 }
 
 char* func_3()
@@ -151,12 +151,12 @@ char* func_3()
 	fVar4 = ((fVar2 / fVar3) * 100f);
 	StringCopy(&cVar0, MISC::_0x2B6846401D68E563(fVar4, 1), 16);
 	StringConCat(&cVar0, "%", 16);
-	return aggregate.fme_animal_tagging_offline.func_67(cVar0);
+	return aggregate_func_2280(cVar0);
 }
 
 void func_4(int iParam0, int iParam1)
 {
-	if (aggregate.aberdeenpigfarm.func_158(Global_26385))
+	if (aggregate_func_4255(Global_26385))
 	{
 		func_17();
 	}
@@ -169,7 +169,7 @@ void func_4(int iParam0, int iParam1)
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(Local_23.f_181);
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(Local_23.f_182);
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(Local_23.f_183);
-	func_18(&Local_23);
+	aggregate_func_8782(&Local_23);
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
@@ -190,8 +190,8 @@ void func_6()
 	float fVar22;
 	float fVar23;
 
-	Var8 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
-	Var0 = { aggregate.net_main_offline.func_2892(&Var8, 0, 1) };
+	Var8 = { aggregate_func_926(0, 1, 0, -1) };
+	Var0 = { aggregate_func_1044(&Var8, 0, 1) };
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1954462->f_5.f_1, &(Global_17173.f_54.f_644.f_1783));
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1954462->f_5.f_4, &Var0);
 	func_21();
@@ -219,13 +219,13 @@ void func_6()
 	sVar13 = "PMPLAYER_CONDITION_TEMPERATURE_FAIR";
 	bVar14 = false;
 	sVar16 = "";
-	if (aggregate.fm_deathmatch_controller.func_2355())
+	if (aggregate_func_7703())
 	{
 		sVar13 = "PMPLAYER_CONDITION_TEMPERATURE_COLD";
 		bVar14 = true;
 		sVar16 = "rpg_cold";
 	}
-	else if (aggregate.discoverable_geyser.func_9())
+	else if (aggregate_func_7464())
 	{
 		sVar13 = "PMPLAYER_CONDITION_TEMPERATURE_HOT";
 		bVar14 = true;
@@ -234,20 +234,20 @@ void func_6()
 	func_24(0, 1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CONDITION_TEMPERATURE"), MISC::_CREATE_VAR_STRING(2, sVar13), bVar14, sVar16, "pausemenu_player", bVar14, joaat("COLOR_WHITE"));
 	func_28(1, bVar14, bVar14, sVar16);
 	func_24(0, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_RANK"), "", 0, "Rank_Shield", "pm_player_mp", 1, joaat("COLOR_WHITE"));
-	sVar13 = aggregate.error_listener.func_18(Global_1137800[&Global_1273882 /*34*/]);
+	sVar13 = aggregate_func_2023(Global_1137800[&Global_1273882 /*34*/]);
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_68[2]), sVar13);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(&((Global_1954462->f_5.f_14[0 /*82*/])->f_75[2]), true);
 	iVar17 = NETWORK::_0xDB438CC9BC6F4022();
-	iVar18 = func_30(Global_1137800[&Global_1273882 /*34*/] + 1);
+	iVar18 = aggregate_func_9171(Global_1137800[&Global_1273882 /*34*/] + 1);
 	sVar13 = MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", iVar17, iVar18);
 	func_24(0, 3, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_RANK_XP"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
-	sVar16 = func_32(aggregate.flow_controller.func_219(255));
+	sVar16 = func_32(aggregate_func_3504(255));
 	func_24(0, 4, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HONOR"), "", 0, sVar16, "pausemenu_player", 1, joaat("COLOR_WHITE"));
-	sVar13 = func_34(aggregate.fme_animal_tagging.func_726(PLAYER::PLAYER_ID(), 0), &bVar14, &bVar19);
+	sVar13 = func_34(aggregate_func_2043(PLAYER::PLAYER_ID(), 0), &bVar14, &bVar19);
 	func_24(0, 5, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_GENERAL_HOSTILITY"), MISC::_CREATE_VAR_STRING(2, sVar13), bVar14, "ONLINE_OPTIONS_HOSTILITY", "mp_online_options", 1, bVar19);
-	fVar20 = aggregate.coffee_drinking.func_38(0, 2);
-	fVar21 = BUILTIN::TO_FLOAT(aggregate.fm_deathmatch_controller.func_1875(0, 2));
-	fVar21 = (fVar21 / func_37());
+	fVar20 = aggregate_func_4502(0, 2);
+	fVar21 = BUILTIN::TO_FLOAT(aggregate_func_7879(0, 2));
+	fVar21 = (fVar21 / aggregate_func_9234());
 	fVar22 = ((fVar20 / 100f) * (fVar21 / 60f));
 	fVar23 = (100f * (BUILTIN::TO_FLOAT(func_38(0, 2)) / fVar21));
 	sVar13 = MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_VALUE", BUILTIN::ROUND(fVar20));
@@ -258,11 +258,11 @@ void func_6()
 	bVar14 = fVar23 > 100f;
 	bVar19 = func_39(bVar14, joaat("COLOR_RED"), joaat("COLOR_WHITE"));
 	func_24(1, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), sVar13, bVar14, func_40(fVar23), "pausemenu_player_update", fVar23 != 100f, bVar19);
-	bVar14 = aggregate.fm_deathmatch_controller.func_2354();
+	bVar14 = aggregate_func_7883();
 	func_42(1, bVar14, bVar14);
-	fVar20 = aggregate.coffee_drinking.func_38(1, 2);
-	fVar21 = BUILTIN::TO_FLOAT(aggregate.fm_deathmatch_controller.func_1875(1, 2));
-	fVar21 = (fVar21 / func_37());
+	fVar20 = aggregate_func_4502(1, 2);
+	fVar21 = BUILTIN::TO_FLOAT(aggregate_func_7879(1, 2));
+	fVar21 = (fVar21 / aggregate_func_9234());
 	fVar22 = ((fVar20 / 100f) * (fVar21 / 60f));
 	fVar23 = (100f * (BUILTIN::TO_FLOAT(func_38(1, 2)) / fVar21));
 	sVar13 = MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_VALUE", BUILTIN::ROUND(fVar20));
@@ -273,9 +273,9 @@ void func_6()
 	bVar14 = fVar23 > 100f;
 	bVar19 = func_39(bVar14, joaat("COLOR_RED"), joaat("COLOR_WHITE"));
 	func_24(2, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), sVar13, bVar14, func_40(fVar23), "pausemenu_player_update", fVar23 != 100f, bVar19);
-	fVar20 = aggregate.coffee_drinking.func_38(2, 2);
-	fVar21 = BUILTIN::TO_FLOAT(aggregate.fm_deathmatch_controller.func_1875(2, 2));
-	fVar21 = (fVar21 / func_37());
+	fVar20 = aggregate_func_4502(2, 2);
+	fVar21 = BUILTIN::TO_FLOAT(aggregate_func_7879(2, 2));
+	fVar21 = (fVar21 / aggregate_func_9234());
 	fVar22 = ((fVar20 / 100f) * (fVar21 / 60f));
 	fVar23 = (100f * (BUILTIN::TO_FLOAT(func_38(2, 2)) / fVar21));
 	sVar13 = MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_VALUE", BUILTIN::ROUND(fVar20));
@@ -288,9 +288,9 @@ void func_6()
 	func_24(3, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), sVar13, bVar14, func_40(fVar23), "pausemenu_player_update", fVar23 != 100f, bVar19);
 	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_43());
 	func_24(4, 0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_STORY_COMPLETE"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
-	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", aggregate.pause_menu.func_112(-1756227506));
+	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_44(-1756227506));
 	func_24(4, 1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_TOTAL_KILLS"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
-	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", aggregate.pause_menu.func_112(-1048906573));
+	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_44(-1048906573));
 	func_24(4, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_TOTAL_DEATHS"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
 }
 
@@ -298,7 +298,7 @@ void func_8(var uParam0)
 {
 	bool bVar0;
 
-	if (aggregate.fishing_core.func_34(uParam0, 0))
+	if (aggregate_func_4278(uParam0, 0))
 	{
 		func_48(uParam0, 0, 0);
 	}
@@ -335,7 +335,7 @@ void func_9(var uParam0)
 			case 1:
 				if (!NETWORK::_0xE2C3CEC3C0903A00("mugshot"))
 				{
-					Var0 = { aggregate.fme_animal_tagging.func_783() };
+					Var0 = { aggregate_func_3106() };
 					uParam0->f_1 = NETWORK::_0x9B5DB6CEAFAA10BB(&Var0, 0, "mugshot", 1);
 					if (uParam0->f_1 != -1)
 					{
@@ -382,7 +382,7 @@ void func_10()
 					switch (Var0.f_2)
 					{
 						case 766694521:
-							aggregate.hub.func_32(455956792);
+							aggregate_func_7724(455956792);
 							break;
 						case -385109718:
 							func_52();
@@ -404,7 +404,7 @@ void func_10()
 							break;
 						case -1332231262:
 							CAM::DO_SCREEN_FADE_OUT(0);
-							func_58();
+							aggregate_func_9340();
 							break;
 						case -1856718599:
 							break;
@@ -425,17 +425,17 @@ void func_11(var uParam0)
 	int iVar1;
 
 	iVar0 = UIAPPS::_0x96FD694FE5BE55DC(29649618);
-	iVar1 = aggregate.camera_item.func_12(uParam0);
+	iVar1 = aggregate_func_4249(uParam0);
 	if (iVar0 != iVar1)
 	{
 		if (iVar1 != 0)
 		{
-			aggregate.pause_menu.func_60(uParam0, iVar1);
+			aggregate_func_8606(uParam0, iVar1);
 		}
-		aggregate.camera_item.func_77(uParam0, iVar0);
-		aggregate.pause_menu.func_60(uParam0, iVar0);
+		aggregate_func_4242(uParam0, iVar0);
+		aggregate_func_8606(uParam0, iVar0);
 	}
-	aggregate.pause_menu.func_60(uParam0, iVar0);
+	aggregate_func_8606(uParam0, iVar0);
 }
 
 int func_12()
@@ -486,38 +486,21 @@ int func_14(int iParam0, int iParam1)
 	return StackVal;
 }
 
-int func_15(var uParam0, int iParam1)
+bool func_15(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
 		case 1271225230:
-			return func_67(uParam0);
+			return aggregate_func_8783(uParam0);
 	}
-	return 0;
+	return false;
 }
 
 void func_17()
 {
 	Global_0.f_6 = MISC::GET_GAME_TIMER();
 	Global_0.f_3 = { Global_36 };
-	aggregate.binoculars.func_16(&Global_0);
-}
-
-int func_18(var uParam0)
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-
-	iVar0 = 2;
-	iVar2 = 0;
-	while (iVar2 < iVar0)
-	{
-		iVar1 = func_14(iVar2, 1);
-		aggregate.pause_menu.func_60(uParam0, iVar1);
-		iVar2++;
-	}
-	return 1;
+	aggregate_func_4285(&Global_0);
 }
 
 void func_21()
@@ -578,15 +561,6 @@ void func_28(int iParam0, bool bParam1, bool bParam2, char* sParam3)
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1954462->f_5.f_14[iParam0 /*82*/])->f_15, bParam1);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1954462->f_5.f_14[iParam0 /*82*/])->f_14, bParam2);
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING((Global_1954462->f_5.f_14[iParam0 /*82*/])->f_16, sParam3);
-}
-
-int func_30(int iParam0)
-{
-	if (iParam0 < 1 || iParam0 > 999)
-	{
-		return -1;
-	}
-	return &(Global_1131373->f_11.f_556[(iParam0 - 1)]);
 }
 
 char* func_32(int iParam0)
@@ -653,16 +627,11 @@ char* func_34(int iParam0, bool bParam1, bool bParam2)
 	return "PMPLAYER_GENERAL_HOSTILITY_MID";
 }
 
-float func_37()
-{
-	return Global_1954462->f_1331.f_98;
-}
-
 int func_38(int iParam0, int iParam1)
 {
 	if (iParam1 == 2)
 	{
-		iParam1 = aggregate.coffee_drinking.func_58(2);
+		iParam1 = aggregate_func_4279(2);
 	}
 	switch (iParam1)
 	{
@@ -732,7 +701,7 @@ int func_43()
 	iVar0 = 13;
 	while (iVar0 <= 25)
 	{
-		if (aggregate.flow_controller.func_138(iVar0))
+		if (aggregate_func_3519(iVar0))
 		{
 			iVar1++;
 		}
@@ -741,15 +710,25 @@ int func_43()
 	return iVar1;
 }
 
+int func_44(int iParam0)
+{
+	var uVar0;
+	struct<2> Var1;
+
+	Var1 = { aggregate_func_4354(iParam0) };
+	STATS::STAT_ID_GET_INT(&Var1, &uVar0);
+	return uVar0;
+}
+
 void func_48(var uParam0, int iParam1, bool bParam2)
 {
 	if (bParam2)
 	{
-		aggregate.fme_round_up.func_1144(&(uParam0->f_192), iParam1);
+		aggregate_func_2882(&(uParam0->f_192), iParam1);
 	}
 	else
 	{
-		aggregate.fme_round_up.func_1140(&(uParam0->f_192), iParam1);
+		aggregate_func_2925(&(uParam0->f_192), iParam1);
 	}
 }
 
@@ -791,12 +770,12 @@ void func_52()
 
 	func_98(1, 1);
 	Global_1954462->f_5.f_1325 = 0;
-	func_100(MISC::_CREATE_VAR_STRING(2, func_99(0)));
+	func_100(MISC::_CREATE_VAR_STRING(2, aggregate_func_9244(0)));
 	func_101(0, "PMPLAYER_STATISTICS");
 	func_102(1, "PMPLAYER_OVERVIEW", "", 1, 0, 0, 0, 0, 0, 0);
-	sVar0 = aggregate.error_listener.func_18(Global_1137800[&Global_1273882 /*34*/]);
+	sVar0 = aggregate_func_2023(Global_1137800[&Global_1273882 /*34*/]);
 	func_102(2, "PMPLAYER_RANK", "", 1, 0, 0, "", "", sVar0, 1);
-	func_102(3, "PMPLAYER_HONOR", "", 1, 0, 1, func_32(aggregate.flow_controller.func_219(255)), "pausemenu_player", 0, 0);
+	func_102(3, "PMPLAYER_HONOR", "", 1, 0, 1, func_32(aggregate_func_3504(255)), "pausemenu_player", 0, 0);
 	func_101(4, "PMPLAYER_CONDITIONS");
 	StringCopy(&cVar1, DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_40[0])), 24);
 	bVar4 = DATABINDING::_DATABINDING_READ_DATA_BOOL(&((Global_1954462->f_5.f_14[0 /*82*/])->f_61[0]));
@@ -810,11 +789,11 @@ void func_52()
 		func_102(5, "PMPLAYER_CONDITION_WEIGHT", sVar0, 1, 0, 0, 0, 0, 0, 0);
 	}
 	sVar0 = DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_26[1]));
-	if (aggregate.discoverable_geyser.func_9())
+	if (aggregate_func_7464())
 	{
 		func_102(6, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 1, 1, "rpg_hot", "pausemenu_player", 0, 0);
 	}
-	else if (aggregate.fm_deathmatch_controller.func_2355())
+	else if (aggregate_func_7703())
 	{
 		func_102(6, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 1, 1, "rpg_cold", "pausemenu_player", 0, 0);
 	}
@@ -822,7 +801,7 @@ void func_52()
 	{
 		func_102(6, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 0, 0, 0, 0, 0, 0);
 	}
-	if (aggregate.fm_deathmatch_controller.func_2354())
+	if (aggregate_func_7883())
 	{
 		func_102(7, "PMPLAYER_CONDITION_TOXICITY", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CONDITION_TOXICITY_POISONED"), 1, 1, 1, "rpg_sick", "pausemenu_player", 0, 0);
 	}
@@ -830,7 +809,7 @@ void func_52()
 	{
 		func_102(7, "PMPLAYER_CONDITION_TOXICITY", "", 0, 0, 0, 0, 0, 0, 0);
 	}
-	sVar0 = func_34(aggregate.fme_animal_tagging.func_726(PLAYER::PLAYER_ID(), 0), &bVar5, &uVar6);
+	sVar0 = func_34(aggregate_func_2043(PLAYER::PLAYER_ID(), 0), &bVar5, &uVar6);
 	func_102(8, "PMPLAYER_GENERAL_HOSTILITY", MISC::_CREATE_VAR_STRING(2, sVar0), 1, bVar5, 1, "ONLINE_OPTIONS_HOSTILITY", "mp_online_options", 0, 0);
 	func_103(0);
 	func_104(0);
@@ -846,10 +825,10 @@ void func_53()
 
 	Global_1954462->f_5.f_1325 = 1;
 	func_98(1, 1);
-	func_100(MISC::_CREATE_VAR_STRING(2, func_99(1)));
+	func_100(MISC::_CREATE_VAR_STRING(2, aggregate_func_9244(1)));
 	func_101(0, "PMPLAYER_STATISTICS");
 	func_102(1, "PMPLAYER_OVERVIEW", "", 1, 0, 0, 0, 0, 0, 0);
-	sVar1 = aggregate.fishing_core.func_564(0, 2) + 5;
+	sVar1 = aggregate_func_7032(0, 2) + 5;
 	func_102(2, "PMPLAYER_PROGRESSION", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_LEVEL", sVar1), 1, 0, 0, 0, 0, 0, 0);
 	func_101(3, "PMPLAYER_CONDITIONS");
 	StringCopy(&cVar2, DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_40[0])), 24);
@@ -864,11 +843,11 @@ void func_53()
 		func_102(4, "PMPLAYER_CONDITION_WEIGHT", sVar0, 1, 0, 0, 0, 0, 0, 0);
 	}
 	sVar0 = DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_26[1]));
-	if (aggregate.discoverable_geyser.func_9())
+	if (aggregate_func_7464())
 	{
 		func_102(5, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 1, 1, "rpg_hot", "pausemenu_player", 0, 0);
 	}
-	else if (aggregate.fm_deathmatch_controller.func_2355())
+	else if (aggregate_func_7703())
 	{
 		func_102(5, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 1, 1, "rpg_cold", "pausemenu_player", 0, 0);
 	}
@@ -876,7 +855,7 @@ void func_53()
 	{
 		func_102(5, "PMPLAYER_CONDITION_TEMPERATURE", sVar0, 1, 0, 0, 0, 0, 0, 0);
 	}
-	if (aggregate.fm_deathmatch_controller.func_2354())
+	if (aggregate_func_7883())
 	{
 		func_102(6, "PMPLAYER_CONDITION_TOXICITY", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CONDITION_TOXICITY_POISONED"), 1, 1, 1, "rpg_sick", "pausemenu_player", 0, 0);
 	}
@@ -899,10 +878,10 @@ void func_54()
 
 	Global_1954462->f_5.f_1325 = 2;
 	func_98(1, 1);
-	func_100(MISC::_CREATE_VAR_STRING(2, func_99(2)));
+	func_100(MISC::_CREATE_VAR_STRING(2, aggregate_func_9244(2)));
 	func_101(0, "PMPLAYER_STATISTICS");
 	func_102(1, "PMPLAYER_OVERVIEW", "", 1, 0, 0, 0, 0, 0, 0);
-	sVar1 = aggregate.fishing_core.func_564(1, 2) + 5;
+	sVar1 = aggregate_func_7032(1, 2) + 5;
 	func_102(2, "PMPLAYER_PROGRESSION", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_LEVEL", sVar1), 1, 0, 0, 0, 0, 0, 0);
 	func_101(3, "PMPLAYER_CONDITIONS");
 	StringCopy(&cVar2, DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_40[0])), 24);
@@ -931,10 +910,10 @@ void func_55()
 
 	Global_1954462->f_5.f_1325 = 3;
 	func_98(1, 1);
-	func_100(MISC::_CREATE_VAR_STRING(2, func_99(3)));
+	func_100(MISC::_CREATE_VAR_STRING(2, aggregate_func_9244(3)));
 	func_101(0, "PMPLAYER_STATISTICS");
 	func_102(1, "PMPLAYER_OVERVIEW", "", 1, 0, 0, 0, 0, 0, 0);
-	sVar1 = aggregate.fishing_core.func_564(2, 2) + 5;
+	sVar1 = aggregate_func_7032(2, 2) + 5;
 	func_102(2, "PMPLAYER_PROGRESSION", MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_LEVEL", sVar1), 1, 0, 0, 0, 0, 0, 0);
 	func_101(3, "PMPLAYER_CONDITIONS");
 	StringCopy(&cVar2, DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[0 /*82*/])->f_40[0])), 24);
@@ -972,7 +951,7 @@ void func_56()
 
 	Global_1954462->f_5.f_1325 = 4;
 	func_98(1, 1);
-	func_100(MISC::_CREATE_VAR_STRING(2, func_99(4)));
+	func_100(MISC::_CREATE_VAR_STRING(2, aggregate_func_9244(4)));
 	func_101(0, "PMPLAYER_LIFE_STATS");
 	func_107();
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(10, "PMPLAYER_MONEY", func_109((func_108(1943033977) / 100f), 2)), 64);
@@ -983,19 +962,19 @@ void func_56()
 	func_102(4, "PMPLAYER_CASH_SPENT", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(10, "PMPLAYER_GOLD", func_109((func_108(1919677834) / 100f), 2)), 64);
 	func_102(5, "PMPLAYER_GOLD_SPENT", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, aggregate.pause_menu.func_112(-1756227506), 64);
+	IntToString(&cVar0, func_44(-1756227506), 64);
 	func_102(6, "PMPLAYER_TOTAL_KILLS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, aggregate.pause_menu.func_112(-1048906573), 64);
+	IntToString(&cVar0, func_44(-1048906573), 64);
 	func_102(7, "PMPLAYER_TOTAL_DEATHS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar8 = (aggregate.pause_menu.func_112(85200619) / 1000);
+	iVar8 = (func_44(85200619) / 1000);
 	iVar9 = (iVar8 / 60);
 	iVar10 = (iVar9 / 60);
 	iVar11 = (iVar10 / 24);
 	iVar10 = (iVar10 % 24);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_DAYS_AND_HOURS", iVar11, iVar10), 64);
 	func_102(8, "PMPLAYER_TIME_ONLINE", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	aggregate.binoculars.func_70("ALL HORSES", &iVar12, &iVar13, -1591664384, 0);
-	aggregate.binoculars.func_73(iVar12);
+	aggregate_func_2842("ALL HORSES", &iVar12, &iVar13, -1591664384, 0);
+	aggregate_func_2837(iVar12);
 	iVar14 = func_112(356744246);
 	if (iVar14 >= iVar13)
 	{
@@ -1004,17 +983,17 @@ void func_56()
 	else
 	{
 		IntToString(&cVar0, iVar13, 64);
-		aggregate.aberdeenpigfarm.func_108(aggregate.coffee_drinking.func_100(356744246), (iVar13 - iVar14));
+		aggregate_func_1962(aggregate_func_4347(356744246), (iVar13 - iVar14));
 	}
 	func_102(9, "PMPLAYER_HORSES_OWNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	func_101(10, "PMPLAYER_CRIME_STAT");
-	IntToString(&cVar0, aggregate.pause_menu.func_112(-190907223), 64);
+	IntToString(&cVar0, func_44(-190907223), 64);
 	func_102(11, "PMPLAYER_PLAYERS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, aggregate.flow_controller.func_164(-1756227506, joaat("law")), 64);
+	IntToString(&cVar0, aggregate_func_3645(-1756227506, joaat("law")), 64);
 	func_102(12, "PMPLAYER_LAW_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, aggregate.flow_controller.func_164(-1756227506, -2141600017), 64);
+	IntToString(&cVar0, aggregate_func_3645(-1756227506, -2141600017), 64);
 	func_102(13, "PMPLAYER_PEDS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar8 = (aggregate.flow_controller.func_164(719716304, -2140438327) / 1000);
+	iVar8 = (aggregate_func_3645(719716304, -2140438327) / 1000);
 	iVar9 = (iVar8 / 60);
 	iVar10 = (iVar9 / 60);
 	iVar11 = (iVar10 / 24);
@@ -1022,22 +1001,22 @@ void func_56()
 	iVar9 = (iVar9 % 60);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_DAYS_HOURS_MINUTES", iVar11, iVar10, iVar9), 64);
 	func_102(14, "PMPLAYER_TIME_WANTED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, aggregate.flow_controller.func_164(-985869509, 450674483), 64);
+	IntToString(&cVar0, aggregate_func_3645(-985869509, 450674483), 64);
 	func_102(15, "PMPLAYER_PEDS_LOOTED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	func_101(16, "PMPLAYER_HUNTING");
-	IntToString(&cVar0, aggregate.flow_controller.func_164(-1756227506, joaat("animal")), 64);
+	IntToString(&cVar0, aggregate_func_3645(-1756227506, joaat("animal")), 64);
 	func_102(17, "PMPLAYER_ANIMALS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, func_116(1979337996, joaat("killed")), 64);
 	func_102(18, "PMPLAYER_UNIQUE_ANIMALS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, ((aggregate.flow_controller.func_164(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1740237568) + aggregate.flow_controller.func_164(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1274681111)) + aggregate.flow_controller.func_164(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, 1581042032)), 64);
+	IntToString(&cVar0, ((aggregate_func_3645(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1740237568) + aggregate_func_3645(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, -1274681111)) + aggregate_func_3645(-212244724 /* GXTEntry: "Skinned 1 ~a~" */, 1581042032)), 64);
 	func_102(19, "PMPLAYER_ANIMALS_SKINNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, ((func_116(1979337996, -212244724 /* GXTEntry: "Skinned 1 ~a~" */) + func_116(1979337996, -1366121835)) + func_116(1979337996, -717883113)), 64);
 	func_102(20, "PMPLAYER_UNIQUE_ANIMALS_SKINNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, aggregate.flow_controller.func_164(-1628183403, 1201668600), 64);
+	IntToString(&cVar0, aggregate_func_3645(-1628183403, 1201668600), 64);
 	func_102(21, "PMPLAYER_PERFEECT_KILLS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(10, "PMPLAYER_MONEY", func_109((func_108(324591737) / 100f), 2)), 64);
 	func_102(22, "PMPLAYER_HUNTING_PROFITS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, aggregate.pause_menu.func_112(-851700877), 64);
+	IntToString(&cVar0, func_44(-851700877), 64);
 	func_102(23, "PMPLAYER_FISH_CAUGHT", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	if (MISC::_SHOULD_USE_METRIC_WEIGHT())
 	{
@@ -1046,7 +1025,7 @@ void func_56()
 	}
 	else
 	{
-		iVar16 = aggregate.pause_menu.func_112(-789991418);
+		iVar16 = func_44(-789991418);
 		fVar17 = (func_108(-789991418) - BUILTIN::TO_FLOAT(iVar16));
 		StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_LB_AND_OZ", iVar16, BUILTIN::ROUND((16f * fVar17))), 64);
 	}
@@ -1054,8 +1033,8 @@ void func_56()
 	func_101(25, "PMPLAYER_CONTENT");
 	IntToString(&cVar0, func_43(), 64);
 	func_102(26, "PMPLAYER_STORY_COMPLETE", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar18 = aggregate.flow_controller.func_164(-1892463704, 1994758582);
-	iVar19 = aggregate.flow_controller.func_164(1374282888, 1994758582);
+	iVar18 = aggregate_func_3645(-1892463704, 1994758582);
+	iVar19 = aggregate_func_3645(1374282888, 1994758582);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_VALUE", (iVar18 * 100 / (iVar18 + iVar19))), 64);
 	func_102(27, "PMPLAYER_SERIES_COMPLETE_PER", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, (iVar18 + iVar19), 64);
@@ -1090,29 +1069,29 @@ void func_57()
 
 	func_98(1, 1);
 	Global_1954462->f_5.f_1325 = 5;
-	Var0 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
+	Var0 = { aggregate_func_926(0, 1, 0, -1) };
 	iVar4 = PLAYER::_0xF49F14462F0AE27C(PLAYER::PLAYER_ID());
 	bVar5 = ENTITY::DOES_ENTITY_EXIST(iVar4);
 	if (bVar5)
 	{
 		iVar6 = func_117(iVar4);
-		iVar7 = aggregate.mp_intro.func_3344(iVar4);
+		iVar7 = aggregate_func_1171(iVar4);
 	}
 	else
 	{
 		iVar6 = func_119(&Var0, 0);
-		iVar7 = aggregate.fme_animal_tagging.func_605(&Var0, 0);
+		iVar7 = aggregate_func_6073(&Var0, 0);
 	}
 	iVar6 = iVar6;
 	StringCopy(&cVar8, MISC::_CREATE_VAR_STRING(2, "HORSE_BONDING_LEVEL", iVar7), 64);
 	bVar17 = false;
 	if (bVar5)
 	{
-		iVar16 = aggregate.net_main_offline.func_4607(iVar4, 0);
+		iVar16 = aggregate_func_1402(iVar4, 0);
 	}
 	else
 	{
-		iVar16 = aggregate.net_main_offline.func_4616(Var0, 0);
+		iVar16 = aggregate_func_2559(Var0, 0);
 	}
 	if (iVar16 <= 50)
 	{
@@ -1132,7 +1111,7 @@ void func_57()
 	bVar27 = false;
 	if (bVar5)
 	{
-		fVar26 = aggregate.net_main_offline.func_6329(iVar4);
+		fVar26 = aggregate_func_1050(iVar4);
 	}
 	if (fVar26 > 0f)
 	{
@@ -1143,22 +1122,22 @@ void func_57()
 	{
 		StringCopy(&cVar28, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_CONDITION_MOOD_CALM"), 64);
 	}
-	if (aggregate.fm_deathmatch_controller.func_2458(-415648720, &bVar36))
+	if (aggregate_func_5269(-415648720, &bVar36))
 	{
-		if (aggregate.mp_intro.func_2571(bVar36, &iVar45, 14460646, 0))
+		if (aggregate_func_3252(bVar36, &iVar45, 14460646, 0))
 		{
 			StringCopy(&cVar37, HUD::_GET_LABEL_TEXT_BY_HASH(iVar45), 64);
 		}
 	}
-	if (aggregate.fm_deathmatch_controller.func_2458(986998820, &bVar47))
+	if (aggregate_func_5269(986998820, &bVar47))
 	{
-		StringCopy(&cVar48, aggregate.fm_mission_controller.func_4327(bVar47), 64);
+		StringCopy(&cVar48, aggregate_func_2879(bVar47), 64);
 	}
 	StringCopy(&cVar56, DATABINDING::_DATABINDING_READ_DATA_STRING(Global_1954462->f_5.f_4), 64);
 	sVar64 = MISC::_CREATE_VAR_STRING(2, "AT_HORSE");
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(&cVar56))
 	{
-		sVar64 = aggregate.fm_mission_controller.func_3989(&cVar56);
+		sVar64 = aggregate_func_4984(&cVar56);
 	}
 	func_100(sVar64);
 	func_101(0, "PMPLAYER_STATS");
@@ -1174,22 +1153,6 @@ void func_57()
 	func_102(10, "PMPLAYER_HORSE_TACK_SADDLE_TITLE", &cVar37, 1, 0, 0, 0, 0, 0, 0);
 	func_102(11, "PMPLAYER_HORSE_TACK_STIRRUPS_TITLE", &cVar48, 1, 0, 0, 0, 0, 0, 0);
 	func_97(1);
-}
-
-void func_58()
-{
-	aggregate.fm_deathmatch_controller.func_1253(4);
-	aggregate.fm_deathmatch_controller.func_1254(2);
-	aggregate.pausemenu_multiplayer.func_5(joaat("single_player"), 0);
-}
-
-int func_67(var uParam0)
-{
-	if (!func_132(uParam0))
-	{
-		return 0;
-	}
-	return 1;
 }
 
 void func_92(int iParam0)
@@ -1208,7 +1171,7 @@ void func_92(int iParam0)
 	{
 		case 1:
 			func_153("MP_PLAYER_PLAYER", 0);
-			func_155(func_154(0));
+			func_155(aggregate_func_9245(0));
 			func_156("PMPLAYER_OVERVIEW");
 			func_98(0, 1);
 			func_106("PMPLAYER_OVERVIEW_TOOLTIP");
@@ -1218,11 +1181,11 @@ void func_92(int iParam0)
 			break;
 		case 2:
 			func_153("MP_PLAYER_PLAYER", 0);
-			func_155(func_154(0));
+			func_155(aggregate_func_9245(0));
 			func_156("PMPLAYER_RANK");
 			func_98(0, 1);
 			iVar0 = NETWORK::_0xDB438CC9BC6F4022();
-			iVar1 = func_30(Global_1137800[&Global_1273882 /*34*/] + 1);
+			iVar1 = aggregate_func_9171(Global_1137800[&Global_1273882 /*34*/] + 1);
 			func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_PROGRESSION_STAT_NEXT"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y_XP", iVar0, iVar1), 0, 0, 0, 0, 0, 0, 0, 0);
 			func_106("PMPLAYER_RANK_TOOLTIP");
 			break;
@@ -1283,8 +1246,8 @@ void func_93(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			func_153(func_166(1, 0), 0);
-			func_155(func_154(1));
+			func_153(aggregate_func_9246(1, 0), 0);
+			func_155(aggregate_func_9245(1));
 			func_156("PMPLAYER_OVERVIEW");
 			func_98(0, 1);
 			sVar0 = DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[1 /*82*/])->f_26[0]));
@@ -1307,7 +1270,7 @@ void func_93(int iParam0)
 			func_106("");
 			break;
 		case 2:
-			func_153(func_166(1, 0), 0);
+			func_153(aggregate_func_9246(1, 0), 0);
 			func_155("PMPLAYER_HEALTH_PROGRESSION_DESC");
 			func_156("PMPLAYER_PROGRESSION");
 			func_98(0, 1);
@@ -1357,8 +1320,8 @@ void func_94(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			func_153(func_166(2, 0), 0);
-			func_155(func_154(2));
+			func_153(aggregate_func_9246(2, 0), 0);
+			func_155(aggregate_func_9245(2));
 			func_156("PMPLAYER_OVERVIEW");
 			func_98(0, 1);
 			sVar0 = DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[2 /*82*/])->f_26[0]));
@@ -1381,7 +1344,7 @@ void func_94(int iParam0)
 			func_106("");
 			break;
 		case 2:
-			func_153(func_166(2, 0), 0);
+			func_153(aggregate_func_9246(2, 0), 0);
 			func_155("PMPLAYER_STAMINA_PROGRESSION_DESC");
 			func_156("PMPLAYER_PROGRESSION");
 			func_98(0, 1);
@@ -1415,8 +1378,8 @@ void func_95(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			func_153(func_166(3, 0), 0);
-			func_155(func_154(3));
+			func_153(aggregate_func_9246(3, 0), 0);
+			func_155(aggregate_func_9245(3));
 			func_156("PMPLAYER_OVERVIEW");
 			func_98(0, 1);
 			sVar0 = DATABINDING::_DATABINDING_READ_DATA_STRING(&((Global_1954462->f_5.f_14[3 /*82*/])->f_26[0]));
@@ -1439,7 +1402,7 @@ void func_95(int iParam0)
 			func_106("");
 			break;
 		case 2:
-			func_153(func_166(3, 0), 0);
+			func_153(aggregate_func_9246(3, 0), 0);
 			func_155("PMPLAYER_DEAD_EYE_PROGRESSION_DESC");
 			func_156("PMPLAYER_PROGRESSION");
 			func_98(0, 1);
@@ -1511,7 +1474,7 @@ void func_96(int iParam0)
 			break;
 	}
 	sVar0 = DATABINDING::_DATABINDING_READ_DATA_STRING((Global_1954462->f_5.f_425.f_24[iParam0 /*25*/])->f_16);
-	func_155(func_154(4));
+	func_155(aggregate_func_9245(4));
 	func_156(sVar0);
 	func_98(0, 1);
 }
@@ -1545,20 +1508,20 @@ void func_97(int iParam0)
 	int iVar33;
 	int iVar34;
 
-	Var0 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
+	Var0 = { aggregate_func_926(0, 1, 0, -1) };
 	iVar4 = func_169(&Var0, 0);
 	iVar5 = func_170(iVar4);
 	iVar6 = PLAYER::_0xF49F14462F0AE27C(PLAYER::PLAYER_ID());
 	bVar11 = ENTITY::DOES_ENTITY_EXIST(iVar6);
 	if (bVar11)
 	{
-		iVar7 = aggregate.net_main_offline.func_6481(iVar6);
-		iVar9 = aggregate.net_main_offline.func_6481(iVar6);
+		iVar7 = aggregate_func_1732(iVar6);
+		iVar9 = aggregate_func_1732(iVar6);
 	}
 	else
 	{
-		iVar7 = aggregate.pause_menu.func_173(iVar5);
-		iVar9 = aggregate.pause_menu.func_173(iVar5);
+		iVar7 = aggregate_func_2016(iVar5);
+		iVar9 = aggregate_func_2016(iVar5);
 	}
 	iVar8 = func_175(Var0, 0);
 	iVar10 = func_175(Var0, 1);
@@ -1573,23 +1536,23 @@ void func_97(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			func_153(func_166(5, 0), "pausemenu_player");
-			func_155(func_154(5));
+			func_153(aggregate_func_9246(5, 0), "pausemenu_player");
+			func_155(aggregate_func_9245(5));
 			func_156("PMPLAYER_OVERVIEW");
 			func_98(0, 1);
-			Var21 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
-			aggregate.mp_intro.func_1767(&Var21, &iVar19, &iVar20);
+			Var21 = { aggregate_func_926(0, 1, 0, -1) };
+			aggregate_func_1189(&Var21, &iVar19, &iVar20);
 			iVar19 = BUILTIN::FLOOR((IntToFloat(iVar19) * 0.01f));
 			iVar20 = BUILTIN::FLOOR((IntToFloat(iVar20) * 0.01f));
-			fVar25 = (IntToFloat(aggregate.pause_menu.func_173(iVar5) + 1) * 10f);
+			fVar25 = (IntToFloat(aggregate_func_2016(iVar5) + 1) * 10f);
 			fVar26 = (fVar25 + (BUILTIN::TO_FLOAT(iVar19) * 10f));
 			fVar27 = ((fVar25 + (3f * 10f)) * 0.01f);
-			fVar28 = (IntToFloat(aggregate.pause_menu.func_173(iVar5) + 1) * 10f);
+			fVar28 = (IntToFloat(aggregate_func_2016(iVar5) + 1) * 10f);
 			fVar29 = (fVar28 + (BUILTIN::TO_FLOAT(iVar20) * 10f));
 			fVar30 = ((fVar28 + (2f * 10f)) * 0.01f);
 			func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_SPEED"), "", 0, 0, 0, 1, fVar25, fVar26, fVar27, 0);
 			func_157(1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_ACCELERATION"), "", 0, 0, 0, 1, fVar28, fVar29, fVar30, 0);
-			func_157(2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_HANDLING"), MISC::_CREATE_VAR_STRING(2, aggregate.mp_intro.func_1768(aggregate.mp_intro.func_1763(iVar5))), 0, 0, 0, 0, 0, 0, 0, 0);
+			func_157(2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_HANDLING"), MISC::_CREATE_VAR_STRING(2, aggregate_func_5253(aggregate_func_3151(iVar5))), 0, 0, 0, 0, 0, 0, 0, 0);
 			func_103(1);
 			func_104(1);
 			func_151(1);
@@ -1598,7 +1561,7 @@ void func_97(int iParam0)
 			func_106("PMPLAYER_HORSE_OVERVIEW_TIP");
 			break;
 		case 2:
-			func_153(func_166(5, 0), "pausemenu_player");
+			func_153(aggregate_func_9246(5, 0), "pausemenu_player");
 			func_155("PMPLAYER_HORSE_PHYSIQUE_DESC");
 			func_156("PMPLAYER_HORSE_PHYSIQUE_TITLE");
 			func_98(0, 1);
@@ -1660,17 +1623,17 @@ void func_97(int iParam0)
 				}
 			}
 			iVar31 = 1;
-			if (aggregate.bandana.func_81(Var0, -653439684, 0, -1) == 515427499)
+			if (aggregate_func_4299(Var0, -653439684, 0, -1) == 515427499)
 			{
 				iVar31 = 2;
 			}
 			if (INVENTORY::_0xB881CA836CC4B6D4(&Var0))
 			{
-				func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_TYPE"), MISC::_CREATE_VAR_STRING(2, aggregate.mp_intro.func_1769(aggregate.mp_intro.func_1764(iVar5), iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
-				func_157(1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_BREED"), MISC::_CREATE_VAR_STRING(2, aggregate.net_camp.func_1392(iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
-				func_157(2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_GENDER"), MISC::_CREATE_VAR_STRING(2, aggregate.mp_intro.func_1921(iVar31)), 0, 0, 0, 0, 0, 0, 0, 0);
+				func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_TYPE"), MISC::_CREATE_VAR_STRING(2, aggregate_func_5284(aggregate_func_5373(iVar5), iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
+				func_157(1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_BREED"), MISC::_CREATE_VAR_STRING(2, aggregate_func_5516(iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
+				func_157(2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_GENDER"), MISC::_CREATE_VAR_STRING(2, aggregate_func_5374(iVar31)), 0, 0, 0, 0, 0, 0, 0, 0);
 				func_157(3, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_WEIGHT"), MISC::_CREATE_VAR_STRING(2, &cVar15), 0, 0, 0, 0, 0, 0, 0, 0);
-				func_157(4, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_COAT"), MISC::_CREATE_VAR_STRING(2, aggregate.mp_intro.func_1771(iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
+				func_157(4, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_PHYSIQUE_STAT_COAT"), MISC::_CREATE_VAR_STRING(2, aggregate_func_5165(iVar4)), 0, 0, 0, 0, 0, 0, 0, 0);
 			}
 			else
 			{
@@ -1690,20 +1653,20 @@ void func_97(int iParam0)
 			if (bVar11)
 			{
 				iVar33 = func_117(iVar6);
-				iVar32 = aggregate.mp_intro.func_3344(iVar6);
+				iVar32 = aggregate_func_1171(iVar6);
 			}
 			else
 			{
 				iVar33 = func_119(&Var0, 0);
-				iVar32 = aggregate.fme_animal_tagging.func_605(&Var0, 0);
+				iVar32 = aggregate_func_6073(&Var0, 0);
 			}
 			if (iVar32 < 4)
 			{
-				iVar34 = aggregate.fme_animal_tagging.func_1008(iVar5, iVar32 + 1);
+				iVar34 = aggregate_func_2288(iVar5, iVar32 + 1);
 			}
 			else
 			{
-				iVar34 = aggregate.fme_animal_tagging.func_1008(iVar5, iVar32);
+				iVar34 = aggregate_func_2288(iVar5, iVar32);
 				iVar33 = iVar34;
 			}
 			func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_LEVEL"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y", iVar32, 4), 0, 0, 0, 0, 0, 0, 0, 0);
@@ -1736,7 +1699,7 @@ void func_97(int iParam0)
 			func_155("PMPLAYER_HORSE_CONDITION_CLEANLINESS_DESC");
 			func_156("PMPLAYER_HORSE_CONDITION_CLEANLINESS");
 			func_98(0, 1);
-			if (aggregate.net_main_offline.func_4616(Var0, 0) > 50)
+			if (aggregate_func_2559(Var0, 0) > 50)
 			{
 				func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_PLUS_VALUE", BUILTIN::ROUND(MISC::ABSF((0.25f * 100f)))), 1, 0, 1, 0, 0, 0, 0, "RPG_Horse_Health");
 				func_167(0, "RPG_ARROW_DOWN", 0);
@@ -1779,28 +1742,6 @@ void func_98(bool bParam0, bool bParam1)
 	{
 		DATABINDING::_DATABINDING_CLEAR_BINDING_ARRAY(Global_1954462->f_5.f_425.f_21);
 	}
-}
-
-char* func_99(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return "PMPLAYER_GENERAL";
-		case 1:
-			return "PMPLAYER_HEALTH";
-		case 2:
-			return "PMPLAYER_STAMINA";
-		case 3:
-			return "PMPLAYER_DEADEYE";
-		case 4:
-			return "PMPLAYER_GENERAL_STATS";
-		case 5:
-			return "PMPLAYER_HORSE";
-		default:
-			break;
-	}
-	return "";
 }
 
 void func_100(char* sParam0)
@@ -1850,7 +1791,7 @@ void func_107()
 	char cVar9[16];
 	int iVar11;
 
-	Var0 = { aggregate.coffee_drinking.func_50(-43471346) };
+	Var0 = { aggregate_func_4354(-43471346) };
 	STATS::STAT_ID_GET_DATE(&Var0, &vVar2);
 	iVar11 = LOCALIZATION::_LOCALIZATION_GET_USER_LANGUAGE();
 	switch (iVar11)
@@ -1909,7 +1850,7 @@ float func_108(int iParam0)
 	var uVar0;
 	struct<2> Var1;
 
-	Var1 = { aggregate.coffee_drinking.func_50(iParam0) };
+	Var1 = { aggregate_func_4354(iParam0) };
 	STATS::STAT_ID_GET_FLOAT(&Var1, &uVar0);
 	return uVar0;
 }
@@ -1919,7 +1860,7 @@ char* func_109(float fParam0, int iParam1)
 	char* sVar0;
 
 	sVar0 = MISC::_0x2B6846401D68E563(fParam0, iParam1);
-	return aggregate.aberdeenpigfarm.func_103(sVar0, joaat("COLOR_PURE_WHITE"));
+	return aggregate_func_1965(sVar0, joaat("COLOR_PURE_WHITE"));
 }
 
 int func_112(int iParam0)
@@ -1927,7 +1868,7 @@ int func_112(int iParam0)
 	var uVar0;
 	struct<2> Var1;
 
-	Var1 = { aggregate.coffee_drinking.func_100(iParam0) };
+	Var1 = { aggregate_func_4347(iParam0) };
 	STATS::STAT_ID_GET_INT(&Var1, &uVar0);
 	return uVar0;
 }
@@ -1974,7 +1915,7 @@ int func_117(int iParam0)
 
 int func_119(int iParam0, int iParam1)
 {
-	if (!aggregate.fme_animal_tagging.func_838(iParam0, iParam1, 0, 0))
+	if (!aggregate_func_4853(iParam0, iParam1, 0, 0))
 	{
 	}
 	return Global_1903928->f_27;
@@ -1987,14 +1928,14 @@ void func_130(var uParam0)
 
 void func_131(var uParam0)
 {
-	if (aggregate.fishing_core.func_34(uParam0, 0))
+	if (aggregate_func_4278(uParam0, 0))
 	{
 		func_48(uParam0, 1, 1);
 	}
-	if (aggregate.fishing_core.func_34(uParam0, 1))
+	if (aggregate_func_4278(uParam0, 1))
 	{
 		func_48(uParam0, 1, 0);
-		func_207(uParam0, 1145633164, aggregate.fishing_core.func_279());
+		func_207(uParam0, 1145633164, aggregate_func_7755());
 		func_207(uParam0, -359624034, func_208());
 	}
 }
@@ -2002,7 +1943,7 @@ void func_131(var uParam0)
 bool func_132(var uParam0)
 {
 	uParam0->f_194[0] = DATABINDING::_0xD7DB94AB78E8EBE4("", 1395437865);
-	uParam0->f_194.f_2[0] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(&(uParam0->f_194[0]), 1145633164, aggregate.fishing_core.func_279());
+	uParam0->f_194.f_2[0] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(&(uParam0->f_194[0]), 1145633164, aggregate_func_7755());
 	uParam0->f_194.f_2[1] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(&(uParam0->f_194[0]), -359624034, func_208());
 	return true;
 }
@@ -2038,32 +1979,10 @@ void func_153(char* sParam0, char* sParam1)
 {
 	if (MISC::IS_STRING_NULL_OR_EMPTY(sParam1))
 	{
-		sParam1 = func_222(0);
+		sParam1 = aggregate_func_9247(0);
 	}
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1954462->f_5.f_425.f_3, sParam0);
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1954462->f_5.f_425.f_4, sParam1);
-}
-
-char* func_154(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return "PMPLAYER_GENERAL_DESC_NET";
-		case 1:
-			return "PMPLAYER_HEALTH_DESC";
-		case 2:
-			return "PMPLAYER_STAMINA_DESC";
-		case 3:
-			return "PMPLAYER_DEADEYE_DESC";
-		case 4:
-			return "PMPLAYER_STATS_DESC";
-		case 5:
-			return "PMPLAYER_HORSE_DESC";
-		default:
-			break;
-	}
-	return "";
 }
 
 void func_155(char* sParam0)
@@ -2173,7 +2092,7 @@ char* func_161()
 
 void func_162()
 {
-	if (aggregate.fm_deathmatch_controller.func_2355() || aggregate.discoverable_geyser.func_9())
+	if (aggregate_func_7703() || aggregate_func_7464())
 	{
 		func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_PLUS_VALUE", 900), 1, 0, 1, 0, 0f, 0f, 0f, "RPG_Health");
 		func_167(0, "RPG_ARROW_DOWN", 0);
@@ -2196,7 +2115,7 @@ char* func_164()
 
 void func_165()
 {
-	if (aggregate.fm_deathmatch_controller.func_2354())
+	if (aggregate_func_7883())
 	{
 		func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_PLUS_VALUE", 900), 1, 0, 1, 0, 0f, 0f, 0f, "RPG_Health");
 		func_167(0, "RPG_ARROW_DOWN", 0);
@@ -2205,28 +2124,6 @@ void func_165()
 	{
 		func_157(0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_PLUS_VALUE", 0), 1, 0, 0, 0, 0f, 0f, 0f, "RPG_Health");
 	}
-}
-
-char* func_166(int iParam0, int iParam1)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return "MP_PLAYER_PLAYER";
-		case 1:
-			return "MP_PLAYER_HEALTH";
-		case 2:
-			return "MP_PLAYER_STAMINA";
-		case 3:
-			return "MP_PLAYER_DEAD_EYE";
-		case 4:
-			return "MP_PLAYER_GENERAL_STATS";
-		case 5:
-			return "HORSE_GENERAL";
-		default:
-			break;
-	}
-	return "";
 }
 
 void func_167(bool bParam0, char* sParam1, char* sParam2)
@@ -2253,9 +2150,9 @@ void func_168(int iParam0, char* sParam1, char* sParam2, char* sParam3)
 	bool bVar5;
 	char* sVar6;
 
-	fVar0 = aggregate.coffee_drinking.func_40(iParam0, 2);
-	iVar1 = aggregate.net_char_creator.func_803(fVar0);
-	fVar2 = BUILTIN::TO_FLOAT(aggregate.fme_animal_tagging.func_857(iVar1 + 1));
+	fVar0 = aggregate_func_4498(iParam0, 2);
+	iVar1 = aggregate_func_7780(fVar0);
+	fVar2 = BUILTIN::TO_FLOAT(aggregate_func_6148(iVar1 + 1));
 	iVar3 = iVar1 + 5;
 	iVar4 = 5 + 5;
 	if (iVar3 < iVar4)
@@ -2264,13 +2161,13 @@ void func_168(int iParam0, char* sParam1, char* sParam2, char* sParam3)
 		bVar5++;
 	}
 	func_157(bVar5, MISC::_CREATE_VAR_STRING(2, sParam2), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_VALUE_X_OF_Y", iVar3, iVar4), 0, 0, 0, 0, 0, 0, 0, 0);
-	sVar6 = aggregate.fme_animal_tagging.func_1677(func_227(iVar3, 0));
+	sVar6 = aggregate_func_2094(aggregate_func_9341(iVar3, 0));
 	func_152(1, sVar6, sParam3);
 }
 
 int func_169(int iParam0, int iParam1)
 {
-	aggregate.fme_animal_tagging.func_838(iParam0, iParam1, 0, 0);
+	aggregate_func_4853(iParam0, iParam1, 0, 0);
 	return Global_1903928->f_22;
 }
 
@@ -2498,7 +2395,7 @@ int func_175(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4)
 {
 	int iVar0;
 
-	if (!aggregate.net_main_offline.func_5758(&uParam0, &iVar0))
+	if (!aggregate_func_2535(&uParam0, &iVar0))
 	{
 		return 0;
 	}
@@ -2519,15 +2416,15 @@ void func_182(bool bParam0, float fParam1, bool bParam2)
 	DATABINDING::_DATABINDING_WRITE_DATA_INT(Global_1954462->f_5.f_425.f_17, bParam2);
 }
 
-int func_183(int iParam0, int iParam1, int iParam2)
+bool func_183(int iParam0, int iParam1, int iParam2)
 {
-	if (!aggregate.fme_animal_tagging.func_838(iParam0, iParam1, 1, 1))
+	if (!aggregate_func_4853(iParam0, iParam1, 1, 1))
 	{
-		return 0;
+		return false;
 	}
-	if (!aggregate.fme_animal_tagging.func_839(Global_1903928))
+	if (!aggregate_func_2962(Global_1903928))
 	{
-		return 0;
+		return false;
 	}
 	return func_236(Global_1903928, iParam2);
 }
@@ -2537,8 +2434,8 @@ void func_190(bool bParam0, var uParam1, int iParam2)
 	float fVar0;
 	char* sVar1;
 
-	fVar0 = (func_239(*uParam1, iParam2) * 100f);
-	sVar1 = aggregate.doc_book.func_204(0 == iParam2, "RPG_Horse_Health", "RPG_Horse_Stamina");
+	fVar0 = (aggregate_func_9261(*uParam1, iParam2) * 100f);
+	sVar1 = aggregate_func_4363(0 == iParam2, "RPG_Horse_Health", "RPG_Horse_Stamina");
 	if (fVar0 > 0f)
 	{
 		func_157(bParam0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_PLUS_VALUE", BUILTIN::ROUND(fVar0)), 1, 0, 1, 0, 0, 0, 0, sVar1);
@@ -2568,9 +2465,9 @@ void func_191()
 	struct<6> Var32;
 	int iVar39;
 
-	Var1 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
-	bVar0 = aggregate.bandana.func_84(Var1, -415648720, 0, 0);
-	if (!aggregate.bandana.func_30(bVar0, 0))
+	Var1 = { aggregate_func_926(0, 1, 0, -1) };
+	bVar0 = aggregate_func_4274(Var1, -415648720, 0, 0);
+	if (!aggregate_func_2823(bVar0, 0))
 	{
 		return;
 	}
@@ -2651,15 +2548,15 @@ void func_192()
 	struct<6> Var35;
 	int iVar42;
 
-	Var2 = { aggregate.fme_animal_tagging.func_602(0, 1, 0, -1) };
-	bVar1 = aggregate.bandana.func_84(Var2, -415648720, 0, 0);
-	if (!aggregate.bandana.func_30(bVar1, 0))
+	Var2 = { aggregate_func_926(0, 1, 0, -1) };
+	bVar1 = aggregate_func_4274(Var2, -415648720, 0, 0);
+	if (!aggregate_func_2823(bVar1, 0))
 	{
 		return;
 	}
-	Var6 = { aggregate.bandana.func_59(bVar1, Var2, -415648720, 0) };
-	bVar0 = aggregate.bandana.func_81(Var6, 986998820, 0, -1);
-	if (!aggregate.bandana.func_30(bVar0, 0))
+	Var6 = { aggregate_func_2828(bVar1, Var2, -415648720, 0) };
+	bVar0 = aggregate_func_4299(Var6, 986998820, 0, -1);
+	if (!aggregate_func_2823(bVar0, 0))
 	{
 		return;
 	}
@@ -2705,10 +2602,10 @@ bool func_201(bool bParam0, int iParam1)
 
 	if (bParam0 != 0)
 	{
-		iVar5 = aggregate.bandana.func_10(bParam0);
+		iVar5 = aggregate_func_2827(bParam0);
 		if (iVar5 != 0)
 		{
-			iVar6 = aggregate.fm_deathmatch_controller.func_3052(bParam0);
+			iVar6 = aggregate_func_3500(bParam0);
 			bVar0 = false;
 			while (bVar0 < iVar6)
 			{
@@ -2759,28 +2656,6 @@ void func_209(var uParam0)
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(&(uParam0->f_194[0]));
 }
 
-char* func_222(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return "pm_player_mp";
-		case 1:
-			return "pm_player_mp";
-		case 2:
-			return "pm_player_mp";
-		case 3:
-			return "pm_player_mp";
-		case 4:
-			return "pm_player_mp";
-		case 5:
-			return "pausemenu_player";
-		default:
-			break;
-	}
-	return "";
-}
-
 char* func_223(int iParam0)
 {
 	switch (iParam0)
@@ -2797,44 +2672,25 @@ char* func_223(int iParam0)
 	return "";
 }
 
-struct<4> func_227(int iParam0, int iParam1)
-{
-	char cVar0[32];
-
-	if (iParam0 >= 10)
-	{
-		iParam1 = 0;
-	}
-	else if (iParam1 >= 4)
-	{
-		iParam1 = 0;
-	}
-	StringCopy(&cVar0, "TOAST_RPG_LEVEL_", 32);
-	StringIntConCat(&cVar0, iParam0, 32);
-	StringConCat(&cVar0, "_", 32);
-	StringIntConCat(&cVar0, iParam1, 32);
-	return cVar0;
-}
-
 int func_236(var uParam0, int iParam1)
 {
-	if (aggregate.mp_freemode_tutorial.func_845(uParam0, -2147483648))
+	if (aggregate_func_4910(uParam0, -2147483648))
 	{
 		*iParam1 = 4;
 	}
-	else if (aggregate.mp_freemode_tutorial.func_845(uParam0, 1073741824 /* Float: 2f */))
+	else if (aggregate_func_4910(uParam0, 1073741824 /* Float: 2f */))
 	{
 		*iParam1 = 3;
 	}
-	else if (aggregate.mp_freemode_tutorial.func_845(uParam0, 536870912))
+	else if (aggregate_func_4910(uParam0, 536870912))
 	{
 		*iParam1 = 2;
 	}
-	else if (aggregate.mp_freemode_tutorial.func_845(uParam0, 268435456))
+	else if (aggregate_func_4910(uParam0, 268435456))
 	{
 		*iParam1 = 1;
 	}
-	else if (aggregate.mp_freemode_tutorial.func_845(uParam0, 134217728))
+	else if (aggregate_func_4910(uParam0, 134217728))
 	{
 		*iParam1 = 0;
 	}
@@ -2843,19 +2699,6 @@ int func_236(var uParam0, int iParam1)
 		return 0;
 	}
 	return 1;
-}
-
-float func_239(struct<4> Param0, int iParam4)
-{
-	float fVar0;
-
-	fVar0 = 0f;
-	if (iParam4 == 0 && aggregate.net_main_offline.func_4616(Param0, 0) > 50)
-	{
-		fVar0 = (fVar0 + 0.25f);
-	}
-	fVar0 = (fVar0 - func_265(iParam4));
-	return fVar0;
 }
 
 bool func_253()
@@ -2915,13 +2758,13 @@ bool func_255()
 		if (!INVENTORY::_0x82FA24C3D3FCD9B7(iVar1, bVar16, &Var2))
 		{
 		}
-		else if (!aggregate.doc_book.func_308(&Var2))
+		else if (!aggregate_func_4349(&Var2))
 		{
 		}
-		else if (!func_273(Var2.f_9))
+		else if (!aggregate_func_8785(Var2.f_9))
 		{
 		}
-		else if (!func_274(&Var2))
+		else if (!aggregate_func_8786(&Var2))
 		{
 		}
 		else
@@ -2935,21 +2778,13 @@ bool func_255()
 	return false;
 }
 
-float func_265(int iParam0)
-{
-	var uVar0;
-
-	uVar0 = &Global_1268935->f_1394.f_3[iParam0];
-	return uVar0;
-}
-
 bool func_271(int iParam0)
 {
 	int iVar0;
 	int iVar1;
 
-	iVar0 = aggregate.net_main_offline.func_1713(iParam0);
-	iVar1 = aggregate.fme_animal_tagging_offline.func_204(iVar0);
+	iVar0 = aggregate_func_7818(iParam0);
+	iVar1 = aggregate_func_4875(iVar0);
 	if (!UNLOCK::_UNLOCK_IS_NEW(iVar1))
 	{
 		return false;
@@ -2959,35 +2794,6 @@ bool func_271(int iParam0)
 		return false;
 	}
 	return true;
-}
-
-bool func_273(int iParam0)
-{
-	if (iParam0 == 1045621973)
-	{
-		return false;
-	}
-	return true;
-}
-
-bool func_274(var uParam0)
-{
-	struct<10> Var0;
-
-	if (!aggregate.doc_book.func_308(uParam0))
-	{
-		return false;
-	}
-	Var0.f_9 = -1591664384;
-	if (!aggregate.bandana.func_66(*uParam0, &Var0, 1, 0, -1))
-	{
-		return false;
-	}
-	if (!aggregate.bandana.func_30(Var0.f_4, 0))
-	{
-		return false;
-	}
-	return aggregate.hub.func_87(Var0.f_4);
 }
 
 bool func_281(int iParam0)

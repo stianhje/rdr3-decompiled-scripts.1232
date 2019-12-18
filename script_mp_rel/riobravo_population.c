@@ -20,13 +20,13 @@
 	int iLocal_18 = 0;
 #endregion
 
-// __EntryFunction__ == gaptoothridge_population.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1808
 
 void func_2()
 {
 	iLocal_17 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-4212.5f, -3455f, 35f, 0f, 0f, 0f, 110f, 110f, 15f, "m_volFortMercer_Restriction");
-	aggregate.annesburg.func_54(iLocal_17);
+	aggregate_func_1306(iLocal_17);
 	iLocal_18 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-5270.212f, -3465.903f, -21.0166f, 0f, 0f, 0f, 101.75f, 130f, 50f, "m_volBenedictPoint_Restriction");
-	aggregate.annesburg.func_54(iLocal_18);
+	aggregate_func_1306(iLocal_18);
 }
 

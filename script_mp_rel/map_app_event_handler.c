@@ -35,9 +35,9 @@ void __EntryFunction__()
 	Var4.f_35 = -1;
 	Var4.f_36 = -1;
 	Var4.f_37 = 1;
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
-		aggregate.fm_deathmatch_controller.func_445(&Var4);
+		aggregate_func_4444(&Var4);
 	}
 	else
 	{
@@ -47,7 +47,7 @@ void __EntryFunction__()
 	{
 		func_4(&Var4);
 	}
-	if (aggregate.aberdeenpigfarm.func_45() == -1)
+	if (aggregate_func_4251() == -1)
 	{
 		while (true)
 		{
@@ -69,7 +69,7 @@ void __EntryFunction__()
 								case -632467210:
 									Var4.f_33 = -1;
 									Var4.f_34 = -1;
-									aggregate.fm_deathmatch_controller.func_445(&Var4);
+									aggregate_func_4444(&Var4);
 									break;
 							}
 							Var4.f_37 = 1;
@@ -102,7 +102,7 @@ void __EntryFunction__()
 	}
 	else
 	{
-		while (!aggregate.aberdeenpigfarm.func_49(1, 1))
+		while (!aggregate_func_523(1, 1))
 		{
 			func_14(iScriptParam_0, &Var4);
 			func_11(&Var4);
@@ -140,7 +140,7 @@ void func_3(var uParam0)
 
 void func_4(var uParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_45() == -1)
+	if (aggregate_func_4251() == -1)
 	{
 		func_16(uParam0);
 	}
@@ -159,7 +159,7 @@ void func_5(int iParam0, var uParam1)
 			switch (*iParam0)
 			{
 				case -1740156697:
-					uParam1->f_33 = aggregate.blackwater.func_334(func_18(iParam0));
+					uParam1->f_33 = aggregate_func_5624(func_18(iParam0));
 					uParam1->f_37 = 1;
 					break;
 			}
@@ -203,10 +203,10 @@ int func_6(var uParam0)
 			uParam0->f_22 = func_22(uParam0->f_19);
 			break;
 		case 0:
-			uParam0->f_22 = aggregate.aberdeenpigfarm.func_73(uParam0->f_20, 0);
+			uParam0->f_22 = aggregate_func_4328(uParam0->f_20, 0);
 			break;
 		case 1:
-			uParam0->f_22 = func_24(uParam0->f_21);
+			uParam0->f_22 = aggregate_func_8847(uParam0->f_21);
 			break;
 		default:
 			func_25(uParam0);
@@ -240,7 +240,7 @@ int func_8(var uParam0)
 			switch (func_21(uParam0))
 			{
 				case 0:
-					uParam0->f_22 = aggregate.aberdeenpigfarm.func_73(uParam0->f_20, 0);
+					uParam0->f_22 = aggregate_func_4328(uParam0->f_20, 0);
 					uParam0->f_26 = func_28(uParam0->f_19);
 					if (!TXD::_0xBA0163B277C2D2D0(uParam0->f_26))
 					{
@@ -361,7 +361,7 @@ void func_14(int iParam0, var uParam1)
 							func_41(uParam1);
 							break;
 						case -632467210:
-							aggregate.fm_deathmatch_controller.func_445(uParam1);
+							aggregate_func_4444(uParam1);
 							break;
 					}
 					break;
@@ -373,12 +373,12 @@ void func_14(int iParam0, var uParam1)
 							func_43(uParam1);
 							break;
 						case -632467210:
-							aggregate.fm_deathmatch_controller.func_755(uParam1);
+							aggregate_func_6630(uParam1);
 							*uParam1 = { uParam1->f_4 };
 							func_41(uParam1);
 							break;
 						case -1203660660:
-							aggregate.dynamic_craft_scenario.func_156(uParam1);
+							aggregate_func_4271(uParam1);
 							break;
 					}
 					break;
@@ -403,7 +403,7 @@ void func_15(var uParam0)
 
 	if (func_34(uParam0))
 	{
-		if (!func_49(aggregate.dynamic_craft_scenario.func_156(uParam0->f_23), func_48(uParam0->f_25), &uVar0))
+		if (!func_49(aggregate_func_4271(uParam0->f_23), func_48(uParam0->f_25), &uVar0))
 		{
 			return;
 		}
@@ -516,12 +516,12 @@ int func_21(var uParam0)
 		return 2;
 	}
 	uParam0->f_20 = func_20(uParam0->f_19);
-	if (aggregate.aberdeenpigfarm.func_58(uParam0->f_20))
+	if (aggregate_func_4301(uParam0->f_20))
 	{
 		return 0;
 	}
-	uParam0->f_21 = aggregate.blackwater.func_334(uParam0->f_19);
-	if (aggregate.aberdeenpigfarm.func_10(uParam0->f_21))
+	uParam0->f_21 = aggregate_func_5624(uParam0->f_19);
+	if (aggregate_func_4326(uParam0->f_21))
 	{
 		return 1;
 	}
@@ -554,50 +554,6 @@ int func_22(int iParam0)
 	return 0;
 }
 
-int func_24(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return 675537701;
-		case 1:
-			return -1915988145;
-		case 2:
-			return 38535626;
-		case 3:
-			return 1904167574;
-		case 4:
-			return 244711249;
-		case 5:
-			return -1859792564;
-		case 6:
-			return -1808688941;
-		case 7:
-			return -736296038;
-		case 8:
-			return -909439131;
-		case 9:
-			return 1917744724;
-		case 10:
-			return 821748379;
-		case 11:
-			return 196685551;
-		case 12:
-			return 1983548039;
-		case 13:
-			return 985737465;
-		case 14:
-			return -735550853;
-		case 15:
-			return -1716084250;
-		case 16:
-			return 869827975;
-		default:
-			break;
-	}
-	return 0;
-}
-
 void func_25(var uParam0)
 {
 	bool bVar0;
@@ -612,19 +568,19 @@ void func_25(var uParam0)
 	sVar2 = "";
 	iVar3 = func_20(uParam0->f_19);
 	iVar4 = uParam0->f_33;
-	if (!aggregate.aberdeenpigfarm.func_10(iVar4))
+	if (!aggregate_func_4326(iVar4))
 	{
-		iVar4 = aggregate.blackwater.func_334(uParam0->f_19);
+		iVar4 = aggregate_func_5624(uParam0->f_19);
 	}
-	if (!aggregate.aberdeenpigfarm.func_10(iVar4))
+	if (!aggregate_func_4326(iVar4))
 	{
-		iVar5 = aggregate.blackwater.func_335(aggregate.blackwater.func_210(iVar3, 1, 1));
+		iVar5 = aggregate_func_4665(aggregate_func_4662(iVar3, 1, 1));
 	}
 	else
 	{
-		iVar5 = aggregate.aberdeenpigfarm.func_93(iVar4);
+		iVar5 = aggregate_func_4336(iVar4);
 	}
-	if ((aggregate.fme_animal_tagging.func_1648(iVar4) || aggregate.fme_animal_tagging.func_1648(iVar5)) || aggregate.fme_animal_tagging.func_1641(iVar3))
+	if ((aggregate_func_4672(iVar4) || aggregate_func_4672(iVar5)) || aggregate_func_4671(iVar3))
 	{
 		if (PED::IS_PED_MALE(PLAYER::PLAYER_PED_ID()))
 		{
@@ -636,9 +592,9 @@ void func_25(var uParam0)
 		}
 		bVar0 = true;
 	}
-	else if (aggregate.aberdeenpigfarm.func_92(iVar5))
+	else if (aggregate_func_4324(iVar5))
 	{
-		iVar1 = aggregate.dynamic_craft_scenario.func_156(iVar5);
+		iVar1 = aggregate_func_4271(iVar5);
 		if (iVar1 > 0)
 		{
 			bVar0 = true;
@@ -668,13 +624,13 @@ bool func_27(int iParam0, var uParam1)
 	iVar0 = 0;
 	while (iVar0 < &Global_1900789)
 	{
-		if (!aggregate.aberdeenpigfarm.func_158(*((*Global_1900789)[iVar0 /*2*/])))
+		if (!aggregate_func_4255(*((*Global_1900789)[iVar0 /*2*/])))
 		{
 		}
 		else if (Global_1900789[iVar0 /*2*/] == 2)
 		{
-			*uParam1 = aggregate.annesburg.func_276(*((*Global_1900789)[iVar0 /*2*/]));
-			if ((aggregate.flow_controller.func_34(*uParam1) && MAP::DOES_BLIP_EXIST(((*Global_1835011)[*uParam1 /*72*/])->f_28)) && ((*Global_1835011)[*uParam1 /*72*/])->f_28 == iParam0)
+			*uParam1 = aggregate_func_4306(*((*Global_1900789)[iVar0 /*2*/]));
+			if ((aggregate_func_6553(*uParam1) && MAP::DOES_BLIP_EXIST(((*Global_1835011)[*uParam1 /*72*/])->f_28)) && ((*Global_1835011)[*uParam1 /*72*/])->f_28 == iParam0)
 			{
 				return true;
 			}
@@ -896,8 +852,8 @@ void func_33(var uParam0)
 		}
 		if (uParam0->f_33 != -1)
 		{
-			iVar2 = func_77(uParam0->f_33);
-			iVar3 = func_78(uParam0->f_33);
+			iVar2 = aggregate_func_9675(uParam0->f_33);
+			iVar3 = aggregate_func_9676(uParam0->f_33);
 		}
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(iVar1) && !MISC::IS_STRING_NULL_OR_EMPTY(iVar2))
 		{
@@ -948,7 +904,7 @@ void func_35(int iParam0, var uParam1)
 	char cVar0[16];
 	bool bVar2;
 
-	if (!aggregate.flow_controller.func_34(uParam1->f_29))
+	if (!aggregate_func_6553(uParam1->f_29))
 	{
 		if (!func_27(iParam0, &(uParam1->f_29)))
 		{
@@ -983,9 +939,9 @@ void func_36(int iParam0, var uParam1)
 	func_31(uParam1);
 	uParam1->f_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1->f_8, "Zone");
 	uParam1->f_26 = func_28(iParam0);
-	iVar0 = aggregate.aberdeenpigfarm.func_9(uParam1->f_20);
+	iVar0 = aggregate_func_4441(uParam1->f_20);
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "name", func_80(iParam0));
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", MISC::GET_HASH_KEY(func_77(iVar0)));
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", MISC::GET_HASH_KEY(aggregate_func_9675(iVar0)));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", func_81(iParam0));
 	if (TXD::_0xBA0163B277C2D2D0(uParam1->f_26))
 	{
@@ -997,10 +953,10 @@ void func_36(int iParam0, var uParam1)
 		uParam1->f_26 = func_29();
 		DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", uParam1->f_26);
 	}
-	iVar1 = aggregate.aberdeenpigfarm.func_93(iVar0);
-	if (aggregate.aberdeenpigfarm.func_92(iVar1))
+	iVar1 = aggregate_func_4336(iVar0);
+	if (aggregate_func_4324(iVar1))
 	{
-		bVar2 = aggregate.dynamic_craft_scenario.func_156(iVar1);
+		bVar2 = aggregate_func_4271(iVar1);
 		if (bVar2 > 0)
 		{
 			DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "hint_name", "LAW_UI_BOUNTY");
@@ -1028,7 +984,7 @@ void func_37(int iParam0, var uParam1)
 	MAP::SET_BLIP_FLASHES(iParam0, &uVar0, &iVar1);
 	func_31(uParam1);
 	uParam1->f_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1->f_8, "BLIP");
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "name", MISC::GET_HASH_KEY(func_82(iVar1)));
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "name", MISC::GET_HASH_KEY(aggregate_func_8848(iVar1)));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", -436556357);
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", false);
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", func_30(uParam1->f_23, uParam1->f_25));
@@ -1096,7 +1052,7 @@ void func_40(int iParam0, var uParam1)
 			break;
 		case 2:
 			StringCopy(&Var1, func_73(iParam0), 128);
-			iVar0 = aggregate.fm_mission_controller.func_726(MAP::GET_BLIP_COORDS(uParam1->f_25), 1);
+			iVar0 = aggregate_func_3339(MAP::GET_BLIP_COORDS(uParam1->f_25), 1);
 			StringCopy(&cVar33, func_76(iVar0), 128);
 			DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "name", &cVar17);
 			DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", MISC::GET_HASH_KEY(&Var1));
@@ -1145,7 +1101,7 @@ int func_43(var uParam0)
 		uParam0->f_25 = 0;
 		return 0;
 	}
-	if (!func_49(aggregate.dynamic_craft_scenario.func_156(uParam0->f_23), func_48(uParam0->f_25), &Var0))
+	if (!func_49(aggregate_func_4271(uParam0->f_23), func_48(uParam0->f_25), &Var0))
 	{
 	}
 	switch (uParam0->f_23)
@@ -1190,12 +1146,12 @@ bool func_46(var uParam0)
 {
 	struct<2> Var0;
 
-	if (!func_49(aggregate.dynamic_craft_scenario.func_156(uParam0->f_23), func_48(uParam0->f_25), &Var0))
+	if (!func_49(aggregate_func_4271(uParam0->f_23), func_48(uParam0->f_25), &Var0))
 	{
 	}
 	if (uParam0->f_23 == 91)
 	{
-		aggregate.map_app_event_handler.func_92(aggregate.map_app_event_handler.func_91(Var0.f_1), 6);
+		aggregate_func_8181(aggregate_func_7730(Var0.f_1), 6);
 		return true;
 	}
 	return false;
@@ -1298,14 +1254,14 @@ void func_50(int iParam0, var uParam1)
 	MAP::SET_BLIP_FLASHES(iParam0, &uVar0, &iVar1);
 	func_31(uParam1);
 	uParam1->f_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1->f_8, "BLIP");
-	Var2 = { aggregate.aberdeenpigfarm.func_131(PLAYER::INT_TO_PLAYERINDEX(iVar1)) };
-	uParam1->f_15 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "name", aggregate.fme_animal_tagging.func_488(PLAYER::GET_PLAYER_NAME(PLAYER::INT_TO_PLAYERINDEX(iVar1)), joaat("COLOR_PURE_WHITE")));
+	Var2 = { aggregate_func_2843(PLAYER::INT_TO_PLAYERINDEX(iVar1)) };
+	uParam1->f_15 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "name", aggregate_func_1524(PLAYER::GET_PLAYER_NAME(PLAYER::INT_TO_PLAYERINDEX(iVar1)), joaat("COLOR_PURE_WHITE")));
 	uParam1->f_13 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", -436556357);
 	uParam1->f_14 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", false);
 	func_96(&uVar9, Var2, 0);
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", MISC::GET_HASH_KEY(&uVar9));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "hint_name", -486609646);
-	DATABINDING::_DATABINDING_ADD_DATA_INT(uParam1->f_9, "hint_value", aggregate.fme_animal_tagging_offline.func_203(iVar1));
+	DATABINDING::_DATABINDING_ADD_DATA_INT(uParam1->f_9, "hint_value", aggregate_func_2326(iVar1));
 	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam1->f_8, -1, "map_card_player", uParam1->f_9);
 }
 
@@ -1371,8 +1327,8 @@ void func_54(var uParam0, var uParam1)
 	switch (uParam0->f_23)
 	{
 		case 93:
-			iVar4 = aggregate.flow_controller.func_231(uParam1->f_1);
-			if (!aggregate.flow_controller.func_373(iVar4))
+			iVar4 = aggregate_func_7407(uParam1->f_1);
+			if (!aggregate_func_6926(iVar4))
 			{
 			}
 			else
@@ -1383,22 +1339,22 @@ void func_54(var uParam0, var uParam1)
 				}
 				else
 				{
-					if (aggregate.map_app_event_handler.func_102(iVar4) != -323664079)
+					if (aggregate_func_7397(iVar4) != -323664079)
 					{
-						if (aggregate.flow_controller.func_374(iVar4) == -1211851008)
+						if (aggregate_func_7094(iVar4) == -1211851008)
 						{
-							if (!aggregate.map_app_event_handler.func_104(aggregate.flow_controller.func_374(iVar4)))
+							if (!aggregate_func_7731(aggregate_func_7094(iVar4)))
 							{
 								iVar6 = joaat("secondary");
 							}
 						}
-						iVar5 = PLAYER::_0x8E84119A23C16623(aggregate.map_app_event_handler.func_105(iVar4, iVar6), 0, 0);
+						iVar5 = PLAYER::_0x8E84119A23C16623(aggregate_func_8182(iVar4, iVar6), 0, 0);
 						if (iVar5 == 0)
 						{
 						}
 						else
 						{
-							bVar0 = PLAYER::_0xDA9D7BE231FE865F(aggregate.map_app_event_handler.func_105(iVar4, iVar6), 0, 0);
+							bVar0 = PLAYER::_0xDA9D7BE231FE865F(aggregate_func_8182(iVar4, iVar6), 0, 0);
 							if (PLAYER::_0x354F689C4FFAAB37(iVar5))
 							{
 								switch (iVar6)
@@ -1409,7 +1365,7 @@ void func_54(var uParam0, var uParam1)
 										bVar2 = uParam1->f_13;
 										break;
 									case joaat("secondary"):
-										if (aggregate.flow_controller.func_374(iVar4) == -1211851008)
+										if (aggregate_func_7094(iVar4) == -1211851008)
 										{
 											bVar3 = uParam1->f_8;
 											bVar1 = uParam1->f_12;
@@ -1445,7 +1401,7 @@ void func_54(var uParam0, var uParam1)
 								bVar2 = -712210889;
 							}
 							Jump @401; //curOff = 367
-							bVar0 = aggregate.map_app_event_handler.func_105(iVar4, -1100859510);
+							bVar0 = aggregate_func_8182(iVar4, -1100859510);
 							bVar3 = uParam1->f_8;
 							bVar1 = uParam1->f_12;
 							bVar2 = uParam1->f_13;
@@ -1464,8 +1420,8 @@ void func_54(var uParam0, var uParam1)
 						DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_9, "hint_value", &(uParam1->f_17));
 						if (uParam0->f_23 == 91)
 						{
-							iVar7 = aggregate.map_app_event_handler.func_91(uParam1->f_1);
-							func_108(iVar7);
+							iVar7 = aggregate_func_7730(uParam1->f_1);
+							aggregate_func_8849(iVar7);
 							uParam0->f_18 = 0;
 							uParam0->f_16 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_9, "startable", true);
 							uParam0->f_17 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "startPrompt", -578259052);
@@ -1488,7 +1444,7 @@ void func_55(var uParam0)
 
 	if (uParam0->f_23 == 91 && DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_16))
 	{
-		bVar0 = ((Global_1572887->f_106.f_75 > 1 && Global_1572887->f_106.f_75 <= 14) && !aggregate.fme_animal_tagging.func_884());
+		bVar0 = ((Global_1572887->f_106.f_75 > 1 && Global_1572887->f_106.f_75 <= 14) && !aggregate_func_4478());
 		bVar1 = (_NAMESPACE26::_0x0F99F6436528A089(Global_1273882->f_15) && !_NAMESPACE26::_0x424B17A7DC5C90BC(PLAYER::PLAYER_ID()));
 		bVar2 = (bVar0 || bVar1);
 		if (uParam0->f_18 != bVar2)
@@ -1524,7 +1480,7 @@ void func_56(var uParam0)
 	}
 	if (uParam0->f_30.f_1)
 	{
-		sVar1 = func_110((Global_265331->f_4[uParam0->f_30.f_2 /*51*/])->f_22, &iVar0);
+		sVar1 = aggregate_func_723((Global_265331->f_4[uParam0->f_30.f_2 /*51*/])->f_22, &iVar0);
 		if (iVar0 != 1)
 		{
 			uParam0->f_30.f_1 = 0;
@@ -1535,7 +1491,7 @@ void func_56(var uParam0)
 	}
 }
 
-struct<16> func_70(int iParam0, int iParam1, var uParam2)
+struct<16> func_70(int iParam0, int iParam1, int iParam2)
 {
 	struct<16> Var0;
 	vector3 vVar16;
@@ -1546,21 +1502,21 @@ struct<16> func_70(int iParam0, int iParam1, var uParam2)
 		return Var0;
 	}
 	vVar16 = { MAP::GET_BLIP_COORDS(iParam0) };
-	*uParam2 = aggregate.fm_mission_controller.func_726(vVar16, 1);
-	while (vVar16.z < 200f && !aggregate.aberdeenpigfarm.func_58(*uParam2))
+	*iParam2 = aggregate_func_3339(vVar16, 1);
+	while (vVar16.z < 200f && !aggregate_func_4301(*iParam2))
 	{
 		vVar16.f_2 = (vVar16.z + 25f);
-		*uParam2 = aggregate.fm_mission_controller.func_726(vVar16, 1);
+		*iParam2 = aggregate_func_3339(vVar16, 1);
 	}
-	if (!aggregate.aberdeenpigfarm.func_58(*uParam2))
+	if (!aggregate_func_4301(*iParam2))
 	{
 		return Var0;
 	}
 	StringCopy(&Var0, "MAP_CARD_", 128);
-	cVar19 = func_123(*uParam2);
+	cVar19 = aggregate_func_9674(*iParam2);
 	StringConCat(&Var0, &cVar19, 128);
 	StringConCat(&Var0, "_", 128);
-	StringConCat(&Var0, func_124(iParam1, *uParam2, vVar16), 128);
+	StringConCat(&Var0, func_124(iParam1, *iParam2, vVar16), 128);
 	return Var0;
 }
 
@@ -1584,14 +1540,14 @@ struct<16> func_72(int iParam0, int iParam1, var uParam2)
 	vVar16 = { MAP::GET_BLIP_COORDS(iParam1) };
 	if (vVar16.z == 0f)
 	{
-		aggregate.fme_dead_drop.func_1153(&vVar16, 50, 10, 0, 0);
+		aggregate_func_832(&vVar16, 50, 10, 0, 0);
 	}
 	if (vVar16.z == 0f)
 	{
 		vVar16.f_2 = Global_36.f_2;
 	}
-	*uParam2 = aggregate.fm_mission_controller.func_726(vVar16, 1);
-	if (!aggregate.aberdeenpigfarm.func_58(*uParam2))
+	*uParam2 = aggregate_func_3339(vVar16, 1);
+	if (!aggregate_func_4301(*uParam2))
 	{
 		return Var0;
 	}
@@ -1733,7 +1689,7 @@ char* func_75(int iParam0, int iParam1)
 
 char* func_76(int iParam0)
 {
-	if (!aggregate.aberdeenpigfarm.func_58(iParam0))
+	if (!aggregate_func_4301(iParam0))
 	{
 		if (MISC::_0xACB7E1418A8B6E32(4) && SCRIPTS::_GET_GLOBAL_BLOCK_CAN_BE_ACCESSED(4))
 		{
@@ -1742,102 +1698,6 @@ char* func_76(int iParam0)
 		return "REGION_INV";
 	}
 	return func_128(((*Global_1887327)[iParam0 /*36*/])->f_23);
-}
-
-char* func_77(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return "BAY";
-		case 1:
-			return "BGV";
-		case 2:
-			return "BLU";
-		case 3:
-			return "CML";
-		case 4:
-			return "GRT";
-		case 5:
-			return "GRZ";
-		case 6:
-			return "GRE";
-		case 7:
-			return "GRW";
-		case 8:
-			return "GUA";
-		case 9:
-			return "HRT";
-		case 10:
-			return "ROA";
-		case 11:
-			return "SCM";
-		case 12:
-			return "TAL";
-		case 15:
-			return "CHO";
-		case 13:
-			return "GAP";
-		case 16:
-			return "HEN";
-		case 14:
-			return "RIO";
-		default:
-			break;
-	}
-	if (aggregate.aberdeenpigfarm.func_45() == 0)
-	{
-		return "FMMC_INV_ALID";
-	}
-	return "No District Label!";
-}
-
-char* func_78(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 0:
-			return "LEMOYNE";
-		case 1:
-			return "WEST_ELIZ";
-		case 2:
-			return "LEMOYNE";
-		case 3:
-			return "NEW_HANOV";
-		case 4:
-			return "WEST_ELIZ";
-		case 5:
-			return "AMBARINO";
-		case 6:
-			return "AMBARINO";
-		case 7:
-			return "AMBARINO";
-		case 8:
-			return "GUARMA";
-		case 9:
-			return "NEW_HANOV";
-		case 10:
-			return "NEW_HANOV";
-		case 11:
-			return "LEMOYNE";
-		case 12:
-			return "WEST_ELIZ";
-		case 13:
-			return "NEW_AUST";
-		case 14:
-			return "NEW_AUST";
-		case 15:
-			return "NEW_AUST";
-		case 16:
-			return "NEW_AUST";
-		default:
-			break;
-	}
-	if (aggregate.aberdeenpigfarm.func_45() == 0)
-	{
-		return "FMMC_INV_ALID";
-	}
-	return "No State Label!";
 }
 
 int func_80(int iParam0)
@@ -1868,59 +1728,11 @@ int func_81(int iParam0)
 	return MISC::GET_HASH_KEY(&cVar8);
 }
 
-char* func_82(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 2:
-			return "NM_PLAYLIST_ADVERSARY_SMALL";
-		case 3:
-			return "NM_PLAYLIST_ADVERSARY_MEDIUM";
-		case 4:
-			return "NM_PLAYLIST_ADVERSARY_LARGE";
-		case 5:
-			return "NM_PLAYLIST_GUN_RUSH_TEAMS";
-		case 6:
-			return "NM_PLAYLIST_GUN_RUSH";
-		case 7:
-			return "NM_PLAYLIST_ELIMINATION_SMALL";
-		case 8:
-			return "NM_PLAYLIST_ELIMINATION_MEDIUM";
-		case 9:
-			return "NM_PLAYLIST_ELIMINATION_LARGE";
-		case 0:
-			return "NM_PLAYLIST_RACE";
-		case 1:
-			return "NM_PLAYLIST_FEATURED_001";
-		case 10:
-			return "NM_PLAYLIST_NOMINATED";
-		case 11:
-			return "NM_BUCKET_NOMINATED_SERIES_SMALL";
-		case 12:
-			return "NM_BUCKET_NOMINATED_SERIES_MEDIUM";
-		case 13:
-			return "NM_BUCKET_NOMINATED_SERIES_LARGE";
-		case 15:
-			return "NM_PLAYLIST_ORBIS_SERIES_1";
-		case 16:
-			return "NM_PLAYLIST_ORBIS_SERIES_2";
-		case 17:
-			return "NM_PLAYLIST_ORBIS_SERIES_3";
-		case 19:
-			return "NM_PLAYLIST_CAPTURE";
-		case 18:
-			return "NM_PLAYLIST_SHOOTOUT";
-		default:
-			break;
-	}
-	return "NM_PLAYLIST_FFA";
-}
-
 var func_83(int iParam0)
 {
 	int iVar0;
 
-	if (aggregate.map_app_event_handler.func_104(aggregate.flow_controller.func_374(iParam0)))
+	if (aggregate_func_7731(aggregate_func_7094(iParam0)))
 	{
 		iVar0 = -1100859510;
 	}
@@ -1928,7 +1740,7 @@ var func_83(int iParam0)
 	{
 		iVar0 = -107328778;
 	}
-	return &(((*Global_1112103)[iParam0 /*35*/])->f_13[aggregate.map_app_event_handler.func_130(iVar0, 1)]);
+	return &(((*Global_1112103)[iParam0 /*35*/])->f_13[aggregate_func_8183(iVar0, 1)]);
 }
 
 char* func_84(int iParam0)
@@ -2218,16 +2030,16 @@ void func_88(var uParam0)
 	iVar1 = 0;
 	sVar2 = "";
 	iVar3 = uParam0->f_33;
-	if (!aggregate.aberdeenpigfarm.func_10(iVar3))
+	if (!aggregate_func_4326(iVar3))
 	{
-		iVar3 = aggregate.blackwater.func_334(uParam0->f_19);
+		iVar3 = aggregate_func_5624(uParam0->f_19);
 	}
-	iVar4 = aggregate.aberdeenpigfarm.func_93(iVar3);
-	if ((aggregate.dynamic_craft_scenario.func_320() || aggregate.aberdeenpigfarm.func_156()) || aggregate.long_update.func_575())
+	iVar4 = aggregate_func_4336(iVar3);
+	if ((aggregate_func_6688() || aggregate_func_4258()) || aggregate_func_7516())
 	{
 		return;
 	}
-	else if (aggregate.fme_animal_tagging.func_1648(iVar3) || aggregate.fme_animal_tagging.func_1648(iVar4))
+	else if (aggregate_func_4672(iVar3) || aggregate_func_4672(iVar4))
 	{
 		if (PED::IS_PED_MALE(PLAYER::PLAYER_PED_ID()))
 		{
@@ -2239,9 +2051,9 @@ void func_88(var uParam0)
 		}
 		bVar0 = true;
 	}
-	else if (aggregate.aberdeenpigfarm.func_92(iVar4))
+	else if (aggregate_func_4324(iVar4))
 	{
-		iVar1 = aggregate.dynamic_craft_scenario.func_156(iVar4);
+		iVar1 = aggregate_func_4271(iVar4);
 		if (iVar1 > 0)
 		{
 			bVar0 = true;
@@ -2260,13 +2072,13 @@ int func_89(int iParam0)
 	iVar0 = 0;
 	while (iVar0 < &Global_1900789)
 	{
-		if (!aggregate.aberdeenpigfarm.func_158(*((*Global_1900789)[iVar0 /*2*/])))
+		if (!aggregate_func_4255(*((*Global_1900789)[iVar0 /*2*/])))
 		{
 		}
 		else if (Global_1900789[iVar0 /*2*/] == 2)
 		{
-			iVar1 = aggregate.annesburg.func_276(*((*Global_1900789)[iVar0 /*2*/]));
-			if ((aggregate.flow_controller.func_34(iVar1) && MAP::DOES_BLIP_EXIST(((*Global_1835011)[iVar1 /*72*/])->f_28)) && ((*Global_1835011)[iVar1 /*72*/])->f_28 == iParam0)
+			iVar1 = aggregate_func_4306(*((*Global_1900789)[iVar0 /*2*/]));
+			if ((aggregate_func_6553(iVar1) && MAP::DOES_BLIP_EXIST(((*Global_1835011)[iVar1 /*72*/])->f_28)) && ((*Global_1835011)[iVar1 /*72*/])->f_28 == iParam0)
 			{
 				return iVar1;
 			}
@@ -2382,7 +2194,7 @@ int func_96(char* sParam0, var uParam1, int iParam2, var uParam3, var uParam4, v
 			{
 				return 1;
 			}
-			return aggregate.fme_animal_tagging.func_1422(sParam0, NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(&uParam1), iParam8);
+			return aggregate_func_347(sParam0, NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(&uParam1), iParam8);
 		default:
 			break;
 	}
@@ -2393,7 +2205,7 @@ void func_98(var uParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = aggregate.map_app_event_handler.func_146(iParam1);
+	iVar0 = aggregate_func_6970(iParam1);
 	if (iVar0 < 0)
 	{
 		return;
@@ -2403,100 +2215,14 @@ void func_98(var uParam0, int iParam1)
 	uParam0->f_30.f_2 = iVar0;
 }
 
-var func_101(int iParam0)
+int func_101(int iParam0)
 {
 	return (Global_1103536->f_255.f_4839[iParam0 /*13*/])->f_1;
 }
 
 int func_106(int iParam0, int iParam1)
 {
-	return (((*Global_1112103)[iParam0 /*35*/])->f_2[aggregate.map_app_event_handler.func_151(iParam1, 1) /*2*/])->f_1;
-}
-
-void func_108(int iParam0)
-{
-	int iVar0;
-
-	if (iParam0 == -1)
-	{
-		return;
-	}
-	iVar0 = iParam0;
-	if (iVar0 <= -1)
-	{
-		return;
-	}
-	if (iVar0 > 20)
-	{
-		return;
-	}
-	func_152((Global_1901929->f_117[iVar0 /*2*/])->f_1, &(Global_1901929->f_117[iVar0 /*2*/]));
-}
-
-char* func_110(int iParam0, var uParam1)
-{
-	char* sVar0;
-
-	if (Global_265331->f_124314.f_130 > 0 && Global_265331->f_124314.f_130 != iParam0)
-	{
-		*uParam1 = 5;
-		return "";
-	}
-	switch (Global_265331->f_124314)
-	{
-		case 0:
-			if (!NETWORK::_0x2D5DC831176D0114(iParam0))
-			{
-				func_154(1);
-			}
-			else
-			{
-				NETWORK::_0x68103E2247887242();
-				func_154(1);
-			}
-			break;
-		case 1:
-			NETWORK::UGC_REQUEST_CACHED_DESCRIPTION(iParam0);
-			func_154(2);
-			break;
-		case 2:
-			if (!NETWORK::_0xEBFA8D50ADDC54C4(iParam0))
-			{
-				*uParam1 = 1;
-				return "";
-			}
-			if (NETWORK::_0x162C23CA83ED0A62(iParam0))
-			{
-				func_154(3);
-			}
-			else
-			{
-				func_154(0);
-				*uParam1 = 3;
-				return "";
-			}
-			break;
-		case 3:
-			sVar0 = NETWORK::UGC_GET_CACHED_DESCRIPTION(iParam0, 512);
-			NETWORK::_0x5A34CD9C3C5BEC44(iParam0);
-			func_154(0);
-			*uParam1 = 2;
-			return sVar0;
-	}
-	*uParam1 = 1;
-	return "";
-}
-
-char[] func_123(int iParam0)
-{
-	char[] cVar0[8];
-
-	if (!aggregate.aberdeenpigfarm.func_58(iParam0))
-	{
-		StringCopy(&cVar0, "UNK", 8);
-		return cVar0;
-	}
-	return ((*Global_1887327)[iParam0 /*36*/])->f_23;
+	return (((*Global_1112103)[iParam0 /*35*/])->f_2[aggregate_func_7733(iParam1, 1) /*2*/])->f_1;
 }
 
 char* func_124(int iParam0, int iParam1, vector3 vParam2)
@@ -2939,37 +2665,6 @@ char* func_129(int iParam0)
 	return "";
 }
 
-void func_152(int iParam0, int iParam1)
-{
-	int iVar0;
-
-	if (iParam0 != 0)
-	{
-		iVar0 = iParam0;
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1939221->f_1433.f_54.f_101, func_198(iVar0));
-		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939221->f_1433.f_54.f_100, true);
-	}
-	else
-	{
-		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939221->f_1433.f_54.f_100, false);
-	}
-	if (iParam1 != 0)
-	{
-		iVar0 = iParam1;
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1939221->f_1433.f_54.f_98, func_198(iVar0));
-		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939221->f_1433.f_54.f_97, true);
-	}
-	else
-	{
-		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939221->f_1433.f_54.f_97, false);
-	}
-}
-
-void func_154(int iParam0)
-{
-	Global_265331->f_124314 = iParam0;
-}
-
 int func_159(int iParam0)
 {
 	switch (iParam0)
@@ -2998,45 +2693,5 @@ int func_159(int iParam0)
 			break;
 	}
 	return -1;
-}
-
-int func_198(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 1:
-			return 1531758713;
-		case 2:
-			return 1111531686;
-		case 3:
-			return 2020859843;
-		case 4:
-			return -1620727213;
-		case 5:
-			return 2039881012;
-		case 6:
-			return -1429661529;
-		case 7:
-			return -540128588;
-		case 8:
-			return -1224238785;
-		case 9:
-			return 1485653341;
-		case 10:
-			return 1437644330;
-		case 11:
-			return 1511892115;
-		case 12:
-			return 876516058;
-		case 13:
-			return -1676572483;
-		case 14:
-			return 1995067205;
-		case 15:
-			return 1155770894;
-		default:
-			break;
-	}
-	return 0;
 }
 

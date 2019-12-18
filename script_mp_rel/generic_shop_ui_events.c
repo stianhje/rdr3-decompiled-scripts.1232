@@ -39,10 +39,10 @@ void __EntryFunction__()
 	{
 		func_1();
 	}
-	bVar7 = aggregate.aberdeenpigfarm.func_45() == -1;
-	while (bVar7 || !aggregate.aberdeenpigfarm.func_49(0, 0))
+	bVar7 = aggregate_func_4251() == -1;
+	while (bVar7 || !aggregate_func_523(0, 0))
 	{
-		bVar8 = (!aggregate.generic_shop_ui_events.func_4(1024) && (!aggregate.generic_shop_ui_events.func_4(32) || !aggregate.generic_shop_ui_events.func_4(64)));
+		bVar8 = (!aggregate_func_5531(1024) && (!aggregate_func_5531(32) || !aggregate_func_5531(64)));
 		while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(iScriptParam_0) && bVar8)
 		{
 			if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(iScriptParam_0, &Var3))
@@ -54,68 +54,68 @@ void __EntryFunction__()
 				{
 					case -722926211:
 					case 703281244:
-						aggregate.generic_shop_ui_events.func_5(64);
-						aggregate.generic_shop_ui_events.func_5(1024);
+						aggregate_func_4848(64);
+						aggregate_func_4848(1024);
 						break;
 					case -1151569080:
 						if (Var3.f_2 == -2105535423)
 						{
-							aggregate.generic_shop_ui_events.func_10(Var3.f_1);
-							aggregate.generic_shop_ui_events.func_5(4);
-							aggregate.generic_shop_ui_events.func_5(32768);
-							aggregate.generic_shop_ui_events.func_5(2);
-							aggregate.generic_shop_ui_events.func_5(1024);
+							aggregate_func_4286(Var3.f_1);
+							aggregate_func_4848(4);
+							aggregate_func_4848(32768);
+							aggregate_func_4848(2);
+							aggregate_func_4848(1024);
 						}
 						else
 						{
-							aggregate.generic_shop_ui_events.func_10(Var3.f_1);
-							aggregate.generic_shop_ui_events.func_10(Var3.f_2);
+							aggregate_func_4286(Var3.f_1);
+							aggregate_func_4286(Var3.f_2);
 							if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(Var3.f_3))
 							{
-								aggregate.generic_shop_ui_events.func_15(&(Var3.f_3));
+								aggregate_func_4602(&(Var3.f_3));
 							}
-							aggregate.generic_shop_ui_events.func_5(16384);
-							aggregate.generic_shop_ui_events.func_5(1024);
+							aggregate_func_4848(16384);
+							aggregate_func_4848(1024);
 						}
 						break;
 					case -1740156697:
-						aggregate.generic_shop_ui_events.func_15(&(Var3.f_3));
-						aggregate.generic_shop_ui_events.func_10(Var3.f_1);
-						iVar2 = aggregate.generic_shop_ui_events.func_11();
+						aggregate_func_4602(&(Var3.f_3));
+						aggregate_func_4286(Var3.f_1);
+						iVar2 = aggregate_func_2851();
 						if ((iVar2 == -627085098 || iVar2 == 1751567119) || iVar2 == -841939068)
 						{
-							iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, aggregate.generic_shop_ui_events.func_12());
+							iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, aggregate_func_5532());
 							iVar1 = iVar0;
-							aggregate.generic_shop_ui_events.func_10(iVar1);
+							aggregate_func_4286(iVar1);
 						}
 						else if (iVar2 != 336033112 || iVar2 != 0)
 						{
-							iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, aggregate.generic_shop_ui_events.func_14());
+							iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, aggregate_func_5533());
 							iVar1 = iVar0;
-							aggregate.generic_shop_ui_events.func_10(iVar1);
+							aggregate_func_4286(iVar1);
 						}
 						if (Var3.f_2 == -401761271)
 						{
-							aggregate.generic_shop_ui_events.func_5(32);
+							aggregate_func_4848(32);
 						}
 						else
 						{
-							aggregate.generic_shop_ui_events.func_5(2);
+							aggregate_func_4848(2);
 						}
-						aggregate.generic_shop_ui_events.func_5(1024);
+						aggregate_func_4848(1024);
 						break;
 					case -632467210:
-						aggregate.generic_shop_ui_events.func_15(&(Var3.f_3));
-						aggregate.generic_shop_ui_events.func_10(Var3.f_1);
-						iVar2 = aggregate.generic_shop_ui_events.func_11();
+						aggregate_func_4602(&(Var3.f_3));
+						aggregate_func_4286(Var3.f_1);
+						iVar2 = aggregate_func_2851();
 						if (iVar2 != 336033112 || iVar2 != 0)
 						{
-							iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, aggregate.generic_shop_ui_events.func_14());
+							iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, aggregate_func_5533());
 							iVar1 = iVar0;
-							aggregate.generic_shop_ui_events.func_10(iVar1);
+							aggregate_func_4286(iVar1);
 						}
-						aggregate.generic_shop_ui_events.func_5(32768);
-						aggregate.generic_shop_ui_events.func_5(1024);
+						aggregate_func_4848(32768);
+						aggregate_func_4848(1024);
 						break;
 					case -1203660660:
 						if (Var3.f_2 == -729996127)
@@ -123,23 +123,23 @@ void __EntryFunction__()
 						}
 						else
 						{
-							aggregate.generic_shop_ui_events.func_10(Var3.f_1);
-							iVar2 = aggregate.generic_shop_ui_events.func_11();
-							aggregate.generic_shop_ui_events.func_15(&(Var3.f_3));
+							aggregate_func_4286(Var3.f_1);
+							iVar2 = aggregate_func_2851();
+							aggregate_func_4602(&(Var3.f_3));
 							if (iVar2 != 336033112 || iVar2 != 0)
 							{
-								iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, aggregate.generic_shop_ui_events.func_14());
+								iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var3.f_3, aggregate_func_5533());
 								iVar1 = iVar0;
-								aggregate.generic_shop_ui_events.func_10(iVar1);
+								aggregate_func_4286(iVar1);
 							}
 						}
-						aggregate.generic_shop_ui_events.func_10(Var3.f_2);
+						aggregate_func_4286(Var3.f_2);
 						if (Var3.f_2 == 1285135021)
 						{
-							aggregate.generic_shop_ui_events.func_5(512);
+							aggregate_func_4848(512);
 						}
-						aggregate.generic_shop_ui_events.func_5(8);
-						aggregate.generic_shop_ui_events.func_5(1024);
+						aggregate_func_4848(8);
+						aggregate_func_4848(1024);
 						break;
 					case -2075827635:
 						if (Var3.f_2 != 1130992209)
@@ -150,25 +150,25 @@ void __EntryFunction__()
 								{
 									if (Var3.f_2 == 516329682)
 									{
-										aggregate.generic_shop_ui_events.func_5(256);
+										aggregate_func_4848(256);
 									}
 								}
 								else
 								{
-									aggregate.generic_shop_ui_events.func_5(128);
+									aggregate_func_4848(128);
 								}
 							}
 							else
 							{
-								aggregate.generic_shop_ui_events.func_5(256);
+								aggregate_func_4848(256);
 							}
 						}
 						else
 						{
-							aggregate.generic_shop_ui_events.func_5(128);
+							aggregate_func_4848(128);
 						}
-						aggregate.generic_shop_ui_events.func_4(16);
-						aggregate.generic_shop_ui_events.func_5(1024);
+						aggregate_func_5531(16);
+						aggregate_func_4848(1024);
 						break;
 					case 922460030:
 						if (Var3.f_2 != 416030390)
@@ -192,20 +192,20 @@ void __EntryFunction__()
 						}
 						break;
 					case -114265581:
-						aggregate.generic_shop_ui_events.func_10(Var3.f_2);
-						aggregate.generic_shop_ui_events.func_5(4096);
-						aggregate.generic_shop_ui_events.func_5(1024);
+						aggregate_func_4286(Var3.f_2);
+						aggregate_func_4848(4096);
+						aggregate_func_4848(1024);
 						break;
 					case -120002582:
-						aggregate.generic_shop_ui_events.func_10(Var3.f_2);
-						aggregate.generic_shop_ui_events.func_5(4096);
-						aggregate.generic_shop_ui_events.func_5(1024);
+						aggregate_func_4286(Var3.f_2);
+						aggregate_func_4848(4096);
+						aggregate_func_4848(1024);
 						break;
 					case 368072021:
 						func_25(Var3.f_2);
 						func_26(Var3.f_1);
-						aggregate.generic_shop_ui_events.func_5(8192);
-						aggregate.generic_shop_ui_events.func_5(1024);
+						aggregate_func_4848(8192);
+						aggregate_func_4848(1024);
 						break;
 					default:
 						break;
@@ -220,7 +220,7 @@ void __EntryFunction__()
 
 void func_1()
 {
-	aggregate.generic_shop_ui_events.func_27();
+	aggregate_func_5534();
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 

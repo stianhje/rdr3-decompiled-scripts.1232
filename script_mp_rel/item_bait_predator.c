@@ -33,9 +33,9 @@ void __EntryFunction__()
 	Global_1939221->f_7 = 1;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		aggregate.item_bait_herbivore.func_1(&Var0, 5);
+		aggregate_func_8169(&Var0, 5);
 	}
-	if (!aggregate.binoculars.func_32(Var0.f_1, 1))
+	if (!aggregate_func_2850(Var0.f_1, 1))
 	{
 		func_3(&Var0);
 	}
@@ -45,25 +45,25 @@ void __EntryFunction__()
 	{
 		if (func_5(&Var0))
 		{
-			aggregate.item_bait_herbivore.func_1(&Var0, 5);
+			aggregate_func_8169(&Var0, 5);
 		}
 		if (!Var0.f_5)
 		{
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ENTER"), false);
 			if (PED::IS_PED_ON_MOUNT(Global_35) || PED::_0x1D46B417F926D34D(Global_35))
 			{
-				aggregate.item_bait_herbivore.func_1(&Var0, 5);
+				aggregate_func_8169(&Var0, 5);
 			}
 		}
-		switch (aggregate.bandana.func_20(&Var0))
+		switch (aggregate_func_4641(&Var0))
 		{
 			case 0:
-				if (aggregate.binoculars.func_15(&Var0))
+				if (aggregate_func_4287(&Var0))
 				{
-					aggregate.binoculars.func_16(&Var0);
+					aggregate_func_4285(&Var0);
 				}
-				Var0.f_24 = aggregate.binoculars.func_28(Global_35, 0);
-				Var0.f_25 = aggregate.fm_race_controller.func_1997(Var0.f_24);
+				Var0.f_24 = aggregate_func_3066(Global_35, 0);
+				Var0.f_25 = aggregate_func_844(Var0.f_24);
 				if (Global_1939057->f_41 == Var0.f_1 || Global_1939057->f_42 == Var0.f_1)
 				{
 					if (!Global_1939168->f_6)
@@ -74,67 +74,67 @@ void __EntryFunction__()
 						}
 						else
 						{
-							aggregate.item_bait_herbivore.func_1(&Var0, 1);
+							aggregate_func_8169(&Var0, 1);
 						}
 					}
 				}
 				break;
 			case 1:
-				if (aggregate.binoculars.func_15(&Var0))
+				if (aggregate_func_4287(&Var0))
 				{
-					aggregate.binoculars.func_16(&Var0);
+					aggregate_func_4285(&Var0);
 				}
 				func_11(&Var0);
-				aggregate.item_bait_herbivore.func_1(&Var0, 2);
+				aggregate_func_8169(&Var0, 2);
 				break;
 			case 2:
-				if (aggregate.binoculars.func_15(&Var0))
+				if (aggregate_func_4287(&Var0))
 				{
-					aggregate.binoculars.func_16(&Var0);
+					aggregate_func_4285(&Var0);
 				}
 				if (func_12(&Var0))
 				{
-					aggregate.fm_deathmatch_controller.func_240(0);
-					aggregate.item_bait_herbivore.func_1(&Var0, 3);
+					aggregate_func_6907(0);
+					aggregate_func_8169(&Var0, 3);
 				}
 				break;
 			case 3:
-				if (aggregate.binoculars.func_15(&Var0))
+				if (aggregate_func_4287(&Var0))
 				{
 					if (!Var0.f_3)
 					{
 						func_14(&Var0);
 						func_15(&Var0);
-						aggregate.binoculars.func_16(&Var0);
+						aggregate_func_4285(&Var0);
 					}
 					else
 					{
-						aggregate.binoculars.func_16(&Var0);
-						aggregate.item_bait_herbivore.func_1(&Var0, 4);
+						aggregate_func_4285(&Var0);
+						aggregate_func_8169(&Var0, 4);
 					}
 				}
 				if ((Var0.f_13 && TASK::PED_HAS_USE_SCENARIO_TASK(Global_35)) || ENTITY::IS_ENTITY_PLAYING_ANIM(Global_35, Var0.f_16, Var0.f_18, 1))
 				{
-					aggregate.fm_mission_controller.func_736(Var0.f_1, 1, 0, 562618531);
+					aggregate_func_1304(Var0.f_1, 1, 0, 562618531);
 					func_17(&Var0);
-					aggregate.item_bait_herbivore.func_1(&Var0, 4);
+					aggregate_func_8169(&Var0, 4);
 				}
 				break;
 			case 4:
-				if (aggregate.binoculars.func_15(&Var0))
+				if (aggregate_func_4287(&Var0))
 				{
-					aggregate.binoculars.func_16(&Var0);
+					aggregate_func_4285(&Var0);
 				}
 				if (!func_18(&Var0))
 				{
-					aggregate.item_bait_herbivore.func_1(&Var0, 5);
+					aggregate_func_8169(&Var0, 5);
 					HUD::_0xBFFF81E12A745A5F();
 				}
 				break;
 			case 5:
-				if (aggregate.binoculars.func_15(&Var0))
+				if (aggregate_func_4287(&Var0))
 				{
-					aggregate.binoculars.func_16(&Var0);
+					aggregate_func_4285(&Var0);
 				}
 				func_3(&Var0);
 				break;
@@ -156,7 +156,7 @@ void func_3(var uParam0)
 			ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(&(uParam0->f_4));
 		}
 	}
-	aggregate.fm_deathmatch_controller.func_240(1);
+	aggregate_func_6907(1);
 	if (uParam0->f_13)
 	{
 		TASK::CLEAR_PED_TASKS(Global_35, 0, 0);
@@ -195,7 +195,7 @@ bool func_5(var uParam0)
 		return true;
 	}
 	bVar0 = false;
-	if (aggregate.bandana.func_58(uParam0->f_1) == 2085633299)
+	if (aggregate_func_2830(uParam0->f_1) == 2085633299)
 	{
 		if ((Global_1939057->f_40 != uParam0->f_1 && Global_1939057->f_41 != uParam0->f_1) && Global_1939057->f_42 != uParam0->f_1)
 		{
@@ -222,11 +222,11 @@ bool func_5(var uParam0)
 
 void func_11(var uParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_165(uParam0->f_15))
+	if (aggregate_func_4246(uParam0->f_15))
 	{
 		STREAMING::REQUEST_MODEL(uParam0->f_15, false);
 	}
-	if (aggregate.interactive_campfire.func_581(uParam0->f_16))
+	if (aggregate_func_3635(uParam0->f_16))
 	{
 		STREAMING::REQUEST_ANIM_DICT(uParam0->f_16);
 	}
@@ -234,21 +234,21 @@ void func_11(var uParam0)
 
 bool func_12(var uParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_165(uParam0->f_15))
+	if (aggregate_func_4246(uParam0->f_15))
 	{
 		if (!STREAMING::HAS_MODEL_LOADED(uParam0->f_15))
 		{
 			return false;
 		}
 	}
-	if (aggregate.interactive_campfire.func_581(uParam0->f_16))
+	if (aggregate_func_3635(uParam0->f_16))
 	{
 		if (!STREAMING::HAS_ANIM_DICT_LOADED(uParam0->f_16))
 		{
 			return false;
 		}
 	}
-	if (Global_1939057->f_41 != uParam0->f_1 && aggregate.bandana.func_58(uParam0->f_1) == 2085633299)
+	if (Global_1939057->f_41 != uParam0->f_1 && aggregate_func_2830(uParam0->f_1) == 2085633299)
 	{
 		return false;
 	}
@@ -259,7 +259,7 @@ void func_14(var uParam0)
 {
 	vector3 vVar0;
 
-	if (!Global_1939168->f_6 && aggregate.aberdeenpigfarm.func_165(uParam0->f_15))
+	if (!Global_1939168->f_6 && aggregate_func_4246(uParam0->f_15))
 	{
 		vVar0 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Global_35, 0f, 0f, -10f) };
 		uParam0->f_4 = OBJECT::CREATE_OBJECT(uParam0->f_15, vVar0, false, true, false, false, true);
@@ -278,17 +278,17 @@ void func_15(var uParam0)
 		}
 		return;
 	}
-	if (!aggregate.interactive_campfire.func_581(uParam0->f_16))
+	if (!aggregate_func_3635(uParam0->f_16))
 	{
 		return;
 	}
 	if (!Global_1939168->f_6 && (uParam0->f_12 || ENTITY::DOES_ENTITY_EXIST(uParam0->f_4)))
 	{
-		if (!uParam0->f_12 && aggregate.interactive_campfire.func_581(uParam0->f_17))
+		if (!uParam0->f_12 && aggregate_func_3635(uParam0->f_17))
 		{
 			ENTITY::PLAY_ENTITY_ANIM(uParam0->f_4, uParam0->f_17, uParam0->f_16, 16f, false, true, false, 0f, 0);
 		}
-		if (aggregate.interactive_campfire.func_581(uParam0->f_18))
+		if (aggregate_func_3635(uParam0->f_18))
 		{
 			TASK::TASK_PLAY_ANIM(Global_35, uParam0->f_16, uParam0->f_18, 16f, -4f, -1, 67108880, 0f, 0, 4096, 0, uParam0->f_20, 0);
 		}
@@ -297,7 +297,7 @@ void func_15(var uParam0)
 
 void func_17(var uParam0)
 {
-	if (!aggregate.interactive_campfire.func_581(uParam0->f_16))
+	if (!aggregate_func_3635(uParam0->f_16))
 	{
 		return;
 	}
@@ -328,7 +328,7 @@ bool func_18(var uParam0)
 	{
 		if (!uParam0->f_10)
 		{
-			if (aggregate.interactive_campfire.func_581(uParam0->f_19))
+			if (aggregate_func_3635(uParam0->f_19))
 			{
 				TASK::TASK_PLAY_ANIM(Global_35, uParam0->f_16, uParam0->f_19, 1000f, -4f, -1, 67108880, 0f, 0, 4096, 0, uParam0->f_20, 0);
 				uParam0->f_10 = 1;
@@ -347,9 +347,9 @@ bool func_18(var uParam0)
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492) && !uParam0->f_6)
 	{
 		uParam0->f_6 = 1;
-		aggregate.dynamic_craft_scenario.func_255(uParam0->f_1);
+		aggregate_func_162(uParam0->f_1);
 		func_41(uParam0);
-		aggregate.coffee_drinking.func_56(uParam0->f_1, 562618531);
+		aggregate_func_688(uParam0->f_1, 562618531);
 		HUD::_0x2F7BB105144ACF30();
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("attach")) && !uParam0->f_7)
@@ -474,6 +474,6 @@ void func_41(var uParam0)
 		EVENT::_0x36D0F2BA2C0D9BDE(iVar0, iVar1);
 		OBJECT::_0xCAAF2BCCFEF37F77(iVar0, 4);
 	}
-	aggregate.binoculars.func_18(366, 0);
+	aggregate_func_4322(366, 0);
 }
 

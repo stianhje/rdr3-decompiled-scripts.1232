@@ -31,7 +31,7 @@
 	var uScriptParam_2 = 0;
 #endregion
 
-// __EntryFunction__ == herb.__EntryFunction__
+// __EntryFunction__ == aggregate_func_123
 
 void func_1(var uParam0)
 {

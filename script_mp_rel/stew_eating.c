@@ -39,12 +39,12 @@ void __EntryFunction__()
 		}
 		if (!ScriptParam_0.f_3)
 		{
-			aggregate.coffee_drinking.func_1(0);
+			aggregate_func_598(0);
 		}
 		SCRIPTS::TERMINATE_THIS_THREAD();
 	}
 	bVar183 = ScriptParam_0.f_2;
-	if (!aggregate.bandana.func_30(bVar183, 0))
+	if (!aggregate_func_2823(bVar183, 0))
 	{
 		bVar183 = 599184882; /* GXTEntry: "Beef Stew" */
 	}
@@ -54,9 +54,9 @@ void __EntryFunction__()
 	Var0.f_1 = bVar183;
 	if (!ScriptParam_0.f_3)
 	{
-		aggregate.coffee_drinking.func_1(1);
+		aggregate_func_598(1);
 	}
-	iVar184 = aggregate.interactive_campfire.func_586(Var0.f_1);
+	iVar184 = aggregate_func_3032(Var0.f_1);
 	if (iVar184 != 0)
 	{
 		Var0.f_182 = iVar184;
@@ -73,7 +73,7 @@ void __EntryFunction__()
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ATTACK2"), false);
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_COVER"), false);
 			func_4(&Var0);
-			if (aggregate.barcustomer_interaction.func_42(&uLocal_13) && aggregate.dynamic_craft_scenario.func_37(&uLocal_13, 0.25f))
+			if (aggregate_func_4260(&uLocal_13) && aggregate_func_7251(&uLocal_13, 0.25f))
 			{
 				func_7(Var0.f_182);
 			}
@@ -83,17 +83,17 @@ void __EntryFunction__()
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 442509369))
 			{
 				Var0.f_1.f_1++;
-				aggregate.coffee_drinking.func_11(&(Var0.f_1), IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2);
+				aggregate_func_580(&(Var0.f_1), IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2);
 			}
 		}
 		switch (Var0)
 		{
 			case 0:
-				if (aggregate.bandana.func_30(Var0.f_1, 0))
+				if (aggregate_func_2823(Var0.f_1, 0))
 				{
-					aggregate.coffee_drinking.func_4(&(Var0.f_1));
+					aggregate_func_2449(&(Var0.f_1));
 				}
-				aggregate.coffee_drinking.func_5(&Var0, 1);
+				aggregate_func_4252(&Var0, 1);
 				break;
 			case 1:
 				iVar185 = TASK::_0x6AA3DCA2C6F5EB6D(Global_35);
@@ -127,7 +127,7 @@ void __EntryFunction__()
 				}
 				if (IntToFloat(Var0.f_1.f_1) >= (Var0.f_1.f_2 - 1f) || ((MISC::GET_FRAME_COUNT() % 10) == 0 && ENTITY::GET_ENTITY_SUBMERGED_LEVEL(Global_35) > 0.2f))
 				{
-					aggregate.coffee_drinking.func_5(&Var0, 2);
+					aggregate_func_4252(&Var0, 2);
 				}
 				break;
 			case 2:
@@ -144,7 +144,7 @@ void __EntryFunction__()
 					{
 						TASK::_0xB35370D5353995CB(Global_35, -805756414, 1048576000 /* Float: 0.25f */);
 					}
-					aggregate.coffee_drinking.func_5(&Var0, 3);
+					aggregate_func_4252(&Var0, 3);
 				}
 				else if (iVar185 == 171451159 || (iVar185 == 1372498217 && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 1160706425)))
 				{
@@ -166,7 +166,7 @@ void __EntryFunction__()
 	}
 	if (!ScriptParam_0.f_3)
 	{
-		aggregate.coffee_drinking.func_1(0);
+		aggregate_func_598(0);
 	}
 }
 
@@ -200,7 +200,7 @@ void func_7(var uParam0)
 
 	iVar14 = 19;
 	Var0.f_12 = uParam0;
-	func_16(iVar14, Var0, aggregate.dynamic_craft_scenario.func_194(0, 8));
+	aggregate_func_1437(iVar14, Var0, aggregate_func_4507(0, 8));
 }
 
 void func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4)
@@ -217,7 +217,7 @@ void func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4)
 				if (bParam4)
 				{
 					ENTITY::_0x669655FFB29EF1A9(*uParam1, 0, "Stew_Fill", 1f);
-					aggregate.barcustomer_interaction.func_43(&uLocal_13);
+					aggregate_func_4283(&uLocal_13);
 					OBJECT::_0xCAAF2BCCFEF37F77(*uParam1, 20);
 				}
 				else
@@ -228,18 +228,5 @@ void func_11(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4)
 			}
 		}
 	}
-}
-
-void func_16(int iParam0, struct<5> Param1, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15)
-{
-	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam15))
-	{
-		return;
-	}
-	Param1 = 10;
-	Param1.f_1 = PLAYER::PLAYER_ID();
-	Param1.f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	Param1.f_4 = iParam0;
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, &Param1, 14, 6, &uParam15);
 }
 

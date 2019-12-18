@@ -25,7 +25,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == ambient_fishing_scenario.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1747
 
 void func_6()
 {
@@ -77,9 +77,9 @@ void func_12(int iParam0, int iParam1)
 	switch (Local_18)
 	{
 		case 0:
-			if (((aggregate.aberdeenpigfarm.func_45() != 0 && ENTITY::DOES_ENTITY_EXIST(iParam1)) && func_19()) && func_20(iParam1))
+			if (((aggregate_func_4251() != 0 && ENTITY::DOES_ENTITY_EXIST(iParam1)) && func_19()) && func_20(iParam1))
 			{
-				aggregate.ambient_fishing_scenario.func_21(1);
+				aggregate_func_4712(1);
 			}
 			break;
 		case 1:
@@ -87,7 +87,7 @@ void func_12(int iParam0, int iParam1)
 		case 2:
 			if (func_22(iParam0))
 			{
-				aggregate.ambient_fishing_scenario.func_21(3);
+				aggregate_func_4712(3);
 			}
 			break;
 		case 3:
@@ -95,7 +95,7 @@ void func_12(int iParam0, int iParam1)
 		case 4:
 			if (func_23())
 			{
-				aggregate.ambient_fishing_scenario.func_21(1);
+				aggregate_func_4712(1);
 			}
 			break;
 		case 5:
@@ -119,7 +119,7 @@ void func_13()
 {
 	if (Local_18 == 1)
 	{
-		aggregate.ambient_fishing_scenario.func_21(2);
+		aggregate_func_4712(2);
 	}
 }
 
@@ -140,10 +140,10 @@ void func_14()
 	{
 		PHYSICS::DELETE_ROPE(&(Local_18.f_9));
 	}
-	func_24(&(Local_18.f_5));
-	func_24(&(Local_18.f_6));
-	func_24(&(Local_18.f_7));
-	aggregate.ambient_fishing_scenario.func_21(0);
+	aggregate_func_732(&(Local_18.f_5));
+	aggregate_func_732(&(Local_18.f_6));
+	aggregate_func_732(&(Local_18.f_7));
+	aggregate_func_4712(0);
 }
 
 bool func_19()
@@ -267,27 +267,6 @@ bool func_23()
 	return false;
 }
 
-void func_24(int* iParam0)
-{
-	if (!ENTITY::DOES_ENTITY_EXIST(*iParam0))
-	{
-		return;
-	}
-	if (!ENTITY::IS_ENTITY_A_MISSION_ENTITY(*iParam0))
-	{
-		ENTITY::SET_ENTITY_AS_MISSION_ENTITY(*iParam0, true, false);
-	}
-	if (!ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(*iParam0, false))
-	{
-		return;
-	}
-	if (ENTITY::IS_ENTITY_ATTACHED_TO_ANY_PED(*iParam0))
-	{
-		ENTITY::DETACH_ENTITY(*iParam0, true, true);
-	}
-	OBJECT::DELETE_OBJECT(iParam0);
-}
-
 void func_25(int iParam0)
 {
 	vector3 vVar0;
@@ -306,11 +285,11 @@ void func_25(int iParam0)
 	vVar0 = { ENTITY::GET_ENTITY_COORDS(Local_18.f_5, true, false) };
 	fVar3 = ENTITY::GET_ENTITY_HEADING(iParam0);
 	vVar4 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vVar0, fVar3, 0f, 10f, 0f) };
-	vVar7 = { aggregate.ambient_fishing_scenario.func_26(vVar4 - vVar0) };
+	vVar7 = { aggregate_func_2907(vVar4 - vVar0) };
 	fVar10 = 1f;
 	fVar11 = 0f;
-	func_27(&fVar10, &fVar11, 45f);
-	vVar12 = { aggregate.ambient_fishing_scenario.func_26(vVar7.x, vVar7.y, fVar11) };
+	aggregate_func_1441(&fVar10, &fVar11, 45f);
+	vVar12 = { aggregate_func_2907(vVar7.x, vVar7.y, fVar11) };
 	vVar15 = { vVar12 * FtoV((Local_18.f_12 * 5f)) };
 	PHYSICS::SET_DAMPING(Local_18.f_5, 0, Local_18.f_16);
 	PHYSICS::SET_DAMPING(Local_18.f_6, 0, Local_18.f_16);
@@ -318,16 +297,5 @@ void func_25(int iParam0)
 	ENTITY::APPLY_FORCE_TO_ENTITY(Local_18.f_6, 3, vVar15, 0f, 0f, 0f, 0, false, true, true, false, true);
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_18.f_5, 1);
 	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_18.f_6, 1);
-}
-
-void func_27(float fParam0, float fParam1, float fParam2)
-{
-	float fVar0;
-	float fVar1;
-
-	fVar0 = *fParam0;
-	fVar1 = *fParam1;
-	*fParam0 = ((fVar0 * BUILTIN::COS(fParam2)) - (fVar1 * BUILTIN::SIN(fParam2)));
-	*fParam1 = ((fVar0 * BUILTIN::SIN(fParam2)) + (fVar1 * BUILTIN::COS(fParam2)));
 }
 

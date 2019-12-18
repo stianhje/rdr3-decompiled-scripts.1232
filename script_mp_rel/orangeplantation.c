@@ -39,7 +39,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -103,7 +103,7 @@ bool func_40(int iParam0)
 		}
 		else
 		{
-			iLocal_19 = aggregate.aberdeenpigfarm.func_174(651);
+			iLocal_19 = aggregate_func_1988(651);
 		}
 	}
 	if (!bLocal_20)
@@ -122,7 +122,7 @@ bool func_40(int iParam0)
 		}
 		else
 		{
-			iLocal_18 = aggregate.aberdeenpigfarm.func_174(652);
+			iLocal_18 = aggregate_func_1988(652);
 		}
 	}
 	return true;
@@ -130,16 +130,16 @@ bool func_40(int iParam0)
 
 void func_78(int iParam0)
 {
-	if (aggregate.barcustomer_interaction.func_12(iLocal_19, 0))
+	if (aggregate_func_402(iLocal_19, 0))
 	{
 		DECORATOR::DECOR_SET_BOOL(iLocal_19, "HAS_VOICE", false);
 	}
-	if (aggregate.barcustomer_interaction.func_12(iLocal_18, 0))
+	if (aggregate_func_402(iLocal_18, 0))
 	{
 		DECORATOR::DECOR_SET_BOOL(iLocal_18, "HAS_VOICE", false);
 	}
 	LAW::_REMOVE_GUARD_ZONE(sLocal_17);
-	aggregate.annesburg.func_166(iLocal_14);
-	aggregate.annesburg.func_166(iLocal_16);
+	aggregate_func_2017(iLocal_14);
+	aggregate_func_2017(iLocal_16);
 }
 

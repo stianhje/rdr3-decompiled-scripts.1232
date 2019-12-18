@@ -32,7 +32,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 void func_16(int iParam0)
 {
@@ -67,7 +67,7 @@ bool func_53(bool bParam0)
 	iVar6[1] = joaat("p_goldnugget01x");
 	iVar6[2] = 1528448748;
 	iVar6[3] = -1271488117;
-	if (aggregate.gunfight.func_83(&uVar1, &iVar6, 4, 1583.83f, 2193.08f, 324.18f, 5f) > 0)
+	if (aggregate_func_3415(&uVar1, &iVar6, 4, 1583.83f, 2193.08f, 324.18f, 5f) > 0)
 	{
 		iVar11 = 0;
 		while (iVar11 < 4)

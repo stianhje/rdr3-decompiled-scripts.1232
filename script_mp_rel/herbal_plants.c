@@ -29,13 +29,13 @@ void __EntryFunction__()
 {
 	iLocal_21 = ScriptParam_0;
 	iLocal_20 = ScriptParam_0.f_1;
-	if (aggregate.aberdeenpigfarm.func_45() == -1)
+	if (aggregate_func_4251() == -1)
 	{
 	}
 	else
 	{
 		MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-		if (aggregate.aberdeenpigfarm.func_57(aggregate.aberdeenpigfarm.func_56(0)) != 7)
+		if (aggregate_func_4263(aggregate_func_4259(0)) != 7)
 		{
 		}
 		else
@@ -43,7 +43,7 @@ void __EntryFunction__()
 			func_4(&Local_13);
 		}
 	}
-	if (aggregate.aberdeenpigfarm.func_45() == -1)
+	if (aggregate_func_4251() == -1)
 	{
 		if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 		{
@@ -97,7 +97,7 @@ bool func_5(var uParam0)
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		if (aggregate.fme_archery.func_1154(Local_13.f_1, ((*Global_1914742)[iVar0 /*4*/])->f_1, 1056964608 /* Float: 0.5f */, 1))
+		if (aggregate_func_1533(Local_13.f_1, ((*Global_1914742)[iVar0 /*4*/])->f_1, 1056964608 /* Float: 0.5f */, 1))
 		{
 			return true;
 		}
@@ -134,11 +134,11 @@ bool func_7()
 
 bool func_8(var uParam0)
 {
-	switch (aggregate.bandana.func_20(uParam0))
+	switch (aggregate_func_4641(uParam0))
 	{
 		case 0:
 			iLocal_22 = func_11();
-			aggregate.coffee_drinking.func_5(uParam0, 1);
+			aggregate_func_4252(uParam0, 1);
 			break;
 		case 1:
 			if (func_13(uParam0))
@@ -172,9 +172,9 @@ int func_11()
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
-		if (aggregate.binoculars.func_32(func_16(iVar0), 1))
+		if (aggregate_func_2850(func_16(iVar0), 1))
 		{
-			iVar1 = (iVar1 + aggregate.fm_mission_controller.func_1632(func_16(iVar0), 0, 0, 0));
+			iVar1 = (iVar1 + aggregate_func_1136(func_16(iVar0), 0, 0, 0));
 		}
 		iVar0++;
 	}

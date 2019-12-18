@@ -26,7 +26,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == armoire_corpse_scenario.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1803
 
 void func_6()
 {

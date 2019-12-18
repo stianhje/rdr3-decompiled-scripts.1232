@@ -35,7 +35,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -97,7 +97,7 @@ void func_61()
 	int iVar0;
 	int iVar1;
 
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
 		return;
 	}
@@ -110,7 +110,7 @@ void func_61()
 		func_92();
 	}
 	iVar0 = 756;
-	iVar1 = aggregate.aberdeenpigfarm.func_174(iVar0);
+	iVar1 = aggregate_func_1988(iVar0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar1) && !ENTITY::DOES_ENTITY_EXIST(PED::_0xF103823FFE72BB49(iVar1)))
 	{
 		func_94(iVar1);
@@ -123,16 +123,16 @@ void func_78(int iParam0)
 	int iVar1;
 
 	LAW::_REMOVE_GUARD_ZONE(sLocal_17);
-	aggregate.annesburg.func_166(iLocal_16);
-	aggregate.annesburg.func_166(iLocal_14);
+	aggregate_func_2017(iLocal_16);
+	aggregate_func_2017(iLocal_14);
 	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_15))
 	{
 		VOLUME::_0x998202B206872672(iLocal_15);
 		VOLUME::_0x6D5F9E69BA1BE783(iLocal_15);
-		aggregate.annesburg.func_166(iLocal_15);
+		aggregate_func_2017(iLocal_15);
 	}
 	iVar0 = 756;
-	iVar1 = aggregate.aberdeenpigfarm.func_174(iVar0);
+	iVar1 = aggregate_func_1988(iVar0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		PED::_0xBCC76708E5677E1D(iVar1, 0);
@@ -141,12 +141,12 @@ void func_78(int iParam0)
 
 void func_92()
 {
-	aggregate.annesburg.func_67(754, iLocal_15, 1);
-	aggregate.annesburg.func_67(755, iLocal_15, 0);
-	aggregate.annesburg.func_67(756, iLocal_15, 0);
+	aggregate_func_2366(754, iLocal_15, 1);
+	aggregate_func_2366(755, iLocal_15, 0);
+	aggregate_func_2366(756, iLocal_15, 0);
 	VOLUME::_0x4A8FEFC43FD8AC9B(iLocal_15, 3, 1);
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate.aberdeenpigfarm.func_120(755));
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate.aberdeenpigfarm.func_120(756));
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate_func_4452(755));
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate_func_4452(756));
 }
 
 void func_94(int iParam0)
@@ -155,7 +155,7 @@ void func_94(int iParam0)
 	int iVar1;
 
 	iVar0 = 754;
-	iVar1 = aggregate.aberdeenpigfarm.func_174(iVar0);
+	iVar1 = aggregate_func_1988(iVar0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		PED::_0x931B241409216C1F(iVar1, iParam0, 0);

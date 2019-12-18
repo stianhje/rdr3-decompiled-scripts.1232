@@ -15,5 +15,7 @@
 	var uLocal_13 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.func_23
+void __EntryFunction__()
+{
+}
 

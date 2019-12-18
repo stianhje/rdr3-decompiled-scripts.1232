@@ -34,7 +34,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == beaverhollow.__EntryFunction__
+// __EntryFunction__ == aggregate_func_93
 
 bool func_13()
 {
@@ -55,7 +55,7 @@ bool func_17(int iParam0)
 
 bool func_40(int iParam0)
 {
-	if (((aggregate.annesburg.func_142(Global_35, iLocal_13, 1, 0) && iLocal_15 < MISC::GET_GAME_TIMER()) && aggregate.beaverhollow.func_62(aggregate.beaverhollow.func_61())) && aggregate.beaverhollow.func_63(6, 18))
+	if (((aggregate_func_1520(Global_35, iLocal_13, 1, 0) && iLocal_15 < MISC::GET_GAME_TIMER()) && aggregate_func_8640(aggregate_func_3760())) && aggregate_func_3910(6, 18))
 	{
 		AUDIO::PLAY_STREAM_FRONTEND(iLocal_14);
 		AUDIO::SET_AMBIENT_ZONE_STATE("AZ_camp_clemens_point_Endless_Summer", true, true);

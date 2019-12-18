@@ -27,6 +27,6 @@
 void __EntryFunction__()
 {
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_2819();
 }
 

@@ -95,14 +95,14 @@ void func_3()
 					switch (Var0.f_2)
 					{
 						case -1218139183:
-							aggregate.net_ability_card_ui_handler.func_6(PLAYER::PLAYER_ID(), 1);
+							aggregate_func_3821(PLAYER::PLAYER_ID(), 1);
 							if (!UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("abilities"), -700246597))
 							{
 								UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("abilities"), joaat("exit"));
 							}
 							break;
 						case -1546234005:
-							aggregate.net_ability_card_ui_handler.func_6(func_7(), 1);
+							aggregate_func_3821(func_7(), 1);
 							if (!UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("abilities"), -700246597))
 							{
 								UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("abilities"), joaat("exit"));
@@ -150,11 +150,11 @@ void func_3()
 					{
 						case 536653807:
 							func_11(Var0.f_3, &Var6, 2, -1);
-							aggregate.net_ability_card_ui_handler.func_12(&Var6);
+							aggregate_func_3822(&Var6);
 							break;
 						case 473608166:
 							iVar5 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var0.f_3, "ability_card_loadout_index");
-							aggregate.net_ability_card_ui_handler.func_13(iVar5);
+							aggregate_func_3823(iVar5);
 							break;
 						case 928621134:
 							iVar5 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var0.f_3, "ability_card_loadout_index");
@@ -162,7 +162,7 @@ void func_3()
 							break;
 						case -1636950965:
 							func_11(Var0.f_3, &Var6, 2, -1);
-							func_16(Var6, aggregate.fme_animal_tagging.func_1681());
+							func_16(Var6, aggregate_func_6151());
 							break;
 						case 85169314:
 							func_11(Var0.f_3, &Var6, 2, -1);
@@ -185,16 +185,16 @@ void func_3()
 						else
 						{
 							}
-							else if (!aggregate.fm_mission_controller.func_6230(vVar40.z))
+							else if (!aggregate_func_4985(vVar40.z))
 							{
-								vVar40.f_1 = aggregate.fme_animal_tagging.func_1454(Var6.f_2, vVar40.z);
+								vVar40.f_1 = aggregate_func_5524(Var6.f_2, vVar40.z);
 								if (vVar40.y <= 0)
 								{
 								}
 								else
 								{
 									vVar40.x = Var6;
-									func_19(aggregate.fme_animal_tagging.func_1681(), 1, vVar40);
+									func_19(aggregate_func_6151(), 1, vVar40);
 									Jump @797; //curOff = 678
 									func_11(Var0.f_3, &Var6, 2, -1);
 									if (Var6.f_23)
@@ -210,15 +210,15 @@ void func_3()
 									}
 									else
 									{
-										bVar43 = aggregate.fme_animal_tagging.func_1564(aggregate.fm_mission_controller.func_6412(Var6) + 1);
-										vVar40.f_1 = aggregate.fme_animal_tagging.func_1454(bVar43, vVar40.z);
+										bVar43 = aggregate_func_4582(aggregate_func_2438(Var6) + 1);
+										vVar40.f_1 = aggregate_func_5524(bVar43, vVar40.z);
 										if (vVar40.y <= 0)
 										{
 										}
 										else
 										{
 											vVar40.x = Var6;
-											func_19(aggregate.fme_animal_tagging.func_1681(), 2, vVar40);
+											func_19(aggregate_func_6151(), 2, vVar40);
 										}
 									}
 								}
@@ -262,10 +262,10 @@ void func_5(int iParam0)
 	Var0.f_19 = -1;
 	Var0.f_32 = -1;
 	func_11(iParam0, &Var0, 2, -1);
-	aggregate.fme_animal_tagging.func_1463(Global_1939221->f_1433.f_4174.f_37[aggregate.fme_animal_tagging.func_1164(Var0, 1) /*44*/], &Var0);
-	aggregate.fme_animal_tagging.func_1466(&(Global_1939221->f_1433.f_4174.f_1936), Var0);
-	aggregate.fm_deathmatch_controller.func_445(Var0);
-	aggregate.fme_animal_tagging.func_1467(Var0);
+	aggregate_func_31(Global_1939221->f_1433.f_4174.f_37[aggregate_func_5410(Var0, 1) /*44*/], &Var0);
+	aggregate_func_775(&(Global_1939221->f_1433.f_4174.f_1936), Var0);
+	aggregate_func_4444(Var0);
+	aggregate_func_1215(Var0);
 }
 
 int func_7()
@@ -308,11 +308,11 @@ void func_8(int iParam0)
 	Var0.f_19 = -1;
 	Var0.f_32 = -1;
 	iVar34 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(iParam0, "ability_card_loadout_index");
-	aggregate.fm_deathmatch_controller.func_755(iVar34);
+	aggregate_func_6630(iVar34);
 	func_11(iParam0, &Var0, 2, -1);
-	aggregate.fme_animal_tagging.func_1471(&(Global_1939221->f_1433.f_4174.f_1985), Var0, iVar34);
-	aggregate.fm_deathmatch_controller.func_445(Var0);
-	aggregate.fme_animal_tagging.func_1467(Var0);
+	aggregate_func_5430(&(Global_1939221->f_1433.f_4174.f_1985), Var0, iVar34);
+	aggregate_func_4444(Var0);
+	aggregate_func_1215(Var0);
 }
 
 void func_9(int iParam0)
@@ -330,10 +330,10 @@ void func_9(int iParam0)
 	Var1.f_19 = -1;
 	Var1.f_32 = -1;
 	func_11(iParam0, &Var1, 2, iVar0);
-	aggregate.fme_animal_tagging.func_1597(Global_1939221->f_1433.f_4174.f_1797[iVar0 /*46*/], Var1);
-	aggregate.fme_animal_tagging.func_1599(&(Global_1939221->f_1433.f_4174.f_2034), Var1);
-	aggregate.fm_deathmatch_controller.func_445(iVar0);
-	aggregate.fme_animal_tagging.func_1467(Var1);
+	aggregate_func_5444(Global_1939221->f_1433.f_4174.f_1797[iVar0 /*46*/], Var1);
+	aggregate_func_1178(&(Global_1939221->f_1433.f_4174.f_2034), Var1);
+	aggregate_func_4444(iVar0);
+	aggregate_func_1215(Var1);
 }
 
 int func_10(int iParam0)
@@ -357,22 +357,22 @@ int func_10(int iParam0)
 	{
 		iVar2 = 2;
 	}
-	iVar0 = aggregate.net_ability_card_ui_handler.func_36(iVar2, 1);
-	aggregate.net_ability_card_ui_handler.func_37(iVar0, 0);
+	iVar0 = aggregate_func_8233(iVar2, 1);
+	aggregate_func_1389(iVar0, 0);
 	return 1;
 }
 
 void func_11(int iParam0, var uParam1, int iParam2, int iParam3)
 {
 	func_38(iParam0, uParam1);
-	aggregate.fme_animal_tagging.func_1169(*uParam1, uParam1, iParam2, iParam3);
+	aggregate_func_5601(*uParam1, uParam1, iParam2, iParam3);
 }
 
 int func_14(int iParam0)
 {
 	vector3 vVar0;
 
-	vVar0.x = aggregate.fm_mission_controller.func_6440(iParam0, 1);
+	vVar0.x = aggregate_func_7250(iParam0, 1);
 	return func_19(iParam0, 3, vVar0);
 }
 
@@ -388,7 +388,7 @@ int func_19(int iParam0, int iParam1, vector3 vParam2)
 {
 	struct<15> Var0;
 
-	if (aggregate.mp_intro.func_631(iParam0))
+	if (aggregate_func_8206(iParam0))
 	{
 		return 0;
 	}

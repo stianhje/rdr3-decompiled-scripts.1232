@@ -31,10 +31,10 @@
 	var uScriptParam_2 = 0;
 #endregion
 
-// __EntryFunction__ == herb.__EntryFunction__
+// __EntryFunction__ == aggregate_func_123
 
 void func_1(var uParam0)
 {
-	aggregate.herb_acunas_star_orchid.func_49(uParam0, 21);
+	aggregate_func_4877(uParam0, 21);
 }
 

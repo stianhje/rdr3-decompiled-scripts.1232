@@ -33,13 +33,13 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
 	iLocal_21 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-1402.731f, -2317.543f, 43.425f, 0f, 0f, 3.94f, 5.574f, 3.58f, 2.824f, "ThievesLanding - m_volFence");
 	iLocal_22 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-1402.731f, -2317.543f, 43.425f, 0f, 0f, 3.94f, 3.27f, 2.497f, 2.824f, "ThievesLanding - m_volFencePrompt");
-	aggregate.nb_moonshine_camp.func_537(&Local_23, -1355.28f, -2296.67f, 40.62f, 0f, 0f, 0f, 6f, 5f, 3f, "HTL_VOLUME_BOAT_INTERIOR");
+	aggregate_func_3817(&Local_23, -1355.28f, -2296.67f, 40.62f, 0f, 0f, 0f, 6f, 5f, 3f, "HTL_VOLUME_BOAT_INTERIOR");
 	Local_23.f_1 = 0;
 	Local_23.f_2 = 0;
 	return true;
@@ -47,13 +47,13 @@ bool func_13()
 
 void func_29(int iParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_45() == -1)
+	if (aggregate_func_4251() == -1)
 	{
 	}
 	else
 	{
-		aggregate.annesburg.func_63(4, iLocal_21, iParam0, iLocal_22, 0, 44, 0, 0, -1082130432 /* Float: -1f */, 0);
-		aggregate.beechershope.func_59(4, 0);
+		aggregate_func_348(4, iLocal_21, iParam0, iLocal_22, 0, 44, 0, 0, -1082130432 /* Float: -1f */, 0);
+		aggregate_func_1218(4, 0);
 	}
 }
 
@@ -79,11 +79,11 @@ void func_63()
 	}
 	if (!VOLUME::_0x92A78D0BEDB332A3(Local_23))
 	{
-		aggregate.nb_moonshine_camp.func_537(&Local_23, -1355.28f, -2296.67f, 40.62f, 0f, 0f, 0f, 6f, 5f, 3f, "HTL_VOLUME_BOAT_INTERIOR");
+		aggregate_func_3817(&Local_23, -1355.28f, -2296.67f, 40.62f, 0f, 0f, 0f, 6f, 5f, 3f, "HTL_VOLUME_BOAT_INTERIOR");
 	}
 	if (Local_23.f_2)
 	{
-		if (!aggregate.fme_escaped_convicts.func_920(PLAYER::PLAYER_PED_ID(), Local_23, 0, 1))
+		if (!aggregate_func_1578(PLAYER::PLAYER_PED_ID(), Local_23, 0, 1))
 		{
 			WATER::_ENABLE_WATER_COLLISION();
 			Local_23.f_2 = 0;
@@ -93,7 +93,7 @@ void func_63()
 			WATER::_DISABLE_WATER_COLLISION();
 		}
 	}
-	else if (aggregate.fme_escaped_convicts.func_920(PLAYER::PLAYER_PED_ID(), Local_23, 0, 1))
+	else if (aggregate_func_1578(PLAYER::PLAYER_PED_ID(), Local_23, 0, 1))
 	{
 		WATER::_DISABLE_WATER_COLLISION();
 		Local_23.f_2 = 1;

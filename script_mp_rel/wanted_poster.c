@@ -21,7 +21,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == ambient_fishing_scenario.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1747
 
 void func_6()
 {
@@ -34,17 +34,17 @@ void func_6()
 		iLocal_13 = 0;
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Local_18.f_18)) && !SCRIPTS::HAS_SCRIPT_LOADED(&(Local_18.f_18)))
 		{
-			if (aggregate.mp_intro.func_430())
+			if (aggregate_func_1569())
 			{
-				aggregate.dynamic_craft_scenario.func_257(0);
+				aggregate_func_564(0);
 			}
 		}
 		return;
 	}
-	switch (aggregate.fme_supply_train.func_900())
+	switch (aggregate_func_5076())
 	{
 		case 0:
-			if (func_15())
+			if (aggregate_func_9351())
 			{
 				Local_18.f_7 = TASK::_0x2D0571BB55879DA2(Local_18);
 				if (Local_18.f_7 == -630818830)
@@ -71,35 +71,35 @@ void func_6()
 				Local_18.f_8 = Local_18.f_5;
 				Local_18.f_8.f_3 = 1;
 				Local_18.f_22 = 1024;
-				aggregate.fme_golden_hat.func_194();
+				aggregate_func_7241();
 			}
-			func_17(1);
+			aggregate_func_9352(1);
 			break;
 		case 1:
-			if (func_15())
+			if (aggregate_func_9351())
 			{
 				SCRIPTS::REQUEST_SCRIPT(&(Local_18.f_18));
-				aggregate.dynamic_craft_scenario.func_257(1);
-				aggregate.fme_golden_hat.func_194();
+				aggregate_func_564(1);
+				aggregate_func_7241();
 			}
-			func_17(2);
+			aggregate_func_9352(2);
 			break;
 		case 2:
-			if (func_15())
+			if (aggregate_func_9351())
 			{
-				aggregate.fme_golden_hat.func_194();
+				aggregate_func_7241();
 			}
 			if (SCRIPTS::HAS_SCRIPT_LOADED(&(Local_18.f_18)) && TASK::IS_PED_ACTIVE_IN_SCENARIO(Local_18, 0))
 			{
 				Local_18.f_23 = SCRIPTS::START_NEW_SCRIPT_WITH_ARGS(&(Local_18.f_18), &(Local_18.f_8), 10, Local_18.f_22);
 				SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(&(Local_18.f_18));
-				func_17(3);
+				aggregate_func_9352(3);
 			}
 			break;
 		case 3:
-			if (func_15())
+			if (aggregate_func_9351())
 			{
-				aggregate.fme_golden_hat.func_194();
+				aggregate_func_7241();
 			}
 			if ((!PED::IS_PED_USING_ANY_SCENARIO(Local_18) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(493105444) == 0) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(2124539575) == 0)
 			{
@@ -107,22 +107,6 @@ void func_6()
 			}
 			break;
 	}
-}
-
-bool func_15()
-{
-	return Local_18.f_24;
-}
-
-void func_17(int iParam0)
-{
-	Local_18.f_25 = iParam0;
-	func_21();
-}
-
-void func_18(int iParam0)
-{
-	Local_18 = iParam0->f_1;
 }
 
 void func_19(int iParam0)

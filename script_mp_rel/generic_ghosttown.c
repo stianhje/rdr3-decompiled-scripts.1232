@@ -33,19 +33,19 @@ void __EntryFunction__()
 	fLocal_17 = 1f;
 	func_1(iScriptParam_0);
 	uLocal_18 = uLocal_18;
-	while (aggregate.aberdeenpigfarm.func_4())
+	while (aggregate_func_4546())
 	{
-		func_3(&uLocal_20, &iLocal_21, 3018.27f, 558.1332f, 44.5092f, 2136683606);
+		aggregate_func_386(&uLocal_20, &iLocal_21, 3018.27f, 558.1332f, 44.5092f, 2136683606);
 		BUILTIN::WAIT(0);
 		uLocal_19 = uLocal_19;
 	}
 	func_4(iScriptParam_0);
-	if (aggregate.aberdeenpigfarm.func_45() == -1)
+	if (aggregate_func_4251() == -1)
 	{
 	}
 	else
 	{
-		aggregate.aberdeenpigfarm.func_46();
+		aggregate_func_2819();
 	}
 }
 
@@ -67,42 +67,6 @@ void func_1(int iParam0)
 	}
 }
 
-void func_3(var uParam0, int iParam1, vector3 vParam2, int iParam5)
-{
-	int iVar0;
-	int iVar1;
-	int iVar2;
-
-	if (!*uParam0)
-	{
-		if (BUILTIN::VDIST(Global_36, vParam2) > 100f)
-		{
-			return;
-		}
-		if (!ITEMSET::IS_ITEMSET_VALID(*iParam1))
-		{
-			*iParam1 = ITEMSET::CREATE_ITEMSET(true);
-		}
-		ITEMSET::_0x20A4BF0E09BEE146(*iParam1);
-		iVar0 = ENTITY::_0x59B57C4B06531E1E(vParam2, 1f, *iParam1, 3);
-		iVar1 = 0;
-		while (iVar1 < iVar0)
-		{
-			iVar2 = MISC::_0xEE04C0AFD4EFAF0E(ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(iVar1, *iParam1));
-			if (ENTITY::DOES_ENTITY_EXIST(iVar2))
-			{
-				if (ENTITY::GET_ENTITY_MODEL(iVar2) == iParam5)
-				{
-					ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iVar2, true, false);
-					ENTITY::FREEZE_ENTITY_POSITION(iVar2, true);
-					*uParam0 = 1;
-				}
-			}
-			iVar1++;
-		}
-	}
-}
-
 void func_4(int iParam0)
 {
 	if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200 /* GXTEntry: "Travel" */, 1055032020 /* GXTEntry: "Visited every town" */))
@@ -110,7 +74,7 @@ void func_4(int iParam0)
 		switch (iParam0)
 		{
 			case 45:
-				STATS::CHAL_ADD_GOAL_PROGRESS_INT_BY_SCORE_ID(aggregate.aberdeenpigfarm.func_73(iParam0, 0), 1);
+				STATS::CHAL_ADD_GOAL_PROGRESS_INT_BY_SCORE_ID(aggregate_func_4328(iParam0, 0), 1);
 				break;
 		}
 	}
@@ -118,11 +82,11 @@ void func_4(int iParam0)
 	{
 		ITEMSET::DESTROY_ITEMSET(iLocal_21);
 	}
-	aggregate.aberdeenpigfarm.func_74(iParam0, 4);
-	aggregate.aberdeenpigfarm.func_74(iParam0, 8);
+	aggregate_func_4329(iParam0, 4);
+	aggregate_func_4329(iParam0, 8);
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		aggregate.aberdeenpigfarm.func_46();
+		aggregate_func_2819();
 	}
 	else
 	{

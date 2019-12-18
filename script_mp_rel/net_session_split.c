@@ -25,12 +25,12 @@ void __EntryFunction__()
 {
 	Local_13.f_1 = { ScriptParam_0 };
 	func_1();
-	while (!aggregate.aberdeenpigfarm.func_49(0, 0) && Local_13 != 5)
+	while (!aggregate_func_523(0, 0) && Local_13 != 5)
 	{
 		func_3(&Local_13);
 		BUILTIN::WAIT(0);
 	}
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_2819();
 }
 
 void func_1()
@@ -59,7 +59,7 @@ void func_3(int iParam0)
 	{
 		if ((MISC::GET_GAME_TIMER() - iParam0->f_6) > 15000)
 		{
-			aggregate.coffee_drinking.func_5(5, iParam0);
+			aggregate_func_4252(5, iParam0);
 		}
 	}
 	switch (*iParam0)
@@ -67,7 +67,7 @@ void func_3(int iParam0)
 		case 0:
 			if (NETWORK::_0xE404BFF0ABA23CDC(&(iParam0->f_1.f_1)))
 			{
-				aggregate.coffee_drinking.func_5(1, iParam0);
+				aggregate_func_4252(1, iParam0);
 				iParam0->f_6 = MISC::GET_GAME_TIMER();
 				NETWORK::_0xC505036A35AFD01B(iParam0->f_1.f_3);
 			}
@@ -75,7 +75,7 @@ void func_3(int iParam0)
 		case 1:
 			if (NETWORK::_0xC223D299C670413D(1, iParam0->f_1.f_4, 0, -1))
 			{
-				aggregate.coffee_drinking.func_5(2, iParam0);
+				aggregate_func_4252(2, iParam0);
 			}
 			break;
 		case 2:
@@ -84,17 +84,17 @@ void func_3(int iParam0)
 			}
 			else
 			{
-				aggregate.coffee_drinking.func_5(3, iParam0);
+				aggregate_func_4252(3, iParam0);
 			}
 			break;
 		case 3:
 			if (NETWORK::_0x6D87BA8EF15226CD())
 			{
-				aggregate.coffee_drinking.func_5(4, iParam0);
+				aggregate_func_4252(4, iParam0);
 			}
 			else
 			{
-				aggregate.coffee_drinking.func_5(1, iParam0);
+				aggregate_func_4252(1, iParam0);
 			}
 			break;
 		case 4:
@@ -107,11 +107,11 @@ void func_3(int iParam0)
 						NETWORK::_0x101F538C25ABB39A(0, 0);
 					}
 				}
-				aggregate.coffee_drinking.func_5(5, iParam0);
+				aggregate_func_4252(5, iParam0);
 			}
 			else
 			{
-				aggregate.coffee_drinking.func_5(1, iParam0);
+				aggregate_func_4252(1, iParam0);
 			}
 			break;
 		case 5:

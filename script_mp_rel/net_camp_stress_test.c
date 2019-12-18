@@ -1,2 +1,4 @@
-// __EntryFunction__ == aberdeenpigfarm.func_23
+void __EntryFunction__()
+{
+}
 

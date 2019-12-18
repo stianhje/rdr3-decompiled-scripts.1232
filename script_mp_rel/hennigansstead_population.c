@@ -27,35 +27,35 @@ void __EntryFunction__()
 
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	aggregate.bayounwa_population.func_1();
+	aggregate_func_685();
 	func_2();
 	bVar0 = true;
 	while (bVar0)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() == -1)
+		if (aggregate_func_4251() == -1)
 		{
 			func_4();
 		}
 		else
 		{
 			Global_1896610->f_51 = NETWORK::_0xFB9ECED5B68F3B78(Global_1896610->f_42);
-			if (aggregate.aberdeenpigfarm.func_49(1, 1))
+			if (aggregate_func_523(1, 1))
 			{
 				bVar0 = false;
 			}
 		}
 		BUILTIN::WAIT(0);
 	}
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
 void func_2()
 {
 	iLocal_17 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-2395f, -2410f, 35f, 0f, 0f, 0f, 150f, 120f, 50f, "m_volMacFarlanesRanch_Restriction");
-	aggregate.annesburg.func_54(iLocal_17);
+	aggregate_func_1306(iLocal_17);
 	iLocal_18 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-1405.399f, -2279.227f, 70f, 0f, 0f, 7f, 65f, 107.5f, 40f, "m_volThievesLanding_Restriction");
-	aggregate.bayounwa_population.func_10(iLocal_18, 0, 0);
+	aggregate_func_1314(iLocal_18, 0, 0);
 	iLocal_19 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volStillwaterCreek_Aquatic_Restriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_19, -1747.279f, -2431.148f, 38f, 0f, 0f, -18f, 20f, 50f, 20f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_19, -1800.653f, -2314.105f, 38f, 0f, 0f, 15f, 60f, 25f, 20f);
@@ -63,7 +63,7 @@ void func_2()
 	VOLUME::_0x39816F6F94F385AD(iLocal_19, -1668.215f, -2341.46f, 38f, 0f, 0f, 25f, 25f, 15f, 20f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_19, -1671.046f, -2320.505f, 38f, 0f, 0f, 6f, 20f, 20f, 20f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_19, -1666.093f, -2360.316f, 38f, 0f, 0f, 25f, 20f, 15f, 20f);
-	aggregate.bayounwa_population.func_11(iLocal_19);
+	aggregate_func_1369(iLocal_19);
 }
 
 void func_4()
@@ -91,19 +91,19 @@ void func_4()
 	}
 	if (((((_NAMESPACE48::_0xEB98B38CA60742D7(iVar0) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar1)) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar2)) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar3)) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar4)) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar5))
 	{
-		if (!aggregate.adlerranch.func_93(1167397384))
+		if (!aggregate_func_1518(1167397384))
 		{
 			if (!STREAMING::_0x73B40D97D7BAAD77(1736386364, Global_36))
 			{
-				aggregate.bigvalley_population.func_16(1167397384);
+				aggregate_func_3414(1167397384);
 			}
 		}
 	}
-	else if (aggregate.adlerranch.func_93(1167397384))
+	else if (aggregate_func_1518(1167397384))
 	{
 		if (!STREAMING::_0x73B40D97D7BAAD77(1736386364, Global_36))
 		{
-			aggregate.bigvalley_population.func_17(1167397384);
+			aggregate_func_3010(1167397384);
 		}
 	}
 }

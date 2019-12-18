@@ -37,7 +37,7 @@ void __EntryFunction__()
 	PED::SET_PED_RESET_FLAG(Global_35, 304, true);
 	if (!ENTITY::IS_ENTITY_DEAD(Global_35))
 	{
-		iVar0 = aggregate.fm_mission_controller.func_5479(Global_35, 0);
+		iVar0 = aggregate_func_3123(Global_35, 0);
 		if ((iVar0 != joaat("weapon_unarmed") && iVar0 != joaat("weapon_melee_torch")) && iVar0 != joaat("weapon_fishingrod"))
 		{
 			if (Global_17141 == 0)
@@ -45,7 +45,7 @@ void __EntryFunction__()
 				WEAPON::_0x6929E22158E52265(Global_35, 0, &Global_17142);
 			}
 		}
-		bVar1 = aggregate.fm_mission_controller.func_5479(Global_35, 1);
+		bVar1 = aggregate_func_3123(Global_35, 1);
 		if (WEAPON::_0xC212F1D05A8232BB(bVar1) || WEAPON::_0xDDC64F5E31EEDAB6(bVar1))
 		{
 			if (Global_17141 == 0)
@@ -59,7 +59,7 @@ void __EntryFunction__()
 	Global_1939221->f_10516 = 0;
 	Global_1939221->f_10517 = 0;
 	iVar2 = -1723036365;
-	if (aggregate.doc_book.func_278(0))
+	if (aggregate_func_4337(0))
 	{
 		iVar2 = joaat("shop");
 	}
@@ -71,7 +71,7 @@ void __EntryFunction__()
 			case 0:
 				if (func_6())
 				{
-					aggregate.player_menu.func_34();
+					aggregate_func_7219();
 				}
 				if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-4058091, iVar2) != 0)
 				{
@@ -84,15 +84,15 @@ void __EntryFunction__()
 			case 1:
 				if (func_6())
 				{
-					aggregate.player_menu.func_34();
+					aggregate_func_7219();
 				}
-				if (((((!UIAPPS::_IS_APP_ACTIVE(-4058091) || &Global_1939221 == 2) || Global_13) || PED::IS_PED_DEAD_OR_DYING(Global_35, true)) || !aggregate.annesburg.func_111(255)) || aggregate.satchel.func_10(512))
+				if (((((!UIAPPS::_IS_APP_ACTIVE(-4058091) || &Global_1939221 == 2) || Global_13) || PED::IS_PED_DEAD_OR_DYING(Global_35, true)) || !aggregate_func_4367(255)) || aggregate_func_7222(512))
 				{
 					func_8(2);
 				}
 				else
 				{
-					aggregate.player_menu.func_6();
+					aggregate_func_383();
 				}
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_TOGGLE_HOLSTER"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_LR"), false);
@@ -101,7 +101,7 @@ void __EntryFunction__()
 			case 2:
 				if (func_6())
 				{
-					aggregate.player_menu.func_34();
+					aggregate_func_7219();
 					func_1();
 				}
 				break;
@@ -114,14 +114,14 @@ void __EntryFunction__()
 void func_1()
 {
 	UIAPPS::_CLOSE_APP_BY_HASH(-4058091);
-	if (!aggregate.satchel.func_10(512))
+	if (!aggregate_func_7222(512))
 	{
-		aggregate.doc_book.func_51(0);
+		aggregate_func_4895(0);
 	}
 	else
 	{
-		aggregate.doc_book.func_51(1);
-		aggregate.satchel.func_13(512);
+		aggregate_func_4895(1);
+		aggregate_func_7172(512);
 	}
 	Global_1939221->f_1 = 0;
 	Global_17169 = 0;
@@ -131,7 +131,7 @@ void func_1()
 
 bool func_4()
 {
-	if (aggregate.aberdeenpigfarm.func_49(1, 1))
+	if (aggregate_func_523(1, 1))
 	{
 		return true;
 	}
@@ -157,7 +157,7 @@ void func_8(int iParam0)
 	if (Global_1939221->f_10516 != iParam0)
 	{
 		Global_1939221->f_10516 = iParam0;
-		aggregate.fme_animal_tagging.func_642();
+		aggregate_func_5263();
 	}
 }
 

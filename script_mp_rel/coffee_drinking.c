@@ -30,7 +30,7 @@ void __EntryFunction__()
 	{
 		if (!ScriptParam_0.f_3)
 		{
-			aggregate.coffee_drinking.func_1(0);
+			aggregate_func_598(0);
 		}
 		SCRIPTS::TERMINATE_THIS_THREAD();
 	}
@@ -43,7 +43,7 @@ void __EntryFunction__()
 	Var0.f_179 = ScriptParam_0.f_1;
 	if (!ScriptParam_0.f_3)
 	{
-		aggregate.coffee_drinking.func_1(1);
+		aggregate_func_598(1);
 	}
 	while (!SCRIPTS::_0x9E4EF615E307FBBE())
 	{
@@ -56,11 +56,11 @@ void __EntryFunction__()
 		switch (Var0)
 		{
 			case 0:
-				if (aggregate.bandana.func_30(Var0.f_1, 0))
+				if (aggregate_func_2823(Var0.f_1, 0))
 				{
-					aggregate.coffee_drinking.func_4(&(Var0.f_1));
+					aggregate_func_2449(&(Var0.f_1));
 				}
-				aggregate.coffee_drinking.func_5(&Var0, 1);
+				aggregate_func_4252(&Var0, 1);
 				break;
 			case 1:
 				if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 0) && ((PED::_0x569F1E1237508DEB(Global_35) == 254049387 || PED::_0x569F1E1237508DEB(Global_35) == -1451987280) || PED::_0x569F1E1237508DEB(Global_35) == 1135271674))
@@ -71,23 +71,23 @@ void __EntryFunction__()
 				if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 442509369))
 				{
 					Var0.f_1.f_1++;
-					if (aggregate.coffee_drinking.func_6(1))
+					if (aggregate_func_7073(1))
 					{
-						aggregate.coffee_drinking.func_7((-0.1f / Var0.f_1.f_2), 0);
+						aggregate_func_7706((-0.1f / Var0.f_1.f_2), 0);
 					}
-					else if (aggregate.coffee_drinking.func_8())
+					else if (aggregate_func_5077())
 					{
-						aggregate.coffee_drinking.func_9(1);
+						aggregate_func_7707(1);
 					}
-					else if (aggregate.coffee_drinking.func_10())
+					else if (aggregate_func_5101())
 					{
-						aggregate.coffee_drinking.func_9(0);
+						aggregate_func_7707(0);
 					}
-					aggregate.coffee_drinking.func_11(&(Var0.f_1), IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2);
+					aggregate_func_580(&(Var0.f_1), IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2);
 				}
 				if (IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2 || ((MISC::GET_FRAME_COUNT() % 10) == 0 && ENTITY::GET_ENTITY_SUBMERGED_LEVEL(Global_35) > 0.2f))
 				{
-					aggregate.coffee_drinking.func_5(&Var0, 2);
+					aggregate_func_4252(&Var0, 2);
 				}
 				break;
 			case 2:
@@ -106,7 +106,7 @@ void __EntryFunction__()
 					{
 						TASK::_0xB35370D5353995CB(Global_35, -541529715, 1048576000 /* Float: 0.25f */);
 					}
-					aggregate.coffee_drinking.func_5(&Var0, 3);
+					aggregate_func_4252(&Var0, 3);
 					ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(&(Var0.f_179));
 				}
 				break;
@@ -121,7 +121,7 @@ void __EntryFunction__()
 	}
 	if (!ScriptParam_0.f_3)
 	{
-		aggregate.coffee_drinking.func_1(0);
+		aggregate_func_598(0);
 	}
 }
 

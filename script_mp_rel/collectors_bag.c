@@ -29,7 +29,7 @@ void func_1()
 
 bool func_2()
 {
-	if (aggregate.aberdeenpigfarm.func_49(1, 1))
+	if (aggregate_func_523(1, 1))
 	{
 		return true;
 	}

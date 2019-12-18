@@ -13,7 +13,7 @@ void __EntryFunction__()
 	int iVar0;
 	int iVar1;
 	var uVar2;
-	var uVar3;
+	int iVar3;
 	int iVar4;
 	int iVar5;
 
@@ -27,7 +27,7 @@ void __EntryFunction__()
 	iVar0 = 0;
 	iVar1 = ScriptParam_0.f_1;
 	uVar2 = ScriptParam_0.f_2;
-	uVar3 = ScriptParam_0;
+	iVar3 = ScriptParam_0;
 	iVar4 = -1;
 	if (Global_1070355->f_26843.f_11.f_72 != iVar1)
 	{
@@ -39,7 +39,7 @@ void __EntryFunction__()
 		Global_1070355->f_26843.f_11.f_72 = 0;
 	}
 	iVar5 = SCRIPTS::GET_HASH_OF_THIS_SCRIPT_NAME();
-	while (!func_1(&iVar5, &iVar1, &iVar0) && func_2(&iVar0, &uVar2, &iVar1, &uVar3, &iVar4, &(ScriptParam_0.f_3)))
+	while (!func_1(&iVar5, &iVar1, &iVar0) && func_2(&iVar0, &uVar2, &iVar1, &iVar3, &iVar4, &(ScriptParam_0.f_3)))
 	{
 		BUILTIN::WAIT(0);
 	}
@@ -47,7 +47,7 @@ void __EntryFunction__()
 
 bool func_1(int iParam0, int iParam1, int iParam2)
 {
-	if (aggregate.aberdeenpigfarm.func_49(0, 0))
+	if (aggregate_func_523(0, 0))
 	{
 		return true;
 	}
@@ -58,12 +58,12 @@ bool func_1(int iParam0, int iParam1, int iParam2)
 	return false;
 }
 
-bool func_2(int iParam0, var uParam1, int iParam2, var uParam3, int iParam4, var uParam5)
+bool func_2(int iParam0, var uParam1, int iParam2, int iParam3, int iParam4, var uParam5)
 {
 	switch (*iParam0)
 	{
 		case 0:
-			if (func_4(uParam1, iParam2, uParam3, iParam4, uParam5))
+			if (func_4(uParam1, iParam2, iParam3, iParam4, uParam5))
 			{
 				*iParam0 = 1;
 			}
@@ -85,23 +85,23 @@ bool func_2(int iParam0, var uParam1, int iParam2, var uParam3, int iParam4, var
 	return true;
 }
 
-int func_4(var uParam0, int iParam1, var uParam2, int iParam3, var uParam4)
+bool func_4(var uParam0, int iParam1, int iParam2, int iParam3, var uParam4)
 {
 	if (ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID()))
 	{
-		return 0;
+		return false;
 	}
 	switch (*uParam0)
 	{
 		case 0:
-			return func_7(iParam1, uParam2, iParam3, uParam4);
+			return func_7(iParam1, iParam2, iParam3, uParam4);
 		default:
 			break;
 	}
-	return 0;
+	return false;
 }
 
-int func_5(var uParam0, var uParam1)
+bool func_5(var uParam0, var uParam1)
 {
 	switch (*uParam0)
 	{
@@ -110,7 +110,7 @@ int func_5(var uParam0, var uParam1)
 		default:
 			break;
 	}
-	return 1;
+	return true;
 }
 
 int func_6(var uParam0, var uParam1)
@@ -125,14 +125,14 @@ int func_6(var uParam0, var uParam1)
 	return 1;
 }
 
-int func_7(int iParam0, var uParam1, int iParam2, var uParam3)
+int func_7(int iParam0, int iParam1, int iParam2, var uParam3)
 {
 	if (*uParam3)
 	{
 	}
 	else
 	{
-		func_10(*iParam0, uParam1, iParam2);
+		func_10(*iParam0, iParam1, iParam2);
 	}
 	return 1;
 }
@@ -164,7 +164,7 @@ int func_9(var uParam0)
 	return 1;
 }
 
-void func_10(int iParam0, var uParam1, int iParam2)
+void func_10(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 
@@ -180,6 +180,6 @@ void func_10(int iParam0, var uParam1, int iParam2)
 	{
 		iVar0 = 2;
 	}
-	TASK::_TASK_EMOTE_2(Global_1273882->f_8, *uParam1, iVar0, iParam0, 0, 1, 0, 0);
+	TASK::_TASK_EMOTE_2(Global_1273882->f_8, *iParam1, iVar0, iParam0, 0, 1, 0, 0);
 }
 

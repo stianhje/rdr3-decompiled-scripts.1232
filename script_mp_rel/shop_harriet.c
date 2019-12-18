@@ -29,17 +29,17 @@
 	var uScriptParam_6 = 0;
 #endregion
 
-// __EntryFunction__ == shop_bait.__EntryFunction__
+// __EntryFunction__ == aggregate_func_13
 
 bool func_316(var uParam0, int iParam1, int iParam2, vector3 vParam3, vector3 vParam6, int iParam9, int iParam10, int iParam11)
 {
 	bool bVar0;
 
-	if (aggregate.annesburg.func_121(vParam3))
+	if (aggregate_func_4268(vParam3))
 	{
 		return false;
 	}
-	if (aggregate.annesburg.func_121(vParam6))
+	if (aggregate_func_4268(vParam6))
 	{
 		return false;
 	}
@@ -59,24 +59,24 @@ bool func_316(var uParam0, int iParam1, int iParam2, vector3 vParam3, vector3 vP
 	{
 		ANIMSCENE::RESET_ANIM_SCENE(uParam0->f_1749, 0);
 	}
-	bVar0 = (MISC::IS_ORBIS_VERSION() && aggregate.shop_bait.func_724(iParam2));
+	bVar0 = (MISC::IS_ORBIS_VERSION() && aggregate_func_6463(iParam2));
 	if (iParam1 == 6 || iParam1 == 48)
 	{
 		bVar0 = false;
 	}
-	if (bVar0 && aggregate.mp_intro.func_1946(aggregate.shop_bait.func_725(iParam2)))
+	if (bVar0 && aggregate_func_3214(aggregate_func_6464(iParam2)))
 	{
-		if (!func_717(&(uParam0->f_4), iParam1, iParam2, aggregate.shop_bait.func_725(iParam2), uParam0->f_1767, 0))
+		if (!func_717(&(uParam0->f_4), iParam1, iParam2, aggregate_func_6464(iParam2), uParam0->f_1767, 0))
 		{
 		}
 	}
 	else if (!func_718(&(uParam0->f_4), iParam1, iParam2, uParam0->f_1767, 0))
 	{
 	}
-	aggregate.camera_item.func_77(&(uParam0->f_4), 135139);
-	aggregate.camera_item.func_77(&(uParam0->f_4), 135176);
-	aggregate.shop_bait.func_733(&(uParam0->f_4), 135204);
-	aggregate.shop_bait.func_733(&(uParam0->f_4), 135739);
+	aggregate_func_4242(&(uParam0->f_4), 135139);
+	aggregate_func_4242(&(uParam0->f_4), 135176);
+	aggregate_func_4932(&(uParam0->f_4), 135204);
+	aggregate_func_4932(&(uParam0->f_4), 135739);
 	uParam0->f_1746 = iParam1;
 	uParam0->f_1747 = iParam2;
 	uParam0->f_1776 = iParam10;
@@ -84,7 +84,7 @@ bool func_316(var uParam0, int iParam1, int iParam2, vector3 vParam3, vector3 vP
 	uParam0->f_1751 = { vParam3 };
 	uParam0->f_1754 = { vParam6 };
 	uParam0->f_1768 = iParam9;
-	aggregate.interactive_campfire.func_44(uParam0, 1);
+	aggregate_func_4750(uParam0, 1);
 	return true;
 }
 
@@ -95,19 +95,19 @@ void func_687(var uParam0)
 	if (!MISC::IS_BIT_SET(uParam0->f_2371.f_9, 1))
 	{
 		iVar0 = 614617847;
-		if (aggregate.doc_book.func_307() == 2026485318)
+		if (aggregate_func_4577() == 2026485318)
 		{
 			iVar0 = 654746159;
 		}
 		if (func_1011(uParam0, iVar0, joaat("root"), 1))
 		{
-			aggregate.mp_intro.func_1329(uParam0, 189483);
-			aggregate.mp_intro.func_1329(uParam0, 190403);
-			aggregate.mp_intro.func_1329(uParam0, 191003);
-			aggregate.mp_intro.func_1329(uParam0, 191297);
-			aggregate.mp_intro.func_1329(uParam0, 191500);
-			aggregate.camera_item.func_77(uParam0, uParam0->f_2371.f_10);
-			aggregate.mp_intro.func_1340(uParam0, aggregate.mp_intro.func_1339(&(uParam0->f_167.f_1778)));
+			aggregate_func_4358(uParam0, 189483);
+			aggregate_func_4358(uParam0, 190403);
+			aggregate_func_4358(uParam0, 191003);
+			aggregate_func_4358(uParam0, 191297);
+			aggregate_func_4358(uParam0, 191500);
+			aggregate_func_4242(uParam0, uParam0->f_2371.f_10);
+			aggregate_func_1223(uParam0, aggregate_func_3316(&(uParam0->f_167.f_1778)));
 			MISC::SET_BIT(&(uParam0->f_2371.f_9), 1);
 		}
 	}
@@ -115,7 +115,7 @@ void func_687(var uParam0)
 	{
 		if (!MISC::IS_BIT_SET(uParam0->f_2371.f_9, 2))
 		{
-			if (aggregate.mp_intro.func_1341(uParam0))
+			if (aggregate_func_951(uParam0))
 			{
 				MISC::SET_BIT(&(uParam0->f_2371.f_9), 2);
 			}
@@ -175,7 +175,7 @@ bool func_717(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4, 
 	uParam0->f_221 = iParam2;
 	uParam0->f_220 = iParam1;
 	uParam0->f_1286 = iParam4;
-	if (!aggregate.mp_intro.func_1707(bParam3, &(uParam0->f_223)))
+	if (!aggregate_func_2177(bParam3, &(uParam0->f_223)))
 	{
 		return false;
 	}
@@ -186,7 +186,7 @@ bool func_717(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4, 
 	uParam0->f_1281 = 214134;
 	uParam0->f_1282 = 214134;
 	uParam0->f_222 = iParam5;
-	aggregate.coffee_drinking.func_5(uParam0, 0);
+	aggregate_func_4252(uParam0, 0);
 	return true;
 }
 
@@ -207,7 +207,7 @@ bool func_718(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	uParam0->f_221 = iParam2;
 	uParam0->f_220 = iParam1;
 	uParam0->f_1286 = iParam3;
-	if (!aggregate.mp_intro.func_1705(uParam0->f_220, uParam0->f_221, &(uParam0->f_223)))
+	if (!aggregate_func_770(uParam0->f_220, uParam0->f_221, &(uParam0->f_223)))
 	{
 		return false;
 	}
@@ -216,7 +216,7 @@ bool func_718(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	uParam0->f_1281 = 214134;
 	uParam0->f_1282 = 214134;
 	uParam0->f_222 = iParam4;
-	aggregate.coffee_drinking.func_5(uParam0, 0);
+	aggregate_func_4252(uParam0, 0);
 	return true;
 }
 
@@ -231,17 +231,17 @@ bool func_1011(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 		{
 			iVar0 = 2;
 		}
-		if (!aggregate.mp_intro.func_1705(uParam0->f_4, iVar0, &(uParam0->f_2094)))
+		if (!aggregate_func_770(uParam0->f_4, iVar0, &(uParam0->f_2094)))
 		{
 			return false;
 		}
-		if (!aggregate.mp_intro.func_1706(uParam0, uParam0->f_20))
+		if (!aggregate_func_5663(uParam0, uParam0->f_20))
 		{
-			if (!aggregate.mp_intro.func_1707(bParam1, &(uParam0->f_2094)))
+			if (!aggregate_func_2177(bParam1, &(uParam0->f_2094)))
 			{
 				return false;
 			}
-			if (aggregate.mp_intro.func_1706(uParam0, uParam0->f_20))
+			if (aggregate_func_5663(uParam0, uParam0->f_20))
 			{
 			}
 			else
@@ -252,16 +252,16 @@ bool func_1011(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	else
 	{
-		if (!aggregate.mp_intro.func_1707(bParam1, &(uParam0->f_2094)))
+		if (!aggregate_func_2177(bParam1, &(uParam0->f_2094)))
 		{
 			return false;
 		}
-		if (!aggregate.net_camp.func_1328(uParam0, bParam2, 1, -1, 0, 1, 0, 0))
+		if (!aggregate_func_6052(uParam0, bParam2, 1, -1, 0, 1, 0, 0))
 		{
 			return false;
 		}
 	}
-	uParam0->f_2094.f_70 = aggregate.binoculars.func_15(&(uParam0->f_2094));
+	uParam0->f_2094.f_70 = aggregate_func_4287(&(uParam0->f_2094));
 	uParam0->f_2094.f_73 = 0;
 	uParam0->f_2094.f_75 = 0;
 	uParam0->f_2094.f_76 = 0;
@@ -273,31 +273,31 @@ bool func_1011(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 	uParam0->f_2094.f_81 = 0;
 	uParam0->f_2094.f_83 = 0;
 	uParam0->f_2094.f_118 = 0;
-	aggregate.mp_intro.func_1710(uParam0);
-	aggregate.mp_intro.func_1105();
-	aggregate.binoculars.func_16(uParam0);
-	aggregate.generic_shop_ui_events.func_27();
-	aggregate.mp_intro.func_1713(uParam0);
+	aggregate_func_5664(uParam0);
+	aggregate_func_5640();
+	aggregate_func_4285(uParam0);
+	aggregate_func_5534();
+	aggregate_func_5665(uParam0);
 	uParam0->f_2094.f_50 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "GenericShop");
-	uParam0->f_2094.f_51 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_2094.f_50, "Title", MISC::GET_HASH_KEY(aggregate.mp_intro.func_1714(uParam0->f_3)));
+	uParam0->f_2094.f_51 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_2094.f_50, "Title", MISC::GET_HASH_KEY(aggregate_func_5666(uParam0->f_3)));
 	uParam0->f_2094.f_53 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam0->f_2094.f_50, "Prompts");
 	uParam0->f_2094.f_52 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam0->f_2094.f_50, "Scene");
-	aggregate.mp_intro.func_1715(uParam0, 6, joaat("IB_EXIT"));
-	aggregate.mp_intro.func_1427(uParam0, 6, 1);
-	aggregate.mp_intro.func_1427(uParam0, 6, 1);
-	aggregate.mp_intro.func_1717(uParam0, 6, 0);
-	aggregate.mp_intro.func_1715(uParam0, 1, joaat("ib_select"));
-	aggregate.mp_intro.func_1427(uParam0, 1, 1);
-	aggregate.mp_intro.func_1427(uParam0, 1, 1);
-	aggregate.mp_intro.func_1717(uParam0, 1, 0);
-	aggregate.mp_intro.func_1715(uParam0, 2, 1891107858);
-	aggregate.mp_intro.func_1427(uParam0, 2, 0);
-	aggregate.mp_intro.func_1427(uParam0, 2, 0);
-	aggregate.mp_intro.func_1717(uParam0, 2, 0);
-	aggregate.mp_intro.func_1715(uParam0, 3, -405106071);
-	aggregate.mp_intro.func_1427(uParam0, 3, 0);
-	aggregate.mp_intro.func_1427(uParam0, 3, 0);
-	aggregate.mp_intro.func_1717(uParam0, 2, 0);
+	aggregate_func_3188(uParam0, 6, joaat("IB_EXIT"));
+	aggregate_func_2968(uParam0, 6, 1);
+	aggregate_func_2968(uParam0, 6, 1);
+	aggregate_func_3189(uParam0, 6, 0);
+	aggregate_func_3188(uParam0, 1, joaat("ib_select"));
+	aggregate_func_2968(uParam0, 1, 1);
+	aggregate_func_2968(uParam0, 1, 1);
+	aggregate_func_3189(uParam0, 1, 0);
+	aggregate_func_3188(uParam0, 2, 1891107858);
+	aggregate_func_2968(uParam0, 2, 0);
+	aggregate_func_2968(uParam0, 2, 0);
+	aggregate_func_3189(uParam0, 2, 0);
+	aggregate_func_3188(uParam0, 3, -405106071);
+	aggregate_func_2968(uParam0, 3, 0);
+	aggregate_func_2968(uParam0, 3, 0);
+	aggregate_func_3189(uParam0, 2, 0);
 	if (bParam3)
 	{
 		uParam0->f_2094.f_133 = 0;
@@ -328,9 +328,9 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 
 	iVar2 = 0;
 	bVar3 = bParam1;
-	iVar4 = aggregate.bandana.func_10(bVar3);
+	iVar4 = aggregate_func_2827(bVar3);
 	iVar5 = 0;
-	if (aggregate.doc_book.func_307() == 24043185)
+	if (aggregate_func_4577() == 24043185)
 	{
 		iVar2 = 1;
 	}
@@ -357,7 +357,7 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 					{
 						(uParam0->f_1[iVar0 /*3*/])->f_1 = 1334603721;
 					}
-					aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+					aggregate_func_4743(iVar0, iVar5);
 				}
 				Jump @3217; //curOff = 253
 				if (bParam1 == &Global_1951131->f_81[iParam2 /*12*/])
@@ -369,29 +369,29 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 					if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 					{
 						(uParam0->f_1[iVar0 /*3*/])->f_1 = joaat("base");
-						aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+						aggregate_func_4743(iVar0, iVar5);
 					}
 					iVar0 = 36;
 					if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 					{
 						(uParam0->f_1[iVar0 /*3*/])->f_1 = -2081918609;
-						aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+						aggregate_func_4743(iVar0, iVar5);
 					}
 					iVar0 = 37;
-					if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, -1278198125))
+					if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, -1278198125))
 					{
 						uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 						(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-						aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+						aggregate_func_4743(iVar0, iVar5);
 					}
 					iVar0 = 18;
 					if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 					{
 						bVar1 = &uParam0->f_1[iVar0 /*3*/];
-						if (912453393 == aggregate.bandana.func_10(bVar1) && (uParam0->f_1[iVar0 /*3*/])->f_1 != -2081918609)
+						if (912453393 == aggregate_func_2827(bVar1) && (uParam0->f_1[iVar0 /*3*/])->f_1 != -2081918609)
 						{
 							(uParam0->f_1[iVar0 /*3*/])->f_1 = -2081918609;
-							aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+							aggregate_func_4743(iVar0, iVar5);
 						}
 					}
 					Jump @3217; //curOff = 543
@@ -401,16 +401,16 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 					else
 					{
 						iVar0 = 36;
-						aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
-						if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, -1473580422))
+						aggregate_func_4743(iVar0, iVar5);
+						if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, -1473580422))
 						{
 							bVar1 = &uParam0->f_1[iVar0 /*3*/];
-							if (aggregate.bandana.func_11(bVar1, 1469783911))
+							if (aggregate_func_2852(bVar1, 1469783911))
 							{
 								uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
 							}
-							else if (aggregate.dynamic_craft_scenario.func_362(&(uParam0->f_1[iVar0 /*3*/]), iVar2, -2081918609) != -1)
+							else if (aggregate_func_2089(&(uParam0->f_1[iVar0 /*3*/]), iVar2, -2081918609) != -1)
 							{
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = -2081918609;
 							}
@@ -420,24 +420,24 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 							}
 						}
 						iVar0 = 18;
-						if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, 1583165364))
+						if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, 1583165364))
 						{
 							bVar1 = &uParam0->f_1[iVar0 /*3*/];
-							if (aggregate.bandana.func_10(bVar1) == 912453393)
+							if (aggregate_func_2827(bVar1) == 912453393)
 							{
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = -2081918609;
-								aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+								aggregate_func_4743(iVar0, iVar5);
 							}
 						}
 						iVar0 = 35;
-						if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, -1650340550))
+						if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, -1650340550))
 						{
 							bVar1 = &uParam0->f_1[iVar0 /*3*/];
-							if (aggregate.bandana.func_10(bVar1) == 1769055947)
+							if (aggregate_func_2827(bVar1) == 1769055947)
 							{
 								uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-								aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+								aggregate_func_4743(iVar0, iVar5);
 							}
 						}
 						Jump @3217; //curOff = 918
@@ -447,72 +447,72 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 						else
 						{
 							iVar0 = 36;
-							if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, 1718965018))
+							if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, 1718965018))
 							{
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = joaat("base");
 							}
-							aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+							aggregate_func_4743(iVar0, iVar5);
 							iVar0 = 35;
 							if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 							{
 								uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-								aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+								aggregate_func_4743(iVar0, iVar5);
 							}
 							iVar0 = 20;
 							bVar1 = &uParam0->f_1[iVar0 /*3*/];
-							if ((&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar1, 1090938458)) && aggregate.bandana.func_11(bVar3, 475297062))
+							if ((&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar1, 1090938458)) && aggregate_func_2852(bVar3, 475297062))
 							{
 								uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-								aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+								aggregate_func_4743(iVar0, iVar5);
 							}
 							Jump @3217; //curOff = 1171
-							aggregate.dynamic_craft_scenario.func_286(36, iVar5);
+							aggregate_func_4743(36, iVar5);
 							iVar0 = 18;
 							if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 							{
 								uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-								aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+								aggregate_func_4743(iVar0, iVar5);
 							}
 							iVar0 = 17;
 							if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 							{
 								uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-								aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+								aggregate_func_4743(iVar0, iVar5);
 							}
 							iVar0 = 35;
-							if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && 1769055947 == aggregate.bandana.func_10(&(uParam0->f_1[iVar0 /*3*/])))
+							if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && 1769055947 == aggregate_func_2827(&(uParam0->f_1[iVar0 /*3*/])))
 							{
 								uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-								aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+								aggregate_func_4743(iVar0, iVar5);
 							}
 							iVar0 = 29;
 							if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 							{
 								uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 								(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-								aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+								aggregate_func_4743(iVar0, iVar5);
 							}
 							Jump @3217; //curOff = 1454
-							aggregate.dynamic_craft_scenario.func_286(16, iVar5);
-							if (aggregate.dynamic_craft_scenario.func_170(bVar3, 0))
+							aggregate_func_4743(16, iVar5);
+							if (aggregate_func_5024(bVar3, 0))
 							{
 							}
 							else
 							{
 								iVar0 = 29;
-								if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, 1126863852))
+								if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, 1126863852))
 								{
 									uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 									(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-									aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+									aggregate_func_4743(iVar0, iVar5);
 								}
 								iVar0 = 16;
-								if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, -985549034))
+								if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, -985549034))
 								{
 									if ((uParam0->f_1[iVar0 /*3*/])->f_1 == 1530758430)
 									{
@@ -524,41 +524,41 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 									}
 								}
 								iVar0 = 12;
-								if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, -1527414429))
+								if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, -1527414429))
 								{
 									uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 									(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-									aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+									aggregate_func_4743(iVar0, iVar5);
 								}
 								Jump @3217; //curOff = 1748
-								if (aggregate.dynamic_craft_scenario.func_170(bVar3, 0))
+								if (aggregate_func_5024(bVar3, 0))
 								{
 								}
 								else
 								{
 									iVar0 = 12;
-									if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, -1527414429))
+									if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, -1527414429))
 									{
 										uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 										(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-										aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+										aggregate_func_4743(iVar0, iVar5);
 									}
 									iVar0 = 16;
-									if (((uParam0->f_1[iVar0 /*3*/])->f_1 == 1530758430 || (uParam0->f_1[iVar0 /*3*/])->f_1 == 1334603721) && aggregate.bandana.func_11(bVar3, -985549034))
+									if (((uParam0->f_1[iVar0 /*3*/])->f_1 == 1530758430 || (uParam0->f_1[iVar0 /*3*/])->f_1 == 1334603721) && aggregate_func_2852(bVar3, -985549034))
 									{
 										if ((uParam0->f_1[iVar0 /*3*/])->f_1 == 1530758430)
 										{
 											(uParam0->f_1[iVar0 /*3*/])->f_1 = joaat("base");
-											aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+											aggregate_func_4743(iVar0, iVar5);
 										}
 										else if ((uParam0->f_1[iVar0 /*3*/])->f_1 == 1334603721)
 										{
 											(uParam0->f_1[iVar0 /*3*/])->f_1 = -1539589426;
-											aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+											aggregate_func_4743(iVar0, iVar5);
 										}
 									}
 									Jump @3217; //curOff = 1989
-									if (aggregate.dynamic_craft_scenario.func_170(bVar3, 0))
+									if (aggregate_func_5024(bVar3, 0))
 									{
 									}
 									else
@@ -568,30 +568,30 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 										{
 											uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 											(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-											aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+											aggregate_func_4743(iVar0, iVar5);
 										}
 										if ((uParam0->f_1[iParam2 /*3*/])->f_1 != -2081918609)
 										{
 											iVar0 = 34;
 											bVar1 = &uParam0->f_1[iVar0 /*3*/];
-											if (aggregate.bandana.func_11(bVar1, 1583165364))
+											if (aggregate_func_2852(bVar1, 1583165364))
 											{
 												(uParam0->f_1[iParam2 /*3*/])->f_1 = -2081918609;
-												aggregate.dynamic_craft_scenario.func_286(iParam2, iVar5);
+												aggregate_func_4743(iParam2, iVar5);
 											}
 											else
 											{
 												iVar0 = 35;
 												bVar1 = &uParam0->f_1[iVar0 /*3*/];
-												if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && 1769055947 == aggregate.bandana.func_10(bVar1))
+												if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && 1769055947 == aggregate_func_2827(bVar1))
 												{
 													(uParam0->f_1[iParam2 /*3*/])->f_1 = -2081918609;
-													aggregate.dynamic_craft_scenario.func_286(iParam2, iVar5);
+													aggregate_func_4743(iParam2, iVar5);
 												}
 											}
 										}
 										Jump @3217; //curOff = 2215
-										if (aggregate.dynamic_craft_scenario.func_170(bVar3, 0))
+										if (aggregate_func_5024(bVar3, 0))
 										{
 										}
 										else
@@ -601,21 +601,21 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 											{
 												uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 												(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-												aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+												aggregate_func_4743(iVar0, iVar5);
 											}
 											iVar0 = 13;
 											if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 											{
 												uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 												(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-												aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+												aggregate_func_4743(iVar0, iVar5);
 											}
 											iVar0 = 25;
-											if (&Global_1951131->f_1657.f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate.bandana.func_11(bVar3, 675650051))
+											if (&Global_1951131->f_1657.f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/] && aggregate_func_2852(bVar3, 675650051))
 											{
 												uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 												(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-												aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+												aggregate_func_4743(iVar0, iVar5);
 											}
 											Jump @3217; //curOff = 2439
 											if (bParam1 == &Global_1951131->f_81[iParam2 /*12*/])
@@ -625,83 +625,83 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 												{
 													uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 													(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-													aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+													aggregate_func_4743(iVar0, iVar5);
 												}
 												iVar0 = 38;
 												if (&uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 												{
 													uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 													(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-													aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+													aggregate_func_4743(iVar0, iVar5);
 												}
 												iVar0 = 35;
-												if (-923693316 == aggregate.bandana.func_10(&(uParam0->f_1[iVar0 /*3*/])))
+												if (-923693316 == aggregate_func_2827(&(uParam0->f_1[iVar0 /*3*/])))
 												{
 													uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 													(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-													aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+													aggregate_func_4743(iVar0, iVar5);
 												}
 											}
 											else
 											{
 												iVar0 = 35;
 												bVar1 = &uParam0->f_1[iVar0 /*3*/];
-												if ((aggregate.bandana.func_11(bVar3, 813132419) && &uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/]) && aggregate.bandana.func_10(bVar1) == -923693316)
+												if ((aggregate_func_2852(bVar3, 813132419) && &uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/]) && aggregate_func_2827(bVar1) == -923693316)
 												{
 													uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 													(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-													aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+													aggregate_func_4743(iVar0, iVar5);
 												}
-												if ((aggregate.bandana.func_11(bVar3, -1650340550) && &uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/]) && aggregate.bandana.func_10(bVar1) == 1769055947)
+												if ((aggregate_func_2852(bVar3, -1650340550) && &uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/]) && aggregate_func_2827(bVar1) == 1769055947)
 												{
 													uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 													(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-													aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+													aggregate_func_4743(iVar0, iVar5);
 												}
 												iVar0 = 37;
-												if (aggregate.bandana.func_11(bVar3, -1278198125) && &uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
+												if (aggregate_func_2852(bVar3, -1278198125) && &uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 												{
 													uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 													(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-													aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+													aggregate_func_4743(iVar0, iVar5);
 												}
 											}
 											Jump @3217; //curOff = 2922
 											iVar0 = 37;
-											if (aggregate.bandana.func_11(bVar3, -1278198125) && &uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
+											if (aggregate_func_2852(bVar3, -1278198125) && &uParam0->f_1[iVar0 /*3*/] != &Global_1951131->f_81[iVar0 /*12*/])
 											{
 												uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 												(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-												aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+												aggregate_func_4743(iVar0, iVar5);
 											}
 											Jump @3217; //curOff = 3004
 											iVar0 = 10;
-											if (-525676072 == aggregate.bandana.func_10(&(uParam0->f_1[iVar0 /*3*/])))
+											if (-525676072 == aggregate_func_2827(&(uParam0->f_1[iVar0 /*3*/])))
 											{
 												uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 												(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-												aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+												aggregate_func_4743(iVar0, iVar5);
 											}
 											Jump @3217; //curOff = 3068
 											iVar0 = 12;
-											if (81053684 == aggregate.bandana.func_10(&(uParam0->f_1[iVar0 /*3*/])))
+											if (81053684 == aggregate_func_2827(&(uParam0->f_1[iVar0 /*3*/])))
 											{
 												uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 												(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-												aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+												aggregate_func_4743(iVar0, iVar5);
 											}
 											Jump @3217; //curOff = 3132
-											if (!aggregate.bandana.func_11(bVar3, -1348134986))
+											if (!aggregate_func_2852(bVar3, -1348134986))
 											{
 											}
 											else
 											{
 												iVar0 = 10;
-												if (-525676072 == aggregate.bandana.func_10(&(uParam0->f_1[iVar0 /*3*/])))
+												if (-525676072 == aggregate_func_2827(&(uParam0->f_1[iVar0 /*3*/])))
 												{
 													uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 													(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-													aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+													aggregate_func_4743(iVar0, iVar5);
 												}
 											}
 										}
@@ -712,15 +712,15 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 					}
 				}
 			}
-			switch (aggregate.bandana.func_49(iParam2, 1))
+			switch (aggregate_func_4735(iParam2, 1))
 			{
 				case -207860920:
-					if (aggregate.dynamic_craft_scenario.func_363(99217379) && aggregate.bandana.func_11(bVar3, -1230785684))
+					if (aggregate_func_5041(99217379) && aggregate_func_2852(bVar3, -1230785684))
 					{
 						iVar0 = 27;
 						uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 						(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-						aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+						aggregate_func_4743(iVar0, iVar5);
 					}
 					break;
 				case 1742327865:
@@ -728,38 +728,38 @@ void func_1552(var uParam0, bool bParam1, int iParam2, bool bParam3)
 					if ((uParam0->f_1[iVar0 /*3*/])->f_1 == 1530758430)
 					{
 						(uParam0->f_1[iVar0 /*3*/])->f_1 = joaat("base");
-						aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+						aggregate_func_4743(iVar0, iVar5);
 					}
 					else if ((uParam0->f_1[iVar0 /*3*/])->f_1 == 1334603721)
 					{
 						(uParam0->f_1[iVar0 /*3*/])->f_1 = -1539589426;
-						aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+						aggregate_func_4743(iVar0, iVar5);
 					}
 					break;
 				case 1250092473:
 					iVar0 = 12;
 					if (2056714954 == PED::_0x5FF9A878C3D115B8(&(uParam0->f_1[iVar0 /*3*/]), iVar2, 1))
 					{
-						if ((bParam1 == &Global_1951131->f_81[iParam2 /*12*/] || aggregate.bandana.func_11(bVar3, 1872585553)) || iVar4 == 1882579758)
+						if ((bParam1 == &Global_1951131->f_81[iParam2 /*12*/] || aggregate_func_2852(bVar3, 1872585553)) || iVar4 == 1882579758)
 						{
 							uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 							(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-							aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+							aggregate_func_4743(iVar0, iVar5);
 						}
 					}
 					iVar0 = 17;
-					if (!aggregate.dynamic_craft_scenario.func_170(&(uParam0->f_1[iVar0 /*3*/]), 0) && aggregate.bandana.func_11(bVar3, 1467402774))
+					if (!aggregate_func_5024(&(uParam0->f_1[iVar0 /*3*/]), 0) && aggregate_func_2852(bVar3, 1467402774))
 					{
 						uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 						(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-						aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+						aggregate_func_4743(iVar0, iVar5);
 					}
 					iVar0 = 29;
-					if (!aggregate.dynamic_craft_scenario.func_170(&(uParam0->f_1[iVar0 /*3*/]), 0) && aggregate.bandana.func_11(bVar3, 1126863852))
+					if (!aggregate_func_5024(&(uParam0->f_1[iVar0 /*3*/]), 0) && aggregate_func_2852(bVar3, 1126863852))
 					{
 						uParam0->f_1[iVar0 /*3*/] = &Global_1951131->f_81[iVar0 /*12*/];
 						(uParam0->f_1[iVar0 /*3*/])->f_1 = 0;
-						aggregate.dynamic_craft_scenario.func_286(iVar0, iVar5);
+						aggregate_func_4743(iVar0, iVar5);
 					}
 					break;
 				case -1130352927:

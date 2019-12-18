@@ -21,7 +21,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == ambient_fishing_scenario.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1747
 
 void func_6()
 {
@@ -56,10 +56,5 @@ void func_6()
 	{
 		return;
 	}
-}
-
-void func_12(int iParam0)
-{
-	Local_18 = iParam0->f_1;
 }
 

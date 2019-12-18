@@ -24,18 +24,18 @@ void __EntryFunction__()
 	bVar0 = false;
 	while (!bVar0)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() == -1)
+		if (aggregate_func_4251() == -1)
 		{
 			bVar0 = SCRIPTS::_0x9E4EF615E307FBBE();
 		}
 		else
 		{
-			bVar0 = aggregate.error_listener.func_3(1, 1);
+			bVar0 = aggregate_func_578(1, 1);
 		}
 		func_4();
 		BUILTIN::WAIT(0);
 	}
-	aggregate.dynamic_craft_scenario.func_12();
+	aggregate_func_4580();
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
@@ -177,10 +177,10 @@ void func_11(char* sParam0)
 	}
 	fVar0 = (IntToFloat(MISC::GET_GAME_TIMER()) / 1000f);
 	fVar1 = ((0.5f * BUILTIN::SIN((250f * (fVar0 - 0f)))) + 0.5f);
-	(Global_25757.f_324[0 /*8*/])->f_4 = BUILTIN::FLOOR(aggregate.electric_lantern.func_8(200f, 100f, fVar1));
-	(Global_25757.f_324[0 /*8*/])->f_5 = BUILTIN::FLOOR(aggregate.electric_lantern.func_8(4f, 60f, fVar1));
-	(Global_25757.f_324[0 /*8*/])->f_6 = BUILTIN::FLOOR(aggregate.electric_lantern.func_8(0f, 58f, fVar1));
-	(Global_25757.f_324[0 /*8*/])->f_7 = BUILTIN::FLOOR(aggregate.electric_lantern.func_8(200f, 200f, fVar1));
+	(Global_25757.f_324[0 /*8*/])->f_4 = BUILTIN::FLOOR(aggregate_func_4928(200f, 100f, fVar1));
+	(Global_25757.f_324[0 /*8*/])->f_5 = BUILTIN::FLOOR(aggregate_func_4928(4f, 60f, fVar1));
+	(Global_25757.f_324[0 /*8*/])->f_6 = BUILTIN::FLOOR(aggregate_func_4928(0f, 58f, fVar1));
+	(Global_25757.f_324[0 /*8*/])->f_7 = BUILTIN::FLOOR(aggregate_func_4928(200f, 200f, fVar1));
 	func_15(Global_25757.f_324[0 /*8*/]);
 	StringCopy(&((Global_25757.f_197[0 /*21*/])->f_5), "Script: '", 128);
 	StringConCat(&((Global_25757.f_197[0 /*21*/])->f_5), sParam0, 128);
@@ -216,7 +216,7 @@ bool func_13(int iParam0, int iParam1)
 	{
 		if (iVar0 == 0)
 		{
-			StringCopy(Global_25757.f_1[iVar0 /*19*/], aggregate.error_listener.func_18(iParam0), 128);
+			StringCopy(Global_25757.f_1[iVar0 /*19*/], aggregate_func_2023(iParam0), 128);
 			(Global_25757.f_1[iVar0 /*19*/])->f_16 = iParam0;
 			(Global_25757.f_1[iVar0 /*19*/])->f_17 = iParam1;
 			(Global_25757.f_1[iVar0 /*19*/])->f_18 = MISC::GET_FRAME_COUNT();
@@ -270,11 +270,11 @@ char* func_17(int iParam0)
 		default:
 			break;
 	}
-	return aggregate.error_listener.func_18(iParam0);
+	return aggregate_func_2023(iParam0);
 }
 
 void func_19(float fParam0, float fParam1, char* sParam2, char* sParam3)
 {
-	HUD::_DISPLAY_TEXT(MISC::_CREATE_VAR_STRING(10, "VAR_STRING_1", aggregate.aberdeenpigfarm.func_103(sParam3, joaat("COLOR_PURE_WHITE"))), fParam0, fParam1);
+	HUD::_DISPLAY_TEXT(MISC::_CREATE_VAR_STRING(10, "VAR_STRING_1", aggregate_func_1965(sParam3, joaat("COLOR_PURE_WHITE"))), fParam0, fParam1);
 }
 

@@ -31,7 +31,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_40(int iParam0)
 {
@@ -62,9 +62,9 @@ void func_60()
 	func_90(&iVar0, "_car_house_int_day_pickup_bread");
 	func_90(&iVar0, "_car_house_int_day_pickup_whiskey");
 	func_90(&iVar0, "_car_house_int_pickup_medicine");
-	aggregate.carmodydell.func_92("hmrb_crd_interior_ransacked");
-	aggregate.carmodydell.func_92("hmrb_crd_interior_night");
-	aggregate.carmodydell.func_92("hmrb_crd_interior_day");
+	aggregate_func_2448("hmrb_crd_interior_ransacked");
+	aggregate_func_2448("hmrb_crd_interior_night");
+	aggregate_func_2448("hmrb_crd_interior_day");
 	bLocal_13 = true;
 }
 

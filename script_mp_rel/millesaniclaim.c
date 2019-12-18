@@ -33,7 +33,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 void func_16(int iParam0)
 {
@@ -50,16 +50,16 @@ void func_16(int iParam0)
 
 bool func_40(int iParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
 		func_60();
 	}
-	if (aggregate.adlerranch.func_61(&bLocal_28))
+	if (aggregate_func_6721(&bLocal_28))
 	{
 		if (bLocal_28)
 		{
-			aggregate.adlerranch.func_97(-1382959706, 0, 0);
-			aggregate.adlerranch.func_97(-76557983, 0, 0);
+			aggregate_func_400(-1382959706, 0, 0);
+			aggregate_func_400(-76557983, 0, 0);
 			OBJECT::_0x1BC47A9DEDC8DF5D(-1382959706, 0);
 			OBJECT::_0x1BC47A9DEDC8DF5D(-76557983, 0);
 		}

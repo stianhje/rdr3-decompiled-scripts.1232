@@ -22,13 +22,13 @@ void __EntryFunction__()
 {
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		aggregate.aberdeenpigfarm.func_46();
+		aggregate_func_2819();
 	}
 	Local_13 = vScriptParam_0.x;
 	Local_13.f_1 = vScriptParam_0.y;
 	if (func_2(Local_13.f_1) && func_3(Local_13))
 	{
-		while (!aggregate.herb.func_62(1) && !aggregate.binoculars.func_66(32768))
+		while (!aggregate_func_2039(1) && !aggregate_func_4297(32768))
 		{
 			if (func_6(vScriptParam_0.f_2))
 			{
@@ -39,7 +39,7 @@ void __EntryFunction__()
 			}
 		}
 	}
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_2819();
 }
 
 int func_2(int iParam0)
@@ -71,7 +71,7 @@ bool func_6(vector3 vParam0)
 				return true;
 			}
 		}
-		if (aggregate.aberdeenpigfarm.func_175(&Global_1939168, 4194304))
+		if (aggregate_func_4240(&Global_1939168, 4194304))
 		{
 			return true;
 		}

@@ -23,23 +23,23 @@ void __EntryFunction__()
 	bool bVar3;
 
 	func_1();
-	sVar0 = func_3(func_2());
+	sVar0 = aggregate_func_9379(aggregate_func_9378());
 	func_4();
-	aggregate.thread_monitor.func_26();
+	func_5();
 	func_6(0);
 	Global_1051202->f_42 = 0;
 	bVar1 = false;
 	iLocal_13 = 0;
-	while ((((func_7() && !aggregate.aberdeenpigfarm.func_49(1, 1)) && !aggregate.binoculars.func_66(4)) && !aggregate.binoculars.func_66(2048)) && func_11(aggregate.long_update.func_411()))
+	while ((((func_7() && !aggregate_func_523(1, 1)) && !aggregate_func_4297(4)) && !aggregate_func_4297(2048)) && aggregate_func_9380(aggregate_func_7729()))
 	{
 		if (func_12())
 		{
 			func_13();
 			func_14();
-			switch (aggregate.dynamic_craft_scenario.func_372())
+			switch (aggregate_func_4476())
 			{
 				case 0:
-					if (((aggregate.adlerranch.func_96() && aggregate.net_camp_manager.func_305(PLAYER::PLAYER_ID()) > 2) || !SCRIPTS::IS_THREAD_ACTIVE(&(Global_1051202->f_16[0]), false)) || !NETWORK::NETWORK_IS_SCRIPT_ACTIVE(sVar0, -1, true, 0))
+					if (((aggregate_func_4683() && aggregate_func_7777(PLAYER::PLAYER_ID()) > 2) || !SCRIPTS::IS_THREAD_ACTIVE(&(Global_1051202->f_16[0]), false)) || !NETWORK::NETWORK_IS_SCRIPT_ACTIVE(sVar0, -1, true, 0))
 					{
 						if (func_18(0) == 0)
 						{
@@ -49,7 +49,7 @@ void __EntryFunction__()
 							if (func_18(0) != 0)
 							{
 							}
-							aggregate.net_main_online.func_15();
+							aggregate_func_7841();
 							func_21();
 						}
 						else if (Global_1051202->f_7 > 0)
@@ -63,8 +63,8 @@ void __EntryFunction__()
 					if (func_23())
 					{
 						func_22();
-						aggregate.net_main_online.func_15();
-						aggregate.aberdeenpigfarm.func_23();
+						aggregate_func_7841();
+						aggregate_func_4238();
 						func_26();
 						func_6(1);
 					}
@@ -72,7 +72,7 @@ void __EntryFunction__()
 				case 1:
 					if (!func_19())
 					{
-						aggregate.net_main_online.func_16();
+						aggregate_func_8560();
 						bVar1 = false;
 						func_6(2);
 						SCRIPTS::REQUEST_SCRIPT(sVar0);
@@ -83,7 +83,7 @@ void __EntryFunction__()
 					}
 					break;
 				case 2:
-					if (aggregate.aberdeenpigfarm.func_123())
+					if (aggregate_func_4248())
 					{
 						if ((func_30() % 1000) == 0)
 						{
@@ -97,7 +97,7 @@ void __EntryFunction__()
 							{
 								NETWORK::_0x2C4E98DDA475364F("thread_monitor has been waiting on a session end for longer than 2 minutes now.  This is bad.");
 								bVar1 = true;
-								aggregate.fm_deathmatch_controller.func_798(30, -1);
+								aggregate_func_7013(30, -1);
 							}
 						}
 						if (func_18(0) != 1)
@@ -140,7 +140,7 @@ void __EntryFunction__()
 							{
 								NETWORK::_0x2C4E98DDA475364F("thread_monitor has been waiting on NETWORK_IS_GAME_IN_PROGRESS for longer than 2 minutes now.  This is bad.");
 								bVar1 = true;
-								aggregate.fm_deathmatch_controller.func_798(30, -1);
+								aggregate_func_7013(30, -1);
 							}
 						}
 					}
@@ -158,20 +158,20 @@ void __EntryFunction__()
 							if (Global_1051202->f_42)
 							{
 								func_32(1);
-								aggregate.annesburg.func_112(1, 1);
+								aggregate_func_748(1, 1);
 								Global_1051202->f_42 = 0;
 							}
 							func_34();
 							Global_1051202->f_16[0] = SCRIPTS::START_NEW_SCRIPT(sVar0, 6000);
 							SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(sVar0);
-							func_35();
+							aggregate_func_9377();
 							func_6(0);
-							aggregate.net_main_online.func_16();
+							aggregate_func_8560();
 							if (Global_1051202->f_11)
 							{
 								Global_1051202->f_11 = 0;
 							}
-							aggregate.net_main_online.func_16();
+							aggregate_func_8560();
 						}
 					}
 					break;
@@ -179,16 +179,16 @@ void __EntryFunction__()
 		}
 		BUILTIN::WAIT(0);
 	}
-	if (aggregate.binoculars.func_66(2048))
+	if (aggregate_func_4297(2048))
 	{
 	}
-	else if (aggregate.binoculars.func_66(4))
+	else if (aggregate_func_4297(4))
 	{
 	}
-	else if (!func_11(aggregate.long_update.func_411()))
+	else if (!aggregate_func_9380(aggregate_func_7729()))
 	{
 	}
-	else if (!func_11(aggregate.mp_intro.func_504()))
+	else if (!aggregate_func_9380(aggregate_func_7529()))
 	{
 	}
 	else
@@ -198,7 +198,7 @@ void __EntryFunction__()
 		bVar3 = false;
 		while (!bVar3)
 		{
-			switch (aggregate.dynamic_craft_scenario.func_372())
+			switch (aggregate_func_4476())
 			{
 				case 5:
 					iVar2 = MISC::_GET_SYSTEM_TIME();
@@ -218,7 +218,7 @@ void __EntryFunction__()
 				case 7:
 					if (CAM::IS_SCREEN_FADED_OUT())
 					{
-						aggregate.fm_deathmatch_controller.func_798(iLocal_13, -1);
+						aggregate_func_7013(iLocal_13, -1);
 						bVar3 = true;
 					}
 					else if (!CAM::IS_SCREEN_FADING_OUT())
@@ -242,7 +242,7 @@ void __EntryFunction__()
 	{
 		PLAYER::FORCE_CLEANUP(2);
 	}
-	aggregate.startup.func_22(2048);
+	aggregate_func_8629(2048);
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
@@ -254,24 +254,6 @@ void func_1()
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 }
 
-int func_2()
-{
-	return Global_1572887->f_14;
-}
-
-char* func_3(int iParam0)
-{
-	switch (iParam0)
-	{
-		case 1:
-			return "net_main_tlg_online";
-		default:
-			break;
-	}
-	return "net_main_online";
-	return "net_main_online";
-}
-
 void func_4()
 {
 	if (!Global_1051202->f_9)
@@ -280,19 +262,24 @@ void func_4()
 	Global_1051202->f_9 = 1;
 }
 
+void func_5()
+{
+	Global_1051202->f_38 = MISC::_GET_SYSTEM_TIME();
+}
+
 void func_6(int iParam0)
 {
 	Global_1051202->f_12 = iParam0;
-	aggregate.net_main_offline.func_1(func_40(Global_1051202->f_12));
+	aggregate_func_1328(func_40(Global_1051202->f_12));
 }
 
 bool func_7()
 {
 	iLocal_13 = 0;
-	if (func_42(1976253964))
+	if (aggregate_func_4132(1976253964))
 	{
 	}
-	else if (func_42(1355399116))
+	else if (aggregate_func_4132(1355399116))
 	{
 	}
 	else if (!NETWORK::NETWORK_IS_SIGNED_ONLINE())
@@ -305,7 +292,7 @@ bool func_7()
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			if ((aggregate.binoculars.func_66(4) || aggregate.binoculars.func_66(2048)) || !func_11(aggregate.long_update.func_411()))
+			if ((aggregate_func_4297(4) || aggregate_func_4297(2048)) || !aggregate_func_9380(aggregate_func_7729()))
 			{
 				iLocal_13 = 0;
 			}
@@ -316,19 +303,6 @@ bool func_7()
 		}
 	}
 	return true;
-}
-
-bool func_11(int iParam0)
-{
-	if (iParam0 == 3)
-	{
-		return true;
-	}
-	if (iParam0 == 4)
-	{
-		return true;
-	}
-	return false;
 }
 
 bool func_12()
@@ -375,7 +349,7 @@ void func_14()
 		switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
 		{
 			case 2:
-				aggregate.net_main_online.func_15();
+				aggregate_func_7841();
 				break;
 			case 0:
 				break;
@@ -508,11 +482,11 @@ void func_32(bool bParam0)
 {
 	if (!bParam0)
 	{
-		aggregate.annesburg.func_182(2);
+		aggregate_func_4309(2);
 	}
 	else
 	{
-		aggregate.annesburg.func_182(2);
+		aggregate_func_4309(2);
 		PLAYER::_0x2C2D287748E8E9B7(0);
 	}
 }
@@ -533,12 +507,6 @@ void func_34()
 		}
 		iVar0++;
 	}
-}
-
-void func_35()
-{
-	Global_1572887->f_8 = 0;
-	aggregate.net_main_offline.func_612();
 }
 
 void func_39(var uParam0)
@@ -592,15 +560,6 @@ char* func_40(int iParam0)
 			break;
 	}
 	return sVar0;
-}
-
-bool func_42(int iParam0)
-{
-	if (iParam0 == 0)
-	{
-		return false;
-	}
-	return SCRIPTS::GET_EVENT_EXISTS(1, iParam0);
 }
 
 void func_43()

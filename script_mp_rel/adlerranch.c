@@ -32,18 +32,18 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_40(int iParam0)
 {
 	iParam0 = iParam0;
 	func_60();
-	if (aggregate.adlerranch.func_61(&bLocal_19))
+	if (aggregate_func_6721(&bLocal_19))
 	{
 		if (bLocal_19)
 		{
-			aggregate.adlerranch.func_62(2051127971, 1, -1f, 0, 0, 0, 0, 0);
-			aggregate.adlerranch.func_63(2051127971, 1, 1);
+			aggregate_func_1155(2051127971, 1, -1f, 0, 0, 0, 0, 0);
+			aggregate_func_2156(2051127971, 1, 1);
 		}
 	}
 	return true;
@@ -54,7 +54,7 @@ void func_60()
 	bool bVar0;
 
 	bVar0 = false;
-	if (aggregate.adlerranch.func_93(356365161) || aggregate.adlerranch.func_93(-1187950766))
+	if (aggregate_func_1518(356365161) || aggregate_func_1518(-1187950766))
 	{
 		bVar0 = true;
 	}
@@ -64,12 +64,12 @@ void func_60()
 		{
 			if (!STREAMING::_IS_IMAP_ACTIVE(-739334986))
 			{
-				aggregate.adlerranch.func_94(-739334986);
+				aggregate_func_2081(-739334986);
 			}
 		}
 		else if (STREAMING::_IS_IMAP_ACTIVE(-739334986))
 		{
-			aggregate.adlerranch.func_95(-739334986);
+			aggregate_func_2077(-739334986);
 		}
 		bLocal_18 = bVar0;
 	}

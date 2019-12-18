@@ -65,18 +65,18 @@
 	struct<5> ScriptParam_0 = { 0, 0, 0, 0, 0 } ;
 #endregion
 
-// __EntryFunction__ == la_alligator.__EntryFunction__
+// __EntryFunction__ == aggregate_func_3089
 
 void func_1(int iParam0)
 {
-	aggregate.flow_controller.func_7(32, iParam0);
-	aggregate.flow_controller.func_8();
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_1994(32, iParam0);
+	aggregate_func_306();
+	aggregate_func_4238();
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(&Local_13, 130, 40);
-	aggregate.flow_controller.func_12(NETWORK::_0xBA24095EA96DFE17(&Local_13), 130, "m_hostData");
+	aggregate_func_4288(NETWORK::_0xBA24095EA96DFE17(&Local_13), 130, "m_hostData");
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(&Local_143, 577, 41);
-	aggregate.flow_controller.func_12(NETWORK::_0x690806BC83BC8CA2(Local_143[0 /*18*/]), 577, "m_clientData");
-	aggregate.flow_controller.func_13(0);
+	aggregate_func_4288(NETWORK::_0x690806BC83BC8CA2(Local_143[0 /*18*/]), 577, "m_clientData");
+	aggregate_func_453(0);
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(1);
 }
@@ -94,7 +94,7 @@ void func_60()
 	int iVar0;
 	int iVar1;
 
-	if (aggregate.la_alligator.func_58())
+	if (aggregate_func_2109())
 	{
 		iVar1 = 0;
 		while (iVar1 < 12)
@@ -102,7 +102,7 @@ void func_60()
 			if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(&(Local_13.f_114[iVar1])))
 			{
 				iVar0 = NETWORK::NET_TO_PED(&(Local_13.f_114[iVar1]));
-				aggregate.la_alligator.func_141(iVar1);
+				aggregate_func_2372(iVar1);
 				EVENT::_0xAD8F2424C6E1E3A8(iVar0);
 				if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iVar0))
 				{
@@ -134,7 +134,7 @@ void func_92()
 	}
 }
 
-bool func_171(var uParam0)
+bool func_171(bool bParam0)
 {
 	bool bVar0;
 	bool bVar1;
@@ -142,7 +142,7 @@ bool func_171(var uParam0)
 
 	if (!NETWORK::CAN_REGISTER_MISSION_PEDS(12))
 	{
-		*uParam0 = 1;
+		*bParam0 = 1;
 		return false;
 	}
 	bVar0 = false;
@@ -151,12 +151,12 @@ bool func_171(var uParam0)
 	iVar2 = 0;
 	while (iVar2 < 12)
 	{
-		if (aggregate.la_alligator.func_203(iVar2, 4))
+		if (aggregate_func_5277(iVar2, 4))
 		{
 		}
-		else if (!aggregate.la_alligator.func_204(iVar2, uParam0, &bVar1))
+		else if (!aggregate_func_257(iVar2, bParam0, &bVar1))
 		{
-			if (*uParam0)
+			if (*bParam0)
 			{
 				return false;
 			}
@@ -193,7 +193,7 @@ bool func_179()
 		}
 		else
 		{
-			iVar2 = aggregate.la_alligator.func_212(iVar0);
+			iVar2 = aggregate_func_4849(iVar0);
 			if (iVar2 == 0)
 			{
 				Jump @129; //curOff = 54
@@ -225,76 +225,6 @@ bool func_179()
 	return true;
 }
 
-bool func_180()
-{
-	int iVar0;
-	int iVar1;
-	bool bVar2;
-	int iVar3;
-
-	bVar2 = false;
-	iVar3 = 0;
-	iVar0 = 0;
-	while (iVar0 < 1)
-	{
-		iVar1 = 0;
-		while (iVar1 < 1)
-		{
-			if (MISC::IS_BIT_SET((Local_720.f_269.f_1[iVar0 /*14*/])->f_1, iVar1))
-			{
-			}
-			else
-			{
-				iVar3 = aggregate.la_alligator.func_205(iVar0, iVar1);
-				if (aggregate.la_alligator.func_206(iVar1))
-				{
-					if (((Local_720.f_269.f_1[iVar0 /*14*/])->f_4[iVar1 /*9*/])->f_3 == 0 || !PED::_0x93FFD92F05EC32FD(((Local_720.f_269.f_1[iVar0 /*14*/])->f_4[iVar1 /*9*/])->f_3))
-					{
-						((Local_720.f_269.f_1[iVar0 /*14*/])->f_4[iVar1 /*9*/])->f_3 = PED::_0x91FE941F9FCFB702(((Local_720.f_269.f_1[iVar0 /*14*/])->f_4[iVar1 /*9*/])->f_2, 0);
-						bVar2 = true;
-					}
-					else if (!PED::_0xB0B2C6D170B0E8E5(((Local_720.f_269.f_1[iVar0 /*14*/])->f_4[iVar1 /*9*/])->f_3))
-					{
-						bVar2 = true;
-					}
-					else
-					{
-						MISC::SET_BIT(&((Local_720.f_269.f_1[iVar0 /*14*/])->f_1), iVar1);
-					}
-				}
-				else if (iVar3 == 0)
-				{
-					Jump @336; //curOff = 244
-				}
-				else
-				{
-					if (!MISC::IS_BIT_SET(&(Local_720.f_269.f_1[iVar0 /*14*/]), iVar1))
-					{
-						STREAMING::REQUEST_MODEL(iVar3, false);
-						MISC::SET_BIT(Local_720.f_269.f_1[iVar0 /*14*/], iVar1);
-					}
-					if (!STREAMING::HAS_MODEL_LOADED(iVar3))
-					{
-						bVar2 = true;
-						Jump @336; //curOff = 310
-					}
-					else
-					{
-						MISC::SET_BIT(&((Local_720.f_269.f_1[iVar0 /*14*/])->f_1), iVar1);
-					}
-				}
-			}
-			iVar1++;
-		}
-		iVar0++;
-	}
-	if (bVar2)
-	{
-		return false;
-	}
-	return true;
-}
-
 void func_182()
 {
 	int iVar0;
@@ -304,24 +234,7 @@ void func_182()
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
-		aggregate.la_alligator.func_213(iVar0, iVar1, 0);
-		iVar0++;
-	}
-}
-
-void func_188()
-{
-	int iVar0;
-	bool bVar1;
-	int iVar2;
-
-	iVar2 = NETWORK::PARTICIPANT_ID_TO_INT();
-	iVar0 = 0;
-	while (iVar0 < 32)
-	{
-		bVar1 = NETWORK::NETWORK_IS_PARTICIPANT_ACTIVE(PLAYER::INT_TO_PARTICIPANTINDEX(iVar0));
-		aggregate.la_alligator.func_216(iVar0, bVar1, iVar2);
-		aggregate.la_alligator.func_217(iVar0, bVar1, iVar2);
+		aggregate_func_325(iVar0, iVar1, 0);
 		iVar0++;
 	}
 }
@@ -359,12 +272,12 @@ void func_189()
 		}
 		iVar0 = Local_720.f_89.f_140;
 		Local_720.f_89.f_140++;
-		iVar7 = aggregate.annesburg.func_253(iVar0);
+		iVar7 = aggregate_func_4270(iVar0);
 		iVar1 = &Local_720.f_89.f_7[iVar0 /*11*/];
 		bVar4 = !ENTITY::DOES_ENTITY_EXIST(iVar1);
-		if (aggregate.la_alligator.func_203(iVar7, 4))
+		if (aggregate_func_5277(iVar7, 4))
 		{
-			aggregate.la_alligator.func_213(iVar7, iVar3, 1);
+			aggregate_func_325(iVar7, iVar3, 1);
 			bVar4 = !ENTITY::DOES_ENTITY_EXIST(iVar1);
 		}
 		if (bVar4)
@@ -382,14 +295,14 @@ void func_189()
 		}
 		if (MISC::IS_BIT_SET(Local_720.f_89.f_141, iVar0))
 		{
-			if (bVar4 || !aggregate.la_alligator.func_219(iVar2, iVar1, iVar0))
+			if (bVar4 || !aggregate_func_1267(iVar2, iVar1, iVar0))
 			{
 				MISC::CLEAR_BIT(&(Local_720.f_89.f_141), iVar0);
 			}
 		}
 		else if (!bVar4)
 		{
-			if (aggregate.la_alligator.func_219(iVar2, iVar1, iVar0))
+			if (aggregate_func_1267(iVar2, iVar1, iVar0))
 			{
 				MISC::SET_BIT(&(Local_720.f_89.f_141), iVar0);
 			}
@@ -402,18 +315,18 @@ void func_189()
 				{
 					MISC::SET_BIT(&((Local_143[iVar3 /*18*/])->f_2.f_1), iVar0);
 				}
-				aggregate.barcustomer_interaction.func_43(Local_720.f_89.f_142[iVar0 /*3*/]);
+				aggregate_func_4283(Local_720.f_89.f_142[iVar0 /*3*/]);
 			}
 		}
 		if (MISC::IS_BIT_SET((Local_143[iVar3 /*18*/])->f_2.f_1, iVar0))
 		{
-			if (bVar4 || (!AUDIO::IS_ANY_SPEECH_PLAYING(iVar1) && (!aggregate.barcustomer_interaction.func_42(Local_720.f_89.f_142[iVar0 /*3*/]) || aggregate.broom_scenario.func_18(Local_720.f_89.f_142[iVar0 /*3*/], 0.5f))))
+			if (bVar4 || (!AUDIO::IS_ANY_SPEECH_PLAYING(iVar1) && (!aggregate_func_4260(Local_720.f_89.f_142[iVar0 /*3*/]) || aggregate_func_4628(Local_720.f_89.f_142[iVar0 /*3*/], 0.5f))))
 			{
-				aggregate.barcustomer_interaction.func_50(Local_720.f_89.f_142[iVar0 /*3*/]);
+				aggregate_func_4313(Local_720.f_89.f_142[iVar0 /*3*/]);
 				MISC::CLEAR_BIT(&((Local_143[iVar3 /*18*/])->f_2.f_1), iVar0);
 			}
 		}
-		if (aggregate.la_alligator.func_203(iVar7, 4))
+		if (aggregate_func_5277(iVar7, 4))
 		{
 			if (bVar4)
 			{
@@ -421,13 +334,13 @@ void func_189()
 				{
 					if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 					{
-						if (aggregate.benedictpoint.func_17(iVar7))
+						if (aggregate_func_4311(iVar7))
 						{
-							if (!aggregate.la_alligator.func_204(iVar7, &bVar5, &bVar6))
+							if (!aggregate_func_257(iVar7, &bVar5, &bVar6))
 							{
 								if (bVar5)
 								{
-									aggregate.la_alligator.func_225(iVar7, 4);
+									aggregate_func_5014(iVar7, 4);
 								}
 								else if (bVar6)
 								{
@@ -437,9 +350,9 @@ void func_189()
 					}
 				}
 			}
-			else if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iVar1) && !aggregate.la_alligator.func_203(iVar7, 8))
+			else if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iVar1) && !aggregate_func_5277(iVar7, 8))
 			{
-				if (!aggregate.benedictpoint.func_17(iVar7))
+				if (!aggregate_func_4311(iVar7))
 				{
 					PED::_0x7043D0681285BA2D(&iVar1);
 				}
@@ -449,14 +362,14 @@ void func_189()
 	}
 	if (Local_720.f_89.f_141 != 0)
 	{
-		if (!aggregate.la_alligator.func_226(1, -1))
+		if (!aggregate_func_3434(1, -1))
 		{
-			aggregate.la_alligator.func_227(1);
+			aggregate_func_2922(1);
 		}
 	}
-	else if (aggregate.la_alligator.func_226(1, -1))
+	else if (aggregate_func_3434(1, -1))
 	{
-		aggregate.la_alligator.func_227(1);
+		aggregate_func_2922(1);
 	}
 }
 

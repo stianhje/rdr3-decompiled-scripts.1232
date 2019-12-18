@@ -16,14 +16,14 @@
 
 void __EntryFunction__()
 {
-	aggregate.net_camp_dog_manager.func_1();
-	while (!aggregate.aberdeenpigfarm.func_49(0, 0))
+	aggregate_func_1839();
+	while (!aggregate_func_523(0, 0))
 	{
-		aggregate.fme_animal_tagging.func_4();
+		aggregate_func_2960();
 		BUILTIN::WAIT(0);
 	}
 	func_4();
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_2819();
 }
 
 void func_4()
@@ -43,13 +43,13 @@ void func_4()
 
 void func_9()
 {
-	aggregate.mp_intro.func_590(Global_1182187);
+	aggregate_func_7085(Global_1182187);
 	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(Global_1182187, 2, 5);
-	aggregate.flow_controller.func_12(NETWORK::_0xBA24095EA96DFE17(Global_1182187), 2, "g_mpNetCrewHostData");
-	aggregate.net_crew_manager.func_17(Global_1182189);
+	aggregate_func_4288(NETWORK::_0xBA24095EA96DFE17(Global_1182187), 2, "g_mpNetCrewHostData");
+	aggregate_func_7546(Global_1182189);
 	NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(Global_1182189, 545, 6);
-	aggregate.flow_controller.func_12(NETWORK::_0x690806BC83BC8CA2((*Global_1182189)[0 /*17*/]), 545, "g_mpNetCrewPlayerData");
-	func_19(Global_1182734);
+	aggregate_func_4288(NETWORK::_0x690806BC83BC8CA2((*Global_1182189)[0 /*17*/]), 545, "g_mpNetCrewPlayerData");
+	aggregate_func_9057(Global_1182734);
 }
 
 void func_12()
@@ -61,26 +61,18 @@ void func_12()
 			{
 				return;
 			}
-			if (aggregate.net_crew_manager.func_21(2))
+			if (aggregate_func_8322(2))
 			{
 				((*Global_1182189)[PLAYER::PLAYER_ID() /*17*/])->f_15 = 1;
 			}
 			func_22();
-			aggregate.fme_escaped_convicts.func_423();
+			aggregate_func_7852();
 			Global_1182734 = 1;
 			break;
 		case 1:
 			func_24();
 			break;
 	}
-}
-
-void func_19(var uParam0)
-{
-	struct<110> Var0;
-
-	Var0.f_1 = 32;
-	*uParam0 = { Var0 };
 }
 
 void func_20()
@@ -129,7 +121,7 @@ void func_22()
 
 void func_24()
 {
-	if (!func_28())
+	if (!aggregate_func_2700())
 	{
 		return;
 	}
@@ -140,14 +132,6 @@ void func_24()
 		func_22();
 		func_32();
 	}
-}
-
-void func_25(var uParam0)
-{
-	struct<17> Var0;
-
-	Var0.f_9 = 5;
-	*uParam0 = { Var0 };
 }
 
 void func_27(int iParam0)
@@ -170,11 +154,6 @@ void func_27(int iParam0)
 		(Global_1181794->f_168[iParam0 /*7*/])->f_1[iVar0] = &((*Global_1182189)[iParam0 /*17*/])->f_9[iVar0];
 		iVar0++;
 	}
-}
-
-bool func_28()
-{
-	return (NETWORK::NETWORK_IS_CLOUD_AVAILABLE() && CREW::NETWORK_CLAN_SERVICE_IS_VALID());
 }
 
 void func_29()
@@ -319,7 +298,7 @@ bool func_35(int iParam0)
 
 	if (CREW::NETWORK_CLAN_IS_EMBLEM_READY(&(Global_1182734->f_1[iParam0 /*3*/]), &Var0))
 	{
-		sVar8 = aggregate.blackwater.func_268(Var0);
+		sVar8 = aggregate_func_1966(Var0);
 		(Global_1182734->f_1[iParam0 /*3*/])->f_2 = MISC::GET_HASH_KEY(sVar8);
 		return true;
 	}

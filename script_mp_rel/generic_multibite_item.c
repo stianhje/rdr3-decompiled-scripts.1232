@@ -33,45 +33,45 @@ void __EntryFunction__()
 	Var0.f_1.f_2 = 1086324736;
 	Var0.f_1.f_11.f_1 = 20;
 	Var0.f_1.f_33 = 20;
-	func_1(&ScriptParam_0, &(Var0.f_1));
+	aggregate_func_8735(&ScriptParam_0, &(Var0.f_1));
 	Var0.f_1.f_2 = 3f;
 	while (!SCRIPTS::_0x9E4EF615E307FBBE())
 	{
 		if (!ScriptParam_0.f_3)
 		{
-			aggregate.generic_alcohol_item.func_9(&(Var0.f_1));
+			aggregate_func_1349(&(Var0.f_1));
 		}
 		switch (Var0)
 		{
 			case 0:
-				if (aggregate.bandana.func_30(Var0.f_1, 0))
+				if (aggregate_func_2823(Var0.f_1, 0))
 				{
-					aggregate.coffee_drinking.func_4(&(Var0.f_1));
+					aggregate_func_2449(&(Var0.f_1));
 				}
 				if (ScriptParam_0.f_3)
 				{
 					Var0.f_1.f_2 = 1f;
-					aggregate.coffee_drinking.func_5(&Var0, 2);
+					aggregate_func_4252(&Var0, 2);
 				}
 				else
 				{
-					aggregate.coffee_drinking.func_5(&Var0, 1);
+					aggregate_func_4252(&Var0, 1);
 				}
 				break;
 			case 1:
 				if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 442509369))
 				{
 					Var0.f_1.f_1++;
-					aggregate.coffee_drinking.func_11(&(Var0.f_1), IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2);
+					aggregate_func_580(&(Var0.f_1), IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2);
 				}
 				if (IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2)
 				{
-					aggregate.coffee_drinking.func_5(&Var0, 3);
+					aggregate_func_4252(&Var0, 3);
 				}
 				break;
 			case 2:
-				aggregate.coffee_drinking.func_11(&(Var0.f_1), 1);
-				aggregate.coffee_drinking.func_5(&Var0, 3);
+				aggregate_func_580(&(Var0.f_1), 1);
+				aggregate_func_4252(&Var0, 3);
 				break;
 			case 3:
 				if (ScriptParam_0.f_3)
@@ -87,15 +87,8 @@ void __EntryFunction__()
 		while (IntToFloat(Var0.f_1.f_1) < Var0.f_1.f_2)
 		{
 			Var0.f_1.f_1 = (1 + Var0.f_1.f_1);
-			aggregate.coffee_drinking.func_11(&(Var0.f_1), IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2);
+			aggregate_func_580(&(Var0.f_1), IntToFloat(Var0.f_1.f_1) >= Var0.f_1.f_2);
 		}
 	}
-}
-
-void func_1(var uParam0, var uParam1)
-{
-	*uParam1 = uParam0->f_2;
-	uParam1->f_174 = uParam0->f_1;
-	uParam1->f_175 = Global_35;
 }
 

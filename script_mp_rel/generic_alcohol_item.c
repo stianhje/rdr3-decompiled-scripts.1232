@@ -36,11 +36,11 @@ void __EntryFunction__()
 	{
 		if (!ScriptParam_0.f_3 && !Var0.f_180)
 		{
-			aggregate.coffee_drinking.func_1(0);
+			aggregate_func_598(0);
 		}
 		func_2();
 	}
-	func_3(&ScriptParam_0, &(Var0.f_2));
+	aggregate_func_8735(&ScriptParam_0, &(Var0.f_2));
 	Var0.f_180 = 1;
 	fVar182 = func_4(&Var0, &(ScriptParam_0.f_1));
 	if (Var0.f_180)
@@ -53,7 +53,7 @@ void __EntryFunction__()
 	}
 	if (!ScriptParam_0.f_3 && !Var0.f_180)
 	{
-		aggregate.coffee_drinking.func_1(1);
+		aggregate_func_598(1);
 		func_5();
 	}
 	while (!SCRIPTS::_0x9E4EF615E307FBBE())
@@ -78,23 +78,23 @@ void __EntryFunction__()
 				}
 			}
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ENTER"), false);
-			aggregate.generic_alcohol_item.func_9(&(Var0.f_2));
+			aggregate_func_1349(&(Var0.f_2));
 		}
 		switch (Var0)
 		{
 			case 0:
-				if (aggregate.bandana.func_30(Var0.f_2, 0))
+				if (aggregate_func_2823(Var0.f_2, 0))
 				{
-					aggregate.coffee_drinking.func_4(&(Var0.f_2));
+					aggregate_func_2449(&(Var0.f_2));
 				}
 				if (ScriptParam_0.f_3)
 				{
 					Var0.f_2.f_2 = 1f;
-					aggregate.coffee_drinking.func_5(&Var0, 3);
+					aggregate_func_4252(&Var0, 3);
 				}
 				else
 				{
-					aggregate.coffee_drinking.func_5(&Var0, 1);
+					aggregate_func_4252(&Var0, 1);
 				}
 				break;
 			case 1:
@@ -106,18 +106,18 @@ void __EntryFunction__()
 				{
 					Var0.f_2.f_1 = (1 + Var0.f_2.f_1);
 					func_14(fVar182);
-					aggregate.coffee_drinking.func_11(&(Var0.f_2), IntToFloat(Var0.f_2.f_1) >= Var0.f_2.f_2);
+					aggregate_func_580(&(Var0.f_2), IntToFloat(Var0.f_2.f_1) >= Var0.f_2.f_2);
 				}
 				if (IntToFloat(Var0.f_2.f_1) >= Var0.f_2.f_2)
 				{
-					func_16(Var0.f_2, 0);
-					aggregate.coffee_drinking.func_5(&Var0, 2);
+					aggregate_func_2651(Var0.f_2, 0);
+					aggregate_func_4252(&Var0, 2);
 				}
 				if (!Var0.f_180)
 				{
 					if ((MISC::GET_FRAME_COUNT() % 10) == 0 && ENTITY::GET_ENTITY_SUBMERGED_LEVEL(Global_35) > 0.2f)
 					{
-						aggregate.coffee_drinking.func_5(&Var0, 2);
+						aggregate_func_4252(&Var0, 2);
 					}
 				}
 				break;
@@ -127,7 +127,7 @@ void __EntryFunction__()
 					if (iVar184 == -1493684811 || iVar184 == -752898125)
 					{
 						TASK::_0xB35370D5353995CB(Global_35, func_17(Var0.f_2, iVar184), 1048576000 /* Float: 0.25f */);
-						aggregate.coffee_drinking.func_5(&Var0, 4);
+						aggregate_func_4252(&Var0, 4);
 					}
 					else if (iVar184 != 1587785400)
 					{
@@ -135,7 +135,7 @@ void __EntryFunction__()
 						{
 							PED::_0xD65FDC686A031C83(Global_35, -1268666326, 1.5f);
 							PED::_0x6D07B371E9439019(Global_35);
-							aggregate.coffee_drinking.func_5(&Var0, 4);
+							aggregate_func_4252(&Var0, 4);
 						}
 					}
 					else
@@ -150,18 +150,18 @@ void __EntryFunction__()
 							PED::_0xD65FDC686A031C83(Global_35, 1114994170, 1.5f);
 							PED::_0x6D07B371E9439019(Global_35);
 						}
-						aggregate.coffee_drinking.func_5(&Var0, 4);
+						aggregate_func_4252(&Var0, 4);
 					}
 				}
 				else
 				{
-					aggregate.coffee_drinking.func_5(&Var0, 4);
+					aggregate_func_4252(&Var0, 4);
 				}
 				break;
 			case 3:
-				aggregate.coffee_drinking.func_11(&(Var0.f_2), 1);
-				func_16(Var0.f_2, 0);
-				aggregate.coffee_drinking.func_5(&Var0, 4);
+				aggregate_func_580(&(Var0.f_2), 1);
+				aggregate_func_2651(Var0.f_2, 0);
+				aggregate_func_4252(&Var0, 4);
 				break;
 			case 4:
 				if (ScriptParam_0.f_3)
@@ -170,13 +170,13 @@ void __EntryFunction__()
 				}
 				else if (!bVar183)
 				{
-					if ((aggregate.aberdeenpigfarm.func_45() == -1 && aggregate.angryisolationist.func_40(0)) && aggregate.bandana.func_11(Var0.f_2, 1490540191))
+					if ((aggregate_func_4251() == -1 && aggregate_func_4484(0)) && aggregate_func_2852(Var0.f_2, 1490540191))
 					{
 						if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 108107462))
 						{
 							if (!AUDIO::IS_SCRIPTED_SPEECH_PLAYING(Global_35))
 							{
-								if (aggregate.fme_condor_egg.func_1100(Global_35, "Player_Sick_Drinking_Cough", joaat("speech_params_force"), 0, 1, 0, 0, 1))
+								if (aggregate_func_4975(Global_35, "Player_Sick_Drinking_Cough", joaat("speech_params_force"), 0, 1, 0, 0, 1))
 								{
 									bVar183 = true;
 								}
@@ -196,13 +196,13 @@ void __EntryFunction__()
 	{
 		if (!PED::IS_PED_JUMPING(PLAYER::PLAYER_PED_ID()))
 		{
-			aggregate.coffee_drinking.func_11(&(Var0.f_2), 1);
-			func_16(Var0.f_2, 0);
+			aggregate_func_580(&(Var0.f_2), 1);
+			aggregate_func_2651(Var0.f_2, 0);
 		}
 	}
 	if (!ScriptParam_0.f_3 && !Var0.f_180)
 	{
-		aggregate.coffee_drinking.func_1(0);
+		aggregate_func_598(0);
 	}
 }
 
@@ -212,13 +212,6 @@ void func_2()
 	{
 		SCRIPTS::TERMINATE_THIS_THREAD();
 	}
-}
-
-void func_3(var uParam0, var uParam1)
-{
-	*uParam1 = uParam0->f_2;
-	uParam1->f_174 = uParam0->f_1;
-	uParam1->f_175 = Global_35;
 }
 
 float func_4(var uParam0, var uParam1)
@@ -439,65 +432,17 @@ void func_14(float fParam0)
 {
 	if (fParam0 > 0f)
 	{
-		if (aggregate.fishing_core.func_281())
+		if (aggregate_func_6977())
 		{
-			aggregate.coffee_drinking.func_7(fParam0, 0);
+			aggregate_func_7706(fParam0, 0);
 		}
 		Global_1938998->f_3 = MISC::GET_GAME_TIMER();
 	}
 }
 
-void func_16(int iParam0, bool bParam1)
-{
-	struct<10> Var0;
-	struct<16> Var10;
-
-	switch (iParam0)
-	{
-		case 204375141: /* GXTEntry: "Ginseng Elixir" */
-			break;
-		case -417963070: /* GXTEntry: "Valerian Root" */
-			break;
-		case -21093309: /* GXTEntry: "Aged Pirate Rum" */
-			break;
-		case -1620920647: /* GXTEntry: "English Mace" */
-		case -529638012: /* GXTEntry: "Yarrow" */
-		case 128702355: /* GXTEntry: "Milkweed" */
-		case 1433048902: /* GXTEntry: "Ginseng" */
-		case 2006811763: /* GXTEntry: "Vanilla Flower" */
-			aggregate.coffee_drinking.func_87(350943398);
-			break;
-		case -2085219828: /* GXTEntry: "Common Bulrush" */
-		case -2051332199: /* GXTEntry: "Oleander Sage" */
-		case 228922461: /* GXTEntry: "Prairie Poppy" */
-			if ((bParam1 || !aggregate.fm_race_controller.func_1990()) || !PED::IS_PED_ON_FOOT(Global_35))
-			{
-				return;
-			}
-			if (iParam0 != 228922461 || MISC::GET_RANDOM_INT_IN_RANGE(0, 3000) < 1000)
-			{
-				Var10 = { Var0 };
-				StringCopy(&(Var10.f_10), "generic_puking_item", 32);
-				Var10.f_14 = 512;
-				aggregate.dynamic_craft_scenario.func_68(Var10, 0);
-			}
-			break;
-		case 1365804873: /* GXTEntry: "Potent Antidote" */
-		case 1889838061: /* GXTEntry: "Antidote" */
-			if (iParam0 == 1889838061)
-			{
-			}
-			else if (iParam0 == 1365804873)
-			{
-			}
-			func_40();
-			break;
-	}
-}
-
 int func_17(bool bParam0, int iParam1)
 {
-	switch (aggregate.coffee_drinking.func_101(bParam0, -949239683))
+	switch (aggregate_func_2900(bParam0, -949239683))
 	{
 		case -476940445:
 			if (iParam1 == 1587785400)
@@ -513,11 +458,5 @@ int func_17(bool bParam0, int iParam1)
 			return -458747598;
 	}
 	return -2061488501;
-}
-
-void func_40()
-{
-	aggregate.coffee_drinking.func_87(350943398);
-	aggregate.coffee_drinking.func_87(1775828486);
 }
 

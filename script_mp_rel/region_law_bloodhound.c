@@ -72,7 +72,7 @@ void __EntryFunction__()
 		SCRIPTS::TERMINATE_THIS_THREAD();
 	}
 	func_2();
-	while (aggregate.angryisolationist.func_40(iLocal_76))
+	while (aggregate_func_4484(iLocal_76))
 	{
 		func_4();
 		BUILTIN::WAIT(0);
@@ -88,10 +88,10 @@ void func_1(int iParam0)
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		if (aggregate.barcustomer_interaction.func_12(&((Local_45[iParam0 /*10*/])->f_1[iVar0]), 0))
+		if (aggregate_func_402(&((Local_45[iParam0 /*10*/])->f_1[iVar0]), 0))
 		{
-			aggregate.fme_escaped_convicts.func_735(&((Local_45[iParam0 /*10*/])->f_1[iVar0]));
-			aggregate.fishing_core.func_117((Local_45[iParam0 /*10*/])->f_1[iVar0], 1, 0, 1);
+			aggregate_func_2634(&((Local_45[iParam0 /*10*/])->f_1[iVar0]));
+			aggregate_func_501((Local_45[iParam0 /*10*/])->f_1[iVar0], 1, 0, 1);
 		}
 		iVar0++;
 	}
@@ -111,7 +111,7 @@ void func_2()
 			vLocal_89 = { -297.8979f, 783.4763f, 117.3506f };
 			break;
 		default:
-			vLocal_89 = { aggregate.net_main_offline.func_4241(iLocal_76, 1) };
+			vLocal_89 = { aggregate_func_1777(iLocal_76, 1) };
 			break;
 	}
 }
@@ -152,14 +152,14 @@ void func_4()
 			{
 				if (&Local_45[iVar0 /*10*/] == 1)
 				{
-					if (aggregate.barcustomer_interaction.func_12((Local_45[iVar0 /*10*/])->f_6, 0))
+					if (aggregate_func_402((Local_45[iVar0 /*10*/])->f_6, 0))
 					{
-						if (aggregate.annesburg.func_142(Global_35, (Local_45[iVar0 /*10*/])->f_9, 1, 0))
+						if (aggregate_func_1520(Global_35, (Local_45[iVar0 /*10*/])->f_9, 1, 0))
 						{
 							func_14(iVar0);
 						}
 					}
-					else if (aggregate.annesburg.func_142(Global_35, (Local_45[iVar0 /*10*/])->f_9, 1, 0))
+					else if (aggregate_func_1520(Global_35, (Local_45[iVar0 /*10*/])->f_9, 1, 0))
 					{
 						func_14(iVar0);
 					}
@@ -170,9 +170,9 @@ void func_4()
 				}
 				else if (&Local_45[iVar0 /*10*/] == 2)
 				{
-					if (aggregate.barcustomer_interaction.func_12((Local_45[iVar0 /*10*/])->f_6, 0))
+					if (aggregate_func_402((Local_45[iVar0 /*10*/])->f_6, 0))
 					{
-						if (!PED::IS_PED_IN_COMBAT((Local_45[iVar0 /*10*/])->f_6, 0) && !aggregate.annesburg.func_142(Global_35, (Local_45[iVar0 /*10*/])->f_9, 1, 0))
+						if (!PED::IS_PED_IN_COMBAT((Local_45[iVar0 /*10*/])->f_6, 0) && !aggregate_func_1520(Global_35, (Local_45[iVar0 /*10*/])->f_9, 1, 0))
 						{
 							func_12(iVar0);
 						}
@@ -192,7 +192,7 @@ void func_4()
 
 int func_9(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, vector3 vParam5)
 {
-	if (!aggregate.aberdeenpigfarm.func_88(iParam0))
+	if (!aggregate_func_4511(iParam0))
 	{
 		return 0;
 	}
@@ -211,7 +211,7 @@ bool func_10()
 
 	fVar0 = 25f;
 	fVar1 = 60f;
-	if (!aggregate.net_camp_dog.func_156(vLocal_89, &Local_80, &uVar2, 1, 1, 1127481344 /* Float: 180f */, 50f, fVar0, fVar1, 0))
+	if (!aggregate_func_695(vLocal_89, &Local_80, &uVar2, 1, 1, 1127481344 /* Float: 180f */, 50f, fVar0, fVar1, 0))
 	{
 		return false;
 	}
@@ -228,8 +228,8 @@ void func_11(int iParam0)
 	{
 		(Local_45[iParam0 /*10*/])->f_7 = PED::CREATE_GROUP(1);
 	}
-	vVar0 = { aggregate.fme_animal_tagging.func_292(vLocal_92, 3f, 1f) };
-	(Local_45[iParam0 /*10*/])->f_6 = aggregate.butchercreek.func_91(iLocal_79, vVar0, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 180f), 1, 1, 0, 1, 1, 1, 0, 0);
+	vVar0 = { aggregate_func_1228(vLocal_92, 3f, 1f) };
+	(Local_45[iParam0 /*10*/])->f_6 = aggregate_func_2073(iLocal_79, vVar0, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 180f), 1, 1, 0, 1, 1, 1, 0, 0);
 	PED::SET_PED_CONFIG_FLAG((Local_45[iParam0 /*10*/])->f_6, 279, true);
 	PED::SET_PED_AS_GROUP_LEADER((Local_45[iParam0 /*10*/])->f_6, (Local_45[iParam0 /*10*/])->f_7, 0);
 	TASK::TASK_POLICE((Local_45[iParam0 /*10*/])->f_6, 0);
@@ -237,8 +237,8 @@ void func_11(int iParam0)
 	iVar3 = 0;
 	while (iVar3 < 4)
 	{
-		(Local_45[iParam0 /*10*/])->f_1[iVar3] = aggregate.butchercreek.func_91(iLocal_78, vVar0, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 180f), 1, 1, 0, 1, 1, 1, 0, 0);
-		if (aggregate.barcustomer_interaction.func_12(&((Local_45[iParam0 /*10*/])->f_1[iVar3]), 0))
+		(Local_45[iParam0 /*10*/])->f_1[iVar3] = aggregate_func_2073(iLocal_78, vVar0, MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 180f), 1, 1, 0, 1, 1, 1, 0, 0);
+		if (aggregate_func_402(&((Local_45[iParam0 /*10*/])->f_1[iVar3]), 0))
 		{
 		}
 		iVar3++;
@@ -250,7 +250,7 @@ void func_12(int iParam0)
 	int iVar0;
 	vector3 vVar1;
 
-	if (!aggregate.barcustomer_interaction.func_12((Local_45[iParam0 /*10*/])->f_6, 0))
+	if (!aggregate_func_402((Local_45[iParam0 /*10*/])->f_6, 0))
 	{
 		return;
 	}
@@ -267,10 +267,10 @@ void func_12(int iParam0)
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		if (aggregate.barcustomer_interaction.func_12(&((Local_45[iParam0 /*10*/])->f_1[iVar0]), 0))
+		if (aggregate_func_402(&((Local_45[iParam0 /*10*/])->f_1[iVar0]), 0))
 		{
 			vVar1 = { IntToFloat(iVar0 + 1), MISC::GET_RANDOM_FLOAT_IN_RANGE(1f, 3f), 0f };
-			aggregate.fme_escaped_convicts.func_735(&((Local_45[iParam0 /*10*/])->f_1[iVar0]));
+			aggregate_func_2634(&((Local_45[iParam0 /*10*/])->f_1[iVar0]));
 			TASK::TASK_FOLLOW_TO_OFFSET_OF_ENTITY(&((Local_45[iParam0 /*10*/])->f_1[iVar0]), (Local_45[iParam0 /*10*/])->f_6, vVar1, 2f, -1, 1036831949 /* Float: 0.1f */, 1, 1, 0, 0, 1);
 		}
 		iVar0++;
@@ -281,7 +281,7 @@ void func_14(int iParam0)
 {
 	int iVar0;
 
-	if (!aggregate.barcustomer_interaction.func_12(Global_35, 0))
+	if (!aggregate_func_402(Global_35, 0))
 	{
 		return;
 	}
@@ -289,7 +289,7 @@ void func_14(int iParam0)
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		if (aggregate.barcustomer_interaction.func_12(&((Local_45[iParam0 /*10*/])->f_1[iVar0]), 0))
+		if (aggregate_func_402(&((Local_45[iParam0 /*10*/])->f_1[iVar0]), 0))
 		{
 			PED::REMOVE_PED_FROM_GROUP(&((Local_45[iParam0 /*10*/])->f_1[iVar0]));
 			TASK::TASK_COMBAT_PED(&((Local_45[iParam0 /*10*/])->f_1[iVar0]), Global_35, 0, 0);
@@ -304,11 +304,11 @@ int func_19(int iParam0)
 {
 	int iVar0;
 
-	if (!aggregate.aberdeenpigfarm.func_88(iParam0))
+	if (!aggregate_func_4511(iParam0))
 	{
 		return -1;
 	}
-	iVar0 = aggregate.fme_animal_tagging.func_1642(aggregate.annesburg.func_122());
+	iVar0 = aggregate_func_4640(aggregate_func_4314());
 	if (iVar0 != 1 && iVar0 != 2)
 	{
 		return Global_1900701[iParam0];

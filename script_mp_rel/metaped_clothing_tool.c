@@ -7836,50 +7836,23 @@ void __EntryFunction__()
 
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	aggregate.metaped_clothing_gender_swap.func_1(-1);
+	aggregate_func_1829(-1);
 	bVar0 = false;
 	while (!bVar0 && iLocal_179 < 3)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() != -1)
+		if (aggregate_func_4251() != -1)
 		{
-			bVar0 = aggregate.error_listener.func_3(0, 0);
+			bVar0 = aggregate_func_578(0, 0);
 		}
 		else
 		{
-			bVar0 = func_4(1);
+			bVar0 = aggregate_func_2670(1);
 		}
-		aggregate.bandana.func_26(&iLocal_179, &uLocal_21);
+		aggregate_func_4247(&iLocal_179, &uLocal_21);
 		BUILTIN::WAIT(0);
 	}
-	aggregate.aberdeenpigfarm.func_154(&iLocal_179);
-	aggregate.aberdeenpigfarm.func_46();
-}
-
-int func_4(bool bParam0)
-{
-	if (SCRIPTS::_0x9E4EF615E307FBBE())
-	{
-		switch (SCRIPTS::_0x54AE4FDEEFEAB77E())
-		{
-			case 0:
-				return 1;
-			case 1:
-				return 1;
-			case 2:
-				if (!bParam0)
-				{
-					return 1;
-				}
-				break;
-			case 4:
-				return 1;
-			case 3:
-				return 1;
-			default:
-				return 1;
-		}
-	}
-	return 0;
+	aggregate_func_4239(&iLocal_179);
+	aggregate_func_2819();
 }
 
 void func_8(int iParam0, var uParam1)
@@ -7895,18 +7868,18 @@ void func_8(int iParam0, var uParam1)
 	switch (*iParam0)
 	{
 		case 0:
-			aggregate.coffee_drinking.func_5(iParam0, 1);
+			aggregate_func_4252(iParam0, 1);
 			break;
 		case 1:
 			if (bVar0)
 			{
-				aggregate.coffee_drinking.func_5(iParam0, 2);
+				aggregate_func_4252(iParam0, 2);
 			}
 			break;
 		case 2:
 			if (iParam0->f_7649)
 			{
-				aggregate.coffee_drinking.func_5(iParam0, 3);
+				aggregate_func_4252(iParam0, 3);
 			}
 			break;
 		case 3:

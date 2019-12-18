@@ -27,12 +27,12 @@ void func_1()
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-int func_2()
+bool func_2()
 {
 	if ((PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()) || !TASK::_0x841475AC96E794D1(iLocal_46)) || !PED::_0x9C54041BB66BCF9E(PLAYER::PLAYER_PED_ID(), iLocal_46))
 	{
 		func_3();
-		return 0;
+		return false;
 	}
 	return func_4();
 }

@@ -68,7 +68,7 @@ void __EntryFunction__()
 		SCRIPTS::TERMINATE_THIS_THREAD();
 	}
 	func_2();
-	while (aggregate.angryisolationist.func_40(uScriptParam_0) && iLocal_48 < 7)
+	while (aggregate_func_4484(uScriptParam_0) && iLocal_48 < 7)
 	{
 		func_4();
 		BUILTIN::WAIT(0);
@@ -78,7 +78,7 @@ void __EntryFunction__()
 
 void func_1()
 {
-	LAW::_0x7EF2A2FE38D74456(aggregate.region_law_rho_law_swarm.func_5(8), 0);
+	LAW::_0x7EF2A2FE38D74456(aggregate_func_8613(8), 0);
 }
 
 void func_2()
@@ -125,10 +125,10 @@ bool func_6()
 		return false;
 	}
 	iLocal_50++;
-	iVar0 = aggregate.butchercreek.func_91(iLocal_49, vLocal_45, 0, 1, 1, 0, 1, 1, 1, 0, 0);
+	iVar0 = aggregate_func_2073(iLocal_49, vLocal_45, 0, 1, 1, 0, 1, 1, 1, 0, 0);
 	PED::SET_PED_AS_COP(iVar0, true);
-	aggregate.fishing_core.func_117(&iVar0, 1, 0, 1);
-	aggregate.net_coach_holdup.func_94(&Local_51, 1, 0);
+	aggregate_func_501(&iVar0, 1, 0, 1);
+	aggregate_func_2530(&Local_51, 1, 0);
 	if (iLocal_50 >= 5)
 	{
 		return true;
@@ -147,7 +147,7 @@ bool func_7()
 
 	fVar0 = 55f;
 	fVar1 = 90f;
-	iVar2 = aggregate.doc_book.func_255(iLocal_50, Local_51.f_2);
+	iVar2 = aggregate_func_4937(iLocal_50, Local_51.f_2);
 	fVar3 = (IntToFloat(iVar2) * 25f);
 	fVar4 = (fVar3 + 45f);
 	if (fVar3 > 150f)
@@ -158,7 +158,7 @@ bool func_7()
 	{
 		fVar4 = 180f;
 	}
-	if (!aggregate.net_camp_dog.func_156(Global_36, &Local_51, &uVar5, 1, 1, fVar4, 50f, fVar0, fVar1, fVar3))
+	if (!aggregate_func_695(Global_36, &Local_51, &uVar5, 1, 1, fVar4, 50f, fVar0, fVar1, fVar3))
 	{
 		return false;
 	}

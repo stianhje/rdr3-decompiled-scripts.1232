@@ -60,7 +60,7 @@ void __EntryFunction__()
 		{
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_NEXT_CAMERA"), false);
 		}
-		switch (aggregate.fme_supply_train.func_900())
+		switch (aggregate_func_5076())
 		{
 			case 0:
 				if (!bVar1)
@@ -69,25 +69,25 @@ void __EntryFunction__()
 				}
 				else
 				{
-					aggregate.fme_animal_tagging.func_212(1);
+					aggregate_func_4714(1);
 				}
 				break;
 			case 1:
 				func_7();
 				if (TASK::_0x6AA3DCA2C6F5EB6D(Global_35) == -1773835 || TASK::_0x6AA3DCA2C6F5EB6D(Global_35) == 2092725031)
 				{
-					aggregate.fm_mission_controller.func_736(-898386032 /* GXTEntry: "Gun Oil" */, 1, 0, 562618531);
-					aggregate.aberdeenpigfarm.func_108(aggregate.aberdeenpigfarm.func_107(1137323725, -1196872246), 1);
-					aggregate.fme_animal_tagging.func_212(2);
+					aggregate_func_1304(-898386032 /* GXTEntry: "Gun Oil" */, 1, 0, 562618531);
+					aggregate_func_1962(aggregate_func_4257(1137323725, -1196872246), 1);
+					aggregate_func_4714(2);
 				}
 				break;
 			case 2:
-				aggregate.fme_animal_tagging.func_212(3);
+				aggregate_func_4714(3);
 				break;
 			case 3:
 				if (TASK::_0x6AA3DCA2C6F5EB6D(Global_35) == -437636600 || TASK::_0x6AA3DCA2C6F5EB6D(Global_35) == 1104426680)
 				{
-					aggregate.fme_animal_tagging.func_212(4);
+					aggregate_func_4714(4);
 				}
 				else
 				{
@@ -109,7 +109,7 @@ void __EntryFunction__()
 				break;
 			case 4:
 				func_12(iVar0);
-				aggregate.fme_animal_tagging.func_212(1);
+				aggregate_func_4714(1);
 				break;
 		}
 		BUILTIN::WAIT(0);
@@ -128,17 +128,17 @@ void func_1(int iParam0)
 	Local_17 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(1069234796);
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(Local_17.f_1))
 	{
-		iVar1 = aggregate.fme_escaped_convicts.func_1483();
+		iVar1 = aggregate_func_3079();
 		WEAPON::GET_CURRENT_PED_WEAPON(iVar1, &bVar0, true, 0, false);
-		Var2 = { aggregate.bandana.func_73() };
-		if (!aggregate.fishing_core.func_583(&(Global_1939057->f_66), &Var2))
+		Var2 = { aggregate_func_4289() };
+		if (!aggregate_func_4632(&(Global_1939057->f_66), &Var2))
 		{
 			Local_17.f_7 = { Global_1939057->f_66 };
 		}
 		else
 		{
-			Var6 = { aggregate.bandana.func_41(bVar0, 0, 0) };
-			Local_17.f_7 = { aggregate.bandana.func_59(bVar0, Var6, -1591664384, 0) };
+			Var6 = { aggregate_func_304(bVar0, 0, 0) };
+			Local_17.f_7 = { aggregate_func_2828(bVar0, Var6, -1591664384, 0) };
 		}
 		Global_1939057->f_66 = { Var2 };
 		Var11 = { Local_17.f_7 };
@@ -147,8 +147,8 @@ void func_1(int iParam0)
 		Local_17.f_2 = INVENTORY::_0x46DB71883EE9D5AF(Local_17.f_1, "stats", &Var11, iVar1);
 		Local_17.f_3 = DATABINDING::_DATABINDING_ADD_DATA_HASH(Local_17.f_1, "itemLabel", func_18(bVar0, *iParam0));
 		Local_17.f_4 = DATABINDING::_DATABINDING_ADD_DATA_STRING(Local_17.f_1, "tipText", func_19(iParam0));
-		Local_17.f_11 = aggregate.coffee_drinking.func_45((WEAPON::_0x0D78E1097F89E637(*iParam0) - WEAPON::_0xD56E5F336C675EFA(*iParam0)), 0f, 1f);
-		Local_17.f_13 = aggregate.coffee_drinking.func_45((WEAPON::_0x904103D5D2333977(*iParam0) - WEAPON::_0xD56E5F336C675EFA(*iParam0)), 0f, 1f);
+		Local_17.f_11 = aggregate_func_4333((WEAPON::_0x0D78E1097F89E637(*iParam0) - WEAPON::_0xD56E5F336C675EFA(*iParam0)), 0f, 1f);
+		Local_17.f_13 = aggregate_func_4333((WEAPON::_0x904103D5D2333977(*iParam0) - WEAPON::_0xD56E5F336C675EFA(*iParam0)), 0f, 1f);
 		Local_17.f_12 = WEAPON::_0x810E8AE9AFEA7E54(*iParam0);
 		Local_17.f_14 = WEAPON::_0x4BF66F8878F67663(*iParam0);
 	}
@@ -208,7 +208,7 @@ bool func_4()
 	{
 		return false;
 	}
-	if (aggregate.camera_item.func_66())
+	if (aggregate_func_4636())
 	{
 		return false;
 	}
@@ -220,7 +220,7 @@ void func_7()
 	int iVar0;
 
 	iVar0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(WEAPON::GET_CURRENT_PED_WEAPON_ENTITY_INDEX(Global_35, 0));
-	if (aggregate.binoculars.func_32(-898386032 /* GXTEntry: "Gun Oil" */, 1) && (WEAPON::_0x0D78E1097F89E637(iVar0) != 0f && WEAPON::_0x0D78E1097F89E637(iVar0) > WEAPON::_0xD56E5F336C675EFA(iVar0)))
+	if (aggregate_func_2850(-898386032 /* GXTEntry: "Gun Oil" */, 1) && (WEAPON::_0x0D78E1097F89E637(iVar0) != 0f && WEAPON::_0x0D78E1097F89E637(iVar0) > WEAPON::_0xD56E5F336C675EFA(iVar0)))
 	{
 		if (!PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_WEAPON_CLEAN_PROMPT_AVAILABLE"))
 		{
@@ -233,18 +233,18 @@ void func_7()
 		{
 			PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_WEAPON_CLEAN_PROMPT_AVAILABLE", false, -1);
 		}
-		if ((!aggregate.aberdeenpigfarm.func_125(0, 0, 1) && !aggregate.generic_weapon_item.func_24()) && aggregate.binoculars.func_67())
+		if ((!aggregate_func_1135(0, 0, 1) && !aggregate_func_6963()) && aggregate_func_4315())
 		{
 			if ((!Local_17.f_15 && WEAPON::_0xD56E5F336C675EFA(iVar0) > 0f) && WEAPON::_0x0D78E1097F89E637(iVar0) <= WEAPON::_0xD56E5F336C675EFA(iVar0))
 			{
-				aggregate.camera_item.func_73("WEAPON_PERM_DEGREDATION", 10000, 0, 0, 0, 1);
+				aggregate_func_2916("WEAPON_PERM_DEGREDATION", 10000, 0, 0, 0, 1);
 				Local_17.f_15 = 1;
 			}
-			if (!Local_17.f_16 && !aggregate.binoculars.func_32(-898386032 /* GXTEntry: "Gun Oil" */, 1))
+			if (!Local_17.f_16 && !aggregate_func_2850(-898386032 /* GXTEntry: "Gun Oil" */, 1))
 			{
 				if (WEAPON::_0x0D78E1097F89E637(iVar0) > WEAPON::_0xD56E5F336C675EFA(iVar0))
 				{
-					aggregate.camera_item.func_73("NO_GUN_OIL", 10000, 0, 0, 0, 1);
+					aggregate_func_2916("NO_GUN_OIL", 10000, 0, 0, 0, 1);
 					Local_17.f_16 = 1;
 				}
 			}
@@ -257,7 +257,7 @@ void func_11(int iParam0)
 	int iVar0;
 	bool bVar1;
 
-	iVar0 = aggregate.fme_escaped_convicts.func_1483();
+	iVar0 = aggregate_func_3079();
 	WEAPON::GET_CURRENT_PED_WEAPON(iVar0, &bVar1, true, 0, false);
 	INVENTORY::_0x951847CEF3D829FF(Local_17.f_2, &(Local_17.f_7), iVar0);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Local_17.f_3, func_18(bVar1, iParam0));

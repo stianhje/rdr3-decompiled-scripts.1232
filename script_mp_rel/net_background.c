@@ -40,18 +40,18 @@ void __EntryFunction__()
 	sLocal_30 = "props_misc@campfires@5_logs";
 	sLocal_31 = "Script_PropCampfire";
 	func_1();
-	while (!aggregate.aberdeenpigfarm.func_49(0, 0))
+	while (!aggregate_func_523(0, 0))
 	{
 		BUILTIN::WAIT(0);
 	}
-	aggregate.aberdeenpigfarm.func_46();
+	aggregate_func_2819();
 }
 
 void func_1()
 {
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
-	aggregate.flow_controller.func_8();
-	if (aggregate.flow_controller.func_9())
+	aggregate_func_306();
+	if (aggregate_func_2318())
 	{
 	}
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);

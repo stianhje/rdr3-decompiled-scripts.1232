@@ -66,17 +66,17 @@ void __EntryFunction__()
 		func_1();
 		SCRIPTS::TERMINATE_THIS_THREAD();
 	}
-	while ((((!aggregate.camera_item.func_106(PLAYER::PLAYER_ID(), 0, 0, 1) && func_3()) && iLocal_18 < 7) && !aggregate.fme_dead_drop.func_811()) && !aggregate.dynamic_craft_scenario.func_69())
+	while ((((!aggregate_func_246(PLAYER::PLAYER_ID(), 0, 0, 1) && aggregate_func_4112()) && iLocal_18 < 7) && !aggregate_func_4946()) && !aggregate_func_7123())
 	{
 		func_6();
 		BUILTIN::WAIT(0);
 	}
 	func_1();
-	if (aggregate.fme_round_up.func_1128() == 5)
+	if (aggregate_func_8652() == 5)
 	{
 		iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(25000, 35000);
 	}
-	else if (aggregate.fme_round_up.func_1128() >= 3)
+	else if (aggregate_func_8652() >= 3)
 	{
 		iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(35000, 55000);
 	}
@@ -99,12 +99,12 @@ void func_1()
 	{
 		MISC::DELETE_INCIDENT(iLocal_131);
 	}
-	aggregate.fme_wreckage.func_910(&uLocal_39, 1);
-	aggregate.fme_wreckage.func_910(&uLocal_40, 1);
+	aggregate_func_2899(&uLocal_39, 1);
+	aggregate_func_2899(&uLocal_40, 1);
 	iVar1 = 0;
 	while (iVar1 < iLocal_41)
 	{
-		if (aggregate.barcustomer_interaction.func_12(&(iLocal_41[iVar1]), 0))
+		if (aggregate_func_402(&(iLocal_41[iVar1]), 0))
 		{
 			if (iVar1 == 0)
 			{
@@ -129,37 +129,13 @@ void func_1()
 			}
 			TASK::CLOSE_SEQUENCE_TASK(iVar0);
 			TASK::TASK_PERFORM_SEQUENCE(&(iLocal_41[iVar1]), iVar0);
-			aggregate.fishing_core.func_117(iLocal_41[iVar1], 1, 1, 1);
+			aggregate_func_501(iLocal_41[iVar1], 1, 1, 1);
 		}
 		iVar1++;
 	}
-	func_11(vLocal_35, 10f, 5);
+	aggregate_func_1432(vLocal_35, 10f, 5);
 	ENTITY::SET_VEHICLE_AS_NO_LONGER_NEEDED(&iLocal_47);
 	ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(&iLocal_48);
-}
-
-bool func_3()
-{
-	if (aggregate.region_law_patrol_creator.func_16(aggregate.fm_mission_controller.func_7211(), 1))
-	{
-		return true;
-	}
-	if (aggregate.region_law_patrol_creator.func_17(aggregate.aberdeenpigfarm.func_66(), 1))
-	{
-		return true;
-	}
-	if (aggregate.aberdeenpigfarm.func_82(aggregate.annesburg.func_122()))
-	{
-		return true;
-	}
-	if (MAP::DOES_BLIP_EXIST(Global_1938075->f_148))
-	{
-		if (aggregate.region_law_patrol_creator.func_19())
-		{
-			return true;
-		}
-	}
-	return false;
 }
 
 void func_6()
@@ -170,17 +146,17 @@ void func_6()
 	int iVar3;
 	int iVar4;
 
-	if (aggregate.fishing_core.func_161(&uLocal_127) > 35f && iLocal_18 <= 4)
+	if (aggregate_func_4850(&uLocal_127) > 35f && iLocal_18 <= 4)
 	{
 		iLocal_18 = 6;
 	}
 	switch (iLocal_18)
 	{
 		case 1:
-			aggregate.barcustomer_interaction.func_43(&uLocal_127);
+			aggregate_func_4283(&uLocal_127);
 			PED::_0xED9582B3DA8F02B4(5);
 			iLocal_130 = ITEMSET::CREATE_ITEMSET(true);
-			if (aggregate.fme_round_up.func_1128() == 5)
+			if (aggregate_func_8652() == 5)
 			{
 				iLocal_29 = 5;
 			}
@@ -189,7 +165,7 @@ void func_6()
 				iLocal_29 = MISC::GET_RANDOM_INT_IN_RANGE(2, 4);
 			}
 			func_23();
-			iVar0 = aggregate.fm_mission_controller.func_7211();
+			iVar0 = aggregate_func_6596();
 			switch (iVar0)
 			{
 				case 0:
@@ -223,16 +199,16 @@ void func_6()
 			}
 			break;
 		case 3:
-			if (aggregate.net_camp_dog.func_156(Global_36, &Local_19, &bVar1, 16, 1, 45f, 25f, 100f, 180f, 0))
+			if (aggregate_func_695(Global_36, &Local_19, &bVar1, 16, 1, 45f, 25f, 100f, 180f, 0))
 			{
 				vLocal_35 = { Local_19.f_3 };
-				aggregate.fme_king_of_the_castle.func_989(&uLocal_40, vLocal_35, 5f, 2, 2, 0);
-				aggregate.fme_king_of_the_castle.func_989(&uLocal_39, vLocal_35, 7f, 1, 61, 0);
+				aggregate_func_2904(&uLocal_40, vLocal_35, 5f, 2, 2, 0);
+				aggregate_func_2904(&uLocal_39, vLocal_35, 7f, 1, 61, 0);
 				iLocal_18 = 4;
 			}
 			else if (bVar1)
 			{
-				aggregate.net_coach_holdup.func_94(&Local_19, 1, 0);
+				aggregate_func_2530(&Local_19, 1, 0);
 			}
 			break;
 		case 4:
@@ -243,18 +219,18 @@ void func_6()
 			else
 			{
 				func_28();
-				aggregate.blackwater.func_58(vLocal_35, 10f, 0, 0, 5);
+				aggregate_func_1067(vLocal_35, 10f, 0, 0, 5);
 				MISC::_0xAB3D3F45436DB1D8(8, vLocal_35, iLocal_130, -1f, &iLocal_131);
 				iVar2 = 0;
 				while (iVar2 < iLocal_41)
 				{
-					if (aggregate.barcustomer_interaction.func_12(&(iLocal_41[iVar2]), 0))
+					if (aggregate_func_402(&(iLocal_41[iVar2]), 0))
 					{
 						if (iVar2 <= 1)
 						{
 							iVar3 = &iLocal_121[iVar2];
 						}
-						else if (aggregate.fme_escaped_convicts.func_724())
+						else if (aggregate_func_2083())
 						{
 							iVar3 = &iLocal_115[iVar2];
 						}
@@ -276,7 +252,7 @@ void func_6()
 				if (ENTITY::DOES_ENTITY_EXIST(&(iLocal_41[iVar4])))
 				{
 					PED::SET_PED_RESET_FLAG(&(iLocal_41[iVar4]), 116, true);
-					if (aggregate.dynamic_craft_scenario.func_370(Global_35, &(iLocal_41[iVar4]), 1, 1) > 200f)
+					if (aggregate_func_918(Global_35, &(iLocal_41[iVar4]), 1, 1) > 200f)
 					{
 						iLocal_18 = 6;
 						return;
@@ -289,27 +265,6 @@ void func_6()
 			func_1();
 			iLocal_18 = 7;
 			break;
-	}
-}
-
-void func_11(vector3 vParam0, float fParam3, int iParam4)
-{
-	vector3 vVar0;
-	vector3 vVar3;
-	vector3 vVar6;
-	vector3 vVar9;
-
-	vVar3 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vParam0, 0f, fParam3, fParam3, fParam3) };
-	vVar0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vParam0, 0f, -fParam3, -fParam3, -fParam3) };
-	vVar6 = { aggregate.blackwater.func_125(vVar0, vVar3, 0f) };
-	vVar9 = { aggregate.blackwater.func_126(vVar0, vVar3, 0f) };
-	if (iParam4 == 5)
-	{
-		PATHFIND::SET_ROADS_BACK_TO_ORIGINAL(vVar6, vVar9, 0, 1);
-	}
-	else
-	{
-		PATHFIND::_0x6C3F12ECEB6D2E2A(vVar6, vVar9, iParam4, 1);
 	}
 }
 
@@ -363,8 +318,8 @@ void func_27()
 		vVar0.x = ((vLocal_35.x + 4f) - IntToFloat(iLocal_30));
 	}
 	vVar0.f_1 = (vLocal_35.y + IntToFloat(MISC::GET_RANDOM_INT_IN_RANGE(-3, 3)));
-	aggregate.fme_dead_drop.func_1153(&vVar0, 50, 10, 0, 0);
-	iLocal_41[iLocal_30] = aggregate.butchercreek.func_91(iLocal_32, vVar0, (fLocal_38 + MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 60f)), 1, 1, 0, 1, 1, 1, 0, 0);
+	aggregate_func_832(&vVar0, 50, 10, 0, 0);
+	iLocal_41[iLocal_30] = aggregate_func_2073(iLocal_32, vVar0, (fLocal_38 + MISC::GET_RANDOM_FLOAT_IN_RANGE(-10f, 60f)), 1, 1, 0, 1, 1, 1, 0, 0);
 	LAW::_0x819ADD5EF1742F47(&(iLocal_41[iLocal_30]), 2);
 	LAW::_0x819ADD5EF1742F47(&(iLocal_41[iLocal_30]), 16384);
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_41[iLocal_30]), 39, true);
@@ -390,50 +345,33 @@ void func_28()
 	float fVar16;
 
 	vVar0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vLocal_35, fLocal_38, 2f, 0f, 0f) };
-	aggregate.fme_dead_drop.func_1153(&vVar0, 50, 10, 0, 0);
+	aggregate_func_832(&vVar0, 50, 10, 0, 0);
 	iLocal_47 = VEHICLE::CREATE_VEHICLE(iLocal_33, vVar0, (fLocal_38 + MISC::GET_RANDOM_FLOAT_IN_RANGE(15f, 30f)), true, true, false, false);
 	iVar11 = 0;
 	while (iVar11 < iLocal_29)
 	{
 		Var7 = { func_58(&Local_82) };
 		vVar3 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_47, Var7.f_1) };
-		aggregate.fme_dead_drop.func_1153(&vVar3, 50, 10, 0, 0);
-		fVar6 = aggregate.fme_supply_train.func_1214(vVar0, vVar3);
+		aggregate_func_832(&vVar3, 50, 10, 0, 0);
+		fVar6 = aggregate_func_3570(vVar0, vVar3);
 		iLocal_121[iVar11] = TASK::CREATE_SCENARIO_POINT(Var7, vVar3, fVar6, 0, 0, 0);
 		iVar11++;
 	}
 	vVar0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vLocal_35, fLocal_38, -3f, -3f, 0f) };
-	aggregate.fme_dead_drop.func_1153(&vVar0, 50, 10, 0, 0);
+	aggregate_func_832(&vVar0, 50, 10, 0, 0);
 	iLocal_48 = OBJECT::CREATE_OBJECT(iLocal_34, vVar0, true, true, false, false, true);
 	iVar15 = 0;
 	while (iVar15 < iLocal_29)
 	{
 		Var7 = { func_58(&Local_49) };
 		fVar16 = 1.5f;
-		vVar12 = { aggregate.fme_king_of_the_castle.func_1063(((360f / IntToFloat(iLocal_29)) * IntToFloat(iVar15))) };
+		vVar12 = { aggregate_func_2371(((360f / IntToFloat(iLocal_29)) * IntToFloat(iVar15))) };
 		vVar3 = { vVar0 + vVar12 * Vector(fVar16, fVar16, fVar16) };
-		fVar6 = aggregate.fme_supply_train.func_1214(vVar3, vVar0);
-		aggregate.fme_dead_drop.func_1153(&vVar3, 50, 10, 0, 0);
+		fVar6 = aggregate_func_3570(vVar3, vVar0);
+		aggregate_func_832(&vVar3, 50, 10, 0, 0);
 		iLocal_115[iVar15] = TASK::CREATE_SCENARIO_POINT(Var7, vVar3, fVar6, 0, 0, 0);
 		iVar15++;
 	}
-}
-
-int func_33(int iParam0)
-{
-	if (!aggregate.aberdeenpigfarm.func_92(iParam0))
-	{
-		return 0;
-	}
-	if (aggregate.aberdeenpigfarm.func_98(iParam0, 2))
-	{
-		return 5;
-	}
-	if (aggregate.aberdeenpigfarm.func_94(iParam0) > 0 && PLAYER::GET_WANTED_LEVEL_THRESHOLD(5) > 0)
-	{
-		return aggregate.fm_mission_controller.func_7573(aggregate.aberdeenpigfarm.func_94(iParam0));
-	}
-	return 0;
 }
 
 void func_57(int iParam0, int iParam1)

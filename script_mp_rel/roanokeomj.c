@@ -32,11 +32,11 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
 		iLocal_21 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2627.639f, 1326.591f, 114.8667f, 0f, 0f, 0f, 5.445365f, 5.947449f, 4.273689f, "m_volROA_OldManJones");
 		iLocal_22 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2627.639f, 1326.591f, 114.8667f, 0f, 0f, 0f, 5.445365f, 5.947449f, 4.273689f, "m_volROA_OldManJonesPrompt");
@@ -46,10 +46,10 @@ bool func_13()
 
 void func_29(int iParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
-		aggregate.annesburg.func_63(35, iLocal_21, iParam0, iLocal_22, 0, 4, 0, 0, -1082130432 /* Float: -1f */, 0);
-		aggregate.beechershope.func_59(35, 0);
+		aggregate_func_348(35, iLocal_21, iParam0, iLocal_22, 0, 4, 0, 0, -1082130432 /* Float: -1f */, 0);
+		aggregate_func_1218(35, 0);
 	}
 }
 

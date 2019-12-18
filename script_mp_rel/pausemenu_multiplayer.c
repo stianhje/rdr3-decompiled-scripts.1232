@@ -61,7 +61,7 @@ void __EntryFunction__()
 			else
 			{
 				CAM::DO_SCREEN_FADE_OUT(0);
-				func_3();
+				aggregate_func_9340();
 				HUD::SET_FRONTEND_ACTIVE(false);
 			}
 			break;
@@ -73,16 +73,16 @@ void __EntryFunction__()
 
 void func_1(bool bParam0)
 {
-	aggregate.fm_deathmatch_controller.func_1253(68);
+	aggregate_func_6908(68);
 	if (bParam0)
 	{
-		aggregate.pausemenu_multiplayer.func_5(joaat("freeroam"), 16);
+		aggregate_func_8605(joaat("freeroam"), 16);
 	}
 	else
 	{
-		aggregate.pausemenu_multiplayer.func_5(joaat("freeroam"), 0);
+		aggregate_func_8605(joaat("freeroam"), 0);
 	}
-	aggregate.fm_deathmatch_controller.func_1254(3);
+	aggregate_func_6909(3);
 }
 
 bool func_2()
@@ -95,16 +95,9 @@ bool func_2()
 			return false;
 		}
 	}
-	aggregate.fm_deathmatch_controller.func_1253(68);
-	aggregate.pausemenu_multiplayer.func_5(joaat("mission_creator"), 2);
-	aggregate.fm_deathmatch_controller.func_1254(3);
+	aggregate_func_6908(68);
+	aggregate_func_8605(joaat("mission_creator"), 2);
+	aggregate_func_6909(3);
 	return true;
-}
-
-void func_3()
-{
-	aggregate.fm_deathmatch_controller.func_1253(4);
-	aggregate.fm_deathmatch_controller.func_1254(2);
-	aggregate.pausemenu_multiplayer.func_5(joaat("single_player"), 0);
 }
 

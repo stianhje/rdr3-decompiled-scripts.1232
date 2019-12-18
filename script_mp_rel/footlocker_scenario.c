@@ -48,19 +48,19 @@ void __EntryFunction__()
 	iLocal_15 = vScriptParam_0.x;
 	uLocal_16 = vScriptParam_0.y;
 	uLocal_17 = vScriptParam_0.z;
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		aggregate.ambient_fishing_scenario.func_2();
+		aggregate_func_1689();
 	}
-	while (!SCRIPTS::_0x9E4EF615E307FBBE() && aggregate.ambient_fishing_scenario.func_3())
+	while (!SCRIPTS::_0x9E4EF615E307FBBE() && aggregate_func_3440())
 	{
-		aggregate.aberdeenpigfarm.func_23();
-		aggregate.ambient_fishing_scenario.func_5();
+		aggregate_func_4238();
+		aggregate_func_2374();
 		func_6();
 		BUILTIN::WAIT(0);
 	}
-	aggregate.ambient_fishing_scenario.func_2();
+	aggregate_func_1689();
 }
 
 void func_6()
@@ -90,7 +90,7 @@ void func_6()
 			{
 				func_13(&Local_25);
 				func_14(Local_25.f_5);
-				Local_25.f_3 = !func_15(Local_25.f_5);
+				Local_25.f_3 = !aggregate_func_510(Local_25.f_5);
 				Local_25.f_1 = ENTITY::GET_ENTITY_MODEL(Local_25.f_5);
 				vLocal_190.f_2 = 0.122f;
 				vLocal_190.f_1 = 0.736f;
@@ -185,7 +185,7 @@ void func_6()
 		{
 			if (ENTITY::DOES_ENTITY_EXIST(&(uLocal_202[0])))
 			{
-				func_23(&(uLocal_202[0]), 0, 1);
+				aggregate_func_1871(&(uLocal_202[0]), 0, 1);
 				OBJECT::DELETE_OBJECT(uLocal_202[0]);
 				func_24(&(Local_25.f_23), 2, 0, 752097756);
 			}
@@ -194,7 +194,7 @@ void func_6()
 		{
 			if (ENTITY::DOES_ENTITY_EXIST(&(uLocal_202[1])))
 			{
-				func_23(&(uLocal_202[1]), 0, 1);
+				aggregate_func_1871(&(uLocal_202[1]), 0, 1);
 				OBJECT::DELETE_OBJECT(uLocal_202[1]);
 				func_24(&(Local_25.f_26), 10, 0, 752097756);
 			}
@@ -226,7 +226,7 @@ void func_7()
 	{
 		if (bLocal_198)
 		{
-			if (!func_25(Local_25.f_5))
+			if (!aggregate_func_2650(Local_25.f_5))
 			{
 				func_26(Local_25.f_5);
 			}
@@ -299,7 +299,7 @@ void func_14(int iParam0)
 	{
 		return;
 	}
-	if (aggregate.aberdeenpigfarm.func_175(OBJECT::_0x2BF1953C0C21AC88(iVar0), 1))
+	if (aggregate_func_4240(OBJECT::_0x2BF1953C0C21AC88(iVar0), 1))
 	{
 		DECORATOR::DECOR_SET_BOOL(iParam0, "loot_empty", true);
 		return;
@@ -333,15 +333,6 @@ void func_14(int iParam0)
 	{
 		DECORATOR::DECOR_SET_INT(iParam0, "loot_weapon", Var1.f_9);
 	}
-}
-
-bool func_15(int iParam0)
-{
-	if ((((((((DECORATOR::DECOR_EXIST_ON(iParam0, "loot_empty") || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_money")) || DECORATOR::DECOR_EXIST_ON(iParam0, "fLoot_money")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_type1")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_type2")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_ammo1_type")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_ammo2_type")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_ammo3_type")) || DECORATOR::DECOR_EXIST_ON(iParam0, "loot_weapon"))
-	{
-		return false;
-	}
-	return true;
 }
 
 void func_16(var uParam0)
@@ -498,8 +489,8 @@ void func_21(var uParam0, var uParam1, int iParam2, var uParam3, char* sParam4, 
 					OBJECT::_0x1461DF6DB886BE3F(*uParam3);
 					if (bParam6)
 					{
-						iVar6 = aggregate.blackwater.func_292(uParam1->f_4, &(uParam1->f_154[iParam2]), 0);
-						vVar0 = { aggregate.fme_escaped_convicts.func_1089(uParam1->f_4, *(uParam1->f_37[iParam2 /*3*/]), ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(uParam1->f_5, vVar0)) };
+						iVar6 = aggregate_func_4295(uParam1->f_4, &(uParam1->f_154[iParam2]), 0);
+						vVar0 = { aggregate_func_7853(uParam1->f_4, *(uParam1->f_37[iParam2 /*3*/]), ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(uParam1->f_5, vVar0)) };
 						ENTITY::ATTACH_ENTITY_TO_ENTITY(*uParam3, uParam1->f_5, iVar6, vVar0, *(uParam1->f_68[iParam2 /*3*/]), 0, 0, 0, 0, 2, 1, 0, 0);
 					}
 					else
@@ -584,17 +575,6 @@ void func_22(int iParam0, bool bParam1, bool bParam2)
 	}
 }
 
-void func_23(int iParam0, bool bParam1, bool bParam2)
-{
-	if (!ENTITY::IS_ENTITY_DEAD(iParam0))
-	{
-		if (ENTITY::IS_ENTITY_ATTACHED(iParam0))
-		{
-			ENTITY::DETACH_ENTITY(iParam0, bParam1, bParam2);
-		}
-	}
-}
-
 void func_24(var uParam0, int iParam1, bool bParam2, int iParam3)
 {
 	int iVar0;
@@ -602,21 +582,12 @@ void func_24(var uParam0, int iParam1, bool bParam2, int iParam3)
 	iVar0 = 0;
 	while (iVar0 < iParam1)
 	{
-		if (aggregate.bandana.func_30(uParam0[iVar0], 0))
+		if (aggregate_func_2823(uParam0[iVar0], 0))
 		{
-			aggregate.fm_mission_controller.func_5498(uParam0[iVar0], 1, bParam2, 0, 0, iParam3, 0, 0, 0, 0);
+			aggregate_func_221(uParam0[iVar0], 1, bParam2, 0, 0, iParam3, 0, 0, 0, 0);
 		}
 		iVar0++;
 	}
-}
-
-bool func_25(int iParam0)
-{
-	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return DECORATOR::DECOR_EXIST_ON(iParam0, "chest_open");
-	}
-	return false;
 }
 
 void func_26(int iParam0)
@@ -627,11 +598,11 @@ void func_26(int iParam0)
 	}
 	if (NETWORK::NETWORK_IS_IN_SESSION())
 	{
-		aggregate.aberdeenpigfarm.func_108(aggregate.coffee_drinking.func_100(-1482693337), 1);
+		aggregate_func_1962(aggregate_func_4347(-1482693337), 1);
 	}
 	else
 	{
-		aggregate.aberdeenpigfarm.func_108(aggregate.coffee_drinking.func_100(822398076), 1);
+		aggregate_func_1962(aggregate_func_4347(822398076), 1);
 	}
 }
 
@@ -650,13 +621,13 @@ void func_27(var uParam0)
 				func_47(0, 0f, 0f, 0f, &iVar1, (uParam0->f_103[iVar0 /*5*/])->f_2, 0, 0);
 				break;
 			case 2:
-				func_49(0, 0f, 0f, 0f, &iVar1, WEAPON::_0x7AA043F6C41D151E(aggregate.fm_mission_controller.func_1644((uParam0->f_103[iVar0 /*5*/])->f_3, 1)), 0, 0, 0);
+				func_49(0, 0f, 0f, 0f, &iVar1, WEAPON::_0x7AA043F6C41D151E(aggregate_func_1502((uParam0->f_103[iVar0 /*5*/])->f_3, 1)), 0, 0, 0);
 				break;
 			case 3:
-				func_51(0, 0f, 0f, 0f, &iVar1, aggregate.fm_mission_controller.func_6349((uParam0->f_103[iVar0 /*5*/])->f_3, 1), 0, 0);
+				func_51(0, 0f, 0f, 0f, &iVar1, aggregate_func_3015((uParam0->f_103[iVar0 /*5*/])->f_3, 1), 0, 0);
 				break;
 			case 1:
-				aggregate.fm_mission_controller.func_6275(0, 0f, 0f, 0f, *(uParam0->f_37[iVar0 /*3*/]), *(uParam0->f_68[iVar0 /*3*/]), &iVar1, (uParam0->f_103[iVar0 /*5*/])->f_3, 1, 0, 0, (uParam0->f_103[iVar0 /*5*/])->f_4, &(uParam0->f_154[iVar0]));
+				aggregate_func_2576(0, 0f, 0f, 0f, *(uParam0->f_37[iVar0 /*3*/]), *(uParam0->f_68[iVar0 /*3*/]), &iVar1, (uParam0->f_103[iVar0 /*5*/])->f_3, 1, 0, 0, (uParam0->f_103[iVar0 /*5*/])->f_4, &(uParam0->f_154[iVar0]));
 				break;
 			case -1:
 				Jump @239; //curOff = 224
@@ -709,10 +680,10 @@ void func_35(var uParam0, int iParam1, int iParam2)
 	var uVar11;
 	var uVar12;
 
-	while (!func_15(uParam0->f_5) && iVar8 < iParam2)
+	while (!aggregate_func_510(uParam0->f_5) && iVar8 < iParam2)
 	{
-		bVar0 = func_53(uParam0->f_5, &uVar9, &uVar1, &uVar11, &uVar12, &vVar2, &vVar5, &bVar10);
-		if (aggregate.bandana.func_30(bVar0, 0))
+		bVar0 = aggregate_func_10(uParam0->f_5, &uVar9, &uVar1, &uVar11, &uVar12, &vVar2, &vVar5, &bVar10);
+		if (aggregate_func_2823(bVar0, 0))
 		{
 			func_54(uParam0, uVar1, vVar2, vVar5, bVar0, uVar9, uVar11, uVar12, bVar10);
 			iParam1->f_1[iVar8] = bVar0;
@@ -730,17 +701,17 @@ int func_37(struct<6> Param0, var uParam6, var uParam7, var uParam8, var uParam9
 {
 	int iVar0;
 
-	switch (aggregate.aberdeenpigfarm.func_66())
+	switch (aggregate_func_4371())
 	{
 		case 10:
-			if (aggregate.fishing_core.func_39(Param0.f_5, func_56(1), 1) < 15f)
+			if (aggregate_func_1501(Param0.f_5, func_56(1), 1) < 15f)
 			{
 				iVar0 = 1077976463;
 				*uParam165 = 230530039; /* GXTEntry: "Health Cure" */
 			}
 			break;
 		case -1:
-			if (aggregate.fishing_core.func_39(Param0.f_5, func_56(2), 1) < 15f)
+			if (aggregate_func_1501(Param0.f_5, func_56(2), 1) < 15f)
 			{
 				iVar0 = 1077976463;
 				*uParam165 = 230530039; /* GXTEntry: "Health Cure" */
@@ -782,11 +753,11 @@ bool func_47(int iParam0, vector3 vParam1, int iParam4, float fParam5, int iPara
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(*iParam4))
 	{
-		*iParam4 = aggregate.fm_mission_controller.func_6821(iParam0, vParam1, iParam6, iParam7);
+		*iParam4 = aggregate_func_428(iParam0, vParam1, iParam6, iParam7);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam4))
 	{
-		aggregate.fm_mission_controller.func_6823(iParam4);
+		aggregate_func_3777(iParam4);
 		return func_101(*iParam4, fParam5);
 	}
 	return false;
@@ -796,11 +767,11 @@ void func_49(int iParam0, vector3 vParam1, int iParam4, int iParam5, int iParam6
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(*iParam4))
 	{
-		*iParam4 = aggregate.fm_mission_controller.func_6821(iParam0, vParam1, iParam7, iParam8);
+		*iParam4 = aggregate_func_428(iParam0, vParam1, iParam7, iParam8);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam4))
 	{
-		aggregate.fm_mission_controller.func_6823(iParam4);
+		aggregate_func_3777(iParam4);
 		func_103(*iParam4, iParam5, iParam6, 1);
 	}
 }
@@ -809,179 +780,13 @@ void func_51(int iParam0, vector3 vParam1, int iParam4, bool bParam5, int iParam
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(*iParam4))
 	{
-		*iParam4 = aggregate.fm_mission_controller.func_6821(iParam0, vParam1, iParam6, iParam7);
+		*iParam4 = aggregate_func_428(iParam0, vParam1, iParam6, iParam7);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam4))
 	{
-		aggregate.fm_mission_controller.func_6823(iParam4);
+		aggregate_func_3777(iParam4);
 		func_104(*iParam4, bParam5);
 	}
-}
-
-int func_53(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, bool bParam7)
-{
-	int iVar0;
-	bool bVar1;
-	float fVar2;
-	float fVar3;
-	float fVar4;
-	int iVar5;
-	char cVar6[16];
-	struct<2> Var8;
-	struct<2> Var10;
-	int iVar12;
-	int iVar13;
-
-	iVar0 = 0;
-	bVar1 = false;
-	*uParam1 = 0;
-	*bParam7 = -1;
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
-	{
-		return 0;
-	}
-	if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_empty"))
-	{
-		return 0;
-	}
-	*uParam1 = 1;
-	if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_money"))
-	{
-		*uParam1 = DECORATOR::DECOR_GET_INT(iParam0, "loot_money");
-		DECORATOR::DECOR_REMOVE(iParam0, "loot_money");
-		*uParam2 = 0;
-		return 2084597891 /* GXTEntry: "Money" */;
-	}
-	if (DECORATOR::DECOR_EXIST_ON(iParam0, "fLoot_money"))
-	{
-		*uParam3 = DECORATOR::DECOR_GET_FLOAT(iParam0, "fLoot_money");
-		DECORATOR::DECOR_REMOVE(iParam0, "fLoot_money");
-		*uParam2 = 0;
-		return aggregate.fme_animal_tagging.func_1249(*uParam3);
-	}
-	StringCopy(&cVar6, "loot_ammo", 16);
-	iVar5 = 1;
-	while (iVar5 <= 3)
-	{
-		Var8 = { cVar6 };
-		Var10 = { cVar6 };
-		StringIntConCat(&Var8, iVar5, 16);
-		StringIntConCat(&Var10, iVar5, 16);
-		StringConCat(&Var8, "_type", 16);
-		StringConCat(&Var10, "_amt", 16);
-		if (DECORATOR::DECOR_EXIST_ON(iParam0, &Var8))
-		{
-			bVar1 = DECORATOR::DECOR_GET_INT(iParam0, &Var8);
-			if (bVar1 != 0)
-			{
-				iVar0 = WEAPON::_0x5C2EA6C44F515F34(bVar1);
-				DECORATOR::DECOR_REMOVE(iParam0, &Var8);
-				if (DECORATOR::DECOR_EXIST_ON(iParam0, &Var10))
-				{
-					*uParam1 = DECORATOR::DECOR_GET_INT(iParam0, &Var10);
-					DECORATOR::DECOR_REMOVE(iParam0, &Var10);
-					*uParam2 = 2;
-				}
-				return iVar0;
-			}
-		}
-		iVar5++;
-	}
-	if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_weapon"))
-	{
-		bVar1 = DECORATOR::DECOR_GET_INT(iParam0, "loot_weapon");
-		if (bVar1 != 0)
-		{
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_weapon");
-			*uParam2 = 3;
-			return func_110(bVar1);
-		}
-	}
-	if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_type1"))
-	{
-		if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_amt1"))
-		{
-			*uParam1 = DECORATOR::DECOR_GET_INT(iParam0, "loot_item_amt1");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_amt1");
-		}
-		if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_bone1"))
-		{
-			*bParam7 = DECORATOR::DECOR_GET_INT(iParam0, "loot_item_bone1");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_bone1");
-		}
-		if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_model1"))
-		{
-			*uParam4 = DECORATOR::DECOR_GET_INT(iParam0, "loot_item_model1");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_model1");
-		}
-		if ((DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_offset1x") && DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_offset1y")) && DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_offset1z"))
-		{
-			fVar2 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_offset1x");
-			fVar3 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_offset1y");
-			fVar4 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_offset1z");
-			*uParam5 = { fVar2, fVar3, fVar4 };
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_offset1x");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_offset1y");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_offset1z");
-		}
-		if ((DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_orient1x") && DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_orient1y")) && DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_orient1z"))
-		{
-			fVar2 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_orient1x");
-			fVar3 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_orient1y");
-			fVar4 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_orient1z");
-			*uParam6 = { fVar2, fVar3, fVar4 };
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_orient1x");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_orient1y");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_orient1z");
-		}
-		iVar12 = DECORATOR::DECOR_GET_INT(iParam0, "loot_item_type1");
-		DECORATOR::DECOR_REMOVE(iParam0, "loot_item_type1");
-		*uParam2 = 1;
-		return iVar12;
-	}
-	if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_type2"))
-	{
-		if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_amt2"))
-		{
-			*uParam1 = DECORATOR::DECOR_GET_INT(iParam0, "loot_item_amt2");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_amt2");
-		}
-		if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_bone2"))
-		{
-			*bParam7 = DECORATOR::DECOR_GET_INT(iParam0, "loot_item_bone2");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_bone2");
-		}
-		if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_model2"))
-		{
-			*uParam4 = DECORATOR::DECOR_GET_INT(iParam0, "loot_item_model2");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_model2");
-		}
-		if ((DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_offset2x") && DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_offset2y")) && DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_offset2z"))
-		{
-			fVar2 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_offset2x");
-			fVar3 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_offset2y");
-			fVar4 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_offset2z");
-			*uParam5 = { fVar2, fVar3, fVar4 };
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_offset2x");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_offset2y");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_offset2z");
-		}
-		if ((DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_orient2x") && DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_orient2y")) && DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_orient2z"))
-		{
-			fVar2 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_orient2x");
-			fVar3 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_orient2y");
-			fVar4 = DECORATOR::DECOR_GET_FLOAT(iParam0, "loot_item_orient2z");
-			*uParam6 = { fVar2, fVar3, fVar4 };
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_orient2x");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_orient2y");
-			DECORATOR::DECOR_REMOVE(iParam0, "loot_item_orient2z");
-		}
-		iVar13 = DECORATOR::DECOR_GET_INT(iParam0, "loot_item_type2");
-		DECORATOR::DECOR_REMOVE(iParam0, "loot_item_type2");
-		*uParam2 = 1;
-		return iVar13;
-	}
-	return 0;
 }
 
 void func_54(var uParam0, var uParam1, vector3 vParam2, vector3 vParam5, bool bParam8, var uParam9, var uParam10, var uParam11, bool bParam12)
@@ -999,17 +804,17 @@ void func_54(var uParam0, var uParam1, vector3 vParam2, vector3 vParam5, bool bP
 			(uParam0->f_103[iVar0 /*5*/])->f_1 = uParam9;
 			(uParam0->f_103[iVar0 /*5*/])->f_2 = uParam10;
 			(uParam0->f_103[iVar0 /*5*/])->f_4 = uParam11;
-			if (aggregate.doc_book.func_158((uParam0->f_103[iVar0 /*5*/])->f_3) && aggregate.bandana.func_71((uParam0->f_103[iVar0 /*5*/])->f_3))
+			if (aggregate_func_4585((uParam0->f_103[iVar0 /*5*/])->f_3) && aggregate_func_2910((uParam0->f_103[iVar0 /*5*/])->f_3))
 			{
 				func_113(uParam0->f_37[iVar0 /*3*/], uParam0->f_68[iVar0 /*3*/]);
 			}
 			else
 			{
-				if (!aggregate.annesburg.func_121(vParam2))
+				if (!aggregate_func_4268(vParam2))
 				{
 					*(uParam0->f_37[iVar0 /*3*/]) = { vParam2 };
 				}
-				if (!aggregate.annesburg.func_121(vParam5))
+				if (!aggregate_func_4268(vParam5))
 				{
 					*(uParam0->f_68[iVar0 /*3*/]) = { vParam5 };
 				}
@@ -1038,7 +843,7 @@ Vector3 func_56(int iParam0)
 	return vVar0;
 }
 
-int func_76(bool bParam0, int iParam1, int iParam2)
+bool func_76(bool bParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
@@ -1048,13 +853,13 @@ int func_76(bool bParam0, int iParam1, int iParam2)
 	int iVar5;
 	int iVar6;
 
-	if (!aggregate.bandana.func_83(bParam0))
+	if (!aggregate_func_2831(bParam0))
 	{
-		return 0;
+		return false;
 	}
 	bVar4 = WEAPON::_0x7AA043F6C41D151E(bParam0);
 	iVar3 = WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, bParam0);
-	if (aggregate.binoculars.func_72(bVar4))
+	if (aggregate_func_2841(bVar4))
 	{
 		WEAPON::GET_MAX_AMMO(Global_35, &iVar2, bVar4);
 	}
@@ -1085,29 +890,29 @@ int func_76(bool bParam0, int iParam1, int iParam2)
 	}
 	else
 	{
-		aggregate.doc_book.func_113(aggregate.fm_mission_controller.func_6882(bParam0), aggregate.fm_mission_controller.func_1773(bParam0), 1);
-		return 0;
+		aggregate_func_4740(aggregate_func_1159(bParam0), aggregate_func_4462(bParam0), 1);
+		return false;
 	}
 	if (iVar2 == (iVar3 + iVar0))
 	{
 	}
 	if (iVar0 == 0)
 	{
-		return 0;
+		return false;
 	}
-	if (aggregate.doc_book.func_93(0))
+	if (aggregate_func_2892(0))
 	{
-		if (aggregate.doc_book.func_95(bParam0, iVar0, iParam2))
+		if (aggregate_func_2941(bParam0, iVar0, iParam2))
 		{
 			*iParam1 = iVar0;
-			return 1;
+			return true;
 		}
 	}
 	else
 	{
-		return aggregate.doc_book.func_96(bParam0, *iParam1, iParam2);
+		return aggregate_func_6959(bParam0, *iParam1, iParam2);
 	}
-	return 0;
+	return false;
 }
 
 bool func_101(int iParam0, float fParam1)
@@ -1121,8 +926,8 @@ void func_103(int iParam0, int iParam1, int iParam2, bool bParam3)
 
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0) && ENTITY::IS_ENTITY_A_PED(iParam0))
 	{
-		iVar0 = aggregate.fm_deathmatch_controller.func_2466(iParam0);
-		aggregate.fm_mission_controller.func_7221(iParam0, iParam1, iParam2, iVar0);
+		iVar0 = aggregate_func_1053(iParam0);
+		aggregate_func_3778(iParam0, iParam1, iParam2, iVar0);
 	}
 	else if (!DECORATOR::DECOR_EXIST_ON(iParam0, "loot_ammo1_type") || (bParam3 && DECORATOR::DECOR_GET_INT(iParam0, "loot_ammo1_type") == iParam1))
 	{
@@ -1147,22 +952,13 @@ void func_104(int iParam0, bool bParam1)
 
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0) && ENTITY::IS_ENTITY_A_PED(iParam0))
 	{
-		iVar0 = aggregate.fm_deathmatch_controller.func_2466(iParam0);
-		aggregate.fm_mission_controller.func_7221(iParam0, bParam1, 1, iVar0);
+		iVar0 = aggregate_func_1053(iParam0);
+		aggregate_func_3778(iParam0, bParam1, 1, iVar0);
 	}
 	else
 	{
 		DECORATOR::DECOR_SET_INT(iParam0, "loot_weapon", bParam1);
 	}
-}
-
-bool func_110(bool bParam0)
-{
-	if (WEAPON::IS_WEAPON_VALID(bParam0))
-	{
-		return bParam0;
-	}
-	return false;
 }
 
 void func_113(var uParam0, var uParam1)

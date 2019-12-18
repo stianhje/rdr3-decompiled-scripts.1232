@@ -20,7 +20,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == ambient_fishing_scenario.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1747
 
 void func_13(int iParam0)
 {
@@ -35,15 +35,15 @@ void func_14(int iParam0)
 	}
 	if (iParam0->f_1 == joaat("cash"))
 	{
-		aggregate.doc_book.func_105(668131102, 0, 1065353216 /* Float: 1f */, 1, 0, 0, 0, -1);
+		aggregate_func_5235(668131102, 0, 1065353216 /* Float: 1f */, 1, 0, 0, 0, -1);
 	}
 	else if (iParam0->f_1 == joaat("money"))
 	{
-		aggregate.doc_book.func_105(668131102, 0, 1065353216 /* Float: 1f */, 1, 0, 0, 0, -1);
+		aggregate_func_5235(668131102, 0, 1065353216 /* Float: 1f */, 1, 0, 0, 0, -1);
 	}
 	else if (iParam0->f_1 == 878287592)
 	{
-		aggregate.doc_book.func_105(668131102, 0, 1065353216 /* Float: 1f */, 1, 0, 0, 0, -1);
+		aggregate_func_5235(668131102, 0, 1065353216 /* Float: 1f */, 1, 0, 0, 0, -1);
 	}
 }
 

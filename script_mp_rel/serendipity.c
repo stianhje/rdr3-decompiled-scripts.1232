@@ -60,14 +60,14 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_40(int iParam0)
 {
 	iParam0 = iParam0;
-	if ((aggregate.annesburg.func_111(255) && aggregate.annesburg.func_109()) && !aggregate.fme_animal_tagging.func_884())
+	if ((aggregate_func_4367(255) && aggregate_func_2820()) && !aggregate_func_4478())
 	{
-		aggregate.fm_deathmatch_controller.func_371(5, 0);
+		aggregate_func_2435(5, 0);
 	}
 	return false;
 }
@@ -75,45 +75,8 @@ bool func_40(int iParam0)
 void func_80(int iParam0)
 {
 	iParam0 = iParam0;
-	func_121(&uLocal_18, 0);
-	func_121(&uLocal_28, 0);
-	func_121(&uLocal_38, 0);
-}
-
-void func_121(var uParam0, bool bParam1)
-{
-	if (func_158(uParam0->f_1))
-	{
-		func_159(uParam0->f_1);
-	}
-	if (MAP::DOES_BLIP_EXIST(uParam0->f_9) && bParam1)
-	{
-		MAP::REMOVE_BLIP(&(uParam0->f_9));
-	}
-	if (aggregate.annesburg.func_217(uParam0->f_8))
-	{
-		aggregate.annesburg.func_218(&(uParam0->f_8), 1, 1);
-	}
-}
-
-bool func_158(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6)
-{
-	return VOLUME::_0x92A78D0BEDB332A3(iParam0);
-}
-
-void func_159(struct<6> Param0, var uParam6)
-{
-	if (VOLUME::_0x92A78D0BEDB332A3(Param0))
-	{
-		VOLUME::_0x43F867EF5C463A53(Param0);
-	}
-	Param0.f_1 = 0;
-	Param0.f_2 = -1;
-	Param0.f_3 = -1;
-	Param0.f_4 = 0;
-	if (MAP::DOES_BLIP_EXIST(Param0.f_5))
-	{
-		MAP::REMOVE_BLIP(&(Param0.f_5));
-	}
+	aggregate_func_2703(&uLocal_18, 0);
+	aggregate_func_2703(&uLocal_28, 0);
+	aggregate_func_2703(&uLocal_38, 0);
 }
 

@@ -48,19 +48,19 @@ void __EntryFunction__()
 	iLocal_15 = vScriptParam_0.x;
 	uLocal_16 = vScriptParam_0.y;
 	uLocal_17 = vScriptParam_0.z;
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		aggregate.ambient_fishing_scenario.func_2();
+		aggregate_func_1689();
 	}
-	while (!SCRIPTS::_0x9E4EF615E307FBBE() && aggregate.ambient_fishing_scenario.func_3())
+	while (!SCRIPTS::_0x9E4EF615E307FBBE() && aggregate_func_3440())
 	{
-		aggregate.aberdeenpigfarm.func_23();
-		aggregate.ambient_fishing_scenario.func_5();
+		aggregate_func_4238();
+		aggregate_func_2374();
 		func_6();
 		BUILTIN::WAIT(0);
 	}
-	aggregate.ambient_fishing_scenario.func_2();
+	aggregate_func_1689();
 }
 
 void func_6()
@@ -70,11 +70,11 @@ void func_6()
 		iLocal_13 = 0;
 		return;
 	}
-	if (func_12(1))
+	if (aggregate_func_9360(1))
 	{
 		if (PAD::IS_CONTROL_PRESSED(2, joaat("INPUT_FOCUS_CAM")) || PAD::IS_DISABLED_CONTROL_PRESSED(2, joaat("INPUT_FOCUS_CAM")))
 		{
-			if (!func_12(2))
+			if (!aggregate_func_9360(2))
 			{
 				func_13();
 			}
@@ -85,8 +85,8 @@ void func_6()
 	{
 		case 0:
 			iLocal_20 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -287.0813f, 818.8734f, 119.85f, -11.269f, 0f, -171.0697f, 50f, false, 2);
-			func_15(1);
-			aggregate.fme_animal_tagging.func_176(1);
+			aggregate_func_9361(1);
+			aggregate_func_4627(1);
 			break;
 		case 1:
 			if (ENTITY::GET_ENTITY_SPEED(Global_35) > 0f)
@@ -95,7 +95,7 @@ void func_6()
 			}
 			CAM::SET_CAM_ACTIVE(iLocal_20, true);
 			CAM::RENDER_SCRIPT_CAMS(true, true, 4000, true, false, 0);
-			aggregate.fme_animal_tagging.func_176(2);
+			aggregate_func_4627(2);
 			break;
 		case 2:
 			if (CAM::IS_CAM_INTERPOLATING(iLocal_20))
@@ -105,14 +105,14 @@ void func_6()
 			iLocal_21 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, vLocal_32, vLocal_35, 40f, false, 2);
 			CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_21, iLocal_20, 4000, 3, 1);
 			CAM::DESTROY_CAM(iLocal_20, false);
-			aggregate.fme_animal_tagging.func_176(3);
+			aggregate_func_4627(3);
 			break;
 		case 3:
 			if (CAM::IS_CAM_INTERPOLATING(iLocal_21))
 			{
 				return;
 			}
-			aggregate.fme_animal_tagging.func_176(4);
+			aggregate_func_4627(4);
 			break;
 		case 4:
 			if (PED::IS_PED_USING_ANY_SCENARIO(Global_35))
@@ -123,7 +123,7 @@ void func_6()
 				}
 				else
 				{
-					aggregate.fme_animal_tagging.func_176(5);
+					aggregate_func_4627(5);
 				}
 			}
 			break;
@@ -138,23 +138,18 @@ void func_7()
 	CAM::DESTROY_CAM(iLocal_21, false);
 }
 
-bool func_12(int iParam0)
-{
-	return (uLocal_18 && iParam0) != 0;
-}
-
 void func_13()
 {
-	if (func_12(2))
+	if (aggregate_func_9360(2))
 	{
 		return;
 	}
 	func_21();
 	PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
-	aggregate.fme_escaped_convicts.func_913(0, 0);
+	aggregate_func_2444(0, 0);
 	CAM::RENDER_SCRIPT_CAMS(false, true, 2000, true, false, 0);
 	CAM::DESTROY_CAM(iLocal_21, false);
-	func_15(2);
+	aggregate_func_9361(2);
 }
 
 void func_14()
@@ -167,7 +162,7 @@ void func_14()
 		}
 		return;
 	}
-	if (!func_12(2))
+	if (!aggregate_func_9360(2))
 	{
 		func_13();
 	}
@@ -181,15 +176,6 @@ void func_14()
 		TASK::CLEAR_PED_TASKS(Global_35, 1, 0);
 		iLocal_13 = 0;
 	}
-}
-
-void func_15(int iParam0)
-{
-	if (func_12(iParam0))
-	{
-		return;
-	}
-	uLocal_18 = (uLocal_18 || iParam0);
 }
 
 void func_17(int iParam0, bool bParam1)
@@ -233,14 +219,14 @@ void func_17(int iParam0, bool bParam1)
 	}
 	fVar0 = (30f * BUILTIN::TIMESTEP());
 	vVar1 = { vLocal_39 + vLocal_45 };
-	vLocal_42.x = (vLocal_42.x + aggregate.coffee_drinking.func_45((((vVar1.x - vLocal_42.x) * 0.05f) * fVar0), -3f, 3f));
-	vLocal_42.f_1 = (vLocal_42.y + aggregate.coffee_drinking.func_45((((vVar1.y - vLocal_42.y) * 0.05f) * fVar0), -3f, 3f));
-	vLocal_42.f_2 = (vLocal_42.z + aggregate.coffee_drinking.func_45((((vVar1.z - vLocal_42.z) * 0.05f) * fVar0), -3f, 3f));
+	vLocal_42.x = (vLocal_42.x + aggregate_func_4333((((vVar1.x - vLocal_42.x) * 0.05f) * fVar0), -3f, 3f));
+	vLocal_42.f_1 = (vLocal_42.y + aggregate_func_4333((((vVar1.y - vLocal_42.y) * 0.05f) * fVar0), -3f, 3f));
+	vLocal_42.f_2 = (vLocal_42.z + aggregate_func_4333((((vVar1.z - vLocal_42.z) * 0.05f) * fVar0), -3f, 3f));
 	if (bLocal_48)
 	{
-		vLocal_42.x = aggregate.coffee_drinking.func_45(vLocal_42.x, BUILTIN::TO_FLOAT(-iLocal_30), BUILTIN::TO_FLOAT(iLocal_30));
-		vLocal_42.f_1 = aggregate.coffee_drinking.func_45(vLocal_42.y, BUILTIN::TO_FLOAT(-iLocal_31), BUILTIN::TO_FLOAT(iLocal_31));
-		vLocal_42.f_2 = aggregate.coffee_drinking.func_45(vLocal_42.z, BUILTIN::TO_FLOAT(-iLocal_29), BUILTIN::TO_FLOAT(iLocal_29));
+		vLocal_42.x = aggregate_func_4333(vLocal_42.x, BUILTIN::TO_FLOAT(-iLocal_30), BUILTIN::TO_FLOAT(iLocal_30));
+		vLocal_42.f_1 = aggregate_func_4333(vLocal_42.y, BUILTIN::TO_FLOAT(-iLocal_31), BUILTIN::TO_FLOAT(iLocal_31));
+		vLocal_42.f_2 = aggregate_func_4333(vLocal_42.z, BUILTIN::TO_FLOAT(-iLocal_29), BUILTIN::TO_FLOAT(iLocal_29));
 	}
 	CAM::SET_CAM_PARAMS(*iParam0, vLocal_32, vLocal_35 + vLocal_42, 40f, 0, 1, 1, 2, 1, 0);
 }

@@ -85,45 +85,45 @@ void __EntryFunction__()
 	fLocal_17 = 1f;
 	iLocal_25 = ScriptParam_0;
 	iLocal_24 = ScriptParam_0.f_1;
-	if (aggregate.aberdeenpigfarm.func_45() == -1)
+	if (aggregate_func_4251() == -1)
 	{
 	}
 	else
 	{
 		MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-		if (aggregate.aberdeenpigfarm.func_57(aggregate.aberdeenpigfarm.func_56(0)) != 7)
+		if (aggregate_func_4263(aggregate_func_4259(0)) != 7)
 		{
 		}
 		else
 		{
-			aggregate.net_bird_egg_condor.func_4(&uLocal_44);
+			aggregate_func_829(&uLocal_44);
 		}
 	}
-	if (aggregate.aberdeenpigfarm.func_45() == -1)
+	if (aggregate_func_4251() == -1)
 	{
 		if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 		{
-			aggregate.net_bird_egg_condor.func_4(&uLocal_44);
+			aggregate_func_829(&uLocal_44);
 		}
 	}
 	if (!TASK::_0x841475AC96E794D1(iLocal_24))
 	{
-		aggregate.net_bird_egg_condor.func_4(&uLocal_44);
+		aggregate_func_829(&uLocal_44);
 	}
-	aggregate.net_bird_egg_duck.func_5(&uLocal_44, 1510925660, -1117423291 /* GXTEntry: "Duck Egg" */, 454325279, 5, 2, 0);
-	while (aggregate.net_arrowheads.func_6(&uLocal_44))
+	aggregate_func_2605(&uLocal_44, 1510925660, -1117423291 /* GXTEntry: "Duck Egg" */, 454325279, 5, 2, 0);
+	while (aggregate_func_3441(&uLocal_44))
 	{
-		if (aggregate.net_bird_egg_condor.func_7())
+		if (aggregate_func_3530())
 		{
-			aggregate.net_bird_egg_condor.func_4(&uLocal_44);
+			aggregate_func_829(&uLocal_44);
 		}
-		if (aggregate.net_bird_egg_condor.func_8(&uLocal_44))
+		if (aggregate_func_7272(&uLocal_44))
 		{
-			aggregate.net_bird_egg_condor.func_4(&uLocal_44);
+			aggregate_func_829(&uLocal_44);
 		}
-		aggregate.net_bird_egg_condor.func_9(&uLocal_44);
+		aggregate_func_7273(&uLocal_44);
 		BUILTIN::WAIT(0);
 	}
-	aggregate.net_bird_egg_condor.func_4(&uLocal_44);
+	aggregate_func_829(&uLocal_44);
 }
 

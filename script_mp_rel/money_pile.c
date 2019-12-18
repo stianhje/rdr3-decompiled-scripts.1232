@@ -21,7 +21,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == ambient_fishing_scenario.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1747
 
 void func_6()
 {
@@ -40,7 +40,7 @@ void func_6()
 		fVar1 = 1f;
 		bVar2 = false;
 		bLocal_18 = true;
-		aggregate.money_pile.func_13(BUILTIN::FLOOR((fVar0 * BUILTIN::TO_FLOAT(func_12(1871635045)))), bVar2, fVar1, 1, 0, 0, 1);
+		aggregate_func_5279(BUILTIN::FLOOR((fVar0 * BUILTIN::TO_FLOAT(func_12(1871635045)))), bVar2, fVar1, 1, 0, 0, 1);
 	}
 	if (!PED::IS_PED_USING_ANY_SCENARIO(Global_35))
 	{
@@ -54,11 +54,11 @@ int func_12(int iParam0)
 	struct<5> Var0;
 	var uVar5;
 
-	if (aggregate.aberdeenpigfarm.func_123())
+	if (aggregate_func_4248())
 	{
 		return 0;
 	}
-	if (!aggregate.doc_book.func_337(3, &Var0))
+	if (!aggregate_func_5132(3, &Var0))
 	{
 	}
 	Var0.f_1 = 0;

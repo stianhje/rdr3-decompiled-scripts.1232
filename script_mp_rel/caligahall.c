@@ -36,7 +36,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -47,36 +47,19 @@ bool func_13()
 void func_16(int iParam0)
 {
 	iParam0 = iParam0;
-	if (aggregate.aberdeenpigfarm.func_45() == -1)
+	if (aggregate_func_4251() == -1)
 	{
 	}
 }
 
 void func_78(int iParam0)
 {
-	aggregate.aguasdulces.func_58(0.775f, 0.2f, 0.025f, 0f);
+	aggregate_func_6501(0.775f, 0.2f, 0.025f, 0f);
 	if (bLocal_19)
 	{
-		aggregate.caligahall.func_112(1);
+		aggregate_func_184(1);
 	}
-	func_113(iLocal_18, &bLocal_19);
+	aggregate_func_343(iLocal_18, &bLocal_19);
 	iParam0 = iParam0;
-}
-
-void func_113(int iParam0, bool bParam1)
-{
-	if (VOLUME::_0x666C2F53ABEFC952(iParam0) != 623901053)
-	{
-		VOLUME::_0xFD010A2154B40676(iParam0, 623901053);
-	}
-	if (bParam1->f_4)
-	{
-		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 7, 0, 0);
-		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 20, 0, 0);
-		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 19, 0, 0);
-		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 10, 0, 0);
-		PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 4, 0, 0);
-		bParam1->f_4 = 0;
-	}
 }
 

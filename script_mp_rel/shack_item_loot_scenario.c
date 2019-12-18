@@ -20,7 +20,7 @@
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
-// __EntryFunction__ == ambient_fishing_scenario.__EntryFunction__
+// __EntryFunction__ == aggregate_func_1747
 
 void func_13(int iParam0)
 {
@@ -31,7 +31,7 @@ void func_14(int iParam0)
 {
 	if (iLocal_17 == -2032888040)
 	{
-		aggregate.pv_hunt_the_posse.func_1137(-417963070 /* GXTEntry: "Valerian Root" */, 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
+		aggregate_func_220(-417963070 /* GXTEntry: "Valerian Root" */, 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
 	}
 }
 

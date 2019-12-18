@@ -47,20 +47,20 @@ void __EntryFunction__()
 	fLocal_20 = 100f;
 	fLocal_21 = 100f;
 	fLocal_22 = 0f;
-	aggregate.bayounwa_population.func_1();
+	aggregate_func_685();
 	func_2();
 	func_3();
 	bVar0 = true;
 	while (bVar0)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() == -1)
+		if (aggregate_func_4251() == -1)
 		{
 			func_5();
 		}
 		else
 		{
 			Global_1896610->f_51 = NETWORK::_0xFB9ECED5B68F3B78(Global_1896610->f_42);
-			if (aggregate.aberdeenpigfarm.func_49(1, 1))
+			if (aggregate_func_523(1, 1))
 			{
 				bVar0 = false;
 			}
@@ -84,23 +84,23 @@ void func_2()
 void func_3()
 {
 	iLocal_23 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(1800f, -65f, 58.316f, 0f, 0f, 0f, 50f, 50f, 10f, "m_volAberdeenPigFarm_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_23);
+	aggregate_func_1307(iLocal_23);
 	iLocal_24 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2930f, 1360f, 75f, 0f, 0f, 0f, 170f, 170f, 75f, "m_volAnnesburg_Restriction");
-	aggregate.annesburg.func_54(iLocal_24);
+	aggregate_func_1306(iLocal_24);
 	iLocal_25 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2350f, 1370f, 105f, 0f, 0f, 0f, 35f, 35f, 15f, "m_volBeaverHollow_Restriction");
-	aggregate.annesburg.func_54(iLocal_25);
+	aggregate_func_1306(iLocal_25);
 	iLocal_26 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2590f, 827.5f, 85f, 0f, 0f, 0f, 80f, 80f, 20f, "m_volButchersCreek_Restriction");
-	aggregate.annesburg.func_54(iLocal_26);
+	aggregate_func_1306(iLocal_26);
 	iLocal_27 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2270f, -95f, 45f, 0f, 0f, 0f, 65f, 65f, 15f, "m_volMacleansHouse_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_27);
+	aggregate_func_1307(iLocal_27);
 	iLocal_28 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(3085f, 2232.5f, 210f, 0f, 0f, 7f, 130f, 150f, 75f, "m_volRockySeven_Restriction");
-	aggregate.bayounwa_population.func_8(iLocal_28, 0, 0);
+	aggregate_func_1308(iLocal_28, 0, 0);
 	iLocal_29 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2965f, 475f, 45f, 0f, 0f, 0f, 75f, 75f, 15f, "m_volTallulahJetty_Restriction");
-	aggregate.bayounwa_population.func_8(iLocal_29, 0, 0);
+	aggregate_func_1308(iLocal_29, 0, 0);
 	iLocal_30 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2518.25f, 2293f, 185.25f, 0f, 0f, 0f, 40f, 40f, 25f, "m_volTeslaLab_Restriction");
-	aggregate.bayounwa_population.func_8(iLocal_30, 0, 0);
+	aggregate_func_1308(iLocal_30, 0, 0);
 	iLocal_31 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2964f, 780f, 52f, 0f, 0f, 0f, 45f, 35f, 25f, "m_volVanHornHorseShop_Restriction");
-	aggregate.bayounwa_population.func_8(iLocal_31, 0, 0);
+	aggregate_func_1308(iLocal_31, 0, 0);
 }
 
 void func_5()
@@ -120,19 +120,19 @@ void func_5()
 	}
 	if (_NAMESPACE48::_0xEB98B38CA60742D7(iVar0) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar1))
 	{
-		if (!aggregate.adlerranch.func_93(2024769126))
+		if (!aggregate_func_1518(2024769126))
 		{
 			if (!STREAMING::_0x73B40D97D7BAAD77(516817794, Global_36))
 			{
-				aggregate.bigvalley_population.func_16(2024769126);
+				aggregate_func_3414(2024769126);
 			}
 		}
 	}
-	else if (aggregate.adlerranch.func_93(2024769126))
+	else if (aggregate_func_1518(2024769126))
 	{
 		if (!STREAMING::_0x73B40D97D7BAAD77(516817794, Global_36))
 		{
-			aggregate.bigvalley_population.func_17(2024769126);
+			aggregate_func_3010(2024769126);
 		}
 	}
 }

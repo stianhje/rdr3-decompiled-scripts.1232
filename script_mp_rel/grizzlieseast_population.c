@@ -34,7 +34,7 @@ void __EntryFunction__()
 
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	aggregate.bayounwa_population.func_1();
+	aggregate_func_685();
 	func_2();
 	func_3();
 	iVar4 = 0;
@@ -44,7 +44,7 @@ void __EntryFunction__()
 	bVar5 = true;
 	while (bVar5)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() == -1)
+		if (aggregate_func_4251() == -1)
 		{
 		}
 		else
@@ -57,7 +57,7 @@ void __EntryFunction__()
 				func_5(iVar0[iVar4]);
 				iVar4++;
 			}
-			if (aggregate.aberdeenpigfarm.func_49(1, 1))
+			if (aggregate_func_523(1, 1))
 			{
 				bVar5 = false;
 			}
@@ -74,7 +74,7 @@ void __EntryFunction__()
 		}
 		iVar4++;
 	}
-	aggregate.ambient_fishing_scenario.func_7();
+	aggregate_func_4264();
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
@@ -89,17 +89,17 @@ void func_2()
 void func_3()
 {
 	iLocal_17 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-382.5f, 1917.5f, 225f, 0f, 0f, 0f, 65f, 65f, 40f, "m_volChezPorter_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_17);
+	aggregate_func_1307(iLocal_17);
 	iLocal_18 = func_9(iLocal_18);
 	func_10(iLocal_18, 0, 0);
 	iLocal_19 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(465f, 2215f, 250f, 0f, 0f, 0f, 110f, 110f, 50f, "m_volWapiti_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_19);
+	aggregate_func_1307(iLocal_19);
 	iLocal_20 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(749.1984f, 1823.562f, 245.6922f, 0f, 0f, 45f, 12.5f, 10f, 30f, "m_volChelonianHut_Restriction");
-	aggregate.bayounwa_population.func_9(iLocal_20, 0, 0);
+	aggregate_func_1368(iLocal_20, 0, 0);
 	iLocal_21 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(1701.532f, 1509.786f, 147.5539f, 0f, 0f, 8.3768f, 10.10543f, 7.489669f, 5.494266f, "m_volVeteransHomestead_Restriction");
-	aggregate.bayounwa_population.func_8(iLocal_21, 0, 0);
+	aggregate_func_1308(iLocal_21, 0, 0);
 	iLocal_22 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(800f, 890f, 118f, 0f, 0f, 66f, 80f, 65f, 12f, "m_volCarmodyDell_Restriction");
-	aggregate.bayounwa_population.func_7(iLocal_22);
+	aggregate_func_1307(iLocal_22);
 }
 
 void func_5(var uParam0)
@@ -112,7 +112,7 @@ void func_5(var uParam0)
 	{
 		return;
 	}
-	aggregate.fm_deathmatch_controller.func_1542(PLAYER::PLAYER_PED_ID(), joaat("weapon_drowning"), 0, 0);
+	aggregate_func_375(PLAYER::PLAYER_PED_ID(), joaat("weapon_drowning"), 0, 0);
 }
 
 int func_9(int iParam0)
@@ -136,7 +136,7 @@ void func_10(int iParam0, int iParam1, bool bParam2)
 	POPULATION::_0x18262CAFEBB5FBE1(iParam0, iParam1 | 128 | 2 | 4 | 1, 16384, 0, -1, -1, 0);
 	if (bParam2)
 	{
-		aggregate.aberdeenpigfarm.func_163(&iParam1, 8192);
+		aggregate_func_4243(&iParam1, 8192);
 	}
 	POPULATION::_0x2161278C6322F740(iParam1 | 128 | 2 | 4 | 1, 16384, 0, -1, -1, iParam0);
 }

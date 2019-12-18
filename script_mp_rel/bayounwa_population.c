@@ -38,26 +38,26 @@ void __EntryFunction__()
 
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	aggregate.bayounwa_population.func_1();
+	aggregate_func_685();
 	func_2();
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 	bVar0 = true;
 	while (bVar0)
 	{
-		if (aggregate.aberdeenpigfarm.func_45() == -1)
+		if (aggregate_func_4251() == -1)
 		{
 		}
 		else
 		{
 			Global_1896610->f_51 = NETWORK::_0xFB9ECED5B68F3B78(Global_1896610->f_42);
-			if (aggregate.aberdeenpigfarm.func_49(1, 1))
+			if (aggregate_func_523(1, 1))
 			{
 				bVar0 = false;
 			}
 		}
 		BUILTIN::WAIT(0);
 	}
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
@@ -77,9 +77,9 @@ void func_2()
 	VOLUME::_0x39816F6F94F385AD(iLocal_18, 1975f, -1342.5f, 50f, 0f, 0f, 170f, 150f, 125f, 40f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_18, 1750f, -1582.5f, 50f, 0f, 0f, 86f, 100f, 75f, 40f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_18, 1977.5f, -1300f, 50f, 0f, 0f, 147f, 135f, 100f, 40f);
-	aggregate.bayounwa_population.func_7(iLocal_18);
+	aggregate_func_1307(iLocal_18);
 	iLocal_19 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2090f, -1817.5f, 39f, 0f, 0f, 0f, 18f, 18f, 10f, "m_volCrawdadWilliesRestriction");
-	aggregate.bayounwa_population.func_7(iLocal_19);
+	aggregate_func_1307(iLocal_19);
 	iLocal_20 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2125.35f, -597.55f, 45f, 0f, 0f, 45f, 50f, 70f, 10f, "m_volLagrasRestriction");
 	POPULATION::_0xB56D41A694E42E86(iLocal_20, 4295, 4210688, 0, -1, -1, 2);
 	POPULATION::_0x18262CAFEBB5FBE1(iLocal_20, 4295, 4210688, 0, -1, -1, 0);
@@ -87,33 +87,33 @@ void func_2()
 	iLocal_21 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volLakayRestriction");
 	VOLUME::_0xBCE668AAF83608BE(iLocal_21, 2252.5f, -762.5f, 45f, 0f, 0f, 0f, 40f, 40f, 10f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_21, 2288f, -723f, 45f, 0f, 0f, -40f, 12f, 15f, 10f);
-	aggregate.bayounwa_population.func_7(iLocal_21);
+	aggregate_func_1307(iLocal_21);
 	iLocal_22 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2011.9f, -840.7f, 44.7f, 0f, 0f, 0f, 98.7f, 64.1f, 10f, "m_volOrangePlantationRestriction");
-	aggregate.bayounwa_population.func_7(iLocal_22);
+	aggregate_func_1307(iLocal_22);
 	iLocal_23 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volStDenisFountainAquaticRestriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_23, 2331.869f, -1216.261f, 45.5096f, 0f, 0f, 0f, 18f, 9f, 5f);
 	VOLUME::_0xBCE668AAF83608BE(iLocal_23, 2401.408f, -1036.954f, 43.69143f, 0f, 0f, 0f, 3.15f, 3.15f, 3.297321f);
-	aggregate.bayounwa_population.func_8(iLocal_23, 512, 0);
+	aggregate_func_1308(iLocal_23, 512, 0);
 	iLocal_24 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volStDenisNorthShacksRestriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_24, 2352.919f, -862.3568f, 45f, 0f, 0f, 18f, 7.5f, 7.5f, 30f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_24, 2352.267f, -854.82f, 45f, 0f, 0f, 36f, 10f, 10f, 30f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_24, 2370.363f, -861.704f, 45f, 0f, 0f, 21f, 15f, 20f, 30f);
-	aggregate.bayounwa_population.func_8(iLocal_24, 0, 0);
+	aggregate_func_1308(iLocal_24, 0, 0);
 	iLocal_25 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(1789.165f, -815.8882f, 51f, 0f, 0f, 0f, 12.5f, 12.5f, 15f, "m_volBoardedHouseRestriction");
-	aggregate.bayounwa_population.func_9(iLocal_25, 0, 0);
+	aggregate_func_1368(iLocal_25, 0, 0);
 	iLocal_26 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volMacombsEndRestriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_26, 1881.904f, -773.9849f, 50f, 0f, 0f, 0f, 24f, 10f, 30f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_26, 1884.927f, -749.2661f, 50f, 0f, 0f, 0f, 30f, 40f, 30f);
-	aggregate.bayounwa_population.func_9(iLocal_26, 0, 0);
+	aggregate_func_1368(iLocal_26, 0, 0);
 	iLocal_27 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2154.009f, -1293.059f, 50f, 0f, 0f, 71.44212f, 52.13922f, 102.3606f, 40f, "m_volMeatFacotryRestriction");
-	aggregate.bayounwa_population.func_8(iLocal_27, 0, 0);
+	aggregate_func_1308(iLocal_27, 0, 0);
 	iLocal_28 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(1892.398f, -1861.472f, 57.8087f, 0f, 0f, -39f, 61f, 40f, 30f, "m_volShadyBelleCampRestriction");
-	aggregate.bayounwa_population.func_8(iLocal_28, 0, 0);
+	aggregate_func_1308(iLocal_28, 0, 0);
 	iLocal_29 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volStDenisRuralHouse");
 	VOLUME::_0x39816F6F94F385AD(iLocal_29, 2557.442f, -913.5541f, 43.8437f, 0f, 0f, 25.86927f, 21.31003f, 16.89607f, 13.63585f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_29, 2531.764f, -930.9406f, 41.67561f, 0f, 0f, 25.86927f, 19.01398f, 16.50291f, 13.63585f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_29, 2508.388f, -936.4707f, 43.20302f, 0f, 0f, 25.86927f, 10.15781f, 10.6119f, 10.52294f);
-	aggregate.bayounwa_population.func_10(iLocal_29, 0, 0);
+	aggregate_func_1314(iLocal_29, 0, 0);
 	iLocal_30 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volAquaticRestriction");
 	VOLUME::_0x39816F6F94F385AD(iLocal_30, 2051.69f, -1716.667f, 45.47638f, 0f, 0f, -22.36101f, 43.12104f, 125.3801f, 18.72456f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_30, 2212.785f, -513.7505f, 42.64256f, 0f, 0f, 7.584539f, 120.1986f, 73.42303f, 13.12508f);
@@ -121,6 +121,6 @@ void func_2()
 	VOLUME::_0x39816F6F94F385AD(iLocal_30, 1774.63f, -754.3323f, 40.5518f, 0f, 0f, -48.02472f, 41.93194f, 15.1102f, 8.930059f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_30, 2079.136f, -508.0375f, 40.54353f, 0f, 0f, 32.83384f, 30.26976f, 12.10188f, 4.106483f);
 	VOLUME::_0x39816F6F94F385AD(iLocal_30, 2072.09f, -541.5287f, 41.15696f, 0f, 0f, -50.04893f, 49.11419f, 29.08003f, 4.101138f);
-	aggregate.bayounwa_population.func_11(iLocal_30);
+	aggregate_func_1369(iLocal_30);
 }
 

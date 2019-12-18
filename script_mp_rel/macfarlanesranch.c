@@ -36,7 +36,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -85,22 +85,22 @@ bool func_13()
 
 void func_30(int iParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
 		return;
 	}
-	aggregate.annesburg.func_67(894, iLocal_22, 1);
-	aggregate.annesburg.func_67(889, iLocal_22, 0);
-	aggregate.annesburg.func_67(890, iLocal_22, 0);
-	aggregate.annesburg.func_67(891, iLocal_22, 0);
-	aggregate.annesburg.func_67(892, iLocal_22, 0);
-	aggregate.annesburg.func_67(893, iLocal_22, 0);
+	aggregate_func_2366(894, iLocal_22, 1);
+	aggregate_func_2366(889, iLocal_22, 0);
+	aggregate_func_2366(890, iLocal_22, 0);
+	aggregate_func_2366(891, iLocal_22, 0);
+	aggregate_func_2366(892, iLocal_22, 0);
+	aggregate_func_2366(893, iLocal_22, 0);
 	VOLUME::_0x4A8FEFC43FD8AC9B(iLocal_22, 3, 1);
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate.aberdeenpigfarm.func_120(893));
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate.aberdeenpigfarm.func_120(889));
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate.aberdeenpigfarm.func_120(890));
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate.aberdeenpigfarm.func_120(891));
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate.aberdeenpigfarm.func_120(892));
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate_func_4452(893));
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate_func_4452(889));
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate_func_4452(890));
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate_func_4452(891));
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_22, 3, 1, aggregate_func_4452(892));
 }
 
 void func_64()
@@ -174,14 +174,14 @@ void func_64()
 void func_81(int iParam0)
 {
 	LAW::_REMOVE_GUARD_ZONE(sLocal_19);
-	aggregate.annesburg.func_166(iLocal_20);
-	aggregate.annesburg.func_166(iLocal_23);
+	aggregate_func_2017(iLocal_20);
+	aggregate_func_2017(iLocal_23);
 	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_22))
 	{
 		VOLUME::_0x998202B206872672(iLocal_22);
 		VOLUME::_0x6D5F9E69BA1BE783(iLocal_22);
 		VOLUME::_0x43F867EF5C463A53(iLocal_22);
 	}
-	aggregate.aguasdulces.func_58(0.775f, 0.2f, 0.025f, 0f);
+	aggregate_func_6501(0.775f, 0.2f, 0.025f, 0f);
 }
 

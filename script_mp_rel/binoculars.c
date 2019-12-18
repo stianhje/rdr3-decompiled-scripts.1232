@@ -42,9 +42,9 @@ void __EntryFunction__()
 		Local_13.f_8 = PED::IS_PED_ON_MOUNT(Global_35);
 	}
 	func_1();
-	if (aggregate.binoculars.func_2(505))
+	if (aggregate_func_3080(505))
 	{
-		aggregate.binoculars.func_3(505);
+		aggregate_func_7858(505);
 	}
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
@@ -57,19 +57,19 @@ void __EntryFunction__()
 		{
 			func_7(&Local_13);
 		}
-		if (!WEAPON::_0xC853230E76A152DF(aggregate.binoculars.func_8(Global_35, 1, 0, 1)))
+		if (!WEAPON::_0xC853230E76A152DF(aggregate_func_1534(Global_35, 1, 0, 1)))
 		{
 			func_9(&(Local_13.f_13), &(Local_13.f_14), &(Local_13.f_15), &(Local_13.f_16));
 			if (Local_13.f_15 != 0 || Local_13.f_16 != 0)
 			{
-				aggregate.barcustomer_interaction.func_43(&(Local_13.f_18));
+				aggregate_func_4283(&(Local_13.f_18));
 			}
 		}
-		if (func_6() > 0 && !WEAPON::_0xC853230E76A152DF(aggregate.binoculars.func_8(Global_35, 1, 0, 1)))
+		if (func_6() > 0 && !WEAPON::_0xC853230E76A152DF(aggregate_func_1534(Global_35, 1, 0, 1)))
 		{
 			func_11(&Local_13, 8);
 		}
-		if (aggregate.annesburg.func_217(&(Local_13.f_4[0])) && aggregate.binoculars.func_13(&(Local_13.f_4[0]), 1))
+		if (aggregate_func_2875(&(Local_13.f_4[0])) && aggregate_func_2927(&(Local_13.f_4[0]), 1))
 		{
 			func_11(&Local_13, 6);
 		}
@@ -77,42 +77,42 @@ void __EntryFunction__()
 		switch (func_6())
 		{
 			case 0:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				func_11(&Local_13, 1);
 				break;
 			case 1:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				func_11(&Local_13, 2);
 				break;
 			case 2:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
-				if (WEAPON::_0xC853230E76A152DF(aggregate.binoculars.func_8(Global_35, 1, 0, 0)))
+				if (WEAPON::_0xC853230E76A152DF(aggregate_func_1534(Global_35, 1, 0, 0)))
 				{
-					aggregate.binoculars.func_17(1);
-					aggregate.binoculars.func_18(506, 0);
+					aggregate_func_2985(1);
+					aggregate_func_4322(506, 0);
 					func_19(&Local_13);
-					Local_13.f_4[0] = aggregate.binoculars.func_20("BINO_PUT_AWAY", joaat("INPUT_CAMERA_PUT_AWAY"), 1, 0, 0, 0, 570, 4000, 10, 1073741824 /* Float: 2f */, joaat("SHORT_TIMED_EVENT"), 0);
+					Local_13.f_4[0] = aggregate_func_2385("BINO_PUT_AWAY", joaat("INPUT_CAMERA_PUT_AWAY"), 1, 0, 0, 0, 570, 4000, 10, 1073741824 /* Float: 2f */, joaat("SHORT_TIMED_EVENT"), 0);
 					func_11(&Local_13, 4);
 				}
 				break;
 			case 4:
 				PAD::_0x2804658EB7D8A50B(5, -490854963);
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				if (func_21())
 				{
-					aggregate.binoculars.func_22("enter", "Binoculars_Sounds", 1);
+					aggregate_func_2112("enter", "Binoculars_Sounds", 1);
 					iLocal_50 = 0;
 					func_11(&Local_13, 5);
 				}
@@ -123,7 +123,7 @@ void __EntryFunction__()
 				{
 					if (iLocal_50 < 2)
 					{
-						aggregate.binoculars.func_22("zoom_in", "Binoculars_Sounds", 1);
+						aggregate_func_2112("zoom_in", "Binoculars_Sounds", 1);
 						iLocal_50 = (1 + iLocal_50);
 					}
 				}
@@ -131,52 +131,52 @@ void __EntryFunction__()
 				{
 					if (iLocal_50 > 0)
 					{
-						aggregate.binoculars.func_22("zoom_out", "Binoculars_Sounds", 1);
+						aggregate_func_2112("zoom_out", "Binoculars_Sounds", 1);
 						iLocal_50 = (iLocal_50 - 1);
 					}
 				}
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_16(&Local_13);
-					aggregate.binoculars.func_17(1);
-					aggregate.annesburg.func_218(Local_13.f_4[2], 1, 1);
-					Local_13.f_4[2] = aggregate.binoculars.func_24("IB_ZOOM", joaat("INPUT_SNIPER_ZOOM"), 17, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
-					aggregate.binoculars.func_25(&(Local_13.f_4[2]), 11, 1, 1);
-					aggregate.binoculars.func_25(&(Local_13.f_4[2]), 17, 1, 1);
-					aggregate.binoculars.func_26(&(Local_13.f_4[2]), joaat("INPUT_SNIPER_ZOOM"));
+					aggregate_func_4285(&Local_13);
+					aggregate_func_2985(1);
+					aggregate_func_2878(Local_13.f_4[2], 1, 1);
+					Local_13.f_4[2] = aggregate_func_2045("IB_ZOOM", joaat("INPUT_SNIPER_ZOOM"), 17, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("SHORT_TIMED_EVENT"), 0);
+					aggregate_func_2057(&(Local_13.f_4[2]), 11, 1, 1);
+					aggregate_func_2057(&(Local_13.f_4[2]), 17, 1, 1);
+					aggregate_func_2516(&(Local_13.f_4[2]), joaat("INPUT_SNIPER_ZOOM"));
 				}
 				if (func_27())
 				{
-					aggregate.binoculars.func_17(1);
-					aggregate.annesburg.func_218(Local_13.f_4[2], 1, 1);
-					aggregate.binoculars.func_22("exit", "Binoculars_Sounds", 1);
+					aggregate_func_2985(1);
+					aggregate_func_2878(Local_13.f_4[2], 1, 1);
+					aggregate_func_2112("exit", "Binoculars_Sounds", 1);
 					func_11(&Local_13, 4);
 				}
 				break;
 			case 6:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
 					func_19(&Local_13);
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				func_11(&Local_13, 7);
 				break;
 			case 7:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_4285(&Local_13);
 				}
 				func_11(&Local_13, 8);
-				if (WEAPON::_0xC853230E76A152DF(aggregate.binoculars.func_28(Global_35, 0)))
+				if (WEAPON::_0xC853230E76A152DF(aggregate_func_3066(Global_35, 0)))
 				{
 					WEAPON::_0xFCCC886EDE3C63EC(Global_35, 2, 0);
 				}
 				break;
 			case 8:
-				if (aggregate.binoculars.func_15(&Local_13))
+				if (aggregate_func_4287(&Local_13))
 				{
-					aggregate.binoculars.func_17(1);
-					aggregate.binoculars.func_16(&Local_13);
+					aggregate_func_2985(1);
+					aggregate_func_4285(&Local_13);
 				}
 				func_4(&Local_13);
 				SCRIPTS::TERMINATE_THIS_THREAD();
@@ -195,13 +195,13 @@ void func_1()
 
 void func_4(int* iParam0)
 {
-	if (aggregate.binoculars.func_2(507))
+	if (aggregate_func_3080(507))
 	{
-		aggregate.binoculars.func_3(507);
+		aggregate_func_7858(507);
 	}
-	if (aggregate.binoculars.func_2(506))
+	if (aggregate_func_3080(506))
 	{
-		aggregate.binoculars.func_3(506);
+		aggregate_func_7858(506);
 	}
 	func_19(iParam0);
 	func_1();
@@ -210,7 +210,7 @@ void func_4(int* iParam0)
 	{
 		OBJECT::DELETE_OBJECT(iParam0);
 	}
-	if (aggregate.aberdeenpigfarm.func_61(iParam0, 64))
+	if (aggregate_func_4250(iParam0, 64))
 	{
 		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
 	}
@@ -222,7 +222,7 @@ void func_4(int* iParam0)
 		CAM::DESTROY_CAM(iParam0->f_1, false);
 	}
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 2048, 0);
-	aggregate.binoculars.func_17(1);
+	aggregate_func_2985(1);
 	HUD::_0xAA03F130A637D923("BINO");
 }
 
@@ -234,23 +234,23 @@ bool func_5(int* iParam0)
 	}
 	if (func_30())
 	{
-		aggregate.aberdeenpigfarm.func_68(iParam0, 8);
-		aggregate.aberdeenpigfarm.func_68(iParam0, 16);
-		aggregate.aberdeenpigfarm.func_68(iParam0, 64);
+		aggregate_func_4254(iParam0, 8);
+		aggregate_func_4254(iParam0, 16);
+		aggregate_func_4254(iParam0, 64);
 	}
-	if (aggregate.aberdeenpigfarm.func_61(iParam0, 8) || aggregate.aberdeenpigfarm.func_61(iParam0, 16))
+	if (aggregate_func_4250(iParam0, 8) || aggregate_func_4250(iParam0, 16))
 	{
 		return false;
 	}
-	if ((!aggregate.binoculars.func_32(joaat("weapon_kit_binoculars"), 1) && !aggregate.binoculars.func_32(1652431022 /* GXTEntry: "Refined Binoculars" */, 1)) && !WEAPON::_0xC853230E76A152DF(aggregate.binoculars.func_8(Global_35, 1, 0, 1)))
+	if ((!aggregate_func_2850(joaat("weapon_kit_binoculars"), 1) && !aggregate_func_2850(1652431022 /* GXTEntry: "Refined Binoculars" */, 1)) && !WEAPON::_0xC853230E76A152DF(aggregate_func_1534(Global_35, 1, 0, 1)))
 	{
 		return false;
 	}
-	if (aggregate.binoculars.func_33())
+	if (aggregate_func_4866())
 	{
 		return false;
 	}
-	if (aggregate.binoculars.func_34(PLAYER::GET_PLAYER_INDEX()))
+	if (aggregate_func_1815(PLAYER::GET_PLAYER_INDEX()))
 	{
 		return false;
 	}
@@ -266,12 +266,12 @@ void func_7(int* iParam0)
 {
 	if (func_35(1))
 	{
-		if (!aggregate.aberdeenpigfarm.func_61(iParam0, 16))
+		if (!aggregate_func_4250(iParam0, 16))
 		{
 			if (func_6() == 5)
 			{
-				aggregate.aberdeenpigfarm.func_68(iParam0, 8);
-				aggregate.aberdeenpigfarm.func_68(iParam0, 16);
+				aggregate_func_4254(iParam0, 8);
+				aggregate_func_4254(iParam0, 16);
 			}
 			else
 			{
@@ -282,40 +282,40 @@ void func_7(int* iParam0)
 	}
 	if (func_35(2))
 	{
-		if (!aggregate.aberdeenpigfarm.func_61(iParam0, 8))
+		if (!aggregate_func_4250(iParam0, 8))
 		{
 			if (func_6() == 5)
 			{
-				aggregate.aberdeenpigfarm.func_68(iParam0, 8);
+				aggregate_func_4254(iParam0, 8);
 			}
 		}
 		func_36(2);
 	}
 	if (func_35(4))
 	{
-		if (aggregate.annesburg.func_217(&(iParam0->f_4[0])))
+		if (aggregate_func_2875(&(iParam0->f_4[0])))
 		{
-			aggregate.binoculars.func_37(&(iParam0->f_4[0]), 0, 1, 1);
+			aggregate_func_4583(&(iParam0->f_4[0]), 0, 1, 1);
 		}
 		func_36(4);
 	}
-	else if (aggregate.annesburg.func_217(&(iParam0->f_4[0])) && aggregate.binoculars.func_38(&(iParam0->f_4[0]), 1))
+	else if (aggregate_func_2875(&(iParam0->f_4[0])) && aggregate_func_8656(&(iParam0->f_4[0]), 1))
 	{
-		aggregate.binoculars.func_37(&(iParam0->f_4[0]), 1, 1, 1);
+		aggregate_func_4583(&(iParam0->f_4[0]), 1, 1, 1);
 	}
 	if (func_35(8))
 	{
-		if (!aggregate.aberdeenpigfarm.func_61(iParam0, 32))
+		if (!aggregate_func_4250(iParam0, 32))
 		{
-			aggregate.aberdeenpigfarm.func_68(iParam0, 32);
+			aggregate_func_4254(iParam0, 32);
 		}
 		func_36(8);
 	}
 	if (func_35(16))
 	{
-		if (aggregate.aberdeenpigfarm.func_61(iParam0, 32))
+		if (aggregate_func_4250(iParam0, 32))
 		{
-			aggregate.binoculars.func_39(iParam0, 32);
+			aggregate_func_6662(iParam0, 32);
 		}
 		func_36(16);
 	}
@@ -332,12 +332,12 @@ void func_9(var uParam0, var uParam1, var uParam2, var uParam3)
 void func_11(int* iParam0, int iParam1)
 {
 	Global_1912863 = iParam1;
-	aggregate.binoculars.func_41(iParam0);
+	aggregate_func_4489(iParam0);
 }
 
 void func_14(int iParam0)
 {
-	if (!WEAPON::_0xC853230E76A152DF(aggregate.binoculars.func_8(Global_35, 1, 0, 1)))
+	if (!WEAPON::_0xC853230E76A152DF(aggregate_func_1534(Global_35, 1, 0, 1)))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_AIM"), false);
 		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SPRINT"), false);
@@ -362,9 +362,9 @@ void func_19(int iParam0)
 	iVar0 = 0;
 	while (iVar0 < iParam0->f_4)
 	{
-		if (aggregate.annesburg.func_217(&(iParam0->f_4[iVar0])))
+		if (aggregate_func_2875(&(iParam0->f_4[iVar0])))
 		{
-			aggregate.annesburg.func_218(iParam0->f_4[iVar0], 1, 1);
+			aggregate_func_2878(iParam0->f_4[iVar0], 1, 1);
 		}
 		iVar0++;
 	}
@@ -374,7 +374,7 @@ bool func_21()
 {
 	if (CAM::IS_FIRST_PERSON_AIM_CAM_ACTIVE())
 	{
-		if (!WEAPON::_0xC853230E76A152DF(aggregate.binoculars.func_8(Global_35, 1, 0, 1)))
+		if (!WEAPON::_0xC853230E76A152DF(aggregate_func_1534(Global_35, 1, 0, 1)))
 		{
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 2048, 0);
 		}

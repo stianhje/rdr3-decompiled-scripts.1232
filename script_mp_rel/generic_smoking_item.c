@@ -38,7 +38,7 @@ void __EntryFunction__()
 	vVar181 = { 0f, 0f, 0f };
 	vVar184 = { 0f, 0f, 0f };
 	vVar187 = { 0f, 0f, 0f };
-	switch (aggregate.coffee_drinking.func_101(Var0.f_2, -949239683))
+	switch (aggregate_func_2900(Var0.f_2, -949239683))
 	{
 		case -1919515848:
 			vVar181 = { 25f, 0f, 90f };
@@ -122,39 +122,39 @@ void __EntryFunction__()
 		}
 		if (!ScriptParam_0.f_3)
 		{
-			aggregate.generic_alcohol_item.func_9(&(Var0.f_2));
+			aggregate_func_1349(&(Var0.f_2));
 		}
 		switch (Var0.f_1)
 		{
 			case 0:
-				if (aggregate.bandana.func_30(Var0.f_2, 0))
+				if (aggregate_func_2823(Var0.f_2, 0))
 				{
-					aggregate.coffee_drinking.func_4(&(Var0.f_2));
+					aggregate_func_2449(&(Var0.f_2));
 				}
 				if (ScriptParam_0.f_3)
 				{
 					Var0.f_2.f_2 = 1f;
-					aggregate.camera_item.func_77(&Var0, 2);
+					aggregate_func_4242(&Var0, 2);
 				}
 				else
 				{
-					aggregate.camera_item.func_77(&Var0, 1);
+					aggregate_func_4242(&Var0, 1);
 				}
 				break;
 			case 1:
 				if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 442509369))
 				{
 					Var0.f_2.f_1 = (1 + Var0.f_2.f_1);
-					aggregate.coffee_drinking.func_11(&(Var0.f_2), IntToFloat(Var0.f_2.f_1) >= Var0.f_2.f_2);
+					aggregate_func_580(&(Var0.f_2), IntToFloat(Var0.f_2.f_1) >= Var0.f_2.f_2);
 				}
 				if (IntToFloat(Var0.f_2.f_1) >= Var0.f_2.f_2)
 				{
-					aggregate.camera_item.func_77(&Var0, 3);
+					aggregate_func_4242(&Var0, 3);
 				}
 				break;
 			case 2:
-				aggregate.coffee_drinking.func_11(&(Var0.f_2), 1);
-				aggregate.camera_item.func_77(&Var0, 3);
+				aggregate_func_580(&(Var0.f_2), 1);
+				aggregate_func_4242(&Var0, 3);
 				break;
 			case 3:
 				if (ScriptParam_0.f_3)
@@ -163,13 +163,13 @@ void __EntryFunction__()
 				}
 				else if (!bVar191)
 				{
-					if (aggregate.aberdeenpigfarm.func_45() == -1 && aggregate.angryisolationist.func_40(0))
+					if (aggregate_func_4251() == -1 && aggregate_func_4484(0))
 					{
 						if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 108107462))
 						{
 							if (!AUDIO::IS_SCRIPTED_SPEECH_PLAYING(Global_35))
 							{
-								if (aggregate.fme_condor_egg.func_1100(Global_35, "Player_Sick_Smoking_Cough", joaat("speech_params_force"), 0, 1, 0, 0, 1))
+								if (aggregate_func_4975(Global_35, "Player_Sick_Smoking_Cough", joaat("speech_params_force"), 0, 1, 0, 0, 1))
 								{
 									bVar191 = true;
 								}
@@ -187,7 +187,7 @@ void __EntryFunction__()
 	}
 	if (Var0.f_1 <= 1 && !ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID()))
 	{
-		aggregate.coffee_drinking.func_11(&(Var0.f_2), 1);
+		aggregate_func_580(&(Var0.f_2), 1);
 	}
 }
 

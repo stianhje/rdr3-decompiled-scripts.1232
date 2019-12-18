@@ -34,7 +34,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -66,14 +66,14 @@ bool func_13()
 
 void func_30(int iParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
 		return;
 	}
-	aggregate.annesburg.func_67(777, iLocal_15, 1);
-	aggregate.annesburg.func_67(778, iLocal_15, 0);
+	aggregate_func_2366(777, iLocal_15, 1);
+	aggregate_func_2366(778, iLocal_15, 0);
 	VOLUME::_0x4A8FEFC43FD8AC9B(iLocal_15, 2, 1);
-	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate.aberdeenpigfarm.func_120(778));
+	VOLUME::_0x53D05D60E5F5B40C(iLocal_15, 3, 1, aggregate_func_4452(778));
 }
 
 void func_79(int iParam0)

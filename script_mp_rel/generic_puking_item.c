@@ -26,7 +26,7 @@ void __EntryFunction__()
 	iVar3 = 0;
 	while (!SCRIPTS::_0x9E4EF615E307FBBE())
 	{
-		if (aggregate.generic_puking_item.func_1(&iVar3, &uVar4, 1, &uVar0))
+		if (aggregate_func_229(&iVar3, &uVar4, 1, &uVar0))
 		{
 		}
 		else

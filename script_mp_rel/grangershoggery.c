@@ -35,7 +35,7 @@
 	var uScriptParam_3 = 0;
 #endregion
 
-// __EntryFunction__ == aberdeenpigfarm.__EntryFunction__
+// __EntryFunction__ == aggregate_func_88
 
 bool func_13()
 {
@@ -69,12 +69,12 @@ bool func_13()
 
 void func_30(int iParam0)
 {
-	if (aggregate.aberdeenpigfarm.func_45() != -1)
+	if (aggregate_func_4251() != -1)
 	{
 		return;
 	}
-	aggregate.aberdeenpigfarm.func_74(75, 16);
-	aggregate.annesburg.func_67(745, iLocal_15, 1);
+	aggregate_func_4329(75, 16);
+	aggregate_func_2366(745, iLocal_15, 1);
 	VOLUME::_0x4A8FEFC43FD8AC9B(iLocal_15, 3, 1);
 	TASK::SET_SCENARIO_GROUP_ENABLED("Shack_GunslingerLivestock", true);
 }
@@ -107,8 +107,8 @@ void func_63()
 void func_79(int iParam0)
 {
 	LAW::_REMOVE_GUARD_ZONE(sLocal_14);
-	aggregate.annesburg.func_166(iLocal_17);
-	aggregate.annesburg.func_166(iLocal_16);
+	aggregate_func_2017(iLocal_17);
+	aggregate_func_2017(iLocal_16);
 	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_15))
 	{
 		VOLUME::_0x6D5F9E69BA1BE783(iLocal_15);

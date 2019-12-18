@@ -28,19 +28,19 @@ void __EntryFunction__()
 	iLocal_15 = vScriptParam_0.x;
 	uLocal_16 = vScriptParam_0.y;
 	uLocal_17 = vScriptParam_0.z;
-	aggregate.aberdeenpigfarm.func_23();
+	aggregate_func_4238();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
-		aggregate.ambient_fishing_scenario.func_2();
+		aggregate_func_1689();
 	}
-	while (!SCRIPTS::_0x9E4EF615E307FBBE() && aggregate.ambient_fishing_scenario.func_3())
+	while (!SCRIPTS::_0x9E4EF615E307FBBE() && aggregate_func_3440())
 	{
-		aggregate.aberdeenpigfarm.func_23();
-		aggregate.ambient_fishing_scenario.func_5();
+		aggregate_func_4238();
+		aggregate_func_2374();
 		func_6();
 		BUILTIN::WAIT(0);
 	}
-	aggregate.ambient_fishing_scenario.func_2();
+	aggregate_func_1689();
 }
 
 void func_6()
@@ -108,9 +108,9 @@ void func_6()
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(Local_19.f_2))
 				{
-					if (!aggregate.barcustomer_interaction.func_42(&(Local_19.f_4)))
+					if (!aggregate_func_4260(&(Local_19.f_4)))
 					{
-						aggregate.barcustomer_interaction.func_43(&(Local_19.f_4));
+						aggregate_func_4283(&(Local_19.f_4));
 					}
 					Local_19.f_7 = 4;
 				}
@@ -123,7 +123,7 @@ void func_6()
 		case 4:
 			if (ENTITY::DOES_ENTITY_EXIST(Local_19.f_2))
 			{
-				Local_19 = aggregate.broom_scenario.func_29(&(Local_19.f_4));
+				Local_19 = aggregate_func_4298(&(Local_19.f_4));
 				if (Local_19 > 0f && Local_19 <= 10f)
 				{
 					OBJECT::_0x2797C633DCDBBAC5(Local_19.f_1, (Local_19 / 10f), 1);
