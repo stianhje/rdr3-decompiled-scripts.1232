@@ -223,7 +223,7 @@ void func_4(int* iParam0)
 	}
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 2048, 0);
 	aggregate_func_2985(1);
-	HUD::_0xAA03F130A637D923("BINO");
+	HUD::_TEXT_DATABASE_DELETE("BINO");
 }
 
 bool func_5(int* iParam0)

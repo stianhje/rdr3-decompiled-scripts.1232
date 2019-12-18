@@ -254,7 +254,7 @@ void func_26()
 
 	if (aggregate_func_4371() == 8)
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_50))
+		if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_50))
 		{
 			iLocal_50 = VOLUME::_CREATE_VOLUME_AGGREGATE();
 			VOLUME::_0x5B7D7BF36D2DE18B(iLocal_50, 1468.909f, -7225.962f, 86.862f, 0f, 0f, 18f, 748f, 853f, 473f);

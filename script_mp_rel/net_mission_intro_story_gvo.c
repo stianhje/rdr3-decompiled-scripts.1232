@@ -274,9 +274,9 @@ void func_5(var uParam0)
 	iVar0 = 0;
 	while (iVar0 < 2)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3((uParam0->f_12[iVar0 /*3*/])->f_1))
+		if (VOLUME::_DOES_VOLUME_EXIST((uParam0->f_12[iVar0 /*3*/])->f_1))
 		{
-			VOLUME::_0x43F867EF5C463A53((uParam0->f_12[iVar0 /*3*/])->f_1);
+			VOLUME::_DELETE_VOLUME((uParam0->f_12[iVar0 /*3*/])->f_1);
 		}
 		iVar0++;
 	}
@@ -400,7 +400,7 @@ void func_17(var uParam0, var uParam1)
 	iVar1 = 0;
 	while (iVar1 < uParam0->f_19)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3((uParam0->f_12[iVar1 /*3*/])->f_1))
+		if (VOLUME::_DOES_VOLUME_EXIST((uParam0->f_12[iVar1 /*3*/])->f_1))
 		{
 			if (aggregate_func_9042(uParam0, 1))
 			{
@@ -504,7 +504,7 @@ void func_36(var uParam0)
 	if (!func_63(aggregate_func_4249(&Local_18), &iVar0, 1065353216 /* Float: 1f */))
 	{
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iVar0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iVar0))
 	{
 		iVar0 = VOLUME::_0xB3FB80A32BAE3065(aggregate_func_5297(aggregate_func_4249(&Local_18)), 0f, 0f, 0f, 10f, 10f, 10f);
 	}
@@ -514,7 +514,7 @@ void func_36(var uParam0)
 	if (!func_63(aggregate_func_4249(&Local_18), &iVar1, 2f))
 	{
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iVar1))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iVar1))
 	{
 		iVar1 = VOLUME::_0xB3FB80A32BAE3065(aggregate_func_5297(aggregate_func_4249(&Local_18)), 0f, 0f, 0f, 15f, 15f, 15f);
 	}
@@ -525,7 +525,7 @@ void func_36(var uParam0)
 	{
 		func_67(&Local_18, fVar5, vVar2);
 	}
-	else if (VOLUME::_0x92A78D0BEDB332A3(iVar1))
+	else if (VOLUME::_DOES_VOLUME_EXIST(iVar1))
 	{
 		vVar6 = { VOLUME::_0x3E2A25B2416DD67E(iVar1) };
 		fVar5 = vVar6.x;
@@ -932,9 +932,9 @@ bool func_63(int iParam0, int iParam1, float fParam2)
 	int iVar5;
 	vector3 vVar6;
 
-	if (VOLUME::_0x92A78D0BEDB332A3(*iParam1))
+	if (VOLUME::_DOES_VOLUME_EXIST(*iParam1))
 	{
-		VOLUME::_0x43F867EF5C463A53(*iParam1);
+		VOLUME::_DELETE_VOLUME(*iParam1);
 	}
 	iVar0 = 1;
 	switch (iParam0)
@@ -1001,7 +1001,7 @@ bool func_63(int iParam0, int iParam1, float fParam2)
 	while (iVar5 < iVar1)
 	{
 		iVar4 = &iVar1[iVar5];
-		if (VOLUME::_0x92A78D0BEDB332A3(iVar4))
+		if (VOLUME::_DOES_VOLUME_EXIST(iVar4))
 		{
 			vVar6 = { VOLUME::_0x3E2A25B2416DD67E(iVar4) };
 			vVar6 = { vVar6 * Vector(fParam2, fParam2, fParam2) };
@@ -1016,12 +1016,12 @@ bool func_63(int iParam0, int iParam1, float fParam2)
 	else
 	{
 		*iParam1 = VOLUME::_CREATE_VOLUME_AGGREGATE();
-		if (VOLUME::_0x92A78D0BEDB332A3(*iParam1))
+		if (VOLUME::_DOES_VOLUME_EXIST(*iParam1))
 		{
 			iVar5 = 0;
 			while (iVar5 < iVar0)
 			{
-				if (VOLUME::_0x92A78D0BEDB332A3(&(iVar1[iVar5])))
+				if (VOLUME::_DOES_VOLUME_EXIST(&(iVar1[iVar5])))
 				{
 					VOLUME::_0x6E0D3C3F828DA773(*iParam1, &(iVar1[iVar5]));
 				}
@@ -1038,7 +1038,7 @@ bool func_65(var uParam0, int iParam1, int iParam2)
 	{
 		return false;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(*iParam1))
+	if (!VOLUME::_DOES_VOLUME_EXIST(*iParam1))
 	{
 		return false;
 	}
@@ -2251,7 +2251,7 @@ bool func_108(int* iParam0, var uParam1)
 			fVar8 = 1E+17f;
 			bVar10 = true;
 			iVar11 = 0;
-			if (VOLUME::_0x92A78D0BEDB332A3((uParam1->f_12[iVar11 /*3*/])->f_1))
+			if (VOLUME::_DOES_VOLUME_EXIST((uParam1->f_12[iVar11 /*3*/])->f_1))
 			{
 				vVar18 = { VOLUME::_0xF70F00013A62F866((uParam1->f_12[iVar11 /*3*/])->f_1) };
 				VOLUME::_0x5737199AF2DC609F((uParam1->f_12[iVar11 /*3*/])->f_1, &vVar12, &vVar15);

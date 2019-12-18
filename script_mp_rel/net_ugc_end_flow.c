@@ -1278,7 +1278,7 @@ void func_59()
 	Global_1048684->f_459 = 0;
 	uVar0 = 32;
 	aggregate_func_3390(&uVar0, PLAYER::GET_PLAYER_INDEX(), 0);
-	HUD::_0xAA03F130A637D923("UIC");
+	HUD::_TEXT_DATABASE_DELETE("UIC");
 	PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_SATCHEL_MENU"), true);
 	PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_MAP"), true);
 	PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_WHEEL_MENU"), true);
@@ -1436,9 +1436,9 @@ void func_70()
 
 bool func_76(char* sParam0, int iParam1)
 {
-	if (!HUD::_0xD0976CC34002DB57(sParam0))
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED(sParam0))
 	{
-		HUD::_0xF66090013DE648D5(sParam0);
+		HUD::_TEXT_DATABASE_REQUEST(sParam0);
 	}
 	else
 	{

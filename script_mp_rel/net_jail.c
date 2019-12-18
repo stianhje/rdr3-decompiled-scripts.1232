@@ -360,7 +360,7 @@ void __EntryFunction__()
 				}
 				if (!MISC::IS_BIT_SET(Local_182.f_3, 0))
 				{
-					HUD::_0xF66090013DE648D5("MPPJAAU");
+					HUD::_TEXT_DATABASE_REQUEST("MPPJAAU");
 					func_7();
 					iLocal_352 = MISC::GET_RANDOM_INT_IN_RANGE(0, 3);
 					MISC::SET_BIT(&(Local_182.f_3), 0);
@@ -440,7 +440,7 @@ void func_10()
 			if (MISC::IS_BIT_SET(Local_182.f_3, 0))
 			{
 				func_22(500);
-				if (func_23() && HUD::_0xD0976CC34002DB57("MPPJAAU"))
+				if (func_23() && HUD::_TEXT_DATABASE_HAS_LOADED("MPPJAAU"))
 				{
 					HUD::_0xC9CAEAEEC1256E54(-48209965);
 					func_21();
@@ -559,7 +559,7 @@ void func_10()
 						ANIMSCENE::_DELETE_ANIM_SCENE(Local_244.f_1);
 						func_54();
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(Global_35, 0, 1);
-						ENTITY::_0x203BEFFDBE12E96A(Global_35, Local_182.f_10, Local_182.f_13, 1, 0, 1);
+						ENTITY::_SET_ENTITY_COORDS_AND_HEADING(Global_35, Local_182.f_10, Local_182.f_13, true, false, true);
 						MISC::CLEAR_AREA(Local_182.f_10, 2f, 1048576);
 						CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f, 1065353216 /* Float: 1f */);
 						CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
@@ -595,9 +595,9 @@ void func_10()
 void func_11()
 {
 	AUDIO::TRIGGER_MUSIC_EVENT("MP_JAIL_TIME_STOP");
-	if (HUD::_0x2C729F2B94CEA911("MPPJAAU"))
+	if (HUD::_DOES_TEXT_DATABASE_EXIST("MPPJAAU"))
 	{
-		HUD::_0xAA03F130A637D923("MPPJAAU");
+		HUD::_TEXT_DATABASE_DELETE("MPPJAAU");
 	}
 	if (NETWORK::NETWORK_IS_IN_MP_CUTSCENE())
 	{
@@ -912,11 +912,11 @@ void func_30()
 
 bool func_31()
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_383))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_383))
 	{
 		iLocal_383 = VOLUME::_CREATE_VOLUME_CYLINDER(Local_182.f_10, 0f, 0f, 0f, 2f, 2f, 2f);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_383))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_383))
 	{
 		if (iLocal_364 == 0)
 		{
@@ -1768,7 +1768,7 @@ int func_82(int iParam0, float fParam1, bool bParam2, int iParam3)
 {
 	var uVar0;
 
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam0))
 	{
 		return uVar0;
 	}

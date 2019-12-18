@@ -143,9 +143,9 @@ void func_1(var uParam0)
 	{
 		OBJECT::DELETE_OBJECT(&(uParam0->f_141));
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_229))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_229))
 	{
-		VOLUME::_0x43F867EF5C463A53(uParam0->f_229);
+		VOLUME::_DELETE_VOLUME(uParam0->f_229);
 	}
 	func_13(uParam0, 1);
 }

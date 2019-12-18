@@ -120,7 +120,7 @@ void func_64()
 			while (iVar2 <= 1)
 			{
 				func_146(iVar2);
-				if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[iVar2])))
+				if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[iVar2])))
 				{
 					aggregate_func_2017(&(Local_281.f_18.f_54[iVar2]));
 				}
@@ -1951,7 +1951,7 @@ void func_280()
 			break;
 		case 1:
 			Local_281.f_18.f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-4326.079f, -3445.069f, 31.483f, -3f, -5f, -4f, 48f, 4f, 3f, "slumpHuntRio1");
-			if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[0])))
+			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[0])))
 			{
 				Local_281.f_18.f_51[0] = GRAPHICS::_0xBD3324281E8B9933(&(Local_281.f_18.f_54[0]), 7, -1, 0);
 			}
@@ -1959,7 +1959,7 @@ void func_280()
 			break;
 		case 2:
 			Local_281.f_18.f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-3890.429f, -2464.78f, -11.246f, -2f, 2f, 79f, 53f, 4f, 3f, "slumpHuntCholla1");
-			if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[0])))
+			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[0])))
 			{
 				Local_281.f_18.f_51[0] = GRAPHICS::_0xBD3324281E8B9933(&(Local_281.f_18.f_54[0]), 7, -1, 0);
 			}
@@ -1967,7 +1967,7 @@ void func_280()
 			break;
 		case 3:
 			Local_281.f_18.f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-2204.084f, -2879.555f, 19.58f, 0f, -20f, 44f, 41f, 6f, 3f, "slumpHuntHennig1");
-			if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[0])))
+			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[0])))
 			{
 				Local_281.f_18.f_51[0] = GRAPHICS::_0xBD3324281E8B9933(&(Local_281.f_18.f_54[0]), 7, -1, 0);
 			}
@@ -1975,7 +1975,7 @@ void func_280()
 			break;
 		case 4:
 			Local_281.f_18.f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-2077.611f, -1386.821f, 126.729f, 0f, 9f, 76f, 55f, 4f, 3f, "slumpHuntTlTrees1");
-			if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[0])))
+			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[0])))
 			{
 				Local_281.f_18.f_51[0] = GRAPHICS::_0xBD3324281E8B9933(&(Local_281.f_18.f_54[0]), 7, -1, 0);
 			}
@@ -1983,7 +1983,7 @@ void func_280()
 			break;
 		case 5:
 			Local_281.f_18.f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-863.525f, 523.014f, 61.494f, 0f, -6f, -20f, 72f, 4f, 3f, "slumpHuntTlTrees1");
-			if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[0])))
+			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[0])))
 			{
 				Local_281.f_18.f_51[0] = GRAPHICS::_0xBD3324281E8B9933(&(Local_281.f_18.f_54[0]), 7, -1, 0);
 			}
@@ -1991,7 +1991,7 @@ void func_280()
 			break;
 		case 6:
 			Local_281.f_18.f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(281.006f, 229.583f, 106.618f, 9f, -9f, 71f, 64f, 4f, 4f, "slumpHuntTwnStack1");
-			if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[0])))
+			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[0])))
 			{
 				Local_281.f_18.f_51[0] = GRAPHICS::_0xBD3324281E8B9933(&(Local_281.f_18.f_54[0]), 7, -1, 0);
 			}
@@ -1999,7 +1999,7 @@ void func_280()
 			break;
 		case 7:
 			Local_281.f_18.f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1530.822f, 1352.741f, 153.023f, -4f, 26f, 2f, 25f, 4f, 4f, "slumpHuntOcreaghs1");
-			if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[0])))
+			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[0])))
 			{
 				Local_281.f_18.f_51[0] = GRAPHICS::_0xBD3324281E8B9933(&(Local_281.f_18.f_54[0]), 7, -1, 0);
 			}
@@ -2007,7 +2007,7 @@ void func_280()
 			break;
 		case 8:
 			Local_281.f_18.f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2605.391f, 1185.667f, 140.615f, 3f, 26f, 3f, 100f, 4f, 4f, "slumpAnnesburg1");
-			if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[0])))
+			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[0])))
 			{
 				Local_281.f_18.f_51[0] = GRAPHICS::_0xBD3324281E8B9933(&(Local_281.f_18.f_54[0]), 7, -1, 0);
 			}
@@ -2015,7 +2015,7 @@ void func_280()
 			break;
 		case 9:
 			Local_281.f_18.f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1512.404f, -2112.008f, 44.296f, 0f, 0f, -76f, 17f, 4f, 4f, "slumpAnnesburg1");
-			if (VOLUME::_0x92A78D0BEDB332A3(&(Local_281.f_18.f_54[0])))
+			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_281.f_18.f_54[0])))
 			{
 				Local_281.f_18.f_51[0] = GRAPHICS::_0xBD3324281E8B9933(&(Local_281.f_18.f_54[0]), 7, -1, 0);
 			}

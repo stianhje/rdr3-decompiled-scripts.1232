@@ -6092,7 +6092,7 @@ int func_126(int iParam0, var uParam1, int iParam2)
 				else
 				{
 					iVar7 = MISC::_0xF18AF483DF70BBDE(iVar2);
-					if (!VOLUME::_0x92A78D0BEDB332A3(iVar7))
+					if (!VOLUME::_DOES_VOLUME_EXIST(iVar7))
 					{
 					}
 					else if (ENTITY::IS_ENTITY_IN_VOLUME(iParam0, iVar7, false, 0))
@@ -9408,7 +9408,7 @@ bool func_281(int iParam0, int iParam1, int iParam2, var uParam3, var uParam4, b
 		return true;
 	}
 	iVar0 = 1;
-	if (!bParam5 && !VOLUME::_0x92A78D0BEDB332A3(*uParam4))
+	if (!bParam5 && !VOLUME::_DOES_VOLUME_EXIST(*uParam4))
 	{
 		vVar1 = { 2f, 2f, 2f };
 		vVar4 = { *uParam3 };
@@ -9416,7 +9416,7 @@ bool func_281(int iParam0, int iParam1, int iParam2, var uParam3, var uParam4, b
 		StringConCat(&cVar7, " iCSIdx: ", 64);
 		StringIntConCat(&cVar7, iParam0, 64);
 		*uParam4 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vVar4, 0f, 0f, uParam3->f_3, vVar1, &cVar7);
-		if (VOLUME::_0x92A78D0BEDB332A3(*uParam4))
+		if (VOLUME::_DOES_VOLUME_EXIST(*uParam4))
 		{
 			TASK::_0x2A10538D0A005E81(*uParam4, 1);
 		}
@@ -9513,7 +9513,7 @@ void func_288(var uParam0)
 
 void func_289(var uParam0)
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_4))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4))
 	{
 		if (aggregate_func_4250(uParam0, 16))
 		{
@@ -9525,7 +9525,7 @@ void func_289(var uParam0)
 	}
 	if (aggregate_func_4250(uParam0, 8))
 	{
-		VOLUME::_0x43F867EF5C463A53(uParam0->f_4);
+		VOLUME::_DELETE_VOLUME(uParam0->f_4);
 		func_69(uParam0, 8, 1);
 	}
 	uParam0->f_4 = 0;
@@ -9546,12 +9546,12 @@ void func_293(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	{
 		return;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(uParam0->f_4) && !aggregate_func_4745(uParam0->f_5, 0f, 0f, 0f))
+	if (!VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4) && !aggregate_func_4745(uParam0->f_5, 0f, 0f, 0f))
 	{
 		uParam0->f_4 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(uParam0->f_5, 0f, 0f, 0f, 5f, 5f, 5f, aggregate_func_4473());
 		aggregate_func_4254(uParam0, 8);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_4))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4))
 	{
 		POPULATION::_0xB56D41A694E42E86(uParam0->f_4, iParam1, iParam4, 0, -1, -1, iParam3);
 		POPULATION::_0x18262CAFEBB5FBE1(uParam0->f_4, iParam1, 0, 0, -1, -1, 0);
@@ -9593,17 +9593,17 @@ struct<8> func_295(var uParam0)
 
 void func_296(int iParam0, int iParam1, var uParam2)
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam2->f_18))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam2->f_18))
 	{
-		VOLUME::_0x43F867EF5C463A53(uParam2->f_18);
+		VOLUME::_DELETE_VOLUME(uParam2->f_18);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(uParam2->f_2))
 	{
 		AICOVERPOINT::_0x1A7A802B2301EDC0(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(uParam2->f_2));
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam2->f_19))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam2->f_19))
 	{
-		VOLUME::_0x43F867EF5C463A53(uParam2->f_19);
+		VOLUME::_DELETE_VOLUME(uParam2->f_19);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(uParam2->f_1))
 	{
@@ -12569,7 +12569,7 @@ void func_437(var uParam0)
 
 	if (aggregate_func_4250(uParam0, 2048) && !aggregate_func_4268(aggregate_func_7120(uParam0)))
 	{
-		bVar0 = VOLUME::_0x92A78D0BEDB332A3(uParam0->f_4);
+		bVar0 = VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4);
 		iVar1 = PED::_0x4C8B59171957BCF7(Global_35);
 		if ((!ENTITY::IS_ENTITY_DEAD(iVar1) && ((bVar0 && ENTITY::IS_ENTITY_IN_VOLUME(iVar1, uParam0->f_4, true, 0)) || aggregate_func_4250(uParam0, -2147483648))) && PED::GET_MOUNT(Global_35) != iVar1)
 		{

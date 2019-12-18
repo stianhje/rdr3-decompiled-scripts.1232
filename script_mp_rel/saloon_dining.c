@@ -1106,7 +1106,7 @@ bool func_5(var uParam0, var uParam1)
 	{
 		bVar1 = func_15(uParam0, uParam1);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3((Global_1938932->f_5[uParam0->f_1 /*11*/])->f_4))
+	if (VOLUME::_DOES_VOLUME_EXIST((Global_1938932->f_5[uParam0->f_1 /*11*/])->f_4))
 	{
 		if (ENTITY::IS_ENTITY_IN_VOLUME(PLAYER::PLAYER_PED_ID(), (Global_1938932->f_5[uParam0->f_1 /*11*/])->f_4, true, 0))
 		{
@@ -1266,9 +1266,9 @@ bool func_5(var uParam0, var uParam1)
 			}
 			if ((uParam0->f_264 && aggregate_func_2876(Global_36, func_50(*uParam0)) > 5f) && !CAM::IS_SPHERE_VISIBLE(func_50(*uParam0), 1.5f))
 			{
-				if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_238))
+				if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_238))
 				{
-					VOLUME::_0x43F867EF5C463A53(uParam0->f_238);
+					VOLUME::_DELETE_VOLUME(uParam0->f_238);
 				}
 				func_52(uParam0);
 				uParam0->f_264 = 0;
@@ -1479,9 +1479,9 @@ bool func_5(var uParam0, var uParam1)
 					{
 						func_76(uParam0);
 						TASK::_0xFDECCA06E8B81346(uParam0->f_13);
-						if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_240))
+						if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_240))
 						{
-							VOLUME::_0x43F867EF5C463A53(uParam0->f_240);
+							VOLUME::_DELETE_VOLUME(uParam0->f_240);
 						}
 						uParam0->f_240 = VOLUME::_CREATE_VOLUME_CYLINDER(ENTITY::GET_ENTITY_COORDS(uParam0->f_13, true, false), 0f, 0f, 0f, 0.25f, 0.25f, 3f);
 						aggregate_func_4114(uParam0->f_240, 0);
@@ -1491,7 +1491,7 @@ bool func_5(var uParam0, var uParam1)
 						TASK::_0x4161648394262FDF(Global_36, 2.5f);
 						CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(CAM::GET_GAMEPLAY_CAM_RELATIVE_HEADING(), 1065353216 /* Float: 1f */);
 						CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(CAM::GET_GAMEPLAY_CAM_RELATIVE_PITCH(), 1f);
-						if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_239))
+						if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_239))
 						{
 							aggregate_func_3685(uParam0->f_239, 0);
 							POPULATION::_0xB56D41A694E42E86(uParam0->f_239, 10208, 0, 0, -1, -1, 0);
@@ -1589,9 +1589,9 @@ bool func_5(var uParam0, var uParam1)
 						fVar17 = TASK::_0xB93EA7184BAA85C3(uParam0->f_8, 1);
 						ANIMSCENE::SET_ANIM_SCENE_ORIGIN(uParam0->f_211, vVar18, 0f, 0f, (fVar17 + 90f), 2);
 						func_76(uParam0);
-						if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_240))
+						if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_240))
 						{
-							VOLUME::_0x43F867EF5C463A53(uParam0->f_240);
+							VOLUME::_DELETE_VOLUME(uParam0->f_240);
 						}
 						uParam0->f_240 = VOLUME::_CREATE_VOLUME_CYLINDER(ENTITY::GET_ENTITY_COORDS(uParam0->f_13, true, false), 0f, 0f, 0f, 0.25f, 0.25f, 3f);
 						aggregate_func_4114(uParam0->f_240, 0);
@@ -1838,7 +1838,7 @@ bool func_5(var uParam0, var uParam1)
 				HUD::_0xC9CAEAEEC1256E54(1331687942);
 				func_52(uParam0);
 				func_76(uParam0);
-				if (!VOLUME::_0x92A78D0BEDB332A3(uParam0->f_238))
+				if (!VOLUME::_DOES_VOLUME_EXIST(uParam0->f_238))
 				{
 					uParam0->f_238 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(func_100(*uParam1), 0f, 0f, 0f, 2.5f, 2.5f, 2.5f, "Food_Order_Blocking_Volume");
 					aggregate_func_3685(uParam0->f_238, 0);
@@ -1881,9 +1881,9 @@ bool func_5(var uParam0, var uParam1)
 				}
 				if (!ANIMSCENE::_0xCBFC7725DE6CE2E0(uParam0->f_211, 0))
 				{
-					if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_240))
+					if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_240))
 					{
-						VOLUME::_0x43F867EF5C463A53(uParam0->f_240);
+						VOLUME::_DELETE_VOLUME(uParam0->f_240);
 					}
 					uParam0->f_240 = VOLUME::_CREATE_VOLUME_CYLINDER(ENTITY::GET_ENTITY_COORDS(uParam0->f_13, true, false), 0f, 0f, 0f, 0.25f, 0.25f, 3f);
 					aggregate_func_4114(uParam0->f_240, 0);
@@ -2378,9 +2378,9 @@ void func_9(var uParam0)
 		PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_AIM"), true);
 		PLAYER::SET_PLAYER_LOCKON(PLAYER::PLAYER_ID(), true);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_240))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_240))
 	{
-		VOLUME::_0x43F867EF5C463A53(uParam0->f_240);
+		VOLUME::_DELETE_VOLUME(uParam0->f_240);
 	}
 	iVar0 = 0;
 	while (iVar0 < 11)
@@ -2582,7 +2582,7 @@ int func_15(var uParam0, var uParam1)
 		return 0;
 	}
 	iVar1 = func_137(func_136(*uParam0));
-	if (!VOLUME::_0x92A78D0BEDB332A3(iVar1))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iVar1))
 	{
 		return 0;
 	}
@@ -3186,7 +3186,7 @@ bool func_28(var uParam0)
 		uParam0->f_622.f_339 = aggregate_func_5518(uParam0->f_622.f_325, 0);
 	}
 	func_173("SLFD");
-	if (!HUD::_0xD0976CC34002DB57("SLFD"))
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("SLFD"))
 	{
 		return false;
 	}
@@ -5022,9 +5022,9 @@ void func_126(var uParam0)
 	{
 		INTERIOR::UNPIN_INTERIOR(INTERIOR::GET_INTERIOR_AT_COORDS(func_86(*uParam0)));
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_238))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_238))
 	{
-		VOLUME::_0x43F867EF5C463A53(uParam0->f_238);
+		VOLUME::_DELETE_VOLUME(uParam0->f_238);
 	}
 	aggregate_func_2878(&(uParam0->f_237), 1, 1);
 	uParam0->f_228 = 0;
@@ -5109,7 +5109,7 @@ bool func_146(var uParam0, int iParam1, int iParam2, bool bParam3)
 	bool bVar2;
 	bool bVar3;
 
-	bVar0 = (!VOLUME::_0x92A78D0BEDB332A3(iParam2) || ENTITY::IS_ENTITY_IN_VOLUME(Global_35, iParam2, true, 0));
+	bVar0 = (!VOLUME::_DOES_VOLUME_EXIST(iParam2) || ENTITY::IS_ENTITY_IN_VOLUME(Global_35, iParam2, true, 0));
 	bVar1 = iParam1 & 32 != false;
 	bVar2 = iParam1 & 65792 != false;
 	bVar3 = iParam1 & 1179648 != false;
@@ -5371,7 +5371,7 @@ int func_151(var uParam0, int* iParam1, float fParam2, var uParam3, float fParam
 	{
 		aggregate_func_6109(&iParam8);
 		bVar0 = false;
-		bVar1 = ((iParam9 == 0 || !VOLUME::_0x92A78D0BEDB332A3(iParam9)) || ENTITY::IS_ENTITY_IN_VOLUME(Global_35, iParam9, false, 0));
+		bVar1 = ((iParam9 == 0 || !VOLUME::_DOES_VOLUME_EXIST(iParam9)) || ENTITY::IS_ENTITY_IN_VOLUME(Global_35, iParam9, false, 0));
 		bVar2 = iParam8 & 32 != false;
 		bVar3 = iParam8 & 524288 != false;
 		bVar4 = iParam8 & 16777216 != false;
@@ -5768,10 +5768,10 @@ void func_171(var uParam0, int iParam1)
 
 int func_173(char* sParam0)
 {
-	int iVar0;
+	void fVar0;
 
-	iVar0 = HUD::_0xF66090013DE648D5(sParam0);
-	if (iVar0 == 0)
+	fVar0 = HUD::_TEXT_DATABASE_REQUEST(sParam0);
+	if (fVar0 == 0)
 	{
 		return 0;
 	}

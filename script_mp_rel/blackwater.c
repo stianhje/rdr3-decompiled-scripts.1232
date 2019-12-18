@@ -525,12 +525,12 @@ void func_107(int iParam0)
 	aggregate_func_2703(&uLocal_57, 0);
 	aggregate_func_451();
 	func_214();
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_99))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_99))
 	{
 		PATHFIND::_0x2C87C3E1C7B96EE2(iLocal_99);
-		VOLUME::_0x43F867EF5C463A53(iLocal_99);
+		VOLUME::_DELETE_VOLUME(iLocal_99);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_90))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_90))
 	{
 		MISC::REMOVE_DISPATCH_SPAWN_BLOCKING_AREA(uLocal_91);
 	}

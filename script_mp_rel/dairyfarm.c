@@ -101,7 +101,7 @@ void func_61()
 	{
 		return;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_15))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_15))
 	{
 		return;
 	}
@@ -125,7 +125,7 @@ void func_78(int iParam0)
 	LAW::_REMOVE_GUARD_ZONE(sLocal_17);
 	aggregate_func_2017(iLocal_16);
 	aggregate_func_2017(iLocal_14);
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_15))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_15))
 	{
 		VOLUME::_0x998202B206872672(iLocal_15);
 		VOLUME::_0x6D5F9E69BA1BE783(iLocal_15);

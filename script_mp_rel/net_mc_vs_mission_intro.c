@@ -6233,7 +6233,7 @@ void func_2(var uParam0, var uParam1, var uParam2)
 	NETWORK::_0x78335E12DB0BF961(iVar1);
 	NETWORK::_0x0AE241A4A9ADEEEC(0);
 	((*uParam0)[NETWORK::PARTICIPANT_ID_TO_INT() /*21*/])->f_7 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	HUD::_0xF66090013DE648D5("UIC");
+	HUD::_TEXT_DATABASE_REQUEST("UIC");
 }
 
 bool func_3(var uParam0, var uParam1)
@@ -13685,7 +13685,7 @@ void func_541(var uParam0, int iParam1, bool bParam2)
 	}
 	iVar0 = aggregate_func_4641(&(uParam0->f_3412));
 	uParam0->f_3412.f_49 = PED::CLONE_PED(PLAYER::GET_PLAYER_PED(iParam1), 0f, true, true);
-	ENTITY::_0x203BEFFDBE12E96A(uParam0->f_3412.f_49, (uParam0->f_3412.f_1[iVar0 /*15*/])->f_4, (uParam0->f_3412.f_1[iVar0 /*15*/])->f_7, 1, 0, 1);
+	ENTITY::_SET_ENTITY_COORDS_AND_HEADING(uParam0->f_3412.f_49, (uParam0->f_3412.f_1[iVar0 /*15*/])->f_4, (uParam0->f_3412.f_1[iVar0 /*15*/])->f_7, true, false, true);
 	PED::_0x2208438012482A1A(uParam0->f_3412.f_49, false, false);
 	func_724(&(uParam0->f_3412), bParam2);
 	if (!bParam2)

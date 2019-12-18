@@ -88,7 +88,7 @@ void func_1()
 	LAW::_0x29CD4896ECB66C12();
 	PLAYER::SET_POLICE_RADAR_BLIPS(false);
 	MISC::ENABLE_DISPATCH_SERVICE(8, false);
-	VOLUME::_0x43F867EF5C463A53(iLocal_60);
+	VOLUME::_DELETE_VOLUME(iLocal_60);
 	iVar0 = 0;
 	while (iVar0 < iLocal_50)
 	{

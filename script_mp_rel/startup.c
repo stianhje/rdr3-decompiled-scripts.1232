@@ -12502,7 +12502,7 @@ void func_452(vector3 vParam0)
 	if (iVar0 != -1)
 	{
 		iVar1 = ((*Global_1887327)[iVar0 /*36*/])->f_5;
-		if (VOLUME::_0x92A78D0BEDB332A3(iVar1))
+		if (VOLUME::_DOES_VOLUME_EXIST(iVar1))
 		{
 			vVar2 = { VOLUME::_0xF70F00013A62F866(iVar1) };
 		}

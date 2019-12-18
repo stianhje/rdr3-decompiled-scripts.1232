@@ -774,7 +774,7 @@ void func_37(int iParam0, var uParam1, var uParam2, int iParam3, bool bParam4)
 
 void func_38(int iParam0, var uParam1, var uParam2, int iParam3, bool bParam4)
 {
-	if ((aggregate_func_4946() || aggregate_func_2056()) || !HUD::_0xD0976CC34002DB57("GEIWD"))
+	if ((aggregate_func_4946() || aggregate_func_2056()) || !HUD::_TEXT_DATABASE_HAS_LOADED("GEIWD"))
 	{
 		return;
 	}
@@ -1462,7 +1462,7 @@ void func_98(var uParam0, var uParam1, int iParam2, int iParam3)
 			}
 			break;
 		case 8:
-			if (!VOLUME::_0x92A78D0BEDB332A3(iParam2->f_1098))
+			if (!VOLUME::_DOES_VOLUME_EXIST(iParam2->f_1098))
 			{
 				iParam2->f_1098 = VOLUME::_CREATE_VOLUME_BOX(uParam0->f_109, 0f, 0f, 0f, uParam0->f_112, uParam0->f_112, uParam0->f_112);
 			}
@@ -1609,11 +1609,11 @@ void func_101(int iParam0, var uParam1, var uParam2, int iParam3)
 	switch (((*uParam2)[iParam0 /*25*/])->f_1)
 	{
 		case 0:
-			if (!HUD::_0xD0976CC34002DB57("GEIWD"))
+			if (!HUD::_TEXT_DATABASE_HAS_LOADED("GEIWD"))
 			{
 				if (!HUD::_0x3CF96E16265B7DC8("GEIWD"))
 				{
-					HUD::_0xF66090013DE648D5("GEIWD");
+					HUD::_TEXT_DATABASE_REQUEST("GEIWD");
 				}
 				return;
 			}
@@ -1743,7 +1743,7 @@ void func_101(int iParam0, var uParam1, var uParam2, int iParam3)
 			}
 			break;
 		case 8:
-			if (!VOLUME::_0x92A78D0BEDB332A3(iParam3->f_1098))
+			if (!VOLUME::_DOES_VOLUME_EXIST(iParam3->f_1098))
 			{
 				iParam3->f_1098 = VOLUME::_CREATE_VOLUME_BOX(uParam1->f_109, 0f, 0f, 0f, uParam1->f_112, uParam1->f_112, uParam1->f_112);
 				GRAPHICS::_0x735762E8D7573E42(1, iParam3->f_1098, 5f);

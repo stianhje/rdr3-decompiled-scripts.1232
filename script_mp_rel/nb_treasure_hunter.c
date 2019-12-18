@@ -451,10 +451,10 @@ bool func_130()
 
 	bVar0 = false;
 	sVar1 = "TREAS";
-	if (HUD::_0x2C729F2B94CEA911(sVar1))
+	if (HUD::_DOES_TEXT_DATABASE_EXIST(sVar1))
 	{
-		HUD::_0xF66090013DE648D5(sVar1);
-		if (!HUD::_0xD0976CC34002DB57(sVar1))
+		HUD::_TEXT_DATABASE_REQUEST(sVar1);
+		if (!HUD::_TEXT_DATABASE_HAS_LOADED(sVar1))
 		{
 			bVar0 = true;
 		}
@@ -491,8 +491,8 @@ bool func_130()
 			}
 			break;
 	}
-	HUD::_0xF66090013DE648D5("TREAS");
-	if (HUD::_0xD0976CC34002DB57("TREAS"))
+	HUD::_TEXT_DATABASE_REQUEST("TREAS");
+	if (HUD::_TEXT_DATABASE_HAS_LOADED("TREAS"))
 	{
 		return true;
 	}
@@ -1551,15 +1551,15 @@ bool func_244()
 	{
 		return true;
 	}
-	if (!HUD::_0x2C729F2B94CEA911("NBTHAUD"))
+	if (!HUD::_DOES_TEXT_DATABASE_EXIST("NBTHAUD"))
 	{
 		return true;
 	}
 	if (!HUD::_0x3CF96E16265B7DC8("NBTHAUD"))
 	{
-		HUD::_0xF66090013DE648D5("NBTHAUD");
+		HUD::_TEXT_DATABASE_REQUEST("NBTHAUD");
 	}
-	return HUD::_0xD0976CC34002DB57("NBTHAUD");
+	return HUD::_TEXT_DATABASE_HAS_LOADED("NBTHAUD");
 }
 
 bool func_245()

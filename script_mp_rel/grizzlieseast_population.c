@@ -68,9 +68,9 @@ void __EntryFunction__()
 	iVar4 = 0;
 	while (iVar4 <= 2)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(&(iVar0[iVar4])))
+		if (VOLUME::_DOES_VOLUME_EXIST(&(iVar0[iVar4])))
 		{
-			VOLUME::_0x43F867EF5C463A53(&(iVar0[iVar4]));
+			VOLUME::_DELETE_VOLUME(&(iVar0[iVar4]));
 		}
 		iVar4++;
 	}
@@ -104,7 +104,7 @@ void func_3()
 
 void func_5(var uParam0)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(*uParam0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(*uParam0))
 	{
 		return;
 	}
@@ -128,7 +128,7 @@ int func_9(int iParam0)
 
 void func_10(int iParam0, int iParam1, bool bParam2)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam0))
 	{
 		return;
 	}
@@ -143,7 +143,7 @@ void func_10(int iParam0, int iParam1, bool bParam2)
 
 void func_14()
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_23))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_23))
 	{
 		MISC::REMOVE_DISPATCH_SPAWN_BLOCKING_AREA(uLocal_24);
 	}

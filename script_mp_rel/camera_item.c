@@ -524,7 +524,7 @@ void __EntryFunction__()
 					{
 						WEAPON::SET_PED_CURRENT_WEAPON_VISIBLE(Global_35, false, false, true, false);
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID(), 0, 1);
-						ENTITY::_0x203BEFFDBE12E96A(Global_35, vLocal_152, fLocal_163, 1, 0, 1);
+						ENTITY::_SET_ENTITY_COORDS_AND_HEADING(Global_35, vLocal_152, fLocal_163, true, false, true);
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(PLAYER::PLAYER_PED_ID(), 0, 1);
 						aggregate_func_2802();
 						bLocal_201 = false;
@@ -653,7 +653,7 @@ void func_1(var uParam0, int iParam1)
 	func_28(uParam0);
 	aggregate_func_2985(1);
 	MAP::DISPLAY_RADAR(true);
-	HUD::_0xAA03F130A637D923("CAMERA");
+	HUD::_TEXT_DATABASE_DELETE("CAMERA");
 }
 
 void func_2()
@@ -1140,7 +1140,7 @@ void func_19()
 
 void func_22()
 {
-	HUD::_0xF66090013DE648D5("CAMERA");
+	HUD::_TEXT_DATABASE_REQUEST("CAMERA");
 	STREAMING::REQUEST_ANIM_DICT(sLocal_17);
 	STREAMING::REQUEST_CLIP_SET(sLocal_18);
 	GRAPHICS::_0x5199405EABFBD7F0("CameraViewfinder");
@@ -1160,7 +1160,7 @@ bool func_23(int iParam0)
 	{
 		iVar0 = 0;
 	}
-	if (!HUD::_0xD0976CC34002DB57("CAMERA"))
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("CAMERA"))
 	{
 		iVar0 = 0;
 	}
@@ -1640,7 +1640,7 @@ void func_50(var uParam0)
 		}
 		else if (MISC::GET_DISTANCE_BETWEEN_COORDS(vLocal_155, vLocal_152, true) > 3f)
 		{
-			ENTITY::_0x203BEFFDBE12E96A(Global_35, vLocal_152, fLocal_163, 1, 0, 1);
+			ENTITY::_SET_ENTITY_COORDS_AND_HEADING(Global_35, vLocal_152, fLocal_163, true, false, true);
 			ENTITY::_SET_ENTITY_HEALTH(PLAYER::PLAYER_PED_ID(), 0, 0);
 		}
 	}

@@ -313,9 +313,9 @@ void func_69()
 	func_169();
 	func_170();
 	func_171();
-	if (VOLUME::_0x92A78D0BEDB332A3(Local_1067.f_18.f_252))
+	if (VOLUME::_DOES_VOLUME_EXIST(Local_1067.f_18.f_252))
 	{
-		VOLUME::_0x43F867EF5C463A53(Local_1067.f_18.f_252);
+		VOLUME::_DELETE_VOLUME(Local_1067.f_18.f_252);
 	}
 }
 
@@ -959,10 +959,10 @@ bool func_132()
 			Local_1067.f_18.f_11 = 1;
 			break;
 		case 1:
-			if (HUD::_0x2C729F2B94CEA911(sVar0))
+			if (HUD::_DOES_TEXT_DATABASE_EXIST(sVar0))
 			{
-				HUD::_0xF66090013DE648D5(sVar0);
-				if (HUD::_0xD0976CC34002DB57(sVar0))
+				HUD::_TEXT_DATABASE_REQUEST(sVar0);
+				if (HUD::_TEXT_DATABASE_HAS_LOADED(sVar0))
 				{
 					Local_1067.f_18.f_11 = 2;
 				}
@@ -975,10 +975,10 @@ bool func_132()
 			{
 				Local_1067.f_18.f_11 = 2;
 			}
-			if (HUD::_0x2C729F2B94CEA911(sVar1))
+			if (HUD::_DOES_TEXT_DATABASE_EXIST(sVar1))
 			{
-				HUD::_0xF66090013DE648D5(sVar1);
-				if (HUD::_0xD0976CC34002DB57(sVar1))
+				HUD::_TEXT_DATABASE_REQUEST(sVar1);
+				if (HUD::_TEXT_DATABASE_HAS_LOADED(sVar1))
 				{
 					Local_1067.f_18.f_11 = 2;
 				}
@@ -1480,9 +1480,9 @@ bool func_150()
 	func_169();
 	func_170();
 	func_171();
-	if (VOLUME::_0x92A78D0BEDB332A3(Local_1067.f_18.f_252))
+	if (VOLUME::_DOES_VOLUME_EXIST(Local_1067.f_18.f_252))
 	{
-		VOLUME::_0x43F867EF5C463A53(Local_1067.f_18.f_252);
+		VOLUME::_DELETE_VOLUME(Local_1067.f_18.f_252);
 	}
 	if (ANIMSCENE::_0x25557E324489393C(Local_1067.f_18.f_244))
 	{
@@ -5564,9 +5564,9 @@ void func_349()
 
 	if (Local_13.f_7.f_21 == 255 || Local_13.f_7.f_21 != PLAYER::PLAYER_ID())
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(Local_1067.f_18.f_252))
+		if (VOLUME::_DOES_VOLUME_EXIST(Local_1067.f_18.f_252))
 		{
-			VOLUME::_0x43F867EF5C463A53(Local_1067.f_18.f_252);
+			VOLUME::_DELETE_VOLUME(Local_1067.f_18.f_252);
 		}
 		aggregate_func_2922(16384);
 		aggregate_func_2922(32768);
@@ -10806,7 +10806,7 @@ bool func_639(int iParam0)
 	vVar8 = { aggregate_func_2907(vVar4 - vVar1) };
 	vVar11 = { vVar1 + vVar8 * Vector(fVar7, fVar7, fVar7) / Vector(2f, 2f, 2f) };
 	vVar14 = { func_826(vVar8, 0f, 0f, 1f) };
-	if (!VOLUME::_0x92A78D0BEDB332A3(Local_1067.f_18.f_252))
+	if (!VOLUME::_DOES_VOLUME_EXIST(Local_1067.f_18.f_252))
 	{
 		Local_1067.f_18.f_252 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vVar11, vVar14, fVar7, 1f, 2f, "PHOTO_CAM_VOL");
 	}

@@ -2758,7 +2758,7 @@ void func_732(float fParam0, var uParam1, var uParam2)
 {
 	int iVar0;
 
-	if (VOLUME::_0x92A78D0BEDB332A3(Local_3785.f_474))
+	if (VOLUME::_DOES_VOLUME_EXIST(Local_3785.f_474))
 	{
 		NETWORK::_0x405DDEFB1F531B18(Local_3785.f_474, true, 0, 0);
 	}

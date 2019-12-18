@@ -60,10 +60,10 @@ bool func_42(var uParam0)
 	bVar0 = true;
 	if (aggregate_func_4260(uParam0))
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3(Local_21.f_2))
+		if (!VOLUME::_DOES_VOLUME_EXIST(Local_21.f_2))
 		{
 			Local_21.f_2 = VOLUME::_CREATE_VOLUME_BOX(ENTITY::GET_ENTITY_COORDS(uParam0->f_3, true, false), 0f, 0f, -7.0567f, 4.75f, 3.25f, 1.85f);
-			if (VOLUME::_0x92A78D0BEDB332A3(Local_21.f_2))
+			if (VOLUME::_DOES_VOLUME_EXIST(Local_21.f_2))
 			{
 				PED::_0x7C00CFC48A782DC0(Local_21.f_2, uParam0->f_3, 0f, 0f, 0f, 0f, 0f, 90f, 2, 1);
 			}
@@ -320,8 +320,8 @@ bool func_100(var uParam0)
 
 bool func_101()
 {
-	HUD::_0xF66090013DE648D5("SATCH");
-	if (!HUD::_0xD0976CC34002DB57("SATCH"))
+	HUD::_TEXT_DATABASE_REQUEST("SATCH");
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("SATCH"))
 	{
 		return false;
 	}

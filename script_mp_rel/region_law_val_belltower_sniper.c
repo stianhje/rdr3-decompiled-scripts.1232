@@ -81,9 +81,9 @@ void func_1()
 	{
 		aggregate_func_581(&iLocal_46);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_47))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_47))
 	{
-		VOLUME::_0x43F867EF5C463A53(iLocal_47);
+		VOLUME::_DELETE_VOLUME(iLocal_47);
 	}
 	LAW::_0x7EF2A2FE38D74456(aggregate_func_8613(7), 0);
 }

@@ -548,14 +548,14 @@ void func_5()
 		}
 	}
 	func_70(&(Local_21.f_85));
-	HUD::_0xAA03F130A637D923("MSMP");
+	HUD::_TEXT_DATABASE_DELETE("MSMP");
 	aggregate_func_588(0, 0);
 	iVar0 = 0;
 	while (iVar0 <= 1)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(&(Local_21.f_89[iVar0])))
+		if (VOLUME::_DOES_VOLUME_EXIST(&(Local_21.f_89[iVar0])))
 		{
-			VOLUME::_0x43F867EF5C463A53(&(Local_21.f_89[iVar0]));
+			VOLUME::_DELETE_VOLUME(&(Local_21.f_89[iVar0]));
 		}
 		iVar0++;
 	}
@@ -727,8 +727,8 @@ bool func_17()
 
 	iVar0 = 1;
 	sVar1 = "MSMP";
-	HUD::_0xF66090013DE648D5(sVar1);
-	if (!HUD::_0xD0976CC34002DB57(sVar1))
+	HUD::_TEXT_DATABASE_REQUEST(sVar1);
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED(sVar1))
 	{
 		iVar0 = 0;
 	}
@@ -750,7 +750,7 @@ bool func_18()
 	iVar27 = 0;
 	while (iVar27 < 4)
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3((Local_21.f_34[iVar27 /*4*/])->f_2))
+		if (!VOLUME::_DOES_VOLUME_EXIST((Local_21.f_34[iVar27 /*4*/])->f_2))
 		{
 			(Local_21.f_34[iVar27 /*4*/])->f_2 = VOLUME::_CREATE_VOLUME_CYLINDER(*(vVar0[iVar27 /*3*/]), 0f, 0f, 0f, *(vVar13[iVar27 /*3*/]));
 		}
@@ -839,7 +839,7 @@ void func_22(int iParam0, int iParam1)
 			iVar0 = 0;
 			while (iVar0 < 4)
 			{
-				if (!VOLUME::_0x92A78D0BEDB332A3((Local_21.f_34[iVar0 /*4*/])->f_2))
+				if (!VOLUME::_DOES_VOLUME_EXIST((Local_21.f_34[iVar0 /*4*/])->f_2))
 				{
 				}
 				else if (!aggregate_func_2875(&(Local_21.f_34[iVar0 /*4*/])))
@@ -2048,9 +2048,9 @@ void func_66()
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3((Local_21.f_34[iVar0 /*4*/])->f_2))
+		if (VOLUME::_DOES_VOLUME_EXIST((Local_21.f_34[iVar0 /*4*/])->f_2))
 		{
-			VOLUME::_0x43F867EF5C463A53((Local_21.f_34[iVar0 /*4*/])->f_2);
+			VOLUME::_DELETE_VOLUME((Local_21.f_34[iVar0 /*4*/])->f_2);
 		}
 		if (aggregate_func_2875(&(Local_21.f_34[iVar0 /*4*/])))
 		{

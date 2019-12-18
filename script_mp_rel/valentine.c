@@ -713,7 +713,7 @@ bool func_82(int iParam0, int iParam1, int iParam2)
 	{
 		return false;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam1))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam1))
 	{
 		return false;
 	}
@@ -783,14 +783,14 @@ void func_206(int iParam0)
 	switch (iParam0)
 	{
 		case 5:
-			VOLUME::_0x43F867EF5C463A53(&(Global_1268116->f_47[0]));
-			VOLUME::_0x43F867EF5C463A53(&(Global_1268116->f_47[1]));
-			VOLUME::_0x43F867EF5C463A53(&(Global_1268116->f_50[0]));
-			VOLUME::_0x43F867EF5C463A53(&(Global_1268116->f_50[1]));
+			VOLUME::_DELETE_VOLUME(&(Global_1268116->f_47[0]));
+			VOLUME::_DELETE_VOLUME(&(Global_1268116->f_47[1]));
+			VOLUME::_DELETE_VOLUME(&(Global_1268116->f_50[0]));
+			VOLUME::_DELETE_VOLUME(&(Global_1268116->f_50[1]));
 			break;
 		case 81:
-			VOLUME::_0x43F867EF5C463A53(&(Global_1268116->f_47[1]));
-			VOLUME::_0x43F867EF5C463A53(&(Global_1268116->f_50[1]));
+			VOLUME::_DELETE_VOLUME(&(Global_1268116->f_47[1]));
+			VOLUME::_DELETE_VOLUME(&(Global_1268116->f_50[1]));
 			break;
 	}
 }
@@ -840,7 +840,7 @@ void func_259(var uParam0)
 
 void func_271(int iParam0)
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (VOLUME::_DOES_VOLUME_EXIST(iParam0))
 	{
 		VOLUME::_0x6D5F9E69BA1BE783(iParam0);
 	}

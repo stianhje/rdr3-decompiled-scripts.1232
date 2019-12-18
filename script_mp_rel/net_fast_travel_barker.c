@@ -167,19 +167,19 @@ void func_4(var uParam0)
 		aggregate_func_605();
 		aggregate_func_7071();
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_23))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_23))
 	{
-		VOLUME::_0x43F867EF5C463A53(uParam0->f_23);
+		VOLUME::_DELETE_VOLUME(uParam0->f_23);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_24))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_24))
 	{
 		PATHFIND::_0x2C87C3E1C7B96EE2(uParam0->f_24);
-		VOLUME::_0x43F867EF5C463A53(uParam0->f_24);
+		VOLUME::_DELETE_VOLUME(uParam0->f_24);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_25))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_25))
 	{
 		POPULATION::_0x74C2B3DC0B294102(uParam0->f_25);
-		VOLUME::_0x43F867EF5C463A53(uParam0->f_25);
+		VOLUME::_DELETE_VOLUME(uParam0->f_25);
 	}
 	GRAPHICS::_0x9CF1836C03FB67A2(&(uParam0->f_26), 1);
 	if (!aggregate_func_4595(7))

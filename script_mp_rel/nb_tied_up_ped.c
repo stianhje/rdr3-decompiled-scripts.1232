@@ -266,19 +266,19 @@ bool func_118()
 
 	sVar0 = "NBTIED";
 	iVar1 = 1;
-	if (HUD::_0x2C729F2B94CEA911(sVar0))
+	if (HUD::_DOES_TEXT_DATABASE_EXIST(sVar0))
 	{
-		HUD::_0xF66090013DE648D5(sVar0);
-		if (!HUD::_0xD0976CC34002DB57(sVar0))
+		HUD::_TEXT_DATABASE_REQUEST(sVar0);
+		if (!HUD::_TEXT_DATABASE_HAS_LOADED(sVar0))
 		{
 			iVar1 = 0;
 		}
 	}
 	sVar2 = "BTUPAUD";
-	if (HUD::_0x2C729F2B94CEA911(sVar2))
+	if (HUD::_DOES_TEXT_DATABASE_EXIST(sVar2))
 	{
-		HUD::_0xF66090013DE648D5(sVar2);
-		if (!HUD::_0xD0976CC34002DB57(sVar2))
+		HUD::_TEXT_DATABASE_REQUEST(sVar2);
+		if (!HUD::_TEXT_DATABASE_HAS_LOADED(sVar2))
 		{
 			iVar1 = 0;
 		}

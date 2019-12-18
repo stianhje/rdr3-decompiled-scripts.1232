@@ -77,7 +77,7 @@ void func_63()
 			}
 		}
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(Local_23))
+	if (!VOLUME::_DOES_VOLUME_EXIST(Local_23))
 	{
 		aggregate_func_3817(&Local_23, -1355.28f, -2296.67f, 40.62f, 0f, 0f, 0f, 6f, 5f, 3f, "HTL_VOLUME_BOAT_INTERIOR");
 	}

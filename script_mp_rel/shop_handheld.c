@@ -632,7 +632,7 @@ bool func_27(var uParam0, var uParam1)
 			}
 			aggregate_func_4675(uParam1->f_3, 8388608);
 			aggregate_func_4285(uParam1);
-			HUD::_0xF66090013DE648D5("SHOP");
+			HUD::_TEXT_DATABASE_REQUEST("SHOP");
 			uParam0->f_4.f_1224 = 1;
 			if (func_80(uParam0))
 			{
@@ -714,7 +714,7 @@ bool func_27(var uParam0, var uParam1)
 			uParam1->f_10 = 0;
 			Global_1915170->f_20142 = 0;
 			HUD::_0x8BC7C1F929D07BF3(1815407589);
-			HUD::_0xAA03F130A637D923("SHOP");
+			HUD::_TEXT_DATABASE_DELETE("SHOP");
 			aggregate_func_4242(uParam1, 12);
 			break;
 		case 12:
@@ -824,9 +824,9 @@ void func_37(var uParam0)
 		UIAPPS::_CLOSE_APP("shop_menu");
 		TELEMETRY::_0xF78E669FDC202E73();
 	}
-	if (HUD::_0xD0976CC34002DB57("SHOP"))
+	if (HUD::_TEXT_DATABASE_HAS_LOADED("SHOP"))
 	{
-		HUD::_0xAA03F130A637D923("SHOP");
+		HUD::_TEXT_DATABASE_DELETE("SHOP");
 	}
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }

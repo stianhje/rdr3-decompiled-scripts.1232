@@ -3809,7 +3809,7 @@ bool func_179(int iParam0, int iParam1)
 	}
 	if (iParam1 != -1)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(((*Global_1887327)[iParam1 /*36*/])->f_5))
+		if (VOLUME::_DOES_VOLUME_EXIST(((*Global_1887327)[iParam1 /*36*/])->f_5))
 		{
 			return ENTITY::IS_ENTITY_IN_VOLUME(iParam0, ((*Global_1887327)[iParam1 /*36*/])->f_5, true, 0);
 		}
@@ -3822,7 +3822,7 @@ bool func_179(int iParam0, int iParam1)
 	while (iVar1 < Global_1893575->f_161)
 	{
 		iVar0 = &Global_1893575->f_10[iVar1];
-		if (!VOLUME::_0x92A78D0BEDB332A3(((*Global_1887327)[iVar0 /*36*/])->f_5))
+		if (!VOLUME::_DOES_VOLUME_EXIST(((*Global_1887327)[iVar0 /*36*/])->f_5))
 		{
 		}
 		else if (ENTITY::IS_ENTITY_IN_VOLUME(iParam0, ((*Global_1887327)[iVar0 /*36*/])->f_5, true, 0))

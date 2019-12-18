@@ -255,7 +255,7 @@ void func_12(int iParam0)
 		return;
 	}
 	Local_45[iParam0 /*10*/] = 1;
-	if (!VOLUME::_0x92A78D0BEDB332A3((Local_45[iParam0 /*10*/])->f_9))
+	if (!VOLUME::_DOES_VOLUME_EXIST((Local_45[iParam0 /*10*/])->f_9))
 	{
 		(Local_45[iParam0 /*10*/])->f_9 = VOLUME::_CREATE_VOLUME_CYLINDER(ENTITY::GET_ENTITY_COORDS((Local_45[iParam0 /*10*/])->f_6, true, false), 0f, 0f, 0f, 35f, 35f, 10f);
 		PED::_0x7C00CFC48A782DC0((Local_45[iParam0 /*10*/])->f_9, (Local_45[iParam0 /*10*/])->f_6, 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);

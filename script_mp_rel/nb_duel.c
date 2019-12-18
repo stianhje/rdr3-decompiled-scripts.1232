@@ -213,18 +213,18 @@ bool func_119()
 	int iVar1;
 
 	iVar0 = 1;
-	if (HUD::_0x2C729F2B94CEA911(func_199()))
+	if (HUD::_DOES_TEXT_DATABASE_EXIST(func_199()))
 	{
-		HUD::_0xF66090013DE648D5(func_199());
-		if (!HUD::_0xD0976CC34002DB57(func_199()))
+		HUD::_TEXT_DATABASE_REQUEST(func_199());
+		if (!HUD::_TEXT_DATABASE_HAS_LOADED(func_199()))
 		{
 			iVar0 = 0;
 		}
 	}
-	if (HUD::_0x2C729F2B94CEA911(func_200()))
+	if (HUD::_DOES_TEXT_DATABASE_EXIST(func_200()))
 	{
-		HUD::_0xF66090013DE648D5(func_200());
-		if (!HUD::_0xD0976CC34002DB57(func_200()))
+		HUD::_TEXT_DATABASE_REQUEST(func_200());
+		if (!HUD::_TEXT_DATABASE_HAS_LOADED(func_200()))
 		{
 			iVar0 = 0;
 		}

@@ -579,7 +579,7 @@ void __EntryFunction__()
 				break;
 			case 3:
 				aggregate_func_4273(&Var0);
-				if (VOLUME::_0x92A78D0BEDB332A3(Var0.f_1997))
+				if (VOLUME::_DOES_VOLUME_EXIST(Var0.f_1997))
 				{
 					if (ENTITY::IS_ENTITY_IN_VOLUME(Global_35, Var0.f_1997, true, 0))
 					{
@@ -919,11 +919,11 @@ void func_136(var uParam0)
 	}
 	ENTITY::REMOVE_MODEL_HIDE(func_333(uParam0), 1f, joaat("p_crate03x"), 0);
 	func_472(uParam0);
-	if (HUD::_0x2C729F2B94CEA911("MPHONAU"))
+	if (HUD::_DOES_TEXT_DATABASE_EXIST("MPHONAU"))
 	{
-		if (HUD::_0xD0976CC34002DB57("MPHONAU"))
+		if (HUD::_TEXT_DATABASE_HAS_LOADED("MPHONAU"))
 		{
-			HUD::_0xAA03F130A637D923("MPHONAU");
+			HUD::_TEXT_DATABASE_DELETE("MPHONAU");
 		}
 	}
 }
@@ -948,11 +948,11 @@ void func_233(int iParam0)
 	switch (iLocal_20)
 	{
 		case 0:
-			HUD::_0xF66090013DE648D5("MPHONAU");
+			HUD::_TEXT_DATABASE_REQUEST("MPHONAU");
 			iLocal_20 = 1;
 			break;
 		case 1:
-			if (HUD::_0xD0976CC34002DB57("MPHONAU"))
+			if (HUD::_TEXT_DATABASE_HAS_LOADED("MPHONAU"))
 			{
 				iLocal_20 = 2;
 			}
@@ -1211,8 +1211,8 @@ bool func_386(var uParam0, var uParam1)
 			}
 			aggregate_func_4627(1);
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0, 0);
-			HUD::_0xF66090013DE648D5(func_792());
-			if (!HUD::_0xD0976CC34002DB57(func_792()))
+			HUD::_TEXT_DATABASE_REQUEST(func_792());
+			if (!HUD::_TEXT_DATABASE_HAS_LOADED(func_792()))
 			{
 				return false;
 			}
@@ -1285,7 +1285,7 @@ bool func_386(var uParam0, var uParam1)
 				}
 				if (ANIMSCENE::_0x005E6F28DD7ED58D(iLocal_140, "mp_player_m_1") || ANIMSCENE::_0x005E6F28DD7ED58D(iLocal_140, "mp_player_f_1"))
 				{
-					ENTITY::_0x203BEFFDBE12E96A(Global_35, func_801((Global_1051387->f_69[35 /*76*/])->f_18), func_802((Global_1051387->f_69[35 /*76*/])->f_18), 1, 0, 1);
+					ENTITY::_SET_ENTITY_COORDS_AND_HEADING(Global_35, func_801((Global_1051387->f_69[35 /*76*/])->f_18), func_802((Global_1051387->f_69[35 /*76*/])->f_18), true, false, true);
 					if (ENTITY::DOES_ENTITY_EXIST(iLocal_146))
 					{
 						ENTITY::DELETE_ENTITY(&iLocal_146);
@@ -1311,7 +1311,7 @@ bool func_386(var uParam0, var uParam1)
 						break;
 				}
 				aggregate_func_6413(uParam0);
-				ENTITY::_0x203BEFFDBE12E96A(Global_35, func_801((Global_1051387->f_69[35 /*76*/])->f_18), func_802((Global_1051387->f_69[35 /*76*/])->f_18), 1, 0, 1);
+				ENTITY::_SET_ENTITY_COORDS_AND_HEADING(Global_35, func_801((Global_1051387->f_69[35 /*76*/])->f_18), func_802((Global_1051387->f_69[35 /*76*/])->f_18), true, false, true);
 				iLocal_141 = 0;
 				aggregate_func_4242(uParam0, 10);
 				aggregate_func_4627(0);
@@ -1420,7 +1420,7 @@ void func_472(var uParam0)
 	}
 	iLocal_140 = -1;
 	aggregate_func_4285(uParam0);
-	HUD::_0xAA03F130A637D923(func_792());
+	HUD::_TEXT_DATABASE_DELETE(func_792());
 }
 
 bool func_486(var uParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4, bool bParam5)

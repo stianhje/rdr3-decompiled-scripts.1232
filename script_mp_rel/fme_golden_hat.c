@@ -1191,7 +1191,7 @@ void func_719(float fParam0, var uParam1, var uParam2)
 	iVar0 = 0;
 	while (iVar0 <= 1)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(&(Local_172.f_38[iVar0])))
+		if (VOLUME::_DOES_VOLUME_EXIST(&(Local_172.f_38[iVar0])))
 		{
 			NETWORK::_0x405DDEFB1F531B18(&(Local_172.f_38[iVar0]), false, 0, 0);
 		}

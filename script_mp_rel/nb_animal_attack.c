@@ -1647,11 +1647,11 @@ void func_262(float fParam0)
 
 int func_266(int iParam0, vector3 vParam1, vector3 vParam4, vector3 vParam7)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(Local_1509.f_439.f_11))
+	if (!VOLUME::_DOES_VOLUME_EXIST(Local_1509.f_439.f_11))
 	{
 		Local_1509.f_439.f_11 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("NB_Trigger");
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(Local_1509.f_439.f_11))
+	if (VOLUME::_DOES_VOLUME_EXIST(Local_1509.f_439.f_11))
 	{
 		switch (iParam0)
 		{

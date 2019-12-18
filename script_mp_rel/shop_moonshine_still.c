@@ -44,13 +44,13 @@ void func_18(var uParam0)
 
 bool func_37(var uParam0)
 {
-	HUD::_0xF66090013DE648D5("COOKAUD");
-	if (!HUD::_0xD0976CC34002DB57("COOKAUD"))
+	HUD::_TEXT_DATABASE_REQUEST("COOKAUD");
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("COOKAUD"))
 	{
 		return false;
 	}
-	HUD::_0xF66090013DE648D5("SHOP");
-	if (!HUD::_0xD0976CC34002DB57("SHOP"))
+	HUD::_TEXT_DATABASE_REQUEST("SHOP");
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("SHOP"))
 	{
 		return false;
 	}
@@ -2199,7 +2199,7 @@ bool func_784()
 	{
 		iVar0 = 4;
 	}
-	HUD::_0xF66090013DE648D5(func_1296(iVar0));
+	HUD::_TEXT_DATABASE_REQUEST(func_1296(iVar0));
 	if (aggregate_func_938(&(Local_23.f_1), aggregate_func_6661(func_1296(iVar0)), 0, -1, 0, 0))
 	{
 		return true;

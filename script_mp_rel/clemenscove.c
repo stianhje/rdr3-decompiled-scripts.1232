@@ -38,24 +38,24 @@
 
 bool func_13()
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_13))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_13))
 	{
 		iLocal_13 = VOLUME::_CREATE_VOLUME_BOX(737.3499f, -1127.433f, 46.63308f, 0f, 0f, 26.05479f, 73.07784f, 115.7075f, 16.72532f);
 		aggregate_func_1307(iLocal_13);
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(Local_15.f_64))
+	if (!VOLUME::_DOES_VOLUME_EXIST(Local_15.f_64))
 	{
 		Local_15.f_64 = VOLUME::_CREATE_VOLUME_CYLINDER(718.817f, -827.245f, 50.334f, 0f, 0f, 0f, 12f, 12f, 3f);
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_14) && aggregate_func_4484(0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_14) && aggregate_func_4484(0))
 	{
 		iLocal_14 = VOLUME::_CREATE_VOLUME_BOX(711.732f, -828.585f, 50.703f, 0f, 0f, 0f, 4.161f, 2.683f, 3.852f);
-		if (VOLUME::_0x92A78D0BEDB332A3(iLocal_14))
+		if (VOLUME::_DOES_VOLUME_EXIST(iLocal_14))
 		{
 			PATHFIND::_0x19C7567D2F2287D6(iLocal_14, 7);
 		}
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(Local_15.f_65))
+	if (!VOLUME::_DOES_VOLUME_EXIST(Local_15.f_65))
 	{
 		Local_15.f_65 = VOLUME::_CREATE_VOLUME_CYLINDER(721.465f, -827.139f, 50.334f, 0f, 0f, 0f, 3f, 3f, 3f);
 	}

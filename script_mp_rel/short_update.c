@@ -190,11 +190,11 @@ void func_14(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4)
 
 void func_15()
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(Global_1896610->f_38))
+	if (!VOLUME::_DOES_VOLUME_EXIST(Global_1896610->f_38))
 	{
 		Global_1896610->f_38 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(3267.312f, -619.652f, 80.27f, 0f, 0f, 24f, 279f, 400f, 91f, "siska Inner");
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(Global_1896610->f_39))
+	if (!VOLUME::_DOES_VOLUME_EXIST(Global_1896610->f_39))
 	{
 		Global_1896610->f_39 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(3267.312f, -619.652f, 80.27f, 0f, 0f, 24f, 300f, 421f, 91f, "siska Outer");
 	}
@@ -1663,7 +1663,7 @@ void func_56(int iParam0)
 	if (aggregate_func_4544(iParam0, 1) || aggregate_func_4544(iParam0, 2))
 	{
 		iVar0 = func_271(iParam0);
-		if (VOLUME::_0x92A78D0BEDB332A3(iVar0))
+		if (VOLUME::_DOES_VOLUME_EXIST(iVar0))
 		{
 			if (aggregate_func_4544(iParam0, 1))
 			{
@@ -1675,7 +1675,7 @@ void func_56(int iParam0)
 			{
 				POPULATION::_0xA1CFB35069D23C23(iVar0);
 				POPULATION::_0x74C2B3DC0B294102(iVar0);
-				VOLUME::_0x43F867EF5C463A53(iVar0);
+				VOLUME::_DELETE_VOLUME(iVar0);
 				func_274(iParam0, 2);
 			}
 		}
@@ -6606,7 +6606,7 @@ void func_236(int iParam0, int iParam1)
 		{
 		}
 	}
-	if (!aggregate_func_5999(iParam0) && VOLUME::_0x92A78D0BEDB332A3((Global_1051387->f_69[iParam0 /*76*/])->f_25))
+	if (!aggregate_func_5999(iParam0) && VOLUME::_DOES_VOLUME_EXIST((Global_1051387->f_69[iParam0 /*76*/])->f_25))
 	{
 		if (aggregate_func_5362(iParam1, 1))
 		{
@@ -7330,7 +7330,7 @@ int func_271(int iParam0)
 {
 	int iVar0;
 
-	if (VOLUME::_0x92A78D0BEDB332A3(((*Global_1896610)[iParam0 /*2*/])->f_1))
+	if (VOLUME::_DOES_VOLUME_EXIST(((*Global_1896610)[iParam0 /*2*/])->f_1))
 	{
 		return ((*Global_1896610)[iParam0 /*2*/])->f_1;
 	}
@@ -7454,7 +7454,7 @@ int func_271(int iParam0)
 			VOLUME::_0x39816F6F94F385AD(iVar0, 217.5f, 3245f, 200f, 0f, 0f, -6f, 400f, 1800f, 800f);
 			break;
 		case 5:
-			if (VOLUME::_0x92A78D0BEDB332A3(((*Global_1896610)[6 /*2*/])->f_1) && VOLUME::_0x92A78D0BEDB332A3(((*Global_1896610)[7 /*2*/])->f_1))
+			if (VOLUME::_DOES_VOLUME_EXIST(((*Global_1896610)[6 /*2*/])->f_1) && VOLUME::_DOES_VOLUME_EXIST(((*Global_1896610)[7 /*2*/])->f_1))
 			{
 				iVar0 = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("DISTRICT_GRIZZLIES");
 				VOLUME::_0x6E0D3C3F828DA773(iVar0, ((*Global_1896610)[6 /*2*/])->f_1);
@@ -15289,7 +15289,7 @@ void func_787(int iParam0)
 		(Global_1051387->f_69[iParam0 /*76*/])->f_49 = 0;
 		return;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3((Global_1051387->f_69[iParam0 /*76*/])->f_25))
+	if (!VOLUME::_DOES_VOLUME_EXIST((Global_1051387->f_69[iParam0 /*76*/])->f_25))
 	{
 		(Global_1051387->f_69[iParam0 /*76*/])->f_49 = 0;
 		return;
@@ -15416,7 +15416,7 @@ void func_787(int iParam0)
 				(Global_1051387->f_69[iParam0 /*76*/])->f_6 = iVar8;
 			}
 		}
-		if (VOLUME::_0x92A78D0BEDB332A3((Global_1051387->f_69[iParam0 /*76*/])->f_28))
+		if (VOLUME::_DOES_VOLUME_EXIST((Global_1051387->f_69[iParam0 /*76*/])->f_28))
 		{
 			VOLUME::_0xD52DF30355EA7C8E((Global_1051387->f_69[iParam0 /*76*/])->f_28, iVar4, 1);
 			VOLUME::_0x4A8FEFC43FD8AC9B((Global_1051387->f_69[iParam0 /*76*/])->f_28, 0, 1);
@@ -15541,7 +15541,7 @@ bool func_797(int iParam0)
 					return false;
 				}
 			}
-			if (VOLUME::_0x92A78D0BEDB332A3((Global_1051387->f_69[iParam0 /*76*/])->f_28))
+			if (VOLUME::_DOES_VOLUME_EXIST((Global_1051387->f_69[iParam0 /*76*/])->f_28))
 			{
 				if (!VOLUME::_0xF256A75210C5C0EB((Global_1051387->f_69[iParam0 /*76*/])->f_28, ENTITY::GET_ENTITY_COORDS(aggregate_func_3079(), true, false)))
 				{
@@ -20677,13 +20677,13 @@ bool func_1457(int iParam0)
 	{
 		return true;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3((Global_1051387->f_69[iParam0 /*76*/])->f_26))
+	if (!VOLUME::_DOES_VOLUME_EXIST((Global_1051387->f_69[iParam0 /*76*/])->f_26))
 	{
 		return func_794(iParam0);
 	}
 	if (aggregate_func_4458(iParam0, 4))
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3((Global_1051387->f_69[iParam0 /*76*/])->f_25))
+		if (VOLUME::_DOES_VOLUME_EXIST((Global_1051387->f_69[iParam0 /*76*/])->f_25))
 		{
 			if (VOLUME::_0xF256A75210C5C0EB((Global_1051387->f_69[iParam0 /*76*/])->f_25, ENTITY::GET_ENTITY_COORDS(aggregate_func_3079(), true, false)))
 			{

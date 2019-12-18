@@ -580,8 +580,8 @@ bool func_381(var uParam0, var uParam1)
 	switch (uParam0->f_2)
 	{
 		case 0:
-			HUD::_0xF66090013DE648D5(func_775());
-			if (!HUD::_0xD0976CC34002DB57(func_775()))
+			HUD::_TEXT_DATABASE_REQUEST(func_775());
+			if (!HUD::_TEXT_DATABASE_HAS_LOADED(func_775()))
 			{
 				return false;
 			}

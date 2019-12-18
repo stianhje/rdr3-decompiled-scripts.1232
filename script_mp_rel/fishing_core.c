@@ -2214,7 +2214,7 @@ void func_26(var uParam0)
 
 void func_27(var uParam0)
 {
-	HUD::_0xAA03F130A637D923("MGFSH");
+	HUD::_TEXT_DATABASE_DELETE("MGFSH");
 	STREAMING::REMOVE_PTFX_ASSET();
 	AUDIO::RELEASE_SCRIPT_AUDIO_BANK();
 	AUDIO::_0x531A78D6BF27014B(*uParam0);
@@ -2728,7 +2728,7 @@ void func_72(var uParam0, var uParam1, int iParam2)
 
 void func_73()
 {
-	HUD::_0xF66090013DE648D5("MGFSH");
+	HUD::_TEXT_DATABASE_REQUEST("MGFSH");
 	STREAMING::REQUEST_PTFX_ASSET();
 }
 
@@ -2738,7 +2738,7 @@ bool func_74(var uParam0)
 	{
 		return false;
 	}
-	if ((!MISC::IS_STRING_NULL_OR_EMPTY("MGFSH") && HUD::_0x2C729F2B94CEA911("MGFSH")) && !HUD::_0xD0976CC34002DB57("MGFSH"))
+	if ((!MISC::IS_STRING_NULL_OR_EMPTY("MGFSH") && HUD::_DOES_TEXT_DATABASE_EXIST("MGFSH")) && !HUD::_TEXT_DATABASE_HAS_LOADED("MGFSH"))
 	{
 		return false;
 	}

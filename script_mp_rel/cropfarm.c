@@ -127,11 +127,11 @@ void func_81(int iParam0)
 	aggregate_func_2017(iLocal_18);
 	aggregate_func_2017(iLocal_17);
 	LAW::_REMOVE_GUARD_ZONE(sLocal_14);
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_16))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_16))
 	{
 		VOLUME::_0x998202B206872672(iLocal_16);
 		VOLUME::_0x6D5F9E69BA1BE783(iLocal_16);
-		VOLUME::_0x43F867EF5C463A53(iLocal_16);
+		VOLUME::_DELETE_VOLUME(iLocal_16);
 	}
 }
 

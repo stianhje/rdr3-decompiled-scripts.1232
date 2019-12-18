@@ -339,7 +339,7 @@ void func_71(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	{
 		return;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam2))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam2))
 	{
 		return;
 	}
@@ -396,11 +396,11 @@ void func_90(int iParam0)
 {
 	if (aggregate_func_4251() == -1)
 	{
-		if (HUD::_0x2C729F2B94CEA911("RHRGNAU"))
+		if (HUD::_DOES_TEXT_DATABASE_EXIST("RHRGNAU"))
 		{
-			if (HUD::_0xD0976CC34002DB57("RHRGNAU"))
+			if (HUD::_TEXT_DATABASE_HAS_LOADED("RHRGNAU"))
 			{
-				HUD::_0xAA03F130A637D923("RHRGNAU");
+				HUD::_TEXT_DATABASE_DELETE("RHRGNAU");
 			}
 		}
 	}

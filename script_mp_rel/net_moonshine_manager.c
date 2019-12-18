@@ -1253,7 +1253,7 @@ void func_72(int iParam0, var uParam1, bool bParam2)
 
 bool func_73()
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(Global_1275329->f_29.f_10))
+	if (!VOLUME::_DOES_VOLUME_EXIST(Global_1275329->f_29.f_10))
 	{
 		return false;
 	}

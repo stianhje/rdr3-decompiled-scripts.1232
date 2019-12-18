@@ -38,9 +38,9 @@ void func_4()
 	int iVar0;
 
 	aggregate_func_2704();
-	if (HUD::_0xD0976CC34002DB57(aggregate_func_6698()))
+	if (HUD::_TEXT_DATABASE_HAS_LOADED(aggregate_func_6698()))
 	{
-		HUD::_0xAA03F130A637D923(aggregate_func_6698());
+		HUD::_TEXT_DATABASE_DELETE(aggregate_func_6698());
 	}
 	Global_1183537 = 0;
 	iVar0 = 0;
@@ -340,8 +340,8 @@ bool func_38()
 	{
 		iVar0 = 0;
 	}
-	HUD::_0xF66090013DE648D5(aggregate_func_6698());
-	if (!HUD::_0xD0976CC34002DB57(aggregate_func_6698()))
+	HUD::_TEXT_DATABASE_REQUEST(aggregate_func_6698());
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED(aggregate_func_6698()))
 	{
 		iVar0 = 0;
 	}

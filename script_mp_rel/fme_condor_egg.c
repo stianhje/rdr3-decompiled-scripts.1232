@@ -109,7 +109,7 @@ void func_64()
 {
 	NETWORK::RESERVE_NETWORK_MISSION_OBJECTS(1);
 	NETWORK::RESERVE_NETWORK_MISSION_PEDS(36);
-	HUD::_0xF66090013DE648D5("FMEWK");
+	HUD::_TEXT_DATABASE_REQUEST("FMEWK");
 	func_171(0);
 	aggregate_func_6739(joaat("timer"));
 	aggregate_func_4355(8192);
@@ -135,7 +135,7 @@ void func_125()
 		aggregate_func_4322(803, 1);
 	}
 	func_171(1);
-	HUD::_0xAA03F130A637D923("FMEWK");
+	HUD::_TEXT_DATABASE_DELETE("FMEWK");
 }
 
 void func_147(var uParam0)
@@ -428,7 +428,7 @@ bool func_227()
 {
 	int iVar0;
 
-	if (!HUD::_0xD0976CC34002DB57("FMEWK"))
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("FMEWK"))
 	{
 		return false;
 	}

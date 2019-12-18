@@ -65,7 +65,7 @@ void func_1(int iParam0)
 
 void func_34()
 {
-	HUD::_0xF66090013DE648D5("NBEGP");
+	HUD::_TEXT_DATABASE_REQUEST("NBEGP");
 	TASK::_0x73F0D0327BFA0812(func_87());
 	aggregate_func_7924(0, 0, func_88(), 5f, -1, 1);
 	STREAMING::REQUEST_COLLISION_AT_COORD(func_88());
@@ -204,7 +204,7 @@ bool func_103()
 
 bool func_119()
 {
-	if (!HUD::_0xD0976CC34002DB57("NBEGP"))
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("NBEGP"))
 	{
 		return false;
 	}

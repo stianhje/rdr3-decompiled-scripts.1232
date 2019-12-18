@@ -1790,13 +1790,13 @@ void func_622()
 	iVar0 = 0;
 	while (iVar0 <= 5)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[iVar0 /*4*/])->f_1))
+		if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[iVar0 /*4*/])->f_1))
 		{
 			if (MAP::DOES_BLIP_EXIST((Local_913.f_16[iVar0 /*4*/])->f_2))
 			{
 				aggregate_func_2433(&((Local_913.f_16[iVar0 /*4*/])->f_2));
 			}
-			VOLUME::_0x43F867EF5C463A53((Local_913.f_16[iVar0 /*4*/])->f_1);
+			VOLUME::_DELETE_VOLUME((Local_913.f_16[iVar0 /*4*/])->f_1);
 		}
 		iVar0++;
 	}
@@ -5092,7 +5092,7 @@ bool func_865(int iParam0)
 	iVar0 = NETWORK::NET_TO_PED(&(Local_0.f_67[iParam0 /*40*/]));
 	if (func_867(iParam0) || aggregate_func_4281(16384))
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[1 /*4*/])->f_1))
+		if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[1 /*4*/])->f_1))
 		{
 			if (func_1178((Local_913.f_16[1 /*4*/])->f_1))
 			{
@@ -5102,7 +5102,7 @@ bool func_865(int iParam0)
 	}
 	else if (func_864(iVar0, 0))
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[2 /*4*/])->f_1))
+		if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[2 /*4*/])->f_1))
 		{
 			if (aggregate_func_1578(NETWORK::NET_TO_PED(&(Local_0.f_67[iParam0 /*40*/])), (Local_913.f_16[2 /*4*/])->f_1, 56, 0))
 			{
@@ -5110,7 +5110,7 @@ bool func_865(int iParam0)
 			}
 		}
 	}
-	else if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[0 /*4*/])->f_1))
+	else if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[0 /*4*/])->f_1))
 	{
 		if (aggregate_func_1578(NETWORK::NET_TO_PED(&(Local_0.f_67[iParam0 /*40*/])), (Local_913.f_16[0 /*4*/])->f_1, 56, 0))
 		{
@@ -5985,17 +5985,17 @@ void func_1136()
 		{
 			if (!func_851())
 			{
-				if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[0 /*4*/])->f_1) && !MAP::DOES_BLIP_EXIST((Local_913.f_16[0 /*4*/])->f_2))
+				if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[0 /*4*/])->f_1) && !MAP::DOES_BLIP_EXIST((Local_913.f_16[0 /*4*/])->f_2))
 				{
 					(Local_913.f_16[0 /*4*/])->f_2 = MAP::_0xA6EF0C54A3443E70(1259054292, (Local_913.f_16[0 /*4*/])->f_1);
 				}
 			}
-			else if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[2 /*4*/])->f_1) && !MAP::DOES_BLIP_EXIST((Local_913.f_16[2 /*4*/])->f_2))
+			else if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[2 /*4*/])->f_1) && !MAP::DOES_BLIP_EXIST((Local_913.f_16[2 /*4*/])->f_2))
 			{
 				(Local_913.f_16[2 /*4*/])->f_2 = MAP::_0xA6EF0C54A3443E70(1259054292, (Local_913.f_16[2 /*4*/])->f_1);
 			}
 		}
-		else if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[1 /*4*/])->f_1) && !MAP::DOES_BLIP_EXIST((Local_913.f_16[1 /*4*/])->f_2))
+		else if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[1 /*4*/])->f_1) && !MAP::DOES_BLIP_EXIST((Local_913.f_16[1 /*4*/])->f_2))
 		{
 			(Local_913.f_16[1 /*4*/])->f_2 = MAP::_0xA6EF0C54A3443E70(1259054292, (Local_913.f_16[1 /*4*/])->f_1);
 		}
@@ -6006,7 +6006,7 @@ void func_1136()
 		iVar0 = 0;
 		while (iVar0 <= 2)
 		{
-			if ((MAP::DOES_BLIP_EXIST((Local_913.f_16[iVar0 /*4*/])->f_2) && VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[iVar0 /*4*/])->f_1)) && &Local_0.f_6[iVar0] >= 8)
+			if ((MAP::DOES_BLIP_EXIST((Local_913.f_16[iVar0 /*4*/])->f_2) && VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[iVar0 /*4*/])->f_1)) && &Local_0.f_6[iVar0] >= 8)
 			{
 				aggregate_func_2433(&((Local_913.f_16[iVar0 /*4*/])->f_2));
 			}
@@ -6033,7 +6033,7 @@ void func_1138()
 		iVar0 = 0;
 		while (iVar0 <= 2)
 		{
-			if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[iVar0 /*4*/])->f_1) && MAP::DOES_BLIP_EXIST((Local_913.f_16[iVar0 /*4*/])->f_2))
+			if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[iVar0 /*4*/])->f_1) && MAP::DOES_BLIP_EXIST((Local_913.f_16[iVar0 /*4*/])->f_2))
 			{
 				aggregate_func_2433(&((Local_913.f_16[iVar0 /*4*/])->f_2));
 			}
@@ -6165,7 +6165,7 @@ float func_1148(int iParam0, var uParam1, int iParam2)
 	{
 		if (func_864(iVar3, 0))
 		{
-			if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[2 /*4*/])->f_1))
+			if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[2 /*4*/])->f_1))
 			{
 				*uParam1 = { VOLUME::_0xF70F00013A62F866((Local_913.f_16[2 /*4*/])->f_1) };
 				fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(*uParam1, ENTITY::GET_ENTITY_COORDS(iVar2, true, false), true);
@@ -6187,7 +6187,7 @@ float func_1148(int iParam0, var uParam1, int iParam2)
 			}
 		}
 	}
-	else if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[1 /*4*/])->f_1))
+	else if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[1 /*4*/])->f_1))
 	{
 		*uParam1 = { VOLUME::_0xF70F00013A62F866((Local_913.f_16[1 /*4*/])->f_1) };
 		fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(*uParam1, ENTITY::GET_ENTITY_COORDS(iVar2, true, false), true);
@@ -6774,7 +6774,7 @@ float func_1283(int iParam0, var uParam1)
 	iVar3 = 0;
 	while (iVar3 <= 2)
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[iVar3 /*4*/])->f_1))
+		if (!VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[iVar3 /*4*/])->f_1))
 		{
 		}
 		else if (!func_867(iParam0))
@@ -7019,7 +7019,7 @@ int func_1345(int iParam0, var uParam1, int iParam2)
 	{
 		if (func_864(iVar5, 0))
 		{
-			if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[2 /*4*/])->f_1))
+			if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[2 /*4*/])->f_1))
 			{
 				*uParam1 = { VOLUME::_0xF70F00013A62F866((Local_913.f_16[2 /*4*/])->f_1) };
 				fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(*uParam1, ENTITY::GET_ENTITY_COORDS(iVar4, true, false), true);
@@ -7036,7 +7036,7 @@ int func_1345(int iParam0, var uParam1, int iParam2)
 			iVar2 = 0;
 			while (iVar2 <= 2)
 			{
-				if (!VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[iVar2 /*4*/])->f_1))
+				if (!VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[iVar2 /*4*/])->f_1))
 				{
 				}
 				else
@@ -7054,7 +7054,7 @@ int func_1345(int iParam0, var uParam1, int iParam2)
 			}
 		}
 	}
-	else if (VOLUME::_0x92A78D0BEDB332A3((Local_913.f_16[1 /*4*/])->f_1))
+	else if (VOLUME::_DOES_VOLUME_EXIST((Local_913.f_16[1 /*4*/])->f_1))
 	{
 		*uParam1 = { VOLUME::_0xF70F00013A62F866((Local_913.f_16[1 /*4*/])->f_1) };
 		fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(*uParam1, ENTITY::GET_ENTITY_COORDS(iVar4, true, false), true);

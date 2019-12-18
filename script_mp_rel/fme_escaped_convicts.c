@@ -2809,7 +2809,7 @@ float func_567(int iParam0, var uParam1)
 	iVar2 = 0;
 	while (iVar2 <= 5)
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3((Local_2203.f_8[iVar2 /*4*/])->f_1))
+		if (!VOLUME::_DOES_VOLUME_EXIST((Local_2203.f_8[iVar2 /*4*/])->f_1))
 		{
 		}
 		else
@@ -3029,13 +3029,13 @@ void func_646()
 	iVar0 = 0;
 	while (iVar0 <= 5)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3((Local_2203.f_8[iVar0 /*4*/])->f_1))
+		if (VOLUME::_DOES_VOLUME_EXIST((Local_2203.f_8[iVar0 /*4*/])->f_1))
 		{
 			if (MAP::DOES_BLIP_EXIST((Local_2203.f_8[iVar0 /*4*/])->f_2))
 			{
 				aggregate_func_2433(&((Local_2203.f_8[iVar0 /*4*/])->f_2));
 			}
-			VOLUME::_0x43F867EF5C463A53((Local_2203.f_8[iVar0 /*4*/])->f_1);
+			VOLUME::_DELETE_VOLUME((Local_2203.f_8[iVar0 /*4*/])->f_1);
 		}
 		iVar0++;
 	}
@@ -5246,7 +5246,7 @@ float func_902(int iParam0, var uParam1)
 	iVar3 = 0;
 	while (iVar3 <= 5)
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3((Local_2203.f_8[iVar3 /*4*/])->f_1))
+		if (!VOLUME::_DOES_VOLUME_EXIST((Local_2203.f_8[iVar3 /*4*/])->f_1))
 		{
 		}
 		else
@@ -5454,7 +5454,7 @@ int func_918(int iParam0, var uParam1)
 	iVar2 = 0;
 	while (iVar2 <= 5)
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3((Local_2203.f_8[iVar2 /*4*/])->f_1))
+		if (!VOLUME::_DOES_VOLUME_EXIST((Local_2203.f_8[iVar2 /*4*/])->f_1))
 		{
 		}
 		else
@@ -5484,7 +5484,7 @@ int func_919(vector3 vParam0, var uParam3)
 	iVar2 = 0;
 	while (iVar2 <= 5)
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3((Local_2203.f_8[iVar2 /*4*/])->f_1))
+		if (!VOLUME::_DOES_VOLUME_EXIST((Local_2203.f_8[iVar2 /*4*/])->f_1))
 		{
 		}
 		else
@@ -8066,7 +8066,7 @@ void func_1250()
 		iVar0 = 0;
 		while (iVar0 <= 5)
 		{
-			if (VOLUME::_0x92A78D0BEDB332A3((Local_2203.f_8[iVar0 /*4*/])->f_1) && !MAP::DOES_BLIP_EXIST((Local_2203.f_8[iVar0 /*4*/])->f_2))
+			if (VOLUME::_DOES_VOLUME_EXIST((Local_2203.f_8[iVar0 /*4*/])->f_1) && !MAP::DOES_BLIP_EXIST((Local_2203.f_8[iVar0 /*4*/])->f_2))
 			{
 				iVar1 = func_855(iVar0);
 				vVar2 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), true, false) };
@@ -8096,7 +8096,7 @@ void func_1250()
 		while (iVar0 <= 5)
 		{
 			iVar1 = func_855(iVar0);
-			if (VOLUME::_0x92A78D0BEDB332A3((Local_2203.f_8[iVar0 /*4*/])->f_1))
+			if (VOLUME::_DOES_VOLUME_EXIST((Local_2203.f_8[iVar0 /*4*/])->f_1))
 			{
 				vVar2 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), true, false) };
 				vVar5 = { VOLUME::_0xF70F00013A62F866((Local_2203.f_8[iVar0 /*4*/])->f_1) };
@@ -8157,7 +8157,7 @@ void func_1252()
 		iVar0 = 0;
 		while (iVar0 <= 5)
 		{
-			if (VOLUME::_0x92A78D0BEDB332A3((Local_2203.f_8[iVar0 /*4*/])->f_1) && MAP::DOES_BLIP_EXIST((Local_2203.f_8[iVar0 /*4*/])->f_2))
+			if (VOLUME::_DOES_VOLUME_EXIST((Local_2203.f_8[iVar0 /*4*/])->f_1) && MAP::DOES_BLIP_EXIST((Local_2203.f_8[iVar0 /*4*/])->f_2))
 			{
 				aggregate_func_2433(&((Local_2203.f_8[iVar0 /*4*/])->f_2));
 			}

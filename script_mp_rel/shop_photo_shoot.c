@@ -1233,7 +1233,7 @@ void func_23()
 	{
 		ENTITY::FREEZE_ENTITY_POSITION(Global_35, false);
 		ENTITY::SET_ENTITY_COMPLETELY_DISABLE_COLLISION(Global_35, true, false);
-		ENTITY::_0x203BEFFDBE12E96A(Global_35, Local_59.f_22, Local_59.f_25, 1, 0, 1);
+		ENTITY::_SET_ENTITY_COORDS_AND_HEADING(Global_35, Local_59.f_22, Local_59.f_25, true, false, true);
 		ENTITY::SET_ENTITY_VISIBLE(Global_35, true);
 		TASK::TASK_CLEAR_LOOK_AT(Global_35);
 		TASK::CLEAR_PED_TASKS_IMMEDIATELY(Global_35, 0, 1);
@@ -1277,9 +1277,9 @@ void func_23()
 	AUDIO::_0x531A78D6BF27014B("RDRO_Photo_Shop_Sounds");
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, 0);
 	aggregate_func_668(0, 1, 1, 0);
-	if (VOLUME::_0x92A78D0BEDB332A3(Local_59.f_112))
+	if (VOLUME::_DOES_VOLUME_EXIST(Local_59.f_112))
 	{
-		VOLUME::_0x43F867EF5C463A53(Local_59.f_112);
+		VOLUME::_DELETE_VOLUME(Local_59.f_112);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(Local_59.f_115))
 	{
@@ -1876,7 +1876,7 @@ bool func_44()
 	{
 		return false;
 	}
-	ENTITY::_0x203BEFFDBE12E96A(Local_59.f_50, Local_59.f_14, Local_59.f_17, 1, 0, 1);
+	ENTITY::_SET_ENTITY_COORDS_AND_HEADING(Local_59.f_50, Local_59.f_14, Local_59.f_17, true, false, true);
 	TASK::TASK_STAND_STILL(Local_59.f_50, -1);
 	return true;
 }
@@ -2218,7 +2218,7 @@ void func_50()
 	if (Local_59.f_51 != 0)
 	{
 		PED::_0xED00D72F81CF7278(Local_59.f_51, 0, 0);
-		ENTITY::_0x203BEFFDBE12E96A(Local_59.f_51, Local_59.f_18, Local_59.f_21, 1, 0, 1);
+		ENTITY::_SET_ENTITY_COORDS_AND_HEADING(Local_59.f_51, Local_59.f_18, Local_59.f_21, true, false, true);
 	}
 }
 

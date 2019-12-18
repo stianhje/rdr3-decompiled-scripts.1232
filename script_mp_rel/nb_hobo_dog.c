@@ -257,10 +257,10 @@ bool func_120()
 	switch (Local_132.f_18)
 	{
 		case 0:
-			if (HUD::_0x2C729F2B94CEA911(sVar0))
+			if (HUD::_DOES_TEXT_DATABASE_EXIST(sVar0))
 			{
-				HUD::_0xF66090013DE648D5(sVar0);
-				if (HUD::_0xD0976CC34002DB57(sVar0))
+				HUD::_TEXT_DATABASE_REQUEST(sVar0);
+				if (HUD::_TEXT_DATABASE_HAS_LOADED(sVar0))
 				{
 					Local_132.f_18 = 1;
 				}

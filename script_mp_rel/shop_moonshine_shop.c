@@ -44,8 +44,8 @@ void func_18(var uParam0)
 
 bool func_37(var uParam0)
 {
-	HUD::_0xF66090013DE648D5("SHOP");
-	if (!HUD::_0xD0976CC34002DB57("SHOP"))
+	HUD::_TEXT_DATABASE_REQUEST("SHOP");
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("SHOP"))
 	{
 		return false;
 	}

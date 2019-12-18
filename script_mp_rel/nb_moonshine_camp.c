@@ -1086,12 +1086,12 @@ void func_211()
 
 bool func_218(char* sParam0)
 {
-	if (!HUD::_0x2C729F2B94CEA911(sParam0))
+	if (!HUD::_DOES_TEXT_DATABASE_EXIST(sParam0))
 	{
 		return false;
 	}
-	HUD::_0xF66090013DE648D5(sParam0);
-	if (HUD::_0xD0976CC34002DB57(sParam0))
+	HUD::_TEXT_DATABASE_REQUEST(sParam0);
+	if (HUD::_TEXT_DATABASE_HAS_LOADED(sParam0))
 	{
 		return true;
 	}
@@ -1652,7 +1652,7 @@ void func_249()
 		Local_16.f_7.f_18 = { ENTITY::GET_ENTITY_COORDS(iVar1, true, false) };
 		iVar5 = aggregate_func_4849(1);
 		vVar2 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_16.f_7.f_18, 0f, -0.0820015f, 0.0951799f, 0.156133f) };
-		ENTITY::_0x203BEFFDBE12E96A(iVar5, vVar2, Local_16.f_7.f_21, 1, 0, 1);
+		ENTITY::_SET_ENTITY_COORDS_AND_HEADING(iVar5, vVar2, Local_16.f_7.f_21, true, false, true);
 		func_271(67108864);
 	}
 }

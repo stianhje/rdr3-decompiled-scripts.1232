@@ -535,9 +535,9 @@ void func_122(var uParam0)
 {
 	int iVar0;
 
-	if (VOLUME::_0x92A78D0BEDB332A3(Local_25.f_5))
+	if (VOLUME::_DOES_VOLUME_EXIST(Local_25.f_5))
 	{
-		VOLUME::_0x43F867EF5C463A53(Local_25.f_5);
+		VOLUME::_DELETE_VOLUME(Local_25.f_5);
 	}
 	func_457(uParam0);
 	func_458(uParam0);
@@ -959,7 +959,7 @@ int func_363()
 
 int func_410(var uParam0)
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(Local_25.f_5))
+	if (VOLUME::_DOES_VOLUME_EXIST(Local_25.f_5))
 	{
 		aggregate_func_4114(Local_25.f_5, 2);
 	}
@@ -1186,7 +1186,7 @@ void func_461(var uParam0)
 
 void func_463(var uParam0, int iParam1, bool bParam2)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam1))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam1))
 	{
 		return;
 	}
@@ -1688,7 +1688,7 @@ void func_835(var uParam0, int iParam1)
 	{
 		case 81:
 			func_1311(&(iParam1->f_8), iVar0, -339.1187f, 767.4509f, 115.5749f, 101f, -341.0847f, 767.1586f, 115.7108f, 278.5947f, -340.3876f, 767.6069f, 116.4137f);
-			if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+			if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 			{
 				iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(-339.9063f, 767.4564f, 116.3696f, 0f, 0f, -171.2032f, 0.894675f, 1.613694f, 1.564474f);
 			}
@@ -1697,7 +1697,7 @@ void func_835(var uParam0, int iParam1)
 			if (uParam0->f_4 == 30)
 			{
 				func_1311(&(iParam1->f_8), iVar0, 1297.676f, -1277.629f, 74.881f, 144.71f, 1296.429f, -1279.371f, 74.8411f, 328.7496f, 1296.594f, -1278.371f, 75.6666f);
-				if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+				if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 				{
 					iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(1297.22f, -1278.003f, 75.90471f, 0f, 0f, 56.654f, 0.846061f, 1.442585f, 2.480459f);
 				}
@@ -1708,7 +1708,7 @@ void func_835(var uParam0, int iParam1)
 			if (uParam0->f_4 == 40)
 			{
 				func_1311(&(iParam1->f_8), iVar0, 2075.266f, 999.9812f, 111.5449f, 290.3138f, 2077.025f, 1000.491f, 111.4851f, 113.8807f, 2075.851f, 1000.491f, 112.3411f);
-				if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+				if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 				{
 					iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(2075.793f, 1000.405f, 112.4949f, 0f, 0f, 11.87342f, 1.162371f, 1.435581f, 1.414072f);
 				}
@@ -1718,7 +1718,7 @@ void func_835(var uParam0, int iParam1)
 			if (uParam0->f_4 == 44)
 			{
 				func_1311(&(iParam1->f_8), iVar0, 2819.511f, -1331.339f, 45.5085f, 49.93f, 2817.743f, -1330.057f, 45.5139f, 232.4192f, 2818.488f, -1330.604f, 46.32197f);
-				if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+				if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 				{
 					iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(2818.65f, -1330.746f, 46.45f, 0f, 0f, 49.75f, 1.613905f, 0.788669f, 1.119892f);
 				}
@@ -1726,7 +1726,7 @@ void func_835(var uParam0, int iParam1)
 			else if (uParam0->f_4 == 63)
 			{
 				func_1311(&(iParam1->f_8), iVar0, 2832.32f, -1223.05f, 46.75f, 189.8299f, 2832.069f, -1225.649f, 46.6535f, 9.8299f, 2832.411f, -1224.729f, 47.51855f);
-				if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+				if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 				{
 					iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(2832.481f, -1224.19f, 47.52882f, 0f, 0f, 0f, 2.082815f, 1.4134f, 2.029264f);
 				}
@@ -1734,7 +1734,7 @@ void func_835(var uParam0, int iParam1)
 			break;
 		case 26:
 			func_1311(&(iParam1->f_8), iVar0, -1753.138f, -392.7723f, 155.232f, 176.4f, -1752.75f, -394.772f, 155.1888f, 1.9712f, -1753.235f, -393.8978f, 156.037f);
-			if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+			if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 			{
 				iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(-1753.058f, -393.4279f, 156.2f, 0f, 0f, 0.043f, 1.044297f, 1.035441f, 1.473348f);
 			}
@@ -1743,7 +1743,7 @@ void func_835(var uParam0, int iParam1)
 			if (uParam0->f_4 == 104)
 			{
 				func_1311(&(iParam1->f_8), iVar0, -5509.964f, -2947.288f, -2.8676f, -102.99f, -5508.081f, -2947.577f, -2.8688f, 88.0957f, -5508.982f, -2947.619f, -2.06985f);
-				if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+				if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 				{
 					iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(-5509.149f, -2947.479f, -1.733232f, 0f, 0f, -18.06135f, 0.811324f, 1.1507f, 1.859433f);
 				}
@@ -1753,7 +1753,7 @@ void func_835(var uParam0, int iParam1)
 			if (uParam0->f_4 == 76)
 			{
 				func_1311(&(iParam1->f_8), iVar0, -2251.738f, -1914.852f, 116.0064f, 206.9256f, -2251.034f, -1916.911f, 115.9488f, 13.5871f, -2251.233f, -1915.702f, 116.8735f);
-				if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+				if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 				{
 					iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(-2251.396f, -1915.746f, 117.2392f, 0f, 0f, 19.03913f, 1.542943f, 1f, 1.155026f);
 				}
@@ -1763,7 +1763,7 @@ void func_835(var uParam0, int iParam1)
 			if (uParam0->f_4 == 3)
 			{
 				func_1311(&(iParam1->f_8), iVar0, -2844.139f, 136.5339f, 183.7605f, 279.4883f, -2842.262f, 137.3595f, 183.8226f, 116.6854f, -2843.218f, 136.964f, 184.5795f);
-				if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+				if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 				{
 					iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(-2843.444f, 136.9017f, 184.7177f, 0f, 0f, 15.0305f, 1.205728f, 1.558203f, 1.450224f);
 				}
@@ -1773,7 +1773,7 @@ void func_835(var uParam0, int iParam1)
 			if (uParam0->f_4 == 4)
 			{
 				func_1311(&(iParam1->f_8), iVar0, -1008.012f, -541.5708f, 98.12093f, 273.5871f, -1006.008f, -540.8176f, 97.9565f, 93.5933f, -1007.192f, -541.1581f, 98.90881f);
-				if (!VOLUME::_0x92A78D0BEDB332A3(iParam1->f_5))
+				if (!VOLUME::_DOES_VOLUME_EXIST(iParam1->f_5))
 				{
 					iParam1->f_5 = VOLUME::_CREATE_VOLUME_BOX(-1007.487f, -541.3747f, 99.25441f, 0f, 0f, 8.561835f, 1f, 1.806098f, 1.940772f);
 				}

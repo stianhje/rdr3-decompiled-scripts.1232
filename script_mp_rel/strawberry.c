@@ -413,7 +413,7 @@ bool func_68(int iParam0, int iParam1, int iParam2)
 	{
 		return false;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam1))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam1))
 	{
 		return false;
 	}
@@ -438,9 +438,9 @@ void func_74()
 void func_94(int iParam0)
 {
 	aggregate_func_6501(0.775f, 0.2f, 0.025f, 0f);
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_44))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_44))
 	{
-		VOLUME::_0x43F867EF5C463A53(iLocal_44);
+		VOLUME::_DELETE_VOLUME(iLocal_44);
 	}
 	VEHICLE::_REMOVE_SPEED_ZONE(iLocal_47);
 	ENTITY::REMOVE_MODEL_HIDE(vLocal_48, 5f, 2052583298, 0);

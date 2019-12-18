@@ -187,9 +187,9 @@ bool func_7()
 
 bool func_9()
 {
-	if (!HUD::_0xD0976CC34002DB57("UIC"))
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("UIC"))
 	{
-		HUD::_0xF66090013DE648D5("UIC");
+		HUD::_TEXT_DATABASE_REQUEST("UIC");
 	}
 	else
 	{

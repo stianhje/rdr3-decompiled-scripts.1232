@@ -112,9 +112,9 @@ void func_1()
 	iVar0 = 0;
 	while (iVar0 < iLocal_24)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(&(iLocal_78[iVar0])))
+		if (VOLUME::_DOES_VOLUME_EXIST(&(iLocal_78[iVar0])))
 		{
-			VOLUME::_0x43F867EF5C463A53(&(iLocal_78[iVar0]));
+			VOLUME::_DELETE_VOLUME(&(iLocal_78[iVar0]));
 		}
 		if (ENTITY::DOES_ENTITY_EXIST(&(iLocal_24[iVar0])))
 		{
@@ -130,13 +130,13 @@ void func_1()
 	{
 		ANIMSCENE::_DELETE_ANIM_SCENE(iLocal_23);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_77))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_77))
 	{
-		VOLUME::_0x43F867EF5C463A53(iLocal_77);
+		VOLUME::_DELETE_VOLUME(iLocal_77);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_81))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_81))
 	{
-		VOLUME::_0x43F867EF5C463A53(iLocal_81);
+		VOLUME::_DELETE_VOLUME(iLocal_81);
 	}
 	if (iLocal_44 != -1)
 	{
@@ -357,11 +357,11 @@ void func_8()
 	func_37(&uLocal_45, 1);
 	aggregate_func_5529(&uLocal_45, 1);
 	aggregate_func_8915(&uLocal_45, 1);
-	if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_77))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_77))
 	{
 		iLocal_77 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1439.646f, -1296.078f, 78.22333f, 0f, 0f, 15.93833f, 5.460037f, 5.05896f, 3.246991f, "m_volDonkeyPen");
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_81))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_81))
 	{
 		iLocal_81 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(1403.892f, -1324.662f, 76.65739f, 0f, 0f, 0f, 19.09795f, 13.32395f, 7.186517f, "m_volVehicleAntiGrief");
 	}
@@ -434,7 +434,7 @@ int func_13()
 				TASK::TASK_STAND_STILL(&(iLocal_24[iVar0]), -1);
 				PED::_0x1902C4CFCC5BE57C(&(iLocal_24[iVar0]), -937613161);
 				PED::_0xCC8CA3E88256E58F(&(iLocal_24[iVar0]), 0, 1, 1, 1, false);
-				if (!VOLUME::_0x92A78D0BEDB332A3(&(iLocal_78[iVar0])))
+				if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_78[iVar0])))
 				{
 					iLocal_78[iVar0] = VOLUME::_0x0EB78C2B156635B1(665633627, *(vLocal_28[iVar0 /*3*/]), 0f, 0f, 0f, 1.5f, 1.5f, 1f);
 					PED::_0x7C00CFC48A782DC0(&(iLocal_78[iVar0]), &(iLocal_24[iVar0]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
@@ -473,7 +473,7 @@ void func_16()
 {
 	int iVar0;
 
-	if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_77))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_77))
 	{
 		return;
 	}
@@ -645,7 +645,7 @@ bool func_25()
 	{
 		return false;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_81))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_81))
 	{
 		return false;
 	}

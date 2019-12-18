@@ -328,7 +328,7 @@ bool func_40(int iParam0)
 void func_84(int iParam0)
 {
 	aggregate_func_6501(0.775f, 0.2f, 0.025f, 0f);
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_18))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_18))
 	{
 		POPULATION::_0x74C2B3DC0B294102(iLocal_18);
 		POPULATION::_0xA1CFB35069D23C23(iLocal_18);

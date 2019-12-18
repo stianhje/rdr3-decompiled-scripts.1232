@@ -318,9 +318,9 @@ void func_61()
 
 void func_78(int iParam0)
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_18))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_18))
 	{
-		VOLUME::_0x43F867EF5C463A53(iLocal_18);
+		VOLUME::_DELETE_VOLUME(iLocal_18);
 	}
 	if (DECORATOR::DECOR_EXIST_ON(iLocal_20, "chest_local_only"))
 	{
@@ -346,7 +346,7 @@ void func_91()
 	vector3 vVar3;
 	vector3 vVar6;
 
-	if (!VOLUME::_0x92A78D0BEDB332A3(iLocal_18))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_18))
 	{
 		vVar0 = { -615.837f, 530.269f, 94.935f };
 		vVar3 = { 0f, 0f, -140.167f };

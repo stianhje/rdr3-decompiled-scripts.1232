@@ -304,8 +304,8 @@ bool func_17(int iParam0)
 	bVar0 = aggregate_func_4251() == -1;
 	if (bVar0)
 	{
-		HUD::_0xF66090013DE648D5("ASBGAUD");
-		if (!HUD::_0xD0976CC34002DB57("ASBGAUD"))
+		HUD::_TEXT_DATABASE_REQUEST("ASBGAUD");
+		if (!HUD::_TEXT_DATABASE_HAS_LOADED("ASBGAUD"))
 		{
 			return false;
 		}
@@ -707,7 +707,7 @@ void func_74()
 
 void func_78(int iParam0)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam0))
 	{
 		return;
 	}
@@ -737,15 +737,15 @@ void func_96(int iParam0)
 	aggregate_func_2017(iLocal_51);
 	aggregate_func_2017(iLocal_52);
 	aggregate_func_2017(iLocal_53);
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_54))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_54))
 	{
-		VOLUME::_0x43F867EF5C463A53(iLocal_54);
+		VOLUME::_DELETE_VOLUME(iLocal_54);
 	}
-	if (HUD::_0x2C729F2B94CEA911("ASBGAUD"))
+	if (HUD::_DOES_TEXT_DATABASE_EXIST("ASBGAUD"))
 	{
-		if (HUD::_0xD0976CC34002DB57("ASBGAUD"))
+		if (HUD::_TEXT_DATABASE_HAS_LOADED("ASBGAUD"))
 		{
-			HUD::_0xAA03F130A637D923("ASBGAUD");
+			HUD::_TEXT_DATABASE_DELETE("ASBGAUD");
 		}
 	}
 	iParam0 = iParam0;

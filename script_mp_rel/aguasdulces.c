@@ -17,7 +17,7 @@
 	var uLocal_15 = 0;
 	float fLocal_16 = 0f;
 	float fLocal_17 = 0f;
-	var uLocal_18 = 0;
+	int iLocal_18 = 0;
 	int iLocal_19 = 0;
 	bool bLocal_20 = false;
 	var uLocal_21 = 0;
@@ -37,14 +37,14 @@
 
 bool func_13()
 {
-	uLocal_18 = ((*Global_1887327)[62 /*36*/])->f_5;
+	iLocal_18 = ((*Global_1887327)[62 /*36*/])->f_5;
 	iLocal_19 = VOLUME::_CREATE_VOLUME_CYLINDER(1411.869f, -7032.472f, 71.50774f, 0f, 0f, -25.35288f, 142.4495f, 133.1683f, 45.87774f);
 	return true;
 }
 
 bool func_40(int iParam0)
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_19))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_19))
 	{
 		if (aggregate_func_4312(62, 33554432))
 		{

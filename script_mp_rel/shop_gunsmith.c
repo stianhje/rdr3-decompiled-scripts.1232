@@ -470,7 +470,7 @@ void __EntryFunction__()
 				break;
 			case 3:
 				aggregate_func_4273(&Var0);
-				if (VOLUME::_0x92A78D0BEDB332A3(Var0.f_1997))
+				if (VOLUME::_DOES_VOLUME_EXIST(Var0.f_1997))
 				{
 					if (ENTITY::IS_ENTITY_IN_VOLUME(Global_35, Var0.f_1997, true, 0))
 					{

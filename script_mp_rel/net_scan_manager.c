@@ -89,9 +89,9 @@ void func_15()
 	iVar0 = 0;
 	while (iVar0 <= 21)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(&(Global_1247291->f_51[iVar0])))
+		if (VOLUME::_DOES_VOLUME_EXIST(&(Global_1247291->f_51[iVar0])))
 		{
-			VOLUME::_0x43F867EF5C463A53(&(Global_1247291->f_51[iVar0]));
+			VOLUME::_DELETE_VOLUME(&(Global_1247291->f_51[iVar0]));
 		}
 		iVar0++;
 	}

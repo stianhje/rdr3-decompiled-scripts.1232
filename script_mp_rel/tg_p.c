@@ -937,7 +937,7 @@ void func_10()
 	func_144(&(Local_25.f_2335), Local_25.f_2839.f_692);
 	AUDIO::_0xD9130842D7226045("MGBLK_Sounds", 1);
 	AUDIO::_0xD9130842D7226045("RDRO_Poker_Sounds", 0);
-	HUD::_0xF66090013DE648D5("MGPKR");
+	HUD::_TEXT_DATABASE_REQUEST("MGPKR");
 	PED::_0xED9582B3DA8F02B4(6);
 	iVar3 = func_145(Local_25.f_39, Local_25.f_42, -1, 0);
 	if (iVar3 != 0)
@@ -955,7 +955,7 @@ int func_12()
 {
 	int iVar0;
 
-	if ((((((!func_146(&(Local_25.f_2839)) || !func_147(&(Local_25.f_4242))) || !func_148(&(Local_25.f_2335))) || !AUDIO::_0xD9130842D7226045("MGBLK_Sounds", 1)) || !AUDIO::_0xD9130842D7226045("RDRO_Poker_Sounds", 0)) || !HUD::_0xD0976CC34002DB57("MGPKR")) || !PED::_0x5E420FF293EE5472())
+	if ((((((!func_146(&(Local_25.f_2839)) || !func_147(&(Local_25.f_4242))) || !func_148(&(Local_25.f_2335))) || !AUDIO::_0xD9130842D7226045("MGBLK_Sounds", 1)) || !AUDIO::_0xD9130842D7226045("RDRO_Poker_Sounds", 0)) || !HUD::_TEXT_DATABASE_HAS_LOADED("MGPKR")) || !PED::_0x5E420FF293EE5472())
 	{
 		return 0;
 	}
@@ -1203,7 +1203,7 @@ void func_70()
 	}
 	AUDIO::_0x531A78D6BF27014B("MGBLK_Sounds");
 	AUDIO::_0x531A78D6BF27014B("RDRO_Poker_Sounds");
-	HUD::_0xAA03F130A637D923("MGPKR");
+	HUD::_TEXT_DATABASE_DELETE("MGPKR");
 	PED::_0x7D4E70A67A651C71(6);
 	iVar1 = func_145(Local_25.f_39, Local_25.f_42, -1, 0);
 	if (iVar1 != 0)
@@ -7519,7 +7519,7 @@ int func_306(var uParam0, var uParam1, var uParam2, int iParam3)
 				{
 					iVar19 = func_435(&iVar18);
 				}
-				ENTITY::_0x203BEFFDBE12E96A(iVar18, vVar34, fVar37, 1, 0, 1);
+				ENTITY::_SET_ENTITY_COORDS_AND_HEADING(iVar18, vVar34, fVar37, true, false, true);
 				iVar21 = 92;
 				iVar22 = 1;
 				Var1 = { func_804(uParam1, iParam3, 0, 0) };
@@ -13950,7 +13950,7 @@ void func_465(var uParam0, int iParam1, char* sParam2, float fParam3)
 	Var2.f_32 = "CurrentClip";
 	if ((uParam0->f_818[iParam1 /*63*/])->f_52)
 	{
-		ENTITY::_0x203BEFFDBE12E96A(iVar1, *(uParam0->f_1236[iParam1 /*3*/]) - Vector(1f, 0f, 0f), (uParam0->f_1255[iParam1 /*3*/])->f_2, 1, 1, 1);
+		ENTITY::_SET_ENTITY_COORDS_AND_HEADING(iVar1, *(uParam0->f_1236[iParam1 /*3*/]) - Vector(1f, 0f, 0f), (uParam0->f_1255[iParam1 /*3*/])->f_2, true, true, true);
 		ENTITY::FREEZE_ENTITY_POSITION(iVar1, true);
 		ENTITY::SET_ENTITY_COLLISION(iVar1, false, false);
 	}
@@ -16878,7 +16878,7 @@ void func_580(var uParam0, var uParam1, int iParam2)
 			vVar1 = { PED::GET_ANIM_INITIAL_OFFSET_POSITION("mini_games@poker_mg@base", "sit_enter_left", *(uParam0->f_1236[iParam2 /*3*/]), *(uParam0->f_1255[iParam2 /*3*/]), 0f, 2) };
 			vVar4 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION("mini_games@poker_mg@base", "sit_enter_left", *(uParam0->f_1236[iParam2 /*3*/]), *(uParam0->f_1255[iParam2 /*3*/]), 0f, 2) };
 			TASK::CLEAR_PED_TASKS_IMMEDIATELY(*uParam1, 0, 1);
-			ENTITY::_0x203BEFFDBE12E96A(*uParam1, vVar1, vVar4.z, 1, 0, 1);
+			ENTITY::_SET_ENTITY_COORDS_AND_HEADING(*uParam1, vVar1, vVar4.z, true, false, true);
 			func_208(uParam0, iParam2, 0);
 		}
 		return;
@@ -17037,7 +17037,7 @@ void func_582(var uParam0, var uParam1, int iParam2)
 			vVar0 = { PED::GET_ANIM_INITIAL_OFFSET_POSITION("mini_games@poker_mg@base", "sit_enter_right", *(uParam0->f_1236[iParam2 /*3*/]), *(uParam0->f_1255[iParam2 /*3*/]), 0f, 2) };
 			vVar3 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION("mini_games@poker_mg@base", "sit_enter_right", *(uParam0->f_1236[iParam2 /*3*/]), *(uParam0->f_1255[iParam2 /*3*/]), 0f, 2) };
 			TASK::CLEAR_PED_TASKS_IMMEDIATELY(*uParam1, 0, 1);
-			ENTITY::_0x203BEFFDBE12E96A(*uParam1, vVar0, vVar3.z, 1, 0, 1);
+			ENTITY::_SET_ENTITY_COORDS_AND_HEADING(*uParam1, vVar0, vVar3.z, true, false, true);
 			func_208(uParam0, iParam2, 0);
 		}
 		return;
@@ -17191,7 +17191,7 @@ void func_584(var uParam0, var uParam1, int iParam2)
 			vVar11 = { PED::GET_ANIM_INITIAL_OFFSET_POSITION("mini_games@poker_mg@base", sVar2, *(uParam0->f_1236[iParam2 /*3*/]), *(uParam0->f_1255[iParam2 /*3*/]), 1f, 2) };
 			vVar14 = { PED::GET_ANIM_INITIAL_OFFSET_ROTATION("mini_games@poker_mg@base", sVar2, *(uParam0->f_1236[iParam2 /*3*/]), *(uParam0->f_1255[iParam2 /*3*/]), 1f, 2) };
 			TASK::CLEAR_PED_TASKS_IMMEDIATELY(*uParam1, 0, 1);
-			ENTITY::_0x203BEFFDBE12E96A(*uParam1, vVar11, vVar14.z, 1, 0, 1);
+			ENTITY::_SET_ENTITY_COORDS_AND_HEADING(*uParam1, vVar11, vVar14.z, true, false, true);
 			func_208(uParam0, iParam2, 0);
 		}
 		return;
@@ -35737,7 +35737,7 @@ int func_1533(int iParam0, vector3 vParam1, float fParam4, int iParam5, var uPar
 
 void func_1534(int iParam0, vector3 vParam1, vector3 vParam4, vector3 vParam7)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(*iParam0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(*iParam0))
 	{
 		*iParam0 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam1, vParam4, vParam7, aggregate_func_4473());
 	}

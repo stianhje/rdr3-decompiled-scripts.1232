@@ -2760,7 +2760,7 @@ bool func_131(var uParam0)
 	{
 		return uParam0->f_1.f_6;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(uParam0->f_297))
+	if (!VOLUME::_DOES_VOLUME_EXIST(uParam0->f_297))
 	{
 		vVar0 = { func_232(uParam0) };
 		uParam0->f_297 = VOLUME::_0xB3FB80A32BAE3065(uParam0->f_298, 0f, 0f, 0f, vVar0);

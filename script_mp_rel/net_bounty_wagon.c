@@ -761,7 +761,7 @@ bool func_205(var uParam0)
 				iVar13 = NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iVar12);
 				if (_NAMESPACE26::_0x3F59FE6F37869576(iVar13, uParam0->f_2))
 				{
-					VOLUME::_0x43F867EF5C463A53(iVar7);
+					VOLUME::_DELETE_VOLUME(iVar7);
 					ITEMSET::DESTROY_ITEMSET(iVar8);
 					return true;
 				}
@@ -769,7 +769,7 @@ bool func_205(var uParam0)
 		}
 		iVar11++;
 	}
-	VOLUME::_0x43F867EF5C463A53(iVar7);
+	VOLUME::_DELETE_VOLUME(iVar7);
 	ITEMSET::DESTROY_ITEMSET(iVar8);
 	return false;
 }

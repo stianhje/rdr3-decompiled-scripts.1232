@@ -201,9 +201,9 @@ void func_8(var uParam0, int iParam1)
 	{
 		PATHFIND::_0x4907D0E4FB26EE65(iParam1->f_1237);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(iParam1->f_1180))
+	if (VOLUME::_DOES_VOLUME_EXIST(iParam1->f_1180))
 	{
-		VOLUME::_0x43F867EF5C463A53(iParam1->f_1180);
+		VOLUME::_DELETE_VOLUME(iParam1->f_1180);
 	}
 	if (MAP::DOES_BLIP_EXIST(iParam1->f_1210))
 	{
@@ -1141,14 +1141,14 @@ bool func_83(int iParam0)
 	}
 	if (!aggregate_func_4278(iParam0, -2147483648))
 	{
-		HUD::_0xF66090013DE648D5("GEIRONMP");
+		HUD::_TEXT_DATABASE_REQUEST("GEIRONMP");
 		aggregate_func_4266(iParam0, -2147483648);
 	}
-	if (!HUD::_0xD0976CC34002DB57("GEIRONMP"))
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("GEIRONMP"))
 	{
 		if (!HUD::_0x3CF96E16265B7DC8("GEIRONMP"))
 		{
-			HUD::_0xF66090013DE648D5("GEIRONMP");
+			HUD::_TEXT_DATABASE_REQUEST("GEIRONMP");
 		}
 		return false;
 	}
@@ -1160,14 +1160,14 @@ bool func_85(var uParam0, int iParam1)
 {
 	if (!aggregate_func_4278(iParam1, -2147483648))
 	{
-		HUD::_0xF66090013DE648D5("GEIRONMP");
+		HUD::_TEXT_DATABASE_REQUEST("GEIRONMP");
 		aggregate_func_4266(iParam1, -2147483648);
 	}
-	if (!HUD::_0xD0976CC34002DB57("GEIRONMP"))
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("GEIRONMP"))
 	{
 		if (!HUD::_0x3CF96E16265B7DC8("GEIRONMP"))
 		{
-			HUD::_0xF66090013DE648D5("GEIRONMP");
+			HUD::_TEXT_DATABASE_REQUEST("GEIRONMP");
 		}
 		return false;
 	}

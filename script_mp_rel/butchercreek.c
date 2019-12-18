@@ -533,7 +533,7 @@ void func_85(int iParam0)
 		}
 	}
 	LAW::_REMOVE_GUARD_ZONE(sLocal_23);
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_25))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_25))
 	{
 		VOLUME::_0x6D5F9E69BA1BE783(iLocal_25);
 	}

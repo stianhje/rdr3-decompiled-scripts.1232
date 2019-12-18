@@ -501,7 +501,7 @@ void func_28()
 	iVar4 = aggregate_func_3974(0, 0);
 	if (iVar4 != -1)
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3(((*Global_1954393)[iVar4 /*16*/])->f_1) || !ENTITY::IS_ENTITY_IN_VOLUME(iVar0, ((*Global_1954393)[iVar4 /*16*/])->f_1, true, 0))
+		if (!VOLUME::_DOES_VOLUME_EXIST(((*Global_1954393)[iVar4 /*16*/])->f_1) || !ENTITY::IS_ENTITY_IN_VOLUME(iVar0, ((*Global_1954393)[iVar4 /*16*/])->f_1, true, 0))
 		{
 			func_65(iVar4, 1, 1);
 			iVar4 = -1;
@@ -521,7 +521,7 @@ void func_28()
 	iVar1 = 0;
 	while (iVar1 < 4)
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(((*Global_1954393)[iVar1 /*16*/])->f_1))
+		if (VOLUME::_DOES_VOLUME_EXIST(((*Global_1954393)[iVar1 /*16*/])->f_1))
 		{
 			iVar2 = iVar1;
 			if (!aggregate_func_8852(iVar1, 64, 1))
@@ -569,7 +569,7 @@ void func_28()
 					{
 						if (!bVar5 && iVar1 != iVar4)
 						{
-							if ((!aggregate_func_8852(iVar3, 1, 1) && VOLUME::_0x92A78D0BEDB332A3(((*Global_1954393)[iVar1 /*16*/])->f_1)) && ENTITY::IS_ENTITY_IN_VOLUME(iVar0, ((*Global_1954393)[iVar1 /*16*/])->f_1, true, 0))
+							if ((!aggregate_func_8852(iVar3, 1, 1) && VOLUME::_DOES_VOLUME_EXIST(((*Global_1954393)[iVar1 /*16*/])->f_1)) && ENTITY::IS_ENTITY_IN_VOLUME(iVar0, ((*Global_1954393)[iVar1 /*16*/])->f_1, true, 0))
 							{
 								if (!ENTITY::IS_ENTITY_DEAD(((*Global_1954393)[iVar1 /*16*/])->f_2) || !aggregate_func_8852(iVar1, 8, 1))
 								{
@@ -611,7 +611,7 @@ void func_28()
 						return;
 					}
 				}
-				else if ((iVar3 != -1 && !aggregate_func_8852(iVar3, 1, 1)) && VOLUME::_0x92A78D0BEDB332A3(((*Global_1954393)[iVar3 /*16*/])->f_1))
+				else if ((iVar3 != -1 && !aggregate_func_8852(iVar3, 1, 1)) && VOLUME::_DOES_VOLUME_EXIST(((*Global_1954393)[iVar3 /*16*/])->f_1))
 				{
 					func_65(-1, 1, 1);
 					func_70(iVar3);
@@ -1698,7 +1698,7 @@ void func_88(int iParam0)
 	{
 		return;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3((Global_1938932->f_5[iParam0 /*11*/])->f_4))
+	if (!VOLUME::_DOES_VOLUME_EXIST((Global_1938932->f_5[iParam0 /*11*/])->f_4))
 	{
 		return;
 	}
@@ -2672,90 +2672,90 @@ bool func_196()
 	switch (Global_1938932->f_41)
 	{
 		case 81:
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_54[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_54[0])))
 			{
 				Global_1938932->f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-309.497f, 809.019f, 120.736f, 0f, 0f, 99.71499f, 20.984f, 11.92f, 5.626f, "Saloon-vBarDialogue");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_57[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_57[0])))
 			{
 				Global_1938932->f_57[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-312.8126f, 805.6502f, 119.0267f, 0f, 0f, 9.450999f, 3.526598f, 5.756987f, 2.6f, "Saloon-vBarDialoguePrompt");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_60[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_60[0])))
 			{
 				Global_1938932->f_60[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-313.5039f, 806.3469f, 118.5511f, 0f, 0f, 9.500049f, 1.307419f, 4.145394f, 2.622946f, "Saloon-vBarDialogueofflimit");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_63[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_63[0])))
 			{
 				Global_1938932->f_63[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-309.419f, 809.032f, 122.29f, 0f, 0f, 99.715f, 23.304f, 12.404f, 2.649f, "Saloon-vBarDialogueMute");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_54[1])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_54[1])))
 			{
 				Global_1938932->f_54[1] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-241.4293f, 769.837f, 118.2211f, 0f, 0f, 19.77785f, 7.545419f, 8.569216f, 2.435204f, "Saloon-vBarDialogue");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_57[1])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_57[1])))
 			{
 				Global_1938932->f_57[1] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-240.3409f, 769.9477f, 118.2175f, 0f, 0f, 18.79571f, 1.613768f, 3.334327f, 2.435204f, "Saloon-vBarDialoguePrompt");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_60[1])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_60[1])))
 			{
 				Global_1938932->f_60[1] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-238.8276f, 770.4627f, 118.2175f, 0f, 0f, 18.79571f, 1.613768f, 4.023208f, 2.435204f, "Saloon-vBarDialogueofflimit");
 			}
 			break;
 		case 5:
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_54[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_54[0])))
 			{
 				Global_1938932->f_54[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("volSaloonFancyInterior");
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), 2629.396f, -1221.905f, 54.83224f, 0f, 0f, -135.58f, 3.110129f, 1.920147f, 4.694317f);
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), 2628.751f, -1228.086f, 57.543f, 0f, 0f, 179.42f, 2.229593f, 11.71116f, 10.619f);
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), 2635.506f, -1227.165f, 57.543f, 0f, 0f, 179.42f, 11.64868f, 13.72192f, 10.619f);
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_57[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_57[0])))
 			{
 				Global_1938932->f_57[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2638.078f, -1224.9f, 53.60266f, 0f, 0f, 0f, 2.04147f, 7.113753f, 3.196584f, "Saloon-vBarDialoguePrompt");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_60[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_60[0])))
 			{
 				Global_1938932->f_60[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2639.981f, -1225.526f, 53.603f, 0f, 0f, 0.405f, 1.646f, 6.014f, 2.6f, "Saloon-vBarDialogueofflimit");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_63[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_63[0])))
 			{
 				Global_1938932->f_63[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2634.331f, -1226.95f, 59.453f, 0f, 0f, 0f, 14.202f, 14.405f, 7.921f, "Saloon-vBarDialogueMute");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_54[1])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_54[1])))
 			{
 				Global_1938932->f_54[1] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2796.705f, -1167.971f, 48.56161f, 0f, 0f, -120.25f, 13.49097f, 10.18626f, 3.324371f, "Saloon-vBarDialogueSLUM");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_57[1])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_57[1])))
 			{
 				Global_1938932->f_57[1] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2793.41f, -1169.199f, 48.1851f, 0f, 0f, -30.34509f, 1.704269f, 3.946146f, 2.542513f, "Saloon-vBarDialoguePrompt");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_60[1])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_60[1])))
 			{
 				Global_1938932->f_60[1] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2792.76f, -1167.248f, 48.185f, 0f, 0f, -28.65f, 1.31f, 4.322f, 2.45f, "Saloon-vBarDialogueofflimit");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_63[1])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_63[1])))
 			{
 				Global_1938932->f_63[1] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2801.979f, -1166.155f, 48.562f, 0f, 0f, -120.25f, 5.894f, 3.149f, 3.395f, "Saloon-vBarDialogueMute");
 			}
 			break;
 		case 98:
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_54[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_54[0])))
 			{
 				Global_1938932->f_54[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volSaloonInterior");
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), 2946.662f, 523.323f, 46.02f, 0f, 0f, 180f, 9.627f, 13.43f, 3.143f);
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), 2939.132f, 523.346f, 46.02f, 0f, 0f, 180f, 5.235f, 9.883f, 3.143f);
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_57[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_57[0])))
 			{
 				Global_1938932->f_57[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2948.501f, 527.229f, 45.24421f, 0f, 0f, 0f, 5.896486f, 4.004321f, 3.567921f, "Saloon-vBarDialoguePrompt");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_60[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_60[0])))
 			{
 				Global_1938932->f_60[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2949.001f, 528.692f, 45.433f, 0f, -1.995f, 90.342f, 2.153f, 4.35f, 2.271f, "Saloon-vBarDialogueofflimit");
 			}
 			break;
 		case 40:
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_54[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_54[0])))
 			{
 				Global_1938932->f_54[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Blackwater - m_volSaloonInterior");
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), -818.523f, -1319.681f, 46.59f, 0f, 0f, 90f, 15.6f, 16f, 8f);
@@ -2763,15 +2763,15 @@ bool func_196()
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), -809.672f, -1324.85f, 44.569f, 0f, 0f, 90f, 5.2f, 2f, 3.8f);
 				VOLUME::_0x5B7D7BF36D2DE18B(&(Global_1938932->f_54[0]), -810.751f, -1315.745f, 42.73711f, 0f, 0f, 0f, 2.326748f, 2.142643f, 3.663574f);
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_57[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_57[0])))
 			{
 				Global_1938932->f_57[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-817.6462f, -1318.322f, 43.72745f, 0f, 0f, 0f, 5f, 5.5f, 3f, "Saloon-vBarDialoguePrompt");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_60[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_60[0])))
 			{
 				Global_1938932->f_60[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-818.6908f, -1319.289f, 43.72745f, 0f, 0f, 0f, 3f, 3.5f, 3f, "Saloon-vBarDialogueofflimit");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_63[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_63[0])))
 			{
 				Global_1938932->f_63[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Saloon-vBarDialogueMute");
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_63[0]), -818.523f, -1319.681f, 48.053f, 0f, 0f, 90f, 17.124f, 16.624f, 4.813f);
@@ -2779,57 +2779,57 @@ bool func_196()
 			}
 			break;
 		case 111:
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_54[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_54[0])))
 			{
 				Global_1938932->f_54[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1345.534f, -1375.4f, 82.904f, 0f, 0f, 80.2f, 11.601f, 14.755f, 7.028f, "Saloon-vBarDialogue");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_57[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_57[0])))
 			{
 				Global_1938932->f_57[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1340.147f, -1374.74f, 80.38785f, 0f, 0f, -10.32368f, 4.458401f, 6.059777f, 2.440836f, "Saloon-vBarDialogue");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_60[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_60[0])))
 			{
 				Global_1938932->f_60[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1339.3f, -1374.427f, 80.38785f, 0f, 0f, -10.32368f, 2.886978f, 2.606258f, 2.440836f, "Saloon-vBarDialogueofflimit");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_63[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_63[0])))
 			{
 				Global_1938932->f_63[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1345.534f, -1375.4f, 84.92f, 0f, 0f, 80.2f, 11.982f, 15.553f, 3.692f, "Saloon-vBarDialogueMute");
 			}
 			break;
 		case 121:
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_54[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_54[0])))
 			{
 				Global_1938932->f_54[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volSaloonInterior");
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), -5515.285f, -2908.166f, 0.249091f, 0f, 0.149389f, 30f, 10.09642f, 10.85884f, 6.224696f);
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), -5513.722f, -2914.647f, 0.249091f, 0.161928f, 0.036374f, -15.07891f, 4.181654f, 4.925784f, 6.224696f);
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), -5510.41f, -2913.841f, 0.249091f, 0f, 0.149389f, 30f, 7.684982f, 4.925784f, 6.224696f);
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_57[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_57[0])))
 			{
 				Global_1938932->f_57[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-5517.708f, -2907.638f, -1.703205f, 0f, 0f, 30f, 6.704566f, 1.488849f, 2.762703f, "Saloon-vBarDialoguePrompt");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_60[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_60[0])))
 			{
 				Global_1938932->f_60[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-5519.191f, -2906.316f, -1.703f, 0f, 0f, -60.333f, 1.891f, 5.329f, 2.441f, "Saloon-vBarDialogueofflimit");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_63[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_63[0])))
 			{
 				Global_1938932->f_63[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-5515.285f, -2908.166f, 1.855f, 0f, 0f, 30f, 10.292f, 10.992f, 3.432f, "Saloon-vBarDialogueMute");
 			}
 			break;
 		case 127:
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_54[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_54[0])))
 			{
 				Global_1938932->f_54[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("m_volSaloonInterior");
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), -3706.318f, -2599.046f, -11.47613f, 0f, 0f, 45f, 4f, 6.394596f, 6f);
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), -3701.312f, -2601.316f, -11.47613f, 0f, 0f, 0f, 8.3f, 3f, 6f);
 				VOLUME::_0x39816F6F94F385AD(&(Global_1938932->f_54[0]), -3703.562f, -2591.62f, -11.47613f, 0f, 0f, 0f, 12.8f, 13f, 6f);
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_57[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_57[0])))
 			{
 				Global_1938932->f_57[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-3701.373f, -2594.598f, -13.4666f, 0f, 0f, 0f, 2f, 8f, 3f, "Saloon-vBarDialoguePrompt");
 			}
-			if (!VOLUME::_0x92A78D0BEDB332A3(&(Global_1938932->f_60[0])))
+			if (!VOLUME::_DOES_VOLUME_EXIST(&(Global_1938932->f_60[0])))
 			{
 				Global_1938932->f_60[0] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-3698.998f, -2596.996f, -13.467f, 0f, 0f, -0.443f, 2.4f, 11.579f, 2.441f, "Saloon-vBarDialogueofflimit");
 			}

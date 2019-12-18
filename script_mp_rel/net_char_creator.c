@@ -6212,7 +6212,7 @@ void func_15(var uParam0)
 		{
 			return;
 		}
-		ENTITY::_0x203BEFFDBE12E96A(uParam0->f_3, func_85(), func_86(), 1, 0, 1);
+		ENTITY::_SET_ENTITY_COORDS_AND_HEADING(uParam0->f_3, func_85(), func_86(), true, false, true);
 		ENTITY::SET_ENTITY_VISIBLE(uParam0->f_3, false);
 		PLAYER::SET_PLAYER_INVINCIBLE(PLAYER::GET_PLAYER_INDEX(), true);
 		STREAMING::_0x513F8AA5BF2F17CF(func_85(), 50f, 4);
@@ -6708,9 +6708,9 @@ void func_26(var uParam0)
 		aggregate_func_4242(uParam0, 15);
 		return;
 	}
-	if (!HUD::_0xD0976CC34002DB57("NETCHAR"))
+	if (!HUD::_TEXT_DATABASE_HAS_LOADED("NETCHAR"))
 	{
-		HUD::_0xF66090013DE648D5("NETCHAR");
+		HUD::_TEXT_DATABASE_REQUEST("NETCHAR");
 		return;
 	}
 	if (!func_84(&(uParam0->f_2901)))
@@ -8105,7 +8105,7 @@ void func_79(var uParam0)
 	aggregate_func_2081(1679934574);
 	aggregate_func_2081(183712523);
 	uParam0->f_2592 = ANIMSCENE::_CREATE_ANIM_SCENE("lightrig@online_character_editor", 0, 0, false, true);
-	HUD::_0xF66090013DE648D5("NETCHAR");
+	HUD::_TEXT_DATABASE_REQUEST("NETCHAR");
 }
 
 bool func_80(var uParam0)
